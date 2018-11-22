@@ -1,0 +1,1 @@
+Обновление 0.1 Microsoft Dynamics CRM 2016

@@ -1,0 +1,2 @@
+> [!NOTE]
+> Это содержимое относится к [!INCLUDE [pn-crm-9-0-0-online](../includes/pn-crm-9-0-0-online.md)] или более поздней версии. Документацию по более ранним версиям см. в разделе [Администрирование Dynamics 365](https://technet.microsoft.com/library/dn531101.aspx).

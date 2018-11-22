@@ -1,0 +1,1 @@
+Соединитель Dynamics 365 для служб SQL Server Reporting Services

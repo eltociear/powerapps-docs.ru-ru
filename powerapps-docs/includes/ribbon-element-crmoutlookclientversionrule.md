@@ -1,0 +1,1 @@
+Обнаруживает версию Microsoft Dynamics 365 для Microsoft Office Outlook.

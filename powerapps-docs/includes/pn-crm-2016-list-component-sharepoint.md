@@ -1,0 +1,1 @@
+Компонент списков Microsoft Dynamics CRM 2016 для Microsoft SharePoint

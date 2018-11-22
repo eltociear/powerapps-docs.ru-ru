@@ -1,0 +1,1 @@
+Управление настройками Microsoft System Center 2012

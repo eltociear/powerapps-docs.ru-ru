@@ -1,0 +1,1 @@
+**Примечание**. Дополнительные сведения о дополнительных предложениях служб [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] см. в разделе [Центр управления безопасностью Microsoft Azure](https://azure.microsoft.com/support/trust-center/).

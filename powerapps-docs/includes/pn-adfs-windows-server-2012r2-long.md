@@ -1,0 +1,1 @@
+Службы федерации Active Directory (AD FS) в Windows Server 2012 R2

@@ -1,0 +1,1 @@
+Обновление 1.1 Microsoft Dynamics CRM 2015

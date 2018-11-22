@@ -1,0 +1,1 @@
+Для использования возможностей этого решения требуется Microsoft Dynamics CRM Online 2016 Update 1.

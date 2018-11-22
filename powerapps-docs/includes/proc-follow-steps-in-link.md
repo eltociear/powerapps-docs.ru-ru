@@ -1,0 +1,1 @@
+Следуйте этим инструкциям: [Просмотр профиля пользователя](https://docs.microsoft.com/dynamics365/customer-engagement/basics/view-your-user-profile).

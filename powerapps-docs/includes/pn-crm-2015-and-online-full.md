@@ -1,0 +1,1 @@
+Microsoft Dynamics CRM 2015 и обновление Microsoft Dynamics CRM Online 2015

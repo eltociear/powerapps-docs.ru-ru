@@ -1,0 +1,1 @@
+Dynamics CRM 2013 и Dynamics CRM Online

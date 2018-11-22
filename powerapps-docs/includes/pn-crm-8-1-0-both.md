@@ -1,0 +1,1 @@
+Dynamics CRM 2016 Online и Dynamics CRM 2016 (локальная версия)

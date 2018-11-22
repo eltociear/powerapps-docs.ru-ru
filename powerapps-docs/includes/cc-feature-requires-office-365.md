@@ -1,0 +1,1 @@
+Для использования этой функции требуется подписка Office 365 или подписка на онлайн-службу, например SharePoint Online или Exchange Online. Дополнительные сведения см. в разделе [Что такое Office 365 и как он соотносится с Dynamics 365 (сетевая версия)?](https://docs.microsoft.com/dynamics365/customer-engagement/admin/what-office-365-how-does-relate)

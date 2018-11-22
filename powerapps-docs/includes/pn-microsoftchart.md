@@ -1,0 +1,1 @@
+Элементы управления Microsoft Chart для Microsoft .NET Framework 3.5

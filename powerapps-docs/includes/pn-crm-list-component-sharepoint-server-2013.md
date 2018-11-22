@@ -1,0 +1,1 @@
+Компонент списков Microsoft Dynamics CRM для Microsoft SharePoint Server 2013

@@ -1,0 +1,1 @@
+Набор средств разработки для Microsoft Dynamics CRM 2013 и Microsoft Dynamics CRM Online

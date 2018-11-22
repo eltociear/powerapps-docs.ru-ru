@@ -1,0 +1,1 @@
+Microsoft Dynamics CRM Online за осень 2013 г.

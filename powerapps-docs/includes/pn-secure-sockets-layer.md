@@ -1,0 +1,1 @@
+Transport Layer Security (TLS) или Secure Sockets Layer (SSL)
