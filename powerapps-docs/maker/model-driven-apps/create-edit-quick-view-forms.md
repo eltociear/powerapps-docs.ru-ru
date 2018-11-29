@@ -38,9 +38,8 @@ search.app:
 ## <a name="create-a-quick-view-form"></a>Создание экспресс-формы  
  Экспресс-формы создаются с помощью редактора форм таким же образом, как и другие формы. Экспресс-формы доступны только для чтения. Используйте их для создания форм, которые предназначены только для чтения.  
   
-1. На сайте [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Управляемые моделью** (в левой нижней части панели навигации).  
+1. Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
-    ![Режим разработки, управляемый моделью](media/model-driven-switch.png)
 
     > [!IMPORTANT]
     > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment).     
@@ -75,7 +74,7 @@ search.app:
 ## <a name="add-a-quick-view-control-to-a-main-form"></a>Добавление элемента управления экспресс-формы в основную форму  
  Экспресс-формы можно добавлять только в основную форму, в которой существует поле поиска, которое предназначается для сущности экспресс-формы.  
   
-1.  На сайте [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Управляемые моделью** (в левой нижней части панели навигации).  
+1.  Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
     > [!IMPORTANT]
     > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment).     

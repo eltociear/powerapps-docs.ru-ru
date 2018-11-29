@@ -33,9 +33,7 @@ search.app:
 ## <a name="add-an-app-to-a-solution"></a>Добавление приложения в решение
 Для распространения приложения вы создаете решение, чтобы приложение можно было упаковать для экспорта.
 
-1. На сайте [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Управляемые моделью** (в левой нижней части панели навигации).  
-
-    ![Режим разработки, управляемый моделью](media/model-driven-switch.png)
+1. Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2. Выберите **Решения**, затем выберите **Создать решение**.
 3. Заполните поля на странице **Создать решение**, после чего выберите **Сохранить**. Дополнительные сведения: [Создание решения](../common-data-service/create-solution.md)
@@ -63,9 +61,7 @@ search.app:
 ## <a name="import-a-solution"></a>Импорт решения  
 Получив ZIP-файл решения, содержащий приложение, которое требуется импортировать, откройте страницу компонентов решений и импортируйте решение. Когда решение будет успешно импортировано, приложение будет доступно в вашей среде.
 
-1. На сайте [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Управляемые моделью** (в левой нижней части панели навигации).  
-
-    ![Режим разработки, управляемый моделью](media/model-driven-switch.png)
+1. Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2. Выберите **Решения**, затем на панели инструментов выберите **Импорт**.
 3. Перейдите к файлу, который нужно импортировать, затем выберите **Далее**.

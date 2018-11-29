@@ -31,9 +31,9 @@ search.app:
   
 ### <a name="create-a-new-view"></a>Создать новое представление  
   
-1.  На сайте [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Управляемые моделью** (в левой нижней части панели навигации).  
+1.  Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
-    ![Режим разработки, управляемый моделью](media/model-driven-switch.png)
+    
 
     > [!IMPORTANT]
     > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment). 

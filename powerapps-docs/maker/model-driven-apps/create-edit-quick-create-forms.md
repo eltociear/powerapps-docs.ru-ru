@@ -2,7 +2,7 @@
 title: Создание или изменение форм быстрого создания для управляемого моделью приложения в PowerApps | MicrosoftDocs
 description: Инструкции по созданию и изменению формы быстрого создания
 ms.custom: ''
-ms.date: 05/23/2018
+ms.date: 10/15/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -53,9 +53,8 @@ search.app:
   
 ### <a name="how-to-create-a-quick-create-form"></a>Порядок создания экспресс-формы создания  
   
-1.  На сайте [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Управляемые моделью** (в левой нижней части панели навигации).  
+1.  Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
-     ![Режим разработки, управляемый моделью](media/model-driven-switch.png)
 
 > [!IMPORTANT]
 > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment).     
@@ -92,7 +91,7 @@ search.app:
   
 ### <a name="to-edit-a-quick-create-form"></a>редактирование экспресс-формы создания  
   
-1.  На сайте [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Управляемые моделью** (в левой нижней части панели навигации).  
+1.  Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 > [!IMPORTANT]
 > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment).    

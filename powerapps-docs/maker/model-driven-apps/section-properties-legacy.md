@@ -28,9 +28,7 @@ search.app:
  Заголовки и нижние колонтитулы похожи на разделы, но их невозможно удалить. Если они не содержат данные, которые не будут отображаться. 
 
 Можно получить доступ к пункту **Свойства раздела** с сайта PowerApps. 
-1.  На сайте [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Управляемые моделью** (в левой нижней части панели навигации).  
-
-     ![Режим разработки, управляемый моделью](media/model-driven-switch.png)
+1. Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  Разверните **Данные**, выберите **Сущности**, выберите требуемую сущность, затем выберите вкладку **Формы**. 
 

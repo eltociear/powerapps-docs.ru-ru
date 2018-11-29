@@ -27,9 +27,7 @@ search.app:
 
 В этом разделе вы узнаете, как создать системную диаграмму. Системные диаграммы принадлежат организации, что делает их доступными любому пользователю, имеющему доступ для чтения данных при выполнении приложения. Системные диаграммы нельзя назначить конкретным пользователям приложения или предоставить им общий доступ.  
   
-1. На сайте [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Управляемые моделью** (в левой нижней части панели навигации).  
-
-     ![Режим разработки, управляемый моделью](media/model-driven-switch.png)
+1. Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
     > [!IMPORTANT]
     > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment).     

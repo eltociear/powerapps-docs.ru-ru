@@ -43,7 +43,7 @@ search.app:
 > - Создайте новое поле "Поиск" для связанной сущности. <br />Дополнительные сведения: [Создание и изменение полей](create-edit-fields.md)
 > - Импорт решения, которое содержит определение отношения сущностей. <br />Дополнительные сведения: [Импорт, обновление и экспорт решений](import-update-export-solutions.md)
 > - Используйте Power Query для создания новых сущностей и из заполнения данными. <br />Дополнительные сведения: [Добавление данных в сущность в Common Data Service для приложений с помощью Power Query](data-platform-cds-newentity-pq.md).
-> - Разработчик может использовать [веб-службы](../../developer/common-data-service/use-web-services.md#metadata-services), чтобы создать программу для создания и обновления отношений между сущностями. <br />Дополнительные сведения: [Настройка метаданных отношений между сущностями](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)
+> - Разработчик может использовать [службы метаданных](../../developer/common-data-service/metadata-services.md), чтобы создать программу для создания и обновления отношений между сущностями. <br />Дополнительные сведения: [Настройка метаданных отношений между сущностями](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)
 
 Информация в этом разделе поможет вам выбрать конструктор для использования. 
 

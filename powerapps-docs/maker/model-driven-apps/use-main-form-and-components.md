@@ -37,9 +37,7 @@ search.app:
 
 ### <a name="access-the-form-editor-through-app-designer-in-powerapps"></a>Доступ к редактору форм с помощью конструктора приложений в PowerApps
 
-1.  На сайте [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Управляемые моделью** (в левой нижней части панели навигации).  
-
-    ![Режим разработки, управляемый моделью](media/model-driven-switch.png)
+1.  Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  В левой навигационной панели выберите **Приложения**, выберите требуемое приложение, затем на панели инструментов выберите **Изменить**.  
 
@@ -60,9 +58,7 @@ search.app:
 
 ### <a name="access-the-form-editor-through-the-default-solution"></a>Доступ к редактору форм с помощью решения по умолчанию
 
-1.  На сайте [PowerApps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Управляемые моделью** (в левой нижней части панели навигации).  
-
-     ![Режим разработки, управляемый моделью](media/model-driven-switch.png)
+1.  Выполните вход в [PowerApps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  Разверните **Данные**, выберите **Сущности**, выберите требуемую сущность, затем выберите вкладку **Формы**.  
 

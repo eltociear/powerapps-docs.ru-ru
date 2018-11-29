@@ -10,7 +10,7 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 04/18/2018
+ms.date: 10/15/2018
 ms.author: matp
 search.audienceType:
   - maker
@@ -31,16 +31,14 @@ search.app:
 ## <a name="create-your-model-driven-app"></a>Создание управляемого моделью приложения
 
 1.  Выберите требуемую среду или перейдите в [центр администрирования PowerApps](https://admin.powerapps.com/), чтобы создать новую.
-2.  В левой области навигации выберите **Управляемые моделью**. 
-
-    ![Управляемые моделью](media/build-first-model-driven-app/choose-design-mode.png)
 
   > [!IMPORTANT]
   > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment).   
 
-3. В левой области выберите **Приложения**, а затем выберите **Создание приложения**.
+2. На странице **Главная** выберите параметр **Начать с нуля** для управляемого моделью приложения.
+![Start-from-blank_model](media/build-first-model-driven-app/start-from-blank-model-driven.png)
 
-4.  На странице **Создать приложение** введите следующие сведения, затем нажмите **Готово**. 
+3.  На странице **Создать приложение** введите следующие сведения, затем нажмите **Готово**. 
   - **Имя**: введите имя приложения, например *Myfirstapp*. 
   - **Описание**: введите краткое описание того, что представляет из себя приложение или что оно делает, например *Это мое первое приложение*.
 Сведения о дополнительных свойствах приложения см. в разделе [Создание приложения](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-app#create-an-app).

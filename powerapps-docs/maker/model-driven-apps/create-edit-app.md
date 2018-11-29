@@ -2,7 +2,7 @@
 title: 'Создание или изменение приложения, управляемого моделью, в конструкторе приложений в PowerApps | MicrosoftDocs'
 description: 'Узнайте, как создавать или изменять приложения с помощью конструктора приложений'
 keywords: ''
-ms.date: 05/23/2018
+ms.date: 10/15/2018
 ms.service: crm-online
 ms.custom: null
 ms.topic: article
@@ -38,14 +38,14 @@ search.app:
 <a name="createApp"></a>   
 ## <a name="create-an-app"></a>Создание приложения  
 
-1.  На сайте [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Управляемые моделью** (в левой нижней части панели навигации).  
+1.  В [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) на странице **Главная** выберите параметр **Начать с нуля** для управляемого моделью приложения.  
 
-    ![Режим разработки, управляемый моделью](media/model-driven-switch.png)
+    ![Параметр "Начать с нуля" для управляемых моделью приложений](media/start-from-blank-model-driven.png)
 
     > [!IMPORTANT]
     > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment). 
 
-2. Выберите **Приложения** и щелкните **Создать приложение**.
+2. Выберите **Создать приложение**.
 
 3. На странице **Создать приложение** введите следующие сведения: 
 
@@ -96,12 +96,12 @@ search.app:
 <a name="editApp"></a>   
 ## <a name="edit-an-app"></a>Изменение приложения  
   
-1.  На сайте [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Управляемые моделью** (в левой нижней части панели навигации).  
+1.  Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 > [!IMPORTANT]
 > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment). 
 
-2. В левой навигационной панели выберите **Приложения**, выберите приложение, затем на панели инструментов выберите **Изменить**.   
+2. В левой области навигации выберите **Приложения**, выберите управляемое моделью приложение, затем на панели инструментов выберите **Изменить**.   
 
 3. В конструкторе приложений добавьте или измените компоненты приложения согласно требованиям. Дополнительные сведения: [Добавление или изменение компонентов приложения](add-edit-app-components.md)  
  
