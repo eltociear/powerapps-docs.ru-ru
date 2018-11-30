@@ -1,5 +1,5 @@
 ---
-title: Функция ShowError | Документы Майкрософт
+title: Функция ShowError | Документация Майкрософт
 description: Справочные сведения о функции ShowError в PowerApps, включая описание синтаксиса и примеры
 author: gregli-msft
 manager: kvivek

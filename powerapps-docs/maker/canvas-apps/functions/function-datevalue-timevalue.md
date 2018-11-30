@@ -1,6 +1,6 @@
 ---
 title: Функции DateValue, TimeValue и DateTimeValue | Документация Майкрософт
-description: Справочные сведения о функциях DateValue, TimeValue и DateTimeValue, включая описание синтаксиса и примеры.
+description: Справочные сведения о функциях DateValue, TimeValue и DateTimeValue в PowerApps, включая описание синтаксиса и примеры.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps

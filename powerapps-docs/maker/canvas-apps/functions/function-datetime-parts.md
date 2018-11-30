@@ -1,6 +1,6 @@
 ---
 title: Функции Day, Month, Year, Hour, Minute, Second и Weekday | Документация Майкрософт
-description: Справочные сведения о функциях Day, Month, Year, Hour, Minute, Second и Weekday, включая описание синтаксиса и примеры.
+description: Справочные сведения о функциях Day, Month, Year, Hour, Minute, Second и Weekday в PowerApps, включая описание синтаксиса и примеры.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps

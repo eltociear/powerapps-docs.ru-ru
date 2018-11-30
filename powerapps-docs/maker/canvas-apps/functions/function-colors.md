@@ -1,6 +1,6 @@
 ---
 title: Функция для обозначения цвета Color, а также функции ColorFade, ColorValue и RGBA | Документация Майкрософт
-description: Справочные сведения о функции Color, а также функциях ColorFade, ColorValue и RGBA в PowerApps, в том числе описание синтаксиса и примеры и примеры.
+description: Справочные сведения о функции Color, а также функциях ColorFade, ColorValue и RGBA в PowerApps, в том числе описание синтаксиса и примеры.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps

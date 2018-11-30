@@ -1,6 +1,6 @@
 ---
 title: Функция Errors | Документация Майкрософт
-description: Справочные сведения о функции Errors в PowerApps, в том числе описание синтаксиса и примеры и примеры
+description: Справочные сведения о функции Errors в PowerApps, в том числе описание синтаксиса и примеры
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps

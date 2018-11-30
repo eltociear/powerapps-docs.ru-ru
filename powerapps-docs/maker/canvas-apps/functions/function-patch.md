@@ -34,11 +34,11 @@ ms.locfileid: "42865493"
 
 Используйте функцию **Patch** с функцией **[Defaults](function-defaults.md)** для создания записей. Используйте это поведение, чтобы настроить [единый экран](../working-with-data-sources.md) для создания и изменения записей. Например, следующая формула создает запись для клиента с именем Contoso:
 
-**Patch( Customers, Defaults( Customer ), { Name: “Contoso” } )**
+**Patch( Customers, Defaults( Customer ), { Name: "Contoso" } )**
 
 Даже если вы не работаете с источником данных, вы можете использовать функцию **Patch**, чтобы объединить две записи или более. Например, следующая формула объединяет две записи в одну, которая определяет и номер телефона, и расположение Contoso:
 
-**Patch( { Name: "Contoso", Phone: “1-212-555-1234” }, { Name: "Contoso", Location: “Midtown”  } )**
+**Patch( { Name: "Contoso", Phone: "1-212-555-1234" }, { Name: "Contoso", Location: "Midtown"  } )**
 
 ## <a name="description"></a>Описание
 ### <a name="modify-or-create-a-record-in-a-data-source"></a>Изменение или создание записи в источнике данных

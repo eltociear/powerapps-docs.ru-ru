@@ -1,5 +1,5 @@
 ---
-title: Функция IfError | Документы Майкрософт
+title: Функция IfError | Документация Майкрософт
 description: Справочные сведения о функции IfError в PowerApps, включая описание синтаксиса и примеры
 author: gregli-msft
 manager: kvivek
