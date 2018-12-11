@@ -44,7 +44,7 @@ ms.locfileid: "42834389"
 ## <a name="screen-reader-support"></a>Поддержка средства чтения с экрана
 Для использования PowerApps со средством чтения с экрана рекомендуем следующие комбинации программного обеспечения:
 
-- **Windows**: Edge и Narrator;
+- **Windows**: Microsoft Edge и Narrator;
 - **macOS**: Safari и VoiceOver;
 - **Android**: приложение PowerApps и Talkback;
 - **iOS**: приложение PowerApps и VoiceOver.
