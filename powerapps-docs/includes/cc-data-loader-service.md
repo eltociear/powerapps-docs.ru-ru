@@ -1,1 +1,1 @@
-Data Loader service
+Служба загрузки данных

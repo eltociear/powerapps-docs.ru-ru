@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0fa6a8f741ed0e771eeefbbee82a23e876363e55
-ms.sourcegitcommit: 469be99b762cd62289a98f058c498ac25ff8801b
+ms.openlocfilehash: 9d86bcaf02050da1b3cd0364e28bc4ec05a6407d
+ms.sourcegitcommit: 6e579014ebb1f801985b8b4b68b7b768a09559c7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44327785"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247593"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>Оптимизация производительности приложений на основе холста в PowerApps
 Корпорация Майкрософт прилагает все усилия, чтобы повысить производительность всех приложений, работающих на платформе PowerApps. Следуйте рекомендациям этого раздела, чтобы повысить производительность созданных приложений.
@@ -58,9 +58,9 @@ ms.locfileid: "44327785"
 Можно включить ту же формулу в функцию **Concurrent**, чтобы сократить общее время, необходимое для работы.
 
     Concurrent( 
-        ClearCollect( Product, '[SalesLT].[Product]' );
-        ClearCollect( Customer, '[SalesLT].[Customer]' );
-        ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' );
+        ClearCollect( Product, '[SalesLT].[Product]' ),
+        ClearCollect( Customer, '[SalesLT].[Customer]' ),
+        ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),
         ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' ))
         
 С помощью этого изменения приложение извлекает таблицы в параллельном режиме. 
