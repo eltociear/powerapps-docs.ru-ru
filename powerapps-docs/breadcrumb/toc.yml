@@ -1,42 +1,56 @@
-- name: Документы
+items:
+- name: Docs
   href: /
   topicHref: /
   items:
-    - name: PowerApps
-      tocHref: /powerapps/
-      topicHref: /powerapps/
+  - name: PowerApps
+    tocHref: /powerapps/
+    topicHref: /powerapps/
+    items:
+    - name: Создание приложений
+      tocHref: /powerapps/maker/common-data-service/
+      topicHref: /powerapps/maker/index
+    - name: Создание приложений
+      tocHref: /powerapps/maker/model-driven-apps/
+      topicHref: /powerapps/maker/index
+    - name: Создание приложений
+      tocHref: /powerapps/maker/canvas-apps/
+      topicHref: /powerapps/maker/index
+    - name: Создание приложений
+      tocHref: /powerapps/developer/common-data-service/
+      topicHref: /powerapps/maker/index
       items:
-        - name: Создание приложений
-          tocHref: /powerapps/maker/common-data-service/
-          topicHref: /powerapps/maker/index
-        - name: Создание приложений
-          tocHref: /powerapps/maker/model-driven-apps/
-          topicHref: /powerapps/maker/index
-        - name: Создание приложений
-          tocHref: /powerapps/maker/canvas-apps/
-          topicHref: /powerapps/maker/index
-        - name: Создание приложений
+      - name: Служба Common Data Service для приложений
+        tocHref: /powerapps/developer/common-data-service/
+        topicHref: /powerapps/maker/common-data-service/index
+        items:
+        - name: Developer
           tocHref: /powerapps/developer/common-data-service/
-          topicHref: /powerapps/maker/index
+          topicHref: /powerapps/developer/common-data-service/index
           items:
-            - name: Common Data Service для приложений
-              tocHref: /powerapps/developer/common-data-service/
-              topicHref: /powerapps/maker/common-data-service/index
-              items:
-                - name: Разработчик
-                  tocHref: /powerapps/developer/common-data-service/
-                  topicHref: /powerapps/developer/common-data-service/index
-        - name: Создание приложений
+          - name: Служба организации
+            tocHref: /powerapps/developer/common-data-service/org-service/
+            topicHref: /powerapps/developer/common-data-service/org-service/index
+          - name: Веб-API
+            tocHref: /powerapps/developer/common-data-service/webapi/
+            topicHref: /powerapps/developer/common-data-service/webapi/index
+    - name: Создание приложений
+      tocHref: /powerapps/developer/model-driven-apps/
+      topicHref: /powerapps/maker/index
+      items:
+      - name: Приложения на основе модели
+        tocHref: /powerapps/developer/model-driven-apps/
+        topicHref: /powerapps/maker/model-driven-apps/index
+        items:
+        - name: Developer
           tocHref: /powerapps/developer/model-driven-apps/
-          topicHref: /powerapps/maker/index
-          items:
-            - name: Управляемые моделью приложения
-              tocHref: /powerapps/developer/model-driven-apps/
-              topicHref: /powerapps/maker/model-driven-apps/index
-              items:
-                - name: Разработчик
-                  tocHref: /powerapps/developer/model-driven-apps/
-                  topicHref: /powerapps/developer/model-driven-apps/index
-        - name: Управляемое обучение
-          tocHref: /powerapps/guided-learning/
-          topicHref: /powerapps/guided-learning/index
+          topicHref: /powerapps/developer/model-driven-apps/index
+    - name: Пошаговое изучение
+      tocHref: /powerapps/guided-learning/
+      topicHref: /powerapps/guided-learning/index
+ms.openlocfilehash: 2644352beb08998cad2c80678ab8abead5e6a596
+ms.sourcegitcommit: 90d3d4e2f2c8070443ff05424f3f46f4a8cdec81
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50681738"

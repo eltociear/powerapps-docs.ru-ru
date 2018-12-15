@@ -1,1 +1,1 @@
-Dynamics 365 Server
+Сервер Dynamics 365

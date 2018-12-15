@@ -1,1 +1,1 @@
-Dynamics 365 for Customer Insights
+Dynamics 365 for Customer Insights

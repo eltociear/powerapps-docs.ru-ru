@@ -1,1 +1,1 @@
-Управление настройками Microsoft System Center 2012
+Диспетчер конфигураций Microsoft System Center 2012
