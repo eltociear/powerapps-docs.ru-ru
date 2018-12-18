@@ -1,4 +1,4 @@
-|Location|URL-адрес веб-службы обнаружения|
+|Место|URL-адрес веб-службы обнаружения|
 |--------------|-------------------------------| 
 |Северная Америка|`https://disco.crm.dynamics.com/XRMServices/2011/Discovery.svc`|
 |Северная Америка 2|`https://disco.crm9.dynamics.com/XRMServices/2011/Discovery.svc`|

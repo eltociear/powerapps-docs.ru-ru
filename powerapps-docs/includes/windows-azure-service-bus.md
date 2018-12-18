@@ -1,1 +1,1 @@
-Azure Service Bus
+Служебная шина Azure
