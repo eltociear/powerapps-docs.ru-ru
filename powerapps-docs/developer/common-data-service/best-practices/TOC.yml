@@ -1,0 +1,41 @@
+items:
+- name: Рекомендации по службе Common Data Service для приложений
+  href: index.md
+  items:
+  - name: Применение бизнес-логики с помощью кода
+    href: business-logic/index.md
+    items:
+    - name: Избегайте использования типов пакетных запросов в подключаемых модулях и действиях рабочих процессов
+      href: business-logic/avoid-batch-requests-plugin.md
+    - name: Разработка реализаций IPlugin без отслеживания состояния
+      href: business-logic/develop-iplugin-implementations-stateless.md
+    - name: Не повторяйте регистрацию шага подключаемого модуля
+      href: business-logic/do-not-duplicate-plugin-step-registration.md
+    - name: Включите атрибуты фильтрации с регистрацией подключаемого модуля
+      href: business-logic/include-filtering-attributes-plugin-registration.md
+    - name: Ограничьте регистрацию подключаемых модулей для сообщений Retrieve и RetrieveMultiple
+      href: business-logic/limit-registration-plugins-retrieve-retrievemultiple.md
+    - name: Оптимизируйте разработку пользовательских сборок
+      href: business-logic/optimize-assembly-development.md
+    - name: Присвойте параметру KeepAlive значение false при взаимодействии с внешними узлами в подключаемом модуле
+      href: business-logic/set-keepalive-false-interacting-external-hosts-plugin.md
+    - name: Используйте InvalidPluginExecutionException в подключаемых модулях и действиях рабочих процессов
+      href: business-logic/use-invalidpluginexecutionexception-plugin-workflow-activities.md
+  - name: Работа с данными с помощью кода
+    href: work-with-data/index.md
+    items:
+    - name: Ограничения API
+      href: ../api-limits.md
+  - name: Работа с метаданными с помощью кода
+    href: work-with-metadata/index.md
+    items:
+    - name: Получите опубликованные метаданные
+      href: work-with-metadata/retrieve-published-metadata.md
+    - name: Получите конкретные столбцы для сущности с помощью API запросов
+      href: work-with-metadata/retrieve-specific-columns-entity-via-query-apis.md
+ms.openlocfilehash: b7bdf6cb3f03f7af742b99558920a06be1c770c0
+ms.sourcegitcommit: 72c97378e96fb54e5d92ec087a59dd0fb1444f99
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54334070"

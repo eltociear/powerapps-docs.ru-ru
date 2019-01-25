@@ -6,6 +6,8 @@ items:
     href: signup-for-powerapps.md
   - name: Регистрация для работы в рамках плана сообщества
     href: dev-community-plan.md
+  - name: Новые возможности
+    href: ../whats-new.md
 - name: Поиск и запуск приложений
   href: ../user/index.md
   items:
@@ -82,8 +84,6 @@ items:
   items:
   - name: Вход в PowerApps
     href: ./canvas-apps/intro-maker-portal.md
-  - name: Новые возможности
-    href: ./canvas-apps/release-notes.md
 - name: Приложения на основе холста
   href: ./canvas-apps/getting-started.md
   items:
@@ -465,6 +465,10 @@ items:
           href: ./canvas-apps/functions/function-filter-lookup.md
         - name: Lower
           href: ./canvas-apps/functions/function-lower-upper-proper.md
+        - name: Match
+          href: ./canvas-apps/functions/function-ismatch.md
+        - name: MatchAll
+          href: ./canvas-apps/functions/function-ismatch.md
         - name: Max
           href: ./canvas-apps/functions/function-aggregates.md
         - name: Mid
@@ -695,6 +699,8 @@ items:
       href: ./canvas-apps/offline-apps.md
     - name: Дайте возможность клиентам протестировать ваши приложения
       href: ./canvas-apps/dev-appsource-test-drive.md
+    - name: Создание компонента
+      href: ./canvas-apps/create-component.md
 - name: Приложения на основе модели
   href: ./model-driven-apps/model-driven-app-overview.md
   items:
@@ -794,6 +800,10 @@ items:
           href: ./model-driven-apps/pass-current-embedded-canvas-app.md
         - name: Передача связанных записей во внедренное приложение на основе холста
           href: ./model-driven-apps/pass-related-embedded-canvas-app.md
+        - name: Общий доступ к внедренному приложению на основе холста
+          href: ./model-driven-apps/share-embedded-canvas-app.md
+        - name: Рекомендации по внедренным приложениям на основе холста
+          href: ./model-driven-apps/embedded-canvas-app-guidelines.md
       - name: Работа с представлениями
         href: ./model-driven-apps/create-edit-views.md
         items:
@@ -1066,9 +1076,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: Поддержка
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 57d63b8a8530fdf225f17fddfa5cb8c00cbb0ef9
-ms.sourcegitcommit: e0845b95cc969cff13d469e26ce30b62c56dc59a
+ms.openlocfilehash: c5a381d191e530f50fb85d79cfcb954e1f3a714c
+ms.sourcegitcommit: f5013108140276b3d66a9dce13a061df89609d26
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53587770"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54890149"
