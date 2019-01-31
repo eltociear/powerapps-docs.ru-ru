@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: 0ab787c8b98d7c0fdc596f21028fad59a2552f8b
-ms.sourcegitcommit: e3330801e700110048c31d251b9789a1c0f98a4a
+ms.openlocfilehash: da5273e385da3f616404a531f91a96393ed63bc2
+ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54363992"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290910"
 ---
 <div id="main"
    class="v2">
@@ -296,6 +296,7 @@ ms.locfileid: "54363992"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/fields-overview">Поля</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/cds-processes">Применение бизнес-логики</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/solutions-overview">Решения</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/en-us/download/details.aspx?id=57777">Технический документ. Реализация ALM с помощью платформы решений</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-powerbi-connector">Создание отчетов Power BI на основе данных из службы CDS для приложений</a></p>
                                  </div>
                               </div>
@@ -581,6 +582,7 @@ ms.locfileid: "54363992"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/compress-extract-solution-file-solutionpackager">Средство SolutionPackager</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">Средство Package Deployer</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/publish-app-appsource">Публикация приложения в AppSource</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/en-us/download/details.aspx?id=57777">Технический документ. Реализация ALM с помощью платформы решений</a></p>
                                  </div>
                               </div>
                            </div>
