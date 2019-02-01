@@ -16,12 +16,12 @@ search.audienceType:
 - developer
 search.app:
 - PowerApps
-ms.openlocfilehash: 6cb500e681be7a3be6a1ac0e0dc54caa2981893c
-ms.sourcegitcommit: 5198d7d99f157cd42830f833712175a2228aae5e
+ms.openlocfilehash: 088804f429e23a8824c3c132c3011308935a5b66
+ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54069380"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290841"
 ---
 # <a name="whats-new-in-powerapps"></a>Новые возможности PowerApps
 
@@ -38,7 +38,9 @@ ms.locfileid: "54069380"
 
 ## <a name="release-notes"></a>Заметки о выпуске
 
-Сведения о новых возможностях, выпуск которых планируется через несколько месяцев, см. в разделе [Заметки о выпуске за октябрь 2018 г](https://docs.microsoft.com/business-applications-release-notes/October18/powerapps/planned-features). Эти сведения можно использовать для планирования.
+Ниже приведены ссылки на сведения о новых возможностях, выпущенных недавно или намеченных к выпуску в ближайшие месяцы. Эти сведения можно использовать для планирования.
+- [Заметки о выпуске за октябрь 2018 г.](https://docs.microsoft.com/business-applications-release-notes/October18/powerapps/planned-features)
+- [Заметки о выпуске за апрель 2019 г.](https://docs.microsoft.com/business-applications-release-notes/April19/microsoft-powerapps/planned-features)
 
 ## <a name="known-limitations"></a>Известные ограничения
 
