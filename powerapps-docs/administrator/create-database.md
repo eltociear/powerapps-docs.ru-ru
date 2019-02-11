@@ -7,7 +7,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/03/2018
+ms.date: 02/01/2019
 ms.author: manasma
 search.audienceType:
 - admin
@@ -15,12 +15,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: c7de26bff38ee0425e8bb3f9bc0da72317f0a6cf
-ms.sourcegitcommit: 6e2fa2665ded6ac6fd271e1a12f4e3227ebc8865
+ms.openlocfilehash: f7b5fb27e5b135239e1fe2306f7c431d6d1e6aae
+ms.sourcegitcommit: 676cfa415f67e2e8fcfcf30fab83fc118a6f3210
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48246127"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55558756"
 ---
 # <a name="create-a-common-data-service-for-apps-database"></a>Создание базы данных Common Data Service для приложений
 Common Data Service (CDS) для приложений может служить хранилищем данных при создании базы данных и приложений. При этом вы можете создавать собственные настраиваемые сущности или использовать стандартные сущности. Прежде чем создавать базу данных, нужно сначала создать среду (либо вас должны назначить **администратором среды** для существующей среды). Кроме того, вам должна быть назначена соответствующая лицензия. Сведения о приобретении плана для использования службы CDS for Apps см. в разделе [Сведения о ценах](pricing-billing-skus.md).
@@ -45,8 +45,6 @@ Common Data Service (CDS) для приложений может служить 
     
     ![](./media/create-database/DB-Choose-options.png)
 
-
-
 ## <a name="create-a-database-in-the-entities-pane-of-powerapps"></a>Создание базы данных в области "Entities" (Сущности) на сайте PowerApps
 1. На сайте [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) разверните раздел **Данные** и выберите элемент **Сущности** в области навигации слева.
 
@@ -54,11 +52,8 @@ Common Data Service (CDS) для приложений может служить 
 
     ![](./media/create-database/Create-DB-From-Entities.png)
 
-> [!NOTE]
-> Сейчас создавать базы данных за пределами вашего региона Azure AD нельзя. Эта возможность будет реализована позже, а сейчас создавать базы данных можно в среде, расположенной в вашем регионе Azure AD.
-
 ## <a name="security-model-for-the-databases"></a>Модель безопасности для баз данных
-При создании базы данных пользователи с назначенными ролями среды сохранят эти привилегии.  
+Когда база данных будет создана, пользователи с назначенными ролями среды смогут и дальше использовать эти привилегии.  
     Пользователи с ролью **администратора среды** назначаются роли **системного администратора**. Пользователи с ролью **создателя среды** сохраняют ее.
 
 Вы можете назначить дополнительных пользователей предопределенным ролям или даже создать [настраиваемые роли][1]. Дополнительные сведения см. в разделе [Безопасность базы данных](database-security.md).

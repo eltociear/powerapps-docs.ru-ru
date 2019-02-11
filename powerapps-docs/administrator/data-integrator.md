@@ -5,7 +5,7 @@ author: sabinn-msft
 ms.service: powerapps
 ms.topic: how-to
 ms.component: cds
-ms.date: 10/15/2018
+ms.date: 1/31/2019
 ms.author: sabinn
 search.audienceType:
 - admin
@@ -13,12 +13,12 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: dfbc420dfb4945cdda635e3cbaadb1acb446753b
-ms.sourcegitcommit: ebd39753e2a0b60c1d8c016e38c00dd1accf5d0c
+ms.openlocfilehash: 8723021a59ca1ecbbdff41ddfa793684fe1ee970
+ms.sourcegitcommit: 47a4218445e5715bc1f7bf7bd8735b2a42c33935
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49328701"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55514037"
 ---
 # <a name="integrate-data-into-common-data-service-for-apps"></a>Интеграция данных в Common Data Service для приложений
 
@@ -30,6 +30,9 @@ ms.locfileid: "49328701"
 
 > [!div class="mx-imgBorder"]
 > ![Источник данных и место назначения](media/data-integrator/DataIntegratorP2P-new.PNG "Data source to destination")
+
+> [!TIP]
+> Посетите наш блог: [Data Integrator Updates – New features with an intuitive user interface providing a fluent experience (Обновления интегратора данных: новые возможности с интуитивно понятным и удобным пользовательским интерфейсом)](https://powerapps.microsoft.com/blog/data-integrator-updates-new-features-with-an-intuitive-user-interface-providing-a-fluent-experience/).
 
 ## <a name="how-can-you-use-the-data-integrator-for-your-business"></a>Как использовать интегратор данных для вашего бизнеса?
 
@@ -73,7 +76,7 @@ ms.locfileid: "49328701"
 
 **Создание подключения**
 
-1. Перейдите в [Центр администрирования PowerApps](https://admin.powerapps.com).
+1. Перейдите в [PowerApps](https://web.powerapps.com).
 
 2. В области данных выберите **Подключения**, а затем **Новое подключение**.
 
@@ -130,6 +133,8 @@ ms.locfileid: "49328701"
 ### <a name="how-to-create-a-data-integration-project"></a>Как создать проект интеграции данных
 
 Проекты позволяют передавать данные между системами. Проект содержит сопоставления для одной или нескольких сущностей. Сопоставления показывают соотношения между полями.
+
+<a name="CreateProject">
 
 **Создание проекта интеграции данных**
 
@@ -197,6 +202,10 @@ ms.locfileid: "49328701"
 
     В любом случае вы также можете вручную выполнить повторный запуск.
 
+> [!NOTE]
+> Каждый раз, когда вы выполняете проект вручную или по расписанию, создается подробный журнал, в котором указывается имя проекта, последняя обновленная метка времени и состояние. Эти данные можно просмотреть в журнале выполнений для каждого проекта. Журнал выполнений проекта хранится в течение 45 дней, после чего он автоматически очищается.
+
+
 ### <a name="how-to-set-up-a-schedule-based-refresh"></a>Как настроить обновление по расписанию
 
 В данный момент поддерживается два типа выполнения или записи:
@@ -235,6 +244,7 @@ ms.locfileid: "49328701"
 Для клиентов с пробной версией есть дополнительное ограничение: 50 выполнений на запланированный проект.
 > - Хотя вы можете запланировать запуск проектов каждую минуту, это может привести к серьезным нагрузкам на приложения и понизить общую производительность. Пользователям настоятельно рекомендуется проверять выполнения проектов в условиях реальных нагрузок и оптимизировать производительность путем уменьшения частоты обновлений.
 В рабочих средах не рекомендуется запускать больше пяти проектов в минуту на клиент.
+> - Каждый раз, когда вы выполняете проект вручную или по расписанию, создается подробный журнал, в котором указывается имя проекта, последняя обновленная метка времени и состояние. Эти данные можно просмотреть в журнале выполнений для каждого проекта. Журнал выполнений проекта хранится в течение 45 дней, после чего он автоматически очищается.
 
 ## <a name="customizing-projects-templates-and-mappings"></a>Настройка проектов, шаблонов и сопоставлений 
 
@@ -266,9 +276,9 @@ ms.locfileid: "49328701"
 
 4. После настройки сопоставления полей нажмите кнопку **Сохранить**.
 
-### <a name="how-to-customize-or-create-your-own-template"></a>Как настроить или создать собственный шаблон 
+### <a name="how-to-create-your-own-template"></a>Создание собственного шаблона 
 
-**Создание собственного шаблона**
+**Создание собственного шаблона путем изменения существующих шаблонов**
 
 1. Перейдите в [Центр администрирования PowerApps](https://admin.powerapps.com).
 
@@ -318,6 +328,51 @@ ms.locfileid: "49328701"
 
     > [!div class="mx-imgBorder"] 
     > ![Настройка и сохранение шаблона](media/data-integrator/CustomizeTemplateSaveAsTemplate175.png "Customize template save as template")
+
+**Создание собственного шаблона из пустых шаблонов**
+
+1. Перейдите в [Центр администрирования PowerApps](https://admin.powerapps.com).
+2. Создайте проект интеграции данных. Выберите вкладку **Интеграция данных** на панели навигации слева.
+3. Выберите **Новый проект** и укажите имя проекта. Например, Demo_CreateYourOwnTemplate project.
+4. Выберите общий пустой шаблон из списка **Выбрать шаблон**. 
+   В этом примере выберите шаблон **Sales to Fin and Ops**, так как нам нужно перенести данные из Dynamics 365 for Finance and Operations в Dynamics 365 for Sales.
+    
+    > [!div class="mx-imgBorder"] 
+    > ![](media/create-data-integration-project.png "Создание проекта интеграции данных")
+
+4. Выполните <a href="#CreateProject">шаги с 6 по 9</a>, чтобы завершить создание проекта интеграции данных. Щелкните **Сохранить**.
+
+5. Откроется пустая страница задач, так как в этом пустом шаблоне нет задач. **Добавьте задачу**, чтобы указать сущность из раскрывающегося списка и добавить новую задачу.
+   В этом случае в качестве примера создадим задачу **Activities Sales to Fin and Ops**, выбрав сущность **Activities** в Dynamics 365 for Finance and Operations и Dynamics 365 for Sales. Выберите **Создать**.
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/activities-sales-fin-opps-task.png "Задача ActivitiesSales to Fin and Ops")
+
+6. Вы увидите, что была добавлена новая задача **Activities Sales to Fin and Ops**. Нажмите **Сохранить**, чтобы сохранить изменения.
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/new-task-added.png "Добавленная новая задача")
+
+7. Наш проект создан. Выберите **Сохранить как шаблон** на странице со списком **Проекты**.
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/save-as-template.png "Сохранить как шаблон")
+
+8. Введите имя и описание, а затем щелкните **Сохранить**. Кроме того, выберите **Share with everyone in my organization** (Поделиться со всеми в моей организации), чтобы открыть этот шаблон для совместного использования.
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/save-describe-share.png "Сохранение проекта в качестве шаблона")
+
+Вы увидите только что созданный шаблон в списке **Шаблоны**.
+
+> [!div class="mx-imgBorder"] 
+> ![](media/newly-created-template.png "Недавно созданный шаблон")
+
+Кроме того, создав проект интеграции и щелкнув **Выбрать шаблон**, вы увидите только что созданный шаблон в списке **Выбрать шаблон**.
+
+> [!div class="mx-imgBorder"] 
+> ![](media/new-data-integration-project.png "Новый проект интеграции данных")
+
 
 ## <a name="advanced-data-transformation-and-filtering"></a>Расширенная трансформация и фильтрация данных 
 
