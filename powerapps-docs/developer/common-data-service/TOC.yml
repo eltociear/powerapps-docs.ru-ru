@@ -66,6 +66,8 @@ items:
   - name: Инфраструктура обработки событий
     href: event-framework.md
     items:
+    - name: Общие сведения о контексте выполнения
+      href: understand-the-data-context.md
     - name: Выполнение специализированных операций обновления
       href: special-update-operation-behavior.md
   - name: Асинхронная служба
@@ -75,10 +77,20 @@ items:
     items:
     - name: Написание подключаемого модуля
       href: write-plug-in.md
+    - name: Обработка исключений
+      href: handle-exceptions.md
+    - name: Олицетворение пользователя
+      href: impersonate-a-user.md
     - name: Регистрация подключаемого модуля
       href: register-plug-in.md
     - name: Отладка подключаемого модуля
       href: debug-plug-in.md
+    - name: Трассировка и ведение журнала
+      href: logging-tracing.md
+    - name: Анализ производительности
+      href: analyze-performance.md
+    - name: Доступ к внешним веб-ресурсам
+      href: access-web-services.md
     - name: Учебники
       items:
       - name: Написание и регистрация подключаемого модуля
@@ -87,6 +99,12 @@ items:
         href: tutorial-debug-plug-in.md
       - name: Обновление подключаемого модуля
         href: tutorial-update-plug-in.md
+    - name: Пример кода
+      items:
+      - name: Создание базового подключаемого модуля
+        href: org-service/samples/basic-followup-plugin.md
+      - name: Веб-доступ из подключаемого модуля
+        href: org-service/samples/web-access-plugin.md
   - name: Расширения рабочего процесса
     href: workflow/workflow-extensions.md
   - name: Проектирование масштабируемой настройки
@@ -393,9 +411,9 @@ items:
     href: solution-component-file-reference-solutionpackager.md
   - name: Схема FetchXML
     href: fetchxml-schema.md
-ms.openlocfilehash: 4d22298f104f83f0482503c7ddea55b7cdd8a6cf
-ms.sourcegitcommit: 72c97378e96fb54e5d92ec087a59dd0fb1444f99
+ms.openlocfilehash: 8a04194b09d15fcc5ac407aeb4194c67830a9ed5
+ms.sourcegitcommit: 9192f6aff2782f980a34a60df9aca420f1ba29ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54334116"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55958061"
