@@ -208,7 +208,7 @@ items:
           href: ./canvas-apps/controls/control-attachments.md
         - name: Аудио
           href: ./canvas-apps/controls/control-audio-video.md
-        - name: Сканер штрихкодов (экспериментальная функция)
+        - name: Веб-сканер штрихкодов (экспериментальная функция)
           href: ./canvas-apps/controls/control-barcodescanner.md
         - name: Сканер штрихкодов
           href: ./canvas-apps/controls/control-new-barcode-scanner.md
@@ -1083,9 +1083,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: Поддержка
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 8a2fd682287dbbffebbb73785388cf5003fde10e
-ms.sourcegitcommit: eef2d6d9a9c7f5c8a44b9734817f59dc0eac3ecf
+ms.openlocfilehash: fa6a761c802ab1b1834db5056e6171fb6ae56db8
+ms.sourcegitcommit: d2eb3970535e42e26db7a122f56ecb526e01e861
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55887500"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56145476"
