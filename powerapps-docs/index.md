@@ -1,20 +1,14 @@
 ---
 layout: HubPage
-title: Документация по Microsoft PowerApps | Документация Майкрософт
-description: Документация по Microsoft PowerApps
+title: "Документация по Microsoft\_PowerApps\_| Документация Майкрософт"
+description: "Документация по Microsoft\_PowerApps"
 searchScope:
-- PowerApps
+  - PowerApps
 featureFlags:
-- clicktale
+  - clicktale
 ms.service: powerapps
 ms.custom:
-- powerapps-hub
-ms.openlocfilehash: c99bf76db08bff81e47cfcf76c1fd3fb49c095e5
-ms.sourcegitcommit: 452d4ead948591d16aff144006ad84c957eba837
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56091253"
+  - powerapps-hub
 ---
 <div id="main"
    class="v2">
@@ -641,7 +635,7 @@ ms.locfileid: "56091253"
                                     <h3 style="font-size: 1.15rem">Справочные материалы</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/reference/about-entity-reference">Справочник по сущностям</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/about?view=dynamics-ce-odata-9">Справочные материалы по веб-API</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/dynamics365/customer-engagement/web-api/about?view=dynamics-ce-odata-9">Справочные материалы по веб-API</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk?view=dynamics-general-ce-9">Справочник по службе организации</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/clientapi/reference">Справочник по API клиента</a></p>
                                  </div>
