@@ -1,30 +1,30 @@
 ---
 title: Установка и настройка примера "Отчет о расходах" для приложений на основе холста | Документы Майкрософт
 description: Пошаговые инструкции по установке и настройке примера "Отчет о расходах" для приложений на основе холста в PowerApps.
-author: caburk
+author: mr-dang-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
-ms.author: caburk
+ms.author: brdang
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 43d1dc6ef2d264dd60b6a9f3de0f5c0fed633283
-ms.sourcegitcommit: d3d665500b9c49c14657d044b084bdd64c52c5a3
+ms.openlocfilehash: 2cfad6a3cadbd2154e582163dc4f55ee6d010b96
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124482"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072751"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Установка и настройка примера "Отчет о расходах" для приложений на основе холста в PowerApps
 
 Пошаговые инструкции по установке и настройке примера "Отчет о расходах". Вы также можете ознакомиться с примером приложения [на этой странице](https://aka.ms/previewmyexpenses).
 
-Предполагаемое время выполнения этой процедуры: **10–15 минут**
+Предполагаемое время выполнения этой процедуры: **10–15 минут**.
 
 > [!TIP]
 > Просмотрите [это видео](https://youtu.be/kJXZPILfbwU), в котором показано, как использовать пример приложения "Отчет о расходах". 
