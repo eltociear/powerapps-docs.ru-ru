@@ -1,24 +1,24 @@
 ---
 title: Показ сведений о текущем пользователе в приложении на основе холста | Документы Майкрософт
 description: Отображение в PowerApps имени и адреса электронной почты пользователя, выполнившего вход в приложение на основе холста
-author: lonu
+author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/16/2016
-ms.author: lonu
+ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ef38ef00ed72eb59b459d3e9b71a6efbb6568d6b
-ms.sourcegitcommit: c1f58a16f8dcd309a1d5fc4658ca16d82c615994
+ms.openlocfilehash: 12a6cd6f3df6c83f39b08608e1057f5e31e7d46e
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "42833980"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072693"
 ---
 # <a name="show-information-about-a-powerapps-user-in-a-canvas-app"></a>Отображение сведений о пользователе PowerApps в приложении на основе холста
 
