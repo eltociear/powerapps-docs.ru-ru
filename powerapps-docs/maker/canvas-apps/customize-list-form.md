@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 12d13ecfb8c60a1c1ccb23496dd9dc7f8cf42814
-ms.sourcegitcommit: a1568c9a09d83efe50c032b73eaa18c7db723e86
-ms.translationtype: HT
+ms.openlocfilehash: ca97583948a289240bfb051fa8cac36a39e2ffee
+ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57804454"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58198643"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>Настройка формы списка SharePoint с помощью PowerApps
 
@@ -98,7 +98,7 @@ ms.locfileid: "57804454"
 1. Настроить форму несколькими способами, например те, которые в этих разделах описывается:
 
     - Измените ее размер и ориентацию (например, чтобы [расширить форму](set-aspect-ratio-portrait-landscape.md)).
-    - Добавьте элемент управления, чтобы пользователи могли [загружать вложения](controls/properties-text.md).
+    - [Настройка одного или нескольких карточек](working-with-cards.md) (например, изменить управления "текст" или "входные данные отображения на карте).
     - Создайте [поле подстановки](sharepoint-lookup-fields.md).
 
     Дополнительные сведения: [Общие сведения об интеграции форм SharePoint](sharepoint-form-integration.md)

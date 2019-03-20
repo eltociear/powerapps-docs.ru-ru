@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: aca1b78262ac359689d66f687f902103740fa3a6
-ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
-ms.translationtype: HT
+ms.openlocfilehash: 04ef7924ce3f6945a666fe06bdc6091159bc44c4
+ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "57800314"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58198551"
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>Создание и обновление коллекции в приложение на основе холста
 
@@ -116,7 +116,7 @@ ms.locfileid: "57800314"
 
 ## <a name="put-a-sharepoint-list-into-a-collection"></a>Помещение списка SharePoint в коллекцию
 
-1. [Создайте подключение к списку SharePoint](connect-to-sharepoint.md).
+1. [Создайте подключение к списку SharePoint](connections/connection-sharepoint-online.md#create-a-connection).
 
 1. Добавьте кнопку и установите для ее свойства **[OnSelect](controls/properties-core.md)** эту функцию, заменив *ListName* именем вашего списка SharePoint:<br>
 
@@ -128,7 +128,7 @@ ms.locfileid: "57800314"
 
 1. (необязательно) Для предварительного просмотра созданной коллекции, выберите **коллекций** на **файл** меню.
 
-Сведения о том, как отображение данных из списка SharePoint (например, даты, варианты и пользователи) в коллекции: [Отображение данных в коллекции](connections/connection-sharepoint-online.md#show-data-in-a-gallery). Сведения о том, как отобразить данные в форме (с помощью раскрывающихся списков выбора даты и средства выбора данных сотрудников): [Изменение формы и элементы управления отображением формы](controls/control-form-detail.md).
+Сведения о том, как отображение данных из списка SharePoint (например, даты, варианты и пользователи) в коллекции: [Отображение списка столбцов в коллекции](connections/connection-sharepoint-online.md#show-list-columns-in-a-gallery). Сведения о том, как отобразить данные в форме (с помощью раскрывающихся списков выбора даты и средства выбора данных сотрудников): [Изменение формы и элементы управления отображением формы](controls/control-form-detail.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

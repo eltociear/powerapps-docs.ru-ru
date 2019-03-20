@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 15aa49787d6b2c3d3981e374aeb43c54a2d7a7ec
-ms.sourcegitcommit: 02d0234bd84352bf1c43d0fc9225ab60947a0add
-ms.translationtype: HT
+ms.openlocfilehash: 042819241a40b9ad01f95085faf23b6393f62559
+ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49317098"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58198597"
 ---
 # <a name="generate-a-canvas-app-in-powerapps-from-a-sharepoint-list"></a>Создание приложения на основе холста в PowerApps из списка SharePoint
 
-В этом разделе с помощью PowerApps вы автоматически создадите приложение на основе холста, используя элементы из списка SharePoint. Вы можете создать приложение в PowerApps или SharePoint Online. В PowerApps вы можете создать приложение на основе списка на локальном сайте SharePoint, если вы [подключаетесь к сайту](connect-to-sharepoint.md) через шлюз данных.
+В этом разделе с помощью PowerApps вы автоматически создадите приложение на основе холста, используя элементы из списка SharePoint. Вы можете создать приложение в PowerApps или SharePoint Online. В PowerApps вы можете создать приложение на основе списка на локальном сайте SharePoint, если вы [подключаетесь к сайту](connections/connection-sharepoint-online.md#create-a-connection) через шлюз данных.
 
 Созданное приложение будет иметь три экрана:
 
