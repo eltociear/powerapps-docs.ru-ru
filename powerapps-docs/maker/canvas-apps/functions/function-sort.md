@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d3a83f5ae96b8d9146163ed7d5ff4c4529f8d562
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: c405af25d0e3228939b908c081ea8b08ce674ea6
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42830778"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802338"
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>Функции Sort и SortByColumns в PowerApps
 Сортировка [таблицы](../working-with-tables.md).
@@ -30,7 +30,7 @@ ms.locfileid: "42830778"
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
-Чтобы сортировать таблицу сначала по одному столбцу, а затем по другому, используйте вложенные формулы **Sort**. Например, следующая формула отсортирует таблицу **Contacts** сначала по столбцу **LastName**, а затем по столбцу **FirstName**: **Sort( Sort( Contacts, LastName ), FirstName )**
+Чтобы сортировать таблицу сначала по одному столбцу, а затем по другому, используйте вложенные формулы **Sort**. Например, можно использовать следующую формулу для сортировки **контакты** с таблицей сначала **LastName** столбец и затем по **FirstName** столбца:  **Sort (Sort (Contacts, LastName), FirstName)**
 
 Функцию **SortByColumns** также можно использовать для сортировки таблицы по одному или нескольким столбцам.
 
@@ -86,7 +86,7 @@ ms.locfileid: "42830778"
 ### <a name="step-by-step"></a>Шаг за шагом
 Чтобы самостоятельно выполнить эти примеры, создайте источник данных **IceCream** в виде [коллекции](../working-with-data-sources.md#collections) следующим образом.
 
-1. Добавьте кнопку и задайте следующую формулу в качестве значения свойства **[OnSelect](../controls/properties-core.md)**:<br>**ClearCollect( IceCream, { Flavor: "Chocolate", Quantity: 100, OnOrder: 150 }, { Flavor: "Vanilla", Quantity: 200, OnOrder: 20 }, { Flavor: "Strawberry", Quantity: 300, OnOrder: 0 }, { Flavor: "Mint Chocolate", Quantity: 60, OnOrder: 100 }, { Flavor: "Pistachio", Quantity: 200, OnOrder: 10 } )**
+1. Добавьте кнопку и задайте следующую формулу в качестве значения свойства **[OnSelect](../controls/properties-core.md)**:<br>**ClearCollect( IceCream, { Flavor: «Chocolate», Quantity: 100, OnOrder: 150}, {flavor:  «Vanilla», Quantity: 200, OnOrder: 20}, {flavor: «Strawberry», Quantity: 300, OnOrder: 0}, {flavor: «Mint Chocolate», Quantity: 60, OnOrder: 100}, {flavor: «Pistachio», Quantity: 200, OnOrder: 10 } )**
 2. Откройте предварительный просмотр приложения, нажмите эту кнопку, затем нажмите клавишу Esc, чтобы вернуться в рабочую область по умолчанию.
 3. Выберите пункт **Коллекции** в меню **Файл**, чтобы отобразить только что созданную коллекцию, затем нажмите клавишу Esc, чтобы вернуться в рабочую область по умолчанию.
 
@@ -103,7 +103,7 @@ ms.locfileid: "42830778"
 1. Добавьте еще одну кнопку и задайте следующую формулу в качестве значения свойства **[OnSelect](../controls/properties-core.md)**:<br>
    **ClearCollect( SortByQuantity, SortByColumns( IceCream, "Quantity", Ascending, "Flavor", Descending ) )**
    
-     Указанная выше формула создает третью коллекцию с именем **SortByQuantity**, все данные в которой будут совпадать с данными из коллекции **Ice Cream**. Но в этой новой коллекции данные будут отсортированы по числовым значениям столбца **Quanity** в порядке возрастания, а затем по значениям столбца **Flavor** в порядке убывания.
+     Указанная выше формула создает третью коллекцию с именем **SortByQuantity**, все данные в которой будут совпадать с данными из коллекции **Ice Cream**. Тем не менее, новая коллекция содержит данные отсортированы по числовым **количество** столбца в порядке возрастания, а затем по **Flavor** столбец в порядке убывания.
 2. Нажмите клавишу F5, нажмите новую кнопку, затем нажмите клавишу ESC.
 3. Выберите пункт **Коллекции** в меню **Файл**, чтобы отобразить все три коллекции, затем нажмите клавишу ESC, чтобы вернуться в рабочую область по умолчанию.
 4. Повторите последние три шага, указывая новые имена для создаваемых коллекций и формулы для функции **SortByColumns**, используя примеры из приведенной выше таблицы.

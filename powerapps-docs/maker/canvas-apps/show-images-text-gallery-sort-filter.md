@@ -1,24 +1,24 @@
 ---
 title: Отображение, сортировка и фильтрация данных в коллекции | Документация Майкрософт
 description: Сведения об отображении изображений и текста в коллекции, а также о сортировке и фильтрации изображений в PowerApps.
-author: lonu
+author: adrianorth
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 06/02/2015
-ms.author: lonu
+ms.author: aorth
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e782b7082e8dbf0d4efee2060131aa620e7a4af1
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: a557c73863dc25acb69627b51613e6e25f229bdb
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42844465"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799785"
 ---
 # <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>Отображение, сортировка и фильтрация данных в коллекции PowerApps
 В этой статье приведены сведения о создании коллекции с изображениями товара и данными о нем, а также о параметрах сортировки и фильтрации.
@@ -43,7 +43,7 @@ ms.locfileid: "42844465"
       
       ![][1]  
    2. Задайте для свойства **[OnSelect](controls/properties-core.md)** элемента управления "Импорт" следующую формулу:  
-      **Collect(Inventory, Import1!Data)**
+      **(Инвентаризации Import1.Data)**
       
       ![][12]  
    3. Чтобы открыть проводник, нажмите кнопку **Импорт данных**. Выберите файл *CreateFirstApp.zip* и щелкните **Открыть**.
@@ -79,14 +79,14 @@ ms.locfileid: "42844465"
    > 
    > 
 8. Задайте для свойства **[Text](controls/properties-core.md)** метки следующее выражение:  
-    **ThisItem!UnitsInStock** <br/>
+    **ThisItem.UnitsInStock** <br/>
    
     За счет этого метка будет отображать доступное количество единиц каждого товара.
 
 ![][8]  
 
 > [!NOTE]
-> По умолчанию для свойства **[Text](controls/properties-core.md)** верхней метки задано значение ```ThisItem!ProductName```. Вы можете изменить его на любой другой элемент в коллекции. Например, если коллекция содержит поля *ProductDescription* (Описание товара) или *Price* (Цена), для метки можно задать значение ```ThisItem!ProductDescription``` или ```ThisItem!Price```.
+> По умолчанию для свойства **[Text](controls/properties-core.md)** верхней метки задано значение ```ThisItem.ProductName```. Вы можете изменить его на любой другой элемент в коллекции. Например, если коллекция содержит поля *ProductDescription* (Описание товара) или *Price* (Цена), для метки можно задать значение ```ThisItem.ProductDescription``` или ```ThisItem.Price```.
 > 
 > 
 
@@ -102,7 +102,7 @@ ms.locfileid: "42844465"
    ![][10]  
 6. На вкладке **Фигура** выберите **Видимый**, а затем в строке формулы введите следующую формулу:  
    
-    **If(ThisItem!IsSelected, true)**
+    **IF(ThisItem.IsSelected, true)**
    
     Вокруг выбранного элемента в коллекции появился синий прямоугольник. Щелкните несколько элементов коллекции, чтобы убедиться, что прямоугольник отображается вокруг каждого выбранного элемента. Помните, что вы также можете просмотреть и проверить созданную коллекцию, щелкнув значок **предварительного просмотра** ![][2].
 
@@ -137,7 +137,7 @@ ms.locfileid: "42844465"
    2. На вкладке **Содержимое** выберите **Максимум**, а затем введите следующее выражение:  
       ```Max(Inventory, UnitsInStock)```
 3. Выберите любой элемент в коллекции *за исключением* первого. Задайте для свойства **[Items](controls/properties-core.md)** коллекции следующее выражение:  
-   ```Filter(Inventory, UnitsInStock<=StockFilter!Value)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value)```
 4. В окне **предварительного просмотра** передвиньте ползунок на значение, которое находится между максимальным и минимальным количеством единиц товара в коллекции. При изменении положения ползунка в коллекции будут отображаться только те товары, количество единиц которых меньше указанного значения:  
    ![][13]  
 
@@ -146,7 +146,7 @@ ms.locfileid: "42844465"
 1. Вернитесь в режим конструктора.
 2. На вкладке **Вставка** выберите **Текст**, **Input Text** (Вводимый текст), а затем измените имя нового элемента управления на **NameFilter**. Поместите элемент управления "Текст" под ползунком.
 3. Задайте для свойства **[Items](controls/properties-core.md)** коллекции следующее выражение:  
-   ```Filter(Inventory, UnitsInStock<=StockFilter!Value && NameFilter!Text in ProductName)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value && NameFilter.Text in ProductName)```
 4. В окне **предварительного просмотра** установите ползунок на *30* и в текстовом поле для ввода введите букву *ж*. В коллекции отобразятся только товары, которых имеется в наличии менее 30 единиц и *в* имени которых есть буква "ж".  
    ![][14]  
 

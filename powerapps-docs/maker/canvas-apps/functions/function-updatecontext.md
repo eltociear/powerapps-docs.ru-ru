@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6f89887d05f4b4885e66335457357a089ceaf90f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 20e06f7c03d0aca18b8351e546ccee3fff528f56
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865516"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803580"
 ---
 # <a name="updatecontext-function-in-powerapps"></a>Функция UpdateContext в PowerApps
-Функция UpdateContext создает или обновляет [переменные контекста](../working-with-variables.md#create-a-context-variable) текущего экрана.
+Функция UpdateContext создает или обновляет [переменные контекста](../working-with-variables.md#use-a-context-variable) текущего экрана.
 
 ## <a name="overview"></a>Обзор
 Функция **UpdateContext** позволяет создать переменную контекста, которая временно содержит определенные сведения, например число нажатий кнопки или результаты выполнения операций с данными.
@@ -62,11 +62,11 @@ ms.locfileid: "42865516"
 
 * *UpdateRecord* — обязательный аргумент. Запись, содержащая имя хотя бы одного столбца и его значение. Переменная контекста создается или обновляется для каждого указанного столбца и значения.
 
-**UpdateContext**( { *ContextVariable1*: *Value1* [, *ContextVariable2*: *Value2* [, ... ] ] } )
+**UpdateContext**( { *ContextVariable1*: *Значение1* [, *ContextVariable2*: *Value2* [,...]]} )
 
 * *ContextVariable1* — обязательный аргумент.  Имя создаваемой или обновляемой переменной контекста.
 * *Value1* — обязательное значение.  Значение, присваиваемое переменной контекста.
-* *ContextVariable2*: *Value2* и т. д. — необязательные параметры. Дополнительные переменные контекста, которые нужно создать, и их значения.
+* *ContextVariable2*: *Value2*,... - необязательно. Дополнительные переменные контекста, которые нужно создать, и их значения.
 
 ## <a name="examples"></a>Примеры
 
@@ -76,7 +76,7 @@ ms.locfileid: "42865516"
 | **UpdateContext( {&nbsp;Counter:&nbsp;2&nbsp;} )** |Изменяет значение переменной контекста **Counter** из предыдущего примера на **2**. |Переменная контекста **Counter** имеет значение **2**. |
 | **UpdateContext( {&nbsp;Name:&nbsp;"Lily",&nbsp;Score:&nbsp;10&nbsp;} )** |Создает или изменяет переменные контекста **Name** и **Score**, задавая для них значения **Lily** и **10** соответственно. |Переменная контекста **Name** имеет значение **Lily**, а переменная **Score** — **10**. |
 | **UpdateContext( {&nbsp;Person:&nbsp;{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;} )** |Создает или изменяет переменную контекста **Person**, задавая для нее запись в качестве значения. Запись содержит два столбца: **Name** и **Address**. Столбец **Name** имеет значение **Milton**, а столбец **Address** — **1 Main St**. |Переменной контекста **Person** присваивается значение записи **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}**.<br><br>Добавьте ссылку на эту запись в целом по имени **Person** или на ее отдельный столбец с помощью параметра **Person.Name** или **Person.Address**. |
-| **UpdateContext( {&nbsp;Person: Patch(&nbsp;Person,&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;) }&nbsp;)** |В сочетании с функцией **[Patch](function-patch.md)** позволяет обновить переменную контекста **Person**, задав для столбца **Address** значение **2 Main St**. |Переменной контекста **Person** присваивается значение записи **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}**. |
+| **UpdateContext( {&nbsp;Person: Patch (&nbsp;Person,&nbsp;{адрес:&nbsp;«2&nbsp;Main&nbsp;St»&nbsp;}&nbsp;)}&nbsp;)** |В сочетании с функцией **[Patch](function-patch.md)** позволяет обновить переменную контекста **Person**, задав для столбца **Address** значение **2 Main St**. |Переменной контекста **Person** присваивается значение записи **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}**. |
 
 ### <a name="step-by-step-example"></a>Пошаговый пример
 1. Присвойте экрану по умолчанию имя **Source** и добавьте еще один экран с именем **Target**.

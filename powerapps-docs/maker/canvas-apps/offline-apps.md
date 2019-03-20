@@ -1,24 +1,24 @@
 ---
 title: Разработка приложений на основе холста, поддерживающих автономный режим работы | Документы Майкрософт
 description: Разрабатывайте приложения на основе холста, поддерживающие автономный режим работы, чтобы пользователи могли продуктивно работать независимо от режима приложения.
-author: mgblythe
+author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 05/09/2017
-ms.author: mblythe
+ms.date: 01/31/2019
+ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f081369d75ec6f8fc29e6177b8173734d2462e03
-ms.sourcegitcommit: 097ddfb25eb0f09f0229b866668c2b02fa57df55
-ms.translationtype: HT
+ms.openlocfilehash: f9922c64769aeacd9b9b65cc3039b091ac7fe353
+ms.sourcegitcommit: bdee274ce4ae622f7af5f208041902e66e03d1b3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991776"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "57800383"
 ---
 # <a name="develop-offline-capable-canvas-apps"></a>Разработка приложений на основе холста, поддерживающих автономный режим работы
 
@@ -29,10 +29,15 @@ ms.locfileid: "49991776"
 * определять режим приложения (интерактивный, автономный или режим лимитного подключения) с помощью объекта сигнала [подключения](../canvas-apps/functions/signals.md#connection);
 * использовать [коллекции](../canvas-apps/create-update-collection.md) и функции, например [LoadData и SaveData](../canvas-apps/functions/function-savedata-loaddata.md), для основного хранилища данных в автономном режиме.
 
-> [!NOTE]
-> Эта функциональная область находится на стадии разработки и пока не оптимизирована для всех сценариев. Функции SaveData() и LoadData() для локального устройства лучше всего работают в текущей реализации с относительно небольшими объемами данных (например, десятки текстовых записей в таблице), которые обычно не превышают 2 МБ. Это полезно для некоторых автономных сценариев, а также для повышения производительности запуска приложений на основе холста путем кэширования данных в локальной среде. Но использование этой функции для хранения больших объемов данных (например, сохранение тысяч строк в таблице или кэширование больших изображений или видео) может приводить к ошибкам или непредвиденному поведению в текущей реализации, и этого следует избегать. Кроме того, функции не разрешают конфликты слияния автоматически, когда устройство выходит из автономного режима и восстанавливает подключение — выбор данных для сохранения и способ обработки повторного подключения настраиваются автором при написании выражений.
->
-> Мы работаем над расширением возможностей автономных приложений, чтобы повысить стабильность, расширить ограничения по размеру и (в будущем) автоматически обрабатывать решения о том, какие данные сохранять и как обрабатывать конфликты. Следите за новостями здесь и читайте [блог PowerApps](https://powerapps.microsoft.com/blog/).
+## <a name="limitations"></a>Ограничения
+
+**LoadData** и **SaveData** сочетании образуют простой механизм для хранения небольших объемов данных на локальном устройстве. С помощью этих функций, можно добавить в приложение простой возможностей автономной работы.  
+
+Эти функции ограничиваются объем памяти, доступное приложение, так как они работают на коллекцию в памяти. Объем доступной памяти зависит от устройства, операционная система, память, которая использует PowerApps Mobile и сложности приложения с точки зрения экранов и элементов управления. Если вы храните несколько мегабайт данных, тестирование приложения с планируемых сценариях на устройствах, на которых предполагается, что его запуск. Как правило, следует ожидать у от 30 до 70 МБ доступной памяти.  
+
+Функции также не разрешает слиянием конфликты автоматически при выходе устройства для подключения из автономной — конфигурация на какие данные сохраняются, а также способ обработки повторное подключение возлагается maker при написании выражений.
+
+Мы работаем над расширением возможностей для сценариев автономной синхронизации. Следите за новостями здесь и читайте [блог PowerApps](https://powerapps.microsoft.com/blog/).
 
 ## <a name="how-to-build-offline-capable-apps"></a>Как создать приложение, поддерживающее автономный режим работы
 
@@ -58,13 +63,13 @@ ms.locfileid: "49991776"
    * Мы опубликуем все твиты, которые находятся в локальном кэше.
    * Мы обновим локальный кэш и сохраним его с помощью функции [SaveData](../canvas-apps/functions/function-savedata-loaddata.md).
 
-### <a name="step-1-create-a-new-phone-app"></a>Шаг 1. Создание нового мобильного приложения
+### <a name="step-1-create-a-new-phone-app"></a>Шаг 1. Создание нового приложения для телефона
 1. Откройте PowerApps Studio.
 2. Щелкните **Создать** > **Пустое приложение** > **Макет для телефона**.
 
     ![Пустое приложение, макет для телефона](./media/offline-apps/blank-app.png)
 
-### <a name="step-2-add-a-twitter-connection"></a>Шаг 2. Добавление подключения к Twitter
+### <a name="step-2-add-a-twitter-connection"></a>Шаг 2. Добавление подключения к Twitter
 
 1. Щелкните **Содержимое** > **Источники данных**, а затем выберите **Добавление источника данных** на панели **Источники данных**.
 
@@ -74,27 +79,18 @@ ms.locfileid: "49991776"
 
     ![Добавление подключения к Twitter](./media/offline-apps/twitter-connection.png)
 
-### <a name="step-3-load-tweets-into-a-localtweets-collection-on-app-startup"></a>Шаг 3. Загрузка твитов в коллекцию LocalTweets при запуске приложения
+### <a name="step-3-load-tweets-into-a-localtweets-collection-on-app-startup"></a>Шаг 3. Загрузка твитов в коллекцию LocalTweets при запуске приложения
 Выберите свойство **OnVisible** для **экрана 1** в приложении, а затем скопируйте его в следующую формулу:
 
-```
-If(Connection.Connected,
-
-    ClearCollect(LocalTweets, Twitter.SearchTweet("PowerApps", {maxResults: 100}));
-
-    UpdateContext({statusText: "Online data"})
-
-    ,
-
+```powerapps-dot
+If( Connection.Connected,
+    ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 100} ) );
+        UpdateContext( {statusText: "Online data"} ),
     LoadData(LocalTweets, "Tweets", true);
-
-    UpdateContext({statusText: "Local data"})
-
+        UpdateContext( {statusText: "Local data"} )
 );
-
-LoadData(LocalTweetsToPost, "LocalTweets", true);
-
-SaveData(LocalTweets, "Tweets")
+LoadData( LocalTweetsToPost, "LocalTweets", true );
+SaveData( LocalTweets, "Tweets" )
 ```
 
 ![Формула для загрузки твитов](./media/offline-apps/load-tweets.png)
@@ -104,9 +100,9 @@ SaveData(LocalTweets, "Tweets")
 * Если устройство подключено к сети, формула загружает в коллекцию **LocalTweets** до 100 твитов, соответствующих поисковому запросу "PowerApps".
 * Если устройство находится в автономном режиме, формула загружает локальный кэш из файла с именем Tweets, если он доступен.
 
-### <a name="step-4-add-a-gallery-and-bind-it-to-the-localtweets-collection"></a>Шаг 4. Добавление коллекции и ее привязка к коллекции LocalTweets
+### <a name="step-4-add-a-gallery-and-bind-it-to-the-localtweets-collection"></a>Шаг 4. Добавление коллекции и привяжите его к коллекции LocalTweets
 
-1. Вставьте новую коллекцию с изменяющейся высотой — **Вставить** > **Коллекция** > **Пустая, горизонтальная, высота**.
+1. Вставьте новый коллекцию с изменяющейся высотой: **Вставить** > **коллекции** > **пустая, горизонтальная, высота**.
 
 2. Задайте свойству **Items** значение **LocalTweets**.
 
@@ -120,36 +116,28 @@ SaveData(LocalTweets, "Tweets")
 ### <a name="step-5-add-a-connection-status-label"></a>Шаг 5. Добавление метки состояния подключения
 Вставьте новый элемент управления **Метка**, а затем задайте для свойства **Text** следующую формулу:
 
-```
-If (Connection.Connected, "Connected", "Offline")
-```
+```If( Connection.Connected, "Connected", "Offline" )```
 
 Эта формула проверяет, подключено ли устройство к сети. Если оно подключено, отобразится текст метки "Подключено". В противном случае — "В автономном режиме".
 
-### <a name="step-6-add-a-text-input-to-compose-new-tweets"></a>Шаг 6. Добавление текстового поля для создания новых твитов
+### <a name="step-6-add-a-text-input-to-compose-new-tweets"></a>Шаг 6. Добавление текстового поля для создания новых твитов
 
 1. Вставьте новый элемент управления **Текстовое поле** с именем "NewTweetTextInput".
 
 2. Задайте для его свойства **Reset** значение **resetNewTweet**.
 
-### <a name="step-7-add-a-button-to-post-the-tweet"></a>Шаг 7. Добавление кнопки для отправки твита
+### <a name="step-7-add-a-button-to-post-the-tweet"></a>Шаг 7. Добавьте кнопку для отправки твита
 1. Добавьте элемент управления **Кнопка** и задайте для свойства **Text** значение Tweet.
 2. Задайте для свойства **OnSelect** следующую формулу:
 
-    ```
-    If (Connection.Connected,
-
-        Twitter.Tweet("", {tweetText: NewTweetTextInput.Text}),
-
-        Collect(LocalTweetsToPost, {tweetText: NewTweetTextInput.Text});
-
-        SaveData(LocalTweetsToPost, "LocalTweetsToPost")
-
+    ```powerapps-dot
+    If( Connection.Connected,
+        Twitter.Tweet( "", {tweetText: NewTweetTextInput.Text} ),
+        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
+            SaveData( LocalTweetsToPost, "LocalTweetsToPost" )
     );
-
-    UpdateContext({resetNewTweet: true});
-
-    UpdateContext({resetNewTweet: false})
+    UpdateContext( {resetNewTweet: true} );
+    UpdateContext( {resetNewTweet: false} )
     ```  
 
 Эта формула проверяет, подключено ли устройство к сети.
@@ -159,7 +147,7 @@ If (Connection.Connected, "Connected", "Offline")
 
 Затем формула сбрасывает текст в текстовом поле.
 
-### <a name="step-8-add-a-timer-to-check-for-tweets-every-five-minutes"></a>Шаг 8. Добавление таймера для проверки на новые твиты каждые пять минут
+### <a name="step-8-add-a-timer-to-check-for-tweets-every-five-minutes"></a>Шаг 8. Добавление таймера для проверки на новые твиты каждые пять минут
 Добавьте новый элемент управления **Таймер**:
 
 * Задайте свойству **Duration** значение 300 000.
@@ -168,18 +156,13 @@ If (Connection.Connected, "Connected", "Offline")
 
 * Задайте для свойства **OnTimerEnd** следующую формулу:
 
-    ```
-    If(Connection.Connected,
-
-        ForAll(LocalTweetsToPost, Twitter.Tweet("", {tweetText: tweetText}));
-
-        Clear(LocalTweetsToPost);
-
-        Collect(LocalTweetsToPost, {tweetText: NewTweetTextInput.Text});
-
-        SaveData(LocalTweetsToPost, "LocalTweetsToPost");
-
-        UpdateContext({statusText: "Online data"})
+    ```powerapps-dot
+    If( Connection.Connected,
+        ForAll( LocalTweetsToPost, Twitter.Tweet( "", {tweetText: tweetText} ) );
+        Clear( LocalTweetsToPost);
+        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
+        SaveData( LocalTweetsToPost, "LocalTweetsToPost" );
+        UpdateContext( {statusText: "Online data"} )
     )
     ```
 

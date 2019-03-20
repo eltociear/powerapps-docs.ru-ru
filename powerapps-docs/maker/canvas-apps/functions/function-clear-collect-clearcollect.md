@@ -13,23 +13,26 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8a7c52962c23df5f2efcf76c04aeba528e94217c
-ms.sourcegitcommit: 464ee88a958dda11c5de5603c608deab6c9cdcab
-ms.translationtype: HT
+ms.openlocfilehash: 86d36af00d3c5aa825b01ed873150f94738a952c
+ms.sourcegitcommit: b0fa125080913f7e749cc754f89424151e051a13
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48578749"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418299"
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>Функции Collect, Clear и ClearCollect в PowerApps
+
 Создание и удаление [коллекций](../working-with-data-sources.md#collections) и добавление [записей](../working-with-tables.md#records) в любом [источнике данных](../working-with-data-sources.md).
 
 ## <a name="description"></a>Описание
+
 ### <a name="collect"></a>Collect
+
 Функция **Collect** добавляет записи в источнике данных. Возможно добавление следующих элементов:
 
-* Одно значение: значение помещается в поле **[Value](function-value.md)** новой записи.  Поля всех остальных свойств остаются [пустыми](function-isblank-isempty.md).
-* Запись: каждое именованное свойство помещается в соответствующее свойство новой записи.  Поля всех остальных свойств остаются пустыми.
-* [Таблица](../working-with-tables.md): каждая запись таблицы добавляется в виде отдельной записи в источнике данных, как описано выше. Таблица не добавляется в запись в виде вложенной таблицы. Для выполнения этой задачи сначала перенесите таблицу в запись.
+- Одно значение: Значение помещается в **[значение](function-value.md)** полей новой записи.  Поля всех остальных свойств остаются [пустыми](function-isblank-isempty.md).
+- Запись: Каждое именованное свойство помещается в соответствующее свойство новой записи.  Поля всех остальных свойств остаются пустыми.
+- Объект [таблицы](../working-with-tables.md): Каждая запись таблицы добавляется как отдельная запись источника данных, как описано выше. Таблица не добавляется в запись в виде вложенной таблицы. Для выполнения этой задачи сначала перенесите таблицу в запись.
 
 При использовании вместе с коллекцией будут созданы дополнительные [столбцы](../working-with-tables.md#columns), если это необходимо. Столбцы для других источников данных зафиксированы источником данных, и новые столбцы добавить нельзя.  
 
@@ -42,6 +45,7 @@ ms.locfileid: "48578749"
 Функция **Collect** возвращает измененный источник данных в виде таблицы.  Функция **Collect** может использоваться только в [формуле поведения](../working-with-formulas-in-depth.md).
 
 ### <a name="clear"></a>Clear
+
 Функция **Clear** удаляет все записи из коллекции.  Столбцы в коллекции остаются.
 
 Обратите внимание, что функция **Clear** работает только с коллекциями и не работает с источниками данных другого типа.  Для этой цели можно использовать формулу **[RemoveIf](function-remove-removeif.md)( *DataSource*, true )**.  Будьте осторожны, так как это приведет к удалению всех записей из хранилища источника данных и может повлиять на других пользователей.
@@ -51,11 +55,13 @@ ms.locfileid: "48578749"
 Функция **Clear** не возвращает никакого значения.  Ее можно использовать только в формуле поведения.
 
 ### <a name="clearcollect"></a>ClearCollect
+
 Функция **ClearCollect** удаляет все записи из коллекции, а затем добавляет в эту же коллекцию другой набор записей.  Функция **ClearCollect** сочетает в себе возможности функций **Clear** и **Collect**.
 
 Функция **ClearCollect** возвращает измененную коллекцию в виде таблицы.  Функцию **ClearCollect** можно использовать только в формуле поведения.
 
 ## <a name="syntax"></a>Синтаксис
+
 **Collect**( *DataSource*, *Item*, ... )
 
 * *источник_данных* — обязательный аргумент. Это источник данных, в который необходимо добавить данные.  Если он еще не существует, создается новая коллекция.
@@ -71,38 +77,17 @@ ms.locfileid: "48578749"
 * *Item(s)*  — обязательный аргумент.  Одна или несколько записей или таблиц, которые необходимо добавить в источник данных.  
 
 ## <a name="examples"></a>Примеры
-### <a name="clearing-and-adding-records-to-a-data-source"></a>Удаление и добавление записей в источнике данных
-В этих примерах показано удаление и добавление данных в коллекции под названием **IceCream**.  В источнике данных содержится следующее:
 
-![](media/function-clear-collect-clearcollect/icecream.png)
+### <a name="clearing-and-adding-records-to-a-data-source"></a>Удаление и добавление записей в источнике данных
+
+В этих примерах показано удаление и добавление данных в коллекции под названием **IceCream**. В источнике данных содержится следующее:
+
+![Источник демонстрационных данных](media/function-clear-collect-clearcollect/icecream.png)
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| **ClearCollect( IceCream, {&nbsp;Flavor:&nbsp;"Strawberry",&nbsp;Quantity:&nbsp;300&nbsp;} )** |Выполняется удаление всех данных из коллекции **IceCream** и добавляется запись, в которой указано количестве клубничного мороженого. |<style> img { max-width: none } </style> ![](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>Источник данных **IceCream** также был изменен. |
-| **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Выполняется добавление двух записей в коллекцию **IceCream**, в которой указано количество фисташкового и апельсинового мороженого. |![](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>Источник данных **IceCream** также был изменен. |
-| **Clear( IceCream )** |Выполняется удаление всех записей из коллекции **IceCream**. |![](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>Источник данных **IceCream** также был изменен. |
+| **ClearCollect( IceCream, {&nbsp;Flavor:&nbsp;"Strawberry",&nbsp;Quantity:&nbsp;300&nbsp;} )** |Выполняется удаление всех данных из коллекции **IceCream** и добавляется запись, в которой указано количестве клубничного мороженого. |<style> img {Максимальная ширина: none} </style> ![таблицы с одной записью](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>Источник данных **IceCream** также был изменен. |
+| **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Выполняется добавление двух записей в коллекцию **IceCream**, в которой указано количество фисташкового и апельсинового мороженого. |![Таблица с двумя записями](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>Источник данных **IceCream** также был изменен. |
+| **Clear( IceCream )** |Выполняется удаление всех записей из коллекции **IceCream**. |![Пустая таблица](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>Источник данных **IceCream** также был изменен. |
 
-### <a name="collect-a-static-list"></a>Получение статического списка
-
-1. Добавьте кнопку и задайте свойство **[OnSelect](../controls/properties-core.md)** для этой функции:<br>**Collect(Products, &quot;Europa&quot;, &quot;Ganymede&quot;, &quot;Callisto&quot;)**
-   
-    Эта функция создает коллекцию с именем **Products**, которая содержит по одной строке для каждого из трех наименований продукта.
-    
-1. Удерживая нажатой клавишу ALT, нажмите на эту кнопку.
-
-1. Для предварительного просмотра созданной коллекции выберите **Коллекции** в меню **Файл** (необязательно).
-
-### <a name="put-a-sharepoint-list-into-a-collection"></a>Помещение списка SharePoint в коллекцию
-
-1. [Создайте подключение к списку SharePoint](../connect-to-sharepoint.md). 
-
-1. Добавьте кнопку и установите для ее свойства **[OnSelect](../controls/properties-core.md)** эту функцию, заменив *ListName* именем вашего списка SharePoint:<br>
-**Collect**(**MySPCollection**, *ListName*)
-
-    Эта функция создает коллекцию с именем **MySPCollection**, которая содержит те же данные, что и ваш список SharePoint.
-    
-1. Удерживая нажатой клавишу ALT, нажмите на эту кнопку.
-
-1. Для предварительного просмотра созданной коллекции выберите **Коллекции** в меню **Файл** (необязательно).
-
-Сведения о том, как отображать данные из списка SharePoint (например, даты, варианты и пользователей) в коллекции, см. в разделе [Отображение данных в коллекции](../connections/connection-sharepoint-online.md#show-data-in-a-gallery). Сведения о том, как отображать данные в форме (с помощью раскрывающихся списков, средств выбора даты и средств выбора пользователей), см. в разделе [Элементы управления "Изменить форму" и "Показать форму"](../controls/control-form-detail.md).
+Пошаговые примеры для создания коллекции, см. в разделе [Создание и обновление коллекции](../create-update-collection.md).

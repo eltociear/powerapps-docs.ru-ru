@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 934ab9bddfb429ae3ed96706420af002a87697fb
-ms.sourcegitcommit: 87122dba00b4177ef736d87ecdde79581649ba42
-ms.translationtype: HT
+ms.openlocfilehash: 32b8ee57869ea733050c3f23f9c9e81f60e3d78d
+ms.sourcegitcommit: 66fd1129ad25b72556f11a08350ba95f2ba060dd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44499529"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57804385"
 ---
 # <a name="timer-control-in-powerapps"></a>Элемент управления "Таймер" в PowerApps
 Элемент управления, определяющий поведение приложения по истечении заданного количества времени.
@@ -66,7 +66,7 @@ ms.locfileid: "44499529"
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Жирный**, **Полужирный**, **Обычный** или **Очень тонкий**.
+**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -169,3 +169,6 @@ ms.locfileid: "44499529"
   > Каждые 5 секунд на средства для чтения с экрана будет приходить оповещение об истекшем времени. Тем не менее таймер **[Text](properties-core.md)** не будет включен в объявление.
 
 * Добавьте **[метку](control-text-box.md)**, чтобы отобразить истекшее время. Используйте таймер **[Text](properties-core.md)**, чтобы указать пользователю запустить или остановить таймер.
+
+### <a name="support-in-powerapps-studio"></a>Поддержка в PowerApps Studio
+При создании приложения, чтобы предотвратить возникновение событий отключены таймеры. Таймеры можно проверить в PowerApps Studio, если откройте режим предварительного просмотра, или сохраните приложение и протестировать их в PowerApps Mobile или веб-проигрыватель.

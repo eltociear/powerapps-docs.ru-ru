@@ -1,24 +1,24 @@
 ---
 title: Пошаговое руководство по реализации сценария интеграции SharePoint Online | Документация Майкрософт
 description: Подробные сведения о сценарии, созданном для этой серии руководств.
-author: mgblythe
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: df3c186bb41621e7ec6087a9da55fc037e286b1a
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 64a26fbd0e36937427bc679869d5bc942f254130
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42850197"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799647"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>Пошаговое руководство по реализации готового сценария интеграции SharePoint Online
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "42850197"
 
 В рамках этой серии руководств мы рассмотрели очень много тем — от создания приложений на основе холста и потоков до создания и внедрения отчетов в SharePoint. Мы надеемся, что вы многому научились и узнали об интеграции этих технологий. И теперь вы можете интегрировать приложения на основе холста, потоки и отчеты в SharePoint, исходя из своих потребностей. В завершение серии мы рассмотрим сценарий, на примере которого вы увидите, как взаимодействуют все компоненты.
 
-## <a name="step-1-add-a-project-to-the-project-requests-list"></a>Шаг 1. Добавление проекта в список Project Requests (Запросы проекта)
+## <a name="step-1-add-a-project-to-the-project-requests-list"></a>Шаг 1. Добавление проекта в список Project Requests
 1. В списке **Project Requests** (Запросы проекта) выберите **All Items** (Все элементы) и **Приложение для запросов проектов**.
    
     ![Просмотр приложения для запросов проектов](./media/sharepoint-scenario-summary/09-00-01-view-app.png)
@@ -93,7 +93,7 @@ ms.locfileid: "42850197"
    
     ![Назначенный элемент в списке SharePoint](./media/sharepoint-scenario-summary/09-03-05-assigned.png)
 
-## <a name="step-4-add-time-estimates-for-the-project"></a>Шаг 4. Добавление предполагаемого времени выполнения проекта
+## <a name="step-4-add-time-estimates-for-the-project"></a>Шаг 4. Добавление предполагаемого времени для проекта
 1. Щелкните ![Значок перехода назад](./media/sharepoint-scenario-summary/icon-back.png), чтобы перейти на первый экран, и нажмите кнопку **Update Details** (Обновить сведения).
    
     ![Обновление сведений о проекте](./media/sharepoint-scenario-summary/09-04-00-intro-screen.png)
@@ -119,7 +119,7 @@ ms.locfileid: "42850197"
    
    ![Обновленные сведения в списке SharePoint](./media/sharepoint-scenario-summary/09-04-04-updated-list.png)
 
-## <a name="step-5-review-report-data-for-existing-projects"></a>Шаг 5. Просмотр данных отчета для существующих проектов
+## <a name="step-5-review-report-data-for-existing-projects"></a>Шаг 5. Просмотр данных отчета для существующих проектов
 1. В SharePoint Online щелкните **Содержимое сайта** и **Страницы сайта**.
 2. Откройте страницу **Анализ проекта**, созданную ранее.
    
@@ -138,7 +138,7 @@ ms.locfileid: "42850197"
    
     Снова-таки, при создании визуализации мы отметили, что проекты, назначенные Сергею Иванову, начинаются позже. Два из них начинаются значительно позже остальных.
 
-## <a name="step-6-respond-to-pending-project-delays"></a>Шаг 6. Реагирование на задержки выполнения проектов в состоянии ожидания
+## <a name="step-6-respond-to-pending-project-delays"></a>Шаг 6. Ответ на Ожидание задержки проекта
 1. В службе Power BI выберите набор данных **project-analysis** и щелкните **Обновить**. При обновлении активируется оповещение, настроенное для проектов в ожидании.
    
     ![Обновление набора данных](./media/sharepoint-scenario-summary/09-06-01-refresh.png)

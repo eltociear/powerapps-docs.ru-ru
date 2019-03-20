@@ -13,25 +13,25 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 30d3378f46e587e45314c30be1fce3c36b2bb120
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 9956332c35b4df2773b2634cb7f66d2ea96469e4
+ms.sourcegitcommit: 1b8578e38a09220ac66c5123644714139fc3c9e5
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833004"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "57800452"
 ---
 # <a name="encodeurl-and-plaintext-functions-in-powerapps"></a>Функции EncodeUrl и PlainText в PowerApps
 Кодируют и декодируют строки.
 
 ## <a name="description"></a>Описание
-Функция **EncodeUrl** кодирует строку URL-адреса, заменяя знаки, отличные от буквенно-цифровых, на % и шестнадцатеричные числа.  
+**EncodeUrl** функция кодирует строку URL-адреса, заменив некоторые отличные от буквенно-цифровые символы % и шестнадцатеричные числа.  
 
-Функция **PlainText** удаляет HTML- и XML-теги, преобразуя теги, подобные этим, в соответствующие символы:
+**Открытым текстом** функция удаляет HTML и XML-теги, преобразуя определенные теги, подобные этим в соответствующие символы:
 
 * **&amp;nbsp;**
 * **&amp;quot;**
 
-Возвращаемым значением этих функций является кодированная или декодированная строка.   
+Возвращаемым значением этих функций является кодированная или декодированная строка. Эта функция не удаляет все теги HTML и XML. 
 
 ## <a name="syntax"></a>Синтаксис
 **EncodeUrl**( *String* )

@@ -1,24 +1,24 @@
 ---
 title: Создание диаграммы в приложении на основе холста | Документы Майкрософт
 description: Отображение категорий данных в виде графиков, круговых диаграмм или гистограмм в приложении на основе холста в PowerApps
-author: lonu
+author: fikaradz
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 10/23/2016
-ms.author: lonu
+ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 142bb0e19fb8b9647c1808dcca10e781c4f69d4a
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 0b710346c5e264fc13ee3cacb00073a32a4de0f0
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42862042"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799693"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>Отображение данных в виде графика, круговой или линейчатой диаграммы в PowerApps
 

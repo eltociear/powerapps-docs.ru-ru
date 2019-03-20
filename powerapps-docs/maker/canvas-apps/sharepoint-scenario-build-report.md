@@ -1,24 +1,24 @@
 ---
 title: Создание отчета Power BI для анализа проектов | Документация Майкрософт
 description: В этой задаче мы создадим отчет Power BI на основе двух списков SharePoint.
-author: mgblythe
+author: fikaradz
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/10/2018
-ms.author: mblythe
+ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: adda4a7adae9961b77f01320e92527b53ac61e7f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: c57375906ba900a3112b9d7999d3941f14e9af58
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42828784"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799946"
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Создание отчета Power BI для анализа проектов
 > [!NOTE]
@@ -30,9 +30,9 @@ ms.locfileid: "42828784"
 > [Пакет загрузки](https://aka.ms/o4ia0f) для нашего примера содержит полную версию этого отчета: project-analysis.pbix.
 
 ## <a name="quick-review-of-power-bi-desktop"></a>Краткий обзор Power BI Desktop
-Прежде чем перейти к созданию отчетов, ознакомимся с Power BI Desktop. Это мощный инструмент с множеством функций, поэтому мы рассмотрим только те области, которые будут использоваться в этой задаче. В Power BI Desktop есть три основных рабочих области или *представления*: **Отчет**, **Данные** и **Связи**. Power BI Desktop также включает **редактор запросов**, который открывается в отдельном окне.
+Прежде чем перейти к созданию отчетов, ознакомимся с Power BI Desktop. Это мощный инструмент с множеством функций, поэтому мы рассмотрим только те области, которые будут использоваться в этой задаче. Существует три основных рабочих области или *представления* в Power BI Desktop: **Отчет** представлении **данных** представление, и **связи** представления. Power BI Desktop также включает **редактор запросов**, который открывается в отдельном окне.
 
-На следующем рисунке показано три значка представлений на левой панели Power BI Desktop: сверху вниз расположены **Отчет**, **Данные** и **Связи**. Желтая полоска слева обозначает текущее представление. В нашем примере отображается представление **Отчет**. Чтобы изменить представление, щелкните любой значок.
+На следующем экране показаны значки трех представлений в левой части Power BI Desktop: **Отчет**, **данных**, и **связи**, сверху вниз. Желтая полоска слева обозначает текущее представление. В нашем примере отображается представление **Отчет**. Чтобы изменить представление, щелкните любой значок.
 
 ![Представления Power BI Desktop](./media/sharepoint-scenario-build-report/05-00-00-tabs.png)
 
@@ -65,7 +65,7 @@ ms.locfileid: "42828784"
 
 ![Редактор запросов Power BI Desktop](./media/sharepoint-scenario-build-report/05-00-03-query.png)
 
-## <a name="step-1-get-data-into-power-bi-desktop"></a>Шаг 1. Загрузка данных в Power BI Desktop
+## <a name="step-1-get-data-into-power-bi-desktop"></a>Шаг 1. Получение данных в Power BI Desktop
 На этом этапе мы сначала подключимся к двум спискам. Затем мы очистим данные, удалив столбцы, которые не нужны для анализа данных. Также мы изменим типы данных в некоторых из оставшихся столбцов, чтобы вычисления работали правильно. См. дополнительные сведения о [получении и очистке данных в Power BI Desktop](https://powerbi.microsoft.com/guided-learning/powerbi-learning-1-1-overview-of-power-bi-desktop) в рамках этой серии статей.
 
 ### <a name="connect-to-sharepoint-lists"></a>Подключение к спискам SharePoint
@@ -94,7 +94,7 @@ ms.locfileid: "42828784"
 2. На центральной панели выберите столбец **FileSystemObjectType**, а затем щелкните **Удалить столбцы**.
    
     ![Удаление столбцов](./media/sharepoint-scenario-build-report/05-01-07-remove-column.png)
-3. Удалите два столбца после столбца **Id**: **ServerRedirectedEmbedURL** и **ContentTypeId**. 
+3. Удалите два столбца после **идентификатор** столбца: **ServerRedirectedEmbedURL** и **ContentTypeId**. 
    > [!TIP]
    > Выберите оба столбца с нажатой клавишей SHIFT, а затем нажмите **Удалить столбцы**.
 4. Удалите все столбцы справа от столбца **PMAssigned** (всего 22 столбца). Таблица должна выглядеть приблизительно так:
@@ -105,11 +105,11 @@ ms.locfileid: "42828784"
     ![ Таблица Project Requests в редакторе запросов](./media/sharepoint-scenario-build-report/05-01-09-table-requests.png)
 
 ### <a name="change-the-data-type-on-project-details-columns"></a>Изменение типа данных в столбцах таблицы Project Details
-1. Выберите столбец **ProjectedDays** и щелкните **Тип данных: любой**. Затем выберите параметр **Целое число**.
+1. Выберите **ProjectedDays** столбец, щелкните или коснитесь **тип данных: Любой**, затем **целое число**.
    
     ![Изменение типа данных на целое число](./media/sharepoint-scenario-build-report/05-01-10-datatype-number.png)
 2. Повторите предыдущий шаг для столбца **ActualDays**.
-3. Выберите столбец **ApprovedDate** и щелкните **Тип данных: любой**. Затем выберите параметр **Дата**.
+3. Выберите **ApprovedDate** столбец, щелкните или коснитесь **тип данных: Любой**, затем **даты**.
    
     ![ Изменение типа данных на дату](./media/sharepoint-scenario-build-report/05-01-11-datatype-date.png)
 
@@ -117,9 +117,9 @@ ms.locfileid: "42828784"
 
 ### <a name="change-the-data-type-on-project-requests-columns"></a>Изменение типа данных в столбцах таблицы Project Requests
 
-1. Выберите столбец **EstimatedDays** и щелкните **Тип данных: любой**. Затем выберите параметр **Целое число**.
+1. Выберите **EstimatedDays** столбец, щелкните или коснитесь **тип данных: Любой**, затем **целое число**.
 
-2. Выберите столбец **RequestDate** и щелкните **Тип данных: любой**. Затем выберите параметр **Дата**.
+2. Выберите **RequestDate** столбец, щелкните или коснитесь **тип данных: Любой**, затем **даты**.
 
 ### <a name="apply-and-save-changes"></a>Применение и сохранение изменений
 
@@ -129,7 +129,7 @@ ms.locfileid: "42828784"
 
 2. Выберите **Файл**, затем— **Сохранить** и сохраните файл под именем project-analysis.pbix.
 
-## <a name="step-2-improve-the-data-model"></a>Шаг 2. Улучшение модели данных
+## <a name="step-2-improve-the-data-model"></a>Шаг 2. Улучшения модели данных
 Теперь, когда мы загрузили в PowerBI Desktop данные из списков SharePoint, перейдем к моделированию данных. Моделирование данных может занять много времени, но мы вкратце рассмотрим некоторые действия, которые помогут вам эффективно использовать данные списка в Power BI Desktop.
 
 * Изменение способа связи между двумя таблицами.
@@ -170,7 +170,7 @@ ms.locfileid: "42828784"
 1. Нажмите кнопку **Создать таблицу**.
    
     ![Создать таблицу](./media/sharepoint-scenario-build-report/05-02-05-modeling-table.png)
-2. Введите следующую формулу в строке формул: **Dates = CALENDARAUTO()**.
+2. Введите эту формулу в строке формул: **Dates = CALENDARAUTO()**.
    
     ![Строка формул с формулой Dates = CALENDARAUTO()](./media/sharepoint-scenario-build-report/05-02-06-formula-bar.png)
    
@@ -185,7 +185,7 @@ ms.locfileid: "42828784"
 1. Оставаясь в таблице "Dates", нажмите кнопку **Создать столбец**.
    
     ![Создать столбец](./media/sharepoint-scenario-build-report/05-02-00-modeling-column.png)
-2. Введите следующую формулу в строке формул: **IsWeekDay = SWITCH(WEEKDAY(Dates[Date]), 1,0,7,0,1)**.
+2. Введите эту формулу в строке формул: **IsWeekDay = SWITCH(WEEKDAY(Dates[Date]), 1,0,7,0,1)**.
    
     Эта формула определяет, является ли дата в столбце **Date** рабочим днем. Если дата является рабочим днем, столбец **IsWeekDay** возвращает значение 1. В противном случае он возвращает значение 0.
 3. Нажмите клавишу ВВОД, чтобы добавить столбец **IsWeekDay** в таблицу **Dates**.

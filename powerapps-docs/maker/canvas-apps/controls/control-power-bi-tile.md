@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ba7d48104d9fdf85573029cc510af2c29d3f6ca0
-ms.sourcegitcommit: 5db6e3ac3a622de313a1102417397e126c3f92f2
-ms.translationtype: HT
+ms.openlocfilehash: 82a7089ec14753a70d52d09024d1df527dbeb866
+ms.sourcegitcommit: a06e3137e3cb36414f0d61825bbc687487ea6f8c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/15/2018
-ms.locfileid: "45640361"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57804270"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>Элемент управления "Плитка Power BI" в PowerApps
 
 Элемент управления, который отвечает за отображение плитки [Power BI](https://powerbi.microsoft.com) в приложении.
 
-Еще не используете Power BI? [Зарегистрируйтесь](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi).
+У вас нет Power BI? [Зарегистрируйтесь](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi).
 
 ## <a name="description"></a>Описание
 
@@ -37,6 +37,20 @@ ms.locfileid: "45640361"
 ## <a name="performance"></a>Производительность
 
 Не рекомендуется одновременно загружать в приложение более трех плиток Power BI. Вы можете управлять загрузкой и выгрузкой плиток с помощью свойства **LoadPowerBIContent**.
+
+## <a name="pass-a-parameter"></a>Передача параметра
+
+Передавая один параметр из приложения, можно отфильтровать результаты, отображаемые в плитки Power BI. Тем не менее поддерживаются только строковые значения и оператор равенства и фильтр может не работать, если имя таблицы или имя столбца содержит пробелы.
+
+Чтобы передать значение одного фильтра, измените значение **TileURL** свойство, которое следует за следующий синтаксис:
+
+```"https://app.powerbi.com/embed?dashboardId=<DashboardID>&tileId=<TileID>&config=<SomeHash>" ```
+
+Значение, и добавьте следующий синтаксис:
+
+```&$filter=<TableName>/<ColumnName> eq "<Value>" ```
+
+Параметр отфильтрует значение в наборе данных отчета происхождения плитки.
 
 ## <a name="key-properties"></a>Основные свойства
 

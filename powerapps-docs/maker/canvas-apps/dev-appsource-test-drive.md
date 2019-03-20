@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5920c40396ab3ff8c1691b5d683615f41f6a7509
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 590dc1707d080c1790c00f236df820559fe8f5a9
+ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863744"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54308421"
 ---
 # <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>Предоставление клиентам тестовых выпусков приложения на основе холста в AppSource
 
@@ -41,8 +41,8 @@ ms.locfileid: "42863744"
 
 PowerApps изначально поддерживает создание приложений с внедренными данными, поэтому вам просто понадобится пример данных. Данные должны содержаться в одной или нескольких таблицах в файле Excel. В PowerApps эти данные перемещаются из таблиц Excel в приложение, где с ними можно работать. В этом случае вам не придется устанавливать внешнее подключение. Ознакомьтесь с трехэтапной процедурой ниже, чтобы переместить данные и использовать их в приложении.
 
-### <a name="step-1-import-data-into-the-app"></a>Шаг 1. Импорт данных в приложение
-Предположим, что у вас есть две таблицы в файле Excel: **SiteInspector** и **SitePhotos**.
+### <a name="step-1-import-data-into-the-app"></a>Шаг 1. Импорт данных в приложение
+Предположим, что у вас есть файл Excel с двумя таблицами: **SiteInspector** и **SitePhotos**.
 
 ![Таблицы Excel, которые необходимо импортировать](./media/dev-appsource-test-drive/excel-file.png)
 
@@ -54,13 +54,14 @@ PowerApps изначально поддерживает создание при�
 
 ![Таблицы Excel как импортированные источники данных](./media/dev-appsource-test-drive/data-sources.png)
 
-### <a name="step-2-handling-read-only-and-read-write-scenarios"></a>Шаг 2. Обработка сценариев только для чтения и сценариев для чтения и записи
+### <a name="step-2-handling-read-only-and-read-write-scenarios"></a>Шаг 2. Обработка сценариев только для чтения и чтения и записи
 Импортированные данные являются *статическими* и доступны только для чтения. Если приложение доступно только для чтения (т. е. оно только отображает данные для пользователя), запрашивайте таблицы непосредственно в приложении. Например, если требуется получить доступ к полю **Заголовок** в таблице **SiteInspector**, используйте **SiteInspector.Title** в формуле.
 
 Если приложение доступно для чтения и записи, сначала переместите данные из каждой таблицы в *коллекцию* (табличная структура данных в PowerApps). Затем вместо таблицы используйте коллекцию. Чтобы переместить данные из таблиц **SiteInspector** и **SitePhotos** в коллекции **SiteInspectorCollect** и **SitePhotosCollect**, используйте следующую формулу:
 
-```
-ClearCollect(SiteInspectorCollect,SiteInspector); ClearCollect(SitePhotosCollect,SitePhotos)
+```powerapps-dot
+ClearCollect( SiteInspectorCollect, SiteInspector ); 
+ClearCollect( SitePhotosCollect, SitePhotos )
 ```
 
 С помощью этой формулы можно очистить обе коллекции, а затем переместить данные из каждой таблицы в соответствующую коллекцию.
@@ -71,27 +72,39 @@ ClearCollect(SiteInspectorCollect,SiteInspector); ClearCollect(SitePhotosCollect
 
 Теперь, чтобы получить доступ к полю **Заголовок**, используйте в формуле **SiteInspectorCollect.Title**.
 
-### <a name="step-3-add-update-and-delete-data-in-your-app"></a>Шаг 3. Добавление, обновление и удаление данных в приложении
+### <a name="step-3-add-update-and-delete-data-in-your-app"></a>Шаг 3. Добавление, обновление и удаление данных в приложении
 Вы научились считывать данные напрямую и из коллекции. Теперь мы покажем, как добавить, обновить и удалить данные в коллекции.
 
 **Чтобы добавить строку в коллекцию**, используйте [Collect( DataSource, Item, ... )](../canvas-apps/functions/function-clear-collect-clearcollect.md):
 
-```
-Collect(SiteInspectorCollect,{ID:Value(Max(SiteInspectorCollect, ID)+1),
-    Title:TitleText.Text,SubTitle:SubTitleText.Text,Description:DescriptionText.Text)
+```powerapps-dot
+Collect( SiteInspectorCollect,
+    {
+        ID: Value( Max( SiteInspectorCollect, ID ) + 1 ),
+        Title: TitleText.Text,
+        SubTitle: SubTitleText.Text,
+        Description: DescriptionText.Text
+    }
+)
 ```
 
 **Чтобы обновить строку в коллекции**, используйте [UpdateIf( DataSource, Condition1, ChangeRecord1 [, Condition2, ChangeRecord2, ...] )](../canvas-apps/functions/function-update-updateif.md):
 
-```
-UpdateIf(SiteInspectorCollect,ID=record.ID,
-    {Title:TitleEditText.Text,SubTitle:SubTitleEditText.Text,Description:DescriptionEditText.Text)
+```powerapps-dot
+UpdateIf( SiteInspectorCollect,
+    ID = record.ID,
+    {
+        Title: TitleEditText.Text,
+        SubTitle: SubTitleEditText.Text,
+        Description: DescriptionEditText.Text
+    }
+)
 ```
 
 **Чтобы удалить строку из коллекции**, используйте [RemoveIf( DataSource, Condition [, ...] )](../canvas-apps/functions/function-remove-removeif.md):
 
-```
-RemoveIf(SiteInspectorCollect,ID=record.ID)
+```powerapps-dot
+RemoveIf( SiteInspectorCollect, ID = record.ID )
 ```
 
 > [!NOTE]

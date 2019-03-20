@@ -1,24 +1,24 @@
 ---
 title: Создание приложения на основе холста для обработки запросов проекта | Документы Майкрософт
 description: В рамках этого руководства мы создадим базовое приложение на основе холста с тремя экранами непосредственно из списка SharePoint.
-author: mgblythe
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
-ms.author: mblythe
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4466d8f42a0ba9c9a162353bc214abf6d9d9ef83
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: c9c7e58c8127b1c2784e0b1d79e78a1cb9478054
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834266"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799325"
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>Создание приложения на основе холста для обработки запросов проекта
 > [!NOTE]
@@ -93,7 +93,7 @@ ms.locfileid: "42834266"
 
 6. Откройте меню **File** (Файл) и выберите **Save** (Сохранить). Щелкните ![Значок возврата к приложению](./media/sharepoint-scenario-generate-app/icon-back-to-app.png), чтобы вернуться к приложению.
 
-## <a name="step-4-review-the-apps-details-screen-and-edit-screen"></a>Шаг 4. Просмотр экрана сведений и редактирования в приложении
+## <a name="step-4-review-the-apps-details-screen-and-edit-screen"></a>Шаг 4. Просмотрите экран сведений приложения и экран редактирования
 1. Выберите экран сведений.
    
     Здесь используется другой макет экрана, состоящий из *формы просмотра* для отображения сведений об элементе, выбранном в коллекции. Также в нем содержатся элементы управления, с помощью которых можно отредактировать и удалить элементы списка или вернуться к экрану обзора.
@@ -106,7 +106,7 @@ ms.locfileid: "42834266"
 
     ![Форма редактирования](./media/sharepoint-scenario-generate-app/02-04-03-edit.png)
 
-## <a name="step-5-run-the-app-from-the-list"></a>Шаг 5. Запуск приложения из списка
+## <a name="step-5-run-the-app-from-the-list"></a>Шаг 5. Запустите приложение из списка
 
 1. В списке **Project Requests** (Запросы проекта) выберите **All Items** (Все элементы) и **Приложение для запросов проектов**.
    

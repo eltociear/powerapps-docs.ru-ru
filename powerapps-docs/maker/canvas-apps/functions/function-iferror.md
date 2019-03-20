@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b3d80c2bafb36bf4437a9c37541f5bb56945f3b4
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 1bf9f3cf075441dd3264b5a2f6533671d2e08654
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42851329"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802315"
 ---
 # <a name="iferror-function-in-powerapps"></a>Функция IfError в PowerApps
 Обнаруживает ошибки и предоставляет альтернативное значение или выполняет действие.
@@ -39,7 +39,7 @@ ms.locfileid: "42851329"
 **IfError**( *Value*, *Fallback1* [, *Fallback2*, ... ] )
 
 * *Value* — обязательный аргумент. Формулы, которые необходимо проверить на значение ошибки. 
-* *Fallback(n)* — обязательный параметр. Формулы, которые необходимо вычислить и значения для которых необходимо возвратить, если предыдущие аргументы были ошибочными.  Аргументы *Fallback* вычисляются последовательно до обнаружения значения, не являющегося ошибочным.
+* *Fallback(n)* — обязательный параметр. Формулы, которые необходимо вычислить и значения для которых необходимо возвратить, если предыдущие аргументы были ошибочными.  *Откат* аргументы вычисляются в порядке до того момента, не являющегося ошибочным значение обнаруживается.
 
 ## <a name="examples"></a>Примеры
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 886479b4cd2f7e04e9949c99ba05e6219e92b2b3
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 1cc589d1bff73777e0c20ed933a563e42b934f35
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42859993"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803603"
 ---
 # <a name="errors-function-in-powerapps"></a>Функция Errors в PowerApps
 В этой статье приведены сведения об ошибках, связанных с предыдущими изменениями [источника данных](../working-with-data-sources.md).
@@ -72,15 +72,15 @@ ms.locfileid: "42859993"
 
 ![](media/function-errors/icecream.png)
 
-С помощью приложения пользователь загружает запись Chocolate в форму ввода данных, а затем изменяет значение свойства **Quantity** на 90.  Запись помещается в [переменную контекста](../working-with-variables.md#create-a-context-variable) **EditRecord**.
+С помощью приложения пользователь загружает запись Chocolate в форму ввода данных, а затем изменяет значение свойства **Quantity** на 90.  Запись помещается в [переменную контекста](../working-with-variables.md#use-a-context-variable) **EditRecord**.
 
-* **UpdateContext( { EditRecord: First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
+* **UpdateContext ({EditRecord: First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
 
 Внести эти изменения в источник можно с помощью функции **[Patch](function-patch.md)**.
 
 * **Patch( IceCream, EditRecord, Gallery.Updates )**,
 
-где **Gallery.Updates** равно **{ Quantity: 90 }**, так как только свойство **Quantity** изменено.
+где **Gallery.Updates** принимает значение **{Quantity: 90}**, так как только **количество** свойство было изменено.
 
 К сожалению, прямо перед вызовом функции **[Patch](function-patch.md)** кто-то изменил значение свойства **Quantity** для записи Chocolate на 80.  PowerApps определит это и не допустит конфликтного изменения.  Вы можете проверить, случилось ли нечто подобное, с помощью формулы:
 
@@ -90,7 +90,7 @@ ms.locfileid: "42859993"
 
 | Запись | Столбец | Сообщение | Ошибка |
 | --- | --- | --- | --- |
-| { Flavor: "Chocolate", Quantity: 100 } |*пустое значение* |"Запись, которую вы пытаетесь изменить, изменена другим пользователем. Перезагрузите ее и повторите попытку". |ErrorKind.Conflict |
+| {Flavor: «Chocolate», Quantity: 100 } |*пустое значение* |"Запись, которую вы пытаетесь изменить, изменена другим пользователем. Перезагрузите ее и повторите попытку". |ErrorKind.Conflict |
 
 Вы можете поместить метку в форме для отображения данной ошибки пользователю.
 

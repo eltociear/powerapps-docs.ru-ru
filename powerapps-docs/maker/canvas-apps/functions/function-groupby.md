@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0ac3f0549e89153d9362d6a8a040833608d4e287
-ms.sourcegitcommit: 2300de0a0486187762f830068c872116d5b04c32
-ms.translationtype: HT
+ms.openlocfilehash: 5752781cf99a538d76e9dd9197aa4f8b8abce53e
+ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49806209"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54308577"
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>Функции GroupBy и Ungroup в PowerApps
 Эти функции группируют [записи](../working-with-tables.md#records) [таблицы](../working-with-tables.md) и отменяют их группировку.
@@ -66,8 +66,21 @@ ms.locfileid: "49806209"
 ### <a name="create-a-collection"></a>Создание коллекции
 1. Добавьте кнопку и задайте для нее свойство **[Text](../controls/properties-core.md)**, чтобы она отображала текст **Исходные данные**.
 2. Задайте для свойства **[OnSelect](../controls/properties-core.md)** кнопки **Исходные данные** такую формулу:
-   
-    **ClearCollect(CityPopulations, {City:"Лондон", Country:"Соединенное Королевство", Population:8615000}, {City:"Берлин", Country:"Германия", Population:3562000}, {City:"Мадрид", Country:"Испания", Population:3165000}, {City:"Рим", Country:"Италия", Population:2874000}, {City:"Париж", Country:"Франция", Population:2273000}, {City:"Гамбург", Country:"Германия", Population:1760000}, {City:"Барселона", Country:"Испания", Population:1602000}, {City:"Мюнхен", Country:"Германия", Population:1494000}, {City:"Милан", Country:"Италия", Population:1344000})**
+
+```powerapps-dot   
+ClearCollect( CityPopulations, 
+    { City: "London",    Country: "United Kingdom", Population: 8615000}, 
+    { City: "Berlin",    Country: "Germany",        Population: 3562000}, 
+    { City: "Madrid",    Country: "Spain",          Population: 3165000}, 
+    { City: "Rome",      Country: "Italy",          Population: 2874000}, 
+    { City: "Paris",     Country: "France",         Population: 2273000}, 
+    { City: "Hamburg",   Country: "Germany",        Population: 1760000}, 
+    { City: "Barcelona", Country: "Spain",          Population: 1602000}, 
+    { City: "Munich",    Country: "Germany",        Population: 1494000}, 
+    { City: "Milan",     Country: "Italy",          Population: 1344000}
+)
+```
+
 3. Удерживая клавишу ALT, нажмите кнопку **Исходные данные**.
    
     Вы только что создали [коллекцию](../working-with-data-sources.md#collections) с именем **CityPopulations**, которая содержит такие данные:

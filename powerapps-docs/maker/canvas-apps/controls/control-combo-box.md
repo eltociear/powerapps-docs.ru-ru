@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 278560c1ececafd6d4c57945d6058879cf55170f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: ad3b8efc2306540862d0470223cee4f46fb5703c
+ms.sourcegitcommit: 50404720bed371bbc93feb08d296c954ef8038e1
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42858320"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54031361"
 ---
 # <a name="combo-box-control-in-powerapps"></a>Элемент управления "Поле со списком" в PowerApps
 Это элемент управления, который позволяет выбирать из доступных вариантов.  Поддерживает поиск и выбор нескольких вариантов.
@@ -36,7 +36,7 @@ ms.locfileid: "42858320"
 ## <a name="key-properties"></a>Основные свойства
 **[Items](properties-core.md)** — источник данных, в котором можно выбрать элементы.
 
-**DefaultItems** — элементы, выбранные изначально до взаимодействия с элементом управления.
+**DefaultSelectedItems** — первоначального выделенных элементов, прежде чем пользователь взаимодействует с элементом управления.
 
 **SelectedItems** — список выбранных элементов в результате действий пользователя.
 
@@ -54,8 +54,6 @@ ms.locfileid: "42858320"
 **[BorderStyle](properties-color-border.md)**  — стиль границы элемента управления: **Сплошная**, **Штриховая**, **Пунктирная** или **Отсутствует**.
 
 **[BorderThickness](properties-color-border.md)**  — толщина границы элемента управления.
-
-**[Default](properties-core.md)** — элемент, выбранный изначально до изменения пользователем в режиме одиночного выбора.
 
 **DisplayFields** — список полей, отображаемый для каждого элемента, возвращенного в результате поиска.  Это свойство проще всего настроить с помощью панели данных на вкладке параметров "Свойства".
 

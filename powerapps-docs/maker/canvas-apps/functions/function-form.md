@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 55df8d30509720478c1594406865986ddc9a95c4
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 930439325b60b60fefed18b66c22d9d4f97f55b7
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865815"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802108"
 ---
 # <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>Функции EditForm, NewForm, SubmitForm, ResetForm и ViewForm в PowerApps
 Просмотр, изменение или создание элемента, сохранение содержимого и сброс элементов управления в **[форме редактирования](../controls/control-form-detail.md)**.
@@ -59,10 +59,10 @@ ms.locfileid: "42865815"
 Функция **ResetForm** сбрасывает содержимое формы к начальным значениям, которые были установлены до внесения пользователем любых изменений. Если форма находится в режиме **FormMode.New**, устанавливается режим **FormMode.Edit**. Также запускается поведение **[OnReset](../controls/control-form-detail.md)**, определенное для элемента управления "Форма".  Можно также сбросить отдельные элементы управления с помощью функции **[Сброс](function-reset.md)**. Но это можно сделать только в форме.
 
 ### <a name="viewform"></a>ViewForm
-Функция **ViewForm** меняет режим элемента управления "Форма" на **FormMode.New**. В этом режиме форма заполняется на основании содержимого свойства **[Item](../controls/control-form-detail.md)**, установленного для элемента управления "Форма".  Функции **SubmitForm** и **RestForm** не работают в этом режиме.
+Функция **ViewForm** меняет режим элемента управления "Форма" на **FormMode.New**. В этом режиме форма заполняется на основании содержимого свойства **[Item](../controls/control-form-detail.md)**, установленного для элемента управления "Форма".  **SubmitForm** и **ResetForm** функции не оказывают влияния в этом режиме.
 
-### <a name="displaymode-poperty"></a>Свойство DisplayMode
-Текущий режим можно узнать с помощью свойства **Режим**.  Режим также определяет значение свойства **DisplayMode**, которое могут использовать карточки данных и элементы управления в элементе управления "Форма".  Часто свойству **DisplayMode** карточки данных присваивается значение **Parent.DisplayMode** (ссылается на форму), как и свойству **DisplayMode** элемента управления (ссылается на карточку данных): 
+### <a name="displaymode-property"></a>Свойство DisplayMode
+Текущий режим можно узнать с помощью свойства **Режим**.  Режим также определяет значение свойства **DisplayMode**, которое могут использовать карточки данных и элементы управления в элементе управления "Форма".  Часто, карточки данных **DisplayMode** свойству будет присвоено **Parent.DisplayMode** (со ссылками на форме) как элемента управления **DisplayMode** (со ссылками на свойство карточки данных): 
 
 | Режим | DisplayMode | Описание |
 | --- | --- | --- |

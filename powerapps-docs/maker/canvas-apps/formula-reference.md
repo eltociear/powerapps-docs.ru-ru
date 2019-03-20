@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 06/05/2018
+ms.date: 11/14/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 752bb630c1ecd1e86f37a1a063bcc5ee192431f0
-ms.sourcegitcommit: 3aeb9381fbeb66cf08355d9a3d0f00ce2737e256
-ms.translationtype: HT
+ms.openlocfilehash: 9796cf6c668818110cd6910311ab5b5f61a745df
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43163644"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803787"
 ---
 # <a name="formula-reference-for-powerapps"></a>Справочник формул для PowerApps
 Формулы объединяют множество элементов.  Ниже перечислены следующие элементы:
@@ -208,6 +208,10 @@ ms.locfileid: "43163644"
 **[Lower](functions/function-lower-upper-proper.md)** — преобразует буквы текстовой строки во все строчные.
 
 ## <a name="m"></a>M
+**[Совпадение](functions/function-ismatch.md)**  — извлекает подстроку по образцу.  Можно использовать регулярные выражения.
+
+**[MatchAll](functions/function-ismatch.md)**  — извлекает несколько подстрок в зависимости от шаблона.  Можно использовать регулярные выражения.
+
 **[Max](functions/function-aggregates.md)** — максимальное значение табличного выражения или набора аргументов.
 
 **[Mid](functions/function-left-mid-right.md)** — возвращает среднюю часть строки.
@@ -255,6 +259,8 @@ ms.locfileid: "43163644"
 **[Rand](functions/function-rand.md)** — возвращает псевдослучайное число.
 
 **[Refresh](functions/function-refresh.md)** — обновляет записи источника данных.
+
+**[Связать](functions/function-relate-unrelate.md)**  — связывает записей из двух сущностей через отношение один ко многим "или" многие ко многим.
 
 **[Remove](functions/function-remove-removeif.md)** — удаляет одну или несколько указанных записей из источника данных.
 
@@ -322,7 +328,7 @@ ms.locfileid: "43163644"
 
 **[Tan](functions/function-trig.md)** — возвращает тангенс угла, указанного в радианах.
 
-**[Text](functions/function-text.md)** — форматирует число как строку для отображения.
+**[Текст](functions/function-text.md)**  — преобразует любое значение и форматирует значение числа или даты и времени в строку текста.
 
 **[ThisItem](functions/operators.md#thisitem-operator)** — в коллекции или форме возвращает данные для текущего элемента из контейнера.
 
@@ -341,9 +347,11 @@ ms.locfileid: "43163644"
 ## <a name="u"></a>U
 **[Ungroup](functions/function-groupby.md)** — удаляет группирование.
 
+**[Отвязать](functions/function-relate-unrelate.md)**  — Unrelates записи двух сущностей из отношение один ко многим "или" многие ко многим.
+
 **[Update](functions/function-update-updateif.md)** — заменяет запись в источнике данных.
 
-**[UpdateContext](functions/function-updatecontext.md)** — задает значение одной или нескольких [переменных контекста](working-with-variables.md#create-a-context-variable) на текущем экране.
+**[UpdateContext](functions/function-updatecontext.md)** — задает значение одной или нескольких [переменных контекста](working-with-variables.md#use-a-context-variable) на текущем экране.
 
 **[UpdateIf](functions/function-update-updateif.md)** — изменяет набор записей в источнике данных, если выполняется определенное условие.
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f4654c12c860496cd0e2b44bbd33c956b7385460
-ms.sourcegitcommit: 0269766ee598f75a4d2459824128f031f68ca042
-ms.translationtype: HT
+ms.openlocfilehash: dde096adbd82c04f7a2f17cd2af156b2e334c990
+ms.sourcegitcommit: 66fd1129ad25b72556f11a08350ba95f2ba060dd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860617"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57804362"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Пользовательский визуальный элемент PowerApps для Power BI
 
@@ -77,9 +77,9 @@ Power BI позволяет анализировать данные и прин
 - Пользовательский визуальный элемент PowerApps не может инициировать обновление отчета Power BI или источника данных Power BI. Если вы записываете данные из приложения в источник данных, который используется отчетом, изменения отразятся не сразу, а при следующем запланированном обновлении.
 - Пользовательский визуальный элемент PowerApps не может фильтровать данные или отправлять их обратно в отчет.
 - Общий доступ к приложению PowerApps необходимо предоставлять отдельно от отчета. Узнайте, как [предоставлять общий доступ к приложениям в PowerApps](share-app.md).
-- Сервер отчетов Power BI и мобильное приложение Power BI не поддерживают пользовательский визуальный элемент PowerApps.
+- Эти технологии не поддерживают пользовательский визуальный элемент PowerApps: Сервер отчетов Power BI, мобильное приложение Power BI и Internet Explorer.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 * Пройдите простой [пошаговый учебник](embed-powerapps-powerbi.md).
-* Просмотрите [видео](https://aka.ms/powerappscustomvisualvideo).
+* Ознакомьтесь с нашей [видео](https://aka.ms/powerappscustomvisualvideo).

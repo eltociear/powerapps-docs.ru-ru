@@ -1,24 +1,24 @@
 ---
 title: Изменение приложения на основе холста | Документы Майкрософт
 description: Пошаговые инструкции по изменению приложений на основе холста и сценарии блокировки сеансов в PowerApps.
-author: karthik-1
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 05/19/2017
-ms.author: sharik
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 97dc8b245da9dc48a67f22243f11cf26b7bd6d8e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 03a6f9939f5de5e4eb3f4abd941a725ce24b46fb
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835082"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57798842"
 ---
 # <a name="edit-a-canvas-app-in-powerapps"></a>Изменение приложения на основе холста в PowerApps
 Вы можете изменить любое приложение на основе холста, которое вы создали, которым владеете или для которого у вас есть разрешения **Может изменять**. Вы можете изменить приложение в PowerApps Studio. При попытке изменить приложение, которое уже открыто для редактирования в другом месте, появится сообщение о том, что приложение уже открыто вами или другим пользователем.

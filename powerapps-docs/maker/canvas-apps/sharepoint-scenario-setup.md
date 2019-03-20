@@ -1,32 +1,32 @@
 ---
 title: Настройка списков для интеграции SharePoint Online с PowerApps, Microsoft Flow и Power BI | Документация Майкрософт
 description: В этом примере мы настроим списки SharePoint, чтобы использовать их в качестве источника данных для приложений, потоков, отчетов и панелей мониторинга.
-author: mgblythe
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 12/19/2017
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9e1694a3190740c788eb9cd53de1187ed32d0fbc
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 7be4a0574c1a81684188eaede4b6e80b02e7b7cc
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42833327"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799187"
 ---
 # <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-microsoft-flow-and-power-bi"></a>Настройка списков для интеграции SharePoint Online с PowerApps, Microsoft Flow и Power BI
 > [!NOTE]
 > Эта статья входит в серию руководств по использованию PowerApps, Microsoft Flow и Power BI совместно с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
 
-Хотя в SharePoint доступно много функций для обеспечения общего доступа и совместной работы, сейчас мы сосредоточимся на одной из них — [списках SharePoint](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7). Список — это коллекция данных с возможностью совместного использования с участниками группы и другими пользователями сайта. Сначала мы рассмотрим возможности списков, используемых в этом сценарии, а затем создадим их на сайте SharePoint Online.
+В SharePoint доступно много возможностей для совместной работы, но мы сосредоточимся на одной из них для этого сценария: [Списки SharePoint](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7). Список — это коллекция данных с возможностью совместного использования с участниками группы и другими пользователями сайта. Сначала мы рассмотрим возможности списков, используемых в этом сценарии, а затем создадим их на сайте SharePoint Online.
 
-## <a name="step-1-understand-the-lists"></a>Шаг 1. Общие сведения о списках
+## <a name="step-1-understand-the-lists"></a>Шаг 1. Понять списки
 Первый список — **Project Requests** (Запросы проекта), в который пользователь, запрашивающий проекты, добавляет запрос. Пользователь, утверждающий проекты, просматривает запрос, а затем утверждает или отклоняет его.
 
 | **Столбец в списке** | **Тип данных** | **Примечания** |
@@ -34,7 +34,7 @@ ms.locfileid: "42833327"
 | Title |Однострочный текст |Столбец по умолчанию, используемый для имени проекта. |
 | Description |Однострочный текст | |
 | ProjectType |Однострочный текст |Значения: новое оборудование, обновленное оборудование, новое программное обеспечение, обновленное программное обеспечение. |
-| RequestDate |Дата | |
+| RequestDate |Date | |
 | Requestor |Однострочный текст | |
 | EstimatedDays |Номер |Позволяет сравнить результаты оценки запрашивающего с результатами руководителя проекта и фактическими результатами. |
 | Approved |Однострочный текст |Значения: в ожидании, да, нет. |
@@ -48,9 +48,9 @@ ms.locfileid: "42833327"
 | --- | --- | --- |
 | Title |Однострочный текст |Столбец по умолчанию, используемый для имени проекта. |
 | RequestID |Номер |Совпадает со значением в столбце **ID** списка **Project Requests**. |
-| ApprovedDate |Дата | |
+| ApprovedDate |Date | |
 | Состояние |Однострочный текст |Значения: не начато, выполняется, завершено. |
-| ProjectedStartDate |Дата |Рассчитанная руководителем дата начала проекта. |
+| ProjectedStartDate |Date |Рассчитанная руководителем дата начала проекта. |
 | ProjectedEndDate |Дата |Рассчитанная руководителем дата завершения проекта. |
 | ProjectedDays |Номер |Рабочие дни; как правило, вычисляются, но не в нашем примере. |
 | ActualDays |Номер |Для завершенных проектов. |
@@ -105,7 +105,7 @@ ms.locfileid: "42833327"
 4. Скопируйте данные, вставьте их в сетку в SharePoint и нажмите кнопку **Готово**.
    
     ![Список, заполненный данными](./media/sharepoint-scenario-setup/01-01-09-full-grid.png)
-5. Повторите создание и копирование для списка "Project Details", используя книгу project-details.xlsx. Сведения об именах и типах данных столбцов см. в таблице Project Details в разделе [Шаг 1. Общие сведения о списках](#step-1-understand-the-lists).
+5. Повторите создание и копирование для списка "Project Details", используя книгу project-details.xlsx. См. в таблице Project Details в [шаг 1: Понять списки](#step-1-understand-the-lists) для столбцов имена и типы данных.
 
 ## <a name="step-3-update-connections-to-samples---optional"></a>Шаг 3. Обновление подключения к примерам (необязательно)
 Как отмечено во введении, мы включили в [скачиваемый пакет](https://aka.ms/o4ia0f) два примера приложений и пример отчета. Это руководство можно пройти и без этих примеров. Но если вы решили их использовать, вам нужно обновить подключения к спискам SharePoint. Так примеры приложений смогут использовать как источник данных *ваши* списки вместо наших.

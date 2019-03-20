@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5e4e0ad13280783b7b6cd00121b4dc05cca6df8
-ms.sourcegitcommit: e4fe4b27651b62edb67e5995fc5955577d8ac5b8
-ms.translationtype: HT
+ms.openlocfilehash: 09e139353e500ad27650628a844bc01264eab3d0
+ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075387"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54308393"
 ---
 # <a name="drop-down-control-in-powerapps"></a>Элемент управления "Раскрывающийся список" в PowerApps
 Раскрывающийся список — это список, у которого в свернутом состоянии виден только первый элемент.
@@ -66,7 +66,7 @@ ms.locfileid: "49075387"
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Жирный**, **Полужирный**, **Обычный** или **Очень тонкий**.
+**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -126,7 +126,7 @@ ms.locfileid: "49075387"
 
 1. Добавьте элемент управления **Раскрывающийся список**, а затем установите для его свойства **[Items](properties-core.md)** следующее выражение:
 
-    ```["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]```
+    `["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]`
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
@@ -139,13 +139,13 @@ ms.locfileid: "49075387"
 
 1. Добавьте элемент управления **Раскрывающийся список** и назначьте его свойству **[Items](properties-core.md)** следующую формулу:
 
-    ```Distinct(Accounts, address1_city)```
+    `Distinct(Accounts, address1_city)`
 
     Эта формула показывает все города в сущности **Учетные записи**. Если один город указан в нескольких записях, функция **[Distinct](../functions/function-distinct.md)** скрывает повторения в элементе управления раскрывающегося списка.
 
 1. (Необязательно.) Переименуйте элемент управления **Раскрывающийся список** в **Города**, добавьте вертикальный элемент управления **Коллекция** и задайте свойству коллекции **[Items](properties-core.md)** следующую формулу:
 
-    ```Filter(Accounts, address1_city = Cities.Selected.Value)```
+    `Filter(Accounts, address1_city = Cities.Selected.Value)`
 
     Функция **[Filter](../functions/function-filter-lookup.md)** отображает только те записи в сущности **Учетные записи**, для которых город совпадает с выбранным значением в элементе управления **Города**.
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 688b1e87e5bc1d2ee3429711b9995f3b4ef61e1c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: f538d785b9655b94a44a79c3299e979bbfe88883
+ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42857115"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54308784"
 ---
 # <a name="forall-function-in-powerapps"></a>Функция ForAll в PowerApps
 Вычисляет значения и выполняет действия для всех [записей](../working-with-tables.md#records) в [таблице](../working-with-tables.md).
@@ -64,7 +64,7 @@ ms.locfileid: "42857115"
 
 Для создания этого источника данных как коллекции установите в качестве значения свойства **OnSelect** элемента управления **Кнопка** следующую формулу, перейдите в режим предварительного просмотра и нажмите кнопку.
 
-* **ClearCollect( Squares, [ "1", "4", "9" ] )**
+`ClearCollect( Squares, [ "1", "4", "9" ] )`
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
@@ -78,7 +78,7 @@ ms.locfileid: "42857115"
 
 Для создания этого источника данных как коллекции установите в качестве значения свойства **OnSelect** элемента управления **Кнопка** следующую формулу, перейдите в режим предварительного просмотра и нажмите кнопку.
 
-* **ClearCollect( Expressions, [ "Hello", "Good morning", "Thank you", "Goodbye" ] )**
+`ClearCollect( Expressions, [ "Hello", "Good morning", "Thank you", "Goodbye" ] )`
 
 В этом примере используется также подключение к [Microsoft Translator](../connections/connection-microsoft-translator.md).  Сведения о том, как добавить это подключение в приложение, см. в разделе об [управлении подключениями](../add-manage-connections.md).
 
@@ -104,7 +104,16 @@ ms.locfileid: "42857115"
 
 Для создания этого источника данных как коллекции установите в качестве значения свойства **OnSelect** элемента управления **Кнопка** следующую формулу, перейдите в режим предварительного просмотра и нажмите кнопку.
 
-* **ClearCollect( Products, Table( { Product: "Widget", 'Quantity Requested': 6, 'Quantity Available': 3 }, { Product: "Gadget", 'Quantity Requested': 10, 'Quantity Available': 20 }, { Product: "Gizmo", 'Quantity Requested': 4, 'Quantity Available': 11 }, { Product: "Apparatus", 'Quantity Requested': 7, 'Quantity Available': 6 } ) )**
+```powerapps-dot
+ClearCollect( Products, 
+    Table( 
+        { Product: "Widget",    'Quantity Requested': 6,  'Quantity Available': 3 }, 
+        { Product: "Gadget",    'Quantity Requested': 10, 'Quantity Available': 20 },
+        { Product: "Gizmo",     'Quantity Requested': 4,  'Quantity Available': 11 },
+        { Product: "Apparatus", 'Quantity Requested': 7,  'Quantity Available': 6 } 
+    )
+)
+```
 
 Наша задача — обработать производную таблицу, содержащую только товары, для которых запрашиваемое количество превышает доступное и, как следствие, необходимо оформить заказ.
 
@@ -115,7 +124,17 @@ ms.locfileid: "42857115"
 #### <a name="table-shaping-on-demand"></a>Формирование таблицы по запросу
 Не создавайте копию!  В любом случае можно использовать следующую формулу:
 
-* **ShowColumns( AddColumns( Filter( Products, 'Quantity Requested' > 'Quantity Available' ), "Quantity To Order", 'Quantity Requested' - 'Quantity Available' ), "Product", "Quantity To Order" )**
+```powerapps-dot
+// Table shaping on demand, no need for a copy of the result
+ShowColumns( 
+    AddColumns( 
+        Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+        "Quantity To Order", 'Quantity Requested' - 'Quantity Available' 
+    ), 
+    "Product", 
+    "Quantity To Order"
+)
+```
 
 [Область записи](../working-with-tables.md#record-scope) создается с помощью функций **Filter** и **AddColumns**, которые выполняют сравнение и вычитание, соответственно, для полей **'Quantity Requested'** и **'Quantity Available'** каждой записи.
 
@@ -126,7 +145,16 @@ ms.locfileid: "42857115"
 #### <a name="forall-on-demand"></a>ForAll по запросу
 Другой способ — использовать функцию **ForAll** вместо функций формирования таблицы:
 
-* **ForAll( Products, If( 'Quantity Requested' > 'Quantity Available', { Product: Product, 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' } ) )**
+```powerapps-dot
+ForAll( Products, 
+    If( 'Quantity Requested' > 'Quantity Available', 
+        { 
+            Product: Product, 
+            'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
+        } 
+    ) 
+)
+```
 
 Некоторым людям будет проще прочесть и записать такую формулу.
 
@@ -137,15 +165,50 @@ ms.locfileid: "42857115"
 
 Мы используем такой же способ формирования таблицы, как и в предыдущих двух примерах, но сохраним результат в виде коллекции:
 
-* **ClearCollect( NewOrder, ShowColumns( AddColumns( Filter( Products, 'Quantity Requested' > 'Quantity Available' ), "Quantity To Order", 'Quantity Requested' - 'Quantity Available' ), "Product", "Quantity To Order" ) )**
-* **ClearCollect( NewOrder, ForAll( Products, If( 'Quantity Requested' > 'Quantity Available', { Product: Product, 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' } ) ) )**
+```powerapps-dot
+ClearCollect( NewOrder, 
+    ShowColumns( 
+        AddColumns( 
+            Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+            "Quantity To Order", 'Quantity Requested' - 'Quantity Available' 
+        ), 
+        "Product", 
+        "Quantity To Order"
+    )
+)
+```
+
+```powerapps-dot
+ClearCollect( NewOrder, 
+    ForAll( Products, 
+        If( 'Quantity Requested' > 'Quantity Available', 
+            { 
+                Product: Product, 
+                'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
+            } 
+        } 
+    )
+)
+```
 
 **ClearCollect** и **Collect** делегировать нельзя.  В результате количество данных, которые можно переместить таким образом, ограничено.
 
 #### <a name="collect-within-forall"></a>Выполнение функции Collect в ForAll
 Наконец, мы можем выполнить операцию **Collect** непосредственно в функции **ForAll**:
 
-* **Clear( ProductsToOrder ); ForAll( Products, If( 'Quantity Requested' > 'Quantity Available', Collect( NewOrder, { Product: Product, 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' } ) ) )**
+```powerapps-dot
+Clear( ProductsToOrder ); 
+ForAll( Products, 
+    If( 'Quantity Requested' > 'Quantity Available', 
+        Collect( NewOrder,  
+            { 
+                Product: Product, 
+                'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
+            } 
+        )
+    )
+)
+```
 
 Опять же, на данный момент функцию **ForAll** делегировать нельзя.  Если таблица **Products** большая, функция **ForAll** обработает только первый набор записей, и мы можем пропустить некоторые товары, которые необходимо заказать.  Однако если известно, что таблицы будут оставаться небольшими, этот метод прекрасно подходит.
 

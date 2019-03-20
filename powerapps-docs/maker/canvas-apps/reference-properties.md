@@ -1,36 +1,40 @@
 ---
 title: Поиск свойства | Документация Майкрософт
 description: Поиск свойства по элементам управления, категориям или в алфавитном порядке.
-author: gregli-msft
+author: fikaradz
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 03/17/2016
-ms.author: gregli
+ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6c69d32f21bb5d1222122c4ec129d765b390d98f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 968722e672c6f169c4a9e2e87be959aa48e23c86
+ms.sourcegitcommit: 957d67e13bd4153d042b3b3bd650f6d0de20613c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863132"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "58073678"
 ---
 # <a name="controls-and-properties-in-powerapps"></a>Элементы управления и свойства в PowerApps
+
 Настройка оформления и поведения элемента управления с помощью задания одного из его свойств. У каждого типа элемента управления имеется собственный набор свойств. Некоторые свойства, такие как **Height** и **Width**, являются общими почти для всех типов элементов управления, но другие свойства, такие как **CheckboxSize**, характерны для одного типа.
 
 ## <a name="controls"></a>Элементы управления
+
 **[Добавление изображения](controls/control-add-picture.md)** — загрузка изображений с локального устройства для передачи в источник данных.
 
 **[Вложения](controls/control-attachments.md)** — загрузка и отправка файлов из локального устройства в источник данных.
 
 **[Звук](controls/control-audio-video.md)** — воспроизведение аудиоклипа или звуковой дорожки видеоклипа.
 
-**[Сканер штрихкодов (экспериментальная функция)](controls/control-barcodescanner.md)** — сканирование штрихкода с помощью устройства с камерой.
+**[Сканер штрихкодов (экспериментальная функция)](controls/control-barcodescanner.md)**  — сканирует коды в веб-браузере (для прежних версий и нерекомендуемым).
+
+**[Сканер штрихкодов](controls/control-new-barcode-scanner.md)**  — сканирует штрихкоды, QR-коды и коды матрицы данных на устройстве Android или iOS.
 
 **[Кнопка](controls/control-button.md)** — взаимодействие с приложением с помощью щелчка или касания.
 
@@ -56,7 +60,7 @@ ms.locfileid: "42863132"
 
 **[Форма редактирования](controls/control-form-detail.md)** — изменение и создание записей в источнике данных с помощью формы.
 
-**[Форма сущности](entity-form-control.md)** — экспериментальная функция. Добавление динамических форм, с помощью которых пользователи могут просматривать и редактировать реляционные данные из Common Data Service и переходить по ним.
+**[Форма сущности](entity-form-control.md)**  -экспериментальная функция: Добавьте динамические формы, в которых пользователи могут просматривать, перейдите и редактировать реляционные данные из Common Data Service.
 
 **[Экспорт](controls/control-export-import.md)** — экспорт данных для использования в любом компоненте PowerApps.
 
@@ -88,7 +92,7 @@ ms.locfileid: "42863132"
 
 **[Оценка](controls/control-rating.md)** — указание значения от 1 до указанного числа.
 
-**[Редактор форматированного текста (экспериментальная функция)](controls/control-richtexteditor.md)**  — позволяет пользователям приложения форматировать текст.
+**[Редактор форматированного текста](controls/control-richtexteditor.md)**  — позволяет форматированный текст пользователями приложения.
 
 **[Экран](controls/control-screen.md)** — отображение и обновление данных об определенной задаче.
 
@@ -106,7 +110,10 @@ ms.locfileid: "42863132"
 
 **[Видео](controls/control-audio-video.md)** — воспроизведение видеоролика из локального файла, источника данных или службы YouTube.
 
+**[Сканер штрихкодов Web (экспериментальная функция)](controls/control-barcodescanner.md)**  — сканер штрихкодов прежних версий, который является устаревшим, но может оказаться полезной для сканирования коды в веб-браузере.
+
 ## <a name="common-properties-by-category"></a>Общие свойства по категориям
+
 **[Цвет и границы](controls/properties-color-border.md)** — настройка цвета и границ элемента управления, которые могут изменяться, когда пользователь с ним взаимодействует.
 
 **[Основные](controls/properties-core.md)** — настройка возможности видеть элемент управления или взаимодействовать с ним для пользователя.
@@ -118,7 +125,9 @@ ms.locfileid: "42863132"
 **[Текст](controls/properties-text.md)**  — настройка отображения текста в элементах управления, в том числе свойств шрифта, выравнивания, высоты строки.  
 
 ## <a name="all-properties"></a>Все свойства
+
 ### <a name="a"></a>A
+
 **[ActualZoom](controls/control-pdf-viewer.md)**  — фактический масштаб элемента управления, который может отличаться от запрошенного в свойстве **Zoom**.  Применяется к элементу управления **[Средство просмотра PDF](controls/control-pdf-viewer.md)**.
 
 **[Align](controls/properties-text.md)**  — расположение текста относительно центра элемента управления по горизонтали.  Применяется к многим элементам управления.
@@ -134,6 +143,7 @@ ms.locfileid: "42863132"
 **AutoStart** — определяет, будет ли автоматически запускаться элемент управления Звук или Видео для воспроизведения клипа при переходе пользователя на экран с таким элементом управления.  Применяется к элементам управления **[Звук](controls/control-audio-video.md)**, **[Таймер](controls/control-timer.md)** и **[Видео](controls/control-audio-video.md)**.
 
 ### <a name="b"></a>B
+
 **[BackgroundImage](controls/properties-visual.md)** — имя файла изображения, которое отображается в качестве фона экрана.  Применяется к элементу управления **[Экран](controls/control-screen.md)**.
 
 **[BorderColor](controls/properties-color-border.md)**  — цвет границы элемента управления.  Применяется к многим элементам управления.
@@ -145,6 +155,7 @@ ms.locfileid: "42863132"
 **[Brightness](controls/control-camera.md)** — яркость изображения.  Применяется к элементу управления **[Камера](controls/control-camera.md)**.
 
 ### <a name="c"></a>C
+
 **[CalculateOriginalDimensions](controls/control-image.md)** — включает свойства **[OriginalHeight](controls/control-image.md)** и **[OriginalWidth](controls/control-image.md)**.  Применяется к элементу управления **[Изображение](controls/control-image.md)**.
 
 **[Камера](controls/control-camera.md)** — на устройстве с несколькими камерами это число идентифицирует камеру, используемую приложением.  Применяется к элементу управления **[Камера](controls/control-camera.md)**.
@@ -172,6 +183,7 @@ ms.locfileid: "42863132"
 **[CurrentPage](controls/control-pdf-viewer.md)**  — номер отображаемой страницы PDF-файла.  Применяется к элементу управления **[Средство просмотра PDF](controls/control-pdf-viewer.md)**.
 
 ### <a name="d"></a>D
+
 **[Data](controls/control-export-import.md)**  — имя коллекции, которую необходимо экспортировать в локальный файл.  Применяется к элементу управления **[Экспорт](controls/control-export-import.md)**.
 
 **[DataField](controls/control-card.md)** — имя поля в записи, которое позволяет просматривать и редактировать эта карта.  Применяется к элементу управления **[Карта](controls/control-card.md)**.
@@ -203,6 +215,7 @@ ms.locfileid: "42863132"
 **[Duration](controls/control-timer.md)**  — длительность работы таймера.  Применяется к элементу управления **[Таймер](controls/control-timer.md)**.
 
 ### <a name="e"></a>E
+
 **[EndYear](controls/control-date-picker.md)** — последний год, который пользователь может выбрать в элементе управления "Средство выбора даты".  Применяется к элементу управления **[Средство выбора даты](controls/control-date-picker.md)**.
 
 **Error** — значение этого свойства зависит от элемента управления:
@@ -216,6 +229,7 @@ ms.locfileid: "42863132"
 **[Explode](controls/control-pie-chart.md)**  — расстояние между секторами круговой диаграммы.  Применяется к элементу управления **[Круговая диаграмма](controls/control-pie-chart.md)**.
 
 ### <a name="f"></a>F
+
 **[Fill](controls/properties-color-border.md)**  — цвет фона элемента управления.  Применяется к многим элементам управления.
 
 **[FindNext](controls/control-pdf-viewer.md)**  — поиск следующего экземпляра **FindText** в документе.  Применяется к элементу управления **[Средство просмотра PDF](controls/control-pdf-viewer.md)**.
@@ -226,12 +240,14 @@ ms.locfileid: "42863132"
 
 **[Font](controls/properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.  Применяется к многим элементам управления.
 
-**[FontWeight](controls/properties-text.md)**  — толщина текста в элементе управления: **Жирный**, **Полужирный**, **Обычный** или **Очень тонкий**.  Применяется к многим элементам управления.
+**[FontWeight](controls/properties-text.md)**  — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.  Применяется к многим элементам управления.
 
 ### <a name="g"></a>G
+
 **[GridStyle](controls/control-column-line-chart.md)** — это свойство указывает, необходимо ли отображать на гистограмме или графике ось X, ось Y, обе оси или ни одной.  Применяется к элементам управления **[Гистограмма](controls/control-column-line-chart.md)** и **[График](controls/control-column-line-chart.md)**.
 
 ### <a name="h"></a>Серия H
+
 **[HandleActiveFill](controls/control-slider.md)** — цвет маркера ползунка при изменении его значения пользователем.  Применяется к элементу управления **[Ползунок](controls/control-slider.md)**.
 
 **[HandleFill](controls/control-slider.md)** — цвет маркера (элемента, который изменяет положение) в элементе управления "Переключатель" или "Ползунок".  Применяется к элементу управления **[Ползунок](controls/control-slider.md)**.
@@ -251,6 +267,7 @@ ms.locfileid: "42863132"
 **[HTMLText](controls/control-html-text.md)**  — текст, который отображается в элементе управления "HTML-текст" и может содержать теги HTML.  Применяется к элементу управления **[HTML-текст](controls/control-html-text.md)**.
 
 ### <a name="i"></a>I
+
 **[Image](controls/properties-visual.md)**  — имя изображения, которое отображается в элементе управления "Изображение", "Звук" или "Микрофон".  Применяется к элементам управления **[Звук](controls/control-audio-video.md)**, **[Изображение](controls/control-image.md)**, **[Микрофон](controls/control-microphone.md)** и **[Видео](controls/control-audio-video.md)**.
 
 **[ImagePosition](controls/properties-visual.md)**  — расположение изображения на экране или в элементе управления, если его размеры отличаются от размеров изображения (**Fill**, **Fit**, **Stretch**, **Tile** или **Center**).  Применяется к многим элементам управления.
@@ -274,6 +291,7 @@ ms.locfileid: "42863132"
 **[ItemsGap](controls/control-column-line-chart.md)** — расстояние между столбцами в гистограмме.  Применяется к элементу управления **[Гистограмма](controls/control-column-line-chart.md)**.
 
 ### <a name="l"></a>L
+
 **[LabelPosition](controls/control-pie-chart.md)**  — расположение меток на круговой диаграмме относительно ее секторов.  Применяется к элементу управления **[Круговая диаграмма](controls/control-pie-chart.md)**.
 
 **[LastSubmit](controls/control-form-detail.md)** — последняя успешно отправленная запись (включая поля, сгенерированные сервером).  Применяется к элементу управления **[Форма редактирования](controls/control-form-detail.md)**.
@@ -285,6 +303,7 @@ ms.locfileid: "42863132"
 **[Loop](controls/control-audio-video.md)**  — определяет, будет ли аудиоклип или видеоклип запускаться с начала автоматически после окончания воспроизведения.  Применяется к элементам управления **[Звук](controls/control-audio-video.md)** и **[Видео](controls/control-audio-video.md)**.
 
 ### <a name="m"></a>M
+
 **[Markers](controls/control-column-line-chart.md)** — это свойство указывает, отображается ли на диаграмме значение каждой точки данных.  Применяется к элементам управления **[Гистограмма](controls/control-column-line-chart.md)** и **[График](controls/control-column-line-chart.md)**.
 
 **[MarkerSuffix](controls/control-column-line-chart.md)** — текст, отображаемый после каждого значения в гистограмме, для которой свойству **[Markers](controls/control-column-line-chart.md)** присвоено значение **true**.  Применяется к элементу управления **[Гистограмма](controls/control-column-line-chart.md)**.
@@ -308,11 +327,13 @@ ms.locfileid: "42863132"
 * Элемент управления **[Текстовое поле](controls/control-text-input.md)** — режим, в котором находится элемент управления: **SingleLine**, **MultiLine** или **Password**.
 
 ### <a name="n"></a>N
+
 **[NavigationStep](controls/control-gallery.md)** — определяет шаг прокрутки коллекции, если ее свойству **[ShowNavigation](controls/control-gallery.md)** присвоено значение **true** и пользователь выбрал стрелку навигации на любом конце этой коллекции.  Применяется к элементу управления **[Коллекция](controls/control-gallery.md)**.
 
 **[NumberOfSeries](controls/control-column-line-chart.md)** — количество столбцов с данными, на основе которых строится гистограмма или график.  Применяется к элементам управления **[Гистограмма](controls/control-column-line-chart.md)** и **[График](controls/control-column-line-chart.md)**.
 
 ### <a name="o"></a>O
+
 **[OnChange](controls/properties-core.md)**  — поведение приложения, когда пользователь изменяет значение элемента управления (например, перемещая ползунок).  Применяется к многим элементам управления.
 
 **OnCheck** — поведение приложения, когда значение флажка или переключателя изменяется на **true**.  Применяется к элементам управления **[Флажок](controls/control-check-box.md)** и **[Переключатель](controls/control-toggle.md)**.
@@ -354,6 +375,7 @@ ms.locfileid: "42863132"
 **[Overflow](controls/control-text-box.md)**  — определяет, отображается ли полоса прокрутки в метке, если ее свойству **[Wrap](controls/control-text-box.md)** присвоено значение **true** и значение свойства **[Text](controls/properties-core.md)** этого элемента управления содержит больше знаков, чем он может одновременно отобразить.  Применяется к элементу управления **[Метка](controls/control-text-box.md)**.
 
 ### <a name="p"></a>P
+
 **[Padding](controls/properties-size-location.md)**  — расстояние между текстом кнопки "Импорт" или "Экспорт" и границами кнопки.  Применяется к элементам управления **[Добавление изображения](controls/control-add-picture.md)**, **[Экспорт](controls/control-export-import.md)** и **[Импорт](controls/control-export-import.md)**.
 
 **[PaddingBottom](controls/properties-size-location.md)**  — расстояние между текстом в элементе управления и нижним краем элемента управления.  Применяется к многим элементам управления.
@@ -381,6 +403,7 @@ ms.locfileid: "42863132"
 **[PressedFill](controls/properties-color-border.md)**  — цвет фона элемента управления при щелчке или касании.  Применяется к многим элементам управления.
 
 ### <a name="r"></a>R
+
 **[RadioBackgroundFill](controls/control-radio.md)** — цвет фона кругов в переключателе.  Применяется к элементу управления **[Переключатель](controls/control-radio.md)**.
 
 **[RadioBorderColor](controls/control-radio.md)** — цвет круга для каждого параметра в переключателе.  Применяется к элементу управления **[Переключатель](controls/control-radio.md)**.
@@ -412,6 +435,7 @@ ms.locfileid: "42863132"
 **[Reset](controls/properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.  Применяется к многим элементам управления.  См. также сведения о функции **[Reset](functions/function-reset.md)**.
 
 ### <a name="s"></a>S
+
 **Selected** — выбранный элемент.  Применяется к элементам управления **[Раскрывающийся список](controls/control-drop-down.md)** и **[Коллекция](controls/control-gallery.md)**.
 
 **[SelectedDate](controls/control-date-picker.md)** — дата, выбранная в элементе управления датой.  Применяется к элементу управления **[Средство выбора даты](controls/control-date-picker.md)**.
@@ -455,6 +479,7 @@ ms.locfileid: "42863132"
 **[Strikethrough](controls/properties-text.md)** определяет, когда через текст, отображаемый в элементе управления, проходит линия.  Применяется к многим элементам управления.
 
 ### <a name="t"></a>T
+
 **[TemplateFill](controls/control-gallery.md)**  — цвет фона коллекции.  Применяется к элементу управления **[Коллекция](controls/control-gallery.md)**.
 
 **[TemplatePadding](controls/control-gallery.md)**  — расстояние между элементами в коллекции.  Применяется к элементу управления **[Коллекция](controls/control-gallery.md)**.
@@ -472,6 +497,7 @@ ms.locfileid: "42863132"
 **[Transparency](controls/control-image.md)** — прозрачность, или степень того, насколько видны элементы управления за изображением.  Применяется к элементу управления **[Изображение](controls/control-image.md)**.
 
 ### <a name="u"></a>U
+
 **[Underline](controls/properties-text.md)** определяет, когда под текстом, отображаемым в элементе управления, проходит линия.  Применяется к многим элементам управления.
 
 **[Unsaved](controls/control-form-detail.md)** — значение True, если элемент управления **[Форма редактирования](controls/control-form-detail.md)** содержит пользовательские изменения, которые не были сохранены.  Применяется к элементу управления **[Форма редактирования](controls/control-form-detail.md)**.
@@ -481,6 +507,7 @@ ms.locfileid: "42863132"
 **[Updates](controls/control-form-detail.md)** — значения, сохраняемые в источнике данных для записи, загруженной в элемент управления формы.  Применяется к элементу управления **[Форма редактирования](controls/control-form-detail.md)**.
 
 ### <a name="v"></a>V
+
 **Valid** — это свойство показывает, содержит ли элемент управления **[Карта](controls/control-card.md)** или **[Форма редактирования](controls/control-form-detail.md)** допустимые значения, готовые к отправке в источник данных.  Применяется к элементам управления **[Карта](controls/control-card.md)** и **[Форма редактирования](controls/control-form-detail.md)**.
 
 **[Value](controls/properties-core.md)**  — значение элемента управления для ввода.  Применяется к элементам управления **[Флажок](controls/control-check-box.md)**, **[Переключатель](controls/control-radio.md)**, **[Ползунок](controls/control-slider.md)** и **[Переключатель](controls/control-toggle.md)**.
@@ -494,6 +521,7 @@ ms.locfileid: "42863132"
 **[Visible](controls/properties-core.md)** определяет, отображается ли элемент управления или он скрыт.  Применяется к многим элементам управления.
 
 ### <a name="w"></a>W
+
 **[Width](controls/properties-size-location.md)**  — расстояние между левым и правым краем элемента управления.  Применяется к многим элементам управления.
 
 **[WidthFit](controls/properties-size-location.md)** — позволяет включить автоматическое изменение размера элемента управления по горизонтали для заполнения пустого пространства в контейнере, например в элементе управления **[Форма изменения](controls/control-form-detail.md)**. Если для нескольких карт этому свойству присвоено значение **true**, то пространство распределяется между ними. Дополнительные сведения о формах данных см. в статье [Общие сведения о макете формы данных в Microsoft PowerApps](working-with-form-layout.md).
@@ -503,11 +531,13 @@ ms.locfileid: "42863132"
 **[WrapCount](controls/control-gallery.md)** — определяет, сколько записей отображается в каждом элементе коллекции.  Применяется к элементу управления **[Коллекция](controls/control-gallery.md)**.
 
 ### <a name="x"></a>X
+
 **[X](controls/properties-size-location.md)**  — расстояние между левым краем элемента управления и левым краем его родительского контейнера (или экрана, если родительского контейнера нет). Применяется к многим элементам управления. Для элемента управления **[Карточка](controls/control-card.md)** в контейнере с несколькими столбцами данное свойство определяет столбец, в котором отображается карточка.
 
 **[XLabelAngle](controls/control-column-line-chart.md)** — угол наклона меток под осью X гистограммы или графика.  Применяется к элементам управления **[Гистограмма](controls/control-column-line-chart.md)** и **[График](controls/control-column-line-chart.md)**.
 
 ### <a name="y"></a>Y
+
 **[Y](controls/properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет). Применяется к многим элементам управления. Для элемента управления **[Карточка](controls/control-card.md)** в контейнере с несколькими строками данное свойство определяет строку, в которой отображается карточка.
 
 **[YAxisMax](controls/control-column-line-chart.md)** — максимальное значение оси Y на графике.  Применяется к элементу управления **[График ](controls/control-column-line-chart.md)**.
@@ -517,4 +547,5 @@ ms.locfileid: "42863132"
 **[YLabelAngle](controls/control-column-line-chart.md)** — угол наклона меток рядом с осью Y гистограммы или графика.  Применяется к элементам управления **[Гистограмма](controls/control-column-line-chart.md)** и **[График](controls/control-column-line-chart.md)**.
 
 ### <a name="z"></a>Z
+
 **Zoom** — процент, на который увеличивается изображение с камеры или представление файла в средстве просмотра PDF.  Применяется к элементам управления **[Камера](controls/control-camera.md)** и **[Средство просмотра PDF](controls/control-pdf-viewer.md)**.

@@ -13,24 +13,24 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a0fdddcf906a04914ea9ba9a8572798ea5d55378
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: b3f95b5c8ddbca1925f89797e52b1b227c4b10e8
+ms.sourcegitcommit: ead27300a1b7371136edee1842829ed87ca77a72
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834826"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57892260"
 ---
 # <a name="concurrent-function-in-powerapps"></a>Функция Concurrent в PowerApps
 Оценивает несколько формул одновременно.
 
 ## <a name="description"></a>Описание
-Функция **Concurrent** вычисляет несколько формул одновременно. Обычно несколько формул вычисляются последовательно путем их объединения в цепочку с помощью операторов [**;**](operators.md) (или [**;;**](operators.md)). Когда приложение выполняет операции одновременно, пользователи тратят меньше времени на ожидание результата.
+Функция **Concurrent** вычисляет несколько формул одновременно. Обычно несколько формул, вычисляются путем прикрепления их вместе с [ **;** ](operators.md) оператор, который оценивает каждую из них последовательно в порядке. Когда приложение выполняет операции одновременно, пользователи тратят меньше времени на ожидание результата.
 
 В свойстве [**OnStart**](../controls/control-screen.md) в приложении используйте функцию **Concurrent**, чтобы повысить производительность при загрузке данных. Если вызов данных не начинается до завершения предыдущего вызова, время ожидания в приложении будет суммой времени выполнения всех запросов по очереди. Если вызовы данных запускаются одновременно, временем ожидания будет время выполнения самого долгого запроса. Веб-браузеры часто повышают производительность, одновременно выполняя операции с данными.
 
-Невозможно предсказать порядок, в котором формулы в функции **Concurrent** начинают и завершают вычисление. Формулы в функции **Concurrent** не должны содержать зависимости от других формул в той же функции **Concurrent**. В противном случае в PowerApps возникнет ошибка. Вы можете спокойно создавать зависимости от формул за пределами функции **Concurrent**, поскольку они будут выполнены до запуска функции **Concurrent**. Формулы после функции **Concurrent** могут иметь зависимости от формул внутри функции, поскольку они будут выполнены до того, как функция **Concurrent** завершится и перейдет к следующей формуле в цепочке (если вы используете оператор **;** или **;;**). Остерегайтесь незаметных зависимостей от порядка, если вызываете функции или методы службы с побочными эффектами.
+Невозможно предсказать порядок, в котором формулы в функции **Concurrent** начинают и завершают вычисление. Формулы в функции **Concurrent** не должны содержать зависимости от других формул в той же функции **Concurrent**. В противном случае в PowerApps возникнет ошибка. Вы можете спокойно создавать зависимости от формул за пределами функции **Concurrent**, поскольку они будут выполнены до запуска функции **Concurrent**. Формулы после **параллельных** функции безопасно могут иметь зависимости в формулах в: они будет выполнить перед **параллельных** функцию завершения и переходит к следующей формуле в цепочке (Если вы Используйте **;** оператор). Остерегайтесь незаметных зависимостей от порядка, если вызываете функции или методы службы с побочными эффектами.
 
-Вы можете объединять формулы в цепочку с помощью оператора **;** (или **;**) в аргументе для функции **Concurrent**. Например, **Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) )** вычисляет **Set( a, 1 ); Set( b, a+1 )** одновременно с **Set( x, 2 ); Set( y, x+2 )**. В этом случае зависимости в формулах допускаются: **a** устанавливается до **b**, а **x** устанавливается до **y**.
+Можно объединять в цепочку формулы вместе с **;** -оператор в аргумент **параллельных**. Например, **Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) )** вычисляет **Set( a, 1 ); Set( b, a+1 )** одновременно с **Set( x, 2 ); Set( y, x+2 )**. В этом случае зависимости в формулах допускаются: **a** устанавливается до **b**, а **x** устанавливается до **y**.
 
 В зависимости от устройства или браузера, в котором выполняется приложение, только некоторые формулы могут вычисляться одновременно. Функция **Concurrent** использует доступные возможности и не завершится, пока не будут вычислены все формулы.
 
@@ -55,7 +55,12 @@ ms.locfileid: "42834826"
 
 2. Добавьте элемент управления **[Кнопка](../controls/control-button.md)** и задайте следующую формулу в качестве значения свойства **OnSelect**:
 
-    **ClearCollect( Product, '[SalesLT].[Product]' );<br> ClearCollect( Customer, '[SalesLT].[Customer]' );<br> ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' );<br> ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )**
+    ```powerapps-dot
+    ClearCollect( Product, '[SalesLT].[Product]' );
+    ClearCollect( Customer, '[SalesLT].[Customer]' );
+    ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ); 
+    ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
+    ```
 
 3. В [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) или [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) включите средства разработчика для отслеживания сетевого трафика во время работы приложения.
 
@@ -73,7 +78,14 @@ ms.locfileid: "42834826"
 
 1. Добавьте второй элемент управления **[Кнопка](../controls/control-button.md)** и задайте следующую формулу в качестве значения свойства **OnSelect**:
 
-    **Concurrent(<br> &nbsp;&nbsp;&nbsp;&nbsp;ClearCollect( Product, '[SalesLT].[Product]' ),<br> &nbsp;&nbsp;&nbsp;&nbsp;ClearCollect( Customer, '[SalesLT].[Customer]' ),<br> &nbsp;&nbsp;&nbsp;&nbsp;ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),<br> &nbsp;&nbsp;&nbsp;&nbsp;ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )<br> )**
+    ```powerapps-dot
+    Concurrent( 
+        ClearCollect( Product, '[SalesLT].[Product]' ), 
+        ClearCollect( Customer, '[SalesLT].[Customer]' ),
+        ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),
+        ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
+    )
+    ```
 
     Обратите внимание, что вы добавили те же вызовы **ClearCollect** к первой кнопке, но на этот раз с функцией **Concurrent** и разделением запятыми.
 
@@ -99,7 +111,23 @@ ms.locfileid: "42834826"
 
 3. Добавьте элемент управления **Кнопка** и задайте следующую формулу в качестве значения свойства **OnSelect**:
 
-    **Set( StartTime, Value(Now()) );<br> Concurrent(<br> &nbsp;&nbsp;&nbsp;&nbsp;Set(FRTrans, MicrosoftTranslator.Translate(TextInput1.Text,"fr")); Set(FRTransTime, Value(Now()) ),<br> &nbsp;&nbsp;&nbsp;&nbsp;Set(DETrans, MicrosoftTranslator.Translate(TextInput1.Text,"de")); Set(DETransTime, Value(Now()) )<br> ); <br> Collect( <br> &nbsp;&nbsp;&nbsp;&nbsp;Results, <br> &nbsp;&nbsp;&nbsp;&nbsp;{<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Input: TextInput1.Text, <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;French: FRTrans, FrenchTime: FRTransTime-StartTime,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;German: DETrans, GermanTime: DETransTime-StartTime,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FrenchFaster: FRTransTime < DETransTime <br> &nbsp;&nbsp;&nbsp;&nbsp;}<br> )**
+    ```powerapps-dot
+    Set( StartTime, Value( Now() ) );
+    Concurrent(
+        Set( FRTrans, MicrosoftTranslator.Translate( TextInput1.Text, "fr" ) ); 
+            Set( FRTransTime, Value( Now() ) ),
+        Set( DETrans, MicrosoftTranslator.Translate( TextInput1.Text, "de" ) ); 
+            Set( DETransTime, Value( Now() ) )
+    );
+    Collect( Results,
+        { 
+            Input: TextInput1.Text,
+            French: FRTrans, FrenchTime: FRTransTime - StartTime, 
+            German: DETrans, GermanTime: DETransTime - StartTime, 
+            FrenchFaster: FRTransTime < DETransTime
+        }
+    )
+    ```
 
 4. Добавьте элемент управления [**Таблица данных**](../controls/control-data-table.md) и укажите для свойства **Items** значение **Результаты**.
 

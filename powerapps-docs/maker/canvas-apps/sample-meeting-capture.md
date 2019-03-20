@@ -1,24 +1,24 @@
 ---
 title: Пример шаблона Meeting Capture | Документация Майкрософт
 description: Дополнительные сведения о примере шаблона Meeting Capture в PowerApps с установкой, обзором и детальным рассказом о том, как было создано приложение.
-author: caburk
+author: mr-dang-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 07/03/2018
-ms.author: caburk
+ms.author: brdang
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7a83ce913fbc688640eb2da2de6d9d5d66c7cde7
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: dfa2531baa95405d6ceb5adbda2aa5b839d27904
+ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42848364"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "57802430"
 ---
 # <a name="set-up-and-learn-about-the-meeting-capture-sample-template-in-powerapps"></a>Настройка и дополнительные сведения о шаблоне фрагмента записи собрания в PowerApps
 
@@ -48,15 +48,15 @@ Meeting Capture включает в себя множество функций, 
 
 Meeting Capture подключается к этим службам в Office 365.
 
-- [Пользователи Office 365](https://docs.microsoft.com/en-us/connectors/office365users/)
-- [Office 365 Outlook](https://docs.microsoft.com/en-us/connectors/office365/)
-- [Планировщик](https://docs.microsoft.com/en-us/connectors/planner/)
-- [OneNote (для бизнеса)](https://docs.microsoft.com/en-us/connectors/onenote/)
-- [Преобразование содержимого](https://docs.microsoft.com/en-us/connectors/conversionservice/)
+- [Пользователи Office 365](https://docs.microsoft.com/connectors/office365users/)
+- [Office 365 Outlook](https://docs.microsoft.com/connectors/office365/)
+- [Планировщик](https://docs.microsoft.com/connectors/planner/)
+- [OneNote (для бизнеса)](https://docs.microsoft.com/connectors/onenote/)
+- [Преобразование содержимого](https://docs.microsoft.com/connectors/conversionservice/)
 
 Мы надеемся, что вам понравится работа с Meeting Capture, и с нетерпением ждем отклика, как вы используете его для своей организации!
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- [Справочник формул](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference)
-- [Справочник элементов управления](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/reference-properties)
+- [Справочник формул](https://docs.microsoft.com/powerapps/maker/canvas-apps/formula-reference)
+- [Справочник элементов управления](https://docs.microsoft.com/powerapps/maker/canvas-apps/reference-properties)
  

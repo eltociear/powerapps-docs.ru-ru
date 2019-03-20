@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7cc3608d6a973c0ef301c9979b62f5ba898c029c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: b8f8dc0d354dd17fedd16524fed0f358b70839d4
+ms.sourcegitcommit: f5013108140276b3d66a9dce13a061df89609d26
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42848585"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "57798405"
 ---
 # <a name="split-function-in-powerapps"></a>Функция Split в PowerApps
 Разбивает строку текста на таблицу с подстроками.
@@ -28,7 +28,7 @@ ms.locfileid: "42848585"
 
 Строка разделителя используется для разбивки текстовой строки.  Разделитель может содержать ноль, один или несколько символов, которые в текстовой строке обрабатываются как одно целое.  Если используется *пустая* строка или строка нулевой длины, будет разделен каждый символ.  Соответствующие строки разделители не возвращаются в результатах.  Если соответствующий разделитель не найден, вся строка текста возвращается как один результат.
 
-Используйте функцию **[Concat](function-concatenate.md)**, чтобы перекомпоновать строку (без разделителей).  
+Используйте функцию **[Concat](function-concatenate.md)**, чтобы перекомпоновать строку (без разделителей). Используйте **[MatchAll](function-ismatch.md)** функция для извлечения части текстовой строки с помощью регулярных выражений, который можно использовать для разбиения строки (в некоторых случаях). 
 
 ## <a name="syntax"></a>Синтаксис
 **Split**( *Text*, *Separator* )

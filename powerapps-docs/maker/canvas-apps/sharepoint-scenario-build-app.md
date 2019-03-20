@@ -1,24 +1,24 @@
 ---
 title: Создание приложения на основе холста для управления проектами | Документы Майкрософт
 description: В этом примере мы выполним сборку приложения на основе холста с нуля. Это приложение позволяет пользователям назначать руководителей проектов и обновлять сведения о проектах.
-author: mgblythe
+author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
-ms.author: mblythe
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6b55fe94e7d781147e3e3511769c4d72ca3d90de
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 5125299c969db635a9e260ea7bac28f6a6e02bc0
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42842378"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799900"
 ---
 # <a name="create-a-canvas-app-to-manage-projects"></a>Создание приложения на основе холста для управления проектами
 > [!NOTE]
@@ -113,7 +113,7 @@ ms.locfileid: "42842378"
    
     ![Вкладка "Источники данных"](./media/sharepoint-scenario-build-app/04-02-06-data-sources.png)
 
-## <a name="step-3-build-the-selecttask-screen"></a>Шаг 3. Создание экрана "SelectTask" (Выбор задачи)
+## <a name="step-3-build-the-selecttask-screen"></a>Шаг 3. Создание экрана SelectTask
 На этом этапе мы определим способ перехода к другим экранам в приложении, используя элементы управления, формулы и параметры форматирования, доступные в PowerApps.
 
 ### <a name="update-the-title-and-insert-introductory-text"></a>Изменение заголовка и вставка вводного текста
@@ -169,7 +169,7 @@ ms.locfileid: "42842378"
 
 4. Выберите стрелку ![Значок закрытия предварительного просмотра приложения](./media/sharepoint-scenario-build-app/icon-close-preview.png) в правом верхнем углу, чтобы закрыть приложение.
 
-## <a name="step-4-build-the-assignmanager-screen"></a>Шаг 4. Создание экрана "AssignManager" (Назначение руководителя)
+## <a name="step-4-build-the-assignmanager-screen"></a>Шаг 4. Создание экрана AssignManager
 На этом этапе с помощью коллекции отобразим все проекты, которые утверждены и которым еще не назначен руководитель. Мы добавим другие элементы управления, чтобы вы могли назначать руководителя.
 
 > [!NOTE]
@@ -291,7 +291,7 @@ ms.locfileid: "42842378"
    
    * свойство **Height** = **60**;
 
-   * свойство **OnSelect** = **Patch('Project Details', LookUp('Project Details', ID = Gallery1.Selected.ID), {PMAssigned: TextInput1.Text})**. См. [подробные сведения о формулах](#formula-deep-dive).
+   * **OnSelect** свойство = **Patch ('Project Details', LookUp ('Project Details', ID = Gallery1.Selected.ID), {PMAssigned: TextInput1.Text})**. См. [подробные сведения о формулах](#formula-deep-dive).
 
    * Эта формула обновляет список **Project Details** (Сведения о проекте), определяя значение для поля "PMAssigned".
 
@@ -307,7 +307,7 @@ ms.locfileid: "42842378"
 
 ![Готовый экран "AssignManager" (Назначение руководителя)](./media/sharepoint-scenario-build-app/04-04-12-complete.png)
 
-## <a name="step-5-build-the-viewprojects-screen"></a>Шаг 5. Создание экрана "ViewProjects" (Просмотр проектов)
+## <a name="step-5-build-the-viewprojects-screen"></a>Шаг 5. Создание экрана ViewProjects
 На этом этапе мы изменим свойства коллекции на экране **ViewProjects** (Просмотр проектов). Эта галерея содержит элементы из списка **Project Details** (Сведения о проекте). Выберите элемент на экране, а затем измените сведения на экране **UpdateDetails** (Обновление сведений).
 
 1. На панели навигации слева щелкните экран **ViewProjects** (Просмотр проектов).
@@ -364,7 +364,7 @@ ms.locfileid: "42842378"
      
      ![Готовый экран "ViewProject" (Просмотр проектов)](./media/sharepoint-scenario-build-app/04-05-07-viewprojects-final.png)
 
-## <a name="step-6-build-the-updatedetails-screen"></a>Шаг 6. Создание экрана "UpdateDetails" (Обновление сведений)
+## <a name="step-6-build-the-updatedetails-screen"></a>Шаг 6. Создание экрана UpdateDetails
 На этом этапе мы подключим форму редактирования на экране **UpdateDetails** (Обновление сведений) к источнику данных, а затем изменим свойства и поля. На этом экране можно изменить сведения о проекте, выбранном на экране **ViewProjects** (Просмотр проектов).
 
 1. На панели навигации слева щелкните экран **UpdateDetails** (Обновление сведений).
@@ -496,7 +496,7 @@ ms.locfileid: "42842378"
 ## <a name="formula-deep-dive"></a>Подробные сведения о формулах
 Это второй раздел с дополнительными сведениями о формулах PowerApps. В первом разделе мы рассмотрели одну из формул, создаваемых в PowerApps для настройки коллекции обзора в приложении с тремя экранами. В этом разделе мы рассмотрим формулу, которая используется для настройки экрана **AssignManager** (Назначение руководителя) нашего второго приложения. Формула выглядит так:
 
-**Patch ( 'Project Details', LookUp ( 'Сведения о проекте', ID = Gallery1.Selected.ID ), {PMAssigned: TextInput1.Text} )**
+**Patch ('Project Details', LookUp ('Project Details', ID = Gallery1.Selected.ID), {PMAssigned: TextInput1.Text} )**
 
 Для чего же используется эта формула? Когда вы выбираете элемент в коллекции и нажимаете кнопку **ОК**, формула обновляет список **Project Details** (Сведения о проекте), присваивая столбцу **PMAssigned** значение, указанное в поле ввода текста. Для этого в формуле используются следующие функции:
 

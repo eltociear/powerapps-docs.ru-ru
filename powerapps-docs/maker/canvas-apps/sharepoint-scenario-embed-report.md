@@ -1,24 +1,24 @@
 ---
 title: Внедрение отчета о проекте Power BI в SharePoint Online | Документация Майкрософт
 description: В этой задаче мы внедрим отчет Power BI на тот же веб-сайт SharePoint Online, где размещены два наши списка.
-author: mgblythe
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 01/30/2018
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9d15001795cc33d163e85b358a52aba759c83021
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 92ae77237064d28e3070f7e7bc9cb94c4493a3c6
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42865443"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799601"
 ---
 # <a name="embed-the-power-bi-project-report-in-sharepoint-online"></a>Внедрение отчета о проекте Power BI в SharePoint Online
 > [!NOTE]
@@ -60,7 +60,7 @@ ms.locfileid: "42865443"
    
     ![Завершение внедрения отчета](./media/sharepoint-scenario-embed-report/08-01-09-report-complete.png)
 
-## <a name="step-3-grant-access-to-the-report"></a>Шаг 3. Предоставление доступа к отчету.
+## <a name="step-3-grant-access-to-the-report"></a>Шаг 3. Предоставьте доступ к отчету.
 Если вы, как и рекомендуется, используете группы Office 365, убедитесь, что пользователи, которым необходим доступ, являются членами рабочей области группы в службе Power BI. Так они смогут просматривать содержимое группы. Дополнительные сведения см. в разделе [Совместная работа в рабочей области приложения Power BI](https://docs.microsoft.com/power-bi/service-collaborate-power-bi-workspace).
 
 На этом мы завершим работу в Power BI для текущего сценария. Мы начали с извлечения данных из списков SharePoint в Power BI и завершили полный цикл внедрением отчета Power BI назад в SharePoint.

@@ -1,24 +1,24 @@
 ---
 title: Настройка предупреждений о данных для информационной панели Power BI | Документация Майкрософт
 description: В этой задаче мы добавим в Power BI оповещение о проектах, для утверждения которых превышено время ожидания, и поток операций, выполняемых после этого оповещения.
-author: mgblythe
+author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/12/2017
-ms.author: mblythe
+ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6426dedc9ce9d1a4648f9c880a53337767ec53d3
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 89c22bec8972c0d58c559a09d4e9f0a8a8e3b7f5
+ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836402"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "57799095"
 ---
 # <a name="set-up-data-alerts-for-the-power-bi-dashboard"></a>Настройка оповещений о данных для панели мониторинга Power BI
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "42836402"
 
 В этой задаче мы добавим в Power BI оповещение о проектах, для утверждения которых превышено время ожидания, и поток операций, выполняемых после этого оповещения. Дополнительные сведения об оповещениях см. в статье [Оповещения о данных в службе Power BI](https://docs.microsoft.com/power-bi/service-set-data-alerts).
 
-## <a name="step-1-create-an-alert"></a>Шаг 1. Создание оповещения
+## <a name="step-1-create-an-alert"></a>Шаг 1. Создать оповещение
 1. В службе Power BI откройте панель мониторинга, созданную в предыдущей задаче.
 2. На карте с числом нажмите кнопку с многоточием (**...**).
    
@@ -45,7 +45,7 @@ ms.locfileid: "42836402"
 
 При активации оповещения его автору отправляется сообщение электронной почты из службы Power BI. На следующем этапе вы узнаете, как отправлять дополнительные сообщения с помощью Microsoft Flow.
 
-## <a name="step-2-create-a-flow-that-responds-to-the-alert"></a>Шаг 2. Создание потока операций, выполняемых после оповещения
+## <a name="step-2-create-a-flow-that-responds-to-the-alert"></a>Шаг 2. Создание последовательности, выполняемых после оповещения
 1. Войдите на веб-сайт flow.microsoft.com, выберите **Службы**, а затем — **Power BI**.
    
     ![Power BI в Microsoft Flow](./media/sharepoint-scenario-alerts-flow/07-01-05-power-bi.png)

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f7aed7812890482bb781e2d5ff7eac8c996b8837
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: d48559ee3a54cbb723621a0e36f09cb4a1d0fe3b
+ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42850424"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57803442"
 ---
 # <a name="understand-behavior-formulas-for-canvas-apps-in-powerapps"></a>Основные сведения о формулах поведения в приложениях на основе холста в PowerApps
 
@@ -30,18 +30,18 @@ ms.locfileid: "42850424"
 
 Выбрав элемент управления **[Кнопка](controls/control-button.md)**, пользователь инициирует последовательность действий или схем поведения, которые приводят к изменению состояния приложения.
 
-* Изменение отображающегося экрана: функции **[Back](functions/function-navigate.md)** и **[Navigate](functions/function-navigate.md)**.
-* Управление [сигналом](functions/signals.md): функции **[Enable](functions/function-enable-disable.md)** и **[Disable](functions/function-enable-disable.md)**.
-* Обновление или удаление элементов в [источнике данных](working-with-data-sources.md): функции **[Refresh](functions/function-refresh.md)**, **[Update](functions/function-update-updateif.md)**, **[UpdateIf](functions/function-update-updateif.md)**, **[Patch](functions/function-patch.md)**, **[Remove](functions/function-remove-removeif.md)**, **[RemoveIf](functions/function-remove-removeif.md)**.
-* Обновление [переменной контекста](working-with-variables.md#create-a-context-variable): функция **[UpdateContext](functions/function-updatecontext.md)**.
-* Создание, обновление или удаление элементов в [коллекции](working-with-data-sources.md#collections): **[Collect](functions/function-clear-collect-clearcollect.md)**, **[Clear](functions/function-clear-collect-clearcollect.md)**, **[ClearCollect](functions/function-clear-collect-clearcollect.md)**.
+* Изменение отображающегося экрана: **[Обратно](functions/function-navigate.md)**  и **[Navigate](functions/function-navigate.md)** функции.
+* Элемент управления [сигнала](functions/signals.md): **[Включить](functions/function-enable-disable.md)**  и **[отключить](functions/function-enable-disable.md)** функции.
+* Обновление, обновление или удаление элементов в [источника данных](working-with-data-sources.md): **[Обновить](functions/function-refresh.md)**,  **[обновление](functions/function-update-updateif.md)**,  **[UpdateIf](functions/function-update-updateif.md)**, **[Patch](functions/function-patch.md)**,  **[Удалить](functions/function-remove-removeif.md)**, **[RemoveIf](functions/function-remove-removeif.md)** функции.
+* Обновление [переменной контекста](working-with-variables.md#use-a-context-variable):  **[UpdateContext](functions/function-updatecontext.md)**  функции.
+* Создание, обновление или удаление элементов в [коллекции](working-with-data-sources.md#collections):  **[Собирать](functions/function-clear-collect-clearcollect.md)**,  **[Очистить](functions/function-clear-collect-clearcollect.md)**, **[ClearCollect](functions/function-clear-collect-clearcollect.md)** функции.
 
 Поскольку эти функции изменяют состояние приложения, они не пересчитываются автоматически. Их можно использовать в формулах для **[OnSelect](controls/properties-core.md)**, **[OnVisible](controls/control-screen.md)**, **[OnHidden](controls/control-screen.md)** и других свойств, начинающихся на **On...**, которые называются формулами поведения.
 
 ### <a name="more-than-one-action"></a>Несколько действий
 Чтобы создать список выполняемых действий, перечислите их через точку с запятой. Например, можно указать, что после обновления переменной контекста необходимо возвратиться на предыдущий экран:
 
-* **UpdateContext( { x: 1 } ); Back()**
+* **UpdateContext( { x: 1}); Back()**
 
 Действия выполняются в том порядке, в котором они указаны в формуле.  Следующая функция не выполняется до тех пор, пока не завершится выполнение текущей. В случае ошибки запуск последующих функций становится невозможным.
 

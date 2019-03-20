@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6625df3f822462c86de1f720b7a310f5e516a6ca
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 25cae936ace1dcd3108f11271e3fe38cb41ae2e7
+ms.sourcegitcommit: 55c6af2f767e90c999eea4d29589c1fe19dfc4db
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42849878"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443742"
 ---
 # <a name="calendar-and-clock-functions-in-powerapps"></a>Функции Calendar и Clock в PowerApps
 Извлекает сведения о дате и времени для текущего значения языкового стандарта.
@@ -66,11 +66,11 @@ ms.locfileid: "42849878"
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| **Calendar.MonthsLong()** |Возвращаемое значение содержит полные названия месяцев, начиная с "January" (январь). |[ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ] |
-| **Calendar.MonthsShort()** |Возвращаемое значение содержит краткие названия месяцев, начиная с "Jan" (январь). |[ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ] |
-| **Calendar.WeekdaysLong()** |Возвращаемое значение содержит полные названия дней недели, начиная с "Sunday" (воскресенье). |[ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ] |
-| **Calendar.WeekdaysShort()** |Возвращаемое значение содержит краткие названия дней недели, начиная с "Sun" (воскресенье). |[ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ] |
-| **Clock.AmPm()** |Для этого языка используется 12-часовой формат времени.  Возвращаемое значение содержит обозначения времени заглавными буквами ("AM" и "PM"). |[ "AM", "PM" ] |
-| **Clock.AmPmShort()** |Для этого языка используется 12-часовой формат времени.  Возвращаемое значение содержит обозначения времени строчными буквами ("am" и "pm"). |[ "A", "P" ] |
+| **Calendar.MonthsLong()** |Возвращаемое значение содержит полное имя каждого месяца, начиная с «Январь». |[ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ] |
+| **Calendar.MonthsShort()** |Возвращаемое значение содержит сокращенное название каждого месяца, начиная с «Январь». |[ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ] |
+| **Calendar.WeekdaysLong()** |Возвращаемое значение содержит полное имя каждого дня, начиная с «Sunday». |[ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ] |
+| **Calendar.WeekdaysShort()** |Возвращаемое значение содержит сокращенное название каждого дня, начиная с «Sunday». |[ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ] |
+| **Clock.AmPm()** |Для этого языка используется 12-часовой формат времени. Возвращаемое значение содержит обозначения времени заглавными буквами ("AM" и "PM"). |[ "AM", "PM" ] |
+| **Clock.AmPmShort()** |Для этого языка используется 12-часовой формат времени. Возвращаемое значение содержит обозначения времени строчными буквами ("am" и "pm"). |[ "A", "P" ] |
 | **Clock.IsClock24()** |Для этого языка используется 12-часовой формат времени. |**false** |
 
