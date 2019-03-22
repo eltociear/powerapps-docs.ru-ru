@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: aa46510cdd46cf8d9fb64694e7b6306b255b1157
-ms.sourcegitcommit: fa0ad3f81efd41671dd8e118ce936acb274cfd7c
+ms.openlocfilehash: 9b213484bf1412d808c3fa9599debd5c9e546a4e
+ms.sourcegitcommit: e64344548d607767e495a6b9526900bb5975226a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54079617"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330132"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>Основные сведения о приложениях на основе холста в PowerApps
 Проектируйте и создавайте бизнес-приложения на основе холста в Microsoft PowerApps без написания кода на традиционном языке программирования, например C#. Разрабатывайте приложение путем перетаскивания элементов на холст так, как если бы вы создавали слайд в PowerPoint. Создавайте схожие с Excel выражения для указания логики и работы с данными. Создавайте приложения, которые интегрируют бизнес-данные из [разнообразных источников Майкрософт и сторонних поставщиков](connections-list.md). Открывайте к приложению общий доступ, чтобы пользователи могли запускать его в браузере или на мобильном устройстве. Внедряйте приложение, предоставляя пользователям возможность использовать его в SharePoint, Power BI или Teams.
@@ -54,7 +54,7 @@ ms.locfileid: "54079617"
 ## <a name="share-your-experience"></a>Оставьте свой отзыв
 * Читайте и публикуйте материалы в [сообществе PowerApps](https://aka.ms/powerapps-community). Здесь любой пользователь PowerApps может задать свои вопросы и ответить на вопросы других. Прежде чем задать вопрос, воспользуйтесь функцией поиска — возможно, в сообществе уже есть ответ на него.
 * Поделитесь с нами своей идеей по улучшению PowerApps на [странице идей о PowerApps](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas).
-* Создайте [запрос в службу поддержки](https://powerapps.microsoft.com/support/pro/), чтобы получить консультацию специалистов. Если вы выполняете в организации роль администратора PowerApps, для запросов на поддержку вам доступен еще и [центр администрирования PowerApps](https://portal.office.com/Support/Support.aspx).
+* Создайте [запрос в службу поддержки](https://powerapps.microsoft.com/support/pro/), чтобы получить консультацию специалистов. Если вы выполняете в организации роль администратора PowerApps, для запросов на поддержку вам доступен еще и [центр администрирования PowerApps](https://admin.microsoft.com/Support/Support.aspx).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 - [Регистрация для получения бесплатной лицензии](../signup-for-powerapps.md)
