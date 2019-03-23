@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a04320d2d8bb2d8ad3ebf30d3ecbd0dfe7f9b0bd
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.openlocfilehash: 6406afad9079895a0da38c7f1f6e3961f2e37fa1
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57801970"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357858"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>Оптимизация производительности приложений на основе холста в PowerApps
 Корпорация Майкрософт прилагает все усилия, чтобы повысить производительность всех приложений, работающих на платформе PowerApps. Следуйте рекомендациям этого раздела, чтобы повысить производительность созданных приложений.
@@ -32,7 +32,7 @@ ms.locfileid: "57801970"
 ## <a name="limit-data-connections"></a>Ограничение подключений к данным 
 **Не подключайте более 30 источников данных из одного приложения**. Приложения подсказывают новым пользователям выполнить вход в каждый соединитель, поэтому каждый дополнительный соединитель увеличивает время, необходимое для запуска приложения. Когда приложение запрашивает данные из этого источника, по мере запуска приложения каждый соединитель требует ресурсы процессора, памяти и пропускной способности сети. 
 
-Можно быстро оценить производительность приложения, включив инструменты разработчика в [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) или [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) во время запуска приложения. Возврат данных с большей вероятностью займет более 15 секунд, если приложение часто запрашивает данные из более чем 30 источников, таких как Common Data Service для приложений, Azure SQL, SharePoint и Excel на OneDrive.  
+Можно быстро оценить производительность приложения, включив инструменты разработчика в [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) или [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) во время запуска приложения. Приложения, скорее всего, занимает больше 15 секунд для возврата данных в том случае, если часто запрашивает данные из более чем 30 источников данных, таких как Common Data Service, Azure SQL, SharePoint и Excel в OneDrive.  
 
 ## <a name="limit-the-number-of-controls"></a>Ограничение количества элементов управления 
 **Не добавляйте более 500 элементов управления в одно приложение**. PowerApps создает HTML DOM для отрисовки каждого элемента управления. Чем больше элементов управления вы добавляете, тем больше требуется времени PowerApps. 

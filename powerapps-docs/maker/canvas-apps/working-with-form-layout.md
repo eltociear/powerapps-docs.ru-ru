@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b6bff4d0f9586f94e4d0da133197fcb7f78c765d
-ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
+ms.openlocfilehash: a8abc0a641f13cc05e723b96d48dd2d877f0b70f
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "57800268"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356915"
 ---
 # <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>Общие сведения о макете форм данных в приложениях на основе холста в PowerApps
 
@@ -32,7 +32,7 @@ ms.locfileid: "57800268"
 
 Если вы впервые работаете с PowerApps (или создавали приложения только автоматически), перед изучением этой статьи потребуется [создать приложение с нуля](get-started-create-from-blank.md). Создав приложение с нуля, вы ознакомитесь с такими важными понятиями, как добавление источников данных и элементов управления, которые упоминаются, но подробно не рассматриваются в этой статье.
 
-В этом разделе записывается как если бы, если у вас есть данные источника, который называется **заказ на продажу** и содержит поля на предыдущем рисунке. Если у вас есть лицензия PowerApps (план 2) или [пробной лицензии](../signup-for-powerapps.md) и системный администратор или разрешения настройщика системы, вы можете [создать сущность](../common-data-service/data-platform-create-entity.md) в Common Data Service (CDS) for Apps и добавить аналогичные поля. 
+В этом разделе записывается как если бы, если у вас есть данные источника, который называется **заказ на продажу** и содержит поля на предыдущем рисунке. Если у вас есть лицензия PowerApps (план 2) или [пробной лицензии](../signup-for-powerapps.md) и системный администратор или разрешения настройщика системы, вы можете [создать сущность](../common-data-service/data-platform-create-entity.md) в Common Data Service и добавьте аналогичные поля. 
 
 ## <a name="add-a-gallery"></a>Добавление коллекции
 

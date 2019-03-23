@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b3f95b5c8ddbca1925f89797e52b1b227c4b10e8
-ms.sourcegitcommit: ead27300a1b7371136edee1842829ed87ca77a72
+ms.openlocfilehash: e9c63d1814b72cae0c675be6b33773799cfb3b8f
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57892260"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357099"
 ---
 # <a name="concurrent-function-in-powerapps"></a>Функция Concurrent в PowerApps
 Оценивает несколько формул одновременно.
@@ -47,7 +47,7 @@ ms.locfileid: "57892260"
 
 #### <a name="loading-data-faster"></a>Ускоренная загрузка данных
 
-1. Создайте приложение и добавьте четыре источника данных из службы Common Data Service для приложений, SQL Server или SharePoint. 
+1. Создание приложения и добавить четыре источники данных из Common Data Service, SQL Server или SharePoint. 
 
     В этом примере используется четыре таблицы из [образца базы данных Adventure Works для SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). После создания базы данных подключитесь к ней из PowerApps, используя полное имя сервера (например, srvname.database.windows.net):
 

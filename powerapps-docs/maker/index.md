@@ -52,7 +52,7 @@ PowerApps — это высокопроизводительная платфо�
 - [Добавление функций безопасности](https://docs.microsoft.com/dynamics365/customer-engagement/customize/manage-access-apps-security-roles)
 - [Добавление бизнес-логики](https://docs.microsoft.com/dynamics365/customer-engagement/customize/guide-staff-through-common-tasks-processes)
 
-## <a name="common-data-service-for-apps"></a>Служба Common Data Service для приложений
+## <a name="common-data-service"></a>Common Data Service
 
 Служба Common Data Service позволяет безопасно хранить данные и управлять ими с помощью набора стандартных и настраиваемых сущностей. Вы можете добавлять поля в эти сущности по мере необходимости.
 

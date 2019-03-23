@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3da9d769ab36df23c6c54510937adea2ce38863f
-ms.sourcegitcommit: b8b2a2c3cf3300fa52bdf71bfef6a2892e36cffc
+ms.openlocfilehash: 9415ab67b93ef64f5caa025af5ac685ca2363305
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57802637"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357076"
 ---
 # <a name="guid-function-in-powerapps"></a>Функция GUID в PowerApps
 Преобразует строку GUID([Глобальный уникальный идентификатор](https://en.wikipedia.org/wiki/Universally_unique_identifier)) в значение GUID или создает новое значение GUID.
 
 ## <a name="description"></a>Описание
-Используйте функцию **GUID**, чтобы преобразовать строку, содержащую шестнадцатеричное представление GUID, в значение GUID, которое может быть передано в базу данных. Значения GUID используются в качестве ключей системами баз данных, такими как Common Data Service для приложений и SQL Server.
+Используйте функцию **GUID**, чтобы преобразовать строку, содержащую шестнадцатеричное представление GUID, в значение GUID, которое может быть передано в базу данных. GUID значения используются в качестве ключей системами баз данных, таких как Common Data Service и SQL Server.
 
 Передаваемая строка может содержать прописные или строчные буквы, но она должна состоять из 32 шестнадцатеричных цифр в любом из следующих форматов:
 

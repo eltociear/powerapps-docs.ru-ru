@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 09e139353e500ad27650628a844bc01264eab3d0
-ms.sourcegitcommit: ba5542ff1c815299baa16304c6e0b5fed936e776
+ms.openlocfilehash: 2283f77f7e1c09ceade63f96003fefabc5e92539
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54308393"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357651"
 ---
 # <a name="drop-down-control-in-powerapps"></a>Элемент управления "Раскрывающийся список" в PowerApps
 Раскрывающийся список — это список, у которого в свернутом состоянии виден только первый элемент.
@@ -133,7 +133,7 @@ ms.locfileid: "54308393"
 1. Чтобы показать элементы в списке, нажмите на стрелку вниз элемента управления, удерживая нажатой клавишу ALT.
 
 ### <a name="list-from-a-data-source"></a>Список из источника данных
-Принципы в этой процедуре применимы к любому [источнику данных, который предоставляет таблицы](../connections-list.md#tables), но, чтобы точно выполнить эти действия, необходимо открыть среду, для которой создана база данных Common Data Service for Apps и в которую добавлен образец данных.
+Эти принципы в этой процедуре, применимы к любому [источник данных, который содержит таблицы](../connections-list.md#tables) , но, чтобы точно выполнить следующие действия, необходимо открыть среду, для которого базу данных Common Data Service была создана и образец данных, добавленных.
 
 1. [Откройте пустое приложение](../data-platform-create-app-scratch.md#open-a-blank-app), а затем [укажите сущность **Учетные записи**](../data-platform-create-app-scratch.md#specify-an-entity).
 

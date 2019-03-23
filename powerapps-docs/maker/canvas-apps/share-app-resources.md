@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f6adc46eafda2f5bd9798c13b292a82d567e34a7
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 4f303cdfba474448321d230bb61b698e8f959e5f
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42831343"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357421"
 ---
 # <a name="share-canvas-app-resources-in-powerapps"></a>Обмен ресурсами в приложении на основе холста в PowerApps
 
 Прежде чем [предоставить общий доступ к приложению на основе холста](share-app.md), проанализируйте используемые им типы ресурсов, например, какие-то из следующих:
 
-* сущности в Common Data Service for Apps
+* сущности в Common Data Service
 
     Сведения о предоставлении пользователям доступа к этим данным см. в разделе [Управление разрешениями сущности](share-app.md#manage-entity-permissions).
     

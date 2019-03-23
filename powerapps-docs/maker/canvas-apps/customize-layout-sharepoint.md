@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6e77ddfcc572a776e80ab90d3907aaa7b67f01ea
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 2864ab5614bb3af415e24e23df3c52f6e668ab24
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864779"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357145"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Учебник. Настройка коллекции в PowerApps
 
@@ -47,7 +47,7 @@ ms.locfileid: "42864779"
 
 ## <a name="prerequisites"></a>Технические условия
 
-[Создайте приложение](data-platform-create-app.md) на основе сущности **Учетные записи** Common Data Service (CDS) для приложений.
+[Создание приложения](data-platform-create-app.md) из **учетные записи** сущности Common Data Service.
 
 ## <a name="open-the-generated-app"></a>Открытие созданного приложения
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 531a614493ef739acd7be71f396dfc2f7e1ada1c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 77268aa63ed49d10f825850909d31ec4feace063
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42832803"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357605"
 ---
 # <a name="choices-function-in-powerapps"></a>Функция Choices в PowerApps
 Возвращает таблицу из возможных значений для столбца подстановки.
@@ -38,7 +38,7 @@ ms.locfileid: "42832803"
 
 Ссылки на столбцы должны напрямую указывать на источник данных. Например, если источником данных является **Accounts** (Учетные данные), а подстановкой — **SLA** (Соглашение об уровне обслуживания), ссылка на столбец будет выглядеть как **Accounts.SLA**. Ссылку нельзя передавать через функцию, переменную или элемент управления. Если в этом примере **Accounts** передается элементу управления **Коллекция**, используйте формулу **Gallery.Selected.SLA**, чтобы ссылаться на соглашение об уровне обслуживания для выбранного клиента. Тем не менее эта ссылка передается через элемент управления, поэтому ее невозможно передать функции **Columns**. Вам нужно будет использовать **Accounts.SLA**.
 
-В настоящее время столбцы подстановки можно использовать только с SharePoint и Common Data Service для приложений.
+В настоящее время столбцы подстановки можно использовать только с SharePoint и Common Data Service.
 
 ## <a name="syntax"></a>Синтаксис
 **Choices**( *ссылка на столбец* )
@@ -49,11 +49,11 @@ ms.locfileid: "42832803"
 
 #### <a name="choices-for-a-lookup"></a>Choices для подстановки
 
-1. [Создайте базу данных](../../../administrator/create-database.md) в Common Data Service для приложений и установите флажок **Включить примеры приложений и данных**.
+1. [Создание базы данных](../../../administrator/create-database.md) в Common Data Service и выберите **включить примеры приложений и данных** поле.
 
     Создается множество сущностей, таких как **Accounts**.
 
-    **Примечание.** Имена сущностей приводятся в единственном числе на сайте web.powerapps.com и во множественном — в PowerApps Studio.
+    **Примечание**. Имена сущностей в единственном числе на сайт web.powerapps.com и во множественном числе в PowerApps Studio.
 
     ![Неполный список полей из сущности Account в службе Common Data Service для приложений, где выделен элемент "Основное контактное лицо" в качестве поля подстановки](media/function-choices/entity-account.png)
 

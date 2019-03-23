@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c50b2452829f0878c40ccf5f2e47010596bc0b7b
-ms.sourcegitcommit: eef2d6d9a9c7f5c8a44b9734817f59dc0eac3ecf
+ms.openlocfilehash: 4b2c6b9518e987ef17f2ff2b50987568c8a0b69f
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "57801602"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356777"
 ---
 # <a name="relate-and-unrelate-functions-in-powerapps"></a>Связать и отвязать функции в PowerApps
 
@@ -26,7 +26,7 @@ ms.locfileid: "57801602"
 
 ## <a name="description"></a>Описание
 
-**Relate** функция связывает две записи с помощью отношение один ко многим "или" многие ко многим в Common Data Service (CDS) for Apps. **Unrelate** функция выполняет обратное преобразование и удаляет связь.
+**Relate** функция связывает две записи через отношение "один ко многим" или "многие ко многим" в Common Data Service. **Unrelate** функция выполняет обратное преобразование и удаляет связь.
 
 Для отношения один ко многим многие сущность содержит поля внешнего ключа, указывающим на запись одной сущности. **Связать** устанавливает для этого поля, чтобы он указывал на определенную запись одной сущности, хотя **Unrelate** присваивают этому полю *пустой*. Если поле уже установлено при **Relate** — вызове существующую ссылку теряется пользу новой ссылки. Это поле можно также задать с помощью [ **Patch** ](function-patch.md) функции или **[форма редактирования](../controls/control-form-detail.md)** управления; вы не доступа **ссылка**  функции.
 

@@ -13,26 +13,26 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: da9c8f85844e37d6af8e1063b36496c820fbfa07
-ms.sourcegitcommit: e2a9d1a6090cdd8aa78515b49f38ed2365217ea6
-ms.translationtype: HT
+ms.openlocfilehash: 31b166dbe0257127d02f410182aaebb70e641da6
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49384255"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357904"
 ---
 # <a name="attachments-control-in-powerapps"></a>Элемент управления "Вложения" в PowerApps
-Элемент управления, который позволяет пользователям скачивать файлы на устройства, а также добавлять их в список SharePoint или сущность Common Data Service for Apps и удалять их оттуда.
+Элемент управления, позволяющий пользователям загружать файлы на устройства, а также загружать и удалите файлы из списка SharePoint или сущности Common Data Service.
 
 ## <a name="limitations"></a>Ограничения
 Элемент управления вложениями имеет следующие ограничения.
-1. Вложения поддерживаются в списках SharePoint и сущностях CDS for Apps.
+1. Вложения поддерживаются со списками SharePoint и сущностях Common Data Service.
 
 1. Функции передачи и удаления поддерживаются только в форме.  Элемент управления вложениями будет недоступен в режиме редактирования, но не в форме. Учтите, что для сохранения результатов добавления и удаления на серверной части пользователь должен сохранить форму.
 
 1. Вы можете передавать файлы размером до 10 МБ.  
 
 ## <a name="description"></a>Описание
-Элемент управления **Вложения** позволяет открывать файлы, добавлять их в список SharePoint или сущность CDS for Apps и удалять их оттуда.
+**Вложения** элемент управления, которая позволяет открыть, добавление и удаление файлов из списка SharePoint или сущности Common Data Service.
 
 ## <a name="key-properties"></a>Основные свойства
 **[Items](properties-core.md)** — источник, описывающий файлы, которые могут быть скачаны.
