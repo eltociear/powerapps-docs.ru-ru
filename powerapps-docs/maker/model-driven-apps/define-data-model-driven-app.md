@@ -1,5 +1,5 @@
 ---
-title: Определение данных для управляемого моделью приложения в PowerApps | MicrosoftDocs
+title: "Определение данных для управляемого моделью приложения в\_PowerApps | MicrosoftDocs"
 description: 'Узнайте, как определять данные для управляемого моделью приложения'
 Keywords: 'data, entity, fields, relationship, attributes, model-driven app'
 author: Mattp123

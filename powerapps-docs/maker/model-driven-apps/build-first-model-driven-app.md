@@ -10,7 +10,7 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 10/15/2018
+ms.date: 02/05/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -35,15 +35,18 @@ search.app:
   > [!IMPORTANT]
   > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment).   
 
-2. На странице **Главная** выберите параметр **Начать с нуля** для управляемого моделью приложения.
-![Start-from-blank_model](media/build-first-model-driven-app/start-from-blank-model-driven.png)
+2. На странице **Главная** выберите **Управляемое моделью приложение с нуля**.
+<!-- ![Start-from-blank_model](media/build-first-model-driven-app/start-from-blank-model-driven.png) -->
 
 3.  На странице **Создать приложение** введите следующие сведения, затем нажмите **Готово**. 
-  - **Имя**: введите имя приложения, например *Myfirstapp*. 
+  - **Имя**: введите имя приложения, например *Мое первое приложение*. 
+  - **Уникальное имя**: по умолчанию уникальное имя использует имя, указанное в поле **Имя** без пробелов, перед которым указывается префикс издателя и символ подчеркивания (_). Например, *crecf_Myfirstapp*. Дополнительные сведения: [Изменение префикса издателя решения](../common-data-service/change-solution-publisher-prefix.md)
   - **Описание**: введите краткое описание того, что представляет из себя приложение или что оно делает, например *Это мое первое приложение*.
-Сведения о дополнительных свойствах приложения см. в разделе [Создание приложения](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-edit-app#create-an-app).
- 
-    ![Создание приложения](media/build-first-model-driven-app/create-new-app.png)
+Сведения о дополнительных свойствах приложения см. в разделе [Создание приложения](create-edit-app.md#create-an-app).
+
+    > [!div class="mx-imgBorder"] 
+    > ![](media/create-new-app.png "Создание нового приложения") 
+
 
 ## <a name="add-components-to-your-app"></a>Добавление компонентов в приложение
 В конструкторе приложений добавьте компоненты в приложение.

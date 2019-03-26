@@ -2,14 +2,14 @@
 title: Примеры управляемых моделью приложений
 description: 'Сведения о получении, настройке и удалении примеров приложений, управляемых моделью.'
 documentationcenter: na
-author: caburk
+author: mr-dang-msft
 manager: kvivek
 ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
 ms.date: 03/08/2018
-ms.author: caburk
+ms.author: brdang
 search.audienceType:
   - maker
 search.app:

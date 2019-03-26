@@ -1,6 +1,6 @@
 ---
 title: Просмотр или загрузка ресурсов для разработчиков | MicrosoftDocs
-description: Узнайте URL-адреса конечных точек ресурсов и сервисов для
+description: Узнайте URL-адреса конечных точек ресурсов и сервисов
 keywords: ''
 ms.date: 06/06/2018
 ms.service: crm-online

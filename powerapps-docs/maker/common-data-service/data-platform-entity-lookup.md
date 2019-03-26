@@ -1,13 +1,13 @@
 ---
 title: Создание отношения между сущностями с помощью поля подстановки | Microsoft Docs
 description: Пошаговые инструкции по созданию отношения между сущностями в PowerApps с помощью поля подстановки.
-author: clwesene
-manager: kfile
+author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
-ms.date: 03/21/2018
-ms.author: clwesene
+ms.date: 02/21/2019
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -87,7 +87,10 @@ search.app:
 ## <a name="use-a-lookup-field-in-an-app"></a>Использование поля подстановки в приложении
 Если [приложение создается автоматически](../canvas-apps/data-platform-create-app.md) из сущности, которая содержит поле подстановки, оно отображается как элемент управления **Раскрывающийся список**, содержащий данные из поля **Основное имя** сущности.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="add-1n-and-nn-relationships-for-canvas-apps"></a>Добавление отношений 1:N и N:N для приложений холста
+Воспользуйтесь функцией **Связать**, чтобы связать две записи с помощью отношения "один-ко-многим" или "многие-ко-многим" в Common Data Service (CDS) для приложений. Дополнительные сведения: [Функции связывания и отмены связывания в PowerApps](../canvas-apps/functions/function-relate-unrelate.md)
+
+## <a name="next-steps"></a>Дальнейшие шаги
 * [Формирование приложения с использованием базы данных Common Data Service](../canvas-apps/data-platform-create-app.md)
 * [Создание приложения с нуля с помощью базы данных Common Data Service](../canvas-apps/data-platform-create-app-scratch.md)
 

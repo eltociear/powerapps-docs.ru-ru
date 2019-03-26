@@ -92,7 +92,7 @@ search.app:
 |CC_Timeline_URL|Поле URL-адреса, чтобы сопоставить для отображения URL-адреса каждого элемента временной шкалы.|  
 |CC_Timeline_URL_Desc|Описание поля URL-адреса.|  
 |CC_Timeline_ThumbnailURL|Поле для сопоставления для эскиза изображения или значка для каждого элемента.|  
-|CC_Timeline_ThumnailURL_Desc|Описание поля `ThumbnailURL`.|  
+|CC_Timeline_ThumbnailURL_Desc|Описание поля `ThumbnailURL`.|  
 |CC_Timeline_Filter|Поле, чтобы сопоставить для фильтра временной шкалы.|  
 |CC_Timeline_Filter_Desc|Описание фильтра.|  
 |CC_Timeline_Footer|Веб-ресурс для отображения в качестве нижнего колонтитула временной шкалы.|  
