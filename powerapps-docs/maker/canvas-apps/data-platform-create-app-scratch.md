@@ -1,6 +1,6 @@
 ---
-title: Создание с нуля приложения на основе холста при помощи Common Data Service for Apps | Документы Майкрософт
-description: Создание в PowerApps приложения на основе холста для добавления, обновления и удаления записей в Common Data Service for Apps.
+title: Создание с нуля приложения на основе холста с помощью Common Data Service | Документация Майкрософт
+description: Создание в PowerApps приложения на основе холста для добавления, обновления и удаления записей в Common Data Service.
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dab8caea5679701735685a5c4383c77cd7ed44f6
-ms.sourcegitcommit: 452d4ead948591d16aff144006ad84c957eba837
+ms.openlocfilehash: 0528d3324e85984e05b549f8b8ba282fdc1df4af
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56091230"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356892"
 ---
-# <a name="create-a-canvas-app-from-scratch-using-common-data-service-for-apps"></a>Создание с нуля приложения на основе холста при помощи Common Data Service for Apps
+# <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Создание с нуля приложения на основе холста с помощью Common Data Service
 
-Вы можете создать приложение на основе холста для управления данными в службе Common Data Service for Apps с использованием стандартных (встроенных) и настраиваемых (созданных вашей организацией) сущностей.
+Вы можете создать приложение на основе холста для управления данными, хранящимися в службе Common Data Service, с использованием стандартных (встроенных) и (или) настраиваемых (созданных вашей организацией) сущностей.
 
 При создании приложения на основе службы Common Data Service не требуется создавать подключение из PowerApps, как в случае с источниками данных, например SharePoint, Dynamics 365 и Salesforce. Требуется только указать сущности, которые нужно показать или которыми вы собираетесь управлять в приложении.
 

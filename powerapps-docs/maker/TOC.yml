@@ -105,7 +105,7 @@ items:
     items:
     - name: 1. Создание приложения на основе данных
       items:
-      - name: На основе Common Data Service для приложений
+      - name: На основе Common Data Service
         href: ./canvas-apps/data-platform-create-app.md
       - name: На основе SharePoint
         href: ./canvas-apps/app-from-sharepoint.md
@@ -121,7 +121,7 @@ items:
         href: ./canvas-apps/customize-card.md
     - name: 3. Самостоятельное создание приложения
       items:
-      - name: На основе Common Data Service для приложений
+      - name: На основе Common Data Service
         href: ./canvas-apps/data-platform-create-app-scratch.md
       - name: На основе Excel
         href: ./canvas-apps/get-started-create-from-blank.md
@@ -135,7 +135,7 @@ items:
       - name: Популярные соединители
         items:
         - name: Common Data Service
-          href: common-data-service/data-platform-intro.md
+          href: canvas-apps/connections/connection-common-data-service.md
         - name: SharePoint
           href: canvas-apps/connections/connection-sharepoint-online.md
         - name: SQL Server
@@ -148,11 +148,7 @@ items:
           href: canvas-apps/connections/connection-office365-outlook.md
         - name: Excel
           href: canvas-apps/connections/connection-excel.md
-        - name: OneDrive для бизнеса
-          href: canvas-apps/connections/cloud-storage-blob-connections.md
-        - name: OneDrive
-          href: canvas-apps/connections/cloud-storage-blob-connections.md
-        - name: Dropbox
+        - name: Облачное хранилище
           href: canvas-apps/connections/cloud-storage-blob-connections.md
       - name: Добавление подключения
         href: ./canvas-apps/add-data-connection.md
@@ -925,7 +921,7 @@ items:
     href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
   - name: Для разработчиков
     href: ../developer/model-driven-apps/overview.md
-- name: Служба Common Data Service для приложений
+- name: Common Data Service
   href: ./common-data-service/data-platform-intro.md
   items:
   - name: Работа с сущностями
@@ -1116,9 +1112,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: Поддержка
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: 6736e0e956e885bbae21099ff351c60e75ae50db
-ms.sourcegitcommit: c1bcd2c4f8254b48296512bb2727ac7685a8ccd1
+ms.openlocfilehash: c595c263b653f1f85e0d2d11e120aa8bcab0ba39
+ms.sourcegitcommit: ca21565c27fe0d46db87197bf00fd31899f1a71e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58308172"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58395147"

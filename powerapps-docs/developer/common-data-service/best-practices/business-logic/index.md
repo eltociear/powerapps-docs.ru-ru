@@ -1,6 +1,6 @@
 ---
-title: 'Для разработчиков: рекомендации по разработке подключаемых модулей и рабочих процессов для службы Common Data Service для приложений | Документация Майкрософт'
-description: Рекомендации по разработке подключаемых модулей и рабочих процессов службы Common Data Service для приложений.
+title: "Для разработчиков: рекомендации по разработке подключаемых модулей и рабочих процессов для Common Data Service\_| Документация Майкрософт"
+description: Рекомендации по разработке подключаемых модулей и рабочих процессов для службы Common Data Service в PowerApps.
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,20 +16,14 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-- developer
+  - developer
 search.app:
-- PowerApps
-- D365CE
-ms.openlocfilehash: 87e7337a4bf62a10647edfd9b6c17bce0a0903bf
-ms.sourcegitcommit: 72c97378e96fb54e5d92ec087a59dd0fb1444f99
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54334024"
+  - PowerApps
+  - D365CE
 ---
-# <a name="best-practices-and-guidance-regarding-plug-in-and-workflow-development-for-the-common-data-service-for-apps"></a>Рекомендации по разработке подключаемых модулей и рабочих процессов для службы Common Data Service для приложений
+# <a name="best-practices-and-guidance-regarding-plug-in-and-workflow-development-for-the-common-data-service"></a>Рекомендации по разработке подключаемых модулей и рабочих процессов для службы Common Data Service
 
-В списке ниже приводятся все рекомендации по разработке подключаемых модулей и рабочих процессов в службе Common Data Service для приложений.
+В списке ниже приводятся все рекомендации по разработке подключаемых модулей и рабочих процессов в службе Common Data Service.
 
 |Рекомендация  |Описание  |
 |---------|---------|

@@ -30,7 +30,7 @@ items:
       href: https://docs.microsoft.com/power-platform/admin/logging-powerapps
   - name: Интеграция данных
     items:
-    - name: Интеграция данных в CDS for Apps
+    - name: Интеграция данных в Common Data Service
       href: data-integrator.md
     - name: Устранение неполадок и управление ошибками интегратора данных
       href: data-integrator-error-management.md
@@ -38,7 +38,7 @@ items:
       items:
       - name: Системные журналы
         href: powerapps-gdpr-dsr-guide-systemlogs.md
-      - name: Интеграция данных для CDS for Apps
+      - name: Интеграция данных для Common Data Service
         href: data-integration-gdpr-dsr-guide.md
       - name: Данные клиента PowerApps
         href: powerapps-gdpr-dsr-guide.md
@@ -47,7 +47,7 @@ items:
           href: powerapps-gdpr-export-dsr.md
         - name: Удаление данных
           href: powerapps-gdpr-delete-dsr.md
-      - name: Данные клиента CDS for Apps
+      - name: Данные клиента Common Data Service
         href: common-data-service-gdpr-dsr-guide.md
   - name: Администрирование сред
     href: environments-administration.md
@@ -77,9 +77,9 @@ items:
     items:
     - name: Просмотр активных пользователей в клиенте
       href: admin-view-user-licenses.md
-ms.openlocfilehash: 59af13c7f64d8eaecd06972da17e9d3e17b18743
-ms.sourcegitcommit: a2222547ee563186675c625c7e769f8aa03842c2
+ms.openlocfilehash: 4eb2feacf0c461e70729de529e0e23fd0d6ccb8b
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54342297"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58356685"
