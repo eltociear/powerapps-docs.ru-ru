@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ddb15340c9532e82d95f1bea70959dc59cdc7283
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 90f18c4b490564bc098046831ea932db13fce05d
+ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42853826"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58491649"
 ---
 # <a name="date-picker-control-in-powerapps"></a>Элемент управления "Выбор даты" в PowerApps
 Элемент управления, который используется для указания даты.
@@ -67,7 +67,7 @@ ms.locfileid: "42853826"
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Жирный**, **Полужирный**, **Обычный** или **Очень тонкий**.
+**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -127,4 +127,7 @@ ms.locfileid: "42853826"
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.
+* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.
+
+> [!TIP]
+> При открытии календаря, нажмите клавишу **страницу вверх** и **страницу вниз** для перехода между месяцами и **Shift + Page up** и **Shift + Page down** для перемещаться между лет.

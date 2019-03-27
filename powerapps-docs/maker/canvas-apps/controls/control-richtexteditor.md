@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 99c07c0561b4942e6cbbd49fa5c498d90b502d7e
-ms.sourcegitcommit: 957d67e13bd4153d042b3b3bd650f6d0de20613c
+ms.openlocfilehash: 3174d959a2360b36e82cd7070c4401251ca9fe18
+ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "58073290"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58491626"
 ---
 # <a name="rich-text-editor-control-in-powerapps"></a>Элемент управления редактора форматированного текста в PowerApps
 Позволяет конечным пользователям для форматирования текста внутри WYSIWYG, в область редактирования.  Выходные данные имеют формат HTML.
@@ -62,3 +62,14 @@ ms.locfileid: "58073290"
 **[X](properties-size-location.md)** — расстояние между левым краем элемента управления и левым краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 **[Y](properties-size-location.md)** — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
+
+
+## <a name="accessibility-guidelines"></a>Руководство по настройке специальных возможностей
+### <a name="screen-reader-support"></a>Поддержка средства чтения с экрана
+* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)**.
+
+### <a name="keyboard-support"></a>Поддержка клавиатуры
+* Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
+
+> [!TIP]
+> Используйте **Alt + 0** редактор фокус установлен на дополнительные сведения о других сочетаний клавиш.
