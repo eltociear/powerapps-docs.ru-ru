@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2864ab5614bb3af415e24e23df3c52f6e668ab24
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: 4ca9ed14f96dbad52fe6f7b0318f520dbdd33d10
+ms.sourcegitcommit: fc604f3e7f0399bdabee86ce94f67de49531a444
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357145"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58545091"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Учебник. Настройка коллекции в PowerApps
 
@@ -53,8 +53,6 @@ ms.locfileid: "58357145"
 
 1. Войдите в [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), а затем выберите **Приложения** у левого края экрана.
 
-    [![Домашняя страница PowerApps](./media/customize-layout-sharepoint/sign-in.png)](./media/customize-layout-sharepoint/sign-in.png#lightbox)
-
 1. Найдите созданное приложение, щелкните значок многоточия (**...**), а затем выберите **Редактировать**.
 
     ![Открытие приложения для изменения](./media/customize-layout-sharepoint/open-app.png)
@@ -69,25 +67,15 @@ ms.locfileid: "58357145"
 
     ![Выбор коллекции](media/customize-layout-sharepoint/select-gallery-1.png)
 
-1. Рядом с правым краем выберите **Учетные записи**, чтобы открыть область **Данные**.
-
-    ![Открытие области **Данные**](./media/customize-layout-sharepoint/open-data-pane.png)
-
-1. В области **Данные** откройте список вариантов в разделе **Макет**.
-
-    ![Открытие вариантов макета](./media/customize-layout-sharepoint/show-layouts.png)
-
-1. В списке вариантов выберите тот, который содержит только заголовок.
+1. На **свойства** вкладку на панели справа откройте список вариантов в разделе **макета**, а затем выберите вариант, который содержит только заголовок.
 
     ![Выбор макета, содержащего только заголовок](./media/customize-layout-sharepoint/choose-layout.png)
 
-1. В области **Данные** откройте список вариантов заголовка.
+1. Рядом с полем **поля**выберите **изменить**, а затем выберите стрелку вниз в поле «Заголовок».
 
     Имя этого элемента управления будет оканчиваться на числовое значение, такое как **Title1**, которое может быть различным в зависимости от других выполненных действий.
 
-    ![Открытие списка параметров для надписи заголовка](./media/customize-layout-sharepoint/show-title-options.png)
-
-1. В списке вариантов выберите **Account name (name)** (Имя учетной записи (имя)), а затем закройте область **Данные**.
+1. В списке параметров выберите **имя учетной записи**, а затем закройте **данных** области.
 
     Теперь в коллекции отображаются имена учетных записей.
 
@@ -154,9 +142,7 @@ ms.locfileid: "58357145"
 
     ![Выбор коллекции](./media/customize-layout-sharepoint/select-gallery-sorted.png)
 
-1. На вкладке **Коллекция** выберите **Показывать полосу прокрутки** и убедитесь, что значение этого свойства поменялось на **true**.
-
-    ![Показывать полосу прокрутки](./media/customize-layout-sharepoint/show-scrollbar.png)
+1. Укажите для ее **Показывать полосу прокрутки** свойства **true**.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
