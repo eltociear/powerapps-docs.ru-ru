@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 03/18/2019
 ms.author: kvivek
 ms.reviewer: kvivek
-ms.openlocfilehash: ec03fdfd4837bb54fb150562ade38db758887f88
-ms.sourcegitcommit: 0dbbf53aea319e53edadc1d3a9efa5728856ebd8
+ms.openlocfilehash: 4e24047d44beb19e55dadb8d653604e47460a5d2
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58162270"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357582"
 ---
 # <a name="what-is-powerapps"></a>Что такое PowerApps?
 
-PowerApps — это набор приложений, служб и соединителей, а также платформа данных, которая предоставляет среду разработки для эффективного создания пользовательских приложений для бизнеса. С помощью PowerApps можно быстро создавать пользовательские бизнес-приложения, которые подключаются к бизнес-данным, хранящимся в *базовой платформе данных* (**Common Data Service для приложений**) *или* в различных облачных и локальных источниках данных (SharePoint, Excel, Office 365, Dynamics 365, SQL Server и т. д.). 
+PowerApps — это набор приложений, служб и соединителей, а также платформа данных, которая предоставляет среду разработки для эффективного создания пользовательских приложений для бизнеса. С помощью PowerApps можно быстро создавать пользовательские бизнес-приложения, которые подключаются к бизнес-данным, хранящимся в *базовой платформе данных* (**Common Data Service**) *или* в различных облачных и локальных источниках данных (SharePoint, Excel, Office 365, Dynamics 365, SQL Server и т. д.). 
 
 Приложения, созданные с помощью PowerApps, предоставляют широкие возможности бизнес-логики и рабочих процессов для преобразования ручных бизнес-процессов в цифровые, автоматизированные процессы. Кроме того, приложения, созданные с помощью PowerApps, имеют адаптивный дизайн и могут выполняться в браузере или на мобильных устройствах (телефонах или планшетах). PowerApps упрощает разработку пользовательских бизнес-приложений, позволяя пользователям создавать многофункциональные бизнес-приложения без написания кода.
 
@@ -46,7 +46,7 @@ PowerApps позволяет создавать приложения двух т
 
 - **Центр администрирования PowerApps** ([admin.powerapps.com](https://admin.powerapps.com)) для создания сред, пользователей, ролей и политик защиты от потери данных и управления ими. 
 
-- **Центр администрирования платформы Power** ([admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)) для управления средами, оперативного получения рекомендаций по самостоятельному устранению неполадок и поддержки по приложениям Dynamics 365 Customer Engagement, PowerApps и Microsoft Flow, а также для просмотра аналитических данных платформы CDS для приложений. 
+- **Центр администрирования платформы Power** ([admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)) для управления средами, оперативного получения рекомендаций по самостоятельному устранению неполадок и поддержки по приложениям Dynamics 365 Customer Engagement, PowerApps и Microsoft Flow, а также для просмотра аналитики Common Data Service. 
 
 Дополнительные сведения: [Администрирование PowerApps](/power-platform/admin/admin-guide)
 
@@ -56,7 +56,7 @@ PowerApps позволяет создавать приложения двух т
 
 ## <a name="powerapps-and-dynamics-365"></a>PowerApps и Dynamics 365
 
-Такие приложения Dynamics 365, как Dynamics 365 for Sales, Dynamics 365 for Service, Dynamics 365 for Marketing, также используют базовую платформу данных (CDS для приложений), используемую PowerApps для хранения и защиты данных. С помощью PowerApps и службы Common Data Service для приложений можно создавать приложения непосредственно на основе базовых бизнес-данных, которые уже используются в Dynamics 365. При этом не нужно выполнять интеграцию. Дополнительные сведения: [Dynamics 365 и служба Common Data Service для приложений](maker/common-data-service/data-platform-intro.md#dynamics-365-and-the-common-data-service-for-apps)
+Такие приложения Dynamics 365, как Dynamics 365 for Sales, Dynamics 365 for Service, Dynamics 365 for Marketing, также работают с базовой платформой данных (Common Data Service), используемой PowerApps для хранения и защиты данных. С помощью PowerApps и Common Data Service можно создавать приложения непосредственно на основе базовых бизнес-данных, которые уже используются в Dynamics 365. При этом не нужно выполнять интеграцию. Дополнительные сведения: [Использование Dynamics 365 и Common Data Service](maker/common-data-service/data-platform-intro.md#dynamics-365-and-the-common-data-service)
 
 ## <a name="try-powerapps-for-free"></a>Попробуйте бесплатную ознакомительную версию PowerApps
 

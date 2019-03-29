@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 77268aa63ed49d10f825850909d31ec4feace063
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: 5c6876ac22f50be293781a7a6be58657f856baec
+ms.sourcegitcommit: 9444e6404770788b99cfcdb13b41ca6187d25149
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357605"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58623402"
 ---
 # <a name="choices-function-in-powerapps"></a>Функция Choices в PowerApps
 Возвращает таблицу из возможных значений для столбца подстановки.
@@ -83,10 +83,10 @@ ms.locfileid: "58357605"
 
 8. В карточке **Основное контактное лицо** выберите элемент управления **Поле со списком**.
 
-    Для свойства **Items** этого элемента управления задается одна из двух формул в зависимости от установленного флажка **Использовать отображаемые имена столбцов** в дополнительных параметрах.
+    **Элементы** этого элемента управления задано значение формулу, которая определяет столбец, его отображаемое имя, как показано в первом примере, или его логическое имя, как показано во втором примере:
 
-   - Если флажок установлен, для свойства задается следующая формула:<br>**Choices( Accounts.'Primary Contact' )**
-   - Если флажок не установлен, для свойства задается следующая формула:<br>**Choices( Accounts.primarycontactid )**
+   - **Choices( Accounts.'Primary Contact' )**
+   - **Choices( Accounts.primarycontactid )**
 
      ![Холст с элементом управления формы. Выбирается элемент управления **Поле со списком** с карточкой **Основное контактное лицо** и появляется свойство Items с формулой Choices( Accounts.'Primary Contact' )](media/function-choices/accounts-primary-contact.png)
 
@@ -94,10 +94,9 @@ ms.locfileid: "58357605"
 
 10. На вкладке **Вставка** выберите **Таблица данных**.
 
-11. Укажите для свойства **Items** элемента управления **Data table** одну из следующих формул:
+11. Задайте **элементы** свойство **таблицы данных** управления следующую формулу:
 
-     - Если флажок **Использовать отображаемые имена столбцов** в дополнительных параметрах установлен, используйте следующую формулу:<br>**Choices( Accounts.'Primary Contact' )**
-     - В противном случае используйте следующую формулу:<br>**Choices( Accounts.primarycontactid )**
+     **Choices( Accounts.'Primary Contact' )**
 
 12. Откройте панель **Данные** и отметьте флажками **firstname**, **lastname** и другие нужные поля.
 

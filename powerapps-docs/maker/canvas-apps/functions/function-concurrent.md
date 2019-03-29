@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e9c63d1814b72cae0c675be6b33773799cfb3b8f
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.openlocfilehash: ce8128f3a5eddf3a67fe2082844bf996c25adc05
+ms.sourcegitcommit: 2180982e57f0d161610be584fdae9424fe7e06b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357099"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58616692"
 ---
 # <a name="concurrent-function-in-powerapps"></a>Функция Concurrent в PowerApps
 Оценивает несколько формул одновременно.
@@ -131,7 +131,7 @@ ms.locfileid: "58357099"
 
 4. Добавьте элемент управления [**Таблица данных**](../controls/control-data-table.md) и укажите для свойства **Items** значение **Результаты**.
 
-1. На вкладке **Свойства** на правой панели выберите **Результаты**, чтобы открыть панель **Данные**.
+1. На **свойства** вкладку на правой панели, выберите **изменить поля** открыть **поля** области.
 
 1. В списке полей установите флажок для каждого поля, которое должно отображаться в таблице данных.
 
