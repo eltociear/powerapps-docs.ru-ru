@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: abf88db2bfb97a6541ee638ba8be5af27c20bc5f
-ms.sourcegitcommit: 5e15a1033a68289781f8092fb65c57432501f911
+ms.openlocfilehash: e3d5f40a604d2cbfa074ed5973d599c40a6c5c05
+ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54459581"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58765590"
 ---
 # <a name="reference-information-about-the-calendar-screen-template-for-canvas-apps"></a>Справочные сведения о шаблоне экран календарь для приложений на основе холста
 
@@ -191,7 +191,7 @@ ms.locfileid: "54459581"
     ```
 
     > [!NOTE]
-    > Определения для  **\_firstDayOfMonth**,  **\_firstDayInView**, и  **\_lastDayOfMonth** практически идентичны тем, в [раскрывающийся календарь](#calendar-dropdown) этого раздела.
+    > Определения для  **\_firstDayOfMonth**,  **\_firstDayInView**, и  **\_lastDayOfMonth** практически идентичны тем, в [раскрывающийся календарь](#calendar-drop-down) этого раздела.
 
     Первые три строки приведенного выше кода, которые выполняются, когда пользователь выбирает значок шеврона следующего месяца, задайте переменные, которые необходимы для отображения представления правильное календаря. Оставшийся код выполняется только в том случае, если пользователь не выбрал ранее в этом месяце для выбранного календаря.
 

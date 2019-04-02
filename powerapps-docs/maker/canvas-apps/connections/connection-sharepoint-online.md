@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0fbc97e6c2663210bea79cc7236ce784110a4950
-ms.sourcegitcommit: c6ad6ba7814c5e7b12c3b7b76bf2e7718bf41b8c
+ms.openlocfilehash: 86c23a2da0dca20bb6f755a9cb548c092180ef16
+ms.sourcegitcommit: 647e183c070c2159b790c7813a7be1d60b2551bd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58198620"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58765509"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>Подключение к SharePoint из приложения на основе холста
 
@@ -34,7 +34,7 @@ ms.locfileid: "58198620"
 Если вы хотите управлять данными в пользовательский список, PowerApps можно [автоматически создайте приложение с тремя экранами для вас](../app-from-sharepoint.md). Пользователи могут просмотреть список на первом экране, Показать сведения об элементе на втором экране и создавать или обновлять элементы в третьем экране.
 
 > [!NOTE]
-> Если список SharePoint содержит **Выбор**, **подстановки**, или **пользователя или группы,** столбца, см. в разделе [отображение данных в коллекции](connection-sharepoint-online.md#show-data-in-a-gallery) далее в этом разделе.
+> Если список SharePoint содержит **Выбор**, **подстановки**, или **пользователя или группы,** столбца, см. в разделе [отображение данных в коллекции](connection-sharepoint-online.md#show-list-columns-in-a-gallery) далее в этом разделе.
 
 ## <a name="create-a-connection"></a>Создание подключения
 
