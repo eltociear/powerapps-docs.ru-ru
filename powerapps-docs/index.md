@@ -1,14 +1,20 @@
 ---
 layout: HubPage
-title: "Документация по Microsoft\_PowerApps\_| Документация Майкрософт"
-description: "Документация по Microsoft\_PowerApps"
+title: Документация по Microsoft PowerApps | Документация Майкрософт
+description: Документация по Microsoft PowerApps
 searchScope:
-  - PowerApps
+- PowerApps
 featureFlags:
-  - clicktale
+- clicktale
 ms.service: powerapps
 ms.custom:
-  - powerapps-hub
+- powerapps-hub
+ms.openlocfilehash: e20fa35acda2953bff2068ffd3c3c20e6d051fe0
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357375"
 ---
 <div id="main"
    class="v2">

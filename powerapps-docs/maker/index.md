@@ -1,6 +1,6 @@
 ---
-title: "Общие сведения о создании приложений\_| Документы Майкрософт"
-description: "Общие сведения о создании приложений в режиме холста или модели и включении службы Common\_Data\_Service"
+title: Общие сведения о создании приложений | Документы Майкрософт
+description: Общие сведения о создании приложений в режиме холста или модели и включении службы Common Data Service
 author: AFTOwen
 manager: kvivek
 ms.service: powerapps
@@ -8,9 +8,14 @@ ms.topic: conceptual
 ms.custom: canvas
 ms.date: 03/18/2018
 ms.author: anneta
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 6a8432e93f854b1c0794512da42ef25c9aa02adc
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357927"
 ---
-
 # <a name="overview-of-creating-apps-in-powerapps"></a>Общие сведения о создании приложений в PowerApps
 
 PowerApps — это высокопроизводительная платформа разработки бизнес-приложений, состоящая из трех основных компонентов.

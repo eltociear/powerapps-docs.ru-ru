@@ -1,5 +1,5 @@
 ---
-title: "Для разработчиков: рекомендации по разработке подключаемых модулей и рабочих процессов для Common Data Service\_| Документация Майкрософт"
+title: 'Для разработчиков: рекомендации по разработке подключаемых модулей и рабочих процессов для Common Data Service | Документация Майкрософт'
 description: Рекомендации по разработке подключаемых модулей и рабочих процессов для службы Common Data Service в PowerApps.
 services: ''
 suite: powerapps
@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 60e489ffd35f0e07f9a22f65336b242b7e0e2652
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357835"
 ---
 # <a name="best-practices-and-guidance-regarding-plug-in-and-workflow-development-for-the-common-data-service"></a>Рекомендации по разработке подключаемых модулей и рабочих процессов для службы Common Data Service
 

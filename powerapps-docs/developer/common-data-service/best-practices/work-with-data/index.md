@@ -1,5 +1,5 @@
 ---
-title: "Для разработчиков: Рекомендации по работе с данными в службе Common Data Service\_| Документация Майкрософт"
+title: 'Для разработчиков: Рекомендации по работе с данными в службе Common Data Service | Документация Майкрософт'
 description: Рекомендации по работе с данными для разработчиков Common Data Service в PowerApps.
 services: ''
 suite: powerapps
@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 12/12/2018
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 759bed0c21bfc2035e3855f6d02b991b753dbf4b
+ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58357789"
 ---
-
 # <a name="best-practices-and-guidance-around-working-with-data-for-the-common-data-service"></a>Рекомендации по работе с данными в службе Common Data Service
 
 В списке ниже приводятся все рекомендации по интеграции данных со службой Common Data Service с помощью кода.
