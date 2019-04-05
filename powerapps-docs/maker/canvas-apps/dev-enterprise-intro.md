@@ -1,6 +1,6 @@
 ---
 title: PowerApps для партнеров, независимых поставщиков ПО и разработчиков корпоративных решений | Документация Майкрософт
-description: Общие сведения о разработке решений в PowerApps.
+description: Общие сведения о разработке решений с помощью приложений на основе холста.
 author: ImadYanni
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a99af6cbc963a82fc0f375336e0db9c07cbdc411
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.openlocfilehash: c50908704e06f95f91a23c0b560ff41e63ea475b
+ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799003"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59042641"
 ---
-# <a name="powerapps-for-enterprise-developers-partners-and-isvs"></a>PowerApps для разработчиков корпоративных приложений, партнеров и независимых поставщиков ПО
+# <a name="canvas-apps-for-enterprise-developers-partners-and-isvs"></a>Приложения для корпоративных разработчиков, партнеров и независимых поставщиков программного обеспечения на основе холста
 
 Как разработчик вы можете расширять возможности приложений на основе холста в PowerApps, создавая еще более мощные решения для пользователей и организаций.
 
@@ -28,7 +28,7 @@ ms.locfileid: "57799003"
 
 Корпоративные разработчики могут дать своим организациям возможность создавать в PowerApps надежные специализированные решения:
 
-- **Создание пользовательских соединителей**: Разрабатывайте настраиваемые соединители для подключения к данным организации и веб-службам через Microsoft Flow. [Дополнительные сведения](https://docs.microsoft.com/connectors/custom-connectors/)
+- **Создание пользовательских соединителей**: Разрабатывайте настраиваемые соединители для подключения к данным организации и веб-служб. [Дополнительные сведения](https://docs.microsoft.com/connectors/custom-connectors/)
 
 - **Создание функций Azure**: Создавайте Функции Azure, чтобы добавить в приложения пользовательскую логику на стороне сервера. [Дополнительные сведения](https://docs.microsoft.com/azure/azure-functions/functions-powerapps-scenario)
 
