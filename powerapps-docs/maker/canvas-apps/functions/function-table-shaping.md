@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 08/24/2018
+ms.date: 04/04/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7b0701c9fcf7033ab8d57bb039972ce63c8faf29
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.openlocfilehash: fc682694bb22ecc63ecc762a735df07950ce29d3
+ms.sourcegitcommit: 2dce3fe99828b0ffa23885bc7e11f1a1f871af07
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57802407"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59096174"
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>Функции AddColumns, DropColumns, RenameColumns и ShowColumns в Microsoft PowerApps
 Изменение формата [таблицы](../working-with-tables.md) путем добавления, удаления, переименования и выбора ее [столбцов](../working-with-tables.md#columns).
@@ -49,9 +49,20 @@ ms.locfileid: "57802407"
 
 Функция **ShowColumns** включает в результат указанные столбцы таблицы и удаляет все остальные. Функцию **ShowColumns** можно использовать для выделения одного столбца из таблицы с несколькими столбцами.  **ShowColumns** включает столбцы, а **DropColumns** исключает столбцы.  
 
-Все эти функции возвращают новую таблицу, к которой применено соответствующее преобразование.  Исходная таблица сохраняется без изменений.
+Все эти функции возвращают новую таблицу, к которой применено соответствующее преобразование. Исходная таблица сохраняется без изменений. Не удается изменить существующую таблицу с помощью формулы. SharePoint, Common Data Service, SQL Server и других источников данных предоставляют средства для изменения столбцов, списки, сущностей и таблиц, которые часто называют схему. Функции в этом разделе только преобразование входной таблицы, без изменения исходного, в таблицу выходные данные для дальнейшего использования.
 
-[!INCLUDE [delegation-no](../../../includes/delegation-no.md)]
+Аргументы, эти функции поддерживают делегирование. Например **фильтра** функция используется в качестве аргумента для извлечения связанных записей перебирает все списки, даже если **"[dbo]. [ AllListings] "** источник данных содержит количество строк:
+
+```powerapps-dot
+AddColumns( RealEstateAgents, 
+    "Listings",  
+    Filter(  '[dbo].[AllListings]', ListingAgentName = AgentName ) 
+)
+```
+
+Тем не менее, выходные данные этих функций осуществляется в соответствии [число записей не делегирования](../delegation-overview.md#non-delegable-limits).  В этом примере возвращаются только 500 записей даже в том случае, если **RealEstateAgents** источник данных имеет 501 или несколько записей.
+
+При использовании **AddColumns** таким образом, **фильтра** необходимо выполнить отдельные вызовы к источнику данных для каждого из этих первых записей в **RealEstateAgents**, которая вызывает огромное количество chatter сети. Если **[dbo]. [ AllListings]** достаточно мала и не меняется часто, можно вызвать **собирать** работать в [ **OnStart** ](signals.md#app) кэширование источника данных в приложении при его запуске. Кроме того может измените приложение так, чтобы вы на включение внесенных изменений в связанных записей только в том случае, когда пользователь запрашивает для них.  
 
 ## <a name="syntax"></a>Синтаксис
 **AddColumns**( *Table*, *ColumnName1*, *Formula1* [, *ColumnName2*, *Formula2*, ... ] )
@@ -85,19 +96,46 @@ ms.locfileid: "57802407"
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| **AddColumns( IceCreamSales, "Revenue", UnitPrice * QuantitySold )** |Добавляет к результату столбец **Revenue**.  Для каждой записи вычисляется выражение **UnitPrice * QuantitySold**. Результат вычисления помещается в новый столбец. |<style> img { max-width: none; } </style> ![](media/function-table-shaping/icecream-add-revenue.png) |
-| **DropColumns( IceCreamSales, "UnitPrice" )** |Исключает из результата столбец **UnitPrice**. Эта функция позволяет исключить столбцы, а **ShowColumns** включает их. |![](media/function-table-shaping/icecream-drop-price.png) |
-| **ShowColumns( IceCreamSales, "Flavor" )** |Включает в результат только столбец **Flavor**. Эта функция позволяет включить столбцы, а **DropColumns** исключает их. |![](media/function-table-shaping/icecream-select-flavor.png) |
-| **RenameColumns( IceCreamSales, "UnitPrice", "Price")** |Переименовывает **UnitPrice** столбцу в результате. |![](media/function-table-shaping/icecream-rename-price.png) |
+| **AddColumns (IceCreamSales, «Доход», UnitPrice * QuantitySold)** |Добавляет к результату столбец **Revenue**.  Для каждой записи вычисляется выражение **UnitPrice * QuantitySold**. Результат вычисления помещается в новый столбец. |<style> img { max-width: none; } </style> ![](media/function-table-shaping/icecream-add-revenue.png) |
+| **DropColumns (IceCreamSales, «Цена»)** |Исключает из результата столбец **UnitPrice**. Эта функция позволяет исключить столбцы, а **ShowColumns** включает их. |![](media/function-table-shaping/icecream-drop-price.png) |
+| **ShowColumns (IceCreamSales, «Flavor»)** |Включает в результат только столбец **Flavor**. Эта функция позволяет включить столбцы, а **DropColumns** исключает их. |![](media/function-table-shaping/icecream-select-flavor.png) |
+| **RenameColumns (IceCreamSales, «Цена», «Price»)** |Переименовывает **UnitPrice** столбцу в результате. |![](media/function-table-shaping/icecream-rename-price.png) |
 | **RenameColumns( IceCreamSales, "UnitPrice", "Price", "QuantitySold", "Number")** |Переименовывает столбцы **UnitPrice** и **QuantitySold**. |![](media/function-table-shaping/icecream-rename-price-quant.png) |
-| **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales, "Revenue",<br>UnitPrice * QuantitySold ),<br>"UnitPrice", "Price" ),<br>"Quantity" )** |Поочередно выполняет следующие преобразования, начиная с "внутренней стороны" формулы. <ol><li>Добавляет столбец **Revenue** заполняемый данными по формуле **UnitPrice * Quantity**.<li>Переименовывает столбец **UnitPrice** в **Price**.<li>Исключает столбец **Quantity**.</ol>  Обратите внимание, что порядок выполнения имеет значение. Например, мы не сможем вычислить **UnitPrice** после того, как переименуем его. |![](media/function-table-shaping/icecream-all-transforms.png) |
+| **DropColumns)<br>RenameColumns)<br>AddColumns (IceCreamSales, «Доход»,<br>UnitPrice * QuantitySold),<br>«Цена», «Цена»)<br>«Количество»)** |Поочередно выполняет следующие преобразования, начиная с "внутренней стороны" формулы. <ol><li>Добавляет столбец **Revenue** заполняемый данными по формуле **UnitPrice * Quantity**.<li>Переименовывает столбец **UnitPrice** в **Price**.<li>Исключает столбец **Quantity**.</ol>  Обратите внимание, что порядок выполнения имеет значение. Например, мы не сможем вычислить **UnitPrice** после того, как переименуем его. |![](media/function-table-shaping/icecream-all-transforms.png) |
 
 ### <a name="step-by-step"></a>Шаг за шагом
-1. Импортируйте или создайте коллекцию с именем **Inventory**, как описано в первом шаге [демонстрации текста и изображений в коллекции](../show-images-text-gallery-sort-filter.md).
-2. Добавьте кнопку и задайте следующую формулу в качестве значения свойства **[OnSelect](../controls/properties-core.md)**:
-   
-    **ClearCollect(Inventory2, RenameColumns(Inventory, "ProductName", "JacketID"))**
-3. Нажмите клавишу F5, нажмите только что созданную кнопку, затем нажмите клавишу Esc, чтобы вернуться в рабочую область конструирования.
-4. В меню **Файл** выберите **Коллекции**.
-5. Убедитесь, что создана коллекция с именем **Inventory2**. Новая коллекция содержит те же сведения, что и **Inventory**, но столбец с именем **ProductName** из коллекции **Inventory** теперь называется **JacketID** в новой коллекции **Inventory2**.
 
+Давайте попробуем некоторые примеры из этой статьи.  
+
+1. Создание коллекции путем добавления **[кнопку](../controls/control-button.md)** элемент управления и укажите его **OnSelect** следующую формулу:
+
+    ```powerapps-dot
+    ClearCollect( IceCreamSales, 
+        Table(
+            { Flavor: "Strawberry", UnitPrice: 1.99, QuantitySold: 20 }, 
+            { Flavor: "Chocolate", UnitPrice: 2.99, QuantitySold: 45 },
+            { Flavor: "Vanilla", UnitPrice: 1.50, QuantitySold: 35 }
+        )
+    )
+    ```
+
+1. Запустите вычисление формулы, нажав кнопку, удерживая нажатой клавишу Alt.
+
+1. Добавьте второй **кнопку** , назначьте его **OnSelect** следующую формулу, а затем запустите его:
+
+    ```powerapps-dot
+    ClearCollect( FirstExample, 
+        AddColumns( IceCreamSales, "Revenue", UnitPrice * QuantitySold )
+    ) 
+    ```
+1. На **файл** меню, выберите **коллекций**, а затем выберите **IceCreamSales** для отображения этой коллекции.
+ 
+    Как показано на рисунке, Вторая формула не изменять данную коллекцию. **AddColumns** функция, используемая **IceCreamSales** в качестве аргумента только для чтения; функция не изменять таблицу, к которой относится этот аргумент.
+    
+    ![Средство просмотра коллекции, отображающие три записи коллекции продажи мороженого, не содержат столбец дохода](media/function-table-shaping/ice-cream-sales-collection.png)
+
+1. Выберите **FirstExample**.
+
+    Как показано на рисунке, Вторая формула возвращается новая таблица с добавленный столбец. **ClearCollect** функция захвата новую таблицу в **FirstExample** коллекции, добавим что-нибудь в исходную таблицу, так как он проходит через функцию без изменения источника:
+
+    ![Средство просмотра коллекции, отображение трех записей в первом примере коллекции, которая содержит новый столбец доход](media/function-table-shaping/first-example-collection.png)
