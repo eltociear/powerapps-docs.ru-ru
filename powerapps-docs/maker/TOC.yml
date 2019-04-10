@@ -832,6 +832,8 @@ items:
           href: ./model-driven-apps/pass-current-embedded-canvas-app.md
         - name: Передача связанных записей во внедренное приложение на основе холста
           href: ./model-driven-apps/pass-related-embedded-canvas-app.md
+        - name: Выполнять предопределенные действия над формой узла
+          href: ./model-driven-apps/embedded-canvas-app-actions.md
         - name: Общий доступ к внедренному приложению на основе холста
           href: ./model-driven-apps/share-embedded-canvas-app.md
         - name: Рекомендации по внедренным приложениям на основе холста
@@ -1112,9 +1114,9 @@ items:
     href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
   - name: Поддержка
     href: https://powerapps.microsoft.com/support/
-ms.openlocfilehash: c595c263b653f1f85e0d2d11e120aa8bcab0ba39
-ms.sourcegitcommit: ca21565c27fe0d46db87197bf00fd31899f1a71e
+ms.openlocfilehash: 7ba1f96d9fb2d0a3fdfc05721e8685630898028e
+ms.sourcegitcommit: 57185a7d2af0dd1d67d7204754d8457f886c8704
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58395147"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59246049"
