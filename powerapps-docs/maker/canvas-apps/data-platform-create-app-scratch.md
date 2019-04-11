@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 68c54838b613d0aa459833509cad57b49ade759a
-ms.sourcegitcommit: dd7659f9fe5161df6053a735781fdfb62bbea88e
+ms.openlocfilehash: 428ca1fd96df4ed8a9c3fd7c14a1ad3e07356c70
+ms.sourcegitcommit: d1d39d6b72516d62514af4ff90f04c35fbdd8638
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58624266"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59480223"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Создание с нуля приложения на основе холста с помощью Common Data Service
 
@@ -97,9 +97,9 @@ ms.locfileid: "58624266"
 1. Выберите **Добавить поле**, а затем установите флажки для этих полей:
 
     - **Имя учетной записи**
-    - **Адрес 1: Улица 1**
+    - **Адрес 1: улица, дом (строка 1)**
     - **Адрес 1: Город**
-    - **Адрес 1: Почтовый индекс**
+    - **Адрес 1: почтовый индекс**
     - **Количество сотрудников**
     - **Годовой доход**
 
