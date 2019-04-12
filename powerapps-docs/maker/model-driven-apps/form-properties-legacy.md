@@ -1,7 +1,7 @@
 ---
 title: Свойства форм управляемых моделью приложений в PowerApps | MicrosoftDocs
 description: Познакомьтесь со свойствами основных форм
-Keywords: Main form properties; Dynamics 365
+Keywords: Свойства основной формы; Dynamics 365
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -10,7 +10,7 @@ applies_to:
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 ms.assetid: 4ed30bb7-dca1-4de8-80f3-842152ea921a
 search.audienceType:

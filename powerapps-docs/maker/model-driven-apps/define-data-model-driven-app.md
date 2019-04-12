@@ -1,7 +1,7 @@
 ---
 title: "Определение данных для управляемого моделью приложения в\_PowerApps | MicrosoftDocs"
 description: 'Узнайте, как определять данные для управляемого моделью приложения'
-Keywords: 'data, entity, fields, relationship, attributes, model-driven app'
+Keywords: 'данные, сущность, поля, отношение, атрибуты, управляемое моделью приложение'
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -10,7 +10,7 @@ applies_to:
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 search.audienceType:
   - maker
@@ -20,11 +20,11 @@ search.app:
 ---
 # <a name="define-data-for-your-model-driven-app"></a>Определение данных для управляемого моделью приложения
 
-Данные для управляемого моделью приложения определяются в [Common Data Service (CDS) для Apps](../common-data-service/data-platform-intro.md). 
+Данные для управляемого моделью приложения определяются в [Common Data Service](../common-data-service/data-platform-intro.md). 
 
 Вы определяете данных приложения, используя следующие компоненты: *сущность*, *поле* и *отношение*.
 
-Дополнительные сведения о работе с этими компонентами в CDS для приложений для определения данных для вашего управляемого моделью приложения см. в следующих разделах в подразделе CDS для приложений:
+Дополнительные сведения о работе с этими компонентами в Common Data Service для определения данных для вашего управляемого моделью приложения см. в следующих разделах в подразделе Common Data Service:
 
 |Компонент |Описание|
 |-----|----|

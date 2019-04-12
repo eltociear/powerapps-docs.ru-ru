@@ -3,7 +3,7 @@ title: Развертывание приложения Dynamics 365 App for Outl
 ms.custom: ''
 ms.date: '2017-04-20'
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article

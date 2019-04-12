@@ -1,10 +1,10 @@
 ---
-title: Пошаговое руководство по виртуальным сущностям с использованием поставщика данных виртуальной сущности OData v4 в Common Data Service для приложений | MicrosoftDocs
+title: Пошаговое руководство по виртуальным сущностям с использованием поставщика данных виртуальной сущности OData в Common Data Service | MicrosoftDocs
 description: 'Узнайте, как использовать поставщика данных OData v4 с виртуальной сущностью'
 ms.custom: ''
 ms.date: 06/04/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

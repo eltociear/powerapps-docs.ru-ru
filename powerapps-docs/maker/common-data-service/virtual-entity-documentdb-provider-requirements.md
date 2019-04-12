@@ -1,9 +1,9 @@
 ---
-title: Функции для предварительного ознакомления. Использование базы данных Azure Cosmos для поставщика данных API SQL с Common Data Service для приложений | MicrosoftDocs
+title: Функции для предварительного ознакомления. Использование базы данных Azure Cosmos для поставщика данных API SQL с Common Data Service | MicrosoftDocs
 description: 'Узнайте, как настраивать базу данных Azure Cosmos DB для поставщика данных API SQL для использования с виртуальными сущностями.'
 keywords: API SQL
 ms.date: 02/15/2019
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -52,9 +52,9 @@ search.app:
 
 ![Пример JSON для документа API SQL.](media/documentdbexample.png)
 
-В этой таблице указаны сопоставления типов данных для документа SQL API в коллекции *Заказы* с типами данных Common Data Service для приложений.
+В этой таблице указаны сопоставления типов данных для документа SQL API в коллекции *Заказы* с типами данных Common Data Service.
 
-|Данные SQL API|CDS для приложений|
+|Данные SQL API|Common Data Service|
 |--|--|
 |`id`|Первичный ключ|
 |`name`|Строка текста|
@@ -67,7 +67,7 @@ search.app:
 
 > [!NOTE]
 > - Атрибуты с префиксом подчеркивания (_) создаются в SQL API.
-> - Атрибуты, которые настроены как необязательные в документе SQL API и сопоставлены в CDS для приложений как **Требуется для бизнеса**, вызывают ошибку среды выполнения.
+> - Атрибуты, которые настроены как необязательные в документе SQL API и сопоставлены в Common Data Service как **Требуется для бизнеса**, вызывают ошибку среды выполнения.
 > - Значения атрибута id должны иметь тип guid.
 > - Дополнительные сведения об использовании дат в SQL API см. в разделе [Работа с данными в Azure Cosmos DB](https://azure.microsoft.com/blog/working-with-dates-in-azure-documentdb-4/).
 
@@ -78,7 +78,7 @@ search.app:
 - Операторы сравнения: `<`,`>`,`<=`, `>=`,`!=`
 - Логические операторы: `and`, `or` 
 - Логические операторы: `in`, `not in`
-- Строковые операторы: `like`, `contains`, b`egins with`, `ends with`
+- Строковые операторы: `like`, `contains`, `begins with`, `ends with`
 
 > [!NOTE]
 > Использование оператора like переводится в соответствующие операторы `contains`/`begins with`/`ends with`. SQL API не поддерживает аргументы шаблонов, как описано в разделе [Like (Transact-SQL)](/sql/t-sql/language-elements/like-transact-sql). База данных Azure Cosmos DB для поставщика данных SQL API может переводить один особый случай `Like('[aA]%')` в `BeginsWith('a')` OR `BeginsWith('A')`. Обратите внимание, что сравнение строк в SQL API чувствительно к регистру символов.

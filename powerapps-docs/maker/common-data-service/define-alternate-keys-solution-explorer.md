@@ -1,10 +1,10 @@
 ---
 title: Определение альтернативных ключей с помощью обозревателя решений | MicrosoftDocs
-description: 'Узнайте, как определить альтернативные ключи, которые можно использовать для ссылки на записи в Common Data Service для приложений с помощью обозревателя решений'
+description: 'Узнайте, как определить альтернативные ключи, которые можно использовать для ссылки на записи в Common Data Service с помощью обозревателя решений'
 ms.custom: ''
 ms.date: 05/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="define-alternate-keys-using-solution-explorer"></a>Определение альтернативных ключей с помощью обозревателя решений
 
-Обозреватель решений предоставляет один способ просмотра и создания альтернативных ключей для Common Data Service для приложений.
+Обозреватель решений предоставляет один способ просмотра и создания альтернативных ключей для Common Data Service.
 
 [Портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. <br />Дополнительные сведения: 
 - [Определение альтернативных ключей для ссылки на записи](define-alternate-keys-reference-records.md)<br />

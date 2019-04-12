@@ -1,9 +1,9 @@
 ---
-title: Создание и изменение глобальных наборов параметров для Common Data Service для приложений с помощью обозревателя решений | MicrosoftDocs
+title: Создание и изменение глобальных наборов параметров для Common Data Service с помощью обозревателя решений | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/26/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -19,12 +19,12 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-global-option-sets-for-common-data-service-for-apps-using-solution-explorer"></a>Создание и изменение глобальных наборов параметров для Common Data Service для приложений с помощью обозревателя решений
+# <a name="create-and-edit-global-option-sets-for-common-data-service-using-solution-explorer"></a>Создание и изменение глобальных наборов параметров для Common Data Service с помощью обозревателя решений
 
-Обозреватель решений предоставляет один способ создания и изменения глобальных наборов параметров для Common Data Service для приложений с помощью Common Data Service для приложений.
+Обозреватель решений предоставляет один способ создания и изменения глобальных наборов параметров для Common Data Service.
 
 [Портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. <br />Дополнительные сведения: 
-- [Создание и изменение глобального набора параметров для Common Data Service для приложений](create-edit-global-option-sets.md)
+- [Создание и изменение глобального набора параметров для Common Data Service](create-edit-global-option-sets.md)
 - [Создание набора параметров](custom-picklists.md)
 
 ## <a name="open-solution-explorer"></a>Откройте обозреватель решений
@@ -40,7 +40,7 @@ search.app:
 ![Просмотр глобальных наборов параметров](media/view-global-option-sets-solution-explorer.png)
 
 > [!NOTE]
-> Некоторые системные глобальные наборы параметров невозможно настроить. Эти параметры могут изменяться при установке обновлений или обновлении до новых версий, поэтому рекомендуем использовать их только в случае, если вы уверены, что ваши требования соответствуют тому, как в CDS для приложений используются эти значения.
+> Некоторые системные глобальные наборы параметров невозможно настроить. Эти параметры могут изменяться при установке обновлений или обновлении до новых версий, поэтому рекомендуем использовать их только в случае, если вы уверены, что ваши требования соответствуют тому, как в Common Data Service используются эти значения.
 
 ## <a name="create-a-global-option-set"></a>Создание глобального набора параметров
 
@@ -81,7 +81,7 @@ search.app:
   
 ### <a name="see-also"></a>См. также
  
-[Создание и изменение глобального набора параметров для Common Data Service для приложений](create-edit-global-option-sets.md)<br />
+[Создание и изменение глобального набора параметров для Common Data Service](create-edit-global-option-sets.md)<br />
 [Создание набора параметров](custom-picklists.md)<br />
 [Создание и изменение полей](create-edit-fields.md)<br />
 [Документация для разработчиков. Настройка глобальных наборов параметров](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)

@@ -1,10 +1,10 @@
 ---
-title: Обзор создания отношений сущностей "многие-ко-многим" в Common Data Service для приложений | MicrosoftDocs
+title: Обзор создания отношений сущностей "многие-ко-многим" в Common Data Service | MicrosoftDocs
 description: 'Узнайте, как создавать отношения сущностей многие-ко-многим'
 ms.custom: ''
 ms.date: 05/29/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -37,8 +37,8 @@ search.app:
 
 |Дизайнер| Описание|
 |--|--|
-|[Портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание отношений сущностей "многие-ко-многим" в Common Data Service для приложений с помощью портала PowerApps](create-edit-nn-relationships-portal.md)|
-|Обозреватель решений|Не так прост, но предоставляет больше гибкости для менее распространенных требований.<br />Дополнительные сведения: [Создание отношений сущностей N:N (многие-ко-многим) в Common Data Service для приложений с помощью обозревателя решений](create-edit-nn-relationships-solution-explorer.md) |
+|[Портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание отношений сущностей "многие-ко-многим" в Common Data Service с помощью портала PowerApps](create-edit-nn-relationships-portal.md)|
+|Обозреватель решений|Не так прост, но предоставляет больше гибкости для менее распространенных требований.<br />Дополнительные сведения: [Создание отношений сущностей N:N (многие-ко-многим) в Common Data Service с помощью обозревателя решений](create-edit-nn-relationships-solution-explorer.md) |
 
 > [!NOTE]
 > Можно также создать новое отношение сущностей "многие-ко-многим" (N:N) в вашей среде, используя следующее:
@@ -55,7 +55,7 @@ search.app:
 ## <a name="see-also"></a>См. также
 
 [Создание и изменение отношений между сущностями](create-edit-entity-relationships.md)<br />
-[Создание отношений сущностей "многие-ко-многим" в Common Data Service для приложений с помощью портала PowerApps](create-edit-nn-relationships-portal.md)<br />
-[Создание отношений сущностей N:N (многие-ко-многим) в Common Data Service для приложений с помощью обозревателя решений](create-edit-nn-relationships-solution-explorer.md)<br />
+[Создание отношений сущностей "многие-ко-многим" в Common Data Service с помощью портала PowerApps](create-edit-nn-relationships-portal.md)<br />
+[Создание отношений сущностей N:N (многие-ко-многим) в Common Data Service с помощью обозревателя решений](create-edit-nn-relationships-solution-explorer.md)<br />
 [Документация для разработчиков. Настройка метаданных отношений между сущностями](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)<br />
 [Документация для разработчиков. Доступность отношений между сущностями](https://docs.microsoft.com/dynamics365/customer-engagement/developer/entity-relationship-eligibility)

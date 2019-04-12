@@ -1,7 +1,7 @@
 ---
 title: Общие сведения о компонентах управляемых моделью приложений в PowerApps | MicrosoftDocs
 description: 'Описание различных компонентов управляемого моделью приложения, таких как данные, пользовательский интерфейс, логика и визуализация.'
-Keywords: 'fields, attributes, model-driven app'
+Keywords: 'поля, атрибуты, управляемое моделью приложение'
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -10,7 +10,7 @@ applies_to:
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 search.audienceType:
   - maker

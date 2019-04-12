@@ -22,7 +22,7 @@ search.app:
 ## <a name="prerequisites"></a>Необходимые условия
 Для выполнения этой процедуры следующие элементы необходимы:
 * Лицензия PowerApps, план 2, или Microsoft Flow, план 2. Кроме того, можно подписаться на [бесплатную пробную версию PowerApps, план 2](https://web.powerapps.com/signup?redirect=marketing&email=).
-* Роль безопасности администратора системы или специалиста по настройке системы в Common Data Service для приложений.
+* Роль безопасности администратора системы или специалиста по настройке системы в Common Data Service.
 
 ## <a name="sign-in-to-powerapps"></a>Вход в PowerApps
 Выполните вход в PowerApps на сайте [https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).

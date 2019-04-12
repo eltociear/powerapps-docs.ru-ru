@@ -1,7 +1,7 @@
 ---
 title: Свойства раздела для основных форм управляемых моделью приложений в PowerApps | MicrosoftDocs
 description: Познакомьтесь со свойствами раздела для основной формы
-Keywords: Main form; Section properties; Dynamics 365
+Keywords: Основная форма; Свойства раздела; Dynamics 365
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -10,7 +10,7 @@ applies_to:
 ms.author: matp
 manager: kvivek
 ms.date: 06/06/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 ms.assetid: 2d3af6e9-e8a4-4129-b708-383b2740c015
 search.audienceType:

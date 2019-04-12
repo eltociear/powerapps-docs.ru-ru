@@ -1,10 +1,10 @@
 ---
-title: Создание и изменение сущностей в Common Data Service для приложений | MicrosoftDocs
+title: Создание и изменение сущностей в Common Data Service | MicrosoftDocs
 description: Инструкции по созданию и изменению сущностей
 ms.custom: ''
 ms.date: 05/11/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,7 +22,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-entities-in-common-data-service-for-apps"></a>Создание и изменение сущностей в Common Data Service для приложений
+# <a name="create-and-edit-entities-in-common-data-service"></a>Создание и изменение сущностей в Common Data Service
 
 Прежде чем создать пользовательскую сущность, оцените, соответствует ли существующая сущность вашим требованиям. Дополнительные сведения: [Создание новых или использование существующих метаданных](create-edit-metadata.md#create-new-metadata-or-use-existing-metadata)
 

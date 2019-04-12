@@ -4,7 +4,7 @@ description: 'Узнайте, как включить отзыв для сущн
 ms.custom: ''
 ms.date: 05/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -42,7 +42,8 @@ search.app:
 
 По умолчанию, чтобы добавить отзыв о записи, пользователи должны перейти к списку связанных записей для этой записи. Чтобы пользователям было удобнее добавлять отзывы, рекомендуем добавить вложенную сетку отзыва в форму сущности, для которой вы включаете поддержку отзывов.  
 
-<!-- This is the closest I could find to a topic about adding an subgrid to a form. --> Дополнительные сведения: [Обзор свойств вложенной сетки](../model-driven-apps/sub-grid-properties-legacy.md)
+<!-- This is the closest I could find to a topic about adding an subgrid to a form. -->
+Дополнительные сведения: [Обзор свойств вложенной сетки](../model-driven-apps/sub-grid-properties-legacy.md)
 
 ## <a name="add-a-rollup-field--to-the-entity-form-to-show-the-ratings"></a>Добавление поля свертки в форму сущности для отображения оценок  
 

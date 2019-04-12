@@ -1,10 +1,10 @@
 ---
-title: Задание управляемых свойства в метаданных Common Data Service для приложений | MicrosoftDocs
+title: Задание управляемых свойства в метаданных Common Data Service | MicrosoftDocs
 description: Научитесь задавать управляемые свойства для элементов метаданных в решении
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="set-managed-properties-in-common-data-service-for-apps-metadata"></a>Задание управляемых свойства в метаданных Common Data Service для приложений 
+# <a name="set-managed-properties-in-common-data-service-metadata"></a>Задание управляемых свойства в метаданных Common Data Service 
 
 Управляемые свойства применяются, только если добавить метаданные в управляемое решение и импортировать его в другую среду. Эти параметры позволяют создателю решения управлять тем, какие возможности настройки они хотят предоставить пользователям, устанавливающим данное управляемое решение. 
 
@@ -58,7 +58,7 @@ search.app:
 
 ## <a name="field-managed-properties"></a>Управляемые свойства полей
 
-См. раздел [Создание и изменение полей для Common Data Service для приложений с помощью обозревателя решений PowerApps](create-edit-field-solution-explorer.md) для получения сведения о порядке редактирования полей.
+См. раздел [Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps](create-edit-field-solution-explorer.md) для получения сведения о порядке редактирования полей.
 
 Во время [просмотра полей](create-edit-field-solution-explorer.md#view-fields) выберите настраиваемое поле из неуправляемого решения, затем выберите **Другие действия** >  **Управляемые свойства** в строке меню.
 
@@ -94,6 +94,6 @@ search.app:
 
 [Управляемые свойства](solutions-overview.md#managed-properties)<br />
 [Создание и изменение сущностей с помощью обозревателя решений](create-edit-entities-solution-explorer.md)<br />
-[Создание и изменение полей для Common Data Service для приложений с помощью обозревателя решений PowerApps](create-edit-field-solution-explorer.md)<br />
+[Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps](create-edit-field-solution-explorer.md)<br />
 [Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) с помощью обозревателя решений](create-edit-1n-relationships-solution-explorer.md)<br />
-[Создание отношений сущностей N:N (многие-ко-многим) в Common Data Service для приложений с помощью обозревателя решений](create-edit-nn-relationships-solution-explorer.md)
+[Создание отношений сущностей N:N (многие-ко-многим) в Common Data Service с помощью обозревателя решений](create-edit-nn-relationships-solution-explorer.md)

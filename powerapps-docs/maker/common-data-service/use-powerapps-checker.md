@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: article
-ms.date: 12/04/2018
+ms.date: 03/20/2019
 ms.author: matp
 search.audienceType:
   - maker
@@ -17,22 +17,18 @@ search.app:
 
 # <a name="use-solution-checker-to-validate-your-model-driven-apps-in-powerapps"></a>Использование средства проверки решений для проверки управляемых моделью приложений в PowerApps
 
-Чтобы обеспечивать сложные бизнес-требования, создатели управляемых моделью приложений часто могут в конечном счете создавать в высокой степени развитые приложения, которые настраивают и расширяют платформу Common Data Service (CDS) для приложений. Со сложными реализациями возникает риск возникновения проблем производительности, устойчивости и надежности, что может отрицательно повлиять на опыт работы пользователя. Выявление этих проблем и разработка способов их устранения может быть сложной задачей, требующей много времени. С функцией проверки решения можно выполнить проверку решений с широким статическим анализом ваших решений по набору правил оптимальной работы и быстро выявить эти проблемные закономерности. После завершения проверки вы получите подробный отчет со списком выявленных проблем, затронутыми компонентами и кодом, а также со ссылками на документацию, в которой описываются способы решения каждой проблемы.
+Чтобы обеспечивать сложные бизнес-требования, создатели управляемых моделью приложений часто могут в конечном счете создавать в высокой степени развитые приложения, которые настраивают и расширяют платформу Common Data Service. Со сложными реализациями возникает риск возникновения проблем производительности, устойчивости и надежности, что может отрицательно повлиять на опыт работы пользователя. Выявление этих проблем и разработка способов их устранения может быть сложной задачей, требующей много времени. С функцией проверки решения можно выполнить проверку решений с широким статическим анализом ваших решений по набору правил оптимальной работы и быстро выявить эти проблемные закономерности. После завершения проверки вы получите подробный отчет со списком выявленных проблем, затронутыми компонентами и кодом, а также со ссылками на документацию, в которой описываются способы решения каждой проблемы.
 
 Средство проверки решений анализирует этих компоненты решений: 
-- Подключаемые модули CDS для приложений
-- Настраиваемые действия бизнес-процесса CDS для приложений 
-- Веб-ресурсы CDS для приложений (HTML и JavaScript)
-- Конфигурации CDS для приложений, такие как шаги сообщения пакета SDK 
+- Подключаемый модуль Common Data Service
+- Настраиваемые действия бизнес-процессов Common Data Service 
+- Веб-ресурсы Common Data Service (HTML и JavaScript)
+- Конфигурации Common Data Service, например шаги сообщения пакета SDK 
 
-Средство проверки решений работает с неуправляемыми решениями, которые можно экспортировать из среды. Средство проверки решений *не* работает со следующими решениями: 
+Средство проверки решений работает с неуправляемыми решениями, которые можно экспортировать из среды. 
 
-
-<!--from editor: Should it be Common Data Service (singular) below, rather than Services? -->
-
-- Решения системы по умолчанию (решения по умолчанию и решение по умолчанию Common Data Service).
-- Решения, которых содержат JavaScript, использующий ECMAScript 6 (2015) или более поздних версий. При обнаружении кода JavaScript, который используется одну из этих версий, выводится сообщение об ошибке синтаксиса JS001 для веб-ресурса.
-
+> [!NOTE]
+> Средство проверки решений не работает с решениями, содержащими JavaScript с использованием ECMAScript 6 (2015) или более поздних версий. При обнаружении кода JavaScript, который используется одну из этих версий, выводится сообщение об ошибке синтаксиса JS001 для веб-ресурса.
 
 ## <a name="enable-the-solution-checker"></a>Включение средства проверки решений
 Средство проверки решений становится доступным в области решений PowerApps после установки решения средства проверки PowerApps. Обратите внимание, что вы не можете найти его с помощью просмотра или поиска в Microsoft AppSource. Для установки выполните следующие шаги.  
@@ -62,7 +58,7 @@ When you install the PowerApps checker these solution specific components are cr
    - Analysis Result
 - System job: A system job is created so admins can remove solution analysis data from the environment. The job contains a configuration value, currently set to remove the solution analysis data after 60 days, which an administrator can override. 
 - Security Roles: Two security roles, **Export Customizations**, and **Solution Checker** are created. These roles are required to export the solution for analysis, and storing the analysis results to the entities in your environment.
-- User principle: The **PowerApps Advisor** user is created that allows the checker to authenticate with your CDS for Apps environment and assign the two security roles, Export Customizations and Solution Checker. The PowerApps Advisor is an application user and does not consume a license.  -->
+- User principle: The **PowerApps Advisor** user is created that allows the checker to authenticate with your Common Data Service environment and assign the two security roles, Export Customizations and Solution Checker. The PowerApps Advisor is an application user and does not consume a license.  -->
 
 ## <a name="run-the-solution-checker"></a>Запуск средства проверки решений
 После установки средства проверки PowerApps в вашу среду пункт меню **Средство проверки решений** будет доступно при выборе неуправляемого решения в области **Решения** PowerApps. 
@@ -157,7 +153,7 @@ When you install the PowerApps checker these solution specific components are cr
 |Веб-ресурсы  | [веб-избегать-службы-soap-crm2011](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-soap&client=PAChecker&source=featuredocs)  | Не используйте в качестве цели службы Microsoft Dynamics CRM 2011 SOAP.   |
 |Веб-ресурсы  | [веб-избегать-специальные-api-браузера](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-browser-specific-api&client=PAChecker&source=featuredocs) | Не используйте устаревшие API-интерфейса Internet Explorer или подключаемые модули браузера.   |
 |Веб-ресурсы  | [веб-избегать-2011-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-2011-api&client=PAChecker&source=featuredocs)  | Не используйте устаревшую объектную модель Microsoft Dynamics CRM 2011.  |
-|Веб-ресурсы  | [веб-используйте-относительный-uri](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-relative-uri&client=PAChecker&source=featuredocs)   | Не используйте абсолютные URL-адреса конечной точки CDS для приложений.    |
+|Веб-ресурсы  | [веб-используйте-относительный-uri](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-relative-uri&client=PAChecker&source=featuredocs)   | Не используйте абсолютные URL-адреса конечных точек Common Data Service.    |
 |Веб-ресурсы  | [веб-используйте-контекст-клиента](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-client-context&client=PAChecker&source=featuredocs)  | Используйте контексты клиента.   |
 |Веб-ресурсы  | [веб-использовать-параметры-api-диалога](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-dialog-api-param&client=PAChecker&source=featuredocs)   | Используйте параметры API-интерфейса диалога.   |
 |Веб-ресурсы  | [веб-использовать-параметр-организации](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-org-setting&client=PAChecker&source=featuredocs)   | Используйте параметры организации.   |
@@ -167,6 +163,6 @@ When you install the PowerApps checker these solution specific components are cr
 
 
 ## <a name="see-also"></a>См. также
-[Рекомендации и советы для Common Data Service для приложений](../../developer/common-data-service/best-practices/index.md)<br />
+[Рекомендации и советы для Common Data Service](../../developer/common-data-service/best-practices/index.md)<br />
 [Рекомендации и советы для управляемых моделью приложений](../../developer/model-driven-apps/best-practices/index.md)<br />
 [Общие проблемы и их разрешение для средства проверки решений](common-issues-resolutions-solution-checker.md)<br />

@@ -1,7 +1,7 @@
 ---
 title: Свойства веб-ресурсов для основных форм управляемых моделью приложений в PowerApps | MicrosoftDocs
 description: Познакомьтесь со свойствами веб-ресурсов для основных форм
-Keywords: Main form; Web resource properties; Dynamics 365
+Keywords: Основная форма; Свойства веб-ресурса; Dynamics 365
 author: Mattp123
 applies_to:
   - Dynamics 365 (online)
@@ -10,7 +10,7 @@ applies_to:
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: article
 ms.assetid: 82cd41ea-95b0-4606-9e7d-43eb5ce9ecd6
 search.audienceType:

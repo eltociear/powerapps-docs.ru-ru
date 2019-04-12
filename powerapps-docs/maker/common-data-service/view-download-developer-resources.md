@@ -3,7 +3,7 @@ title: Просмотр или загрузка ресурсов для разр
 description: Узнайте URL-адреса конечных точек ресурсов и сервисов
 keywords: ''
 ms.date: 06/06/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -54,9 +54,9 @@ search.app:
 <!-- TODO update 512122 to go to https://docs.microsoft.com/dynamics365/customer-engagement/developer/download-tools-nuget -->
 
 
-## <a name="connect-your-apps-to-this-instance-of-common-data-service-for-apps"></a>Свяжите свои приложения с этим экземпляром Common Data Service для приложений
+## <a name="connect-your-apps-to-this-instance-of-common-data-service"></a>Свяжите свои приложения с этим экземпляром Common Data Service
 
-В этом разделе представлена информация, необходимая для подключения к вашему экземпляру Common Data Service для приложений.
+В этом разделе представлена информация, необходимая для подключения к вашему экземпляру Common Data Service.
 
 ### <a name="instance-web-api"></a>Веб-API экземпляра
 
@@ -75,9 +75,9 @@ search.app:
 Эти сведения требуются при использовании расширений Azure с вашим экземпляром.
 Дополнительные сведения: [Документация для разработчиков. Расширения Azure для Dynamics 365 Customer Engagement](/dynamics365/customer-engagement/developer/azure-extensions)
 
-## <a name="connect-your-apps-to-the-common-data-service-for-apps-discovery-service"></a>Связывание приложения со службой обнаружения Common Data Service для приложений
+## <a name="connect-your-apps-to-the-common-data-service-discovery-service"></a>Связывание приложения со службой обнаружения Common Data Service
 
-Поскольку пользователи могут иметь доступ к нескольким средам CDS для приложений, службы обнаружения позволяют извлекать доступные среды, к которым пользователь может получить доступ на основе своих учетных данных пользователя.
+Поскольку пользователи могут иметь доступ к нескольким средам Common Data Service, службы обнаружения позволяют извлекать доступные среды, к которым пользователь может получить доступ на основе своих учетных данных пользователя.
 
 ### <a name="discovery-web-api"></a>Веб-API обнаружения
 

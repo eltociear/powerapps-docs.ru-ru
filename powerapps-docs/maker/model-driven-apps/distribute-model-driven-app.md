@@ -3,7 +3,7 @@ title: Распространение управляемого моделью п
 description: 'Узнайте, как распространять управляемое моделью приложение с помощью решений'
 keywords: ''
 ms.date: 08/06/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:

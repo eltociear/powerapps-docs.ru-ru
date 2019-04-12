@@ -1,13 +1,13 @@
 ---
 title: Управление настраиваемыми полями в сущности | Microsoft Docs
-description: 'Пошаговое руководство по созданию, чтению, обновлению и удалению настраиваемых полей в сущности в Common Data Service (CDS) для приложений.'
-author: clwesene
+description: 'Пошаговое руководство по созданию, чтению, обновлению и удалению настраиваемых полей в сущности в Common Data Service.'
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:

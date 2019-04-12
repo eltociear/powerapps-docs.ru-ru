@@ -4,7 +4,7 @@ description: 'Узнайте, как определять альтернатив
 ms.custom: ''
 ms.date: 05/31/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="define-alternate-keys-using-powerapps-portal"></a>Определение альтернативных ключей с помощью портала PowerApps
 
-[Портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) обеспечивает простой способ просмотра и создания альтернативных ключей сущностей с помощью Common Data Service для приложений.
+[Портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) обеспечивает простой способ просмотра и создания альтернативных ключей сущностей с помощью Common Data Service.
 
 Портал позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. <br />Дополнительные сведения: 
 - [Определение альтернативных ключей для ссылки на записи](define-alternate-keys-reference-records.md)

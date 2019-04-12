@@ -1,13 +1,13 @@
 ---
 title: Открытие данных сущности в Excel | Microsoft Docs
 description: Открытие данных сущности в Excel для интерактивного просмотра и редактирования.
-author: clwesene
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 05/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:
@@ -78,6 +78,6 @@ search.app:
 ## <a name="next-steps"></a>Дальнейшие действия
 * [Управление полями в сущности](data-platform-manage-fields.md)
 * [Определение отношений между сущностями](data-platform-entity-lookup.md)
-* [Создание приложения с помощью Common Data Service для приложений](../canvas-apps/data-platform-create-app.md)
-* [Создание приложения с нуля с помощью Common Data Service для приложений](../canvas-apps/data-platform-create-app-scratch.md)
+* [Создание приложения с помощью Common Data Service](../canvas-apps/data-platform-create-app.md)
+* [Создание приложения с нуля с помощью Common Data Service](../canvas-apps/data-platform-create-app-scratch.md)
 

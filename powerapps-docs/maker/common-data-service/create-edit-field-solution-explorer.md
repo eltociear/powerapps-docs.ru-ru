@@ -1,9 +1,9 @@
 ---
-title: Создание и изменение полей для Common Data Service для приложений с помощью обозревателя решений PowerApps | MicrosoftDocs
+title: Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -19,13 +19,13 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="create-and-edit-fields-for-common-data-service-for-apps-using-powerapps-solution-explorer"></a>Создание и изменение полей для Common Data Service для приложений с помощью обозревателя решений PowerApps
+# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-solution-explorer"></a>Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps
 
-Обозреватель решений предоставляет один способ создания и изменения полей для Common Data Service для приложений.
+Обозреватель решений предоставляет один способ создания и изменения полей для Common Data Service.
 
 [Портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. <br />Дополнительные сведения: 
-- [Создание и изменение полей для Common Data Service для приложений](create-edit-fields.md)
-- [Создание и изменение полей для Common Data Service для приложений с помощью портала PowerApps](create-edit-field-portal.md)
+- [Создание и изменение полей для Common Data Service](create-edit-fields.md)
+- [Создание и изменение полей для Common Data Service с помощью портала PowerApps](create-edit-field-portal.md)
   
 ## <a name="open-solution-explorer"></a>Откройте обозреватель решений
 
@@ -142,7 +142,7 @@ search.app:
 
 ![Настройка глобального набора параметров](media/global-option-set-solution-explorer.png)
 
-Можно также настроить глобальные наборы параметров отдельно. Дополнительные сведения: [Создание и изменение глобального набора параметров для Common Data Service для приложений (списки выбора)](create-edit-global-option-sets.md)
+Можно также настроить глобальные наборы параметров отдельно. Дополнительные сведения: [Создание и изменение глобального набора параметров для Common Data Service (списки выбора)](create-edit-global-option-sets.md)
 
 > [!NOTE]
 > Если вы определяете каждый набор параметров как глобальный набор параметров, список глобальных наборов параметров будет расти, и станет трудно им управлять. Если известно, что набор параметров будет использоваться только в одном месте, используйте локальный набор параметров.
@@ -260,8 +260,8 @@ search.app:
 
 
 ### <a name="see-also"></a>См. также  
-[Создание и изменение полей для Common Data Service для приложений](create-edit-fields.md)<br />
-[Создание и изменение полей для Common Data Service для приложений с помощью портала PowerApps](create-edit-field-portal.md)<br />
+[Создание и изменение полей для Common Data Service](create-edit-fields.md)<br />
+[Создание и изменение полей для Common Data Service с помощью портала PowerApps](create-edit-field-portal.md)<br />
 [Типы полей и типы данных полей](types-of-fields.md)<br />
 [Определение вычисляемых полей для автоматизации ручных расчетов](define-calculated-fields.md)<br />
 [Определение полей свертки, которые агрегируют значения](define-rollup-fields.md)<br />

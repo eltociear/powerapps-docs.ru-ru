@@ -4,7 +4,7 @@ description: 'Узнайте, как добавить навигацию по ф
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -83,4 +83,4 @@ search.app:
 > Установка решения или публикация настроек может помешать нормальной работе системы. Рекомендуется запланировать импорт решения в оптимальный для пользователей период.
   
 ## <a name="next-steps"></a>Дальнейшие действия  
- [Создание и изменение отношений сущностей для Common Data Service для приложений](../common-data-service/create-edit-entity-relationships.md)
+ [Создание и изменение отношений сущностей для Common Data Service](../common-data-service/create-edit-entity-relationships.md)

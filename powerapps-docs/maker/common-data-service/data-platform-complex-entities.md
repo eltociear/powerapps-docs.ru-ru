@@ -1,13 +1,13 @@
 ---
 title: 'Сложные сущности, требующие лицензии PowerApps плана 2 | Microsoft Docs'
-description: 'Список сложных сущностей в Common Data Service (CDS) для приложений, которым требуется лицензия PowerApps плана 2.'
-author: clwesene
+description: 'Список сложных сущностей в Common Data Service, которым требуется лицензия PowerApps плана 2.'
+author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
 ms.date: 07/17/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:

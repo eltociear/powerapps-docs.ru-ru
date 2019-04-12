@@ -1,5 +1,5 @@
 ---
-title: Поведение отношений сущностей (Common Data Service для приложений) | Microsoft Docs
+title: Поведение отношений сущностей (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 08/01/2018

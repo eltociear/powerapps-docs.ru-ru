@@ -1,9 +1,9 @@
 ---
-title: Создание и изменение полей для Common Data Service для приложений | MicrosoftDocs
+title: Создание и изменение полей для Common Data Service | MicrosoftDocs
 ms.custom: ''
 ms.date: 02/08/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 ---
 # <a name="how-to-create-and-edit-fields"></a>Создание и изменение полей
 
-В Common Data Service для приложений поля определяют отдельные элементы данных, которые можно использовать для хранения данных в сущности. Иногда разработчики называют поля *атрибутами*. 
+В Common Data Service поля определяют отдельные элементы данных, которые можно использовать для хранения данных в сущности. Иногда разработчики называют поля *атрибутами*. 
   
 Прежде чем создать настраиваемое поле, подумайте, будет ли существующее поле отвечать вашим требованиям. Дополнительные сведения: [Создание новых или использование существующих метаданных](create-edit-metadata.md#create-new-metadata-or-use-existing-metadata)
 
@@ -31,8 +31,8 @@ search.app:
 
 |Дизайнер| Описание|
 |--|--|
-|[Портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание и изменение полей для Common Data Service для приложений с помощью портала PowerApps](create-edit-field-portal.md)|
-|Обозреватель решений|Не так прост, но предоставляет больше гибкости для менее распространенных требований.<br />Дополнительные сведения: [Создание и изменение полей для Common Data Service для приложений с помощью обозревателя решений PowerApps](create-edit-field-solution-explorer.md) |
+|[Портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание и изменение полей для Common Data Service с помощью портала PowerApps](create-edit-field-portal.md)|
+|Обозреватель решений|Не так прост, но предоставляет больше гибкости для менее распространенных требований.<br />Дополнительные сведения: [Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps](create-edit-field-solution-explorer.md) |
 
 > [!NOTE]
 > Можно также создать поля в среде с помощью следующих действий.
@@ -43,11 +43,11 @@ search.app:
 
 Информация в этом разделе поможет вам выбрать конструктор для использования. 
 
-Следует использовать портал PowerApps для создания и редактирования полей Common Data Service для приложений, кроме случаев, когда необходимо выполнить любое из следующих требований:
+Следует использовать портал PowerApps для создания и редактирования полей Common Data Service, кроме случаев, когда необходимо выполнить любое из следующих требований:
 
 - Создание настраиваемого поля подстановки. 
    - Дополнительные сведения: [Различные типы поисков](types-of-fields.md#different-types-of-lookups)
-- Создание поля в решении, отличном от решения по умолчанию CDS. 
+- Создание поля в решении, отличном от решения по умолчанию Common Data Service. 
    - Дополнительные сведения: [Обзор решений](solutions-overview.md)
 - Определение переходов причин состояния. 
    - Дополнительные сведения: [Определение переходов причин состояния для обращения или настраиваемых сущностей](define-status-reason-transitions.md)
@@ -70,14 +70,14 @@ search.app:
 
 ## <a name="community-tools"></a>Средства сообщества
 
-**[Attribute Manager](https://www.xrmtoolbox.com/plugins/DLaB.Xrm.AttributeManager/)** — это средство, которое сообщество XrmToolbox разработало для CDS для приложений. Дополнительные средства разработки от сообщества см. в разделе [Средства разработчика](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools).
+**[Attribute Manager](https://www.xrmtoolbox.com/plugins/DLaB.Xrm.AttributeManager/)** — это средство, которое сообщество XrmToolbox разработало для Common Data Service. Дополнительные средства разработки от сообщества см. в разделе [Средства разработчика](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools).
 
 > [!NOTE]
 > Средства сообществ не являются продуктом корпорации Майкрософт, и на них не распространяется поддержка. При наличии вопросов по средству обращайтесь к его издателю. Дополнительные сведения: [XrmToolBox](https://www.xrmtoolbox.com).
 
 ### <a name="see-also"></a>См. также  
-[Создание и изменение полей для Common Data Service для приложений с помощью портала PowerApps](create-edit-field-portal.md)<br />
-[Создание и изменение полей для Common Data Service для приложений с помощью обозревателя решений PowerApps](create-edit-field-solution-explorer.md)<br />
+[Создание и изменение полей для Common Data Service с помощью портала PowerApps](create-edit-field-portal.md)<br />
+[Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps](create-edit-field-solution-explorer.md)<br />
 [Типы полей и типы данных полей](types-of-fields.md)<br />
 [Документация для разработчиков. Работа с метаданными атрибута](/dynamics365/customer-engagement/developer/org-service/work-attribute-metadata)
  

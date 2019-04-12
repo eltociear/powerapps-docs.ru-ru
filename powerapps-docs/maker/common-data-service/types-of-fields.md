@@ -1,9 +1,9 @@
 ---
-title: Типы данных полей в Common Data Service для приложений | MicrosoftDocs
+title: Типы данных полей в Common Data Service | MicrosoftDocs
 description: 'Узнайте о различных типах данных полей, доступных для вашего приложения'
 keywords: ''
 ms.date: 06/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -58,8 +58,8 @@ search.app:
 |**Целое число**|**Целое число**<br />Формат *Нет*|`IntegerType`|
 
 Дополнительные описаний для каждого типа, который можно добавить или изменить, см. в разделе для соответствующего конструктора:
- - [Создание и изменение полей для Common Data Service для приложений с помощью портала PowerApps: типы данных полей](create-edit-field-portal.md#field-data-types)
- - [Создание и изменение полей для Common Data Service для приложений с помощью обозревателя решений PowerApps: типы данных полей](create-edit-field-solution-explorer.md#field-data-types)
+ - [Создание и изменение полей для Common Data Service с помощью портала PowerApps: типы данных полей](create-edit-field-portal.md#field-data-types)
+ - [Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps: типы данных полей](create-edit-field-solution-explorer.md#field-data-types)
 
 Дополнительные сведения об этом, как типы данных полей определяются в API, см. в разделе [Метаданные атрибутов](/powerapps/developer/common-data-service/entity-attribute-metadata)
 

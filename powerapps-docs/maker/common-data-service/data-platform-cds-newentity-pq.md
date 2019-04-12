@@ -1,14 +1,14 @@
 ---
-title: Добавление данных в сущность в Common Data Service для приложений с помощью Power Query | Microsoft Docs
-description: Пошаговые инструкции по использованию Power Query для добавления данных в новую или существующую сущность в Common Data Service (CDS) для приложений из другого источника данных.
-author: AFTOwen
+title: Добавление данных в сущность в Common Data Service с помощью Power Query | Microsoft Docs
+description: Пошаговые инструкции по использованию Power Query для добавления данных в новую или существующую сущность в Common Data Service из другого источника данных.
+author: mllopis
 manager: kfile
 ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: cds
 ms.date: 03/21/2018
-ms.author: anneta
+ms.author: millopis
 search.audienceType:
   - maker
 search.app:
@@ -16,8 +16,8 @@ search.app:
   - D365CE
 ---
 
-# <a name="add-data-to-an-entity-in-common-data-service-for-apps-by-using-power-query"></a>Добавление данных в сущность в Common Data Service для приложений с помощью Power Query
-В этой процедуре вы создадите сущность в [Common Data Service (CDS) для приложений](data-platform-intro.md) и заполните эту сущность данными из канала OData с помощью Power Query. Можно использовать эти же методы для интеграции данных в том числе и из следующих сетевых и локальных источников:
+# <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>Добавление данных в сущность в Common Data Service с помощью Power Query
+В этой процедуре вы создадите сущность в [Common Data Service](data-platform-intro.md) и заполните эту сущность данными из канала OData с помощью Power Query. Можно использовать эти же методы для интеграции данных в том числе и из следующих сетевых и локальных источников:
 
 * SQL Server
 * SalesForce

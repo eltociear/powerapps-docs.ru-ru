@@ -1,13 +1,13 @@
 ---
-title: Создание бизнес-правила в Common Data Service для приложений | Microsoft Docs
-description: Пошаговые инструкции по созданию бизнес-правила в Common Data Service (CDS) для приложений.
-author: clwesene
+title: Создание бизнес-правила в Common Data Service | Microsoft Docs
+description: Пошаговые инструкции по созданию бизнес-правила в Common Data Service.
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
   - maker
 search.app:

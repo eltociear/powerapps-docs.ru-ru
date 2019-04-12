@@ -4,7 +4,7 @@ description: 'Узнайте, как создать сущность с помо
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -23,7 +23,7 @@ search.app:
 
 # <a name="create-and-edit-entities-using-solution-explorer"></a>Создание и изменение сущностей с помощью обозревателя решений
 
-Можно легко создать сущность с помощью портала PowerApps для большинства распространенных ситуаций, но здесь реализованы не все возможности. Если необходимо выполнить требования, описанные в разделе [Создание и изменение сущностей в Common Data Service для приложений](create-edit-entities.md), вы можете создать или изменить сущности с помощью обозревателя решений.
+Можно легко создать сущность с помощью портала PowerApps для большинства распространенных ситуаций, но здесь реализованы не все возможности. Если необходимо выполнить требования, описанные в разделе [Создание и изменение сущностей в Common Data Service](create-edit-entities.md), вы можете создать или изменить сущности с помощью обозревателя решений.
 
 ## <a name="open-solution-explorer"></a>Откройте обозреватель решений
 
@@ -106,7 +106,7 @@ Both should point to this include
 [!INCLUDE [cc_entity-changeable-options-table](../../includes/cc_entity-changeable-options-table.md)]
 
 Также можно внести следующие изменения:
-- [Создание и изменение полей для Common Data Service для приложений](create-edit-fields.md)
+- [Создание и изменение полей для Common Data Service](create-edit-fields.md)
 - [Создание и изменение отношений между сущностями](create-edit-entity-relationships.md)
 - [Создание и разработка форм](../model-driven-apps/create-design-forms.md)
 - [Создание последовательности операций бизнес-процесса для стандартизации процессов](/flow/create-business-process-flow)
@@ -197,6 +197,6 @@ Both should point to this include
 Дополнительные сведения: [Создание и изменение виртуальных сущностей, содержащих данные из внешнего источника данных](create-edit-virtual-entities.md)
 
 ### <a name="see-also"></a>См. также
-[Создание и изменение сущностей в Common Data Service для приложений](create-edit-entities.md)<br />
+[Создание и изменение сущностей в Common Data Service](create-edit-entities.md)<br />
 [Учебник. Создание настраиваемой сущности с компонентами в PowerApps](/powerapps/maker/common-data-service/create-custom-entity)<br />
 [Создание решения](create-solution.md)
