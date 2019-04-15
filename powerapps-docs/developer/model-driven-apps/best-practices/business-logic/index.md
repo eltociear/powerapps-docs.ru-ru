@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8b8ef91cff7d65c7bcd22a2612413aabbeb4e2df
-ms.sourcegitcommit: 11486fb4c16095e3fef785126003cac3e3e06c0d
+ms.openlocfilehash: e2b43178882cb66abba2305f65f78855915591ed
+ms.sourcegitcommit: 44ca0a386fce0c4a18310b515a4880065942dd05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54271608"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537834"
 ---
 # <a name="best-practices-and-guidance-of-client-side-scripting-for-model-driven-apps"></a>Рекомендации по написанию скриптов на стороне клиента для приложений на основе модели
 
@@ -34,6 +34,7 @@ ms.locfileid: "54271608"
 |Рекомендация  |Описание  |
 |---------|---------|
 |[Избегайте использовать window.top](avoid-window-top.md)     |Описывается, как избежать ошибок в скриптах и неполадок в работе приложений, связанных с использованием window.top в настройках JavaScript.         |
+|[Рекомендуется отключить панель навигации при открытии форм сущностей или представлений с помощью программных средств](consider-disabling-navbar-programmatically-opening-entity-forms-views.md)|Если для открытия форм сущностей или представлений используется URL-адрес, в сетях с высокой задержкой может ухудшиться производительность клиента при включенной панели навигации.|
 |[Рекомендации: клиентские скрипты в приложениях на основе модели](../../clientapi/client-scripting-best-practices.md)     |Ряд советов, которые могут быть полезны при написании кода JavaScript для приложений на основе модели.         |
 |[Используйте асинхронное взаимодействие с ресурсами HTTP и HTTPS](interact-http-https-resources-asynchronously.md)     |При написании клиентских расширений JavaScript для приложений на основе модели следует взаимодействовать с ресурсами HTTP и HTTPS в асинхронном режиме.         |
 |[Удалите отключенные настройки](remove-deactivated-disabled-configurations.md)     |Отключенные настройки следует удалить из решения, чтобы упростить управление им и снизить риск использования устаревших компонентов.         |
