@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d20c19e44f3fb247314613cdfe23e1d1e5820cba
-ms.sourcegitcommit: 0aa8344e6ff1096b67fbac6b986515ec2540e5fd
+ms.openlocfilehash: 88e0a74d2c25d1d2f5f571f4d1850417d1aab9ca
+ms.sourcegitcommit: 0267e58b305f9fb0a4b32130fb149cd6e34b3354
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59541822"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59993833"
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>Фигуры и значки в PowerApps
 Фигуры и значки — это элементы управления, для которых можно настроить внешний вид и поведение.
@@ -26,10 +26,18 @@ ms.locfileid: "59541822"
 ## <a name="description"></a>Описание
 Эти элементы управления включают стрелки, геометрические фигуры, значки действий и символы, для которых можно настроить такие свойства, как заливка, размеры и расположение. Вы также можете настроить их **[OnSelect](properties-core.md)** свойство, чтобы приложение реагирует, если пользователь выбирает элемент управления.
 
-## <a name="key-properties"></a>Основные свойства
+## <a name="key-properties-icons-and-shapes"></a>Ключевые свойства (значки и фигуры)
 **[Fill](properties-color-border.md)**  — цвет фона элемента управления.
 
 **[OnSelect](properties-core.md)**  — поведение приложения, когда пользователь выбирает элемент управления.
+
+## <a name="key-properties-icons-only"></a>Ключевые свойства (только для значков)
+
+**Значок** -тип значка для отображения (например, **ArrowDown** или **ShoppingCart**). 
+
+**Поворот** -число градусов, поворот значок. 
+
+**Цвет** -цвета значка по имени или значения RGBA.
 
 ## <a name="additional-properties"></a>Дополнительные свойства
 **[AccessibleLabel](properties-accessibility.md)** — метка для средств чтения с экрана.
