@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1a6465a00f135489d594bad75b8a25942e05dd25
-ms.sourcegitcommit: f4b71ea0996603b3358377a0da21b9e4428a287c
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58870938"
 ---
 # <a name="customize-a-canvas-app-form-in-powerapps"></a>Настройка формы в приложении на основе холста в PowerApps
@@ -97,7 +97,7 @@ ms.locfileid: "58870938"
 1. Добавьте любые данные, вы хотите, а затем выберите значок галочки в правом верхнем углу, чтобы сохранить изменения и вернуться к **BrowseScreen1**.
 
     > [!div class="mx-imgBorder"]
-    > ![Сохранение записи](./media/customize-forms-sharepoint/save-record.png)
+    > ![Сохранить запись](./media/customize-forms-sharepoint/save-record.png)
 
 1. Щелкните стрелку для элемента, который вы только что создали Показать сведения об этом элементе в **DetailScreen1**.
 
@@ -112,7 +112,7 @@ ms.locfileid: "58870938"
 1. Измените сведения в одном или нескольких полях, а затем выберите флажок в правом верхнем углу, чтобы сохранить изменения и вернуться к **DetailScreen1**.
 
     > [!div class="mx-imgBorder"]
-    > ![Сохранение изменений](./media/customize-forms-sharepoint/save-record.png)
+    > ![Сохранить изменения](./media/customize-forms-sharepoint/save-record.png)
 
 1. В правом верхнем углу выберите значок корзины для удаления только что обновленную запись и вернуться к **BrowseScreen1**.
 

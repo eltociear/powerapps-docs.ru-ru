@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ba5df28f03ec5e7c9a3d8146aecb0427d8145b13
-ms.sourcegitcommit: dc578df718420c7f19e4583d9e7002e69495e268
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59425318"
 ---
 # <a name="gallery-control-in-canvas-apps"></a>Элемент управления коллекции в приложениях на основе холста
@@ -92,7 +92,7 @@ ms.locfileid: "59425318"
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Фильтр**( *DataSource*, *формула* )](../functions/function-filter-lookup.md)
+[**Filter**(*источник*, *формула*)](../functions/function-filter-lookup.md)
 
 ## <a name="examples"></a>Примеры
 
@@ -100,13 +100,13 @@ ms.locfileid: "59425318"
 
 * [Отображение текста](control-text-box.md#show-data-in-a-gallery)
 * [Отображение изображений](control-image.md#show-a-set-of-images-from-a-data-source)
-* [Фильтрация данных по выбора элемента списка](control-drop-down.md#example)
+* [Фильтрация данных с помощью выбора элемента списка](control-drop-down.md#example)
 * [Фильтрация данных с помощью ползунка](control-slider.md#example)
 
 ### <a name="get-data-from-the-user"></a>Получение данных от пользователя
 
-* [Получить текст](control-text-input.md#collect-data)
-* [Получение образов](control-add-picture.md#add-images-to-an-image-gallery-control)
+* [Получение текста](control-text-input.md#collect-data)
+* [Получение изображений](control-add-picture.md#add-images-to-an-image-gallery-control)
 * [Получение фотографий](control-camera.md#example)
 * [Получение звуков](control-microphone.md#example)
 * [Получение рисунков](control-pen-input.md#create-a-set-of-images)

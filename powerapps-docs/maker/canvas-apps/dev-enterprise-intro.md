@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: c50908704e06f95f91a23c0b560ff41e63ea475b
-ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59042641"
 ---
 # <a name="canvas-apps-for-enterprise-developers-partners-and-isvs"></a>Приложения для корпоративных разработчиков, партнеров и независимых поставщиков программного обеспечения на основе холста

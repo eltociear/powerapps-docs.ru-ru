@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 428ca1fd96df4ed8a9c3fd7c14a1ad3e07356c70
-ms.sourcegitcommit: d1d39d6b72516d62514af4ff90f04c35fbdd8638
+ms.openlocfilehash: 1fc257bb8ef99353b78e7a87234397b4ced3bc4a
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59480223"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59686231"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Создание с нуля приложения на основе холста с помощью Common Data Service
 
@@ -30,7 +30,7 @@ ms.locfileid: "59480223"
 
 - Прежде чем создавать приложение с нуля, ознакомьтесь с основами PowerApps, [создав приложение](data-platform-create-app.md), а затем настроив его [коллекцию](customize-layout-sharepoint.md), [формы](customize-forms-sharepoint.md) и [карточки](customize-card.md).
 - [Перейдите в среду](working-with-environments.md), в которой был создан образец базы данных. Если у вас есть соответствующая лицензия, вы можете [создать среду](../../administrator/create-environment.md) с этой целью.
-- Для создания приложения вам должна быть назначена роль безопасности [Создатель среды](https://docs.microsoft.com/power-platform/admin/database-security.md#predefined-security-roles).
+- Для создания приложения вам должна быть назначена роль безопасности [Создатель среды](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles).
 
 ## <a name="open-a-blank-app"></a>Пустое приложение
 
@@ -97,9 +97,9 @@ ms.locfileid: "59480223"
 1. Выберите **Добавить поле**, а затем установите флажки для этих полей:
 
     - **Имя учетной записи**
-    - **Адрес 1: улица, дом (строка 1)**
+    - **Адрес 1: Улица 1**
     - **Адрес 1: Город**
-    - **Адрес 1: почтовый индекс**
+    - **Адрес 1: Почтовый индекс**
     - **Количество сотрудников**
     - **Годовой доход**
 

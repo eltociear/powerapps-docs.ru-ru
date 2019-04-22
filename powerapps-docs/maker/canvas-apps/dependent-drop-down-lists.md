@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: dc1b3b87e2c1fdcd4ab7eb6634db7f9e7c049ec2
-ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59042762"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Создание зависимых раскрывающихся списков в приложение на основе холста
@@ -108,7 +108,7 @@ ms.locfileid: "59042762"
 1. Установите флажок для этого списка, а затем выберите **Connect**.
 
     > [!div class="mx-imgBorder"]
-    > ![Панель "Данные"](./media/dependent-drop-down-lists/select-list.png)
+    > ![Панель «данные»](./media/dependent-drop-down-lists/select-list.png)
 
     Список подключений отображается **инцидентов** списка, на котором основан формы, и **расположения** списка, которое будет определять и расположения подразделений в форме.
 

@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d33f541ea698b02a662edb652f809095f47acc6e
-ms.sourcegitcommit: 38f91423933749ca19557f29e86cd8f5ad06e1eb
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59042739"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>Настройка формы списка SharePoint с помощью PowerApps
@@ -73,7 +73,7 @@ ms.locfileid: "59042739"
 
 1. Задайте **видимость** свойство **цвет**, **доступности**, и **цена** карты следующую формулу (заменив, при необходимости цифра, который вы записали на предыдущем шаге):
 
-    **If(DataCardValue2.Value = true, true)**
+    **Если (DataCardValue2.Value = true, true)**
 
 1. Удерживая нажатой клавишу ALT, несколько раз нажмите на переключатель **Сведения**.
 

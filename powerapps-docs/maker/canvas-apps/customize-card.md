@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ddc1c677ed95caf10d8cd6e0e7e12e6aaf88a0f5
-ms.sourcegitcommit: f4b71ea0996603b3358377a0da21b9e4428a287c
+ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58870915"
 ---
 # <a name="customize-a-card-in-a-canvas-app"></a>Настройка карточки в приложение на основе холста
@@ -44,7 +44,7 @@ ms.locfileid: "58870915"
 1. В списке полей, щелкните стрелку вниз для **количество сотрудников**, а затем откройте список в разделе **типа элемента управления**.
 
     > [!div class="mx-imgBorder"]
-    > ![Раскрывающийся список параметров для числовой карточки](./media/customize-card/card-selector.png)
+    > ![Стрелку раскрывающегося списка параметров для числовой карточки](./media/customize-card/card-selector.png)
 
 1. Выберите **изменить ползунок**.
 
