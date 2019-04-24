@@ -11,11 +11,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 369304ded3fdc9fcd69459da9875e6080d5d860c
-ms.sourcegitcommit: 2e2cfbaa29cbfdbe48bd5563e65edcfc57a69b9d
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57989641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61562238"
 ---
 # <a name="create-a-component-for-canvas-apps"></a>Создание компонента для приложений на основе холста
 

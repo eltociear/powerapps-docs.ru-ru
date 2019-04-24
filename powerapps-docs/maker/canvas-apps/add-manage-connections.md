@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d2a7da93835e5fbe588a8683bbdb0393d5b76ee5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42834050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61564358"
 ---
 # <a name="manage-canvas-app-connections-in-powerapps"></a>Управление подключениями из приложений на основе холста в PowerApps
 На сайте [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) можно создать или удалить подключение к одному или нескольким источникам данных, а также обновить для него учетные данные.

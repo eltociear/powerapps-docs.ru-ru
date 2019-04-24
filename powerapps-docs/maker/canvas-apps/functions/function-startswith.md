@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e202ce052bf12f5f67715deb2e86b385c2e515a7
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61547082"
 ---
 # <a name="endswith-and-startswith-functions-in-powerapps"></a>Функции EndsWith и StartsWith в PowerApps
 Эти функции проверяют, есть ли в начале или в конце одной текстовой строки другая текстовая строка.
@@ -68,7 +68,7 @@ ms.locfileid: "42835567"
 
 Чтобы создать этот источник данных в виде коллекции, создайте элемент управления **[Button](../controls/control-button.md)** (Кнопка) и задайте в качестве значения свойства **OnSelect** следующую формулу:
 
-**ClearCollect(Customers, Table({Name: "Fred Garcia", Company: "Northwind Traders"}, {Name: "Cole Miller", Company: "Contoso"}, {Name: "Glenda Johnson", Company: "Contoso"}, {Name: "Mike Collins", Company: "Adventure Works"}, {Name: "Colleen Jones", Company: "Adventure Works"}))**
+**ClearCollect (Customers, таблицы ({имя: «Fred Garcia», компании: «Борей»}, {Name: «Cole Miller», компании: «Contoso»}, {Name: «Glenda Johnson», компании: «Contoso»}, {Name: «Mike Collins», компании: «Adventure Works»}, {Name: «Colleen Jones» компании: «Adventure Works»}))**
 
 Как показано в этом примере, вы можете вывести список записей в элемент управления [**Gallery**](../controls/control-gallery.md) (Коллекция) в нижней части экрана. В верхней части экрана можно добавить элемент управления для [**Text input**](../controls/control-text-input.md) (Текстовое поле ввода) под названием **SearchInput**, что позволит пользователям указывать интересующие их записи.
 

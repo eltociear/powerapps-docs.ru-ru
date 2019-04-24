@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ca4fbaf18d7fa993a28f5cbb70f317b4ef5d42fd
-ms.sourcegitcommit: a4719a7d719116aeda26baa44159b2271a9a79c8
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2019
-ms.locfileid: "57800544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61563667"
 ---
 # <a name="left-mid-and-right-functions-in-powerapps"></a>Функции Left, Mid и Right в PowerApps
 Извлекают левую, среднюю или правую часть текстовой строки.

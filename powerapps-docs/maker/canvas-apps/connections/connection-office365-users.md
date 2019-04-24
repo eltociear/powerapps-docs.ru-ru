@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 507bac0b57cdc1e348bd384d5544d7b664a3e0f5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42851271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61557383"
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>Подключение к подключению "Пользователи Office 365" из PowerApps
 ![Пользователи Office 365](./media/connection-office365-users/office365icon.png)
@@ -142,7 +142,7 @@ ms.locfileid: "42851271"
 | [SearchUser](connection-office365-users.md#searchuser) |Извлекает результаты поиска профилей пользователей |
 
 ### <a name="myprofile"></a>MyProfile
-Получение профиля: извлекает профиль для текущего пользователя.
+Получите Мой профиль: Извлекает профиль для текущего пользователя.
 
 #### <a name="input-properties"></a>Входные свойства
 Нет.
@@ -164,7 +164,7 @@ ms.locfileid: "42851271"
 | AccountEnabled |логическое значение |Флаг активации учетной записи |
 
 ### <a name="userprofile"></a>UserProfile
-Получение профиля пользователя: извлекает профиль конкретного пользователя.
+Получение профиля пользователя: Извлекает профиль конкретного пользователя.
 
 #### <a name="input-properties"></a>Входные свойства
 
@@ -189,7 +189,7 @@ ms.locfileid: "42851271"
 | AccountEnabled |логическое значение |Флаг активации учетной записи |
 
 ### <a name="manager"></a>Manager
-Получение профиля руководителя: извлекает профиль пользователя для руководителя указанного пользователя
+Получение manager: Извлекает профиль пользователя для руководителя указанного пользователя
 
 #### <a name="input-properties"></a>Входные свойства
 
@@ -214,7 +214,7 @@ ms.locfileid: "42851271"
 | AccountEnabled |логическое значение |Флаг активации учетной записи |
 
 ### <a name="directreports"></a>DirectReports
-Получение профилей подчиненных: получение профилей подчиненных
+Получение подчиненных: Получение подчиненных
 
 #### <a name="input-properties"></a>Входные свойства
 
@@ -239,7 +239,7 @@ ms.locfileid: "42851271"
 | AccountEnabled |логическое значение |Флаг активации учетной записи |
 
 ### <a name="searchuser"></a>SearchUser
-Поиск пользователей: извлекает результаты поиска профилей пользователей
+Поиск пользователей: Извлекает результаты поиска профилей пользователей
 
 #### <a name="input-properties"></a>Входные свойства
 

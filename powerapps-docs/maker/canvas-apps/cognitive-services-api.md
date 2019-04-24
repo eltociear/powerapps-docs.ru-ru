@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 07548ff8fb14626543472b72ea52b80c858eeb0e
-ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57803672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61556420"
 ---
 # <a name="use-cognitive-services-in-powerapps"></a>Использование служб Cognitive Services с PowerApps
 В этой статье показано, как создать базовый холст приложение, которое использует [Azure Cognitive Services API текстовой аналитики](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) для анализа текста. Мы объясним, как установить API анализа текста и подключиться к нему с помощью [соединителя для анализа текста](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/). Затем мы покажем, как создать приложение на основе холста, которое вызывает API.

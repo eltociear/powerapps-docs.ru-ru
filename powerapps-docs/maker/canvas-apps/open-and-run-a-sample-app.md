@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1adf38b59b01bb08bc89c6101a96247b8bce8092
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58357467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61540322"
 ---
 # <a name="quickstart-create-a-canvas-app-from-a-sample-in-powerapps"></a>Краткое руководство. Создание приложения на основе холста с помощью образца в PowerApps
 В этом кратком руководстве вы создадите приложение на основе холста из образца, чтобы изучить возможности проектирования и принципы, которые можно применять при разработке собственных приложений на основе холста.

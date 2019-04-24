@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c4e02adfdd5c1c4e49bb1a605ccfff463369f750
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: cc7eefbe2989ed1aa0e893c2d826215aec48003b
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61557020"
 ---
 # <a name="working-with-environments-and-microsoft-powerapps"></a>Работа со средами и Microsoft PowerApps
 С помощью PowerApps можно работать в различных средах и легко переключаться между ними. Общие сведения о средах см. в [обзоре сред](../../administrator/environments-overview.md), в котором подробно объясняется, для чего предназначены среды, а также рассматриваются способы создания и управления ими. В этой статье будут рассмотрены следующие темы, касающиеся сред:
 
 * как переключать среды на сайте powerapps.com;
-* как создавать приложения в правильной среде;
+* Создание приложения в правильной среде
 * как просматривать приложения в правильной среде.
 
 ## <a name="switch-the-environment"></a>Переключение сред

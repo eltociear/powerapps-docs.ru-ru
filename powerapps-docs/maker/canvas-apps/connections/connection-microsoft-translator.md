@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 405dcf432526206aa3a5f341a38e2ae5547cea1f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42858292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61545707"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>Подключение к Microsoft Translator из PowerApps
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -99,7 +99,7 @@ ms.locfileid: "42858292"
 | [TextToSpeech](connection-microsoft-translator.md#texttospeech) |Преобразует указанный текст в речь в виде звукового потока в формате звукозаписи. |
 
 ### <a name="languages"></a>Языки
-Эта функция возвращает все языки, поддерживаемые службой Microsoft Translator.
+Получение языков: Возвращает все языки, поддерживаемые службой Microsoft Translator.
 
 #### <a name="input-properties"></a>Входные свойства
 Нет.
@@ -112,7 +112,7 @@ ms.locfileid: "42858292"
 | Имя |строка |Нет | |
 
 ### <a name="translate"></a>Translate
-Эта функция переводит текст на указанный язык с помощью службы Microsoft Translator.
+Перевести текст: Переводит текст на указанный язык с помощью службы Microsoft Translator.
 
 #### <a name="input-properties"></a>Входные свойства
 
@@ -127,7 +127,7 @@ ms.locfileid: "42858292"
 Нет.
 
 ### <a name="detect"></a>Detect
-Эта функция распознает исходный язык указанного текста.
+Определение языка: Определяет исходный язык текста.
 
 #### <a name="input-properties"></a>Входные свойства
 
@@ -143,7 +143,7 @@ ms.locfileid: "42858292"
 | Имя |строка |Нет | |
 
 ### <a name="speechlanguages"></a>SpeechLanguages
-Эта функция возвращает языки, доступные для синтеза речи.
+Установить языки голосовых функций: Возвращает языки, доступные для синтеза речи.
 
 #### <a name="input-properties"></a>Входные свойства
 Нет.
@@ -156,7 +156,7 @@ ms.locfileid: "42858292"
 | Имя |строка |Нет | |
 
 ### <a name="texttospeech"></a>TextToSpeech
-Эта функция преобразует заданный текст в речь в виде звукового потока в формате звукозаписи.
+Преобразование текста в речь: Преобразует указанный текст в речь в виде звукового потока в формате звукозаписи.
 
 #### <a name="input-properties"></a>Входные свойства
 

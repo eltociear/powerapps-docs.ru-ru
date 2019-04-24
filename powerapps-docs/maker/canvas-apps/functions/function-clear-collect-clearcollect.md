@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 86d36af00d3c5aa825b01ed873150f94738a952c
-ms.sourcegitcommit: b0fa125080913f7e749cc754f89424151e051a13
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54418299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61546578"
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>Функции Collect, Clear и ClearCollect в PowerApps
 

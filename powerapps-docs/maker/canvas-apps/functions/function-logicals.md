@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 438076c5e1b3e0643af809755078fbc491cea9c5
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42850357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61562833"
 ---
 # <a name="and-or-and-not-functions-in-powerapps"></a>Функции And, Or и Not в PowerApps
 Логические булевы функции, широко используемые для обработки результатов сравнений и проверок.

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 968722e672c6f169c4a9e2e87be959aa48e23c86
-ms.sourcegitcommit: 957d67e13bd4153d042b3b3bd650f6d0de20613c
+ms.openlocfilehash: 97f9324230e1d935cb056eada294e11d8bfb4d73
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "58073678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61535835"
 ---
 # <a name="controls-and-properties-in-powerapps"></a>Элементы управления и свойства в PowerApps
 
@@ -31,8 +31,6 @@ ms.locfileid: "58073678"
 **[Вложения](controls/control-attachments.md)** — загрузка и отправка файлов из локального устройства в источник данных.
 
 **[Звук](controls/control-audio-video.md)** — воспроизведение аудиоклипа или звуковой дорожки видеоклипа.
-
-**[Сканер штрихкодов (экспериментальная функция)](controls/control-barcodescanner.md)**  — сканирует коды в веб-браузере (для прежних версий и нерекомендуемым).
 
 **[Сканер штрихкодов](controls/control-new-barcode-scanner.md)**  — сканирует штрихкоды, QR-коды и коды матрицы данных на устройстве Android или iOS.
 

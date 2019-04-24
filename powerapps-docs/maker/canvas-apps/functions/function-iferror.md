@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1bf9f3cf075441dd3264b5a2f6533671d2e08654
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57802315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61562820"
 ---
 # <a name="iferror-function-in-powerapps"></a>Функция IfError в PowerApps
 Обнаруживает ошибки и предоставляет альтернативное значение или выполняет действие.

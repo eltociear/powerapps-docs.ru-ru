@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 65a828d33add99bbee086f24c3a4892abfaae048
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42853236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61536962"
 ---
 # <a name="share-excel-data-used-by-your-app"></a>Совместное использование данных Excel, используемых приложением
 Пользователи приложения могут совместно использовать данные Excel в [облачной учетной записи](connections/cloud-storage-blob-connections.md), например OneDrive.

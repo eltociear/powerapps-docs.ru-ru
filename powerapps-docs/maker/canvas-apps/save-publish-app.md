@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f52338d4eed8942259e7ae15a8df3b05c45a703d
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: c255daf93cdb4807572f1a663c7bb87be0bb39e1
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42837019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61536731"
 ---
 # <a name="save-and-publish-a-canvas-app-in-powerapps"></a>Сохранение и публикация приложения на основе холста в PowerApps
 Когда вы сохраняете изменения в приложении на основе холста, они автоматически публикуются только для вас и пользователей, у которых есть разрешения на изменение этого приложения. Внесенные изменения следует опубликовать явным образом, чтобы сделать доступными для всех пользователей, которым предоставлен общий доступ к приложению.
@@ -60,5 +60,6 @@ PowerApps также может периодически сохранять пр
 Чтобы опубликовать наиболее позднюю версию, щелкните (коснитесь) **Опубликовать эту версию**, после чего нажмите (коснитесь) кнопку **Опубликовать эту версию** в диалоговом окне **Публикация**.
 
 ## <a name="next-steps"></a>Дальнейшие действия
+* Поиск и запуск приложения в [браузера](../../user/run-app-browser.md) или на [phone](../../user/run-app-client.md).
 * [Переименуйте приложение](set-name-tile.md) на сайте powerapps.com.
 * [Восстановите приложение](restore-an-app.md) при наличии нескольких его версий.

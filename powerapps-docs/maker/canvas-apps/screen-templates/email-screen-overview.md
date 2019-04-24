@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a1aad5ca9e8c7f8b55b1645b04d6c8dc0b9c707b
-ms.sourcegitcommit: 5e15a1033a68289781f8092fb65c57432501f911
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54459558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61539232"
 ---
 # <a name="overview-of-the-email-screen-template-for-canvas-apps"></a>Общие сведения о шаблоне экрана электронной почты для приложения на основе холста
 

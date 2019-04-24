@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: f431373b2c36a84b54a3241ad2d49af019c37419
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42858434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61558144"
 ---
 # <a name="connect-to-an-oracle-database-from-powerapps"></a>Подключение к базе данных Oracle из PowerApps
 Создание списка таблиц, а также создание, чтение, обновление и удаление строк таблицы в базе данных Oracle после подключения и создания приложения в PowerApps. Подключение к базе данных Oracle поддерживает полное делегирование фильтрации, сортировки и других функций, но не триггеров или хранимых процедур.

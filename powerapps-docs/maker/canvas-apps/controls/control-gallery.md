@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ba5df28f03ec5e7c9a3d8146aecb0427d8145b13
-ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59425318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544253"
 ---
 # <a name="gallery-control-in-canvas-apps"></a>Элемент управления коллекции в приложениях на основе холста
 

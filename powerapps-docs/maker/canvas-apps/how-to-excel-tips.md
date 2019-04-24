@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ea4bda4857c89a9e28359f63811e70744f111499
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42830964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61553294"
 ---
 # <a name="format-a-table-in-excel-and-naming-tips"></a>Советы по форматированию таблицы в Excel и присвоению имен
 В PowerApps можно создать приложение на основе холста по данным Excel только в том случае, если они отформатированы в виде таблицы. Прочитав эту статью, вы узнаете, как форматировать таблицу в Excel, и получите некоторые советы по именованию столбцов Excel.

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 20e06f7c03d0aca18b8351e546ccee3fff528f56
-ms.sourcegitcommit: 825daacc9a812637815afc1ce6fad28f0cebd479
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57803580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61537648"
 ---
 # <a name="updatecontext-function-in-powerapps"></a>Функция UpdateContext в PowerApps
 Функция UpdateContext создает или обновляет [переменные контекста](../working-with-variables.md#use-a-context-variable) текущего экрана.

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b388b5252e467aee598848a8ce24f2feed94df9e
-ms.sourcegitcommit: ead27300a1b7371136edee1842829ed87ca77a72
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57892306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61553867"
 ---
 # <a name="operators-and-data-types-in-powerapps"></a>Операторы и типы данных в PowerApps
 Некоторые из этих операторов зависят от языка, используемого на компьютере автора.  Дополнительные сведения см. в статье [Глобальная поддержка](../global-apps.md).

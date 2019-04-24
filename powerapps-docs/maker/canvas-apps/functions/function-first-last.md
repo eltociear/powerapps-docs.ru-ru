@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a66cf920f37870d13db187fe02a873bac7a44aa6
-ms.sourcegitcommit: eecbafdee9ef3d0a71dfeba934581f00965064cf
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "57801878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61551107"
 ---
 # <a name="first-firstn-last-and-lastn-functions-in-powerapps"></a>Функции First, FirstN, Last и LastN в PowerApps
 Возвращает первый или последний набор [записей](../working-with-tables.md#records) таблицы.

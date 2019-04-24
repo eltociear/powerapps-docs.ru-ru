@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 9c032c237018fbd564dd1143f20951dfb42d9795
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42832886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61520474"
 ---
 # <a name="reset-function-in-powerapps"></a>Функция Reset в PowerApps
 Сбрасывает элемент управления до значения по умолчанию и отменяет все изменения, внесенные пользователем.  

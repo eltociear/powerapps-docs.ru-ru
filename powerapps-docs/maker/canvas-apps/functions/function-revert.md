@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a1a9a02917ed5202e24ce0228b8b581e2f45b8b9
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42831568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61520705"
 ---
 # <a name="revert-function-in-powerapps"></a>Функция Revert в PowerApps
 Обновляет содержимое и удаляет ошибки для [записей](../working-with-tables.md#records) в [источнике данных](../working-with-data-sources.md).
@@ -52,7 +52,7 @@ ms.locfileid: "42831568"
 
 | Запись | [Столбец](../working-with-tables.md#columns) | Сообщение | Ошибка |
 | --- | --- | --- | --- |
-| **{ID: 1, Flavor: "Strawberry", Quantity: 300}** |*пустое значение* |**"Запись, которую вы пытаетесь изменить, была изменена другим пользователем.  Восстановите ее и повторите попытку".** |**ErrorKind.Conflict** |
+| **{ИДЕНТИФИКАТОР: 1, flavor: «Strawberry», Quantity: 300 }** |*пустое значение* |**"Запись, которую вы пытаетесь изменить, была изменена другим пользователем.  Восстановите ее и повторите попытку".** |**ErrorKind.Conflict** |
 
 Для записи в столбце **Ошибка** вы можете воспользоваться кнопкой **Reload** (Перезагрузить), у которой для свойства **[OnSelect](../controls/properties-core.md)** установлена следующая формула:<br>
 **Revert( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ) )**

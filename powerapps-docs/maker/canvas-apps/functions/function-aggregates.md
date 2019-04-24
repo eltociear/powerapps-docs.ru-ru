@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: bae3c031864e94c803086c4cd349679995d766cc
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42862181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61546638"
 ---
 # <a name="average-max-min-stdevp-sum-and-varp-functions-in-powerapps"></a>Функции Average, Max, Min, StdevP, Sum и VarP в PowerApps
 Статистические функции, которые вычисляют итоговые значения для набора чисел.

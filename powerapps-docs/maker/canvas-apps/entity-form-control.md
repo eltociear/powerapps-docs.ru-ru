@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ee8573cb9ae4df5ac42deefad4ac67aede3a3502
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42836284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61548025"
 ---
 # <a name="use-the-entity-form-control"></a>Использование элемента управления "Форма сущности"
 Создавайте приложения быстрее, используя элемент управления **Форма сущности** для добавления полнофункциональных форм для сущности Common Data Service.
 
-Чтобы получить общие сведения об элементе управления **Форма сущности**, прочитайте запись блога: [New entity form control (experimental feature) for Common Data Service](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/) (Новый элемент управления Форма сущности (экспериментальный) для Common Data Service).
+Общие сведения о **форма сущности** управления см. в записи блога: [Нового элемента управления формы сущности (экспериментальная функция) для Common Data Service](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/).
 
 > [!IMPORTANT]
 > Имейте в виду, что элемент управления **Форма сущности**, описываемый в записи блога, является экспериментальным. Следует осторожно использовать элемент управления **Форма сущности** в рабочих приложениях, по крайней мере сейчас.
@@ -45,15 +45,15 @@ ms.locfileid: "42836284"
 **Item** — указывает запись в источнике данных, которую должен отображать элемент управления **Форма сущности**. Это свойство используется, только если **Pattern** имеет значение **FormPattern.Details**.
 
 **Selected** — возвращает запись, которая выбрана в данный момент.  
-Пример. Если элемент управления **Форма сущности** отображает список записей заказов на продажу, то свойство **Selected** вернет запись, выбранную в данный момент. Можно также обращаться к полям в записи. (Например, укажите значение поля **Account** выбранной записи как **Selected.Account**.)
+Пример. Если **форма сущности** элемент управления отображает список записей заказов на продажу, **выбранные** свойство обеспечит запись, выбранная в данный момент. Можно также обращаться к полям в записи. (Например, укажите значение поля **Account** выбранной записи как **Selected.Account**.)
 
 **SelectableFields** — указывает, какие поля должны отображаться как ссылки. Для задания значения этого свойства используется приведенный ниже синтаксис.  
 **{Имя_поля_1 : true, Имя_поля_2 : true}**  
-Пример. Если вы хотите, чтобы поля **SalesOrderId** и **Account** отображались в форме в виде ссылок, задайте для свойства **SelectableFields** этой формы следующее значение.  
+Пример. Если вы хотите, чтобы **SalesOrderId** и **учетной записи** поля отображаются в виде ссылок в форме, состояние **SelectableFields** свойства этой формы это значение:  
 **{SalesOrderId : true, Account : true}**
 
 **SelectedField** — определяет поле, которое щелкнул пользователь или которого он коснулся. Это относится только к полям, указанным как **SelectableFields**.  
-Пример. Если свойству **SelectableFields** задано значение **{SalesOrderId : true, Account : true}** и пользователь щелкает поле **Account** или касается его, то **SelectedField.Account** присваивается значение true.
+Пример. Если задать **SelectableFields** свойства **{SalesOrderId: true, Account: true}** и пользователь нажимает кнопку или касается **учетной записи** поля,  **SelectedField.Account** задано значение true.
 
 **OnFieldSelect** — определяет, как приложение реагирует, когда пользователь щелкает поле или касается его. Это относится только к полям, указанным как **SelectableFields**.
 
@@ -190,7 +190,7 @@ ms.locfileid: "42836284"
 
 Это было настроено автоматически, когда мы использовали область настройки формы, чтобы настроить поле **SalesOrderId** для перехода на экран **SalesOrderDetailsScreen**. Поэтому значения в поле **SalesOrderId** отображаются в виде ссылок.
 
-В свойстве **OnFieldSelect** формы **SalesOrderListForm** задана функция [**If**](functions/function-if.md), которая определяет, когда пользователь выбирает поле **SalesOrderID**: **SalesOrderListForm.SelectedField.SalesOrderId = true**.  
+**OnFieldSelect** свойство **SalesOrderListForm** присваивается [ **Если** ](functions/function-if.md) функцию, которая определяет, является ли пользователь нажимает кнопку или касается **Sales order ID** поля: **SalesOrderListForm.SelectedField.SalesOrderId = true**.  
 
 Если функция возвращает значение true, то открывается экран **SalesOrderDetailsScreen** с переменной контекста **NavigationContext**, которую мы использовали ранее.  
 

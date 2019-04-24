@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: f9922c64769aeacd9b9b65cc3039b091ac7fe353
-ms.sourcegitcommit: bdee274ce4ae622f7af5f208041902e66e03d1b3
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "57800383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61538414"
 ---
 # <a name="develop-offline-capable-canvas-apps"></a>Разработка приложений на основе холста, поддерживающих автономный режим работы
 

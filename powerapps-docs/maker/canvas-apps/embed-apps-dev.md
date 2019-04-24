@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e4d3d2e769951ed75ddeeb57f7fe4c0b350d02e7
-ms.sourcegitcommit: 0267e58b305f9fb0a4b32130fb149cd6e34b3354
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59993764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61550304"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Интеграция приложений на основе холста в веб-сайты и другие службы
 Приложения, которые вы создаете часто являются наиболее полезны, когда они доступны прямо там, где сотрудники выполняют свою работу. Путем внедрения приложений на основе холста в iframe, эти приложения можно интегрировать в веб-сайтов и других служб, таких как Power BI или SharePoint.

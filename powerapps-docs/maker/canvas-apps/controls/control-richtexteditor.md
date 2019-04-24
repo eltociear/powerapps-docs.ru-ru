@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 3174d959a2360b36e82cd7070c4401251ca9fe18
-ms.sourcegitcommit: 212d397284c431f5989dc7b39549e2fc170d447e
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58491626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61526270"
 ---
 # <a name="rich-text-editor-control-in-powerapps"></a>Элемент управления редактора форматированного текста в PowerApps
 Позволяет конечным пользователям для форматирования текста внутри WYSIWYG, в область редактирования.  Выходные данные имеют формат HTML.

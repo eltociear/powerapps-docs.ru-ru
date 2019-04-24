@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b6e2fc48d931ccf702dd2711bdc00a484dc51018
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57801947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61549934"
 ---
 # <a name="create-accessible-canvas-apps-in-powerapps"></a>Создание приложений на основе холста со специальными возможностями в PowerApps
 Для успешной работы с приложениями на основе холста пользователям с нарушениями зрения, слуха и других функций требуются особые возможности.  Приведенные ниже рекомендации помогут обеспечить соответствие требованиям многих государственных организаций и корпораций. Кроме того, выполнив эти указания, вы повысите удобство для всех пользователей, независимо от их возможностей.

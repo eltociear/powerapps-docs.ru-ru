@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 586c82804380846ef400f020c4ce55c07262730f
-ms.sourcegitcommit: 4db9c763455d141a7e1dd569a50c86bd9e50ebf0
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "57802039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61549980"
 ---
 # <a name="accessible-colors-for-canvas-apps-in-powerapps"></a>Цвета высокой контрастности для приложений на основе холста в PowerApps
 Используемые в приложении на основе холста цвета должны восприниматься пользователями с цветовой слепотой и (или) слабым зрением. Все темы PowerApps по умолчанию имеют высокий уровень контрастности. Если вы решите изменить цвета в приложении, соблюдайте эти рекомендации, чтобы обеспечить восприятие цветов. В Интернете можно найти ряд инструментов для выявления проблем с контрастностью цветов.

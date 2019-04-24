@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 2999665e5882245b594468b6babe67be575c5c1e
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42843604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544529"
 ---
 # <a name="refresh-function-in-powerapps"></a>Функция Refresh в PowerApps
 Обновляет [записи](../working-with-tables.md#records) [источника данных](../working-with-data-sources.md).

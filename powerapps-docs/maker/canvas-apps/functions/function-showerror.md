@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 3ceb6e0bcac83bbd79d78dac859a7ddb7acf42a8
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61519775"
 ---
 # <a name="notify-function-in-powerapps"></a>Функция Notify в PowerApps
 Отображает баннер с сообщением для пользователя.
@@ -45,7 +45,7 @@ PowerApps может также отправлять push-уведомления
 
 Функция **Notify** всегда возвращает *true*.
 
-Примечание. Ранее эта функция называлась **ShowError** и могла выводить только сообщения об ошибках.
+Примечание. Эта функция ранее называлось **ShowError** когда он может отображать только сообщения об ошибках.
 
 ## <a name="syntax"></a>Синтаксис
 **Notify**(*Message*, [*NotificationType*])

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 22c60af513df1b91be1d9dffb252337e3197bf98
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61536574"
 ---
 # <a name="restore-a-canvas-app-to-a-previous-version-in-powerapps"></a>Восстановление предыдущей версии приложения на основе холста в PowerApps
 Из этой статьи вы узнаете, как восстановить предыдущую версию приложения на основе холста, которая была сохранена в облаке из вашей учетной записи PowerApps.

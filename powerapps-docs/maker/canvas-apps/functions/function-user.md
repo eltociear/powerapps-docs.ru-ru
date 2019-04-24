@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: f452fedfbb26394bcaf4d490fa608f066469fb53
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42863456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544568"
 ---
 # <a name="user-function-in-powerapps"></a>Функция User в PowerApps
 Возвращает сведения о текущем пользователе.
@@ -41,7 +41,7 @@ ms.locfileid: "42863456"
 ## <a name="examples"></a>Примеры
 Текущий пользователь PowerApps, о котором есть следующая информация:
 
-* полное имя — **John Doe**;
+* Полное имя: **«John Doe»**
 * адрес электронной почты — **"john.doe@contoso.com"**;
 * изображение — ![](media/function-user/john-doe-picture.png). 
 

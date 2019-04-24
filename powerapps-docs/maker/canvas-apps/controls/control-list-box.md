@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a2cb87cf68457771605e78970b8d7a923af61fce
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42835179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544434"
 ---
 # <a name="list-box-control-in-powerapps"></a>Элемент управления "Поле со списком" в PowerApps
 Список, в котором пользователь может выбрать один или несколько элементов.
@@ -60,7 +60,7 @@ ms.locfileid: "42835179"
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Жирный**, **Полужирный**, **Обычный** или **Очень тонкий**.
+**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -140,9 +140,9 @@ ms.locfileid: "42835179"
      ![Названия напольных покрытий в раскрывающихся списках](./media/control-list-box/flooring-names.png)
 4. Укажите для свойства **[Visible](properties-core.md)** каждого из элементов управления **[Раскрывающийся список](control-drop-down.md)** одно из следующих значений:
    
-   * CarpetList: **If("Ковер" in CategoryList.SelectedItems.Value, true)**
-   * HardwoodList: **If("Паркет" in CategoryList.SelectedItems.Value, true)**
-   * TileList: **If("Плитка" in CategoryList.SelectedItems.Value, true)**
+   * CarpetList: **Если ("Ковер" in CategoryList.SelectedItems.Value, true)**
+   * HardwoodList: **Если ("Паркет" in CategoryList.SelectedItems.Value, true)**
+   * TileList: **Если ("Плитка" in CategoryList.SelectedItems.Value, true)**
      
      Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 5. Нажмите клавишу F5 и выберите один или несколько элементов в элементе управления **CategoryList**.

@@ -15,11 +15,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e31d3689c7b61c408be90c31f1e212e4fdd9a91c
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42848990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61563898"
 ---
 # <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>Функции Blank, Coalesce, IsBlank и IsEmpty в PowerApps
 Эти функции позволяют проверить, является ли значение пустым и отсутствуют ли в [таблице](../working-with-tables.md) [записи](../working-with-tables.md#records), а также позволяют создавать *пустые* значения.
@@ -77,7 +77,7 @@ ms.locfileid: "42848990"
 1. Создайте приложение с нуля и добавьте элемент управления **Кнопка**.
 2. Задайте для свойства кнопки **[OnSelect](../controls/properties-core.md)** эту формулу:
 
-    **ClearCollect( Cities, { Name: "Seattle", Weather: "Rainy" } )**
+    **ClearCollect (городов, {Name: «Seattle», о погоде: «Дождливые»})**
 3. Просмотрите приложение, нажмите добавленную кнопку, а затем закройте режим предварительного просмотра.  
 4. В меню **Файл** щелкните или коснитесь **Коллекции**.
 
@@ -92,7 +92,7 @@ ms.locfileid: "42848990"
     Метка отображает значение **false**, так как поле **Weather** содержит значение (Rainy).
 7. Добавьте вторую кнопку и задайте в качестве значения свойства **OnSelect** следующую формулу:
 
-    **Patch( Cities, First( Cities ), { Weather: Blank() } )**
+    **Patch (городов, первый (города), {о погоде: Blank()})**
 8. Просмотрите приложение, нажмите добавленную кнопку, а затем закройте режим предварительного просмотра.  
 
     Из поля **Weather** первой записи в коллекции **Cities** удалили Rainy, в результате чего оно стало *пустым*.
@@ -136,7 +136,7 @@ ms.locfileid: "42848990"
 1. Создайте приложение с нуля и добавьте элемент управления **Кнопка**.
 2. Задайте для свойства кнопки **[OnSelect](../controls/properties-core.md)** эту формулу:
 
-    **Collect( IceCream, { Flavor: "Strawberry", Quantity: 300 }, { Flavor: "Chocolate", Quantity: 100 } )**
+    **Собирать (IceCream, {Flavor: «Strawberry», Quantity: 300}, {flavor: «Chocolate», Quantity: 100 } )**
 3. Просмотрите приложение, нажмите добавленную кнопку, а затем закройте режим предварительного просмотра.  
 
     Создается коллекция с именем **IceCream**, в которой содержатся такие данные:

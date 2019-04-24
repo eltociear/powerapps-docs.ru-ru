@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 03a6f9939f5de5e4eb3f4abd941a725ce24b46fb
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57798842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61550207"
 ---
 # <a name="edit-a-canvas-app-in-powerapps"></a>Изменение приложения на основе холста в PowerApps
 Вы можете изменить любое приложение на основе холста, которое вы создали, которым владеете или для которого у вас есть разрешения **Может изменять**. Вы можете изменить приложение в PowerApps Studio. При попытке изменить приложение, которое уже открыто для редактирования в другом месте, появится сообщение о том, что приложение уже открыто вами или другим пользователем.

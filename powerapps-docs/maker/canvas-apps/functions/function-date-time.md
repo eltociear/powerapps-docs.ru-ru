@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 869c0fcff6e519281e527c832305d74f2e7fd78f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42864106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61551245"
 ---
 # <a name="date-and-time-functions-in-powerapps"></a>Функции Date и Time в PowerApps
 Преобразуют компоненты даты и времени в значение даты и времени.
