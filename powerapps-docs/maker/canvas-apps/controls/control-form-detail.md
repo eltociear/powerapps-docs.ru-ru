@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4d7b21286f793aefdcc66a3dcbb027ab8f9ac4e7
-ms.sourcegitcommit: 5b2b70c3fc7bcba5647d505a79276bbaad31c610
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58356846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61544315"
 ---
 # <a name="edit-form-and-display-form-controls-in-powerapps"></a>Элементы управления "Изменить форму" и "Отображать форму" в PowerApps
 Элементы управления "Отображать форму" и "Изменить форму" служат для отображения, изменения и создания записей в источнике данных.
