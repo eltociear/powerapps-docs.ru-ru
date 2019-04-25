@@ -1,96 +1,101 @@
-items:
 - name: Работа с данными с помощью кода
   href: ../work-with-data-cds.md
 - name: Использование веб-API
   href: overview.md
 - name: Начало работы
   items:
-  - name: (C#)
-    href: get-started-dynamics-365-web-api-csharp.md
-    items:
-    - name: Краткое руководство. Пример веб-API (C#)
-      href: quick-start-console-app-csharp.md
-    - name: Дополнение к краткому руководству (C#)
-      href: enhanced-quick-start.md
-- name: JavaScript на стороне клиента
-  href: get-started-web-api-client-side-javascript.md
+    - name: '(C#)'
+      items:
+        - name: 'Начало работы с веб-API (C#)'
+          href: get-started-dynamics-365-web-api-csharp.md
+        - name: "Краткое руководство. Пример веб-API\_(C#)"
+          href: quick-start-console-app-csharp.md
+        - name: "Дополнение к краткому руководству\_(C#)"
+          href: enhanced-quick-start.md
+        - name: "Запуск проекта веб-API в Visual\_Studio"
+          href: start-web-api-project-visual-studio-csharp.md
 - name: Проверка подлинности
   href: authenticate-web-api.md
 - name: Типы и операции
   href: web-api-types-operations.md
 - name: Выполнение операций
-  href: perform-operations-web-api.md
   items:
-  - name: HTTP-запросы и обработка ошибок
-    href: compose-http-requests-handle-errors.md
-  - name: Запрос данных
-    href: query-data-web-api.md
-  - name: Запрос на получение связанных сущностей
-    href: retrieve-related-entities-query.md
-  - name: Получение и выполнение готовых запросов
-    href: retrieve-and-execute-predefined-queries.md
-  - name: Создание сущности
-    href: create-entity-web-api.md
-  - name: Получение сущности
-    href: retrieve-entity-using-web-api.md
-  - name: Обновление и удаление сущностей
-    href: update-delete-entities-using-web-api.md
-  - name: Связывание сущностей и его отмена
-    href: associate-disassociate-entities-using-web-api.md
-  - name: Использование функций
-    href: use-web-api-functions.md
-  - name: Использование действий
-    href: use-web-api-actions.md
-  - name: Выполнение пакетных операций
-    href: execute-batch-operations-using-web-api.md
-  - name: Олицетворение другого пользователя
-    href: impersonate-another-user-web-api.md
-  - name: Выполнение условных операций
-    href: perform-conditional-operations-using-web-api.md
-  - name: Обнаружение повторяющихся данных
-    href: manage-duplicate-detection-create-update.md
-- name: Различия версий
-  href: web-api-versions.md
+    - name: Начало работы с операциями
+      href: perform-operations-web-api.md
+    - name: HTTP-запросы и обработка ошибок
+      href: compose-http-requests-handle-errors.md
+    - name: Запрос данных
+      href: query-data-web-api.md
+    - name: Запрос на получение связанных сущностей
+      href: retrieve-related-entities-query.md
+    - name: Получение и выполнение готовых запросов
+      href: retrieve-and-execute-predefined-queries.md
+    - name: Создание сущности
+      href: create-entity-web-api.md
+    - name: Получение сущности
+      href: retrieve-entity-using-web-api.md
+    - name: Обновление и удаление сущностей
+      href: update-delete-entities-using-web-api.md
+    - name: Связывание сущностей и его отмена
+      href: associate-disassociate-entities-using-web-api.md
+    - name: Использование функций
+      href: use-web-api-functions.md
+    - name: Использование действий
+      href: use-web-api-actions.md
+    - name: Выполнение пакетных операций
+      href: execute-batch-operations-using-web-api.md
+    - name: Олицетворение другого пользователя
+      href: impersonate-another-user-web-api.md
+    - name: Выполнение условных операций
+      href: perform-conditional-operations-using-web-api.md
+    - name: Обнаружение повторяющихся данных
+      href: manage-duplicate-detection-create-update.md
 - name: Работа с метаданными
-  href: use-web-api-metadata.md
   items:
-  - name: Запрос метаданных
-    href: query-metadata-web-api.md
-  - name: Получение метаданных по имени или MetadataId
-    href: retrieve-metadata-name-metadataid.md
-  - name: Создание и обновление определения сущностей
-    href: create-update-entity-definitions-using-web-api.md
-  - name: Создание и обновление связи сущностей
-    href: create-update-entity-relationships-using-web-api.md
-  - name: Работа с наборами параметров
-    href: create-update-optionsets.md
+    - name: Начало работы с метаданными
+      href: use-web-api-metadata.md
+    - name: Запрос метаданных
+      href: query-metadata-web-api.md
+    - name: Получение метаданных по имени или MetadataId
+      href: retrieve-metadata-name-metadataid.md
+    - name: Создание и обновление определения сущностей
+      href: create-update-entity-definitions-using-web-api.md
+    - name: Создание и обновление связи сущностей
+      href: create-update-entity-relationships-using-web-api.md
+    - name: Работа с наборами параметров
+      href: create-update-optionsets.md
+- name: Использование Postman с веб-API
+  items:
+    - name: Начало работы с Postman
+      href: use-postman-web-api.md
+    - name: Настройка среды Postman
+      href: setup-postman-environment.md
+    - name: Выполнение операций с помощью Postman
+      href: use-postman-perform-operations.md
+- name: Веб-API с JavaScript на стороне клиента в приложениях на основе модели
+  href: get-started-web-api-client-side-javascript.md
 - name: Обнаружение URL вашей организации
-  href: discover-url-organization-web-api.md
   items:
-  - name: Пример для глобальной службы обнаружения (C#)
-    href: samples/global-discovery-service-csharp.md
+    - name: Начало работы
+      href: discover-url-organization-web-api.md
+    - name: "Пример для глобальной службы обнаружения\_(C#)"
+      href: samples/global-discovery-service-csharp.md
 - name: Импорт данных
   href: ../import-data.md
 - name: Образцы данных
   href: ../sample-data.md
 - name: Примеры
   items:
-  - name: Примеры шаблонов операций с данными
-    href: web-api-samples.md
-    items:
-    - name: Базовые операции
-      href: web-api-basic-operations-sample.md
-    - name: Запрос данных
-      href: web-api-query-data-sample.md
-    - name: Условные операции
-      href: web-api-conditional-operations-sample.md
-    - name: Функции и действия
-      href: web-api-functions-actions-sample.md
-    - name: Примеры
-      href: samples/toc.yml
-ms.openlocfilehash: fd5e79a6cb5c5d23a8edb246086be4db95fe102c
-ms.sourcegitcommit: b703a5c9cddda2ff50c88533b3dbd12cba852b50
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56222662"
+    - name: Примеры шаблонов операций с данными
+      href: web-api-samples.md
+      items:
+        - name: Базовые операции
+          href: web-api-basic-operations-sample.md
+        - name: Запрос данных
+          href: web-api-query-data-sample.md
+        - name: Условные операции
+          href: web-api-conditional-operations-sample.md
+        - name: Функции и действия
+          href: web-api-functions-actions-sample.md
+        - name: Примеры
+          href: samples/toc.yml

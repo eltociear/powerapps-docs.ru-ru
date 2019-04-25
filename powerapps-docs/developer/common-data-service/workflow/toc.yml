@@ -1,0 +1,14 @@
+- name: Применение бизнес-логики с помощью кода
+  href: ../apply-business-logic-with-code.md
+- name: Расширения рабочего процесса
+  href: workflow-extensions.md
+- name: Отладка действий рабочего процесса
+  href: debug-workflow-activites.md
+- name: Учебник. Создание расширения рабочего процесса
+  href: tutorial-create-workflow-extension.md
+- name: Пример. Создание настраиваемого действия рабочего процесса
+  href: sample-create-custom-workflow-activity.md
+- name: Пример. Настраиваемое действие рабочего процесса для изменения следующей даты рождения
+  href: sample-update-next-birthday-using-custom-workflow-activity.md
+- name: Пример. Настраиваемое действие рабочего процесса для вычисления кредитного рейтинга
+  href: sample-calculate-credit-score-custom-workflow-activity.md
