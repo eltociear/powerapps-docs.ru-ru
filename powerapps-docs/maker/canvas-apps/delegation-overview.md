@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 61a7e67b7914e5f844397389833f830244d5af28
-ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59098053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63318104"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>Общие сведения о делегировании в приложении на основе холста
 PowerApps включает мощный набор функций для фильтрации, сортировки и форматирования таблиц данных в приложение на основе холста: **[Фильтр](functions/function-filter-lookup.md)**,  **[сортировки](functions/function-sort.md)**, и **[AddColumns](functions/function-table-shaping.md)** функции для именования несколько. Эти функции помогают обеспечить пользователям доступ именно к той информации, которая им необходима. Для тех, у кого есть опыт работы с базами данных, использование этих функций можно сравнить с составлением запросов к базе.

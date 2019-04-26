@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 0b710346c5e264fc13ee3cacb00073a32a4de0f0
-ms.sourcegitcommit: 90245baddce9d92c3ce85b0537c1ac1cf26bf55a
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "57799693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63318320"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>Отображение данных в виде графика, круговой или линейчатой диаграммы в PowerApps
 
