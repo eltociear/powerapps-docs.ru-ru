@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: c37aa315981c51a446254473686c44501e72a96f
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42831483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63321002"
 ---
 # <a name="filter-search-and-lookup-functions-in-powerapps"></a>Функции Filter, Search и LookUp в PowerApps
 Эти функции выполняют поиск [записей](../working-with-tables.md#records) в [таблице](../working-with-tables.md).
@@ -78,7 +78,7 @@ ms.locfileid: "42831483"
 | **LookUp( IceCream, Flavor = "Chocolate", Quantity )** |Ищет запись со значением столбца **Flavor** равным Chocolate (в этом случае найдена только одна запись).  Для первой найденной записи возвращает значение столбца **Quantity**. |100 |
 | **LookUp( IceCream, Quantity > 150, Quantity + OnOrder )** |Ищет запись со значением столбца **Quantity** большим 100 (в этом случае таких записей несколько).  Для первой найденной записи (в этом случае Vanilla в столбце **Flavor**) возвращает сумму значений в столбцах **Quantity** и **OnOrder**. |250 |
 | **LookUp( IceCream, Flavor = "Pistachio", OnOrder )** |Ищет запись со значением столбца **Flavor** равным Pistachio (в этом случае такие записи отсутствуют).  Так как запись не найдена, функция **Lookup** возвращает *пустое значение*. |*пустое значение* |
-| **LookUp( IceCream, Flavor = "Vanilla" )** |Ищет запись со значением столбца **Flavor** равным Vanilla (в этом случае найдена только одна запись).  Так как формула сведения не применялась, возвращается целая запись. |{ Flavor: "Vanilla", Quantity: 200, OnOrder: 75 } |
+| **LookUp( IceCream, Flavor = "Vanilla" )** |Ищет запись со значением столбца **Flavor** равным Vanilla (в этом случае найдена только одна запись).  Так как формула сведения не применялась, возвращается целая запись. |{Flavor: «Vanilla», Quantity: 200, OnOrder: 75 } |
 
 ### <a name="search-user-experience"></a>Оптимизация поиска
 В большинстве приложений вы можете ввести один или несколько символов в текстовом поле, чтобы отфильтровать список в большом наборе данных. При вводе в списке отображаются только те записи, которые соответствуют заданным условиям поиска.
@@ -87,9 +87,9 @@ ms.locfileid: "42831483"
 
 ![](media/function-filter-lookup/customers.png)
 
-Чтобы создать этот источник данных в виде коллекции, создайте элемент управления **[Кнопка](../controls/control-button.md)** и задайте в качестве значения свойства **OnSelect** следующую формулу:
+Чтобы создать этот источник данных в виде коллекции, создайте элемент управления **[Button](../controls/control-button.md)** (Кнопка) и задайте в качестве значения свойства **OnSelect** следующую формулу:
 
-**ClearCollect(Customers, Table({Name: "Fred Garcia", Company: "Northwind Traders"}, {Name: "Cole Miller", Company: "Contoso"}, {Name: "Glenda Johnson", Company: "Contoso"}, {Name: "Mike Collins", Company: "Adventure Works"}, {Name: "Colleen Jones", Company: "Adventure Works"}))**
+**ClearCollect (Customers, таблицы ({имя: «Fred Garcia», компании: «Борей»}, {Name: «Cole Miller», компании: «Contoso»}, {Name: «Glenda Johnson», компании: «Contoso»}, {Name: «Mike Collins», компании: «Adventure Works»}, {Name: «Colleen Jones» компании: «Adventure Works»}))**
 
 Как показано в этом примере, вы можете вывести список записей в элемент управления [**Gallery**](../controls/control-gallery.md) (Коллекция) в нижней части экрана. В верхней части экрана можно добавить элемент управления для [**Text input**](../controls/control-text-input.md) (Текстовое поле ввода) под названием **SearchInput**, что позволит пользователям указывать интересующие их записи.
 

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 88e0a74d2c25d1d2f5f571f4d1850417d1aab9ca
-ms.sourcegitcommit: 0267e58b305f9fb0a4b32130fb149cd6e34b3354
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59993833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63318434"
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>Фигуры и значки в PowerApps
 Фигуры и значки — это элементы управления, для которых можно настроить внешний вид и поведение.

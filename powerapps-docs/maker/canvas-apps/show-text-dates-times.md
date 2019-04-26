@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 54712803d0cc119aa385162088df468e339a7298
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42848533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63318327"
 ---
 # <a name="show-text-dates-and-times-in-powerapps"></a>Отображение текста, дат и времени в PowerApps
 PowerApps позволяет вам добавить дату и время в приложение на основе холста, а затем отформатировать их с нужной степенью детализации или с учетом региональных параметров. Вычислите промежуток времени между двумя датами или вычислите дату, которая следует через определенное время до или после указанной даты. Преобразуйте даты в отдельные значения дней, месяцев и лет (и наоборот) и преобразуйте время в отдельные значения часов, минут и секунд (и наоборот).
