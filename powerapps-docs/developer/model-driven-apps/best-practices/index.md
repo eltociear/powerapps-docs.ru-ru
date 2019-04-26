@@ -21,11 +21,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 152b7bc5e61a579bc06c02f60079ecfc7b05512b
-ms.sourcegitcommit: 11486fb4c16095e3fef785126003cac3e3e06c0d
+ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54271583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63320907"
 ---
 # <a name="best-practices-and-guidance-for-model-driven-apps"></a>Рекомендации по приложениям на основе модели
 
