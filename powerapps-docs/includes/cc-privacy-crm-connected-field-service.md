@@ -1,33 +1,41 @@
-После установки [!INCLUDE[pn_connected_field_service_msdyn365](pn-connected-field-service-msdyn365.md)] при указании сведений о подписке [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] будут развернуты обязательные ресурсы [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] (перечисленные ниже), а ваш экземпляр [!INCLUDE[pn_dynamics_crm_online](pn-dynamics-crm-online.md)] будет передавать данные (например команды и сведения о регистрации) в [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], чтобы сделать возможной реализацию сценариев IoT, включающих регистрацию устройств и последующую передачу им команд. Администратор может удалить Connected Field Service, чтобы удалить соответствующую функцию, а затем перейти к порталу [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] для управления всеми связанными службами [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], которые больше не требуются.  
+---
+ms.openlocfilehash: ce9db35844f46e9779055ec30dcba0f9459c3a16
+ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61583494"
+---
+При установке [!INCLUDE[pn_connected_field_service_msdyn365](pn-connected-field-service-msdyn365.md)], когда вы предоставляете сведения о своей подписке [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], будут развернуты необходимые ресурсы [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] (перечислены ниже), а экземпляр [!INCLUDE[pn_dynamics_crm_online](pn-dynamics-crm-online.md)] отправит данные (команды и регистрации) в [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], чтобы включить сценарии с поддержкой IoT, которые регистрируют устройства, а затем отправляют команды на такие зарегистрированные устройства и получают команды от них. Администратор может удалить службу Connected Field Service, чтобы удалить соответствующую функциональность, а затем перейти на портал [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] для совершения действий со всеми связанными службами [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], которые больше не нужны.  
   
- Компоненты и службы [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], необходимые для реализации функций Connected Field Service, подробно рассматриваются в следующих разделах.  
+ Компоненты и службы [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], используемые при разработке функциональности Connected Field Service, подробно описываются в следующих разделах.  
   
  [!INCLUDE[cc_privacy_note_azure_trust_center](cc-privacy-note-azure-trust-center.md)]  
   
- [Очередь шины обслуживания](https://azure.microsoft.com/documentation/articles/service-bus-dotnet-get-started-with-queues/)  
+ [Очередь служебной шины](https://azure.microsoft.com/documentation/articles/service-bus-dotnet-get-started-with-queues/)  
   
- Обеспечивает очередь для входящих и исходящих сообщений (команд), передаваемых между [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] и [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]. При отправке в [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] оповещения IoT или при отправке команды из [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] в центр IoT эти команды и оповещения помещаются в эту очередь.  
+ Позволяет ставить в очередь входящие и исходящие сообщения (команды), которыми обмениваются [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] и [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]. Если [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] отправляется оповещение IoT или в центр Интернета вещей из [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] отправляется команда, она будет помещена в эту очередь.  
   
- [Логические приложения](https://azure.microsoft.com/services/logic-apps/)  
+ [Logic Apps](https://azure.microsoft.com/services/logic-apps/)  
   
- Обеспечивают службу согласования, которая использует соединитель [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] и соединитель очереди. Соединители [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] служат для создания сущностей, которые относятся к [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)], а соединители очереди служат для опроса очереди.  
+ Предоставляет службу оркестрации, которая использует соединитель [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] и соединитель очереди. Соединители [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] используются для создания сущностей, характерных для [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)], а соединители очереди используются для опроса очереди.  
   
  [Stream Analytics](https://azure.microsoft.com/services/stream-analytics/)  
   
- Обеспечивает полностью управляемый механизм обработки событий в реальном времени, который помогает получать наиболее неочевидные выводы на основе данных. Stream Analytics упрощает настройку аналитических расчетов в реальном времени. Эти расчеты выполняются над данными, получаемыми от устройств, датчиков, с веб-сайтов, из социальных сетей, приложений, инфраструктурных систем и т. д. Эта функция выполняет роль воронки, передающей выборочные оповещения IoT в [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)].  
+ Предоставляет полностью управляемый механизм обработки событий в реальном времени, который помогает извлекать из данных ценные аналитические сведения. Stream Analytics позволяет легко настраивать аналитические вычисления в режиме реального времени для потоков данных, поступающих с устройств, датчиков, веб-сайтов, из социальных сетей, приложений, инфраструктурных систем и т. д. Эта служба выполняет роль воронки для отправки избранных оповещений IoT в [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)].  
   
- [Центр IoT](https://azure.microsoft.com/services/iot-hub/)  
+ [Центр Интернета вещей](https://azure.microsoft.com/services/iot-hub/)  
   
- Службы Connected Field Services используют центр IoT для управления состоянием зарегистрированных устройств и активов. Кроме того, центр IoT отправляет команды и уведомления подключенным устройствам и отслеживает доставку сообщений, получая подтверждения. Отправляемые сообщения имеют длительный срок действия, чтобы недостаточно надежно подключенные устройства также их получали.  
+ Connected Field Services использует Центр Интернета вещей для управления состоянием зарегистрированных устройств и ресурсов. Кроме того, Центр Интернета вещей отправляет команды и уведомления на подключенные устройства, а также отслеживает доставку приложений с подтверждением получения. Сообщения между устройствами пересылаются надежным способом, подходящим для устройств, которые не всегда подключены.  
   
- **Симулятор**  
+ **Simulator**  
   
- Это тестовое веб-приложение, эмулирующее устройство, которое отправляет команды или принимает команды от центра IoT.  
+ Это тестовое веб-приложение для имитации устройства, которое отправляет команды в Центр Интернета вещей или получает их оттуда.  
   
  [База данных SQL Azure](https://azure.microsoft.com/services/sql-database/)  
   
- Служба Connected Field Service использует SQL [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] для хранения сообщений тактовых импульсов для дальнейшего использования в PowerBI с целью отображения состояния устройств в [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)].  
+ Connected Field Service использует SQL [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] для хранения пакетов пульса устройства для дальнейшего использования в PowerBI с целью отображения статуса устройства в [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)].  
   
  [Хранилище BLOB-объектов Azure](https://azure.microsoft.com/services/storage/)  
   
- Запросы, которые будут использоваться в Stream Analytics, сохраняются в хранилище больших двоичных объектов [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)].
+ Запросы, которые использует Stream Analytics, хранятся в хранилище BLOB-объектов [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)].
