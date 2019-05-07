@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61538825"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="reference-information-about-the-email-screen-template-for-canvas-apps"></a>Справочные сведения о шаблоне экрана электронной почты для приложения на основе холста
 
@@ -55,9 +56,9 @@ ms.locfileid: "61538825"
 * Свойство: **Видимым**<br>
     Значение: Логика для отображения элемента управления, только в том случае, когда пользователь вводит адрес электронной почты в поле поиска:
 
-    ```powerapps-dot
+    ```powerapps-comma
     !IsBlank( TextSearchBox.Text ) &&
-        IsMatch( TextSearchBox.Text, Match.Email ) &&
+        IsMatch( TextSearchBox.Text; Match.Email ) &&
         Not( Trim( TextSearchBox.Text ) in MyPeople.UserPrincipalName )
     ```
   Построчно, приведенного выше кода говорится, что **значок добавления** управления будут видны только если:
@@ -69,14 +70,14 @@ ms.locfileid: "61538825"
 * Свойство: **OnSelect**<br>
     Значение: При выборе этого добавляет допустимый адрес электронной почты для **MyPeople** коллекции. Эта коллекция используется на экране как список получателей:
 
-    ```powerapps-dot
-    Collect( MyPeople,
+    ```powerapps-comma
+    Collect( MyPeople;
         { 
-            DisplayName: TextSearchBox.Text, 
-            UserPrincipalName: TextSearchBox.Text, 
+            DisplayName: TextSearchBox.Text; 
+            UserPrincipalName: TextSearchBox.Text; 
             Mail: TextSearchBox.Text
         }
-    );
+    );;
     Reset( TextSearchBox )
     ```
   
@@ -89,9 +90,9 @@ ms.locfileid: "61538825"
 * Свойство: **Элементы**<br>
     Значение: Результаты поиска 15 первых поиска текста, введенного в **TextSearchBox** управления:
     
-    ```powerapps-dot
-    If( !IsBlank( Trim(TextSearchBox.Text ) ), 
-        'Office365Users'.SearchUser( {searchTerm: Trim( TextSearchBox.Text ), top: 15} )
+    ```powerapps-comma
+    If( !IsBlank( Trim(TextSearchBox.Text ) ); 
+        'Office365Users'.SearchUser( {searchTerm: Trim( TextSearchBox.Text ); top: 15} )
     )
     ```
 
@@ -111,12 +112,12 @@ ms.locfileid: "61538825"
 * Свойство: **OnSelect**<br>
     Значение: Код, чтобы добавить пользователя в коллекцию уровня приложения, а затем выберите пользователя:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Concurrent(
-        Set( _selectedUser, ThisItem ),
-        Reset( TextSearchBox ),
-        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ), 
-            Collect( MyPeople, ThisItem )
+        Set( _selectedUser; ThisItem );
+        Reset( TextSearchBox );
+        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ); 
+            Collect( MyPeople; ThisItem )
         )
     )
     ```
@@ -138,17 +139,17 @@ ms.locfileid: "61538825"
 * Свойство: **Высота**<br>
     Значение: Алгоритм для установки высоту на основе количества элементов, находящихся в коллекции:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Min( 
         ( EmailPeopleGallery.TemplateHeight + EmailPeopleGallery.TemplatePadding * 2) *
-            RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2, 0 ),
+            RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2; 0 );
         304
     )
     ```
 
   Число элементов в коллекции, с максимальную высоту 304 подстраивается высота элемента коллекции.
   
-  Он принимает `TemplateHeight + TemplatePadding * 2` как общую высоту одной строки **EmailPeopleGallery**, умножает его на число строк. Так как `WrapCount = 2`, число строк, значение true — `RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2, 0)`.
+  Он принимает `TemplateHeight + TemplatePadding * 2` как общую высоту одной строки **EmailPeopleGallery**, умножает его на число строк. Так как `WrapCount = 2`, число строк, значение true — `RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2; 0)`.
 
 * Свойство: **ShowScrollbar**<br>
     Значение: `EmailPeopleGallery.Height >= 304`
@@ -160,7 +161,7 @@ ms.locfileid: "61538825"
    ![Элемент управления EmailPeopleGallery заголовок](media/email-screen/email-people-gall-text.png)
 
 * Свойство: **OnSelect**<br>
-    Значение: `Set(_selectedUser, ThisItem)`
+    Значение: `Set(_selectedUser; ThisItem)`
 
   Наборы **_selectedUser** переменных для элемента, выбранного в **EmailPeopleGallery**.
 
@@ -169,7 +170,7 @@ ms.locfileid: "61538825"
    ![Элемент управления MonthDayGallery заголовок](media/email-screen/email-people-gall-delete.png)
 
 * Свойство: **OnSelect**<br>
-    Значение: `Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) )`
+    Значение: `Remove( MyPeople; LookUp( MyPeople; UserPrincipalName = ThisItem.UserPrincipalName ) )`
 
   Ищет запись в **MyPeople** коллекции, где **UserPrincipalName** соответствует **UserPrincipalName** выбранного элемента и удаляет записи из Коллекция.
 
@@ -178,15 +179,15 @@ ms.locfileid: "61538825"
 * Свойство: **OnSelect**<br>
     Значение: Логики для отправки сообщения электронной почты пользователя:
 
-    ```powerapps-dot
-    Set( _emailRecipientString, Concat( MyPeople, Mail & ";" ) );
-    'Office365'.SendEmail( _emailRecipientString, 
-        TextEmailSubject.Text,  
-        TextEmailMessage.Text, 
+    ```powerapps-comma
+    Set( _emailRecipientString; Concat( MyPeople; Mail & ";" ) );;
+    'Office365'.SendEmail( _emailRecipientString; 
+        TextEmailSubject.Text;  
+        TextEmailMessage.Text; 
         { Importance:"Normal" }
-    );
-    Reset( TextEmailSubject );
-    Reset( TextEmailMessage );
+    );;
+    Reset( TextEmailSubject );;
+    Reset( TextEmailMessage );;
     Clear( MyPeople )
     ```
 
@@ -198,7 +199,7 @@ ms.locfileid: "61538825"
   1. Наконец, он сбрасывает **TextEmailSubject** и **TextEmailMessage** элементы управления и очищает **MyPeople** коллекции.
 
 * Свойство: **DisplayMode**<br>
-    Значение: `If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ), DisplayMode.Edit, DisplayMode.Disabled )` Для отправки сообщения электронной почты, текст, а получатель должен иметь строку темы электронного сообщения (**MyPeople**) коллекция не должна быть пустой.
+    Значение: `If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ); DisplayMode.Edit; DisplayMode.Disabled )` Для отправки сообщения электронной почты, текст, а получатель должен иметь строку темы электронного сообщения (**MyPeople**) коллекция не должна быть пустой.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

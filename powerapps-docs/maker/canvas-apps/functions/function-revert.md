@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61520705"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="revert-function-in-powerapps"></a>Функция Revert в PowerApps
 Обновляет содержимое и удаляет ошибки для [записей](../working-with-tables.md#records) в [источнике данных](../working-with-data-sources.md).
@@ -33,7 +34,7 @@ ms.locfileid: "61520705"
 Функция **Revert** не возвращает никакого значения. Ее можно использовать только в [формуле поведения](../working-with-formulas-in-depth.md).
 
 ## <a name="syntax"></a>Синтаксис
-**Revert**(*источник_данных*[, *запись*])
+**Revert**(*источник_данных*[; *запись*])
 
 * *источник_данных* — обязательный аргумент. Это источник данных, который требуется восстановить.
 * *запись* — необязательный аргумент.  Запись, которую требуется восстановить.  Если запись не указана, выполняется восстановление всего источника.
@@ -46,16 +47,16 @@ ms.locfileid: "61520705"
 Пользователь на другом устройстве изменяет значение свойства **Quantity** записи **Strawberry** на **400**.  Примерно в тот же момент вы меняете значение того же свойства в той же записи на **500**, не зная о параллельном изменении.
 
 Чтобы обновить запись, вы используете функцию **[Patch](function-patch.md)**:<br>
-**Patch( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ), { Quantity: 500 } )**
+**Patch( IceCream; First( Filter( IceCream; Flavor = "Strawberry" ) ); { Quantity: 500 } )**
 
 В таблице **[Errors](function-errors.md)** вы обнаруживаете ошибку:
 
 | Запись | [Столбец](../working-with-tables.md#columns) | Сообщение | Ошибка |
 | --- | --- | --- | --- |
-| **{ИДЕНТИФИКАТОР: 1, flavor: «Strawberry», Quantity: 300 }** |*пустое значение* |**"Запись, которую вы пытаетесь изменить, была изменена другим пользователем.  Восстановите ее и повторите попытку".** |**ErrorKind.Conflict** |
+| **{ИДЕНТИФИКАТОР: 1; flavor: «Strawberry»; Quantity: 300 }** |*пустое значение* |**"Запись, которую вы пытаетесь изменить, была изменена другим пользователем.  Восстановите ее и повторите попытку".** |**ErrorKind.Conflict** |
 
 Для записи в столбце **Ошибка** вы можете воспользоваться кнопкой **Reload** (Перезагрузить), у которой для свойства **[OnSelect](../controls/properties-core.md)** установлена следующая формула:<br>
-**Revert( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ) )**
+**Revert( IceCream; First( Filter( IceCream; Flavor = "Strawberry" ) ) )**
 
 После нажатия кнопки **Reload** таблица **[ошибок](function-errors.md)** [очищается](function-isblank-isempty.md), а для свойства **Strawberry** загружается новое значение:
 

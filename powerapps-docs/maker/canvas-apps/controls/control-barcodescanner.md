@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61544598"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>Веб-управления сканер штрихкодов (экспериментальная функция) в PowerApps
 
@@ -66,7 +67,7 @@ ms.locfileid: "61544598"
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*;; *BaseRecord*;; *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Пример
 

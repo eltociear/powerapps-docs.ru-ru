@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "63320466"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Использование файлов мультимедиа в PowerApps
 
@@ -158,7 +159,7 @@ ms.locfileid: "63320466"
 
 8. На вкладке **Вставка** добавьте элемент управления **Кнопка** и в качестве значения свойства **OnSelect** задайте следующую формулу:
 
-    **Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})**
+    **Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})**
 
 9. Добавьте в приложение элемент управления **Коллекция изображений** (вкладка **Вставка** > **Коллекция**) и назначьте его свойству **Items** значение `Drawings`. Свойство **Image** для элемента управления "Коллекция" автоматически получает значение `ThisItem.Image`.
 

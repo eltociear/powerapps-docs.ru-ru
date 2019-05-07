@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61538414"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="develop-offline-capable-canvas-apps"></a>Разработка приложений на основе холста, поддерживающих автономный режим работы
 
@@ -82,15 +83,15 @@ ms.locfileid: "61538414"
 ### <a name="step-3-load-tweets-into-a-localtweets-collection-on-app-startup"></a>Шаг 3. Загрузка твитов в коллекцию LocalTweets при запуске приложения
 Выберите свойство **OnVisible** для **экрана 1** в приложении, а затем скопируйте его в следующую формулу:
 
-```powerapps-dot
-If( Connection.Connected,
-    ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 100} ) );
-        UpdateContext( {statusText: "Online data"} ),
-    LoadData(LocalTweets, "Tweets", true);
+```powerapps-comma
+If( Connection.Connected;
+    ClearCollect( LocalTweets; Twitter.SearchTweet( "PowerApps"; {maxResults: 100} ) );;
+        UpdateContext( {statusText: "Online data"} );
+    LoadData(LocalTweets; "Tweets"; true);;
         UpdateContext( {statusText: "Local data"} )
-);
-LoadData( LocalTweetsToPost, "LocalTweets", true );
-SaveData( LocalTweets, "Tweets" )
+);;
+LoadData( LocalTweetsToPost; "LocalTweets"; true );;
+SaveData( LocalTweets; "Tweets" )
 ```
 
 ![Формула для загрузки твитов](./media/offline-apps/load-tweets.png)
@@ -110,13 +111,13 @@ SaveData( LocalTweets, "Tweets" )
    * **ThisItem.TweetText**
    * **ThisItem.UserDetails.FullName & " \@" & ThisItem.UserDetails.UserName**
    * **"RT: " & ThisItem.RetweetCount**
-   * **Text(DateTimeValue(ThisItem.CreatedAtIso), DateTimeFormat.ShortDateTime)**
+   * **Text(DateTimeValue(ThisItem.CreatedAtIso); DateTimeFormat.ShortDateTime)**
 4. Добавьте элемент управления **Изображение**, а затем задайте для свойства **Image** значение **ThisItem.UserDetails.ProfileImageUrl**.
 
 ### <a name="step-5-add-a-connection-status-label"></a>Шаг 5. Добавление метки состояния подключения
 Вставьте новый элемент управления **Метка**, а затем задайте для свойства **Text** следующую формулу:
 
-```If( Connection.Connected, "Connected", "Offline" )```
+```If( Connection.Connected; "Connected"; "Offline" )```
 
 Эта формула проверяет, подключено ли устройство к сети. Если оно подключено, отобразится текст метки "Подключено". В противном случае — "В автономном режиме".
 
@@ -130,13 +131,13 @@ SaveData( LocalTweets, "Tweets" )
 1. Добавьте элемент управления **Кнопка** и задайте для свойства **Text** значение Tweet.
 2. Задайте для свойства **OnSelect** следующую формулу:
 
-    ```powerapps-dot
-    If( Connection.Connected,
-        Twitter.Tweet( "", {tweetText: NewTweetTextInput.Text} ),
-        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
-            SaveData( LocalTweetsToPost, "LocalTweetsToPost" )
-    );
-    UpdateContext( {resetNewTweet: true} );
+    ```powerapps-comma
+    If( Connection.Connected;
+        Twitter.Tweet( ""; {tweetText: NewTweetTextInput.Text} );
+        Collect( LocalTweetsToPost; {tweetText: NewTweetTextInput.Text} );;
+            SaveData( LocalTweetsToPost; "LocalTweetsToPost" )
+    );;
+    UpdateContext( {resetNewTweet: true} );;
     UpdateContext( {resetNewTweet: false} )
     ```  
 
@@ -156,12 +157,12 @@ SaveData( LocalTweets, "Tweets" )
 
 * Задайте для свойства **OnTimerEnd** следующую формулу:
 
-    ```powerapps-dot
-    If( Connection.Connected,
-        ForAll( LocalTweetsToPost, Twitter.Tweet( "", {tweetText: tweetText} ) );
-        Clear( LocalTweetsToPost);
-        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
-        SaveData( LocalTweetsToPost, "LocalTweetsToPost" );
+    ```powerapps-comma
+    If( Connection.Connected;
+        ForAll( LocalTweetsToPost; Twitter.Tweet( ""; {tweetText: tweetText} ) );;
+        Clear( LocalTweetsToPost);;
+        Collect( LocalTweetsToPost; {tweetText: NewTweetTextInput.Text} );;
+        SaveData( LocalTweetsToPost; "LocalTweetsToPost" );;
         UpdateContext( {statusText: "Online data"} )
     )
     ```

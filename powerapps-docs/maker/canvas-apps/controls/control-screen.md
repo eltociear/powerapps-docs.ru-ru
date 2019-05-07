@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61548738"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="screen-control-in-powerapps"></a>Элемент управления "Экран" в PowerApps
 
@@ -61,13 +62,13 @@ ms.locfileid: "61548738"
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Distinct**(*источник*, *столбец*)](../functions/function-distinct.md)
+[**Distinct**(*источник*; *столбец*)](../functions/function-distinct.md)
 
 ## <a name="example"></a>Пример
 
 1. Добавьте элемент управления **[Переключатель](control-radio.md)**, назовите его **ScreenFills** и укажите для свойства **[Items](properties-core.md)** следующее значение:
 
-    `["Red", "Green"]`
+    `["Red"; "Green"]`
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
@@ -75,17 +76,17 @@ ms.locfileid: "61548738"
 
 1. В **источника**, добавьте **[фигуры](control-shapes-icons.md)** (например, стрелку) и задать его **[OnSelect](properties-core.md)** свойства Эта формула:
 
-    `Navigate(Target, ScreenTransition.Fade)`
+    `Navigate(Target; ScreenTransition.Fade)`
 
     Нужны дополнительные сведения о функции **[Navigate](../functions/function-navigate.md)** или [других функциях](../formula-reference.md)?
 
 1. В элементе **Target** добавьте элемент управления **[Фигура](control-shapes-icons.md)** (например, стрелку) и укажите для свойства **[OnSelect](properties-core.md)** следующую формулу:
 
-    `Navigate(Source, ScreenTransition.Fade)`
+    `Navigate(Source; ScreenTransition.Fade)`
 
 1. Укажите для свойства **[Fill](properties-color-border.md)** элемента **Target** следующую формулу:
 
-    `If("Red" in ScreenFills.Selected.Value, RGBA(255, 0, 0, 1), RGBA(54, 176, 75, 1))`
+    `If("Red" in ScreenFills.Selected.Value; RGBA(255; 0; 0; 1); RGBA(54; 176; 75; 1))`
 
 1. Выберите **источника** экране, а затем, удерживая нажатой клавишу Alt, выберите любой из параметров в **[Radio](control-radio.md)** управления, а затем выберите **[Фигуры](control-shapes-icons.md)** элемента управления.
 

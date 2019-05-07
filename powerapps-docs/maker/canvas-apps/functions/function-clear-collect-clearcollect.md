@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61546578"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>Функции Collect, Clear и ClearCollect в PowerApps
 
@@ -48,7 +49,7 @@ ms.locfileid: "61546578"
 
 Функция **Clear** удаляет все записи из коллекции.  Столбцы в коллекции остаются.
 
-Обратите внимание, что функция **Clear** работает только с коллекциями и не работает с источниками данных другого типа.  Для этой цели можно использовать формулу **[RemoveIf](function-remove-removeif.md)( *DataSource*, true )**.  Будьте осторожны, так как это приведет к удалению всех записей из хранилища источника данных и может повлиять на других пользователей.
+Обратите внимание, что функция **Clear** работает только с коллекциями и не работает с источниками данных другого типа.  Для этой цели можно использовать формулу **[RemoveIf](function-remove-removeif.md)( *DataSource*; true )**.  Будьте осторожны, так как это приведет к удалению всех записей из хранилища источника данных и может повлиять на других пользователей.
 
 Можно использовать функцию **[Remove](function-remove-removeif.md)** для выборочного удаления записей.
 
@@ -62,7 +63,7 @@ ms.locfileid: "61546578"
 
 ## <a name="syntax"></a>Синтаксис
 
-**Collect**( *DataSource*, *Item*, ... )
+**Collect**( *DataSource*; *Item*; ... )
 
 * *источник_данных* — обязательный аргумент. Это источник данных, в который необходимо добавить данные.  Если он еще не существует, создается новая коллекция.
 * *Item(s)*  — обязательный аргумент.  Одна или несколько записей или таблиц, которые необходимо добавить в источник данных.  
@@ -71,7 +72,7 @@ ms.locfileid: "61546578"
 
 * *Collection* — обязательный аргумент. Коллекция, которую необходимо очистить.
 
-**ClearCollect**( *Collection*, *Item*, ... )
+**ClearCollect**( *Collection*; *Item*; ... )
 
 * *Collection* — обязательный аргумент. Коллекция, которую необходимо очистить, а затем добавить в нее данные.
 * *Item(s)*  — обязательный аргумент.  Одна или несколько записей или таблиц, которые необходимо добавить в источник данных.  
@@ -86,8 +87,8 @@ ms.locfileid: "61546578"
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| **ClearCollect( IceCream, {&nbsp;Flavor:&nbsp;"Strawberry",&nbsp;Quantity:&nbsp;300&nbsp;} )** |Выполняется удаление всех данных из коллекции **IceCream** и добавляется запись, в которой указано количестве клубничного мороженого. |<style> img {Максимальная ширина: none} </style> ![таблицы с одной записью](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>Источник данных **IceCream** также был изменен. |
-| **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Выполняется добавление двух записей в коллекцию **IceCream**, в которой указано количество фисташкового и апельсинового мороженого. |![Таблица с двумя записями](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>Источник данных **IceCream** также был изменен. |
+| **ClearCollect( IceCream; {&nbsp;Flavor:&nbsp;"Strawberry";&nbsp;Quantity:&nbsp;300&nbsp;} )** |Выполняется удаление всех данных из коллекции **IceCream** и добавляется запись, в которой указано количестве клубничного мороженого. |<style> img {Максимальная ширина: none} </style> ![таблицы с одной записью](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>Источник данных **IceCream** также был изменен. |
+| **Collect( IceCream; {&nbsp;Flavor:&nbsp;"Pistachio";&nbsp;Quantity:&nbsp;40&nbsp;}; {&nbsp;Flavor:&nbsp;"Orange";&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Выполняется добавление двух записей в коллекцию **IceCream**, в которой указано количество фисташкового и апельсинового мороженого. |![Таблица с двумя записями](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>Источник данных **IceCream** также был изменен. |
 | **Clear( IceCream )** |Выполняется удаление всех записей из коллекции **IceCream**. |![Пустая таблица](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>Источник данных **IceCream** также был изменен. |
 
 Пошаговые примеры для создания коллекции, см. в разделе [Создание и обновление коллекции](../create-update-collection.md).

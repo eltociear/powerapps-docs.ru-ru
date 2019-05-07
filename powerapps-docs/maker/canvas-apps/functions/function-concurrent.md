@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61551478"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="concurrent-function-in-powerapps"></a>Функция Concurrent в PowerApps
 Оценивает несколько формул одновременно.
@@ -30,7 +31,7 @@ ms.locfileid: "61551478"
 
 Невозможно предсказать порядок, в котором формулы в функции **Concurrent** начинают и завершают вычисление. Формулы в функции **Concurrent** не должны содержать зависимости от других формул в той же функции **Concurrent**. В противном случае в PowerApps возникнет ошибка. Вы можете спокойно создавать зависимости от формул за пределами функции **Concurrent**, поскольку они будут выполнены до запуска функции **Concurrent**. Формулы после **параллельных** функции безопасно могут иметь зависимости в формулах в: они будет выполнить перед **параллельных** функцию завершения и переходит к следующей формуле в цепочке (Если вы Используйте **;** оператор). Остерегайтесь незаметных зависимостей от порядка, если вызываете функции или методы службы с побочными эффектами.
 
-Можно объединять в цепочку формулы вместе с **;** -оператор в аргумент **параллельных**. Например, **Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) )** вычисляет **Set( a, 1 ); Set( b, a+1 )** одновременно с **Set( x, 2 ); Set( y, x+2 )**. В этом случае зависимости в формулах допускаются: **a** устанавливается до **b**, а **x** устанавливается до **y**.
+Можно объединять в цепочку формулы вместе с **;** -оператор в аргумент **параллельных**. Например, **Concurrent( Set( a; 1 );; Set( b; a+1 ); Set( x; 2 );; Set( y; x+2 ) )** вычисляет **Set( a; 1 );; Set( b; a+1 )** одновременно с **Set( x; 2 );; Set( y; x+2 )**. В этом случае зависимости в формулах допускаются: **a** устанавливается до **b**, а **x** устанавливается до **y**.
 
 В зависимости от устройства или браузера, в котором выполняется приложение, только некоторые формулы могут вычисляться одновременно. Функция **Concurrent** использует доступные возможности и не завершится, пока не будут вычислены все формулы.
 
@@ -39,7 +40,7 @@ ms.locfileid: "61551478"
 Функцию **Concurrent** можно использовать только в [формулах поведения](../working-with-formulas-in-depth.md).
 
 ## <a name="syntax"></a>Синтаксис
-**Concurrent**( *Формула1*, *Формула2* [, ...] )
+**Concurrent**( *Формула1*; *Формула2* [; ...] )
 
 * *Формулы* — обязательный параметр. Формулы для одновременного вычисления. Необходимо указать по крайней мере две формулы.
 
@@ -55,11 +56,11 @@ ms.locfileid: "61551478"
 
 2. Добавьте элемент управления **[Кнопка](../controls/control-button.md)** и задайте следующую формулу в качестве значения свойства **OnSelect**:
 
-    ```powerapps-dot
-    ClearCollect( Product, '[SalesLT].[Product]' );
-    ClearCollect( Customer, '[SalesLT].[Customer]' );
-    ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ); 
-    ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
+    ```powerapps-comma
+    ClearCollect( Product; '[SalesLT].[Product]' );;
+    ClearCollect( Customer; '[SalesLT].[Customer]' );;
+    ClearCollect( SalesOrderDetail; '[SalesLT].[SalesOrderDetail]' );; 
+    ClearCollect( SalesOrderHeader; '[SalesLT].[SalesOrderHeader]' )
     ```
 
 3. В [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) или [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) включите средства разработчика для отслеживания сетевого трафика во время работы приложения.
@@ -78,12 +79,12 @@ ms.locfileid: "61551478"
 
 1. Добавьте второй элемент управления **[Кнопка](../controls/control-button.md)** и задайте следующую формулу в качестве значения свойства **OnSelect**:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Concurrent( 
-        ClearCollect( Product, '[SalesLT].[Product]' ), 
-        ClearCollect( Customer, '[SalesLT].[Customer]' ),
-        ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),
-        ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
+        ClearCollect( Product; '[SalesLT].[Product]' ); 
+        ClearCollect( Customer; '[SalesLT].[Customer]' );
+        ClearCollect( SalesOrderDetail; '[SalesLT].[SalesOrderDetail]' );
+        ClearCollect( SalesOrderHeader; '[SalesLT].[SalesOrderHeader]' )
     )
     ```
 
@@ -111,19 +112,19 @@ ms.locfileid: "61551478"
 
 3. Добавьте элемент управления **Кнопка** и задайте следующую формулу в качестве значения свойства **OnSelect**:
 
-    ```powerapps-dot
-    Set( StartTime, Value( Now() ) );
+    ```powerapps-comma
+    Set( StartTime; Value( Now() ) );;
     Concurrent(
-        Set( FRTrans, MicrosoftTranslator.Translate( TextInput1.Text, "fr" ) ); 
-            Set( FRTransTime, Value( Now() ) ),
-        Set( DETrans, MicrosoftTranslator.Translate( TextInput1.Text, "de" ) ); 
-            Set( DETransTime, Value( Now() ) )
-    );
-    Collect( Results,
+        Set( FRTrans; MicrosoftTranslator.Translate( TextInput1.Text; "fr" ) );; 
+            Set( FRTransTime; Value( Now() ) );
+        Set( DETrans; MicrosoftTranslator.Translate( TextInput1.Text; "de" ) );; 
+            Set( DETransTime; Value( Now() ) )
+    );;
+    Collect( Results;
         { 
-            Input: TextInput1.Text,
-            French: FRTrans, FrenchTime: FRTransTime - StartTime, 
-            German: DETrans, GermanTime: DETransTime - StartTime, 
+            Input: TextInput1.Text;
+            French: FRTrans; FrenchTime: FRTransTime - StartTime; 
+            German: DETrans; GermanTime: DETransTime - StartTime; 
             FrenchFaster: FRTransTime < DETransTime
         }
     )

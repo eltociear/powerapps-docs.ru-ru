@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61560488"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="text-input-control-in-powerapps"></a>Элемент управления "Текстовое поле" в PowerApps
 Поле, в котором пользователь может вводить текст, числа и другие данные.
@@ -141,7 +142,7 @@ ms.locfileid: "61560488"
    
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте кнопку, укажите для ее свойства **[Text](properties-core.md)** значение **Добавить**, а для свойства **[OnSelect](properties-core.md)** следующую формулу:<br>
-   **Collect(Names, {FirstName:inputFirst.Text, LastName:inputLast.Text})**
+   **Collect(Names; {FirstName:inputFirst.Text; LastName:inputLast.Text})**
    
     Нужны дополнительные сведения о функции **[Collect](../functions/function-clear-collect-clearcollect.md)** или [других функциях](../formula-reference.md)?
 3. Добавьте коллекцию текстов в портретной (вертикальной) ориентации, укажите для свойства **[Items](properties-core.md)** значение **Names**, а для свойства **[Text](properties-core.md)** элемента **Subtitle1** значение **ThisItem.FirstName**.
@@ -154,7 +155,7 @@ ms.locfileid: "61560488"
 1. Добавьте элемент управления "Текстовое поле", назовите его **inputPassword** и укажите для свойства **Mode** значение **Password**.
 
 1. Добавьте метку и установите в ее свойстве **[Text](properties-core.md)** формулу:<br>
-   **If(inputPassword.Text = "P@ssw0rd", "Доступ предоставлен", "Доступ запрещен")**
+   **If(inputPassword.Text = "P@ssw0rd"; "Доступ предоставлен"; "Доступ запрещен")**
 
     Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 

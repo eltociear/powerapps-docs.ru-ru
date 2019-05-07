@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "63321448"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="show-edit-or-add-a-record-in-a-canvas-app"></a>Отображение, редактирование и Добавление записи в приложение на основе холста
 
@@ -56,7 +57,7 @@ ms.locfileid: "63321448"
 
 1. Формы задайте **[DataSource](controls/control-form-detail.md)** свойства **FlooringEstimates** и его **[элемент](controls/control-form-detail.md)** свойства Эта формула:
 
-    `First(Filter(FlooringEstimates, Name=ChooseProduct.Selected.Value))`
+    `First(Filter(FlooringEstimates; Name=ChooseProduct.Selected.Value))`
 
    Формула настроена таким образом, что после завершения настройки формы в ней будет отображаться запись, выбранная пользователем в списке **ChooseProduct**.
 

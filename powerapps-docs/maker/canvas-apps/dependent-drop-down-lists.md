@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61550881"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Создание зависимых раскрывающихся списков в приложение на основе холста
 
@@ -138,7 +139,7 @@ ms.locfileid: "61550881"
 
 1. Задайте **элементы** свойство **ddlocation** следующую формулу:
 
-    `Distinct(Locations, Location)`
+    `Distinct(Locations; Location)`
 
 1. (необязательно) Удерживая нажатой клавишу Alt, откройте **ddLocation**и убедитесь, что в списке отображается трех расположениях.
 
@@ -158,7 +159,7 @@ ms.locfileid: "61550881"
 
     **Элементы** свойство **ddDepartment** задайте следующую формулу:
 
-    `Filter(Locations, Location = ddLocation.Selected.Result)`
+    `Filter(Locations; Location = ddLocation.Selected.Result)`
 
     Эта формула фильтрует элементы в **ddDepartment** на пользователь выбирает в основе **ddLocation**. Такая конфигурация гарантирует, что «дочерняя» список отделов отражает данные к расположению «родительский» как **расположения** Указывает список в SharePoint.
 

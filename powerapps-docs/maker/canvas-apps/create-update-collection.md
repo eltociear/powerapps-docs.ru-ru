@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61561733"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>Создание и обновление коллекции в приложение на основе холста
 
@@ -50,15 +51,15 @@ ms.locfileid: "61561733"
 
 1. В строке формул замените **DropDownSample** такое выражение:
 
-    `["Red","Green","Blue"]`
+    `["Red";"Green";"Blue"]`
 
 1. Добавить **кнопку** , назначьте его **текст** свойства **«Добавить»** и задайте его **OnSelect** следующую формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Collect(
-        ProductList,
+        ProductList;
         {
-            Product: ProductName.Text,
+            Product: ProductName.Text;
             Color: Colors.Selected.Value
         }
     )
@@ -106,7 +107,7 @@ ms.locfileid: "61561733"
 
 1. Значок **OnSelect** следующую формулу:
 
-    `Remove(ProductList, ThisItem)`
+    `Remove(ProductList; ThisItem)`
 
 1. За пределами коллекции, добавьте кнопку, задайте его **текст** свойства **«Clear»** и задайте его **OnSelect** следующую формулу:
 
@@ -120,7 +121,7 @@ ms.locfileid: "61561733"
 
 1. Добавьте кнопку и установите для ее свойства **[OnSelect](controls/properties-core.md)** эту функцию, заменив *ListName* именем вашего списка SharePoint:<br>
 
-    `Collect(MySPCollection, ListName)`
+    `Collect(MySPCollection; ListName)`
 
     Эта функция создает коллекцию с именем **MySPCollection**, которая содержит те же данные, что и ваш список SharePoint.
 

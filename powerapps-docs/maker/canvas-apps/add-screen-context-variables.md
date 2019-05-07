@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "63321363"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="add-a-screen-to-a-canvas-app-and-navigate-between-screens"></a>Добавление и переключение экранов в приложении на основе холста
 
@@ -65,7 +66,7 @@ ms.locfileid: "63321363"
 
 4. На экране **Target** добавьте элемент **Back arrow** (Стрелка "Назад") и установите для ее свойства **[OnSelect](controls/properties-core.md)** следующую формулу:
 
-    `Navigate(Source, ScreenTransition.Fade)`
+    `Navigate(Source; ScreenTransition.Fade)`
 
 5. Удерживая нажатой клавишу Alt, переключение между экранами, щелкнув стрелку на каждом экране.
 

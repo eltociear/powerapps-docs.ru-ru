@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61551337"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="concat-and-concatenate-functions-in-powerapps"></a>Функции Concat и Concatenate в PowerApps
 Объединяют отдельные строки текста и строки в [таблицах](../working-with-tables.md).
@@ -33,12 +34,12 @@ ms.locfileid: "61551337"
 Функция **Concatenate** объединяет сочетание отдельных строк и таблицу из одного столбца со строками. При использовании с отдельными строками эта функция действует как [оператор](operators.md) **&**. Формулу, которая включает в себя функцию **[ShowColumns](function-table-shaping.md)**, можно использовать для создания из таблицы с несколькими столбцами таблицы с одним столбцом.
 
 ## <a name="syntax"></a>Синтаксис
-**Concat**( *Table*, *Formula* )
+**Concat**( *Table*; *Formula* )
 
 * *Table* — обязательный аргумент.  Таблица, для которой выполняется операция.
 * *Formula* — обязательный аргумент.  Формула, которую необходимо применить к записям таблицы.
 
-**Concatenate**( *Строка1* [, *Строка2*, ...] )
+**Concatenate**( *Строка1* [; *Строка2*; ...] )
 
 * *Строка* — обязательные аргументы.  Сочетание отдельных строк или таблица из одного столбца со строками.
 
@@ -46,22 +47,22 @@ ms.locfileid: "61551337"
 #### <a name="concat"></a>Concat
 1. Добавьте элемент управления **[Кнопка](../controls/control-button.md)** и задайте следующую формулу в качестве значения свойства **[OnSelect](../controls/properties-core.md)**:
    
-    **Collect(Products, {String:"Violin", Wind:"Trombone", Percussion:"Bongos"}, {String:"Cello", Wind:"Trumpet", Percussion:"Tambourine"})**
+    **Collect(Products; {String:"Violin"; Wind:"Trombone"; Percussion:"Bongos"}; {String:"Cello"; Wind:"Trumpet"; Percussion:"Tambourine"})**
 2. Нажмите клавишу F5, а затем нажмите клавишу Esc, чтобы вернуться в рабочую область конструирования.
 3. Добавьте элемент управления **[Метка](../controls/control-text-box.md)** и задайте в качестве значения свойства **[Text](../controls/properties-core.md)** следующую формулу:
    
-    **Concat(Products, String & " ")**
+    **Concat(Products; String & " ")**
    
     Метка отобразит **Violin Cello**.
 
 #### <a name="concatenate"></a>Concatenate
 1. Добавьте элемент управления **[Текстовое поле](../controls/control-text-input.md)** и назовите его **AuthorName**.
 2. Добавьте элемент управления **[Метка](../controls/control-text-box.md)** и задайте в качестве значения свойства **[Text](../controls/properties-core.md)** следующую формулу:<br>
-   **Concatenate("By ", AuthorName.Text)**
+   **Concatenate("By "; AuthorName.Text)**
 3. Введите свое имя вместо **AuthorName**.
    
     Метка отобразит ваше имя после **By**.
 
 Если у вас была таблица **Employees**, содержавшая столбцы **FirstName** и **LastName**, то данная формула объединит данные из всех строк этих столбцов.
-<br>**Concatenate(Employees.FirstName, " ", Employees.LastName)**
+<br>**Concatenate(Employees.FirstName; " "; Employees.LastName)**
 

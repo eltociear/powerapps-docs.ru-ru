@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61540780"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="reference-information-about-the-people-screen-template-for-canvas-apps"></a>Справочные сведения о шаблоне экрана пользователей для приложений на основе холста
 
@@ -50,11 +51,11 @@ ms.locfileid: "61540780"
 * Свойство: **Элементы**<br>
     Значение: Логику для поиска пользователей, когда пользователь начинает ВВОД:
     
-    ```powerapps-dot
-    If( !IsBlank( Trim( TextSearchBox.Text ) ), 
+    ```powerapps-comma
+    If( !IsBlank( Trim( TextSearchBox.Text ) ); 
         'Office365Users'.SearchUser(
             {
-                searchTerm: Trim( TextSearchBox.Text ), 
+                searchTerm: Trim( TextSearchBox.Text ); 
                 top: 15
             }
         )
@@ -76,12 +77,12 @@ ms.locfileid: "61540780"
 * Свойство: **OnSelect**<br>
     Значение: Код, чтобы добавить пользователя в коллекцию уровня приложения, а затем выберите пользователя:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Concurrent(
-        Set( _selectedUser, ThisItem ),
-        Reset( TextSearchBox ),
-        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ), 
-            Collect( MyPeople, ThisItem )
+        Set( _selectedUser; ThisItem );
+        Reset( TextSearchBox );
+        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ); 
+            Collect( MyPeople; ThisItem )
         )
     )
     ```
@@ -98,9 +99,9 @@ ms.locfileid: "61540780"
 * Свойство: **Изображение**<br>
     Значение: Логика для извлечения фотографию профиля пользователя.
 
-    ```powerapps-dot
+    ```powerapps-comma
     If( !IsBlank( ThisItem.Id ) && 
-            'Office365Users'.UserPhotoMetadata( ThisItem.Id ).HasPhoto,
+            'Office365Users'.UserPhotoMetadata( ThisItem.Id ).HasPhoto;
         'Office365Users'.UserPhoto( ThisItem.Id )
     )
     ```
@@ -126,7 +127,7 @@ ms.locfileid: "61540780"
 ![Элемент управления PeopleAddedGallery заголовок](media/people-screen/people-people-gall-title.png)
 
 * Свойство: **OnSelect**<br>
-    Значение: `Set( _selectedUser, ThisItem )`
+    Значение: `Set( _selectedUser; ThisItem )`
 
 Наборы **_selectedUser** переменных для элемента, выбранного в **EmailPeopleGallery**.
 
@@ -135,7 +136,7 @@ ms.locfileid: "61540780"
 ![Элемент управления iconRemove PeopleAddedGallery](media/people-screen/people-people-gall-delete.png)
 
 * Свойство: **OnSelect**<br>
-    Значение: `Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) )`
+    Значение: `Remove( MyPeople; LookUp( MyPeople; UserPrincipalName = ThisItem.UserPrincipalName ) )`
 
 Ищет запись в **MyPeople** коллекции, где **UserPrincipalName** соответствует **UserPrincipalName** выбранного элемента, а затем удаляет записи из Коллекция.
 

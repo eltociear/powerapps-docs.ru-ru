@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61548715"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="label-control-in-canvas-apps"></a>Метки элемента управления в приложениях на основе холста
 
@@ -130,7 +131,7 @@ ms.locfileid: "61548715"
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Text**(*значение*, "*формат_текста*")](../functions/function-text.md)
+[**Text**(*значение*; "*формат_текста*")](../functions/function-text.md)
 
 ## <a name="examples"></a>Примеры
 
@@ -155,7 +156,7 @@ ms.locfileid: "61548715"
 Здесь вы создадите набор данных с названием **CityPopulations**, содержащий данные о численности населения в разных городах Европы. Затем вы покажете эти данные в коллекции, содержащей три метки, и укажете тип данных, отображаемых в каждой метке.
 
 1. Добавьте кнопку и задайте следующую формулу в качестве значения свойства **[OnSelect](properties-core.md)**:<br>
-   **ClearCollect(CityPopulations, {City:"Лондон", Country:"Соединенное Королевство", Population:8615000}, {City:"Берлин", Country:"Германия", Population:3562000}, {City:"Мадрид", Country:"Испания", Population:3165000}, {City:"Рим", Country:"Италия", Population:2874000}, {City:"Париж", Country:"Франция", Population:2273000}, {City:"Гамбург", Country:"Германия", Population:1760000}, {City:"Барселона", Country:"Испания", Population:1602000}, {City:"Мюнхен", Country:"Германия", Population:1494000}, {City:"Милан", Country:"Италия", Population:1344000})**
+   **ClearCollect(CityPopulations; {City:"Лондон"; Country:"Соединенное Королевство"; Population:8615000}; {City:"Берлин"; Country:"Германия"; Population:3562000}; {City:"Мадрид"; Country:"Испания"; Population:3165000}; {City:"Рим"; Country:"Италия"; Population:2874000}; {City:"Париж"; Country:"Франция"; Population:2273000}; {City:"Гамбург"; Country:"Германия"; Population:1760000}; {City:"Барселона"; Country:"Испания"; Population:1602000}; {City:"Мюнхен"; Country:"Германия"; Population:1494000}; {City:"Милан"; Country:"Италия"; Population:1344000})**
 2. Нажмите клавишу F5, нажмите кнопку, затем нажмите клавишу ESC.
 3. Добавьте текстовую коллекцию и укажите для свойства **[Items](properties-core.md)** значение **CityPopulations**.
 
