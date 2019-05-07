@@ -8,23 +8,18 @@ ms.assetid: ''
 author: nkrb
 ms.author: nabuthuk
 manager: Jdaly
-ms.openlocfilehash: 8351f48019635dd0a6ec9921d8888d8ca4b77f80
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 4e84956807b91e535e709aa2e0739fdf121bc2f7
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63394390"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "64524294"
 ---
 # <a name="powerapps-component-framework-api-reference"></a>Справочник по API платформы компонентов PowerApps
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Этот раздел содержит справочную документацию для создания пользовательских элементов управления с помощью платформы компонентов PowerApps.
-
-> [!IMPORTANT]
-> - Платформа компонентов PowerApps доступна в виде предварительной версии.
-> - [!INCLUDE[cc_preview_features_definition](../../../includes/cc-preview-features-definition.md)] 
-> - [!INCLUDE[cc_preview_features_no_MS_support](../../../includes/cc-preview-features-no-ms-support.md)]
+Этот раздел содержит справочную документацию для создания пользовательских компонентов с помощью платформы компонентов PowerApps.
 
 |Имя|Описание|
 |----|-----------|
