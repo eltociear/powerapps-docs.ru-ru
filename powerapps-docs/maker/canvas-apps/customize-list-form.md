@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d33f541ea698b02a662edb652f809095f47acc6e
-ms.sourcegitcommit: f84095d964fe1fe5cc5290e5edbee284bd768e1e
+ms.openlocfilehash: 66fe60c0d74c86705615522621d8f277fcc343ae
+ms.sourcegitcommit: dbd922de8f2e97a478df64e7e9ba33b48574af5c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59042739"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65088177"
 ---
 # <a name="customize-a-sharepoint-list-form-by-using-powerapps"></a>Настройка формы списка SharePoint с помощью PowerApps
 
@@ -71,7 +71,7 @@ ms.locfileid: "59042739"
 
 1. На панели навигации слева, разверните **Details_DataCard1**и обратите внимание, цифра, который отображается в конце **DataCardValue**.
 
-1. Задайте **видимость** свойство **цвет**, **доступности**, и **цена** карты следующую формулу (заменив, при необходимости цифра, который вы записали на предыдущем шаге):
+1. Задайте **Visible** свойство **цвет**, **доступности**, и **цена** карты эту формулу (заменив, при необходимости цифра с того, который вы записали на предыдущем шаге):
 
     **Если (DataCardValue2.Value = true, true)**
 
@@ -197,7 +197,7 @@ ms.locfileid: "59042739"
 
 **ВОПРОС** Требуется лицензия на PowerApps для создания или использовать настраиваемые формы списков?
 
-**ОТВЕТ** Вам потребуется [план Office 365, включающий PowerApps](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus.md#licenses).
+**ОТВЕТ** Вам потребуется [план Office 365, включающий PowerApps](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus#licenses).
 
 **ВОПРОС** Что происходит при гостевых пользователей доступа к списку, для которого создана настраиваемая форма?
 

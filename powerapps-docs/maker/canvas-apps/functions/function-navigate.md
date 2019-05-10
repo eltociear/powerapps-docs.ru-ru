@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 0033d0a2d7473e6aaeac1e8533f62873e0d2f49a
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321957"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64670920"
 ---
 # <a name="back-and-navigate-functions-in-powerapps"></a>Функции Back и Navigate в PowerApps
 Эти функции изменяют отображаемый экран.
@@ -60,7 +59,7 @@ ms.PowerAppsDecimalTransform: true
 ## <a name="syntax"></a>Синтаксис
 **Back**()
 
-**Перейдите**( *экрана* [; *перехода* [; *UpdateContextRecord* ]])
+**Перейдите**( *экрана* [, *перехода* [, *UpdateContextRecord* ]])
 
 * *Screen* — обязательный аргумент. Отображаемый экран.
 * *Переход* — необязательный.  Визуальный переход, используемый при переходе между текущим экраном и следующим. Допустимые значения для этого аргумента см. в предыдущем разделе. Значение по умолчанию — **None**.
@@ -71,15 +70,15 @@ ms.PowerAppsDecimalTransform: true
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
 | **Перейдите (подробности)** |Отображается экран **Details** без эффекта перехода или изменения значения переменной контекста. |Экран **Details** отображается мгновенно. |
-| **Navigate( Details; ScreenTransition.Fade )** |Отображается экран **Details** с переходом типа **Fade**.  Значение переменной контекста не меняется. |Текущий экран исчезает, и отображается экран **Details**. |
-| **Navigate( Details; ScreenTransition.Fade; {&nbsp;ID:&nbsp;12&nbsp;} )** |Отображается экран **Details** с переходом типа **Fade**, и значение переменной контекста **ID** меняется на **12**. |Текущий экран исчезает, и отображается экран **Details**, а для переменной контекста **ID** задается значение **12**. |
-| **Navigate( Details; ScreenTransition.Fade; {&nbsp;ID:&nbsp;12&nbsp;;&nbsp;Shade:&nbsp;Color.Red&nbsp;} )** |Отображается экран **Details** с переходом типа **Fade**. Значение переменной контекста **ID** изменяется на **12**, а значение переменной контекста **Shade** — на **Color.Red**. |Текущий экран исчезает, и отображается экран **Details**. Для переменной контекста **ID** на экране **Details** задается значение **12**, а для переменной контекста **Shade** — значение **Color.Red**. Если на экране **Details** задать для свойства **Fill** элемента управления значение **Shade**, этот элемент управления будет отображаться красным цветом. |
+| **Navigate( Details, ScreenTransition.Fade )** |Отображается экран **Details** с переходом типа **Fade**.  Значение переменной контекста не меняется. |Текущий экран исчезает, и отображается экран **Details**. |
+| **Navigate( Details, ScreenTransition.Fade, {&nbsp;ID:&nbsp;12&nbsp;} )** |Отображается экран **Details** с переходом типа **Fade**, и значение переменной контекста **ID** меняется на **12**. |Текущий экран исчезает, и отображается экран **Details**, а для переменной контекста **ID** задается значение **12**. |
+| **Navigate( Details, ScreenTransition.Fade, {&nbsp;ID:&nbsp;12&nbsp;,&nbsp;Shade:&nbsp;Color.Red&nbsp;} )** |Отображается экран **Details** с переходом типа **Fade**. Значение переменной контекста **ID** изменяется на **12**, а значение переменной контекста **Shade** — на **Color.Red**. |Текущий экран исчезает, и отображается экран **Details**. Для переменной контекста **ID** на экране **Details** задается значение **12**, а для переменной контекста **Shade** — значение **Color.Red**. Если на экране **Details** задать для свойства **Fill** элемента управления значение **Shade**, этот элемент управления будет отображаться красным цветом. |
 
 ### <a name="step-by-step"></a>Пошаговое руководство
 1. Присвойте экрану по умолчанию имя **DefaultScreen**, добавьте к нему метку и задайте для свойства **[Text](../controls/properties-core.md)** этой метки значение **Default**.
 2. Добавьте экран с именем **AddlScreen**.
 3. Для экрана **AddlScreen** добавьте метку и задайте свойству **[Text](../controls/properties-core.md)** метки значение **Addl**.
-4. Добавьте кнопку на экран **AddlScreen** и задайте в качестве значения свойства **[OnSelect](../controls/properties-core.md)** следующую функцию:<br>**Navigate(DefaultScreen; ScreenTransition.Fade)**
+4. Добавьте кнопку на экран **AddlScreen** и задайте в качестве значения свойства **[OnSelect](../controls/properties-core.md)** следующую функцию:<br>**Navigate(DefaultScreen, ScreenTransition.Fade)**
 5. На экране **AddlScreen** нажмите клавишу F5, а затем нажмите кнопку.<br>**DefaultScreen** предоставляется через переход будет незаметным.
 
 [Другой пример](../add-screen-context-variables.md)

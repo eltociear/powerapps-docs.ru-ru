@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e4d3d2e769951ed75ddeeb57f7fe4c0b350d02e7
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: ed812fb8da85d36ff7c0790fe401b33043786cb8
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61550304"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64670390"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Интеграция приложений на основе холста в веб-сайты и другие службы
 Приложения, которые вы создаете часто являются наиболее полезны, когда они доступны прямо там, где сотрудники выполняют свою работу. Путем внедрения приложений на основе холста в iframe, эти приложения можно интегрировать в веб-сайтов и других служб, таких как Power BI или SharePoint.
@@ -38,8 +38,7 @@ ms.locfileid: "61550304"
 При наличии приложения, которое вы хотите внедрить, в первую очередь необходимо задать параметры для универсального кода ресурса (URI), чтобы IFrame знал, где найти ваше приложение. URI имеет следующий вид:
 
 ```
-https://web.powerapps.com/webplayer/iframeapp?source=iframe
-&appId=/providers/Microsoft.PowerApps/apps/[AppID]
+https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Microsoft.PowerApps/apps/[AppID]
 ```
 
 > [!NOTE]
@@ -70,7 +69,7 @@ https://web.powerapps.com/webplayer/iframeapp?source=iframe
 ## <a name="embed-your-app-in-a-website"></a>Внедрение приложения на веб-сайт
 Внедрить приложение теперь так же просто, как добавить IFrame в HTML-код вашего сайта (или любую другую службу, поддерживающую IFrame, например Power BI или SharePoint):
 
-```
+```html
 <iframe width="[W]" height="[H]" src="https://web.powerapps.com/webplayer/iframeapp?source=website&screenColor=rgba(165,34,55,1)&appId=/providers/Microsoft.PowerApps/apps/[AppID]" allow="geolocation; microphone; camera"/>
 ```
 

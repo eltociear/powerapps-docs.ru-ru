@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c57375906ba900a3112b9d7999d3941f14e9af58
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: 7eb5e7385c57e0cabaab1c8457f17dc1feff96fb
+ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321253"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64671045"
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Создание отчета Power BI для анализа проектов
 > [!NOTE]
@@ -186,7 +185,7 @@ ms.PowerAppsDecimalTransform: true
 1. Оставаясь в таблице "Dates", нажмите кнопку **Создать столбец**.
    
     ![Создать столбец](./media/sharepoint-scenario-build-report/05-02-00-modeling-column.png)
-2. Введите эту формулу в строке формул: **IsWeekDay = SWITCH(WEEKDAY(Dates[Date]); 1;0;7;0;1)**.
+2. Введите эту формулу в строке формул: **IsWeekDay = SWITCH(WEEKDAY(Dates[Date]), 1,0,7,0,1)**.
    
     Эта формула определяет, является ли дата в столбце **Date** рабочим днем. Если дата является рабочим днем, столбец **IsWeekDay** возвращает значение 1. В противном случае он возвращает значение 0.
 3. Нажмите клавишу ВВОД, чтобы добавить столбец **IsWeekDay** в таблицу **Dates**.

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ddd11ddd40792ef1042536041554737ddb16547b
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: af07bcb7b343a14f6342c53ed2e083e214a12368
+ms.sourcegitcommit: b27a5206f8c7b4b4c1bcca814a1f7c32724c1fcf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61562722"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65206380"
 ---
 # <a name="create-responsive-layouts-in-canvas-apps"></a>Создание быстро реагирующих макетов в приложениях на основе холста
 
@@ -45,9 +44,9 @@ ms.PowerAppsDecimalTransform: true
 
 Чтобы реагировать на изменение размеров экрана макеты вашего приложения, вы будете писать формулы, использующие **ширины** и **высота** свойства экрана. Чтобы отобразить эти свойства, открытие приложения в PowerApps Studio и выберите экран. Формулы по умолчанию для этих свойств отображаются на **Дополнительно** вкладку на панели справа.
 
-**Width** (Ширина)  = `Max(App.Width; App.DesignWidth)`.
+**Width** (Ширина)  = `Max(App.Width, App.DesignWidth)`.
 
-**Высота** = `Max(App.Height; App.DesignHeight)`
+**Высота** = `Max(App.Height, App.DesignHeight)`
 
 Эти формулы ссылаются на **ширины**, **высота**, **DesignWidth**, и **DesignHeight** свойств приложения. Приложения **ширины** и **высота** свойства соответствуют размеры окна устройство или браузер, в котором выполняется приложение. Если пользователь изменяет размер окна браузера (или повороте устройства, если вы отключили **заблокировать ориентацию**), динамически изменять значения этих свойств. Формулы на экране **ширины** и **высота** свойств вычисляются в том случае, если изменяются эти значения.
 
@@ -137,7 +136,7 @@ ms.PowerAppsDecimalTransform: true
 | Нижнюю границу **C** выровнены с нижним краем элемента **D** | **Y** | `D.Y + D.Height - C.Height` | ![Пример шаблона](media/create-responsive-layout/d4.png) |
 | **C** по центру по горизонтали относительно **D** | **X** | `D.X + (D.Width - C.Width) / 2`  | ![Пример шаблона](media/create-responsive-layout/d5.png) |
 | **C** вертикально по центру относительно **D** | **Y** | `D.Y + (D.Height - C.Height) /2` | ![Пример шаблона](media/create-responsive-layout/d6.png) |
-| **C** расположенный справа от **D** с задержка N | **X** | `D.X + D.Width - N` | ![Пример шаблона](media/create-responsive-layout/d7.png) |
+| **C** расположенный справа от **D** с задержка N | **X** | `D.X + D.Width + N` | ![Пример шаблона](media/create-responsive-layout/d7.png) |
 | **C** расположен ниже **D** с задержка *N*             | **Y** | `D.Y + D.Height + N` | ![Пример шаблона](media/create-responsive-layout/d8.png) |
 | **C** заполняет пространство между **D** и правым краем родительского | **X** | `D.X + D.Width` | ![Пример шаблона](media/create-responsive-layout/d9.png) |
 |  | **Ширина** | `Parent.Width - C.X` |  |
@@ -186,16 +185,16 @@ ms.PowerAppsDecimalTransform: true
 
 Формулы, используемые по умолчанию для экрана **ширины** и **высота** свойства, как в этом разделе, как описано выше, не обязательно обеспечивать хорошие условия работы при повороте устройства пользователем. Например, есть приложение, предназначенное для телефоне в книжной ориентации **DesignWidth** 640 и **DesignHeight** из 1136. То же приложение на телефоне в альбомной ориентации будет иметь следующие значения свойств:
 
-- Экран **ширины** свойству `Max(App.Width; App.DesignWidth)`. Приложения **ширины** (1136) больше, чем его **DesignWidth** (640), поэтому формула возвращает значение 1136.
-- Экран **высота** свойству `Max(App.Height; App.DesignHeight)`. Приложения **высота** (640) меньше, чем его **DesignHeight** (1136), поэтому формула возвращает значение 1136.
+- Экран **ширины** свойству `Max(App.Width, App.DesignWidth)`. Приложения **ширины** (1136) больше, чем его **DesignWidth** (640), поэтому формула возвращает значение 1136.
+- Экран **высота** свойству `Max(App.Height, App.DesignHeight)`. Приложения **высота** (640) меньше, чем его **DesignHeight** (1136), поэтому формула возвращает значение 1136.
 
 Экран **высота** из 1136 и устройства высоту (в этом ориентация) 640, пользователь должен прокрутить экран по вертикали, чтобы отображать все его содержимое, которое может быть интерфейс, который вы хотите.
 
 Для адаптации экрана **ширины** и **высота** свойства для ориентации устройства, можно использовать эти формулы:
 
-**Width** (Ширина)  = `Max(App.Width; If(App.Width < App.Height; App.DesignWidth; App.DesignHeight))`.
+**Width** (Ширина)  = `Max(App.Width, If(App.Width < App.Height, App.DesignWidth, App.DesignHeight))`.
 
-**Высота** = `Max(App.Height; If(App.Width < App.Height; App.DesignHeight; App.DesignWidth))`
+**Высота** = `Max(App.Height, If(App.Width < App.Height, App.DesignHeight, App.DesignWidth))`
 
 Эти формулы замены приложения **DesignWidth** и **DesignHeight** значения, в зависимости от ширины устройства меньше, чем высота (книжная ориентация) или больше, чем высота (альбомная ориентация) .
 
@@ -210,10 +209,10 @@ ms.PowerAppsDecimalTransform: true
 |--|----------|---|
 | **верхний** | **X** | `0` |
 | **верхний** | **Y** | `0` |
-| **верхний** | **Ширина** | `If(Parent.Orientation = Layout.Vertical; Parent.Width; Parent.Width / 2)` |
-| **верхний** | **Высота**   | `If(Parent.Orientation = Layout.Vertical; Parent.Height / 2; Parent.Height)` |
-| **нижний** | X | `If(Parent.Orientation = Layout.Vertical; 0; Upper.X + Upper.Width)`  |
-| **нижний** | Y | `If(Parent.Orientation = Layout.Vertical; Upper.Y + Upper.Height; 0)` |
+| **верхний** | **Ширина** | `If(Parent.Orientation = Layout.Vertical, Parent.Width, Parent.Width / 2)` |
+| **верхний** | **Высота**   | `If(Parent.Orientation = Layout.Vertical, Parent.Height / 2, Parent.Height)` |
+| **нижний** | X | `If(Parent.Orientation = Layout.Vertical, 0, Upper.X + Upper.Width)`  |
+| **нижний** | Y | `If(Parent.Orientation = Layout.Vertical, Upper.Y + Upper.Height, 0)` |
 | **нижний** | **Ширина** | `Parent.Width - Lower.X` |
 | **нижний** | **Высота** | `Parent.Height - Lower.Y` |
 
@@ -240,7 +239,7 @@ ms.PowerAppsDecimalTransform: true
 
 Если требуется, чтобы элемент управления и занимают разные доля ширину экрана, в зависимости от размера экрана, задать для элемента управления **ширины** следующую формулу:
 
-```
+```powerapps-dot
 Parent.Width *  
     Switch(Parent.Size,  
         ScreenSize.Small, 0.5,  
@@ -253,7 +252,7 @@ Parent.Width *
 
 Экран **размер** свойство вычисляется путем сравнения экрана **ширины** свойства со значениями в приложения **SizeBreakpoints** свойство. Это свойство является таблица с одним столбцом чисел, указывающий ширину точки останова, которые отделяют размеры именованных экрана:
 
-В приложении, созданном для планшета или в Интернете, значение по умолчанию, в приложении **SizeBreakpoints** свойства **[600; 900; 1200]**. В приложении, созданном для телефонов, значением является **[1200; 1800; 2400]**. (Значения для мобильных приложений вдвое, так как такие приложения используют координаты, эффективно double координаты, используемые в других приложениях.)
+В приложении, созданном для планшета или в Интернете, значение по умолчанию, в приложении **SizeBreakpoints** свойства **[600, 900, 1200]**. В приложении, созданном для телефонов, значением является **[1200, 1800, 2400]**. (Значения для мобильных приложений вдвое, так как такие приложения используют координаты, эффективно double координаты, используемые в других приложениях.)
 
 ![значения по умолчанию свойства App.SizeBreakpoints](media/create-responsive-layout/default-breakpoints.png)
 
