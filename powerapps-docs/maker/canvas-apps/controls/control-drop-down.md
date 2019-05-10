@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2283f77f7e1c09ceade63f96003fefabc5e92539
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 02e8477873adad476c65e513a470e027aee5cd5c
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544276"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517389"
 ---
 # <a name="drop-down-control-in-powerapps"></a>Элемент управления "Раскрывающийся список" в PowerApps
 Раскрывающийся список — это список, у которого в свернутом состоянии виден только первый элемент.
@@ -34,7 +33,9 @@ ms.PowerAppsDecimalTransform: true
   
 **Value** — столбец данных, который вы хотите отобразить в элементе управления (например, если источник данных имеет несколько столбцов).
 
-**Selected** — выбранный элемент.
+**Выбранный** — запись данных, представляющий выбранный элемент.
+
+**AllowEmptySelection** определяет, когда в элементе управления отображается пустое выделение, если элемент не был выбран. Пользователям приложения также можно очищать его выбор, выбрав пустой элемент.
 
 ## <a name="additional-properties"></a>Дополнительные свойства
 **[AccessibleLabel](properties-accessibility.md)** — метка для средств чтения с экрана.
@@ -99,6 +100,8 @@ ms.PowerAppsDecimalTransform: true
 
 **[Reset](properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.
 
+**(Устарело) SelectedText** — строковое значение, представляющее выбранный элемент.
+
 **[SelectionColor](properties-color-border.md)**  — цвет текста выбранного элемента или элементов списка или цвет инструмента выделения в элементе управления рукописным вводом.
 
 **[SelectionFill](properties-color-border.md)**  — цвет фона выбранного элемента или элементов списка или выделенной области элемента управления "Ввод с помощью пера".
@@ -127,7 +130,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Добавьте элемент управления **Раскрывающийся список**, а затем установите для его свойства **[Items](properties-core.md)** следующее выражение:
 
-    `["Seattle"; "Tokyo"; "London"; "Johannesburg"; "Rio de Janeiro"]`
+    `["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]`
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
@@ -140,13 +143,13 @@ ms.PowerAppsDecimalTransform: true
 
 1. Добавьте элемент управления **Раскрывающийся список** и назначьте его свойству **[Items](properties-core.md)** следующую формулу:
 
-    `Distinct(Accounts; address1_city)`
+    `Distinct(Accounts, address1_city)`
 
     Эта формула показывает все города в сущности **Учетные записи**. Если один город указан в нескольких записях, функция **[Distinct](../functions/function-distinct.md)** скрывает повторения в элементе управления раскрывающегося списка.
 
 1. (Необязательно.) Переименуйте элемент управления **Раскрывающийся список** в **Города**, добавьте вертикальный элемент управления **Коллекция** и задайте свойству коллекции **[Items](properties-core.md)** следующую формулу:
 
-    `Filter(Accounts; address1_city = Cities.Selected.Value)`
+    `Filter(Accounts, address1_city = Cities.Selected.Value)`
 
     Функция **[Filter](../functions/function-filter-lookup.md)** отображает только те записи в сущности **Учетные записи**, для которых город совпадает с выбранным значением в элементе управления **Города**.
 

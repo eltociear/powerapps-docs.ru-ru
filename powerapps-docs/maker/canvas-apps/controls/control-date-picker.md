@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 90f18c4b490564bc098046831ea932db13fce05d
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: eb8835a2e5c66bb975bc384d9ca782cd3a0f7d85
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321723"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517434"
 ---
 # <a name="date-picker-control-in-powerapps"></a>Элемент управления "Выбор даты" в PowerApps
 Элемент управления, который используется для указания даты.
@@ -37,7 +36,7 @@ ms.PowerAppsDecimalTransform: true
 * Элемент управления отобразит **12/31/2017**, если пользователь щелкнет (коснется) последний день 2017 года и при этом для свойства **Format** задано значение **ShortDate**, а для свойства **Language** — значение **en-us**.
 * Элемент управления отобразит **dimanche 31 decembre 2017**, если пользователь щелкнет (коснется) последний день 2017 года и при этом для свойства **Format** задано значение **LongDate**, а для свойства **Language** — значение **fr-fr**.
 
-**Language** — определяет язык, используемый для форматирования дат, включая названия месяцев. Если это свойство не задано, то язык определяет параметр устройства пользователя.
+**Язык** — определяет язык, используемый для форматирования дат, включая названия месяцев. Если это свойство не задано, то язык определяет параметр устройства пользователя. Поддерживаются следующие значения: «EN-us» и «FR».
 
 ## <a name="additional-properties"></a>Дополнительные свойства
 **[AccessibleLabel](properties-accessibility.md)** — метка для средств чтения с экрана.
@@ -76,6 +75,8 @@ ms.PowerAppsDecimalTransform: true
 
 **IconBackground** — цвет фона значка для выбора даты.
 
+**InputTextPlaceholder** — пояснительный текст, отображаемый, если даты не вводятся.
+
 **[Italic](properties-text.md)** определяет, когда текст в элементе управления отображается курсивом.
 
 **[OnSelect](properties-core.md)**  — поведение приложения, когда пользователь щелкает элемент управления или касается его.
@@ -110,7 +111,7 @@ ms.PowerAppsDecimalTransform: true
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте элемент управления **[Метка](control-text-box.md)** и задайте в качестве значения свойства **[Text](properties-core.md)** следующую формулу:
-   <br>**DateDiff(Today(); Deadline.SelectedDate) & " days to go!"**
+   <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
 
     Нужны дополнительные сведения о функции **[DateDiff](../functions/function-dateadd-datediff.md)** или [других функциях](../formula-reference.md)?
 3. Нажмите клавишу F5, выберите дату в элементе управления **Крайний срок** и нажмите кнопку **ОК**.

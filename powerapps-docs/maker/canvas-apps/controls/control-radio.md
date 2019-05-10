@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 447cda7a1d8d4f27c8be2b943abd2b5d6b431d49
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 2b1527f8a7bf157c88b85ae9721626b6fc14f5a9
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548784"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517372"
 ---
 # <a name="radio-control-in-powerapps"></a>Элемент управления "Переключатель" в PowerApps
 
@@ -40,6 +39,8 @@ ms.PowerAppsDecimalTransform: true
 **Layout** — вертикальное или горизонтальное расположение.
 
 **[Value](properties-core.md)**  — значение элемента управления для ввода.
+
+**Выбранный** — запись данных, представляющий выбранный элемент.
 
 ## <a name="all-properties"></a>Все свойства
 
@@ -107,6 +108,8 @@ ms.PowerAppsDecimalTransform: true
 
 **[Reset](properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.
 
+**(Устарело) SelectedText** — строковое значение, представляющее выбранный элемент.
+
 **[Size](properties-text.md)**  — размер шрифта текста, отображаемого в элементе управления.
 
 **[Strikethrough](properties-text.md)** определяет, когда через текст, отображаемый в элементе управления, проходит линия.
@@ -127,19 +130,19 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Distinct**(*источник*; *столбец*)](../functions/function-distinct.md)
+[**Distinct**(*источник*, *столбец*)](../functions/function-distinct.md)
 
 ## <a name="example"></a>Пример
 
 1. Добавьте элемент управления **Переключатель**, назовите его **Pricing** и укажите для свойства **[Items](properties-core.md)** следующую формулу:
 
-    **["Standard"; "Premium"]**
+    **["Standard", "Premium"]**
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
 2. Добавьте элемент управления **[Метка](control-text-box.md)**, переместите его под элемент управления **Переключатель** и укажите для свойства **[Text](properties-core.md)** элемента **[Метка](control-text-box.md)** следующую формулу:
 
-    **If("Premium" in Pricing.Selected.Value; "200 долларов в день"; "150 долларов в день")**
+    **If("Premium" in Pricing.Selected.Value, "200 долларов в день", "150 долларов в день")**
 
     Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 

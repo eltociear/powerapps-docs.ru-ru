@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1e41ec8d228e62c22354d77777a8390bfd442f8c
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 9a4b2c941b5e28c462b85d3c6d54404746e22d04
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61543973"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517339"
 ---
 # <a name="barcode-scanner-control-for-canvas-apps"></a>Элемент управления сканера штрих-кодов для приложений на основе холста
 
@@ -60,6 +60,8 @@ ms.locfileid: "61543973"
 **FlashlightEnabled** - ли фонариком включается автоматически при открытии средства проверки.
 
 **[Высота](properties-size-location.md)**  — Высота кнопки, который активирует сканер.
+
+**PreferFrontCamera** - переднюю камеру, если она доступна, используется ли для сканирования.
 
 **[Tooltip](properties-core.md)** — пояснительный текст, отображаемый при наведении указателя мыши на элемент управления.
 

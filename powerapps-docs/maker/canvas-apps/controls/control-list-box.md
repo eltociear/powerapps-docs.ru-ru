@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a2cb87cf68457771605e78970b8d7a923af61fce
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: a7128ace53cc1e0754eb7247282b2ecae7642672
+ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544434"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65517419"
 ---
 # <a name="list-box-control-in-powerapps"></a>Элемент управления "Поле со списком" в PowerApps
 Список, в котором пользователь может выбрать один или несколько элементов.
@@ -31,6 +30,8 @@ ms.PowerAppsDecimalTransform: true
 **[Default](properties-core.md)**. Начальное значение элемента управления до его изменения пользователем.
 
 **[Items](properties-core.md)**  — источник данных, отображаемых в элементе управления, такой как коллекция, список или диаграмма.
+
+**Выбранный** — запись данных, представляющий выбранный элемент.
 
 При добавлении коллекции, списка или диаграммы список свойств по умолчанию отображает **Items**, чтобы можно было легко указать данные, которые должен показывать новый элемент управления. Например, можно задать в свойстве **Items** коллекции таблицу **Account** в Salesforce, таблицу **Inventory**, созданную в Excel и переданную в облако, или список SharePoint **ConferenceSpeakers**.
 
@@ -97,6 +98,8 @@ ms.PowerAppsDecimalTransform: true
 
 **[Reset](properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.
 
+**(Устарело) SelectedText** — строковое значение, представляющее выбранный элемент.
+
 **[SelectionColor](properties-color-border.md)**  — цвет текста выбранного элемента или элементов списка или цвет инструмента выделения в элементе управления рукописным вводом.
 
 **[SelectionFill](properties-color-border.md)**  — цвет фона выбранного элемента или элементов списка или цвет выделенной области элемента управления "Ввод с помощью пера".
@@ -122,11 +125,11 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Distinct**(*источник*; *столбец*)](../functions/function-distinct.md)
+[**Distinct**(*источник*, *столбец*)](../functions/function-distinct.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **Поле со списком**, назовите его **CategoryList** и укажите для свойства **[Items](properties-core.md)** следующую формулу:<br>
-   **["Carpet";"Hardwood";"Tile"]**
+   **["Carpet","Hardwood","Tile"]**
    
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
    
@@ -134,9 +137,9 @@ ms.PowerAppsDecimalTransform: true
 2. Добавьте три элемента управления **[Раскрывающийся список](control-drop-down.md)**, переместите их под элемент **CategoryList** и назовите **CarpetList**, **HardwoodList** и **TileList**.
 3. Укажите для свойства **[Items](properties-core.md)** каждого из элементов управления **[Раскрывающийся список](control-drop-down.md)** одно из следующих значений:
    
-   * CarpetList: **["Caserta Stone Beige";"Ageless Beauty Clay"; "Lush II Tundra"]**
-   * HardwoodList: **["Golden Teak";"Natural Hickory"; "Victoria Mahogany"]**
-   * TileList: **["Honey Onyx Marble";"Indian Autumn Slate"; "Panaria Vitality Ceramic"]**
+   * CarpetList: **["Caserta Stone Beige","Ageless Beauty Clay", "Lush II Tundra"]**
+   * HardwoodList: **["Golden Teak","Natural Hickory", "Victoria Mahogany"]**
+   * TileList: **["Honey Onyx Marble","Indian Autumn Slate", "Panaria Vitality Ceramic"]**
      
      ![Названия напольных покрытий в раскрывающихся списках](./media/control-list-box/flooring-names.png)
 4. Укажите для свойства **[Visible](properties-core.md)** каждого из элементов управления **[Раскрывающийся список](control-drop-down.md)** одно из следующих значений:
