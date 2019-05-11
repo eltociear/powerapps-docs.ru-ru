@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9796cf6c668818110cd6910311ab5b5f61a745df
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c801a67cc7944d32a6a0a93e8b8566618b66da98
+ms.sourcegitcommit: f6c9e525130a03b8c76f0a4b4e90419604c5823c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61559594"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65525636"
 ---
 # <a name="formula-reference-for-powerapps"></a>Справочник формул для PowerApps
 Формулы объединяют множество элементов.  Ниже перечислены следующие элементы:
@@ -49,6 +49,8 @@ ms.locfileid: "61559594"
 **[App](functions/signals.md)** — возвращает сведения о выполняемом в данный момент приложении, например, какой экран сейчас отображается.
 
 **[Asin](functions/function-trig.md)** — возвращает арксинус числа (в радианах).
+
+**[AsType](functions/function-astype-istype.md)**  — считает ссылке записи определенного типа сущности.
 
 **[Atan](functions/function-trig.md)** — возвращает арктангенс числа (в радианах).
 
@@ -183,6 +185,8 @@ ms.locfileid: "61559594"
 **[IsNumeric](functions/function-isnumeric.md)** — проверяет, является ли значение числовым.
 
 **[IsToday](functions/function-now-today-istoday.md)** — проверяет, не попадает ли значение даты и времени на сегодняшний день.
+
+**[IsType](functions/function-astype-istype.md)**  — проверяет, ссылается ли ссылка записи определенного типа сущности.  
 
 ## <a name="l"></a>L
 **[Language](functions/function-language.md)** — возвращает тег языка текущего пользователя.

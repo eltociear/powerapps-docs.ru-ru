@@ -1,24 +1,24 @@
 ---
 title: Установка и настройка примера "Отчет о расходах" для приложений на основе холста | Документы Майкрософт
 description: Пошаговые инструкции по установке и настройке примера "Отчет о расходах" для приложений на основе холста в PowerApps.
-author: mr-dang-msft
+author: yijw2017
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: anneta
 ms.date: 04/08/2018
-ms.author: brdang
+ms.author: yijw
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4640c1f3fcab1382ec70573cea2ac259cf8b2a30
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.openlocfilehash: 4f3ad6f91a7870a84cf5aa74cb49d2f5705f2a31
+ms.sourcegitcommit: 9ec2853aec74e92ccd1e4a7ca54707cdf8b8cdd3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61561066"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65535295"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Установка и настройка примера "Отчет о расходах" для приложений на основе холста в PowerApps
 
@@ -29,7 +29,7 @@ ms.locfileid: "61561066"
 > [!TIP]
 > Просмотрите [это видео](https://youtu.be/kJXZPILfbwU), в котором показано, как использовать пример приложения "Отчет о расходах". 
 
-Отслеживайте отчеты о затратах от их подачи до утверждения. Суммируйте отдельные позиции по мере увеличения отдельных затрат и подавайте их на утверждение по мере готовности. Это приложение потребуется настроить в соответствии с вашими потребностями.
+Отслеживайте отчеты о затратах от их подачи до утверждения. Элементы строки результатов голосования в виде отдельных затрат и подавайте их на утверждение по мере готовности. Это приложение потребуется настроить в соответствии с вашими потребностями.
 
 ![Начальный экран приложения PowerApps "Отчет о расходах"](./media/expense-report-install/expense-report-powerapp.png)
 
@@ -89,7 +89,7 @@ ms.locfileid: "61561066"
 5. В текстовом поле **Имя столбца** введите **Status**.
 6. В списке переключателей **Type of information in this column is** (Тип данных этого столбца) выберите **Выбор**.
 7. В текстовом поле **Введите каждый вариант в отдельной строке** введите следующие значения, каждое в отдельной строке: 
-    - Открытость
+    - Откройте
     - Pending
     - Approved
 8. В текстовом поле **Значение по умолчанию** введите **Open** (Открыто).
