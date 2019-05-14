@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/10/2019
 ms.locfileid: "65526061"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="astype-and-istype-functions-in-canvas-apps"></a>Функции AsType и IsType в приложения на основе холста
 
@@ -46,31 +47,31 @@ Common Data Service также поддерживает поля полимор�
 
 Используйте эти функции вместе для сначала протестируйте тип сущности записи, а затем считать его записи этого типа, чтобы поля были доступны:
 
-```powerapps-dot
-If( IsType( First( Accounts ).Owner, Users ),
-    AsType( First( Accounts ).Owner, Users ).'Full Name',
-    AsType( First( Accounts ).Owner, Teams ).'Team Name'
+```powerapps-comma
+If( IsType( First( Accounts ).Owner; Users );
+    AsType( First( Accounts ).Owner; Users ).'Full Name';
+    AsType( First( Accounts ).Owner; Teams ).'Team Name'
 )
 ```
 
 Эти функции нужны только в том случае, если вы обращаетесь к поля ссылки на записи. Например, можно использовать ссылок на записи в [ **фильтра** ](function-filter-lookup.md) работать без **IsType** или **AsType**:
 
-```powerapps-dot
-Filter( Accounts, Owner = First( Users ) )
+```powerapps-comma
+Filter( Accounts; Owner = First( Users ) )
 ```
 
 Аналогично, можно использовать ссылок на записи с [ **Patch** ](function-patch.md) функции:
 
-```powerapps-dot
-Patch( Accounts, First( Accounts ), { Owner: First( Teams ) } )
+```powerapps-comma
+Patch( Accounts; First( Accounts ); { Owner: First( Teams ) } )
 ```  
 
 Если осуществляется в контексте записи, например в [ **коллекции** ](../controls/control-gallery.md) или [ **форма редактирования** ](../controls/control-form-detail.md) элемента управления, может потребоваться использовать [глобального оператор устранения неоднозначности](operators.md#disambiguation-operator) для ссылки на тип сущности. Например, эта формула будет эффективным для коллекции, который отображает список контактов, где **название компании** — **клиента** подстановки.
 
-```powerapps-dot
-If( IsType( ThisItem.'Company Name', [@Accounts] ),
-    AsType( ThisItem.'Company Name', [@Accounts] ).'Account Name',
-    AsType( ThisItem.'Company Name', [@Contacts] ).'Full Name'
+```powerapps-comma
+If( IsType( ThisItem.'Company Name'; [@Accounts] );
+    AsType( ThisItem.'Company Name'; [@Accounts] ).'Account Name';
+    AsType( ThisItem.'Company Name'; [@Contacts] ).'Full Name'
 )
 ```
 
@@ -80,12 +81,12 @@ If( IsType( ThisItem.'Company Name', [@Accounts] ),
 
 ## <a name="syntax"></a>Синтаксис
 
-**AsType**( *RecordReference*, *EntityType* )
+**AsType**( *RecordReference*; *EntityType* )
 
 - *RecordReference* — обязательный. Ссылка записи, часто полем поиска, которое может указывать на запись в любом из нескольких сущностей.
 - *EntityType* — обязательный. Определенной сущности, для которого требуется проверить.
 
-**IsType**( *RecordReference*, *EntityType* )
+**IsType**( *RecordReference*; *EntityType* )
 
 - *RecordReference* — обязательный. Ссылка записи, часто полем поиска, которое может указывать на запись в любом из нескольких сущностей.
 - *EntityType* — обязательный. Определенной сущности, к которому следует привести.
@@ -130,11 +131,11 @@ If( IsType( ThisItem.'Company Name', [@Accounts] ),
 
 1. Задайте **текст** свойство **Subtitle1** следующую формулу:
 
-    ```powerapps-dot
-    If( IsBlank( ThisItem.'Company Name' ), "--",
-        IsType( ThisItem.'Company Name', [@Accounts] ),
-            "Account: " & AsType( ThisItem.'Company Name', [@Accounts] ).'Account Name',
-        "Contact: " & AsType( ThisItem.'Company Name', [@Contacts] ).'Full Name'
+    ```powerapps-comma
+    If( IsBlank( ThisItem.'Company Name' ); "--";
+        IsType( ThisItem.'Company Name'; [@Accounts] );
+            "Account: " & AsType( ThisItem.'Company Name'; [@Accounts] ).'Account Name';
+        "Contact: " & AsType( ThisItem.'Company Name'; [@Contacts] ).'Full Name'
     )
     ```
 

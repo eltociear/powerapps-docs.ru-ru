@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/06/2019
 ms.locfileid: "65088127"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-canvas-app-to-manage-projects"></a>Создание приложения на основе холста для управления проектами
 > [!NOTE]
@@ -140,7 +141,7 @@ ms.locfileid: "65088127"
     ![Добавление кнопки](./media/sharepoint-scenario-build-app/04-03-05-button-default.png)
 2. В строке формул определите следующие свойства для кнопки:
    
-   * свойство **OnSelect** = **Navigate(AssignManager, Fade)** — запустив приложение и нажав на эту кнопку, вы перейдете на второй экран в приложении (так переход будет незаметным);
+   * свойство **OnSelect** = **Navigate(AssignManager; Fade)** — запустив приложение и нажав на эту кнопку, вы перейдете на второй экран в приложении (так переход будет незаметным);
 
    * свойство **Text** = **"Назначить руководителя"**.
 
@@ -149,7 +150,7 @@ ms.locfileid: "65088127"
     ![Изменение текста кнопки](./media/sharepoint-scenario-build-app/04-03-06-button-updated.png)
 4. Вставьте еще одну кнопку со следующими свойствами:
    
-   * свойство **OnSelect** = **Navigate(ViewProjects, Fade)**;
+   * свойство **OnSelect** = **Navigate(ViewProjects; Fade)**;
 
    * свойство **Text** = **"Обновить сведения"**.
      
@@ -207,7 +208,7 @@ ms.locfileid: "65088127"
 
    * свойство **Height** = **40**;
 
-   * свойство **OnSelect** = **Navigate(SelectTask, Fade)**;
+   * свойство **OnSelect** = **Navigate(SelectTask; Fade)**;
 
    * свойство **Width** = **40**.
      
@@ -233,7 +234,7 @@ ms.locfileid: "65088127"
 
    * свойство **BorderStyle** = **Dotted**;
 
-   * свойство **Items** = **Filter('Project Details', PMAssigned="Unassigned")**. В коллекции отображаются только те проекты, которым не назначен руководитель.
+   * свойство **Items** = **Filter('Project Details'; PMAssigned="Unassigned")**. В коллекции отображаются только те проекты, которым не назначен руководитель.
      
      ![Коллекция с текстом из списка](./media/sharepoint-scenario-build-app/04-04-06-gallery-updated.png)
 
@@ -291,7 +292,7 @@ ms.locfileid: "65088127"
    
    * свойство **Height** = **60**;
 
-   * **OnSelect** свойство = **Patch ('Project Details', LookUp ('Project Details', ID = Gallery1.Selected.ID), {PMAssigned: TextInput1.Text})**. См. [подробные сведения о формулах](#formula-deep-dive).
+   * **OnSelect** свойство = **Patch ('Project Details'; LookUp ('Project Details'; ID = Gallery1.Selected.ID); {PMAssigned: TextInput1.Text})**. См. [подробные сведения о формулах](#formula-deep-dive).
 
    * Эта формула обновляет список **Project Details** (Сведения о проекте), определяя значение для поля "PMAssigned".
 
@@ -326,7 +327,7 @@ ms.locfileid: "65088127"
 
 5. Нажмите на кнопку ![Значок обновления](./media/sharepoint-scenario-build-app/icon-refresh.png), чтобы обновить сведения, и присвойте свойству **OnSelect** значение **Refresh('Project Details')**.
 
-6. Нажмите на кнопку ![Значок добавления нового элемента](./media/sharepoint-scenario-build-app/icon-add-item.png), чтобы создать элемент, и присвойте свойству **OnSelect** значение **NewForm(EditForm1); Navigate(UpdateDetails, ScreenTransition.None)**.
+6. Нажмите на кнопку ![Значок добавления нового элемента](./media/sharepoint-scenario-build-app/icon-add-item.png), чтобы создать элемент, и присвойте свойству **OnSelect** значение **NewForm(EditForm1);; Navigate(UpdateDetails; ScreenTransition.None)**.
 
 ### <a name="add-a-back-arrow-to-return-to-the-selecttask-screen"></a>Добавление стрелки "Назад" для возврата на экран "SelectTask" (Выбор задачи)
 
@@ -338,15 +339,15 @@ ms.locfileid: "65088127"
    
     ![Кнопка "Назад"](./media/sharepoint-scenario-build-app/04-05-04-left-arrow-v.png)
    
-    Для кнопки также доступны все свойства, включая свойство **OnSelect** со значением **Navigate(SelectTask, Fade)**.
+    Для кнопки также доступны все свойства, включая свойство **OnSelect** со значением **Navigate(SelectTask; Fade)**.
 
 ### <a name="change-the-data-source-for-the-browsegallery1-gallery"></a>Изменение источника данных для коллекции BrowseGallery1
 
-1. Выберите коллекцию **BrowseGallery1** и присвойте свойству **Items** коллекции значение **SortByColumns(Filter('Project Details', StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))**.
+1. Выберите коллекцию **BrowseGallery1** и присвойте свойству **Items** коллекции значение **SortByColumns(Filter('Project Details'; StartsWith(Title; TextSearchBox1.Text)); "Title"; If(SortDescending1; Descending; Ascending))**.
    
     Так вы определяете для списка **Project Details** (Сведения о проекте) источник данных коллекции и назначаете поле **Title** для поиска и сортировки.
 
-2. Выберите в первом элементе коллекции стрелку ![Значок со стрелкой для перехода к сведениям](./media/sharepoint-scenario-build-app/icon-details-arrow.png) и присвойте свойству **OnSelect** значение **Navigate(UpdateDetails, None)**.
+2. Выберите в первом элементе коллекции стрелку ![Значок со стрелкой для перехода к сведениям](./media/sharepoint-scenario-build-app/icon-details-arrow.png) и присвойте свойству **OnSelect** значение **Navigate(UpdateDetails; None)**.
    
     ![ Коллекция "ViewProjects" (Просмотр проектов) — первый выбранный элемент](./media/sharepoint-scenario-build-app/04-05-05b-gallery-arrow-v.png)
 
@@ -396,7 +397,7 @@ ms.locfileid: "65088127"
    * **ActualDays**
      
      ![Изменение полей формы](./media/sharepoint-scenario-build-app/04-06-03-edit-fields.png)
-6. Выберите кнопку отмены ![Значок отмены](./media/sharepoint-scenario-build-app/icon-cancel.png) и присвойте свойству **OnSelect** значение **ResetForm(EditForm1); Back()**.
+6. Выберите кнопку отмены ![Значок отмены](./media/sharepoint-scenario-build-app/icon-cancel.png) и присвойте свойству **OnSelect** значение **ResetForm(EditForm1);; Back()**.
 
 7. Выберите кнопку ![Значок с галочкой](./media/sharepoint-scenario-build-app/icon-check-mark.png), чтобы сохранить изменения, и присвойте свойству **OnSelect** значение **SubmitForm(EditForm1)**. Так как мы используем такой элемент управления, как форма редактирования, можно использовать **Submit()**, вместо **Patch()** как это делалось ранее.
 
@@ -496,7 +497,7 @@ ms.locfileid: "65088127"
 ## <a name="formula-deep-dive"></a>Подробные сведения о формулах
 Это второй раздел с дополнительными сведениями о формулах PowerApps. В первом разделе мы рассмотрели одну из формул, создаваемых в PowerApps для настройки коллекции обзора в приложении с тремя экранами. В этом разделе мы рассмотрим формулу, которая используется для настройки экрана **AssignManager** (Назначение руководителя) нашего второго приложения. Формула выглядит так:
 
-**Patch ('Project Details', LookUp ('Project Details', ID = Gallery1.Selected.ID), {PMAssigned: TextInput1.Text} )**
+**Patch ('Project Details'; LookUp ('Project Details'; ID = Gallery1.Selected.ID); {PMAssigned: TextInput1.Text} )**
 
 Для чего же используется эта формула? Когда вы выбираете элемент в коллекции и нажимаете кнопку **ОК**, формула обновляет список **Project Details** (Сведения о проекте), присваивая столбцу **PMAssigned** значение, указанное в поле ввода текста. Для этого в формуле используются следующие функции:
 
