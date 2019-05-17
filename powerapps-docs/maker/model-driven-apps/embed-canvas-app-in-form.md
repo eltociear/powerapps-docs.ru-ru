@@ -3,7 +3,7 @@ title: Внедрение приложения на основе холста в
 ms.custom: ''
 ms.date: 12/17/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -53,5 +53,6 @@ search.app:
 [Обзор соединителей приложений на основе холста для PowerApps](../canvas-apps/connections-list.md) <br />
 [Передача текущей записи в качестве контекста данных во внедренное приложение на основе холста](pass-current-embedded-canvas-app.md) <br />
 [Передача списка связанных записей в качестве контекста данных во внедренное приложение на основе холста](pass-related-embedded-canvas-app.md) <br />
+[Выполнение предопределенных действий в форме узла из внедренного приложения холста](embedded-canvas-app-actions.md) <br />
 [Предоставление общего доступа к внедренному приложению на основе холста](share-embedded-canvas-app.md) <br />
 [Рекомендации по работе с внедренными приложениями на основе холста](embedded-canvas-app-guidelines.md)

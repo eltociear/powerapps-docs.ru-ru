@@ -3,7 +3,7 @@ title: Передача списка связанных записей в кач
 ms.custom: ''
 ms.date: 12/17/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -81,5 +81,6 @@ search.app:
 ## <a name="see-also"></a>См. также
 [Внедрение приложения на основе холста в управляемую моделью форму](embed-canvas-app-in-form.md) <br />
 [Передача текущей записи в качестве контекста данных во внедренное приложение на основе холста](pass-current-embedded-canvas-app.md) <br />
+[Выполнение предопределенных действий в форме узла из внедренного приложения холста](embedded-canvas-app-actions.md) <br />
 [Предоставление общего доступа к внедренному приложению на основе холста](share-embedded-canvas-app.md) <br />
 [Рекомендации по работе с внедренными приложениями на основе холста](embedded-canvas-app-guidelines.md)

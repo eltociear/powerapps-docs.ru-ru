@@ -58,7 +58,7 @@ search.app:
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
   
-Сопоставление полей выполняется в контексте отношения 1: N или N1, поэтому сначала требуется [просмотреть отношения 1:N или N:1](create-edit-1n-relationships-solution-explorer.md#view-entity-relationships).
+Сопоставление полей выполняется в контексте отношения 1:N или N:1, поэтому сначала требуется [просмотреть отношения 1:N или N:1](create-edit-1n-relationships-solution-explorer.md#view-entity-relationships).
 
 ## <a name="view-mappable-fields"></a>Просмотр сопоставляемых полей
 

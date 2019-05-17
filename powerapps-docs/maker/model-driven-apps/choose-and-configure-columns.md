@@ -3,7 +3,7 @@ title: Выбор и настройка столбцов в представле
 description: 'Узнайте, как выбирать и настраивать представления для приложения'
 keywords: ''
 ms.date: 11/27/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.custom: null
 ms.topic: article
 applies_to:
@@ -46,7 +46,7 @@ search.app:
   > Последняя версия конструктора представлений в настоящее время находится на стадии версии для предварительного ознакомления. Некоторые функции, такие как включение или отключение отображения для столбца и добавление поиска столбца, пока не поддерживаются. Для выполнения этих задач [откройте представление в классическом конструкторе представлений](/dynamics365/customer-engagement/customize/create-and-edit-views#open-the-classic-view-designer).
   >  -   [Включение или отключение присутствия для столбца](/dynamics365/customer-engagement/customize/choose-and-configure-columns#BKMK_EnableOrDisablePresence)  
   >
-  >  -   [Добавление столбцов поиска](choose-and-configure-columns.md#BKMK_AddFindColumns)  
+  >  -   [Добавление столбцов поиска](/dynamics365/customer-engagement/customize/choose-and-configure-columns#BKMK_AddFindColumns) 
 
 
 
@@ -111,6 +111,8 @@ search.app:
   
 > [!TIP]
 >   Можно также выбрать заголовок столбца, который требуется переместить, затем в раскрывающемся списка выберите **Вправо** или **Влево**.  
+
+
   
 ## <a name="next-steps"></a>Дальнейшие действия
 [Создание или изменение представлений](create-edit-views.md)
