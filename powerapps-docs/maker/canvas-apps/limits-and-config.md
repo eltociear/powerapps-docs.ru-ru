@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 21e1042dc525e666fcab40610c290793abe37395
-ms.sourcegitcommit: 91f084def8d7c2b78eeef20fa3959d1d34b8da66
+ms.openlocfilehash: d85c93b74e840d9711da0827de9114b9cef9ceab
+ms.sourcegitcommit: 810e9cf313f4690f8dbdfbe179f9ce7227437176
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65516800"
+ms.lasthandoff: 05/19/2019
+ms.locfileid: "65884076"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Требования к системе, ограничения и значения конфигурации для приложений на основе холста
 В этой статье приводятся требования к платформе устройств и веб-браузеру, а также ограничения и значения конфигурации для PowerApps.
@@ -96,10 +96,10 @@ ms.locfileid: "65516800"
 | graph.microsoft.com<br>graph.windows.net |https |Azure Graph — для получения сведений о пользователе (например, фотографии профиля). |
 | gallery.azure.com |https |Примеры и шаблоны приложений. |
 | \*.azure-apim.net |https |Концентраторы API — разные поддомены для каждого языкового стандарта. |
-| \*. powerapps.com |https | CREATE.powerapps.com + web.powerapps.com |
-| \*. azureedge.net |https | create.powerapps.com |
+| \*. powerapps.com |https | CREATE.powerapps.com, make.powerapps.com, content.powerapps.com и web.powerapps.com |
+| \*. azureedge.net |https | CREATE.powerapps.com, make.powerapps.com, content.powerapps.com и web.powerapps.com |
 | \*. blob.core.windows.net |https | Хранилище BLOB-объектов |
-| \*. flow.microsoft.com | https | CREATE.powerapps.com + web.powerapps.com |
+| \*. flow.microsoft.com | https | CREATE.powerapps.com, make.powerapps.com, content.powerapps.com и web.powerapps.com |
 | vortex.data.microsoft.com |https |Телеметрия |
 
 > [!NOTE]
