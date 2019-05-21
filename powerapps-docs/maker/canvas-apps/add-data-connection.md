@@ -13,21 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 43832847f447a9af8a05d149b0d6f3b564b770e1
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 15f3f38dd4812ffcbebeeaab4d301f715c97e1d1
+ms.sourcegitcommit: be110258910aa097b0065da1ee4ea1c40b7e1334
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61530180"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65922528"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>Добавление подключения к данным в приложение на основе холста в PowerApps
 
-В PowerApps вы можете добавить подключение к данным в существующее приложение на основе холста или в приложение, создаваемое с нуля. Приложение может подключаться к SharePoint, Salesforce, OneDrive и [множеству других источников данных](connections-list.md).
+В PowerApps вы можете добавить подключение к данным в существующее приложение на основе холста или в приложение, создаваемое с нуля. Приложение может подключаться к SharePoint, Common Data Service, Salesforce, OneDrive, или [многих других источников данных](connections-list.md).
 
 Выполнив действия, описанные в этой статье, приступайте к [следующему шагу](#next-steps) — отображению и администрированию данных из источника в приложении, как в следующих примерах:
 
 * подключение к OneDrive и управление данными в книге Excel в приложении;
 * подключение к Twilio и отправка SMS-сообщений из приложения;
+* Подключение к Common Data Service и обновлять сущность из вашего приложения.
 * подключение к серверу SQL Server и обновление таблицы из приложения.
 
 ## <a name="prerequisites"></a>Технические условия
@@ -64,7 +65,7 @@ ms.locfileid: "61530180"
 
 1. Выберите **Создать**, чтобы создать подключение и добавить его в приложение.
 
-    Для некоторых соединителей, таких как **Office 365 Outlook**, дополнительные действия не требуются. Данные из них можно отобразить сразу же. Другие соединители могут предложить вам учетные данные, указать определенный набор данных или выполнить другие действия. Например, для соединителей [SharePoint](connections/connection-sharepoint-online.md) и [SQL Server](connections/connection-azure-sqldatabase.md) потребуется указать дополнительную информацию, прежде чем вы сможете их использовать.
+    Для некоторых соединителей, таких как **Office 365 Outlook**, дополнительные действия не требуются. Данные из них можно отобразить сразу же. Другие соединители могут предложить вам учетные данные, указать определенный набор данных или выполнить другие действия. Например, для соединителей [SharePoint](connections/connection-sharepoint-online.md) и [SQL Server](connections/connection-azure-sqldatabase.md) потребуется указать дополнительную информацию, прежде чем вы сможете их использовать. С помощью [Common Data Service](connections/connection-common-data-service.md), можно изменить среду, прежде чем выбрать сущность.
 
 ## <a name="identify-or-change-a-data-source"></a>Определение или изменение источника данных
 Если вы обновляете приложение, может потребоваться определить или изменить источник данных, который отображается в коллекции, форме или другом элементе управления. Например может потребоваться определить источник данных, так как при обновлении приложения, созданный другим пользователем, или вы создали давно.
@@ -83,5 +84,5 @@ ms.locfileid: "61530180"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* Для отображения и обновления данных в таких источниках, как Excel, SharePoint и SQL Server, следует добавить [коллекцию](add-gallery.md) или [форму](add-form.md).
+* Для отображения и обновления данных в источнике, например Excel, SharePoint, Common Data Service и SQL Server, [добавьте коллекцию](add-gallery.md), и [добавить форму](add-form.md).
 * Для работы с данными в других источниках используйте специальные функции для таких соединителей, как [Office 365 Outlook](connections/connection-office365-outlook.md), [Twitter](connections/connection-twitter.md) и [Microsoft Translator](connections/connection-microsoft-translator.md).
