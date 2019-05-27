@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0337c7f79a81d7368128b6ef11d4d108345d3923
-ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
-ms.translationtype: HT
+ms.openlocfilehash: d2b4229cc39a84bcffa624be8352762bcdc7a47b
+ms.sourcegitcommit: 21163a6d77b784f4864fce4695776c9b4652cb29
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66216264"
+ms.lasthandoff: 05/26/2019
+ms.locfileid: "66225171"
 ---
 # <a name="understand-data-cards-in-powerapps"></a>Общие сведения о картах данных в PowerApps
 
@@ -157,6 +157,9 @@ ms.locfileid: "66216264"
 | **TextFieldDisplayName.Text** |**Parent.DisplayName** |Элемент управления "Текстовое поле" отображает понятное имя, которое предоставляет пользователь или метаданные источника данных и которое задается в свойстве карты **[DisplayName](controls/control-card.md)**. |
 | **InputText.Default** |**Parent.Default** |Элемент управления "Текстовое поле" изначально отображает значение поля из источника данных, указанное в значении карты по умолчанию. |
 | **TextErrorMessage.Text** |**Parent.Error** |При возникновении проблемы проверки свойство карты **Error** выдает соответствующее сообщение об ошибке. |
+
+> [!NOTE]
+> **Parent.Error** свойство является свойством только для вывода, которые нельзя задать с помощью формулы. Таким образом, это свойство не будет отображаться в списке свойств в левом верхнем углу или в **свойства** или **Дополнительно** вкладки рядом с правым краем. В строке формул предлагает это свойство, если вы создаете формулу, которая может ссылаться на свойство.
 
 Чтобы получить сведения из этих элементов управления и передать их обратно в источник данных, используйте следующие основные формулы:
 
