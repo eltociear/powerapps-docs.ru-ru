@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d85c93b74e840d9711da0827de9114b9cef9ceab
-ms.sourcegitcommit: 810e9cf313f4690f8dbdfbe179f9ce7227437176
+ms.openlocfilehash: c304a313032e00af81181ca71b39e7aa7de9fc8f
+ms.sourcegitcommit: c0edddb287b3d3db56f60bdb46fe971e26e85e9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2019
-ms.locfileid: "65884076"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "66224630"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Требования к системе, ограничения и значения конфигурации для приложений на основе холста
 В этой статье приводятся требования к платформе устройств и веб-браузеру, а также ограничения и значения конфигурации для PowerApps.
@@ -84,7 +84,6 @@ ms.locfileid: "65884076"
 | США | 13.89.171.80 - 13.89.171.95, 52.173.245.164, 40.71.11.80 - 40.71.11.95, 40.71.249.205, 40.70.146.208 - 40.70.146.223, 52.232.188.154, 52.162.107.160 - 52.162.107.175, 52.162.242.161, 40.112.243.160 - 40.112.243.175, 104.42.122.49 |
 | США (ранний доступ)  | 13.71.195.32 - 13.71.195.47, 52.161.102.22, 13.66.140.128 - 13.66.140.143, 52.183.78.157 |
 
-
 ## <a name="required-services"></a>Необходимые службы
 Этот список содержит все службы, к которым обращается PowerApps Studio, а также сведения об их применении. Сеть **не** должна блокировать эти службы.
 
@@ -104,3 +103,7 @@ ms.locfileid: "65884076"
 
 > [!NOTE]
 > Если вы используете VPN, необходимо настроить исключение localhost из туннелирования для PowerApps Mobile.
+
+## <a name="size-limits"></a>Ограничения размера
+
+Сведения об ограничениях на размер текста, гиперссылки, изображения и мультимедиа в [типы данных](functions/data-types.md#text-hyperlink-image-and-media).

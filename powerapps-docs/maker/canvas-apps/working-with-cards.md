@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: db0e42a45af217e9e5703242c2a5a867a52b687b
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: MT
+ms.openlocfilehash: 0337c7f79a81d7368128b6ef11d4d108345d3923
+ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63317822"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66216264"
 ---
 # <a name="understand-data-cards-in-powerapps"></a>Общие сведения о картах данных в PowerApps
 
@@ -97,9 +97,6 @@ ms.locfileid: "63317822"
 
 В строке формул задайте для свойства **Image** этого элемента управления значение *TextBox*.**Text**, где *TextBox* — это имя элемента управления **Текстовое поле**, содержащего URL-адрес.
 
-> [!TIP]
-> Нажмите клавишу ALT для отображения имени каждого элемента управления.
-
 ![](./media/working-with-cards/show-image.png)
 
 Теперь изображения отображаются, и мы можем изменить их URL-адреса. Обратите внимание: вы можете использовать **Parent.Default** как значение свойства **Image**, но оно не обновится после изменения URL-адреса.
@@ -139,7 +136,7 @@ ms.locfileid: "63317822"
 
 ![](./media/working-with-cards/dissect-card1.png)
 
-Удерживайте клавишу ALT, чтобы показать имена элементов управления этой карты.
+На этом графике отмеченный элементы управления в карточке данных:
 
 ![](./media/working-with-cards/dissect-card2.png)
 
