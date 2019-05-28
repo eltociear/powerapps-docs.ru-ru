@@ -16,6 +16,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/24/2019
 ms.locfileid: "66216671"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-component-for-canvas-apps"></a>Создание компонента для приложений на основе холста
 
@@ -107,7 +108,7 @@ ms.locfileid: "66216671"
 
 1. Задание компонента **элементы** следующую формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Table({Item:"SampleText"})
     ```
 
@@ -117,7 +118,7 @@ ms.locfileid: "66216671"
 
 1. Убедитесь, что в списке свойств отображается **элементы** свойство (так как он это делает по умолчанию) и укажите значение этого свойства значение этого выражения:
 
-    ```powerapps-dot
+    ```powerapps-comma
     MenuComponent.Items
     ```
 
@@ -143,8 +144,8 @@ ms.locfileid: "66216671"
 
 1. Задайте **элементы** свойство **MenuComponent_1** следующую формулу:
 
-    ```powerapps-dot
-    Table({Item:"Home"}, {Item:"Admin"}, {Item:"About"}, {Item:"Help"})
+    ```powerapps-comma
+    Table({Item:"Home"}; {Item:"Admin"}; {Item:"About"}; {Item:"Help"})
     ```
 
     Этот экземпляр похоже на этом рисунке, но вы можете настроить текст и другие свойства каждого экземпляра.
@@ -163,7 +164,7 @@ ms.locfileid: "66216671"
 
 1. На **Дополнительно** вкладке, установите для параметра **выбранные** значение этого выражения, Настройка цифрой в имени коллекции, при необходимости:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gallery1.Selected.Item
     ```
 
@@ -171,7 +172,7 @@ ms.locfileid: "66216671"
 
 1. На экране по умолчанию приложения, добавьте метку и задайте его **текст** значение этого выражения, Настройка цифра в имя компонента, при необходимости:
 
-    ```powerapps-dot
+    ```powerapps-comma
     MenuComponent_1.Selected
     ```
 

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/26/2019
 ms.locfileid: "66224934"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="use-cognitive-services-in-powerapps"></a>Использование служб Cognitive Services с PowerApps
 В этой статье показано, как создать базовый холст приложение, которое использует [Azure Cognitive Services API текстовой аналитики](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) для анализа текста. Мы объясним, как установить API анализа текста и подключиться к нему с помощью [соединителя для анализа текста](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/). Затем мы покажем, как создать приложение на основе холста, которое вызывает API.
@@ -127,34 +128,34 @@ Azure Cognitive Services — это набор API-интерфейсов, па�
 
 И теперь ко всему этому мы добавим формулу для свойства кнопки **OnSelect**. И тут происходит все самое интересное.
 
-```powerapps-dot
-If( chkLanguage.Value = true,
-    ClearCollect( languageCollect, 
+```powerapps-comma
+If( chkLanguage.Value = true;
+    ClearCollect( languageCollect; 
         TextAnalytics.DetectLanguage(
             {
-                numberOfLanguagesToDetect: 1, 
+                numberOfLanguagesToDetect: 1; 
                 text: tiTextToAnalyze.Text
             }
         ).detectedLanguages.name
     )
-);
+);;
 
-If( chkPhrases.Value = true,
-    ClearCollect( phrasesCollect, 
+If( chkPhrases.Value = true;
+    ClearCollect( phrasesCollect; 
         TextAnalytics.KeyPhrases(
             {
-                language: "en", 
+                language: "en"; 
                 text: tiTextToAnalyze.Text
             }
         ).keyPhrases
     )
-);
+);;
 
-If( chkSentiment.Value = true,
-    ClearCollect( sentimentCollect, 
+If( chkSentiment.Value = true;
+    ClearCollect( sentimentCollect; 
         TextAnalytics.DetectSentiment(
             {
-                language: "en", 
+                language: "en"; 
                 text: tiTextToAnalyze.Text
             }
         ).score
@@ -189,7 +190,7 @@ If( chkSentiment.Value = true,
    
     Функция **First()** возвращает первую (и в нашем случае единственную) запись из коллекции **languageCollect**, а затем приложение отображает значение единственного поля **name** для этой записи.
 
-2. Для свойства **Текст** метки тональности задайте следующее: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value, 3)\*100 & "% positive."`.
+2. Для свойства **Текст** метки тональности задайте следующее: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value; 3)\*100 & "% positive."`.
    
     Эта формула также использует функцию **First()** , возвращает **значение** (0–1) из первой и единственной записи, а затем форматирует его в виде процентов.
 
