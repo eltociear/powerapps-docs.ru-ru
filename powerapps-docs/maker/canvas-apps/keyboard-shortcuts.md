@@ -13,14 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 19c5382baba643e673edb7e77e0398616e880980
-ms.sourcegitcommit: 2b1ed0db9312152f330bd8a8ea663f01b40e7c23
+ms.openlocfilehash: 8c88417763b4eee125ce511fafcac61da018d2ec
+ms.sourcegitcommit: d87b2068a63e416e2814791328a3a47bbcb5bb48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66185650"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66249808"
 ---
 # <a name="keyboard-shortcuts-for-canvas-apps"></a>Сочетания клавиш для приложений на основе холста
+
+> [!NOTE]
+> Сочетания клавиш могут отличаться в зависимости от языка.
 
 ## <a name="file"></a>Файл
 
@@ -56,6 +59,7 @@ ms.locfileid: "66185650"
 | CTRL += или Ctrl + Shift += | Увеличьте масштаб. |
 | CTRL +- или Ctrl + Shift +- | Уменьшить масштаб. |
 | CTRL + 0 | Автоподбор размера полотна страницы. |
+| SHIFT + ВВОД | Разбиение строки в формуле. |
 
 ## <a name="preview"></a>Предварительный просмотр
 
@@ -88,7 +92,7 @@ ms.locfileid: "66185650"
 | CTRL +] | Переведите элемент управления вперед. |
 | CTRL + [ | Переместить элемент управления назад. |
 | Ctrl + Shift +] | Переведите на передний план. |
-| Ctrl + Shift +] | Переместить на задний план. |
+| Ctrl + Shift +[ | Переместить на задний план. |
 
 ## <a name="resize"></a>Изменение размера
 
