@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61526063"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="rating-control-in-powerapps"></a>Элемент управления "Оценка" в PowerApps
 Элемент управления, позволяющий пользователю указать значение от 1 до заданного вами максимального числа.
@@ -76,7 +75,7 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Average**(*значение1*; *значение2;* ...)](../functions/function-aggregates.md)
+[**Average**(*значение1*, *значение2,* ...)](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **Оценка** и назовите его **Quantitative**.
@@ -84,7 +83,7 @@ ms.PowerAppsDecimalTransform: true
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте элемент управления **[Текстовое поле](control-text-input.md)**, назовите его **Qualitative** и поместите под элементом управления **Оценка**.
 3. Укажите для свойства **[Default](properties-core.md)** элемента управления **[Текстовое поле](control-text-input.md)** значение **""**, а для свойства **HintText** следующую формулу:
-   <br>**If(Quantitative.Value > 3; "Что вам особенно понравилось?"; "Как это улучшить?")**
+   <br>**If(Quantitative.Value > 3, "Что вам особенно понравилось?", "Как это улучшить?")**
    
     Нужны дополнительные сведения о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 4. Нажмите клавишу F5 и выберите четыре или пять звездочек в элементе управления **Оценка**.

@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8c88417763b4eee125ce511fafcac61da018d2ec
-ms.sourcegitcommit: d87b2068a63e416e2814791328a3a47bbcb5bb48
+ms.openlocfilehash: c528ff033515a1e124330c0880c78e14f1014cec
+ms.sourcegitcommit: 963d32bf17f1b596fbd3053567fd2d3a3a34b199
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/28/2019
-ms.locfileid: "66249808"
+ms.locfileid: "66251484"
 ---
 # <a name="keyboard-shortcuts-for-canvas-apps"></a>Сочетания клавиш для приложений на основе холста
 
 > [!NOTE]
-> Сочетания клавиш могут отличаться в зависимости от языка.
+> Сочетания клавиш может отличаться в зависимости от раскладки клавиатуры.
 
 ## <a name="file"></a>Файл
 

@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61559456"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="check-box-control-in-powerapps"></a>Элемент управления "Флажок" в PowerApps
 Элемент управления, который пользователь может установить или снять, задавая значение **true** или **false** соответственно.
@@ -67,7 +66,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
+**[FontWeight](properties-text.md) ** — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -122,14 +121,14 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**If**( *Condition*;; *Result* )](../functions/function-if.md)
+[**If**( *Condition*; *Result* )](../functions/function-if.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **Флажок**, назовите его **chkReserve** и укажите для свойства **[Text](properties-core.md)** значение **Зарезервировать**.
    
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте элемент управления **[Средство выбора даты](control-date-picker.md)** и укажите для свойства **[Visible](properties-core.md)** следующую формулу:
-   <br>**If(chkReserve.Value = true; true)**
+   <br>**If(chkReserve.Value = true, true)**
    
     Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 3. Нажмите клавишу F5, выберите элемент **chkReserve** и укажите для свойства **[Value](properties-core.md)** значение **true**, затем еще раз выберите элемент **chkReserve** и укажите для свойства **[Value](properties-core.md)** значение **false**.

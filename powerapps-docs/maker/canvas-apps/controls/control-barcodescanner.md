@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61544598"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>Веб-управления сканер штрихкодов (экспериментальная функция) в PowerApps
 
@@ -67,7 +66,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Patch**( *DataSource*;; *BaseRecord*;; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Пример
 
@@ -91,7 +90,7 @@ ms.PowerAppsDecimalTransform: true
 
 ### <a name="screen-reader-support"></a>Поддержка средства чтения с экрана
 
-* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)**.
+* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)** .
 
     > [!NOTE]
   > Средства чтения с экрана будут сообщать, если найдено нового штрихкода. Значение не объявлена. До тех пор, пока штрихкод будет отображаться, средства чтения с экрана напомнит о каждые пять секунд, по-прежнему идентифицирован одинаковый штрихкод.

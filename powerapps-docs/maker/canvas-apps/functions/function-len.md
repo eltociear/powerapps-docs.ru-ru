@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/24/2019
 ms.locfileid: "66216027"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="len-function-in-powerapps"></a>Функция Len в PowerApps
 Возвращает длину текстовой строки.
@@ -54,6 +53,6 @@ ms.PowerAppsDecimalTransform: true
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| **Len(ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;))** |В [столбце](../working-with-tables.md#columns) **Address** (Адрес) таблицы **People** (Люди):<br><ul><li>Определяет длину каждой строки.</li><li>Возвращает таблицу из одного столбца, содержащего длины каждой из строк.</li> |<style> img { max-width: none } </style> ![](media/function-len/people-table-len.png) |
-| **Len(["Hello"; "to the"; "World"; ""])** |В столбце **[Value](function-value.md)** (Значение) встроенной таблицы:<br><ul><li>Определяет длину каждой строки.</li><li>Возвращает таблицу из одного столбца, содержащего длины каждой из строк.</li> |![](media/function-len/people-table-len-inline.png) |
+| **Len(ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;))** |В [столбце](../working-with-tables.md#columns) **Address** (Адрес) таблицы **People** (Люди):<br><ul><li>Определяет длину каждой строки.</li><li>Возвращает таблицу из одного столбца, содержащего длины каждой из строк.</li> |<style> img { max-width: none } </style> ![](media/function-len/people-table-len.png) |
+| **Len(["Hello", "to the", "World", ""])** |В столбце **[Value](function-value.md)** (Значение) встроенной таблицы:<br><ul><li>Определяет длину каждой строки.</li><li>Возвращает таблицу из одного столбца, содержащего длины каждой из строк.</li> |![](media/function-len/people-table-len-inline.png) |
 

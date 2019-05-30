@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/10/2019
 ms.locfileid: "65517372"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="radio-control-in-powerapps"></a>Элемент управления "Переключатель" в PowerApps
 
@@ -71,7 +70,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
+**[FontWeight](properties-text.md) ** — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -131,19 +130,19 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Distinct**(*источник*; *столбец*)](../functions/function-distinct.md)
+[**Distinct**(*источник*, *столбец*)](../functions/function-distinct.md)
 
 ## <a name="example"></a>Пример
 
 1. Добавьте элемент управления **Переключатель**, назовите его **Pricing** и укажите для свойства **[Items](properties-core.md)** следующую формулу:
 
-    **["Standard"; "Premium"]**
+    **["Standard", "Premium"]**
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
 2. Добавьте элемент управления **[Метка](control-text-box.md)**, переместите его под элемент управления **Переключатель** и укажите для свойства **[Text](properties-core.md)** элемента **[Метка](control-text-box.md)** следующую формулу:
 
-    **If("Premium" in Pricing.Selected.Value; "200 долларов в день"; "150 долларов в день")**
+    **If("Premium" in Pricing.Selected.Value, "200 долларов в день", "150 долларов в день")**
 
     Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 

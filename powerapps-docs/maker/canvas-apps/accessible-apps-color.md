@@ -29,9 +29,9 @@ ms.locfileid: "61549980"
 * К выключенному тексту не применяются требования по контрастности.
 
 На практике это означает, что все интерактивные элементы управления должны иметь достаточную контрастность между следующими значениями:
-* **[Color](controls/properties-color-border.md)** и **[Fill](controls/properties-color-border.md)**;
-* **[PressedColor](controls/properties-color-border.md)** и **[PressedFill](controls/properties-color-border.md)**;
-* **[HoverColor](controls/properties-color-border.md)** и **[HoverFill](controls/properties-color-border.md)**.
+* **[Color](controls/properties-color-border.md)** и **[Fill](controls/properties-color-border.md)** ;
+* **[PressedColor](controls/properties-color-border.md)** и **[PressedFill](controls/properties-color-border.md)** ;
+* **[HoverColor](controls/properties-color-border.md)** и **[HoverFill](controls/properties-color-border.md)** .
 
 ## <a name="minimum-contrast-for-non-text"></a>Минимальная контрастность для нетекстовых элементов
 
@@ -55,14 +55,14 @@ ms.locfileid: "61549980"
 * **[HoverFill](controls/properties-color-border.md)** и цвета за его пределами.
 
 ### <a name="graphical-objects"></a>Графические объекты
-Если изображение содержит важные сведения, мы рекомендуем применить к нему требования к контрастности. Это относится к элементам управления, где можно отобразить изображения: **[Аудио](controls/control-audio-video.md)**,  **[изображение](controls/control-image.md)**,  **["микрофон"](controls/control-microphone.md)**, и **[видео](controls/control-audio-video.md)**.
+Если изображение содержит важные сведения, мы рекомендуем применить к нему требования к контрастности. Это относится к элементам управления, где можно отобразить изображения: **[Аудио](controls/control-audio-video.md)** ,  **[изображение](controls/control-image.md)** ,  **["микрофон"](controls/control-microphone.md)** , и **[видео](controls/control-audio-video.md)** .
 
 Также мы рекомендуем проверить контрастность для видео. Вместо этого или в дополнение к этому можно также предоставить [скрытые субтитры](controls/control-audio-video.md) с описанием видео.
 
 ## <a name="provide-other-visual-cues"></a>Предоставление других визуальных подсказок
 Следите за тем, чтобы приложение никогда не передавало информацию только изменением цвета. Например, пользователи, не различающие красный и зеленый цвета, не смогут отличить красный цвет ошибки от зеленого сообщения об успешном завершении.
 
-Чтобы передать такие сообщения, можно использовать дополнительные подсказки, например **[значки](controls/control-shapes-icons.md)**, или стили текста, такие как **[курсив](controls/properties-text.md)** и **[подчеркивание](controls/properties-text.md)**.
+Чтобы передать такие сообщения, можно использовать дополнительные подсказки, например **[значки](controls/control-shapes-icons.md)** , или стили текста, такие как **[курсив](controls/properties-text.md)** и **[подчеркивание](controls/properties-text.md)** .
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Узнайте больше о [свойствах специальных возможностей](controls/properties-accessibility.md) в элементах управления PowerApps и воспользуйтесь [проверкой читаемости](accessibility-checker.md).

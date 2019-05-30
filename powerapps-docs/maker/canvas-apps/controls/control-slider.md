@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61548761"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="slider-control-in-powerapps"></a>Элемент управления "Ползунок" в PowerApps
 Элемент управления, позволяющий пользователю указывать значение, перетаскивая маркер.
@@ -100,11 +99,11 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Sum**(*значение1*; *значение2*)](../functions/function-aggregates.md)
+[**Sum**(*значение1*, *значение2*)](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте кнопку и задайте следующую формулу в качестве значения свойства **[OnSelect](properties-core.md)**:
-   <br>**ClearCollect(CityPopulations; {City:"Лондон"; Country:"Соединенное Королевство"; Population:8615000}; {City:"Берлин"; Country:"Германия"; Population:3562000}; {City:"Мадрид"; Country:"Испания"; Population:3165000}; {City:"Рим"; Country:"Италия"; Population:2874000}; {City:"Париж"; Country:"Франция"; Population:2273000}; {City:"Гамбург"; Country:"Германия"; Population:1760000}; {City:"Барселона"; Country:"Испания"; Population:1602000}; {City:"Мюнхен"; Country:"Германия"; Population:1494000}; {City:"Милан"; Country:"Италия"; Population:1344000})**
+   <br>**ClearCollect(CityPopulations, {City:"Лондон", Country:"Соединенное Королевство", Population:8615000}, {City:"Берлин", Country:"Германия", Population:3562000}, {City:"Мадрид", Country:"Испания", Population:3165000}, {City:"Рим", Country:"Италия", Population:2874000}, {City:"Париж", Country:"Франция", Population:2273000}, {City:"Гамбург", Country:"Германия", Population:1760000}, {City:"Барселона", Country:"Испания", Population:1602000}, {City:"Мюнхен", Country:"Германия", Population:1494000}, {City:"Милан", Country:"Италия", Population:1344000})**
    
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
    
@@ -113,8 +112,8 @@ ms.PowerAppsDecimalTransform: true
 3. Добавьте ползунок, переместите его под кнопку и назовите **MinPopulation**.
 4. Укажите для свойства **Max** ползунка значение **5000000**, а для свойства **Min** — **1000000**.
 5. Добавьте коллекцию текста с вертикальной (книжной) ориентацией, переместите ее под ползунок и укажите для ее свойства **[Items](properties-core.md)** следующую формулу:<br>
-   **Filter(CityPopulations; Population > MinPopulation)**
-6. В первом элементе коллекции укажите для свойства **[Text](properties-core.md)** верхней метки значение **ThisItem.City**, а для свойства **[Text](properties-core.md)** нижней метки следующую формулу:<br> **Text(ThisItem.Population; "##,###")**
+   **Filter(CityPopulations, Population > MinPopulation)**
+6. В первом элементе коллекции укажите для свойства **[Text](properties-core.md)** верхней метки значение **ThisItem.City**, а для свойства **[Text](properties-core.md)** нижней метки следующую формулу:<br> **Text(ThisItem.Population, "##,###")**
 7. Нажмите клавишу F5 и измените значение элемента **MinPopulation**, чтобы отображались только города с численностью населения, превышающей заданное вами значение.
 8. Нажмите клавишу ESC, чтобы вернуться в рабочую область по умолчанию.
 

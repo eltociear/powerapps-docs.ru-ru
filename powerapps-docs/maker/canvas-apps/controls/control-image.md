@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61544621"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="image-control-in-powerapps"></a>Элемент управления "Изображение" в PowerApps
 Этот элемент управления служит для показа изображения из локального файла или источника данных.
@@ -77,7 +76,7 @@ ms.PowerAppsDecimalTransform: true
 
 **OriginalWidth** — исходная ширина изображения (активируется свойством **CalculateOriginalDimensions**).
 
-**[PaddingBottom](properties-size-location.md)**  — расстояние между текстом в элементе управления и нижним краем элемента управления.
+**[PaddingBottom](properties-size-location.md) ** — расстояние между текстом в элементе управления и нижним краем элемента управления.
 
 **[PaddingLeft](properties-size-location.md)**  — расстояние между текстом в элементе управления и левым краем элемента управления.
 
@@ -112,7 +111,7 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Remove**( *DataSource*;; ThisItem )](../functions/function-remove-removeif.md)
+[**Remove**( *DataSource*; ThisItem )](../functions/function-remove-removeif.md)
 
 ## <a name="examples"></a>Примеры
 ### <a name="show-an-image-from-a-local-file"></a>Показ изображения из локального файла

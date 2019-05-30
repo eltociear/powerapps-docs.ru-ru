@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/10/2019
 ms.locfileid: "65517419"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="list-box-control-in-powerapps"></a>Элемент управления "Поле со списком" в PowerApps
 Список, в котором пользователь может выбрать один или несколько элементов.
@@ -63,7 +62,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
+**[FontWeight](properties-text.md) ** — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -126,11 +125,11 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Distinct**(*источник*; *столбец*)](../functions/function-distinct.md)
+[**Distinct**(*источник*, *столбец*)](../functions/function-distinct.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **Поле со списком**, назовите его **CategoryList** и укажите для свойства **[Items](properties-core.md)** следующую формулу:<br>
-   **["Carpet";"Hardwood";"Tile"]**
+   **["Carpet","Hardwood","Tile"]**
    
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
    
@@ -138,9 +137,9 @@ ms.PowerAppsDecimalTransform: true
 2. Добавьте три элемента управления **[Раскрывающийся список](control-drop-down.md)**, переместите их под элемент **CategoryList** и назовите **CarpetList**, **HardwoodList** и **TileList**.
 3. Укажите для свойства **[Items](properties-core.md)** каждого из элементов управления **[Раскрывающийся список](control-drop-down.md)** одно из следующих значений:
    
-   * CarpetList: **["Caserta Stone Beige";"Ageless Beauty Clay"; "Lush II Tundra"]**
-   * HardwoodList: **["Golden Teak";"Natural Hickory"; "Victoria Mahogany"]**
-   * TileList: **["Honey Onyx Marble";"Indian Autumn Slate"; "Panaria Vitality Ceramic"]**
+   * CarpetList: **["Caserta Stone Beige","Ageless Beauty Clay", "Lush II Tundra"]**
+   * HardwoodList: **["Golden Teak","Natural Hickory", "Victoria Mahogany"]**
+   * TileList: **["Honey Onyx Marble","Indian Autumn Slate", "Panaria Vitality Ceramic"]**
      
      ![Названия напольных покрытий в раскрывающихся списках](./media/control-list-box/flooring-names.png)
 4. Укажите для свойства **[Visible](properties-core.md)** каждого из элементов управления **[Раскрывающийся список](control-drop-down.md)** одно из следующих значений:

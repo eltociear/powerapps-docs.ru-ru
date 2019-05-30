@@ -32,16 +32,16 @@ ms.locfileid: "61550095"
 
 * Задайте **[размер](controls/properties-text.md)** 0.
 * Задайте **[ширины](controls/properties-size-location.md)** и **[высота](controls/properties-size-location.md)** 1.
-* Задайте  **[X](controls/properties-size-location.md)**,  **[Y](controls/properties-size-location.md)**, или оба свойства таким образом, что элемент управления находится за пределами экрана.
+* Задайте  **[X](controls/properties-size-location.md)** ,  **[Y](controls/properties-size-location.md)** , или оба свойства таким образом, что элемент управления находится за пределами экрана.
 * Задайте **[цвет](controls/properties-color-border.md)** и свойства, связанные с прозрачным.
 * Поместите прямоугольник **[фигуры](controls/control-shapes-icons.md)** выше содержимое и набор **[заполнения](controls/properties-color-border.md)** тот же цвет, как цвет фона экрана.
 
 > [!NOTE]
-> Пользователи могут продолжать использовать клавиатуру для доступа к интерактивные элементы управления, такие как  **[кнопку](controls/control-button.md)**, даже если скрыть его, используя один из методов в списке выше. Задайте **[TabIndex](controls/properties-accessibility.md)** значение -1, если вы хотите запретить пользователям доступ к элемент управления, нажав клавишу Tab.
+> Пользователи могут продолжать использовать клавиатуру для доступа к интерактивные элементы управления, такие как  **[кнопку](controls/control-button.md)** , даже если скрыть его, используя один из методов в списке выше. Задайте **[TabIndex](controls/properties-accessibility.md)** значение -1, если вы хотите запретить пользователям доступ к элемент управления, нажав клавишу Tab.
 
 ## <a name="hide-content-from-screen-reader-users-and-show-it-to-sighted-users"></a>Скрыть содержимое от чтения экрана пользователей и показать его к пользователям
 
-* Для  **[изображение](controls/control-image.md)**,  **[значок](controls/control-shapes-icons.md)**, и **[фигуры](controls/control-shapes-icons.md)** элементов управления **[AccessibleLabel](controls/properties-accessibility.md)** пустая строка «».
+* Для  **[изображение](controls/control-image.md)** ,  **[значок](controls/control-shapes-icons.md)** , и **[фигуры](controls/control-shapes-icons.md)** элементов управления **[AccessibleLabel](controls/properties-accessibility.md)** пустая строка «».
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

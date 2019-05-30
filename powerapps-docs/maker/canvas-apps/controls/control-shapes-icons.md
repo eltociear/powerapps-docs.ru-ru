@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "63318434"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>Фигуры и значки в PowerApps
 Фигуры и значки — это элементы управления, для которых можно настроить внешний вид и поведение.
@@ -69,7 +68,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Navigate**( *ScreenName*;; *ScreenTransition* )](../functions/function-navigate.md)
+[**Navigate**( *ScreenName*; *ScreenTransition* )](../functions/function-navigate.md)
 
 ## <a name="example"></a>Пример
 
@@ -81,7 +80,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. В элементе **Источник** добавьте элемент управления **Фигура** и назначьте его свойству **[OnSelect](properties-core.md)** следующую формулу:
 
-  `Navigate(Target; ScreenTransition.Fade)`
+  `Navigate(Target, ScreenTransition.Fade)`
   
 1. Нажмите клавишу F5, а затем выберите **фигуры** элемента управления.
 
@@ -89,7 +88,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. (Необязательно) Нажмите клавишу Esc, чтобы вернуться в рабочую область по умолчанию, добавьте элемент управления **Фигура** к элементу **Цель** и назначьте свойству **[OnSelect](properties-core.md)** элемента управления **Фигура** следующую формулу:
 
-  `Navigate(Source; ScreenTransition.Fade)`
+  `Navigate(Source, ScreenTransition.Fade)`
 
 ## <a name="accessibility-guidelines"></a>Руководство по настройке специальных возможностей
 
@@ -98,7 +97,7 @@ ms.PowerAppsDecimalTransform: true
 Следующее касается только графических элементов, которые используются в качестве кнопок. Иными словами, не только для визуализации.
 
 Для значков:
-- **[Color](properties-color-border.md)** и **[Fill](properties-color-border.md)**;
+- **[Color](properties-color-border.md)** и **[Fill](properties-color-border.md)** ;
 - применяются другие [стандартные требования по цветовому контрасту](../accessible-apps-color.md) (при использовании в качестве кнопки).
 
 Для фигур с границами:
@@ -115,7 +114,7 @@ ms.PowerAppsDecimalTransform: true
 
 - **[AccessibleLabel](properties-accessibility.md)**  должен быть пустой строкой или пустым **«»** Если рисунок содержит избыточные сведения или предназначен исключительно для визуализации. Это значение обеспечивает средства чтения с экрана игнорируют графику.
 
-Например, можно задать **[AccessibleLabel](properties-accessibility.md)** свойство **параметры** значок, чтобы **параметры**. Этот значок не используется в качестве кнопки. Она будет **[метка](control-text-box.md)** , также говорит **параметры**. Средства чтения с экрана прочитает значок и метку как **параметры**, который является излишним. В этом случае не требуется значок  **[AccessibleLabel](properties-accessibility.md)**.
+Например, можно задать **[AccessibleLabel](properties-accessibility.md)** свойство **параметры** значок, чтобы **параметры**. Этот значок не используется в качестве кнопки. Она будет **[метка](control-text-box.md)** , также говорит **параметры**. Средства чтения с экрана прочитает значок и метку как **параметры**, который является излишним. В этом случае не требуется значок  **[AccessibleLabel](properties-accessibility.md)** .
 
 > [!IMPORTANT]
 > Средства чтения с экрана прочитает чтение значок или форма как **кнопку** если его **[AccessibleLabel](properties-accessibility.md)** присваивается пустая строка и ее **[TabIndex ](properties-accessibility.md)** устанавливается равным нулю или больше. Такие значки или фигуры воспринимаются как кнопки. 

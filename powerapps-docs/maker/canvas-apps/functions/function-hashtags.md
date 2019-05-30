@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61562883"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="hashtags-function-in-powerapps"></a>Функция HashTags в PowerApps
 Извлекает хэш-теги (#string — строки) из строки или текста.
@@ -43,7 +42,7 @@ ms.PowerAppsDecimalTransform: true
 ### <a name="step-by-step"></a>Шаг за шагом
 1. Добавьте элемент управления **[Текстовое поле](../controls/control-text-input.md)**, назовите его **Tweet** и введите следующее предложение:
    
-    **Это #приложение #ПРОСТО_СУПЕР и может #сЧитать123 или #123абв; но не #1–23 и не #$\*(#\@")**
+    **Это #приложение #ПРОСТО_СУПЕР и может #сЧитать123 или #123абв, но не #1–23 и не #$\*(#\@")**
 2. Добавьте вертикальную пользовательскую коллекцию и задайте для свойства **[Items](../controls/properties-core.md)** следующую функцию:
    
     **HashTags(Tweet.Text)**

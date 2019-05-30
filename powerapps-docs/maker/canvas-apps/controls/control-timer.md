@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61560474"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="timer-control-in-powerapps"></a>Элемент управления "Таймер" в PowerApps
 Элемент управления, определяющий поведение приложения по истечении заданного количества времени.
@@ -126,7 +125,7 @@ ms.PowerAppsDecimalTransform: true
 2. Укажите для свойства **Duration** значение **10000**, а для свойств **Repeat** и **Autostart** — значение **true**.
 3. (Необязательно) Сделайте таймер удобным для чтения, указав следующие значения для перечисленных свойств: **[Height](properties-size-location.md)**  — **160**, **[Width](properties-size-location.md)**  — **600** и **[Size](properties-text.md)**  — **60**.
 4. Добавьте метку и установите в ее свойстве **[Text](properties-core.md)** формулу:
-   <br>**"Осталось секунд: " & RoundUp(10-Countdown.Value/1000; 0)**
+   <br>**"Осталось секунд: " & RoundUp(10-Countdown.Value/1000, 0)**
 
     Нужны дополнительные сведения о функции **[RoundUp](../functions/function-round.md)** или [других функциях](../formula-reference.md)?
 
@@ -138,8 +137,8 @@ ms.PowerAppsDecimalTransform: true
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Укажите для свойства таймера **Duration** значение **5000**, для свойства **Repeat** — **true**, для свойства **[Text](properties-core.md)** — **Toggle animation** (Переключить анимацию).
 3. (Необязательно) Сделайте таймер удобным для чтения, указав следующие значения для перечисленных свойств: **[Height](properties-size-location.md)**  — **160**, **[Width](properties-size-location.md)**  — **600** и **[Size](properties-text.md)**  — **60**.
-4. Добавьте метку и задайте для свойства **[Text](properties-core.md)** отображение слова **Приветствуем!**, а для свойства **[Color](properties-color-border.md)**  — следующую формулу:
-   <br>**ColorFade(Color.BlueViolet; FadeIn.Value/5000)**
+4. Добавьте метку и задайте для свойства **[Text](properties-core.md)** отображение слова **Приветствуем!** , а для свойства **[Color](properties-color-border.md)**  — следующую формулу:
+   <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
 
     Нужны дополнительные сведения о функции **[ColorFade](../functions/function-colors.md)** или [других функциях](../formula-reference.md)?
 
@@ -169,7 +168,7 @@ ms.PowerAppsDecimalTransform: true
     > [!NOTE]
     > Если таймер видимым и запущена, средства чтения с экрана будут сообщать затраченное время каждые пять секунд.
 
-* Не используйте **[текст](properties-core.md)** свойства элемента управления с учетом времени и важные сведения. Средства чтения с экрана не объявлять изменения  **[текст](properties-core.md)**.
+* Не используйте **[текст](properties-core.md)** свойства элемента управления с учетом времени и важные сведения. Средства чтения с экрана не объявлять изменения  **[текст](properties-core.md)** .
 * Для интерактивного таймеров:
-    * Должен присутствовать элемент **[Text](properties-core.md)**.
+    * Должен присутствовать элемент **[Text](properties-core.md)** .
     * Рассмотрите возможность добавления **[метка](control-text-box.md)** элемента управления, чтобы отобразить истекшее время. Используйте таймер **[текст](properties-core.md)** свойства к пользователю следует запустить или остановить таймер.

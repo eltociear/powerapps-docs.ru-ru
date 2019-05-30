@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61544253"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="gallery-control-in-canvas-apps"></a>Элемент управления коллекции в приложениях на основе холста
 
@@ -45,7 +44,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="additional-properties"></a>Дополнительные свойства
 
-**[AccessibleLabel](properties-accessibility.md)**  — метки в коллекции (не элементы он содержит) для средства чтения с экрана. Должна описывать список элементов.
+**[AccessibleLabel](properties-accessibility.md) ** — метки в коллекции (не элементы он содержит) для средства чтения с экрана. Должна описывать список элементов.
 
 **AllItems** — все элементы в коллекции, включая дополнительные значения элементов управления, которые являются частью шаблона коллекции.
 
@@ -93,7 +92,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Filter**(*источник*; *формула*)](../functions/function-filter-lookup.md)
+[**Filter**(*источник*, *формула*)](../functions/function-filter-lookup.md)
 
 ## <a name="examples"></a>Примеры
 
