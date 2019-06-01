@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 85ab89641fd29fa91e8c5b5d7b3d36e9cddedaf2
-ms.sourcegitcommit: 6b75019dccc5296a313f9ff0eb397003f13ce737
+ms.openlocfilehash: ec035ca959f29832e2ba0bbb2250a24c11f1692e
+ms.sourcegitcommit: 562c7ed5fbb116be1cbb0f45e3f6e75e3e4cf011
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65940509"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66451407"
 ---
 # <a name="formula-reference-for-powerapps"></a>Справочник формул для PowerApps
 Формулы объединяют множество элементов.  Ниже перечислены следующие элементы:
@@ -26,7 +26,7 @@ ms.locfileid: "65940509"
 * **Функции** принимают параметры, выполняют операцию и возвращают значение. Например, **Sqrt(25)** возвращает значение **5**. Функции построены по принципу функций Microsoft Excel.  Некоторые функции вызывают побочные действия, такие как **SubmitForm**, что должно происходить только в [формуле поведения](working-with-formulas-in-depth.md), такой как **Button.OnSelect**.
 * **Сигналы** возвращают сведения о среде. Например, **[Location](functions/signals.md)** возвращает текущие GPS-координаты устройства. Сигналы не принимают параметры и не вызывают побочные действия.
 * **Перечисления** возвращают предопределенные постоянные значения. Например, **[Color](functions/function-colors.md)** является перечислением с предопределенными значениями, такими как **Color.Red**, **Color.Blue** и т. д.  Здесь приводятся общие перечисления, а описания перечислений для конкретных функций приводятся в описаниях самих функций.
-* **Именованные операторы**, такие как **[ThisItem](functions/operators.md#thisitem-operator)** и **[Parent](functions/operators.md#parent-operator)**, предоставляют доступ к сведениям из контейнера.
+* **Именованные операторы**, такие как **[ThisItem](functions/operators.md#thisitem-operator)** и **[Parent](functions/operators.md#parent-operator)** , предоставляют доступ к сведениям из контейнера.
 
 К другим элементам относятся:
 
@@ -45,9 +45,9 @@ ms.locfileid: "65940509"
 
 **[AddColumns](functions/function-table-shaping.md)** — возвращает таблицу с добавленными [столбцами](working-with-tables.md#columns).
 
-**[And](functions/function-logicals.md)** — логическая функция AND.  Возвращает значение **true**, если все аргументы принимают значение **true**.  Также можно использовать [оператор **&&**](functions/operators.md).
+**[And](functions/function-logicals.md)** — логическая функция AND.  Возвращает значение **true**, если все аргументы принимают значение **true**.  Также можно использовать [оператор **&&** ](functions/operators.md).
 
-**[App](functions/signals.md)** — возвращает сведения о выполняемом в данный момент приложении, например, какой экран сейчас отображается.
+**[Приложение](functions/object-app.md)**  — предоставляет сведения о текущих и контроля над поведением приложения.
 
 **[Asin](functions/function-trig.md)** — возвращает арксинус числа (в радианах).
 
@@ -234,14 +234,14 @@ ms.locfileid: "65940509"
 
 **[NewForm](functions/function-form.md)** — сбрасывает элемент управления формы для создания элемента.
 
-**[Not](functions/function-logicals.md)** — логическая функция NOT.  Возвращает значение **true**, если ее аргумент принимает значение **false**, и возвращает **false**, если ее аргумент принимает значение **true**.  Также можно использовать [оператор **!**](functions/operators.md).
+**[Not](functions/function-logicals.md)** — логическая функция NOT.  Возвращает значение **true**, если ее аргумент принимает значение **false**, и возвращает **false**, если ее аргумент принимает значение **true**.  Также можно использовать [оператор **!** ](functions/operators.md).
 
 **[Notify](functions/function-showerror.md)**  — отображает баннер с сообщением для пользователя.
 
 **[Now](functions/function-now-today-istoday.md)** — возвращает текущее значение даты и времени.
 
 ## <a name="o"></a>O
-**[Or](functions/function-logicals.md)** — логическая функция OR.  Возвращает значение **true**, если хотя бы один из ее аргументов принимает значение **true**.  Также можно использовать [оператор **||**](functions/operators.md).
+**[Or](functions/function-logicals.md)** — логическая функция OR.  Возвращает значение **true**, если хотя бы один из ее аргументов принимает значение **true**.  Также можно использовать [оператор **||** ](functions/operators.md).
 
 ## <a name="p"></a>P
 **[Param](functions/function-param.md)** — предоставляет доступ к параметрам, переданным в приложение при его открытии пользователем.
@@ -254,7 +254,7 @@ ms.locfileid: "65940509"
 
 **[PlainText](functions/function-encode-decode.md)** — удаляет из строки HTML- и XML-теги.
 
-**[Power](functions/function-numericals.md)** — возвращает число, возведенное в степень.  Также можно использовать [оператор **^**](functions/operators.md).
+**[Power](functions/function-numericals.md)** — возвращает число, возведенное в степень.  Также можно использовать [оператор **^** ](functions/operators.md).
 
 **[Proper](functions/function-lower-upper-proper.md)** — преобразует в строке первую букву каждого слова в прописную, а остальные буквы преобразует в строчные.
 
