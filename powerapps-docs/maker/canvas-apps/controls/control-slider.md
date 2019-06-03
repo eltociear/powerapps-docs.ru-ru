@@ -102,7 +102,7 @@ ms.locfileid: "61548761"
 [**Sum**(*значение1*, *значение2*)](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Пример
-1. Добавьте кнопку и задайте следующую формулу в качестве значения свойства **[OnSelect](properties-core.md)**:
+1. Добавьте кнопку и задайте следующую формулу в качестве значения свойства **[OnSelect](properties-core.md)** :
    <br>**ClearCollect(CityPopulations, {City:"Лондон", Country:"Соединенное Королевство", Population:8615000}, {City:"Берлин", Country:"Германия", Population:3562000}, {City:"Мадрид", Country:"Испания", Population:3165000}, {City:"Рим", Country:"Италия", Population:2874000}, {City:"Париж", Country:"Франция", Population:2273000}, {City:"Гамбург", Country:"Германия", Population:1760000}, {City:"Барселона", Country:"Испания", Population:1602000}, {City:"Мюнхен", Country:"Германия", Population:1494000}, {City:"Милан", Country:"Италия", Population:1344000})**
    
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
@@ -130,11 +130,11 @@ ms.locfileid: "61548761"
 * элемента **RailHoverFill** и цвета фона.
 
 ### <a name="screen-reader-support"></a>Поддержка средства чтения с экрана
-* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)**.
+* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)** .
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.
+* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
 * Значение ползунка должно отображаться при взаимодействии с помощью клавиатуры. Это можно сделать одним из следующих методов:
     * задать для **ShowValue** значение **true**;
     * добавить смежный элемент **[Label](control-text-box.md)** к ползунку;. задать для элемента **[Text](properties-core.md)** метки значение **[Value](properties-core.md)** ползунка.

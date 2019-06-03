@@ -24,10 +24,10 @@ ms.locfileid: "65517419"
 Список, в котором пользователь может выбрать один или несколько элементов.
 
 ## <a name="description"></a>Описание
-Элемент управления **Поле со списком** всегда отображает все доступные варианты выбора (в отличие от элемента управления **[Раскрывающийся список](control-drop-down.md)**), и в нем пользователь может выбрать несколько элементов одновременно (в отличие от элемента управления **[Переключатель](control-radio.md)**).
+Элемент управления **Поле со списком** всегда отображает все доступные варианты выбора (в отличие от элемента управления **[Раскрывающийся список](control-drop-down.md)** ), и в нем пользователь может выбрать несколько элементов одновременно (в отличие от элемента управления **[Переключатель](control-radio.md)** ).
 
 ## <a name="key-properties"></a>Основные свойства
-**[Default](properties-core.md)**. Начальное значение элемента управления до его изменения пользователем.
+**[Default](properties-core.md)** . Начальное значение элемента управления до его изменения пользователем.
 
 **[Items](properties-core.md)**  — источник данных, отображаемых в элементе управления, такой как коллекция, список или диаграмма.
 
@@ -62,7 +62,7 @@ ms.locfileid: "65517419"
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md) ** — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
+**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -134,7 +134,7 @@ ms.locfileid: "65517419"
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
    
     ![Категории напольных покрытий в поле со списком](./media/control-list-box/category-listbox.png)
-2. Добавьте три элемента управления **[Раскрывающийся список](control-drop-down.md)**, переместите их под элемент **CategoryList** и назовите **CarpetList**, **HardwoodList** и **TileList**.
+2. Добавьте три элемента управления **[Раскрывающийся список](control-drop-down.md)** , переместите их под элемент **CategoryList** и назовите **CarpetList**, **HardwoodList** и **TileList**.
 3. Укажите для свойства **[Items](properties-core.md)** каждого из элементов управления **[Раскрывающийся список](control-drop-down.md)** одно из следующих значений:
    
    * CarpetList: **["Caserta Stone Beige","Ageless Beauty Clay", "Lush II Tundra"]**
@@ -151,7 +151,7 @@ ms.locfileid: "65517419"
      Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 5. Нажмите клавишу F5 и выберите один или несколько элементов в элементе управления **CategoryList**.
    
-    В зависимости от вашего выбора отображаются один или несколько элементов управления **[Раскрывающийся список](control-drop-down.md)**.
+    В зависимости от вашего выбора отображаются один или несколько элементов управления **[Раскрывающийся список](control-drop-down.md)** .
    
     ![Названия напольных покрытий в раскрывающихся списках](./media/control-list-box/selected-lists.png)
 6. (Необязательно) Нажмите клавишу ESC, чтобы вернуться в рабочую область по умолчанию.
@@ -161,18 +161,18 @@ ms.locfileid: "65517419"
 ### <a name="color-contrast"></a>Контрастность
 Необходимо настроить достаточный контраст для следующих элементов:
 * **SelectionColor** и **SelectionFill**;
-* **SelectionFill** и **[Fill](properties-color-border.md)**;
-* **[HoverFill](properties-color-border.md)** и **[Fill](properties-color-border.md)**;
-* **[PressedFill](properties-color-border.md)** и **[Fill](properties-color-border.md)**.
+* **SelectionFill** и **[Fill](properties-color-border.md)** ;
+* **[HoverFill](properties-color-border.md)** и **[Fill](properties-color-border.md)** ;
+* **[PressedFill](properties-color-border.md)** и **[Fill](properties-color-border.md)** .
 
 Это дополнение к [стандартным требованиям по цветовому контрасту](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Поддержка средства чтения с экрана
-* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)**.
+* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)** .
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.
+* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
 
     > [!NOTE]
   > Клавиша табуляции позволяет переходить к **списку**. Для перехода по содержимому **списка** используются клавиши со стрелками.

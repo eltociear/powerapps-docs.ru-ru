@@ -27,7 +27,7 @@ ms.locfileid: "61559456"
 Пользователь может указывать логическое значение с помощью этого знакомого элемента управления, который уже не одно десятилетие используется в графических пользовательских интерфейсах.
 
 ## <a name="key-properties"></a>Основные свойства
-**[Default](properties-core.md)**. Начальное значение элемента управления до его изменения пользователем.
+**[Default](properties-core.md)** . Начальное значение элемента управления до его изменения пользователем.
 
 **[Text](properties-core.md)**  — текст, отображаемый в элементе управления, или текст, который пользователь вводит в элемент управления.
 
@@ -66,7 +66,7 @@ ms.locfileid: "61559456"
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md) ** — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
+**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -141,16 +141,16 @@ ms.locfileid: "61559456"
 ### <a name="color-contrast"></a>Контрастность
 Необходимо настроить достаточный контраст для следующих элементов:
 * **CheckmarkFill** и **CheckboxBackgroundFill**;
-* **CheckboxBackgroundFill** и **[Fill](properties-color-border.md)**;
-* **CheckboxBackgroundFill** и **[PressedFill](properties-color-border.md)**;
-* **CheckboxBackgroundFill** и **[HoverFill](properties-color-border.md)**.
+* **CheckboxBackgroundFill** и **[Fill](properties-color-border.md)** ;
+* **CheckboxBackgroundFill** и **[PressedFill](properties-color-border.md)** ;
+* **CheckboxBackgroundFill** и **[HoverFill](properties-color-border.md)** .
 
 Это дополнение к [стандартным требованиям по цветовому контрасту](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Поддержка средства чтения с экрана
-* Должен присутствовать элемент **[Text](properties-core.md)**.
+* Должен присутствовать элемент **[Text](properties-core.md)** .
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.
+* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
  

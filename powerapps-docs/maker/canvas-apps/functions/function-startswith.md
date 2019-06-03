@@ -30,7 +30,7 @@ ms.locfileid: "61547082"
 
 При проверке для обеих функций регистр не учитывается.  Обе функции возвращают логическое значение **true** или **false**.  
 
-С помощью функций **EndsWith** и **StartsWith** в сочетании с функцией **[Filter](function-filter-lookup.md)** можно искать данные в приложении. Кроме того, для поиска значений в любом месте текстовых строк (а не только в начале или конце) можно использовать оператор **[in](operators.md#in-and-exactin-operators)** или функцию **[Search](function-filter-lookup.md)**.  Выбор функции зависит от потребностей приложения и от того, какую функцию можно [делегировать](../delegation-overview.md) для конкретного источника данных.  Если какую-либо из этих функций нельзя делегировать, на этапе создания появится предупреждение о делегировании.
+С помощью функций **EndsWith** и **StartsWith** в сочетании с функцией **[Filter](function-filter-lookup.md)** можно искать данные в приложении. Кроме того, для поиска значений в любом месте текстовых строк (а не только в начале или конце) можно использовать оператор **[in](operators.md#in-and-exactin-operators)** или функцию **[Search](function-filter-lookup.md)** .  Выбор функции зависит от потребностей приложения и от того, какую функцию можно [делегировать](../delegation-overview.md) для конкретного источника данных.  Если какую-либо из этих функций нельзя делегировать, на этапе создания появится предупреждение о делегировании.
 
 ## <a name="syntax"></a>Синтаксис
 **EndsWith**( *Text*, *EndText* )
@@ -54,9 +54,9 @@ ms.locfileid: "61547082"
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| **StartsWith("Hello World", "hello")** |Проверяет, начинается ли строка **"Hello World"** со строки **"hello"**.  При проверке регистр не учитывается. |**true** |
-| **StartsWith("Good bye", "hello")** |Проверяет, начинается ли строка **"Good bye"** с **"hello"**. |**false** |
-| **StartsWith("Always say hello", "hello")** |Проверяет, начинается ли строка **"Always say hello"** с **"hello"**.  Хотя текст **"hello"** есть в исходной строке, он расположен не в начале. |**false** |
+| **StartsWith("Hello World", "hello")** |Проверяет, начинается ли строка **"Hello World"** со строки **"hello"** .  При проверке регистр не учитывается. |**true** |
+| **StartsWith("Good bye", "hello")** |Проверяет, начинается ли строка **"Good bye"** с **"hello"** . |**false** |
+| **StartsWith("Always say hello", "hello")** |Проверяет, начинается ли строка **"Always say hello"** с **"hello"** .  Хотя текст **"hello"** есть в исходной строке, он расположен не в начале. |**false** |
 | **StartsWith( "Bye bye", "" )** |Проверяет, начинается ли текст **Bye bye** с пустой текстовой строки (**Len** возвращает значение 0).  В этом случае для функции **StartsWith** определен возврат значения **true**, что упрощает ее использование в выражениях **Filter**. |**true** |
 
 ### <a name="search-user-experience"></a>Оптимизация поиска
@@ -90,7 +90,7 @@ ms.locfileid: "61547082"
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| **Filter(Customers, StartsWith(Name, SearchInput.Text) &#124;&#124; StartsWith(Company, SearchInput.Text))** |Фильтрует источник данных **Customers** по записям, в которых записи в столбце **Name** или **Company** начинаются со строки поиска (например, **co**).  Если функция **StartsWith** возвращает значение *true*, [оператор **&#124;&#124;**](operators.md) также возвращает значение *true*. |<style> img { max-width: none } </style> ![](media/function-startswith/customers-all-co-startswith.png) |
+| **Filter(Customers, StartsWith(Name, SearchInput.Text) &#124;&#124; StartsWith(Company, SearchInput.Text))** |Фильтрует источник данных **Customers** по записям, в которых записи в столбце **Name** или **Company** начинаются со строки поиска (например, **co**).  Если функция **StartsWith** возвращает значение *true*, [оператор **&#124;&#124;** ](operators.md) также возвращает значение *true*. |<style> img { max-width: none } </style> ![](media/function-startswith/customers-all-co-startswith.png) |
 | **Filter(Customers, SearchInput.Text in Name &#124;&#124; SearchInput.Text in Company)** |Фильтрует источник данных **Customers** по записям, в которых искомая строка (например, **co**) находится в любом положении в столбце **Name** или **Company**. |<style> img { max-width: none } </style> ![](media/function-startswith/customers-all-co-contains.png) |
 | **Search(Customers, SearchInput.Text, "Name", "Company")** |Как и при использовании оператора **in**, функция **Search** ищет в источнике данных **Customers** записи, в которых искомая строка (например, **co**) находится в любом положении в столбце **Name** или **Company**. В отличие от функции **Filter**, функцию **Search** проще записывать и читать. Это следует учитывать, если вы хотите указать несколько столбцов и операторов **in**. Обратите внимание, что имена столбцов необходимо заключать в двойные кавычки. |<style> img { max-width: none } </style> ![](media/function-startswith/customers-all-co-contains.png) |
 

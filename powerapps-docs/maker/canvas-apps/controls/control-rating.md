@@ -81,8 +81,8 @@ ms.locfileid: "61526063"
 1. Добавьте элемент управления **Оценка** и назовите его **Quantitative**.
    
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
-2. Добавьте элемент управления **[Текстовое поле](control-text-input.md)**, назовите его **Qualitative** и поместите под элементом управления **Оценка**.
-3. Укажите для свойства **[Default](properties-core.md)** элемента управления **[Текстовое поле](control-text-input.md)** значение **""**, а для свойства **HintText** следующую формулу:
+2. Добавьте элемент управления **[Текстовое поле](control-text-input.md)** , назовите его **Qualitative** и поместите под элементом управления **Оценка**.
+3. Укажите для свойства **[Default](properties-core.md)** элемента управления **[Текстовое поле](control-text-input.md)** значение **""** , а для свойства **HintText** следующую формулу:
    <br>**If(Quantitative.Value > 3, "Что вам особенно понравилось?", "Как это улучшить?")**
    
     Нужны дополнительные сведения о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
@@ -98,19 +98,19 @@ ms.locfileid: "61526063"
 ## <a name="accessibility-guidelines"></a>Руководство по настройке специальных возможностей
 ### <a name="color-contrast"></a>Контрастность
 Необходимо настроить достаточный контраст для следующих элементов:
-* элементов **RatingFill** и **[Fill](properties-color-border.md)**.
+* элементов **RatingFill** и **[Fill](properties-color-border.md)** .
 
 Это дополнение к [стандартным требованиям по цветовому контрасту](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Поддержка средства чтения с экрана
-* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)**.
+* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)** .
 
     > [!NOTE]
   > Средства чтения с экрана обрабатывают элемент управления **Rating** как переключатель.
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.
+* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
 * Попробуйте использовать другой элемент управления, если есть слишком много звезд. Его использование может быть сложным для навигации с помощью клавиатуры и точного выделения точно с помощью сенсорного экрана.
 
     > [!NOTE]

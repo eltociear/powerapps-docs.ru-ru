@@ -32,7 +32,7 @@ ms.locfileid: "61551245"
 
 Функция **Time** преобразует отдельные значения Hour (Час), Minute (Минута) и Second (Секунда) в единое значение даты и времени.  Результат не содержит связанной с ним даты.
 
-Ознакомьтесь с описанием функций **[DateValue](function-datevalue-timevalue.md)**, **[TimeValue](function-datevalue-timevalue.md)** и **[DateTimeValue](function-datevalue-timevalue.md)** для получения сведений о преобразовании строки в значение.  
+Ознакомьтесь с описанием функций **[DateValue](function-datevalue-timevalue.md)** , **[TimeValue](function-datevalue-timevalue.md)** и **[DateTimeValue](function-datevalue-timevalue.md)** для получения сведений о преобразовании строки в значение.  
 
 Ознакомьтесь также с дополнительными сведениями в статье о [работе с датами и временем](../show-text-dates-times.md).
 

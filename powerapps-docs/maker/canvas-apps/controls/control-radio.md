@@ -70,7 +70,7 @@ ms.locfileid: "65517372"
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md) ** — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
+**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -140,7 +140,7 @@ ms.locfileid: "65517372"
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
-2. Добавьте элемент управления **[Метка](control-text-box.md)**, переместите его под элемент управления **Переключатель** и укажите для свойства **[Text](properties-core.md)** элемента **[Метка](control-text-box.md)** следующую формулу:
+2. Добавьте элемент управления **[Метка](control-text-box.md)** , переместите его под элемент управления **Переключатель** и укажите для свойства **[Text](properties-core.md)** элемента **[Метка](control-text-box.md)** следующую формулу:
 
     **If("Premium" in Pricing.Selected.Value, "200 долларов в день", "150 долларов в день")**
 
@@ -159,14 +159,14 @@ ms.locfileid: "65517372"
 В дополнение к [стандартным требованиям к контрастности](../accessible-apps-color.md) необходимо обеспечить достаточную контрастность между:
 
 * **RadioSelectionFill** и **RadioBackgroundFill**;
-* **RadioBackgroundFill** и **[Fill](properties-color-border.md)**.
+* **RadioBackgroundFill** и **[Fill](properties-color-border.md)** .
 
 ### <a name="screen-reader-support"></a>Поддержка чтения с экрана
 
-* Убедитесь, что каждый параметр имеет значение **[Value](properties-core.md)**.
+* Убедитесь, что каждый параметр имеет значение **[Value](properties-core.md)** .
 * Рекомендуем добавить **[Label](control-text-box.md)** сразу перед элементом **Переключатель**. В этом случае свойство будет выступать в роли заголовка.
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 
 * Установите для свойства **[TabIndex](properties-accessibility.md)** значение ноль или больше, чтобы пользователи могли перейти к нему с помощью клавиатуры.
-* Задайте свойства **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**, чтобы индикаторы фокуса были хорошо заметны.
+* Задайте свойства **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** , чтобы индикаторы фокуса были хорошо заметны.
