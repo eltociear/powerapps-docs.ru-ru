@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61560474"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="timer-control-in-powerapps"></a>Элемент управления "Таймер" в PowerApps
 Элемент управления, определяющий поведение приложения по истечении заданного количества времени.
@@ -125,7 +126,7 @@ ms.locfileid: "61560474"
 2. Укажите для свойства **Duration** значение **10000**, а для свойств **Repeat** и **Autostart** — значение **true**.
 3. (Необязательно) Сделайте таймер удобным для чтения, указав следующие значения для перечисленных свойств: **[Height](properties-size-location.md)**  — **160**, **[Width](properties-size-location.md)**  — **600** и **[Size](properties-text.md)**  — **60**.
 4. Добавьте метку и установите в ее свойстве **[Text](properties-core.md)** формулу:
-   <br>**"Осталось секунд: " & RoundUp(10-Countdown.Value/1000, 0)**
+   <br>**"Осталось секунд: " & RoundUp(10-Countdown.Value/1000; 0)**
 
     Нужны дополнительные сведения о функции **[RoundUp](../functions/function-round.md)** или [других функциях](../formula-reference.md)?
 
@@ -138,7 +139,7 @@ ms.locfileid: "61560474"
 2. Укажите для свойства таймера **Duration** значение **5000**, для свойства **Repeat** — **true**, для свойства **[Text](properties-core.md)** — **Toggle animation** (Переключить анимацию).
 3. (Необязательно) Сделайте таймер удобным для чтения, указав следующие значения для перечисленных свойств: **[Height](properties-size-location.md)**  — **160**, **[Width](properties-size-location.md)**  — **600** и **[Size](properties-text.md)**  — **60**.
 4. Добавьте метку и задайте для свойства **[Text](properties-core.md)** отображение слова **Приветствуем!** , а для свойства **[Color](properties-color-border.md)**  — следующую формулу:
-   <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
+   <br>**ColorFade(Color.BlueViolet; FadeIn.Value/5000)**
 
     Нужны дополнительные сведения о функции **[ColorFade](../functions/function-colors.md)** или [других функциях](../formula-reference.md)?
 

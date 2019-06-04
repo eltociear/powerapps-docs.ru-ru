@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61564059"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="rand-function-in-powerapps"></a>Функция Rand в PowerApps
 Возвращает псевдослучайное число.
@@ -62,7 +63,7 @@ ms.locfileid: "61564059"
 #### <a name="create-a-table-of-random-numbers"></a>Создание таблицы случайных чисел
 1. Добавьте элемент управления **[Кнопка](../controls/control-button.md)** и задайте следующую формулу в качестве значения свойства **[OnSelect](../controls/properties-core.md)** :
 
-    **ClearCollect( RandomNumbers, ForAll( [ 1, 2, 3, 4, 5 ], Rand() ))**
+    **ClearCollect( RandomNumbers; ForAll( [ 1; 2; 3; 4; 5 ]; Rand() ))**
 
     Эта формула создает таблицу с одним столбцом, которая используется для пятикратной итерации, в результате чего возвращаются пять случайных чисел.
 
@@ -80,4 +81,4 @@ ms.locfileid: "61564059"
 
     ![Тот же экран, отображающий таблицу данных с новым набором из пяти разных десятичных значений — 0,414, 0,128, 0,860, 0,303, 0,568](media/function-rand/rand-collection-2.png)
 
-Чтобы создать вместо таблицы одно случайное число, используйте **Set( RandomNumber, Rand() )** .
+Чтобы создать вместо таблицы одно случайное число, используйте **Set( RandomNumber; Rand() )** .

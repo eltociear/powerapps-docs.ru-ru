@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/31/2019
 ms.locfileid: "66451617"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="app-object-in-powerapps"></a>Объект приложения в PowerApps
 
@@ -101,7 +102,7 @@ ms.locfileid: "66451617"
 
 1. Задайте **приложения** объекта **ConfirmExit** свойство следующее выражение:
 
-    ```powerapps-dot
+    ```powerapps-comma
     AccountForm.Unsaved Or ContactForm.Unsaved
     ```
 
@@ -112,9 +113,9 @@ ms.locfileid: "66451617"
 
 1. Задайте **приложения** объекта **ConfirmExitMessage** следующую формулу:
 
-    ```powerapps-dot
-    If( AccountsForm.Unsaved,
-        "Accounts form has unsaved changes.",
+    ```powerapps-comma
+    If( AccountsForm.Unsaved;
+        "Accounts form has unsaved changes.";
         "Contacts form has unsaved changes."
     )
     ```

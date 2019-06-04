@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61527521"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="relate-and-unrelate-functions-in-powerapps"></a>Связать и отвязать функции в PowerApps
 
@@ -43,12 +44,12 @@ ms.locfileid: "61527521"
 
 ## <a name="syntax"></a>Синтаксис
 
-**Связать**( *Entity1RelatedTable*, *Entity2Record* )
+**Связать**( *Entity1RelatedTable*; *Entity2Record* )
 
 * *Entity1RelatedTable* — обязательный. Для записи *Entity1*, таблице *Entity2* записи, связанные через связи один ко многим "или" многие ко многим.
 * *Entity2Record* — обязательный. *Entity2* записи для добавления к связи.
 
-**Отвязать**( *Entity1RelatedTable*, *Entity2Record* )
+**Отвязать**( *Entity1RelatedTable*; *Entity2Record* )
 
 * *Entity1RelatedTable* — обязательный. Для записи *Entity1*, таблице *Entity2* записи, связанные через связи один ко многим "или" многие ко многим.
 * *Entity2Record* — обязательный. *Entity2* запись для удаления из отношения.
@@ -64,29 +65,29 @@ ms.locfileid: "61527521"
 
 **Продукты** и **резервирования** связаны через один ко многим связи.  Чтобы связать первой записи **резервирования** сущность с первой записи **продуктов** сущности:
 
-`Relate( First( Products ).Reservations, First( Reservations ) )`
+`Relate( First( Products ).Reservations; First( Reservations ) )`
 
 Чтобы удалить связь между этими записями:
 
-`Unrelate( First( Products ).Reservations, First( Reservations ) )`
+`Unrelate( First( Products ).Reservations; First( Reservations ) )`
 
 Никогда не мы создавали или remove или записи, только связь между записями был изменен.
 
 **Продукты** и **контакты** связаны через многие ко многим связи.  Чтобы связать первой записи **контакты** сущность с первой записи **продуктов** сущности:
 
-`Relate( First( Products ).Contacts, First( Contacts ) )`
+`Relate( First( Products ).Contacts; First( Contacts ) )`
 
 Как многие ко многим связи являются симметричными, мы также выполнения этой задачи в обратном направлении:
 
-`Relate( First( Contacts ).Products, First( Products ) )`
+`Relate( First( Contacts ).Products; First( Products ) )`
 
 Чтобы удалить связь между этими записями:
 
-`Unrelate( First( Products ).Contacts, First( Contacts ) )`
+`Unrelate( First( Products ).Contacts; First( Contacts ) )`
 
 или:
 
-`Unrelate( First( Contacts ).Products, First( Products ) )`
+`Unrelate( First( Contacts ).Products; First( Products ) )`
 
 Пошагового руководства, следующим выполняет именно эти операции на эти сущности, с помощью приложения с помощью **коллекции** и **поле со списком** элементов управления для выбора связанных записей.
 
@@ -152,8 +153,8 @@ ms.locfileid: "61527521"
 
 1. В **загрузка Gallery2**, задайте **NextArrow2** **OnSelect** следующую формулу:
 
-    ```powerapps-dot
-    Relate( ComboBox1.Selected.Reservations, ThisItem )
+    ```powerapps-comma
+    Relate( ComboBox1.Selected.Reservations; ThisItem )
     ```
 
     Когда пользователь щелкнет этот значок, текущее резервирование изменяется на продукт, который пользователь выбрал в **ComboBox1**.
@@ -176,11 +177,11 @@ ms.locfileid: "61527521"
 
 1. В **загрузка Gallery2**, задайте **OnSelect** формул для **NextArrow2** следующую формулу:
 
-    ```powerapps-dot
-    If( IsBlank( ComboBox1.Selected ),
-        Unrelate( Gallery1.Selected.Reservations, ThisItem ),
-        Relate( ComboBox1.Selected.Reservations, ThisItem )
-    );
+    ```powerapps-comma
+    If( IsBlank( ComboBox1.Selected );
+        Unrelate( Gallery1.Selected.Reservations; ThisItem );
+        Relate( ComboBox1.Selected.Reservations; ThisItem )
+    );;
     Refresh( Reservations )
     ```
     ![Настройка значок справа](media/function-relate-unrelate/reservations-relate-unrelate.png)
@@ -193,8 +194,8 @@ ms.locfileid: "61527521"
 
 1. Убедитесь, что дубликатом **загрузка Gallery2** называется **Gallery2_1**, а затем установите его **элементы** следующую формулу:
 
-    ```powerapps-dot
-    Filter( Reservations, IsBlank( 'Product Reservation' ) )
+    ```powerapps-comma
+    Filter( Reservations; IsBlank( 'Product Reservation' ) )
     ```
 
     Появится предупреждение делегирования, но это не имеет значения с небольшой объем данных в этом примере.
@@ -265,8 +266,8 @@ ms.locfileid: "61527521"
 
 1. Задайте **отменить** значка **OnSelect** следующую формулу: 
 
-    ```powerapps-dot
-    Unrelate( Gallery1.Selected.Contacts, ThisItem )
+    ```powerapps-comma
+    Unrelate( Gallery1.Selected.Contacts; ThisItem )
     ```
 
     ![Значок отмены настройки](media/function-relate-unrelate/contacts-unrelate.png)
@@ -285,8 +286,8 @@ ms.locfileid: "61527521"
 
 1. Вставить **добавить** значок и задайте его **OnSelect** следующую формулу: 
 
-    ```powerapps-dot
-    Relate( Gallery1.Selected.Contacts, ComboBox1.Selected )
+    ```powerapps-comma
+    Relate( Gallery1.Selected.Contacts; ComboBox1.Selected )
     ```
 
     ![Добавить значок настройки](media/function-relate-unrelate/contacts-relate.png)
@@ -324,9 +325,9 @@ ms.locfileid: "61527521"
     - Label1_1.Text = `"Selected Contact Products"`
     - Gallery2_1.Items = `Gallery1_1.Selected.Products`
     - Title2_1.Text = `ThisItem.Name`
-    - Icon1_1.OnSelect = `Unrelate( Gallery1_1.Selected.Products, ThisItem )`
+    - Icon1_1.OnSelect = `Unrelate( Gallery1_1.Selected.Products; ThisItem )`
     - ComboBox1_1.Items = `Products`
-    - Icon2_1.OnSelect = `Relate( Gallery1_1.Selected.Products, ComboBox1_1.Selected )`
+    - Icon2_1.OnSelect = `Relate( Gallery1_1.Selected.Products; ComboBox1_1.Selected )`
 
     Результат очень похож на предыдущий экран, но за связь из **контакты** стороне.
 
