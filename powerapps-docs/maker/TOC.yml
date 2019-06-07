@@ -82,18 +82,23 @@
             - name: Использование потоков
               href: ../user/use-flows.md
 - name: Создание приложений
-  href: index.md
   items:
+    - name: Обзор
+      href: index.md
     - name: Вход в PowerApps
       href: ./canvas-apps/intro-maker-portal.md
 - name: Приложения на основе холста
-  href: ./canvas-apps/getting-started.md
   items:
+    - name: Основные сведения о приложениях на основе холста
+      href: ./canvas-apps/getting-started.md
     - name: 'Требования к системе, ограничения и конфигурация'
       href: ./canvas-apps/limits-and-config.md
+    - name: Сочетания клавиш
+      href: ./canvas-apps/keyboard-shortcuts.md
     - name: Обзор примеров приложений
-      href: ./canvas-apps/open-and-run-a-sample-app.md
       items:
+        - name: Образец для создания приложения на основе холста
+          href: ./canvas-apps/open-and-run-a-sample-app.md
         - name: Приложение для формирования отчета о расходах
           href: ./canvas-apps/expense-report-install.md
         - name: Приложение службы поддержки
@@ -129,8 +134,9 @@
     - name: Проектирование и сборка приложения
       items:
         - name: Подключение к данным
-          href: ./canvas-apps/connections-list.md
           items:
+            - name: Список соединителей
+              href: ./canvas-apps/connections-list.md
             - name: Популярные соединители
               items:
                 - name: Common Data Service
@@ -165,12 +171,18 @@
               href: ./canvas-apps/working-with-data-sources.md
             - name: Общие сведения о таблицах и записях
               href: ./canvas-apps/working-with-tables.md
+            - name: Общие сведения о ссылках на записи
+              href: ./canvas-apps/working-with-references.md
         - name: Разработка интерфейса
-          href: ./canvas-apps/add-configure-controls.md
           items:
-            - name: Добавление экрана
-              href: ./canvas-apps/add-screen-context-variables.md
+            - name: Добавление и настройка элементов управления
+              href: ./canvas-apps/add-configure-controls.md
+            - name: Добавление и настройка экрана
               items:
+                - name: Добавление экрана
+                  href: ./canvas-apps/add-screen-context-variables.md
+                - name: Добавление прокручиваемого экрана
+                  href: ./canvas-apps/add-scrolling-screen.md
                 - name: Настройка экранов Office 365
                   items:
                     - name: 'Экран "Календарь": обзор'
@@ -189,16 +201,16 @@
                       href: ./canvas-apps/screen-templates/people-screen-overview.md
                     - name: 'Экран "Люди": справка'
                       href: ./canvas-apps/screen-templates/people-screen-reference.md
-                - name: Добавление прокручиваемого экрана
-                  href: ./canvas-apps/add-scrolling-screen.md
             - name: Отображение таблицы элементов
-              href: ./canvas-apps/add-gallery.md
               items:
-                - name: Отображение элементов разной высоты
+                - name: Добавление коллекции
+                  href: ./canvas-apps/add-gallery.md
+                - name: Добавление коллекции переменной высоты
                   href: ./canvas-apps/gallery-dynamic-sizing.md
-            - name: Добавление формы
-              href: ./canvas-apps/add-form.md
+            - name: Добавление и настройка формы
               items:
+                - name: Добавление формы
+                  href: ./canvas-apps/add-form.md
                 - name: Общие сведения о формах
                   href: ./canvas-apps/working-with-forms.md
                 - name: Общие сведения о макете формы
@@ -206,8 +218,9 @@
                 - name: Общие сведения о карточках
                   href: ./canvas-apps/working-with-cards.md
             - name: Добавление списка
-              href: ./canvas-apps/add-list-box-drop-down-list-radio-button.md
               items:
+                - name: 'Добавление списка, раскрывающегося списка и переключателей'
+                  href: ./canvas-apps/add-list-box-drop-down-list-radio-button.md
                 - name: Создание зависимых раскрывающихся списков
                   href: ./canvas-apps/dependent-drop-down-lists.md
             - name: Добавление диаграммы
@@ -217,8 +230,9 @@
             - name: Добавление данных Power BI
               href: ./canvas-apps/powerapps-custom-visual.md
             - name: Справка по элементу управления
-              href: ./canvas-apps/reference-properties.md
               items:
+                - name: Список элементов управления и свойств
+                  href: ./canvas-apps/reference-properties.md
                 - name: Добавить изображение
                   href: ./canvas-apps/controls/control-add-picture.md
                 - name: Вложения
@@ -302,8 +316,9 @@
                 - name: Веб-сканер штрихкодов (экспериментальная функция)
                   href: ./canvas-apps/controls/control-barcodescanner.md
         - name: Настройка функций приложения
-          href: ./canvas-apps/working-with-formulas.md
           items:
+            - name: Начало работы с формулами
+              href: ./canvas-apps/working-with-formulas.md
             - name: Общие сведения о переменных
               href: ./canvas-apps/working-with-variables.md
             - name: Общие сведения о формулах поведения
@@ -319,8 +334,9 @@
             - name: Добавление потока
               href: ./canvas-apps/using-logic-flows.md
             - name: Справочник формул
-              href: ./canvas-apps/formula-reference.md
               items:
+                - name: Обзор
+                  href: ./canvas-apps/formula-reference.md
                 - name: Abs
                   href: ./canvas-apps/functions/function-numericals.md
                 - name: Acceleration
@@ -334,9 +350,11 @@
                 - name: And
                   href: ./canvas-apps/functions/function-logicals.md
                 - name: App
-                  href: ./canvas-apps/functions/signals.md
+                  href: ./canvas-apps/functions/object-app.md
                 - name: Asin
                   href: ./canvas-apps/functions/function-trig.md
+                - name: AsType
+                  href: ./canvas-apps/functions/function-astype-istype.md
                 - name: Atan
                   href: ./canvas-apps/functions/function-trig.md
                 - name: Atan2
@@ -391,6 +409,8 @@
                   href: ./canvas-apps/functions/function-table-counts.md
                 - name: CountRows
                   href: ./canvas-apps/functions/function-table-counts.md
+                - name: Типы данных
+                  href: ./canvas-apps/functions/data-types.md
                 - name: DataSourceInfo
                   href: ./canvas-apps/functions/function-datasourceinfo.md
                 - name: Date
@@ -463,6 +483,10 @@
                   href: ./canvas-apps/functions/function-isnumeric.md
                 - name: IsToday
                   href: ./canvas-apps/functions/function-now-today-istoday.md
+                - name: IsType
+                  href: ./canvas-apps/functions/function-astype-istype.md
+                - name: JSON
+                  href: ./canvas-apps/functions/function-json.md
                 - name: Language
                   href: ./canvas-apps/functions/function-language.md
                 - name: Last
@@ -644,8 +668,9 @@
         - name: Создание глобального приложения
           href: ./canvas-apps/global-apps.md
         - name: Создание приложения со специальными возможностями
-          href: ./canvas-apps/accessible-apps.md
           items:
+            - name: Создание приложения со специальными возможностями
+              href: ./canvas-apps/accessible-apps.md
             - name: Поиск проблем с обеспечением специальных возможностей
               href: ./canvas-apps/accessibility-checker.md
             - name: Использование цвета для обеспечения специальных возможностей
@@ -655,18 +680,21 @@
             - name: Информирование о динамических изменениях с помощью динамических областей
               href: ./canvas-apps/accessible-apps-live-regions.md
         - name: Экспериментальные и предварительные версии компонентов
-          href: ./canvas-apps/working-with-experimental.md
+          href: ./canvas-apps/working-with-experimental-preview.md
     - name: Сохранение и публикация приложения
       href: ./canvas-apps/save-publish-app.md
-    - name: Общий доступ к приложению
-      href: ./canvas-apps/share-app.md
+    - name: Общий доступ к приложению и его зависимостям
       items:
+        - name: Общий доступ к приложению
+          href: ./canvas-apps/share-app.md
         - name: Предоставление общего доступа к данным в Excel
           href: ./canvas-apps/share-app-data.md
         - name: Предоставление общего доступа к ресурсам приложения
           href: ./canvas-apps/share-app-resources.md
         - name: "Внедрение приложения в Power\_BI"
           href: ./canvas-apps/embed-powerapps-powerbi.md
+        - name: Внедрение приложения Teams
+          href: ./canvas-apps/embed-teams-app.md
     - name: Управление приложением
       items:
         - name: Изменение приложения
@@ -677,21 +705,23 @@
           href: ./canvas-apps/restore-an-app.md
         - name: Изменение имени и элемента приложения
           href: ./canvas-apps/set-name-tile.md
-        - name: Изменение размера и ориентации экрана
-          href: ./canvas-apps/set-aspect-ratio-portrait-landscape.md
+        - name: Управление экранами
           items:
+            - name: Изменение размера и ориентации экрана
+              href: ./canvas-apps/set-aspect-ratio-portrait-landscape.md
             - name: Создание гибкого макета
               href: ./canvas-apps/create-responsive-layout.md
     - name: Настройка формы списка SharePoint
-      href: ./canvas-apps/customize-list-form.md
       items:
+        - name: Внесение основных изменений
+          href: ./canvas-apps/customize-list-form.md
         - name: Общие сведения об интеграции форм SharePoint
           href: ./canvas-apps/sharepoint-form-integration.md
     - name: Интеграция с другими технологиями
       items:
         - name: SharePoint Online
           items:
-            - name: Общие сведения об интеграции SharePoint Online
+            - name: Обзор
               href: ./canvas-apps/sharepoint-scenario-intro.md
             - name: Настраивание списков SharePoint Online
               href: ./canvas-apps/sharepoint-scenario-setup.md
@@ -716,8 +746,9 @@
         - name: Преобразуйте формы InfoPath в приложения PowerApps
           href: ./canvas-apps/transform-infopath.md
     - name: Для разработчиков
-      href: ./canvas-apps/dev-enterprise-intro.md
       items:
+        - name: "Приложения на основе холста для корпоративных разработчиков, партнеров и независимых поставщиков\_ПО"
+          href: ./canvas-apps/dev-enterprise-intro.md
         - name: Создание и сертификация настраиваемых соединителей
           href: ./canvas-apps/register-custom-api.md
         - name: Интеграция с веб-сайтами и другими технологиями
@@ -727,7 +758,13 @@
         - name: Дайте возможность клиентам протестировать ваши приложения
           href: ./canvas-apps/dev-appsource-test-drive.md
         - name: Создание компонента
-          href: ./canvas-apps/create-component.md
+          items:
+            - name: Обзор
+              href: ./canvas-apps/create-component.md
+            - name: Формулы поведения
+              href: ./canvas-apps/component-behavior.md
+        - name: Внедрение приложений на основе холста в другие приложения
+          href: ./canvas-apps/embedding-sdk.md
 - name: Приложения на основе модели
   href: ./model-driven-apps/model-driven-app-overview.md
   items:
@@ -767,8 +804,16 @@
                   items:
                     - name: Создание и изменение форм
                       href: ./model-driven-apps/create-and-edit-forms.md
+                    - name: 'Добавление, перемещение и удаление полей'
+                      href: ./model-driven-apps/add-move-or-delete-fields-on-form.md
+                    - name: 'Добавление, перемещение и удаление разделов'
+                      href: ./model-driven-apps/add-move-or-delete-sections-on-form.md
+                    - name: 'Добавление, перемещение и удаление вкладок'
+                      href: ./model-driven-apps/add-move-or-delete-tabs-on-form.md
                     - name: Свойства в конструкторе форм
                       href: ./model-driven-apps/form-designer-properties.md
+                    - name: Использование представления в виде дерева
+                      href: ./model-driven-apps/using-tree-view-on-form.md
                 - name: Типы форм
                   href: ./model-driven-apps/types-forms.md
                   items:
@@ -891,6 +936,8 @@
                   href: ./model-driven-apps/timer-control-legacy.md
             - name: Использование настраиваемых элементов управления для визуализации данных
               href: ./model-driven-apps/use-custom-controls-data-visualizations.md
+        - name: Использование шаблонов Excel и Word
+          href: ./model-driven-apps/templates-overview.md
         - name: Использование тем для применения фирменной символики организации
           href: ./model-driven-apps/create-themes-organization-branding.md
     - name: Проверка и публикация приложения
@@ -918,6 +965,8 @@
           href: ./model-driven-apps/change-custom-entity-icons.md
         - name: Распространение приложений с помощью решений
           href: ./model-driven-apps/distribute-model-driven-app.md
+        - name: Создание интерактивной помощи
+          href: ./model-driven-apps/create-guided-help-learning-path.md
     - name: Специальные возможности в конструкторе приложений PowerApps
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: Для разработчиков
@@ -1070,6 +1119,8 @@
           href: ./common-data-service/create-solution.md
         - name: Просмотр слоев решений
           href: ./common-data-service/solution-layers.md
+        - name: Просмотр журнала решений
+          href: ./common-data-service/solution-history.md
         - name: Использование средства проверки решений
           href: ./common-data-service/use-powerapps-checker.md
         - name: Использование сегментированных решений
