@@ -665,6 +665,18 @@
                   href: ./canvas-apps/functions/function-datetime-parts.md
         - name: Создание приложения в решении
           href: ./canvas-apps/add-app-solution.md
+        - name: Создание приложения с реляционными данными
+          items:
+            - name: Установка данных
+              href: ./canvas-apps/northwind-install.md
+            - name: Обзор приложения на основе холста
+              href: ./canvas-apps/northwind-orders-canvas-overview.md
+            - name: 1. Создание коллекции заказа
+              href: ./canvas-apps/northwind-orders-canvas-part1.md
+            - name: 2. Создание сводной формы
+              href: ./canvas-apps/northwind-orders-canvas-part2.md
+            - name: 3. Создание коллекции сведений
+              href: ./canvas-apps/northwind-orders-canvas-part3.md
         - name: Создание глобального приложения
           href: ./canvas-apps/global-apps.md
         - name: Создание приложения со специальными возможностями
