@@ -1158,6 +1158,10 @@
       href: ./common-data-service/import-translated-entity-field-text.md
     - name: Для разработчиков
       href: ../developer/common-data-service/overview.md
+- name: Построитель искусственного интеллекта
+  items:
+    - name: Использование построителя искусственного интеллекта в PowerApps
+      href: ../use-ai-builder.md
 - name: Узнать от других пользователей
   items:
     - name: Вебинары
