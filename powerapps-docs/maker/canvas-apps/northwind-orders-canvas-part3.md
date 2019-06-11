@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/07/2019
 ms.locfileid: "66760966"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-detail-gallery-in-a-canvas-app"></a>Создать коллекцию данных в приложение на основе холста
 
@@ -71,7 +72,7 @@ ms.locfileid: "66760966"
 
 1. Задайте **элементы** свойство детализации коллекции следующую формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gallery1.Selected.'Order Details'
     ```
 
@@ -103,7 +104,7 @@ ms.locfileid: "66760966"
 
 1. Задайте новые метки **текст** следующую формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Product.'Product Name'
     ```
 
@@ -141,7 +142,7 @@ ms.locfileid: "66760966"
 
 1. Задать изображение **изображение** следующую формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Product.Picture
     ```
 
@@ -161,7 +162,7 @@ ms.locfileid: "66760966"
 
 1. Задайте новые метки **текст** свойство следующее выражение:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Quantity
     ```
 
@@ -179,8 +180,8 @@ ms.locfileid: "66760966"
 
 1. Задайте новые метки **текст** следующую формулу:
 
-    ```powerapps-dot
-    Text( ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
     ```
 
     Если вы не включаете тег языка ( **[$-en US]** ), оно будет добавляться, который основан на язык и регион. Если вы используете тег другой язык, необходимо удалить **$** сразу после закрывающей квадратной ( **]** ), а затем добавить символ валюты в этой позиции.
@@ -197,8 +198,8 @@ ms.locfileid: "66760966"
 
 1. Задайте новые метки **текст** следующую формулу:
 
-    ```powerapps-dot
-    Text( ThisItem.Quantity * ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( ThisItem.Quantity * ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
     ```
 
     Опять же если вы не включаете тег языка ( **[$-en US]** ), оно будет добавляться, который основан на язык и регион. Если тег не совпадают, стоит использовать символ валюты вместо **$** сразу после закрывающей квадратной ( **]** ).
@@ -273,8 +274,8 @@ ms.locfileid: "66760966"
 
 1. Задайте новые метки **текст** следующую формулу:
 
-    ```powerapps-dot
-    Sum( Gallery1.Selected.'Order Details', Quantity )
+    ```powerapps-comma
+    Sum( Gallery1.Selected.'Order Details'; Quantity )
     ```
 
     Эта формула показано предупреждение делегирования, но его можно пропустить, поскольку нет одного заказа будет содержать более 500 программных продуктов.
@@ -288,8 +289,8 @@ ms.locfileid: "66760966"
 
 1. Переключите копию **текст** следующую формулу:
 
-    ```powerapps-dot
-    Text( Sum( Gallery1.Selected.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( Sum( Gallery1.Selected.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
     ```
 
     Эта формула показано предупреждение делегирования, но его можно пропустить, поскольку нет одного заказа будет содержать более 500 программных продуктов.
@@ -357,7 +358,7 @@ ms.locfileid: "66760966"
 
 1. Задать поле со списком **элементы** следующую формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Choices( 'Order Details'.Product )
     ```
 
@@ -418,7 +419,7 @@ ms.locfileid: "66760966"
 
 1. Задайте **изображение** свойство изображения:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ComboBox1.Selected.Picture
     ```
 
@@ -467,8 +468,8 @@ ms.locfileid: "66760966"
 
 1. Изменение размера и переместить метки справа от элемента управления для ввода текста, а также задавать метки **текст** следующую формулу:
 
-    ```powerapps-dot
-    Text( ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -488,8 +489,8 @@ ms.locfileid: "66760966"
 
 1. Задайте новые метки **текст** следующую формулу:
 
-    ```powerapps-dot
-    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -518,18 +519,18 @@ ms.locfileid: "66760966"
 
 1. Изменение размера и перемещение по правому краю области голубой этот значок и задайте значок **OnSelect** следующую формулу:
 
-    ```powerapps-dot
-    Patch( 'Order Details',
-        Defaults('Order Details'),
+    ```powerapps-comma
+    Patch( 'Order Details';
+        Defaults('Order Details');
         {
-            Order: Gallery1.Selected,
-            Product: ComboBox1.Selected,
-            Quantity: Value(TextInput1.Text),
+            Order: Gallery1.Selected;
+            Product: ComboBox1.Selected;
+            Quantity: Value(TextInput1.Text);
             'Unit Price': ComboBox1.Selected.'List Price'
         }
-    );
-    Refresh( Orders );
-    Reset( ComboBox1 );
+    );;
+    Refresh( Orders );;
+    Reset( ComboBox1 );;
     Reset( TextInput1 )
     ```
 
@@ -582,8 +583,8 @@ ms.locfileid: "66760966"
 
 1. Изменение размера и переместить значок корзины в правой части шаблона коллекции данных, а также задавать значок **OnSelect** следующую формулу:
 
-    ```powerapps-dot
-    Remove( 'Order Details', ThisItem ); Refresh( Orders )
+    ```powerapps-comma
+    Remove( 'Order Details'; ThisItem );; Refresh( Orders )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -608,7 +609,7 @@ ms.locfileid: "66760966"
 - Отношение "многие к одному" с **Order Details** сущность **заказ продуктов** сущности: `ThisItem.Product.'Product Name'` и `ThisItem.Product.Picture`
 - **Варианты** функцию для получения списка продуктов: `Choices( 'Order Details'.Product' )`
 - **Выбранные** свойства поля со списком как полный многие к одному связанные записи: `ComboBox1.Selected.Picture` и `ComboBox1.Selected.'List Price'`
-- **Patch** функцию для создания **Order Details** записи: `Patch( 'Order Details', Defaults( 'Order Details' ), ... )`
-- **Удалить** функции, чтобы удалить **Order Details** записи: `Remove( 'Order Details', ThisItem )`
+- **Patch** функцию для создания **Order Details** записи: `Patch( 'Order Details'; Defaults( 'Order Details' ); ... )`
+- **Удалить** функции, чтобы удалить **Order Details** записи: `Remove( 'Order Details'; ThisItem )`
 
 Этой серии документов была краткое описание с помощью связей Common Data Service и параметр задает в приложение на основе холста в образовательных целях. Перед выпуском любого приложения в рабочей среде, следует, что проверка полей, обработка ошибок и множество других факторов.

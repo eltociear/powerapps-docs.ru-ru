@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 06/07/2019
 ms.locfileid: "66761012"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>Как создать галерею с заказа в приложение на основе холста
 
@@ -105,8 +106,8 @@ ms.locfileid: "66761012"
 
 1. В строке формул, коллекции значение **элементы** следующую формулу:
 
-    ```powerapps-dot
-    Sort( Orders, 'Order Number', Descending )
+    ```powerapps-comma
+    Sort( Orders; 'Order Number'; Descending )
     ```
 
     [ **Сортировки** ](functions/function-sort.md) функция упорядочивает список для отображения первого новейших порядок (имеющая наибольший номер заказа).
@@ -132,7 +133,7 @@ ms.locfileid: "66761012"
 
 1. В строке формул задайте метки **текст** свойство следующее выражение:
 
-    ```powerapps-dot
+    ```powerapps-comma
     "Order " & ThisItem.'Order Number'
     ```
 
@@ -148,7 +149,7 @@ ms.locfileid: "66761012"
 
 1. В строке формул задайте метки **текст** свойство следующее выражение:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Customer.Company
     ```
 
@@ -192,7 +193,7 @@ ms.locfileid: "66761012"
 
 1. Задайте **текст** новые метки следующее выражение:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.'Order Status'
     ```
 
@@ -215,12 +216,12 @@ ms.locfileid: "66761012"
 
 1. В строке формул задайте **цвет** состояния метки следующую формулу:
 
-    ```powerapps-dot
-    Switch( ThisItem.'Order Status',
-        'Orders Status'.Closed, Green,
-        'Orders Status'.New, Black,
-        'Orders Status'.Invoiced, Blue,
-        'Orders Status'.Shipped, Purple
+    ```powerapps-comma
+    Switch( ThisItem.'Order Status';
+        'Orders Status'.Closed; Green;
+        'Orders Status'.New; Black;
+        'Orders Status'.Invoiced; Blue;
+        'Orders Status'.Shipped; Purple
     )
     ```
 
@@ -250,8 +251,8 @@ ms.locfileid: "66761012"
 
 1. В строке формул задайте новую метку **текст** следующую формулу:
 
-    ```powerapps-dot
-    Text( Sum( ThisItem.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -282,8 +283,8 @@ ms.locfileid: "66761012"
 - Выражение для отображения номера заказа: `"Orders " & ThisItem.OrderNumber`
 - Поле, в отношении многие к одному: `ThisItem.Customer.Company`
 - Метка с именем параметра в наборе: `ThisItem.'Order Status'`
-- Метку, которая изменяет формат, в зависимости от того, какой вариант в наборе в метке: `Switch( ThisItem.'Order Status', 'Orders Status'.Closed, Green, ...`
-- Сложные агрегатной функции через отношение один ко многим: `Sum( ThisItem.'Order Details', Quantity * 'Unit Price' )`
+- Метку, которая изменяет формат, в зависимости от того, какой вариант в наборе в метке: `Switch( ThisItem.'Order Status'; 'Orders Status'.Closed; Green; ...`
+- Сложные агрегатной функции через отношение один ко многим: `Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' )`
 
 ## <a name="next-topic"></a>Следующий раздел
 
