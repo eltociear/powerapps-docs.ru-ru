@@ -4,13 +4,27 @@
       href: overview.md
     - name: Что такое пользовательские компоненты
       href: custom-controls-overview.md
-    - name: 'Создание, отладка и развертывание пользовательских компонентов с помощью интерфейса командной строки Microsoft PowerApps'
-      href: create-custom-controls-using-pcf.md
-    - name: Реализация пользовательских компонентов в TypeScript
-      href: implementing-controls-using-typescript.md
-    - name: Обновление существующих компонентов платформы компонентов PowerApps до инструментов нового формата
-      href: updating-existing-controls.md
-    - name: Ограничения платформы компонентов PowerApps
+    - name: Получить инструменты
+      href: get-powerapps-cli.md
+    - name: Учебник
+      items:
+        - name: Реализация образца компонента
+          href: implementing-controls-using-typescript.md
+    - name: Пошаговые инструкции
+      items:
+        - name: Создание и построение пользовательского компонента
+          href: create-custom-controls-using-pcf.md
+        - name: Отладка пользовательского компонента
+          href: debugging-custom-controls.md
+        - name: Пакет пользовательского компонента
+          href: import-custom-controls.md
+        - name: Добавление компонентов к сущности или поля
+          href: add-custom-controls-to-a-field-or-entity.md
+        - name: Обновляет существующие пользовательские компоненты
+          href: updating-existing-controls.md
+        - name: Публикация пользовательских компонентов в AppSource
+          href: publish-components-app-source.md
+    - name: Ограничения
       href: limitations.md
     - name: Часто задаваемые вопросы
       href: faq.md
