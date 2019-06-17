@@ -4,11 +4,11 @@
       href: overview.md
     - name: Что такое пользовательские компоненты
       href: custom-controls-overview.md
-    - name: Получить инструменты
+    - name: Инструментарий
       href: get-powerapps-cli.md
     - name: Учебник
       items:
-        - name: Реализация образца компонента
+        - name: Реализация примера компонента
           href: implementing-controls-using-typescript.md
     - name: Пошаговые инструкции
       items:
@@ -16,11 +16,11 @@
           href: create-custom-controls-using-pcf.md
         - name: Отладка пользовательского компонента
           href: debugging-custom-controls.md
-        - name: Пакет пользовательского компонента
+        - name: Упаковка пользовательского компонента
           href: import-custom-controls.md
-        - name: Добавление компонентов к сущности или поля
+        - name: Добавление компонентов к сущности или полям
           href: add-custom-controls-to-a-field-or-entity.md
-        - name: Обновляет существующие пользовательские компоненты
+        - name: Обновление существующих пользовательских компонентов
           href: updating-existing-controls.md
         - name: Публикация пользовательских компонентов в AppSource
           href: publish-components-app-source.md

@@ -15,7 +15,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 06/11/2019
 ms.locfileid: "66835534"
 ---
-# <a name="powerapps-component-framework-api-reference"></a>PowerApps среда более высокого уровня Справочник по API
+# <a name="powerapps-component-framework-api-reference"></a>Справочник по API платформы компонентов PowerApps
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
