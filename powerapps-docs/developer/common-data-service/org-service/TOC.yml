@@ -70,16 +70,16 @@
   items:
     - name: Создание запросов с помощью LINQ (запрос LINQ в .NET)
       href: build-queries-with-linq-net-language-integrated-query.md
-    - name: Примеры запросов LINQ
-      href: linq-query-examples.md
+    - name: "Создание запроса в\_LINQ"
+      href: use-linq-construct-query.md
+    - name: "Использование класса сущностей с поздним связыванием в запросе\_LINQ"
+      href: use-late-bound-entity-class-linq-query.md
     - name: "Упорядочение результатов с помощью атрибутов сущностей в\_LINQ"
       href: order-results-entity-attributes-linq.md
     - name: "Разбиение больших наборов результатов на страницы с помощью\_LINQ"
       href: page-large-result-sets-linq.md
-    - name: "Использование класса сущностей с поздним связыванием в запросе\_LINQ"
-      href: use-late-bound-entity-class-linq-query.md
-    - name: "Создание запроса в\_LINQ"
-      href: use-linq-construct-query.md
+    - name: Примеры запросов LINQ
+      href: linq-query-examples.md
 - name: Обнаружение повторяющихся данных
   href: detect-duplicate-data.md
 - name: Создание классов для программирования с ранним связыванием
