@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fa5385d0da6572523300c267a4237b0d24c22bc1
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 3e3b9902b535cc21d6e4b26959e9d5c4a0e56144
+ms.sourcegitcommit: b3fd824cf0d540b964b729686b198c7ccf2c2174
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61526316"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67316755"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>Элемент управления "Плитка Power BI" в PowerApps
 
@@ -28,7 +28,7 @@ ms.locfileid: "61526316"
 
 ## <a name="description"></a>Описание
 
-Воспользуйтесь всеми преимуществами анализа данных и отчетности, отобразив в своих приложениях **[плитки Power BI](https://docs.microsoft.com/power-bi/service-dashboard-tiles)**. Укажите плитку, которую требуется отобразить, задав для нее свойства **Рабочая область**, **Панель мониторинга** и **Плитка** на вкладке **Данные** на панели параметров.
+Воспользуйтесь всеми преимуществами анализа данных и отчетности, отобразив в своих приложениях **[плитки Power BI](https://docs.microsoft.com/power-bi/service-dashboard-tiles)** . Укажите плитку, которую требуется отобразить, задав для нее свойства **Рабочая область**, **Панель мониторинга** и **Плитка** на вкладке **Данные** на панели параметров.
 
 ## <a name="sharing-and-security"></a>Общий доступ и безопасность
 
@@ -44,11 +44,15 @@ ms.locfileid: "61526316"
 
 Чтобы передать значение одного фильтра, измените значение **TileURL** свойство, которое следует за следующий синтаксис:
 
-```"https://app.powerbi.com/embed?dashboardId=<DashboardID>&tileId=<TileID>&config=<SomeHash>" ```
+```
+"https://app.powerbi.com/embed?dashboardId=<DashboardID>&tileId=<TileID>&config=<SomeHash>"
+```
 
 Значение, и добавьте следующий синтаксис:
 
-```&$filter=<TableName>/<ColumnName> eq '<Value>' ```
+```
+&$filter=<TableName>/<ColumnName> eq '<Value>'
+```
 
 Параметр отфильтрует значение в наборе данных отчета происхождения плитки.
 
@@ -102,4 +106,4 @@ ms.locfileid: "61526316"
 
 **Плитка Power BI** — это просто контейнер для содержимого Power BI. Узнайте, как создать соответствующее содержимое с помощью этих [советов по настройке специальных возможностей в Power BI](https://docs.microsoft.com/power-bi/desktop-accessibility).
 
-Если содержимое Power BI не имеет заголовка, попробуйте добавить заголовок с помощью элемента **[Метка](control-text-box.md)**. Метка может располагаться непосредственно перед плиткой Power BI.
+Если содержимое Power BI не имеет заголовка, попробуйте добавить заголовок с помощью элемента **[Метка](control-text-box.md)** . Метка может располагаться непосредственно перед плиткой Power BI.
