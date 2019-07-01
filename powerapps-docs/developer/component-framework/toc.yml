@@ -52,6 +52,8 @@
           href: sample-controls/map-control.md
         - name: Компонент API навигации
           href: sample-controls/navigation-api-control.md
+        - name: Компонент React Facepile
+          href: sample-controls/react-facepile-control.md
         - name: Компонент таблицы
           href: sample-controls/table-control.md
         - name: Компонент сетки таблицы

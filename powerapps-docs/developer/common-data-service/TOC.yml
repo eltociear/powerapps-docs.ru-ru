@@ -328,6 +328,20 @@
           href: use-source-control-solution-files.md
     - name: Средство Package Deployer
       href: package-deployer/create-packages-package-deployer.md
+    - name: Проверка качества решений и пакетов
+      items:
+        - name: Использование веб-API средства проверки PowerApps
+          href: checker/webapi/overview.md
+        - name: Вызов задания анализа
+          href: checker/webapi/analyze.md
+        - name: Проверка состояния задания анализа
+          href: checker/webapi/check-status.md
+        - name: Получение списка правил
+          href: checker/webapi/retrieve-rules.md
+        - name: Получение списка наборов правил
+          href: checker/webapi/retrieve-rulesets.md
+        - name: Отправка файла для анализа
+          href: checker/webapi/upload-file.md
     - name: Публикация приложения в AppSource
       href: publish-app-appsource.md
       items:
