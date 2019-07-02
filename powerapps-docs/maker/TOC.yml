@@ -75,6 +75,18 @@
               href: ../user/export-excel-static-worksheet.md
             - name: Экспорт в сводную таблицу Excel
               href: ../user/export-excel-pivottable.md
+        - name: Отчеты
+          items:
+            - name: Работа с отчетами
+              href: ../user/work-with-reports.md
+            - name: Создание отчета с помощью мастера отчетов
+              href: ../user/create-report-with-wizard.md
+            - name: Добавление существующего отчета
+              href: ../user/add-existing-report.md
+            - name: Изменение фильтра отчета по умолчанию
+              href: ../user/edit-report-filter.md
+            - name: Устранение неполадок в отчетах
+              href: ../user/troubleshoot-reports.md
         - name: Автоматизация процессов
           items:
             - name: Использование бизнес-процессов
@@ -883,19 +895,25 @@
                       href: ./model-driven-apps/configure-event-handlers-legacy.md
                     - name: Отключение автоматического сохранения в форме
                       href: ./model-driven-apps/manage-auto-save.md
-            - name: Внедрение приложения на основе холста в форме
+            - name: Внедрение приложения на основе холста в форму на основе модели
               href: ./model-driven-apps/embed-canvas-app-in-form.md
               items:
-                - name: Передача текущей записи во внедренное приложение на основе холста
-                  href: ./model-driven-apps/pass-current-embedded-canvas-app.md
-                - name: Передача связанных записей во внедренное приложение на основе холста
-                  href: ./model-driven-apps/pass-related-embedded-canvas-app.md
+                - name: Добавление внедренного приложения на основе холста
+                  href: ./model-driven-apps/embedded-canvas-app-add-classic-designer.md
+                - name: Изменение внедренного приложения на основе холста
+                  href: ./model-driven-apps/embedded-canvas-app-edit-classic-designer.md
+                - name: Настройка размера и ориентации экрана
+                  href: ./model-driven-apps/embedded-canvas-app-customize-screen.md
                 - name: Выполнять предопределенные действия над формой узла
                   href: ./model-driven-apps/embedded-canvas-app-actions.md
+                - name: Элемент управления ModelDrivenFormIntegration
+                  href: ./model-driven-apps/embedded-canvas-app-properties-actions.md
                 - name: Общий доступ к внедренному приложению на основе холста
                   href: ./model-driven-apps/share-embedded-canvas-app.md
                 - name: Рекомендации по внедренным приложениям на основе холста
                   href: ./model-driven-apps/embedded-canvas-app-guidelines.md
+                - name: Миграция приложения на основе холста из общедоступной предварительной версии
+                  href: ./model-driven-apps/embedded-canvas-app-migrate-from-preview.md
             - name: Внедрение отчета Power BI в форму
               href: ./model-driven-apps/embed-powerbi-report-in-system-form.md
             - name: Работа с представлениями
@@ -954,6 +972,8 @@
           href: ./model-driven-apps/templates-overview.md
         - name: Использование тем для применения фирменной символики организации
           href: ./model-driven-apps/create-themes-organization-branding.md
+        - name: Добавление отчетов в приложение
+          href: ./model-driven-apps/add-reporting-to-app.md
     - name: Проверка и публикация приложения
       href: ./model-driven-apps/validate-app.md
     - name: Общий доступ к приложению
