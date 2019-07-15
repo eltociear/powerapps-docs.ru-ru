@@ -321,6 +321,14 @@
               href: create-patches-simplify-solution-updates.md
             - name: Когда следует изменять файл настроек
               href: when-edit-customization-file.md
+    - name: Средства сборки для Azure DevOps
+      items:
+        - name: Обзор
+          href: build-tools-overview.md
+        - name: Задачи
+          href: build-tools-tasks.md
+        - name: Руководство и часто задаваемые вопросы
+          href: build-tools-tutorial-faq.md
     - name: Средство SolutionPackager
       href: compress-extract-solution-file-solutionpackager.md
       items:
@@ -361,6 +369,16 @@
           href: appendix-app-design-best-practices-checklist.md
         - name: Приложение. Контрольный список по сертификации приложения
           href: appendix-app-certification-checklist.md
+    - name: Мониторинг приложений от независимых поставщиков ПО и управление этими приложениями
+      items:
+        - name: Общие сведения об ISV Studio
+          href: isv-app-management.md
+        - name: Домашняя страница
+          href: isv-app-management-homepage.md
+        - name: Страница приложения
+          href: isv-app-management-apppage.md
+        - name: Страница клиента
+          href: isv-app-management-tenantpage.md
 - name: Создание клиентских приложений
   href: connect-cds.md
   items:
