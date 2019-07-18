@@ -26,6 +26,8 @@
           href: use-fetchxml-fiscal-date-older-datetime-query-operators.md
         - name: Запрос записей "не в" с помощью левого внешнего соединения в FetchXML
           href: use-fetchxml-left-outer-join-query-records-not-in.md
+        - name: Разбиение больших наборов результатов на страницы с помощью FetchXML
+          href: org-service/page-large-result-sets-with-fetchxml.md
     - name: Сохраненные запросы
       href: saved-queries.md
     - name: Запрос иерархических данных

@@ -46,8 +46,6 @@
               href: use-left-outer-join-queryexpression-query-records-not-in.md
             - name: Использование класса QueryByAttribute
               href: use-querybyattribute-class.md
-            - name: Разбиение больших наборов результатов на страницы с помощью FetchXML
-              href: page-large-result-sets-with-fetchxml.md
     - name: Создание сущностей
       href: entity-operations-create.md
     - name: Получение сущности
