@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: b4832962165c9d275cbee9aa76ad1dc21e3d1d67
-ms.sourcegitcommit: ec05425ad7baf4102da95a071c11b5bb4381ed53
+ms.openlocfilehash: 62e6db1361664f8ccce38080e07908237aac5f50
+ms.sourcegitcommit: 9cce0d57113705254c109e6c38fc57a8bd4ef6cf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68229658"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313322"
 ---
 <div id="main"
    class="v2">
@@ -215,7 +215,7 @@ ms.locfileid: "68229658"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>Создатели приложений могут управлять критически важными данными организации, быстро создавая пользовательские бизнес-приложения без написания кода. В PowerApps можно создавать приложения двух типов: <strong>на основе холста</strong> и <strong>на основе модели</strong>. <strong>Common Data Service</strong> — это платформа для безопасного хранения данных, используемых в бизнес-приложениях, и управления этими данными. Дополнительные сведения: <a href="/powerapps/maker">Создание приложений</a>.</p>
+                           <p>Создатели приложений могут управлять критически важными данными организации, быстро создавая пользовательские бизнес-приложения без написания кода. В PowerApps можно создавать приложения трех типов: <strong>на основе холста</strong>, <strong>на основе модели</strong> и <strong>на основе портала</strong>. <strong>Common Data Service</strong> — это платформа для безопасного хранения данных, используемых в бизнес-приложениях, и управления этими данными. Дополнительные сведения: <a href="/powerapps/maker">Создание приложений</a>.</p>
                            <hr/>
                            <br/>
                         </div>
@@ -273,6 +273,28 @@ ms.locfileid: "68229658"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/create-themes-organization-branding">Использование тем для применения фирменной символики</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/share-model-driven-app">Общий доступ к приложению</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/distribute-model-driven-app">Распространение приложения</a></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="cardSize">
+                           <div class="cardPadding">
+                              <div class="card">
+                                 <div class="cardImageOuter">
+                                    <div class="cardImage">
+                                       <img alt="Customize icon" src="media/index/i_portals.svg">
+                                    </div>
+                                 </div>
+                                 <div class="cardText">
+                                    <h3 style="font-size: 1.15rem">Порталы</h3>
+                                    <hr/>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">Что такое порталы PowerApps?</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">Создание портала</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/manage-existing-portals">Управление существующими порталами</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/admin/admin-overview">Администрирование портала</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/faq">Порталы PowerApps: вопросы и ответы</a></p>
                                  </div>
                               </div>
                            </div>

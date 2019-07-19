@@ -1007,6 +1007,62 @@
       href: ./model-driven-apps/app-for-outlook-customize.md
     - name: Для разработчиков
       href: ../developer/model-driven-apps/overview.md
+- name: Порталы (предварительная версия)
+  items:
+    - name: Что такое порталы PowerApps?
+      href: ./portals/overview.md
+    - name: Проектирование и сборка портала
+      items:
+        - name: Шаблоны порталов
+          href: ./portals/portal-templates.md
+        - name: Создание портала
+          href: ./portals/create-portal.md
+        - name: "Создание портала Dynamics\_365"
+          href: ./portals/create-dynamics-portal.md
+        - name: Устройство конструктора портала
+          href: ./portals/portal-designer-anatomy.md
+        - name: Поддерживаемые веб-браузеры для конструктора портала
+          href: ./portals/supported-browser.md
+        - name: Создание веб-страниц и управление ими
+          href: ./portals/create-manage-webpages.md
+        - name: Создание страницы
+          href: ./portals/compose-page.md
+        - name: Работа с шаблонами
+          href: ./portals/work-with-templates.md
+    - name: Управление существующими порталами
+      href: ./portals/manage-existing-portals.md
+    - name: Настройка параметров сайта
+      href: ./portals/configure-site-settings.md
+    - name: Расширенное администрирование портала
+      items:
+        - name: Обзор
+          href: ./portals/admin/admin-overview.md
+        - name: Сведения о портале
+          href: ./portals/admin/portal-details.md
+        - name: Загрузка открытого ключа портала
+          href: ./portals/admin/get-public-key.md
+        - name: Просмотр журналов ошибок портала
+          href: ./portals/admin/view-portal-error-log.md
+        - name: Сброс параметров портала
+          href: ./portals/admin/reset-portal.md
+        - name: Изменение базового URL-адреса портала
+          href: ./portals/admin/change-base-url.md
+        - name: Включение режима обслуживания
+          href: ./portals/admin/enable-maintenance-mode.md
+        - name: Настройка интеграции с Power BI
+          href: ./portals/admin/set-up-power-bi-integration.md
+        - name: Запуск средства проверки порталов
+          href: ./portals/admin/portal-checker.md
+        - name: Обновление ключа проверки подлинности на портале
+          href: ./portals/admin/manage-auth-key.md
+        - name: Настройка ограничения IP-адресов
+          href: ./portals/admin/ip-address-restrict.md
+        - name: Обновление домена порталов PowerApps
+          href: ./portals/admin/update-portal-domain.md
+    - name: Известные проблемы
+      href: ./portals/known-issues.md
+    - name: 'Порталы PowerApps: вопросы и ответы'
+      href: ./portals/faq.md
 - name: Common Data Service
   href: ./common-data-service/data-platform-intro.md
   items:
