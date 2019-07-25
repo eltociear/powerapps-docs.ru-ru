@@ -1,6 +1,6 @@
 ---
 title: Функции Count, CountA, CountIf и CountRows | Документация Майкрософт
-description: Справочные сведения, включая синтаксис и пример, для функций Count, CountA, CounfIf и CountRows в PowerApps
+description: Справочные сведения, включая синтаксис и пример для функций Count, Count, СЧЁТЕСЛИ и CountRows в PowerApps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 717baab028b480063f76b799a1267155464d8ac3
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 8a904db98226152a5e485184e82461634902d6b9
+ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61543526"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68473920"
 ---
 # <a name="count-counta-countif-and-countrows-functions-in-powerapps"></a>Функции Count, CountA, CountIf и CountRows в PowerApps
 Подсчитывает все [записи](../working-with-tables.md#records) в [таблице](../working-with-tables.md) или подсчитывает количество записей, удовлетворяющих условию.
@@ -43,7 +42,7 @@ ms.PowerAppsDecimalTransform: true
 
 * *SingleColumnTable* — обязательный аргумент.  Столбец записей для подсчета.  
 
-**CountIf**( *таблица*; *логическая_формула* )
+**CountIf**( *таблица*, *логическая_формула* )
 
 * *Table* — обязательный аргумент.  Таблица с записями для подсчета.
 * *Логическая_формула* — обязательный аргумент.  Формула для вычисления для каждой записи таблицы.  Учитываются записи, возвращающие по этой формуле значение **true**.  Формула может ссылаться на столбцы таблицы.
@@ -56,7 +55,7 @@ ms.PowerAppsDecimalTransform: true
 1. Импортируйте или создайте [коллекцию](../working-with-data-sources.md#collections) с именем **Inventory**, как описано в первом шаге описания [показа текста и изображений в коллекции](../show-images-text-gallery-sort-filter.md).
 2. Добавьте метку и установите в ее свойстве **[Text](../controls/properties-core.md)** формулу:
    
-    **CountIf(Inventory; UnitsInStock < 30)**
+    **CountIf(Inventory, UnitsInStock < 30)**
    
     Метка показывает **2**, так как по двум продуктам (Ganymede и Callisto) на складе меньше 30 единиц.
 3. Добавьте другую метку и установите в ее свойстве **[Text](../controls/properties-core.md)** формулу:
