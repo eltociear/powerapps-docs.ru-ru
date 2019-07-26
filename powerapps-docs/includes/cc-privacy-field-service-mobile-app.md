@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: fe2aa8cc0002bdd2531b1e2014a2fb19cd122e4d
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61583018"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67225303"
 ---
 Устанавливая и используя мобильное приложение [!INCLUDE[pn_fieldservice_mobile_app_long](pn-fieldservice-mobile-app-long.md)] на мобильном устройстве, пользователи дают согласие на передачу присвоенного идентификатора своей организации, присвоенного идентификатора конечного пользователя, а также идентификатора устройства в корпорации Майкрософт и Resco.net в целях предоставления услуг и проверки того, что программное обеспечение лицензируется должным образом.  
 &nbsp;<br />

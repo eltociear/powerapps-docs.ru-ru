@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 80997689e9d4ebca8eb4809cc3e94dab549482b5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61585259"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67224730"
 ---
 Включив функцию анализа текста, вы разрешаете зависимым компонентам в [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)], использующим API анализа текста [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] Cognitive Services, предоставлять расширенные аналитические сведения. Эти зависимые компоненты приведены ниже:  
   

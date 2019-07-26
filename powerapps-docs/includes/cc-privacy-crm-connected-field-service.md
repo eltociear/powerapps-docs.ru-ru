@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: ce9db35844f46e9779055ec30dcba0f9459c3a16
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61583494"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67225780"
 ---
 При установке [!INCLUDE[pn_connected_field_service_msdyn365](pn-connected-field-service-msdyn365.md)], когда вы предоставляете сведения о своей подписке [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], будут развернуты необходимые ресурсы [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] (перечислены ниже), а экземпляр [!INCLUDE[pn_dynamics_crm_online](pn-dynamics-crm-online.md)] отправит данные (команды и регистрации) в [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], чтобы включить сценарии с поддержкой IoT, которые регистрируют устройства, а затем отправляют команды на такие зарегистрированные устройства и получают команды от них. Администратор может удалить службу Connected Field Service, чтобы удалить соответствующую функциональность, а затем перейти на портал [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] для совершения действий со всеми связанными службами [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], которые больше не нужны.  
   
@@ -26,7 +26,7 @@ ms.locfileid: "61583494"
   
  [Центр Интернета вещей](https://azure.microsoft.com/services/iot-hub/)  
   
- Connected Field Services использует Центр Интернета вещей для управления состоянием зарегистрированных устройств и ресурсов. Кроме того, Центр Интернета вещей отправляет команды и уведомления на подключенные устройства, а также отслеживает доставку приложений с подтверждением получения. Сообщения между устройствами пересылаются надежным способом, подходящим для устройств, которые не всегда подключены.  
+ Connected Field Services использует Центр Интернета вещей для управления состоянием зарегистрированных устройств и ресурсов. Кроме того, Центр Интернета вещей отправляет команды и уведомления на подключенные устройства, а также отслеживает доставку приложений с подтверждением получения. Сообщения устройства отправляются устойчивым способом для размещения периодических подключений устройств.  
   
  **Simulator**  
   

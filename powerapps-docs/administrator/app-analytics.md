@@ -15,11 +15,11 @@ search.app:
 - PowerApps
 - Powerplatform
 ms.openlocfilehash: 0f376d8e6b86a7abf65e744275fc4e90beabde43
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42850037"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "61526501"
 ---
 # <a name="view-analytics-reports-for-your-app"></a>Просмотр отчетов по аналитике приложений
 Вы создали приложение и предоставили к нему общий доступ в организации?  Вам интересно знать, сколько коллег используют его каждый день?
@@ -53,7 +53,7 @@ ms.locfileid: "42850037"
     ![Скачивание данных диаграммы](./media/app-analytics/analytics-download.png)
 
 ## <a name="are-there-going-to-be-any-other-reports"></a>Планируются ли другие отчеты?
-Да. На самом деле, мы планируем разработать подобные отчеты о производительности приложения и отчеты об ошибках.
+Да! На самом деле, мы планируем разработать подобные отчеты о производительности приложения и отчеты об ошибках.
 
 Мы будем рады получить от вас отзывы, вопросы или запросы на форуме [PowerApps Ideas](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas).
 
