@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 864bb7bde775f88cdf43ba5c453bd1ff02f81b85
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.openlocfilehash: 1f6d0eb19a8127e42f1d6a8da8d8c3a452782be0
+ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61585231"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67456919"
 ---
 Если включить функцию анализа отношений, относящуюся ко встроенной аналитике,              данные клиента [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)], включая личные сведения пользователей, будут отправлять и сохраняться в               службе [!INCLUDE[pn_customerinsight_full](pn-customer-insights-full.md)] в Azure для вычисления КПЭ отношений между              клиентами и пользователями [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]. Данные также временно сохраняются в              [!INCLUDE[pn_azure_service_fabric](pn-azure-service-fabric.md)] и обрабатываются для получения дополнительных выходных данных, таких как тренды и работоспособность отношений, после чего эти сведения возвращаются в [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)], а затем — в              [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)].  
   
@@ -20,7 +20,7 @@ ms.locfileid: "61585231"
   
  Служба [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)], выполняющаяся в              [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], хранит              данные [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)], включая личные сведения клиентов, для расчета выходных данных для функции анализа отношений. На предварительную версию [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)] распространяются эти [дополнительные условия использования предварительных версий функций](http://go.microsoft.com/fwlink/p/?LinkId=511446).  
   
- [Узнайте больше о предварительной версии Customer Insights](https://azure.microsoft.com/en-us/services/customer-insights/).  
+ [Узнайте больше о предварительной версии Customer Insights](https://azure.microsoft.com/services/customer-insights/).  
   
  [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/)  
   

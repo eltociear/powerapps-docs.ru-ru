@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3041b6cb230aec72a5c3609ef1ea63443bd4a2cc
-ms.sourcegitcommit: a99f9458a50f6fa64706200bec97273aac20036d
+ms.openlocfilehash: 0ecf255ab6e710bf65bd60e39b6dc9b8023876f6
+ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66034833"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67457190"
 ---
 # <a name="use-microsoft-flow-to-automate-processes"></a>Автоматизация процессов с помощью Microsoft Flow
 
@@ -34,7 +34,7 @@ Microsoft Flow позволяет создавать автоматически�
 > [!NOTE]
 > Для управления и запуска Microsoft Flow из приложения, необходимо разрешить Microsoft Flow в параметрах системы вашей организации. Дополнительные сведения:  [Вопросы и ответы об использовании Flow в организации](https://docs.microsoft.com/flow/organization-q-and-a) 
   
-1. На панели команд выберите **потока**.  
+1. На панели команд выберите **Flow**.  
   
    > [!div class="mx-imgBorder"]
    > ![Меню Microsoft Flow](media/flow.png "Меню Microsoft Flow") 
@@ -47,7 +47,7 @@ Microsoft Flow позволяет создавать автоматически�
   
    -   Выберите **Вход в поток** для соединения с Microsoft Flow и отображения доступных для выполнения потоков. Этот параметр отображается только если вы только что не выполнили вход в Microsoft Flow.   
 
-    Сведения о создании потоков, см. в статье [Начало работы с Microsoft Flow](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow)  
+    Сведения о создании потоков, см. в статье [Начало работы с Microsoft Flow](https://docs.microsoft.com/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow)  
     
  
     

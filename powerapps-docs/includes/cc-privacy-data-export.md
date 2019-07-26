@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: e9b0446c2fb09cad33f5a3ae4bb69103f7d07d70
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61586631"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67212645"
 ---
 При использовании службы экспорта данных, когда вы активируете профиль экспорта данных из среды [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)], данные сущностей, добавленных в профиль, отправляются в [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]. Начальная синхронизация включает все данные, связанные с добавленными в профиль экспорта сущностями, но после этого синхронизация будет включать только новые изменения, которые постоянно отправляются в службу экспорта данных. Данные, отправляемые в службу экспорта данных, временно хранятся в [!INCLUDE[pn_azure_service_bus](pn_azure_service_bus.md)] и хранилище [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], обрабатываются в [!INCLUDE[pn_azure_service_fabric](pn_azure_service_fabric.md)] и наконец синхронизируются (вставляются, обновляются или удаляются) в целевой базе данных, указанной в вашей подписке [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]. После синхронизации данных они удаляются из [!INCLUDE[pn_azure_service_bus](pn_azure_service_bus.md)] и хранилища [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]. Если во время синхронизации данных возникает сбой, минимальный объем данных, соответствующих типу сущности, идентификатору записи и метке времени синхронизации, сохраняется в хранилище [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], чтобы можно было скачать список записей, которые не были обновлены.  
   

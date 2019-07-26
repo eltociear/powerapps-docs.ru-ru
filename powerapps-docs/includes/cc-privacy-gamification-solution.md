@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 747ea34b784b852261debe91f587d64ee3277804
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61582977"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67212516"
 ---
 Установив и включив решение [!INCLUDE[pn_gamification](pn-gamification.md)], идентификаторы учетной записи пользователя (например, имя, фамилия и адрес электронной почты) будут сохранены в [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], чтобы разрешить авторизацию с помощью службы [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)], которая размещена в [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]. Это относится ко всем пользователям, которые включены администратором в службу [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)]. Решение [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] отправляет настроенные администратором данные ключевых показателей эффективности в службу [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]. Эти данные хранятся в структурированном хранилище [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], а также хранилище больших двоичных объектов.  Каждый пользовательский аватар, награды и логотип компании хранится в [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], но информация не возвращается в [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)].  
   

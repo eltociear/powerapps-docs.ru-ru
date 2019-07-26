@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e79412c79a3b2a6d5c7f7f51c8cfcad8e4f5cc78
-ms.sourcegitcommit: 826bde1eab3dd32d7bf9fa3f43ea069694845597
-ms.translationtype: HT
+ms.openlocfilehash: 08859f70e047d1c53379e8a79f56997d6beedc58
+ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55290971"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67456986"
 ---
 # <a name="frequently-asked-questions-about-activities-and-the-timeline-wall"></a>Часто задаваемые вопросы о действиях и стене со временной шкалой  
 
@@ -30,7 +30,7 @@ ms.locfileid: "55290971"
 
 ## <a name="for-an-appointment-when-i-choose-the-option-to-save-as-draft-it-doesnt-show-that-the-appointment-has-been-saved-as-a-draft"></a>Если при сохранении сведений о встрече выбрать параметр *Сохранить как черновик*, нет указания на то, что такие сведения сохранены как черновик.
 
-Если вы сохраняете сведения о встрече как черновик в устаревшем веб-клиенте, в заголовке не отображается запись **[DRAFT]**, указывающая на то, что эта информация сохранена как черновик.
+Если вы сохраняете сведения о встрече как черновик в устаревшем веб-клиенте, в заголовке не отображается запись **[DRAFT]** , указывающая на то, что эта информация сохранена как черновик.
 
 ## <a name="can-i-add-activities-to-read-only-records"></a>Можно ли добавлять действия к записям, доступным только для чтения?
 
@@ -38,7 +38,7 @@ ms.locfileid: "55290971"
 
 ## <a name="are-html-tags-supported-in-notes"></a>Поддерживает ли функция создания **заметок** теги HTML?
 
-Нет. При создании действия заметки для любой записи или сущности HTML-теги не поддерживаются. Например, если вы добавите <TAG> </TAG> в поле заметки, этот тег будет отображаться как <TAG_XXX="XX"> </TAG>.
+Нет. При создании действия заметки для любой записи или сущности HTML-теги не поддерживаются. Например, если добавить `<TAG> </TAG>` в поле примечания, оно будет отображаться как. `<TAG_XXX="XX"> </TAG>`
 
 ## <a name="how-can-i-improve-performance-on-timeline-wall"></a>Как повысить производительность стены со временной шкалой?
 

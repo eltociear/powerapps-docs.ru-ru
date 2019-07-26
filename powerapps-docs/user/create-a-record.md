@@ -16,11 +16,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: d2f2ccd462627fbcf6ab628217e5d53a57127cae
-ms.sourcegitcommit: 0dbbf53aea319e53edadc1d3a9efa5728856ebd8
-ms.translationtype: HT
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58073336"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "61545101"
 ---
 # <a name="create-a-new-record"></a>Создание записи
 
