@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 5f904112aa0d07b4c75ddb074c2708eb80a7e474
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 06/19/2019
 ms.locfileid: "63319291"
 ---
 Если включен параметр **Содержимое и расположение пользователя**, администратор или специалист по настройке [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)] или Microsoft Dynamics CRM получают доступ к данным о точном местоположении и файлам на вашем мобильном устройстве. Администратор или специалист по настройке может задать отправку этих сведений в [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)], Dynamics CRM и (или) другие службы по своему выбору. Впоследствии вы можете отключить эту функцию, отключив параметр **Содержимое и расположение пользователя**. Обратите внимание, что этот параметр не влияет на параметры конфиденциальности, заданные в операционной системе мобильного устройства.

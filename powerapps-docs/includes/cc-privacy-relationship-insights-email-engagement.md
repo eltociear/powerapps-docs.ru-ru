@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 252f09737dbf55309a64ef5d02d479fde0e61c0e
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61585230"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67224867"
 ---
 Если при включенной функции взаимодействия по электронной почте, относящейся ко встроенной аналитике, сообщение электронной почты, помеченное параметром **Подписаться**, отправляет из [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)], информация о взаимодействии с ним получателей собирается и хранится в [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] для определения КПЭ активности получателей и взаимодействия с сообщениями, на которые оформлена подписка.  
   

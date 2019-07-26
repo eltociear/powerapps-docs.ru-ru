@@ -15,11 +15,11 @@ search.app:
 - PowerApps
 - Powerplatform
 ms.openlocfilehash: 1edaacc3a013646d8da0a286e28723926817ee71
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42843373"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "61528626"
 ---
 # <a name="export-and-import-resources"></a>Экспорт и импорт ресурсов
 При создании нескольких сред для поддержки разработки базы данных и приложений необходимо перемещать изменения из одной среды в другую. Для перемещения ресурсов между средами можно использовать функции **Экспорт ресурсов** и **Импорт ресурсов**.
