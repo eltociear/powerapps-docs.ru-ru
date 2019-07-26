@@ -1001,6 +1001,16 @@
           href: ./model-driven-apps/distribute-model-driven-app.md
         - name: Создание интерактивной помощи
           href: ./model-driven-apps/create-guided-help-learning-path.md
+    - name: Переход на клиентские веб-приложения
+      items:
+        - name: Краткое руководство. Переход
+          href: ./model-driven-apps/transition-web-app.md
+        - name: Краткое руководство. Использование существующей среды для перехода
+          href: ./model-driven-apps/transition-web-app-existing.md
+        - name: Сборник схем. Единый интерфейс
+          href: ./model-driven-apps/unified-interface-playbook.md
+        - name: Подготовка к переходу на единый интерфейс
+          href: ./model-driven-apps/approaching-unified-interface.md
     - name: Специальные возможности в конструкторе приложений PowerApps
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: "Настройка приложения Dynamics\_365 для Outlook"
