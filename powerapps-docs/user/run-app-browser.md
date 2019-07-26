@@ -5,7 +5,7 @@ author: Mattp123
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 07/09/2018
+ms.date: 11/16/2018
 ms.author: matp
 manager: kvivek
 ms.custom: ''
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f72d4b5192bd30da676e65e232bc2a3090cb77bb
-ms.sourcegitcommit: 429b83aaa5a91d5868e1fbc169bed1bac0c709ea
-ms.translationtype: HT
+ms.openlocfilehash: 31bef01ef46fd0fe2ed7bae30e63d53c169812db
+ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42832432"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "63321602"
 ---
 # <a name="run-an-app-in-a-web-browser"></a>Запуск приложения в веб-браузере
 Если вы создаете приложение или вам предоставляют доступ к приложению, его можно запускать на ОС Windows, iOS, Android или в веб-браузере. В этом разделе вы узнаете, как запустить приложение на основе холста или модели в веб-браузере с [домашней страницы Dynamics 365](https://home.dynamics.com).
@@ -30,8 +30,8 @@ ms.locfileid: "42832432"
 - Лицензия на PowerApps. Она доступна с планом PowerApps, например [пробной версией PowerApps, план 2](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps), или любым планом [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) или [Dynamics 365](https://dynamics.microsoft.com/pricing/), который включает PowerApps. 
 - Доступ к своему приложению или приложению, созданному и предоставленному вам другим пользователем.
 - Доступ к поддерживаемому веб-браузеру и операционной системе.
-   - Для приложений на основе холста см. [Требования к системе, ограничения и значения конфигурации](../maker/canvas-apps/limits-and-config.md)
-   - Для приложений на основе модели см. раздел [Поддерживаемые веб-браузеры и мобильные устройства](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)
+   - Для приложений Canvas см.: [Требования к системе, ограничения и значения конфигурации](../maker/canvas-apps/limits-and-config.md)
+   - Для приложений, управляемых моделью, см.: [Поддерживаемые веб-браузеры и мобильные устройства](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)
 
 
 ## <a name="sign-in-to-dynamics-365"></a>Вход в Dynamics 365
@@ -61,13 +61,14 @@ ms.locfileid: "42832432"
 ## <a name="connect-to-data"></a>Подключение к данным
 Если приложению требуется подключение к источнику данных или разрешение на использование возможностей устройства (например, камеры или служб определения местоположения), вам необходимо дать согласие, прежде чем использовать приложение. Обычно такой запрос появляется только при первом использовании.
 
-![Подключение](./media/run-app-browser/app-connection.png)
+![Connection](./media/run-app-browser/app-connection.png)
 
 ## <a name="close-an-app"></a>Закрытие приложения
 Чтобы закрыть приложение, покиньте домашнюю страницу Dynamics 365 или откройте другое приложение.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-Из этого раздела вы узнали, как запустить приложение на основе холста или модели в веб-браузере. Чтобы узнать, как запустить приложение на основе холста на мобильном устройстве, перейдите к следующему разделу.
+Из этого раздела вы узнали, как запустить приложение на основе холста или модели в веб-браузере. Чтобы узнать, как это делать:
+- Запуск приложения Canvas на мобильном устройстве см. в статье [Запуск приложения Canvas на мобильном устройстве](run-app-client.md) .
+- Запуск приложения, управляемого моделью, на мобильном устройстве см. в разделе [Запуск приложения, управляемого моделью на мобильном устройстве](run-app-client-model-driven.md) .
+- Использование приложения, управляемого моделью, см. в разделе [использование приложений, управляемых моделью](use-model-driven-apps.md) .
 
-> [!div class="nextstepaction"]
-> [Запуск приложения на основе холста на мобильном устройстве](run-app-client.md)

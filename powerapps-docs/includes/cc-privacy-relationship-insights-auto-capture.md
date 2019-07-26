@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 167d4e0362f7d3f1716bee5b7f2f0aa4068bfaee
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
+ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61585272"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67212181"
 ---
 Если включить функцию автоматического сбора, данные [!INCLUDE[pn_Exchange](pn-exchange.md)] будут извлекаться, но не храниться в [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)], отображая активность электронной почты пользователя, выполнившего вход. Пользователи могут явно "отслеживать" эти сообщения электронной почты, копируя сообщения электронной почты [!INCLUDE[pn_Exchange](pn-exchange.md)] в [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] как действия электронной почты, чтобы совместно использовать их с соответствующими пользователями согласно настроенным разрешениям [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)].  
   
