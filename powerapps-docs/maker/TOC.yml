@@ -822,6 +822,8 @@
                   href: ./model-driven-apps/create-site-map-app.md
                 - name: Добавление или изменение компонентов приложения
                   href: ./model-driven-apps/add-edit-app-components.md
+                - name: Добавление сущности команды в качестве параметра подстановки
+                  href: ./model-driven-apps/team-entity-lookup.md
             - name: Работа с формами
               href: ./model-driven-apps/create-design-forms.md
               items:
