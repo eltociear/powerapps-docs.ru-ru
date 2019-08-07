@@ -51,6 +51,8 @@
               href: ../user/assign-or-share-records.md
             - name: Совместное использование записей с помощью группы доступа
               href: ../user/Access-team.md
+            - name: Добавление роли подключения
+              href: ../user/add-connection-role.md
             - name: Деактивация учетных записей или контактов
               href: ../user/deactivate-activate-account-contact.md
             - name: Отслеживание хода выполнения с помощью панелей мониторинга и диаграмм
@@ -1242,6 +1244,8 @@
           href: ./common-data-service/data-platform-complex-entities.md
         - name: 'Ограниченные сущности, для которых требуются лицензии Dynamics 365'
           href: ./common-data-service/data-platform-restricted-entities.md
+    - name: 'Интеграция SharePoint, OneNote и OneDrive'
+      href: ./common-data-service/sharepoint-onedrive-onenote-intro.md
     - name: "Создание отчета Power\_BI"
       href: ./common-data-service/data-platform-powerbi-connector.md
     - name: Перевод текста в настраиваемых сущностях и полях

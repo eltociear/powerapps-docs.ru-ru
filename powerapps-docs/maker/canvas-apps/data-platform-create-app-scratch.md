@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 09/21/2019
+ms.date: 05/21/2019
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 23c5ead5e8dde0b781c0c83b366baea0a199a56e
-ms.sourcegitcommit: 0272fc5beac5bace5781b1de986a0e2703dd5ddc
+ms.openlocfilehash: 482a5a91c241aa9fd8c85dfb970cf692cd2ab1a3
+ms.sourcegitcommit: 38270060d2d0b784fe065164e6112c011b26e17c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65974248"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68830453"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Создание с нуля приложения на основе холста с помощью Common Data Service
 
@@ -61,7 +60,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. На панели навигации слева выберите пункт **BrowseGallery1**, а затем в качестве значения свойства **Items** укажите следующую формулу:
 
-    `SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; SortOrder.Descending; SortOrder.Ascending))`
+    `SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))`
 
     Согласно этой формуле:
 
@@ -93,7 +92,7 @@ ms.PowerAppsDecimalTransform: true
 
     ![Задание свойств Datasource и Item формы](./media/data-platform-create-app-scratch/form-datasource.png)
 
-1. На **свойства** вкладку на правой панели, выберите **изменить поля** открыть **поля** области.
+1. На вкладке **Свойства** правой панели выберите **изменить поля** , чтобы открыть панель **поля** .
 
 1. Выберите **Добавить поле**, а затем установите флажки для этих полей:
 
@@ -105,7 +104,7 @@ ms.PowerAppsDecimalTransform: true
     - **Годовой доход**
 
     > [!NOTE]
-    > За пределами этого сценария можно создать пользовательское поле, выбрав **новое поле**, ввода необходимых сведений, а затем выбрав **сделать**. Дополнительные сведения: [Создать поле](../common-data-service/create-edit-field-portal.md#create-a-field).<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "Выберите и добавьте поле")
+    > За пределами этого сценария можно создать настраиваемое поле, выбрав **новое поле**, указав необходимые сведения, а затем выбрав **Готово**. Дополнительные сведения: [Создайте поле](../common-data-service/create-edit-field-portal.md#create-a-field).<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "Выбор и Добавление поля")
 
 1. Нажмите кнопку **Добавить**.
 
@@ -127,25 +126,25 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте в качестве значения свойства **OnSelect** значка плюса следующую формулу:
 
-    `NewForm(EditForm1);; Navigate(FormScreen; ScreenTransition.None)`
+    `NewForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
 
     ![Значок добавления](./media/data-platform-create-app-scratch/plus-icon.png)
 
 1. Задайте в качестве значения свойства **OnSelect** первой стрелки, направленной вправо, следующую формулу:
 
-    `EditForm(EditForm1);; Navigate(FormScreen; ScreenTransition.None)`
+    `EditForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
 
     ![Значок "Далее"](./media/data-platform-create-app-scratch/next-icon.png)
 
 1. В окне **FormScreen** задайте в качестве значения свойства **OnSelect** значка отмены следующую формулу:
 
-    `ResetForm(EditForm1);;Navigate(BrowseScreen; ScreenTransition.None)`
+    `ResetForm(EditForm1);Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Значок отмены](./media/data-platform-create-app-scratch/cancel-icon.png)
 
 1. Задайте в качестве значения свойства **OnSelect** значка флажка следующую формулу:
 
-    `SubmitForm(EditForm1);; Navigate(BrowseScreen; ScreenTransition.None)`
+    `SubmitForm(EditForm1); Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Значок с галочкой](./media/data-platform-create-app-scratch/checkmark-icon.png)
 
@@ -153,7 +152,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **Color** значка **Корзина** значение **White**, а в качестве значения свойства **OnSelect** укажите следующую формулу:
 
-    `Remove(Accounts; BrowseGallery.Selected);; Navigate(BrowseScreen; ScreenTransition.None)`
+    `Remove(Accounts, BrowseGallery.Selected); Navigate(BrowseScreen, ScreenTransition.None)`
 
     ![Значок корзины](./media/data-platform-create-app-scratch/trash-icon.png)
 
