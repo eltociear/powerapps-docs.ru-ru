@@ -2,7 +2,7 @@
 title: Визуализация иерархических данных с управляемыми моделью приложениями | MicrosoftDocs
 description: 'Узнайте, как запрашивать и визуально отображать иерархически связанные данные'
 ms.custom: ''
-ms.date: 09/19/2018
+ms.date: 05/28/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''

@@ -1,4 +1,5 @@
 ---
+redirect_url: 'create-edit-entity-relationships#entity-relationship-behavior'
 title: Поведение отношений сущностей (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''

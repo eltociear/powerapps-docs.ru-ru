@@ -2,7 +2,7 @@
 title: Определение альтернативных ключей для ссылки на записи с Common Data Service | MicrosoftDocs
 description: 'Узнайте, как определить альтернативные ключи, которые можно использовать для ссылки на записи в Common Data Service'
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 06/04/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -75,6 +75,9 @@ search.app:
  - Десятичное число
  - Целое число (Integer)
  - Одна строка текста (String)
+ - Дата и время
+ - Поиск
+ - Набор параметров
 
 ### <a name="number-of-keys"></a>Количество ключей
 

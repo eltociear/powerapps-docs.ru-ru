@@ -6,7 +6,7 @@ author: Mattp123
 ms.author: matp
 manager: kvivek
 ms.custom: ''
-ms.date: 04/11/2019
+ms.date: 05/14/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -64,11 +64,11 @@ search.app:
 Во-первых, убедитесь, что нужный параметр находится в меню ![Значок "Параметры"](media/powerapps-gear.png)  > **Дополнительные настройки**.
 
 Чтобы найти параметры, недоступные в области **Дополнительные настройки**:  
-1.  Получите доступ к среде из Dynamics 365 Administration Center. Для сред, расположенных в Северной Америке, перейдите на веб-страницу [https://port.crm.dynamics.com/G/instances/InstancePicker.aspx](https://port.crm.dynamics.com/G/instances/InstancePicker.aspx). Для других расположений см. раздел "Непосредственный вход в Dynamics 365 Administration Center".
-2.  Выберите среду и нажмите **Открыть**.
+1.  Из управляемого моделью приложений PowerApps, выберите **Параметры** ![Параметры](../model-driven-apps/media/powerapps-gear.png) на панели инструментов приложения, затем выберите **Дополнительные параметры**. 
+2.  Выберите **Параметры**, затем выберите нужную область параметров.
 
     > [!div class="mx-imgBorder"] 
-    > ![Открытие среды](media/open-environment.png)
+    > ![Области "Параметры"](media/settings-areas.png) 
 
 ## <a name="see-also"></a>См. также
 [Создание или изменение приложения, управляемого моделью, с помощью конструктора приложений](create-edit-app.md)

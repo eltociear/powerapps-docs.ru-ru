@@ -82,4 +82,4 @@ search.app:
 
 ## <a name="see-also"></a>См. также
 [Обзор конструктора управляемых моделью форм](form-designer-overview.md) <br />
-[Создание и изменение форм с помощью конструктора форм](create-and-edit-forms.md)
+[Создание или изменение форм с помощью конструктора форм](create-and-edit-forms.md)

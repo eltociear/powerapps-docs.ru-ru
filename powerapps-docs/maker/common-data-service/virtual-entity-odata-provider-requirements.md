@@ -1,5 +1,5 @@
 ---
-title: Использование поставщика данных виртуальной сущности OData v4 с Common Data Service | MicrosoftDocs
+title: Использование поставщика данных OData v4 виртуальной сущности с Common Data Service | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/04/2018
 ms.reviewer: ''
@@ -52,9 +52,9 @@ search.app:
 
 ### <a name="odata-edm-data-types-that-are-not-supported-for-mapping-with-virtual-entities"></a>Типы данных OData EDM, которые не поддерживаются для сопоставления с виртуальными сущностями 
 
-- `Edm.Binary `
+- `Edm.Binary`
 - `Edm.Time` 
-- `Edm.Float `
+- `Edm.Float`
 - `Edm.Single` 
 - `Edm.Int16` 
 - `Edm.Byte` 

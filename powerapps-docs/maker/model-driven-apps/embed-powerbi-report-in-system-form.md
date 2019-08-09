@@ -29,9 +29,9 @@ search.app:
 Можно использовать отчеты Power BI в управляемых моделью приложениях PowerApps, чтобы обеспечить широкие возможности отчетности и аналитики в системных формах и позволить пользователям добиваться большего. Это разблокирует возможность агрегирования данных между системами и их настройки вплоть до контекста одной записи.
  
 ## <a name="prerequisites"></a>Необходимые компоненты
-Внедрение содержимого Power BI — это необязательная функция, которая по умолчанию отключена во всех средах. Необходимо включить ее, прежде чем можно будет внедрять содержимое Power BI. Дополнительные сведения: [Включение визуализации Power BI в организации](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/use-power-bi?#enable--visualizations-in-the-organization).
+Внедрение содержимого Power BI — это необязательная функция, которая по умолчанию отключена во всех средах. Необходимо включить ее, прежде чем можно будет внедрять содержимое Power BI. Дополнительные сведения: [Включение визуализации Power BI в организации](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi?#enable--visualizations-in-the-organization).
 
-Эта функция требует экспортировать решение, изменить его для добавления фрагмента xml, а затем импортировать обратно в среду. Обязательно импортируйте изменения в целевую среду только через управляемое решение. См. раздел [Импорт, обновление и экспорт решений](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/import-update-export-solutions) для получения инструкций по установке обновления существующего управляемого решения.
+Эта функция требует экспортировать решение, изменить его для добавления фрагмента xml, а затем импортировать обратно в среду. Обязательно импортируйте изменения в целевую среду только через управляемое решение. См. раздел [Импорт, обновление и экспорт решений](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) для получения инструкций по установке обновления существующего управляемого решения.
 
 ## <a name="embed-without-contextual-filtering"></a>Внедрение без контекстной фильтрации
 Можно использовать отчеты и плитки Power BI просто внедряя их и получать точно такой же отчет. Это не предполагает их контекстную настройку для текущей управляемой моделью формы, поэтому вы получаете такой же отчет или плитку на всех записях сущности. Например, в следующем отчет отображается географическое расположение всех организаций сразу, что удобно для отображения сводной информации.
@@ -90,7 +90,7 @@ search.app:
         <PowerBIGroupId>00000000-0000-0000-0000-000000000000</PowerBIGroupId>
         <PowerBIReportId>544c4162-6773-4944-900c-abfd075f6081</PowerBIReportId>
         <TileUrl>https://xyz.powerbi.com/reportEmbed?reportId=544c4162-6773-4944-900c-abfd075f6081</TileUrl>
-        <PowerBIFilter>{"Filter": "[{\"$schema\":\"basic\",\"target\":{\"table\":\"My Active Accounts\",\"column\":\"Account Name\"},\"operator\":\"In\",\"values\":[$a],\"filterType\":1}]", "Alias": {"$a": "name"</PowerBIFilter>
+        <PowerBIFilter>{"Filter": "[{\"$schema\":\"basic\",\"target\":{\"table\":\"My Active Accounts\",\"column\":\"Account Name\"},\"operator\":\"In\",\"values\":[$a],\"filterType\":1}]", "Alias": {"$a": "name"}}</PowerBIFilter>
     </parameters>
 </control>
 ```
@@ -140,14 +140,14 @@ search.app:
    > [!div class="mx-imgBorder"] 
    > ![](media/embed-powerbi/embed-powerbi-report-in-system-form-auth-3.png "Внедрение-отчета-powerbi-в-системную-форму-проверка-подлинности-3")
 
-5. Вид данных отчета, отображаемого в PowerApps, такой же, как вид в Power BI, и роли безопасности и прав PowerApps не влияют на отображаемые данные. Следовательно, данные в целом те же, что и те, которые увидел бы создатель набора данных Power BI. Для применения ограничений доступа к данным, аналогичных ролям безопасности и группам PowerApps, используйте [Безопасность на уровне строки (RLS) с помощью Power BI](https://docs.microsoft.com/en-us/power-bi/service-admin-rls).
+5. Вид данных отчета, отображаемого в PowerApps, такой же, как вид в Power BI, и роли безопасности и прав PowerApps не влияют на отображаемые данные. Следовательно, данные в целом те же, что и те, которые увидел бы создатель набора данных Power BI. Для применения ограничений доступа к данным, аналогичных ролям безопасности и группам PowerApps, используйте [Безопасность на уровне строки (RLS) с помощью Power BI](https://docs.microsoft.com/power-bi/service-admin-rls).
 6. Если форма не отображает отчет Power BI после импорта решения и публикации настроек, откройте его в редакторе управляемых моделью форм и сохраните его, чтобы JSON формы был сформирован заново.
 
 
 ### <a name="see-also"></a>См. также
 
-[Внедрение панели мониторинга Power BI в управляемую моделью персональную панель мониторинга PowerApps](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
+[Внедрение панели мониторинга Power BI в управляемую моделью персональную панель мониторинга PowerApps](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
 
-[Использование Power BI с Dynamics 365 for Customer Engagement](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/use-power-bi)
+[Использование Power BI с Dynamics 365 for Customer Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi)
 
 [Импорт, обновление и экспорт решений](../common-data-service/import-update-export-solutions.md)

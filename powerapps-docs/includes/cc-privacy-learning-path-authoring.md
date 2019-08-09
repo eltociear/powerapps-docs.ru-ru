@@ -1,65 +1,57 @@
----
-ms.openlocfilehash: 509ad3f5b1b94378b2c6fd7661510b7aef0e3a23
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61582963"
----
-Если вы включили разработку схемы обучения для организации [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)], содержимое схемы обучения (опубликованное или черновое), создаваемое пользователями (с надлежащими привилегиями безопасности), будет храниться в [!INCLUDE[pn_Azure_SQL_Database_long](pn-azure-sql-database-long.md)]. Кроме того, включение функции позволяет [!INCLUDE[pn_azure_cloud_services](pn-azure-cloud-services.md)] записывать следующие данные, связанные с организацией [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]:  
+После включения​​ разработки схемы обучения для организации [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] создаваемое пользователями (с соответствующими привилегиями безопасности) содержимое схемы обучения (как опубликованное, так и черновики) будет сохраняться в [!INCLUDE[pn_Azure_SQL_Database_long](pn-azure-sql-database-long.md)]. Кроме того, включение этой функции позволяет [!INCLUDE[pn_azure_cloud_services](pn-azure-cloud-services.md)] собирать следующие данные, связанные с организацией [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)]:  
   
--   Список организаций в клиенте  
+-   Список организаций для клиента  
   
--   Клиент [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] и применимый браузер конечных пользователей; конфигурация ОС  
+-   Конфигурация клиента [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)] и подходящих браузера и ОС конечных пользователей  
   
--   Данные об использовании от конечных пользователей — например, время, затраченное на учебные материалы, или записанные щелчки  
+-   Данные об использовании для конечных пользователей, например время, проведенное в схеме обучения, или записанное количество щелчков  
   
--   Агрегированные данные от конечных пользователей — расположение, роль безопасности, язык пользователя  
+-   Агрегированные данные конечных пользователей — расположение, роль безопасности, язык пользователя  
   
--   Агрегированные данные от конечных пользователей — расположение, роль безопасности, язык пользователя  
+-   Агрегированные данные конечных пользователей — расположение, роль безопасности, язык пользователя  
   
--   Подробные отзывы от конечных пользователей  
+-   Подробные отзывы конечных пользователей  
   
- Администратор может включить (и впоследствии отключить) разработку схемы обучения при помощи параметра на вкладке **Общие** в диалоговом окне **Параметры системы**.  
+ Администратор может включить (а впоследствии и отключить) разработку схемы обучения с помощью параметра на вкладке **Общие** диалогового окна **Системные параметры**.  
   
- Компоненты и службы [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], используемые при разработке схемы обучения, подробно рассматриваются в следующих разделах.  
+ Компоненты и службы [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], используемые с функцией разработки схемы обучения, подробно рассматриваются в следующих разделах.  
   
  [!INCLUDE[cc_privacy_note_azure_trust_center](cc-privacy-note-azure-trust-center.md)]  
   
- [Облачные службы](https://azure.microsoft.com/en-us/services/cloud-services/)  
+ [Облачные службы](https://azure.microsoft.com/services/cloud-services/)  
   
  **Веб-служба**  
   
- Веб-служба предоставляет элементы управления, которые подготавливаются к просмотру на клиенте средой выполнения схем обучения. Веб-служба также поддерживает API конструктора, который используется для разработки схемы обучения. Элементы управления хранятся службой на [!INCLUDE[pn_Azure_SQL_Database_long](pn-azure-sql-database-long.md)].  
+ Веб-служба обслуживает элементы управления, которые отображаются у клиента средой выполнения схемы обучения. Кроме того, веб-служба поддерживает API конструктора, который используется функцией разработки схемы обучения. Элементы управления сохраняются службой в [!INCLUDE[pn_Azure_SQL_Database_long](pn-azure-sql-database-long.md)].  
   
- **Компилятор (рабочая роль)**  
+ **Компилятор (рабочая роль)**  
   
- Роль компилятора управляет публикацией элементов управления в группе публикации. Компилятор использует очереди для хранения сообщений о задании публикации. Результаты сохраняются в [!INCLUDE[pn_Azure_SQL_Database_long](pn-azure-sql-database-long.md)].  
+ Роль компилятора управляет публикацией элемента управления в группе публикации. Для хранения сообщений о задании публикации компилятор использует очередь. Результаты сохраняются в [!INCLUDE[pn_Azure_SQL_Database_long](pn-azure-sql-database-long.md)].  
   
- [База данных SQL Azure](https://azure.microsoft.com/en-us/services/sql-database/)  
+ [База данных SQL Azure](https://azure.microsoft.com/services/sql-database/)  
   
- Схема обучения использует [!INCLUDE[pn_Azure_SQL_Database_long](pn-azure-sql-database-long.md)] для хранения:  
+ Схема обучения использует [!INCLUDE[pn_Azure_SQL_Database_long](pn-azure-sql-database-long.md)], чтобы хранить следующие элементы.  
   
--   элементов управления, которые создаются с помощью схемы обучения;  
+-   Элементы управления, создаваемые с помощью схемы обучения.  
   
--   относящихся к конфигурации аспектов разработки схемы обучения.  
+-   Разработка схемы обучения применительно к конфигурации.  
   
- [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory/)  
+ [Azure Active Directory](https://azure.microsoft.com/services/active-directory/)  
   
  Схема обучения использует [!INCLUDE[pn_azure_active_directory](pn-azure-active-directory.md)] для проверки подлинности веб-службы.  
   
- [Диспетчер трафика Azure](https://azure.microsoft.com/en-us/services/traffic-manager/)  
+ [Диспетчер трафика Azure](https://azure.microsoft.com/services/traffic-manager/)  
   
- Схема обучения использует диспетчер трафика [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] для балансировки нагрузки на веб-службу по доступности и производительности.  
+ Схема обучения использует диспетчер трафика [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] для балансировки нагрузки веб-службы с точки зрения доступности и производительности.  
   
- [Очередь хранилища Azure](https://azure.microsoft.com/en-us/services/storage/)  
+ [Очередь службы хранилища Azure](https://azure.microsoft.com/services/storage/)  
   
- Очередь хранилища [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] используется для координации обмена данными между ролями веб-службы и компилятора.  
+ Очередь хранилища [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] служит для координации обмена данными между ролями веб-службы и компилятора.  
   
- [Хранилище BLOB-объектов Azure](https://azure.microsoft.com/en-us/services/storage/)  
+ [Хранилище BLOB-объектов Azure](https://azure.microsoft.com/services/storage/)  
   
- Схема обучения использует [!INCLUDE[pn_azure_blob_storage](pn-azure-blob-storage.md)] для хранения статического содержимого (клиентских [!INCLUDE[pn_JavaScript](pn-javascript.md)], изображений, содержимого CSS).  
+ Схема обучения использует [!INCLUDE[pn_azure_blob_storage](pn-azure-blob-storage.md)] для хранения статического содержимого (клиентского кода [!INCLUDE[pn_JavaScript](pn-javascript.md)], изображений, содержимого CSS).  
   
- [Сеть доставки содержимого Azure (CDN)](https://azure.microsoft.com/en-us/services/cdn/)  
+ [Сеть доставки содержимого (CDN) Azure](https://azure.microsoft.com/services/cdn/)  
   
- CDN используется для кэширования статического содержимого на стороне клиента ([!INCLUDE[pn_JavaScript](pn-javascript.md)], изображений и CSS-файлов), а также для их передачи из глобальной сети CDN.
+ Сеть CDN служит для кэширования клиентского статического содержимого ([!INCLUDE[pn_JavaScript](pn-javascript.md)], изображений и CSS-файлов), чтобы передавать их из глобальной сети CDN.

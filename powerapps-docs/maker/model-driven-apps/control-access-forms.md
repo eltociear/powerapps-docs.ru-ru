@@ -2,7 +2,7 @@
 title: Управление доступом к формам управляемых моделью приложений в PowerApps | MicrosoftDocs
 description: 'Узнайте, как управлять доступом к основным формам'
 ms.custom: ''
-ms.date: 03/07/2019
+ms.date: 06/18/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -71,11 +71,15 @@ search.app:
   
 <a name="BKMK_UseFormScripting"></a>   
 ## <a name="use-form-scripting"></a>Использование скриптов форм  
+Контекст формы клиентского API (formContext) содержит ссылку на форму или на элемент в форме, например элемент управления быстрого представления или строка в редактируемой сетке, для которого текущий код выполняется. Дополнительные сведения: [Контекст формы API клиента](/dynamics365/customer-engagement/developer/clientapi/clientapi-form-context)
 
- Наконец, в веб-приложении разработчики могут, но им не рекомендуется, использовать скрипты в событии Onload формы, чтобы использовать [коллекцию Xrm.Page.ui.formSelector.items](http://go.microsoft.com/fwlink/p/?LinkID=513300) для запроса доступных форм и использования метода navigate для направления пользователей к определенной форме. Помните, что [метод navigate](http://go.microsoft.com/fwlink/p/?LinkID=513301) приводит к повторной загрузке формы (и повторному возникновению события Onload). Ваша логика в обработчике событий всегда должна проверять некоторые условия перед использованием метода navigate, чтобы избегать бесконечного цикла или ненужного ограничения параметров пользователя для перехода между формами.  
+> [!IMPORTANT]
+> С приложениями Dynamics 365 for Customer Engagement версии 9.0 объект Xrm.Page [устарел](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated), и необходимо использовать метод [getFormContext](/dynamics365/customer-engagement/developer/clientapi/reference/executioncontext/getformcontext) объекта, переданного в контексте выполнения, для возврата ссылки на соответствующую форму или элемент формы.
+<!-- 
+ Finally, in the web application it is possible, but not recommended, for a developer to use scripts in the form Onload event to use the [Xrm.Page.ui.formSelector.items collection](http://go.microsoft.com/fwlink/p/?LinkID=513300) to query available forms and use the navigate method to direct users to a specific form. Remember that the [navigate method](http://go.microsoft.com/fwlink/p/?LinkID=513301) will cause the form to load again (and the Onload event to occur again). Your logic in the event handler should always check some condition before you use the navigate method to avoid an endless loop or unnecessarily restrict users options to navigate between forms.  
   
- Этот подход не будет работать в Dynamics 365 for tablets, поскольку невозможно выбрать несколько форм.  
+ This approach will not work for Dynamics 365 for tablets because multiple forms are not available for selection.  -->
 
-### <a name="next-steps"></a>Дальнейшие действия  
+### <a name="see-also"></a>См. также  
 
 [Назначение ролей безопасности формам](https://docs.microsoft.com/dynamics365/customer-engagement/admin/assign-security-roles-form)

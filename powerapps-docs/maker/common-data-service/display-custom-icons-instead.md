@@ -4,7 +4,7 @@ description: Научитесь отображать настраиваемых 
 ms.custom: ''
 ms.date: 02/14/2019
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -104,7 +104,7 @@ search.app:
 > [!IMPORTANT]
 > Для этого примера требуется сущность "Возможная сделка", которая доступная с приложениями Dynamics 365 for Customer Engagement.
   
-```  
+```javascript
 function displayIconTooltip(rowData, userLCID) {      
     var str = JSON.parse(rowData);  
     var coldata = str.opportunityratingcode_Value;  

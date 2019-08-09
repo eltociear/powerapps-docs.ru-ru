@@ -1,11 +1,11 @@
 ---
 title: 'Специальные возможности в конструкторе приложений, конструкторе карты сайта и на странице "Мои приложения" в PowerApps | Microsoft Docs'
-description: 'Узнайте о специальных возможностях в конструкторе приложений, конструкторе карты сайта и на странице "Мои приложения" в PowerApps'
+description: 'Узнайте о специальных возможностях в управляемом моделью приложении в конструкторе приложений, конструкторе карты сайта и на странице "Мои приложения" в PowerApps'
 keywords: Конструктор приложений; конструктор карты сайта; мои приложения; Dynamics 365
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.date: 06/18/2018
+ms.date: 05/20/2019
 ms.topic: article
 applies_to:
   - Dynamics 365 (online)
@@ -22,7 +22,8 @@ search.app:
 # <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>Доступность в конструкторе приложений PowerApps, конструкторе карты сайта и на странице "Мои приложения"
 
 Корпорация Майкрософт полна решимости сделать свои продукты и сервисы более простыми и доступными для всех. Дополнительные сведения: [Специальные возможности Майкрософт](http://www.microsoft.com/enable/default.aspx)  
-  
+ 
+В этом разделе описываются специальные возможности, доступные в управляемых моделью приложениях.  
   
 ## <a name="keyboard-shortcuts"></a>Сочетания клавиш  
 В PowerApps предусмотрены различные сочетания клавиш для облегчения работы пользователям с ограниченной подвижностью пальцев или нарушением координации движений.  
@@ -105,4 +106,4 @@ search.app:
 
 ## <a name="see-also"></a>См. также
 
-[Использование сочетаний клавиш в приложениях Dynamics 365 Customer Engagement](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/keyboard-shortcuts)
+[Использование сочетаний клавиш в приложениях Dynamics 365 Customer Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/basics/keyboard-shortcuts)

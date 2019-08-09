@@ -59,7 +59,7 @@ search.app:
 |**Электронная почта**|Действие, передаваемое с помощью протоколов электронной почты.|Да|[Электронная почта](/powerapps/developer/common-data-service/reference/entities/email)|
 |**Факс**|Действие, отслеживающее результаты звонков и число страниц в факсе и дополнительно хранящее электронную копию документа.|Да|[Факс](/powerapps/developer/common-data-service/reference/entities/fax)|
 |**Письмо**|Действие, отслеживающее доставку письма. Действие, содержащее электронную копию письма.|Да|[Письмо](/powerapps/developer/common-data-service/reference/entities/letter)|
-|**Звонок**|Действие для отслеживания телефонного звонка.|Да|[PhoneCall ](/powerapps/developer/common-data-service/reference/entities/phonecall)|
+|**Звонок**|Действие для отслеживания телефонного звонка.|Да|[PhoneCall](/powerapps/developer/common-data-service/reference/entities/phonecall)|
 |**Повторяющаяся встреча**|Главная встреча или ряд повторяющихся встреч.|Да|[RecurringAppointmentMaster](/powerapps/developer/common-data-service/reference/entities/recurringappointmentmaster)|
 |**Задача**|Универсальное действие, представляющее работу, которую необходимо выполнить.|Да|[Задача](/powerapps/developer/common-data-service/reference/entities/task)|
   
