@@ -842,6 +842,8 @@
                       href: ./model-driven-apps/add-move-or-delete-tabs-on-form.md
                     - name: Свойства в конструкторе форм
                       href: ./model-driven-apps/form-designer-properties.md
+                    - name: Настройка свойств заголовка
+                      href: ./model-driven-apps/form-designer-header-properties.md
                     - name: Использование представления в виде дерева
                       href: ./model-driven-apps/using-tree-view-on-form.md
                 - name: Типы форм
