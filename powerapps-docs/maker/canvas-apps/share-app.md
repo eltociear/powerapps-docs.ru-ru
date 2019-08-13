@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 11/28/2018
+ms.date: 08/09/2019
 ms.author: anneta
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b070dfad61f3e53e313d4e8891dc44507a910292
-ms.sourcegitcommit: edf79033111b50aa3015b55929ce689474edba2d
+ms.openlocfilehash: ecb3e7aa6db1100f33a3c80a0518166b035d2b32
+ms.sourcegitcommit: 988aa08353864f8177725262468c07abe75549f5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68917424"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68961501"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Предоставление общего доступа к приложению на основе холста в PowerApps
 
@@ -117,8 +117,8 @@ ms.locfileid: "68917424"
 1. На панели совместного доступа выберите **назначить роль безопасности** в разделе **разрешения**на доступ к данным.
 
 1. Выберите роль или роли в Common Data Service, которые вы хотите назначить пользователю или группе безопасности в Azure AD, к которой вы хотите предоставить общий доступ к приложению.
-
-    ![Список ролей безопасности](media/share-app/cds-assign-security-role-list.png)
+     > [!div class="mx-imgBorder"] 
+     > ![Список ролей безопасности](media/share-app/cds-assign-security-role-list.png "Список ролей безопасности")
 
 ### <a name="common-data-service-previous-version"></a>Common Data Service (предыдущая версия)
 
@@ -132,36 +132,44 @@ ms.locfileid: "68917424"
 
 Приложения PowerApps Canvas можно совместно использовать с гостевыми пользователями Azure Active Directory клиента. Это позволяет приглашать внешних бизнес-партнеров, подрядчиков и сторонних производителей запускать приложения для работы с холстами компании. 
 
-Обратите внимание, что гостям может быть назначена только роль пользователя, а не роль совладельца, для приложений, которым они предоставлены.
+> [!NOTE]
+> Гостям может быть назначена только роль **пользователя** , а не роль **совладельца** , для приложений, которым они предоставлены.
 
 ### <a name="prerequisites"></a>Технические условия
-1. В Azure Active Directory [включите внешнюю совместную работу B2B](https://docs.microsoft.com/en-us/azure/active-directory/b2b/delegate-invitations) для клиента.  
-- По умолчанию это значение включено, и администратор клиента может изменить параметры.  
-- Дополнительные сведения об извлечении Azure AD B2B: [Что такое доступ гостевых пользователей в Azure AD B2B?](https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b)  
-2. Доступ к учетной записи, которая может добавлять гостевых пользователей в клиент AAD. Администраторы и пользователи с ролью "Гостевой участник" могут добавлять гостей в клиент.   
+1. В Azure Active Directory (Azure AD) включите внешнюю совместную работу B2B для клиента. Дополнительные сведения: [Включение внешней совместной работы B2B и управление пользователями, которые могут приглашать гостей](/azure/active-directory/b2b/delegate-invitations)
+    - Включение внешней совместной работы B2B включено по умолчанию. Однако параметры могут быть изменены администратором клиента.  Дополнительные сведения об Azure AD B2B см [. в статье что такое доступ гостевых пользователей в Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)  
+2. Доступ к учетной записи, которая может добавлять гостевых пользователей в клиент Azure AD. Администраторы и пользователи с ролью гостя может добавлять гостей в клиент.   
 3. Необходимо назначить лицензию PowerApps гостевому пользователю в клиенте, с которым связано приложение. До выхода общедоступной версии приложения Canvas для гостевого доступа гости с лицензией PowerApps в своем домашнем клиенте не должны назначать лицензию на клиенте, являющиеся гостевыми.
 
-### <a name="steps"></a>Выполнены
-1. Добавление гостевых пользователей в Azure Active Directory.  
-- Это описано в статье: [Краткое руководство: Добавление нового гостевого пользователя в Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
-![Добавление гостя в Azure AD](media/share-app/guest_access_doc_1.png)
+### <a name="steps-to-grant-guest-access"></a>Действия по предоставлению гостевого доступа
+1. Выберите **Новый гостевой пользователь** , чтобы добавить гостевых пользователей в Azure AD. Дополнительные сведения: [Краткое руководство: Добавление нового гостевого пользователя в Azure AD](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
+    > [!div class="mx-imgBorder"] 
+    > ![Добавление гостя в Azure AD](media/share-app/guest_access_doc_1.png "Добавление гостя в Azure AD")
 2. Назначьте лицензию гостевому пользователю. 
-- Это описано в статьях: [Назначение лицензий одному пользователю](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide#assign-licenses-to-one-user) или [назначение или удаление лицензий](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/license-users-groups) для https://admin.microsoft.com пользователей и https://portal.azure.com соответственно.  
-- Обратите внимание, что для назначения лицензии гостевой системе может потребоваться отключить Microsoft 365 предварительной версии центра администрирования. 
+   - Сведения о назначении гостевых пользователей из admin.microsoft.com см. в статье [Назначение лицензий одному пользователю](/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+   - Сведения о назначении гостевых пользователей из portal.azure.com см. в статье [назначение или удаление лицензий](/azure/active-directory/fundamentals/license-users-groups).
+ 
+   > [!IMPORTANT]
+   > Чтобы назначить лицензию для гостя, может потребоваться отключить Microsoft 365 предварительной версии центра администрирования. 
+
 3. Предоставьте общий доступ к приложению Canvas. 
-- Войти в https://make.powerapps.com  
-- Выберите приложение и щелкните поделиться. 
-![Поделиться с гостевыми](media/share-app/guest_access_doc_2.png)
-![гостями могут только пользователи](media/share-app/guest_access_doc_3.png)
-4. Гости могут обнаруживать приложения и получать доступ к ним из сообщения электронной почты, отправленного им в рамках общего доступа.
-![Гости получают адрес электронной почты для общего ресурса приложения](media/share-app/guest_access_doc_4.png)
+    1. Войти в https://make.powerapps.com  
+    2. Перейдите в раздел **приложения**, выберите приложение Canvas, а затем на панели команд выберите **Общая папка**. 
+    3. Введите адрес электронной почты гостевого пользователя из клиента Azure AD. Дополнительные сведения: [Что такое доступ гостевых пользователей в Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)
+          > [!div class="mx-imgBorder"] 
+          > ![Поделиться с гостевой службой](media/share-app/guest_access_doc_2.png "Поделиться с гостевой службой")
+ 
+После того как вы поделитесь своим приложением для гостевого доступа, гости смогут обнаруживать приложения и получать к ним доступ из сообщения электронной почты, отправленного им в рамках общего доступа.
+
+> [!div class="mx-imgBorder"]  
+> ![Гости получают адрес электронной почты для общего ресурса приложения](media/share-app/guest_access_doc_4.png "Гости получают адрес электронной почты для общего ресурса приложения")
 
 ### <a name="frequently-asked-questions"></a>Часто задаваемые вопросы
 
-#### <a name="whats-the-difference-between-canvas-app-guest-access-and-powerapps-portal"></a>В чем разница между гостевым доступом к приложению Canvas и порталом PowerApps? 
-Приложения Canvas позволяют создавать приложения, адаптированные к работе с бизнес-процессами, без написания кода на традиционном языке программирования, например C#. Гостевой доступ для приложений Canvas позволяет группам лиц, которые участвуют в разных организациях, состоять в общем бизнес-процессе, получать доступ к тем же ресурсам приложения, которые могут интегрироваться с разнообразными [источниками Майкрософт и сторонних источников](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/connections-list).
+#### <a name="whats-the-difference-between-canvas-app-guest-access-and-powerapps-portals"></a>В чем разница между гостевым доступом к приложениям Canvas и порталами PowerApps? 
+Приложения Canvas позволяют создавать приложения, адаптированные к работе с бизнес-процессами, без написания кода на традиционном языке программирования, например C#. Гостевой доступ для приложений Canvas позволяет группам лиц, которые участвуют в разных организациях, состоять в общем бизнес-процессе, получать доступ к тем же ресурсам приложения, которые могут интегрироваться с разнообразными источниками Майкрософт и сторонних источников. Дополнительные сведения: [Общие сведения о соединителях Canvas-App для PowerApps](/powerapps/maker/canvas-apps/connections-list).
 
-[Порталы PowerApps предоставляют](https://docs.microsoft.com/en-us/powerapps/maker/portals/overview) возможность создавать низкоуровневые, реагирующие на запросы веб-сайты, которые позволяют внешним пользователям взаимодействовать с данными, хранящимися в Common Data Service. Она позволяет организациям создавать веб-сайты, которые могут использоваться совместно с пользователями, внешними по отношению к Организации, либо анонимно, либо через поставщика входа в систему, например LinkedIn, учетная запись Майкрософт, другие коммерческие поставщики входа. 
+[Порталы PowerApps предоставляют](/powerapps/maker/portals/overview) возможность создавать низкоуровневые, реагирующие на запросы веб-сайты, которые позволяют внешним пользователям взаимодействовать с данными, хранящимися в Common Data Service. Она позволяет организациям создавать веб-сайты, которые могут использоваться совместно с пользователями, внешними по отношению к Организации, либо анонимно, либо через поставщика входа по своему усмотрению, например LinkedIn, учетная запись Майкрософт или другие коммерческие поставщики входа. 
 
 В следующей таблице приведены несколько различий между основными возможностями между порталами PowerApps и приложениями Canvas.  
 
@@ -175,13 +183,15 @@ ms.locfileid: "68917424"
 Да. Любой пользователь, который может получить доступ к списку SharePoint с помощью настраиваемой формы, может создавать и изменять элементы в списке, используя форму без лицензии PowerApps.
 
 #### <a name="can-guests-access-apps-embedded-in-sharepoint"></a>Могут ли гости получать доступ к приложениям, внедренным в SharePoint? 
-Да. Однако доступ к автономным приложениям холста требует наличия лицензии PowerApps, включая внедренные приложения. При внедрении приложения Canvas в SharePoint с помощью элемента управления Microsoft PowerApps embed скопируйте и вставьте идентификатор приложения. 
+Да. Однако доступ к автономным приложениям холста требует наличия лицензии PowerApps, включая внедренные приложения. При внедрении приложения Canvas в SharePoint с помощью элемента управления Microsoft PowerApps embed введите идентификатор приложения. Для этого введите идентификатор приложения в поле " **веб-ссылка приложения" или "идентификатор** ". 
 
-![Внедрение приложения Canvas в SharePoint для гостей](media/share-app/guest_access_doc_5.PNG)
+> [!div class="mx-imgBorder"]  
+> ![Внедрение приложения Canvas в SharePoint для гостей](media/share-app/guest_access_doc_5.PNG "Внедрение приложения Canvas в SharePoint для гостей")
 
-При внедрении приложения Canvas в SharePoint с помощью HTML-тега IFRAME сослаться на приложение с помощью полной веб-ссылки, которую можно http://make.powerapps.com найти в > выберите приложение > сведения > веб-ссылку.
+При внедрении приложения Canvas в SharePoint с помощью HTML-тега iFrame сослаться на приложение, используя полный веб-URL. Чтобы найти URL-адрес, http://make.powerapps.com выберите приложение, перейдите на вкладку " **сведения** ", и URL-адрес отобразится в разделе " **веб-ссылка**".
 
-![Сведения о приложении Canvas](media/share-app/guest_access_doc_6.PNG)
+> [!div class="mx-imgBorder"]  
+> ![Сведения о приложении Canvas](media/share-app/guest_access_doc_6.PNG "Сведения о приложении Canvas")
 
 #### <a name="how-come-guests-can-launch-the-app-shared-with-them-but-connections-fail-to-be-created"></a>Как гости могут запустить приложение, к которому предоставлен общий доступ, но подключения не удается создать?
 Как и в случае с не являющимися гостями, базовые источники данных, к которым обращается приложение, также должны быть доступны для гостей.
@@ -209,7 +219,7 @@ ms.locfileid: "68917424"
 #### <a name="what-azure-ad-tenant-are-connections-for-a-guest-user-created-in"></a>Какие клиенты Azure AD являются подключениями для гостевого пользователя, созданного в?
 Подключения для приложения всегда вносятся в контексте клиента Azure AD, с которым связано приложение. Например, если приложение создано в клиенте Contoso, то подключения для внутренних и гостевых пользователей Contoso выполняются в контексте клиента Contoso.
 
-#### <a name="can-guests-use-microsoft-graph-via-microsoft-security-graph-connectorhttpsdocsmicrosoftcomen-usconnectorsmicrosoftgraphsecurity-or-a-custom-connector-using-microsoft-graph-apishttpsdevelopermicrosoftcomen-usgraph"></a>Могут ли гости использовать Microsoft Graph через [соединитель Microsoft Security Graph](https://docs.microsoft.com/en-us/connectors/microsoftgraphsecurity/) или пользовательский соединитель с помощью [Microsoft Graph API](https://developer.microsoft.com/en-us/graph)?
+#### <a name="can-guests-use-microsoft-graph-via-microsoft-security-graph-connector-or-a-custom-connector-using-microsoft-graph-apis"></a>Могут ли гости использовать Microsoft Graph через соединитель Microsoft Security Graph или пользовательский соединитель с помощью Microsoft Graph API?
 Нет, гости Azure AD не могут запрашивать Microsoft Graph для получения сведений о клиенте, в котором они являются гостевыми.
 
 #### <a name="what-intune-policies-apply-to-guests-using-my-powerapps"></a>Какие политики InTune применяются к гостям с помощью моей PowerApps?
