@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 8/14/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 931efa2fcb2f30dcba7b1eef0118e734399e503e
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: f40a153ef20df0bccbdee915efe9af6aa88cb754
+ms.sourcegitcommit: f2ca557e43ab38c169eb3b754ac02c9321f9285f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61563309"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69030552"
 ---
 #  <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>Улучшенное взаимодействие с пользователем с единым интерфейсом для приложений на основе моделей 
 
@@ -53,5 +53,9 @@ ms.locfileid: "61563309"
 ## <a name="business-process"></a>Бизнес-процесс 
 Поток бизнес-процессов был улучшен механизмом стыковки. Вы можете закрепить этап бизнес-процесса на экране, чтобы не полагаться на задачи в потоке бизнес-процесса. Это особенно полезно, когда этап процесса содержит сложные шаги для выполнения. Дополнительные сведения см. в разделе [Работа с бизнес-процессами](work-with-business-processes.md).
 
-## <a name="accessibility"></a>Режима
+## <a name="accessibility"></a>Специальные возможности
 Улучшенный интерфейс позволяет использовать средства чтения с экрана для преобразования информации на экране в звуковое звучание и печати на устройство чтения Брайля, чтобы другие пользователи могли использовать приложение. Дополнительные сведения см. [в разделе Использование средства чтения с экрана](screen-reader.md).
+
+##  <a name="unified-interface-community"></a>Сообщество Объединенных интерфейсов
+
+Перейдите на [веб-сайт унифицированного интерфейса сообщества](https://community.dynamics.com/365/unified-interface/) , чтобы получить помощь по планированию и выполнению плавного перехода на единый интерфейс и привлечения экспертов и коллег в блогах, веб-семинарах, видео, событиях и т. д.
