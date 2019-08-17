@@ -7,25 +7,24 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 04/26/2016
+ms.date: 08/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f538d785b9655b94a44a79c3299e979bbfe88883
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: eae185fc52f368fa09ddbfe221553ddf6cc3a16d
+ms.sourcegitcommit: 9163abbe9a24298f216f15139f977adfd2c3f2ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63320967"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550360"
 ---
 # <a name="forall-function-in-powerapps"></a>Функция ForAll в PowerApps
 Вычисляет значения и выполняет действия для всех [записей](../working-with-tables.md#records) в [таблице](../working-with-tables.md).
 
 ## <a name="description"></a>Описание
-Функция **ForAll** вычисляет формулы для всех записей таблицы.  Формула может рассчитать значение и (или) выполнить действия, например изменить данные или работу с подключением.
+Функция **ForAll** вычисляет формулы для всех записей таблицы.  Формула может рассчитать значение и (или) выполнить действия, например изменить данные или работу с подключением.  Используйте функцию [ **with** ](function-with.md) для вычисления формулы для отдельной записи.
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
@@ -37,9 +36,9 @@ ms.PowerAppsDecimalTransform: true
 Если результат формулы — *пустое* значение, в результирующей таблице не будет записи для такой входной записи.  В этом случае в результирующей таблице будет меньше записей, чем в исходной.
 
 ### <a name="taking-action"></a>Выполнение действия
-Формула может содержать функции, выполняющие действия, например изменяющие записи из источника данных с помощью функций **[Patch](function-patch.md)** и **[Collect](function-clear-collect-clearcollect.md)**.  Формула также может вызывать методы при подключении.  Воспользовавшись оператором [**;**, для каждой записи можно выполнить несколько действий](operators.md). Таблицу, к которой применяется функция **ForAll**, изменить невозможно.
+Формула может содержать функции, выполняющие действия, например изменяющие записи из источника данных с помощью функций **[Patch](function-patch.md)** и **[Collect](function-clear-collect-clearcollect.md)** .  Формула также может вызывать методы при подключении.  Воспользовавшись оператором [ **;** , для каждой записи можно выполнить несколько действий](operators.md). Таблицу, к которой применяется функция **ForAll**, изменить невозможно.
 
-При создании формулы следует учитывать, что записи могут обрабатываться в любом порядке и (по возможности) параллельно.  Первая запись таблицы может быть обработана после последней.  Поэтому следует избегать зависимостей от порядка расположения.  По этой причине функции **[UpdateContext](function-updatecontext.md)**, **[Clear](function-clear-collect-clearcollect.md)** и **[ClearCollect](function-clear-collect-clearcollect.md)** нельзя использовать с функцией **ForAll**, поскольку вполне может оказаться, что они применяются для хранения переменных, восприимчивых к такому эффекту.  Вы можете использовать функцию **[Collect](function-clear-collect-clearcollect.md)**, но порядок добавления записей должен быть неопределенным.
+При создании формулы следует учитывать, что записи могут обрабатываться в любом порядке и (по возможности) параллельно.  Первая запись таблицы может быть обработана после последней.  Поэтому следует избегать зависимостей от порядка расположения.  По этой причине функции **[UpdateContext](function-updatecontext.md)** , **[Clear](function-clear-collect-clearcollect.md)** и **[ClearCollect](function-clear-collect-clearcollect.md)** нельзя использовать с функцией **ForAll**, поскольку вполне может оказаться, что они применяются для хранения переменных, восприимчивых к такому эффекту.  Вы можете использовать функцию **[Collect](function-clear-collect-clearcollect.md)** , но порядок добавления записей должен быть неопределенным.
 
 Некоторые функции, которые изменяют источники данных, в том числе **Collect**, **Remove** и **Update**, возвращают измененный источник данных в качестве значения.  Такие возвращаемые значения могут оказаться большими, так что, если они используются для каждой записи таблицы **ForAll**, при их обработке могут потребляться значительные ресурсы.  Также может оказаться, что эти возвращенные значения не такие, какими должны быть, поскольку **ForAll** может выполняться параллельно и отделять побочные эффекты этих функций от процесса получения их результатов.  К счастью, если возвращаемое значение **ForAll** фактически не используется, что бывает довольно часто в случае функций изменения данных, то возвращаемое значение не создается, а проблемы, связанные с ресурсами или упорядочением, не возникают.  Но если вы используете результат **ForAll** и одну из функций, возвращающих источник данных, тщательно продумайте структуру результата и сначала испытайте их на небольшом наборе данных.  
 
@@ -52,7 +51,7 @@ ms.PowerAppsDecimalTransform: true
 [!INCLUDE [delegation-no-one](../../../includes/delegation-no-one.md)]
 
 ## <a name="syntax"></a>Синтаксис
-**ForAll**( *Table*; *Formula* )
+**ForAll**( *Table*, *Formula* )
 
 * *Table* — обязательный аргумент. Это таблица, с которой нужно выполнить действия.
 * *Formula* — обязательный аргумент.  Это формула, используемая для вычисления всех записей *Table*.
@@ -65,12 +64,12 @@ ms.PowerAppsDecimalTransform: true
 
 Для создания этого источника данных как коллекции установите в качестве значения свойства **OnSelect** элемента управления **Кнопка** следующую формулу, перейдите в режим предварительного просмотра и нажмите кнопку.
 
-`ClearCollect( Squares; [ "1"; "4"; "9" ] )`
+`ClearCollect( Squares, [ "1", "4", "9" ] )`
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| **ForAll(&nbsp;Squares; Sqrt(&nbsp;Value&nbsp;)&nbsp;)**<br><br>**Sqrt(&nbsp;Squares&nbsp;)** |Для всех записей входной таблицы вычисляется квадратный корень из столбца **Value**.  Функцию **Sqrt** можно также использовать с таблицей, состоящей из одного столбца, благодаря чему в этом примере можно избежать использования **ForAll**. |<style> img { max-width: none } </style> ![](media/function-forall/sqrt.png) |
-| **ForAll(&nbsp;Squares; Power(&nbsp;Value;&nbsp;3&nbsp;)&nbsp;)** |Для всех записей входной таблицы значения столбца **Value** возводятся в куб.  Функция **Power** не поддерживает таблицы из одного столбца. Таким образом, в данном случае следует использовать функцию **ForAll**. |<style> img { max-width: none } </style> ![](media/function-forall/power3.png) |
+| **ForAll(&nbsp;Squares, Sqrt(&nbsp;Value&nbsp;)&nbsp;)**<br><br>**Sqrt(&nbsp;Squares&nbsp;)** |Для всех записей входной таблицы вычисляется квадратный корень из столбца **Value**.  Функцию **Sqrt** можно также использовать с таблицей, состоящей из одного столбца, благодаря чему в этом примере можно избежать использования **ForAll**. |<style> img { max-width: none } </style> ![](media/function-forall/sqrt.png) |
+| **ForAll(&nbsp;Squares, Power(&nbsp;Value,&nbsp;3&nbsp;)&nbsp;)** |Для всех записей входной таблицы значения столбца **Value** возводятся в куб.  Функция **Power** не поддерживает таблицы из одного столбца. Таким образом, в данном случае следует использовать функцию **ForAll**. |<style> img { max-width: none } </style> ![](media/function-forall/power3.png) |
 
 ### <a name="using-a-connection"></a>Использование подключения
 В приведенных ниже примерах используется [источник данных](../working-with-data-sources.md) **Expressions**.
@@ -79,14 +78,14 @@ ms.PowerAppsDecimalTransform: true
 
 Для создания этого источника данных как коллекции установите в качестве значения свойства **OnSelect** элемента управления **Кнопка** следующую формулу, перейдите в режим предварительного просмотра и нажмите кнопку.
 
-`ClearCollect( Expressions; [ "Hello"; "Good morning"; "Thank you"; "Goodbye" ] )`
+`ClearCollect( Expressions, [ "Hello", "Good morning", "Thank you", "Goodbye" ] )`
 
 В этом примере используется также подключение к [Microsoft Translator](../connections/connection-microsoft-translator.md).  Сведения о том, как добавить это подключение в приложение, см. в разделе об [управлении подключениями](../add-manage-connections.md).
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| **ForAll( Expressions; MicrosoftTranslator.Translate( Value; "es" ) )** |Для всех записей в таблице Expressions содержимое столбца **Value** переводится на испанский язык (сокращение «es»). |<style> img { max-width: none } </style> ![](media/function-forall/translate-es.png) |
-| **ForAll( Expressions; MicrosoftTranslator.Translate( Value; "fr" ) )** |Для всех записей в таблице Expressions содержимое столбца **Value** переводится на французский язык (сокращение «fr»). |<style> img { max-width: none } </style> ![](media/function-forall/translate-fr.png) |
+| **ForAll( Expressions, MicrosoftTranslator.Translate( Value, "es" ) )** |Для всех записей в таблице Expressions содержимое столбца **Value** переводится на испанский язык (сокращение «es»). |<style> img { max-width: none } </style> ![](media/function-forall/translate-es.png) |
+| **ForAll( Expressions, MicrosoftTranslator.Translate( Value, "fr" ) )** |Для всех записей в таблице Expressions содержимое столбца **Value** переводится на французский язык (сокращение «fr»). |<style> img { max-width: none } </style> ![](media/function-forall/translate-fr.png) |
 
 ### <a name="copying-a-table"></a>Копирование таблицы
 Иногда требуется фильтровать и сортировать данные, а также формировать их и обрабатывать.  В PowerApps для этого предусмотрен ряд функций, в том числе **Filter**, **AddColumns** и **Sort**.  PowerApps интерпретирует каждую таблицу как значение, что обеспечивает быстрое прохождение формул и удобство использования.      
@@ -105,13 +104,13 @@ ms.PowerAppsDecimalTransform: true
 
 Для создания этого источника данных как коллекции установите в качестве значения свойства **OnSelect** элемента управления **Кнопка** следующую формулу, перейдите в режим предварительного просмотра и нажмите кнопку.
 
-```powerapps-comma
-ClearCollect( Products; 
+```powerapps-dot
+ClearCollect( Products, 
     Table( 
-        { Product: "Widget";    'Quantity Requested': 6;  'Quantity Available': 3 }; 
-        { Product: "Gadget";    'Quantity Requested': 10; 'Quantity Available': 20 };
-        { Product: "Gizmo";     'Quantity Requested': 4;  'Quantity Available': 11 };
-        { Product: "Apparatus"; 'Quantity Requested': 7;  'Quantity Available': 6 } 
+        { Product: "Widget",    'Quantity Requested': 6,  'Quantity Available': 3 }, 
+        { Product: "Gadget",    'Quantity Requested': 10, 'Quantity Available': 20 },
+        { Product: "Gizmo",     'Quantity Requested': 4,  'Quantity Available': 11 },
+        { Product: "Apparatus", 'Quantity Requested': 7,  'Quantity Available': 6 } 
     )
 )
 ```
@@ -125,14 +124,14 @@ ClearCollect( Products;
 #### <a name="table-shaping-on-demand"></a>Формирование таблицы по запросу
 Не создавайте копию!  В любом случае можно использовать следующую формулу:
 
-```powerapps-comma
-// Table shaping on demand; no need for a copy of the result
+```powerapps-dot
+// Table shaping on demand, no need for a copy of the result
 ShowColumns( 
     AddColumns( 
-        Filter( Products; 'Quantity Requested' > 'Quantity Available' ); 
-        "Quantity To Order"; 'Quantity Requested' - 'Quantity Available' 
-    ); 
-    "Product"; 
+        Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+        "Quantity To Order", 'Quantity Requested' - 'Quantity Available' 
+    ), 
+    "Product", 
     "Quantity To Order"
 )
 ```
@@ -146,11 +145,11 @@ ShowColumns(
 #### <a name="forall-on-demand"></a>ForAll по запросу
 Другой способ — использовать функцию **ForAll** вместо функций формирования таблицы:
 
-```powerapps-comma
-ForAll( Products; 
-    If( 'Quantity Requested' > 'Quantity Available'; 
+```powerapps-dot
+ForAll( Products, 
+    If( 'Quantity Requested' > 'Quantity Available', 
         { 
-            Product: Product; 
+            Product: Product, 
             'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
         } 
     ) 
@@ -166,25 +165,25 @@ ForAll( Products;
 
 Мы используем такой же способ формирования таблицы, как и в предыдущих двух примерах, но сохраним результат в виде коллекции:
 
-```powerapps-comma
-ClearCollect( NewOrder; 
+```powerapps-dot
+ClearCollect( NewOrder, 
     ShowColumns( 
         AddColumns( 
-            Filter( Products; 'Quantity Requested' > 'Quantity Available' ); 
-            "Quantity To Order"; 'Quantity Requested' - 'Quantity Available' 
-        ); 
-        "Product"; 
+            Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+            "Quantity To Order", 'Quantity Requested' - 'Quantity Available' 
+        ), 
+        "Product", 
         "Quantity To Order"
     )
 )
 ```
 
-```powerapps-comma
-ClearCollect( NewOrder; 
-    ForAll( Products; 
-        If( 'Quantity Requested' > 'Quantity Available'; 
+```powerapps-dot
+ClearCollect( NewOrder, 
+    ForAll( Products, 
+        If( 'Quantity Requested' > 'Quantity Available', 
             { 
-                Product: Product; 
+                Product: Product, 
                 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
             } 
         } 
@@ -197,13 +196,13 @@ ClearCollect( NewOrder;
 #### <a name="collect-within-forall"></a>Выполнение функции Collect в ForAll
 Наконец, мы можем выполнить операцию **Collect** непосредственно в функции **ForAll**:
 
-```powerapps-comma
-Clear( ProductsToOrder );; 
-ForAll( Products; 
-    If( 'Quantity Requested' > 'Quantity Available'; 
-        Collect( NewOrder;  
+```powerapps-dot
+Clear( ProductsToOrder ); 
+ForAll( Products, 
+    If( 'Quantity Requested' > 'Quantity Available', 
+        Collect( NewOrder,  
             { 
-                Product: Product; 
+                Product: Product, 
                 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
             } 
         )
