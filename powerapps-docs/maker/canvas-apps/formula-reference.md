@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 11/14/2018
+ms.date: 08/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f7cf23c03f68efc5e5b553a05d7f546373b636c9
-ms.sourcegitcommit: 2084789802fc5134dbeb888e759cced46019a017
+ms.openlocfilehash: f934730ec6ca432f1da4106c535cf5967f883070
+ms.sourcegitcommit: 9163abbe9a24298f216f15139f977adfd2c3f2ae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66736223"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550342"
 ---
 # <a name="formula-reference-for-powerapps"></a>Справочник формул для PowerApps
 Формулы объединяют множество элементов.  Ниже перечислены следующие элементы:
@@ -34,7 +34,7 @@ ms.locfileid: "66736223"
 * [элементы управления и их свойства](reference-properties.md).
 * [Типы данных](functions/data-types.md)
 
-## <a name="a"></a>A
+## <a name="a"></a>А
 **[Abs](functions/function-numericals.md)** — абсолютное значение числа.  
 
 **[Acceleration](functions/signals.md)** — считывает данные с датчика ускорения на устройстве.
@@ -47,11 +47,11 @@ ms.locfileid: "66736223"
 
 **[And](functions/function-logicals.md)** — логическая функция AND.  Возвращает значение **true**, если все аргументы принимают значение **true**.  Также можно использовать [оператор **&&** ](functions/operators.md).
 
-**[Приложение](functions/object-app.md)**  — предоставляет сведения о текущих и контроля над поведением приложения.
+**[Приложение](functions/object-app.md)** — предоставляет сведения о работающем в настоящее время приложении и контроле поведения приложения.
 
 **[Asin](functions/function-trig.md)** — возвращает арксинус числа (в радианах).
 
-**[AsType](functions/function-astype-istype.md)**  — считает ссылке записи определенного типа сущности.
+**[Астипе](functions/function-astype-istype.md)** — обрабатывает ссылку на запись как конкретный тип сущности.
 
 **[Atan](functions/function-trig.md)** — возвращает арктангенс числа (в радианах).
 
@@ -151,7 +151,7 @@ ms.locfileid: "66736223"
 
 **[Exp](functions/function-numericals.md)** — возвращает *e*, возведенное в указанную степень.
 
-## <a name="f"></a>F
+## <a name="f"></a>C
 **[Filter](functions/function-filter-lookup.md)** — возвращает таблицу, отфильтрованную на основе одного или нескольких критериев.
 
 **[Find](functions/function-find.md)** — проверяет, находится ли одна строка внутри другой, и возвращает расположение.
@@ -167,7 +167,7 @@ ms.locfileid: "66736223"
 
 **[GUID](functions/function-guid.md)**  — преобразует строку GUID в значение GUID или создает новое значение GUID.
 
-## <a name="h"></a>Серия H
+## <a name="h"></a>H
 **[HashTags](functions/function-hashtags.md)** — извлекает из строки хэш-теги (#strings).
 
 **[Hour](functions/function-datetime-parts.md)** — возвращает данные времени в часах из значения даты и времени.
@@ -187,10 +187,10 @@ ms.locfileid: "66736223"
 
 **[IsToday](functions/function-now-today-istoday.md)** — проверяет, не попадает ли значение даты и времени на сегодняшний день.
 
-**[IsType](functions/function-astype-istype.md)**  — проверяет, ссылается ли ссылка записи определенного типа сущности.
+**[IsReference](functions/function-astype-istype.md)** — проверяет, ссылается ли ссылка на запись на конкретный тип сущности.
 
 ## <a name="j"></a>J
-**[JSON](functions/function-json.md)**  -создает строку текста JSON для таблицы, записи или значение.
+**[JSON](functions/function-json.md)** — создает текстовую строку JSON для таблицы, записи или значения.
 
 ## <a name="l"></a>L
 **[Language](functions/function-language.md)** — возвращает тег языка текущего пользователя.
@@ -216,9 +216,9 @@ ms.locfileid: "66736223"
 **[Lower](functions/function-lower-upper-proper.md)** — преобразует буквы текстовой строки во все строчные.
 
 ## <a name="m"></a>M
-**[Совпадение](functions/function-ismatch.md)**  — извлекает подстроку по образцу.  Можно использовать регулярные выражения.
+**[Match](functions/function-ismatch.md)** — Извлекает подстроку на основе шаблона.  Можно использовать регулярные выражения.
 
-**[MatchAll](functions/function-ismatch.md)**  — извлекает несколько подстрок в зависимости от шаблона.  Можно использовать регулярные выражения.
+**[MatchAll](functions/function-ismatch.md)** — извлекает несколько подстрок на основе шаблона.  Можно использовать регулярные выражения.
 
 **[Max](functions/function-aggregates.md)** — максимальное значение табличного выражения или набора аргументов.
 
@@ -268,7 +268,7 @@ ms.locfileid: "66736223"
 
 **[Refresh](functions/function-refresh.md)** — обновляет записи источника данных.
 
-**[Связать](functions/function-relate-unrelate.md)**  — связывает записей из двух сущностей через отношение один ко многим "или" многие ко многим.
+**[Связь](functions/function-relate-unrelate.md)** — связывает записи двух сущностей через связь «один ко многим» или «многие ко многим».
 
 **[Remove](functions/function-remove-removeif.md)** — удаляет одну или несколько указанных записей из источника данных.
 
@@ -336,7 +336,7 @@ ms.locfileid: "66736223"
 
 **[Tan](functions/function-trig.md)** — возвращает тангенс угла, указанного в радианах.
 
-**[Текст](functions/function-text.md)**  — преобразует любое значение и форматирует значение числа или даты и времени в строку текста.
+**[Text](functions/function-text.md)** — преобразует любое значение и форматирует число или значение даты и времени в строку текста.
 
 **[ThisItem](functions/operators.md#thisitem-operator)** — в коллекции или форме возвращает данные для текущего элемента из контейнера.
 
@@ -355,7 +355,7 @@ ms.locfileid: "66736223"
 ## <a name="u"></a>U
 **[Ungroup](functions/function-groupby.md)** — удаляет группирование.
 
-**[Отвязать](functions/function-relate-unrelate.md)**  — Unrelates записи двух сущностей из отношение один ко многим "или" многие ко многим.
+**[Unrelate](functions/function-relate-unrelate.md)** — отменяет связь между записями двух сущностей со связью "один ко многим" или "многие ко многим".
 
 **[Update](functions/function-update-updateif.md)** — заменяет запись в источнике данных.
 
@@ -378,6 +378,8 @@ ms.locfileid: "66736223"
 
 ## <a name="w"></a>W
 **[Weekday](functions/function-datetime-parts.md)** — извлекает сведения о дне недели из значения даты и времени.
+
+**[With](functions/function-with.md)** — вычисляет значения и выполняет действия для одной записи, включая встроенные записи именованных значений.
 
 ## <a name="y"></a>Y
 **[Year](functions/function-datetime-parts.md)** — извлекает сведения о годе из значения даты и времени.  
