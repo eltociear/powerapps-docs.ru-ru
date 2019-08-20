@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 08/16/2019
 ms.locfileid: "69559267"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="with-function-in-powerapps"></a>Функция with в PowerApps
 Вычисляет значения и выполняет действия для одной [записи](../working-with-tables.md#records), включая встроенные записи именованных значений.
@@ -38,19 +39,19 @@ ms.locfileid: "69559267"
 ## <a name="syntax"></a>Синтаксис
 **С помощью** ( *Запись*, *Формула* )
 
-* *Запись* — обязательное. Запись, по которой выполняется операция.  Для значений имен используйте встроенный синтаксис`{ name1: value1, name2: value2, ... }`
+* *Запись* — обязательное. Запись, по которой выполняется операция.  Для значений имен используйте встроенный синтаксис`{ name1: value1; name2: value2; ... }`
 * *Формула* — обязательная.  Формула для вычисления *записи*.  Формула может ссылаться на любое поле *записи* непосредственно в качестве области записи.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="simple-named-values"></a>Простые именованные значения
 
-```powerapps-dot
-With( { radius: 10, 
-        height: 15 },
+```powerapps-comma
+With( { radius: 10; 
+        height: 15 };
     Pi() * (radius*radius) * height
 )
-// Result: 4712.38898038 (as shown in a label control)
+// Result: 4712,38898038 (as shown in a label control)
 ```
 
 В этом примере используется запись именованных значений для вычисления объема цилиндра.  **With** используется для совместного захвата всех входных значений, что упрощает их отделение от самого вычисления.  
@@ -59,14 +60,14 @@ With( { radius: 10,
 
 ![](media/function-with/interest-calculator.gif)
 
-```powerapps-dot
-With( { AnnualRate: RateSlider/8/100,        // slider moves in 1/8th increments and convert to decimal
-        Amount: AmountSlider*10000,          // slider moves by 10,000 increment
-        Years: YearsSlider,                  // slider moves in single year increments, no adjustment required
-        AnnualPayments: 12 },                // number of payments per year
-      With( { r: AnnualRate/AnnualPayments,  // interest rate
-              P: Amount,                     // loan amount
-              n: Years*AnnualPayments },     // number of payments
+```powerapps-comma
+With( { AnnualRate: RateSlider/8/100;        // slider moves in 1/8th increments and convert to decimal
+        Amount: AmountSlider*10000;          // slider moves by 10;000 increment
+        Years: YearsSlider;                  // slider moves in single year increments; no adjustment required
+        AnnualPayments: 12 };                // number of payments per year
+      With( { r: AnnualRate/AnnualPayments;  // interest rate
+              P: Amount;                     // loan amount
+              n: Years*AnnualPayments };     // number of payments
             r*P / (1 - (1+r)^-n)             // standard interest calculation
       )
 )  
@@ -94,12 +95,12 @@ With( { AnnualRate: RateSlider/8/100,        // slider moves in 1/8th increments
 
 ### <a name="primary-key-returned-from-patch"></a>Первичный ключ, возвращенный из исправления
 
-```powerapps-dot
-With( Patch( Orders, Defaults( Orders ), { OrderStatus: "New" } ),
-      ForAll( NewOrderDetails, 
-              Patch( OrderDetails, Defaults( OrderDetails ), 
-                     { Order: OrderID,          // from With's first argument, primary key of Patch result
-                       Quantity: Quantity,      // from ForAll's NewOrderDetails table
+```powerapps-comma
+With( Patch( Orders; Defaults( Orders ); { OrderStatus: "New" } );
+      ForAll( NewOrderDetails; 
+              Patch( OrderDetails; Defaults( OrderDetails ); 
+                     { Order: OrderID;          // from With's first argument; primary key of Patch result
+                       Quantity: Quantity;      // from ForAll's NewOrderDetails table
                        ProductID: ProductID }   // from ForAll's NewOrderDetails table
               )
       )
@@ -110,12 +111,12 @@ With( Patch( Orders, Defaults( Orders ), { OrderStatus: "New" } ),
 
 ### <a name="extracted-values-with-a-regular-expression"></a>Извлеченные значения с регулярным выражением
 
-```powerapps-dot
+```powerapps-comma
 With( 
-    Match( "PT2H1M39S", "PT(?:<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
-    Time( Value( hours ), Value( minutes ), Value( seconds ) )
+    Match( "PT2H1M39S"; "PT(?:<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" );
+    Time( Value( hours ); Value( minutes ); Value( seconds ) )
 )
-// Result: 2:01 AM (as shown in a label control, use the Text function to see the seconds)
+// Result: 2:01 AM (as shown in a label control; use the Text function to see the seconds)
 ```
 
 Этот пример извлекает часы, минуты и секунды из значения длительности ISO 8601, а затем использует эти подзапросы для создания значения даты и времени. 
