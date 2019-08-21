@@ -1009,7 +1009,7 @@
           href: ./model-driven-apps/distribute-model-driven-app.md
         - name: Создание интерактивной помощи
           href: ./model-driven-apps/create-guided-help-learning-path.md
-    - name: Переход на клиентские веб-приложения
+    - name: Переход на единый интерфейс
       items:
         - name: Краткое руководство. Переход
           href: ./model-driven-apps/transition-web-app.md
