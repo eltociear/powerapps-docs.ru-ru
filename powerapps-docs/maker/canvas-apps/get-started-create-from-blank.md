@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ee9ea62280b06b75bf71885c532659f0381e6d9a
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c66277cbd0d0ded3bfe0bee942e9160a650d2a98
+ms.sourcegitcommit: 6dea3559e012e56fde09b95ea8a2af2a81b89a91
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61555500"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000098"
 ---
 # <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>Создание с нуля приложения на основе холста из данных Excel
 
@@ -31,7 +30,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Скопируйте эти данные и вставьте их в файл Excel.
 
-    | StartDay | StartTime | Доброволец | Резервное копирование |
+    | StartDay | StartTime | Доброволец | Архивация |
     | --- | --- | --- | --- |
     | Суббота |10:00–12:00 |Васкес (Vasquez) |Кумаширо (Kumashiro) |
     | Суббота |12:00–14:00 |Айс (Ice) |Сингхал (Singhal) |
@@ -44,7 +43,7 @@ ms.PowerAppsDecimalTransform: true
 
     Дополнительные сведения см. в разделе [Форматирование таблицы в Excel](how-to-excel-tips.md).
 
-3. Сохраните файл под именем **eventsignup.xls**, затем закройте его и отправьте в [облачное хранилище](connections/cloud-storage-blob-connections.md), например OneDrive.
+3. Сохраните файл с именем **евентсигнуп. xlsx**, закройте его, а затем отправьте в [учетную запись облачного хранилища](connections/cloud-storage-blob-connections.md), например в OneDrive.
 
 > [!IMPORTANT]
 > Вы можете использовать собственный файл Excel и ознакомиться только с общими понятиями в этом учебнике. Тем не менее данные в файле Excel должны быть отформатированы в виде таблицы. Дополнительные сведения см. в разделе [Форматирование таблицы в Excel](how-to-excel-tips.md).
@@ -88,9 +87,9 @@ ms.PowerAppsDecimalTransform: true
 
 1. На вкладке **Главная** щелкните стрелку вниз рядом с элементом **Новый экран**, чтобы открыть список типов экрана, и выберите **Список**.
 
-    Экран добавляется с несколькими элементами управления по умолчанию, в том числе с полем поиска и элементом управления **[Коллекция](controls/control-gallery.md)**. Коллекция занимает размер всего экрана под полем поиска.
+    Экран добавляется с несколькими элементами управления по умолчанию, в том числе с полем поиска и элементом управления **[Коллекция](controls/control-gallery.md)** . Коллекция занимает размер всего экрана под полем поиска.
 
-1. В верхней части нового экрана выберите элемент управления **[Метка](controls/control-text-box.md)**, а затем замените текст **[Title]** строкой **Просмотр записей**.
+1. В верхней части нового экрана выберите элемент управления **[Метка](controls/control-text-box.md)** , а затем замените текст **[Title]** строкой **Просмотр записей**.
 
      ![Изменение строки заголовка](./media/get-started-create-from-blank/change-title-bar.png)
 
@@ -112,17 +111,17 @@ ms.PowerAppsDecimalTransform: true
 
     Формула соответствует следующему примеру:
 
-    ```powerapps-comma
+    ```powerapps-dot
     SortByColumns(
         Search(
-            Schedule;
-            TextSearchBox1.Text;
+            Schedule,
+            TextSearchBox1.Text,
             "Volunteer"
-        );
-        "Volunteer";
+        ),
+        "Volunteer",
         If(
-            SortDescending1;
-            SortOrder.Descending;
+            SortDescending1,
+            SortOrder.Descending,
             SortOrder.Ascending
         )
     )
@@ -130,7 +129,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. На вкладке **Свойства** на панели справа выберите **Изменить** рядом с меткой **Поля**.
 
-1. В поле **Title2** выберите **Volunteer**.
+1. В поле **Title2** выберите " **добровольный**", в поле **Subtitle2** выберите **Стартдай**, а в поле **Body1** выберите **StartTime**.
 
 1. Закройте область **Данные**, нажав значок закрытия (X) в правом верхнем углу.
 
@@ -163,7 +162,7 @@ ms.PowerAppsDecimalTransform: true
 
     `BrowseGallery1.Selected`
 
-1. В верхней части экрана выберите элемент управления **[Метка](controls/control-text-box.md)**, а затем замените текст **[Title]** строкой **Изменение записей**.
+1. В верхней части экрана выберите элемент управления **[Метка](controls/control-text-box.md)** , а затем замените текст **[Title]** строкой **Изменение записей**.
 
     ![Изменение строки заголовка](./media/get-started-create-from-blank/change-title-bar2.png)
 
@@ -197,7 +196,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Для свойства **OnSelect** этой кнопки введите следующую формулу:
 
-    `NewForm(EditForm1);;Navigate(ChangeScreen;ScreenTransition.None)`
+    `NewForm(EditForm1);Navigate(ChangeScreen,ScreenTransition.None)`
 
     Когда пользователь щелкнет этот значок, откроется экран **ChangeScreen** с пустыми полями для быстрого создания записи.
 
@@ -207,7 +206,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **OnSelect** этой стрелки следующую формулу:
 
-    `EditForm(EditForm1);; Navigate(ChangeScreen; ScreenTransition.None)`
+    `EditForm(EditForm1); Navigate(ChangeScreen, ScreenTransition.None)`
 
     Когда пользователь щелкнет этот значок, отобразится экран **ChangeScreen** с информацией из выбранной записи в каждом поле, что позволит легко изменить или удалить эту запись.
 
@@ -219,7 +218,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Для свойства **OnSelect** этой кнопки введите следующую формулу:
 
-    `ResetForm(EditForm1);;Navigate(ViewScreen; ScreenTransition.None)`
+    `ResetForm(EditForm1);Navigate(ViewScreen, ScreenTransition.None)`
 
     Когда пользователь щелкнет этот значок, отменятся все внесенные на этом экране изменения и отобразится экран просмотра.
 
@@ -229,7 +228,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **OnSelect** этой галочки следующую формулу:
 
-    `SubmitForm(EditForm1);; Navigate(ViewScreen; ScreenTransition.None)`
+    `SubmitForm(EditForm1); Navigate(ViewScreen, ScreenTransition.None)`
 
     Когда пользователь щелкнет этот значок, сохранятся все внесенные на этом экране изменения и отобразится экран просмотра.
 
@@ -247,7 +246,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Для свойства **OnSelect** значка мусорной корзины введите следующую формулу:
 
-    `Remove(Schedule; BrowseGallery1.Selected);; Navigate(ViewScreen; ScreenTransition.None)`
+    `Remove(Schedule, BrowseGallery1.Selected); Navigate(ViewScreen, ScreenTransition.None)`
 
     Когда пользователь щелкнет этот значок, выбранная запись будет удалена из источника данных и откроется экран просмотра.
 
