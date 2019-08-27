@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 471fa26b8eb36a26bd90eeab8df018ba6ca9349c
-ms.sourcegitcommit: 07a0fcda31557ddbafba0ca0362765229ee2fdad
+ms.openlocfilehash: fce0148e77432aa136a6279eb7fb69c0ca3b0846
+ms.sourcegitcommit: de77b6d5f77e84961fff9a399622ba8eeb48d4c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70010062"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70037076"
 ---
 # <a name="setfocus-function-in-powerapps"></a>Функция SetFocus в PowerApps
 Перемещает фокус ввода на конкретный элемент управления. 
 
 ## <a name="description"></a>Описание
-Функция **SetFocus** обеспечивает управление фокусом ввода.  После этого элемент управления получает нажатия клавиш пользователя, позволяя им вводить данные в элемент управления Text Input или использовать клавишу *Ввод* для выбора кнопки.  Пользователь может также использовать клавишу *Tab* , касание, мышь или другой жест для перемещения фокуса ввода. 
+Функция **SetFocus** обеспечивает управление фокусом ввода.  После этого элемент управления получает нажатия клавиш пользователя, позволяя им вводить данные в элемент управления Text Input или использовать клавишу *Ввод* для выбора кнопки.  Пользователь может также использовать клавишу *Tab* , касание, мышь или другой жест для перемещения фокуса ввода. Поведение клавиши *Tab* регулируется свойством [ **TabIndex** ](../controls/properties-accessibility.md).
 
 Используйте функцию **SetFocus** для установки фокуса, когда (каждый с примером ниже):
 - вновь предоставленный или включенный элемент управления вводом, позволяющий пользователю выполнить следующие действия и ускорить ввод данных.
@@ -112,10 +112,10 @@ If( IsBlank( Name ),
         Notify( "City requires a value", Error ); SetFocus( City ),
     IsBlank( County ), 
         Notify( "County requires a value", Error ); SetFocus( County ),
-    IsBlank( AddressState ), 
-        Notify( "State requires a value", Error ); SetFocus( AddressState ),
-    IsBlank( Zip ), 
-        Notify( "Zip requires a value", Error ); SetFocus( Zip ),
+    IsBlank( StateProvince ), 
+        Notify( "State or Province requires a value", Error ); SetFocus( StateProvince ),
+    IsBlank( PostalCode ), 
+        Notify( "Postal Code requires a value", Error ); SetFocus( PostalCode ),
     IsBlank( Phone ), 
         Notify( "Contact Phone requires a value", Error ); SetFocus( Phone ),
     Notify( "Form is Complete", Success )
@@ -125,9 +125,9 @@ If( IsBlank( Name ),
 Чтобы создать этот пример, сделайте следующее:
 1. Создание нового пустого приложения для телефона.
 1. В меню **Вставка** выберите **создать экран**, а затем щелкните прокручиваемый.
-1. В центральном разделе экрана добавьте элементы управления вводом **текста** и назовите их **Name**, **Street1**, **Street2**, **City**, **округ**, **аддрессстате** (так как имя уже используется), **ZIP**, и **Phone**. Добавьте элементы управления **Label** над каждым из них для обозначения полей.  Может потребоваться изменить размер раздела, если он недостаточно длинный для размещения всех элементов управления.
+1. В центральном разделе экрана добавьте элементы управления **вводом текста** и назовите их **Name**, **Street1**, **Street2**, **City**, **округ**, **StateProvince**, **PostalCode**и **Phone**. Добавьте элементы управления **Label** над каждым из них для обозначения полей.  Может потребоваться изменить размер раздела, если он недостаточно длинный для размещения всех элементов управления.
 1. Добавьте [элемент управления " **значок** ](../controls/control-shapes-icons.md) флажка" в верхней части экрана, над разделом с прокруткой.  
-1. Задайте для свойства OnSelect элемента управления Icon приведенную выше формулу.
+1. Присвойте свойству OnSelect элемента управления Icon указанную выше `If( IsBlank( ...` формулу.
 
 ### <a name="focus-when-displaying-a-screen"></a>Фокус при отображении экрана
 
