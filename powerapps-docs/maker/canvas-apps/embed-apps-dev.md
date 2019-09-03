@@ -7,21 +7,21 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 10/20/2017
+ms.date: 08/28/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ed812fb8da85d36ff7c0790fe401b33043786cb8
-ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
+ms.openlocfilehash: 3ff359b80dd7129ec91f987a367c1635143d8e5e
+ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64670390"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70213846"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Интеграция приложений на основе холста в веб-сайты и другие службы
-Приложения, которые вы создаете часто являются наиболее полезны, когда они доступны прямо там, где сотрудники выполняют свою работу. Путем внедрения приложений на основе холста в iframe, эти приложения можно интегрировать в веб-сайтов и других служб, таких как Power BI или SharePoint.
+Создаваемые приложения часто наиболее полезны, когда они доступны, когда люди выполняют свою работу. Внедрение приложений Canvas в IFRAME позволяет интегрировать эти приложения на веб-сайты и другие службы, такие как Power BI или SharePoint.
 
 Здесь мы покажем, как задать параметры для внедрения приложения. Затем мы внедрим приложение для заказа товаров в веб-сайт.
 
@@ -32,29 +32,34 @@ ms.locfileid: "64670390"
 - Доступ к внедренному приложению могут получить только пользователи PowerApps того же клиента.
 - Чтобы получить доступ к PowerApps в Internet Explorer 11, необходимо отключить просмотр в режиме совместимости.
 
-Можно также интегрировать приложения на основе холста в SharePoint Online без использования iframe. Дополнительные сведения: [Веб-часть PowerApps](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c).
+Можно также интегрировать приложения Canvas в SharePoint Online без использования IFRAME. Дополнительные сведения: [Используйте веб-часть PowerApps](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c).
 
 ## <a name="set-uri-parameters-for-your-app"></a>Задание параметров URI для приложения
 При наличии приложения, которое вы хотите внедрить, в первую очередь необходимо задать параметры для универсального кода ресурса (URI), чтобы IFrame знал, где найти ваше приложение. URI имеет следующий вид:
 
 ```
-https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Microsoft.PowerApps/apps/[AppID]
+https://apps.powerapps.com/play/[AppID]?source=iframe
 ```
 
-> [!NOTE]
-> Мы добавили разрыв строки, чтобы URI лучше отображался на странице.
+> [!IMPORTANT]
+> По состоянию на 2019 августа формат URI изменился с https://web.powerapps.com/webplayer на https://apps.powerapps.com/play. Обновите все внедренные элементы iframe, чтобы использовать новый формат URI. Ссылки на предыдущий формат будут перенаправляться на новый универсальный код ресурса (URI) для обеспечения совместимости.
+>
+> Предыдущий формат:
+> 
+> https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Microsoft.PowerApps/apps/ ИД
 
 Вам только нужно указать в URI идентификатор своего приложения вместо AppID, в том числе [' & ']. Вскоре мы покажем, как получить это значение, но сначала рассмотрим все параметры, доступные в URI:
 
-* **[appID]** — в формате `/providers/Microsoft.PowerApps/apps/[AppID]`. Он предоставляет идентификатор приложения, которое нужно внедрить.
+* **[AppID]** — предоставляет идентификатор приложения для запуска.
+* **tenantid** — необязательный параметр для поддержки гостевого доступа и определяет, из какого клиента следует открыть приложение. 
 * **screenColor** — используется для обеспечения лучшей загрузки приложений для ваших пользователей. Этот параметр имеет формат [RGBA (красный, зеленый, синий и альфа)](../canvas-apps/functions/function-colors.md) и определяет цвет экрана при загрузке приложения. Советуем установить для него цвет значка приложения.
 * **source** — не влияет на приложение, но мы советуем добавить описательное имя для ссылки на источник внедрения.
-* Наконец, вы можете добавить любые настраиваемые параметры с помощью [функции Param()](../canvas-apps/functions/function-param.md), указав те значения, которые могут использоваться вашим приложением. Они добавляются в конец URI, например `[AppID]&amp;param1=value1`. Если вы хотите изменить эти параметры, вам нужно повторно запустить приложение.
+* Наконец, вы можете добавить любые настраиваемые параметры с помощью [функции Param()](../canvas-apps/functions/function-param.md), указав те значения, которые могут использоваться вашим приложением. Они добавляются в конец URI, например `[AppID]&amp;param1=value1`. Эти параметры доступны только для чтения во время запуска приложения. Если необходимо изменить их, необходимо перезапустить приложение. Обратите внимание, что только первый элемент после [AppID] должен иметь "?"; После этого используйте "&", как показано здесь. 
 
 ### <a name="get-the-app-id"></a>Получение идентификатора приложения
 Идентификатор приложения доступен на сайте powerapps.com. Для приложения, которое вы хотите внедрить:
 
-1. На сайте [powerapps.com](https://powerapps.microsoft.com) на вкладке **Приложения** щелкните (**. . .** ), а затем выберите **Подробные сведения**.
+1. На сайте [powerapps.com](https://powerapps.microsoft.com) на вкладке **Приложения** щелкните ( **. . .** ), а затем выберите **Подробные сведения**.
    
     ![Переход к сведениям о приложении](./media/embed-apps-dev/details.png)
 1. Скопируйте **идентификатор приложения**.
@@ -63,14 +68,14 @@ https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Mic
 1. Замените значение `[AppID]` в URI. Для приложения по заказу товаров URI будет выглядеть следующим образом:
    
     ```
-    https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Microsoft.PowerApps/apps/76897698-91a8-b2de-756e-fe2774f114f2
+    https://apps.powerapps.com/play/76897698-91a8-b2de-756e-fe2774f114f2?source=iframe
     ```
 
 ## <a name="embed-your-app-in-a-website"></a>Внедрение приложения на веб-сайт
 Внедрить приложение теперь так же просто, как добавить IFrame в HTML-код вашего сайта (или любую другую службу, поддерживающую IFrame, например Power BI или SharePoint):
 
 ```html
-<iframe width="[W]" height="[H]" src="https://web.powerapps.com/webplayer/iframeapp?source=website&screenColor=rgba(165,34,55,1)&appId=/providers/Microsoft.PowerApps/apps/[AppID]" allow="geolocation; microphone; camera"/>
+<iframe width="[W]" height="[H]" src="https://apps.powerapps.com/play/[AppID]?source=website&screenColor=rgba(165,34,55,1)" allow="geolocation; microphone; camera"/>
 ```
 
 Укажите значения высоты и ширины IFrame и идентификатор приложения вместо `[AppID]`.

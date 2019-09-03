@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: ''
-ms.date: 03/15/2018
+ms.reviewer: tapanm
+ms.date: 08/30/2019
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bd4219a42b0674927370dfca1aa4ba681dd741bd
-ms.sourcegitcommit: e58a6d9c23445e6d00317ec990a8aa0c2650bf7f
+ms.openlocfilehash: 562811ebce59660d6033585868afd42da46442d5
+ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70201079"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70213920"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Пользовательский визуальный элемент PowerApps для Power BI
 
@@ -70,15 +70,30 @@ Power BI позволяет анализировать данные и прин
 
 ## <a name="limitations-of-the-powerapps-custom-visual"></a>Ограничения, связанные с пользовательским визуальным элементом PowerApps
 
-Пользовательский визуальный элемент PowerApps доступен в режиме предварительной версии. На него налагаются три ограничения.
+К пользовательскому визуальному элементу PowerApps применяются следующие ограничения.
 
-- Создание, изменение и просмотр приложений при использовании пользовательского визуального элемента PowerApps поддерживается только в браузерах Microsoft и Google Chrome. Мы рекомендуем сначала опубликовать отчет в службе Power BI. Затем используйте браузер Microsoft Edge или Google Chrome для создания и обновления приложений.
 - Чтобы изменить поля данных, связанные с визуальным элементом, необходимо изменить приложение из службы Power BI, нажав кнопку с многоточием (...) и выбрав пункт **Изменить**. В противном случае изменения не будут переданы в PowerApps, и приложение будет работать непредсказуемо.
 - Пользовательский визуальный элемент PowerApps не может активировать обновление Power BI отчетов и Power BI источники данных из Power BI Desktop. При записи обратно данных из приложения в тот же источник данных, что и отчет, изменения не будут немедленно отражены в Power BI Desktop. а при следующем запланированном обновлении.
 - Пользовательский визуальный элемент PowerApps не может фильтровать данные или отправлять их обратно в отчет.
 - Общий доступ к приложению PowerApps необходимо предоставлять отдельно от отчета. Узнайте, как [предоставлять общий доступ к приложениям в PowerApps](share-app.md).
-- Эти технологии не поддерживают пользовательский визуальный элемент PowerApps: Сервер отчетов Power BI, мобильное приложение для Power BI и Internet Explorer.
-- При использовании функции Повербиинтегратион. Refresh () необходимо использовать источник, поддерживающий [DirectQuery](https://docs.microsoft.com/en-us/power-bi/desktop-directquery-data-sources) , а подключение к данным должно быть создано с помощью метода DirectQuery. 
+- Сервер отчетов Power BI и мобильное приложение для Power BI не поддерживают пользовательский визуальный элемент PowerApps.
+- При использовании функции Повербиинтегратион. Refresh () необходимо использовать источник, поддерживающий [DirectQuery](https://docs.microsoft.com/en-us/power-bi/desktop-directquery-data-sources) , а подключение к данным должно быть создано с помощью метода DirectQuery.
+
+> [!NOTE]
+> Рекомендуется сначала опубликовать отчет в служба Power BI, а затем создать или изменить приложения.
+
+## <a name="browser-support"></a>Поддержка браузера
+
+В следующей таблице перечислены поддерживаемые обозреватели действия по просмотру, созданию и изменению действий пользовательского визуального элемента PowerApps. Поддерживаемые браузеры и действия определяются галочкой ( &check; ).
+
+|Browser|Вид|Создания|Изменений
+|-|-|-|-
+|Microsoft Edge|&check;|&check;|&check;
+|Internet Explorer 11|&check;
+|Google Chrome|&check;|&check;|&check;
+|Обозревателе|&check;
+|Mozilla Firefox
+|Все другие браузеры
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
