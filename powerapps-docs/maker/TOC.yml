@@ -840,14 +840,20 @@
                       href: ./model-driven-apps/create-and-edit-forms.md
                     - name: 'Добавление, перемещение и удаление полей'
                       href: ./model-driven-apps/add-move-or-delete-fields-on-form.md
+                    - name: 'Добавление, перемещение и удаление компонентов'
+                      href: ./model-driven-apps/add-move-configure-or-delete-components-on-form.md
                     - name: 'Добавление, перемещение и удаление разделов'
                       href: ./model-driven-apps/add-move-or-delete-sections-on-form.md
                     - name: 'Добавление, перемещение и удаление вкладок'
                       href: ./model-driven-apps/add-move-or-delete-tabs-on-form.md
-                    - name: Свойства в конструкторе форм
-                      href: ./model-driven-apps/form-designer-properties.md
                     - name: Настройка свойств заголовка
                       href: ./model-driven-apps/form-designer-header-properties.md
+                    - name: Добавление и настройка компонента вложенной сетки
+                      href: ./model-driven-apps/form-designer-add-configure-subgrid.md
+                    - name: Добавление и настройка компонента быстрого просмотра
+                      href: ./model-driven-apps/form-designer-add-configure-quickview.md
+                    - name: Настройка компонента поиска
+                      href: ./model-driven-apps/form-designer-add-configure-lookup.md
                     - name: Использование представления в виде дерева
                       href: ./model-driven-apps/using-tree-view-on-form.md
                 - name: Типы форм
@@ -1069,8 +1075,12 @@
           href: ./portals/admin/change-base-url.md
         - name: Включение режима обслуживания
           href: ./portals/admin/enable-maintenance-mode.md
-        - name: Настройка интеграции с Power BI
-          href: ./portals/admin/set-up-power-bi-integration.md
+        - name: Интеграция Power BI
+          items:
+            - name: Настройка интеграции с Power BI
+              href: ./portals/admin/set-up-power-bi-integration.md
+            - name: Добавление отчета или панели мониторинга Power BI на веб-страницу на портале
+              href: ./portals/admin/add-powerbi-report.md
         - name: Запуск средства проверки порталов
           href: ./portals/admin/portal-checker.md
         - name: Обновление ключа проверки подлинности на портале
@@ -1079,6 +1089,56 @@
           href: ./portals/admin/ip-address-restrict.md
         - name: Обновление домена порталов PowerApps
           href: ./portals/admin/update-portal-domain.md
+        - name: Очистка кэша на стороне сервера
+          href: ./portals/admin/clear-server-side-cache.md
+        - name: "Перенос конфигурации портала Dynamics\_365"
+          href: ./portals/admin/migrate-portal-configuration.md
+    - name: Расширенные настройки портала
+      items:
+        - name: Работа с шаблонами Liquid
+          items:
+            - name: Обзор
+              href: ./portals/liquid/liquid-overview.md
+            - name: Хранение содержимого с помощью веб-шаблонов
+              href: ./portals/liquid/store-content-web-templates.md
+            - name: Общие сведения об операторах Liquid
+              href: ./portals/liquid/liquid-operators.md
+            - name: Доступные типы Liquid
+              href: ./portals/liquid/liquid-types.md
+            - name: Доступные условные операторы Liquid
+              href: ./portals/liquid/liquid-conditional-operators.md
+            - name: Доступные объекты Liquid
+              href: ./portals/liquid/liquid-objects.md
+            - name: Доступные теги Liquid
+              items:
+                - name: Доступные теги Liquid
+                  href: ./portals/liquid/liquid-tags.md
+                - name: Теги потока управления
+                  href: ./portals/liquid/control-flow-tags.md
+                - name: Теги итераций
+                  href: ./portals/liquid/iteration-tags.md
+                - name: Теги переменных
+                  href: ./portals/liquid/variable-tags.md
+                - name: Теги шаблонов
+                  href: ./portals/liquid/template-tags.md
+                - name: Теги сущности Common Data Service службы PowerApps
+                  href: ./portals/liquid/portals-entity-tags.md
+            - name: Доступные фильтры Liquid
+              href: ./portals/liquid/liquid-filters.md
+            - name: Создание расширенных шаблонов
+              items:
+                - name: Создание пользовательского шаблона страницы
+                  href: ./portals/liquid/create-custom-template.md
+                - name: Использование гибридной навигации для отображения иерархии страниц
+                  href: ./portals/liquid/hybrid-navigation-render-page-hierachy.md
+                - name: Отображение списка сущностей для страницы
+                  href: ./portals/liquid/render-entity-list-current-page.md
+                - name: Отображение RSS-канала с использованием пользовательского шаблона страницы
+                  href: ./portals/liquid/render-rss-custom-page-template.md
+                - name: Отображение заголовка сайта и основной панели навигации
+                  href: ./portals/liquid/render-site-header-primary-navigation.md
+        - name: Поток неявного предоставления OAuth 2.0
+          href: ./portals/oauth-implicit-grant-flow.md
     - name: Известные проблемы
       href: ./portals/known-issues.md
     - name: 'Порталы PowerApps: вопросы и ответы'
