@@ -16,12 +16,15 @@ search.audienceType:
 - developer
 search.app:
 - PowerApps
-ms.openlocfilehash: 88ad7ca8770520bdc45016a70af6a3623bcc7797
-ms.sourcegitcommit: b8fa5cafa443c2affa735f68b892039604579be4
+searchScope:
+- GetStarted
+- PowerApps
+ms.openlocfilehash: f5d2fc5d493dd46eb6e0bed2bc8d7af754cff0dd
+ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67152618"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70213873"
 ---
 # <a name="whats-new-in-powerapps"></a>Новые возможности PowerApps
 
