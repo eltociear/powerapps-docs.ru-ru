@@ -1,10 +1,10 @@
 ---
 title: Указание представления по умолчанию управляемого моделью приложения в PowerApps | MicrosoftDocs
-description: 'Узнайте, как задать представление по умолчанию'
+description: 'Узнайте, как задавать представление по умолчанию'
 ms.custom: ''
 ms.date: 06/12/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article

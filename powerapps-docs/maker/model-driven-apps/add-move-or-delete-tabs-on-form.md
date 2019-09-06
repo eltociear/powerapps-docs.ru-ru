@@ -104,5 +104,6 @@ search.app:
 [Добавление, перемещение или удаление полей в форме с помощью конструктора форм](add-move-or-delete-fields-on-form.md)  
 [Добавление, перемещение или удаление разделов в форме с помощью конструктора форм](add-move-or-delete-sections-on-form.md)  
 [Свойства, доступные в конструкторе форм](form-designer-properties.md)  
+[Настройка свойств верхнего колонтитула в конструкторе форм](form-designer-header-properties.md)  
 [Использование представления дерева в конструкторе форм](using-tree-view-on-form.md)  
-[Создание и изменение полей](../common-data-service/create-edit-field-portal.md) 
+[Создание и изменение полей](../common-data-service/create-edit-field-portal.md)

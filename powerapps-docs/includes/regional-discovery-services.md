@@ -9,4 +9,5 @@
 |Южная Америка|`https://disco.crm2.dynamics.com/XRMServices/2011/Discovery.svc`|
 |Индия (IND)|`https://disco.crm8.dynamics.com/XRMServices/2011/Discovery.svc`|
 |Канада|`https://disco.crm3.dynamics.com/XRMServices/2011/Discovery.svc`|
-|Соединенное Королевство (UK)|`https://disco.crm11.dynamics.com/XRMServices/2011/Discovery.svc`|
+|Великобритания (UK)|`https://disco.crm11.dynamics.com/XRMServices/2011/Discovery.svc`|
+|Франция|`https://disco.crm12.dynamics.com/XRMServices/2011/Discovery.svc`|
