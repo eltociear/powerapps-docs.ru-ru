@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f934730ec6ca432f1da4106c535cf5967f883070
-ms.sourcegitcommit: 9163abbe9a24298f216f15139f977adfd2c3f2ae
+ms.openlocfilehash: e0f40e6c04b776d2e8efb41353e0da8ced6fc7c5
+ms.sourcegitcommit: 07a0fcda31557ddbafba0ca0362765229ee2fdad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550342"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70008973"
 ---
 # <a name="formula-reference-for-powerapps"></a>Справочник формул для PowerApps
 Формулы объединяют множество элементов.  Ниже перечислены следующие элементы:
@@ -187,7 +187,7 @@ ms.locfileid: "69550342"
 
 **[IsToday](functions/function-now-today-istoday.md)** — проверяет, не попадает ли значение даты и времени на сегодняшний день.
 
-**[IsReference](functions/function-astype-istype.md)** — проверяет, ссылается ли ссылка на запись на конкретный тип сущности.
+IsReference **[— проверяет](functions/function-astype-istype.md)** , ссылается ли ссылка на запись на конкретный тип сущности.
 
 ## <a name="j"></a>J
 **[JSON](functions/function-json.md)** — создает текстовую строку JSON для таблицы, записи или значения.
@@ -268,7 +268,7 @@ ms.locfileid: "69550342"
 
 **[Refresh](functions/function-refresh.md)** — обновляет записи источника данных.
 
-**[Связь](functions/function-relate-unrelate.md)** — связывает записи двух сущностей через связь «один ко многим» или «многие ко многим».
+**[Связь — связывает](functions/function-relate-unrelate.md)** записи двух сущностей через связь «один ко многим» или «многие ко многим».
 
 **[Remove](functions/function-remove-removeif.md)** — удаляет одну или несколько указанных записей из источника данных.
 
@@ -304,6 +304,8 @@ ms.locfileid: "69550342"
 **[Select](functions/function-select.md)**  — имитирует действие выбора элемента управления, активируя вычисление формулы **OnSelect**.
 
 **[Set](functions/function-set.md)** — задает значение глобальной переменной.
+
+**[SetFocus](functions/function-setfocus.md)** — перемещение фокуса ввода на конкретный элемент управления.
 
 **[ShowColumns](functions/function-table-shaping.md)** — возвращает таблицу только с выбранными столбцами.
 
