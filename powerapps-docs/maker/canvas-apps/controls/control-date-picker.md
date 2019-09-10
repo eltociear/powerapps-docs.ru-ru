@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/03/2019
 ms.locfileid: "70237954"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="date-picker-control-in-powerapps"></a>Элемент управления "Выбор даты" в PowerApps
 Элемент управления, который используется для указания даты.
@@ -111,7 +112,7 @@ ms.locfileid: "70237954"
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте элемент управления **[Метка](control-text-box.md)** и задайте в качестве значения свойства **[Text](properties-core.md)** следующую формулу:
-   <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
+   <br>**DateDiff(Today(); Deadline.SelectedDate) & " days to go!"**
 
     Нужны дополнительные сведения о функции **[DateDiff](../functions/function-dateadd-datediff.md)** или [других функциях](../formula-reference.md)?
 3. Нажмите клавишу F5, выберите дату в элементе управления **Крайний срок** и нажмите кнопку **ОК**.
