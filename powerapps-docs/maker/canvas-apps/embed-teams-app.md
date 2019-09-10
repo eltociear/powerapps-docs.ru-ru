@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 05/29/2019
+ms.date: 09/09/2019
 ms.author: jimholtz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ca3430d6b639b7a4c3980f5bbb0ba202220f6d9e
-ms.sourcegitcommit: 935470edc7441b76533cc937e6f32229bfd6f11f
+ms.openlocfilehash: ba08437dc144fc81aa9748163b1005222735cb69
+ms.sourcegitcommit: 86ed3ad487f31721155758aa9d87134bb10f8437
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70117798"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842232"
 ---
 # <a name="embed-a-powerapps-app-in-teams"></a>Внедрение приложения PowerApps в команды 
 
@@ -58,7 +58,7 @@ ms.locfileid: "70117798"
 
 Вы можете пропустить эти шаги, если приложение App Studio уже установлено. 
 
-1. В меню команды выберите **приложения** в левом нижнем углу окна группы (значок приложения![значки](./media/embed-teams-app/apps-icon.png "")приложения).
+1. В меню команды выберите **приложения** в левом нижнем углу окна группы (значок приложения![значки](./media/embed-teams-app/apps-icon.png "приложения).")
 
 2. Выполните поиск по запросу "App Studio" в поле поиска, а затем выберите его.
 
@@ -129,7 +129,7 @@ ms.locfileid: "70117798"
    > [!div class="mx-imgBorder"] 
    > ![Добавление вкладки команды](./media/embed-teams-app/team-tab-add.png "Добавление вкладки команды")
 
-7. Добавьте URL-адрес конфигурации приложения в поле ввода "URL-адрес конфигурации", используя следующий формат:`https://web.powerapps.com/webplayer/teamsapptabsettings?appid=<PowerApp ID>`
+7. Добавьте URL-адрес конфигурации приложения в поле ввода "URL-адрес конфигурации", используя следующий формат:`https://apps.powerapps.com/teams/settings/<PowerApp ID>`
 
    Замените `<PowerApp ID>` на идентификатор приложения, записанный ранее.
 
