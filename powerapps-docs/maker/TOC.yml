@@ -1155,8 +1155,6 @@
           href: ./common-data-service/data-platform-create-entity.md
         - name: Создание настраиваемой сущности с компонентами
           href: ./common-data-service/create-custom-entity.md
-        - name: "Добавление данных в сущность с помощью Power\_Query"
-          href: ./common-data-service/data-platform-cds-newentity-pq.md
         - name: Сущности и метаданные
           href: ./common-data-service/create-edit-metadata.md
         - name: Типы сущностей
@@ -1305,6 +1303,17 @@
           href: ./common-data-service/set-managed-properties-metadata.md
         - name: Публикация изменений
           href: ./common-data-service/publish-changes-for-use-customer-service-hub.md
+    - name: Работа с потоками данных
+      href: ./common-data-service/self-service-data-prep-with-dataflows.md
+      items:
+        - name: Создание и использование потоков данных
+          href: ./common-data-service/create-and-use-dataflows.md
+        - name: "Добавление данных в сущность с помощью Power\_Query"
+          href: ./common-data-service/data-platform-cds-newentity-pq.md
+        - name: Подключение Azure Data Lake для хранения потоков данных
+          href: ./common-data-service/connect-azure-data-lake-storage-for-dataflow.md
+        - name: Использование локального шлюза данных
+          href: ./common-data-service/using-dataflows-with-on-premises-data.md
     - name: Требования к лицензиям для сущностей
       href: ./common-data-service/data-platform-entity-licenses.md
       items:
