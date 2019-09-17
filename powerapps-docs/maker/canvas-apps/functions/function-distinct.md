@@ -7,36 +7,82 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: anneta
-ms.date: 11/07/2015
+ms.date: 09/14/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 17a2f2cfca16c5589f74ac434b36326037146b16
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 98fd1b67d4835969ac01b1ce63155bc81ed36630
+ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551222"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71038022"
 ---
 # <a name="distinct-function-in-powerapps"></a>Функция Distinct в PowerApps
 Эта функция вычисляет итоговые значения для [записей](../working-with-tables.md#records) [таблицы](../working-with-tables.md), удаляя дубликаты.
 
 ## <a name="description"></a>Описание
-Функция **Distinct** вычисляет формулу для каждой записи таблицы. Функция **Distinct** возвращает таблицу с одним столбцом, содержащую результаты без повторяющихся значений.  
+Функция **DISTINCT** вычисляет формулу для каждой записи таблицы и возвращает таблицу с одним столбцом результатов с удаленными повторяющимися значениями.  Имя столбца является **результатом**.  
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
+[!INCLUDE [delegation-no-one](../../../includes/delegation-no-one.md)]
+
 ## <a name="syntax"></a>Синтаксис
-**Distinct**( *Таблица*; *Формула* )
+**Distinct**( *Таблица*, *Формула* )
 
 * *Table* — обязательный аргумент.  Таблица для оценки.
 * *Formula* — обязательный аргумент.  Формула, вычисляемая для каждой записи.
 
 ## <a name="example"></a>Пример
-Если бы у вас была таблица **Employees**, содержащая столбец **Department**, то приведенная ниже функция вывела бы список уникальных названий отделов в этом столбце, независимо от того, сколько раз каждое название в нем указано.
 
-**Distinct(Employees; Department)**
+1. Вставьте элемент управления [ **"Кнопка"** ](../controls/control-button.md) и задайте для его свойства **OnSelect** значение этой формулы.
 
+    ```powerapps-dot
+    ClearCollect( CityPopulations,
+        { City: "London",    Country: "United Kingdom", Population: 8615000 },
+        { City: "Berlin",    Country: "Germany",        Population: 3562000 },
+        { City: "Madrid",    Country: "Spain",          Population: 3165000 },
+        { City: "Hamburg",   Country: "Germany",        Population: 1760000 },
+        { City: "Barcelona", Country: "Spain",          Population: 1602000 },
+        { City: "Munich",    Country: "Germany",        Population: 1494000 }
+    );
+    ```
+
+1. Нажмите кнопку, удерживая клавишу ALT.
+
+    Формула выводится и создается коллекция **Цитипопулатионс** , которую можно отобразить, выбрав **Цитипопулатионс** в строке формул:
+
+    > [!div class="mx-imgBorder"]
+    > ![Коллекция Цитипопулатионс, показанная в представлении результатов](media/function-distinct/citypopulations-create.png)
+
+1. Вставьте элемент управления [**таблицы данных**](../controls/control-data-table.md) и задайте для его свойства **Items** значение этой формулы:
+
+    ```powerapps-dot
+    Distinct( CityPopulations, Country )
+    ```
+
+    Результат этой формулы можно просмотреть в строке формул, выбрав всю формулу:
+
+    > [!div class="mx-imgBorder"]
+    > ![Вывод из функции distinct, отображаемой в представлении результатов](media/function-distinct/citypopulations-distinct.png)
+
+1. Используйте ссылку **изменить поля** в области свойств таблицы данных, чтобы добавить столбец **результатов** .
+
+    > [!div class="mx-imgBorder"]
+    > ![Выходные данные из функции distinct, показанной в таблице данных](media/function-distinct/citypopulations-datatable.png)
+
+1. Вставьте элемент управления [**Label**](../controls/control-text-box.md) и задайте в качестве его свойства **Text** формулу:
+
+    ```powerapps-dot
+    First( Sort( Distinct( CityPopulations, Country ), Result ) ).Result
+    ```
+
+    Эта формула сортирует результаты из **DISTINCT** с помощью функции [**Sort**](function-sort.md) , принимает первую запись из результирующей таблицы [**первой**](function-first-last.md) функцией и извлекает **результирующее** поле, чтобы получить только название страны.
+
+    > [!div class="mx-imgBorder"]
+    > ![Вывод из функции distinct, отображающей первую страну по имени](media/function-distinct/citypopulations-first.png)
+
+     
