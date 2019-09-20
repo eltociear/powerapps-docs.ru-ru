@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 507bac0b57cdc1e348bd384d5544d7b664a3e0f5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c9f7f0184f70643417154f229c1e957ea6218b34
+ms.sourcegitcommit: fe18d82dbbd3972c472fd69f7feb3a35c3a31153
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61557383"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150259"
 ---
 # <a name="connect-to-office-365-users-connection-from-powerapps"></a>Подключение к подключению "Пользователи Office 365" из PowerApps
 ![Пользователи Office 365](./media/connection-office365-users/office365icon.png)
@@ -44,17 +44,24 @@ ms.locfileid: "61557383"
 1. В меню **Вставка** выберите пункт **Метка**.
 2. В строке функции задайте для свойства **[Текст](../controls/properties-core.md)** одну из следующих формул:
 
-    `Office365Users.MyProfile().Department`  
-    `Office365Users.MyProfile().DisplayName`  
-    `Office365Users.MyProfile().GivenName`  
-    `Office365Users.MyProfile().Id`  
-    `Office365Users.MyProfile().JobTitle`  
-    `Office365Users.MyProfile().Mail`  
-    `Office365Users.MyProfile().MailNickname`  
-    `Office365Users.MyProfile().Surname`  
-    `Office365Users.MyProfile().TelephoneNumber`  
-    `Office365Users.MyProfile().UserPrincipalName`  
-    `Office365Users.MyProfile().AccountEnabled`  
+   `Office365Users.MyProfile().City`  
+   `Office365Users.MyProfile().CompanyName`  
+   `Office365Users.MyProfile().Country`  
+   `Office365Users.MyProfile().Department`  
+   `Office365Users.MyProfile().DisplayName`  
+   `Office365Users.MyProfile().GivenName`  
+   `Office365Users.MyProfile().Id`  
+   `Office365Users.MyProfile().JobTitle`  
+   `Office365Users.MyProfile().Mail`  
+   `Office365Users.MyProfile().MailNickname`  
+   `Office365Users.MyProfile().mobilePhone`  
+   `Office365Users.MyProfile().OfficeLocation`  
+   `Office365Users.MyProfile().PostalCode`  
+   `Office365Users.MyProfile().Surname`  
+   `Office365Users.MyProfile().TelephoneNumber`  
+   `Office365Users.MyProfile().UserPrincipalName`  
+   `Office365Users.MyProfile().AccountEnabled`  
+   `Office365Users.MyProfile().BusinessPhones`
 
 В метке отображаются введенные сведения о текущем пользователе.
 
@@ -67,30 +74,45 @@ ms.locfileid: "61557383"
 
    * Отображение сведений о другом пользователе:  
 
-       `Office365Users.UserProfile(InfoAbout.Text).Department`  
-       `Office365Users.UserProfile(InfoAbout.Text).DisplayName`  
-       `Office365Users.UserProfile(InfoAbout.Text).GivenName`  
-       `Office365Users.UserProfile(InfoAbout.Text).Id`  
-       `Office365Users.UserProfile(InfoAbout.Text).JobTitle`  
-       `Office365Users.UserProfile(InfoAbout.Text).Mail`  
-       `Office365Users.UserProfile(InfoAbout.Text).MailNickname`  
-       `Office365Users.UserProfile(InfoAbout.Text).Surname`  
-       `Office365Users.UserProfile(InfoAbout.Text).TelephoneNumber`  
-       `Office365Users.UserProfile(InfoAbout.Text).UserPrincipalName`  
-       `Office365Users.UserProfile(InfoAbout.Text).AccountEnabled`  
+     `Office365Users.UserProfile(InfoAbout.Text).City`  
+     `Office365Users.UserProfile(InfoAbout.Text).CompanyName`  
+     `Office365Users.UserProfile(InfoAbout.Text).Country`  
+     `Office365Users.UserProfile(InfoAbout.Text).Department`  
+     `Office365Users.UserProfile(InfoAbout.Text).DisplayName`  
+     `Office365Users.UserProfile(InfoAbout.Text).GivenName`  
+     `Office365Users.UserProfile(InfoAbout.Text).Id`  
+     `Office365Users.UserProfile(InfoAbout.Text).JobTitle`  
+     `Office365Users.UserProfile(InfoAbout.Text).Mail`  
+     `Office365Users.UserProfile(InfoAbout.Text).MailNickname`  
+     `Office365Users.UserProfile(InfoAbout.Text).mobilePhone`  
+     `Office365Users.UserProfile(InfoAbout.Text).OfficeLocation`  
+     `Office365Users.UserProfile(InfoAbout.Text).PostalCode`  
+     `Office365Users.UserProfile(InfoAbout.Text).Surname`  
+     `Office365Users.UserProfile(InfoAbout.Text).TelephoneNumber`  
+     `Office365Users.UserProfile(InfoAbout.Text).UserPrincipalName`  
+     `Office365Users.UserProfile(InfoAbout.Text).AccountEnabled`  
+     `Office365Users.UserProfile(InfoAbout.Text).BusinessPhones`
+
    * Отображение сведений о руководителе другого пользователя:  
 
-       `Office365Users.Manager(InfoAbout.Text).Department`  
-       `Office365Users.Manager(InfoAbout.Text).DisplayName`  
-       `Office365Users.Manager(InfoAbout.Text).GivenName`  
-       `Office365Users.Manager(InfoAbout.Text).Id`  
-       `Office365Users.Manager(InfoAbout.Text).JobTitle`  
-       `Office365Users.Manager(InfoAbout.Text).Mail`  
-       `Office365Users.Manager(InfoAbout.Text).MailNickname`  
-       `Office365Users.Manager(InfoAbout.Text).Surname`  
-       `Office365Users.Manager(InfoAbout.Text).TelephoneNumber`  
-       `Office365Users.Manager(InfoAbout.Text).UserPrincipalName`  
-       `Office365Users.Manager(InfoAbout.Text).AccountEnabled`  
+     `Office365Users.Manager(InfoAbout.Text).City`  
+     `Office365Users.Manager(InfoAbout.Text).CompanyName`  
+     `Office365Users.Manager(InfoAbout.Text).Country`  
+     `Office365Users.Manager(InfoAbout.Text).Department`  
+     `Office365Users.Manager(InfoAbout.Text).DisplayName`  
+     `Office365Users.Manager(InfoAbout.Text).GivenName`  
+     `Office365Users.Manager(InfoAbout.Text).Id`  
+     `Office365Users.Manager(InfoAbout.Text).JobTitle`  
+     `Office365Users.Manager(InfoAbout.Text).Mail`  
+     `Office365Users.Manager(InfoAbout.Text).MailNickname`  
+     `Office365Users.Manager(InfoAbout.Text).mobilePhone`  
+     `Office365Users.Manager(InfoAbout.Text).OfficeLocation`  
+     `Office365Users.Manager(InfoAbout.Text).PostalCode`  
+     `Office365Users.Manager(InfoAbout.Text).Surname`  
+     `Office365Users.Manager(InfoAbout.Text).TelephoneNumber`  
+     `Office365Users.Manager(InfoAbout.Text).UserPrincipalName`  
+     `Office365Users.Manager(InfoAbout.Text).AccountEnabled`  
+     `Office365Users.Manager(InfoAbout.Text).BusinessPhones`
 
 В метке отображаются введенные сведения об указанном пользователе или его руководителе.
 
@@ -135,14 +157,14 @@ ms.locfileid: "61557383"
 
 | Имя функции | Описание |
 | --- | --- |
-| [MyProfile](connection-office365-users.md#myprofile) |Извлекает профиль для текущего пользователя |
-| [UserProfile](connection-office365-users.md#userprofile) |Извлекает профиль конкретного пользователя |
-| [Manager](connection-office365-users.md#manager) |Извлекает профиль пользователя для руководителя указанного пользователя |
-| [DirectReports](connection-office365-users.md#directreports) |Возвращает профили подчиненных для указанного пользователя |
-| [SearchUser](connection-office365-users.md#searchuser) |Извлекает результаты поиска профилей пользователей |
+| [DirectReports](connection-office365-users.md#directreports) |Возвращает непосредственные подчиненные для указанного пользователя. |
+| [Manager](connection-office365-users.md#manager) |Получает профиль пользователя для диспетчера указанного пользователя. |
+| [MyProfile](connection-office365-users.md#myprofile) |Извлекает профиль для текущего пользователя. |
+| [SearchUser](connection-office365-users.md#searchuser) |Возвращает результаты поиска профилей пользователей. |
+| [UserProfile](connection-office365-users.md#userprofile) |Извлекает конкретный профиль пользователя. |
 
 ### <a name="myprofile"></a>MyProfile
-Получите Мой профиль: Извлекает профиль для текущего пользователя.
+Получить мой профиль: Извлекает профиль для текущего пользователя.
 
 #### <a name="input-properties"></a>Входные свойства
 Нет.
@@ -151,117 +173,149 @@ ms.locfileid: "61557383"
 
 | Имя свойства | Тип | Описание |
 | --- | --- | --- |
-| Department |строка |Отдел пользователя |
+| город | строка |Город пользователя. |
+| Название | строка |Компания пользователя. |
+| Стран | строка |Страна пользователя. |
+| Department |строка |Отдел пользователя. |
 | DisplayName |строка |Отображаемое имя пользователя |
 | GivenName |строка |Заданное имя пользователя |
-| Id (Идентификатор) |строка |Идентификатор пользователя |
-| JobTitle |строка |Должность пользователя |
+| Id (Идентификатор) |строка |Идентификатор пользователя. |
+| JobTitle |строка |Должность пользователя. |
 | Почта |строка |Идентификатор электронной почты пользователя |
 | MailNickname |строка |Псевдоним пользователя |
+| mobilePhone | строка |Мобильный телефон пользователя. |
+| оффицелокатион | строка |Расположение пользователя в офисе.|
+| Почтовый | строка |Почтовый код пользователя.|
 | Surname |строка |Фамилия пользователя |
 | TelephoneNumber |строка |Номер телефона пользователя |
 | UserPrincipalName |строка |Имя участника-пользователя |
 | AccountEnabled |логическое значение |Флаг активации учетной записи |
+| бусинессфонес | строка |Номер телефона компании пользователя.|
 
 ### <a name="userprofile"></a>UserProfile
-Получение профиля пользователя: Извлекает профиль конкретного пользователя.
+Получить профиль пользователя: Извлекает конкретный профиль пользователя.
 
 #### <a name="input-properties"></a>Входные свойства
 
 | Имя | Тип данных | Требуется | Описание |
 | --- | --- | --- | --- |
-| Id (Идентификатор) |строка |да |Имя участника-пользователя или идентификатор адреса электронной почты пользователя |
+| Id (Идентификатор) |строка |да |Имя участника-пользователя или идентификатор электронной почты. |
 
 #### <a name="output-properties"></a>Выходные свойства
 
 | Имя свойства | Тип | Описание |
 | --- | --- | --- |
-| Department |строка |Отдел пользователя |
+| город | строка |Город пользователя. |
+| Название | строка |Компания пользователя. |
+| Стран | строка |Страна пользователя. |
+| Department |строка |Отдел пользователя. |
 | DisplayName |строка |Отображаемое имя пользователя |
 | GivenName |строка |Заданное имя пользователя |
-| Id (Идентификатор) |строка |Идентификатор пользователя |
-| JobTitle |строка |Должность пользователя |
+| Id (Идентификатор) |строка |Идентификатор пользователя. |
+| JobTitle |строка |Должность пользователя. |
 | Почта |строка |Идентификатор электронной почты пользователя |
 | MailNickname |строка |Псевдоним пользователя |
 | Surname |строка |Фамилия пользователя |
 | TelephoneNumber |строка |Номер телефона пользователя |
 | UserPrincipalName |строка |Имя участника-пользователя |
 | AccountEnabled |логическое значение |Флаг активации учетной записи |
+| бусинессфонес | строка |Номер телефона компании пользователя.|
 
 ### <a name="manager"></a>Manager
-Получение manager: Извлекает профиль пользователя для руководителя указанного пользователя
+Получить руководителя: Получает профиль пользователя для диспетчера указанного пользователя.
 
 #### <a name="input-properties"></a>Входные свойства
 
 | Имя | Тип данных | Требуется | Описание |
 | --- | --- | --- | --- |
-| Id (Идентификатор) |строка |да |Имя участника-пользователя или идентификатор адреса электронной почты пользователя |
+| Id (Идентификатор) |строка |да |Имя участника-пользователя или идентификатор электронной почты. |
 
 #### <a name="output-properties"></a>Выходные свойства
 
 | Имя свойства | Тип | Описание |
 | --- | --- | --- |
-| Department |строка |Отдел пользователя |
+| город | строка |Город пользователя. |
+| Название | строка |Компания пользователя. |
+| Стран | строка |Страна пользователя. |
+| Department |строка |Отдел пользователя. |
 | DisplayName |строка |Отображаемое имя пользователя |
 | GivenName |строка |Заданное имя пользователя |
-| Id (Идентификатор) |строка |Идентификатор пользователя |
-| JobTitle |строка |Должность пользователя |
+| Id (Идентификатор) |строка |Идентификатор пользователя. |
+| JobTitle |строка |Должность пользователя. |
 | Почта |строка |Идентификатор электронной почты пользователя |
 | MailNickname |строка |Псевдоним пользователя |
+| mobilePhone | строка |Мобильный телефон пользователя. |
+| оффицелокатион | строка |Расположение пользователя в офисе.|
+| Почтовый | строка |Почтовый код пользователя.|
 | Surname |строка |Фамилия пользователя |
 | TelephoneNumber |строка |Номер телефона пользователя |
 | UserPrincipalName |строка |Имя участника-пользователя |
 | AccountEnabled |логическое значение |Флаг активации учетной записи |
+| бусинессфонес | строка |Номер телефона компании пользователя.|
 
 ### <a name="directreports"></a>DirectReports
-Получение подчиненных: Получение подчиненных
+Получение прямых подчиненных: Получение непосредственных подчиненных.
 
 #### <a name="input-properties"></a>Входные свойства
 
 | Имя | Тип данных | Требуется | Описание |
 | --- | --- | --- | --- |
-| Id (Идентификатор) |строка |да |Имя участника-пользователя или идентификатор адреса электронной почты пользователя |
+| Id (Идентификатор) |строка |да |Имя участника-пользователя или идентификатор электронной почты. |
 
 #### <a name="output-properties"></a>Выходные свойства
 
 | Имя свойства | Тип | Описание |
 | --- | --- | --- |
-| Department |строка |Отдел пользователя |
+| город | строка |Город пользователя. |
+| Название | строка |Компания пользователя. |
+| Стран | строка |Страна пользователя. |
+| Department |строка |Отдел пользователя. |
 | DisplayName |строка |Отображаемое имя пользователя |
 | GivenName |строка |Заданное имя пользователя |
-| Id (Идентификатор) |строка |Идентификатор пользователя |
-| JobTitle |строка |Должность пользователя |
+| Id (Идентификатор) |строка |Идентификатор пользователя. |
+| JobTitle |строка |Должность пользователя. |
 | Почта |строка |Идентификатор электронной почты пользователя |
 | MailNickname |строка |Псевдоним пользователя |
+| mobilePhone | строка |Мобильный телефон пользователя. |
+| оффицелокатион | строка |Расположение пользователя в офисе.|
+| Почтовый | строка |Почтовый код пользователя.|
 | Surname |строка |Фамилия пользователя |
 | TelephoneNumber |строка |Номер телефона пользователя |
 | UserPrincipalName |строка |Имя участника-пользователя |
 | AccountEnabled |логическое значение |Флаг активации учетной записи |
+| бусинессфонес | строка |Номер телефона компании пользователя.|
 
 ### <a name="searchuser"></a>SearchUser
-Поиск пользователей: Извлекает результаты поиска профилей пользователей
+Поиск пользователей: Возвращает результаты поиска профилей пользователей.
 
 #### <a name="input-properties"></a>Входные свойства
 
 | Имя | Тип данных | Требуется | Описание |
 | --- | --- | --- | --- |
-| searchTerm |строка |нет |Строка поиска. Область применения: отображаемое имя, заданное имя, фамилия, почта, почтовый псевдоним и имя участника-пользователя. |
+| searchTerm |строка |нет |Строка поиска. Область применения: отображаемое имя, имя, фамилия, адрес электронной почты, псевдоним электронной почты и имя участника-пользователя. |
 
 #### <a name="output-properties"></a>Выходные свойства
 
 | Имя свойства | Тип | Описание |
 | --- | --- | --- |
-| Department |строка |Отдел пользователя |
+| город | строка |Город пользователя. |
+| Название | строка |Компания пользователя. |
+| Стран | строка |Страна пользователя. |
+| Department |строка |Отдел пользователя. |
 | DisplayName |строка |Отображаемое имя пользователя |
 | GivenName |строка |Заданное имя пользователя |
-| Id (Идентификатор) |строка |Идентификатор пользователя |
-| JobTitle |строка |Должность пользователя |
+| Id (Идентификатор) |строка |Идентификатор пользователя. |
+| JobTitle |строка |Должность пользователя. |
 | Почта |строка |Идентификатор электронной почты пользователя |
 | MailNickname |строка |Псевдоним пользователя |
+| mobilePhone | строка |Мобильный телефон пользователя. |
+| оффицелокатион | строка |Расположение пользователя в офисе.|
+| Почтовый | строка |Почтовый код пользователя.|
 | Surname |строка |Фамилия пользователя |
 | TelephoneNumber |строка |Номер телефона пользователя |
 | UserPrincipalName |строка |Имя участника-пользователя |
 | AccountEnabled |логическое значение |Флаг активации учетной записи |
+| бусинессфонес | строка |Номер телефона компании пользователя.|
 
 ## <a name="helpful-links"></a>Полезные ссылки
 * Сведения о всех доступных подключениях см. [здесь](../connections-list.md).
