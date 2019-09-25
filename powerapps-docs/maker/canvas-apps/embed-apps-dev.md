@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3ff359b80dd7129ec91f987a367c1635143d8e5e
-ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
+ms.openlocfilehash: ac4699818c7f5b3a136db122fad9621d865bf5f1
+ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70213846"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256112"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Интеграция приложений на основе холста в веб-сайты и другие службы
 Создаваемые приложения часто наиболее полезны, когда они доступны, когда люди выполняют свою работу. Внедрение приложений Canvas в IFRAME позволяет интегрировать эти приложения на веб-сайты и другие службы, такие как Power BI или SharePoint.
@@ -46,7 +46,7 @@ https://apps.powerapps.com/play/[AppID]?source=iframe
 >
 > Предыдущий формат:
 > 
-> https://web.powerapps.com/webplayer/iframeapp?source=iframe&appId=/providers/Microsoft.PowerApps/apps/ ИД
+> HTTPS\://веб.повераппс.ком/вебплайер/ифрамеапп? Source = IFRAME & AppID =/провидерс/Микрософт.повераппс/АППС/[AppID]
 
 Вам только нужно указать в URI идентификатор своего приложения вместо AppID, в том числе [' & ']. Вскоре мы покажем, как получить это значение, но сначала рассмотрим все параметры, доступные в URI:
 
