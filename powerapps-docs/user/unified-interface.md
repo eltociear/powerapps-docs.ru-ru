@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 8/14/2019
+ms.date: 9/23/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f40a153ef20df0bccbdee915efe9af6aa88cb754
-ms.sourcegitcommit: f2ca557e43ab38c169eb3b754ac02c9321f9285f
+ms.openlocfilehash: be255d4208b2926867ef0e4dec291d3435f64443
+ms.sourcegitcommit: 770906d6a559316b93873ee9b1dbceabcc54fc4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69030552"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71208187"
 ---
 #  <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>Улучшенное взаимодействие с пользователем с единым интерфейсом для приложений на основе моделей 
 
@@ -29,7 +29,12 @@ ms.locfileid: "69030552"
 > [!div class="mx-imgBorder"]
 > ![Унифицированный интерфейс адаптируется к экрану](media/Reflow.png "Унифицированный интерфейс адаптируется к экрану")
 
-## <a name="navigation"></a>Навигация
+
+
+> [!NOTE]
+> Устаревший веб-клиент будет устаревшим, и клиенты должны перейти на единый интерфейс до 1 октября 2020 г. Дополнительные сведения см. в статье [объявление временной шкалы для перехода к единому интерфейсу](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/). Дополнительные сведения о переходе см. в разделе [Быстрый запуск для перехода](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app).
+
+## <a name="navigation"></a>Месяца
 
 Параметры меню позволяют быстро перемещаться по различным приложениям в системе. Они обеспечивают быстрый доступ к недавно просмотренным записям и закрепленному избранному. 
 
@@ -53,7 +58,7 @@ ms.locfileid: "69030552"
 ## <a name="business-process"></a>Бизнес-процесс 
 Поток бизнес-процессов был улучшен механизмом стыковки. Вы можете закрепить этап бизнес-процесса на экране, чтобы не полагаться на задачи в потоке бизнес-процесса. Это особенно полезно, когда этап процесса содержит сложные шаги для выполнения. Дополнительные сведения см. в разделе [Работа с бизнес-процессами](work-with-business-processes.md).
 
-## <a name="accessibility"></a>Специальные возможности
+## <a name="accessibility"></a>Режима
 Улучшенный интерфейс позволяет использовать средства чтения с экрана для преобразования информации на экране в звуковое звучание и печати на устройство чтения Брайля, чтобы другие пользователи могли использовать приложение. Дополнительные сведения см. [в разделе Использование средства чтения с экрана](screen-reader.md).
 
 ##  <a name="unified-interface-community"></a>Сообщество Объединенных интерфейсов
