@@ -1,7 +1,7 @@
 ---
 title: Предоставление клиентам тестовых выпусков приложения на основе холста в AppSource | Документы Майкрософт
 description: Использование AppSource для предоставления клиентам доступа к приложению на основе холста и привлечения потенциальных клиентов для своего бизнеса.
-author: linhtranms
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 590dc1707d080c1790c00f236df820559fe8f5a9
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 1e9ac3428a9621da360fd1cc5f1c376d52352d1b
+ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61550489"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71705339"
 ---
 # <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>Предоставление клиентам тестовых выпусков приложения на основе холста в AppSource
 
@@ -43,7 +42,7 @@ ms.PowerAppsDecimalTransform: true
 PowerApps изначально поддерживает создание приложений с внедренными данными, поэтому вам просто понадобится пример данных. Данные должны содержаться в одной или нескольких таблицах в файле Excel. В PowerApps эти данные перемещаются из таблиц Excel в приложение, где с ними можно работать. В этом случае вам не придется устанавливать внешнее подключение. Ознакомьтесь с трехэтапной процедурой ниже, чтобы переместить данные и использовать их в приложении.
 
 ### <a name="step-1-import-data-into-the-app"></a>Шаг 1. Импорт данных в приложение
-Предположим, что у вас есть файл Excel с двумя таблицами: **SiteInspector** и **SitePhotos**.
+Предположим, что у вас есть файл Excel с двумя таблицами: **Ситеинспектор** и **ситефотос**.
 
 ![Таблицы Excel, которые необходимо импортировать](./media/dev-appsource-test-drive/excel-file.png)
 
@@ -60,9 +59,9 @@ PowerApps изначально поддерживает создание при�
 
 Если приложение доступно для чтения и записи, сначала переместите данные из каждой таблицы в *коллекцию* (табличная структура данных в PowerApps). Затем вместо таблицы используйте коллекцию. Чтобы переместить данные из таблиц **SiteInspector** и **SitePhotos** в коллекции **SiteInspectorCollect** и **SitePhotosCollect**, используйте следующую формулу:
 
-```powerapps-comma
-ClearCollect( SiteInspectorCollect; SiteInspector );; 
-ClearCollect( SitePhotosCollect; SitePhotos )
+```powerapps-dot
+ClearCollect( SiteInspectorCollect, SiteInspector ); 
+ClearCollect( SitePhotosCollect, SitePhotos )
 ```
 
 С помощью этой формулы можно очистить обе коллекции, а затем переместить данные из каждой таблицы в соответствующую коллекцию.
@@ -78,12 +77,12 @@ ClearCollect( SitePhotosCollect; SitePhotos )
 
 **Чтобы добавить строку в коллекцию**, используйте [Collect( DataSource, Item, ... )](../canvas-apps/functions/function-clear-collect-clearcollect.md):
 
-```powerapps-comma
-Collect( SiteInspectorCollect;
+```powerapps-dot
+Collect( SiteInspectorCollect,
     {
-        ID: Value( Max( SiteInspectorCollect; ID ) + 1 );
-        Title: TitleText.Text;
-        SubTitle: SubTitleText.Text;
+        ID: Value( Max( SiteInspectorCollect, ID ) + 1 ),
+        Title: TitleText.Text,
+        SubTitle: SubTitleText.Text,
         Description: DescriptionText.Text
     }
 )
@@ -91,12 +90,12 @@ Collect( SiteInspectorCollect;
 
 **Чтобы обновить строку в коллекции**, используйте [UpdateIf( DataSource, Condition1, ChangeRecord1 [, Condition2, ChangeRecord2, ...] )](../canvas-apps/functions/function-update-updateif.md):
 
-```powerapps-comma
-UpdateIf( SiteInspectorCollect;
-    ID = record.ID;
+```powerapps-dot
+UpdateIf( SiteInspectorCollect,
+    ID = record.ID,
     {
-        Title: TitleEditText.Text;
-        SubTitle: SubTitleEditText.Text;
+        Title: TitleEditText.Text,
+        SubTitle: SubTitleEditText.Text,
         Description: DescriptionEditText.Text
     }
 )
@@ -104,8 +103,8 @@ UpdateIf( SiteInspectorCollect;
 
 **Чтобы удалить строку из коллекции**, используйте [RemoveIf( DataSource, Condition [, ...] )](../canvas-apps/functions/function-remove-removeif.md):
 
-```powerapps-comma
-RemoveIf( SiteInspectorCollect; ID = record.ID )
+```powerapps-dot
+RemoveIf( SiteInspectorCollect, ID = record.ID )
 ```
 
 > [!NOTE]

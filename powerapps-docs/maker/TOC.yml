@@ -992,6 +992,15 @@
           href: ./model-driven-apps/create-themes-organization-branding.md
         - name: Добавление отчетов в приложение
           href: ./model-driven-apps/add-reporting-to-app.md
+          items:
+            - name: Важные аспекты отчетов
+              href: ./model-driven-apps/reporting-considerations.md
+            - name: Песочница языка определения отчетов
+              href: ./model-driven-apps/rdl-sandboxing.md
+            - name: "Использование Power\_BI"
+              href: ./model-driven-apps/use-power-bi.md
+            - name: "Настройка пакетов содержимого Power\_BI"
+              href: ./model-driven-apps/customize-power-bi-content-packs.md
     - name: Проверка и публикация приложения
       href: ./model-driven-apps/validate-app.md
     - name: Общий доступ к приложению
