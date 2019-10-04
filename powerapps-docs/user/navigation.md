@@ -5,7 +5,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 10/03/2019
 ms.author: mkaur
 ms.reviewer: ''
 ms.assetid: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e563c1b17e7ef7628efcf51be2a312d3083bf187
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: a46698ddf454c9d0f563575a3553e874f3a7b109
+ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61530941"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71924528"
 ---
 #  <a name="basic-navigation-in-a-model-driven-app"></a>Базовая навигация в приложении на основе модели 
 
@@ -77,7 +77,7 @@ ms.locfileid: "61530941"
 
 Существует три типа уведомлений, отображаемых в форме: информационное, предупреждение и ошибка. Уведомления всегда доступны наверху формы, прямо над заголовком.
 
-Уведомления, описанные ниже, доступны в версии 9.1.9.3010.
+При выборе уведомления об ошибке вы перейдете к полю в форме, в которой произошла ошибка.
 
 ![Пример уведомлений](media/notifications.png "Пример уведомлений")
 
@@ -88,6 +88,10 @@ ms.locfileid: "61530941"
 Если у вас несколько уведомлений, вы увидите их количество. Щелкните шеврон, чтобы просмотреть каждое в отдельности.
 
 ![Пример нескольких уведомлений](media/multiple_notification.png "Пример нескольких уведомлений")
+
+## <a name="grids"></a>Сетки
+
+Таблицы в Объединенном интерфейсе были улучшены для увеличения объема данных, которые можно увидеть на экране. Сетки также имеют улучшенные параметры фильтрации, которые включают в себя запоминание последнего фильтра и порядка сортировки. Подробный список улучшений см. в этой записи блога [улучшенные функциональные возможности в Объединенных сетках интерфейсов](https://powerapps.microsoft.com/en-us/blog/enhanced-functionality-in-unified-interface-grids).
 
 
 

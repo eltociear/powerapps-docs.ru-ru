@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 9/23/2019
+ms.date: 10/03/2019
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a45b19ef45c729d02d1fff418ca4a9103fe5725a
-ms.sourcegitcommit: 770906d6a559316b93873ee9b1dbceabcc54fc4e
+ms.openlocfilehash: a4d81b9adff165267fe3e3d4d08384133aeae032
+ms.sourcegitcommit: 9a16bb75c856f7c84cd385811b7135ab2804ae69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71208205"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71924463"
 ---
 # <a name="create-a-new-record"></a>Создание записи
 
@@ -60,4 +60,5 @@ ms.locfileid: "71208205"
     > [!div class="mx-imgBorder"] 
     > ![Создать новую кнопку](media/newrecord3.png "Создать новую кнопку")
 
-    
+    > [!NOTE]
+    > Если у вас есть несохраненные изменения и попытка перехода на другую запись или форму, появится диалоговое окно **несохраненные изменения** . Если выбрать **сохранить и продолжить**, будет предпринята попытка сохранить данные и открыть страницу, на которую нужно перейти. Если вы решили сохранить и продолжить, а в поле появится ошибка, диалоговое окно закроется, и вы увидите на странице, чтобы исправить ошибку, прежде чем можно будет перейти на другую страницу.
