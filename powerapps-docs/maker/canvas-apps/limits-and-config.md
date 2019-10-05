@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: ''
-ms.date: 03/07/2018
+ms.reviewer: tapanm
+ms.date: 10/04/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 03c520d1cdf8655e93b1f5b74d687cd0abfa533f
-ms.sourcegitcommit: 94ec67b283b9b03aa24cdc0ab43dd448b11b0547
+ms.openlocfilehash: 45790b7a3e6166366a751c812a5d470d5615c3a2
+ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69529801"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71969278"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Требования к системе, ограничения и значения конфигурации для приложений на основе холста
 В этой статье приводятся требования к платформе устройств и веб-браузеру, а также ограничения и значения конфигурации для PowerApps.
@@ -70,7 +70,7 @@ ms.locfileid: "69529801"
 > [!IMPORTANT]
 >   Если у вас есть существующие конфигурации, обновите их как можно скорее до 30 сентября 2018 г., чтобы они соответствовали IP-адресам из этого списка для регионов, в которых находятся ваши приложения PowerApps.
 
-| Район | Исходящие IP-адреса |
+| Регион | Исходящие IP-адреса |
 | --- | --- |
 | Азия | 13.75.36.64-13.75.36.79, 13.67.8.240-13.67.8.255, 52.175.23.169, 52.187.68.19 |
 | Австралия  | 13.70.72.192-13.70.72.207, 13.72.243.10, 13.77.50.240-13.77.50.255, 13.70.136.174 |
@@ -80,7 +80,7 @@ ms.locfileid: "69529801"
 | Индия  | 104.211.81.192-104.211.81.207, 52.172.211.12, 40.78.194.240-40.78.194.255, 13.71.125.22, 104.211.146.224-104.211.146.239, 104.211.189.218 |
 | Япония | 13.78.108.0-13.78.108.15, 13.71.153.19, 40.74.100.224-40.74.100.239, 104.215.61.248 |
 | Южная Америка | 191.233.203.192–191.233.203.207, 104.214.19.48–104.214.19.63, 13.65.86.57, 104.41.59.51 |
-| Соединенное Королевство | 51.140.148.0–51.140.148.15, 51.140.80.51, 51.140.211.0–51.140.211.15, 51.141.47.105 |
+| Великобритания | 51.140.148.0–51.140.148.15, 51.140.80.51, 51.140.211.0–51.140.211.15, 51.141.47.105 |
 | США | 13.89.171.80-13.89.171.95, 52.173.245.164, 40.71.11.80-40.71.11.95, 40.71.249.205, 40.70.146.208-40.70.146.223, 52.232.188.154, 52.162.107.160-52.162.107.175, 52.162.242.161, 40.112.243.160-40.112.243.175, 104.42.122.49 |
 | США (ранний доступ)  | 13.71.195.32-13.71.195.47, 52.161.102.22, 13.66.140.128-13.66.140.143, 52.183.78.157 |
 
@@ -94,11 +94,11 @@ ms.locfileid: "69529801"
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL. |
 | graph.microsoft.com<br>graph.windows.net |https |Azure Graph — для получения сведений о пользователе (например, фотографии профиля) |
 | gallery.azure.com |https |Примеры и шаблоны приложений. |
-| \*. azure-apim.net |https |Концентраторы API — разные поддомены для каждого языкового стандарта. |
-| \*. powerapps.com |https | create.powerapps.com, make.powerapps.com, content.powerapps.com и web.powerapps.com |
-| \*. azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com и web.powerapps.com |
-| \*. blob.core.windows.net |https | Хранилище больших двоичных объектов |
-| \*. flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com и web.powerapps.com |
+| @no__t 0.azure-apim.net |https |Концентраторы API — разные поддомены для каждого языкового стандарта. |
+| @no__t 0.powerapps.com |https | create.powerapps.com, make.powerapps.com, content.powerapps.com и web.powerapps.com |
+| @no__t 0.azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com и web.powerapps.com |
+| @no__t 0.blob.core.windows.net |https | Хранилище BLOB-объектов |
+| @no__t 0.flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com и web.powerapps.com |
 | vortex.data.microsoft.com |https |Телеметрия |
 | localhost | https | PowerApps Mobile
 
@@ -108,3 +108,28 @@ ms.locfileid: "69529801"
 ## <a name="size-limits"></a>Ограничения размера
 
 Сведения об ограничениях размера текста, гиперссылок, изображений и мультимедиа можно найти в [типах данных](functions/data-types.md#text-hyperlink-image-and-media).
+
+## <a name="powerapps-per-app-plan"></a>План для каждого приложения PowerApps
+
+План PowerApps для каждого приложения позволяет отдельным пользователям запускать 2 приложения на одном портале для конкретного бизнес-сценария на основе всех возможностей PowerApps. Этот план предоставляет пользователям простой способ приступить к работе с платформой до более широкой адаптации к масштабированию.
+
+После того как администратор выделит план PowerApps для каждого приложения в среду, они назначаются пользователям по умолчанию при совместном использовании приложения с ними.
+
+Выполните следующие действия, чтобы отключить назначение планов для каждого приложения пользователям при совместном использовании приложения.
+
+- Выберите **приложение**.
+- Выберите **Параметры**.
+- Измените переключатель " **Автоматическое назначение на приложение** " в разделе " **назначение передачи**".
+
+Переключатель **Автоматическое назначение для каждого приложения подается** во всех параметрах приложения.
+
+> [!NOTE]
+> Отключение плана "на приложение" сейчас доступно только для приложений Canvas.  Приложения и порталы, управляемые моделью, будут иметь эту возможность в будущем.
+
+### <a name="app-settings"></a>Параметры приложения
+
+Параметры ![приложения полотна]параметры(./media/limits-and-config/app_settings.png "приложения Canvas")
+
+### <a name="pass-assignment"></a>Передача назначения
+
+![Параметры приложения на холсте проход назначения](./media/limits-and-config/app_settings_pass_assignment.png "Параметры приложения для назначения Pass")
