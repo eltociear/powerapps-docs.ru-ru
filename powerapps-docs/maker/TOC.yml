@@ -1102,7 +1102,7 @@
           href: ./portals/admin/update-portal-domain.md
         - name: Очистка кэша на стороне сервера
           href: ./portals/admin/clear-server-side-cache.md
-        - name: "Перенос конфигурации портала Dynamics\_365"
+        - name: "Перенос конфигурации порталов Dynamics\_365"
           href: ./portals/admin/migrate-portal-configuration.md
     - name: Расширенные настройки портала
       items:
