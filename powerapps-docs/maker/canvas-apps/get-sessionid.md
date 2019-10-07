@@ -1,24 +1,24 @@
 ---
 title: Получение идентификатора сеанса или приложения на основе холста | Документы Майкрософт
 description: Как получить идентификатор сеанса или приложения на основе холста для устранения неполадок в PowerApps
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 06/18/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 67cfe4ac6c53797e6a18a68d3fbcf29b088f3da8
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 11f749f241f978ebd94e460833e98cca894fe7fa
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61554096"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71990197"
 ---
 # <a name="get-a-session-id-or-a-canvas-app-id"></a>Получение идентификатора сеанса или приложения на основе холста
 Если с приложением на основе холста, созданным в PowerApps, возникает проблема, вы можете помочь корпорации Майкрософт устранить ее значительно эффективнее, если укажете идентификатор сеанса и (или) приложения.
@@ -63,7 +63,7 @@ ms.locfileid: "61554096"
 
 1. Слева на экране выберите **Приложения**.
 
-1. Выберите кнопку с многоточием (**...**) для приложения, при работе с которым возникла проблема, а затем выберите **Сведения**.
+1. Выберите кнопку с многоточием ( **...** ) для приложения, при работе с которым возникла проблема, а затем выберите **Сведения**.
 
     ![Переход к сведениям о приложении](./media/get-sessionid/details.png)
 

@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/11/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1cc589d1bff73777e0c20ed933a563e42b934f35
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 114474696f85980da315b6dd225250dc1b197805
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551146"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992793"
 ---
 # <a name="errors-function-in-powerapps"></a>Функция Errors в PowerApps
 В этой статье приведены сведения об ошибках, связанных с предыдущими изменениями [источника данных](../working-with-data-sources.md).
@@ -27,9 +26,9 @@ ms.PowerAppsDecimalTransform: true
 ## <a name="overview"></a>Обзор
 Ошибки могут возникать при изменении [записи](../working-with-tables.md#records) источника данных.  Причин может быть много, включая перебои в работе сети, отсутствие достаточных разрешений и конфликты редактирования.  
 
-Функция **[Patch](function-patch.md)** и другие функции данных не возвращают ошибки напрямую. Вместо этого они возвращают результат своей работы. После выполнения функции данных можно использовать функцию **Errors** для получения сведений об ошибках.  Вы можете проверить наличие ошибок, используя функцию **[IsEmpty]** в формуле **IsEmpty( Errors ( ... ) )**.
+Функция **[Patch](function-patch.md)** и другие функции данных не возвращают ошибки напрямую. Вместо этого они возвращают результат своей работы. После выполнения функции данных можно использовать функцию **Errors** для получения сведений об ошибках.  Вы можете проверить наличие ошибок, используя функцию **[IsEmpty]** в формуле **IsEmpty( Errors ( ... ) )** .
 
-Некоторые ошибки можно устранить до их возникновения с помощью функций **[Validate](function-validate.md)** и **[DataSourceInfo](function-datasourceinfo.md)**.  Дополнительные сведения о работе с ошибками и их устранении см. в статье [Общие сведения об источниках данных в PowerApps](../working-with-data-sources.md).
+Некоторые ошибки можно устранить до их возникновения с помощью функций **[Validate](function-validate.md)** и **[DataSourceInfo](function-datasourceinfo.md)** .  Дополнительные сведения о работе с ошибками и их устранении см. в статье [Общие сведения об источниках данных в PowerApps](../working-with-data-sources.md).
 
 ## <a name="description"></a>Описание
 Функция **Errors** возвращает [таблицу](../working-with-tables.md) ошибок, содержащую следующие [столбцы](../working-with-tables.md#columns):
@@ -41,7 +40,7 @@ ms.PowerAppsDecimalTransform: true
 
 | ErrorKind (Тип ошибки) | Описание |
 | --- | --- |
-| ErrorKind.Conflict |В ту же запись было внесено другое изменение, что привело к конфликту изменений.  Используйте функцию **[Refresh](function-refresh.md)**, чтобы загрузить запись заново, и повторите попытку изменения. |
+| ErrorKind.Conflict |В ту же запись было внесено другое изменение, что привело к конфликту изменений.  Используйте функцию **[Refresh](function-refresh.md)** , чтобы загрузить запись заново, и повторите попытку изменения. |
 | ErrorKind.ConstraintViolation |Нарушено одно или несколько ограничений. |
 | ErrorKind.CreatePermission |Предпринята попытка создать запись, при этом у текущего пользователя нет разрешения на создание записей. |
 | ErrorKind.DeletePermission |Предпринята попытка удалить запись, при этом у текущего пользователя нет разрешения на удаление записей. |
@@ -59,10 +58,10 @@ ms.PowerAppsDecimalTransform: true
 
 Функция **[Patch](function-patch.md)** или другая функция данных может возвращать *пустое* значение, если, например, не удалось создать запись. Вы можете передать *пустое* значение функции **Errors**. В таком случае она возвратит необходимые сведения об ошибке.  При последующем использовании функций данных в том же источнике данных эти сведения об ошибке будут удалены.
 
-Если ошибок нет, таблица, которую возвращает функция **Errors**, будет [пустой](function-isblank-isempty.md), и ее можно будет проверить с помощью функции **[IsEmpty](function-isblank-isempty.md)**.
+Если ошибок нет, таблица, которую возвращает функция **Errors**, будет [пустой](function-isblank-isempty.md), и ее можно будет проверить с помощью функции **[IsEmpty](function-isblank-isempty.md)** .
 
 ## <a name="syntax"></a>Синтаксис
-**Errors**( *DataSource* [; *Record* ] )
+**Errors**( *DataSource* [, *Record* ] )
 
 * *DataSource* — обязательный аргумент. Источник данных, для которого необходимо вернуть ошибки.
 * *Record* — необязательный аргумент.  Определенная запись, для которой необходимо вернуть ошибки. Если этот аргумент не указан, функция возвратит ошибки для всего источника данных.
@@ -75,33 +74,33 @@ ms.PowerAppsDecimalTransform: true
 
 С помощью приложения пользователь загружает запись Chocolate в форму ввода данных, а затем изменяет значение свойства **Quantity** на 90.  Запись помещается в [переменную контекста](../working-with-variables.md#use-a-context-variable) **EditRecord**.
 
-* **UpdateContext ({EditRecord: First( Filter( IceCream; Flavor = "Chocolate" ) ) } )**
+* @no__t 0UpdateContext ({ИзменитьЗапись: First (Filter (Ицекреам, флаг = "шоколад"))}) **
 
-Внести эти изменения в источник можно с помощью функции **[Patch](function-patch.md)**.
+Внести эти изменения в источник можно с помощью функции **[Patch](function-patch.md)** .
 
-* **Patch( IceCream; EditRecord; Gallery.Updates )**,
+* **Patch( IceCream, EditRecord, Gallery.Updates )** ,
 
-где **Gallery.Updates** принимает значение **{Quantity: 90}**, так как только **количество** свойство было изменено.
+где **Gallery. Updates** принимает значение **{Quantity: 90}** , так как было изменено только свойство **Quantity** .
 
 К сожалению, прямо перед вызовом функции **[Patch](function-patch.md)** кто-то изменил значение свойства **Quantity** для записи Chocolate на 80.  PowerApps определит это и не допустит конфликтного изменения.  Вы можете проверить, случилось ли нечто подобное, с помощью формулы:
 
-* **IsEmpty( Errors( IceCream; EditRecord ) )**,
+* **IsEmpty( Errors( IceCream, EditRecord ) )** ,
 
 которая возвращает значение **false**, так как функция **Errors** возвратила приведенную ниже таблицу.
 
 | Запись | Столбец | Сообщение | Ошибка |
 | --- | --- | --- | --- |
-| {Flavor: «Chocolate», Quantity: 100 } |*пустое значение* |"Запись, которую вы пытаетесь изменить, изменена другим пользователем. Перезагрузите ее и повторите попытку". |ErrorKind.Conflict |
+| Версии "Шоколад", количество: 100} |*пустое значение* |"Запись, которую вы пытаетесь изменить, изменена другим пользователем. Перезагрузите ее и повторите попытку". |ErrorKind.Conflict |
 
 Вы можете поместить метку в форме для отображения данной ошибки пользователю.
 
 * Чтобы отобразить ошибку, задайте для свойства **[Text](../controls/properties-core.md)** метки эту формулу:<br>
-  **Label.Text = First(Errors( IceCream; EditRecord )).Message**
+  **Label.Text = First(Errors( IceCream, EditRecord )).Message**
 
 Вы также можете добавить в форму кнопку **Перезагрузить**, чтобы пользователь мог эффективно разрешить конфликт.
 
 * Чтобы отображать кнопку только при возникновении конфликта, задайте для свойства **[Visible](../controls/properties-core.md)** кнопки эту формулу:<br>
-    **!IsEmpty( Lookup( Errors( IceCream; EditRecord ); Error = ErrorKind.Conflict ) )**
+    **!IsEmpty( Lookup( Errors( IceCream, EditRecord ), Error = ErrorKind.Conflict ) )**
 * Чтобы пользователь мог отменять изменение нажатием кнопки, задайте в качестве значения свойства **[OnSelect](../controls/properties-core.md)** следующую формулу:<br>
-    **ReloadButton.OnSelect = Revert( IceCream; EditRecord )**
+    **ReloadButton.OnSelect = Revert( IceCream, EditRecord )**
 

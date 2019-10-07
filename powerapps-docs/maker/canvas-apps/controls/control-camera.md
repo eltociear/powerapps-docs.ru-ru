@@ -8,18 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bffbc86dda86c0b179634d2f59e0fb4f5d063ecd
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 88b6b9faf8c4d7c14a09bfc89791a050e3c07ca2
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321324"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986848"
 ---
 # <a name="camera-control-in-powerapps"></a>Элемент управления "Камера" в PowerApps
 С помощью элемента управления "Камера" пользователь может делать фотографии, используя камеру устройства.
@@ -74,27 +73,27 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Patch**( *DataSource*;; *BaseRecord*;; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Пример
 ### <a name="add-photos-to-an-image-gallery-control"></a>Добавление фотографий в коллекцию изображений
 1. Добавьте в приложение элемент управления **Камера**, назовите его **MyCamera** и назначьте его свойству **[OnSelect](properties-core.md)** следующую формулу:<br>
-   **Collect(MyPix; MyCamera.Photo)**
+   **Collect(MyPix, MyCamera.Photo)**
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
     Нужны дополнительные сведения о функции **[Collect](../functions/function-clear-collect-clearcollect.md)** или [других функциях](../formula-reference.md)?
 2. Нажмите клавишу F5, а затем сделайте снимок, щелкнув элемент **MyCamera**.
-3. Добавьте элемент управления **[Вертикальная коллекция](control-gallery.md)**, а затем измените размеры его элемента управления **[Изображение](control-image.md)**, его шаблона и самого элемента управления **Коллекция изображений**, чтобы они поместились на экране.
+3. Добавьте элемент управления **[Вертикальная коллекция](control-gallery.md)** , а затем измените размеры его элемента управления **[Изображение](control-image.md)** , его шаблона и самого элемента управления **Коллекция изображений**, чтобы они поместились на экране.
 4. Назначьте свойству **[Items](properties-core.md)** элемента управления **Коллекция изображений** следующее значение:<br>**MyPix**.
 5. Убедитесь, что для свойства **[Image](properties-visual.md)** элемента управления **Изображение** задано следующее выражение:<br>
    **ThisItem.Url**
 
     Сделанная вами фотография появится в элементе управления **Коллекция изображений**.
 6. Сделайте столько фотографий, сколько хотите, а затем вернитесь в рабочую область по умолчанию, нажав клавишу Esc.
-7. (Необязательно.) Назначьте свойству **OnSelect** элемента управления **Изображение** в элементе управления **Коллекция изображений** формулу **Remove(MyPix;; ThisItem)**, нажмите клавишу F5, а затем щелкните фотографию, чтобы удалить ее.
+7. (Необязательно.) Назначьте свойству **OnSelect** элемента управления **Изображение** в элементе управления **Коллекция изображений** формулу **Remove(MyPix; ThisItem)** , нажмите клавишу F5, а затем щелкните фотографию, чтобы удалить ее.
 
-Для сохранения фотографий на локальном устройстве используйте функцию **[SaveData](../functions/function-savedata-loaddata.md)**, а для обновления источника данных — функцию **[Patch](../functions/function-patch.md)**.
+Для сохранения фотографий на локальном устройстве используйте функцию **[SaveData](../functions/function-savedata-loaddata.md)** , а для обновления источника данных — функцию **[Patch](../functions/function-patch.md)** .
 
 
 ## <a name="accessibility-guidelines"></a>Руководство по настройке специальных возможностей
@@ -108,8 +107,8 @@ ms.PowerAppsDecimalTransform: true
 * **[FocusedBorderColor](properties-color-border.md)** и внешний цвет.
 
 ### <a name="screen-reader-support"></a>Поддержка средства чтения с экрана
-* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)**.
+* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)** .
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.
+* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .

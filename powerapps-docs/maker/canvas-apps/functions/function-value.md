@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1e54072771bf92dc6237620cfbd260cd4af55e22
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: de9cf7aa2c01b25f17aa6be7ce1f95871c3ab118
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321831"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983390"
 ---
 # <a name="value-function-in-powerapps"></a>Функция Value в PowerApps
 Преобразует текстовую строку в число.
@@ -40,7 +39,7 @@ ms.PowerAppsDecimalTransform: true
 Для преобразования значений даты и времени используйте функции [**DateValue**](function-datevalue-timevalue.md), [**TimeValue**](function-datevalue-timevalue.md) или [**DateTimeValue**](function-datevalue-timevalue.md).
 
 ## <a name="syntax"></a>Синтаксис
-**Value**( *строка* [; *тег_языка* ] )
+**Value**( *строка* [, *тег_языка* ] )
 
 * *строка* — обязательный аргумент. Строка для преобразования в числовое значение.
 * *Тег_языка* — необязательный аргумент.  Тег языка, для которого будет проводиться анализ строки.  Если тег не указан, используется язык текущего пользователя.
@@ -51,9 +50,9 @@ ms.PowerAppsDecimalTransform: true
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
 | **Value( "123.456" )** |По умолчанию будет использоваться язык "en-US", в котором десятичный разделитель — точка. |123.456 |
-| **Value( "123.456"; "es-ES" )** |"es-ES" — тег для испанского языка в Испании.  В Испании точка используется для отделения тысяч. |123456 |
+| **Value( "123.456", "es-ES" )** |"es-ES" — тег для испанского языка в Испании.  В Испании точка используется для отделения тысяч. |123456 |
 | **Value( "123,456" )** |По умолчанию будет использоваться язык "en-US", в котором разделитель тысяч — запятая. |123456 |
-| **Value( "123,456"; "es-ES" )** |"es-ES" — тег для испанского языка в Испании.  В Испании десятичным разделителем является запятая. |123.456 |
+| **Value( "123,456", "es-ES" )** |"es-ES" — тег для испанского языка в Испании.  В Испании десятичным разделителем является запятая. |123.456 |
 | **Value( "12.34%" )** |Знак процента в конце строки указывает, что это значение в процентах. |0.1234 |
 | **Value( "$ 12.34" )** |Символ валюты для текущего языка не учитывается. |12.34 |
 | **Value( "24e3" )** |Экспоненциальное представление чисел для 12 x 10<sup>3</sup>. |24000 |

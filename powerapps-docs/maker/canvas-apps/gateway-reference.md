@@ -1,24 +1,24 @@
 ---
 title: Сведения о локальных шлюзах данных для приложений на основе холста | Документы Майкрософт
 description: Справочные сведения о локальных шлюзах данных, включая установку в PowerApps и устранение неполадок
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 10/20/2017
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 095496aba49f722d439960a25242153b9daea382
-ms.sourcegitcommit: ea3ab5926541c60a9e7c17f52f937c9812d48c71
+ms.openlocfilehash: 4ac1df1d6a2901345436b899e3c7088f746eb2aa
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70310034"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983336"
 ---
 # <a name="understand-on-premises-data-gateways-for-canvas-apps"></a>Сведения о локальных шлюзах данных для приложений на основе холста
 ## <a name="installation-and-configuration"></a>Установка и настройка
@@ -91,14 +91,16 @@ ms.locfileid: "70310034"
 
 Результаты должны выглядеть аналогично этому примеру. Если значение **TcpTestSucceeded** отлично от **True**, то подключение, возможно, блокируется брандмауэром.
 
-    ComputerName           : watchdog.servicebus.windows.net
-    RemoteAddress          : 70.37.104.240
-    RemotePort             : 5672
-    InterfaceAlias         : vEthernet (Broadcom NetXtreme Gigabit Ethernet - Virtual Switch)
-    SourceAddress          : 10.120.60.105
-    PingSucceeded          : False
-    PingReplyDetails (RTT) : 0 ms
-    TcpTestSucceeded       : True
+```
+ComputerName           : watchdog.servicebus.windows.net
+RemoteAddress          : 70.37.104.240
+RemotePort             : 5672
+InterfaceAlias         : vEthernet (Broadcom NetXtreme Gigabit Ethernet - Virtual Switch)
+SourceAddress          : 10.120.60.105
+PingSucceeded          : False
+PingReplyDetails (RTT) : 0 ms
+TcpTestSucceeded       : True
+```
 
 Если вы хотите проверить все варианты, замените **имя_компьютера** и **порт** на значения, указанные в подразделе **Настройка портов** далее в этом разделе.
 
@@ -145,7 +147,7 @@ ms.locfileid: "70310034"
 Сейчас нет единого места, где администраторы клиентов могли бы управлять всеми шлюзами, установленными и настроенными другими пользователями.  Если вы являетесь администратором клиента, рекомендуется попросить пользователей в организации добавлять вас в качестве администратора в каждый устанавливаемый ими шлюз. В этом случае вы сможете управлять всеми шлюзами в вашей организации на странице параметров шлюза или с помощью [команд PowerShell](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters).
 
 ## <a name="frequently-asked-questions"></a>Часто задаваемые вопросы
-#### <a name="general"></a>Общее
+#### <a name="general"></a>Общие
 **Вопрос** Какие источники данных поддерживает шлюз?  
 **Клик** На момент написания этой статьи:
 
@@ -231,7 +233,7 @@ ms.locfileid: "70310034"
 #### <a name="update-to-the-latest-version"></a>Обновление до последней версии
 Многие проблемы могут возникать при использовании устаревшей версии шлюза.  Рекомендуется проверять, что используется последняя версия.  Если шлюз не обновлялся месяц или больше, попробуйте установить последнюю версию шлюза и посмотреть, повторяется ли проблема.
 
-#### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>Ошибка: Не удалось добавить пользователя в группу.  (-2147463168   PBIEgwService   Performance Log Users   )
+#### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>План Не удалось добавить пользователя в группу.  (-2147463168   PBIEgwService   Performance Log Users   )
 Эта ошибка появляется, если вы пытаетесь установить шлюз на контроллере домена, что не поддерживается. Шлюз нужно устанавливать на компьютере, который не является контроллером домена.
 
 ## <a name="tools"></a>Средства

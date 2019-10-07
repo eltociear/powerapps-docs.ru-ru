@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/05/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3ceb6e0bcac83bbd79d78dac859a7ddb7acf42a8
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5e18b64910bbc7efca8c460100163e1a0716a089
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61519775"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992155"
 ---
 # <a name="notify-function-in-powerapps"></a>Функция Notify в PowerApps
 Отображает баннер с сообщением для пользователя.
@@ -46,10 +45,10 @@ PowerApps может также отправлять push-уведомления
 
 Функция **Notify** всегда возвращает *true*.
 
-Примечание. Эта функция ранее называлось **ShowError** когда он может отображать только сообщения об ошибках.
+Метим Эта функция ранее называлась **ShowError** , когда она может отображать только сообщения об ошибках.
 
 ## <a name="syntax"></a>Синтаксис
-**Notify**(*Message*; [*NotificationType*])
+**Notify**(*Message*, [*NotificationType*])
 
 * *Message* — обязательный аргумент.  Сообщение, отображаемое для пользователя.
 * *NotificationType* — необязательный аргумент.  Тип сообщения для отображения из приведенной выше таблицы.  Тип по умолчанию — **NotificationType.Information**.  
@@ -62,7 +61,7 @@ PowerApps может также отправлять push-уведомления
 
 2. Укажите следующее значение для свойства **OnSelect** элемента управления **Button**:
 
-    **Notify(Hello; World)**
+    **Notify(Hello, World)**
 
 3. Нажмите кнопку.  
 
@@ -72,7 +71,7 @@ PowerApps может также отправлять push-уведомления
 
 4. Измените тип сообщения на сообщение об ошибке.  Добавьте в формулу второй аргумент:
 
-    **Notify("Hello, World"; NotificationType.Error)**
+    **Notify("Hello, World", NotificationType.Error)**
 
 5. Нажмите кнопку.
 
@@ -82,7 +81,7 @@ PowerApps может также отправлять push-уведомления
 
 4. Измените тип сообщения на предупреждение.  Измените второй аргумент в формуле:
 
-    **Notify("Hello, World"; NotificationType.Warning)**
+    **Notify("Hello, World", NotificationType.Warning)**
 
 5. Нажмите кнопку.
 
@@ -92,7 +91,7 @@ PowerApps может также отправлять push-уведомления
 
 4. Измените тип сообщения на сообщение об успешном выполнении.  Измените второй аргумент в формуле:
 
-    **Notify("Hello, World"; NotificationType.Success)**
+    **Notify("Hello, World", NotificationType.Success)**
 
 5. Нажмите кнопку.
 

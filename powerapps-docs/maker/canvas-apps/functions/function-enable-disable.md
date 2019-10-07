@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f3932d21683b83008e95f03ba2aae646d2b8e491
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 1b58b57ae880f54fc7fccb5aa4c49f0e2fcad6d0
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551084"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992764"
 ---
 # <a name="enable-and-disable-functions-in-powerapps"></a>Функции Enable и Disable в PowerApps
 Включает или отключает [сигнал](signals.md).
@@ -31,7 +31,7 @@ ms.locfileid: "61551084"
 ## <a name="description"></a>Описание
 Функции **Enable** и **Disable** включают и отключают сигнал соответственно.
 
-В настоящее время эти функции работают только для сигнала **[Location](signals.md)**.
+В настоящее время эти функции работают только для сигнала **[Location](signals.md)** .
 
 Эти функции не возвращают никаких значений. Их можно использовать только в [формулах поведения](../working-with-formulas-in-depth.md).
 

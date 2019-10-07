@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/01/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 83021ff0d18eb5d7322ef40eaa2bc0839b56f452
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: b51d956f2c188e0b877530b28dec933d42c905a6
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551176"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992835"
 ---
 # <a name="defaults-function-in-powerapps"></a>Функция Defaults в PowerApps
 Возвращает значения по умолчанию для [источника данных](../working-with-data-sources.md).  
@@ -30,7 +30,7 @@ ms.locfileid: "61551176"
 
 Источники данных различаются по объему предоставляемых по умолчанию сведений, включая возможность не предоставлять их совсем.  При работе с [коллекцией](../working-with-data-sources.md#collections) или другим источником данных, который не поддерживает значения по умолчанию, функция **Defaults** возвращает [пустую](function-isblank-isempty.md) запись.
 
-Чтобы [создать запись](../working-with-data-sources.md), можно использовать функцию **Defaults** в сочетании с функцией **[Patch](function-patch.md)**.
+Чтобы [создать запись](../working-with-data-sources.md), можно использовать функцию **Defaults** в сочетании с функцией **[Patch](function-patch.md)** .
 
 ## <a name="syntax"></a>Синтаксис
 **Defaults**( *Источник_данных* )
@@ -41,5 +41,5 @@ ms.locfileid: "61551176"
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| **Defaults(&nbsp;Scores&nbsp;)** |Возвращает значения по умолчанию для источника данных **Scores**. |**{Score: 0 }** |
+| **Defaults(&nbsp;Scores&nbsp;)** |Возвращает значения по умолчанию для источника данных **Scores**. |**{Score: 0}** |
 

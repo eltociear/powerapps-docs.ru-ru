@@ -6,22 +6,22 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/24/2018
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3174d959a2360b36e82cd7070c4401251ca9fe18
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c6b94f636ebf6d373c3fc2117b589116b5a4a2fd
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61526270"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986343"
 ---
-# <a name="rich-text-editor-control-in-powerapps"></a>Элемент управления редактора форматированного текста в PowerApps
-Позволяет конечным пользователям для форматирования текста внутри WYSIWYG, в область редактирования.  Выходные данные имеют формат HTML.
+# <a name="rich-text-editor-control-in-powerapps"></a>Элемент управления "Редактор форматированного текста" в PowerApps
+Позволяет конечным пользователям форматировать текст внутри области редактирования WYSIWYG.  Выходные данные имеют формат HTML.
 
 ## <a name="description"></a>Описание
 Элемент управления **Редактор форматированного текста** предоставляет пользователям приложения область для форматирования текста в режиме WYSIWYG.  Входные и выходные данные элемента управления имеют формат HTML.
@@ -66,10 +66,10 @@ ms.locfileid: "61526270"
 
 ## <a name="accessibility-guidelines"></a>Руководство по настройке специальных возможностей
 ### <a name="screen-reader-support"></a>Поддержка средства чтения с экрана
-* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)**.
+* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)** .
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
 
 > [!TIP]
-> Используйте **Alt + 0** редактор фокус установлен на дополнительные сведения о других сочетаний клавиш.
+> Используйте **сочетание клавиш Alt + 0** , пока редактор не знаком с другими сочетаниями клавиш.

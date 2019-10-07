@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 54ab2ba2186f68fcb68b9aa59729933af5d04652
-ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
+ms.openlocfilehash: 46f1974b5ff32cf21d1e9f24c15362c24b44fbe3
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68473903"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986340"
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>Фигуры и значки в PowerApps
 Фигуры и значки — это элементы управления, для которых можно настроить внешний вид и поведение.
@@ -69,7 +68,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Navigate**( *ScreenName*;; *ScreenTransition* )](../functions/function-navigate.md)
+[**Navigate**( *ScreenName*; *ScreenTransition* )](../functions/function-navigate.md)
 
 ## <a name="example"></a>Пример
 
@@ -81,15 +80,15 @@ ms.PowerAppsDecimalTransform: true
 
 1. В элементе **Источник** добавьте элемент управления **Фигура** и назначьте его свойству **[OnSelect](properties-core.md)** следующую формулу:
 
-  `Navigate(Target; ScreenTransition.Fade)`
+  `Navigate(Target, ScreenTransition.Fade)`
   
-1. Нажмите клавишу F5, а затем  выберите элемент управления фигурой.
+1. Нажмите клавишу F5, а затем выберите элемент управления **фигурой** .
 
     Появится экран **Цель**.
 
 1. (Необязательно) Нажмите клавишу Esc, чтобы вернуться в рабочую область по умолчанию, добавьте элемент управления **Фигура** к элементу **Цель** и назначьте свойству **[OnSelect](properties-core.md)** элемента управления **Фигура** следующую формулу:
 
-  `Navigate(Source; ScreenTransition.Fade)`
+  `Navigate(Source, ScreenTransition.Fade)`
 
 ## <a name="accessibility-guidelines"></a>Руководство по настройке специальных возможностей
 

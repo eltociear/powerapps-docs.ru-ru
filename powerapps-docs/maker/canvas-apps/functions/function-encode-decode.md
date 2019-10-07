@@ -6,27 +6,27 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9956332c35b4df2773b2634cb7f66d2ea96469e4
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c21cae9e39e3a9a1461ac3fafe576f40b70c0818
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551061"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985015"
 ---
 # <a name="encodeurl-and-plaintext-functions-in-powerapps"></a>Функции EncodeUrl и PlainText в PowerApps
 Кодируют и декодируют строки.
 
 ## <a name="description"></a>Описание
-**EncodeUrl** функция кодирует строку URL-адреса, заменив некоторые отличные от буквенно-цифровые символы % и шестнадцатеричные числа.  
+Функция **енкодеурл** кодирует строку URL-адреса, заменяя определенные символы, отличные от буквенно-цифровых, на% и шестнадцатеричное число.  
 
-**Открытым текстом** функция удаляет HTML и XML-теги, преобразуя определенные теги, подобные этим в соответствующие символы:
+Функция с **открытым текстом** УДАЛЯЕТ теги HTML и XML, преобразуя некоторые теги, такие как, в соответствующий символ:
 
 * **&amp;nbsp;**
 * **&amp;quot;**
@@ -45,8 +45,12 @@ ms.locfileid: "61551061"
 ## <a name="examples"></a>Примеры
 Если показать RSS-канал в коллекции текста, а затем задать свойству **[Text](../controls/properties-core.md)** метки в этой коллекции значение **ThisItem.description**, то метка может отобразить необработанный HTML- или XML-код, как в этом примере:
 
+```html
     <p>We have done an unusually&nbsp;&quot;deep&quot; globalization and localization.<p>
+```
 
-Если задать свойству **[Text](../controls/properties-core.md)** метки значение **PlainText(ThisItem.description)**, то отображаемый текст будет иметь такой вид:
+Если задать свойству **[Text](../controls/properties-core.md)** метки значение **PlainText(ThisItem.description)** , то отображаемый текст будет иметь такой вид:
 
+```
     We have done an unusually "deep" globalization and localization.
+```

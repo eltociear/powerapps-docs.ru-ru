@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/26/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c405af25d0e3228939b908c081ea8b08ce674ea6
-ms.sourcegitcommit: d87b2068a63e416e2814791328a3a47bbcb5bb48
+ms.openlocfilehash: aa51c97eff57b9659e5fd246af8016898eeeb9df
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "61519655"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992241"
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>Функции Sort и SortByColumns в PowerApps
 Сортировка [таблицы](../working-with-tables.md).
@@ -31,7 +30,7 @@ ms.PowerAppsDecimalTransform: true
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
-Чтобы сортировать таблицу сначала по одному столбцу, а затем по другому, используйте вложенные формулы **Sort**. Например, можно использовать следующую формулу для сортировки **контакты** с таблицей сначала **LastName** столбец и затем по **FirstName** столбца:  **Sort (Sort (Contacts, LastName), FirstName)**
+Чтобы сортировать таблицу сначала по одному столбцу, а затем по другому, используйте вложенные формулы **Sort**. Например, эту формулу можно использовать для сортировки таблицы **Contacts** сначала по столбцу **LastName** , а затем по столбцу **FirstName** :  **Sort (Sort (Contacts, LastName), FirstName)**
 
 Функцию **SortByColumns** также можно использовать для сортировки таблицы по одному или нескольким столбцам.
 
@@ -39,20 +38,20 @@ ms.PowerAppsDecimalTransform: true
 
 Вы можете объединить функцию **SortByColumns** с **[раскрывающимся списком](../controls/control-drop-down.md)** или **[списком](../controls/control-list-box.md)** , чтобы пользователи могли сами выбрать столбцы для сортировки.
 
-Кроме сортировки по возрастанию или убыванию, функция **SortByColumns** позволяет сортировать по списку значений, внесенному в таблицу с одним столбцом.  Например, можно отсортировать записи по названиям дня недели, указав порядок сортировки **[ "Monday"; "Tuesday"; "Wednesday"; "Thursday"; "Friday"; "Saturday"; "Sunday" ]** .  Тогда первыми будут расположены все записи за **понедельник**, за ними все записи за **вторник**, и т. д.  Все записи, значения столбца в которых не будут найдены в таблице сортировки, помещаются в конец отсортированного списка.
+Кроме сортировки по возрастанию или убыванию, функция **SortByColumns** позволяет сортировать по списку значений, внесенному в таблицу с одним столбцом.  Например, можно отсортировать записи по названиям дня недели, указав порядок сортировки **[ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" ]** .  Тогда первыми будут расположены все записи за **понедельник**, за ними все записи за **вторник**, и т. д.  Все записи, значения столбца в которых не будут найдены в таблице сортировки, помещаются в конец отсортированного списка.
 
 [Таблицы](../working-with-tables.md) в PowerApps представлены значением, как любая строка или число.  Их можно передавать в функции и получать в качестве результата выполнения функций.  **Sort** и **SortByColumn** не изменяют исходную таблицу, а принимают ее в качестве аргумента и возвращают новую отсортированную таблицу.  Подробнее это описано [здесь](../working-with-tables.md).
 
 [!INCLUDE [delegation](../../../includes/delegation.md)]
 
 ## <a name="syntax"></a>Синтаксис
-**Sort**( *Table*; *Formula* [; *SortOrder* ] )
+**Sort**( *Table*, *Formula* [, *SortOrder* ] )
 
 * *Table* — обязательный аргумент. Таблица для сортировки.
 * *Formula* — обязательный аргумент. Эта формула вычисляется для каждой записи таблицы, и полученные результаты используются для сортировки таблицы.  Можно ссылаться на любые столбцы в таблице.
 * *SortOrder* — необязательный аргумент. Если задать **SortOrder.Descending**, таблица будет отсортирована в порядке убывания. По умолчанию используется значение **SortOrder.Ascending**.
 
-**SortByColumns**( *Table*; *ColumnName1* [; *SortOrder1*; *ColumnName2*; *SortOrder2*; ... ] )
+**SortByColumns**( *Table*, *ColumnName1* [, *SortOrder1*, *ColumnName2*, *SortOrder2*, ... ] )
 
 * *Table* — обязательный аргумент. Таблица для сортировки.
 * *ColumnName* — обязательный аргумент. Имена столбцов для сортировки в строковом формате.
@@ -61,7 +60,7 @@ ms.PowerAppsDecimalTransform: true
     > [!NOTE]
   > Для источников данных SharePoint и Excel, содержащих имена столбцов с пробелами, вместо каждого пробела укажите **"\_x0020\_"** . Например, **Имя столбца** укажите как **Имя_x0020_столбца**.
 
-**SortByColumns**( *Table*; *ColumnName*; *SortOrderTable* )
+**SortByColumns**( *Table*, *ColumnName*, *SortOrderTable* )
 
 * *Table* — обязательный аргумент. Таблица для сортировки.
 * *ColumnName* — обязательный аргумент. Имя столбца для сортировки в строковом формате.
@@ -77,23 +76,23 @@ ms.PowerAppsDecimalTransform: true
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| **Sort( IceCream; Flavor )**<br><br>**SortByColumns( IceCream; "Flavor" )** |Сортирует **IceCream** по столбцу **Flavor**. Столбец **Flavor** содержит строковые данные, поэтому таблица сортируется в алфавитном порядке. По умолчанию используется порядок сортировки по возрастанию. |<style> img { max-width: none; } </style> ![](media/function-sort/icecream-flavor.png) |
-| **Sort( IceCream; Quantity )**<br><br>**SortByColumns( IceCream; "Quantity" )** |Сортирует **IceCream** по столбцу **Quantity**.  Столбец **Quantity** содержит числовые данные, поэтому таблица сортируется по числовым значениям.  По умолчанию используется порядок сортировки по возрастанию. |![](media/function-sort/icecream-quantity-asc.png) |
-| **Sort( IceCream; Quantity; SortOrder.Descending )**<br><br>**SortByColumns( IceCream; "Quantity"; SortOrder.Descending )** |Сортирует **IceCream** по столбцу **Quantity**.  Столбец **Quantity** содержит числовые данные, поэтому сортировка выполняется по числовым значениям.  Указан порядок сортировки по убыванию. |![](media/function-sort/icecream-quantity-desc.png) |
-| **Sort( IceCream; Quantity + OnOrder )** |Сортирует **IceCream** по сумме столбцов **Quantity** и **OnOrder**, которая вычисляется отдельно для каждой записи. При суммировании мы получаем числовые данные, поэтому таблица сортируется по числовым значениям.  По умолчанию используется порядок сортировки по возрастанию.  Так как записи сортируются по формуле, а не по прямым значениям столбцов, для этого примера нет аналога с использованием функции **SortByColumns**. |![](media/function-sort/icecream-total.png) |
-| **Sort( Sort( IceCream; OnOrder ); Quantity )**<br><br>**SortByColumns( IceCream; "OnOrder"; Ascending; "Quantity"; Ascending )** |Сортирует **IceCream** сначала по столбцу **OnOrder**, а затем по столбцу **Quantity**.  Обратите внимание, что строка "Pistachio" оказалась выше строки "Vanilla" при сортировке по столбцу **OnOrder**, а затем они заняли места рядом в соответствии со значениями в столбце **Quantity**. |![](media/function-sort/icecream-onorder-quantity.png) |
-| **SortByColumns( IceCream; "Flavor"; [&nbsp;"Pistachio";&nbsp;"Strawberry"&nbsp;] )** |Сортирует **IceCream** по столбцу **Flavor** на основе таблицы с одним столбцом, содержащей значения "Pistachio" и "Strawberry".  Записи, в которых столбец **Flavor** имеет значения "Pistachio", будут отображаться в результате первыми, а за ними — записи со значением "Strawberry".  Все записи со значениями столбца **Flavor**, не входящими в этот список, например "Vanilla", будут отображаться после записей, для которых найдены совпадения. |![](media/function-sort/icecream-onflavor-sorttable.png) |
+| **Sort( IceCream, Flavor )**<br><br>**SortByColumns( IceCream, "Flavor" )** |Сортирует **IceCream** по столбцу **Flavor**. Столбец **Flavor** содержит строковые данные, поэтому таблица сортируется в алфавитном порядке. По умолчанию используется порядок сортировки по возрастанию. |<style> img { max-width: none; } </style> ![](media/function-sort/icecream-flavor.png) |
+| **Sort( IceCream, Quantity )**<br><br>**SortByColumns( IceCream, "Quantity" )** |Сортирует **IceCream** по столбцу **Quantity**.  Столбец **Quantity** содержит числовые данные, поэтому таблица сортируется по числовым значениям.  По умолчанию используется порядок сортировки по возрастанию. |![](media/function-sort/icecream-quantity-asc.png) |
+| **Sort( IceCream, Quantity, SortOrder.Descending )**<br><br>**SortByColumns( IceCream, "Quantity", SortOrder.Descending )** |Сортирует **IceCream** по столбцу **Quantity**.  Столбец **Quantity** содержит числовые данные, поэтому сортировка выполняется по числовым значениям.  Указан порядок сортировки по убыванию. |![](media/function-sort/icecream-quantity-desc.png) |
+| **Sort( IceCream, Quantity + OnOrder )** |Сортирует **IceCream** по сумме столбцов **Quantity** и **OnOrder**, которая вычисляется отдельно для каждой записи. При суммировании мы получаем числовые данные, поэтому таблица сортируется по числовым значениям.  По умолчанию используется порядок сортировки по возрастанию.  Так как записи сортируются по формуле, а не по прямым значениям столбцов, для этого примера нет аналога с использованием функции **SortByColumns**. |![](media/function-sort/icecream-total.png) |
+| **Sort( Sort( IceCream, OnOrder ), Quantity )**<br><br>**SortByColumns( IceCream, "OnOrder", Ascending, "Quantity", Ascending )** |Сортирует **IceCream** сначала по столбцу **OnOrder**, а затем по столбцу **Quantity**.  Обратите внимание, что строка "Pistachio" оказалась выше строки "Vanilla" при сортировке по столбцу **OnOrder**, а затем они заняли места рядом в соответствии со значениями в столбце **Quantity**. |![](media/function-sort/icecream-onorder-quantity.png) |
+| **SortByColumns( IceCream, "Flavor", [&nbsp;"Pistachio",&nbsp;"Strawberry"&nbsp;] )** |Сортирует **IceCream** по столбцу **Flavor** на основе таблицы с одним столбцом, содержащей значения "Pistachio" и "Strawberry".  Записи, в которых столбец **Flavor** имеет значения "Pistachio", будут отображаться в результате первыми, а за ними — записи со значением "Strawberry".  Все записи со значениями столбца **Flavor**, не входящими в этот список, например "Vanilla", будут отображаться после записей, для которых найдены совпадения. |![](media/function-sort/icecream-onflavor-sorttable.png) |
 
 ### <a name="step-by-step"></a>Шаг за шагом
 Чтобы самостоятельно выполнить эти примеры, создайте источник данных **IceCream** в виде [коллекции](../working-with-data-sources.md#collections) следующим образом.
 
-1. Добавьте кнопку и задайте следующую формулу в качестве значения свойства **[OnSelect](../controls/properties-core.md)** :<br>**ClearCollect( IceCream; { Flavor: «Chocolate»; Quantity: 100; OnOrder: 150}; {flavor:  «Vanilla»; Quantity: 200; OnOrder: 20}; {flavor: «Strawberry»; Quantity: 300; OnOrder: 0}; {flavor: «Mint Chocolate»; Quantity: 60; OnOrder: 100}; {flavor: «Pistachio»; Quantity: 200; OnOrder: 10 } )**
+1. Добавьте кнопку и задайте следующую формулу в качестве значения свойства **[OnSelect](../controls/properties-core.md)** :<br>**ClearCollect (Ицекреам, {версия: "Шоколад", количество: 100, в порядке: 150}, {версия:  "Обычный", количество: 200, в порядке: 20}, {версия: "Strawberry", количество: 300, в порядке: 0}, {версия: "Mint шоколад", Quantity: 60, в порядке: 100}, {версия: "Фисташковые", количество: 200, в порядке: 10})**
 2. Откройте предварительный просмотр приложения, нажмите эту кнопку, затем нажмите клавишу Esc, чтобы вернуться в рабочую область по умолчанию.
 3. Выберите пункт **Коллекции** в меню **Файл**, чтобы отобразить только что созданную коллекцию, затем нажмите клавишу Esc, чтобы вернуться в рабочую область по умолчанию.
 
 #### <a name="sort"></a>Сортировать
 1. Добавьте еще одну кнопку и задайте следующую формулу в качестве значения свойства **[OnSelect](../controls/properties-core.md)** :<br>
-   **ClearCollect( SortByFlavor; Sort( IceCream; Flavor ) )**
+   **ClearCollect( SortByFlavor, Sort( IceCream, Flavor ) )**
    
      Указанная выше формула создает вторую коллекцию с именем **SortByFlavor**, все данные в которой будут совпадать с данными из коллекции **Ice Cream**. Но в этой новой коллекции данные отсортированы по возрастанию в алфавитном порядке по значениям столбца **Flavor**.
 2. Нажмите клавишу F5, нажмите новую кнопку, затем нажмите клавишу ESC.
@@ -102,9 +101,9 @@ ms.PowerAppsDecimalTransform: true
 
 #### <a name="sortbycolumns"></a>SortByColumns
 1. Добавьте еще одну кнопку и задайте следующую формулу в качестве значения свойства **[OnSelect](../controls/properties-core.md)** :<br>
-   **ClearCollect( SortByQuantity; SortByColumns( IceCream; "Quantity"; Ascending; "Flavor"; Descending ) )**
+   **ClearCollect( SortByQuantity, SortByColumns( IceCream, "Quantity", Ascending, "Flavor", Descending ) )**
    
-     Указанная выше формула создает третью коллекцию с именем **SortByQuantity**, все данные в которой будут совпадать с данными из коллекции **Ice Cream**. Тем не менее, новая коллекция содержит данные отсортированы по числовым **количество** столбца в порядке возрастания, а затем по **Flavor** столбец в порядке убывания.
+     Указанная выше формула создает третью коллекцию с именем **SortByQuantity**, все данные в которой будут совпадать с данными из коллекции **Ice Cream**. Однако Новая коллекция содержит данные, отсортированные по столбцу **Quantity** в возрастающем порядке по возрастанию, а затем по столбцу « **разновидность** » в порядке убывания.
 2. Нажмите клавишу F5, нажмите новую кнопку, затем нажмите клавишу ESC.
 3. Выберите пункт **Коллекции** в меню **Файл**, чтобы отобразить все три коллекции, затем нажмите клавишу ESC, чтобы вернуться в рабочую область по умолчанию.
 4. Повторите последние три шага, указывая новые имена для создаваемых коллекций и формулы для функции **SortByColumns**, используя примеры из приведенной выше таблицы.

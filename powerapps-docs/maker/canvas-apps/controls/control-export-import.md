@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b78f88941fce85b9e63427635cb946f944aa120a
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 271d37c5cbd68b41a2818441161572bd9386e107
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63319955"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986740"
 ---
 # <a name="export-control-and-import-control-in-powerapps"></a>Элементы управления "Экспорт" и "Импорт" в PowerApps
 Элементы управления для экспорта данных в локальный файл, а затем импорта этих данных в другое приложение в PowerApps.
@@ -30,7 +29,7 @@ ms.PowerAppsDecimalTransform: true
 ## <a name="warning"></a>Предупреждение
 Включение этой функции в приложении может привести к уязвимостям системы безопасности и утечке данных.  Рекомендуется предложить пользователям импортировать только распознанные и надежные файлы и экспортировать только те данные, которые не являются конфиденциальными.
 
-## <a name="limitations"></a>Ограничения
+## <a name="limitations"></a>Ограничений
 Функция экспорта не поддерживается в браузерах.
 
 ## <a name="key-properties"></a>Основные свойства
@@ -67,7 +66,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
+**[FontWeight](properties-text.md)** — вес текста в элементе управления: **Полужирный**, **полужирный**, **обычный**или **более светлый**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -116,8 +115,8 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="example"></a>Пример
-1. Добавьте элемент управления **[Кнопка](control-button.md)** и задайте следующую формулу в качестве значения свойства **[OnSelect](properties-core.md)**:
-   <br>**ClearCollect(Products; {Name:"Европа"; Price:"10,99"}; {Name:"Ганимед"; Price:"12,49"}; {Name:"Каллисто"; Price:"11,79"})**
+1. Добавьте элемент управления **[Кнопка](control-button.md)** и задайте следующую формулу в качестве значения свойства **[OnSelect](properties-core.md)** :
+   <br>**ClearCollect(Products, {Name:"Европа", Price:"10,99"}, {Name:"Ганимед", Price:"12,49"}, {Name:"Каллисто", Price:"11,79"})**
    
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
    
@@ -127,10 +126,10 @@ ms.PowerAppsDecimalTransform: true
 4. Нажмите клавишу F5, щелкните элемент управления **Экспорт** или коснитесь его, а затем укажите имя файла, в который необходимо экспортировать данные.
 5. Щелкните или коснитесь **Сохранить** и нажмите клавишу ESC, чтобы вернуться в рабочую область по умолчанию.
 6. В новое или имеющееся приложение добавьте элемент управления **Импорт**, назовите его **MyData** и задайте для его свойства **[OnSelect](properties-core.md)** эту формулу:<br>
-   **Collect(ImportedProducts; MyData.Data)**
+   **Collect(ImportedProducts, MyData.Data)**
 7. Нажмите клавишу F5, щелкните или коснитесь **MyData**, щелкните экспортированный файл или коснитесь его, а затем выберите или коснитесь **Открыть**.
 8. Нажмите клавишу ESC, в меню **Файл** выберите или коснитесь **Коллекции** и убедитесь, что текущее приложение содержит экспортированные данные.
 
 
 ## <a name="accessibility-guidelines"></a>Руководство по настройке специальных возможностей
-**Экспорт** и **Импорт** — это всего лишь специальные кнопки, поэтому см. инструкции для элемента **[Кнопка](control-button.md)**.
+**Экспорт** и **Импорт** — это всего лишь специальные кнопки, поэтому см. инструкции для элемента **[Кнопка](control-button.md)** .

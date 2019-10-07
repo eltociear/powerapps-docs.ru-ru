@@ -6,22 +6,21 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d909b41dd61fca079fc409b51373af0789a3db84
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: f62aa84867a3aa4eae582b3fde320e84becdeeff
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548715"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986302"
 ---
-# <a name="label-control-in-canvas-apps"></a>Метки элемента управления в приложениях на основе холста
+# <a name="label-control-in-canvas-apps"></a>Элемент управления Label в приложениях Canvas
 
 Поле, в котором отображаются данные, например текст, числа, даты и валюта.
 
@@ -31,7 +30,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="key-properties"></a>Основные свойства
 
-**[AutoHeight](properties-core.md)**  — задайте значение true, чтобы разрешить метки автоматически увеличивать высоту, чтобы показать весь текст. Задайте значение false для усечения текста в соответствии с настроенной высотой поля.
+**[Автовысота](properties-core.md)** — задайте значение true, чтобы разрешить метке автоматически увеличивать высоту для отображения всего текста. Задайте значение false для усечения текста в соответствии с настроенной высотой поля.
 
 **[Color](properties-color-border.md)**  — цвет текста в элементе управления.
 
@@ -67,7 +66,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
-**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
+**[FontWeight](properties-text.md)** — вес текста в элементе управления: **Полужирный**, **полужирный**, **обычный**или **более светлый**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -81,11 +80,11 @@ ms.PowerAppsDecimalTransform: true
 
 **[LineHeight](properties-text.md)**  — расстояние, например, между строками текста или элементами списка.
 
-**[Live](properties-accessibility.md)**  – сведения об средства чтения с экрана объявляет о значение метки **текст** свойство.
+**[Динамическое](properties-accessibility.md)** : как средство чтения с экрана сообщает об изменениях значения свойства **Text** метки.
 
-* Если задано значение **Off**, средства чтения с экрана не объявляют об изменениях.
-* Если задано значение **вежливость**, средства чтения с экрана завершения Выступление перед объявляет о любые изменения, которые произошли во время чтения с экрана выступил.
-* Если задано значение **Assertive**, средства чтения с экрана прерывает работу самой собой, чтобы сообщить, любые изменения, которые произошли во время чтения с экрана выступил.
+* Если задано значение **Off**, средство чтения с экрана не объявляет об изменениях.
+* Если задано значение " **вежливо**", средство чтения с экрана завершает работу, прежде чем сообщать об изменениях, произошедших в процессе чтения с экрана.
+* Если задано значение " **Assert**", средство чтения с экрана прерывает работу, чтобы объявить об изменениях, произошедших в процессе чтения с экрана.
 
 **[OnSelect](properties-core.md)**  — поведение приложения, когда пользователь щелкает элемент управления или касается его.
 
@@ -105,7 +104,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[PressedFill](properties-color-border.md)**  — цвет фона элемента управления при щелчке или касании.
 
-**Роль** -семантической роль текст метки, такие как заголовок 1. Не изменяется стиль метки, но делает выходные данные нарушает семантическое упорядочивание для интерпретации средствами чтения с экрана.
+**Role** — семантическая роль текста метки, например заголовок 1. Не изменяет стиль метки, но делает выходные данные семантически правильными для интерпретации средствами чтения с экрана.
 
 **[Size](properties-text.md)**  — размер шрифта текста, отображаемого в элементе управления.
 
@@ -131,7 +130,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Text**(*значение*; "*формат_текста*")](../functions/function-text.md)
+[**Text**(*значение*, "*формат_текста*")](../functions/function-text.md)
 
 ## <a name="examples"></a>Примеры
 
@@ -155,8 +154,8 @@ ms.PowerAppsDecimalTransform: true
 
 Здесь вы создадите набор данных с названием **CityPopulations**, содержащий данные о численности населения в разных городах Европы. Затем вы покажете эти данные в коллекции, содержащей три метки, и укажете тип данных, отображаемых в каждой метке.
 
-1. Добавьте кнопку и задайте следующую формулу в качестве значения свойства **[OnSelect](properties-core.md)**:<br>
-   **ClearCollect(CityPopulations; {City:"Лондон"; Country:"Соединенное Королевство"; Population:8615000}; {City:"Берлин"; Country:"Германия"; Population:3562000}; {City:"Мадрид"; Country:"Испания"; Population:3165000}; {City:"Рим"; Country:"Италия"; Population:2874000}; {City:"Париж"; Country:"Франция"; Population:2273000}; {City:"Гамбург"; Country:"Германия"; Population:1760000}; {City:"Барселона"; Country:"Испания"; Population:1602000}; {City:"Мюнхен"; Country:"Германия"; Population:1494000}; {City:"Милан"; Country:"Италия"; Population:1344000})**
+1. Добавьте кнопку и задайте следующую формулу в качестве значения свойства **[OnSelect](properties-core.md)** :<br>
+   **ClearCollect(CityPopulations, {City:"Лондон", Country:"Соединенное Королевство", Population:8615000}, {City:"Берлин", Country:"Германия", Population:3562000}, {City:"Мадрид", Country:"Испания", Population:3165000}, {City:"Рим", Country:"Италия", Population:2874000}, {City:"Париж", Country:"Франция", Population:2273000}, {City:"Гамбург", Country:"Германия", Population:1760000}, {City:"Барселона", Country:"Испания", Population:1602000}, {City:"Мюнхен", Country:"Германия", Population:1494000}, {City:"Милан", Country:"Италия", Population:1344000})**
 2. Нажмите клавишу F5, нажмите кнопку, затем нажмите клавишу ESC.
 3. Добавьте текстовую коллекцию и укажите для свойства **[Items](properties-core.md)** значение **CityPopulations**.
 
@@ -167,19 +166,19 @@ ms.PowerAppsDecimalTransform: true
 
 Несмотря на свое название элемент управления **Label** не должен использоваться в качестве метки для другого элемента управления. Он может использоваться для отображения любого фрагмента текста.
 
-Элемент управления **Label** может использоваться в качестве кнопки или ссылки, если настроено поведение **[OnSelect](properties-core.md)**. При этом применяются те же рекомендации по настройке специальных возможностей, как и для кнопок.
+Элемент управления **Label** может использоваться в качестве кнопки или ссылки, если настроено поведение **[OnSelect](properties-core.md)** . При этом применяются те же рекомендации по настройке специальных возможностей, как и для кнопок.
 
 ### <a name="color-contrast"></a>Контрастность
 
 Необходимо настроить достаточный контраст для следующих элементов:
 
-* **[Color](properties-color-border.md)** и **[Fill](properties-color-border.md)**;
+* **[Color](properties-color-border.md)** и **[Fill](properties-color-border.md)** ;
 * применяются другие [стандартные требования по цветовому контрасту](../accessible-apps-color.md) (при использовании в качестве кнопки или ссылки).
 
 ### <a name="screen-reader-support"></a>Поддержка чтения с экрана
 
-* Должен присутствовать элемент **[Text](properties-core.md)**.
-* **[Live](properties-accessibility.md)**  должно быть присвоено **вежливость** или **Assertive** Если чтения с экрана должно объявлять примет значение **текст** свойство.
+* Должен присутствовать элемент **[Text](properties-core.md)** .
+* Если средство чтения с экрана должно сообщать об изменениях значения свойства **Text** , в **[режиме реального времени](properties-accessibility.md)** должно быть задано **повежливо** или **проверочное** .
 
   > [!NOTE]
   > Средства чтения с экрана будут обрабатывать элемент **Label** как кнопку, если значение **[TabIndex](properties-accessibility.md)** равно нулю или больше нуля.
@@ -188,9 +187,9 @@ ms.PowerAppsDecimalTransform: true
 
 * Элемент **Label** должен выглядеть как ссылка, если он используется в качестве ссылки.
   * Задайте для **[Underline](properties-text.md)** значение **true**.
-  * Элемент **[HoverColor](properties-color-border.md)** должен отличаться от элемента **[Color](properties-color-border.md)**.
+  * Элемент **[HoverColor](properties-color-border.md)** должен отличаться от элемента **[Color](properties-color-border.md)** .
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 
 * Значение **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, если текст используется как кнопка или ссылка. При этом пользователи смогут применять клавиатуру для навигации.
-* Индикаторы фокусировки должны быть четко видны, если текст используется как кнопка или ссылка. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.
+* Индикаторы фокусировки должны быть четко видны, если текст используется как кнопка или ссылка. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .

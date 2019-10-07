@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/28/2017
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 05d02dca1afe6eba0864e7a1da6281998f62b398
-ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
+ms.openlocfilehash: 099d59b222cf40f95214056eca8e96cfce9cc053
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68474009"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71987378"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>Общие сведения о соединителях для приложений на основе холста в PowerApps
 Большинство приложений основываются на данных, в том числе и те, которые создаются в PowerApps. Эти данные хранятся в *источниках данных*. Вы переносите их в приложение при создании *подключения*. Для подключения используется определенный *соединитель*, который обеспечивает обмен данными с источником данных. В PowerApps есть соединители для многих популярных служб и локальных источников данных, включая SharePoint, SQL Server, Office 365, Salesforce и Twitter. Чтобы начать добавлять данные в приложение на основе холста, ознакомьтесь со статьей [Добавление подключения к данным в PowerApps](add-data-connection.md).

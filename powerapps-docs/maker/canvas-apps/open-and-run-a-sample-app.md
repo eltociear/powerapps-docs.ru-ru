@@ -1,26 +1,26 @@
 ---
 title: Использование примера приложения | Документация Майкрософт
 description: Пошаговые инструкции по созданию приложения на основе холста с помощью образца в PowerApps
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/11/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1cac73bad25bf1179f88030ee1f02589189610e0
-ms.sourcegitcommit: 4201d95421a74da19c585239b34d7d8620c74113
+ms.openlocfilehash: f03240e2fb2e850df0f1b18fb126833fb5759326
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65546871"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71989704"
 ---
-# <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>Создание приложения на основе холста с помощью образца в PowerApps
+# <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>Создание приложения Canvas из примера в PowerApps
 В этом кратком руководстве вы создадите приложение на основе холста из образца, чтобы изучить возможности проектирования и принципы, которые можно применять при разработке собственных приложений на основе холста.
 
 Во всех примерах используются вымышленные данные для демонстрации реальной ситуации. Для хранения этих данных потребуется облачная учетная запись хранения, например Dropbox, Google Диск или OneDrive.
@@ -64,7 +64,7 @@ ms.locfileid: "65546871"
 1. У левого края экрана выберите **Сохранить**. 
 
 ## <a name="next-steps"></a>Дальнейшие действия
-В этом кратком руководстве вы создали собственное приложение на основе образца, в котором используются вымышленные данные, хранящиеся в облачной учетной записи. Для получения дополнительных сведений о том, как создать приложение можно также автоматически создать приложение на основе данных из других источников, таких как Common Data Service, SharePoint или Excel.
+В этом кратком руководстве вы создали собственное приложение на основе образца, в котором используются вымышленные данные, хранящиеся в облачной учетной записи. Для получения дополнительных сведений о создании приложения можно также автоматически создать приложение на основе данных в других источниках, таких как Common Data Service, SharePoint или Excel.
 
 > [!div class="nextstepaction"]
 > [Создание приложения](data-platform-create-app.md)

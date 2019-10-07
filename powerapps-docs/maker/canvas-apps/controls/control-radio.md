@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 07/06/2018
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2b1527f8a7bf157c88b85ae9721626b6fc14f5a9
-ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
+ms.openlocfilehash: e3a1e1c5a62552f9ef034b6f4985213b65247627
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65517372"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986385"
 ---
 # <a name="radio-control-in-powerapps"></a>Элемент управления "Переключатель" в PowerApps
 
@@ -41,7 +40,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Value](properties-core.md)**  — значение элемента управления для ввода.
 
-**Выбранный** — запись данных, представляющий выбранный элемент.
+**Выбрано** — запись данных, представляющая выбранный элемент.
 
 ## <a name="all-properties"></a>Все свойства
 
@@ -71,7 +70,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
+**[FontWeight](properties-text.md)** — вес текста в элементе управления: **Полужирный**, **полужирный**, **обычный**или **более светлый**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -109,7 +108,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Reset](properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.
 
-**(Устарело) SelectedText** — строковое значение, представляющее выбранный элемент.
+**Селектедтекст (не рекомендуется)** — строковое значение, представляющее выбранный элемент.
 
 **[Size](properties-text.md)**  — размер шрифта текста, отображаемого в элементе управления.
 
@@ -131,19 +130,19 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Distinct**(*источник*; *столбец*)](../functions/function-distinct.md)
+[**Distinct**(*источник*, *столбец*)](../functions/function-distinct.md)
 
 ## <a name="example"></a>Пример
 
 1. Добавьте элемент управления **Переключатель**, назовите его **Pricing** и укажите для свойства **[Items](properties-core.md)** следующую формулу:
 
-    **["Standard"; "Premium"]**
+    **["Standard", "Premium"]**
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
 2. Добавьте элемент управления **[Метка](control-text-box.md)** , переместите его под элемент управления **Переключатель** и укажите для свойства **[Text](properties-core.md)** элемента **[Метка](control-text-box.md)** следующую формулу:
 
-    **If("Premium" in Pricing.Selected.Value; "200 долларов в день"; "150 долларов в день")**
+    **If("Premium" in Pricing.Selected.Value, "200 долларов в день", "150 долларов в день")**
 
     Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 

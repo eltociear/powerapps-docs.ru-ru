@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eef2209ff604c0de1efdc9a3ad1c98662817a8bc
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 1bcaa98388c2adafac3456bc123b6d766e790697
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551015"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984991"
 ---
 # <a name="exit-function-in-powerapps"></a>Функция Exit в PowerApps
 Выполняет выход из запущенного приложения.

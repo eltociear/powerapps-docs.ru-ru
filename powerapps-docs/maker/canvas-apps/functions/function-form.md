@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 07/06/2017
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 930439325b60b60fefed18b66c22d9d4f97f55b7
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 20515a65a66dc3fea1236924d9c29574f63e16a8
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61550992"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992707"
 ---
 # <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>Функции EditForm, NewForm, SubmitForm, ResetForm и ViewForm в PowerApps
 Просмотр, изменение или создание элемента, сохранение содержимого и сброс элементов управления в **[форме редактирования](../controls/control-form-detail.md)** .
@@ -60,10 +59,10 @@ ms.PowerAppsDecimalTransform: true
 Функция **ResetForm** сбрасывает содержимое формы к начальным значениям, которые были установлены до внесения пользователем любых изменений. Если форма находится в режиме **FormMode.New**, устанавливается режим **FormMode.Edit**. Также запускается поведение **[OnReset](../controls/control-form-detail.md)** , определенное для элемента управления "Форма".  Можно также сбросить отдельные элементы управления с помощью функции **[Сброс](function-reset.md)** . Но это можно сделать только в форме.
 
 ### <a name="viewform"></a>ViewForm
-Функция **ViewForm** меняет режим элемента управления "Форма" на **FormMode.New**. В этом режиме форма заполняется на основании содержимого свойства **[Item](../controls/control-form-detail.md)** , установленного для элемента управления "Форма".  **SubmitForm** и **ResetForm** функции не оказывают влияния в этом режиме.
+Функция **ViewForm** меняет режим элемента управления "Форма" на **FormMode.New**. В этом режиме форма заполняется на основании содержимого свойства **[Item](../controls/control-form-detail.md)** , установленного для элемента управления "Форма".  Функции **субмитформ** и **ResetForm** не оказывают влияния в этом режиме.
 
-### <a name="displaymode-property"></a>Свойство DisplayMode
-Текущий режим можно узнать с помощью свойства **Режим**.  Режим также определяет значение свойства **DisplayMode**, которое могут использовать карточки данных и элементы управления в элементе управления "Форма".  Часто, карточки данных **DisplayMode** свойству будет присвоено **Parent.DisplayMode** (со ссылками на форме) как элемента управления **DisplayMode** (со ссылками на свойство карточки данных): 
+### <a name="displaymode-property"></a>DisplayMode, свойство
+Текущий режим можно узнать с помощью свойства **Режим**.  Режим также определяет значение свойства **DisplayMode**, которое могут использовать карточки данных и элементы управления в элементе управления "Форма".  Часто свойству **DisplayMode** карточки данных будет присвоено значение **Parent. DisplayMode** (ссылка на форму) как свойство **DisplayMode** элемента управления (ссылающееся на карточку данных): 
 
 | Режим | DisplayMode | Описание |
 | --- | --- | --- |
@@ -111,12 +110,12 @@ ms.PowerAppsDecimalTransform: true
    * Если возникла ошибка при передаче, **ErrorText** получает понятное сообщение об ошибке и остается открытым текущий экран, где пользователь может устранить проблему и повторить попытку.
 4. Добавьте элемент управления "Кнопка", задайте значение **Отменить** для ее свойства **[Text](../controls/properties-core.md)** и задайте следующую формулу в качестве значения свойства **[OnSelect](../controls/properties-core.md)** :
    
-    **ResetForm( EditForm );; Back()**
+    **ResetForm( EditForm ); Back()**
    
     Когда пользователь выбирает кнопку **Отменить**, значения в элементе управления "Форма" сбрасываются до того состояния, в котором они находились до редактирования пользователем. Снова открывается предыдущий экран, и элемент управления "Форма" переходит в режим **Edit**, если для него был назначен режим **New**.
 5. Добавьте элемент управления "Кнопка", задайте значение **Добавить** для ее свойства **[Text](../controls/properties-core.md)** и задайте следующую формулу в качестве значения свойства **[OnSelect](../controls/properties-core.md)** :
    
-    **NewForm( EditForm );; Navigate( EditScreen; None )**
+    **NewForm( EditForm ); Navigate( EditScreen, None )**
    
     Когда пользователь нажимает кнопку **New**, элемент управления "Форма" переключается в режим **New** и заполняется значениями по умолчанию для источника данных, назначенного этому элементу управления "Форма". После этого открывается экран, который содержит элемент управления "Форма". Теперь, когда выполняется функция **SubmitForm**, запись создается, а не обновляется.
 

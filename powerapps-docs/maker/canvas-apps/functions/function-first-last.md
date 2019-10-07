@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a66cf920f37870d13db187fe02a873bac7a44aa6
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 48e8311d5da00b02cbefbf6f47661c89adcc80a5
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551107"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992719"
 ---
 # <a name="first-firstn-last-and-lastn-functions-in-powerapps"></a>Функции First, FirstN, Last и LastN в PowerApps
 Возвращает первый или последний набор [записей](../working-with-tables.md#records) таблицы.
@@ -42,7 +41,7 @@ ms.PowerAppsDecimalTransform: true
 
 * *Table* — обязательный аргумент. Таблица, для которой выполняется операция.
 
-**FirstN**( *Таблица* [; *Число_записей* ] )<br>**LastN**( *Таблица* [; *Число_записей* ] )
+**FirstN**( *Таблица* [, *Число_записей* ] )<br>**LastN**( *Таблица* [, *Число_записей* ] )
 
 * *Table* — обязательный аргумент. Таблица, для которой выполняется операция.
 * *Число_записей* — необязательный аргумент.  Количество возвращаемых записей. Если не указать этот аргумент, то функция возвратит одну запись.
@@ -52,5 +51,5 @@ ms.PowerAppsDecimalTransform: true
 **First(Employees)**
 
 Эта формула возвращает последние 15 записей из таблицы с именем **Employees**:<br>
-**LastN(Employees; 15)**
+**LastN(Employees, 15)**
 

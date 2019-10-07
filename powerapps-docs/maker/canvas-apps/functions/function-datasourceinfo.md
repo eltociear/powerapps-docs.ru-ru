@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/11/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d856ccd086a919e206175c25eee19f435325fb8c
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 33a119e1e023ed8a28bdabe9ac5caba0723476df
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551307"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985309"
 ---
 # <a name="datasourceinfo-function-in-powerapps"></a>Функция DataSourceInfo в PowerApps
 Содержит сведения об [источнике данных](../working-with-data-sources.md).
@@ -59,14 +58,14 @@ ms.PowerAppsDecimalTransform: true
 | **DataSourceInfo.ReadPermission** |Логическое значение |Имеет ли текущий пользователь разрешение на чтение записей в этом источнике данных? Если значение не задано источником данных, то возвращается ответ **true**. |
 
 ## <a name="syntax"></a>Синтаксис
-**DataSourceInfo**( *Источник_данных*; *Сведения*; *Имя_столбца* )
+**DataSourceInfo**( *Источник_данных*, *Сведения*, *Имя_столбца* )
 
 * *источник_данных* — обязательный аргумент. Источник данных, который необходимо использовать.
 * *Сведения* — обязательный аргумент. Тип сведений, которые требуется получить.
 * *Имя_столбца* — необязательный аргумент. Для сведений на уровне столбца это имя столбца в виде строки. Столбец **Phone** будет передаваться как **"Phone"** (включая двойные кавычки). Для сведений на уровне источника данных аргумент *ColumnName* не может использоваться.
   
     > [!NOTE]
-  > Для источников данных SharePoint и Excel, содержащих имена столбцов с пробелами, вместо каждого пробела укажите **"\_x0020\_"**. Например, **Имя столбца** укажите как **Имя_x0020_столбца**.
+  > Для источников данных SharePoint и Excel, содержащих имена столбцов с пробелами, вместо каждого пробела укажите **"\_x0020\_"** . Например, **Имя столбца** укажите как **Имя_x0020_столбца**.
 
 ## <a name="examples"></a>Примеры
 Примеры в этом разделе используют следующий источник данных с именем **IceCream**:
@@ -84,14 +83,14 @@ ms.PowerAppsDecimalTransform: true
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.DisplayName;&nbsp;"Quantity"&nbsp;)** |Возвращает отображаемое имя для столбца **Quantity** источника данных **IceCream**. |"Quantity on Hand" |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.MaxLength;&nbsp;"Flavor"&nbsp;)** |Возвращает максимальную длину строки для столбца **Flavor** источника данных **IceCream**. |30 |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.Required;&nbsp;"Flavor"&nbsp;)** |Является ли столбец **Flavor** источника данных **IceCream** обязательным? |**true** |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.Required;&nbsp;"Quantity"&nbsp;)** |Является ли столбец **Quantity** источника данных **IceCream** обязательным? |**false** |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.MaxValue;&nbsp;"Quantity"&nbsp;)** |Возвращает максимальное числовое значение для столбца **Quantity** источника данных **IceCream**. |100 |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.MinValue;&nbsp;"Quantity"&nbsp;)** |Возвращает минимальное числовое значение для столбца **Quantity** источника данных **IceCream**. |0 |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.ReadPermission)** |Может ли текущий пользователь просматривать записи в источнике данных **IceCream**? |**true** |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.EditPermission)** |Может ли текущий пользователь изменять записи в источнике данных **IceCream**? |**true** |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.CreatePermission)** |Может ли текущий пользователь создавать записи в источнике данных **IceCream**? |**false** |
-| **DataSourceInfo(&nbsp;IceCream; DataSourceInfo.DeletePermission)** |Может ли текущий пользователь удалять записи в источнике данных **IceCream**? |**false** |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.DisplayName,&nbsp;"Quantity"&nbsp;)** |Возвращает отображаемое имя для столбца **Quantity** источника данных **IceCream**. |"Quantity on Hand" |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.MaxLength,&nbsp;"Flavor"&nbsp;)** |Возвращает максимальную длину строки для столбца **Flavor** источника данных **IceCream**. |30 |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.Required,&nbsp;"Flavor"&nbsp;)** |Является ли столбец **Flavor** источника данных **IceCream** обязательным? |**true** |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.Required,&nbsp;"Quantity"&nbsp;)** |Является ли столбец **Quantity** источника данных **IceCream** обязательным? |**false** |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.MaxValue,&nbsp;"Quantity"&nbsp;)** |Возвращает максимальное числовое значение для столбца **Quantity** источника данных **IceCream**. |100 |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.MinValue,&nbsp;"Quantity"&nbsp;)** |Возвращает минимальное числовое значение для столбца **Quantity** источника данных **IceCream**. |0 |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.ReadPermission)** |Может ли текущий пользователь просматривать записи в источнике данных **IceCream**? |**true** |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.EditPermission)** |Может ли текущий пользователь изменять записи в источнике данных **IceCream**? |**true** |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.CreatePermission)** |Может ли текущий пользователь создавать записи в источнике данных **IceCream**? |**false** |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.DeletePermission)** |Может ли текущий пользователь удалять записи в источнике данных **IceCream**? |**false** |
 

@@ -1,27 +1,26 @@
 ---
 title: Руководство по настройке коллекции в созданном приложении | Документация Майкрософт
 description: С помощью этого руководства вы настроите отображаемые в коллекции данные и другие элементы приложения, автоматически созданного в PowerApps.
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: tutorial
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/06/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4ca9ed14f96dbad52fe6f7b0318f520dbdd33d10
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: d12f667c1ff1fbf8424840b887e0f9394197ee2c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61561434"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986055"
 ---
-# <a name="tutorial-customize-a-gallery-in-powerapps"></a>Учебник. Настройка коллекции в PowerApps
+# <a name="tutorial-customize-a-gallery-in-powerapps"></a>Показано Настройка коллекции в PowerApps
 
 С помощью этого руководства вы настроите список записей, называемый коллекцией, и внесете ряд других изменений в приложение, автоматически созданное в Microsoft PowerApps. Пользователи смогут управлять данными в приложении и без этих изменений, но настройка с учетом требований вашей организации упростит работу.
 
@@ -48,13 +47,13 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="prerequisites"></a>Технические условия
 
-[Создание приложения](data-platform-create-app.md) из **учетные записи** сущности Common Data Service.
+[Создайте приложение](data-platform-create-app.md) из сущности **accounts** объекта Common Data Service.
 
 ## <a name="open-the-generated-app"></a>Открытие созданного приложения
 
 1. Войдите в [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), а затем выберите **Приложения** у левого края экрана.
 
-1. Найдите созданное приложение, щелкните значок многоточия (**...**), а затем выберите **Редактировать**.
+1. Найдите созданное приложение, щелкните значок многоточия ( **...** ), а затем выберите **Редактировать**.
 
     ![Открытие приложения для изменения](./media/customize-layout-sharepoint/open-app.png)
 
@@ -68,15 +67,15 @@ ms.PowerAppsDecimalTransform: true
 
     ![Выбор коллекции](media/customize-layout-sharepoint/select-gallery-1.png)
 
-1. На **свойства** вкладку на панели справа откройте список вариантов в разделе **макета**, а затем выберите вариант, который содержит только заголовок.
+1. На вкладке **Свойства** правой панели откройте список параметров в разделе **Макет**, а затем выберите параметр, в котором отображается только заголовок.
 
     ![Выбор макета, содержащего только заголовок](./media/customize-layout-sharepoint/choose-layout.png)
 
-1. Рядом с полем **поля**выберите **изменить**, а затем выберите стрелку вниз в поле «Заголовок».
+1. Рядом с полем **поля**выберите **изменить**, а затем щелкните стрелку вниз для поля Заголовок.
 
     Имя этого элемента управления будет оканчиваться на числовое значение, такое как **Title1**, которое может быть различным в зависимости от других выполненных действий.
 
-1. В списке параметров выберите **имя учетной записи**, а затем закройте **данных** области.
+1. В списке параметров выберите **имя учетной записи**, а затем закройте панель **данных** .
 
     Теперь в коллекции отображаются имена учетных записей.
 
@@ -96,7 +95,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Скопируйте эту формулу и вставьте ее в строку формул.
 
-    ```SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; Descending; Ascending))```
+    ```SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, Descending, Ascending))```
 
     Эта формула действует следующим образом:
 
@@ -143,7 +142,7 @@ ms.PowerAppsDecimalTransform: true
 
     ![Выбор коллекции](./media/customize-layout-sharepoint/select-gallery-sorted.png)
 
-1. Укажите для ее **Показывать полосу прокрутки** свойства **true**.
+1. Задайте для свойства " **отобразить** элемент управления" в коллекции **значение true**.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

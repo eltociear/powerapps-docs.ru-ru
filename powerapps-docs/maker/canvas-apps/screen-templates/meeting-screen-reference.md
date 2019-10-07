@@ -1,659 +1,658 @@
 ---
-title: Справочник по шаблон экрана собрания для приложений на основе холста | Документация Майкрософт
-description: Понимание деталей того, как работает шаблон экрана собрания для приложений на основе холста в PowerApps
+title: Справочник по шаблону экрана собрания для приложений Canvas | Документация Майкрософт
+description: Сведения о том, как шаблон экрана собрания для приложений Canvas работает в PowerApps
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 01/03/2019
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a7559f84b43d3c0372dea71d49c35461ba9d4e57
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c62c3de56534201a81e9f4d453796ebd9b3a0366
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61539709"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71989571"
 ---
-# <a name="reference-information-about-the-meeting-screen-template-for-canvas-apps"></a>Справочные сведения о шаблоне собрания экрана для приложений на основе холста
+# <a name="reference-information-about-the-meeting-screen-template-for-canvas-apps"></a>Справочные сведения о шаблоне экрана собрания для приложений Canvas
 
-Для приложений на основе холста в PowerApps Узнайте, как каждый значительные элемент управления в шаблоне собрания экрана помогает реализовать экран общую функциональность по умолчанию. Этот видеокурс представляется формулах поведения и значения других свойств, которые определяют, каким образом элементы управления реагирует на действия пользователя. Обзорное обсуждение функциональные возможности по умолчанию на этом экране, см. в разделе [Обзор экрана собрания](meeting-screen-overview.md).
+Для приложений Canvas в PowerApps изучите, как каждый важный элемент управления в шаблоне экрана совещания влияет на общую функциональность экрана по умолчанию. Этот подробный обзор содержит формулы поведения и значения других свойств, определяющих реакцию элементов управления на вводимые пользователем данные. Подробное описание функций этого экрана по умолчанию см. в [обзоре экрана совещания](meeting-screen-overview.md).
 
-В этом разделе представлены некоторые существенные элементы управления и описываются выражения или формулы для различных свойства (такие как **элементы** и **OnSelect**) из этих элементов управления заданы:
+В этом разделе описываются некоторые важные элементы управления и объясняются выражения или формулы, в которых задаются различные свойства (например, **элементы** и **OnSelect**) этих элементов управления.
 
-* [Invite tab (LblInviteTab)](#invite-tab)
-* [Вкладка "Расписание" (LblScheduleTab)](#schedule-tab)
-* [Текстовое поле поиска](#text-search-box)
-* [Добавить значок (AddIcon)](#add-icon)
-* [Люди найти в коллекции](#people-browse-gallery) (+ дочерние элементы управления)
-* [Коллекции пользователей собрания](#meeting-people-gallery) (+ дочерние элементы управления)
-* [Выбор даты собрания (MeetingDateSelect)](#meeting-date-picker)
-* [Раскрывающегося списка продолжительность собрания (MeetingDurationSelect)](#meeting-duration-drop-down)
-* [Найти время собрания коллекции](#find-meeting-times-gallery) (+ дочерние элементы управления)
-* [Комнаты обзор коллекции](#room-browse-gallery) (+ дочерние элементы управления)
-* [Назад шеврон (RoomsBackNav)](#back-chevron) (не может быть видимым в том случае, если у клиента нет комнат списки)
-* [Значок "Отправить"](#send-icon)
+* [Вкладка "пригласить" (Лблинвитетаб)](#invite-tab)
+* [Вкладка "Расписание" (Лблсчедулетаб)](#schedule-tab)
+* [Поле поиска текста](#text-search-box)
+* [Значок "Добавить" (Аддикон)](#add-icon)
+* [Галерея обзора пользователей](#people-browse-gallery) (+ дочерние элементы управления)
+* [Коллекция людей для собраний](#meeting-people-gallery) (+ дочерние элементы управления)
+* [Средство выбора даты собрания (Митингдатеселект)](#meeting-date-picker)
+* [Раскрывающийся список длительности собрания (Митингдуратионселект)](#meeting-duration-drop-down)
+* [Коллекция "Поиск значений времени собрания](#find-meeting-times-gallery) " (+ дочерние элементы управления)
+* [Галерея обзора комнаты](#room-browse-gallery) (+ дочерние элементы управления)
+* [Значок "назад" (румсбаккнав)](#back-chevron) (может не отображаться, если у клиента нет списков комнат)
+* [Значок отправки](#send-icon)
 
 ## <a name="prerequisite"></a>Необходимое условие
 
-Знакомство с тем, как добавить и настроить экраны и другие элементы управления, как вы [Создание приложения в PowerApps](../data-platform-create-app-scratch.md).
+Знакомство с добавлением и настройкой экранов и других элементов управления при [создании приложения в PowerApps](../data-platform-create-app-scratch.md).
 
-## <a name="invite-tab"></a>Пригласить вкладку
+## <a name="invite-tab"></a>Вкладка "пригласить"
 
-   ![Элемент управления LblInviteTab](media/meeting-screen/meeting-invite-text.png)
+   ![Элемент управления Лблинвитетаб](media/meeting-screen/meeting-invite-text.png)
 
-* Свойство: **Цвет**<br>
-    Значение: `If( _showDetails; LblRecipientCount.Color; RectQuickActionBar.Fill )`
+* Свойства **Цвет**<br>
+    Значение: `If( _showDetails, LblRecipientCount.Color, RectQuickActionBar.Fill )`
 
-    **_showDetails** является переменная, используемая для определения ли **LblInviteTab** управления или **LblScheduleTab** выборе элемента управления. Если значение **_showDetails** — **true**, **LblScheduleTab** установлен; Если значение равно **false**, **LblInviteTab**  выбран. Это означает, что если значение **_showDetails** — **true** (на этой вкладке *не* выбранного), цвета вкладки соответствие **LblRecipientCount**. В противном случае оно совпадает со значением fill **RectQuickActionBar**.
+    **_showDetails** — это переменная, используемая для определения того, выбран ли элемент управления **лблинвитетаб** или **лблсчедулетаб** . Если значение **_showDetails** равно **true**, то выбирается **лблсчедулетаб** . Если значение равно **false**, то выбирается **лблинвитетаб** . Это означает, что если значение **_showDetails** равно **true** (Эта вкладка *не* выбрана), то цвет табуляции соответствует значению параметра **лблреЦипиенткаунт**. В противном случае он соответствует значению Fill параметра **ректкуиккактионбар**.
 
-* Свойство: **OnSelect**<br> 
-    Значение: `Set( _showDetails; false )`
+* Свойства **OnSelect**<br> 
+    Значение: `Set( _showDetails, false )`
 
-    Наборы **_showDetails** переменной **false**, это означает, что содержимое вкладки приглашение являются видимыми, а содержимое **расписание** вкладки скрыты.
+    Устанавливает переменную **_showDetails** в **значение false**, что означает, что содержимое вкладки приглашение видимо, а содержимое вкладки **Расписание** скрыто.
 
 ## <a name="schedule-tab"></a>Вкладка "Расписание"
 
-   ![Элемент управления LblInviteTab](media/meeting-screen/meeting-schedule-text.png)
+   ![Элемент управления Лблинвитетаб](media/meeting-screen/meeting-schedule-text.png)
 
-* Свойство: **Цвет**<br>
-    Значение: `If( !_showDetails; LblRecipientCount.Color; RectQuickActionBar.Fill )`
+* Свойства **Цвет**<br>
+    Значение: `If( !_showDetails, LblRecipientCount.Color, RectQuickActionBar.Fill )`
 
-    **_showDetails** является переменная, используемая для определения ли **LblInviteTab** управления или **LblScheduleTab** выборе элемента управления. Если это значение равно true, **LblScheduleTab** установлен; Если значение равно false, **LblInviteTab** является. Это означает, что если **_showDetails** имеет значение true (на этой вкладке *—* выбранного), цвета вкладки совпадает со значением fill **RectQuickActionBar**. В противном случае оно совпадает со значением цвета **LblRecipientCount**.
+    **_showDetails** — это переменная, используемая для определения того, выбран ли элемент управления **лблинвитетаб** или **лблсчедулетаб** . Если это так, **лблсчедулетаб** выбрано; Если значение равно false, **лблинвитетаб** имеет значение. Это означает, что если **_showDetails** имеет значение true ( *Эта вкладка* выбрана), то цвет вкладки соответствует значению заливки **ректкуиккактионбар**. В противном случае он соответствует значению цвета **лблреЦипиенткаунт**.
 
-* Свойство: **OnSelect**<br>
-    Значение: `Set( _showDetails; true )`
+* Свойства **OnSelect**<br>
+    Значение: `Set( _showDetails, true )`
 
-    Наборы **_showDetails** переменной **true**, что означает содержимое вкладка "Расписание" являются видимыми, а содержимое вкладки приглашение скрыты.
+    Устанавливает переменную **_showDetails** в **значение true**, что означает, что содержимое вкладки расписание отображается, а содержимое вкладки приглашение скрыто.
 
 ## <a name="text-search-box"></a>Текстовое поле поиска
 
-   ![Элемент управления TextSearchBox](media/meeting-screen/meeting-search-box.png)
+   ![Элемент управления Текстсеарчбокс](media/meeting-screen/meeting-search-box.png)
 
 <!--Include description of text search box control?-->
 
-Несколько других элементов управления на экране имеют зависимость от такой:
+Некоторые другие элементы управления на экране имеют зависимость от этого элемента:
 
-* Если пользователь начинает вводить любой текст, **PeopleBrowseGallery** становится видимым.
-* Если пользователь вводит допустимый адрес электронной почты, **AddIcon** становится видимым.
-* Когда пользователь выбирает пользователе **PeopleBrowseGallery** поиска содержимого, будут заменены.
+* Если пользователь начинает вводить текст, **пеоплебровсегаллери** станет видимым.
+* Если пользователь вводит допустимый адрес электронной почты, **аддикон** станет видимым.
+* Когда пользователь выбирает пользователя в **пеоплебровсегаллери** , содержимое поиска сбрасывается.
 
 ## <a name="add-icon"></a>Значок добавления
 
-   ![Элемент управления AddIcon](media/email-screen/email-add-icon.png)
+   ![Элемент управления Аддикон](media/email-screen/email-add-icon.png)
 
-Этот элемент управления позволяет пользователям добавлять людей, которые не существуют в их организации в список участников, для которого формируются собрания.
+Этот элемент управления позволяет пользователям добавлять пользователей, не существующих в Организации, в список участников для собранного собрания.
 
-* Свойство: **Видимым**<br>
-    Значение: Три логических проверяет, что все они должны возвращать для **true** для элемента управления должен отображаться:
+* Свойства **Ярлык**<br>
+    Значений Три логические проверки, которые должны вычислять **значение true** , чтобы элемент управления был видим:
 
-    ```powerapps-comma
+    ```powerapps-dot
     !IsBlank( TextSearchBox.Text ) &&
-        IsMatch( TextSearchBox.Text; Match.Email ) &&
+        IsMatch( TextSearchBox.Text, Match.Email ) &&
         Not( Trim( TextSearchBox.Text ) in MyPeople.UserPrincipalName )
     ```
 
-  Построчно, этот блок кода говорится, что **AddIcon** элемент управления является видимым только если:
+  Построчно, этот блок кода говорит, что элемент управления **аддикон** является видимым только в том случае, если:
 
-  * **TextSearchBox** содержит текст.
-  * Текст в **TextSearchBox** — это адрес электронной почты.
-  * Текст в **TextSearchBox** еще не существует в **MyPeople** коллекции.
+  * **Текстсеарчбокс** содержит текст.
+  * Текст в **текстсеарчбокс** является допустимым адресом электронной почты.
+  * Текст в **текстсеарчбокс** еще не существует в коллекции **мипеопле** .
 
-* Свойство: **OnSelect**<br> 
-    Значение: Объект **собирать** список инструкцию, чтобы добавить пользователя для этого участника, другой, чтобы обновить доступные встреч и несколько переменных переключатели:
+* Свойства **OnSelect**<br> 
+    Значений Инструкция " **получить** " для добавления пользователя в список участников, другой — для обновления времени собрания и нескольких переключений переменных:
 
-    ```powerapps-comma
-    Collect( MyPeople;
+    ```powerapps-dot
+    Collect( MyPeople,
         { 
-            DisplayName: TextSearchBox.Text; 
-            UserPrincipalName: TextSearchBox.Text; 
+            DisplayName: TextSearchBox.Text, 
+            UserPrincipalName: TextSearchBox.Text, 
             Mail: TextSearchBox.Text
         }
-    );;
+    );
     Concurrent(
-        Reset( TextSearchBox );
-        Set( _showMeetingTimes; false );
-        UpdateContext( { _loadMeetingTimes: true } );
-        Set( _selectedMeetingTime; Blank() );
-        Set( _selectedRoom; Blank() );
-        Set( _roomListSelected; false );
-        ClearCollect( MeetingTimes; 
+        Reset( TextSearchBox ),
+        Set( _showMeetingTimes, false ),
+        UpdateContext( { _loadMeetingTimes: true } ),
+        Set( _selectedMeetingTime, Blank() ),
+        Set( _selectedRoom, Blank() ),
+        Set( _roomListSelected, false ),
+        ClearCollect( MeetingTimes, 
             AddColumns(
                 'Office365'.FindMeetingTimes(
                     { 
-                        RequiredAttendees: Concat(MyPeople; UserPrincipalName & ";")
-                        MeetingDuration: MeetingDurationSelect.Selected.Minutes;
-                        Start: Text( DateAdd( MeetingDateSelect.SelectedDate; 8; Hours ); UTC );
-                        End: Text( DateAdd( MeetingDateSelect.SelectedDate; 17; Hours ); UTC );
-                        MaxCandidates: 15; 
-                        MinimumAttendeePercentage:1; 
-                        IsOrganizerOptional: false; 
+                        RequiredAttendees: Concat(MyPeople, UserPrincipalName & ";")
+                        MeetingDuration: MeetingDurationSelect.Selected.Minutes,
+                        Start: Text( DateAdd( MeetingDateSelect.SelectedDate, 8, Hours ), UTC ),
+                        End: Text( DateAdd( MeetingDateSelect.SelectedDate, 17, Hours ), UTC ),
+                        MaxCandidates: 15, 
+                        MinimumAttendeePercentage:1, 
+                        IsOrganizerOptional: false, 
                         ActivityDomain: "Work"
                     }
-                ).MeetingTimeSuggestions;
-                "StartTime"; MeetingTimeSlot.Start.DateTime; 
-                "EndTime"; MeetingTimeSlot.End.DateTime
+                ).MeetingTimeSuggestions,
+                "StartTime", MeetingTimeSlot.Start.DateTime, 
+                "EndTime", MeetingTimeSlot.End.DateTime
             )
         )
-    );;
-    UpdateContext( { _loadingMeetingTimes: false } );;
-    Set( _showMeetingTimes; true )
+    );
+    UpdateContext( { _loadingMeetingTimes: false } );
+    Set( _showMeetingTimes, true )
     ```
 
-  Выбор этого элемента управления добавляет допустимый адрес электронной почты (отображается только в том случае, если допустимый адрес электронной почты, введенного в **TextSearchBox**) для **MyPeople** коллекции, (данной коллекции в список участников) и затем обновляет доступных встреч с новой записью пользователя.
+  При выборе этого элемента управления добавляется допустимый адрес электронной почты (отображается только при вводе допустимого адреса электронной почты в **текстсеарчбокс**) в коллекцию **мипеопле** (Эта коллекция является списком участников), а затем обновляет доступное время собрания с помощью нового запись пользователя.
 
-  На низком уровне, этот блок кода:
-  1. Получает значение адреса электронной почты в **MyPeople** коллекции, сбор адрес электронной почты в **DisplayName**, **UserPrincipalName**, и **почты**  поля.
-  1. Сбрасывает содержимое **TextSearchBox** элемента управления.
-  1. Наборы **_showMeetingTimes** переменной **false**. Эта переменная определяет видимость **FindMeetingTimesGallery**, который отображает откройте раз для выбранных участников в соответствии с.
-  1. Наборы **_loadMeetingTimes** переменной контекста для **true**. Эта переменная задает состояние загрузки, который переключает видимость для загрузки состояния элементов управления, как **_LblTimesEmptyState** чтобы указать пользователю на загрузку данных.
-  1. Наборы **_selectedMeetingTime** для **Blank()**. **_selectedMeetingTime** является выбранной записи из **FindMeetingTimesGallery** элемента управления. Он отключается здесь потому, что Добавление участника означает, что предыдущее определение **_selectedMeetingTime** будет недоступен для данного участника.
-  1. Наборы **_selectedRoom** для **Blank()**. **_selectedRoom** , является записью выбранного места **RoomBrowseGallery**. Сведения о доступности места определяются, исходя из значения **_selectedMeetingTime**. С этим значением произведено запирание лучевой трубки **_selectedRoom** значение больше не является допустимым, поэтому он должен производиться.
-  1. Наборы **_roomListSelected** для **false**. Нельзя использовать для всех пользователей этой строки. В Office, можно группировать в комнатах разными «списки помещений.» Если у вас есть список помещений, этот экран учетных записей для этого, теперь вы можете сначала выберите список помещений перед выбором комнаты из списка. Значение **_roomListSelected** определяет, может ли пользователь (в клиенте с помощью только список помещений) будут видеть комнаты в списке помещений или набор списков помещений. Ему будет присвоено **false** заставить пользователей, чтобы повторно выбрать новый список помещений.
-  1. Использует [Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) операции для определения и сбора доступны встреч для участников. Эта операция проходит успешно:
-      * **UserPrincipalName** каждого выбранного пользователя в *RequiredAttendees* параметра.
-      * **MeetingDurationSelect**. Selected.Minutes в *MeetingDuration* параметра.
-      * MeetingDateSelect.SelectedDate + 8 часов в *запустить* параметра. Восемь часов добавляется в том случае, поскольку по умолчанию полный формат даты/времени для элемента управления calendar — 12:00 AM от выбранной даты. Скорее всего, нужно получить сведения о доступности в обычное рабочее время. Время начала нормальной работы будет 8:00 AM.
-      * **MeetingDateSelect**. SelectedDate + 17 часов в *окончания* параметра. 17 ч добавляется, так как 12:00 AM + 17 = 17:00:00. Время окончания обычной рабочей бы 17:00:00.
-      * *15* в *MaxCandidates* параметра. Это означает, что операция возвращает только первые 15 доступное время для выбранной даты. Это разумно, так как в 8 часов рабочего дня имеется только шестнадцать блоки 30-минутные и 30-минутные собрания — минимальный, можно установить на этом экране.
-      * *1* в *MinimumAttendeePercentage* параметра. По сути Если ни один из участников недоступны, извлекается время собрания.
-      * **false** в *IsOrganizerOptional* параметра. Пользователь приложения не Необязательный участник собрания.
-      * «Работа» в *ActivityDomain* параметра. Это означает, что время получения отображаются только в обычное рабочее время период.
-  1. **ClearCollect** функция также добавляет два столбца: «StartTime» и «EndTime». Это упрощает возвращаемых данных. 
-  — Поле, содержащее доступные время начала и окончания **MeetingTimeSlot** поля. Это поле представляет запись, содержащую начала и окончания записи, которые в свою очередь содержат **DateTime** и **часовой пояс** значения их соответствующих предложений. Не пытается получить такого вложения записей, добавление столбцов «StartTime» и «EndTime» для **MeetingTimes** коллекции переводит их **Пуск > даты и времени** и **окончания > DateTime** значения в область коллекции.
-  1. По завершении этих функций все **_loadingMeetingTimes** переменной присваивается **false**, удаление состояния загрузки и **_showMeetingTimes** присваивается **true**, отображение **FindMeetingTimesGallery**.
+  На низком уровне этот блок кода:
+  1. Собирает адрес электронной почты в коллекцию **мипеопле** , собирая адрес электронной почты в полях **DisplayName**, **userPrincipalName**и **mail** .
+  1. Сбрасывает содержимое элемента управления **текстсеарчбокс** .
+  1. Устанавливает переменную **_showMeetingTimes** в **значение false**. Эта переменная управляет видимостью **финдмитингтимесгаллери**, которая отображает время открытия для выбранных участников.
+  1. Задает для переменной контекста **_loadMeetingTimes** **значение true**. Эта переменная задает состояние загрузки, которое переключает видимость элементов управления "состояние загрузки", таких как **_LblTimesEmptyState** , чтобы сообщить пользователю о том, что их данные загружаются.
+  1. Задает для _selectedMeetingTime **пустое значение ()** . **_selectedMeetingTime** — это выбранная запись из элемента управления **финдмитингтимесгаллери** . Она пуста, так как добавление другого участника может означать, что предыдущее определение **_selectedMeetingTime** не будет доступно для этого участника.
+  1. Задает для _selectedRoom **пустое значение ()** . **_selectedRoom** — это выбранная запись комнаты из **румбровсегаллери**. Доступности комнаты определяется по значению параметра **_selectedMeetingTime**. Если это значение не заполнено, значение **_selectedRoom** больше не является допустимым, поэтому оно должно быть пустым.
+  1. Задает для _roomListSelected **значение false**. Эта строка может быть неприменима для всех. В Office комнаты можно группировать по разным "спискам помещений". Если у вас есть списки помещений, на этом экране учетные записи, позволяющие сначала выбрать список помещений перед выбором комнаты в этом списке. Значение **_roomListSelected** определяет, будет ли пользователь (в клиенте с только списками помещений) просматривать комнаты в списке помещений или наборе списков помещений. Он имеет значение **false** , чтобы заставить пользователей повторно выбрать новый список помещений.
+  1. Использует операцию [Office 365. финдмитингтимес](https://docs.microsoft.com/connectors/office365/#find-meeting-times) , чтобы определить и получить доступное время собрания для участников. Эта операция передается:
+      * Значение **userPrincipalName** каждого выбранного пользователя в параметре *рекуиредаттендис* .
+      * **Митингдуратионселект**. Выбранные минуты в параметре *митингдуратион* .
+      * Митингдатеселект. SelectedDate + 8 часов в параметре *Start* . Добавлено восемь часов, так как по умолчанию полные значения даты и времени для элемента управления Calendar выделены в 12:00 AM. Вы, вероятно, захотите получить доступности в нормальных рабочих часах. Обычное время работы — 8:00 AM.
+      * **Митингдатеселект**. SelectedDate + 17 часов в параметр *End* . 17 часов добавлены, так как 12:00 AM + 17 = 5:00 PM. Обычное рабочее время — 5:00 PM.
+      * *15* в параметр *макскандидатес* . Это означает, что операция возвращает только 15 лучших доступных времени для выбранной даты. Это имеет смысл, так как в 8-часовом рабочем дне осталось только 16 30-минутных фрагментов, а 30-минутное собрание — это минимальное значение, которое может быть задано на этом экране.
+      * *1* в параметр *минимуматтендиперцентаже* . По сути, если ни один из участников не доступен, извлекается время собрания.
+      * **false** в параметре *исорганизероптионал* . Пользователь приложения не является необязательным участником этого собрания.
+      * "Работать" в параметре *активитидомаин* . Это означает, что полученные времена являются только в пределах обычного периода рабочего времени.
+  1. Функция **клеарколлект** также добавляет два столбца: "StartTime" и "EndTime". Это упрощает возвращаемые данные. 
+  Поле, содержащее доступное время начала и окончания, является полем **митингтимеслот** . Это поле представляет собой запись, содержащую начальную и конечную записи, которая сами по себе содержит значения **DateTime** и **TimeZone** соответствующего предложения. Вместо того чтобы пытаться получить вложение записей, Добавление столбцов «StartTime» и «EndTime» в коллекцию **митингтимес** приводит к получению значений **Start > datetime** и **End > DateTime** на поверхность коллекции.
+  1. После завершения всех этих функций переменная **_loadingMeetingTimes** принимает значение **false**, удаляет состояние загрузки, а **_showMeetingTimes** — значение **true**, отображая **финдмитингтимесгаллери**.
 
-## <a name="people-browse-gallery"></a>Обзор коллекции пользователей
+## <a name="people-browse-gallery"></a>Галерея просмотра людей
 
-   ![Элемент управления PeopleBrowseGallery](media/meeting-screen/meeting-browse-gall.png)
+   ![Элемент управления Пеоплебровсегаллери](media/meeting-screen/meeting-browse-gall.png)
 
-* Свойство: **Элементы**<br>
-    Значение: 
-    ```powerapps-comma
-    If( !IsBlank( Trim( TextSearchBox.Text ) ); 
-        'Office365Users'.SearchUser( { searchTerm: Trim(TextSearchBox.Text); top: 15 } )
+* Свойства **Файлов**<br>
+    Значений 
+    ```powerapps-dot
+    If( !IsBlank( Trim( TextSearchBox.Text ) ), 
+        'Office365Users'.SearchUser( { searchTerm: Trim(TextSearchBox.Text), top: 15 } )
     )
     ```
 
-Элементы этой коллекции, заполняются путем результаты поиска из [Office365.SearchUser](https://docs.microsoft.com/connectors/office365users/#searchuser) операции. Операция принимает текст `Trim(**TextSearchBox**)` как поиск термина и возвращает результаты 15 первых на основе поиска.
+Элементы этой коллекции заполняются результатами поиска из операции [Office 365. сеарчусер](https://docs.microsoft.com/connectors/office365users/#searchuser) . Операция принимает текст в `Trim(**TextSearchBox**)` в качестве условия поиска и возвращает 15 лучших результатов, основанных на этом поиске.
   
-**TextSearchBox** упаковывается в **Trim** работать, поскольку является недопустимой, поиск пользователей на пробелы. `Office365Users.SearchUser` Операции упаковывается в `If(!IsBlank(Trim(TextSearchBox.Text)) ... )` работать, поскольку получение результатов поиска, прежде чем поиск пользователя — к повышенному расходу производительности.
+**Текстсеарчбокс** заключен в функцию **Trim** , так как поиск пользователя в пробелах является недопустимым. Операция `Office365Users.SearchUser` упаковывается в функцию `If(!IsBlank(Trim(TextSearchBox.Text)) ... )`, так как получение результатов поиска перед поиском пользователем не приводит к потере производительности.
 
-### <a name="people-browse-gallery-title"></a>Обзор коллекции людей Title
+### <a name="people-browse-gallery-title"></a>Заголовок коллекции людей
 
-   ![Элемент управления PeopleBrowseGallery заголовок](media/meeting-screen/meeting-browse-gall-title.png)
+   ![Элемент управления "заголовок Пеоплебровсегаллери"](media/meeting-screen/meeting-browse-gall-title.png)
 
-* Свойство: **Текст**<br>
+* Свойства **Текст**<br>
     Значение: `ThisItem.DisplayName`
 
-    Отображает имя пользователя из профиля Office 365.
+    Отображает отображаемое имя пользователя из профиля Office 365.
 
-* Свойство: **OnSelect**<br>
-    Значение: Объект **собирать** список инструкцию, чтобы добавить пользователя для этого участника, другой, чтобы обновить доступные встреч и несколько переменных переключатели:
+* Свойства **OnSelect**<br>
+    Значений Инструкция " **получить** " для добавления пользователя в список участников, другой — для обновления времени собрания и нескольких переключений переменных:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Concurrent(
-        Reset( TextSearchBox );
-        Set( _selectedUser; ThisItem );
-        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ); 
-            Collect( MyPeople; ThisItem );; 
+        Reset( TextSearchBox ),
+        Set( _selectedUser, ThisItem ),
+        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ), 
+            Collect( MyPeople, ThisItem ); 
             Concurrent(
-                Set( _showMeetingTimes; false );
-                UpdateContext( { _loadMeetingTimes: true } );
-                Set( _selectedMeetingTime; Blank() );
-                Set( _selectedRoom; Blank() );
-                Set( _roomListSelected; false );
-                ClearCollect( MeetingTimes; 
+                Set( _showMeetingTimes, false ),
+                UpdateContext( { _loadMeetingTimes: true } ),
+                Set( _selectedMeetingTime, Blank() ),
+                Set( _selectedRoom, Blank() ),
+                Set( _roomListSelected, false ),
+                ClearCollect( MeetingTimes, 
                     AddColumns(
                         'Office365'.FindMeetingTimes(
                             {
-                                RequiredAttendees: Concat( MyPeople; UserPrincipalName & ";" );
-                                MeetingDuration: MeetingDurationSelect.Selected.Minutes;
-                                Start: Text( DateAdd( MeetingDateSelect.SelectedDate; 8; Hours ); UTC );
-                                End: Text( DateAdd( MeetingDateSelect.SelectedDate; 17; Hours ); UTC );
-                                MaxCandidates: 15; 
-                                MinimumAttendeePercentage: 1; 
-                                IsOrganizerOptional: false; 
+                                RequiredAttendees: Concat( MyPeople, UserPrincipalName & ";" ),
+                                MeetingDuration: MeetingDurationSelect.Selected.Minutes,
+                                Start: Text( DateAdd( MeetingDateSelect.SelectedDate, 8, Hours ), UTC ),
+                                End: Text( DateAdd( MeetingDateSelect.SelectedDate, 17, Hours ), UTC ),
+                                MaxCandidates: 15, 
+                                MinimumAttendeePercentage: 1, 
+                                IsOrganizerOptional: false, 
                                 ActivityDomain: "Work"
                             }
-                        ).MeetingTimeSuggestions;
-                        "StartTime"; MeetingTimeSlot.Start.DateTime; 
-                        "EndTime"; MeetingTimeSlot.End.DateTime
+                        ).MeetingTimeSuggestions,
+                        "StartTime", MeetingTimeSlot.Start.DateTime, 
+                        "EndTime", MeetingTimeSlot.End.DateTime
                     )
                 )
-            );;
-            UpdateContext( { _loadingMeetingTimes: false } );;
-            Set( _showMeetingTimes; true )
+            );
+            UpdateContext( { _loadingMeetingTimes: false } );
+            Set( _showMeetingTimes, true )
         )
     )
     ```
 
-    На высоком уровне, выбор этого элемента управления добавляет пользователю **MyPeople** коллекции (хранилище приложение из списка участников) и обновления доступных встреч основаны на добавление нового пользователя.
+    На высоком уровне выбор этого элемента управления добавляет пользователя в коллекцию **мипеопле** (хранилище приложения в списке участников) и обновляет доступное время собрания на основе нового добавления пользователя.
 
-    Выбор этого элемента управления очень похожа на выбор **AddIcon** управления; единственная разница в том, `Set(_selectedUser; ThisItem)` инструкции и порядок выполнения операций. Таким образом данного обсуждения будет секрет. Дополнительные сведения, прочитайте [AddIcon управления](#add-icon) раздел.
+    Выбор этого элемента управления очень похож на выбор элемента управления **аддикон** ; Единственное отличие состоит в том, что оператор `Set(_selectedUser, ThisItem)` и порядок выполнения операций. Таким образом, это обсуждение будет не так глубоко. Для получения более подробного объяснения ознакомьтесь с разделом [Управление аддикон](#add-icon) .
 
-    Выбор этого элемента управления сбрасывает **TextSearchBox**. Затем, если выделение не находится в **MyPeople** коллекции, элемент управления:
-    1. Наборы **_loadMeetingTimes** состояние **true** и **_showMeetingTimes** состояние **false**, пустые значения **_ selectedMeetingTime** и **_selectedRoom** переменных и обновляет **MeetingTimes** коллекции с новым дополнением к **MyPeople** коллекции. 
-    1. Задает **_loadMeetingTimes** состояние **false**и задает **_showMeetingTimes** для **true**. Если выделение уже **MyPeople** коллекции, он сбрасывает только содержимое **TextSearchBox**.
+    Выбор этого элемента управления приводит к сбросу **текстсеарчбокс**. Затем, если выделенный фрагмент отсутствует в коллекции **мипеопле** , элемент управления:
+    1. Устанавливает для состояния **_loadMeetingTimes** **значение true** , а для состояния **_showMeetingTimes** — **значение false**, пустые переменные **_selectedMeetingTime** и **_selectedRoom** и обновляет **митингтимес** Коллекция с новым дополнением к коллекции **мипеопле** . 
+    1. Задает для состояния **_loadMeetingTimes** **значение false**и задает для **_showMeetingTimes** **значение true**. Если выделенный фрагмент уже находится в коллекции **мипеопле** , он сбрасывает только содержимое **текстсеарчбокс**.
 
-## <a name="meeting-people-gallery"></a>Коллекции пользователей собрания
+## <a name="meeting-people-gallery"></a>Коллекция людей для собраний
 
-   ![Элемент управления MeetingPeopleGallery](media/meeting-screen/meeting-people-gall.png)
+   ![Элемент управления Митингпеоплегаллери](media/meeting-screen/meeting-people-gall.png)
 
-* Свойство: **Элементы**<br>
+* Свойства **Файлов**<br>
     Значение: `MyPeople`
 
-    **MyPeople** коллекция является коллекцией людей инициализируется или добавить, выбрав **PeopleBrowseGallery Title** элемента управления.
+    Коллекция **мипеопле** — это коллекция людей, инициализированных или добавленных в, путем выбора элемента управления **заголовка пеоплебровсегаллери** .
 
-* Свойство: **Высота**<br>
-    Значение: Логика, позволяющая увеличится до максимальной высоты 350 коллекции:
+* Свойства **Равно**<br>
+    Значений Логика, позволяющая увеличить максимальную высоту коллекции до 350:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Min( 
-        76 * RoundUp( CountRows( MeetingPeopleGallery.AllItems ) / 2; 0 );
+        76 * RoundUp( CountRows( MeetingPeopleGallery.AllItems ) / 2, 0 ),
         350
     )
     ```
 
   
-   К числу элементов в коллекции, до максимальной высоты 350 подстраивается высота элемента коллекции. Формула принимает в качестве высоту одной строки 76 **MeetingPeopleGallery**, умножает его на число строк. **WrapCount** свойство имеет значение 2, поэтому число строк, значение true, `RoundUp(CountRows(MeetingPeopleGallery.AllItems) / 2; 0)`.
+   Высота этой коллекции корректируется на число элементов в коллекции до максимальной высоты 350. Формула принимает 76 в качестве высоты одной строки **митингпеоплегаллери**, а затем умножает ее на число строк. Свойство **врапкаунт** имеет значение 2, поэтому число истинных строк равно `RoundUp(CountRows(MeetingPeopleGallery.AllItems) / 2, 0)`.
 
-* Свойство: **ShowScrollbar**<br>
+* Свойства **шовскроллбар**<br>
     Значение: `MeetingPeopleGallery.Height >= 350`
 
-    При достижении максимальную высоту элемента коллекции (350) полоса прокрутки является видимым.
+    При достижении максимальной высоты коллекции (350) полоса прокрутки становится видимой.
 
-### <a name="meeting-people-gallery-title"></a>Коллекции пользователей собрания Title
+### <a name="meeting-people-gallery-title"></a>Заголовок коллекции людей для собраний
 
-   ![Элемент управления MeetingPeopleGallery заголовок](media/meeting-screen/meeting-people-gall-title.png)
+   ![Элемент управления "заголовок Митингпеоплегаллери"](media/meeting-screen/meeting-people-gall-title.png)
 
-* Свойство: **OnSelect**<br>
+* Свойства **OnSelect**<br>
     
-    Значение: `Set(_selectedUser; ThisItem)`
+    Значение: `Set(_selectedUser, ThisItem)`
     
-    Наборы **_selectedUser** переменных для элемента, выбранного в **MeetingPeopleGallery**.
+    Задает переменную **_selectedUser** для элемента, выбранного в **митингпеоплегаллери**.
 
-### <a name="meeting-people-gallery-iconremove"></a>IconRemove коллекции людей собрания
+### <a name="meeting-people-gallery-iconremove"></a>Коллекция людей для собраний Иконремове
 
-   ![Элемент управления iconRemove MeetingPeopleGallery](media/meeting-screen/meeting-people-gall-delete.png)
+   ![Элемент управления Митингпеоплегаллери Иконремове](media/meeting-screen/meeting-people-gall-delete.png)
 
-* Свойство: **OnSelect**<br>
-    Значение: Объект **удалить** инструкцию, чтобы удалить пользователя из списка участников, **собирать** инструкцию, чтобы обновить доступные встреч и несколько переменных переключатели:
+* Свойства **OnSelect**<br>
+    Значений Инструкция **Remove** для удаления пользователя из списка участников, инструкции " **получить** " для обновления времени собрания и нескольких переключений переменных:
 
-    ```powerapps-comma
-    Remove( MyPeople; LookUp( MyPeople; UserPrincipalName = ThisItem.UserPrincipalName ) );;
+    ```powerapps-dot
+    Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) );
     Concurrent(
-        Reset( TextSearchBox );
-        Set( _showMeetingTimes; false );
-        UpdateContext( { _loadMeetingTimes: true } );
-        Set( _selectedMeetingTime; Blank() );
-        Set( _selectedRoom; Blank() );
-        Set( _roomListSelected; false );
-        ClearCollect( MeetingTimes; 
+        Reset( TextSearchBox ),
+        Set( _showMeetingTimes, false ),
+        UpdateContext( { _loadMeetingTimes: true } ),
+        Set( _selectedMeetingTime, Blank() ),
+        Set( _selectedRoom, Blank() ),
+        Set( _roomListSelected, false ),
+        ClearCollect( MeetingTimes, 
             AddColumns(
                 'Office365'.FindMeetingTimes(
                     {
-                        RequiredAttendees: Concat( MyPeople; UserPrincipalName & ";" ); 
-                        MeetingDuration: MeetingDurationSelect.Selected.Minutes;
-                        Start: Text( DateAdd( MeetingDateSelect.SelectedDate; 8; Hours ); UTC ); 
-                        End: Text( DateAdd( MeetingDateSelect.SelectedDate; 17; Hours ); UTC );
-                        MaxCandidates: 15; 
-                        MinimumAttendeePercentage: 1; 
-                        IsOrganizerOptional: false; 
+                        RequiredAttendees: Concat( MyPeople, UserPrincipalName & ";" ), 
+                        MeetingDuration: MeetingDurationSelect.Selected.Minutes,
+                        Start: Text( DateAdd( MeetingDateSelect.SelectedDate, 8, Hours ), UTC ), 
+                        End: Text( DateAdd( MeetingDateSelect.SelectedDate, 17, Hours ), UTC ),
+                        MaxCandidates: 15, 
+                        MinimumAttendeePercentage: 1, 
+                        IsOrganizerOptional: false, 
                         ActivityDomain: "Work"
                     }
-                ).MeetingTimeSuggestions;
-                "StartTime"; MeetingTimeSlot.Start.DateTime; 
-                "EndTime"; MeetingTimeSlot.End.DateTime
+                ).MeetingTimeSuggestions,
+                "StartTime", MeetingTimeSlot.Start.DateTime, 
+                "EndTime", MeetingTimeSlot.End.DateTime
             )
         )
-    );;
-    UpdateContext( { _loadingMeetingTimes: false } );;
-    Set( _showMeetingTimes; true )
+    );
+    UpdateContext( { _loadingMeetingTimes: false } );
+    Set( _showMeetingTimes, true )
     ```
 
-  На высоком уровне Выбор этого элемента управления удаляет пользователя из списка участников и обновляет доступных собрания моменты, основываясь на удаление этого пользователя.
+  На высоком уровне выбор этого элемента управления удаляет пользователя из списка участников и обновляет доступное время собрания на основе удаления этого пользователя.
 
-  После выполнения предыдущего кода первой строки, выбор этого элемента управления практически идентичен выбрав **AddIcon** элемента управления. Таким образом это обсуждение не будет секрет. Дополнительные сведения, прочитайте [раздел управления AddIcon](#add-icon).
+  После первой строки предыдущего кода выбор этого элемента управления почти аналогичен выбору элемента управления **аддикон** . Таким образом, это обсуждение не будет таким же глубоким. Для получения более подробного объяснения ознакомьтесь с [разделом Управление аддикон](#add-icon).
 
-  В первой строке кода, выбранный элемент удаляется из **MyPeople** коллекции. Затем код:
-  1. Сбрасывает **TextSearchBox**и затем отменяет выбор в **MyPeople** коллекции. 
-  1. Наборы **_loadMeetingTimes** состояние **true** и **_showMeetingTimes** состояние **false**, пустые значения **_ selectedMeetingTime** и **_selectedRoom** переменных и обновляет **MeetingTimes** коллекции с новым дополнением к **MyPeople** коллекции. 
-  1. Задает **_loadMeetingTimes** состояние **false**и задает **_showMeetingTimes** для **true**.
+  В первой строке кода выбранный элемент удаляется из коллекции **мипеопле** . Затем код:
+  1. Сбрасывает **текстсеарчбокс**, а затем удаляет выделенный фрагмент из коллекции **мипеопле** . 
+  1. Устанавливает для состояния **_loadMeetingTimes** **значение true** , а для состояния **_showMeetingTimes** — **значение false**, пустые переменные **_selectedMeetingTime** и **_selectedRoom** и обновляет **митингтимес** Коллекция с новым дополнением к коллекции **мипеопле** . 
+  1. Задает для состояния **_loadMeetingTimes** **значение false**и задает для **_showMeetingTimes** **значение true**.
 
-## <a name="meeting-date-picker"></a>Выбор даты собрания
+## <a name="meeting-date-picker"></a>Средство выбора даты собрания
 
-   ![Элемент управления MeetingDateSelect](media/meeting-screen/meeting-datepicker.png)
+   ![Элемент управления Митингдатеселект](media/meeting-screen/meeting-datepicker.png)
 
-* Свойство: **DisplayMode**<br>
-    Значение: `If( IsEmpty(MyPeople); DisplayMode.Disabled; DisplayMode.Edit )`
+* Свойства **DisplayMode**<br>
+    Значение: `If( IsEmpty(MyPeople), DisplayMode.Disabled, DisplayMode.Edit )`
 
-    Нельзя выбрать дату собрания, пока не будет добавлен хотя бы один участник **MyPeople** коллекции.
+    Невозможно выбрать дату собрания, пока в коллекцию **мипеопле** не будет добавлено по крайней мере один участник.
 
-* Свойство: **OnChange**<br>
+* Свойства **OnChange**<br>
     Значение: `Select( MeetingDateSelect )`
 
-    Изменение выбранной даты запускает код в **OnSelect** свойство данного элемента управления для запуска.
+    Изменение выбранной даты активирует выполнение кода в свойстве **OnSelect** этого элемента управления.
 
-* Свойство: **OnSelect**<br>
-    Значение: Объект **собирать** инструкцию, чтобы обновить доступные встреч и несколько переменных переключатели:
+* Свойства **OnSelect**<br>
+    Значений Инструкция " **собирающая** " для обновления времени собрания и нескольких переключений переменных:
   
-    ```powerapps-comma
+    ```powerapps-dot
     Concurrent(
-        Reset( TextSearchBox );
-        Set( _showMeetingTimes; false );
-        UpdateContext( { _loadingMeetingTimes: true } );
-        Set( _selectedMeetingTime; Blank() );
-        Set( _selectedRoom; Blank() );
-        Set( _roomListSelected; false );
-        ClearCollect( MeetingTimes; 
+        Reset( TextSearchBox ),
+        Set( _showMeetingTimes, false ),
+        UpdateContext( { _loadingMeetingTimes: true } ),
+        Set( _selectedMeetingTime, Blank() ),
+        Set( _selectedRoom, Blank() ),
+        Set( _roomListSelected, false ),
+        ClearCollect( MeetingTimes, 
             AddColumns(
                 'Office365'.FindMeetingTimes(
                     {
-                        RequiredAttendees: Concat( MyPeople; UserPrincipalName & ";" ); 
-                        MeetingDuration: MeetingDurationSelect.Selected.Minutes;
-                        Start: Text( DateAdd( MeetingDateSelect.SelectedDate; 8; Hours ); UTC ); 
-                        End: Text( DateAdd( MeetingDateSelect.SelectedDate; 17; Hours ); UTC );
-                        MaxCandidates: 15; 
-                        MinimumAttendeePercentage: 1; 
-                        IsOrganizerOptional: false; 
+                        RequiredAttendees: Concat( MyPeople, UserPrincipalName & ";" ), 
+                        MeetingDuration: MeetingDurationSelect.Selected.Minutes,
+                        Start: Text( DateAdd( MeetingDateSelect.SelectedDate, 8, Hours ), UTC ), 
+                        End: Text( DateAdd( MeetingDateSelect.SelectedDate, 17, Hours ), UTC ),
+                        MaxCandidates: 15, 
+                        MinimumAttendeePercentage: 1, 
+                        IsOrganizerOptional: false, 
                         ActivityDomain: "Work"
                     }
-                ).MeetingTimeSuggestions;
-                "StartTime"; MeetingTimeSlot.Start.DateTime; 
-                "EndTime"; MeetingTimeSlot.End.DateTime
+                ).MeetingTimeSuggestions,
+                "StartTime", MeetingTimeSlot.Start.DateTime, 
+                "EndTime", MeetingTimeSlot.End.DateTime
             )
         )
-    );;
-    UpdateContext( { _loadingMeetingTimes: false } );;
-    Set( _showMeetingTimes; true )
+    );
+    UpdateContext( { _loadingMeetingTimes: false } );
+    Set( _showMeetingTimes, true )
     ```
 
-  На высоком уровне Выбор этого элемента управления обновляет доступных встреч. Поэтому важно потому, что если пользователь изменит дату, время доступные собрания следует выполнить обновление до отражают сведения о доступности участников за этот день.
+  На высоком уровне выбор этого элемента управления обновляет доступное время собрания. Это полезно, поскольку если пользователь изменяет дату, доступное время собрания должно быть изменено, чтобы отразить доступности участников в этот день.
 
-  За исключением первоначального **собирать** инструкции, этот подход аналогичен **OnSelect** функциональных возможностей **AddIcon** элемента управления. Таким образом это обсуждение не будет секрет. Дополнительные сведения, прочитайте [AddIcon управления](#add-icon) раздел.
+  За исключением **первоначальной** инструкции, она идентична функции **OnSelect** элемента управления **аддикон** . Таким образом, это обсуждение не будет таким же глубоким. Для получения более подробного объяснения ознакомьтесь с разделом [Управление аддикон](#add-icon) .
 
-  Выбор этого элемента управления сбрасывает **TextSearchBox**. И она затем: 
-  1. Наборы **_loadMeetingTimes** состояние **true** и **_showMeetingTimes** состояние **false**, пустые значения **_ selectedMeetingTime** и **_selectedRoom** переменных и обновляет **MeetingTimes** коллекции с выбором даты. 
-  1. Задает **_loadMeetingTimes** состояние **false**и задает **_showMeetingTimes** для **true**.
+  Выбор этого элемента управления приводит к сбросу **текстсеарчбокс**. Затем: 
+  1. Устанавливает для состояния **_loadMeetingTimes** **значение true** , а для состояния **_showMeetingTimes** — **значение false**, пустые переменные **_selectedMeetingTime** и **_selectedRoom** и обновляет **митингтимес** Коллекция с выбором новой даты. 
+  1. Задает для состояния **_loadMeetingTimes** **значение false**и задает для **_showMeetingTimes** **значение true**.
 
-## <a name="meeting-duration-drop-down"></a>Продолжительность собрания раскрывающегося списка
+## <a name="meeting-duration-drop-down"></a>Раскрывающийся список длительности собрания
 
-   ![Элемент управления MeetingDateSelect](media/meeting-screen/meeting-timepicker.png)
+   ![Элемент управления Митингдатеселект](media/meeting-screen/meeting-timepicker.png)
 
-* Свойство: **DisplayMode**<br>
-    Значение: `If( IsEmpty(MyPeople); DisplayMode.Disabled; DisplayMode.Edit )`
+* Свойства **DisplayMode**<br>
+    Значение: `If( IsEmpty(MyPeople), DisplayMode.Disabled, DisplayMode.Edit )`
 
-    Нельзя выбрать продолжительность собрания, пока не будет добавлен хотя бы один участник **MyPeople** коллекции.
+    Длительность собрания не может быть выбрана до тех пор, пока в коллекцию **мипеопле** не будет добавлено по крайней мере один участник.
 
-* Свойство: **OnChange**<br>
+* Свойства **OnChange**<br>
     Значение: `Select(MeetingDateSelect1)`
 
-    Изменить выбранный период времени запускает код в **OnSelect** свойство **MeetingDateSelect** элемент управления будет работать.
+    Изменение выбранной длительности активирует код в свойстве **OnSelect** элемента управления **митингдатеселект** для выполнения.
 
-## <a name="find-meeting-times-gallery"></a>Найти время собрания коллекции
+## <a name="find-meeting-times-gallery"></a>Коллекция времени поиска собраний
 
-   ![Элемент управления FindMeetingTimesGallery](media/meeting-screen/meeting-time-gall.png)
+   ![Элемент управления Финдмитингтимесгаллери](media/meeting-screen/meeting-time-gall.png)
 
-* Свойство: **Элементы**<br>
+* Свойства **Файлов**<br>
     Значение: `MeetingTimes`
 
-    Коллекция возможных встреч полученные из [Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) операции.
+    Коллекция возможных значений времени собрания, полученных из операции [Office 365. финдмитингтимес](https://docs.microsoft.com/connectors/office365/#find-meeting-times) .
 
-* Свойство: **Видимым**<br>
+* Свойства **Ярлык**<br>
     Значение: `_showMeetingTimes && _showDetails && !IsEmpty( MyPeople )`
 
-    Коллекции отображается только если **_showMeetingTimes** имеет значение **true**, пользователь выбрал **LblScheduleTab** элемента управления и имеется по крайней мере один участник добавлен собрания.
+    Галерея отображается, только если **_showMeetingTimes** имеет значение **true**, пользователь выбрал элемент управления **лблсчедулетаб** и на собрание добавлен хотя бы один участник.
 
-### <a name="find-meeting-times-gallery-title"></a>Найти время собрания коллекции Title
+### <a name="find-meeting-times-gallery-title"></a>Заголовок коллекции значений времени собрания
 
-   ![Элемент управления FindMeetingTimesGallery заголовок](media/meeting-screen/meeting-time-gall-title.png)
+   ![Элемент управления "заголовок Финдмитингтимесгаллери"](media/meeting-screen/meeting-time-gall-title.png)
 
-* Свойство: **Текст**<br>
-    Значение: Преобразование времени начала для отображения в локальное время пользователя:
+* Свойства **Текст**<br>
+    Значений Преобразование времени начала, которое должно отображаться в местном времени пользователя:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Text(
         DateAdd(
-            DateTimeValue( ThisItem.StartTime );
-            - TimeZoneOffset(); 
+            DateTimeValue( ThisItem.StartTime ),
+            - TimeZoneOffset(), 
             Minutes
-        );
+        ),
         DateTimeFormat.ShortTime
     )
     ```
 
-  Извлеченное значение из **StartTime** представлено в формате UTC. Чтобы [преобразовать из формата UTC в местное время](../functions/function-dateadd-datediff.md#converting-from-utc), **DateAdd** применяется функция.
-  [Функция Text](../functions/function-text.md#datetime) принимает даты и времени в качестве первого аргумента и форматы, оно зависит от второго аргумента. Передайте его для преобразования местного времени **ThisItem.StartTime**и отображает его как **DateTimeFormat.ShortTime**.
+  Полученное значение **StartTime** имеет формат UTC. Для [преобразования из формата UTC в местное время](../functions/function-dateadd-datediff.md#converting-from-utc)применяется функция **DateAdd** .
+  [Текстовая функция](../functions/function-text.md#datetime) принимает дату и время в качестве первого аргумента и форматирует ее на основе второго аргумента. Вы передадите ему локальное преобразование времени **сиситем. StartTime**и выводите его как **DateTimeFormat. шорттиме**.
 
-* Свойство: **OnSelect**<br>
-    Значение: Несколько **собирать** инструкций для сбора помещений для собраний и их предлагаемые сведения о доступности, а также несколько переменных переключатели:
+* Свойства **OnSelect**<br>
+    Значений Несколько инструкций **сбора** для сбора данных о конференциях и их предлагаемых доступности, а также несколько переключений переменных:
 
-    ```powerapps-comma
-    Set( _selectedMeetingTime; ThisItem );;
-    UpdateContext( { _loadingRooms: true } );;
-    If( IsEmpty( RoomsLists );
-        ClearCollect( RoomsLists; 'Office365'.GetRoomLists().value) );;
-    If( CountRows( RoomsLists ) <= 1;
-        Set( _noRoomLists; true );;
-        ClearCollect( AllRooms; 'Office365'.GetRooms().value );;
-        Set( _allRoomsConcat; Concat( FirstN( AllRooms; 20 ); Address & ";" ) );;
-        ClearCollect( RoomTimeSuggestions; 
+    ```powerapps-dot
+    Set( _selectedMeetingTime, ThisItem );
+    UpdateContext( { _loadingRooms: true } );
+    If( IsEmpty( RoomsLists ),
+        ClearCollect( RoomsLists, 'Office365'.GetRoomLists().value) );
+    If( CountRows( RoomsLists ) <= 1,
+        Set( _noRoomLists, true );
+        ClearCollect( AllRooms, 'Office365'.GetRooms().value );
+        Set( _allRoomsConcat, Concat( FirstN( AllRooms, 20 ), Address & ";" ) );
+        ClearCollect( RoomTimeSuggestions, 
             'Office365'.FindMeetingTimes(
                 {
-                    RequiredAttendees: _allRoomsConcat; 
-                    MeetingDuration: MeetingDurationSelect.Selected.Minutes;
-                    Start: _selectedMeetingTime.StartTime & "Z"; 
-                    End: _selectedMeetingTime.EndTime & "Z"; 
-                    MinimumAttendeePercentage: "1";
-                    IsOrganizerOptional: "false"; 
+                    RequiredAttendees: _allRoomsConcat, 
+                    MeetingDuration: MeetingDurationSelect.Selected.Minutes,
+                    Start: _selectedMeetingTime.StartTime & "Z", 
+                    End: _selectedMeetingTime.EndTime & "Z", 
+                    MinimumAttendeePercentage: "1",
+                    IsOrganizerOptional: "false", 
                     ActivityDomain: "Unrestricted"
                 }
             ).MeetingTimeSuggestions
-        );;
-        ClearCollect( AvailableRooms; 
+        );
+        ClearCollect( AvailableRooms, 
             AddColumns(
                 AddColumns(
                     Filter( 
-                        First( RoomTimeSuggestions ).AttendeeAvailability;
+                        First( RoomTimeSuggestions ).AttendeeAvailability,
                         Availability="Free"
-                    ); 
-                    "Address"; Attendee.EmailAddress.Address
-                ); 
-                "Name"; LookUp( AllRooms; Address = Attendee.EmailAddress.Address ).Name 
-            )
-        );;
-        ClearCollect( AvailableRoomsOptimal; 
-            DropColumns(
-                DropColumns( AvailableRooms; "Availability" ); 
-                "Attendee" 
+                    ), 
+                    "Address", Attendee.EmailAddress.Address
+                ), 
+                "Name", LookUp( AllRooms, Address = Attendee.EmailAddress.Address ).Name 
             )
         );
-        Set( _roomListSelected; false) 
-    );;
+        ClearCollect( AvailableRoomsOptimal, 
+            DropColumns(
+                DropColumns( AvailableRooms, "Availability" ), 
+                "Attendee" 
+            )
+        ),
+        Set( _roomListSelected, false) 
+    );
     UpdateContext( {_loadingRooms: false} )
     ```
 
-  На высоком уровне этот блок кода, собирает доступные комнаты для пользователей, у которых нет комнат списки в зависимости от выбранной даты и времени собрания. В противном случае он просто извлекает списки помещений.
+  На высоком уровне этот блок кода собирает доступные комнаты для пользователей, не имеющих списков помещений, на основе выбранных даты и времени для собрания. В противном случае он просто извлекает списки помещений.
 
-  На низком уровне, этот блок кода:
-  1. Наборы **_selectedMeetingTime** к выбранному элементу. Это позволяет найти какие комнаты доступны в течение этого времени.
-  1. Задает загрузку переменной состояния **_loadingRooms** для **true**, Включение состояния загрузки.
-  1. Если **RoomsLists** , возвращается пустая коллекция, он извлекает списки помещений клиента пользователя и сохраняет их в **RoomsLists** коллекции.
-  1. Если пользователь не имеет список комнаты или списке помещений один:
-      1. **NoRoomLists** переменной присваивается **true**, и эта переменная используется для определения элементов, отображаемых в **RoomBrowseGallery** элемента управления.
-      1. `Office365.GetRooms()` Операция используется для получения первых 100 комнаты в своих клиентах. Эти значения хранятся в **AllRooms** коллекции.
-      1. **_AllRoomsConcat** переменной присваивается разделенный точками с запятой строка первого 20 электронные адреса помещения в **AllRooms** коллекции. Это обусловлено [Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) ограничена поиск доступное время 20 объектов person, в рамках одной операции.
-      1. **RoomTimeSuggestions** использует коллекцию [Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) извлекаемого наличий первые 20 комнаты в **AllRooms** сбора, основываясь на по значениям времени от **_selectedMeetingTime** переменной. Обратите внимание, что `& "Z"` используется правильно отформатировать **DateTime** значение.
-      1. **AvailableRooms** создания коллекции. Это просто **RoomTimeSuggestions** коллекцию участников наличий два дополнительных столбца добавляются в него: «Address» и «Name». «Адрес» — это адрес электронной почты комнаты и имя комнаты составляет «Name».
-      1. Затем **AvailableRoomsOptimal** создания коллекции. Это просто **AvailableRooms** коллекции со столбцами «Доступность» и «Участник» удален. Это соответствует схем **AvailableRoomsOptimal** и **AllRooms**. Это позволяет использовать обе коллекции в **элементы** свойство **RoomBrowseGallery**.
-      1. **_roomListSelected** присваивается **false**.
-  1. Состояние загрузки **_loadingRooms**, имеет значение **false** все остальное по завершении выполнения.
+  На низком уровне этот блок кода:
+  1. Задает **_selectedMeetingTime** для выбранного элемента. Это позволяет найти, какие комнаты доступны в течение этого времени.
+  1. Задает для переменной состояния загрузки **_loadingRooms** **значение true**, переключив состояние загрузки на.
+  1. Если коллекция **румслистс** пуста, она извлекает списки тенант'с комнаты пользователя и сохраняет их в коллекции **румслистс** .
+  1. Если у пользователя нет списка помещений или одного списка помещений:
+      1. Переменная **норумлистс** имеет значение **true**, и эта переменная используется для определения элементов, отображаемых в элементе управления **румбровсегаллери** .
+      1. Операция `Office365.GetRooms()` используется для получения первых 100 комнат в своем клиенте. Они хранятся в коллекции **аллрумс** .
+      1. Переменной **_allRoomsConcat** присваивается строка с разделителями-точкой с запятой из первых 20 адресов электронной почты комнат в коллекции **аллрумс** . Это обусловлено тем, что [Office 365. финдмитингтимес](https://docs.microsoft.com/connectors/office365/#find-meeting-times) может искать только доступное время для 20 объектов Person за одну операцию.
+      1. Коллекция **румтимесугжестионс** использует [Office 365. финдмитингтимес](https://docs.microsoft.com/connectors/office365/#find-meeting-times) для получения доступности первых 20 комнат в коллекции **аллрумс** на основе значений времени из переменной **_selectedMeetingTime** . Обратите внимание, что `& "Z"` используется для правильного форматирования значения **DateTime** .
+      1. Создается коллекция **аваилаблерумс** . Это просто коллекция **румтимесугжестионс** участников доступности с двумя дополнительными столбцами, добавленными в него: "Address" и "Name". "Адрес" — это адрес электронной почты комнаты, а "Name" — имя комнаты.
+      1. Затем создается коллекция **аваилаблерумсоптимал** . Это просто коллекция **аваилаблерумс** с удаленными столбцами "доступность" и "участник". Это соответствует схемам **аваилаблерумсоптимал** и **аллрумс**. Это позволяет использовать обе коллекции в свойстве **Items** объекта **румбровсегаллери**.
+      1. **_roomListSelected** имеет значение **false**.
+  1. Для состояния загрузки, **_loadingRooms**, задается **значение false** , когда все остальное завершится.
 
-## <a name="room-browse-gallery"></a>Обзор коллекции комнаты
+## <a name="room-browse-gallery"></a>Коллекция просмотра комнаты
 
-   ![Элемент управления RoomBrowseGallery](media/meeting-screen/meeting-rooms-gall.png)
+   ![Элемент управления Румбровсегаллери](media/meeting-screen/meeting-rooms-gall.png)
 
-* Свойство: **Элементы**<br>
-    Значение: Логически задайте два внутренних коллекциях одинаковые схемы, в зависимости от ли пользователь выбрал список помещений, или имеет списки помещений в своих клиентах:
+* Свойства **Файлов**<br>
+    Значений Логически устанавливаются две внутренние коллекции идентичной схемы в зависимости от того, выбрал ли пользователь список помещений или содержит список комнат в своем клиенте:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Search(
-        If( _roomListSelected || _noRoomLists; AvailableRoomsOptimal; RoomsLists );
-        Trim(TextMeetingLocation1.Text); 
-        "Name"; 
+        If( _roomListSelected || _noRoomLists, AvailableRoomsOptimal, RoomsLists ),
+        Trim(TextMeetingLocation1.Text), 
+        "Name", 
         "Address"
     )
     ```
 
-  Эта галерея содержит **AvailableRoomsOptimal** коллекции Если **_roomListSelected** или **_noRoomLists** — **true**. В противном случае он отображает **RoomsLists** коллекции. Это можно сделать, поскольку схема этих коллекций являются идентичными.
+  Эта коллекция отображает коллекцию **аваилаблерумсоптимал** , если **_roomListSelected** или **_noRoomLists** имеет **значение true**. В противном случае отображается коллекция **румслистс** . Это можно сделать, поскольку схема этих коллекций идентична.
 
-* Свойство: **Видимым**<br>
+* Свойства **Ярлык**<br>
     Значение: ```_showDetails && !IsBlank( _selectedMeetingTime ) && !_loadingRooms```
 
-    Коллекции отображается только в том случае, если предыдущие три инструкции возвращают значение **true**.
+    Коллекция видна только в том случае, если три предшествующих оператора имеют **значение true**.
 
-### <a name="roombrowsegallery-title"></a>Заголовок RoomBrowseGallery
+### <a name="roombrowsegallery-title"></a>Заголовок Румбровсегаллери
 
-   ![Элемент управления RoomBrowseGallery заголовок](media/meeting-screen/meeting-rooms-gall-title.png)
+   ![Элемент управления "заголовок Румбровсегаллери"](media/meeting-screen/meeting-rooms-gall-title.png)
 
-* Свойство: **OnSelect**<br>
-    Значение: Набор логически связанных **собирать** и **задать** инструкции, которые могут или может не активироваться, в зависимости от того, является ли пользователь просматривает список помещений или комнаты:
+* Свойства **OnSelect**<br>
+    Значений Набор **логически привязанных инструкций, которые** могут быть или не запускаться в зависимости от того, просматривают ли пользователь списки помещений или комнаты:
 
-    ```powerapps-comma
-    UpdateContext( { _loadingRooms: true } );;
-    If( !_roomListSelected && !noRoomLists;
-        Set( _roomListSelected; true );;
-        Set( _selectedRoomList; ThisItem.Name );;
-        ClearCollect( AllRooms; 'Office365'.GetRoomsInRoomList( ThisItem.Address ).value );;
-        Set( _allRoomsConcat; Concat( FirstN( AllRooms; 20 ); Address & ";" ) );;
-        ClearCollect( RoomTimeSuggestions; 
+    ```powerapps-dot
+    UpdateContext( { _loadingRooms: true } );
+    If( !_roomListSelected && !noRoomLists,
+        Set( _roomListSelected, true );
+        Set( _selectedRoomList, ThisItem.Name );
+        ClearCollect( AllRooms, 'Office365'.GetRoomsInRoomList( ThisItem.Address ).value );
+        Set( _allRoomsConcat, Concat( FirstN( AllRooms, 20 ), Address & ";" ) );
+        ClearCollect( RoomTimeSuggestions, 
             'Office365'.FindMeetingTimes(
                 {
-                    RequiredAttendees: _allRoomsConcat; 
-                    MeetingDuration: MeetingDurationSelect.Selected.Minutes;
-                        Start: _selectedMeetingTime.StartTime & "Z"; 
-                    End: _selectedMeetingTime.EndTime & "Z"; 
-                    MinimumAttendeePercentage: "1";
-                    IsOrganizerOptional: "false"; 
+                    RequiredAttendees: _allRoomsConcat, 
+                    MeetingDuration: MeetingDurationSelect.Selected.Minutes,
+                        Start: _selectedMeetingTime.StartTime & "Z", 
+                    End: _selectedMeetingTime.EndTime & "Z", 
+                    MinimumAttendeePercentage: "1",
+                    IsOrganizerOptional: "false", 
                     ActivityDomain: "Unrestricted"
                 }
             ).MeetingTimeSuggestions
-        );;
-        ClearCollect( AvailableRooms; 
+        );
+        ClearCollect( AvailableRooms, 
             AddColumns(
                 AddColumns(
                     Filter(
-                        First( RoomTimeSuggestions ).AttendeeAvailability; 
+                        First( RoomTimeSuggestions ).AttendeeAvailability, 
                         Availability = "Free"
-                    );
-                    "Address"; Attendee.EmailAddress.Address 
-                ); 
-                "Name"; LookUp( AllRooms; Address = Attendee.EmailAddress.Address ).Name
+                    ),
+                    "Address", Attendee.EmailAddress.Address 
+                ), 
+                "Name", LookUp( AllRooms, Address = Attendee.EmailAddress.Address ).Name
             )
-        );;
-        ClearCollect( AvailableRoomsOptimal; 
-            DropColumns(
-                DropColumns( AvailableRooms; "Availability" )
-            ); 
-            "Attendee" )
         );
-        Set( _selectedRoom; ThisItem )
-    );;
+        ClearCollect( AvailableRoomsOptimal, 
+            DropColumns(
+                DropColumns( AvailableRooms, "Availability" )
+            ), 
+            "Attendee" )
+        ),
+        Set( _selectedRoom, ThisItem )
+    );
     UpdateContext( {_loadingRooms: false} )
     ```
 
-  Действий, возникающих при выборе этого элемента управления зависят от того, является ли пользователь просматривает в настоящее время набор списков помещений или набор комнаты. Если это первое из них, выбрав этот элемент управления извлекает аудиторий, которые доступны в выбранное время из списка выбранных комнаты. Если это последний, выбор этого элемента управления задает **_selectedRoom** переменной к выбранному элементу. Предыдущая инструкция — очень похоже на **выберите** инструкции для [ **FindMeetingTimesGallery Title**](#find-meeting-times-gallery).
+  Действия, выполняемые при выборе этого элемента управления, зависят от того, просматривается ли пользователь в настоящий момент набор списков комнаты или набор комнат. Если это первый, то выбор этого элемента управления повлечет за собой доступ к комнатам, доступным в выбранное время из списка выбранных помещений. Если это последний, то при выборе этого элемента управления переменная **_selectedRoom** задается выбранному элементу. Предыдущая инструкция очень похожа на инструкцию **SELECT** для [**заголовка финдмитингтимесгаллери**](#find-meeting-times-gallery).
 
-  На низком уровне, приведенного выше кода:
-  1. Включение состояния загрузки для помещений, задав **_loadingRooms** для **true**.
-  1. Проверяет, если был выбран список помещений, и в том случае, если у клиента есть комнаты перечислены. Если это так:
-      1. Задает **_roomListSelected** для **true** и задает **_selectedRoomList** к выбранному элементу.
-      1. **_AllRoomsConcat** переменной присваивается разделенный точками с запятой строка первого 20 электронные адреса помещения в **AllRooms** коллекции. Это обусловлено [Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) ограничивается поиск доступное время 20 объектов person, в рамках одной операции.
-      1. **RoomTimeSuggestions** использует коллекцию [Office365.FindMeetingTimes](https://docs.microsoft.com/connectors/office365/#find-meeting-times) операцию по получению наличий первые 20 комнаты в **AllRooms** коллекции, на основе времени значений из **_selectedMeetingTime** переменной. Обратите внимание, что `& "Z"` используется правильно отформатировать **DateTime** значение.
-      1. **AvailableRooms** создания коллекции. Это просто **RoomTimeSuggestions** коллекцию участников наличий два дополнительных столбца добавляются в него: «Address» и «Name». «Адрес» — это адрес электронной почты комнаты и имя комнаты составляет «Name».
-      1. Затем **AvailableRoomsOptimal** создания коллекции. Это просто **AvailableRooms** коллекции со столбцами «Доступность» и «Участник» удален. Это соответствует схем **AvailableRoomsOptimal** и **AllRooms**. Это позволяет использовать обе коллекции в **элементы** свойство **RoomBrowseGallery**.
-      1. **_roomListSelected** присваивается **false**.
-  1. Состояние загрузки **_loadingRooms**, имеет значение **false** все остальное по завершении выполнения.
+  На низком уровне приведенный выше блок кода:
+  1. Включает состояние загрузки для комнат, установив для **_loadingRooms** **значение true**.
+  1. Проверяет, выбран ли список помещений и есть ли у клиента списки мест. Если это так:
+      1. Задает для _roomListSelected **значение true** и задает для **_selectedRoomList** выбранный элемент.
+      1. Переменной **_allRoomsConcat** присваивается строка с разделителями-точкой с запятой из первых 20 адресов электронной почты комнат в коллекции **аллрумс** . Это обусловлено тем, что операция [Office 365. финдмитингтимес](https://docs.microsoft.com/connectors/office365/#find-meeting-times) ограничена поиском доступного времени в 20 объектов Person за одну операцию.
+      1. Коллекция **румтимесугжестионс** использует операцию [Office 365. финдмитингтимес](https://docs.microsoft.com/connectors/office365/#find-meeting-times) для получения доступности первых 20 комнат в коллекции **аллрумс** на основе значений времени из **_selectedMeetingTime** перемен. Обратите внимание, что `& "Z"` используется для правильного форматирования значения **DateTime** .
+      1. Создается коллекция **аваилаблерумс** . Это просто коллекция **румтимесугжестионс** участников доступности с двумя дополнительными столбцами, добавленными в него: "Address" и "Name". "Адрес" — это адрес электронной почты комнаты, а "Name" — имя комнаты.
+      1. Затем создается коллекция **аваилаблерумсоптимал** . Это просто коллекция **аваилаблерумс** с удаленными столбцами "доступность" и "участник". Это соответствует схемам **аваилаблерумсоптимал** и **аллрумс**. Это позволяет использовать обе коллекции в свойстве **Items** объекта **румбровсегаллери**.
+      1. **_roomListSelected** имеет значение **false**.
+  1. Для состояния загрузки, **_loadingRooms**, задается **значение false** , когда все остальное завершится.
 
-## <a name="back-chevron"></a>Шеврон назад
+## <a name="back-chevron"></a>Значок "назад"
 
-   ![Элемент управления RoomsBackNav](media/meeting-screen/meeting-back.png)
+   ![Элемент управления Румсбаккнав](media/meeting-screen/meeting-back.png)
 
-* Свойство: **Видимым**<br>
+* Свойства **Ярлык**<br>
     Значение: `_roomListSelected && _showDetails`
 
-    Этот элемент управления виден только в том случае, если был выбран как список помещений и **расписание** выделенной вкладки.
+    Этот элемент управления отображается только в том случае, если выбраны оба списка помещений и выбрана вкладка **Расписание** .
 
-* Свойство: **OnSelect**<br>
-    Значение: `Set( _roomListSelected; false )`
+* Свойства **OnSelect**<br>
+    Значение: `Set( _roomListSelected, false )`
 
-    Когда **_roomListSelected** присваивается **false**, он изменяет **RoomBrowseGallery** управления для отображения элементов из **RoomsLists** Коллекция.
+    Если **_roomListSelected** имеет значение **false**, он изменяет элемент управления **румбровсегаллери** для вывода элементов из коллекции **румслистс** .
 
-## <a name="send-icon"></a>Значок "Отправить"
+## <a name="send-icon"></a>Значок отправки
 
-   ![Элемент управления IconSendItem](media/meeting-screen/meeting-send-icon.png)
+   ![Элемент управления Иконсендитем](media/meeting-screen/meeting-send-icon.png)
 
-* Свойство: **DisplayMode**<br>
-    Значение: Логика для принудительного пользователю вводить некоторые сведения о встрече, прежде чем значок становится доступным для редактирования.
+* Свойства **DisplayMode**<br>
+    Значений Логика для принудительного ввода пользователем определенных сведений о собрании, прежде чем значок станет доступным для редактирования.
     
-    ```powerapps-comma
+    ```powerapps-dot
     If( Len( Trim( TextMeetingSubject1.Text ) ) > 0
-        && !IsEmpty( MyPeople ) && !IsBlank( _selectedMeetingTime );
-        DisplayMode.Edit; DisplayMode.Disabled
+        && !IsEmpty( MyPeople ) && !IsBlank( _selectedMeetingTime ),
+        DisplayMode.Edit, DisplayMode.Disabled
     )
     ```
-  Значок, можно выбрать только в том случае, если заполняется теме собрания, имеется по крайней мере один участник собрания и выбрал время собрания. В противном случае он будет отключен.
+  Этот значок доступен для выбора только в том случае, если тема собрания заполнена, имеется хотя бы один участник собрания и выбрано время собрания. В противном случае он будет отключен.
 
-* Свойство: **OnSelect**<br>
+* Свойства **OnSelect**<br>
 
-    Значение: Код, чтобы отправить приглашение к участникам выбранных и очистить все поля ввода:
+    Значений Код для отправки приглашения на собрание выбранным участникам и очистки всех полей ввода:
 
-    ```powerapps-comma
-    Set( _myCalendarName; LookUp( 'Office365'.CalendarGetTables().value; DisplayName = "Calendar" ).Name );;
-    Set( _myScheduledMeeting; 
-        'Office365'.V2CalendarPostItem( _myCalendarName;
-            TextMeetingSubject1.Text; 
-            Text(DateAdd(DateTimeValue( _selectedMeetingTime.StartTime); -TimeZoneOffset(); Minutes) );
-            Text(DateAdd(DateTimeValue( _selectedMeetingTime.EndTime); -TimeZoneOffset(); Minutes) );
+    ```powerapps-dot
+    Set( _myCalendarName, LookUp( 'Office365'.CalendarGetTables().value, DisplayName = "Calendar" ).Name );
+    Set( _myScheduledMeeting, 
+        'Office365'.V2CalendarPostItem( _myCalendarName,
+            TextMeetingSubject1.Text, 
+            Text(DateAdd(DateTimeValue( _selectedMeetingTime.StartTime), -TimeZoneOffset(), Minutes) ),
+            Text(DateAdd(DateTimeValue( _selectedMeetingTime.EndTime), -TimeZoneOffset(), Minutes) ),
             {
-                RequiredAttendees: Concat( MyPeople; UserPrincipalName & ";" ) & _selectedRoom.Address; 
-                Body: TextMeetingMessage1.Text; 
-                Location: _selectedRoom.Name; 
-                Importance: "Normal"; 
-                ShowAs: "Busy"; 
+                RequiredAttendees: Concat( MyPeople, UserPrincipalName & ";" ) & _selectedRoom.Address, 
+                Body: TextMeetingMessage1.Text, 
+                Location: _selectedRoom.Name, 
+                Importance: "Normal", 
+                ShowAs: "Busy", 
                 ResponseRequested: true
             }
         )
-    );;
+    );
     Concurrent(
-        Reset( TextMeetingLocation1 );
-        Reset( TextMeetingSubject1 );
-        Reset( TextMeetingMessage1 );
-        Clear( MyPeople );
-        Set( _selectedMeetingTime; Blank() );
-        Set( _selectedRoomList; Blank() );
-        Set( _selectedRoom; Blank() );
-        Set( _roomListSelected; false )
+        Reset( TextMeetingLocation1 ),
+        Reset( TextMeetingSubject1 ),
+        Reset( TextMeetingMessage1 ),
+        Clear( MyPeople ),
+        Set( _selectedMeetingTime, Blank() ),
+        Set( _selectedRoomList, Blank() ),
+        Set( _selectedRoom, Blank() ),
+        Set( _roomListSelected, false )
     )
     ```
   
-  На низком уровне, этот блок кода:
-  1. Наборы **_myCalendarName** в календарь [Office365.CalendarGetTables()](https://docs.microsoft.com/connectors/office365/#get-calendars) операцию с **DisplayName** «Календарь».
-  1. Расписания собрания со всеми ввода значений из различных вариантов, пользователем время на экран с помощью [Office365.V2CalendarPostItem](https://docs.microsoft.com/connectors/office365/#create-event--v2-) операции.
-  1. Сбрасывает все входные поля и переменные, используемые при создании собрания.
+  На низком уровне этот блок кода:
+  1. Задает **_myCalendarName** в качестве календаря в операции [Office 365. календаржеттаблес ()](https://docs.microsoft.com/connectors/office365/#get-calendars) с **отображаемым именем** "Calendar".
+  1. Планирует встречу со всеми входными значениями из различных выборов, сделанных пользователем на экране с помощью операции [Office 365. V2CalendarPostItem](https://docs.microsoft.com/connectors/office365/#create-event--v2-) .
+  1. Сбрасывает все поля ввода и переменные, используемые при создании собрания.
 
 > [!NOTE]
-> В зависимости от вашего региона нужного календаря отсутствует отображаемое имя «Calendar». Перейдите к Outlook, чтобы увидеть, каково название календаря и внести необходимые изменения в приложении.
+> В зависимости от региона у вас может не быть отображаемого имени календаря. Перейдите в Outlook, чтобы узнать, что такое заголовок календаря, и внесите соответствующие изменения в приложение.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 * [Дополнительные сведения об этом экране](./meeting-screen-overview.md)
 * [Дополнительные сведения о соединителе Office 365 Outlook в PowerApps](../connections/connection-office365-outlook.md)
-* [Дополнительные сведения о соединителе Office 365 пользователи в PowerApps](../connections/connection-office365-users.md)
+* [Дополнительные сведения о соединителе пользователей Office 365 в PowerApps](../connections/connection-office365-users.md)

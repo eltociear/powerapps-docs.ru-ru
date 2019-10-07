@@ -1,27 +1,26 @@
 ---
 title: Функции Download, Launch и Param | Документация Майкрософт
-description: Справочные сведения, включая описание синтаксиса и примеры для функций Download, Launch и Param в приложениях на основе холста
+description: Справочные сведения, включая синтаксис и примеры, для функций скачивания, запуска и param в приложениях Canvas
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4a53d8c20bd4b7784cb94daa574682c041f104ea
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: c6fb3c5ef002ed0355cc8061603e4f4b1f438e6e
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544345"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992498"
 ---
-# <a name="download-launch-and-param-functions-in-canvas-apps"></a>Функции Download, Launch и Param в приложениях на основе холста
+# <a name="download-launch-and-param-functions-in-canvas-apps"></a>Загрузка, запуск и функции param в приложениях Canvas
 Скачивает или запускает веб-страницу или приложение с параметрами.  
 
 ## <a name="description"></a>Описание
@@ -29,7 +28,7 @@ ms.PowerAppsDecimalTransform: true
 
 Функция **Launch** запускает веб-страницу или приложение.  При необходимости эта функция может передавать параметры в приложение.
 
-В Internet Explorer и Microsoft Edge **запуска** функция открывает веб-сайт или приложение только в том случае, если его параметры безопасности или выше, чем приложения, содержащего функцию. Если, например, добавить **запуска** функции в приложение, которое будет выполняться в **надежные сайты** безопасности зоны, убедитесь, что веб-сайт или приложение, которое требуется функции в **надежных сайты** или **Местная интрасеть** зоны (не в **Ограниченные узлы**). Дополнительные сведения: [Изменение параметров безопасности и конфиденциальности для Internet Explorer 11](https://support.microsoft.com/en-us/help/17479/windows-internet-explorer-11-change-security-privacy-settings).  
+В Internet Explorer и Microsoft ребр функция **запуска** открывает веб-сайт или приложение, только если его параметры безопасности совпадают или выше, чем у приложения, содержащего функцию. Если, например, вы добавите функцию **запуска** в приложение, которое будет выполняться в зоне безопасности **надежных сайтов** , убедитесь, что веб-сайт или приложение, которое нужно открыть, находится в зоне **Доверенные сайты** или **Местная интрасеть** (не в  **Ограниченные сайты**). Дополнительные сведения: [Изменение параметров безопасности и конфиденциальности для Internet Explorer 11](https://support.microsoft.com/en-us/help/17479/windows-internet-explorer-11-change-security-privacy-settings).  
 
 Функция **Param** возвращает параметр, переданный в приложение при запуске. Если именованный параметр не передавался, функция **Param** возвращает *пустое значение*.
 
@@ -38,7 +37,7 @@ ms.PowerAppsDecimalTransform: true
 
 * *Адрес* — обязательный аргумент.  Адрес веб-ресурса для скачивания.
 
-**Launch**( *адрес* [; *имя_параметра1*; *значение_параметра1*; ... ] )
+**Launch**( *адрес* [, *имя_параметра1*, *значение_параметра1*, ... ] )
 
 * *Адрес* — обязательный аргумент.  Адрес веб-страницы или ИД приложения для запуска.
 * *Имя_параметра* — необязательный параметр.  Имя параметра.

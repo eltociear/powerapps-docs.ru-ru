@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 04/26/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d2b4229cc39a84bcffa624be8352762bcdc7a47b
-ms.sourcegitcommit: 21163a6d77b784f4864fce4695776c9b4652cb29
+ms.openlocfilehash: 113d76a3b80c2ef68f5e267714e4f792c988d237
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2019
-ms.locfileid: "66225171"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71988877"
 ---
 # <a name="understand-data-cards-in-powerapps"></a>Общие сведения о картах данных в PowerApps
 
@@ -136,7 +136,7 @@ ms.locfileid: "66225171"
 
 ![](./media/working-with-cards/dissect-card1.png)
 
-На этом графике отмеченный элементы управления в карточке данных:
+На этом рисунке элементы управления в карточке данных помечены следующим образом:
 
 ![](./media/working-with-cards/dissect-card2.png)
 
@@ -159,7 +159,7 @@ ms.locfileid: "66225171"
 | **TextErrorMessage.Text** |**Parent.Error** |При возникновении проблемы проверки свойство карты **Error** выдает соответствующее сообщение об ошибке. |
 
 > [!NOTE]
-> **Parent.Error** свойство является свойством только для вывода, которые нельзя задать с помощью формулы. Таким образом, это свойство не будет отображаться в списке свойств в левом верхнем углу или в **свойства** или **Дополнительно** вкладки рядом с правым краем. В строке формул предлагает это свойство, если вы создаете формулу, которая может ссылаться на свойство.
+> Свойство **Parent. Error** является свойством только для вывода, которое нельзя задать с помощью формулы. Таким образом, это свойство не будет отображаться в списке свойств в левом верхнем углу или на вкладках « **Свойства** » или « **Дополнительно** » возле правого края. Строка формул предлагает это свойство при написании формулы, которая может ссылаться на свойство.
 
 Чтобы получить сведения из этих элементов управления и передать их обратно в источник данных, используйте следующие основные формулы:
 

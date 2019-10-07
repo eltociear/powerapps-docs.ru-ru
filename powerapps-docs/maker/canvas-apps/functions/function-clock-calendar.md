@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 25cae936ace1dcd3108f11271e3fe38cb41ae2e7
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: a4b3540d8a7d499d4da1206f70298ea4a2541b16
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61546484"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71985442"
 ---
 # <a name="calendar-and-clock-functions-in-powerapps"></a>Функции Calendar и Clock в PowerApps
 Извлекает сведения о дате и времени для текущего значения языкового стандарта.
@@ -57,7 +57,7 @@ ms.locfileid: "61546484"
 
 ## <a name="examples"></a>Примеры
 1. Вставьте элемент управления раскрывающегося меню.
-2. Настройте формулу для свойства **[Items](../controls/properties-core.md)**:
+2. Настройте формулу для свойства **[Items](../controls/properties-core.md)** :
    
    * **Calendar.MonthsLong()**
 3. Теперь пользователи вашего приложения могут выбрать месяц на своем языке.  **MonthsLong** можно заменить любой из таблиц с одним столбцом, которые возвращаются функцией **Calendar**, чтобы создать раскрывающееся меню выбора дня недели или времени.
@@ -66,10 +66,10 @@ ms.locfileid: "61546484"
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| **Calendar.MonthsLong()** |Возвращаемое значение содержит полное имя каждого месяца, начиная с «Январь». |[ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ] |
-| **Calendar.MonthsShort()** |Возвращаемое значение содержит сокращенное название каждого месяца, начиная с «Январь». |[ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ] |
-| **Calendar.WeekdaysLong()** |Возвращаемое значение содержит полное имя каждого дня, начиная с «Sunday». |[ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ] |
-| **Calendar.WeekdaysShort()** |Возвращаемое значение содержит сокращенное название каждого дня, начиная с «Sunday». |[ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ] |
+| **Calendar.MonthsLong()** |Возвращаемое значение содержит полное название каждого месяца, начиная с "Январь". |[ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ] |
+| **Calendar.MonthsShort()** |Возвращаемое значение содержит сокращенное название каждого месяца, начиная с "Январь". |[ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ] |
+| **Calendar.WeekdaysLong()** |Возвращаемое значение содержит полное название каждого дня, начиная с "воскресенье". |[ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ] |
+| **Calendar.WeekdaysShort()** |Возвращаемое значение содержит сокращенное название каждого дня, начиная с "воскресенье". |[ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ] |
 | **Clock.AmPm()** |Для этого языка используется 12-часовой формат времени. Возвращаемое значение содержит обозначения времени заглавными буквами ("AM" и "PM"). |[ "AM", "PM" ] |
 | **Clock.AmPmShort()** |Для этого языка используется 12-часовой формат времени. Возвращаемое значение содержит обозначения времени строчными буквами ("am" и "pm"). |[ "A", "P" ] |
 | **Clock.IsClock24()** |Для этого языка используется 12-часовой формат времени. |**false** |

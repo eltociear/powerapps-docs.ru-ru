@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/13/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 95406bff477a4d84a6125225ffc1e158ffb8c19a
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 6e559f482c8ad151eb04057f3178b141150acc7d
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544155"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984430"
 ---
 # <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>Функции Abs, Exp, Ln, Power и Sqrt в PowerApps
 Вычисление абсолютного значения, натурального логарифма и квадратного корня, возведение *e* или любого числа в указанную степень.
@@ -31,7 +30,7 @@ ms.PowerAppsDecimalTransform: true
 
 Функция **Ln** возвращает натуральный логарифм (по основанию *e*) от полученного аргумента.
 
-Функция **Power** возвращает число, возведенное в указанную степень.  Эта функция эквивалентна [оператору **^**](operators.md).
+Функция **Power** возвращает число, возведенное в указанную степень.  Эта функция эквивалентна [оператору **^** ](operators.md).
 
 Функция **Sqrt** возвращает число, квадрат которого равен полученному аргументу.
 
@@ -44,7 +43,7 @@ ms.PowerAppsDecimalTransform: true
 
 * *Number* — обязательный аргумент. Число, для которого нужно выполнить операцию.
 
-**Power**( *Base*; *Exponent* )
+**Power**( *Base*, *Exponent* )
 
 * *Base* — обязательный аргумент. Число, которое нужно возвести в степень.
 * *Exponent* — обязательный аргумент. Показатель степени, в которую нужно возвести число.
@@ -61,7 +60,7 @@ ms.PowerAppsDecimalTransform: true
 | **Abs( -55 )** |Возвращает число без знака "минус". |55 |
 | **Exp( 2 )** |Возвращает *e* в степени 2, то есть *e* \* *e*. |7,389056... |
 | **Ln( 100 )** |Возвращает натуральный логарифм (по основанию *e*) от числа 100. |4,605170... |
-| **Power( 5; 3 )** |Возвращает 5 в степени 3, то есть 5 \* 5 \* 5. |125 |
+| **Power( 5, 3 )** |Возвращает 5 в степени 3, то есть 5 \* 5 \* 5. |125 |
 | **Sqrt( 9 )** |Возвращает число, квадрат которого равен числу 9. |3 |
 
 ### <a name="single-column-table"></a>Для таблицы с одним столбцом

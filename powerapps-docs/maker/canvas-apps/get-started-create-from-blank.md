@@ -1,25 +1,24 @@
 ---
 title: Создание с нуля приложения на основе холста из данных Excel | Документация Майкрософт
 description: В этом руководстве вы создадите приложение на основе холста с двумя экранами, позволяющее пользователям создавать, изменять и удалять записи в файле Excel.
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 03/26/2019
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c66277cbd0d0ded3bfe0bee942e9160a650d2a98
-ms.sourcegitcommit: 6dea3559e012e56fde09b95ea8a2af2a81b89a91
+ms.openlocfilehash: d0a7a164210fcfd9593455f825092417bd31a692
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000098"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71983657"
 ---
 # <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>Создание с нуля приложения на основе холста из данных Excel
 
@@ -31,7 +30,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Скопируйте эти данные и вставьте их в файл Excel.
 
-    | StartDay | StartTime | Доброволец | Архивация |
+    | StartDay | StartTime | Доброволец | Копия |
     | --- | --- | --- | --- |
     | Суббота |10:00–12:00 |Васкес (Vasquez) |Кумаширо (Kumashiro) |
     | Суббота |12:00–14:00 |Айс (Ice) |Сингхал (Singhal) |
@@ -112,17 +111,17 @@ ms.PowerAppsDecimalTransform: true
 
     Формула соответствует следующему примеру:
 
-    ```powerapps-comma
+    ```powerapps-dot
     SortByColumns(
         Search(
-            Schedule;
-            TextSearchBox1.Text;
+            Schedule,
+            TextSearchBox1.Text,
             "Volunteer"
-        );
-        "Volunteer";
+        ),
+        "Volunteer",
         If(
-            SortDescending1;
-            SortOrder.Descending;
+            SortDescending1,
+            SortOrder.Descending,
             SortOrder.Ascending
         )
     )
@@ -197,7 +196,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Для свойства **OnSelect** этой кнопки введите следующую формулу:
 
-    `NewForm(EditForm1);;Navigate(ChangeScreen;ScreenTransition.None)`
+    `NewForm(EditForm1);Navigate(ChangeScreen,ScreenTransition.None)`
 
     Когда пользователь щелкнет этот значок, откроется экран **ChangeScreen** с пустыми полями для быстрого создания записи.
 
@@ -207,7 +206,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **OnSelect** этой стрелки следующую формулу:
 
-    `EditForm(EditForm1);; Navigate(ChangeScreen; ScreenTransition.None)`
+    `EditForm(EditForm1); Navigate(ChangeScreen, ScreenTransition.None)`
 
     Когда пользователь щелкнет этот значок, отобразится экран **ChangeScreen** с информацией из выбранной записи в каждом поле, что позволит легко изменить или удалить эту запись.
 
@@ -219,7 +218,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Для свойства **OnSelect** этой кнопки введите следующую формулу:
 
-    `ResetForm(EditForm1);;Navigate(ViewScreen; ScreenTransition.None)`
+    `ResetForm(EditForm1);Navigate(ViewScreen, ScreenTransition.None)`
 
     Когда пользователь щелкнет этот значок, отменятся все внесенные на этом экране изменения и отобразится экран просмотра.
 
@@ -229,7 +228,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **OnSelect** этой галочки следующую формулу:
 
-    `SubmitForm(EditForm1);; Navigate(ViewScreen; ScreenTransition.None)`
+    `SubmitForm(EditForm1); Navigate(ViewScreen, ScreenTransition.None)`
 
     Когда пользователь щелкнет этот значок, сохранятся все внесенные на этом экране изменения и отобразится экран просмотра.
 
@@ -247,7 +246,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Для свойства **OnSelect** значка мусорной корзины введите следующую формулу:
 
-    `Remove(Schedule; BrowseGallery1.Selected);; Navigate(ViewScreen; ScreenTransition.None)`
+    `Remove(Schedule, BrowseGallery1.Selected); Navigate(ViewScreen, ScreenTransition.None)`
 
     Когда пользователь щелкнет этот значок, выбранная запись будет удалена из источника данных и откроется экран просмотра.
 

@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d41ef04d3cd070373f6772bdfced029a7d09e244
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 5706b2c1b21c0135cc60678b6cf3f882df6fa56c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544230"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71986633"
 ---
 # <a name="html-text-control-in-powerapps"></a>Элемент управления "HTML-текст" в PowerApps
 Поле, в котором отображается текст, а HTML-теги преобразуются в форматирование.
@@ -76,10 +75,10 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Find**(*текст_для_поиска*; *в_тексте*)](../functions/function-find.md)
+[**Find**(*текст_для_поиска*, *в_тексте*)](../functions/function-find.md)
 
 ## <a name="example"></a>Пример
-1. Добавьте элемент управления **[Метка](control-text-box.md)**, назовите его **Source** и укажите в качестве значения свойства **[Text](properties-core.md)** следующую строку:
+1. Добавьте элемент управления **[Метка](control-text-box.md)** , назовите его **Source** и укажите в качестве значения свойства **[Text](properties-core.md)** следующую строку:
 
 "\<p>Мы\&nbsp;достигли необычайно \&quot;глубокого\&quot; уровня глобализации и локализации.\<p>"
 
@@ -88,7 +87,7 @@ ms.PowerAppsDecimalTransform: true
 1. Добавьте элемент управления **HTML-текст** и укажите для свойства **HtmlText** следующее значение:<br>
    **Source.Text**
    
-     В элементе управления **HTML-текст** отображается тот же текст, что и в элементе управления **[Метка](control-text-box.md)**, но теги преобразуются в соответствующие символы.
+     В элементе управления **HTML-текст** отображается тот же текст, что и в элементе управления **[Метка](control-text-box.md)** , но теги преобразуются в соответствующие символы.
 
 
 ## <a name="accessibility-guidelines"></a>Руководство по настройке специальных возможностей
@@ -96,7 +95,7 @@ ms.PowerAppsDecimalTransform: true
 
 ### <a name="color-contrast"></a>Контрастность
 Необходимо настроить достаточный контраст для следующих элементов:
-* элементов **[Color](properties-color-border.md)** и **[Fill](properties-color-border.md)**.
+* элементов **[Color](properties-color-border.md)** и **[Fill](properties-color-border.md)** .
 * Текст с пользовательскими цветами и фоном
 
 ### <a name="screen-reader-support"></a>Поддержка средства чтения с экрана

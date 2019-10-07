@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 11/07/2015
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d99cf1129ae23eda97b79457cb2b93db6a74a5ea
-ms.sourcegitcommit: aa9f78c304fe46922aecfe3b3fadb6bda72dfb23
+ms.openlocfilehash: 967d83286cd179177cfbb5558f1fc3484a332875
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66216027"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71984602"
 ---
 # <a name="len-function-in-powerapps"></a>Функция Len в PowerApps
 Возвращает длину текстовой строки.
@@ -27,7 +26,7 @@ ms.PowerAppsDecimalTransform: true
 ## <a name="description"></a>Описание
 Если в качестве аргумента указать одну строку, функция вернет длину в виде числа.  Если указать [таблицу](../working-with-tables.md) из одного столбца, содержащую строки, функция вернет таблицу из одного столбца с длинами каждой из строк. Таблицу с несколькими столбцами можно преобразовать в таблицу с одним столбцом, как описано в статье об [использовании таблиц](../working-with-tables.md).
 
-Если указать [пустой](function-isblank-isempty.md) строку, **Len** возвращает 0.
+Если указать [пустую](function-isblank-isempty.md) строку, функция **Len** возвращает значение 0.
 
 ## <a name="syntax"></a>Синтаксис
 **Len**(*строка*)
@@ -54,6 +53,6 @@ ms.PowerAppsDecimalTransform: true
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| **Len(ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;))** |В [столбце](../working-with-tables.md#columns) **Address** (Адрес) таблицы **People** (Люди):<br><ul><li>Определяет длину каждой строки.</li><li>Возвращает таблицу из одного столбца, содержащего длины каждой из строк.</li> |<style> img { max-width: none } </style> ![](media/function-len/people-table-len.png) |
-| **Len(["Hello"; "to the"; "World"; ""])** |В столбце **[Value](function-value.md)** (Значение) встроенной таблицы:<br><ul><li>Определяет длину каждой строки.</li><li>Возвращает таблицу из одного столбца, содержащего длины каждой из строк.</li> |![](media/function-len/people-table-len-inline.png) |
+| **Len(ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;))** |В [столбце](../working-with-tables.md#columns) **Address** (Адрес) таблицы **People** (Люди):<br><ul><li>Определяет длину каждой строки.</li><li>Возвращает таблицу из одного столбца, содержащего длины каждой из строк.</li> |<style> img { max-width: none } </style> ![](media/function-len/people-table-len.png) |
+| **Len(["Hello", "to the", "World", ""])** |В столбце **[Value](function-value.md)** (Значение) встроенной таблицы:<br><ul><li>Определяет длину каждой строки.</li><li>Возвращает таблицу из одного столбца, содержащего длины каждой из строк.</li> |![](media/function-len/people-table-len-inline.png) |
 
