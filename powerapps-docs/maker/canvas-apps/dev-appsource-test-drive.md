@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 05/08/2017
 ms.author: litran
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1e9ac3428a9621da360fd1cc5f1c376d52352d1b
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.openlocfilehash: 570d9430d7dbcc5e8d41b7128060677fe1ff45a1
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71705339"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993069"
 ---
 # <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>Предоставление клиентам тестовых выпусков приложения на основе холста в AppSource
 

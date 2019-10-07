@@ -8,18 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d4cde32e52240e04a3499444d2c1325d0105a945
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: a49e79da6821e814a918722e70daa1b005f28777
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63320585"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993819"
 ---
 # <a name="button-control-in-powerapps"></a>Элемент управления "Кнопка" в PowerApps
 Элемент управления, который пользователь нажимает для взаимодействия с приложением.
@@ -61,7 +60,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
+**[FontWeight](properties-text.md)** — вес текста в элементе управления: **Полужирный**, **полужирный**, **обычный**или **более светлый**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -118,7 +117,7 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-**[Navigate( *имя_экрана*; *тип_перехода* )](../functions/function-navigate.md)**
+**[Navigate( *имя_экрана*, *тип_перехода* )](../functions/function-navigate.md)**
 
 ## <a name="examples"></a>Примеры
 ### <a name="add-a-basic-formula-to-a-button"></a>Добавление основной формулы для кнопки
@@ -145,7 +144,7 @@ ms.PowerAppsDecimalTransform: true
 1. Для свойства **[HintText](control-text-input.md)** текстового поля **Source** задайте значение "Введите число".
 2. Задайте для свойства **[OnSelect](properties-core.md)** кнопки **Add** эту формулу:
    
-    **UpdateContext({Total:Total + Value(Source.Text)});;<br>UpdateContext({ClearInput: ""})**
+    **UpdateContext({Total:Total + Value(Source.Text)});<br>UpdateContext({ClearInput: ""})**
    
     > [!NOTE]
    > Если указывается несколько формул, их следует разделять точками с запятой ( **;** ).

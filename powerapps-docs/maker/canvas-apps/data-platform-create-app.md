@@ -1,34 +1,34 @@
 ---
-title: Создание приложения на основе холста с Common Data Service | Документация Майкрософт
-description: В PowerApps автоматически создайте приложение для управления данными в Common Data Service на основе холста
-author: AFTOwen
+title: Создание приложения Canvas из Common Data Service | Документация Майкрософт
+description: В PowerApps автоматически создает приложение Canvas для управления данными в Common Data Service
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: quickstart
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 05/06/2018
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7e06c24d4d83b0e176782b705d6a77e956b6043b
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: f9dedc515ee130a950c1dc12793751d43aa3804f
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61549683"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993085"
 ---
-# <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>Создание приложения на основе холста с Common Data Service в PowerApps
+# <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>Создание приложения Canvas на основе Common Data Service в PowerApps
 
-В PowerApps, автоматически создать приложение на основе холста на основе списка примеров учетных записей в [Common Data Service](../common-data-service/data-platform-intro.md). В этом приложении можно просматривать все учетные записи, отображать подробные сведения о отдельной записи, а также создавать, изменять и удалять учетные записи.
+В PowerApps автоматически создает приложение Canvas на основе списка примеров учетных записей в [Common Data Service](../common-data-service/data-platform-intro.md). В этом приложении можно просматривать все учетные записи, отображать подробные сведения о отдельной записи, а также создавать, изменять и удалять учетные записи.
 
 Если вы не зарегистрированы в PowerApps, перед началом работы [пройдите бесплатную регистрацию](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## <a name="prerequisites"></a>Технические условия
 
-Для выполнения этого краткого руководства, вы должны быть назначены [создателя среды](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles) роль безопасности и вы должны [перейти в среду](working-with-environments.md) в котором базы данных в Common Data Service будет создана, содержащий данные, и позволяет обновлять. Если такая среда отсутствует и у вас есть права администратора, вы можете [создать среду](https://docs.microsoft.com/power-platform/admin/environments-administration#create-an-environment), отвечающую этим требованиям.
+Для выполнения этого краткого руководства необходимо назначить роль безопасности " [создатель среды](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles) ", и необходимо [переключиться на среду](working-with-environments.md) , в которой создана база данных Common Data Service, содержит данные и допускает обновления. Если такая среда отсутствует и у вас есть права администратора, вы можете [создать среду](https://docs.microsoft.com/power-platform/admin/environments-administration#create-an-environment), отвечающую этим требованиям.
 
 ## <a name="generate-an-app"></a>Создание приложения
 
@@ -64,7 +64,7 @@ ms.locfileid: "61549683"
 1. Рядом с левым краем экрана выберите **Сохранить**, а затем щелкните **Сохранить** в нижнем левом углу.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-В этом кратком руководстве вы создали приложение для управления примерами данных об учетных записях в Common Data Service. На следующем шаге мы настроим коллекцию и еще несколько элементов на стандартном экране просмотра в соответствии со своими потребностями.
+В этом кратком руководстве вы создали приложение для управления демонстрационными данными об учетных записях в Common Data Service. На следующем шаге мы настроим коллекцию и еще несколько элементов на стандартном экране просмотра в соответствии со своими потребностями.
 
 > [!div class="nextstepaction"]
 > [Настройка коллекции](customize-layout-sharepoint.md).

@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6ab5ddf93351547afb752e838ab4929c7138df87
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 4ec115eecc676a7ec5bea3b04b135eeb63268449
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560445"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993246"
 ---
 # <a name="toggle-control-in-powerapps"></a>Элемент управления "Переключатель" в PowerApps
 "Переключатель" — это элемент управления, который пользователь может включить или отключить.
@@ -106,14 +105,14 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**If**( *Condition*;; *Result* )](../functions/function-if.md)
+[**If**( *Condition*; *Result* )](../functions/function-if.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте в приложение переключатель и назовите его **Скидка**.
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте метку и установите в ее свойстве **[Text](properties-core.md)** формулу:
-   <br>**If(Скидка.Value = true; "Цена: 75 руб."; "Цена: 100 руб.")**
+   <br>**If(Скидка.Value = true, "Цена: 75 руб.", "Цена: 100 руб.")**
 
     Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 3. Нажмите клавишу F5 и измените значение переключателя **Скидка**.
@@ -137,7 +136,7 @@ ms.PowerAppsDecimalTransform: true
 Это дополнение к [стандартным требованиям по цветовому контрасту](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Поддержка средства чтения с экрана
-* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)**.
+* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)** .
 * Должен присутствовать элемент **FalseText**.
 * Должен присутствовать элемент **TrueText**.
 
@@ -146,4 +145,4 @@ ms.PowerAppsDecimalTransform: true
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.
+* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .

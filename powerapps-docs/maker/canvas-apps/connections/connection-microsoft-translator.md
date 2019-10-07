@@ -8,18 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 07/12/2017
 ms.author: lanced
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 405dcf432526206aa3a5f341a38e2ae5547cea1f
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 4eab4585a2abd8633704c76b57cde52702982e97
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61545707"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994023"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>Подключение к Microsoft Translator из PowerApps
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -58,7 +57,7 @@ ms.PowerAppsDecimalTransform: true
     `MicrosoftTranslator.Languages()`
 4. Добавьте метку, расположите ее ниже элемента управления **TargetLang** и назначьте ее свойству **[Text](../controls/properties-core.md)** следующую формулу:  
 
-    `MicrosoftTranslator.Translate(Source.Text; TargetLang.Selected.Value)`
+    `MicrosoftTranslator.Translate(Source.Text, TargetLang.Selected.Value)`
 5. Введите какой-либо текст в поле **Source** и выберите язык в списке **TargetLang**. В метке будет выведен текст, переведенный на выбранный вами язык.  
 
     ![Перевод текста с английского на испанский язык](./media/connection-microsoft-translator/translate-text.png)
@@ -72,7 +71,7 @@ ms.PowerAppsDecimalTransform: true
 2. Переименуйте вторую метку (не **Source**), назначив ей имя **Target**.
 3. Добавьте элемент управления **Звук** (**Вставка** > **Мультимедиа**) и назначьте его свойству **Media** следующую формулу:  
 
-    `MicrosoftTranslator.TextToSpeech(Target.Text; TargetLang.Selected.Value)`
+    `MicrosoftTranslator.TextToSpeech(Target.Text, TargetLang.Selected.Value)`
 4. Нажмите клавишу F5 или кнопку предварительного просмотра (![](./media/connection-microsoft-translator/preview.png)). Введите какой-либо текст в поле **Source**, выберите язык в списке **TargetLang**, а затем нажмите кнопку воспроизведения в элементе управления "Звук".
 
     Приложение озвучит введенный текст на выбранном вами языке.
@@ -100,7 +99,7 @@ ms.PowerAppsDecimalTransform: true
 | [TextToSpeech](connection-microsoft-translator.md#texttospeech) |Преобразует указанный текст в речь в виде звукового потока в формате звукозаписи. |
 
 ### <a name="languages"></a>Языки
-Получение языков: Возвращает все языки, поддерживаемые службой Microsoft Translator.
+Получить языки: Возвращает все языки, поддерживаемые службой Microsoft Translator.
 
 #### <a name="input-properties"></a>Входные свойства
 Нет.
@@ -128,7 +127,7 @@ ms.PowerAppsDecimalTransform: true
 Нет.
 
 ### <a name="detect"></a>Detect
-Определение языка: Определяет исходный язык текста.
+Определить язык: Определяет исходный язык текста.
 
 #### <a name="input-properties"></a>Входные свойства
 
@@ -144,7 +143,7 @@ ms.PowerAppsDecimalTransform: true
 | Имя |строка |Нет | |
 
 ### <a name="speechlanguages"></a>SpeechLanguages
-Установить языки голосовых функций: Возвращает языки, доступные для синтеза речи.
+Получить языки речи: Возвращает языки, доступные для синтеза речи.
 
 #### <a name="input-properties"></a>Входные свойства
 Нет.

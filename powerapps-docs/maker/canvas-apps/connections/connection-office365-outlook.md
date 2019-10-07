@@ -8,18 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 10/20/2017
 ms.author: lanced
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5ea7c9fc331d96b50d8623f4ca632859e09be7ab
-ms.sourcegitcommit: 25a85b462515cb64f3f2b114864a682abf803f4a
+ms.openlocfilehash: ba568cb34c12f8b63e8c59f5cb73aa1ed6cb9f02
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70213671"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993943"
 ---
 # <a name="connect-to-office-365-outlook-from-powerapps"></a>Подключение к Office 365 Outlook из PowerApps
 ![Outlook в Office 365](./media/connection-office365-outlook/office365icon.png)
@@ -59,10 +58,10 @@ ms.PowerAppsDecimalTransform: true
 4. Эта функция получает доступ к нескольким необязательным параметрам. Задайте для свойства **Items** коллекции одну из следующих формул:
    
     `Office365.GetEmails({fetchOnlyUnread:false})`  
-    `Office365.GetEmails({fetchOnlyUnread:false; top:2})`  
-    `Office365.GetEmails({folderPath:"Sent Items"; fetchOnlyUnread:false; top:2})`  
-    `Office365.GetEmails({folderPath:"Sent Items"; fetchOnlyUnread:false; top:2; searchQuery:"powerapps"})`  
-    `Office365.GetEmails({folderPath:"Deleted Items"; fetchOnlyUnread:false; top:2; skip:3})`
+    `Office365.GetEmails({fetchOnlyUnread:false, top:2})`  
+    `Office365.GetEmails({folderPath:"Sent Items", fetchOnlyUnread:false, top:2})`  
+    `Office365.GetEmails({folderPath:"Sent Items", fetchOnlyUnread:false, top:2, searchQuery:"powerapps"})`  
+    `Office365.GetEmails({folderPath:"Deleted Items", fetchOnlyUnread:false, top:2, skip:3})`
 
 ## <a name="send-a-message"></a>Отправка сообщений
 1. В меню **Вставка** выберите **Текст**, а затем — **Ввод текста**.
@@ -76,7 +75,7 @@ ms.PowerAppsDecimalTransform: true
    * **inputBody**.
 4. В меню **Вставка** выберите **Элементы управления**, а затем — **Кнопка**. Задайте для свойства **[OnSelect](../controls/properties-core.md)** следующую формулу:  
    
-    `Office365.SendEmail(inputTo.Text; inputSubject.Text; inputBody.Text)`
+    `Office365.SendEmail(inputTo.Text, inputSubject.Text, inputBody.Text)`
 5. Переместите кнопку, чтобы она отображалась под другими элементами управления, и задайте для свойства **[Text](../controls/properties-core.md)** значение **Отправить электронное письмо**.
 6. Нажмите клавишу F5 или кнопку предварительного просмотра (![кнопка предварительного просмотра](./media/connection-office365-outlook/preview.png)). Введите действительный адрес электронной почты в **inputTo**, а также любой текст в двух других элементах управления для **ввода текста**.
 7. Нажмите кнопку **Отправить электронное письмо** для отправки сообщения. Нажмите клавишу ESC, чтобы вернуться в рабочую область по умолчанию.
@@ -95,11 +94,11 @@ ms.PowerAppsDecimalTransform: true
 
 В этом примере фото будет отправлено в виде файла **file1.jpg**:
 
-`Office365.SendEmail(inputTo.Text; inputSubject.Text; inputBody.Text; {Attachments:Table({Name:"file1.jpg"; ContentBytes:Camera1.Photo; '@odata.type':""})})`
+`Office365.SendEmail(inputTo.Text, inputSubject.Text, inputBody.Text, {Attachments:Table({Name:"file1.jpg", ContentBytes:Camera1.Photo, '@odata.type':""})})`
 
 В этом примере фото будет сопровождаться звуковым файлом:
 
-`Office365.SendEmail(inputTo.Text; inputSubject.Text; inputBody.Text; {Attachments:Table({Name:"file1.jpg"; ContentBytes:Camera1.Photo; '@odata.type':""}; {Name:"AudioFile"; ContentBytes:microphone1.audio })})`
+`Office365.SendEmail(inputTo.Text, inputSubject.Text, inputBody.Text, {Attachments:Table({Name:"file1.jpg", ContentBytes:Camera1.Photo, '@odata.type':""}, {Name:"AudioFile", ContentBytes:microphone1.audio })})`
 
 ## <a name="delete-a-message"></a>Удаление сообщения
 1. В меню **Вставка** выберите **Коллекция**, а затем — элемент управления **Коллекция текста**.

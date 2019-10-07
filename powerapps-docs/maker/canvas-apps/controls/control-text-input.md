@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 60340c3833f61be4acf4780a90d18e483c1dc010
-ms.sourcegitcommit: 26704369b17d2358a77cd4841bd70bbcca3384f2
+ms.openlocfilehash: b5b8e0b9bae3a7733a8499fb096c04e19c878045
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65521046"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993286"
 ---
 # <a name="text-input-control-in-powerapps"></a>Элемент управления "Текстовое поле" в PowerApps
 Поле, в котором пользователь может вводить текст, числа и другие данные.
@@ -65,7 +64,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
+**[FontWeight](properties-text.md)** — вес текста в элементе управления: **Полужирный**, **полужирный**, **обычный**или **более светлый**.
 
 **Format** — это значение определяет, может ли пользователь вводить только цифры или любой другой текст.
 
@@ -125,7 +124,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Underline](properties-text.md)** определяет, когда под текстом, отображаемым в элементе управления, проходит линия.
 
-**VirtualKeyboardMode** — тип виртуальной клавиатуры, текст или numeric, отображаемого на сенсорном экране пользователь приложения. **Формат** свойство определяет значение по умолчанию. Зависит от поддержки устройства. Устройства под управлением iOS должен иметь по крайней мере версии 12.2. Рекомендуемая версия Android — 9.0 и возможности числовой клавиатуры различаются для устройств Android. Windows 10 не поддерживает это свойство.  
+**Виртуалкэйбоардмоде** — тип виртуальной клавиатуры, текста или цифр, который отображается на сенсорном экране пользователя приложения. Свойство **Format** определяет значение по умолчанию. Поддержка устройств различается. На устройствах под управлением iOS должна быть установлена версия не ниже 12,2. Рекомендуемая версия Android — 9,0, а возможности цифровых клавиатур различаются для устройств Android. Windows 10 не поддерживает это свойство.  
 
 **[Visible](properties-core.md)** определяет, отображается ли элемент управления или он скрыт.
 
@@ -144,7 +143,7 @@ ms.PowerAppsDecimalTransform: true
    
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте кнопку, укажите для ее свойства **[Text](properties-core.md)** значение **Добавить**, а для свойства **[OnSelect](properties-core.md)** следующую формулу:<br>
-   **Collect(Names; {FirstName:inputFirst.Text; LastName:inputLast.Text})**
+   **Collect(Names, {FirstName:inputFirst.Text, LastName:inputLast.Text})**
    
     Нужны дополнительные сведения о функции **[Collect](../functions/function-clear-collect-clearcollect.md)** или [других функциях](../formula-reference.md)?
 3. Добавьте коллекцию текстов в портретной (вертикальной) ориентации, укажите для свойства **[Items](properties-core.md)** значение **Names**, а для свойства **[Text](properties-core.md)** элемента **Subtitle1** значение **ThisItem.FirstName**.
@@ -157,7 +156,7 @@ ms.PowerAppsDecimalTransform: true
 1. Добавьте элемент управления "Текстовое поле", назовите его **inputPassword** и укажите для свойства **Mode** значение **Password**.
 
 1. Добавьте метку и установите в ее свойстве **[Text](properties-core.md)** формулу:<br>
-   **If(inputPassword.Text = "P@ssw0rd"; "Доступ предоставлен"; "Доступ запрещен")**
+   **If(inputPassword.Text = "P@ssw0rd", "Доступ предоставлен", "Доступ запрещен")**
 
     Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 

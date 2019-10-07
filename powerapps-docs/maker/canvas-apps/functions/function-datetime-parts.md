@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ab824432833614ba5b2002375a79e7899a8d7277
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: bc5d17903ea5cfe834fd4e0987b4fc4613a1ad65
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61551268"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992818"
 ---
 # <a name="day-month-year-hour-minute-second-and-weekday-functions-in-powerapps"></a>Функции Day, Month, Year, Hour, Minute, Second и Weekday в PowerApps
 Возвращает отдельные компоненты значения даты и времени.
@@ -59,7 +58,7 @@ ms.PowerAppsDecimalTransform: true
 
 * *дата_и_время* — обязательный аргумент.  Значение даты и времени, для которого необходимо выполнить операцию.  
 
-**Weekday**( *Дата_и_время* [; *Первый_день_недели* ] )<br>
+**Weekday**( *Дата_и_время* [, *Первый_день_недели* ] )<br>
 
 * *Дата_и_время* — обязательный аргумент.  Значение даты и времени, для которого необходимо выполнить операцию. 
 * *Первый_день_недели* — необязательный аргумент.  Код Excel, указывающий, с какого дня начинается неделя.  Если не указано, то используется значение 1 (с воскресенья).
@@ -76,6 +75,6 @@ ms.PowerAppsDecimalTransform: true
 | **Minute(&nbsp;Now()&nbsp;)** |Возвращает данные времени в минутах из текущего значения даты и времени. |59 |
 | **Second(&nbsp;Now()&nbsp;)** |Возвращает данные времени в секундах из текущего значения даты и времени. |37 |
 | **Weekday(&nbsp;Now()&nbsp;)** |Возвращает сведения о дне недели из текущего значения даты и времени, используя воскресенье в качестве первого дня недели по умолчанию. |5 |
-| **Weekday(&nbsp;Now();&nbsp;14&nbsp;)** |Возвращает сведения о дне недели из текущего значения даты и времени, используя код Excel, чтобы указать четверг в качестве первого дня недели. |1 |
-| **Weekday(&nbsp;Now();&nbsp;StartOfWeek.Wednesday&nbsp;)** |Возвращает сведения о дне недели из текущего значения даты и времени, используя перечисление **StartOfWeek**, чтобы указать среду в качестве первого дня недели. |2 |
+| **Weekday(&nbsp;Now(),&nbsp;14&nbsp;)** |Возвращает сведения о дне недели из текущего значения даты и времени, используя код Excel, чтобы указать четверг в качестве первого дня недели. |1 |
+| **Weekday(&nbsp;Now(),&nbsp;StartOfWeek.Wednesday&nbsp;)** |Возвращает сведения о дне недели из текущего значения даты и времени, используя перечисление **StartOfWeek**, чтобы указать среду в качестве первого дня недели. |2 |
 

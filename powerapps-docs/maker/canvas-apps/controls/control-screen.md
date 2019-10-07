@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 09/14/2019
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dceb9eee8eb5a0ed11a4b44fb2df6d63ba5e9cae
-ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
+ms.openlocfilehash: 1b9f819ab7e047b68e60b9c78e6f7f000502abb8
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71038235"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993317"
 ---
 # <a name="screen-control-in-powerapps"></a>Элемент управления "Экран" в PowerApps
 
@@ -55,13 +54,13 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Distinct**(*источник*; *столбец*)](../functions/function-distinct.md)
+[**Distinct**(*источник*, *столбец*)](../functions/function-distinct.md)
 
 ## <a name="example"></a>Пример
 
 1. Добавьте элемент управления **[Переключатель](control-radio.md)** , назовите его **ScreenFills** и укажите для свойства **[Items](properties-core.md)** следующее значение:
 
-    `["Red"; "Green"]`
+    `["Red", "Green"]`
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
@@ -69,17 +68,17 @@ ms.PowerAppsDecimalTransform: true
 
 1. В окне **источник**добавьте элемент управления **[Shape](control-shapes-icons.md)** (например, стрелка) и задайте для его свойства **[OnSelect](properties-core.md)** значение этой формулы:
 
-    `Navigate(Target; ScreenTransition.Fade)`
+    `Navigate(Target, ScreenTransition.Fade)`
 
     Нужны дополнительные сведения о функции **[Navigate](../functions/function-navigate.md)** или [других функциях](../formula-reference.md)?
 
 1. В элементе **Target** добавьте элемент управления **[Фигура](control-shapes-icons.md)** (например, стрелку) и укажите для свойства **[OnSelect](properties-core.md)** следующую формулу:
 
-    `Navigate(Source; ScreenTransition.Fade)`
+    `Navigate(Source, ScreenTransition.Fade)`
 
 1. Укажите для свойства **[Fill](properties-color-border.md)** элемента **Target** следующую формулу:
 
-    `If("Red" in ScreenFills.Selected.Value; RGBA(255; 0; 0; 1); RGBA(54; 176; 75; 1))`
+    `If("Red" in ScreenFills.Selected.Value, RGBA(255, 0, 0, 1), RGBA(54, 176, 75, 1))`
 
 1. Выберите **Исходный** экран и, удерживая нажатой клавишу Alt, выберите любой из вариантов в элементе управления **[радио](control-radio.md)** , а затем выберите элемент управления **[Shape](control-shapes-icons.md)** .
 

@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/16/2016
 ms.author: jamesol
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 65a828d33add99bbee086f24c3a4892abfaae048
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 3348db5897b0c58d7addef775d2a871809fc491b
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61536962"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71995220"
 ---
 # <a name="share-excel-data-used-by-your-app"></a>Совместное использование данных Excel, используемых приложением
 Пользователи приложения могут совместно использовать данные Excel в [облачной учетной записи](connections/cloud-storage-blob-connections.md), например OneDrive.

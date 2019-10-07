@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e0f40e6c04b776d2e8efb41353e0da8ced6fc7c5
-ms.sourcegitcommit: 07a0fcda31557ddbafba0ca0362765229ee2fdad
+ms.openlocfilehash: 8ba2d504cc731725d154d8141854373fbf67dc2a
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70008973"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992926"
 ---
 # <a name="formula-reference-for-powerapps"></a>Справочник формул для PowerApps
 Формулы объединяют множество элементов.  Ниже перечислены следующие элементы:
@@ -34,7 +34,7 @@ ms.locfileid: "70008973"
 * [элементы управления и их свойства](reference-properties.md).
 * [Типы данных](functions/data-types.md)
 
-## <a name="a"></a>А
+## <a name="a"></a>A
 **[Abs](functions/function-numericals.md)** — абсолютное значение числа.  
 
 **[Acceleration](functions/signals.md)** — считывает данные с датчика ускорения на устройстве.
@@ -151,7 +151,7 @@ ms.locfileid: "70008973"
 
 **[Exp](functions/function-numericals.md)** — возвращает *e*, возведенное в указанную степень.
 
-## <a name="f"></a>C
+## <a name="f"></a>F
 **[Filter](functions/function-filter-lookup.md)** — возвращает таблицу, отфильтрованную на основе одного или нескольких критериев.
 
 **[Find](functions/function-find.md)** — проверяет, находится ли одна строка внутри другой, и возвращает расположение.
@@ -167,7 +167,7 @@ ms.locfileid: "70008973"
 
 **[GUID](functions/function-guid.md)**  — преобразует строку GUID в значение GUID или создает новое значение GUID.
 
-## <a name="h"></a>H
+## <a name="h"></a>Серия H
 **[HashTags](functions/function-hashtags.md)** — извлекает из строки хэш-теги (#strings).
 
 **[Hour](functions/function-datetime-parts.md)** — возвращает данные времени в часах из значения даты и времени.
@@ -189,7 +189,7 @@ ms.locfileid: "70008973"
 
 IsReference **[— проверяет](functions/function-astype-istype.md)** , ссылается ли ссылка на запись на конкретный тип сущности.
 
-## <a name="j"></a>J
+## <a name="j"></a>Б
 **[JSON](functions/function-json.md)** — создает текстовую строку JSON для таблицы, записи или значения.
 
 ## <a name="l"></a>L

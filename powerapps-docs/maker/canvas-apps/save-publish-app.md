@@ -1,24 +1,24 @@
 ---
 title: Сохранение и публикация приложения на основе холста | Документы Майкрософт
 description: Пошаговые инструкции по сохранению и публикации приложения на основе холста для разработчиков приложений
-author: AFTOwen
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
 ms.date: 09/14/2017
-ms.author: anneta
+ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c255daf93cdb4807572f1a663c7bb87be0bb39e1
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 19d793b879d42e9446cc8ad366bc08879162185d
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61536731"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71995765"
 ---
 # <a name="save-and-publish-a-canvas-app-in-powerapps"></a>Сохранение и публикация приложения на основе холста в PowerApps
 Когда вы сохраняете изменения в приложении на основе холста, они автоматически публикуются только для вас и пользователей, у которых есть разрешения на изменение этого приложения. Внесенные изменения следует опубликовать явным образом, чтобы сделать доступными для всех пользователей, которым предоставлен общий доступ к приложению.
@@ -60,6 +60,6 @@ PowerApps также может периодически сохранять пр
 Чтобы опубликовать наиболее позднюю версию, щелкните (коснитесь) **Опубликовать эту версию**, после чего нажмите (коснитесь) кнопку **Опубликовать эту версию** в диалоговом окне **Публикация**.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-* Поиск и запуск приложения в [браузера](../../user/run-app-browser.md) или на [phone](../../user/run-app-client.md).
+* Найдите и запустите приложение в [браузере](../../user/run-app-browser.md) или на [телефоне](../../user/run-app-client.md).
 * [Переименуйте приложение](set-name-tile.md) на сайте powerapps.com.
 * [Восстановите приложение](restore-an-app.md) при наличии нескольких его версий.

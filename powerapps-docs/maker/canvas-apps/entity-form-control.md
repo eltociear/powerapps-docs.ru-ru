@@ -6,25 +6,24 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 03/11/2017
 ms.author: aneesa
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ee8573cb9ae4df5ac42deefad4ac67aede3a3502
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: a1bffa509f382c2f706c2163d89c5788f8607ec7
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61548025"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993051"
 ---
 # <a name="use-the-entity-form-control"></a>Использование элемента управления "Форма сущности"
 Создавайте приложения быстрее, используя элемент управления **Форма сущности** для добавления полнофункциональных форм для сущности Common Data Service.
 
-Общие сведения о **форма сущности** управления см. в записи блога: [Нового элемента управления формы сущности (экспериментальная функция) для Common Data Service](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/).
+Общие сведения об элементе управления **формы сущности** см. в этой записи блога: [Новый элемент управления формы сущности (экспериментальный компонент) для Common Data Service](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/).
 
 > [!IMPORTANT]
 > Имейте в виду, что элемент управления **Форма сущности**, описываемый в записи блога, является экспериментальным. Следует осторожно использовать элемент управления **Форма сущности** в рабочих приложениях, по крайней мере сейчас.
@@ -46,15 +45,15 @@ ms.PowerAppsDecimalTransform: true
 **Item** — указывает запись в источнике данных, которую должен отображать элемент управления **Форма сущности**. Это свойство используется, только если **Pattern** имеет значение **FormPattern.Details**.
 
 **Selected** — возвращает запись, которая выбрана в данный момент.  
-Пример. Если **форма сущности** элемент управления отображает список записей заказов на продажу, **выбранные** свойство обеспечит запись, выбранная в данный момент. Можно также обращаться к полям в записи. (Например, укажите значение поля **Account** выбранной записи как **Selected.Account**.)
+Пример. Если в элементе управления **формы сущности** отображается список записей заказов на продажу, **выбранное** свойство выдаст вам выбранную запись. Можно также обращаться к полям в записи. (Например, укажите значение поля **Account** выбранной записи как **Selected.Account**.)
 
 **SelectableFields** — указывает, какие поля должны отображаться как ссылки. Для задания значения этого свойства используется приведенный ниже синтаксис.  
-**{Имя_поля_1 : true; Имя_поля_2 : true}**  
-Пример. Если вы хотите, чтобы **SalesOrderId** и **учетной записи** поля отображаются в виде ссылок в форме, состояние **SelectableFields** свойства этой формы это значение:  
-**{SalesOrderId : true; Account : true}**
+**{Имя_поля_1 : true, Имя_поля_2 : true}**  
+Пример. Если необходимо, чтобы поля **SalesOrderID** и **Account** отображались как ссылки в форме, установите для свойства **SelectableFields** этой формы значение:  
+**{SalesOrderId : true, Account : true}**
 
 **SelectedField** — определяет поле, которое щелкнул пользователь или которого он коснулся. Это относится только к полям, указанным как **SelectableFields**.  
-Пример. Если задать **SelectableFields** свойства **{SalesOrderId: true; Account: true}** и пользователь нажимает кнопку или касается **учетной записи** поля,  **SelectedField.Account** задано значение true.
+Пример. Если для свойства **SelectableFields** задано значение **{SalesOrderID: true, Account: true}** , а пользователь нажимает или выполняет касание поля **учетная запись** , **селектедфиелд. Account** имеет значение true.
 
 **OnFieldSelect** — определяет, как приложение реагирует, когда пользователь щелкает поле или касается его. Это относится только к полям, указанным как **SelectableFields**.
 
@@ -97,7 +96,7 @@ ms.PowerAppsDecimalTransform: true
 2. Переименуйте первый экран в **SalesOrderListScreen**.
    
     ![](media/entity-form-control/entityform-tutorial-01-02.png)
-3. На вкладке **Вставка** щелкните или нажмите **Формы**, а затем — **Форма сущности (экспериментальная)**.  
+3. На вкладке **Вставка** щелкните или нажмите **Формы**, а затем — **Форма сущности (экспериментальная)** .  
    
     Элемент управления **Форма сущности** будет добавлен на экран.  
    
@@ -191,7 +190,7 @@ ms.PowerAppsDecimalTransform: true
 
 Это было настроено автоматически, когда мы использовали область настройки формы, чтобы настроить поле **SalesOrderId** для перехода на экран **SalesOrderDetailsScreen**. Поэтому значения в поле **SalesOrderId** отображаются в виде ссылок.
 
-**OnFieldSelect** свойство **SalesOrderListForm** присваивается [ **Если** ](functions/function-if.md) функцию, которая определяет, является ли пользователь нажимает кнопку или касается **Sales order ID** поля: **SalesOrderListForm.SelectedField.SalesOrderId = true**.  
+Для свойства **Онфиелдселект** **салесордерлистформ** задается функция [**If**](functions/function-if.md) , которая определяет, щелкает ли пользователь или отменяет поле " **идентификатор заказа на продажу** ": **Салесордерлистформ. селектедфиелд. SalesOrderID = true**.  
 
 Если функция возвращает значение true, то открывается экран **SalesOrderDetailsScreen** с переменной контекста **NavigationContext**, которую мы использовали ранее.  
 

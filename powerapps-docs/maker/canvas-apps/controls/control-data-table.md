@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/05/2017
 ms.author: jasongre
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fb7c2ac88c24197d014ebdc1b2b6a50e4802e0bf
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: f29b3a782ce62c475c80804225787a0a42e85a2c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63319380"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993810"
 ---
 # <a name="data-table-control-in-powerapps"></a>Элемент управления "Таблица данных" в PowerApps
 Отображает набор данных в табличном формате.
@@ -84,8 +83,8 @@ ms.PowerAppsDecimalTransform: true
 * [**Y**](properties-size-location.md) — расстояние между верхним краем элемента управления **Таблица данных** и верхним краем его родительского контейнера (или верхним краем экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-* [**Filter(источник_данных; формула)**](../functions/function-filter-lookup.md)(*источник_данных*, *формула*)
-* [**Search(источник_данных; искомая_строка; столбец)**](../functions/function-filter-lookup.md)(*источник_данных*, *искомая_строка*, *столбец*)
+* [**Filter(источник_данных, формула)** ](../functions/function-filter-lookup.md)(*источник_данных*, *формула*)
+* [**Search(источник_данных, искомая_строка, столбец)** ](../functions/function-filter-lookup.md)(*источник_данных*, *искомая_строка*, *столбец*)
 
 ## <a name="examples"></a>Примеры
 ### <a name="basic-usage"></a>Базовое использование
@@ -122,7 +121,7 @@ ms.PowerAppsDecimalTransform: true
 
 ### <a name="restyle-the-header-for-the-data-table-control"></a>Изменение стиля заголовка элемента управления "Таблица данных"
 1. Выбрав элемент управления **Таблица данных**, щелкните (коснитесь) вкладку **Дополнительно** в правой области.
-2. Щелкните поле для свойства **HeadingFill**, а затем измените значение на **RGBA(62;96;170;1)**.
+2. Щелкните поле для свойства **HeadingFill**, а затем измените значение на **RGBA(62,96,170,1)** .
 3. Щелкните (коснитесь) поле для свойства **HeadingColor**, а затем измените значение на **White**.
 4. Щелкните поле для свойства **HeadingSize**, а затем измените значение на **14**.
    

@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 302c2fad419146f03fe47e25b8a7563564ee7e2d
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 915f5c15af06914cf10a749bf8d995926fd1bf2f
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61543960"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993417"
 ---
 # <a name="microphone-control-in-powerapps"></a>Элемент управления "Микрофон" в PowerApps
 Элемент управления, позволяющий пользователям записывать звук на устройстве.
@@ -96,12 +95,12 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Patch**( *DataSource*;; *BaseRecord*;; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Пример
 ### <a name="add-sounds-to-a-custom-gallery-control"></a>Добавление звуков в пользовательскую коллекцию
 1. Добавьте элемент управления**Микрофон**, назовите его **MyMic** и назначьте его свойству **OnStop** следующую формулу:<br>
-   **Collect(MySounds; MyMic.Audio)**
+   **Collect(MySounds, MyMic.Audio)**
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
@@ -111,7 +110,7 @@ ms.PowerAppsDecimalTransform: true
 4. Нажмите клавишу F5 и щелкните элемент **MyMic** (или коснитесь его), чтобы начать запись. Чтобы прекратить запись, щелкните или коснитесь его еще раз.
 5. В элементе управления **Пользовательская коллекция** нажмите кнопку воспроизведения в элементе управления **[Звук](control-audio-video.md)** , чтобы воспроизвести запись.
 6. Добавьте столько записей, сколько хотите, а затем вернитесь в рабочую область по умолчанию, нажав клавишу Esc.
-7. (Необязательно) В шаблоне для элемента управления **Пользовательская коллекция** добавьте элемент управления **[Кнопка](control-button.md)** , назначьте его свойству **[OnSelect](properties-core.md)** формулу **Remove(MySounds;; ThisItem)** , нажмите клавишу F5, а затем удалите запись с помощью соответствующего элемента управления **Кнопка**.
+7. (Необязательно) В шаблоне для элемента управления **Пользовательская коллекция** добавьте элемент управления **[Кнопка](control-button.md)** , назначьте его свойству **[OnSelect](properties-core.md)** формулу **Remove(MySounds; ThisItem)** , нажмите клавишу F5, а затем удалите запись с помощью соответствующего элемента управления **Кнопка**.
 
 Для сохранения записей на локальном устройстве используйте функцию **[SaveData](../functions/function-savedata-loaddata.md)** , а для обновления источника данных — функцию **[Patch](../functions/function-patch.md)** .
 

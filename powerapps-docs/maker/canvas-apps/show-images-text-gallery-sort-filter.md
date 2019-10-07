@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/02/2015
 ms.author: aorth
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a557c73863dc25acb69627b51613e6e25f229bdb
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 3a25654f0304fce9978ae1f7b1410cfb557ef32c
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63318366"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71995301"
 ---
 # <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>Отображение, сортировка и фильтрация данных в коллекции PowerApps
 В этой статье приведены сведения о создании коллекции с изображениями товара и данными о нем, а также о параметрах сортировки и фильтрации.
@@ -44,7 +43,7 @@ ms.PowerAppsDecimalTransform: true
       
       ![][1]  
    2. Задайте для свойства **[OnSelect](controls/properties-core.md)** элемента управления "Импорт" следующую формулу:  
-      **(Инвентаризации Import1.Data)**
+      **Получение данных (Inventory, Import1. Data)**
       
       ![][12]  
    3. Чтобы открыть проводник, нажмите кнопку **Импорт данных**. Выберите файл *CreateFirstApp.zip* и щелкните **Открыть**.
@@ -80,7 +79,7 @@ ms.PowerAppsDecimalTransform: true
    > 
    > 
 8. Задайте для свойства **[Text](controls/properties-core.md)** метки следующее выражение:  
-    **ThisItem.UnitsInStock** <br/>
+    **Сиситем. UnitsInStock** <br/>
    
     За счет этого метка будет отображать доступное количество единиц каждого товара.
 
@@ -103,7 +102,7 @@ ms.PowerAppsDecimalTransform: true
    ![][10]  
 6. На вкладке **Фигура** выберите **Видимый**, а затем в строке формулы введите следующую формулу:  
    
-    **IF(ThisItem.IsSelected; true)**
+    **If (сиситем. IsTrue, true)**
    
     Вокруг выбранного элемента в коллекции появился синий прямоугольник. Щелкните несколько элементов коллекции, чтобы убедиться, что прямоугольник отображается вокруг каждого выбранного элемента. Помните, что вы также можете просмотреть и проверить созданную коллекцию, щелкнув значок **предварительного просмотра** ![][2].
 
@@ -121,7 +120,7 @@ ms.PowerAppsDecimalTransform: true
 1. Выберите любой элемент в коллекции *за исключением* первого.
 2. Сейчас для свойства **[Items](controls/properties-core.md)** задано значение Inventory (Товары) (имя коллекции). Измените его на следующее:  
    
-    **Sort(Inventory; ProductName)**
+    **Sort(Inventory, ProductName)**
    
     За счет этого элементы коллекции сортируются по названию товара в порядке возрастания: ![][11]  
    
@@ -134,11 +133,11 @@ ms.PowerAppsDecimalTransform: true
 2. Настройте ползунок таким образом, чтобы пользователи не могли указывать значение, превышающее доступное количество единиц каждого товара:  
    
    1. На вкладке **Содержимое** выберите **Минимум**, а затем введите следующее выражение:  
-      ```Min(Inventory; UnitsInStock)```  
+      ```Min(Inventory, UnitsInStock)```  
    2. На вкладке **Содержимое** выберите **Максимум**, а затем введите следующее выражение:  
-      ```Max(Inventory; UnitsInStock)```
+      ```Max(Inventory, UnitsInStock)```
 3. Выберите любой элемент в коллекции *за исключением* первого. Задайте для свойства **[Items](controls/properties-core.md)** коллекции следующее выражение:  
-   ```Filter(Inventory; UnitsInStock<=StockFilter.Value)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value)```
 4. В окне **предварительного просмотра** передвиньте ползунок на значение, которое находится между максимальным и минимальным количеством единиц товара в коллекции. При изменении положения ползунка в коллекции будут отображаться только те товары, количество единиц которых меньше указанного значения:  
    ![][13]  
 
@@ -147,7 +146,7 @@ ms.PowerAppsDecimalTransform: true
 1. Вернитесь в режим конструктора.
 2. На вкладке **Вставка** выберите **Текст**, **Input Text** (Вводимый текст), а затем измените имя нового элемента управления на **NameFilter**. Поместите элемент управления "Текст" под ползунком.
 3. Задайте для свойства **[Items](controls/properties-core.md)** коллекции следующее выражение:  
-   ```Filter(Inventory; UnitsInStock<=StockFilter.Value && NameFilter.Text in ProductName)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value && NameFilter.Text in ProductName)```
 4. В окне **предварительного просмотра** установите ползунок на *30* и в текстовом поле для ввода введите букву *ж*. В коллекции отобразятся только товары, которых имеется в наличии менее 30 единиц и *в* имени которых есть буква "ж".  
    ![][14]  
 

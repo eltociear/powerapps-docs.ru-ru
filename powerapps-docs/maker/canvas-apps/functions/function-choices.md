@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 06/15/2018
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c9d3e9c6c408d70e22d566855e5899a0f5b0fae7
-ms.sourcegitcommit: 39b32abb19ad9fae98ca986ded6974bcbbb3cea7
+ms.openlocfilehash: 8ac88e1b9e81b9c42c8c9ac187d569573fc10ac3
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68473973"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71992987"
 ---
 # <a name="choices-function-in-powerapps"></a>Функция Choices в PowerApps
 Возвращает таблицу из возможных значений для столбца подстановки.

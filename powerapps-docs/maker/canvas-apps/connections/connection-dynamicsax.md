@@ -8,17 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 09/13/2016
 ms.author: lanced
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1f1c58e95696be70ec0b1f58b88aa30713dda1ce
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: daf6c3f0c067822b590535b9807af3bc0d96ec16
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61545488"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993996"
 ---
 # <a name="connect-from-microsoft-powerapps-to-dynamics-ax"></a>Подключение Microsoft PowerApps к Dynamics AX
 ![Dynamics AX Online](./media/connection-dynamicsax/dynamics-ax.png)

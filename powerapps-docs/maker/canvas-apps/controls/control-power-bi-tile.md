@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 07/07/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3e3b9902b535cc21d6e4b26959e9d5c4a0e56144
-ms.sourcegitcommit: b3fd824cf0d540b964b729686b198c7ccf2c2174
+ms.openlocfilehash: f258beee317fcdad46d71b504f9c8a3046bb3641
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67316755"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993366"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>Элемент управления "Плитка Power BI" в PowerApps
 
@@ -34,27 +34,27 @@ ms.locfileid: "67316755"
 
 При совместном использовании приложения с содержимым Power BI вы должны совместно использовать не только само приложение, но также [панель мониторинга](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports), где существует плитка. В противном случае содержимое Power BI не будет отображаться даже для пользователей, открывающих приложение. Приложения с содержимым Power BI соблюдают разрешения для этого содержимого.
 
-## <a name="performance"></a>Производительность
+## <a name="performance"></a>Системного
 
 Не рекомендуется одновременно загружать в приложение более трех плиток Power BI. Вы можете управлять загрузкой и выгрузкой плиток с помощью свойства **LoadPowerBIContent**.
 
 ## <a name="pass-a-parameter"></a>Передача параметра
 
-Передавая один параметр из приложения, можно отфильтровать результаты, отображаемые в плитки Power BI. Тем не менее поддерживаются только строковые значения и оператор равенства и фильтр может не работать, если имя таблицы или имя столбца содержит пробелы.
+Передавая один параметр из приложения, можно отфильтровать результаты, отображаемые на плитке Power BI. Однако поддерживаются только строковые значения и оператор Equals, и фильтр может не работать, если имя таблицы или имя столбца содержат пробелы.
 
-Чтобы передать значение одного фильтра, измените значение **TileURL** свойство, которое следует за следующий синтаксис:
+Чтобы передать одно значение фильтра, измените значение свойства **тилеурл** , которое следует за следующим синтаксисом:
 
 ```
 "https://app.powerbi.com/embed?dashboardId=<DashboardID>&tileId=<TileID>&config=<SomeHash>"
 ```
 
-Значение, и добавьте следующий синтаксис:
+Чтобы добавить это значение, добавьте следующий синтаксис:
 
 ```
 &$filter=<TableName>/<ColumnName> eq '<Value>'
 ```
 
-Параметр отфильтрует значение в наборе данных отчета происхождения плитки.
+Параметр фильтрует значение в наборе данных отчета, в котором создается плитка.
 
 ## <a name="key-properties"></a>Основные свойства
 

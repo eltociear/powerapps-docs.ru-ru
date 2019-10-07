@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 10/25/2016
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 02e8477873adad476c65e513a470e027aee5cd5c
-ms.sourcegitcommit: 8d0ba2ec0c97be91d1350180dd6881c14dec8f2d
+ms.openlocfilehash: 4a838100398196c63ef948f8f2e94d098c03a373
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65517389"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993446"
 ---
 # <a name="drop-down-control-in-powerapps"></a>Элемент управления "Раскрывающийся список" в PowerApps
 Раскрывающийся список — это список, у которого в свернутом состоянии виден только первый элемент.
@@ -34,9 +33,9 @@ ms.PowerAppsDecimalTransform: true
   
 **Value** — столбец данных, который вы хотите отобразить в элементе управления (например, если источник данных имеет несколько столбцов).
 
-**Выбранный** — запись данных, представляющий выбранный элемент.
+**Выбрано** — запись данных, представляющая выбранный элемент.
 
-**AllowEmptySelection** определяет, когда в элементе управления отображается пустое выделение, если элемент не был выбран. Пользователям приложения также можно очищать его выбор, выбрав пустой элемент.
+**Алловемптиселектион** — указывает, отображает ли элемент управления пустое выделение, если элемент не выбран. Пользователи приложений также могут очищать свои параметры, выбирая пустой элемент.
 
 ## <a name="additional-properties"></a>Дополнительные свойства
 **[AccessibleLabel](properties-accessibility.md)** — метка для средств чтения с экрана.
@@ -69,7 +68,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
+**[FontWeight](properties-text.md)** — вес текста в элементе управления: **Полужирный**, **полужирный**, **обычный**или **более светлый**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -101,7 +100,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Reset](properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.
 
-**(Устарело) SelectedText** — строковое значение, представляющее выбранный элемент.
+**Селектедтекст (не рекомендуется)** — строковое значение, представляющее выбранный элемент.
 
 **[SelectionColor](properties-color-border.md)**  — цвет текста выбранного элемента или элементов списка или цвет инструмента выделения в элементе управления рукописным вводом.
 
@@ -131,26 +130,26 @@ ms.PowerAppsDecimalTransform: true
 
 1. Добавьте элемент управления **Раскрывающийся список**, а затем установите для его свойства **[Items](properties-core.md)** следующее выражение:
 
-    `["Seattle"; "Tokyo"; "London"; "Johannesburg"; "Rio de Janeiro"]`
+    `["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]`
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
 1. Чтобы показать элементы в списке, нажмите на стрелку вниз элемента управления, удерживая нажатой клавишу ALT.
 
 ### <a name="list-from-a-data-source"></a>Список из источника данных
-Эти принципы в этой процедуре, применимы к любому [источник данных, который содержит таблицы](../connections-list.md#tables) , но, чтобы точно выполнить следующие действия, необходимо открыть среду, для которого базу данных Common Data Service была создана и образец данных, добавленных.
+Принципы этой процедуры применяются к любому [источнику данных, который предоставляет таблицы](../connections-list.md#tables) , но для точного выполнения этих действий необходимо открыть среду, для которой была создана Common Data Serviceная база данных и добавлены образцы данных.
 
 1. [Откройте пустое приложение](../data-platform-create-app-scratch.md#open-a-blank-app), а затем [укажите сущность **Учетные записи**](../data-platform-create-app-scratch.md#specify-an-entity).
 
 1. Добавьте элемент управления **Раскрывающийся список** и назначьте его свойству **[Items](properties-core.md)** следующую формулу:
 
-    `Distinct(Accounts; address1_city)`
+    `Distinct(Accounts, address1_city)`
 
     Эта формула показывает все города в сущности **Учетные записи**. Если один город указан в нескольких записях, функция **[Distinct](../functions/function-distinct.md)** скрывает повторения в элементе управления раскрывающегося списка.
 
 1. (Необязательно.) Переименуйте элемент управления **Раскрывающийся список** в **Города**, добавьте вертикальный элемент управления **Коллекция** и задайте свойству коллекции **[Items](properties-core.md)** следующую формулу:
 
-    `Filter(Accounts; address1_city = Cities.Selected.Value)`
+    `Filter(Accounts, address1_city = Cities.Selected.Value)`
 
     Функция **[Filter](../functions/function-filter-lookup.md)** отображает только те записи в сущности **Учетные записи**, для которых город совпадает с выбранным значением в элементе управления **Города**.
 
@@ -160,13 +159,13 @@ ms.PowerAppsDecimalTransform: true
 * **ChevronFill** и **ChevronBackground**;
 * **ChevronHoverFill** и **ChevronHoverBackground**;
 * **SelectionColor** и **SelectionFill**;
-* **SelectionFill** и **[Fill](properties-color-border.md)**;
+* **SelectionFill** и **[Fill](properties-color-border.md)** ;
 
 Это дополнение к [стандартным требованиям по цветовому контрасту](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Поддержка средства чтения с экрана
-* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)**.
+* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)** .
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.
+* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .

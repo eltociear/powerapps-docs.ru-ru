@@ -8,17 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7ac87e794341fe79a6e4f949893b64462c384f83
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: aab2b0bb7b236fe8cc6d7f18beb7a5c8ea8246ae
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544644"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993848"
 ---
 # <a name="audio-and-video-controls-in-powerapps"></a>Элементы управления "Звук" и "Видео" в PowerApps
 Элемент управления, воспроизводящий звуковой файл, видеофайл или видеоролик на сайте YouTube.
@@ -60,7 +60,7 @@ ms.locfileid: "61544644"
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
-**[Image](properties-visual.md) ** — имя изображения, которое отображается в элементе управления "Изображение", "Звук" или "Микрофон".
+**[Image](properties-visual.md)**  — имя изображения, которое отображается в элементе управления "Изображение", "Звук" или "Микрофон".
 
 **[ImagePosition](properties-visual.md)**  — расположение изображения на экране или в элементе управления, если его размеры отличаются от размеров изображения (**Fill**, **Fit**, **Stretch**, **Tile** или **Center**).
 
@@ -127,9 +127,9 @@ ms.locfileid: "61544644"
   *  Чтобы добавить субтитры для видеороликов на YouTube, используйте средства разработки, предоставленные YouTube.
   *  Для других видео создайте субтитры в формате WebVTT, загрузите их и укажите для параметра **ClosedCaptionsUrl** URL-адрес расположения. Существует несколько ограничений. На серверах, где размещаются видео и субтитры, должен быть включен CORS и протокол HTTPS. Субтитры не работают в Internet Explorer.
 * Рассмотрите возможность предоставления записи для аудио или видео с использованием одного из следующих способов:
-  1. Введите текст в поле **[Метка](control-text-box.md)** и расположите его рядом с мультимедийным проигрывателем. При необходимости создайте **[кнопку](control-button.md)**, чтобы переключить отображение текста.
-  2. Введите текст в другом окне. Создайте **[кнопку](control-button.md)**, которая перенаправит в окно, и расположите ее рядом с мультимедийным проигрывателем.
-  3. Если описание краткое, его можно ввести в поле **[AccessibleLabel](properties-accessibility.md)**.
+  1. Введите текст в поле **[Метка](control-text-box.md)** и расположите его рядом с мультимедийным проигрывателем. При необходимости создайте **[кнопку](control-button.md)** , чтобы переключить отображение текста.
+  2. Введите текст в другом окне. Создайте **[кнопку](control-button.md)** , которая перенаправит в окно, и расположите ее рядом с мультимедийным проигрывателем.
+  3. Если описание краткое, его можно ввести в поле **[AccessibleLabel](properties-accessibility.md)** .
 
 ### <a name="color-contrast"></a>Контрастность
 Необходимо настроить достаточный контраст для следующих элементов:
@@ -140,9 +140,9 @@ ms.locfileid: "61544644"
 Предоставьте скрытые субтитры или расшифровку, если содержимое видео имеет проблемы с цветовым контрастом.
 
 ### <a name="screen-reader-support"></a>Поддержка средства чтения с экрана
-* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)**.
+* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)** .
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.
+* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
 * Параметр **AutoStart** должен иметь значение false, потому что при использовании клавиатуры может быть сложно быстро остановить воспроизведение.

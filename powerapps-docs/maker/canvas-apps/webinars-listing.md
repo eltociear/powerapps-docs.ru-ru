@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: anneta
+ms.reviewer: tapanm
 ms.date: 08/16/2018
 ms.author: audrie
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c11800767225f66520e1a5c368de5102219505d2
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 040ba26d486cb16830bfd895f1c09a4e273cfa07
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321616"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71994777"
 ---
 # <a name="powerapps-webinar-listing"></a>Список вебинаров PowerApps #
 Эти вебинары помогут вам использовать возможности и функции Microsoft PowerApps. Вебинары будут доступны по запросу после трансляции. Обратите внимание, что в некоторых случаях необходимо будет повторно ввести сведения о регистрации, после чего вы получите ссылку на запись по электронной почте. 
@@ -70,7 +70,7 @@ ms.locfileid: "63321616"
 **Администрирование PowerApps | Часто задаваемые вопросы**
 <br>Автор: Манас Махешвари (Manas Maheshwari) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Administration-FAQ/m-p/127369#M44)
 
-**Внутри приложения Universal Audit: См. в разделе возможностях PowerApps и Flow способны по (Paul culmsee)**
+@no__t — 0Inside приложение универсального аудита: Узнайте, какие возможности PowerApps и Flow поддерживаются Пол Калмси @ no__t-0
 <br>Пол Кульмзее (Paul Culmsee) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Inside-the-Universal-Audit-App-See-what-PowerApps-and-Flow-are/m-p/127370#M45)
 
 ## <a name="advanced-webinar-series"></a>Серии вебинаров для продвинутых пользователей ##
@@ -102,13 +102,13 @@ ms.locfileid: "63321616"
 **Подключение к локальным данным из PowerApps**
 <br>Арчана Наир (Archana Nair) и Димах Зайдалклани (Dimah Zaidalklani) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-On-Premises-Data-from-PowerApps/m-p/116885)
 
-**Работа с соединителями: Использование соединителя планировщика**
+@no__t 0Working с соединителями: Использование соединителя планировщика @ no__t-0
 <br> Одри Гордон (Audrie Gordon) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-the-Planner-Connector/m-p/116886)
 
 **Возможности Office Graph в сочетании с PowerApps**
 <br>Одри Гордон [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/The-Power-of-Office-Graph-with-PowerApps/m-p/116888)
 
-**Работа с соединителями: Project Online (PWA)**
+@no__t 0Working с соединителями: Project Online (PWA) **
 <br>Одри Гордон [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-Project-Online-PWA/m-p/116889)
 
 ## <a name="sharepoint-series"></a>Серия о SharePoint ##
@@ -150,5 +150,5 @@ ms.locfileid: "63321616"
 **Создание диалоговых окон или всплывающих сообщений в PowerApps**
 <br>Автор: Вероника Уорд (Veronica Ward) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Dialogs-in-PowerApps-by-Veronica-Ward/m-p/117627#M39)
 
-**Поиск за интервью с одним из разработчиков PowerApps: подробный обзор шаблонов: Мэри Хегер**
+@no__t 0Look за прикрытием с одним из разработчиков PowerApps, более подробно Взгляните на шаблоны: Марие Хоежер @ no__t-0
 <br>Одри Гордон [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Developer-Intro-and-Discussing-Templates/m-p/116848)

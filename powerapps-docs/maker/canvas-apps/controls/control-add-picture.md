@@ -8,18 +8,17 @@ ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
 ms.author: fikaradz
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1cc2b7c1752abe4f12e76c30f59978fc753f4ac5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 81c96c7a2a23a770acfcc1936147a3b466f8c86d
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61544667"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993883"
 ---
 # <a name="add-picture-control-in-powerapps"></a>Элемент управления "Добавить изображение" в PowerApps
 Делает снимок или загружает изображения с локального устройства.
@@ -64,7 +63,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Полужирным шрифтом**, **Semibold**, **обычный**, или **светлее**.
+**[FontWeight](properties-text.md)** — вес текста в элементе управления: **Полужирный**, **полужирный**, **обычный**или **более светлый**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -115,7 +114,7 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Patch**( *DataSource*;; *BaseRecord*;; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="examples"></a>Примеры
 ### <a name="add-images-to-an-image-gallery-control"></a>Добавление изображений в коллекцию
@@ -124,7 +123,7 @@ ms.PowerAppsDecimalTransform: true
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. В диалоговом окне **Открыть** выберите файл изображения и нажмите **Открыть**.
 3. Добавьте элемент управления **[Кнопка](control-button.md)** , переместите его под элемент управления **Добавить изображение** и укажите для свойства **[OnSelect](properties-core.md)** элемента **[Кнопка](control-button.md)** следующую формулу:<br>
-   **Collect(MyPix; AddMediaButton1.Media)**
+   **Collect(MyPix, AddMediaButton1.Media)**
    
     Нужны дополнительные сведения о функции **[Collect](../functions/function-clear-collect-clearcollect.md)** или [других функциях](../formula-reference.md)?
 4. Добавьте элемент управления **Коллекция изображений** и укажите для его свойства **[Items](properties-core.md)** значение **MyPix**.

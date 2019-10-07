@@ -8,17 +8,17 @@ ms.topic: reference
 ms.component: canvas
 ms.date: 10/25/2016
 ms.author: gregli
-ms.reviewer: anneta
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cc4338e37b7ecde2e2e2e9ad5c5ac6e96d116b58
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: a1e9068e272d1da8a4e6b23b66d999f0688cbc00
+ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61559495"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71993535"
 ---
 # <a name="card-control-in-powerapps"></a>Элемент управления "Карточка" в PowerApps
 Позволяет отображать и редактировать одно поле в элементе управления **[Форма просмотра](control-form-detail.md)** или **[Форма редактирования](control-form-detail.md)** .
