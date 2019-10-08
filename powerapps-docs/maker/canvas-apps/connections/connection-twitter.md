@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71987218"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>Подключение к Twitter из PowerApps
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -65,7 +66,7 @@ Twitter позволяет публиковать и получать твиты
 
        В коллекции задайте для свойства Items следующую формулу:  
 
-       `Twitter.UserTimeline(Tweep.Text, {maxResults:5}).TweetText`
+       `Twitter.UserTimeline(Tweep.Text; {maxResults:5}).TweetText`
 
        В коллекции автоматически отображаются твиты указанного пользователя Twitter.
 
@@ -94,7 +95,7 @@ Twitter позволяет публиковать и получать твиты
 
        В коллекции задайте для свойства Items следующую формулу:  
 
-       `Twitter.Followers(Tweep.Text, {maxResults:5})`
+       `Twitter.Followers(Tweep.Text; {maxResults:5})`
 
        В коллекции автоматически отображаются подписчики указанного пользователя Twitter.
 
@@ -123,7 +124,7 @@ Twitter позволяет публиковать и получать твиты
 
        В коллекции задайте для свойства Items следующую формулу:  
 
-       `Twitter.Following(Tweep.Text, {maxResults:5})`
+       `Twitter.Following(Tweep.Text; {maxResults:5})`
 
        В коллекции автоматически отображаются имена других пользователей, на которых вы подписаны.
 
@@ -160,8 +161,8 @@ Twitter позволяет публиковать и получать твиты
     > [!TIP]
    > Отобразите первые пять результатов с помощью аргумента maxResults:  
 
-    `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5}).TweetText`
-2. Присвойте свойству **Items** коллекции значение `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5})`.
+    `Twitter.SearchTweet(SearchTerm.Text; {maxResults:5}).TweetText`
+2. Присвойте свойству **Items** коллекции значение `Twitter.SearchTweet(SearchTerm.Text; {maxResults:5})`.
 
     Если выбрать коллекцию, в правой области отобразятся ее параметры.
 3. В первом списке выберите **TweetText**, во втором — **TweetedBy**, а в третьем — **CreatedAt**.

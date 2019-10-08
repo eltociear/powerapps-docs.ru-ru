@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71992865"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="filter-search-and-lookup-functions-in-powerapps"></a>Функции Filter, Search и LookUp в PowerApps
 Эти функции выполняют поиск [записей](../working-with-tables.md#records) в [таблице](../working-with-tables.md).
@@ -41,12 +42,12 @@ ms.locfileid: "71992865"
 [!INCLUDE [delegation](../../../includes/delegation.md)]
 
 ## <a name="syntax"></a>Синтаксис
-**Filter**( *Table*, *Formula1* [, *Formula2*, ... ] )
+**Filter**( *Table*; *Formula1* [; *Formula2*; ... ] )
 
 * *Table* — обязательный аргумент. Таблица для поиска.
 * *Formula(s)* — обязательный параметр. Формула, по которой вычисляется каждая запись этой таблицы. Функция возвращает все записи, возвращающие значение **true**. Можно ссылаться на любые столбцы в таблице. Если указано несколько формул, их результаты объединяются с результатами функции **[And](function-logicals.md)** .
 
-**Search**( *Table*, *SearchString*, *Column1* [, *Column2*, ... ] )
+**Search**( *Table*; *SearchString*; *Column1* [; *Column2*; ... ] )
 
 * *Table* — обязательный аргумент. Таблица для поиска.
 * *SearchString* — обязательный параметр. Строка для поиска. Если указать *пустое значение* или пустую строку, возвращаются все записи.
@@ -55,7 +56,7 @@ ms.locfileid: "71992865"
 > [!NOTE]
 > Для источников данных SharePoint и Excel, содержащих имена столбцов с пробелами, вместо каждого пробела укажите **"\_x0020\_"** . Например, **Имя столбца** укажите как **Имя_x0020_столбца**.
 
-**LookUp**( *Table*, *Formula* [, *ReductionFormula* ] )
+**LookUp**( *Table*; *Formula* [; *ReductionFormula* ] )
 
 * *Table* — обязательный аргумент. Таблица для поиска. В пользовательском интерфейсе синтаксис показан как *источник* над полем функции.
 * *Formula* — обязательный аргумент.
@@ -69,16 +70,16 @@ ms.locfileid: "71992865"
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| **Filter( IceCream, OnOrder > 0 )** |Возвращает записи, где **OnOrder** больше нуля. |<style> img { max-width: none; } </style> ![](media/function-filter-lookup/icecream-onorder.png) |
-| **Filter( IceCream, Quantity + OnOrder > 225 )** |Возвращает записи, где сумма значений в столбцах **Quantity** и **OnOrder** больше 225. |![](media/function-filter-lookup/icecream-overstock.png) |
-| **Filter( IceCream, "chocolate" in Lower( Flavor ) )** |Возвращает записи, где слово chocolate присутствует в именах в столбце **Flavor**, независимо от регистра. |![](media/function-filter-lookup/icecream-chocolate.png) |
-| **Filter( IceCream, Quantity < 10  && OnOrder < 20 )** |Возвращает записи, где значение столбца **Quantity** меньше 10, а столбца **OnOrder** меньше 20.  Так как записи, соответствующие заданным условиям, отсутствуют, возвращается пустая таблица. |![](media/function-filter-lookup/icecream-empty.png) |
-| **Search( IceCream, "choc", "Flavor" )** |Возвращает записи, где строка choc присутствует в именах в столбце **Flavor**, независимо от регистра. |![](media/function-filter-lookup/icecream-chocolate.png) |
-| **Search( IceCream, "", "Flavor" )** |Так как условия поиска не заданы, возвращаются все записи. |![](media/function-filter-lookup/icecream.png) |
-| **LookUp( IceCream, Flavor = "Chocolate", Quantity )** |Ищет запись со значением столбца **Flavor** равным Chocolate (в этом случае найдена только одна запись).  Для первой найденной записи возвращает значение столбца **Quantity**. |100 |
-| **LookUp( IceCream, Quantity > 150, Quantity + OnOrder )** |Ищет запись со значением столбца **Quantity** большим 100 (в этом случае таких записей несколько).  Для первой найденной записи (в этом случае Vanilla в столбце **Flavor**) возвращает сумму значений в столбцах **Quantity** и **OnOrder**. |250 |
-| **LookUp( IceCream, Flavor = "Pistachio", OnOrder )** |Ищет запись со значением столбца **Flavor** равным Pistachio (в этом случае такие записи отсутствуют).  Так как запись не найдена, функция **Lookup** возвращает *пустое значение*. |*пустое значение* |
-| **LookUp( IceCream, Flavor = "Vanilla" )** |Ищет запись со значением столбца **Flavor** равным Vanilla (в этом случае найдена только одна запись).  Так как формула сведения не применялась, возвращается целая запись. |Версии "Обычный", количество: 200, в порядке: 75} |
+| **Filter( IceCream; OnOrder > 0 )** |Возвращает записи, где **OnOrder** больше нуля. |<style> img { max-width: none; } </style> ![](media/function-filter-lookup/icecream-onorder.png) |
+| **Filter( IceCream; Quantity + OnOrder > 225 )** |Возвращает записи, где сумма значений в столбцах **Quantity** и **OnOrder** больше 225. |![](media/function-filter-lookup/icecream-overstock.png) |
+| **Filter( IceCream; "chocolate" in Lower( Flavor ) )** |Возвращает записи, где слово chocolate присутствует в именах в столбце **Flavor**, независимо от регистра. |![](media/function-filter-lookup/icecream-chocolate.png) |
+| **Filter( IceCream; Quantity < 10  && OnOrder < 20 )** |Возвращает записи, где значение столбца **Quantity** меньше 10, а столбца **OnOrder** меньше 20.  Так как записи, соответствующие заданным условиям, отсутствуют, возвращается пустая таблица. |![](media/function-filter-lookup/icecream-empty.png) |
+| **Search( IceCream; "choc"; "Flavor" )** |Возвращает записи, где строка choc присутствует в именах в столбце **Flavor**, независимо от регистра. |![](media/function-filter-lookup/icecream-chocolate.png) |
+| **Search( IceCream; ""; "Flavor" )** |Так как условия поиска не заданы, возвращаются все записи. |![](media/function-filter-lookup/icecream.png) |
+| **LookUp( IceCream; Flavor = "Chocolate"; Quantity )** |Ищет запись со значением столбца **Flavor** равным Chocolate (в этом случае найдена только одна запись).  Для первой найденной записи возвращает значение столбца **Quantity**. |100 |
+| **LookUp( IceCream; Quantity > 150; Quantity + OnOrder )** |Ищет запись со значением столбца **Quantity** большим 100 (в этом случае таких записей несколько).  Для первой найденной записи (в этом случае Vanilla в столбце **Flavor**) возвращает сумму значений в столбцах **Quantity** и **OnOrder**. |250 |
+| **LookUp( IceCream; Flavor = "Pistachio"; OnOrder )** |Ищет запись со значением столбца **Flavor** равным Pistachio (в этом случае такие записи отсутствуют).  Так как запись не найдена, функция **Lookup** возвращает *пустое значение*. |*пустое значение* |
+| **LookUp( IceCream; Flavor = "Vanilla" )** |Ищет запись со значением столбца **Flavor** равным Vanilla (в этом случае найдена только одна запись).  Так как формула сведения не применялась, возвращается целая запись. |Версии "Обычный", количество: 200, в порядке: 75} |
 
 ### <a name="search-user-experience"></a>Оптимизация поиска
 В большинстве приложений вы можете ввести один или несколько символов в текстовом поле, чтобы отфильтровать список в большом наборе данных. При вводе в списке отображаются только те записи, которые соответствуют заданным условиям поиска.
@@ -89,7 +90,7 @@ ms.locfileid: "71992865"
 
 Чтобы создать этот источник данных в виде коллекции, создайте элемент управления **[Button](../controls/control-button.md)** (Кнопка) и задайте в качестве значения свойства **OnSelect** следующую формулу:
 
-**ClearCollect (Customers, Table ({Name: "Fred Гарсиа", Компания: "Northwind Traders"}, {Name: «Сюжетов Миллер», Компания: Contoso}, {Name: "Гленда Джонсон", Компания: Contoso}, {Name: "Майк Коллинз", Компания: "Adventure Works"}, {Name: "Коллин Jones", Компания: "Adventure Works"}))**
+**ClearCollect (Customers; Table ({Name: "Fred Гарсиа"; Компания: "Northwind Traders"}; {Name: «Сюжетов Миллер»; Компания: Contoso}; {Name: "Гленда Джонсон"; Компания: Contoso}; {Name: "Майк Коллинз"; Компания: "Adventure Works"}; {Name: "Коллин Jones"; Компания: "Adventure Works"}))**
 
 Как показано в этом примере, вы можете вывести список записей в элемент управления [**Gallery**](../controls/control-gallery.md) (Коллекция) в нижней части экрана. В верхней части экрана можно добавить элемент управления для [**Text input**](../controls/control-text-input.md) (Текстовое поле ввода) под названием **SearchInput**, что позволит пользователям указывать интересующие их записи.
 
@@ -103,15 +104,15 @@ ms.locfileid: "71992865"
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| **Filter(Customers, StartsWith(Name, SearchInput.Text))** |Фильтрует источник данных **Customers** по записям, в которых искомая строка находится в начале столбца **Name**. При проверке регистр не учитывается. Если пользователь введет в поле поиска **co**, в коллекции отобразятся следующие результаты: **Colleen Jones** и **Cole Miller**. В этом случае значение **Mike Collins** не отобразится, так как в столбце **Name** запись не начинается с искомой строки. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-startswith.png) |
-| **Filter(Customers, SearchInput.Text in Name)** |Фильтрует источник данных **Customers** по записям, в которых искомая строка находится в любом положении в столбце **Name**. При проверке регистр не учитывается. Если пользователь введет в поле поиска **co**, в коллекции отобразятся следующие результаты: **Colleen Jones**, **Cole Miller** и **Mike Collins**. Это связано с тем, что записи столбца **Name** содержат искомую строку (в любом положении). |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-contains.png) |
-| **Search(Customers, SearchInput.Text, "Name")** |Как и при использовании оператора **in**, функция **Search** выполняет поиск соответствий во всех положениях записей в столбце **Name**. Обратите внимание, что имя столбца необходимо заключить в двойные кавычки. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-contains.png) |
+| **Filter(Customers; StartsWith(Name; SearchInput.Text))** |Фильтрует источник данных **Customers** по записям, в которых искомая строка находится в начале столбца **Name**. При проверке регистр не учитывается. Если пользователь введет в поле поиска **co**, в коллекции отобразятся следующие результаты: **Colleen Jones** и **Cole Miller**. В этом случае значение **Mike Collins** не отобразится, так как в столбце **Name** запись не начинается с искомой строки. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-startswith.png) |
+| **Filter(Customers; SearchInput.Text in Name)** |Фильтрует источник данных **Customers** по записям, в которых искомая строка находится в любом положении в столбце **Name**. При проверке регистр не учитывается. Если пользователь введет в поле поиска **co**, в коллекции отобразятся следующие результаты: **Colleen Jones**, **Cole Miller** и **Mike Collins**. Это связано с тем, что записи столбца **Name** содержат искомую строку (в любом положении). |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-contains.png) |
+| **Search(Customers; SearchInput.Text; "Name")** |Как и при использовании оператора **in**, функция **Search** выполняет поиск соответствий во всех положениях записей в столбце **Name**. Обратите внимание, что имя столбца необходимо заключить в двойные кавычки. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-contains.png) |
 
 Вы можете расширить область поиска, добавив столбец **Company** и **Name**.
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| **Filter(Customers, StartsWith(Name, SearchInput.Text) &#124;&#124; StartsWith(Company, SearchInput.Text))** |Фильтрует источник данных **Customers** по записям, в которых записи в столбце **Name** или **Company** начинаются со строки поиска (например, **co**).  Если функция **StartsWith** возвращает значение *true*, [оператор **&#124;&#124;** ](operators.md) также возвращает значение *true*. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-startswith.png) |
-| **Filter(Customers, SearchInput.Text in Name &#124;&#124; SearchInput.Text in Company)** |Фильтрует источник данных **Customers** по записям, в которых искомая строка (например, **co**) находится в любом положении в столбце **Name** или **Company**. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-contains.png) |
-| **Search(Customers, SearchInput.Text, "Name", "Company")** |Как и при использовании оператора **in**, функция **Search** ищет в источнике данных **Customers** записи, в которых искомая строка (например, **co**) находится в любом положении в столбце **Name** или **Company**. В отличие от функции **Filter**, функцию **Search** проще записывать и читать. Это следует учитывать, если вы хотите указать несколько столбцов и операторов **in**. Обратите внимание, что имена столбцов необходимо заключать в двойные кавычки. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-contains.png) |
+| **Filter(Customers; StartsWith(Name; SearchInput.Text) &#124;;&#124;; StartsWith(Company; SearchInput.Text))** |Фильтрует источник данных **Customers** по записям, в которых записи в столбце **Name** или **Company** начинаются со строки поиска (например, **co**).  Если функция **StartsWith** возвращает значение *true*, [оператор **&#124;&#124;** ](operators.md) также возвращает значение *true*. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-startswith.png) |
+| **Filter(Customers; SearchInput.Text in Name &#124;;&#124;; SearchInput.Text in Company)** |Фильтрует источник данных **Customers** по записям, в которых искомая строка (например, **co**) находится в любом положении в столбце **Name** или **Company**. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-contains.png) |
+| **Search(Customers; SearchInput.Text; "Name"; "Company")** |Как и при использовании оператора **in**, функция **Search** ищет в источнике данных **Customers** записи, в которых искомая строка (например, **co**) находится в любом положении в столбце **Name** или **Company**. В отличие от функции **Filter**, функцию **Search** проще записывать и читать. Это следует учитывать, если вы хотите указать несколько столбцов и операторов **in**. Обратите внимание, что имена столбцов необходимо заключать в двойные кавычки. |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-contains.png) |
 

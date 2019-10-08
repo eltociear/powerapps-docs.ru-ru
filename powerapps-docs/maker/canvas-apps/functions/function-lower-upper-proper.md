@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71984564"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="lower-upper-and-proper-functions-in-powerapps"></a>Функции Lower, Upper и Proper в PowerApps
 Преобразуют буквы текстовой строки во все строчные, все прописные или в правильный регистр.
@@ -62,9 +63,9 @@ ms.locfileid: "71984564"
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| **Lower( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Преобразует все строчные буквы в прописные. |<style> img { max-width:none; } </style> ![](media/function-lower-upper-proper/people-table-lower.png) |
-| **Upper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Преобразует все строчные буквы в прописные. |![](media/function-lower-upper-proper/people-table-upper.png) |
-| **Proper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Преобразует все первые буквы слов из строчных в прописные, а все другие буквы — из прописных в строчные. |![](media/function-lower-upper-proper/people-table-proper.png) |
+| **Lower( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Преобразует все строчные буквы в прописные. |<style> img { max-width:none; } </style> ![](media/function-lower-upper-proper/people-table-lower.png) |
+| **Upper( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Преобразует все строчные буквы в прописные. |![](media/function-lower-upper-proper/people-table-upper.png) |
+| **Proper( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Преобразует все первые буквы слов из строчных в прописные, а все другие буквы — из прописных в строчные. |![](media/function-lower-upper-proper/people-table-proper.png) |
 
 ### <a name="step-by-step-example"></a>Пошаговый пример
 1. Добавьте элемент управления **[Текстовое поле](../controls/control-text-input.md)** и назовите его **Source**.

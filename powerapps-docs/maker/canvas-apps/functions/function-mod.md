@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71992524"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="mod-function-in-powerapps"></a>Функция Mod в PowerApps
 Возвращает остаток от деления.
@@ -29,7 +30,7 @@ ms.locfileid: "71992524"
 Результат имеет тот же знак, что и делитель.
 
 ## <a name="syntax"></a>Синтаксис
-**Mod**(*число*, *делитель*)
+**Mod**(*число*; *делитель*)
 
 * *Number* — обязательный аргумент. Число, которое нужно разделить.
 * *Делитель* — обязательный аргумент.  Значение, на которое нужно разделить исходное число.

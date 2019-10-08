@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71987496"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app"></a>Добавление списка, раскрывающегося списка и переключателей в приложение на основе холста
 
@@ -36,7 +37,7 @@ ms.locfileid: "71987496"
 
 1. Добавьте элемент управления **List box** (Список) с именем **MyListBox** и присвойте его свойству **Items** следующее выражение:
 
-    ```["circle","triangle","rectangle"]```  <br/>
+    ```["circle";"triangle";"rectangle"]```  <br/>
 
     Содержимое конструктора будет выглядеть примерно так:
 
@@ -54,9 +55,9 @@ ms.locfileid: "71987496"
 
    | Фигура | Функция в свойстве Visible |
    | --- | --- |
-   | круг |```If("circle" in MyListBox.SelectedItems.Value, true)``` |
-   | треугольник |```If("triangle" in MyListBox.SelectedItems.Value, true)``` |
-   | прямоугольник |```If("rectangle" in MyListBox.SelectedItems.Value, true)``` |
+   | круг |```If("circle" in MyListBox.SelectedItems.Value; true)``` |
+   | треугольник |```If("triangle" in MyListBox.SelectedItems.Value; true)``` |
+   | прямоугольник |```If("rectangle" in MyListBox.SelectedItems.Value; true)``` |
 
 7. Удерживая клавишу ALT, выберите одну или несколько фигур в **MyListBox**.
 
@@ -72,7 +73,7 @@ ms.locfileid: "71987496"
     ![][10]  
 
 3. Переименуйте **переключатель** в **Choices** (Варианты выбора) и установите для свойства **[Items](controls/properties-core.md)** (Элементы) следующую формулу:  
-   ```["red","green","blue"]```  <br/>
+   ```["red";"green";"blue"]```  <br/>
 
     ![][12]  
 
@@ -81,7 +82,7 @@ ms.locfileid: "71987496"
 4. На вкладке **Insert** (Вставка) выберите **Icons** (Значки), а затем — круг.
 
 5. Установите для свойства **[Fill](controls/properties-color-border.md)** (Заливка) круга следующую функцию:  
-   ```If(Choices.Selected.Value = "red", Red, Choices.Selected.Value = "green", Green, Choices.Selected.Value = "blue", Blue)```  
+   ```If(Choices.Selected.Value = "red"; Red; Choices.Selected.Value = "green"; Green; Choices.Selected.Value = "blue"; Blue)```  
 
     В этой формуле цвет круга меняется в зависимости от того, какой переключатель установлен.
 

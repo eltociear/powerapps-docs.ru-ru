@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71988376"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="understand-sharepoint-forms-integration"></a>Общие сведения об интеграции форм SharePoint
 Теперь вы можете легко [настроить любую форму списка SharePoint](customize-list-form.md) в PowerApps. В этой статье мы подробно рассмотрим, как работают эти формы и как их можно настроить.
@@ -37,11 +38,11 @@ ms.locfileid: "71988376"
 
     * **Item** — выбранный в списке элемент. Для этого элемента в списке задано значение First(), чтобы обеспечить удобство при работе в PowerApps Studio.
 
-        **If(IsBlank(SharePointIntegration.Selected) || IsEmpty(SharePointIntegration.Selected),First('*имя_вашего_списка*'),SharePointIntegration.Selected)**
+        **If(IsBlank(SharePointIntegration.Selected) || IsEmpty(SharePointIntegration.Selected);First('*имя_вашего_списка*');SharePointIntegration.Selected)**
 
     * **OnSuccess** — когда элемент успешно создан или сохранен, настройки формы сбрасываются и SharePoint скрывает форму.
 
-        **ResetForm(SharePointForm1); RequestHide()**
+        **ResetForm(SharePointForm1);; RequestHide()**
 
 * **SharePointIntegration** — элемент управления, который отвечает за синхронизацию пользовательских действий в SharePoint и PowerApps.
 

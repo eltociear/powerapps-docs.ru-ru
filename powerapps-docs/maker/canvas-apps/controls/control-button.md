@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71993819"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="button-control-in-powerapps"></a>Элемент управления "Кнопка" в PowerApps
 Элемент управления, который пользователь нажимает для взаимодействия с приложением.
@@ -117,7 +118,7 @@ ms.locfileid: "71993819"
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-**[Navigate( *имя_экрана*, *тип_перехода* )](../functions/function-navigate.md)**
+**[Navigate( *имя_экрана*; *тип_перехода* )](../functions/function-navigate.md)**
 
 ## <a name="examples"></a>Примеры
 ### <a name="add-a-basic-formula-to-a-button"></a>Добавление основной формулы для кнопки
@@ -144,7 +145,7 @@ ms.locfileid: "71993819"
 1. Для свойства **[HintText](control-text-input.md)** текстового поля **Source** задайте значение "Введите число".
 2. Задайте для свойства **[OnSelect](properties-core.md)** кнопки **Add** эту формулу:
    
-    **UpdateContext({Total:Total + Value(Source.Text)});<br>UpdateContext({ClearInput: ""})**
+    **UpdateContext({Total:Total + Value(Source.Text)});;<br>UpdateContext({ClearInput: ""})**
    
     > [!NOTE]
    > Если указывается несколько формул, их следует разделять точками с запятой ( **;** ).

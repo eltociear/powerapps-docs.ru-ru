@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71984147"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="split-function-in-powerapps"></a>Функция Split в PowerApps
 Разбивает строку текста на таблицу с подстроками.
@@ -35,7 +36,7 @@ ms.locfileid: "71984147"
 В примерах показано, как можно использовать **разбиение** с **[первой](function-first-last.md)** и **[последней](function-first-last.md)** функцией для извлечения одной подстроки с разделителями.  Функция **[Match](function-ismatch.md)** часто является более кратким и мощным выбором для тех, кто знаком с регулярными выражениями.
 
 ## <a name="syntax"></a>Синтаксис
-**Split**( *Text*, *Separator* )
+**Split**( *Text*; *Separator* )
 
 * *Text* — обязательный аргумент.  Разбиваемый текст.
 * *Separator* — обязательный аргумент.  Разделитель, используемый для разбивки строки.  Может включать ноль, один или несколько символов.
@@ -46,25 +47,25 @@ ms.locfileid: "71984147"
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| `Split( "Apples, Oranges, Bananas", "," )` |Разбивает определения фруктов, используя в качестве разделителя запятую.  Пробел за запятой в состав разделителя не входит, поэтому в результате возвращаются подстроки "&nbsp;Oranges" и "&nbsp;Bananas". |<style> img { max-width: none; } </style> ![](media/function-split/fruit1.png) |
-| `TrimEnds( Split( "Apples, Oranges, Bananas", "," ) )` |Пример, аналогичный предыдущему. Но здесь пробел удаляется с помощью [функции **TrimEnds**](function-trim.md), которая обрабатывает столбец таблицы, созданных функцией **Split**. Мы также можно использовать разделитель **",&nbsp;"** , который включает пробел после запятой, но такая конфигурация не будет работать правильно, если пробел будет отсутствовать или будет двойным. |<style> img { max-width: none; } </style> ![](media/function-split/fruit2.png) |
-| `Split( "08/28/17", "/" )` |Разбивает элементы даты, используя в качестве разделителя косую черту. |<style> img { max-width: none; } </style> ![](media/function-split/date.png) |
+| `Split( "Apples, Oranges, Bananas"; "," )` |Разбивает определения фруктов, используя в качестве разделителя запятую.  Пробел за запятой в состав разделителя не входит, поэтому в результате возвращаются подстроки "&nbsp;Oranges" и "&nbsp;Bananas". |<style> img { max-width: none; } </style> ![](media/function-split/fruit1.png) |
+| `TrimEnds( Split( "Apples, Oranges, Bananas"; "," ) )` |Пример, аналогичный предыдущему. Но здесь пробел удаляется с помощью [функции **TrimEnds**](function-trim.md), которая обрабатывает столбец таблицы, созданных функцией **Split**. Мы также можно использовать разделитель **",&nbsp;"** , который включает пробел после запятой, но такая конфигурация не будет работать правильно, если пробел будет отсутствовать или будет двойным. |<style> img { max-width: none; } </style> ![](media/function-split/fruit2.png) |
+| `Split( "08/28/17"; "/" )` |Разбивает элементы даты, используя в качестве разделителя косую черту. |<style> img { max-width: none; } </style> ![](media/function-split/date.png) |
 
 ### <a name="different-delimiters"></a>Разные разделители
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| `Split( "Hello, World", "," )` |Разбивает слова, используя в качестве разделителя запятую.  Вторая подстрока начинается с пробела, так как этот символ следует после запятой. |<style> img { max-width: none; } </style> ![](media/function-split/comma.png) |
-| `Split( "Hello, World", "o" )` |Разбивает строку, используя в качестве разделителя символ o. |<style> img { max-width: none; } </style> ![](media/function-split/o.png) |
-| `Split( "Hello, World", "l" )` |Разбивает строку, используя в качестве разделителя символ l. Так как между двумя символами **l** в слове **Hello** ничего нет, возвращается *пустое* значение. |<style> img { max-width: none; } </style> ![](media/function-split/l.png) |
-| `Split( "Hello, World", "ll" )` |Разбивает строку, используя в качестве разделителя символы ll. |<style> img { max-width: none; } </style> ![](media/function-split/ll.png) |
-| `Split( "Hello, World", "%" )` |Разбивает строку, используя в качестве разделителя символ %. Так как этого разделителя в строке нет, возвращается целая строка. |<style> img { max-width: none; } </style> ![](media/function-split/percent.png) |
-| `Split( "Hello, World", "" )` |Разбивает строку, используя в качестве разделителя пустую строку (0 знаков). Строка будет разбита посимвольно. |<style> img { max-width: none; } </style> ![](media/function-split/none.png) |
+| `Split( "Hello, World"; "," )` |Разбивает слова, используя в качестве разделителя запятую.  Вторая подстрока начинается с пробела, так как этот символ следует после запятой. |<style> img { max-width: none; } </style> ![](media/function-split/comma.png) |
+| `Split( "Hello, World"; "o" )` |Разбивает строку, используя в качестве разделителя символ o. |<style> img { max-width: none; } </style> ![](media/function-split/o.png) |
+| `Split( "Hello, World"; "l" )` |Разбивает строку, используя в качестве разделителя символ l. Так как между двумя символами **l** в слове **Hello** ничего нет, возвращается *пустое* значение. |<style> img { max-width: none; } </style> ![](media/function-split/l.png) |
+| `Split( "Hello, World"; "ll" )` |Разбивает строку, используя в качестве разделителя символы ll. |<style> img { max-width: none; } </style> ![](media/function-split/ll.png) |
+| `Split( "Hello, World"; "%" )` |Разбивает строку, используя в качестве разделителя символ %. Так как этого разделителя в строке нет, возвращается целая строка. |<style> img { max-width: none; } </style> ![](media/function-split/percent.png) |
+| `Split( "Hello, World"; "" )` |Разбивает строку, используя в качестве разделителя пустую строку (0 знаков). Строка будет разбита посимвольно. |<style> img { max-width: none; } </style> ![](media/function-split/none.png) |
 
 ### <a name="substring-extraction"></a>Извлечение подстроки
 
 | Формула | Описание | Возвращаемый результат |
 | --- | --- | --- |
-| `First( Split( Last( Split( "Bob Jones <bob.jones@contoso.com>", "<" ) ).Result, ">" ) ).Result` | Разделяет строку на основе открывающего разделителя (<) и извлекает строку справа от разделителя с **последним**.  Затем формула разделяет этот результат на основе закрывающего разделителя (>) и извлекает строку слева от разделителя с **правым**. | "bob.jones@contoso.com" |
-| `Match( "Bob Jones <bob.jones@contoso.com>", "<(?<email>.+)>" ).email` | Выполняет то же извлечение, основанное на разделителе, что и в последнем примере, но использует функцию **Match** и регулярное выражение. | "bob.jones@contoso.com" |
+| `First( Split( Last( Split( "Bob Jones <bob.jones@contoso.com>"; "<" ) ).Result; ">" ) ).Result` | Разделяет строку на основе открывающего разделителя (<) и извлекает строку справа от разделителя с **последним**.  Затем формула разделяет этот результат на основе закрывающего разделителя (>) и извлекает строку слева от разделителя с **правым**. | "bob.jones@contoso.com" |
+| `Match( "Bob Jones <bob.jones@contoso.com>"; "<(?<email>.+)>" ).email` | Выполняет то же извлечение, основанное на разделителе, что и в последнем примере, но использует функцию **Match** и регулярное выражение. | "bob.jones@contoso.com" |
 

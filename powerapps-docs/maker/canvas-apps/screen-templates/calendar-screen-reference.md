@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71995723"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="reference-information-about-the-calendar-screen-template-for-canvas-apps"></a>Справочные сведения о шаблоне "Календарь-экран" для приложений Canvas
 
@@ -55,15 +56,15 @@ ms.locfileid: "71995723"
 
    Эта часть формулы выполняется только в первый раз, когда пользователь выбирает параметр в раскрывающемся списке после открытия приложения.
 
-    ```powerapps-dot
-    If( IsBlank( _userDomain ),
-        UpdateContext( {_showLoading: true} );
-        Set( _userDomain, Right( User().Email, Len( User().Email ) - Find( "@", User().Email ) ) );
-        Set( _dateSelected, Today() );
-        Set( _firstDayOfMonth, DateAdd( Today(), 1 - Day( Today() ), Days ) );  
-        Set( _firstDayInView, DateAdd( _firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 1), Days ) );
-        Set( _lastDayOfMonth, DateAdd( DateAdd( _firstDayOfMonth, 1, Months ), -1, Days ) )  
-    );
+    ```powerapps-comma
+    If( IsBlank( _userDomain );
+        UpdateContext( {_showLoading: true} );;
+        Set( _userDomain; Right( User().Email; Len( User().Email ) - Find( "@"; User().Email ) ) );;
+        Set( _dateSelected; Today() );;
+        Set( _firstDayOfMonth; DateAdd( Today(); 1 - Day( Today() ); Days ) );;  
+        Set( _firstDayInView; DateAdd( _firstDayOfMonth; -(Weekday(_firstDayOfMonth) - 1); Days ) );;
+        Set( _lastDayOfMonth; DateAdd( DateAdd( _firstDayOfMonth; 1; Months ); -1; Days ) )  
+    );;
     ```
 
     Приведенный выше код определяет следующие переменные:
@@ -76,28 +77,28 @@ ms.locfileid: "71995723"
 
    Функции после функции **If** выполняются каждый раз, когда пользователь выбирает параметр в раскрывающемся списке календаря (а не только при первом открытии приложения пользователем):
 
-    ```powerapps-dot
-    Set( _calendarVisible, false );
-    UpdateContext( {_showLoading: true} );
-    Set( _myCalendar, dropdownCalendarSelection2.Selected );
-    Set( _minDate, 
-        DateAdd( _firstDayOfMonth, -(Weekday( _firstDayOfMonth ) - 2 + 1), Days )
-    );
-    Set(_maxDate, 
+    ```powerapps-comma
+    Set( _calendarVisible; false );;
+    UpdateContext( {_showLoading: true} );;
+    Set( _myCalendar; dropdownCalendarSelection2.Selected );;
+    Set( _minDate; 
+        DateAdd( _firstDayOfMonth; -(Weekday( _firstDayOfMonth ) - 2 + 1); Days )
+    );;
+    Set(_maxDate; 
         DateAdd(
-            DateAdd( _firstDayOfMonth, -(Weekday( _firstDayOfMonth ) - 2 + 1), Days ), 
-            40, 
+            DateAdd( _firstDayOfMonth; -(Weekday( _firstDayOfMonth ) - 2 + 1); Days ); 
+            40; 
             Days
         )
-    );
-    ClearCollect( MyCalendarEvents, 
-        'Office365'.GetEventsCalendarViewV2( _myCalendar.Name, 
-            Text( _minDate, UTC ), 
-            Text( _maxDate, UTC )
+    );;
+    ClearCollect( MyCalendarEvents; 
+        'Office365'.GetEventsCalendarViewV2( _myCalendar.Name; 
+            Text( _minDate; UTC ); 
+            Text( _maxDate; UTC )
         ).value
-    );
-    UpdateContext( {_showLoading: false} );
-    Set( _calendarVisible, true )
+    );;
+    UpdateContext( {_showLoading: false} );;
+    Set( _calendarVisible; true )
     ```
 
     Приведенный выше код определяет эти переменные и одну коллекцию:
@@ -117,11 +118,11 @@ ms.locfileid: "71995723"
 - Свойства **OnSelect**<br>
     Значений Четыре функции **набора** , которые сбрасывают коллекцию календарей до сегодняшней даты:
 
-    ```powerapps-dot
-    Set( _dateSelected, Today() );
-    Set( _firstDayOfMonth, DateAdd( Today(), 1 - Day( Today() ), Days) );
-    Set( _firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday( _firstDayOfMonth ) - 2 + 1), Days));
-    Set( _lastDayOfMonth, DateAdd( DateAdd( _firstDayOfMonth, 1, Months ), -1, Days ) )
+    ```powerapps-comma
+    Set( _dateSelected; Today() );;
+    Set( _firstDayOfMonth; DateAdd( Today(); 1 - Day( Today() ); Days) );;
+    Set( _firstDayInView; DateAdd(_firstDayOfMonth; -(Weekday( _firstDayOfMonth ) - 2 + 1); Days));;
+    Set( _lastDayOfMonth; DateAdd( DateAdd( _firstDayOfMonth; 1; Months ); -1; Days ) )
     ```
 
     Приведенный выше код сбрасывает все переменные даты, необходимые для отображения правильного представления календаря:
@@ -139,20 +140,20 @@ ms.locfileid: "71995723"
 
 - Свойства **OnSelect**<br>Значений Четыре функции **Set** и функция **If** , которая показывает предыдущий месяц в коллекции календарей:
 
-    ```powerapps-dot
-    Set( _firstDayOfMonth, DateAdd( _firstDayOfMonth, -1, Months ) );
-    Set( _firstDayInView, 
-        DateAdd( _firstDayOfMonth, -(Weekday( _firstDayOfMonth ) - 2 + 1), Days )
-    );
-    Set( _lastDayOfMonth, DateAdd(DateAdd( _firstDayOfMonth, 1, Months ), -1, Days ) );
-    If( _minDate > _firstDayOfMonth,
-        Collect( MyCalendarEvents,
-            'Office365'.GetEventsCalendarViewV2( _myCalendar.Name,
-                Text( _firstDayInView, UTC ), 
-                Text( DateAdd( _minDate, -1, Days ), UTC )
+    ```powerapps-comma
+    Set( _firstDayOfMonth; DateAdd( _firstDayOfMonth; -1; Months ) );;
+    Set( _firstDayInView; 
+        DateAdd( _firstDayOfMonth; -(Weekday( _firstDayOfMonth ) - 2 + 1); Days )
+    );;
+    Set( _lastDayOfMonth; DateAdd(DateAdd( _firstDayOfMonth; 1; Months ); -1; Days ) );;
+    If( _minDate > _firstDayOfMonth;
+        Collect( MyCalendarEvents;
+            'Office365'.GetEventsCalendarViewV2( _myCalendar.Name;
+                Text( _firstDayInView; UTC ); 
+                Text( DateAdd( _minDate; -1; Days ); UTC )
             ).value
-        );
-        Set( _minDate, _firstDayInView )
+        );;
+        Set( _minDate; _firstDayInView )
     )
     ```
 
@@ -174,19 +175,19 @@ ms.locfileid: "71995723"
 - Свойства **OnSelect**<br>
     Значений Четыре функции **Set** и функция **If** , которая показывает следующий месяц в коллекции календарей:
 
-    ```powerapps-dot
-    Set( _firstDayOfMonth, DateAdd( _firstDayOfMonth, 1, Months ) );
-    Set( _firstDayInView, 
-        DateAdd( _firstDayOfMonth, -(Weekday( _firstDayOfMonth ) - 2 + 1), Days ) );
-    Set( _lastDayOfMonth, DateAdd( DateAdd( _firstDayOfMonth, 1, Months ), -1, Days ) );
-    If( _maxDate < _lastDayOfMonth,
-        Collect( MyCalendarEvents, 
-            'Office365'.GetEventsCalendarViewV2( _myCalendar.Name, 
-                Text( DateAdd( _maxDate, 1, Days ), UTC ), 
-                DateAdd( _firstDayInView, 40, Days )
+    ```powerapps-comma
+    Set( _firstDayOfMonth; DateAdd( _firstDayOfMonth; 1; Months ) );;
+    Set( _firstDayInView; 
+        DateAdd( _firstDayOfMonth; -(Weekday( _firstDayOfMonth ) - 2 + 1); Days ) );;
+    Set( _lastDayOfMonth; DateAdd( DateAdd( _firstDayOfMonth; 1; Months ); -1; Days ) );;
+    If( _maxDate < _lastDayOfMonth;
+        Collect( MyCalendarEvents; 
+            'Office365'.GetEventsCalendarViewV2( _myCalendar.Name; 
+                Text( DateAdd( _maxDate; 1; Days ); UTC ); 
+                DateAdd( _firstDayInView; 40; Days )
             ).value
-        );
-        Set( _maxDate, DateAdd( _firstDayInView, 40, Days) )    
+        );;
+        Set( _maxDate; DateAdd( _firstDayInView; 40; Days) )    
     )
     ```
 
@@ -206,8 +207,8 @@ ms.locfileid: "71995723"
 ![Элемент управления Монсдайгаллери](media/calendar-screen/calendar-month-gall.png)
 
 - Свойства **Файлов**<br>
-    Значение: `[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,
-    20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41]`
+    Значение: `[0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;
+    20;21;22;23;24;25;26;27;28;29;30;31;32;33;34;35;36;37;38;39;40;41]`
   
   Для элементов в коллекции календарей используется набор от 0 до 41, поскольку в худшем случае в представлении календаря необходимо отобразить 42 полных дней. Это происходит, когда первый месяц происходит в субботу, а последний — в воскресенье. В этом случае в календаре отображается шесть дней предыдущего месяца в строке, содержащей первый месяц, и шесть дней из следующего месяца в строке, содержащей последний месяц. Это 42 уникальных значения, из которых 30 относятся к выбранному месяцу.
 
@@ -221,26 +222,26 @@ ms.locfileid: "71995723"
 ![Элемент управления "заголовок Монсдайгаллери"](media/calendar-screen/calendar-month-text.png)
 
 - Свойства **Текст**<br>
-    Значение: `Day( DateAdd( _firstDayInView, ThisItem.Value, Days ) )`
+    Значение: `Day( DateAdd( _firstDayInView; ThisItem.Value; Days ) )`
 
     Помните, что **\_firstDayInView** определяется как ( **\_firstDayOfMonth** -его значение дня недели) + 1. Это говорит о том, что **\_firstDayInView** всегда является воскресеньем, а **\_firstDayOfMonth** всегда находится в первой строке **монсдайгаллери**. Из-за этих двух фактов **@no__t 1firstDayInView** всегда находится в первой ячейке **монсдайгаллери**. **Сиситем. Value** — это номер ячейки в свойстве элемента **монсдайгаллери** . Таким образом, при **@no__t** в качестве отправной точки в каждой ячейке отображается приращение **\_firstDayInView** + и соответствующее значение ячейки.
 
 - Свойства **Заполнения**<br>
     Значений Одна функция **If** :
 
-    ```powerapps-dot
-    If( DateAdd( _firstDayInView, ThisItem.Value ) = Today() && 
-                DateAdd( _firstDayInView, ThisItem.Value ) = _dateSelected, 
-            RGBA( 0, 0, 0, 0 ),
-        DateAdd( _firstDayInView, ThisItem.Value) = Today(), 
-            ColorFade( Subcircle.Fill, 0.67 ),
-        Abs( Title.Text - ThisItem.Value) > 10,
-            RGBA( 200, 200, 200, 0.3 ),
-        RGBA( 0, 0, 0, 0 )
+    ```powerapps-comma
+    If( DateAdd( _firstDayInView; ThisItem.Value ) = Today() && 
+                DateAdd( _firstDayInView; ThisItem.Value ) = _dateSelected; 
+            RGBA( 0; 0; 0; 0 );
+        DateAdd( _firstDayInView; ThisItem.Value) = Today(); 
+            ColorFade( Subcircle.Fill; 0,67 );
+        Abs( Title.Text - ThisItem.Value) > 10;
+            RGBA( 200; 200; 200; 0,3 );
+        RGBA( 0; 0; 0; 0 )
     )
     ```
 
-  Как обсуждалось в описании свойства **Text** , `DateAdd(_firstDayInView, ThisItem.Value)` представляет день в видимой ячейке. Принимая во внимание, приведенный выше код выполняет следующие сравнения:
+  Как обсуждалось в описании свойства **Text** , `DateAdd(_firstDayInView; ThisItem.Value)` представляет день в видимой ячейке. Принимая во внимание, приведенный выше код выполняет следующие сравнения:
   1. Если ячейка имеет значение сегодняшней даты, а эта ячейка эквивалентна **\_dateSelected**, не следует указывать значение Fill.
   1. Если значение ячейки является сегодняшней датой, но не эквивалентно **\_dateSelected**, укажите **колорфаде** Fill.
   1. Последнее сравнение не так ясно. Это сравнение фактического текстового значения в ячейке и значения элемента ячейки (число на экране и номер элемента).<br>
@@ -257,10 +258,10 @@ ms.locfileid: "71995723"
 - Свойства **Ярлык**<br>
     Значений
 
-    ```powerapps-dot
+    ```powerapps-comma
     !(
-        DateAdd( _firstDayInView, ThisItem.Value, Days ) - 
-            Weekday( DateAdd( _firstDayInView, ThisItem.Value,Days ) ) + 1 
+        DateAdd( _firstDayInView; ThisItem.Value; Days ) - 
+            Weekday( DateAdd( _firstDayInView; ThisItem.Value;Days ) ) + 1 
         > _lastDayOfMonth
     )
     ```
@@ -270,8 +271,8 @@ ms.locfileid: "71995723"
 - Свойства **OnSelect**<br>
     Значений Функция **Set** , которая устанавливает переменную **\_dateSelected** в значение даты выбранной ячейки:
 
-    ```powerapps-dot
-    Set( _dateSelected, DateAdd( _firstDayInView, ThisItem.Value, Days ) )
+    ```powerapps-comma
+    Set( _dateSelected; DateAdd( _firstDayInView; ThisItem.Value; Days ) )
     ```
 
 ### <a name="circle-control-in-the-calendar-gallery"></a>Элемент управления Circle в коллекции календарей
@@ -281,10 +282,10 @@ ms.locfileid: "71995723"
 - Свойства **Ярлык**<br>
     Значений Формула, которая определяет, были ли запланированы события для выбранной даты, а также отображаются ли элементы управления " **подокружность** " и " **заголовок** ".
 
-    ```powerapps-dot
+    ```powerapps-comma
     CountRows(
-        Filter( MyCalendarEvents, 
-            DateValue( Text( Start ) ) = DateAdd( _firstDayInView, ThisItem.Value, Days )
+        Filter( MyCalendarEvents; 
+            DateValue( Text( Start ) ) = DateAdd( _firstDayInView; ThisItem.Value; Days )
         )
     ) > 0 && !Subcircle.Visible && Title.Visible
     ```
@@ -298,8 +299,8 @@ ms.locfileid: "71995723"
 - Свойства **Ярлык**<br>
     Значений
 
-    ```powerapps-dot
-    DateAdd( _firstDayInView, ThisItem.Value ) = _dateSelected && Title.Visible
+    ```powerapps-comma
+    DateAdd( _firstDayInView; ThisItem.Value ) = _dateSelected && Title.Visible
     ```
 
   Элемент управления " **подокружность** " отображается, если **\_dateSelected** эквивалентен дате ячейки, а элемент управления " **заголовок** " является видимым. Иными словами, этот элемент управления отображается, когда ячейка является текущей выбранной датой.
@@ -311,11 +312,11 @@ ms.locfileid: "71995723"
 - Свойства **Файлов**<br>
     Значений Формула, которая сортирует и фильтрует коллекцию событий:
 
-    ```powerapps-dot
+    ```powerapps-comma
     SortByColumns(
-        Filter( MyCalendarEvents,
-            Text( Start, DateTimeFormat.ShortDate ) = Text( _dateSelected, DateTimeFormat.ShortDate )
-        ),
+        Filter( MyCalendarEvents;
+            Text( Start; DateTimeFormat.ShortDate ) = Text( _dateSelected; DateTimeFormat.ShortDate )
+        );
         "Start"
     )
     ```

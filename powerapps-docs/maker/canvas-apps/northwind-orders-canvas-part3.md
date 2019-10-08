@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71991610"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-detail-gallery-in-a-canvas-app"></a>Создание коллекции сведений в приложении Canvas
 
@@ -71,7 +72,7 @@ ms.locfileid: "71991610"
 
 1. Задайте для свойства **Items** коллекции Details следующую формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gallery1.Selected.'Order Details'
     ```
 
@@ -103,7 +104,7 @@ ms.locfileid: "71991610"
 
 1. Задайте для свойства **Text** новой метки следующую формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Product.'Product Name'
     ```
 
@@ -141,7 +142,7 @@ ms.locfileid: "71991610"
 
 1. Задайте **для свойства Image образа следующую** формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Product.Picture
     ```
 
@@ -161,7 +162,7 @@ ms.locfileid: "71991610"
 
 1. Задайте для свойства **Text** новой метки следующее выражение:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Quantity
     ```
 
@@ -179,8 +180,8 @@ ms.locfileid: "71991610"
 
 1. Задайте для свойства **Text** новой метки следующую формулу:
 
-    ```powerapps-dot
-    Text( ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
     ```
 
     Если вы не включили тег Language ( **[$-en-US]** ), он будет добавлен в соответствии с языком и регионом. Если используется другой тег языка, необходимо удалить **$** сразу после закрывающей квадратной скобки ( **]** ), а затем добавить в эту точку собственный символ валюты.
@@ -197,8 +198,8 @@ ms.locfileid: "71991610"
 
 1. Задайте для свойства **Text** новой метки следующую формулу:
 
-    ```powerapps-dot
-    Text( ThisItem.Quantity * ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( ThisItem.Quantity * ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
     ```
 
     Опять же, если вы не включили тег Language ( **[$-en-US]** ), он будет добавлен в соответствии с языком и регионом. Если тег отличается, вместо **$** сразу после закрывающей квадратной скобки необходимо использовать собственный символ валюты.
@@ -273,8 +274,8 @@ ms.locfileid: "71991610"
 
 1. Задайте для свойства **Text** новой метки следующую формулу:
 
-    ```powerapps-dot
-    Sum( Gallery1.Selected.'Order Details', Quantity )
+    ```powerapps-comma
+    Sum( Gallery1.Selected.'Order Details'; Quantity )
     ```
 
     В этой формуле отображается предупреждение о делегировании, но его можно игнорировать, так как ни один заказ не будет содержать более 500 продуктов.
@@ -288,8 +289,8 @@ ms.locfileid: "71991610"
 
 1. Задайте для свойства **Text** копии следующую формулу:
 
-    ```powerapps-dot
-    Text( Sum( Gallery1.Selected.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( Sum( Gallery1.Selected.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
     ```
 
     В этой формуле отображается предупреждение о делегировании, но его можно игнорировать, так как ни один заказ не будет содержать более 500 продуктов.
@@ -357,7 +358,7 @@ ms.locfileid: "71991610"
 
 1. Задайте для свойства **Items** поля со списком следующую формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Choices( 'Order Details'.Product )
     ```
 
@@ -418,7 +419,7 @@ ms.locfileid: "71991610"
 
 1. Задайте для свойства **Image** образа значение:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ComboBox1.Selected.Picture
     ```
 
@@ -467,8 +468,8 @@ ms.locfileid: "71991610"
 
 1. Измените размер и переместите метку справа от элемента управления вводом текста и задайте в качестве значения свойства **Text** метки следующую формулу:
 
-    ```powerapps-dot
-    Text( ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -488,8 +489,8 @@ ms.locfileid: "71991610"
 
 1. Задайте для свойства **Text** новой метки следующую формулу:
 
-    ```powerapps-dot
-    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -518,18 +519,18 @@ ms.locfileid: "71991610"
 
 1. Измените размер и переместите этот значок на правой границе светло-синей области, а затем присвойте свойству **OnSelect** значка следующую формулу:
 
-    ```powerapps-dot
-    Patch( 'Order Details',
-        Defaults('Order Details'),
+    ```powerapps-comma
+    Patch( 'Order Details';
+        Defaults('Order Details');
         {
-            Order: Gallery1.Selected,
-            Product: ComboBox1.Selected,
-            Quantity: Value(TextInput1.Text),
+            Order: Gallery1.Selected;
+            Product: ComboBox1.Selected;
+            Quantity: Value(TextInput1.Text);
             'Unit Price': ComboBox1.Selected.'List Price'
         }
-    );
-    Refresh( Orders );
-    Reset( ComboBox1 );
+    );;
+    Refresh( Orders );;
+    Reset( ComboBox1 );;
     Reset( TextInput1 )
     ```
 
@@ -582,8 +583,8 @@ ms.locfileid: "71991610"
 
 1. Измените размер и переместите значок корзины на правую сторону шаблона коллекции подробных сведений и задайте в качестве значения свойства " **OnSelect** " этой формулы:
 
-    ```powerapps-dot
-    Remove( 'Order Details', ThisItem ); Refresh( Orders )
+    ```powerapps-comma
+    Remove( 'Order Details'; ThisItem );; Refresh( Orders )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -608,7 +609,7 @@ ms.locfileid: "71991610"
 - Связь «многие к одному» из сущности « **сведения о заказе** » в сущность « **заказ товаров** »: `ThisItem.Product.'Product Name'` и `ThisItem.Product.Picture`
 - Функция **выбора** для получения списка продуктов: `Choices( 'Order Details'.Product' )`.
 - **Выбранное** свойство поля со списком в качестве полной связанной записи "многие к одному": `ComboBox1.Selected.Picture` и `ComboBox1.Selected.'List Price'`
-- Функция **Patch** для создания записи **сведений о заказе** : `Patch( 'Order Details', Defaults( 'Order Details' ), ... )`.
-- Функция **Remove** для удаления записи **сведений о заказе** : `Remove( 'Order Details', ThisItem )`
+- Функция **Patch** для создания записи **сведений о заказе** : `Patch( 'Order Details'; Defaults( 'Order Details' ); ... )`.
+- Функция **Remove** для удаления записи **сведений о заказе** : `Remove( 'Order Details'; ThisItem )`
 
 В этой серии разделов было кратко пошаговое руководство по использованию отношений Common Data Service и наборов параметров в приложении Canvas в целях обучения. Перед выпуском любого приложения в рабочей среде следует учитывать проверку полей, обработку ошибок и многие другие факторы.

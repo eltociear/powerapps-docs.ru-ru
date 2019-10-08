@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71984081"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="select-function-in-powerapps"></a>Функция Select в PowerApps
 Имитирует выбор действия для элемента управления, активируя вычисление формулы **OnSelect**.
@@ -83,7 +84,7 @@ ms.locfileid: "71984081"
 
 5. Назначьте свойству **OnSelect** элемента управления Image следующую формулу:
 
-    **Notify( "Image Selected", Success )**
+    **Notify( "Image Selected"; Success )**
 
 6. Удерживая нажатой клавишу Alt, щелкайте разные элементы коллекции или касайтесь их.
 
