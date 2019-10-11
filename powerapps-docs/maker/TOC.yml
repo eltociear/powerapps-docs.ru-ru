@@ -1318,6 +1318,8 @@
           href: ./common-data-service/set-managed-properties-metadata.md
         - name: Публикация изменений
           href: ./common-data-service/publish-changes-for-use-customer-service-hub.md
+        - name: Рекомендации
+          href: ./common-data-service/solution-best-practices.md
     - name: Работа с потоками данных
       href: ./common-data-service/self-service-data-prep-with-dataflows.md
       items:
