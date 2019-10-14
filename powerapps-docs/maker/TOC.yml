@@ -1050,7 +1050,7 @@
       href: ./model-driven-apps/app-for-outlook-customize.md
     - name: Для разработчиков
       href: ../developer/model-driven-apps/overview.md
-- name: Порталы (предварительная версия)
+- name: Порталы
   items:
     - name: Что такое порталы PowerApps?
       href: ./portals/overview.md
@@ -1058,9 +1058,9 @@
       items:
         - name: Шаблоны порталов
           href: ./portals/portal-templates.md
-        - name: Создание портала
+        - name: Создание начального портала
           href: ./portals/create-portal.md
-        - name: "Создание портала Dynamics\_365"
+        - name: "Создание портала с использованием среды Dynamics\_365"
           href: ./portals/create-dynamics-portal.md
         - name: Устройство конструктора портала
           href: ./portals/portal-designer-anatomy.md
@@ -1072,10 +1072,10 @@
           href: ./portals/compose-page.md
         - name: Работа с шаблонами
           href: ./portals/work-with-templates.md
+        - name: "Редактирование\_CSS"
+          href: ./portals/edit-css.md
     - name: Управление существующими порталами
       href: ./portals/manage-existing-portals.md
-    - name: Настройка параметров сайта
-      href: ./portals/configure-site-settings.md
     - name: Расширенное администрирование портала
       items:
         - name: Обзор
@@ -1108,9 +1108,17 @@
           href: ./portals/admin/update-portal-domain.md
         - name: Очистка кэша на стороне сервера
           href: ./portals/admin/clear-server-side-cache.md
-        - name: "Перенос конфигурации порталов Dynamics\_365"
+        - name: Миграция конфигурации портала
           href: ./portals/admin/migrate-portal-configuration.md
-    - name: Расширенные настройки портала
+        - name: Жизненный цикл портала
+          href: ./portals/admin/portal-lifecycle.md
+    - name: Расширенная настройка портала
+      items:
+        - name: Обзор
+          href: ./portals/configure/configure-portal.md
+        - name: Настройка параметров сайта
+          href: ./portals/configure/configure-site-settings.md
+    - name: Расширенные возможности портала
       items:
         - name: Работа с шаблонами Liquid
           items:
@@ -1156,6 +1164,18 @@
                   href: ./portals/liquid/render-site-header-primary-navigation.md
         - name: Поток неявного предоставления OAuth 2.0
           href: ./portals/oauth-implicit-grant-flow.md
+    - name: Хранение документов на порталах
+      items:
+        - name: Настройка заметок
+          href: ./portals/configure-notes.md
+        - name: "Хранилище\_Azure"
+          items:
+            - name: "Активация хранилища\_Azure"
+              href: ./portals/enable-azure-storage.md
+            - name: "Добавление веб-ресурса хранилища\_Azure в форму"
+              href: ./portals/add-web-resource.md
+        - name: "Работа с документами\_SharePoint"
+          href: ./portals/manage-sharepoint-documents.md
     - name: Известные проблемы
       href: ./portals/known-issues.md
     - name: 'Порталы PowerApps: вопросы и ответы'
