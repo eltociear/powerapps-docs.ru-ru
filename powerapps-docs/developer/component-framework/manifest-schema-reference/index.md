@@ -1,9 +1,10 @@
 ---
-title: Справочник по схеме манифеста платформы компонентов PowerApps | Документация Майкрософт
+title: Справочник по схеме манифеста платформы компонентов PowerApps | Документация Майкрософт
 description: ''
 keywords: ''
 ms.author: nabuthuk
-manager: ''
+author: Nkrb
+manager: kvivek
 ms.date: 06/4/2018
 ms.reviewer: ''
 ms.service: crm-online
@@ -11,37 +12,38 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 045a395b-4475-48dd-8f67-6bc2b33cd89c
-ms.openlocfilehash: 88e9d35792d86e279b9af4a19eaff288643412ca
-ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
-ms.translationtype: HT
+ms.openlocfilehash: 8f58f10f6a3695615ddc3b58b540c59240af9641
+ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "64524305"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72346378"
 ---
 # <a name="manifest-schema-reference"></a>Справочник по схеме манифеста
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
-
 Этот раздел содержит справочную документацию по схеме манифеста, создаваемой с помощью интерфейса командной строки PowerApps.
 
-|Элемент|Описание|
-|----|-----------|
-|[code](code.md)|[!INCLUDE [code-description](includes/code-description.md)]|
-|[control](control.md)|[!INCLUDE [control-description](includes/control-description.md)]|
-|[css](css.md)|[!INCLUDE [css-description](includes/css-description.md)]|
-|[data-set](data-set.md)|[!INCLUDE [data-set-description](includes/data-set-description.md)]|
-|[html](html.md)|[!INCLUDE [html-description](includes/html-description.md)]|
-|[img](img.md)|[!INCLUDE [img-description](includes/img-description.md)]|
-|[manifest](manifest.md)|Манифест — это файл метаданных, определяющий компонент. Это XML-документ, описывающий следующее.<br/> – Пространство имен компонента.<br/> – Тип данных, которые можно для него настроить, т. е. поле или набор данных.<br/> – Любые свойства, которые могут быть настроены в приложении при добавлении компонента.<br/> – Список файлов ресурсов, необходимых для компонента.<br/> – Один из них должен быть веб-ресурсом JavaScript. Этот код JavaScript должен включить функцию, которая создает экземпляр объекта. Этот код реализует интерфейс, предоставляющий методы, которые требуются для работы компонента. Это называется библиотекой реализации компонентов.<br/> – Имя функции JavaScript в библиотеке реализации компонентов, которая будет возвращать объект, применяющий требуемый интерфейс.<br/> Когда пользователь настраивает компонент в приложении, данные в манифесте отфильтровывают доступные компоненты таким образом, чтобы можно было настраивать только допустимые компоненты для контекста. Свойства, определенные в манифесте компонента, отображаются как поля конфигурации, чтобы пользователь, выполняющий настройку элемента управления, мог указать значения. Значения этих свойств будут доступны для функции компонента во время выполнения.|
-|[property](property.md)|[!INCLUDE [property-description](includes/property-description.md)]|
-|[property-set](property-set.md)|[!INCLUDE [property-set-description](includes/property-set-description.md)]|
-|[resources](resources.md)|[!INCLUDE [resources-description](includes/resources-description.md)]|
-|[resx](resx.md)|[!INCLUDE [resx-description](includes/resx-description.md)]|
-|[type-group](type-group.md)|[!INCLUDE [type-group-description](includes/type-group-description.md)]|
+> [!IMPORTANT]
+> Вкладка **доступно для** показывает, какие элементы поддерживаются приложениями и приложениями Canvas, управляемыми моделью (экспериментальная Предварительная версия). Рекомендуется проверить наличие в разделе **доступно для** каждого отдельного свойства, независимо от того, поддерживается он или нет. Например, элемент **Code** поддерживается как для приложений, основанных на моделях, так и для приложений Canvas, но свойства **HTML** и **img** в элементах **кода** не поддерживают приложения Canvas. 
 
+|Элемент|Description|Доступно для|
+|----|-----------|-----|
+|[code](code.md)|[!INCLUDE [code-description](includes/code-description.md)]|Приложения на основе моделей и приложения Canvas (экспериментальная Предварительная версия)|
+|[control](control.md)|[!INCLUDE [control-description](includes/control-description.md)]|Приложения на основе моделей и приложения Canvas (экспериментальная Предварительная версия)|
+|[css](css.md)|[!INCLUDE [css-description](includes/css-description.md)]|Приложения на основе моделей и приложения Canvas (экспериментальная Предварительная версия)|
+|[data-set](data-set.md)|[!INCLUDE [data-set-description](includes/data-set-description.md)]|Приложения на основе модели|
+|[html](html.md)|[!INCLUDE [html-description](includes/html-description.md)]|Приложения на основе модели|
+|[img](img.md)|[!INCLUDE [img-description](includes/img-description.md)]|Приложения на основе модели|
+|[manifest](manifest.md)|Манифест — это файл метаданных, определяющий компонент. Это XML-документ, описывающий следующее.<br/> – Пространство имен компонента.<br/> – Тип данных, которые можно для него настроить, т. е. поле или набор данных.<br/> – Любые свойства, которые могут быть настроены в приложении при добавлении компонента.<br/> – Список файлов ресурсов, необходимых для компонента.<br/> – Один из них должен быть веб-ресурсом JavaScript. Этот код JavaScript должен включить функцию, которая создает экземпляр объекта. Этот код реализует интерфейс, предоставляющий методы, которые требуются для работы компонента. Это называется библиотекой реализации компонентов.<br/> – Имя функции JavaScript в библиотеке реализации компонентов, которая будет возвращать объект, применяющий требуемый интерфейс.<br/> Когда пользователь настраивает компонент в приложении, данные в манифесте отфильтровывают доступные компоненты таким образом, чтобы можно было настраивать только допустимые компоненты для контекста. Свойства, определенные в манифесте компонента, отображаются как поля конфигурации, чтобы пользователь, выполняющий настройку элемента управления, мог указать значения. Значения этих свойств будут доступны для функции компонента во время выполнения.|Приложения на основе моделей и приложения Canvas (экспериментальная Предварительная версия)|
+|[property](property.md)|[!INCLUDE [property-description](includes/property-description.md)]|Приложения на основе моделей и приложения Canvas (экспериментальная Предварительная версия)|
+|[property-set](property-set.md)|[!INCLUDE [property-set-description](includes/property-set-description.md)]|Приложения на основе модели|
+|[resources](resources.md)|[!INCLUDE [resources-description](includes/resources-description.md)]|Приложения на основе моделей и приложения Canvas (экспериментальная Предварительная версия)|
+|[resx](resx.md)|[!INCLUDE [resx-description](includes/resx-description.md)]|Приложения на основе моделей и приложения Canvas (экспериментальная Предварительная версия)|
+|[type-group](type-group.md)|[!INCLUDE [type-group-description](includes/type-group-description.md)]|Приложения на основе моделей и приложения Canvas (экспериментальная Предварительная версия)|
+|[Использование компонентов](feature-usage.md)|Элемент "использование компонентов" выступает в качестве обертки для элементов `uses-feature`, которые сами позволяют разработчикам объявлять, какие функции их компонент хочет использовать. Если не определены элементы, использующие компонент, то элемент "использование компонентов" не требуется.|Приложения на основе модели|
 
 ### <a name="related-topics"></a>Связанные статьи
 
 [Справочник по схеме манифеста платформы компонентов PowerApps](index.md)<br/>
-[Справочник по API платформы компонентов PowerApps](../reference/index.md)<br/>
+[Справочник по API инфраструктуры компонентов PowerApps](../reference/index.md)<br/>
 [Обзор платформы компонентов PowerApps](../overview.md)

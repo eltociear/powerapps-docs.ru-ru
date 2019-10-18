@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/04/2019
+ms.date: 10/15/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 45790b7a3e6166366a751c812a5d470d5615c3a2
-ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
+ms.openlocfilehash: 0ce5218143a8283690cdaf7c1d9be2b1da3d629e
+ms.sourcegitcommit: 60a7dc7855d482b63719d121dbe5353e304d67f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71969278"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72393141"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Требования к системе, ограничения и значения конфигурации для приложений на основе холста
 В этой статье приводятся требования к платформе устройств и веб-браузеру, а также ограничения и значения конфигурации для PowerApps.
@@ -30,6 +30,9 @@ ms.locfileid: "71969278"
 | iOS 9.3 или более поздней версии |iOS 10 или более поздней версии с не менее чем 2 ГБ ОЗУ |
 | Android 5 или более поздней версии |Android 7 или более поздней версии с не менее чем 4 ГБ ОЗУ |
 | Windows 8.1 или более поздней версии (только ПК) |Windows 10 Fall Creators Update с не менее чем 8 ГБ ОЗУ|
+
+> [!NOTE]
+> Сейчас мы не поддерживаем новые возможности на платформе Windows для приложения PowerApps. Такие функции, как улучшенный параметр Common Data Service и гостевой доступ, недоступны на этой платформе. Мы рекомендуем использовать веб-проигрыватель в Windows, чтобы использовать полный набор возможностей. Обновления для платформы приложения PowerApps для Windows будут объявлены в будущем.
 
 ## <a name="supported-browsers-for-running-canvas-apps"></a>Поддерживаемые браузеры для запуска приложений на основе холста
 
@@ -94,11 +97,11 @@ ms.locfileid: "71969278"
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL. |
 | graph.microsoft.com<br>graph.windows.net |https |Azure Graph — для получения сведений о пользователе (например, фотографии профиля) |
 | gallery.azure.com |https |Примеры и шаблоны приложений. |
-| @no__t 0.azure-apim.net |https |Концентраторы API — разные поддомены для каждого языкового стандарта. |
-| @no__t 0.powerapps.com |https | create.powerapps.com, make.powerapps.com, content.powerapps.com и web.powerapps.com |
-| @no__t 0.azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com и web.powerapps.com |
-| @no__t 0.blob.core.windows.net |https | Хранилище BLOB-объектов |
-| @no__t 0.flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com и web.powerapps.com |
+| \*. azure-apim.net |https |Концентраторы API — разные поддомены для каждого языкового стандарта. |
+| \*. powerapps.com |https | create.powerapps.com, make.powerapps.com, content.powerapps.com и web.powerapps.com |
+| \*. azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com и web.powerapps.com |
+| \*. blob.core.windows.net |https | Хранилище BLOB-объектов |
+| \*. flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com и web.powerapps.com |
 | vortex.data.microsoft.com |https |Телеметрия |
 | localhost | https | PowerApps Mobile
 
@@ -128,8 +131,8 @@ ms.locfileid: "71969278"
 
 ### <a name="app-settings"></a>Параметры приложения
 
-Параметры ![приложения полотна]параметры(./media/limits-and-config/app_settings.png "приложения Canvas")
+![Параметры приложения Canvas](./media/limits-and-config/app_settings.png "Параметры приложения Canvas")
 
 ### <a name="pass-assignment"></a>Передача назначения
 
-![Параметры приложения на холсте проход назначения](./media/limits-and-config/app_settings_pass_assignment.png "Параметры приложения для назначения Pass")
+![Передача параметров приложения Canvas](./media/limits-and-config/app_settings_pass_assignment.png "Передача параметров приложения Canvas")

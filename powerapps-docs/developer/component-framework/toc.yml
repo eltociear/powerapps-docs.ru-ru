@@ -2,32 +2,34 @@
   items:
     - name: Обзор
       href: overview.md
-    - name: Что такое пользовательские компоненты
+    - name: Что такое компоненты кода
       href: custom-controls-overview.md
-    - name: Инструментарий
+    - name: Доступность для приложений Canvas
+      href: component-framework-for-canvas-apps.md
+    - name: Получить интерфейс командной строки PowerApps
       href: get-powerapps-cli.md
-    - name: Учебник
+    - name: Показано
       items:
         - name: Реализация примера компонента
           href: implementing-controls-using-typescript.md
-    - name: Пошаговые инструкции
+    - name: Практические руководства
       items:
-        - name: Создание и построение пользовательского компонента
+        - name: Создание и построение компонента кода
           href: create-custom-controls-using-pcf.md
-        - name: Отладка пользовательского компонента
-          href: debugging-custom-controls.md
-        - name: Упаковка пользовательского компонента
+        - name: Упаковка компонента кода
           href: import-custom-controls.md
-        - name: Добавление компонентов к сущности или полям
+        - name: Отладка компонента кода
+          href: debugging-custom-controls.md
+        - name: 'Добавление компонентов в приложения, управляемые моделью'
           href: add-custom-controls-to-a-field-or-entity.md
-        - name: Обновление существующих пользовательских компонентов
+        - name: Добавление компонентов в приложения Canvas
+          href: 'component-framework-for-canvas-apps.md#add-components-to-a-canvas-app'
+        - name: Обновление существующих компонентов кода
           href: updating-existing-controls.md
-        - name: Публикация пользовательских компонентов в AppSource
+        - name: Публикация компонентов кода в AppSource
           href: publish-components-app-source.md
-    - name: Ограничения
+    - name: Ограничений
       href: limitations.md
-    - name: Часто задаваемые вопросы
-      href: faq.md
     - name: Примеры компонентов
       items:
         - name: Компонент приращения
@@ -60,7 +62,7 @@
           href: sample-controls/table-grid-control.md
         - name: Компонент веб-API
           href: sample-controls/webapi-control.md
-    - name: Справочные материалы
+    - name: IsReference
       items:
         - name: Платформа компонентов PowerApps
           href: reference/index.md
@@ -80,17 +82,6 @@
               href: reference/conditionexpression.md
             - name: Context
               href: reference/context.md
-            - name: Элемент управления
-              href: reference/control.md
-              items:
-                - name: destroy
-                  href: reference/control/destroy.md
-                - name: getOutputs
-                  href: reference/control/getOutputs.md
-                - name: init
-                  href: reference/control/init.md
-                - name: updateView
-                  href: reference/control/updateview.md
             - name: DataSet
               href: reference/dataset.md
               items:
@@ -110,7 +101,7 @@
                   href: reference/dataset/refresh.md
                 - name: setSelectedRecordIds
                   href: reference/dataset/setselectedrecordids.md
-            - name: Устройство
+            - name: Модем
               href: reference/device.md
               items:
                 - name: captureAudio
@@ -127,7 +118,22 @@
                   href: reference/device/pickfile.md
             - name: DateFormattingInfo
               href: reference/dateformattinginfo.md
-            - name: EntityReference
+            - name: Объекта
+              href: reference/entity.md
+            - name: ентитиформоптионс
+              href: reference/entityformoptions.md
+            - name: ентитирекорд
+              href: reference/entityrecord.md
+              items:
+                - name: жетформаттедвалуе
+                  href: reference/entityrecord/getformattedvalue.md
+                - name: жетнамедреференце
+                  href: reference/entityrecord/getnamedreference.md
+                - name: жетрекордид
+                  href: reference/entityrecord/getrecordid.md
+                - name: getValue
+                  href: reference/entityrecord/getvalue.md
+            - name: Ссылка
               href: reference/entityreference.md
             - name: Factory
               href: reference/factory.md
@@ -136,13 +142,19 @@
                   href: reference/factory/getpopupservice.md
                 - name: requestRender
                   href: reference/factory/requestrender.md
-            - name: Linking
-              href: reference/linking.md
+            - name: Закрыт
+              href: reference/fileobject.md
+            - name: Фильтрация
+              href: reference/filtering.md
               items:
-                - name: addLinkedEntity
-                  href: reference/linking/addlinkedentity.md
-                - name: getLinkedEntity
-                  href: reference/linking/getlinkedentities.md
+                - name: клеарфилтер
+                  href: reference/filtering/clearfilter.md
+                - name: Фильтр
+                  href: reference/filtering/getfilter.md
+                - name: сетфилтер
+                  href: reference/filtering/setfilter.md
+            - name: FilterExpression
+              href: reference/filterexpression.md
             - name: Formatting
               href: reference/formatting.md
               items:
@@ -168,6 +180,15 @@
                   href: reference/formatting/formattime.md
                 - name: getWeekOfYear
                   href: reference/formatting/getweekofyear.md
+            - name: Linking
+              href: reference/linking.md
+              items:
+                - name: addLinkedEntity
+                  href: reference/linking/addlinkedentity.md
+                - name: getLinkedEntity
+                  href: reference/linking/getlinkedentities.md
+            - name: LookupOptions
+              href: reference/lookupoptions.md
             - name: Режим
               href: reference/mode.md
               items:
@@ -177,7 +198,7 @@
                   href: reference/mode/setfullscreen.md
                 - name: trackContainerResize
                   href: reference/mode/trackcontainerresize.md
-            - name: Навигация
+            - name: Месяца
               href: reference/navigation.md
               items:
                 - name: openAlertDialog
@@ -205,7 +226,7 @@
                   href: reference/paging/loadpreviouspage.md
                 - name: reset
                   href: reference/paging/reset.md
-                - name: setpageSize
+                - name: setPageSize
                   href: reference/paging/setpagesize.md
             - name: Popup
               href: reference/popup.md
@@ -226,6 +247,10 @@
                   href: reference/popupservice/setpopupsid.md
                 - name: updatePopup
                   href: reference/popupservice/updatepopup.md
+            - name: Свойство
+              href: reference/property.md
+            - name: ретриевемултиплереспонсе
+              href: reference/retrievemultipleresponse.md
             - name: Ресурсы
               href: reference/resources.md
               items:
@@ -233,8 +258,21 @@
                   href: reference/resources/getresource.md
                 - name: getString
                   href: reference/resources/getstring.md
+            - name: секуритивалуес
+              href: reference/securityvalues.md
             - name: SortStatus
               href: reference/sortstatus.md
+            - name: стандардконтрол
+              href: reference/control.md
+              items:
+                - name: destroy
+                  href: reference/control/destroy.md
+                - name: getOutputs
+                  href: reference/control/getOutputs.md
+                - name: init
+                  href: reference/control/init.md
+                - name: updateView
+                  href: reference/control/updateview.md
             - name: UserSettings
               href: reference/usersettings.md
             - name: Utility
@@ -270,7 +308,7 @@
               href: manifest-schema-reference/css.md
             - name: data-set
               href: manifest-schema-reference/data-set.md
-            - name: html
+            - name: элементов
               href: manifest-schema-reference/html.md
             - name: img
               href: manifest-schema-reference/img.md
@@ -288,3 +326,11 @@
               href: manifest-schema-reference/type.md
             - name: type-group
               href: manifest-schema-reference/type-group.md
+            - name: Использование компонентов
+              href: manifest-schema-reference/feature-usage.md
+            - name: Использование функции
+              href: manifest-schema-reference/uses-feature.md
+    - name: Ресурсы сообщества
+      href: 'https://powerusers.microsoft.com/t5/PowerApps-Component-Framework/Community-content-sample-components-blogs-etc-Link-to-this-page/m-p/280710#M100'
+    - name: Поделитесь своими отзывами
+      href: share-your-feedback-for-pcf.md
