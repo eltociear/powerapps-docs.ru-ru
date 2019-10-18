@@ -4,7 +4,7 @@ description: ''
 keywords: ''
 ms.author: nabuthuk
 manager: kvivek
-ms.date: 04/23/2019
+ms.date: 10/01/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,11 +13,11 @@ applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
 ms.assetid: 70764a49-d238-45be-b807-ff27aad00e13
-ms.openlocfilehash: 80dd916170d584c045f566bcb85bd500af72730e
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: 40b33e3e57e1fc19dbccaef933968f4fa9548e00
+ms.sourcegitcommit: 63ea15e2f861d43333aacda19230cd8922d7bdfd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63394045"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "72338305"
 ---
-Интерфейс навигации для `context.navigation`.
+Предоставляет методы, связанные с навигацией.

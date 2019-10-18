@@ -4,7 +4,7 @@ description: ''
 keywords: ''
 ms.author: nabuthuk
 manager: kvivek
-ms.date: 04/23/2019
+ms.date: 10/01/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,11 +13,11 @@ applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
 ms.assetid: 2ab7dec5-e73e-4f2f-8148-395e34540cef
-ms.openlocfilehash: 7350fda63dcb98611916e4f516e00b682283dd95
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: 5ff6c288a176674ca6300b94a6aa55858a5a7561
+ms.sourcegitcommit: 63ea15e2f861d43333aacda19230cd8922d7bdfd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63393953"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "72337385"
 ---
-Интерфейс для `context.userSettings`.
+Предоставляет сведения о текущих параметрах пользователя.

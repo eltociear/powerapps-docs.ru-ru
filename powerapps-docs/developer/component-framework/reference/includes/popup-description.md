@@ -4,7 +4,7 @@ description: ''
 keywords: ''
 ms.author: nabuthuk
 manager: kvivek
-ms.date: 04/23/2019
+ms.date: 10/01/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,11 +13,11 @@ applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
 ms.assetid: e20f7dd7-4a2a-4409-84ad-59ada98b39da
-ms.openlocfilehash: c81df52c969511615cd46d5c107ecc773032e8d8
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: 6ea239b6fbe87bdbb0e796c7d499adb58400eb12
+ms.sourcegitcommit: 63ea15e2f861d43333aacda19230cd8922d7bdfd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63394413"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "72337569"
 ---
-Вспомогательный метод API извлечения фабрики.
+Предоставляет доступ для получения всех сведений о всплывающем окне.

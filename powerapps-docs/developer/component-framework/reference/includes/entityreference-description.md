@@ -1,10 +1,10 @@
 ---
-title: EntityReference | Документация Майкрософт
+title: EntityReference | Документация Майкрософт
 description: ''
 keywords: ''
 ms.author: nabuthuk
 manager: kvivek
-ms.date: 04/23/2019
+ms.date: 10/01/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,11 +13,11 @@ applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
 ms.assetid: 23c7b85b-4863-4b63-8dc2-7162b95ff393
-ms.openlocfilehash: 6c563c9e14246e680f2fb0a719efba7a41a4f002
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: d550bb7b7f9e1fd4e6a0898e9ea92759b720a2ce
+ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63394275"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72343066"
 ---
-Объект, инкапсулирующий ссылку на сущность как обычный объект, подходящий для хранения в дереве состояний.
+Объект, инкапсулирующий ссылку на сущность в виде простого объекта, подходящего для хранения в дереве состояний.

@@ -4,7 +4,7 @@ description: ''
 keywords: ''
 ms.author: nabuthuk
 manager: kvivek
-ms.date: 04/23/2019
+ms.date: 10/01/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,11 +13,11 @@ applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
 ms.assetid: d2b842bc-2fa3-414c-a132-93516a916729
-ms.openlocfilehash: deb2f3dd556852180232e6dbef4a2b25d4780dda
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: 2999e24f10afe9ca59960296f5992fd7dbef612a
+ms.sourcegitcommit: 63ea15e2f861d43333aacda19230cd8922d7bdfd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63394298"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "72337454"
 ---
-Интерфейс ресурсов для `context.resources`.
+Предоставляет доступ к методам для получения всех сведений о файлах ресурсов, определенных в манифесте.

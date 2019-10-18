@@ -4,7 +4,7 @@ description: ''
 keywords: ''
 ms.author: nabuthuk
 manager: kvivek
-ms.date: 04/23/2019
+ms.date: 10/01/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,11 +13,11 @@ applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
 ms.assetid: badd9822-d9f4-4d42-8def-e13f633a3309
-ms.openlocfilehash: b7e3f1d95d83c5e6bcbbd74cb597ea7ffd8d25bf
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: 68bf24e236c3201277f47ac67bcb4f9d0a1d13a6
+ms.sourcegitcommit: 63ea15e2f861d43333aacda19230cd8922d7bdfd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63394091"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "72337799"
 ---
-Связывание сущностей в наборе данных.
+Предоставляет свойства и методы для определения того, какая сущность связана, и для получения всех связанных сущностей.

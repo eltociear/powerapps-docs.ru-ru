@@ -4,7 +4,7 @@ description: ''
 keywords: ''
 ms.author: nabuthuk
 manager: kvivek
-ms.date: 04/23/2019
+ms.date: 10/01/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,11 +13,11 @@ applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
 ms.assetid: 428003fb-8b2f-435a-8f96-617727864b57
-ms.openlocfilehash: a2baa9b52970dbef6c97bb54f15765fc50c0d113
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: a66a847fe182eb71c0c7b9f2049c3c3fcd30f392
+ms.sourcegitcommit: 63ea15e2f861d43333aacda19230cd8922d7bdfd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63393999"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "72338742"
 ---
-CSS описывает, как настраиваемые компоненты должны отображаться в пользовательском интерфейсе.
+CSS описывает, как компоненты кода должны отображаться в пользовательском интерфейсе.

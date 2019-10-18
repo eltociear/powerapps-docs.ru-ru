@@ -14,11 +14,11 @@ applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
 ms.assetid: c170e5d5-ced1-4785-9d1d-97f568881d95
-ms.openlocfilehash: aaa24870fcbffa344fd22b17ac454fac7a3cab5c
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: 6c53f7e69d80ed6f7fcda35f74568ee2126d6e8b
+ms.sourcegitcommit: 63ea15e2f861d43333aacda19230cd8922d7bdfd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63394229"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "72339248"
 ---
-Выражение, используемое для представления условия фильтрации.
+Содержит выражение, используемое для фильтрации результатов запроса.
