@@ -15,13 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: aa397d26d3a93812a72c6de1d1e7b996577c6bba
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: a0b4e125749d5b0179489677e9a1103cb14a0697
+ms.sourcegitcommit: 481a89e50c282f1e533a8526035dd3c38e3818a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "63318455"
----
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72023313"
 ---
 # <a name="deactivate-or-activate-an-account-or-contact"></a>Отключение или активация учетной записи или контакта
 
@@ -33,28 +32,28 @@ ms.locfileid: "63318455"
   
 ## <a name="deactivate-an-account-or-contact"></a>Отключение учетной записи или контакта 
   
-1.  В меню слева перейдите к разделу Accounts or Contacts ( **учетные записи** или **Контакты**).  
+1.  В меню слева перейдите к разделу Accounts or **Contacts**( **учетные записи** или контакты).  
   
 2.  Выберите активную учетную запись или контакт, которые необходимо отключить, на панели команд выберите **Отключить**, а затем подтвердите деактивацию.
 
     > [!div class="mx-imgBorder"]
-    > ![Деактивация учетной записи в PowerApps](media/DeactiveAccounts.png "Деактивация учетной записи в PowerApps")
+    > ![Отключение учетной записи в powerapps](media/DeactiveAccounts.png "Отключение учетной записи в powerapps")
 
 
 ## <a name="activate-an-account-or-contact"></a>Активация учетной записи или контакта  
   
-1.  В меню слева перейдите к разделу Accounts or Contacts ( **учетные записи** или **Контакты**). 
+1.  В меню слева перейдите к разделу Accounts or **Contacts**( **учетные записи** или контакты). 
   
 2.  Перейдите к списку **System views** .
 
-3.  Выберите **Неактивные учетные записи** или неактивные **Контакты**.  
+3.  Выберите **Неактивные учетные записи** или **неактивные контакты**.  
   
 4.  Выберите неактивные учетные записи или контакты, которые необходимо активировать.
 
 5.  Выберите **активировать**, а затем подтвердите активацию.  
 
     > [!div class="mx-imgBorder"]
-    > ![Активация учетной записи в PowerApps](media/ActiveAccounts.png "Активация учетной записи в PowerApps")  
+    > ![Активация учетной записи в powerapps](media/ActiveAccounts.png "Активация учетной записи в powerapps")  
 
 
 
