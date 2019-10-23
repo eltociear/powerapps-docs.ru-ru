@@ -1094,6 +1094,10 @@
           href: ./portals/admin/change-base-url.md
         - name: Включение режима обслуживания
           href: ./portals/admin/enable-maintenance-mode.md
+        - name: Добавление имени пользовательского домена
+          href: ./portals/admin/add-custom-domain.md
+        - name: Импорт преобразования метаданных
+          href: ./portals/admin/import-metadata-translation.md
         - name: Интеграция Power BI
           items:
             - name: Настройка интеграции с Power BI
@@ -1120,6 +1124,24 @@
           href: ./portals/configure/configure-portal.md
         - name: Настройка параметров сайта
           href: ./portals/configure/configure-site-settings.md
+        - name: Проверка подлинности на портале
+          items:
+            - name: Настройка проверки подлинности на портале
+              href: ./portals/configure/configure-portal-authentication.md
+            - name: Задание удостоверения проверки подлинности
+              href: ./portals/configure/set-authentication-identity.md
+            - name: Параметры поставщика Azure AD B2C для порталов
+              href: ./portals/configure/azure-ad-b2c.md
+            - name: Настройка параметров поставщика OAuth2
+              href: ./portals/configure/configure-oauth2-settings.md
+            - name: Настройка параметров поставщика OpenID
+              href: ./portals/configure/configure-openid-settings.md
+            - name: Настройка параметров поставщика WS-Federation
+              href: ./portals/configure/configure-ws-federation-settings.md
+            - name: Настройка параметров поставщика SAML 2.0
+              href: ./portals/configure/configure-saml2-settings.md
+            - name: Миграция поставщиков удостоверений в Azure AD B2C
+              href: ./portals/configure/migrate-identity-providers.md
     - name: Расширенные возможности портала
       items:
         - name: Работа с шаблонами Liquid
