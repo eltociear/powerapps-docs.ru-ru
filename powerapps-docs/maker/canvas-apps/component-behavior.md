@@ -12,10 +12,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: baf7e74581819b3ea21542f30f96a0a6f517c0d5
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71705048"
 ---
 # <a name="behavior-formulas-for-components"></a>Формулы поведения для компонентов
@@ -30,21 +30,21 @@ ms.locfileid: "71705048"
 Выбрав образец компонента, выберите в раскрывающемся списке свойств (в левой части строки формул) параметр **OnReset** (в левом углу строк формулы), а затем введите одну или несколько формул.
 
 > [!div class="mx-imgBorder"]
-> ![OnReset, пример @ no__t-1
+> Пример ![OnReset ](./media/component-behavior/example-onreset.png)
 
-Чтобы проверить **OnReset**, настройте элемент управления для сброса компонента. Например, задайте в качестве значения свойства **OnSelect** кнопки следующую формулу: **Сброс**(*ComponentName*).
+Чтобы проверить **OnReset**, настройте элемент управления для сброса компонента. Например, задайте в качестве значения свойства **OnSelect** кнопки следующую формулу: **Reset**(*ComponentName*).
 
 ### <a name="example---reset-timer"></a>Пример сброса таймера
 
 > [!div class="mx-imgBorder"]
-> ![OnReset, пример @ no__t-1
+> Пример ![OnReset ](./media/component-behavior/Resettimer.gif)
 
-В этом компоненте компонента выбора используются две переменные для вывода времени _selectedHour и _selectedMinute. Когда средство выбора сбрасывается, эти переменные должны быть сброшены к значению по умолчанию, скажем 12: Двенадцать.  Свойство OnReset для компонента имеет следующую формулу: **Set (_selectedHour, 12); Set (_selectedMinute, 12)**
+В этом компоненте компонента выбора используются две переменные для вывода времени _selectedHour и _selectedMinute. Когда средство выбора сбрасывается, эти переменные должны быть сброшены к значению по умолчанию, скажем 12:12.  Свойство OnReset для компонента имеет следующую формулу: **Set (_selectedHour, 12); Set (_selectedMinute, 12)**
 
 Чтобы активировать сброс, перейдите на экран и вставьте экземпляр компонента. Добавьте кнопку и настройте OnSelect кнопки, чтобы вызвать **Reset (TimerComponent_instance)** для активации OnSelect.
 
 > [!div class="mx-imgBorder"]
-> Кнопка @no__t 0Reset @ no__t-1
+> Кнопка ![Reset ](./media/component-behavior/reset-button.png)
 
 ## <a name="update-onreset-using-custom-property"></a>Обновить OnReset с помощью пользовательского свойства
 
@@ -55,7 +55,7 @@ ms.locfileid: "71705048"
 ### <a name="example"></a>Пример
 
 > [!div class="mx-imgBorder"]
-> ![OnReset, пример @ no__t-1
+> Пример ![OnReset ](./media/component-behavior/updateordernumber2.gif)
 
 Это пример проверки порядка номеров и обновления чисел. Числовой компонент "вверх и вниз" используется для увеличения или уменьшения количества заказов. При выборе коллекции слева количество числовых компонентов по умолчанию сбрасывается и отображается номер заказа выбранного инструмента. «**Повышение OnReset при изменении значения**» стало возможным сброс значения по умолчанию при изменении входных данных. 
 
