@@ -14,18 +14,17 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 0ecb30a5a452a6ee092ccf9bc9d47f6182ef60ab
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71992998"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="astype-and-istype-functions-in-canvas-apps"></a>Функции Астипе и Type в приложениях Canvas
 
 Проверяет ссылку на запись для определенного типа сущности (**тип**) и обрабатывает ссылку как конкретный тип (**астипе**).
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 
 Ознакомьтесь со статьей знакомство со [ссылками на записи и полиморфизмами](../working-with-references.md) для более широкого знакомства и более подробных сведений.
 
@@ -49,31 +48,31 @@ Common Data Service также поддерживает поля с полимо
 
 Используйте эти функции, чтобы сначала проверить тип сущности записи, а затем считать ее записью этого типа, чтобы поля были доступны:
 
-```powerapps-comma
-If( IsType( First( Accounts ).Owner; Users );
-    AsType( First( Accounts ).Owner; Users ).'Full Name';
-    AsType( First( Accounts ).Owner; Teams ).'Team Name'
+```powerapps-dot
+If( IsType( First( Accounts ).Owner, Users ),
+    AsType( First( Accounts ).Owner, Users ).'Full Name',
+    AsType( First( Accounts ).Owner, Teams ).'Team Name'
 )
 ```
 
 Эти функции необходимы только при обращении к полям ссылки на запись. Например, можно использовать ссылки на записи в функции [**Filter**](function-filter-lookup.md) без **типов** и **астипе**:
 
-```powerapps-comma
-Filter( Accounts; Owner = First( Users ) )
+```powerapps-dot
+Filter( Accounts, Owner = First( Users ) )
 ```
 
 Аналогичным образом можно использовать ссылки на записи с функцией [**Patch**](function-patch.md) :
 
-```powerapps-comma
-Patch( Accounts; First( Accounts ); { Owner: First( Teams ) } )
+```powerapps-dot
+Patch( Accounts, First( Accounts ), { Owner: First( Teams ) } )
 ```  
 
 Если используется в контексте записи, например в [**коллекции**](../controls/control-gallery.md) или элементе управления [**формы редактирования**](../controls/control-form-detail.md) , может потребоваться использовать [глобальный оператор однозначности](operators.md#disambiguation-operator) для ссылки на тип сущности. Например, эта формула будет эффективной для коллекции, в которой отображается список контактов, в которых **название компании** является поисковым **клиентом** :
 
-```powerapps-comma
-If( IsType( ThisItem.'Company Name'; [@Accounts] );
-    AsType( ThisItem.'Company Name'; [@Accounts] ).'Account Name';
-    AsType( ThisItem.'Company Name'; [@Contacts] ).'Full Name'
+```powerapps-dot
+If( IsType( ThisItem.'Company Name', [@Accounts] ),
+    AsType( ThisItem.'Company Name', [@Accounts] ).'Account Name',
+    AsType( ThisItem.'Company Name', [@Contacts] ).'Full Name'
 )
 ```
 
@@ -83,12 +82,12 @@ If( IsType( ThisItem.'Company Name'; [@Accounts] );
 
 ## <a name="syntax"></a>Синтаксис
 
-**Астипе**( *рекордреференце*; *EntityType* )
+**Астипе**( *рекордреференце*, *EntityType* )
 
 - *Рекордреференце* — обязательный. Ссылка на запись, часто поле подстановки, которое может ссылаться на запись в любой из нескольких сущностей.
 - *EntityType* — обязательный. Конкретная сущность, для которой проверяется.
 
-**Тип**( *рекордреференце*; *EntityType* )
+**Тип**( *рекордреференце*, *EntityType* )
 
 - *Рекордреференце* — обязательный. Ссылка на запись, часто поле подстановки, которое может ссылаться на запись в любой из нескольких сущностей.
 - *EntityType* — обязательный. Конкретная сущность, в которую должна быть приведена запись.
@@ -101,48 +100,48 @@ If( IsType( ThisItem.'Company Name'; [@Accounts] );
 
 1. На вкладке **вид** выберите **Источники данных**, а затем добавьте сущности **Контакты** и **учетные записи** в качестве источников данных.
     > [!div class="mx-imgBorder"]
-    > приложение @no__t 0Blank с двумя источниками данных: Accounts и Contacts @ no__t-1
+    > ![Blank приложение с двумя источниками данных: учетные записи и контакты ](media/function-astype-istype/contacts-add-datasources.png)
 
 1. Вставка элемента управления " **коллекция** " с **пустой вертикальной** ориентацией.
 
     > [!div class="mx-imgBorder"]
-    > ![Insert элемент управления галереи с пустой вертикальной компоновкой @ no__t-1
+    > ![Insert элемента управления "Галерея" с пустой вертикальной компоновкой ](media/function-astype-istype/contacts-customer-gallery.png)
 
 1. На вкладке **Свойства** в правой части экрана задайте для свойства **элементы** коллекции значение **Контакты**.
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Set элементы в контакты на панели "Свойства" @ no__t-1
+    > ![Set элементы в контакты на панели «Свойства» ](media/function-astype-istype/contacts-customer-datasource.png)
 
 1. Задайте макет коллекции в виде **заголовка и подзаголовка**.
 
     > [!div class="mx-imgBorder"]
-    > @no__t — 0Open средство выбора макета на панели «Свойства» @ no__t-1
+    > ![Open средство выбора макета на панели «Свойства» ](media/function-astype-istype/contacts-customer-layout.png)
 
     > [!div class="mx-imgBorder"]
-    > ![Set макет в заголовок и подзаголовок @ no__t-1
+    > ![Set макета для заголовка и подзаголовка ](media/function-astype-istype/contacts-customer-flyout.png)
 
 1. На панели **данных** откройте список **Title1** , а затем выберите **полное имя**.
 
     > [!div class="mx-imgBorder"]
-    > значение заголовка ![Set @ no__t-1
+    > ![Set значение заголовка ](media/function-astype-istype/contacts-customer-title.png)
 
 1. Выберите элемент управления метка **Subtitle1** .
 
     > [!div class="mx-imgBorder"]
-    > значение подзаголовка ![Set @ no__t-1
+    > значение подзаголовка ![Set ](media/function-astype-istype/contacts-customer-subtitle.png)
 
 1. Задайте для свойства **Text** объекта **Subtitle1** следующую формулу:
 
-    ```powerapps-comma
-    If( IsBlank( ThisItem.'Company Name' ); "--";
-        IsType( ThisItem.'Company Name'; [@Accounts] );
-            "Account: " & AsType( ThisItem.'Company Name'; [@Accounts] ).'Account Name';
-        "Contact: " & AsType( ThisItem.'Company Name'; [@Contacts] ).'Full Name'
+    ```powerapps-dot
+    If( IsBlank( ThisItem.'Company Name' ), "--",
+        IsType( ThisItem.'Company Name', [@Accounts] ),
+            "Account: " & AsType( ThisItem.'Company Name', [@Accounts] ).'Account Name',
+        "Contact: " & AsType( ThisItem.'Company Name', [@Contacts] ).'Full Name'
     )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Screen теперь отображает учетные записи и контакты, смешанные в коллекции @ no__t-1
+    > ![Screen теперь отображает учетные записи и контакты, смешанные в коллекции ](media/function-astype-istype/contacts-customer-complete.png)
 
     Подзаголовок в галерее показывает следующие значения:
     - "--", если **"название компании"** *пусто*.

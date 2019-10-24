@@ -14,18 +14,17 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 0a56230539990ce51cc9270f71d8c2b7c9a1db73
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71992887"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="concat-and-concatenate-functions-in-powerapps"></a>Функции Concat и Concatenate в PowerApps
 
 Объединяют отдельные строки текста и строки в [таблицах](../working-with-tables.md).
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 
 Функция **Concatenate** объединяет сочетание отдельных строк и таблицу из одного столбца со строками. При использовании этой функции с отдельными строками она эквивалентна использованию [оператора](operators.md) **&** .
 
@@ -37,12 +36,12 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="syntax"></a>Синтаксис
 
-**Concat**( *Table*; *Formula* )
+**Concat**( *Table*, *Formula* )
 
-- *Table* — обязательный аргумент.  Таблица, для которой выполняется операция.
-- *Formula* — обязательный аргумент.  Формула, которую необходимо применить к записям таблицы.
+- *Table* — обязательный аргумент.  Таблица, с которой выполняются операции.
+- *Formula* - обязательный аргумент.  Формула, которую необходимо применить к записям таблицы.
 
-**Concatenate**( *Строка1* [; *Строка2*; ...] )
+**Concatenate**( *Строка1* [, *Строка2*, ...] )
 
 - *Строка* — обязательные аргументы.  Сочетание отдельных строк или таблица из одного столбца со строками.
 
@@ -52,17 +51,17 @@ ms.PowerAppsDecimalTransform: true
 
 - **FirstName** = "Мария"
 - **LastName** = "Петров"
-- **Продукты** =  @ No__t-2Table с двумя столбцами и четырьмя строками @ no__t-3
+- **Продукты**  =  ![Table с двумя столбцами и четырьмя строками ](media/function-concatenate/products.png)
 
 Чтобы создать эти глобальные переменные в приложении, вставьте элемент управления [**Button**](../controls/control-button.md) и задайте для его свойства **OnSelect** значение этой формулы:
 
-```powerapps-comma
-Set( FirstName; "Jane" );; Set( LastName; "Doe" );;
-Set( Products;
+```powerapps-dot
+Set( FirstName, "Jane" ); Set( LastName, "Doe" );
+Set( Products,
     Table(
-        { Name: "Violin"; Type: "String" };
-        { Name: "Cello"; Type: "String" };
-        { Name: "Trumpet"; Type: "Wind" }
+        { Name: "Violin", Type: "String" },
+        { Name: "Cello", Type: "String" },
+        { Name: "Trumpet", Type: "Wind" }
     )
 )
 ```
@@ -73,29 +72,29 @@ Set( Products;
 
 Для этих примеров задайте для свойства **Text** элемента управления [**Label**](../controls/control-text-box.md) формулу из первого столбца следующей таблицы.
 
-| Формула | Описание | Возвращаемый результат |
+| Формула | Description | Возвращаемый результат |
 |---------|-------------|--------|
-| **СЦЕПИТЬ (&nbsp;LastName, &nbsp; ", &nbsp;", &nbsp;FirstName @ no__t-5)** | Сцепляет значение в **LastName**, строку **","** (запятую, за которой следует пробел) и значение в поле **FirstName**. | «Петров, &nbsp;Jane» |
-| **LastName @ no__t-1 @ no__t-2 @ no__t-3 ", &nbsp;" &nbsp; @ no__t-6 @ no__t-7FirstName** | То же, что и в предыдущем примере, за исключением использования оператора **&** , а не функции. | «Петров, &nbsp;Jane» |
-| **СЦЕПИТЬ (&nbsp;FirstName, &nbsp; "&nbsp;", &nbsp;LastName @ no__t-5)** | Сцепляет значение в **FirstName**, строку **""** (один пробел) и значение в **LastName**. | Мария @ no__t-0Doe» |
-| **FirstName @ no__t-1 @ no__t-2 @ no__t-3 "&nbsp;" &nbsp; @ no__t-6 @ no__t-7LastName** | То же, что и в предыдущем примере, вместо функции используется оператор **&** . | Мария @ no__t-0Doe» |
+| **Сцепление (&nbsp;LastName, &nbsp; ", &nbsp;", &nbsp;FirstName &nbsp;)** | Сцепляет значение в **LastName**, строку **","** (запятую, за которой следует пробел) и значение в поле **FirstName**. | "Петров, &nbsp;Jane" |
+| **LastName &nbsp; & &nbsp; ", &nbsp;" &nbsp; &** | То же, что и в предыдущем примере, за исключением использования оператора **&** , а не функции. | "Петров, &nbsp;Jane" |
+| **Сцепление (&nbsp;FirstName, &nbsp; "&nbsp;", &nbsp;LastName &nbsp;)** | Сцепляет значение в **FirstName**, строку **""** (один пробел) и значение в **LastName**. | Мария &nbsp;Doeа |
+| **FirstName &nbsp; & &nbsp; "&nbsp;" &nbsp; & &nbsp;LastName** | То же, что и в предыдущем примере, вместо функции используется оператор **&** . | Мария &nbsp;Doeа |
 
 ### <a name="concatenate-with-a-single-column-table"></a>Объединение с таблицей с одним столбцом
 
 В этом примере добавьте пустой, вертикальный элемент управления [**коллекции**](../controls/control-gallery.md) , задайте для его свойства **Items** значение формула в следующей таблице, а затем добавьте метку в шаблоне коллекции.
 
-| Формула | Описание | Возвращаемый результат |
+| Формула | Description | Возвращаемый результат |
 |---------|-------------|--------|
-| **СЦЕПИТЬ ("имя: &nbsp;", &nbsp;Products.Name, ", &nbsp;Type: &nbsp;", &nbsp;Products. Type)** | Для каждой записи в таблице **Products** объединяет строку **"имя:"** , имя продукта, строку **", тип:"** и тип продукта.  | ![Таблица продуктов](media/function-concatenate/single-column.png) |
+| **СЦЕПИТЬ ("имя: &nbsp;", &nbsp;Products. Name, ", &nbsp;Type: &nbsp;", &nbsp;Products. Type)** | Для каждой записи в таблице **Products** объединяет строку **"имя:"** , имя продукта, строку **", тип:"** и тип продукта.  | ![Таблица продуктов](media/function-concatenate/single-column.png) |
 
 ### <a name="concat-function"></a>Concat, функция
 
 Для этих примеров задайте для свойства **Text** метки формулу из первого столбца следующей таблицы.
 
-| Формула | Описание | Возвращаемый результат |
+| Формула | Description | Возвращаемый результат |
 |---------|-------------|--------|
 | **Concat (Products, Name & ",")** | Вычисляет **имя выражения & ","** для каждой записи **продуктов** и объединяет результаты в одну текстовую строку.  | "Скрипка, &nbsp;Cello, &nbsp;Trumpet, &nbsp;" |
-| **Concat (Filter (&nbsp;Products, &nbsp;Type @ no__t-3 @ no__t-4 @ no__t-5 "String" &nbsp;), Name & ",")** | Оценивает **имя формулы & ","** для каждой записи **продуктов** , удовлетворяющей **типу фильтра = "String"** , и объединяет результаты в одну текстовую строку.   | "Скрипка, &nbsp;Cello, &nbsp;" |
+| **Concat (Filter (&nbsp;Products, &nbsp;Type &nbsp; = &nbsp; строку &nbsp;), Name & ",")** | Оценивает **имя формулы & ","** для каждой записи **продуктов** , удовлетворяющей **типу фильтра = "String"** , и объединяет результаты в одну текстовую строку.   | "Скрипка, &nbsp;Cello, &nbsp;" |
 
 ### <a name="trimming-the-end"></a>Обрезка конца
 
@@ -105,10 +104,10 @@ Set( Products;
 
 Для этих примеров задайте для свойства **Text** метки формулу из первого столбца следующей таблицы.
 
-| Формула | Описание | Возвращаемый результат |
+| Формула | Description | Возвращаемый результат |
 |---------|-------------|--------|
-| **Left (Concat (&nbsp;Products, &nbsp;Name @ no__t-3 @ no__t-4 @ no__t-5 ", &nbsp;" &nbsp;), len (&nbsp;Concat (&nbsp;Products, 0Name @ no__t-11 @ no__t-12 @ no__t-13 ", 4" 5) 6) 7 @ no__t-18 @ no__t-192)** | Возвращает результат **concat** , но удаляет последние два символа, которые формируют лишний разделитель. | "Скрипка, &nbsp;Cello, &nbsp;Trumpet" |
-| **Match (Concat (&nbsp;Products, &nbsp;Name @ no__t-3 @ no__t-4 @ no__t-5 ", &nbsp;" &nbsp;), "^ (? &lt;trim @ no__t-9. *), @no__t-$10"). обрезать** | Возвращает символы **concat** от начала текстовой строки (^) до конца ($), но не включает нежелательную запятую и пробел в конце. | "Скрипка, &nbsp;Cello, &nbsp;Trumpet" |
+| **Left (Concat (&nbsp;Products, &nbsp;Name &nbsp; & &nbsp; ", &nbsp;" &nbsp;), len (&nbsp;Concat (&nbsp;Products, 0Name 1 2 3 ", 4 5) 6) 7 @no__ t_18 92)** | Возвращает результат **concat** , но удаляет последние два символа, которые формируют лишний разделитель. | "Скрипка, &nbsp;Cello, &nbsp;Trumpet" |
+| **Match (Concat (&nbsp;Products, &nbsp;Name &nbsp; & &nbsp; ", &nbsp;" &nbsp; ")," ^ (? &lt;trim &gt;. *), 0 $ "). Trim** | Возвращает символы **concat** от начала текстовой строки (^) до конца ($), но не включает нежелательную запятую и пробел в конце. | "Скрипка, &nbsp;Cello, &nbsp;Trumpet" |
 
 ### <a name="split-and-matchall"></a>Разделение и MatchAll
 
@@ -116,7 +115,7 @@ Set( Products;
 
 Для этих примеров Добавьте пустую вертикальную галерею, задайте для свойства **Items** значение формулы в следующей таблице, а затем добавьте метку в шаблон коллекции.
 
-| Формула | Описание | Возвращаемый результат |
+| Формула | Description | Возвращаемый результат |
 |---------|-------------|--------|
-| **Split (Concat (&nbsp;Products, &nbsp;Name @ no__t-3 @ no__t-4 @ no__t-5 ", &nbsp;" &nbsp;), ",")** | Разделяет текстовую строку с помощью разделителя **","** . Строка заканчивается запятой и пробелом, поэтому последняя строка в результате представляет собой пустую строку.  | ![Table](media/function-concatenate/split.png) |
-| **MatchAll (Concat (&nbsp;Products; &nbsp;Name @ no__t-3 @ no__t-4 @ no__t-5 ", &nbsp;" &nbsp;); "[^ \s,] +"). фуллматч** | Разделяет текстовую строку на основе символов, не являющихся пробелами или запятыми. Эта формула удаляет лишнюю запятую и пробел в конце строки. | ![Table](media/function-concatenate/matchall.png)
+| **Split (Concat (&nbsp;Products, &nbsp;Name &nbsp; & &nbsp; ", &nbsp;" &nbsp; "),", ")** | Разделяет текстовую строку с помощью разделителя **","** . Строка заканчивается запятой и пробелом, поэтому последняя строка в результате представляет собой пустую строку.  | ![Table](media/function-concatenate/split.png) |
+| **MatchAll (Concat (&nbsp;Products, &nbsp;Name &nbsp; & &nbsp; ", &nbsp;" &nbsp; ")," [^ \s,] + "). фуллматч** | Разделяет текстовую строку на основе символов, не являющихся пробелами или запятыми. Эта формула удаляет лишнюю запятую и пробел в конце строки. | ![Table](media/function-concatenate/matchall.png)

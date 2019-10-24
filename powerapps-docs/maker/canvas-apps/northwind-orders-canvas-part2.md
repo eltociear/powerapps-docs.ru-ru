@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d151249caebdb2a6f142943074a409bc626ff662
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71995858"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-summary-form-in-a-canvas-app"></a>Создание формы сводки в приложении Canvas
 
@@ -30,7 +29,7 @@ ms.PowerAppsDecimalTransform: true
 3. [Создание коллекции сведений](northwind-orders-canvas-part3.md).
 
 > [!div class="mx-imgBorder"]
-> @no__t 0Definition области экрана @ no__t-1
+> ![Definition областей экрана ](media/northwind-orders-canvas-part1/orders-parts.png)
 
 ## <a name="prerequisites"></a>Технические условия
 
@@ -45,26 +44,26 @@ ms.PowerAppsDecimalTransform: true
 1. В области **представление в виде дерева** выберите **Screen1** , чтобы не допустить случайного добавления элемента управления в коллекцию заказов:
 
     > [!div class="mx-imgBorder"]
-    > ![Select Screen1 на панели древовидного представления @ no__t-1
+    > ![Select Screen1 на панели древовидного представления ](media/northwind-orders-canvas-part2/titlebar-01.png)
 
 1. На вкладке **Вставка** выберите **Метка** для вставки элемента управления " [**Метка**](controls/control-text-box.md) ":
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Insert метка @ no__t-1
+    > ![Insert метку ](media/northwind-orders-canvas-part2/titlebar-02.png)
 
     Новая метка должна отображаться только один раз над галереей. Если он отображается в каждом элементе коллекции, удалите первый экземпляр метки, убедитесь, что экран выбран (как описано в предыдущем шаге), и вставьте метку еще раз.
 
 1. Переместите и измените размер новой метки, чтобы она занимала верхнюю часть экрана:
 
     > [!div class="mx-imgBorder"]
-    > ![Move и измените размер метки @ no__t-1
+    > ![Move и измените размер метки ](media/northwind-orders-canvas-part2/titlebar-03.png)
 
 1. Дважды щелкните текст метки и введите **Orders Northwind**.
 
     В качестве альтернативы измените свойство **Text** в строке формул, чтобы получить тот же результат:
 
     > [!div class="mx-imgBorder"]
-    > ![Change текст в строке заголовка @ no__t-1
+    > ![Change текст в заголовке окна ](media/northwind-orders-canvas-part2/titlebar-04.png)
 
 1. На вкладке **Главная** отформатируйте метку.
     - Увеличьте размер шрифта до 24 пунктов.
@@ -74,7 +73,7 @@ ms.PowerAppsDecimalTransform: true
     - Добавление темно-синего заливки к фону.
 
     > [!div class="mx-imgBorder"]
-    > Параметры ![Formatting на вкладке "Главная" @ no__t-1
+    > ![Formatting параметры на вкладке Главная ](media/northwind-orders-canvas-part2/titlebar-05.png)
 
 ## <a name="add-an-edit-form-control"></a>Добавление элемента управления формы редактирования
 
@@ -83,26 +82,26 @@ ms.PowerAppsDecimalTransform: true
 1. На вкладке **Вставка** вставьте элемент управления [**формы редактирования**](controls/control-form-detail.md) :
 
     > [!div class="mx-imgBorder"]
-    > ![Add элемент управления формы редактирования @ no__t-1
+    > ![Add элемент управления формы редактирования ](media/northwind-orders-canvas-part2/form-01.png)
 
     По умолчанию форма отображается в левом верхнем углу, где другие элементы управления могут усложнить Поиск:
 
     > [!div class="mx-imgBorder"]
-    > элемент управления формы ![Edit в расположении по умолчанию @ no__t-1
+    > ![Edit элемент управления формы в расположении по умолчанию ](media/northwind-orders-canvas-part2/form-02.png)
 
 1. Переместите форму и измените ее размер, чтобы охватить правый верхний угол экрана под заголовком заголовка:
 
     > [!div class="mx-imgBorder"]
-    > ![Move и измените размер элемента управления формы Edit @ no__t-1
+    > ![Move и измените размер элемента управления формы редактирования ](media/northwind-orders-canvas-part2/form-03.png)
 
 1. В строке формул задайте для свойства **DataSource** формы следующее значение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Orders
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство DataSource элемента управления формы редактирования @ no__t-1
+    > ![Set свойство DataSource элемента управления формы редактирования ](media/northwind-orders-canvas-part2/form-04.png)
 
     Одно и то же свойство можно задать на вкладке **Свойства** рядом с правым ребром, но этот подход добавляет поля, которые не нужны в форме. Если используется строка формул, форма остается пустой.
 
@@ -111,12 +110,12 @@ ms.PowerAppsDecimalTransform: true
 1. На вкладке **Свойства** , расположенной рядом с правой границей, выберите **изменить поля** , чтобы открыть панель **поля** :
 
     > [!div class="mx-imgBorder"]
-    > ![Open область полей @ no__t-1
+    > ![Open области полей ](media/northwind-orders-canvas-part2/form-05.png)
 
 1. В области **поля** выберите **Добавить поле**, а затем установите флажки для полей **Customer** и **Employee** .
 
     > [!div class="mx-imgBorder"]
-    > @no__t — 0Add поля Customer и Employee в элемент управления формы Edit @ no__t-1
+    > ![Add поля «Клиент» и «сотрудник» в элемент управления «форма редактирования» ](media/northwind-orders-canvas-part2/form-06.png)
 
 1. Прокрутите вниз, пока эти поля не отобразятся, а затем установите их флажки:
 
@@ -127,14 +126,14 @@ ms.PowerAppsDecimalTransform: true
     - **Оплаченная Дата**
 
     > [!div class="mx-imgBorder"]
-    > ![Add пять полей в элемент управления формы Edit @ no__t-1
+    > ![Add пять дополнительных полей в элемент управления формы редактирования ](media/northwind-orders-canvas-part2/form-07.png)
 
 1. В нижней части области **поля** выберите **Добавить**, а затем закройте область **поля** .
 
     В форме показаны семь полей:
 
     > [!div class="mx-imgBorder"]
-    > элемент управления формы ![Edit показывает семь полей @ no__t-1
+    > ![Edit элемент управления формы отображает семь полей ](media/northwind-orders-canvas-part2/form-08.png)
 
     > [!NOTE]
     > Если в любом поле отображается красный значок ошибки, возможно, возникла проблема при извлечении данных из источника. Чтобы устранить эту ошибку, обновите данные:
@@ -150,23 +149,23 @@ ms.PowerAppsDecimalTransform: true
     Этот шаг обеспечивает гибкость при упорядочении полей:
 
     > [!div class="mx-imgBorder"]
-    > ![Change, то число столбцов в элементе управления формы редактирования @ no__t-1
+    > ![Change число столбцов в элементе управления формы редактирования ](media/northwind-orders-canvas-part2/form-08b.png)
 
     Многие модели пользовательского интерфейса основаны на 12-столбцовом макете, так как они могут равномерно размещать строки 1, 2, 3, 4, 6 и 12 элементов управления. В этом разделе вы создадите строки, содержащие 1, 2 или 4 элемента управления.
 
 1. Переместите и измените размер полей, перетаскивая их маркеры так же, как и для любого другого элемента управления, чтобы каждая строка содержала эти карточки данных в указанном порядке:
 
-    - Первая строка: **Номер заказа**, **состояние заказа**, **Дата заказа**и **Дата оплаты**
-    - Вторая строка: **Клиент** и **сотрудник**
+    - Первая строка: **номер заказа**, **состояние заказа**, **Дата заказа**и **Дата оплаты**
+    - Вторая строка: **клиент** и **сотрудник**
     - Третья строка: **Примечания**
 
     > [!NOTE]
     > Возможно, вам будет проще расширить карточки данных **Notes**, **Customer**и **Employee** , прежде чем упорядочивать их.
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Move и изменение размера полей @ no__t-1
+    > ![Move и изменение размеров полей ](media/northwind-orders-canvas-part2/form-rearrange.gif)
 
-    Дополнительные сведения о том, как упорядочивать поля в форме: [Общие сведения о макете форм данных для приложений Canvas](working-with-form-layout.md).
+    Дополнительные сведения о том, как упорядочивать поля в форме, см. в статье [Структура форм данных для приложений Canvas](working-with-form-layout.md).
 
 ## <a name="hide-time-controls"></a>Скрыть элементы управления временем
 
@@ -179,36 +178,36 @@ ms.PowerAppsDecimalTransform: true
 1. Удерживая нажатой клавишу Shift, выберите элемент управления "час, минута" и "разделитель-двоеточие" в карточке данных " **Дата заказа** ".
 
     > [!div class="mx-imgBorder"]
-    > ![Select элементы управления временем в карточке даты заказа @ no__t-1
+    > ![Select элементов управления времени в карточке даты заказа ](media/northwind-orders-canvas-part2/form-09.png)
 
 1. Присвойте свойству **Visible** элемента управления **значение false**.
 
     Все выбранные элементы управления исчезают из формы:
 
     > [!div class="mx-imgBorder"]
-    > для свойства Visible @no__t 0Set значение false. ](media/northwind-orders-canvas-part2/form-10.png)
+    > для свойства Visible ![Set значение false. ](media/northwind-orders-canvas-part2/form-10.png)
 
 1. Измените размер элемента управления " [**Выбор даты**](controls/control-date-picker.md) ", чтобы отобразить дату завершения:
 
     > [!div class="mx-imgBorder"]
-    > ![Resize элемент управления "Выбор даты" @ no__t-1
+    > ![Resize элемента управления "Выбор даты" ](media/northwind-orders-canvas-part2/form-11.png)
 
     Далее вы повторите последние несколько шагов для поля **оплаченная Дата** .
 
 1. На панели **древовидного представления** выберите элементы управления времени в карточке данных **оплаченная Дата** :
 
     > [!div class="mx-imgBorder"]
-    > ![Select управления временем в платной дате карта @ no__t-1
+    > ![Select контроля времени в платной дате оплаты ](media/northwind-orders-canvas-part2/form-12.png)
 
 1. Задайте для свойства **Visible** (выбранные элементы управления) значение **false**:
 
     > [!div class="mx-imgBorder"]
-    > для свойства Visible @no__t 0Set значение false. ](media/northwind-orders-canvas-part2/form-13.png)
+    > для свойства Visible ![Set значение false. ](media/northwind-orders-canvas-part2/form-13.png)
 
 1. Изменение размера элемента выбора даты в **платной** плате даты:
 
     > [!div class="mx-imgBorder"]
-    > ![Resize элемент управления "Выбор даты" @ no__t-1
+    > ![Resize элемента управления "Выбор даты" ](media/northwind-orders-canvas-part2/form-14.png)
 
 ## <a name="connect-the-order-gallery"></a>Подключение к коллекции заказов
 
@@ -216,17 +215,17 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **элемента** формы сводки следующее выражение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gallery1.Selected
     ```
 
     > [!div class="mx-imgBorder"]
-    > свойство элемента @no__t 0Set формы @ no__t-1
+    > свойство элемента ![Set формы ](media/northwind-orders-canvas-part2/form-15.png)
 
     В форме отображается сводка по любому заказу, выбранному пользователем приложения в списке.
 
     > [!div class="mx-imgBorder"]
-    > @no__t — 0Select порядок в списке для отображения его обзора в форме @ no__t-1
+    > ![Select порядок в списке для отображения его обзора в форме ](media/northwind-orders-canvas-part2/form-select.gif)
 
 ## <a name="replace-a-data-card"></a>Замена карточки данных
 
@@ -235,29 +234,29 @@ ms.PowerAppsDecimalTransform: true
 1. Выберите форму, выберите **изменить поля** на вкладке **свойства** рядом с правой границей, а затем выберите поле **номер заказа** :
 
     > [!div class="mx-imgBorder"]
-    > ![Select в поле номер заказа @ no__t-1
+    > ![Select поле номер заказа ](media/northwind-orders-canvas-part2/alt-01.png)
 
 1. Откройте список **тип элемента управления** :
 
     > [!div class="mx-imgBorder"]
-    > ![Open тип элемента управления * * List @ no__t-1
+    > ![Open список "тип элемента управления * *" ](media/northwind-orders-canvas-part2/alt-02.png)
 
 1. Выберите карточка **Просмотр текстовых** данных:
 
     > [!div class="mx-imgBorder"]
-    > ![Select * * View Text * * карта данных @ no__t-1
+    > ![Select карточку данных * * View Text * * ](media/northwind-orders-canvas-part2/alt-02b.png)
 
 1. Закройте область **поля** .
 
     Пользователь больше не может изменить номер заказа:
 
     > [!div class="mx-imgBorder"]
-    > @no__t — номер 0Order доступен только для чтения @ no__t-1
+    > ![Orderное число доступно только для чтения ](media/northwind-orders-canvas-part2/alt-03.png)
 
 1. На вкладке **Главная** измените размер шрифта порядкового номера на 20 пунктов, чтобы поле было проще найти:
 
     > [!div class="mx-imgBorder"]
-    > ![Change размер шрифта для номера заказа @ no__t-1
+    > ![Change размер шрифта для номера заказа ](media/northwind-orders-canvas-part2/alt-04.png)
 
 ## <a name="use-a-many-to-one-relationship"></a>Использование связи «многие к одному»
 
@@ -266,191 +265,191 @@ ms.PowerAppsDecimalTransform: true
 1. Выберите карточку данных **сотрудника** :
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Select, карточка данных сотрудника @ no__t-1
+    > ![Select карточку данных сотрудника ](media/northwind-orders-canvas-part2/employee-01.png)
 
 1. На вкладке **Дополнительно** рядом с правой границей Разблокируйте карточку данных, чтобы можно было изменять формулы, которые ранее были доступны только для чтения.
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Unlock, карточка данных сотрудника @ no__t-1
+    > ![Unlock карточку данных сотрудника ](media/northwind-orders-canvas-part2/employee-02.png)
 
 1. В карточке данных уменьшите ширину поля со списком, чтобы освободить место для изображения сотрудника:
 
     > [!div class="mx-imgBorder"]
-    > ![Resize элемент управления "поле со списком" @ no__t-1
+    > ![Resize элемент управления "поле со списком" ](media/northwind-orders-canvas-part2/employee-03b.png)
 
-1. На вкладке **Вставка** выберите **носитель** > **изображение**:
+1. На вкладке **Вставка** выберите **носитель**  > **изображение**:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Insert Image @ no__t-1
+    > ![Insert образа ](media/northwind-orders-canvas-part2/employee-04.png)
 
     В карточке данных появится изображение, которое разворачивается в соответствии с:
 
     > [!div class="mx-imgBorder"]
-    > карточка данных @no__t 0Employee с помощью элемента управления Image @ no__t-1
+    > ![Employee карточки данных с помощью элемента управления Image ](media/northwind-orders-canvas-part2/employee-05.png)
 
 1. Измените размер изображения и переместите его справа от поля со списком:
 
     > [!div class="mx-imgBorder"]
-    > ![Move и изменение размера элемента управления Image @ no__t-1
+    > ![Move и измените размер элемента управления Image ](media/northwind-orders-canvas-part2/employee-06.png)
 
 1. Задайте для **свойства Image изображения эту** формулу, заменив номер в конце датакардвалуе при необходимости:
 
-    ```powerapps-comma
+    ```powerapps-dot
     DataCardValue7.Selected.Picture
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство Image образа @ no__t-1
+    > ![Set свойство Image ](media/northwind-orders-canvas-part2/employee-07.png)
 
     Появится изображение выбранного сотрудника.
 
 1. Удерживая нажатой клавишу Alt, выберите другого сотрудника в поле со списком, чтобы убедиться, что изображение также изменилось.
 
     > [!div class="mx-imgBorder"]
-    > ![Select сотрудника, чтобы отобразить изображение сотрудника @ no__t-1
+    > ![Select сотрудника для показа изображения сотрудника ](media/northwind-orders-canvas-part2/employee-select.gif)
 
 ## <a name="add-a-save-icon"></a>Добавить значок сохранения
 
-1. На панели **древовидного представления** выберите **Screen1**, а затем щелкните **вставить** > **значки** > **Check**:
+1. На панели **древовидного представления** выберите **Screen1**, а затем щелкните **Вставить**  > **значки**  > **проверить**:
 
     > [!div class="mx-imgBorder"]
-    > ![Insert значок галочки @ no__t-1
+    > ![Insert значок галочки ](media/northwind-orders-canvas-part2/save-01.png)
 
     По умолчанию значок [**галочки**](controls/control-shapes-icons.md) отображается в левом верхнем углу, где другие элементы управления могут усложнить поиск значка:
 
     > [!div class="mx-imgBorder"]
-    > ![Icon в расположении по умолчанию @ no__t-1
+    > ![Icon в расположении по умолчанию ](media/northwind-orders-canvas-part2/save-02.png)
 
 1. На вкладке **Главная** измените значение свойства **Цвет** значка на белый, измените размер значка и переместите его рядом с правым краю строки заголовка:
 
     > [!div class="mx-imgBorder"]
-    > ![Configure цвет, размер и расположение значка сохранения @ no__t-1
+    > ![Configure цвет, размер и расположение значка сохранения ](media/northwind-orders-canvas-part2/save-03.png)
 
 1. В области **представление в виде дерева** убедитесь, что имя формы — **Form1**, а затем задайте для свойства **OnSelect** значка следующую формулу:
 
-    ```powerapps-comma
+    ```powerapps-dot
     SubmitForm( Form1 )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство "Save" значка сохранения, no__t-1
+    > ![Set свойство «сохранить» для значка сохранения ](media/northwind-orders-canvas-part2/save-04.png)
 
     Когда пользователь выбирает значок, функция [**субмитформ**](functions/function-form.md) собирает все измененные значения в форме и отправляет их в источник данных. Точка за март в верхней части экрана по мере отправки данных, а коллекция заказов отражает изменения после завершения процесса.
 
 1. Задайте для свойства **DisplayMode** этого значка следующую формулу:
 
-    ```powerapps-comma
-    If( Form1.Unsaved; DisplayMode.Edit; DisplayMode.Disabled )
+    ```powerapps-dot
+    If( Form1.Unsaved, DisplayMode.Edit, DisplayMode.Disabled )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство DisplayMode значка @ no__t-1
+    > ![Set свойство DisplayMode значка ](media/northwind-orders-canvas-part2/save-05.png)
 
     Если все изменения в форме сохранены, значок будет отключен и появится в **дисабледколор**, который вы настроите далее.
 
 1. Присвойте свойству **дисабледколор** значка это значение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gray
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство Дисабледколор значка @ no__t-1
+    > ![Set свойство Дисабледколор значка ](media/northwind-orders-canvas-part2/save-06.png)
 
     Пользователь может сохранить изменения в заказе, щелкнув значок галочки, который затем будет отключен и затемнен до тех пор, пока пользователь не изменит другое:
 
     > [!div class="mx-imgBorder"]
-    > @no__t изменения 0saving @ no__t-1
+    > ![saving изменения ](media/northwind-orders-canvas-part2/save-submit.gif)
 
 ## <a name="add-a-cancel-icon"></a>Добавить значок "Отмена"
 
-1. На вкладке **Вставка** выберите **значки** > **Отмена**:
+1. На вкладке **Вставка** выберите **значки**  > **Отмена**:
 
     > [!div class="mx-imgBorder"]
-    > значок отмены @no__t 0Add @ no__t-1
+    > значок отмены ![Add ](media/northwind-orders-canvas-part2/save-07.png)
 
     По умолчанию значок отображается в левом верхнем углу, где другие элементы управления могут усложнить поиск значка:
 
     > [!div class="mx-imgBorder"]
-    > значок ![Cancel в расположении по умолчанию @ no__t-1
+    > значок ![Cancel в расположении по умолчанию ](media/northwind-orders-canvas-part2/save-08.png)
 
 1. На вкладке **Главная** измените значение свойства **Цвет** значка на белый, измените размер значка и переместите его слева от значка галочки:
 
     > [!div class="mx-imgBorder"]
-    > ![Change. цвет, размер и расположение значка Cancel @ no__t-1
+    > ![Change цвет, размер и расположение значка отмены ](media/northwind-orders-canvas-part2/save-09.png)
 
 1. Задайте в качестве значения свойства **OnSelect** значка отмены следующую формулу:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ResetForm( Form1 )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство OnSelect значка отмены no__t-1
+    > ![Set свойство «свойства» для значка отмены ](media/northwind-orders-canvas-part2/save-10.png)
 
     Функция [**ResetForm**](functions/function-form.md) отклоняет все изменения в форме, возвращающие ее в исходное состояние.
 
 1. Задайте для свойства **DisplayMode** значка отмены следующую формулу:
 
-    ```powerapps-comma
-    If( Form1.Unsaved Or Form1.Mode = FormMode.New; DisplayMode.Edit; DisplayMode.Disabled )
+    ```powerapps-dot
+    If( Form1.Unsaved Or Form1.Mode = FormMode.New, DisplayMode.Edit, DisplayMode.Disabled )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство DisplayMode значка отмены @ no__t-1
+    > ![Set свойство DisplayMode значка отмены ](media/northwind-orders-canvas-part2/save-11.png)
 
     Эта формула немного отличается от первой для значка галочки. Значок отмена отключается, если все изменения сохранены или форма находится в **новом** режиме, который будет включен далее. В этом случае **ResetForm** отменяет новую запись.
 
 1. Задайте для свойства **дисабледколор** значка отмены следующее значение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gray
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство Дисабледколор значка отмены @ no__t-1
+    > ![Set свойство Дисабледколор значка отмены ](media/northwind-orders-canvas-part2/save-12.png)
 
     Пользователь может отменить изменения в заказе, а значки проверки и отмены будут отключены и затемнены, если все изменения сохранены:
 
     > [!div class="mx-imgBorder"]
-    > ![Saving и Отмена изменений @ no__t-1
+    > ![Saving и Отмена изменений ](media/northwind-orders-canvas-part2/save-cancel.gif)
 
 ## <a name="add-an-add-icon"></a>Добавить значок добавления
 
-1. На вкладке **Вставка** выберите **значки** > **добавить**.
+1. На вкладке **Вставка** выберите **значки**  > **добавить**.
 
     > [!div class="mx-imgBorder"]
-    > ![Insert значок добавления @ no__t-1
+    > ![Insert значок добавления ](media/northwind-orders-canvas-part2/save-13.png)
 
     Значок **Добавить** отображается в левом верхнем углу по умолчанию, где другие элементы управления могут усложнить Поиск:
 
     > [!div class="mx-imgBorder"]
-    > ![Default расположение добавления значка @ no__t-1
+    > ![Default расположение ](media/northwind-orders-canvas-part2/save-14.png) значка "Добавить"
 
 1. На вкладке **Главная** задайте для свойства **Цвет** значка Добавить значение белый, измените размер значка и переместите его слева от значка Отмена:
 
     > [!div class="mx-imgBorder"]
-    > ![Change цвет, размер и расположение значка Add @ no__t-1
+    > ![Change цвет, размер и расположение значка добавления ](media/northwind-orders-canvas-part2/save-15.png)
 
 1. Задайте в этой формуле **свойство добавления** значка:
 
-    ```powerapps-comma
+    ```powerapps-dot
     NewForm( Form1 )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство OnSelect значка Add, no__t-1
+    > ![Set свойство "Добавить" для значка ](media/northwind-orders-canvas-part2/save-15b.png)
 
     Функция [**NewForm**](functions/function-form.md) показывает пустую запись в форме.  
 
 1. Задайте в качестве значения свойства **DisplayMode** значка следующую формулу:
 
-    ```powerapps-comma
-    If( Form1.Unsaved Or Form1.Mode = FormMode.New; DisplayMode.Disabled; DisplayMode.Edit )
+    ```powerapps-dot
+    If( Form1.Unsaved Or Form1.Mode = FormMode.New, DisplayMode.Disabled, DisplayMode.Edit )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство DisplayMode значка добавления @ no__t-1
+    > ![Set свойство DisplayMode значка ](media/northwind-orders-canvas-part2/save-16.png)
 
     Формула отключает значок Добавить в следующих условиях:
 
@@ -459,73 +458,73 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **дисабледколор** значка это значение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gray
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство Дисабледколор значка добавления @ no__t-1
+    > ![Set свойство Дисабледколор значка ](media/northwind-orders-canvas-part2/save-17.png)
 
     Пользователь может создать заказ, если он не внес изменений, или сохранить или отменить внесенные изменения. (Если пользователь выберет этот значок, он не сможет выбрать его еще раз, пока не внесет одно или несколько изменений, а затем сохранит или отменит эти изменения):
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Create a Order @ no__t-1
+    > ![Create заказа ](media/northwind-orders-canvas-part2/save-new.gif)
 
 > [!NOTE]
 > При создании и сохранении заказа может потребоваться прокрутить вниз в коллекции заказов, чтобы отобразить новый заказ. У нее не будет общей цены, так как вы еще не добавили сведения о заказе.
 
 ## <a name="add-a-trash-icon"></a>Добавить значок корзины
 
-1. На вкладке **Вставка** выберите **значки** > **Корзина**.
+1. На вкладке **Вставка** выберите **значки**  > **Корзина**.
 
     > [!div class="mx-imgBorder"]
-    > ![Insert значок корзины @ no__t-1
+    > ![Insert значок корзины ](media/northwind-orders-canvas-part2/save-18.png)
 
     По умолчанию значок **корзины** отображается в левом верхнем углу, где другие элементы управления могут усложнить Поиск:
 
     > [!div class="mx-imgBorder"]
-    > ![Default расположение корзины @ no__t-1
+    > ![Default расположение корзины ](media/northwind-orders-canvas-part2/save-19.png)
 
 1. На вкладке **Главная** измените значение свойства **Цвет** значка корзины на белый, измените размер значка и переместите его слева от значка Добавить:
 
     > [!div class="mx-imgBorder"]
-    > ![Change цвет, размер и расположение корзины @ no__t-1
+    > ![Change цвет, размер и расположение корзины ](media/northwind-orders-canvas-part2/save-20.png)
 
 1. Присвойте свойству " **OnSelect** " значка корзины следующую формулу:
 
-    ```powerapps-comma
-    Remove( Orders; Gallery1.Selected )
+    ```powerapps-dot
+    Remove( Orders, Gallery1.Selected )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство OnSelect значка корзины @ no__t-1
+    > ![Set свойство OnSelect значка корзины ](media/northwind-orders-canvas-part2/save-21.png)
 
     Функция [**Remove**](functions/function-remove-removeif.md) удаляет запись из источника данных. В этой формуле функция удаляет запись, выбранную в коллекции Order. Значок корзины отображается рядом с формой сводки (а не с коллекцией заказов), так как в форме отображаются дополнительные сведения о записи, поэтому пользователь может легко найти запись, которая будет удалена формулой.
 
 1. Задайте для свойства **DisplayMode** значка корзины следующую формулу:
 
-    ```powerapps-comma
-    If( Form1.Mode = FormMode.New; DisplayMode.Disabled; DisplayMode.Edit )
+    ```powerapps-dot
+    If( Form1.Mode = FormMode.New, DisplayMode.Disabled, DisplayMode.Edit )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство DisplayMode значка корзины @ no__t-1
+    > ![Set свойство DisplayMode значка корзины ](media/northwind-orders-canvas-part2/save-22.png)
 
     Эта формула отключает значок корзины, если пользователь создает запись. Пока пользователь не сохранит запись, функция **Remove** не будет иметь записи для удаления.
 
 1. Задайте для свойства **дисабледколор** значка корзины следующее значение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gray
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство Дисабледколор значка корзины @ no__t-1
+    > ![Set свойство Дисабледколор значка корзины ](media/northwind-orders-canvas-part2/save-23.png)
 
     Пользователь может удалить заказ.
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Deleting Orders @ no__t-1
+    > ![Deleting заказов ](media/northwind-orders-canvas-part2/save-delete.gif)
 
 ## <a name="summary"></a>Суммар
 
@@ -533,12 +532,12 @@ ms.PowerAppsDecimalTransform: true
 
 - Форма, в которой отображаются данные из сущности **Orders** : **Form1. DataSource =** `Orders`
 - Соединение между формой и коллекцией заказов: **Form1. Item =** `Gallery1.Selected`
-- Альтернативный элемент управления для поля **номер заказа** : **Просмотреть текст**
+- Альтернативный элемент управления для поля **номер заказа** : **Просмотр текста**
 - Отношение "многие к одному" для отображения изображения сотрудника в карточке данных **сотрудника** : `DataCardValue1.Selected.Picture`
 - Значок для сохранения изменений в заказе: `SubmitForm( Form1 )`
 - Значок для отмены изменений в заказе: `ResetForm( Form1 )`
 - Значок для создания заказа: `NewForm( Form1 )`
-- Значок для удаления заказа: `Remove( Orders; Gallery1.Selected )`
+- Значок для удаления заказа: `Remove( Orders, Gallery1.Selected )`
 
 ## <a name="next-step"></a>Дальнейшие действия
 

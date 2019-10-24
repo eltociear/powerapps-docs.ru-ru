@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ac6586067105d5f6cd1ce2aab5568450804fe4c6
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71991364"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>Создание коллекции заказов в приложении Canvas
 
@@ -30,7 +29,7 @@ ms.PowerAppsDecimalTransform: true
 1. [Создание коллекции сведений](northwind-orders-canvas-part3.md).
 
 > [!div class="mx-imgBorder"]
-> @no__t 0Definition области экрана @ no__t-1
+> ![Definition областей экрана ](media/northwind-orders-canvas-part1/orders-parts.png)
 
 ## <a name="prerequisites"></a>Технические условия
 
@@ -42,17 +41,17 @@ ms.PowerAppsDecimalTransform: true
 1. [Войдите в PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)и создайте пустое приложение для планшетов.
 
     > [!div class="mx-imgBorder"]
-    > приложение ![Canvas из пустой плитки @ no__t-1
+    > ![Canvas приложение из пустой плитки ](media/northwind-orders-canvas-part1/start-01.png)
 
 1. Присвойте приложению имя, которое вам нравится, а затем выберите **создать**.
 
     > [!div class="mx-imgBorder"]
-    > ![Canvas приложение из пустого диалогового окна @ no__t-1
+    > ![Canvas приложение из пустого диалогового окна ](media/northwind-orders-canvas-part1/start-02.png)
 
     PowerApps Studio откроется, чтобы в приложение можно было добавлять источники данных и элементы управления:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0PowerApps Studio @ no__t-1
+    > ![PowerApps Studio ](media/northwind-orders-canvas-part1/start-03.png)
 
 1. Включите [экспериментальную функцию](working-with-experimental.md) для отображения результата формулы непосредственно из строки формул.
 
@@ -60,7 +59,7 @@ ms.PowerAppsDecimalTransform: true
     1. Прокрутите вниз список компонентов, а затем включите **представление результатов "включить строку формул**":
 
         > [!div class="mx-imgBorder"]
-        > @no__t 0List экспериментальных функций @ no__t-1
+        > ![List экспериментальных функций ](media/northwind-orders-canvas-part1/start-04.png)
 
 1. В левом верхнем углу щелкните стрелку назад, чтобы вернуться к пустому холсту.
 
@@ -69,29 +68,29 @@ ms.PowerAppsDecimalTransform: true
 1. На вкладке **вид** выберите **Источники данных**, а затем в области **данные** выберите **Добавить источник данных** :
 
     > [!div class="mx-imgBorder"]
-    > Представление @no__t 0Select, источники данных, Добавление источника данных @ no__t-1
+    > ![Select представление, источники данных, Добавление источника данных ](media/northwind-orders-canvas-part1/datasource-01.png)
 
 1. Выберите **Common Data Service**.
 
     Если **Common Data Service** не отображается в списке подключений, выберите **создать соединение**, а затем добавьте его.
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0List подключений @ no__t-1
+    > ![List подключений ](media/northwind-orders-canvas-part1/datasource-02.png)
 
 1. В разделе **Выбор сущности**введите **заказы**, установите флажок **заказы** , а затем выберите **подключить**.
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0List сущностей @ no__t-1
+    > ![List сущностей ](media/northwind-orders-canvas-part1/datasource-03.png)
 
     Вы добавили источник данных **Orders** в приложение:
 
     > [!div class="mx-imgBorder"]
-    > панель @no__t 0Data @ no__t-1
+    > панель ![Data ](media/northwind-orders-canvas-part1/datasource-04.png)
 
     Сущность **Orders** содержит множество полей различных типов:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0List полей в сущности Orders @ no__t-1
+    > ![List полей в сущности Orders ](media/northwind-orders-canvas-part1/datasource-05.png)
 
     Каждое поле имеет **Отображаемое имя** и **имя**, которое иногда называют логическим именем. Оба имени ссылаются на одно и то же. Как правило, при создании приложения используется отображаемое имя, но в некоторых случаях требуется более понятное **имя**, как указано в процедуре.
 
@@ -99,31 +98,31 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="create-the-order-gallery"></a>Создание коллекции заказов
 
-1. На вкладке **Вставка** выберите **коллекция** > **пустая вертикальная** , чтобы добавить элемент управления " [**коллекция**](controls/control-gallery.md) ", в котором будут показаны заказы.
+1. На вкладке **Вставка** выберите **коллекция**  > **пустой вертикальный** , чтобы добавить элемент управления из [**коллекции**](controls/control-gallery.md) , в котором будут показаны заказы.
 
     > [!div class="mx-imgBorder"]
-    > ![Insert, коллекция, пустая вертикальная @ no__t-1
+    > ![Insert, коллекция, пустой вертикальный ](media/northwind-orders-canvas-part1/orders-01.png)
 
 1. В строке формул задайте в качестве значения свойства **Items** коллекции следующую формулу:
 
-    ```powerapps-comma
-    Sort( Orders; 'Order Number'; Descending )
+    ```powerapps-dot
+    Sort( Orders, 'Order Number', Descending )
     ```
 
     Функция [**Sort**](functions/function-sort.md) упорядочивает список таким образом, чтобы сначала появился самый новый заказ (который имеет самый высокий порядковый номер).
 
     > [!div class="mx-imgBorder"]
-    > Свойство @no__t 0Set Items коллекции @ no__t-1
+    > Свойство ![Set Items коллекции ](media/northwind-orders-canvas-part1/orders-02.png)
 
 1. На вкладке **Свойства** рядом с правой границей откройте список **Макет** :
 
     > [!div class="mx-imgBorder"]
-    > ![List параметров макета @ no__t-1
+    > ![List параметров макета ](media/northwind-orders-canvas-part1/orders-03.png)
 
 1. В списке параметров выберите **заголовок и подзаголовок**:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Select макет @ no__t-1
+    > ![Select макета ](media/northwind-orders-canvas-part1/orders-04.png)
 
     В шаблон коллекции добавлены два элемента управления [**Label**](controls/control-text-box.md) . По умолчанию эти элементы управления отображают два столбца сущности **Orders** , которые вы измените далее. Шаблон коллекции реплицируется по вертикали для каждой записи в сущности.
 
@@ -133,28 +132,28 @@ ms.PowerAppsDecimalTransform: true
 
 1. В строке формул задайте для свойства **Text** метки следующее выражение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     "Order " & ThisItem.'Order Number'
     ```
 
     > [!div class="mx-imgBorder"]
-    > свойство Text метки заголовка ![Set @ no__t-1
+    > ![Set свойство текста метки заголовка ](media/northwind-orders-canvas-part1/orders-06.png)
 
     Номер заказа отображается в верхней части каждого элемента коллекции. В шаблоне коллекции **сиситем** предоставляет доступ ко всем полям в сущности **Order** .
 
 1. В области **данных** выберите **Subtitle1** (или выберите нижнюю метку в шаблоне коллекции):
 
     > [!div class="mx-imgBorder"]
-    > Метка подзаголовка ![Select @ no__t-1
+    > Метка подзаголовка ![Select ](media/northwind-orders-canvas-part1/orders-07.png)
 
 1. В строке формул задайте для свойства **Text** метки следующее выражение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Customer.Company
     ```
 
     > [!div class="mx-imgBorder"]
-    > свойство Text метки подзаголовка @no__t 0Set @ no__t-1
+    > свойство текста метки подзаголовка ![Set ](media/northwind-orders-canvas-part1/orders-08.png)
 
     После ввода этой формулы в течение некоторого времени может отображаться красная волнистая ошибка. Ошибка должна быть очищена, если выбрать что-либо за пределами строки формул, а затем вернуть курсор в строку формул. Если ошибка не исчезнет или вы не видите значение, перейдите на вкладку **представление** , выберите **Источники данных**, а затем обновите сущность **Orders** , нажав кнопку с многоточием (...) справа от имени источника данных.
 
@@ -163,7 +162,7 @@ ms.PowerAppsDecimalTransform: true
     Можно отобразить все связи из сущности **Orders** с другими сущностями, включая сущность **Customer** :
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0List связей @ no__t-1
+    > ![List связей ](media/northwind-orders-canvas-part1/orders-09.png)
 
 1. Закройте панель **данных** , щелкнув значок закрытия (x) в правом верхнем углу.
 
@@ -174,36 +173,36 @@ ms.PowerAppsDecimalTransform: true
 1. В шаблоне коллекции Сократите ширину первой метки, **Title1**:
 
     > [!div class="mx-imgBorder"]
-    > ![Title1 в шаблоне коллекции @ no__t-1
+    > ![Title1 в шаблоне коллекции ](media/northwind-orders-canvas-part1/status-01.png)
 
 1. Повторите предыдущий шаг со второй меткой, **Subtitle1**:
 
     > [!div class="mx-imgBorder"]
-    > ![Subtitle1 в шаблоне коллекции @ no__t-1
+    > ![Subtitle1 в шаблоне коллекции ](media/northwind-orders-canvas-part1/status-02.png)
 
 1. Выбрав шаблон коллекции (или элемент управления в шаблоне), на вкладке **Вставка** выберите **Метка** .
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Add метка @ no__t-1
+    > ![Add метку ](media/northwind-orders-canvas-part1/status-03.png)
 
 1. Переместите новую метку справа от метки **Title1** :
 
     > [!div class="mx-imgBorder"]
-    > ![Move и изменение размера метки @ no__t-1
+    > ![Move и изменение размера метки ](media/northwind-orders-canvas-part1/status-04.png)
 
 1. Задайте для свойства **Text** новой метки следующее выражение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.'Order Status'
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство Text @ no__t-1
+    > ![Set свойства Text ](media/northwind-orders-canvas-part1/status-05.png)
 
     В сущности **Orders** поле **состояние заказа** содержит значение из набора параметров **Orders Status** . Набор параметров аналогичен перечислению в других средствах программирования. Каждый набор параметров определяется в базе данных, поэтому пользователи могут указывать только те параметры, которые находятся в наборе. Параметр " **заказы состояния заказов** " также является глобальным, а не локальным, поэтому его можно использовать в других сущностях:
 
     > [!div class="mx-imgBorder"]
-    > параметр состояния ![Orders, установленный @ no__t-1
+    > ![Orders задан параметр состояния ](media/northwind-orders-canvas-part1/status-06.png)
 
     Каждый параметр в наборе имеет имя, которое отображается при его отображении в метке. Эти имена могут быть локализованы, и приложение распознает тот же параметр, когда пользователь на английском языке выбирает **Apple**, французский пользователь выбирает **Помме**, или испанский пользователь выбирает **Манзана**. По этой причине нельзя создать формулу, основанную на жестко запрограммированной строке для параметра, как показано в этом разделе далее.
 
@@ -212,21 +211,21 @@ ms.PowerAppsDecimalTransform: true
 1. На вкладке **Главная** увеличьте размер шрифта для метки состояния до 20 пунктов и выровняйте текст по правому краю:
 
     > [!div class="mx-imgBorder"]
-    > ![Change размер шрифта и выравнивание @ no__t-1
+    > ![Change размер и выравнивание шрифта ](media/northwind-orders-canvas-part1/status-07.png)
 
 1. В строке формул задайте для свойства **Цвет** метки состояние значение эта формула:
 
-    ```powerapps-comma
-    Switch( ThisItem.'Order Status';
-        'Orders Status'.Closed; Green;
-        'Orders Status'.New; Black;
-        'Orders Status'.Invoiced; Blue;
-        'Orders Status'.Shipped; Purple
+    ```powerapps-dot
+    Switch( ThisItem.'Order Status',
+        'Orders Status'.Closed, Green,
+        'Orders Status'.New, Black,
+        'Orders Status'.Invoiced, Blue,
+        'Orders Status'.Shipped, Purple
     )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство Color метки состояния @ no__t-1
+    > ![Set свойство Color метки состояния ](media/northwind-orders-canvas-part1/status-08.png)
 
     PowerApps не позволяет создать формулу, основанную на жестко запрограммированной строке для каждого параметра в наборе, так как такие формулы могут привести к неуместным результатам, если имена параметров локализованы. Вместо этого функция **switch** определяет цвет на основе любой строки, отображаемой в метке на основе параметров пользователя.
 
@@ -237,44 +236,44 @@ ms.PowerAppsDecimalTransform: true
 1. Выберите первый элемент в коллекции, который является шаблоном коллекции:
 
     > [!div class="mx-imgBorder"]
-    > ![Select шаблон коллекции @ no__t-1
+    > ![Select шаблон коллекции ](media/northwind-orders-canvas-part1/aggregate-01.png)
 
 1. На вкладке **Вставка** выберите **Метка** , чтобы добавить еще одну метку:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Add метка @ no__t-1
+    > ![Add метку ](media/northwind-orders-canvas-part1/aggregate-02.png)
 
 1. Переместите новую метку, чтобы она появилась под меткой состояния:
 
     > [!div class="mx-imgBorder"]
-    > ![Resize и переместите новую метку @ no__t-1
+    > ![Resize и переместите новую метку ](media/northwind-orders-canvas-part1/aggregate-03.png)
 
 1. В строке формул задайте для свойства **Text** новой метки значение Следующая формула:
 
-    ```powerapps-comma
-    Text( Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( Sum( ThisItem.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Formula для вычисления общей стоимости заказа @ no__t-1
+    > ![Formula для вычисления общей стоимости заказа ](media/northwind-orders-canvas-part1/aggregate-04.png)
 
     В этой формуле функция [**Sum**](functions/function-aggregates.md) добавляет записи в сущности **Order Details** , связанные с каждой записью в сущности **Order** через связь «один ко многим». Эти элементы строки составляют каждый заказ, и вы будете использовать одну связь «один ко многим» для отображения и редактирования элементов строк в правой нижней области экрана.
 
     В этой формуле отображается синяя подчеркивание и [предупреждение о делегировании](delegation-overview.md) , так как Common Data Service не поддерживает делегирование сложных агрегатных функций (например, сумму умножения). Эту информацию можно пропустить, так как в этом примере нет заказов, содержащих более 500 элементов строк. Если это необходимо для другого приложения, можно увеличить это ограничение в **параметрах приложения**.
 
-    Функция [**Text**](functions/function-text.md) в этой формуле добавляет символ валюты и форматирует результат с помощью тысяч и десятичных разделителей. Как написано, формула включает тег Language для США. Английский ( **[$-en-US]** ) и символ доллара ( **$** ). Если удалить тег Language, он будет заменен на один из параметров языка, а метка будет показывать соответствующие форматы для этого тега. Если оставить символ доллара, то метка будет показывать соответствующий символ валюты в зависимости от параметров пользователя. Однако можно задать отображение другого символа, заменив символ доллара предпочтительным.
+    Функция [**Text**](functions/function-text.md) в этой формуле добавляет символ валюты и форматирует результат с помощью тысяч и десятичных разделителей. Как написано, формула содержит тег языка для английского языка (США) ( **[$-en-US]** ) и символ доллара ( **$** ). Если удалить тег Language, он будет заменен на один из параметров языка, а метка будет показывать соответствующие форматы для этого тега. Если оставить символ доллара, то метка будет показывать соответствующий символ валюты в зависимости от параметров пользователя. Однако можно задать отображение другого символа, заменив символ доллара предпочтительным.
 
 1. На вкладке **Главная** измените размер шрифта для последней метки на 20 пунктов и выровняйте его текст по правому краю:
 
     > [!div class="mx-imgBorder"]
-    > ![Change размер шрифта и выравнивание метки @ no__t-1
+    > ![Change размер шрифта и выравнивание метки ](media/northwind-orders-canvas-part1/aggregate-05.png)
 
 1. Переместите коллекцию в левую границу экрана и уменьшите ширину коллекции, чтобы закрыть место.
 
 1. Увеличьте высоту коллекции так, чтобы она почти выходила по высоте экрана, но оставьте в верхней части строку заголовка, которую вы добавите в начало следующего раздела:
 
     > [!div class="mx-imgBorder"]
-    > ![Move и измените размер коллекции @ no__t-1
+    > ![Move и измените размер коллекции ](media/northwind-orders-canvas-part1/aggregate-06.png)
 
 ## <a name="summary"></a>Суммар
 
@@ -283,8 +282,8 @@ ms.PowerAppsDecimalTransform: true
 - Выражение для отображения номера заказа: `"Orders " & ThisItem.OrderNumber`
 - Поле в связи "многие к одному": `ThisItem.Customer.Company`
 - Метка, показывающая имя параметра в наборе: `ThisItem.'Order Status'`
-- Метка, которая изменяет формат в зависимости от того, какой параметр в наборе содержит метку: `Switch( ThisItem.'Order Status'; 'Orders Status'.Closed; Green; ...`
-- Комплексная агрегатная функция над связью "один ко многим": `Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' )`
+- Метка, которая изменяет формат в зависимости от того, какой параметр в наборе содержит метку: `Switch( ThisItem.'Order Status', 'Orders Status'.Closed, Green, ...`
+- Комплексная агрегатная функция над связью «один ко многим»: `Sum( ThisItem.'Order Details', Quantity * 'Unit Price' )`
 
 ## <a name="next-topic"></a>Следующий раздел
 
