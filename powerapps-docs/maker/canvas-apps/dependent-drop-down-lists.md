@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 57abde44541a2a1e40e3a8ffc55a89e37a8c6478
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71985751"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Создание зависимых раскрывающихся списков в приложении Canvas
 
@@ -52,7 +51,7 @@ ms.PowerAppsDecimalTransform: true
 
 В списке **инцидентов** отображаются контактные данные и сведения о каждом инциденте. Создайте столбец Date в качестве столбца **дат** , но создайте другие столбцы в виде **одной строки текстовых** столбцов, чтобы упростить настройку и избежать предупреждений о [делегировании](./delegation-overview.md) в Microsoft PowerApps.
 
-| Имя | Фамилия | Номер телефона     | Location | Department | Описание       | Date      |
+| Имя | Фамилия | Номер телефона     | Location | Department | Description       | Date      |
 |------------|-----------|------------------|----------------|------------|-------------------------|-----------|
 | тоня       | Cortez   | (206) 555-1022 | еганвилле      | Производить    | У меня возникла проблема...   | 2/12/2019 |
 | мосес     | лафламме     | (425) 555-1044 | ренфрев        | Цветочно-     | Возникла ошибка... | 2/13/2019 |
@@ -67,7 +66,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="open-the-form"></a>Откройте форму
 
-1. Откройте список **инциденты** и выберите **PowerApps** > **Настройка форм**.
+1. Откройте список **инциденты** и выберите **PowerApps**  > **настроить формы**.
 
     > [!div class="mx-imgBorder"]
     > ![Откройте список инциденты и выберите PowerApps > настроить формы.](./media/dependent-drop-down-lists/open-form.png "Откройте список инциденты и выберите PowerApps > настроить формы.")
@@ -83,7 +82,7 @@ ms.PowerAppsDecimalTransform: true
     Откроется форма с только что добавленными полями.
 
     > [!div class="mx-imgBorder"]
-    > ![Form без полей Title и вложений @ no__t-1
+    > ![Form без полей Title и вложения ](./media/dependent-drop-down-lists/default-form.png)
 
 ## <a name="replace-the-controls"></a>Замена элементов управления
 
@@ -94,7 +93,7 @@ ms.PowerAppsDecimalTransform: true
 1. Откройте список **тип элемента управления** и выберите **Допустимые значения**.
 
     > [!div class="mx-imgBorder"]
-    > значения ![Allowed @ no__t-1
+    > ![Allowed значения ](./media/dependent-drop-down-lists/change-control.png)
 
     Механизм ввода меняется на **раскрывающийся** элемент управления.
 
@@ -102,19 +101,19 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="add-the-locations-list"></a>Добавление списка расположений
 
-1. Выберите **представление** > **Источники данных** > **Добавить источник данных**.
+1. Выберите **просмотреть**  > **Источники данных**  > **Добавить источник данных**.
 
 1. Выберите или создайте подключение SharePoint, а затем укажите сайт, содержащий список **расположений** .
 
 1. Установите флажок для этого списка и нажмите кнопку **подключить**.
 
     > [!div class="mx-imgBorder"]
-    > панель @no__t 0Data @ no__t-1
+    > панель ![Data ](./media/dependent-drop-down-lists/select-list.png)
 
     В списке подключений отображается список **инцидентов** , на котором основана форма, и список **расположения** , который определяет расположения и отделы в форме.
 
     > [!div class="mx-imgBorder"]
-    > источники данных ![SharePoint @ no__t-1
+    > ![SharePoint источники данных ](./media/dependent-drop-down-lists/data-sources.png)
 
 ## <a name="unlock-the-cards"></a>Разблокируйте карты
 
@@ -131,7 +130,7 @@ ms.PowerAppsDecimalTransform: true
 1. В верхней части правой панели переименуйте выбранный элемент управления, введя или вставляя **ддлокатион**.
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Rename элемент управления @ no__t-1
+    > ![Rename элемента управления ](./media/dependent-drop-down-lists/rename-control.png)
 
 1. Повторите предыдущие два шага в карточке **отдела** , чтобы переименовать элемент управления **раскрывающегося** списка на **дддепартмент**.
 
@@ -139,7 +138,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **Items** элемента **ддлокатион** следующую формулу:
 
-    `Distinct(Locations; Location)`
+    `Distinct(Locations, Location)`
 
 1. используемых Удерживая нажатой клавишу Alt, откройте **ддлокатион**и убедитесь, что в списке показаны три расположения.
 
@@ -155,11 +154,11 @@ ms.PowerAppsDecimalTransform: true
 1. В разделе **сопоставление поля**выберите **расположения** в верхнем списке, выберите **Расположение** в нижнем списке и нажмите кнопку **Применить**.
 
     > [!div class="mx-imgBorder"]
-    > ![Depends по ссылке @ no__t-1
+    > ![Depends по ссылке ](./media/dependent-drop-down-lists/depends-on.png)
 
     Для свойства **Items** объекта **дддепартмент** задана следующая формула:
 
-    `Filter(Locations; Location = ddLocation.Selected.Result)`
+    `Filter(Locations, Location = ddLocation.Selected.Result)`
 
     Эта формула фильтрует элементы в **дддепартмент** в зависимости от того, что пользователь выбирает в **ддлокатион**. Такая конфигурация гарантирует, что "дочерний" список отделов будет отражать данные для своего "родительского" расположения, так как в списке **расположений** в SharePoint указано.
 
@@ -168,7 +167,7 @@ ms.PowerAppsDecimalTransform: true
     Этот шаг задает отображаемый текст для параметров из столбца **Department** в списке **Locations (расположения** ) в SharePoint.
 
     > [!div class="mx-imgBorder"]
-    > значение @no__t 0Department @ no__t-1
+    > ![Department значение ](./media/dependent-drop-down-lists/dept-value.png)
 
 ## <a name="test-the-form"></a>Тестирование формы
 
@@ -177,17 +176,17 @@ ms.PowerAppsDecimalTransform: true
 Списки расположений и отделов отражают информацию в списке **расположений** в SharePoint.
 
 > [!div class="mx-imgBorder"]
-> ![Open список расположений, измените выбор с Ренфрев на Пемброке, а затем откройте список отделов @ no__t-1
+> ![Open список расположений, измените выбор с Ренфрев на Пемброке, а затем откройте список отделов ](./media/dependent-drop-down-lists/dropdowns.gif)
 
 ## <a name="save-and-open-the-form-optional"></a>Сохранение и открытие формы (необязательно)
 
-1. Откройте меню **файл** и выберите **сохранить** > **опубликовать в SharePoint** > **опубликовать в SharePoint**.
+1. Откройте меню **файл** и выберите **сохранить**  > **опубликовать в SharePoint**  > **опубликовать в SharePoint**.
 
 1. В левом верхнем углу нажмите на стрелку "Назад" и выберите **Вернуться в SharePoint**.
 
 1. На панели команд выберите **Создать**, чтобы открыть настроенную форму.
 
-## <a name="faq"></a>ВОПРОСЫ И ОТВЕТЫ
+## <a name="faq"></a>Вопросы и ответы
 
 **Данные не отображаются: все источники пусты или имеют неверные данные.**
 Проверьте, отображается ли нужное поле для элемента управления одним из следующих способов:
@@ -195,15 +194,15 @@ ms.PowerAppsDecimalTransform: true
 - Выберите раскрывающийся список, а затем выберите свойство **значение** на вкладке **свойства** правой панели.
 
     > [!div class="mx-imgBorder"]
-    > раскрывающийся список ![Change @ no__t-1
+    > раскрывающийся список ![Change ](./media/dependent-drop-down-lists/drop-down-display-field.png)
 
 - Выберите поле со списком и убедитесь, что основной текст является полем, которое необходимо отобразить.
 
     > [!div class="mx-imgBorder"]
-    > поле со списком ![Change @ no__t-1
+    > поле со списком ![Change ](./media/dependent-drop-down-lists/combo-box-display-field.png)
 
 **В раскрывающемся списке "мой ребенок" содержатся дублирующиеся элементы.**
-Вероятно, эта проблема связана с использованием столбца **подстановки** в SharePoint или функции **выбора** в PowerApps. Чтобы удалить дублирование, заключите **функцию, которая будет правильно** возвращать данные. Дополнительные сведения: [Функция DISTINCT](functions/function-distinct.md).
+Вероятно, эта проблема связана с использованием столбца **подстановки** в SharePoint или функции **выбора** в PowerApps. Чтобы удалить дублирование, заключите **функцию, которая будет правильно** возвращать данные. Дополнительные сведения: [DISTINCT Function](functions/function-distinct.md).
 
 ## <a name="known-limitations"></a>Известные ограничения
 
