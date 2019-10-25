@@ -357,6 +357,8 @@
               href: ./canvas-apps/sharepoint-lookup-fields.md
             - name: Добавление потока
               href: ./canvas-apps/using-logic-flows.md
+            - name: Создание правила в приложениях холста
+              href: ./canvas-apps/working-with-rules.md
             - name: Справочник формул
               items:
                 - name: Обзор
@@ -1348,6 +1350,8 @@
           href: ./common-data-service/navigate-specific-solution.md
         - name: Создание решения
           href: ./common-data-service/create-solution.md
+        - name: Использование переменных среды
+          href: ./common-data-service/EnvironmentVariables.md
         - name: Просмотр слоев решений
           href: ./common-data-service/solution-layers.md
         - name: Просмотр журнала решений
