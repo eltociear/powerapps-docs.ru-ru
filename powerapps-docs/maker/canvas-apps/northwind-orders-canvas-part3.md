@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 7a975669d1e22289b7152b830808631992389a1f
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 10/23/2019
 ms.locfileid: "71991610"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-detail-gallery-in-a-canvas-app"></a>Создание коллекции сведений в приложении Canvas
 
@@ -30,7 +29,7 @@ ms.PowerAppsDecimalTransform: true
 1. Создание коллекции сведений (**Этот раздел**).
 
 > [!div class="mx-imgBorder"]
-> @no__t 0Definition области экрана @ no__t-1
+> ![определения областей экрана](media/northwind-orders-canvas-part1/orders-parts.png)
 
 ## <a name="prerequisites"></a>Технические условия
 
@@ -41,7 +40,7 @@ ms.PowerAppsDecimalTransform: true
 1. В верхней части экрана выберите элемент управления [**Label**](controls/control-text-box.md) , который выступает в качестве строки заголовка, скопируйте его, нажав клавиши CTRL + C, а затем вставьте его, нажав клавиши CTRL + V:
 
     > [!div class="mx-imgBorder"]
-    > ![Copy и вставить заголовок @ no__t-1
+    > ![заголовок окна копирования и вставки](media/northwind-orders-canvas-part3/details-01.png)
 
 1. Измените размер копии и переместите ее, чтобы она появилась сразу под формой сводки.
 
@@ -51,47 +50,47 @@ ms.PowerAppsDecimalTransform: true
     - Присвойте свойству **Text** метки пустую строку (" **"** ).
 
     > [!div class="mx-imgBorder"]
-    > ![Remove текст из заголовка Copy @ no__t-1
+    > ![удалить текст из копии строки заголовка](media/northwind-orders-canvas-part3/details-02.png)
 
 ## <a name="add-a-gallery"></a>Добавление коллекции
 
 1. Вставить элемент управления " [**Галерея**](controls/control-gallery.md) " с **пустой вертикальной** компоновкой:
 
     > [!div class="mx-imgBorder"]
-    > ![Add пустая вертикальная коллекция @ no__t-1
+    > ![добавить пустую вертикальную коллекцию](media/northwind-orders-canvas-part3/details-03.png)
 
     Новая коллекция, в которой отображаются сведения о заказах, отображается в левом верхнем углу:
 
     > [!div class="mx-imgBorder"]
-    > @no__t — 0Default расположение коллекции Order-Details @ no__t-1
+    > ![расположение по умолчанию коллекции "Order-Details"](media/northwind-orders-canvas-part3/details-04.png)
 
 1. Закройте панель **данных** , а затем измените размер и переместите коллекцию сведений в правый нижний угол под новой строкой заголовка:
 
     > [!div class="mx-imgBorder"]
-    > @no__t — 0Final расположение коллекции Order-Details @ no__t-1
+    > ![конечное расположение коллекции «Order-Details»](media/northwind-orders-canvas-part3/details-05.png)
 
 1. Задайте для свойства **Items** коллекции Details следующую формулу:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gallery1.Selected.'Order Details'
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство Items коллекции Details @ no__t-1
+    > ![задать свойство Items коллекции Details](media/northwind-orders-canvas-part3/details-06.png)
 
     При появлении ошибки убедитесь, что коллекция заказов имеет имя **Gallery1** (на панели **древовидного представления** рядом с левой границей). Если у этой коллекции другое имя, переименуйте ее в **Gallery1**.
 
     Вы только что связали две галереи. Когда пользователь выбирает заказ в коллекции заказов, этот выбор определяет запись в сущности **Orders** . Если этот заказ содержит один или несколько элементов строк, запись в сущности **Orders** связывается с одной или несколькими записями в сущности « **сведения о заказе** », а данные из этих записей отображаются в коллекции сведений. Это поведение отражает связь «один ко многим», которая была создана между сущностями **Orders** и **Order Details** . Формула, которую вы указали, просматривает это отношение с помощью точечной нотации:
 
     > [!div class="mx-imgBorder"]
-    > отношение "![One-ко-многим" между сущностью Orders и сущностью Order Details @ no__t-1
+    > ![связь «один ко многим» между сущностью «Заказы» и сущностью «Order Details»](media/northwind-orders-canvas-part3/schema-orders-rel.png)
 
 ## <a name="show-product-names"></a>Показывать названия продуктов
 
 1. В коллекции сведений выберите **Добавить элемент на вкладке Вставка** , чтобы выбрать шаблон коллекции:
 
     > [!div class="mx-imgBorder"]
-    > ![Select шаблон для коллекции сведений @ no__t-1
+    > ![выбрать шаблон для коллекции сведений](media/northwind-orders-canvas-part3/details-07.png)
 
     Убедитесь, что вы выбрали шаблон коллекции, а не саму галерею. Ограничивающий прямоугольник должен быть немного внутри границы коллекции и, скорее всего, короче высоты галереи. При вставке элементов управления в этот шаблон они повторяются для каждого элемента в коллекции.
 
@@ -100,11 +99,11 @@ ms.PowerAppsDecimalTransform: true
     Метка должна отображаться в коллекции. Если этого не сделать, повторите попытку, но обязательно выберите шаблон коллекции перед вставкой метки.
 
     > [!div class="mx-imgBorder"]
-    > @no__t — 0Add метку в коллекцию Details @ no__t-1
+    > ![добавить метку в коллекцию сведений](media/northwind-orders-canvas-part3/details-08.png)
 
 1. Задайте для свойства **Text** новой метки следующую формулу:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Product.'Product Name'
     ```
 
@@ -113,24 +112,24 @@ ms.PowerAppsDecimalTransform: true
 1. Измените размер метки, чтобы появилась полная надпись:
 
     > [!div class="mx-imgBorder"]
-    > ![Show имя продукта в сведениях о заказе @ no__t-1
+    > ![показывать название продукта в подробных сведениях о заказе](media/northwind-orders-canvas-part3/details-09.png)
 
     Это выражение проходит из записи в сущности **Order Details** . Запись удерживается в **сиситем** с сущностью **Order Products** через связь «многие к одному»:
 
     > [!div class="mx-imgBorder"]
-    > связь «@no__t-к-одному» между сущностью «сведения о заказе» и сущностью «заказ продукта» @ no__t-1
+    > ![связь «многие к одному» между сущностью «сведения о заказе» и сущностью «заказ продуктов»](media/northwind-orders-canvas-part3/schema-orderdetails-rel.png)
 
     Извлекаются поля " **Название продукта** " (и другие поля, которые вы будете использовать):
 
     > [!div class="mx-imgBorder"]
-    > ![Fields в сущности Order Products @ no__t-1
+    > ![поля в сущности Order Products](media/northwind-orders-canvas-part3/schema-products-fields.png)
 
 ## <a name="show-product-images"></a>Отображение образов продуктов
 
 1. На вкладке **Вставка** вставьте элемент управления [**изображение**](controls/control-image.md) в коллекцию сведений:
 
     > [!div class="mx-imgBorder"]
-    > элемент управления Image ![Insert @ no__t-1
+    > ![вставить элемент управления изображения](media/northwind-orders-canvas-part3/details-10.png)
 
 1. Измените размер и переместите изображение и метку рядом друг с другом.
 
@@ -138,23 +137,23 @@ ms.PowerAppsDecimalTransform: true
     > Чтобы точно контролировать размер и положение элемента управления, Начните изменять его размер или переместить без нажатия клавиши ALT, а затем продолжайте изменять размер или перемещение элемента управления, удерживая нажатой клавишу Alt:
 
     > [!div class="mx-imgBorder"]
-    > элемент управления Image ![Move @ no__t-1
+    > ![](media/northwind-orders-canvas-part3/details-11.png) элемента управления "Перемещение изображения"
 
 1. Задайте **для свойства Image образа следующую** формулу:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Product.Picture
     ```
 
     Опять же, выражение ссылается на продукт, связанный с данным заказом, и извлекает поле **изображения** для отображения.
 
     > [!div class="mx-imgBorder"]
-    > @no__t — образ продукта 0Show @ no__t-1
+    > ![отобразить изображение продукта](media/northwind-orders-canvas-part3/details-12.png)
 
 1. Уменьшите высоту шаблона коллекции, чтобы в каждый момент времени появлялось более одной записи **детализации заказа** :
 
     > [!div class="mx-imgBorder"]
-    > ![Shorten шаблона коллекции @ no__t-1
+    > ![Сократите шаблон коллекции](media/northwind-orders-canvas-part3/details-13.png)
 
 ## <a name="show-product-quantity-and-cost"></a>Показывать количество и стоимость продукта
 
@@ -162,55 +161,55 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **Text** новой метки следующее выражение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Quantity
     ```
 
     Эта формула извлекает сведения непосредственно из сущности **Order Details** (связь не требуется).
 
     > [!div class="mx-imgBorder"]
-    > ![Showное количество товара @ no__t-1 
+    > ![показывать количество продуктов](media/northwind-orders-canvas-part3/details-13b.png) 
 
 1. На вкладке **Главная** измените выравнивание этого элемента управления на **верно**:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Change выравнивание @ no__t-1
+    > ![изменить выравнивание](media/northwind-orders-canvas-part3/details-14.png)
 
 1. На вкладке **Вставка** Вставьте еще одну метку в коллекцию сведений, а затем измените размер и переместите метку справа от метки Quantity.
 
 1. Задайте для свойства **Text** новой метки следующую формулу:
 
-    ```powerapps-comma
-    Text( ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
     ```
 
     Если вы не включили тег Language ( **[$-en-US]** ), он будет добавлен в соответствии с языком и регионом. Если используется другой тег языка, необходимо удалить **$** сразу после закрывающей квадратной скобки ( **]** ), а затем добавить в эту точку собственный символ валюты.
 
     > [!div class="mx-imgBorder"]
-    > Цена за единицу @no__t 0Show @ no__t-1
+    > ![показывать цену за единицу](media/northwind-orders-canvas-part3/details-15.png)
 
 1. На вкладке **Главная** измените выравнивание этого элемента управления на **верно**:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Change выравнивание @ no__t-1
+    > ![изменить выравнивание](media/northwind-orders-canvas-part3/details-16.png)
 
 1. На вкладке **Вставка** Вставьте еще один элемент управления Label в коллекцию сведений, а затем измените размер и переместите новую метку справа от цены за единицу.
 
 1. Задайте для свойства **Text** новой метки следующую формулу:
 
-    ```powerapps-comma
-    Text( ThisItem.Quantity * ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( ThisItem.Quantity * ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
     ```
 
     Опять же, если вы не включили тег Language ( **[$-en-US]** ), он будет добавлен в соответствии с языком и регионом. Если тег отличается, вместо **$** сразу после закрывающей квадратной скобки необходимо использовать собственный символ валюты.
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Show Расширенная Цена @ no__t-1
+    > ![показывать](media/northwind-orders-canvas-part3/details-17.png) расширенной цены
 
 1. На вкладке **Главная** измените выравнивание этого элемента управления на **верно**:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Change выравнивание @ no__t-1
+    > ![изменить выравнивание](media/northwind-orders-canvas-part3/details-18.png)
 
     Добавление элементов управления в галерею сведений теперь завершено.
 
@@ -221,61 +220,61 @@ ms.PowerAppsDecimalTransform: true
 1. На вкладке **Вставка** вставьте на экран еще одну метку:
 
     > [!div class="mx-imgBorder"]
-    > ![Insert метка @ no__t-1
+    > ![вставить метку](media/northwind-orders-canvas-part3/details-19.png)
 
 1. Измените размер и переместите новую метку над рисунками продуктов во второй строке заголовка, а затем замените цвет текста на белый на вкладке **Главная** .
 
 1. Дважды щелкните текст метки и введите **Product**:
 
     > [!div class="mx-imgBorder"]
-    > ![Change текст метки в Product @ no__t-1
+    > ![изменить текст метки на](media/northwind-orders-canvas-part3/details-20.png) продукта
 
 1. Скопируйте и вставьте метку продукта, а затем измените размер и переместите копию над столбцом количество.
 
 1. Дважды щелкните текст новой метки и введите **Quantity**:
 
     > [!div class="mx-imgBorder"]
-    > ![Change Метка Text to Quantity @ no__t-1
+    > ![изменить текст метки на количество](media/northwind-orders-canvas-part3/details-21.png)
 
 1. Скопируйте и вставьте метку Quantity, а затем измените размер и переместите копию над столбцом Unit-Price.
 
 1. Дважды щелкните текст новой метки и введите **Цена за единицу**:
 
     > [!div class="mx-imgBorder"]
-    > ![Change метка текста в цену за единицу @ no__t-1
+    > ![изменить текст метки на цену единицы](media/northwind-orders-canvas-part3/details-22.png)
 
 1. Скопируйте и вставьте метку единицы измерения, а затем измените размер и переместите копию над столбцом Расширенная цена.
 
 1. Дважды щелкните текст новой метки, а затем введите **Extended**:
 
     > [!div class="mx-imgBorder"]
-    > ![Change текст метки в расширенный @ no__t-1
+    > ![изменить текст метки на расширенный](media/northwind-orders-canvas-part3/details-23.png)
 
 ## <a name="display-order-totals"></a>Показать итоги в заказах
 
 1. Уменьшите высоту коллекции сведений, чтобы освободить место для итогов заказа в нижней части экрана:
 
     > [!div class="mx-imgBorder"]
-    > ![Shorten — коллекция Orders-Details @ no__t-1
+    > ![укороченная коллекция сведений о заказах](media/northwind-orders-canvas-part3/sum-01.png)
 
 1. Скопируйте и вставьте заголовок окна в середину экрана, а затем переместите копию в нижнюю часть экрана:
 
     > [!div class="mx-imgBorder"]
-    > Строка заголовка ![Copy и перемещение копирования в нижнюю границу @ no__t-1
+    > ![заголовок окна копирования и переместить копию на нижнюю границу](media/northwind-orders-canvas-part3/sum-02.png)
 
 1. Скопируйте и вставьте метку продукта из средней строки заголовка, а затем переместите копию в нижнюю строку заголовка, расположенную слева от столбца **Quantity (количество** ).
 
 1. Дважды щелкните текст новой метки и введите следующий текст:<br>**Итоги заказов:**
 
     > [!div class="mx-imgBorder"]
-    > ![Add метка для итогов заказа @ no__t-1
+    > ![добавить метку для итогов заказа](media/northwind-orders-canvas-part3/sum-03.png)
 
 1. Скопируйте и вставьте метку Order-сумм, а затем измените размер и переместите копию справа от метки Order-сумм.
 
 1. Задайте для свойства **Text** новой метки следующую формулу:
 
-    ```powerapps-comma
-    Sum( Gallery1.Selected.'Order Details'; Quantity )
+    ```powerapps-dot
+    Sum( Gallery1.Selected.'Order Details', Quantity )
     ```
 
     В этой формуле отображается предупреждение о делегировании, но его можно игнорировать, так как ни один заказ не будет содержать более 500 продуктов.
@@ -283,20 +282,20 @@ ms.PowerAppsDecimalTransform: true
 1. На вкладке **Главная** задайте для параметра выравнивание текста новой метки значение по **правому**краю:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Change выравнивание @ no__t-1
+    > ![изменить выравнивание](media/northwind-orders-canvas-part3/sum-04.png)
 
 1. Скопируйте и вставьте этот элемент управления Label, а затем измените размер и переместите копию в **расширенном** столбце.
 
 1. Задайте для свойства **Text** копии следующую формулу:
 
-    ```powerapps-comma
-    Text( Sum( Gallery1.Selected.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( Sum( Gallery1.Selected.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
     ```
 
     В этой формуле отображается предупреждение о делегировании, но его можно игнорировать, так как ни один заказ не будет содержать более 500 продуктов.
 
     > [!div class="mx-imgBorder"]
-    > ![Show Общая стоимость заказа @ no__t-1
+    > ![показывать общую стоимость](media/northwind-orders-canvas-part3/sum-05.png) заказов
 
 ## <a name="add-space-for-new-details"></a>Добавить пространство для новых сведений
 
@@ -307,41 +306,41 @@ ms.PowerAppsDecimalTransform: true
     В этом пространстве вы добавите элементы управления, чтобы пользователь мог добавить сведения о заказе:
 
     > [!div class="mx-imgBorder"]
-    > ![Shorten коллекция сведений @ no__t-1
+    > ![сократить коллекцию сведений](media/northwind-orders-canvas-part3/add-details-01.png)
 
 1. На вкладке **Вставка** вставьте метку, а затем измените ее размер и переместите ее в коллекции сведений.
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Insert метка @ no__t-1
+    > ![вставить метку](media/northwind-orders-canvas-part3/add-details-02.png)
 
 1. Дважды щелкните текст новой метки и нажмите клавишу DELETE.
 
 1. На вкладке **Главная** задайте для параметра цвет **заливки** новой метки значение **LightBlue**:
 
     > [!div class="mx-imgBorder"]
-    > @no__t — заливка метки 0Change голубой @ no__t-1
+    > ![изменить заливку метки на светло-синий](media/northwind-orders-canvas-part3/add-details-03.png)
 
 ## <a name="add-the-order-details-data-source"></a>Добавление источника данных «Order Details»
 
 1. На вкладке **вид** выберите **Источники данных**, а затем в области **данные** выберите **Добавить источник данных** :
 
     > [!div class="mx-imgBorder"]
-    > Источник данных ![Add @ no__t-1
+    > ![добавить](media/northwind-orders-canvas-part3/add-details-04.png) источника данных
 
 1. Выберите **Common Data Service**:
 
     > [!div class="mx-imgBorder"]
-    > ![Select Common Data Service @ no__t-1
+    > ![выберите Common Data Service](media/northwind-orders-canvas-part3/add-details-05.png)
 
 1. В верхней части панели **данных** введите **Order** в поле поиска, установите флажок **Order Details (сведения о заказе** ), а затем выберите **подключить** в нижней части панели:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Specify Order Details, сущность @ no__t-1
+    > ![указать сущность «сведения о заказе»](media/northwind-orders-canvas-part3/add-details-06.png)
 
     Вы только что добавили в приложение еще один источник данных:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0List источников данных @ no__t-1
+    > ![список источников данных](media/northwind-orders-canvas-part3/add-details-07.png)
 
     Необходимо добавить этот источник данных, так как приложение может выполнять чтение через связь "один ко многим". это приложение еще не может записать изменения обратно. Приложение должно вносить изменения непосредственно в связанную сущность.
 
@@ -349,21 +348,21 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="select-a-product"></a>Выберите продукт
 
-1. На вкладке **Вставка** выберите **элементы управления** **поле со списком** > :
+1. На вкладке **Вставка** выберите **элементы управления** > **поле со списком**:
 
     > [!div class="mx-imgBorder"]
-    > поле со списком ![Insert @ no__t-1
+    > ![вставить поле со списком](media/northwind-orders-canvas-part3/add-details-08.png)
 
     Элемент управления [ **"поле со списком"** ](controls/control-combo-box.md) отображается в левом верхнем углу.
 
 1. Задайте для свойства **Items** поля со списком следующую формулу:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Choices( 'Order Details'.Product )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство Items поля со списком @ no__t-1
+    > ![задать свойство Items поля со списком](media/northwind-orders-canvas-part3/add-details-09.png)
 
     Функция [**choice**](functions/function-choices.md) возвращает таблицу со всеми возможными значениями поля **Product** в сущности **Order Details** . Это поле является уточняющим запросом в связи «многие к одному», поэтому **выборка** возвращает все записи в сущности « **заказ товаров** ».
 
@@ -377,19 +376,19 @@ ms.PowerAppsDecimalTransform: true
     Логическое имя указывается, так как панель **данных** пока не поддерживает отображаемые имена в этом случае:
 
     > [!div class="mx-imgBorder"]
-    > ![Set основной текст для поля со списком @ no__t-1
+    > ![задать основной текст для поля со списком](media/northwind-orders-canvas-part3/add-details-10.png)
 
 1. Закройте панель « **данные** ».
 
 1. На вкладке **Свойства** , расположенной рядом с правой границей, прокрутите вниз, отключите **параметр Разрешить множественный выбор**и убедитесь, что включен режим **поиска разрешить** .
 
     > [!div class="mx-imgBorder"]
-    > ![Disable множественный выбор и включение поиска @ no__t-1
+    > ![отключить множественный выбор и включить поиск](media/northwind-orders-canvas-part3/add-details-12.png)
 
 1. Измените размер поля со списком и переместите его в область светло-синий, непосредственно под столбцом имя продукта в коллекции сведений:
 
     > [!div class="mx-imgBorder"]
-    > поле со списком ![Move @ no__t-1
+    > поле со списком ![перемещения](media/northwind-orders-canvas-part3/add-details-13.png)
 
     В этом поле со списком пользователь будет указывать запись в сущности **Product** для записи **сведений о заказе** , которую будет создавать приложение.
 
@@ -401,61 +400,61 @@ ms.PowerAppsDecimalTransform: true
 1. В появившемся списке продуктов выберите продукт:
 
     > [!div class="mx-imgBorder"]
-    > ![Select продукт в поле со списком @ no__t-1
+    > ![выберите продукт в поле со списком](media/northwind-orders-canvas-part3/add-details-14.png)
 
 ## <a name="add-a-product-image"></a>Добавление образа продукта
 
-1. На вкладке **Вставка** выберите **носитель** > **изображение**:
+1. На вкладке **Вставка** выберите **носитель**  > **изображение**:
 
     > [!div class="mx-imgBorder"]
-    > элемент управления Image ![Insert @ no__t-1
+    > ![вставить элемент управления изображения](media/northwind-orders-canvas-part3/add-details-15.png)
 
     Элемент управления " [**изображение**](controls/control-image.md) " отображается в левом верхнем углу:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Default расположение элемента управления Image @ no__t-1
+    > ![расположение по умолчанию для элемента управления Image](media/northwind-orders-canvas-part3/add-details-16.png)
 
 1. Изменить размер и переместить изображение в область светло-синий под другими образами продукта и рядом с полем со списком.
 
 1. Задайте для свойства **Image** образа значение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ComboBox1.Selected.Picture
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство Image образа @ no__t-1
+    > ![задать свойство Image](media/northwind-orders-canvas-part3/add-details-17.png)
 
     Вы используете тот же прием, что и для отображения изображения сотрудника в форме сводки. **Выбранное** свойство поля со списком возвращает всю запись выбранного пользователем продукта, включая поле **рисунка** .
 
 ## <a name="add-a-quantity-box"></a>Добавить поле "количество"
 
-1. На вкладке **Вставка** выберите **текст** > **Text input**:
+1. На вкладке **Вставка** выберите **текст** > **Ввод текста**:
 
     > [!div class="mx-imgBorder"]
-    > ![Add текстовое поле ввода @ no__t-1
+    > ![добавить поле ввода текста](media/northwind-orders-canvas-part3/add-details-18.png)
 
     Элемент управления [**Ввод текста**](controls/control-text-input.md) отображается в левом верхнем углу:
 
     > [!div class="mx-imgBorder"]
-    > ![Default расположение текстового поля ввода текста @ no__t-1
+    > ![расположение по умолчанию текстового поля ввода](media/northwind-orders-canvas-part3/add-details-19.png)
 
 1. Изменить размер и переместить текстовое поле ввода справа от поля со списком в столбце Количество в коллекции сведений:
 
     > [!div class="mx-imgBorder"]
-    > ![Resize и перемещение текста — поле ввода @ no__t-1
+    > ![изменить размер и переместить поле ввода текста](media/northwind-orders-canvas-part3/add-details-20.png)
 
     Используя это поле ввода текста, пользователь укажет поле **Quantity** в записи **сведения о заказе** .
 
 1. Задайте для свойства этого элемента управления **по умолчанию** значение **""** :
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство * * Default * * текстового поля ввода @ no__t-1
+    > ![задать свойство * * Default * * текстового поля ввода](media/northwind-orders-canvas-part3/add-details-21.png)
 
 1. На вкладке **Главная** задайте для параметра выравнивание текста этого элемента управления значение **верно**:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Change выравнивание @ no__t-1
+    > ![изменить выравнивание](media/northwind-orders-canvas-part3/add-details-22.png)
 
 ## <a name="show-the-unit-and-extended-prices"></a>Отображение единиц измерения и расширенных цен
 
@@ -464,16 +463,16 @@ ms.PowerAppsDecimalTransform: true
     Метка отображается в левом верхнем углу экрана:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Insert метка @ no__t-1
+    > ![вставить метку](media/northwind-orders-canvas-part3/add-details-23.png)
 
 1. Измените размер и переместите метку справа от элемента управления вводом текста и задайте в качестве значения свойства **Text** метки следующую формулу:
 
-    ```powerapps-comma
-    Text( ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство Text метки @ no__t-1
+    > ![задать свойство Text метки](media/northwind-orders-canvas-part3/add-details-24.png)
 
     Этот элемент управления показывает **цену по прейскуранту** из сущности **Order Products** . Это значение определит поле **Цена за единицу** в записи **сведений о заказе** .
 
@@ -483,18 +482,18 @@ ms.PowerAppsDecimalTransform: true
 1. На вкладке **Главная** Установите выравнивание текста в метке List-Price по **правому**краю:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Change выравнивание @ no__t-1
+    > ![изменить выравнивание](media/northwind-orders-canvas-part3/add-details-25.png)
 
 1. Скопируйте и вставьте метку List-Price, а затем измените размер и переместите копию справа от метки List-Price.
 
 1. Задайте для свойства **Text** новой метки следующую формулу:
 
-    ```powerapps-comma
-    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство Text новой метки @ no__t-1
+    > ![задать свойство Text новой метки](media/northwind-orders-canvas-part3/add-details-27.png)
 
     В этом элементе управления отображается расширенная цена на основе количества, указанного пользователем приложения, и прейскурантной стоимости продукта, выбранного пользователем приложения. Это исключительно информационный характер для пользователя приложения.
 
@@ -503,39 +502,39 @@ ms.PowerAppsDecimalTransform: true
     Метка **Расширенная** Цена пересчитывается для отображения нового значения:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Specify количество и отображение расширенной цены @ no__t-1
+    > ![указать количество и отобразить расширенную цену](media/northwind-orders-canvas-part3/add-details-28.png)
 
 ## <a name="add-an-add-icon"></a>Добавить значок добавления
 
 1. На вкладке **Вставка** выберите **значки** > **добавить**:
 
     > [!div class="mx-imgBorder"]
-    > ![Insert Добавление значка @ no__t-1
+    > ![добавить значок](media/northwind-orders-canvas-part3/add-details-29.png)
 
     Значок отображается в левом верхнем углу экрана.
 
     > [!div class="mx-imgBorder"]
-    > ![Default расположение добавления значка @ no__t-1
+    > ![расположение по умолчанию для значка добавления](media/northwind-orders-canvas-part3/add-details-30.png)
 
 1. Измените размер и переместите этот значок на правой границе светло-синей области, а затем присвойте свойству **OnSelect** значка следующую формулу:
 
-    ```powerapps-comma
-    Patch( 'Order Details';
-        Defaults('Order Details');
+    ```powerapps-dot
+    Patch( 'Order Details',
+        Defaults('Order Details'),
         {
-            Order: Gallery1.Selected;
-            Product: ComboBox1.Selected;
-            Quantity: Value(TextInput1.Text);
+            Order: Gallery1.Selected,
+            Product: ComboBox1.Selected,
+            Quantity: Value(TextInput1.Text),
             'Unit Price': ComboBox1.Selected.'List Price'
         }
-    );;
-    Refresh( Orders );;
-    Reset( ComboBox1 );;
+    );
+    Refresh( Orders );
+    Reset( ComboBox1 );
     Reset( TextInput1 )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство свойства Icon @ no__t-1
+    > ![задать свойство "Свойства" для значка](media/northwind-orders-canvas-part3/add-details-31.png)
 
     В общем случае функция [**Patch**](functions/function-patch.md) обновляет и создает записи, а конкретные аргументы в этой формуле определяют точные изменения, которые будут внесены функцией.
 
@@ -558,7 +557,7 @@ ms.PowerAppsDecimalTransform: true
     Порядок отражает указанные сведения.
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Animation Добавление сведений о заказе @ no__t-1
+    > ![анимации добавления сведений о заказе](media/northwind-orders-canvas-part3/add-details.gif)
 
 1. используемых Добавьте в заказ еще один элемент.
 
@@ -569,26 +568,26 @@ ms.PowerAppsDecimalTransform: true
 1. В центре экрана выберите шаблон коллекции сведений:
 
     > [!div class="mx-imgBorder"]
-    > шаблон коллекции ![Select @ no__t-1
+    > ![выбрать шаблон коллекции](media/northwind-orders-canvas-part3/remove-details-01.png)
 
 1. На вкладке **Вставка** выберите **значки** > **Корзина**:
 
     > [!div class="mx-imgBorder"]
-    > значок корзины ![Insert @ no__t-1
+    > ![вставить значок корзины](media/northwind-orders-canvas-part3/remove-details-02.png)
 
     Значок корзины отображается в левом верхнем углу шаблона коллекции.
 
     > [!div class="mx-imgBorder"]
-    > ![Default расположение Icon @ no__t-1
+    > ![расположение по умолчанию](media/northwind-orders-canvas-part3/remove-details-03.png) значка
 
 1. Измените размер и переместите значок корзины на правую сторону шаблона коллекции подробных сведений и задайте в качестве значения свойства " **OnSelect** " этой формулы:
 
-    ```powerapps-comma
-    Remove( 'Order Details'; ThisItem );; Refresh( Orders )
+    ```powerapps-dot
+    Remove( 'Order Details', ThisItem ); Refresh( Orders )
     ```
 
     > [!div class="mx-imgBorder"]
-    > ![Set свойство свойства Icon @ no__t-1
+    > ![задать свойство "Свойства" для значка](media/northwind-orders-canvas-part3/remove-details-04.png)
 
     На момент написания этой статьи нельзя удалить запись непосредственно из связи, поэтому функция [**Remove**](functions/function-remove-removeif.md) удаляет запись непосредственно из связанной сущности. **Сиситем** указывает удаляемую запись, взятую из той же записи в коллекции сведений, где отображается значок корзины.
 
@@ -599,17 +598,17 @@ ms.PowerAppsDecimalTransform: true
 1. Попробуйте добавить и удалить различные сведения о заказе из заказов:
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Animation Добавление и удаление сведений о заказе @ no__t-1
+    > ![анимации добавления и удаления сведений о заказе](media/northwind-orders-canvas-part3/remove-details.gif)
 
 ## <a name="in-conclusion"></a>В заключение
 
 Итак, вы добавили еще одну галерею для отображения сведений о заказе и элементы управления, добавляя и удаляющие сведения о заказе в приложении. Вы использовали следующие элементы:
 
-- Второй элемент управления "Коллекция", связанный с коллекцией заказов через связь "один ко многим": **Gallery2. Items** =  @ no__t-2
+- Второй элемент управления "Коллекция", связанный с коллекцией заказов через связь "один ко многим": **Gallery2. Items** = `Gallery1.Selected.'Order Details'`
 - Связь «многие к одному» из сущности « **сведения о заказе** » в сущность « **заказ товаров** »: `ThisItem.Product.'Product Name'` и `ThisItem.Product.Picture`
-- Функция **выбора** для получения списка продуктов: `Choices( 'Order Details'.Product' )`.
+- Функция **выбора** для получения списка продуктов: `Choices( 'Order Details'.Product' )`
 - **Выбранное** свойство поля со списком в качестве полной связанной записи "многие к одному": `ComboBox1.Selected.Picture` и `ComboBox1.Selected.'List Price'`
-- Функция **Patch** для создания записи **сведений о заказе** : `Patch( 'Order Details'; Defaults( 'Order Details' ); ... )`.
-- Функция **Remove** для удаления записи **сведений о заказе** : `Remove( 'Order Details'; ThisItem )`
+- Функция **Patch** для создания записи **сведений о заказе** : `Patch( 'Order Details', Defaults( 'Order Details' ), ... )`
+- Функция **Remove** для удаления записи **сведений о заказе** : `Remove( 'Order Details', ThisItem )`
 
 В этой серии разделов было кратко пошаговое руководство по использованию отношений Common Data Service и наборов параметров в приложении Canvas в целях обучения. Перед выпуском любого приложения в рабочей среде следует учитывать проверку полей, обработку ошибок и многие другие факторы.
