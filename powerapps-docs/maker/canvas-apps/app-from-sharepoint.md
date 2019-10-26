@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 08/09/2018
+ms.date: 10/24/2018
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: af06a3707073498df65f782fc634c1e93b1760c5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 101c77b7bdd84e2d2ed31febc441e54944eb9fa3
+ms.sourcegitcommit: fa6ad01cf6d025d46564d755915caaa9db517c41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994082"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72902449"
 ---
 # <a name="generate-a-canvas-app-in-powerapps-from-a-sharepoint-list"></a>Создание приложения на основе холста в PowerApps из списка SharePoint
 
@@ -94,6 +94,9 @@ ms.locfileid: "71994082"
     - Чтобы удалить представление из SharePoint, выберите **Удалить это представление**.
 
         Чтобы удалить приложение из PowerApps, [удалите приложение](delete-app.md).
+
+> [!NOTE]
+> Приложения, созданные из списка SharePoint, в настоящее время не отображаются на мобильном устройстве PowerApps.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 В этом разделе вы создали приложение для управления данными в списке SharePoint. Далее вы создадите приложение на основе более сложного списка и настроите его (начиная с экрана обзора) так, как вам требуется.
