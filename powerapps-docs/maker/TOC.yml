@@ -32,7 +32,9 @@
           items:
             - name: Просмотр профиля
               href: ../user/view-your-user-profile.md
-            - name: Настройка дополнительных параметров
+            - name: Поиск администратора или специалиста поддержки
+              href: ../user/find-admin.md
+            - name: Настройка личных параметров
               href: ../user/set-personal-options.md
             - name: Использование средства чтения с экрана
               href: ../user/screen-reader.md
@@ -85,6 +87,8 @@
               href: ../user/export-excel-static-worksheet.md
             - name: Экспорт в сводную таблицу Excel
               href: ../user/export-excel-pivottable.md
+            - name: Объединение повторяющихся записей
+              href: ../user/merge-duplicate-records.md
         - name: Отчеты
           items:
             - name: Работа с отчетами
