@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/29/2019
 ms.locfileid: "71995858"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-summary-form-in-a-canvas-app"></a>Создание формы сводки в приложении Canvas
 
@@ -96,7 +97,7 @@ ms.locfileid: "71995858"
 
 1. В строке формул задайте для свойства **DataSource** формы следующее значение:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Orders
     ```
 
@@ -215,7 +216,7 @@ ms.locfileid: "71995858"
 
 1. Задайте для свойства **элемента** формы сводки следующее выражение:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gallery1.Selected
     ```
 
@@ -294,7 +295,7 @@ ms.locfileid: "71995858"
 
 1. Задайте для **свойства Image изображения эту** формулу, заменив номер в конце датакардвалуе при необходимости:
 
-    ```powerapps-dot
+    ```powerapps-comma
     DataCardValue7.Selected.Picture
     ```
 
@@ -327,7 +328,7 @@ ms.locfileid: "71995858"
 
 1. В области **представление в виде дерева** убедитесь, что имя формы — **Form1**, а затем задайте для свойства **OnSelect** значка следующую формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     SubmitForm( Form1 )
     ```
 
@@ -338,8 +339,8 @@ ms.locfileid: "71995858"
 
 1. Задайте для свойства **DisplayMode** этого значка следующую формулу:
 
-    ```powerapps-dot
-    If( Form1.Unsaved, DisplayMode.Edit, DisplayMode.Disabled )
+    ```powerapps-comma
+    If( Form1.Unsaved; DisplayMode.Edit; DisplayMode.Disabled )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -349,7 +350,7 @@ ms.locfileid: "71995858"
 
 1. Присвойте свойству **дисабледколор** значка это значение:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -380,7 +381,7 @@ ms.locfileid: "71995858"
 
 1. Задайте в качестве значения свойства **OnSelect** значка отмены следующую формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ResetForm( Form1 )
     ```
 
@@ -391,8 +392,8 @@ ms.locfileid: "71995858"
 
 1. Задайте для свойства **DisplayMode** значка отмены следующую формулу:
 
-    ```powerapps-dot
-    If( Form1.Unsaved Or Form1.Mode = FormMode.New, DisplayMode.Edit, DisplayMode.Disabled )
+    ```powerapps-comma
+    If( Form1.Unsaved Or Form1.Mode = FormMode.New; DisplayMode.Edit; DisplayMode.Disabled )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -402,7 +403,7 @@ ms.locfileid: "71995858"
 
 1. Задайте для свойства **дисабледколор** значка отмены следующее значение:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -433,7 +434,7 @@ ms.locfileid: "71995858"
 
 1. Задайте в этой формуле **свойство добавления** значка:
 
-    ```powerapps-dot
+    ```powerapps-comma
     NewForm( Form1 )
     ```
 
@@ -444,8 +445,8 @@ ms.locfileid: "71995858"
 
 1. Задайте в качестве значения свойства **DisplayMode** значка следующую формулу:
 
-    ```powerapps-dot
-    If( Form1.Unsaved Or Form1.Mode = FormMode.New, DisplayMode.Disabled, DisplayMode.Edit )
+    ```powerapps-comma
+    If( Form1.Unsaved Or Form1.Mode = FormMode.New; DisplayMode.Disabled; DisplayMode.Edit )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -458,7 +459,7 @@ ms.locfileid: "71995858"
 
 1. Задайте для свойства **дисабледколор** значка это значение:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -492,8 +493,8 @@ ms.locfileid: "71995858"
 
 1. Присвойте свойству " **OnSelect** " значка корзины следующую формулу:
 
-    ```powerapps-dot
-    Remove( Orders, Gallery1.Selected )
+    ```powerapps-comma
+    Remove( Orders; Gallery1.Selected )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -503,8 +504,8 @@ ms.locfileid: "71995858"
 
 1. Задайте для свойства **DisplayMode** значка корзины следующую формулу:
 
-    ```powerapps-dot
-    If( Form1.Mode = FormMode.New, DisplayMode.Disabled, DisplayMode.Edit )
+    ```powerapps-comma
+    If( Form1.Mode = FormMode.New; DisplayMode.Disabled; DisplayMode.Edit )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -514,7 +515,7 @@ ms.locfileid: "71995858"
 
 1. Задайте для свойства **дисабледколор** значка корзины следующее значение:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Gray
     ```
 
@@ -537,7 +538,7 @@ ms.locfileid: "71995858"
 - Значок для сохранения изменений в заказе: `SubmitForm( Form1 )`
 - Значок для отмены изменений в заказе: `ResetForm( Form1 )`
 - Значок для создания заказа: `NewForm( Form1 )`
-- Значок для удаления заказа: `Remove( Orders, Gallery1.Selected )`
+- Значок для удаления заказа: `Remove( Orders; Gallery1.Selected )`
 
 ## <a name="next-step"></a>Дальнейшие действия
 
