@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d7783113c7102d9c8b292d0ee84d4329709eeaa7
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71705238"
 ---
 # <a name="working-with-environments-and-microsoft-powerapps"></a>Работа со средами и Microsoft PowerApps
@@ -31,12 +31,12 @@ ms.locfileid: "71705238"
 При регистрации и первом входе в PowerApps он открывается в среде по умолчанию, которую можно найти в правом верхнем углу страницы.
 
 > [!div class="mx-imgBorder"]
-> ![Default ](./media/working-with-environments/env-dropdown.png) среды
+> ![среды по умолчанию](./media/working-with-environments/env-dropdown.png)
 
 Все пользователи в организации могут получить доступ к среде по умолчанию. Вы можете создавать приложения в этой среде и совместно использовать приложения с другими пользователями. У вас также может быть доступ к другим средам, будь [то их создание](../../administrator/environments-administration.md) или другие. Можно переключить среду, открыв список сред в правом верхнем углу и выбрав другую среду. В этом примере показано переключение с **Майкрософт** на **мйовненв**.
 
 > [!div class="mx-imgBorder"]
-> ![Switch ](./media/working-with-environments/switch-environment.png) среды
+> ![](./media/working-with-environments/switch-environment.png) среды коммутатора
 
 После переключения сред в новой среде отобразятся все приложения, к которым у вас есть доступ в этой среде.
 

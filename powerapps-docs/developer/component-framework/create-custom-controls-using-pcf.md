@@ -11,32 +11,33 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
-ms.openlocfilehash: 286458da2ed7b7b94f92b86355bf8785161ef778
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.openlocfilehash: 9a02b64321564b0a09e6b53223f13748358d76cf
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72347022"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025772"
 ---
 # <a name="create-and-build-a-code-component"></a>Создание и построение компонента кода
 
-В этом разделе объясняется, как создавать и развертывать компоненты кода с помощью командной строки PowerApps. Убедитесь, что установлен [Microsoft POWERAPPS CLI](https://aka.ms/PowerAppsCLI).
+В этом разделе показано, как создавать и развертывать компоненты кода с помощью командной строки PowerApps. Убедитесь, что установлен [Microsoft POWERAPPS CLI](https://aka.ms/PowerAppsCLI).
 
 ## <a name="create-a-new-component"></a>Создание нового компонента
 
 Чтобы начать, откройте **Командная строка разработчика для VS 2017** после установки PowerApps CLI.
 
-1. На Командная строка разработчика для VS 2017 создайте новую папку на локальном компьютере, например *К:\усерс\йоур name\Documents\My_PCF_Component* с помощью команды `mkdir <Specify the folder name>`.
+1. На Командная строка разработчика для VS 2017 создайте новую папку на локальном компьютере, например *К:\усерс\йоур name\Documents\My_code_Component* с помощью команды `mkdir <Specify the folder name>`.
 2. Перейдите к созданной папке с помощью команды `cd <specify your new folder path>`.
-3. Выполните следующую команду, чтобы создать новый проект компонента, передав некоторые основные параметры:
+3. Создайте новый проект компонента, передав некоторые основные параметры с помощью команды:
 
-    `pac pcf init --namespace <specify your namespace here> --name <put component name here> --template <component type>`
+    `pac pcf init --namespace <specify your namespace here> --name <Name of the code component> --template <component type>`
  
    > [!NOTE]
-   > В настоящее время в интерфейсе командной строки PowerApps поддерживаются два типа компонентов: **поле** и **набор данных**.  Для приложений Canvas поддерживается только тип **поля** в экспериментальном предварительном просмотре.
+   > В настоящее время в интерфейсе командной строки PowerApps поддерживаются два типа компонентов: **поле** и **набор данных** для приложений, управляемых моделью.  Для приложений Canvas поддерживается только тип **поля** в экспериментальном предварительном просмотре.
 
 4. Чтобы получить все необходимые зависимости проекта, выполните команду `npm install`.
-5. Откройте папку проекта `C:\Users\<your name>\Documents\<My_PCF_Component>` в любой среде разработчика по своему усмотрению и приступите к разработке компонентов кода. Самый быстрый способ начать работу — запустить `code .` из командной строки в `C:\Users\<your name>\Documents\<My_PCF_Component>` Directory. Эта команда открывает проект компонента в Visual Studio Code.
+5. Откройте папку проекта `C:\Users\<your name>\Documents\<My_code_Component>` в любой среде разработчика по своему усмотрению и приступите к разработке компонентов кода. Самый быстрый способ начать работу — запустить `code .` из командной строки в `C:\Users\<your name>\Documents\<My_code_Component>` Directory. Эта команда открывает проект компонента в Visual Studio Code.
+6. Реализуйте необходимые артефакты для компонента, например манифеста, логики компонентов и стилизации, а затем создайте проект компонента. Дополнительные сведения: [Реализация образца компонента](implementing-controls-using-typescript.md)
 
 ## <a name="build-your-component"></a>Создание компонента
 

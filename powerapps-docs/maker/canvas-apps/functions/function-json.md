@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: ba852093da05c3fa69cc47b219a0bef65908c170
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71992624"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="json-function-in-powerapps"></a>Функция JSON в PowerApps
 
@@ -35,16 +34,16 @@ ms.PowerAppsDecimalTransform: true
 |-----------|-------------|---------|
 | **Логическая** | *true* или *false*. | `true` |
 | **Цвет** | Строка, содержащая 8-значное шестнадцатеричное представление цвета. В этом представлении используется формат #*ррггббаа*, где *RR* — красный компонент, *GG* — зеленый, *BB* — синий, а *AA* — альфа-канал. Для альфа-канала **00** является полностью прозрачным, а **FF** — полностью непрозрачным. Строку можно передать в функцию [**колорвалуе**](function-colors.md) .  | `"#102030ff"` |
-| **Валюта** | Число, использующее соответствующий десятичный разделитель для языка пользователя. При необходимости используется экспоненциальная нотация. | `1,345` |
+| **Валюта** | Число, использующее соответствующий десятичный разделитель для языка пользователя. При необходимости используется экспоненциальная нотация. | `1.345` |
 | **Дата** | Строка, содержащая дату в формате ISO 8601 **гггг-мм-дд** . | `"2019-03-31"` |
 | **DateTime** | Строка, содержащая дату и время ISO 8601. Значения даты и времени задаются в формате UTC, а завершающее "Z" означает.  | `"2019-03-31T22:32:06.822Z"`  |
 | **УСТРОЙСТВА** | Строка, содержащая значение GUID. Буквы приведены в нижнем регистре. | `"751b58ac-380e-4a04-a925-9f375995cc40"`
 | **Изображение, мультимедиа** | Если указан **инклудебинаридата** , файлы мультимедиа кодируются в виде строки. Веб-ссылки, использующие схему HTTP: или HTTPS: URL-адрес, не изменяются. Ссылки на двоичные данные в памяти кодируются с помощью формата ["Data:*MIMEType*; Base64,..."](https://en.wikipedia.org/wiki/Data_URI_scheme) . Данные в памяти включают изображения, захваченные пользователями с помощью элемента управления [**Camera**](../controls/control-camera.md) и других ссылок с схемами URL-адресов аппрес: и BLOB:.| `"data:image/jpeg;base64,/9j/4AA..."` |
-| **Нумерация** | Число, использующее соответствующий десятичный разделитель для языка пользователя. При необходимости используется экспоненциальная нотация. | `1,345` |
+| **Нумерация** | Число, использующее соответствующий десятичный разделитель для языка пользователя. При необходимости используется экспоненциальная нотация. | `1.345` |
 | **Параметр &nbsp;set** | Числовое значение набора параметров, а не метки, используемой для вывода. Числовое значение используется, так как оно не зависит от языка.  | `1001` |
 | **Таймаут** | Строка, содержащая формат ISO 8601 *чч: мм: СС. FFF* .  | `"23:12:49.000"` |
-| **Записать** | Разделенный запятыми список полей и их значений между **{** и **}** . Эта нотация похожа на записи в приложениях Canvas, но имя всегда заключено в двойные кавычки. Этот формат не поддерживает записи, основанные на связях "многие к одному".  | `{ "First Name": "Fred"; "Age": 21 }` |
-| **Таблица** | Список с разделителями-запятыми (от **[** до **]** ) записей. Этот формат не поддерживает таблицы, основанные на связях "один ко многим".  | `[ { "First Name": "Fred"; "Age": 21 }; { "First Name": "Jean"; "Age": 20 } ]` |
+| **Записать** | Разделенный запятыми список полей и их значений между **{** и **}** . Эта нотация похожа на записи в приложениях Canvas, но имя всегда заключено в двойные кавычки. Этот формат не поддерживает записи, основанные на связях "многие к одному".  | `{ "First Name": "Fred", "Age": 21 }` |
+| **Таблица** | Список с разделителями-запятыми (от **[** до **]** ) записей. Этот формат не поддерживает таблицы, основанные на связях "один ко многим".  | `[ { "First Name": "Fred", "Age": 21 }, { "First Name": "Jean", "Age": 20 } ]` |
 | **Два &nbsp;option** | Логическое значение двух параметров ( *true* или *false*), а не метка, используемая для вывода. Логическое значение используется, так как оно не зависит от языка. | `false` |
 | **Гиперссылка, текст** | Строка между двойными кавычками. Функция переключает внедренные двойные кавычки обратной косой чертой, заменяет символы новой строки символом "\n" и делает другие стандартные замены JavaScript. | `"This is a string."` |
 
@@ -66,7 +65,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="syntax"></a>Синтаксис
 
-**JSON**( *Структура структуры* ; *Формат* ])
+**JSON**( *Структура структуры* , *Формат* ])
 
 * Требуется *Структура структуры* . Структура данных для преобразования в формат JSON.  Таблицы, записи и примитивные значения поддерживаются с произвольной вложенностью.
 * *Format* — необязательный.  Значение перечисления **JSONFormat** . Значение по умолчанию — **Compact**, что не добавляет символы новой строки или пробелы и блокирует двоичные данные и неподдерживаемые столбцы.
@@ -77,16 +76,16 @@ ms.PowerAppsDecimalTransform: true
 
 1. Вставьте элемент управления [ **"Кнопка"** ](../controls/control-button.md) и задайте для его свойства **OnSelect** значение этой формулы.
 
-    ```powerapps-comma
-    ClearCollect( CityPopulations;
-        { City: "London";    Country: "United Kingdom"; Population: 8615000 };
-        { City: "Berlin";    Country: "Germany";        Population: 3562000 };
-        { City: "Madrid";    Country: "Spain";          Population: 3165000 };
-        { City: "Hamburg";   Country: "Germany";        Population: 1760000 };
-        { City: "Barcelona"; Country: "Spain";          Population: 1602000 };
-        { City: "Munich";    Country: "Germany";        Population: 1494000 }
-    );;
-    ClearCollect( CitiesByCountry; GroupBy( CityPopulations; "Country"; "Cities" ) )
+    ```powerapps-dot
+    ClearCollect( CityPopulations,
+        { City: "London",    Country: "United Kingdom", Population: 8615000 },
+        { City: "Berlin",    Country: "Germany",        Population: 3562000 },
+        { City: "Madrid",    Country: "Spain",          Population: 3165000 },
+        { City: "Hamburg",   Country: "Germany",        Population: 1760000 },
+        { City: "Barcelona", Country: "Spain",          Population: 1602000 },
+        { City: "Munich",    Country: "Germany",        Population: 1494000 }
+    );
+    ClearCollect( CitiesByCountry, GroupBy( CityPopulations, "Country", "Cities" ) )
     ```
 
 1. Нажмите кнопку, удерживая клавишу ALT.
@@ -94,17 +93,17 @@ ms.PowerAppsDecimalTransform: true
     Коллекция **Цитиесбикаунтри** создается с помощью этой структуры данных, которую можно отобразить, выбрав пункт **коллекции** в меню **файл** , а затем выбрав имя коллекции.
 
     > [!div class="mx-imgBorder"]
-    > ](media/function-json/cities-grouped.png) сбора ![CitiesByCountry
+    > ](media/function-json/cities-grouped.png) коллекции ![Цитиесбикаунтри
 
     Эту коллекцию также можно отобразить, выбрав **файл**  > **Параметры приложения**  > **Дополнительные параметры**  > **включить представление результатов панели формул**, выбрав имя коллекции в строке формул, а затем выбрав элемент Стрелка вниз рядом с именем коллекции в строке формул.
 
     > [!div class="mx-imgBorder"]
-    > ![Collection в представлении результатов в строке формул ](media/function-json/cities-grouped-resultview.png)
+    > ![коллекции в представлении результатов в строке формул](media/function-json/cities-grouped-resultview.png)
 
 1. Вставьте еще одну кнопку и задайте для ее свойства **OnSelect** следующую формулу:
 
-    ```powerapps-comma
-    Set( CitiesByCountryJSON; JSON( CitiesByCountry ) )
+    ```powerapps-dot
+    Set( CitiesByCountryJSON, JSON( CitiesByCountry ) )
     ```
 
     Эта формула задает для глобальной переменной **Цитиесбикаунтрижсон** представление JSON для **Цитиесбикаунтри**.
@@ -113,7 +112,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Вставьте элемент управления [**Label**](../controls/control-text-box.md) и присвойте его свойству **Text** значение этой переменной.
 
-    ```powerapps-comma
+    ```powerapps-dot
     CitiesByCountryJSON
     ```
 
@@ -125,8 +124,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Измените формулу второй кнопки, чтобы сделать вывод более удобочитаемым.
 
-    ```powerapps-comma
-    Set( CitiesByCountryJSON; JSON(CitiesByCountry; JSONFormat.IndentFour ))
+    ```powerapps-dot
+    Set( CitiesByCountryJSON, JSON(CitiesByCountry, JSONFormat.IndentFour ))
     ```
 
 1. Нажмите вторую кнопку, удерживая нажатой клавишу ALT.
@@ -185,15 +184,15 @@ ms.PowerAppsDecimalTransform: true
 
 1. Добавьте элемент управления [ **"Кнопка"** ](../controls/control-button.md) и задайте для него в качестве значения свойства **OnSelect** эту формулу.
 
-    ```powerapps-comma
-    Set( ImageJSON; JSON( SampleImage; JSONFormat.IncludeBinaryData ) )
+    ```powerapps-dot
+    Set( ImageJSON, JSON( SampleImage, JSONFormat.IncludeBinaryData ) )
     ```
 
 1. Нажмите кнопку, удерживая клавишу ALT.
 
 1. Добавьте метку и присвойте ее свойству **Text** значение этой переменной.
 
-    ```powerapps-comma
+    ```powerapps-dot
     ImageJSON
     ```
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cb8c77b60caa1f1ddf07e12f50e3cd52df764627
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 22260480d24cea999128f3c85cdf99e839d5f740
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71995610"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025917"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>Предоставление общего доступа к приложению на основе холста в PowerApps
 
@@ -201,13 +201,13 @@ ms.locfileid: "71995610"
 #### <a name="what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them"></a>Какая лицензия должна быть назначена моей гостевой виртуальной машине, чтобы они могли запускать приложение с общим доступом?
 Та же самая лицензия, которая необходима для запуска приложения не-гостями. Например, если приложение не использует подключаемые программы уровня "Премиум", то достаточно лицензии PowerApps P1, чтобы назначить ее гостевой системе.  
 
-
 |                                 | Настраиваемая форма SharePoint | Автономное приложение Canvas с использованием соединителей без категории "Премиум" | Автономное приложение Canvas с использованием соединителей категории "Премиум" | Приложение, управляемое моделью |
 |---------------------------------|----------------------------|----------------------------------------------------|------------------------------------------------|------------------|
 | Пользователь SharePoint (без лицензии PA) | x                          |                                                    |                                                |                  |
 | Включена в PowerApps с Office    | x                          |                                                    |                                                |                  |
-| План 1 плана PowerApps                | x                          | x                                                  |                                                |                  |
-| PowerApps Plan2                 | x                          | x                                                  | x                                              | x                |
+| План для каждого приложения PowerApps          | x                          | x                                                  | x                                              | x                |
+| План PowerApps на пользователя         | x                          | x                                                  | x                                              | x                |
+
 
 #### <a name="in-powerapps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>Как в PowerApps Mobile вы видите приложения для своего домашнего клиента?
 Любой пользователь, который получил доступ к приложению Canvas, на мобильном устройстве, опубликованном в клиенте Azure AD, который не является своим домашним клиентом, должен выйти из PowerApps и войти в службу PowerApps Mobile.  

@@ -9,12 +9,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.topic: article
 author: Nkrb
-ms.openlocfilehash: 3042202fd1790d117c2a503bd6e69eaaea15c08a
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.openlocfilehash: 4bb581e06102ac351b3202d30fa8d418951fa291
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72346815"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025685"
 ---
 # <a name="package-a-code-component"></a>Упаковка компонента кода
 
@@ -22,7 +22,7 @@ ms.locfileid: "72346815"
 
 Чтобы создать и импортировать файл решения, выполните следующие действия.
 
-1. Создайте новую папку и назовите ее **решение** (или любое имя по своему усмотрению) с помощью команды `mkdir Solutions`. Перейдите в каталог с помощью команды `cd Solutions`.
+1. Создайте новую папку в папке образца компонента и назовите ее **Solution** (или любое другое имя) с помощью команды `mkdir Solutions`. Перейдите в каталог с помощью команды `cd Solutions`.
 
 2. Создайте новый проект решений с помощью команды `pac solution init --publisher-name <enter your publisher name> --publisher-prefix <enter your publisher prefix>`. Проект решения используется для объединения компонента кода в ZIP-файл решения, который используется для импорта в Common Data Service.
 
@@ -45,7 +45,7 @@ ms.locfileid: "72346815"
     > - Если при выполнении команды `msbuild` в решении возникает ошибка, которая говорит о *неоднозначном имени проекта* , убедитесь, что имя решения и имя проекта не совпадают.
 
 4. Созданные файлы решения находятся в папке `\bin\debug\` после успешного завершения сборки.
-5. Вручную [импортируйте решение в Common Data Service](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/import-update-upgrade-solution) с помощью веб-портала или ознакомьтесь с разделом [Проверка подлинности в Организации](#authenticating-to-your-organization) и [развертывании](#deploying-code-components) , чтобы импортировать с помощью команд CLI для PowerApps.
+5. Вручную [импортируйте решение в Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) с помощью веб-портала или ознакомьтесь с разделом [Проверка подлинности в Организации](#authenticating-to-your-organization) и [развертывании](#deploying-code-components) , чтобы импортировать с помощью команд CLI для PowerApps.
 
 ## <a name="authenticating-to-your-organization"></a>Проверка подлинности в Организации
 

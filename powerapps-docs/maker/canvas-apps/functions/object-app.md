@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b0ab20ce5e0700337bb059644c458a2665d20f1e
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71983522"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="app-object-in-powerapps"></a>Объект приложения в PowerApps
 
@@ -32,7 +31,7 @@ ms.PowerAppsDecimalTransform: true
 Можно написать формулы для некоторых свойств объекта **приложения** . В верхней части панели **представления в виде дерева** выберите объект **приложения** , как и любой другой элемент управления или экран. Просмотрите и измените одно из свойств объекта, выбрав его в раскрывающемся списке слева от строки формул.
 
 > [!div class="mx-imgBorder"]
-> ![The объект приложения на панели древовидного представления ](media/object-app/appobject.png)
+> ![объект приложения на панели древовидного представления](media/object-app/appobject.png)
 
 ## <a name="activescreen-property"></a>Активескрин, свойство
 
@@ -55,7 +54,7 @@ ms.PowerAppsDecimalTransform: true
 После изменения свойства **OnStart** протестируйте его, наведя указатель мыши на объект **приложения** на панели **древовидного представления** , нажав кнопку с многоточием (...), а затем выбрав команду **запустить OnStart**. В отличие от загрузки приложения в первый раз, существующие коллекции и переменные уже будут установлены. Чтобы начать с пустых коллекций, используйте функцию **[клеарколлект](function-clear-collect-clearcollect.md)** вместо функции **сбора** .
 
 > [!div class="mx-imgBorder"]
-> контекстное меню ![App элемента для запуска ](media/object-app/appobject-runonstart.png)
+> ![контекстное меню элемента приложения для запуска](media/object-app/appobject-runonstart.png)
 
 ## <a name="confirmexit-properties"></a>Свойства Конфирмексит
 
@@ -102,20 +101,20 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **конфирмексит** объекта **приложения** следующее выражение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     AccountForm.Unsaved Or ContactForm.Unsaved
     ```
 
     Это диалоговое окно появляется, если пользователь изменяет данные в любой из форм, а затем пытается закрыть приложение без сохранения этих изменений.
 
     > [!div class="mx-imgBorder"]
-    > диалоговое окно подтверждения ![Generic ](media/object-app/confirm-native.png)
+    > ![универсальное диалоговое окно подтверждения](media/object-app/confirm-native.png)
 
 1. Задайте для свойства **конфирмекситмессаже** объекта **приложения** следующую формулу:
 
-    ```powerapps-comma
-    If( AccountsForm.Unsaved;
-        "Accounts form has unsaved changes.";
+    ```powerapps-dot
+    If( AccountsForm.Unsaved,
+        "Accounts form has unsaved changes.",
         "Contacts form has unsaved changes."
     )
     ```
@@ -123,4 +122,4 @@ ms.PowerAppsDecimalTransform: true
     Это диалоговое окно появляется, если пользователь изменяет данные в форме учетной записи, а затем пытается закрыть приложение без сохранения этих изменений.
 
     > [!div class="mx-imgBorder"]
-    > диалоговое окно подтверждения ![Form ](media/object-app/confirm-native-custom.png)
+    > ![диалоговое окно подтверждения, зависящее от формы](media/object-app/confirm-native-custom.png)

@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 0a56230539990ce51cc9270f71d8c2b7c9a1db73
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71992887"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="concat-and-concatenate-functions-in-powerapps"></a>Функции Concat и Concatenate в PowerApps
 
@@ -37,12 +36,12 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="syntax"></a>Синтаксис
 
-**Concat**( *Table*; *Formula* )
+**Concat**( *Table*, *Formula* )
 
 - *Table* — обязательный аргумент.  Таблица, с которой выполняются операции.
 - *Formula* - обязательный аргумент.  Формула, которую необходимо применить к записям таблицы.
 
-**Concatenate**( *Строка1* [; *Строка2*; ...] )
+**Concatenate**( *Строка1* [, *Строка2*, ...] )
 
 - *Строка* — обязательные аргументы.  Сочетание отдельных строк или таблица из одного столбца со строками.
 
@@ -52,17 +51,17 @@ ms.PowerAppsDecimalTransform: true
 
 - **FirstName** = "Мария"
 - **LastName** = "Петров"
-- **Продукты**  =  ![Table с двумя столбцами и четырьмя строками ](media/function-concatenate/products.png)
+- **Продукты** = ![таблицы с двумя столбцами и четырьмя строками](media/function-concatenate/products.png)
 
 Чтобы создать эти глобальные переменные в приложении, вставьте элемент управления [**Button**](../controls/control-button.md) и задайте для его свойства **OnSelect** значение этой формулы:
 
-```powerapps-comma
-Set( FirstName; "Jane" );; Set( LastName; "Doe" );;
-Set( Products;
+```powerapps-dot
+Set( FirstName, "Jane" ); Set( LastName, "Doe" );
+Set( Products,
     Table(
-        { Name: "Violin"; Type: "String" };
-        { Name: "Cello"; Type: "String" };
-        { Name: "Trumpet"; Type: "Wind" }
+        { Name: "Violin", Type: "String" },
+        { Name: "Cello", Type: "String" },
+        { Name: "Trumpet", Type: "Wind" }
     )
 )
 ```
@@ -107,8 +106,8 @@ Set( Products;
 
 | Формула | Description | Возвращаемый результат |
 |---------|-------------|--------|
-| **Left (Concat (&nbsp;Products, &nbsp;Name &nbsp; & &nbsp; ", &nbsp;" &nbsp;), len (&nbsp;Concat (&nbsp;Products, 0Name 1 2 3 ", 4 5) 6) 7 @no__ t_18 92)** | Возвращает результат **concat** , но удаляет последние два символа, которые формируют лишний разделитель. | "Скрипка, &nbsp;Cello, &nbsp;Trumpet" |
-| **Match (Concat (&nbsp;Products, &nbsp;Name &nbsp; & &nbsp; ", &nbsp;" &nbsp; ")," ^ (? &lt;trim &gt;. *), 0 $ "). Trim** | Возвращает символы **concat** от начала текстовой строки (^) до конца ($), но не включает нежелательную запятую и пробел в конце. | "Скрипка, &nbsp;Cello, &nbsp;Trumpet" |
+| **Left (Concat (&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;), len (&nbsp;Concat (&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;" ,&nbsp;"&nbsp;)&nbsp;)&nbsp;-&nbsp;2)** | Возвращает результат **concat** , но удаляет последние два символа, которые формируют лишний разделитель. | "Скрипка, &nbsp;Cello, &nbsp;Trumpet" |
+| **Match (Concat (&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;")," ^ (?&lt;обрезать&gt;. *),&nbsp;$ "). Trim** | Возвращает символы **concat** от начала текстовой строки (^) до конца ($), но не включает нежелательную запятую и пробел в конце. | "Скрипка, &nbsp;Cello, &nbsp;Trumpet" |
 
 ### <a name="split-and-matchall"></a>Разделение и MatchAll
 
@@ -119,4 +118,4 @@ Set( Products;
 | Формула | Description | Возвращаемый результат |
 |---------|-------------|--------|
 | **Split (Concat (&nbsp;Products, &nbsp;Name &nbsp; & &nbsp; ", &nbsp;" &nbsp; "),", ")** | Разделяет текстовую строку с помощью разделителя **","** . Строка заканчивается запятой и пробелом, поэтому последняя строка в результате представляет собой пустую строку.  | ![Table](media/function-concatenate/split.png) |
-| **MatchAll (Concat (&nbsp;Products; &nbsp;Name &nbsp; & &nbsp; ", &nbsp;" &nbsp; ")," [^ \s;] + "). фуллматч** | Разделяет текстовую строку на основе символов, не являющихся пробелами или запятыми. Эта формула удаляет лишнюю запятую и пробел в конце строки. | ![Table](media/function-concatenate/matchall.png)
+| **MatchAll (Concat (&nbsp;Products,&nbsp;Name&nbsp;&&nbsp;",&nbsp;"&nbsp;")," [^ \s,] + "). фуллматч** | Разделяет текстовую строку на основе символов, не являющихся пробелами или запятыми. Эта формула удаляет лишнюю запятую и пробел в конце строки. | ![Table](media/function-concatenate/matchall.png)

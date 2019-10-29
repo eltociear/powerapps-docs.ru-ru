@@ -14,10 +14,10 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 48966659ca12ada12448543492731fff8431fbde
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71995806"
 ---
 # <a name="overview-of-the-canvas-app-for-northwind-traders"></a>Общие сведения о приложении Canvas для "Борей"
@@ -33,7 +33,7 @@ ms.locfileid: "71995806"
 На одном экране пользователь приложения может отображать, обновлять, создавать и удалять заказы.
 
 > [!div class="mx-imgBorder"]
-> ](media/northwind-orders-canvas-part1/orders-finished.png) приложения ![Complete Canvas
+> ![завершения](media/northwind-orders-canvas-part1/orders-finished.png) приложения Canvas
 
 ## <a name="explore-the-user-interface"></a>Знакомство с пользовательским интерфейсом
 
@@ -50,7 +50,7 @@ ms.locfileid: "71995806"
 В правом нижнем углу в другой коллекции отображаются сведения о том, какие продукты содержатся в выбранном заказе и в каком количестве. Каждый элемент в этой коллекции называется сведениями о заказе. Пользователь приложения может добавлять и удалять любой элемент в этой коллекции с помощью элементов управления в и. Дополнительные сведения: [Создание коллекции сведений](northwind-orders-canvas-part3.md).
 
 > [!div class="mx-imgBorder"]
-> ![Definition областей экрана ](media/northwind-orders-canvas-part1/orders-parts.png)
+> ![определения областей экрана](media/northwind-orders-canvas-part1/orders-parts.png)
 
 ## <a name="explore-the-data-sources"></a>Просмотр источников данных
 

@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 7d9ae4df7a4ad11a49b2a25ae78330d0cd807c9b
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 10/29/2019
 ms.locfileid: "71985251"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="distinct-function-in-powerapps"></a>Функция Distinct в PowerApps
 Эта функция вычисляет итоговые значения для [записей](../working-with-tables.md#records) [таблицы](../working-with-tables.md), удаляя дубликаты.
@@ -32,7 +31,7 @@ ms.PowerAppsDecimalTransform: true
 [!INCLUDE [delegation-no-one](../../../includes/delegation-no-one.md)]
 
 ## <a name="syntax"></a>Синтаксис
-**Distinct**( *Таблица*; *Формула* )
+**Distinct**( *Таблица*, *Формула* )
 
 * *Table* — обязательный аргумент.  Таблица для оценки.
 * *Formula* - обязательный аргумент.  Формула, вычисляемая для каждой записи.
@@ -41,15 +40,15 @@ ms.PowerAppsDecimalTransform: true
 
 1. Вставьте элемент управления [ **"Кнопка"** ](../controls/control-button.md) и задайте для его свойства **OnSelect** значение этой формулы.
 
-    ```powerapps-comma
-    ClearCollect( CityPopulations;
-        { City: "London";    Country: "United Kingdom"; Population: 8615000 };
-        { City: "Berlin";    Country: "Germany";        Population: 3562000 };
-        { City: "Madrid";    Country: "Spain";          Population: 3165000 };
-        { City: "Hamburg";   Country: "Germany";        Population: 1760000 };
-        { City: "Barcelona"; Country: "Spain";          Population: 1602000 };
-        { City: "Munich";    Country: "Germany";        Population: 1494000 }
-    );;
+    ```powerapps-dot
+    ClearCollect( CityPopulations,
+        { City: "London",    Country: "United Kingdom", Population: 8615000 },
+        { City: "Berlin",    Country: "Germany",        Population: 3562000 },
+        { City: "Madrid",    Country: "Spain",          Population: 3165000 },
+        { City: "Hamburg",   Country: "Germany",        Population: 1760000 },
+        { City: "Barcelona", Country: "Spain",          Population: 1602000 },
+        { City: "Munich",    Country: "Germany",        Population: 1494000 }
+    );
     ```
 
 1. Нажмите кнопку, удерживая клавишу ALT.
@@ -57,33 +56,33 @@ ms.PowerAppsDecimalTransform: true
     Формула выводится и создается коллекция **Цитипопулатионс** , которую можно отобразить, выбрав **Цитипопулатионс** в строке формул:
 
     > [!div class="mx-imgBorder"]
-    > Коллекция ![CityPopulations, показанная в представлении результатов ](media/function-distinct/citypopulations-create.png)
+    > Коллекция ![Цитипопулатионс, показанная в представлении результатов](media/function-distinct/citypopulations-create.png)
 
 1. Вставьте элемент управления [**таблицы данных**](../controls/control-data-table.md) и задайте для его свойства **Items** значение этой формулы:
 
-    ```powerapps-comma
-    Distinct( CityPopulations; Country )
+    ```powerapps-dot
+    Distinct( CityPopulations, Country )
     ```
 
     Результат этой формулы можно просмотреть в строке формул, выбрав всю формулу:
 
     > [!div class="mx-imgBorder"]
-    > ![Output из функции distinct, отображаемой в представлении результатов ](media/function-distinct/citypopulations-distinct.png)
+    > ![вывод из функции distinct, отображаемой в представлении результатов](media/function-distinct/citypopulations-distinct.png)
 
 1. Используйте ссылку **изменить поля** в области свойств таблицы данных, чтобы добавить столбец **результатов** .
 
     > [!div class="mx-imgBorder"]
-    > ![Output из функции distinct, отображаемой в таблице данных ](media/function-distinct/citypopulations-datatable.png)
+    > ![вывод из функции distinct, отображаемой в таблице данных](media/function-distinct/citypopulations-datatable.png)
 
 1. Вставьте элемент управления [**Label**](../controls/control-text-box.md) и задайте в качестве его свойства **Text** формулу:
 
-    ```powerapps-comma
-    First( Sort( Distinct( CityPopulations; Country ); Result ) ).Result
+    ```powerapps-dot
+    First( Sort( Distinct( CityPopulations, Country ), Result ) ).Result
     ```
 
     Эта формула сортирует результаты из **DISTINCT** с помощью функции [**Sort**](function-sort.md) , принимает первую запись из результирующей таблицы [**первой**](function-first-last.md) функцией и извлекает **результирующее** поле, чтобы получить только название страны.
 
     > [!div class="mx-imgBorder"]
-    > ![Output из функции distinct, отображающей первую страну по имени ](media/function-distinct/citypopulations-first.png)
+    > ![вывод из функции distinct, отображающей первую страну по имени](media/function-distinct/citypopulations-first.png)
 
      

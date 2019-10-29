@@ -8,16 +8,24 @@ ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: cd57cce824c4071de12e7dc96407018dde57c2d7
-ms.sourcegitcommit: 2a3430bb1b56dbf6c444afe2b8eecd0e499db0c3
+ms.openlocfilehash: 669bf03d7869d6fd625288a65a305a3a458cfde4
+ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72346838"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73025764"
 ---
 # <a name="implement-components-using-typescript"></a>Реализация компонентов с помощью TypeScript
 
-В этом руководстве описывается процесс создания нового компонента кода в TypeScript. Образец компонента — это линейный компонент ввода, который позволяет пользователям вводить числовые значения с помощью визуального ползунка вместо ввода значений в поле. 
+В этом разделе описывается процесс создания нового компонента кода в TypeScript с помощью интерфейса командной строки PowerApps. В этом учебнике мы создадим пример компонента линейного кода, который позволяет пользователям изменять числовые значения с помощью визуального ползунка вместо ввода значений в поле. 
+
+Ниже перечислены артефакты, необходимые для построения компонентов кода.
+
+1. [Создание нового проекта компонента](#creating-a-new-component-project)
+2. [Реализация манифеста](#implementing-manifest)
+3. [Реализация логики компонента с помощью TypeScript](#implementing-component-logic)
+4. [Добавление стиля в компоненты кода](#adding-style-to-the-code-component)
+5. [Упаковка компонентов кода](#packaging-your-code-components)
 
 ## <a name="creating-a-new-component-project"></a>Создание нового проекта компонента
 
@@ -29,26 +37,28 @@ ms.locfileid: "72346838"
     mkdir LinearComponent
     ```
 
-1. Перейдите в новый каталог с помощью команды `cd LinearComponent`. 
+1. Перейдите в папку Component с помощью команды `cd LinearComponent`. 
    
-1. Выполните следующую команду, чтобы создать новый проект компонента, передающий основные параметры.
+1. Создайте новый проект компонента, передав базовые параметры с помощью команды.
 
    ```CLI
     pac pcf init --namespace SampleNamespace --name TSLinearInputComponent --template field
     ``` 
 
 1. Установите средства сборки проекта с помощью команды `npm install`. 
-2. Откройте папку проекта `C:\Users\<your name>\Documents\<My_PCF_Component>` в среде разработчика по своему усмотрению и приступайте к разработке компонентов кода. Самый быстрый способ запустить это, запустив `code .` из командной строки в `C:\Users\<your name>\Documents\<My_PCF_Component>` Directory. Эта команда открывает проект компонента в Visual Studio Code.
+1. Откройте папку проекта `C:\Users\<your name>\Documents\<My_code_Component>` в среде разработчика по своему усмотрению и приступайте к разработке компонентов кода. Самый быстрый способ запустить это, запустив `code .` из командной строки в `C:\Users\<your name>\Documents\<My_code_Component>` Directory. Эта команда открывает проект компонента в Visual Studio Code.
 
 ## <a name="implementing-manifest"></a>Реализация манифеста
 
-Manifest — это XML-файл, содержащий метаданные компонента кода. Он также определяет поведение компонента кода. В этом руководстве этот файл манифеста создается в подпапке `<Your component Name>`. При открытии файла `ControlManifest.Input.xml` в Visual Studio Code можно заметить, что файл манифеста предопределен с некоторыми свойствами. Внесите изменения в предопределенный файл манифеста, как показано ниже:
+Manifest — это XML-файл, содержащий метаданные компонента кода. Он также определяет поведение компонента кода. В этом руководстве этот файл манифеста создается в подпапке `<Your component Name>`. При открытии файла `ControlManifest.Input.xml` в Visual Studio Code можно заметить, что файл манифеста предопределен с некоторыми свойствами. Дополнительные сведения: [manifest](manifest-schema-reference/manifest.md).
+
+Внесите изменения в предопределенный файл манифеста, как показано ниже:
 
 1. [Управляющий](manifest-schema-reference/control.md) узел определяет пространство имен, версию и отображаемое имя компонента кода. Теперь определите каждое свойство узла [элемента управления](manifest-schema-reference/control.md) , как показано ниже:
 
    - **пространство имен**: пространство имен компонента кода. 
    - **Конструктор**: конструктор компонента кода.
-   - **Версия**: версия компонента. При каждом обновлении компонента необходимо обновить версию, чтобы увидеть изменения в среде выполнения.
+   - **Версия**: версия компонента. При каждом обновлении компонента необходимо обновить версию, чтобы увидеть последние изменения в среде выполнения.
    - **отобразить-Name-Key**: имя компонента кода, отображаемого в пользовательском интерфейсе.
    - **Description-Name-ключ**: описание компонента кода, отображаемого в пользовательском интерфейсе.
    - **тип элемента управления**: тип компонента кода. Поддерживаются только *стандартные* типы компонентов кода.
@@ -59,19 +69,19 @@ Manifest — это XML-файл, содержащий метаданные ко
       <control namespace="SampleNameSpace" constructor="TSLinearInputComponent" version="1.0.0" display-name-key="Linear Input Component" description-key="Allows you to enter the numeric values using the visual slider." control-type="standard">
      ```
 
-2. Узел [свойств](manifest-schema-reference/property.md) определяет свойства компонента кода, например определение типа данных поля. Узел свойства указан как дочерний элемент в элементе управления. Определите узел [Свойства](manifest-schema-reference/property.md) , как показано ниже:
+2. Узел [свойств](manifest-schema-reference/property.md) определяет свойства компонента кода, например определение типа данных поля. Узел свойства указан как дочерний элемент в элементе `control`. Определите узел [Свойства](manifest-schema-reference/property.md) , как показано ниже:
 
    - **Name**: имя свойства.
    - **отобразить-Name-Key**: отображаемое имя свойства, отображаемого в пользовательском интерфейсе.
    - **Description-Name-ключ**: описание свойства, отображаемого в пользовательском интерфейсе. 
-   - **of-Type-Group**. параметр [of-Type-Group](manifest-schema-reference/type-group.md) используется, если требуется более двух полей типа данных. Добавьте элемент [типа Group](manifest-schema-reference/type-group.md) в качестве одноуровневого элемента в элемент `property` в манифесте. @No__t_0 указывает значение компонента и может содержать значения целых чисел, валют, чисел с плавающей запятой или десятичных значений.
+   - **of-Type-Group**. параметр [of-Type-Group](manifest-schema-reference/type-group.md) используется, если требуется более двух полей типа данных. Добавьте элемент [типа Group](manifest-schema-reference/type-group.md) в качестве одноуровневого элемента в элемент `property` в манифесте. `of-type-group` указывает значение компонента и может содержать значения целых чисел, валют, чисел с плавающей запятой или десятичных значений.
    - **Использование**: имеет два свойства, *связанные* и *входные данные*. Привязанные свойства привязываются только к значению поля. Входные свойства либо привязываются к полю, либо позволяют использовать статическое значение.
    - **обязательный**: определяет, является ли свойство обязательным.
 
      ```XML
       <property name="sliderValue" display-name-key="sliderValue_Display_Key" description-key="sliderValue_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
       ```
-3. Узел [ресурсы](manifest-schema-reference/resources.md) определяет визуализацию компонента кода. Он содержит все ресурсы, составляющие компонент кода. [Код](manifest-schema-reference/code.md) указывается как дочерний элемент в элементе Resources. Определите [ресурсы](manifest-schema-reference/resources.md) , как показано ниже:
+3. Узел [ресурсы](manifest-schema-reference/resources.md) определяет визуализацию компонента кода. Он содержит все ресурсы, которые создают визуализацию и стилизацию компонента кода. [Код](manifest-schema-reference/code.md) указывается как дочерний элемент в элементе Resources. Определите [ресурсы](manifest-schema-reference/resources.md) , как показано ниже:
 
    - **Code**: указывает путь, по которому расположены все файлы ресурсов.
  
@@ -329,7 +339,7 @@ npm start
 
 ## <a name="packaging-your-code-components"></a>Упаковка компонентов кода
 
-Чтобы создать и импортировать файл [решения](https://docs.microsoft.com/dynamics365/customer-engagement/customize/solutions-overview) , выполните следующие действия.
+Чтобы создать и импортировать файл [решения](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview) , выполните следующие действия.
 
 1. Создайте **решения** для папок в папке **линеаркомпонент** и перейдите в папку. 
 2. Создайте новый проект решения в папке **линеаркомпонент** с помощью следующей команды:
@@ -366,7 +376,7 @@ npm start
     > - В разделе **средства кода**проверьте **целевые объекты NuGet & задачах сборки**.
 
 6. Созданный ZIP-файл решения находится в папке `Solution\bin\debug`.
-7. Вручную [импортируйте решение в Common Data Service](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/import-update-upgrade-solution) с помощью веб-портала после того, как файл ZIP будет готов, или ознакомьтесь с разделом [Проверка подлинности в Организации](import-custom-controls.md#authenticating-to-your-organization) и [развертывания](import-custom-controls.md#deploying-code-components) для импорта с помощью команд интерфейса командной строки PowerApps.
+7. Вручную [импортируйте решение в Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) с помощью веб-портала после того, как файл ZIP будет готов, или ознакомьтесь с разделом [Проверка подлинности в Организации](import-custom-controls.md#authenticating-to-your-organization) и [развертывания](import-custom-controls.md#deploying-code-components) для импорта с помощью команд интерфейса командной строки PowerApps.
 
 ## <a name="adding-code-components-in-model-driven-apps"></a>Добавление компонентов кода в приложения, управляемые моделями
 

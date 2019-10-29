@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 26d9c28d789c254f71ea99a3463b99a7ccc2f4fa
-ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
+ms.sourcegitcommit: 742a5a21e73a811e9cea353d8275f09c22366afc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67232462"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "72973892"
 ---
 Windows
