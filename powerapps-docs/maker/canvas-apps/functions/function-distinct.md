@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/29/2019
 ms.locfileid: "71985251"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="distinct-function-in-powerapps"></a>Функция Distinct в PowerApps
 Эта функция вычисляет итоговые значения для [записей](../working-with-tables.md#records) [таблицы](../working-with-tables.md), удаляя дубликаты.
@@ -32,7 +31,7 @@ ms.PowerAppsDecimalTransform: true
 [!INCLUDE [delegation-no-one](../../../includes/delegation-no-one.md)]
 
 ## <a name="syntax"></a>Синтаксис
-**Distinct**( *Таблица*; *Формула* )
+**Distinct**( *Таблица*, *Формула* )
 
 * *Table* — обязательный аргумент.  Таблица для оценки.
 * *Formula* - обязательный аргумент.  Формула, вычисляемая для каждой записи.
@@ -41,15 +40,15 @@ ms.PowerAppsDecimalTransform: true
 
 1. Вставьте элемент управления [ **"Кнопка"** ](../controls/control-button.md) и задайте для его свойства **OnSelect** значение этой формулы.
 
-    ```powerapps-comma
-    ClearCollect( CityPopulations;
-        { City: "London";    Country: "United Kingdom"; Population: 8615000 };
-        { City: "Berlin";    Country: "Germany";        Population: 3562000 };
-        { City: "Madrid";    Country: "Spain";          Population: 3165000 };
-        { City: "Hamburg";   Country: "Germany";        Population: 1760000 };
-        { City: "Barcelona"; Country: "Spain";          Population: 1602000 };
-        { City: "Munich";    Country: "Germany";        Population: 1494000 }
-    );;
+    ```powerapps-dot
+    ClearCollect( CityPopulations,
+        { City: "London",    Country: "United Kingdom", Population: 8615000 },
+        { City: "Berlin",    Country: "Germany",        Population: 3562000 },
+        { City: "Madrid",    Country: "Spain",          Population: 3165000 },
+        { City: "Hamburg",   Country: "Germany",        Population: 1760000 },
+        { City: "Barcelona", Country: "Spain",          Population: 1602000 },
+        { City: "Munich",    Country: "Germany",        Population: 1494000 }
+    );
     ```
 
 1. Нажмите кнопку, удерживая клавишу ALT.
@@ -61,8 +60,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Вставьте элемент управления [**таблицы данных**](../controls/control-data-table.md) и задайте для его свойства **Items** значение этой формулы:
 
-    ```powerapps-comma
-    Distinct( CityPopulations; Country )
+    ```powerapps-dot
+    Distinct( CityPopulations, Country )
     ```
 
     Результат этой формулы можно просмотреть в строке формул, выбрав всю формулу:
@@ -77,8 +76,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Вставьте элемент управления [**Label**](../controls/control-text-box.md) и задайте в качестве его свойства **Text** формулу:
 
-    ```powerapps-comma
-    First( Sort( Distinct( CityPopulations; Country ); Result ) ).Result
+    ```powerapps-dot
+    First( Sort( Distinct( CityPopulations, Country ), Result ) ).Result
     ```
 
     Эта формула сортирует результаты из **DISTINCT** с помощью функции [**Sort**](function-sort.md) , принимает первую запись из результирующей таблицы [**первой**](function-first-last.md) функцией и извлекает **результирующее** поле, чтобы получить только название страны.
