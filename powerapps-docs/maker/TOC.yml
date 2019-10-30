@@ -143,6 +143,8 @@
               href: ./canvas-apps/app-from-sharepoint.md
             - name: На основе Excel
               href: ./canvas-apps/get-started-create-from-data.md
+            - name: "На основе базы данных\_SQL Azure"
+              href: ./canvas-apps/app-from-azure-sql-database.md
         - name: 2. Выполнение основных настроек
           items:
             - name: "1.\_Коллекции"
@@ -1422,6 +1424,8 @@
       href: ./canvas-apps/common-issues-and-resolutions.md
     - name: Получение идентификатора сеанса или приложения
       href: ./canvas-apps/get-sessionid.md
+    - name: "Устранение неполадок с запуском\_PowerApps"
+      href: troubleshooting-startup-issues.md
     - name: "Устранение неполадок Power\_Query"
       href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
     - name: Поддержка

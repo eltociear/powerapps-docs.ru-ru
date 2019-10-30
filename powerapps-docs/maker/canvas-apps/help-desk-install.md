@@ -1,30 +1,30 @@
 ---
 title: Установка и настройка примера "Служба поддержки" для приложений на основе холста | Документы Майкрософт
 description: Пошаговые инструкции по установке и настройке примера "Служба поддержки" для приложений на основе холста в PowerApps.
-author: yijw2017
+author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/08/2018
-ms.author: yijw
+ms.date: 10/29/2019
+ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5f8744d7cc6b6048debc18775e7bf3ad7cbbff22
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 6c9195bb9256c3d977300e61efe3f2cc88cfbf67
+ms.sourcegitcommit: 0e7bdaea83adaa15da4d5c9ddbcd0b2bcbee01df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990205"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73063401"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>Установка и настройка примера "Служба поддержки" в PowerApps
 
 Пошаговые инструкции по установке и настройке примера "Служба поддержки" для приложений на основе холста в PowerApps.
 
-Предполагаемое время выполнения этой процедуры: **10–15 минут**.
+Предполагаемое время выполнения этой процедуры: **10–15 минут**
 
 > [!TIP]
 > См. [видео](https://youtu.be/z4cdtD6hB_4), где демонстрируется эта процедура.
@@ -40,7 +40,7 @@ ms.locfileid: "71990205"
 
 ## <a name="prerequisites"></a>Технические условия
 
-- [Регистрация](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в PowerApps.
+- [Зарегистрируйтесь](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в PowerApps.
 - Необходимо иметь действительную лицензию на SharePoint Online и разрешение на создание списков.
 
 ## <a name="create-the-helpdesk-sharepoint-list"></a>Создание списка SharePoint HelpDesk (Служба поддержки)
@@ -60,7 +60,7 @@ ms.locfileid: "71990205"
     > [!IMPORTANT]
     > Если вы выбрали другое имя для списка, обязательно запишите его, так как вам потребуется использовать его вместо HelpDesk на всех этапах процесса установки и настройки.
 
-10. Нажмите кнопку **Создать**.
+10. Щелкните **Create** (Создать).
 
 ### <a name="create-description-column"></a>Создание столбца Description (Описание)
 
@@ -153,7 +153,7 @@ ms.locfileid: "71990205"
 1.  Щелкните **+ Создать подключение**.
 2.  В текстовом поле **Поиск** введите **Office 365 Outlook**.
 3.  Выберите **Office 365 Outlook** в списке.
-4.  Нажмите кнопку **Создать**.
+4.  Щелкните **Create** (Создать).
 5.  Во всплывающем окне выберите учетную запись, с которой вы вошли в систему.
 
 ### <a name="create-sharepoint-connection"></a>Создание подключения к SharePoint
@@ -161,7 +161,7 @@ ms.locfileid: "71990205"
 1.  Щелкните **+ Создать подключение**.
 2.  В текстовом поле **Поиск** введите **SharePoint**.
 3.  Выберите **SharePoint** в списке.
-4.  Нажмите кнопку **Создать**.
+4.  Щелкните **Create** (Создать).
 5.  Во всплывающем окне выберите учетную запись, с которой вы вошли в систему.
 
 ### <a name="create-office-365-users-connection"></a>Создание подключения "Пользователи Office 365"
@@ -169,7 +169,7 @@ ms.locfileid: "71990205"
 1.  Щелкните **+ Создать подключение**.
 2.  В текстовом поле **Поиск** введите **Пользователи Office 365**.
 3.  Выберите **Пользователи Office 365** в списке.
-4.  Нажмите кнопку **Создать**.
+4.  Щелкните **Create** (Создать).
 5.  Во всплывающем окне выберите учетную запись, с которой вы вошли в систему.
 
 ## <a name="import-the-app"></a>Импорт приложения

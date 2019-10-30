@@ -1,30 +1,30 @@
 ---
 title: Установка и настройка примера "Отчет о расходах" для приложений на основе холста | Документы Майкрософт
 description: Пошаговые инструкции по установке и настройке примера "Отчет о расходах" для приложений на основе холста в PowerApps.
-author: yijw2017
+author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/08/2018
-ms.author: yijw
+ms.date: 10/29/2019
+ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bca1fb3760727278e42676c9f0a5ec501f9002e0
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 20b49aee68b7c8c357b49dac2218d994153da230
+ms.sourcegitcommit: 0e7bdaea83adaa15da4d5c9ddbcd0b2bcbee01df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985784"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73063384"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Установка и настройка примера "Отчет о расходах" для приложений на основе холста в PowerApps
 
 Пошаговые инструкции по установке и настройке примера "Отчет о расходах". Вы также можете ознакомиться с примером приложения [на этой странице](https://aka.ms/previewmyexpenses).
 
-Предполагаемое время выполнения этой процедуры: **10–15 минут**.
+Предполагаемое время выполнения этой процедуры: **10–15 минут**
 
 > [!TIP]
 > Просмотрите [это видео](https://youtu.be/kJXZPILfbwU), в котором показано, как использовать пример приложения "Отчет о расходах". 
@@ -38,7 +38,7 @@ ms.locfileid: "71985784"
 
 ## <a name="prerequisites"></a>Технические условия
 
-- [Регистрация](../signup-for-powerapps.md) в PowerApps.
+- [Зарегистрируйтесь](../signup-for-powerapps.md) в PowerApps.
 
 ## <a name="create-the-expenses-list"></a>Создайте список Expenses.
 
@@ -57,7 +57,7 @@ ms.locfileid: "71985784"
     > [!IMPORTANT]
     > Если вы выбрали другое имя для списка, обязательно запишите его, так как вам потребуется использовать его вместо Expenses на всех этапах процесса установки и настройки.
 
-10. Нажмите кнопку **Создать**.
+10. Щелкните **Create** (Создать).
 
 ### <a name="create-cost-center-column"></a>Создание столбца "Cost Center" (Центр затрат)
 
@@ -142,7 +142,7 @@ ms.locfileid: "71985784"
     > [!IMPORTANT] 
     > Если вы выбрали другое имя для списка, обязательно запишите его, так как вам потребуется использовать его вместо LineItems на всех этапах процесса установки и настройки.
 
-8. Нажмите кнопку **Создать**.
+8. Щелкните **Create** (Создать).
  
 ### <a name="create-category-column"></a>Создание столбца Category (Категория)
 
@@ -219,14 +219,14 @@ ms.locfileid: "71985784"
 1.  Щелкните **+ Создать подключение**.
 2.  В текстовом поле **Поиск** введите **Approvals** (Утверждения).
 3.  Выберите **Approvals** в списке.
-4.  Нажмите кнопку **Создать**.
+4.  Щелкните **Create** (Создать).
     
 ### <a name="create-an-office-365-outlook-connection"></a>Создание подключения к Office 365 Outlook
 
 1.  Щелкните **+ Создать подключение**.
 2.  В текстовом поле **Поиск** введите **Office 365 Outlook**.
 3.  Выберите **Office 365 Outlook** в списке.
-4.  Нажмите кнопку **Создать**.
+4.  Щелкните **Create** (Создать).
 5.  Во всплывающем окне выберите учетную запись, с которой вы вошли в систему.
 
 ### <a name="create-a-sharepoint-connection"></a>Создание подключения к SharePoint
@@ -234,7 +234,7 @@ ms.locfileid: "71985784"
 1.  Щелкните **+ Создать подключение**.
 2.  В текстовом поле **Поиск** введите **SharePoint**.
 3.  Выберите **SharePoint** в списке.
-4.  Нажмите кнопку **Создать**.
+4.  Щелкните **Create** (Создать).
 5.  Во всплывающем окне выберите учетную запись, с которой вы вошли в систему.
 
 ## <a name="import-the-app"></a>Импорт приложения
