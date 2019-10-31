@@ -1,5 +1,5 @@
 ---
-title: Создание и изменение общих или системных представлений управляемых моделью приложений в PowerApps | MicrosoftDocs
+title: Создание и изменение общих или системных представлений управляемых моделью приложений в PowerApps | Документация Майкрософт
 description: 'Узнайте, как создавать или изменять представления с помощью конструктора приложений'
 keywords: ''
 ms.date: 11/27/2018
@@ -176,9 +176,9 @@ search.app:
 
 
 ## <a name="community-tools"></a>Средства сообщества
-**View Layout Replicator** и **View Designer** — это средства, разработанные сообществом XrmToolbox для Dynamics 365 Customer Engagement.
+**View Layout Replicator** и **View Designer** — это средства, разработанные сообществом XrmToolbox для PowerApps.
 
-Дополнительные сведения: [Средства для разработчиков](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools).
+Дополнительные сведения: [Средства для разработчиков](/powerapps/developer/common-data-service/developer-tools).
 
 > [!NOTE]
 > Эти средства предоставляются сообществом XrmToolBox и не поддерживаются Майкрософт. При наличии вопросов по средству обращайтесь к его издателю. Дополнительные сведения: [XrmToolBox](https://www.xrmtoolbox.com/). 

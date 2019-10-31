@@ -1,26 +1,21 @@
 ---
-title: Использование тегов потока управления для портала | MicrosoftDocs
-description: Сведения о тегах потока управления, доступных на портале.
+title: Использование тегов потока управления для портала | Документация Майкрософт
+description: 'Узнайте о тегах потоков управления, доступных на портале.'
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 77fcc7db0adf68cd6decbcc95e11d8e803761535
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72975111"
+ms.reviewer: null
 ---
+
 # <a name="control-flow-tags"></a>Теги потока управления
 
-Теги потока управления определяют, какой блок кода следует выполнить и какое содержимое должно быть визуализировано на основе заданных условий. Условия создаются с помощью доступных [операторов ликвидности](liquid-operators.md)или только на основе [истинности или фалсехуд заданной величины](liquid-conditional-operators.md).  
+Теги потока управления определяют, какой блок кода должен исполняться и какое содержимое должно отображаться на основе заданных условий. Условия построены с использованием доступных [операторов Liquid](liquid-operators.md), или только основанных на [правильности или ложности указанного значения](liquid-conditional-operators.md).  
 
-## <a name="if"></a>наличии
+## <a name="if"></a>if
 
 Выполняет блок кода, если заданное условие выполнено.
 
@@ -32,9 +27,9 @@ Hello, Dave.
 {% endif %}
 ```
 
-## <a name="unless"></a>иное
+## <a name="unless"></a>unless
 
-Like, если, за исключением того, что выполняет блок кода, если заданное условие**не** выполнено.
+Как if, но выполняет блок кода, если заданное условие **не** выполнено.
 
 ```
 {% unless page.title == 'Home' %}
@@ -44,9 +39,9 @@ This is not the Home page.
 {% endunless %}
 ```
 
-## <a name="elsifelse"></a>елсиф/else
+## <a name="elsifelse"></a>elsif/else
 
-Добавляет дополнительные условия в блок if или, если он не указан.
+Добавляет больше условий в блок if или unless.
 
 ```
 {% if user.fullname == 'Dave Bowman' %}
@@ -64,9 +59,9 @@ Hello, stranger.
 {% endif %}
 ```
 
-## <a name="casewhen"></a>Регистр/когда
+## <a name="casewhen"></a>case/when
 
-Оператор switch для сравнения переменной с различными значениями и выполнения другого блока кода для каждого значения.
+Оператор переключателя для сравнения переменной с другими значениями и выполнения разных блоков кода для каждого значения.
 
 ```
 {% case user.fullname %}
@@ -88,7 +83,7 @@ Hello, stranger.
 
 ### <a name="see-also"></a>См. также
 
-[Теги итерации](iteration-tags.md)<br>
-[Теги переменных](variable-tags.md)<br>
+[Теги итерирования](iteration-tags.md)<br>
+[Переменные теги](variable-tags.md)<br>
 [Теги шаблона](template-tags.md)<br>
 [Теги сущности Common Data Service PowerApps](portals-entity-tags.md)

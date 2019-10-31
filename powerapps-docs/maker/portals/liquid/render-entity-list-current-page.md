@@ -1,24 +1,19 @@
 ---
-title: Отображение списка сущностей, связанного с текущей страницей на портале | MicrosoftDocs
-description: Пример кода для отображения списка сущностей, связанного с текущей страницей на портале.
+title: 'Отобразить список сущностей, связанных с текущей страницей на портале | Документация Майкрософт'
+description: 'Пример кода для отображения списка сущностей, связанных с текущей страницей на портале.'
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: e31f83efb7cedfa42b6c4c9e7da83280b261d9c8
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72974881"
+ms.reviewer: null
 ---
-# <a name="render-the-entity-list-associated-with-the-current-page"></a>Отображение списка сущностей, связанного с текущей страницей
 
-Отображение списка сущностей, связанного с текущей страницей, в виде таблицы, допускающей разбиение на страницы. Использует [ентитилист](liquid-objects.md#entitylist), [ентитивиев](liquid-objects.md#entityview), [PowerApps Common Data Service Теги сущности](portals-entity-tags.md), [страницу](liquid-objects.md#page)и параметры [запроса](liquid-objects.md#request) , а также включает в себя поиск и выбор нескольких представлений.  
+# <a name="render-the-entity-list-associated-with-the-current-page"></a>Обработка списка сущностей, связанных с текущей страницей
+
+Отображение списка сущностей, связанных с текущей страницей, в виде допускающей сортировку таблицы с разбиением на страницы. Использует параметры [entitylist](liquid-objects.md#entitylist), [entityview](liquid-objects.md#entityview), [теги сущностей Common Data Service PowerApps](portals-entity-tags.md), [страница](liquid-objects.md#page) и [запрос](liquid-objects.md#request), а также включает поиск и выбор нескольких представлений.  
 
 ```xml
 {% entitylist id:page.adx_entitylist.id %}
@@ -242,7 +237,7 @@ ms.locfileid: "72974881"
 
 ### <a name="see-also"></a>См. также
 
-[Создание пользовательского шаблона страницы с помощью жидкостного и шаблона страницы веб-шаблона](create-custom-template.md)  
-[Создание пользовательского шаблона страницы для отображения RSS-канала](render-rss-custom-page-template.md)  
-[Отображение заголовка веб-сайта и основной панели навигации](render-site-header-primary-navigation.md)  
+[Создание настраиваемого шаблона страницы с помощью Liquid и шаблона страницы "Веб-шаблон"](create-custom-template.md)  
+[Создание настраиваемого шаблона страницы для отображения RSS-канала](render-rss-custom-page-template.md)  
+[Отображение заголовка веб-сайта и основной навигационной панели](render-site-header-primary-navigation.md)  
 [Отображение до трех уровней иерархии страниц с помощью гибридной навигации](hybrid-navigation-render-page-hierachy.md)

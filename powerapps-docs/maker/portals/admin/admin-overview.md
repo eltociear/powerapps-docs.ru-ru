@@ -1,38 +1,35 @@
 ---
-title: Обзор центра администрирования порталов PowerApps | MicrosoftDocs
+title: Обзор центра администрирования порталов PowerApps | Документация Майкрософт
 description: Сведения о центре администрирования порталов PowerApps.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 07/18/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 2775c113af0e528ee7a5f0ad29c53858276c3f43
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977434"
+ms.reviewer: null
 ---
-# <a name="powerapps-portals-admin-center"></a>Центр администрирования порталов PowerApps
 
-Центр администрирования порталов PowerApps позволяет выполнять расширенные административные действия на порталах. Центр администрирования доступен после успешного завершения подготовки портала.
+# <a name="powerapps-portals-admin-center"></a>Центр администрирования портала PowerApps
 
-Чтобы открыть центр администрирования, выполните следующие действия.
+[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
-1. Перейдите в раздел **недавние приложения** на домашней странице PowerApps и найдите портал.
+Центр администрирования порталов PowerApps позволяет выполнять расширенные административные действия на порталах. Центр администрирования доступен когда портал подготовлен успешно.
 
-    > [!div class=mx-imgBorder]
-    > ![Недавние]приложения последние(../media/recent-apps.png "приложения")  
+Чтобы открыть центр администрирования:
 
-2. Выберите **Дополнительные команды (...)**  > **Параметры**.
+1. Перейдите в раздел **Последние приложения** на домашней странице PowerApps и найдите ваш портал.
 
     > [!div class=mx-imgBorder]
-    > Параметр " ![Параметры портала"](../media/portal-settings-option.png "Параметры портала")
+    > ![Последние приложения](../media/recent-apps.png "Последние приложения")  
+
+2. Выберите **Дополнительные команды (...)** > **Параметры**.
+
+    > [!div class=mx-imgBorder]
+    > ![Параметр настроек портала](../media/portal-settings-option.png "Параметр настроек портала")
 
 3. В области **Параметры портала** выберите **Администрирование**.
 
     > [!div class=mx-imgBorder]
-    > Панель параметров портала ![область](../media/portal-settings-admin.png "параметров портала")  
+    > ![Область параметров портала](../media/portal-settings-admin.png "Область параметров портала")  

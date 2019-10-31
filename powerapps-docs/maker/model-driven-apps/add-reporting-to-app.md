@@ -1,19 +1,12 @@
 ---
-title: Добавление отчетности в управляемое моделью приложение
+title: Добавление функции отчетности в приложение на основе модели
 ms.custom: ''
-ms.date: 06/24/2019
+ms.date: 08/16/2019
 ms.reviewer: ''
 ms.service: powerapps
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
 author: Mattp123
 ms.assetid: b4098c96-bce1-4f57-804f-8694e6254e81
-caps.latest.revision: 15
 ms.author: matp
 manager: kvivek
 search.audienceType:
@@ -22,23 +15,22 @@ search.app:
   - PowerApps
   - D365CE
 ---
-# <a name="add-reporting-to-your-model-driven-app"></a>Добавление отчетности в управляемое моделью приложение
+# <a name="add-reporting-features-to-your-model-driven-app"></a>Добавление функции отчетности в приложение на основе модели
 
 Приложения PowerApps могут включать отчеты, реализующие полезные бизнес-данные для пользователя. Эти отчеты основаны на службах SQL Server Reporting Services и предоставляют тот же набор функций, который доступен в типичных отчетах служб SQL Server Reporting Services.
 
 > [!div class="mx-imgBorder"] 
 > ![](media/progress-against-goals-report.png "Стандартный отчет \"Ход достижения целей\"")
 
-Системные отчеты доступны всем пользователям. Лица, которые создают или которым другим образом принадлежат отчеты, могут предоставлять к ним общий доступ отдельным сотрудникам или командам, а также предоставлять организации доступ к отчетам, чтобы их могли выполнять все пользователи. Эти отчеты используют запросы языка FetchXML, которые являются фирменными для Common Data Service и приложений Dynamics 365 for Customer Engagement и извлекают данные для построения отчета. Отчеты, создаваемые в приложении PowerApps, являются отчетами на основе Fetch.
+Системные отчеты доступны всем пользователям. Лица, которые создают или которым другим образом принадлежат отчеты, могут предоставлять к ним общий доступ отдельным сотрудникам или командам, а также предоставлять организации доступ к отчетам, чтобы их могли выполнять все пользователи. Эти отчеты используют язык FetchXML, который является частью Common Data Service, и извлекают данные для построения отчета. Отчеты, создаваемые в приложении PowerApps, являются отчетами на основе Fetch.
 
 > [!NOTE]
 > Функции отчетности не работают с приложениями а основе холста или управляемыми моделями приложениями, работающими на мобильных устройствах, например на планшетах и телефонах. 
 
-Отчеты можно создавать одним из следующих способов.
+<!-- Reports can be built in either of the following ways.
 
-- Из управляемого моделью приложения с помощью мастера отчетов. Дополнительные сведения: [Создание или изменение отчета с помощью мастера отчетов](/dynamics365/customer-engagement/basics/create-edit-copy-report-wizard) 
-<!-- From a model-driven app using an advanced find query. To do this, you build an advanced find query and then select **Download as FetchXML**. Next, from the reports area select **New**, for **Report Type** select **Existing File**, select **Choose File** open the xml file, fill in the required fields, and save the report. More information: [Add a report](/dynamics365/customer-engagement/basics/add-existing-report) -->
-- Создание настраиваемых отчетов с помощью SQL Server Data Tools и расширений создания отчетов. Дополнительные сведения: [Руководство по отчетам и аналитике](/dynamics365/customer-engagement/analytics/reporting-analytics-with-dynamics-365)
+- From a model-driven app using the report wizard. More information: [Create or edit a report using the Report Wizard](/dynamics365/customer-engagement/basics/create-edit-copy-report-wizard) 
+- Create custom reports using SQL Server Data Tools and Report Authoring Extensions. More information: [Reporting and Analytics Guide](/dynamics365/customer-engagement/analytics/reporting-analytics-with-dynamics-365)  -->
 
 
 ## <a name="add-reporting-to-a-unified-interface-app"></a>Добавление отчетности в приложение единого интерфейса
@@ -62,11 +54,32 @@ search.app:
 
 8. В конструкторе приложений выберите **Сохранить**, затем нажмите **Опубликовать**.
 
-
 Теперь в приложении отображается область **Отчеты**, в которой пользователи могут просматривать, выполнять, назначать, предоставлять общий доступ и редактировать отчеты, для которых у них имеются разрешения, а также создавать новые отчеты с помощью мастера отчетов. 
 
 > [!div class="mx-imgBorder"] 
 > ![](media/report-feature-in-app.png "Представление отчета")
 
-### <a name="see-also"></a>См. также
-[Выполнение отчета](/dynamics365/customer-engagement/basics/run-report)
+## <a name="options-for-creating-new-reports"></a>Параметры создания отчетов
+Вы можете создать новый отчет одним из двух способов:
+- Воспользуйтесь мастер отчетов. Откройте приложение на основе модели которое было включено для отчетности и запустите мастера отчетов для создания нового отчета. Мастер отчетов может создавать отчеты в виде таблиц и диаграмм, включая детализированные отчеты и отчеты типа "N лучших". Дополнительные сведения: [Создание отчета с помощью мастера отчетов](../../user/create-report-with-wizard.md) 
+- Используйте расширение для создания отчетов. Можно создать новые или настроить существующие отчеты Reporting Services на основе языка fetch с помощью Visual Studio, SQL Server Data Tools и расширения для создания отчетов. Дополнительные сведения см. в разделе [Создайте новый отчет, используя SQL Server Data Tools](/dynamics365/customer-engagement/analytics/create-a-new-report-using-sql-server-data-tools)
+
+## <a name="report-visibility"></a>Отображение отчета
+Стандартные отчеты о сущности, например отчет "Сводка учетной записи" для сущности учетной записи, доступны всем пользователям приложения. Пользователи, которым принадлежат отчеты, могут делиться ими с конкретными коллегами или группами. Системные администраторы и настройщики системы могут делать отчеты доступными для всей организации, чтобы их могли использовать все пользователи. Сведения о том, как предоставлять общий доступ к отчету, см. в разделе [Предоставление общего доступа к отчету другим пользователям и группам](../../user/work-with-reports.md#share-a-report-with-other-users-or-teams). 
+
+## <a name="reports-in-solutions"></a>Отчеты в решениях
+Отчеты поддерживают решения. При добавлении отчета в решение в качестве компонента он становится отдельным программным модулем, расширяющим возможности системы PowerApps и пользовательский интерфейс. В решения можно добавлять только отчеты, доступные для просмотра в организации.
+
+Чтобы определить, является ли отчет видимым для организации: откройте приложение на основе модели, выберите отчет, затем выберите **Изменить**. На вкладке **Администрирование** проверьте, установлен ли параметр **Доступно для просмотра** в значение **Организация**. 
+
+> [!div class="mx-imgBorder"] 
+> ![](media/report-scope.png "Видимость отчета на уровне организации")
+
+Снимки отчетов можно добавлять, импортировать и экспортировать как часть решения. В приложениях на основе модели, отчеты, вложенные отчеты, категория отчетов, область отображения отчетов и тип записей, связанный с отчетом, считаются компонентами набора отчетов. Если какой-либо компонент набора отчетов был настроен, при импорте обновления решения в режиме без перезаписи изменения, вносимые решением в отчет, игнорируются.
+
+## <a name="related-topics"></a>См. также
+[Работа с отчетами](/powerapps/user/work-with-reports)<br/>
+[Создание отчетов с помощью мастера отчетов](/powerapps/user/create-report-with-wizard)<br/>
+[Добавление отчета, созданного вне PowerApps](/powerapps/user/add-existing-report)<br/>
+[Изменение фильтра отчета, используемого по умолчанию](/powerapps/user/edit-report-filter)<br/>
+[Устранение неполадок в отчетах](/powerapps/user/troubleshoot-reports)

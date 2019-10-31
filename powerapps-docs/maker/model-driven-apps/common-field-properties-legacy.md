@@ -1,6 +1,6 @@
 ---
-title: Общие свойства полей управляемых моделью приложений в PowerApps | MicrosoftDocs
-description: Узнайте об общих свойствах полей для основной формы в Dynamics 365 for Customer Engagement
+title: Общие свойства полей приложений на основе модели в PowerApps | Документация Майкрософт
+description: Знакомство с общими свойствами полей для основной формы
 Keywords: Основная форма; Общие свойства полей; Dynamics 365
 author: Mattp123
 ms.author: matp

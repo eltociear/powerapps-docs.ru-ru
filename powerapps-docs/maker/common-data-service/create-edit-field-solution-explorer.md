@@ -1,5 +1,5 @@
 ---
-title: Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps | MicrosoftDocs
+title: Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps | Документация Майкрософт
 ms.custom: ''
 ms.date: 05/18/2018
 ms.reviewer: ''
@@ -12,7 +12,8 @@ applies_to:
   - Dynamics 365 Version 9.x
   - PowerApps
 ms.author: matp
-manager: brycho
+manager: kvivek
+author: Mattp123
 search.audienceType:
   - maker
 search.app:

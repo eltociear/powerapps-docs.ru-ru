@@ -1,9 +1,9 @@
 ---
-title: Открытие редактора форм управляемых моделью приложений в PowerApps | MicrosoftDocs
+title: Открытие редактора форм управляемых моделью приложений в PowerApps | Документация Майкрософт
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -55,9 +55,9 @@ search.app:
   
 4.  Выберите **Редактор форм**.  
 
-## <a name="access-the-form-editor-from-within-dynamics-365-customer-engagement"></a>Доступ к редактору форм из Dynamics 365 Customer Engagement
+## <a name="access-the-form-editor-from-within-app"></a>Доступ к редактору форм в рамках приложения
   
- Редактор форм можно открыть в Dynamics 365 Customer Engagement с помощью командной строки или ленты в зависимости от сущности. Оба эти метода откроют форму в контексте решения по умолчанию. 
+ Редактор форм можно открыть с помощью командной строки или ленты в зависимости от сущности. Оба эти метода откроют форму в контексте решения по умолчанию. 
 
 ## <a name="access-the-form-editor-for-an-unmanaged-solution"></a>Доступ к редактору форм для неуправляемого решения  
   

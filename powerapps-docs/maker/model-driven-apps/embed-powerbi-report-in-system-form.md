@@ -26,7 +26,7 @@ search.app:
 ---
 
 # <a name="embed-a-power-bi-report-in-a-model-driven-system-form"></a>Встраивание отчета Power BI в управляемую моделью системную форму
-Можно использовать отчеты Power BI в управляемых моделью приложениях PowerApps, чтобы обеспечить широкие возможности отчетности и аналитики в системных формах и позволить пользователям добиваться большего. Это разблокирует возможность агрегирования данных между системами и их настройки вплоть до контекста одной записи.
+Можно использовать отчеты Power BI в приложениях на основе модели PowerApps, чтобы обеспечить широкие возможности отчетности и аналитики в системных формах и позволить пользователям добиваться лучших результатов. Это разблокирует возможность агрегирования данных между системами и их настройки вплоть до контекста одной записи.
  
 ## <a name="prerequisites"></a>Необходимые компоненты
 Внедрение содержимого Power BI — это необязательная функция, которая по умолчанию отключена во всех средах. Необходимо включить ее, прежде чем можно будет внедрять содержимое Power BI. Дополнительные сведения: [Включение визуализации Power BI в организации](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi?#enable--visualizations-in-the-organization).
@@ -148,6 +148,6 @@ search.app:
 
 [Внедрение панели мониторинга Power BI в управляемую моделью персональную панель мониторинга PowerApps](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
 
-[Использование Power BI с Dynamics 365 for Customer Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi)
+[Используйте Power BI с приложениями Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi)
 
 [Импорт, обновление и экспорт решений](../common-data-service/import-update-export-solutions.md)

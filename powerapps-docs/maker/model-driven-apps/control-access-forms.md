@@ -1,5 +1,5 @@
 ---
-title: Управление доступом к формам управляемых моделью приложений в PowerApps | MicrosoftDocs
+title: Управление доступом к формам управляемых моделью приложений в PowerApps | Документация Майкрософт
 description: 'Узнайте, как управлять доступом к основным формам'
 ms.custom: ''
 ms.date: 06/18/2019
@@ -8,10 +8,6 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
 author: Mattp123
 ms.assetid: 15d123e0-b604-45dd-ab34-0b37787a04bb
 caps.latest.revision: 33
@@ -30,7 +26,7 @@ search.app:
   
 - **Изменение состояния основной формы на неактивное**  
   
-     Для основных форм можно задать активное или неактивное состояние. Эта функция была включена главным образом для управления новыми добавленными формами при обновлении организации Dynamics 365 Customer Engagement, но ее можно использовать для блокировки возможности пользователя использовать какую-либо из основных форм.   
+     Для основных форм можно задать активное или неактивное состояние. Эта функция была включена главным образом для управления новыми добавленными формами при обновлении сред Common Data Service, но ее можно использовать для блокировки возможности пользователей использовать какую-либо из основных форм.   
   
 - **Назначение ролей безопасности основной форме**  
   
@@ -74,7 +70,7 @@ search.app:
 Контекст формы клиентского API (formContext) содержит ссылку на форму или на элемент в форме, например элемент управления быстрого представления или строка в редактируемой сетке, для которого текущий код выполняется. Дополнительные сведения: [Контекст формы API клиента](/dynamics365/customer-engagement/developer/clientapi/clientapi-form-context)
 
 > [!IMPORTANT]
-> С приложениями Dynamics 365 for Customer Engagement версии 9.0 объект Xrm.Page [устарел](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated), и необходимо использовать метод [getFormContext](/dynamics365/customer-engagement/developer/clientapi/reference/executioncontext/getformcontext) объекта, переданного в контексте выполнения, для возврата ссылки на соответствующую форму или элемент формы.
+> Объект Xrm.Page [устарел](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated), и необходимо использовать метод [getFormContext](/powerapps/developer/model-driven-apps/clientapi/reference/executioncontext/getformcontext) объекта, переданного в контексте выполнения, для возврата ссылки на соответствующую форму или элемент формы.
 <!-- 
  Finally, in the web application it is possible, but not recommended, for a developer to use scripts in the form Onload event to use the [Xrm.Page.ui.formSelector.items collection](http://go.microsoft.com/fwlink/p/?LinkID=513300) to query available forms and use the navigate method to direct users to a specific form. Remember that the [navigate method](http://go.microsoft.com/fwlink/p/?LinkID=513301) will cause the form to load again (and the Onload event to occur again). Your logic in the event handler should always check some condition before you use the navigate method to avoid an endless loop or unnecessarily restrict users options to navigate between forms.  
   

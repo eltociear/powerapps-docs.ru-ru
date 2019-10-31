@@ -1,5 +1,5 @@
 ---
-title: Создание и изменение полей для Common Data Service | MicrosoftDocs
+title: Создание и изменение полей для Common Data Service | Документация Майкрософт
 ms.custom: ''
 ms.date: 02/08/2019
 ms.reviewer: ''
@@ -15,6 +15,7 @@ ms.assetid: d88677fa-2caf-47b0-aec6-10a25a7ec9c3
 caps.latest.revision: 55
 ms.author: matp
 manager: kvivek
+author: Mattp123
 search.audienceType:
   - maker
 search.app:
@@ -31,19 +32,19 @@ search.app:
 
 |Дизайнер| Описание|
 |--|--|
-|[Портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание и изменение полей для Common Data Service с помощью портала PowerApps](create-edit-field-portal.md)|
+|[портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание и изменение полей для Common Data Service с помощью портала PowerApps](create-edit-field-portal.md)|
 |Обозреватель решений|Не так прост, но предоставляет больше гибкости для менее распространенных требований.<br />Дополнительные сведения: [Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps](create-edit-field-solution-explorer.md) |
 
 > [!NOTE]
 > Можно также создать поля в среде с помощью следующих действий.
 > - В управляемых моделью приложениях выберите **Создать поле** в редакторе форм.
 > - Импорт решения, которое содержит определение полей.
-> - Используйте Power Query для создания новых сущностей и из заполнения данными.<br />Дополнительные сведения: [Добавление данных в сущность в Common Data Service для приложений с помощью Power Query](/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
+> - Используйте Power Query для создания новых сущностей и из заполнения данными.<br />Дополнительные сведения: [Добавление данных в сущность в Common Data Service с помощью Power Query](/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
 > - Разработчик может использовать [службы метаданных](/powerapps/developer/common-data-service/use-web-services#metadata-services), чтобы создать программу для создания и обновления полей.
 
 Информация в этом разделе поможет вам выбрать конструктор для использования. 
 
-Следует использовать портал PowerApps для создания и редактирования полей Common Data Service, кроме случаев, когда необходимо выполнить любое из следующих требований:
+Нужно использовать портал PowerApps для создания и изменения полей для Common Data Service, если только вам не нужно выполнить любое из следующих требований:
 
 - Создание настраиваемого поля подстановки. 
    - Дополнительные сведения: [Различные типы поисков](types-of-fields.md#different-types-of-lookups)

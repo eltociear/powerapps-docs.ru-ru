@@ -116,7 +116,7 @@ search.app:
 ### <a name="theme-contrast"></a>Контрасты в теме  
  Рекомендуем следующий подход к использованию контрастных цветов:  
   
--   Тщательно выбирайте контрастные цвета. В готовой теме по умолчанию Common Data Service доступны правильные соотношения контрастов, обеспечивающие оптимальное удобство использования. Используйте аналогичные соотношения в своих собственных темах.  
+-   Тщательно выбирайте контрастные цвета. В готовой предусмотренной по умолчанию теме Common Data Service правильные соотношения контрастов, обеспечивающие оптимальное удобство использования. Используйте аналогичные соотношения в своих собственных темах.  
   
 -   Для высококонтрастного режима используйте параметры цветов по умолчанию.  
   
@@ -143,5 +143,5 @@ search.app:
   
 ## <a name="see-also"></a>См. также  
          
- [Видео: темы в Dynamics 365 Customer Engagement](http://go.microsoft.com/fwlink/p/?LinkId=529568) [Запрос и изменение темы организации](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
+ [Видео: темы](http://go.microsoft.com/fwlink/p/?LinkId=529568) [Запрос и изменение темы организации](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
 

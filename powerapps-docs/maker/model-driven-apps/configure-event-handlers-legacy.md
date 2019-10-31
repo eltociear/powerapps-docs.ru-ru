@@ -1,12 +1,7 @@
 ---
-title: Настройка обработчиков событий для основных форм управляемых моделью приложений в PowerApps | MicrosoftDocs
-description: 'Узнайте, как настраивать обработчики событий в Dynamics 365 for Customer Engagement'
-Keywords: Основная форма; Настройка обработчиков событий; Dynamics 365
+title: Настройка обработчиков событий для основных форм управляемых моделью приложений в PowerApps | Документация Майкрософт
+description: 'Узнайте, как настраивать обработчики событий'
 author: Mattp123
-applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
 ms.author: matp
 manager: kvivek
 ms.date: 06/27/2018

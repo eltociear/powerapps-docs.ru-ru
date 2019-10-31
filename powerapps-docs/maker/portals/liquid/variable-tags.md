@@ -1,30 +1,25 @@
 ---
-title: Использование тегов переменных для портала | MicrosoftDocs
-description: Сведения о тегах переменных, доступных на портале
+title: Использование тегов переменных для портала | Документация Майкрософт
+description: 'Сведения о различных тегах переменных, доступных на портале'
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: fa375909ad3e909e70b3477d4e7ba0f24691fc0c
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72974421"
+ms.reviewer: null
 ---
-# <a name="variable-tags"></a>Теги переменных
 
-Теги переменных используются для создания новых переменных ликвидности.
+# <a name="variable-tags"></a>Переменные теги
 
-## <a name="assign"></a>назначать
+Переменные теги используются для создания новых переменных Liquid.
 
-Создает новую переменную. Назначения также могут использовать [фильтры](liquid-filters.md) для изменения значения.  
+## <a name="assign"></a>назначить
 
-**Приведен**
+Создает новую переменную. Назначения также могут использовать [фильтры](liquid-filters.md), чтобы изменить значение.  
+
+**Код**
 
 ```
 {% assign is_valid = true %}
@@ -40,7 +35,7 @@ It is valid.
 {{ name }}
 ```
 
-**Проверки**
+**Вывод**
 
 ```
 It is valid.
@@ -48,11 +43,11 @@ It is valid.
 DAVE BOWMAN
 ```
 
-## <a name="capture"></a>выделяем
+## <a name="capture"></a>захват
 
-Захватывает содержимое в блоке и присваивает его переменной. Затем это содержимое можно визуализировать позже с помощью выходных тегов.
+Захватывает содержимое в своем блоке и назначает его переменной. Это содержимое можно затем обрабатывать с помощью тегов вывода.
 
-**Приведен**
+**Код**
 
 ```
 {% capture hello %}Hello, {{ user.fullname }}.{% endcapture %}
@@ -62,7 +57,7 @@ DAVE BOWMAN
 {{ hello }}
 ```
 
-**Проверки**
+**Вывод**
 
 ```
 Hello, DAVE BOWMAN.
@@ -73,6 +68,6 @@ Hello, DAVE BOWMAN.
 ### <a name="see-also"></a>См. также
 
 [Теги потока управления](control-flow-tags.md)<br>
-[Теги итерации](iteration-tags.md)<br>
+[Теги итерирования](iteration-tags.md)<br>
 [Теги шаблона](template-tags.md)<br>
 [Теги сущности Common Data Service PowerApps](portals-entity-tags.md)

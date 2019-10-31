@@ -19,7 +19,7 @@ search.app:
   - D365CE
 ---
 
-# <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>Доступность в конструкторе приложений PowerApps, конструкторе карты сайта и на странице "Мои приложения"
+# <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>Доступность в конструкторе приложений, конструкторе карты сайта и на странице "Мои приложения" в PowerApps
 
 Корпорация Майкрософт полна решимости сделать свои продукты и сервисы более простыми и доступными для всех. Дополнительные сведения: [Специальные возможности Майкрософт](http://www.microsoft.com/enable/default.aspx)  
  
@@ -106,4 +106,4 @@ search.app:
 
 ## <a name="see-also"></a>См. также
 
-[Использование сочетаний клавиш в приложениях Dynamics 365 Customer Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/basics/keyboard-shortcuts)
+[Использование сочетаний клавиш в PowerApps](/powerapps/user/keyboard-shortcuts)

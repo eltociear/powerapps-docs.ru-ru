@@ -1,5 +1,5 @@
 ---
-title: Создание и изменение глобальных наборов параметров для Common Data Service с помощью обозревателя решений | MicrosoftDocs
+title: Создание и изменение глобальных наборов параметров для Common Data Service с помощью обозревателя решений | Документация Майкрософт
 ms.custom: ''
 ms.date: 05/26/2018
 ms.reviewer: ''
@@ -12,7 +12,8 @@ applies_to:
   - Dynamics 365 Version 9.x
   - PowerApps
 ms.author: matp
-manager: brycho
+manager: kvivek
+author: Mattp123
 search.audienceType:
   - maker
 search.app:
@@ -24,7 +25,7 @@ search.app:
 Обозреватель решений предоставляет один способ создания и изменения глобальных наборов параметров для Common Data Service.
 
 [Портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. <br />Дополнительные сведения: 
-- [Создание и изменение глобального набора параметров для Common Data Service](create-edit-global-option-sets.md)
+- [Создание и изменение наборов глобальных параметров для Common Data Service](create-edit-global-option-sets.md)
 - [Создание набора параметров](custom-picklists.md)
 
 ## <a name="open-solution-explorer"></a>Откройте обозреватель решений
@@ -81,7 +82,7 @@ search.app:
   
 ### <a name="see-also"></a>См. также
  
-[Создание и изменение глобального набора параметров для Common Data Service](create-edit-global-option-sets.md)<br />
+[Создание и изменение наборов глобальных параметров для Common Data Service](create-edit-global-option-sets.md)<br />
 [Создание набора параметров](custom-picklists.md)<br />
 [Создание и изменение полей](create-edit-fields.md)<br />
 [Документация для разработчиков. Настройка глобальных наборов параметров](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)

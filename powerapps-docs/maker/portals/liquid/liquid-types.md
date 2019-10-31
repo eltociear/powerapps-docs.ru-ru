@@ -1,28 +1,23 @@
 ---
-title: Использование типов жидкостей для портала | MicrosoftDocs
-description: Сведения о доступных типах ликвидности на портале.
+title: Использование типов Liquid для портала | Документация Майкрософт
+description: Узнайте о доступных типах Liquid на портале.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: dd6da4788f6563c2026f57914c8156caedfadad3
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72974950"
+ms.reviewer: null
 ---
+
 # <a name="available-liquid-types"></a>Доступные типы Liquid
 
-Объекты жидкости могут возвращать один из семи базовых типов: **String**, **Number**, **Boolean**, **массив**, **Dictionary**, **DateTime**или **null**. Переменные ликвидности можно инициализировать с помощью тегов **Assign** или **Capture** .
+Объекты Liquid могут возвращать один из основных 7 типов: **String**, **Number**, **Boolean**, **Array**, **Dictionary**, **DateTime** или **Null**. Переменные Liquid могут инициализировать с помощью тегов **assign** или **capture**.
 
-## <a name="string"></a>Строка
+## <a name="string"></a>String
 
-Строка объявляется с помощью переноса текста в одинарные или двойные кавычки.
+Строка объявляется путем заключения текста в одинарные или двойные кавычки.
 
 ```
 {% assign string_a = Hello World! %}
@@ -30,15 +25,15 @@ ms.locfileid: "72974950"
 {% assign string_b = 'Single quotes work too.' %}
 ```
 
-Возвращает число символов в строке с помощью свойства Size.
+Число знаков в строке можно получить с помощью свойства size.
 
 ```
 {{ string_a.size }} <!-- Output: 12 -->
 ```
 
-## <a name="number"></a>Номер
+## <a name="number"></a>Число
 
-Числа могут быть целыми числами или числом с плавающей запятой.
+Числа могут быть целыми или с плавающей запятой.
 
 ```
 {% assign pi = 3.14 %}
@@ -50,9 +45,9 @@ This page has a long title.
 {% endif %}
 ```
 
-## <a name="boolean"></a>Логическое значение
+## <a name="boolean"></a>Boolean
 
-Логическое значение — true или false.
+Логическое значение может быть истинным или ложным.
 
 ```
 {% assign x = true %}
@@ -66,9 +61,9 @@ This will be rendered, because x is true.
 {% endif %}
 ```
 
-## <a name="array"></a>inArray
+## <a name="array"></a>Массив
 
-Массив содержит список значений любого типа. Можно получить доступ к заданному элементу (от нуля) с помощью \[ \], выполнить итерацию по ним с помощью **тега for**и получить количество элементов в массиве с помощью свойства Size.
+Массив содержит список значений любого типа. Можно получить доступ к определенному элементу по индексу (с отсчетом с нуля) с помощью \[ \], выполнять итерации по элементам с помощью **тега for** и получать количество элементов в массиве с помощью свойства size.
 
 ```
 {% for view in entitylist.views %}
@@ -86,9 +81,9 @@ This entity list has {{ entitylist.views.size }} views.
 {% endif %}
 ```
 
-## <a name="dictionary"></a>Словаря
+## <a name="dictionary"></a>Словарь
 
-Словари содержат коллекцию значений, доступ к которым можно получить с помощью строкового ключа. Можно получить доступ к заданному элементу по строковому ключу с помощью \[ \], выполнить итерацию по ним с помощью **тега for**и получить количество элементов в словаре с помощью свойства Size.
+Словари содержат коллекцию значений, к которым можно получить доступ с помощью ключа строки. Можно получить доступ к определенному элементу по ключу строки с помощью \[ \], выполнять итерации по элементам с помощью **тега for** и получать количество элементов в словаре с помощью свойства size.
 
 ```
 {{ request.params[ID] }}
@@ -102,15 +97,15 @@ The request parameters collection contains some items.
 
 ## <a name="datetime"></a>Дата и время
 
-Объект DateTime представляет определенные дату и время.
+Объект DateTime представляет определенную дату и время.
 
 ```
 {{ page.modifiedon | date: 'f' }}
 ```
 
-## <a name="null"></a>Заканчивающ
+## <a name="null"></a>Null
 
-NULL представляет пустое или несуществующее значение. Все выходы, пытающиеся вернуть значение null, ничего не отображают. В условиях он будет считаться ложным.
+NULL представляет пустое или несуществующее значение. Все выходные данные, которые пытаются вернуть значение NULL, не отображают ничего. В условиях это значение обрабатывается как ложное.
 
 ```
 {% if request.params[ID] %}
@@ -122,9 +117,9 @@ This will render if the ID request parameter is NOT null.
 
 ### <a name="see-also"></a>См. также
 
-[Хранение исходного содержимого с помощью веб-шаблонов](store-content-web-templates.md)  
-[Общие сведения об операторах жидкостей](liquid-operators.md)  
-[Условие](liquid-conditional-operators.md)  
-[Объекты жидкостей](liquid-objects.md)  
-[Теги жидкостей](liquid-tags.md)  
-[Фильтры жидкостей](liquid-filters.md)  
+[Сохранение содержимого источника с помощью веб-шаблонов](store-content-web-templates.md)  
+[Знакомство с операторами Liquid](liquid-operators.md)  
+[Условный](liquid-conditional-operators.md)  
+[Объекты Liquid](liquid-objects.md)  
+[Теги Liquid](liquid-tags.md)  
+[Фильтры Liquid](liquid-filters.md)  

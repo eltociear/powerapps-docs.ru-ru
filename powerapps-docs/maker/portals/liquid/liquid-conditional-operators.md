@@ -1,26 +1,21 @@
 ---
-title: Использование условных операторов жидкости для портала | MicrosoftDocs
-description: Сведения о доступных условных операторах ликвидности на портале.
+title: Использование условных операторов Liquid для портала | Документация Майкрософт
+description: Узнайте о доступных условных операторах Liquid на портале.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: def132ebc0f8ef93121b10b221479a2452a1d4fb
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72975019"
+ms.reviewer: null
 ---
+
 # <a name="available-liquid-conditional-operators"></a>Доступные условные операторы Liquid
 
-При использовании в условных инструкциях (**Если** **нет**) некоторые ликвидные значения будут считаться истинными, а некоторые будут считаться ложными.
+При использовании в условных операторах (**if**, **unless**) некоторые значения Liquid считаются истинными значениями (true), а другие значения обрабатываются как ложные значения (false).
 
-В Жидкостьх значение NULL и логическое значение false обрабатываются как false; все остальное обрабатывается как true. Пустые строки, пустые массивы и т. д. обрабатываются как true. Примеры
+В Liquid null и логическое значение false рассматриваются как ложные значения; все остальные значения считаются истинными (true). Пустые строки, пустые массивы и т. д. считаются истинными значениями (true). Например,
 
 ```
 {% assign empty_string =  %}
@@ -28,14 +23,14 @@ ms.locfileid: "72975019"
 <p>This will render.</p>
 {% endif %}
 ```
-При необходимости можно проверить пустые строки и массивы, используя специальное значение Empty.
+Если требуется, можно проверять пустые строки и массивы с помощью специального пустого значения.
 
 ```
 {% unless page.title == empty %}
 <h1>{{ page.title }}</h1>
 {% endunless %}
 ```
-Вы также можете проверить размер [типов жидкостей](liquid-types.md), [денежных типов](liquid-types.md)или [типов жидкости](liquid-types.md) с помощью свойства Специальный размер.
+Размер [типы Liquid](liquid-types.md), [типы Liquid](liquid-types.md) или [типы Liquid](liquid-types.md) можно проверить с помощью специального свойства.
 
 ```
 {% if page.children.size > 0 %}
@@ -47,26 +42,26 @@ ms.locfileid: "72975019"
 {% endif %}
 ```
 
-## <a name="summary"></a>Суммар
+## <a name="summary"></a>Сводка
 
-|                           | True | IsFalse |
+|                           | True | False |
 |---------------------------|------|-------|
 | True                      | ×    |       |
-| IsFalse                     |      | ×     |
-| Заканчивающ                      |      | ×     |
-| Строка                    | ×    |       |
-| Пустая строка              | ×    |       |
+| False                     |      | ×     |
+| Null                      |      | ×     |
+| String                    | ×    |       |
+| пустая строка              | ×    |       |
 | 0                         | ×    |       |
 | 1, 3,14                   | ×    |       |
 | массив или словарь       | ×    |       |
 | пустой массив или словарь | ×    |       |
-| Объектами                    | ×    |       |
+| Объект                    | ×    |       |
 
 ### <a name="see-also"></a>См. также
 
-[Хранение исходного содержимого с помощью веб-шаблонов](store-content-web-templates.md)  
-[Общие сведения об операторах жидкостей](liquid-operators.md)  
-[Типы жидкостей](liquid-types.md)  
-[Объекты жидкостей](liquid-objects.md)  
-[Теги жидкостей](liquid-tags.md)  
-[Фильтры жидкостей](liquid-filters.md)  
+[Сохранение содержимого источника с помощью веб-шаблонов](store-content-web-templates.md)  
+[Знакомство с операторами Liquid](liquid-operators.md)  
+[Типы Liquid](liquid-types.md)  
+[Объекты Liquid](liquid-objects.md)  
+[Теги Liquid](liquid-tags.md)  
+[Фильтры Liquid](liquid-filters.md)  

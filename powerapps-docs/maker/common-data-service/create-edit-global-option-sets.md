@@ -1,5 +1,5 @@
 ---
-title: Создание и изменение глобального набора параметров (списков выбора) для Common Data Service | MicrosoftDocs
+title: Создание и изменение обзора (списки выбора) глобального набора параметров для Common Data Service | Документация Майкрософт
 ms.custom: ''
 ms.date: 05/26/2018
 ms.reviewer: ''
@@ -14,7 +14,8 @@ applies_to:
 ms.assetid: f06b8941-8dca-4601-b965-341cfb6fc3b2
 caps.latest.revision: 11
 ms.author: matp
-manager: brycho
+manager: kvivek
+author: Mattp123
 search.audienceType:
   - maker
 search.app:
@@ -36,7 +37,7 @@ search.app:
 
 |Дизайнер| Описание|
 |--|--|
-|[Портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание набора параметров](custom-picklists.md) |
+|[портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание набора параметров](custom-picklists.md) |
 |Обозреватель решений|Не так прост, но предоставляет больше гибкости для менее распространенных требований. <br />Дополнительные сведения: [Создание и изменение глобальных наборов параметров для Common Data Service с помощью обозревателя решений](create-edit-global-option-sets-solution-explorer.md) |
 
 > [!NOTE]

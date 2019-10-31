@@ -1,40 +1,35 @@
 ---
-title: Использование операторов жидкостей для портала | MicrosoftDocs
-description: Сведения о доступных операторах ликвидности на портале.
+title: Использование операторов Liquid для портала | Документация Майкрософт
+description: Узнайте о доступных операторах Liquid на портале.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 08/30/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 4a27a5364a4ae12fecc3a72dbb52115e415dcdb8
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72976537"
+ms.reviewer: null
 ---
-# <a name="understand-liquid-operators"></a>Общие сведения об операторах Liquid
 
-Жидкость имеет доступ ко всем общим логическим операторам и. Их можно использовать в таких тегах, как **If** и **.**
+# <a name="understand-liquid-operators"></a>Знакомство с операторами Liquid
 
-## <a name="basic-operators"></a>Основные операторы
+Liquid имеет доступ ко все распространенным логические операторам и операторам сравнения. Они могут использоваться в таких тегах, как **if** и **unless**.
 
-| ==    | Прошлом                          |
+## <a name="basic-operators"></a>Базовые операторы
+
+| ==    | Равно                          |
 |-------|---------------------------------|
-| !=    | Не равно                  |
-| &gt;  | Более                    |
-| &lt;  | Менее                       |
+| !=    | не равно                  |
+| &gt;  | Больше                    |
+| &lt;  | Меньше                       |
 | &gt;= | Больше или равно        |
 | &lt;= | Меньше или равно           |
-| или    | Условие а **или** условие б  |
-| перетаскивани   | Условие а **и** условие б |
+| или    | Условие A **или** условие B  |
+| и   | Условие A **и** условие B |
 
-## <a name="contains"></a>содержащих
+## <a name="contains"></a>содержит
 
-содержит тесты для присутствия подстроки в строке.
+contains проверяет наличие подстроки в строке.
 
 ```
 {% if page.title contains 'Product' %}
@@ -44,11 +39,11 @@ The title of this page contains the word Product.
 {% endif %}
 ```
 
-Contains также может проверять наличие строки в массиве строк.
+contains также может проверить присутствия строки в массиве строк.
 
-## <a name="startswith"></a>StartsWith
+## <a name="startswith"></a>startswith
 
-StartsWith проверяет, начинается ли строка с заданной подстроки.
+startswith проверяет, начинается ли строка с указанной подстроки.
 
 ```
 {% if page.title startswith 'Profile' %}
@@ -58,9 +53,9 @@ This is a profile page.
 {% endif %}
 ```
 
-## <a name="endswith"></a>EndsWith
+## <a name="endswith"></a>заканчивается на
 
-EndsWith проверяет, заканчивается ли строка данной подстрокой.
+endswith проверяет, заканчивается ли строка указанной подстрокой.
 
 ```
 {% if page.title endswith 'Forum' %}
@@ -72,9 +67,9 @@ This is a forum page.
 
 ### <a name="see-also"></a>См. также
 
-[Хранение исходного содержимого с помощью веб-шаблонов](store-content-web-templates.md)  
-[Типы жидкостей](liquid-types.md)  
-[Условие](liquid-conditional-operators.md)  
-[Объекты жидкостей](liquid-objects.md)  
-[Теги жидкостей](liquid-tags.md)  
-[Фильтры жидкостей](liquid-filters.md) 
+[Сохранение содержимого источника с помощью веб-шаблонов](store-content-web-templates.md)  
+[Типы Liquid](liquid-types.md)  
+[Условный](liquid-conditional-operators.md)  
+[Объекты Liquid](liquid-objects.md)  
+[Теги Liquid](liquid-tags.md)  
+[Фильтры Liquid](liquid-filters.md) 

@@ -1,38 +1,33 @@
 ---
-title: Обновление с домена Dynamics 365 до домена порталов PowerApps | MicrosoftDocs
-description: Инструкции по обновлению из домена Dynamics 365 в домен порталов PowerApps.
+title: Обновление с домена Dynamics 365 на домен порталов PowerApps | Документация Майкрософт
+description: Инструкции по обновлению с домена Dynamics 365 на домен порталов PowerApps.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: ''
-ms.date: 10/07/2019
+ms.custom: null
+ms.date: 07/18/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: f8856b5d21b803e647e5439aeb47b4840256e9f0
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72975640"
+ms.reviewer: null
 ---
-# <a name="update-to-powerapps-portals-domain"></a>Обновление домена порталов PowerApps
 
-С выпуском порталов PowerApps теперь вы можете обновить `microsoftcrmportals.com` домена Dynamics 365 до домена порталов PowerApps `powerappsportals.com`.
+# <a name="update-to-powerapps-portals-domain"></a>Перейти на домен порталов PowerApps
 
-1. Откройте [центр администрирования порталов PowerApps](admin-overview.md).
+С выпуском предварительной версии порталов PowerApps теперь можно перейти с домена Dynamics 365 `microsoftcrmportals.com` на домен порталов PowerApps `powerappsportals.com`.
 
-2. Перейдите к **действиям портала** > **обновления в домен порталов PowerApps**.
+1. Открытие [Центра администрирования портала PowerApps](admin-overview.md).
 
-    > [!div class=mx-imgBorder]
-    > ![Обновление домена портала powerapps](../media/update-portal-domain-button.png "Обновить до домена портала powerapps")
-
-3. В поле **URL-адрес портала**введите адрес веб-сайта и нажмите кнопку **ОК**.
+2. Перейдите в раздел **Действия портала** > **Перейти на домен порталов PowerApps**.
 
     > [!div class=mx-imgBorder]
-    > ![Обновление домена портала powerapps](../media/update-portal-domain.png "Обновить до домена портала powerapps")
+    > ![Переход на домен портала PowerApps](../media/update-portal-domain-button.png "Переход на домен портала PowerApps")
 
-Если вы уже используете домен порталов PowerApps и хотите вернуться к старому домену, можно использовать действие **Обновить в домене портала powerapps** , чтобы вернуться к старому домену. В этом случае сообщение отображается следующим образом:
+3. В поле **URL-адрес портала** введите адрес веб-сайта и выберите **ОК**.
+
+    > [!div class=mx-imgBorder]
+    > ![Переход на домен портала PowerApps](../media/update-portal-domain.png "Переход на домен портала PowerApps")
+
+Если вы уже используете домен порталов PowerApps и хотели бы вернуться на старый домен, можно использовать действие **Перейти на домен портала PowerApps** для возврата к прежнему домену. В этом случае отображается следующее сообщение:
 
 > [!div class=mx-imgBorder]
-> ![Вернуться к старому домену](../media/revert-portal-domain.png "вернуться к старому домену")
+> ![Возврат к старому домену](../media/revert-portal-domain.png "Возврат к старому домену")

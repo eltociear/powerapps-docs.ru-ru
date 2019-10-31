@@ -2,7 +2,7 @@
 title: Сборник схем единого интерфейса | MicrosoftDocs
 description: Сведения о способах планирования и выполнения перехода от старого веб-клиента к единому интерфейсу
 ms.custom: ''
-ms.date: 07/24/2019
+ms.date: 08/29/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -40,4 +40,6 @@ search.app:
 |[Обзор сборника схем единого интерфейса](http://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/dynamics365unifiedinterfaceplaybook.pdf)      |   PDF      |
 |[Глава 1. Начало](http://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch1-initiate.pptx)     |  PowerPoint       |
 |[Глава 2. Знакомство](http://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch-2-explore.pptx)     |  PowerPoint       |
+| [Глава 3: переход](https://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch3-transition.pptx)|  PowerPoint     |
+| [Глава 4: Оптимизация](https://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch4-optimize.pptx)  | PowerPoint  |
 
