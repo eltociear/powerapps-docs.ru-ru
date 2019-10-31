@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/24/2019
+ms.date: 10/30/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 68e702156b0a5b820dd23076551cf7970efc65a3
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 2a1696437f434063b4297df220f1cb406bc993f8
+ms.sourcegitcommit: 98f6ce1531e69e2aae1000eda7548434d77cafe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73025106"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73142613"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Требования к системе, ограничения и значения конфигурации для приложений на основе холста
 В этой статье приводятся требования к платформе устройств и веб-браузеру, а также ограничения и значения конфигурации для PowerApps.
@@ -27,8 +27,8 @@ ms.locfileid: "73025106"
 
 | **Минимальные требования** | **Рекомендуется** |
 | --- | --- |
-| iOS 9.3 или более поздней версии |iOS 10 или более поздней версии с не менее чем 2 ГБ ОЗУ |
-| Android 5 или более поздней версии |Android 7 или более поздней версии с не менее чем 4 ГБ ОЗУ |
+| iOS 12 или более поздняя версия |iOS 12 или более поздняя версия|
+| Android 7 или более поздней версии |Android 7 или более поздней версии |
 | Windows 8.1 или более поздней версии (только ПК) |Windows 10 Fall Creators Update с не менее чем 8 ГБ ОЗУ|
 
 > [!NOTE]
