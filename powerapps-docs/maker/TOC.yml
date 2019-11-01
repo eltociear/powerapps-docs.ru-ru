@@ -741,7 +741,7 @@
           href: ./canvas-apps/share-app-resources.md
         - name: "Внедрение приложения в Power\_BI"
           href: ./canvas-apps/embed-powerapps-powerbi.md
-        - name: Внедрение приложения Teams
+        - name: Внедрение приложения в Teams
           href: ./canvas-apps/embed-teams-app.md
     - name: Управление приложением
       items:
