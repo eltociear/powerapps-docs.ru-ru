@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b89f23ac1dec941fcc2f5d7bd03f927c08691f77
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 41536592493a2f17b187829fb778d2a6ca94134a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994053"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540770"
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>Подключение к облачному хранилищу из PowerApps
 В PowerApps есть несколько вариантов подключения к облачным хранилищам. С помощью любого из них вы можете сохранить файл Excel и использовать информацию из него в своем приложении. Ниже перечислены доступные подключения.  
@@ -37,7 +37,7 @@ ms.locfileid: "71994053"
   4. Сохраните изменения.
 
 ## <a name="connect-to-the-cloud-storage-connection"></a>Подключение к облачному хранилищу
-1. На сайте [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) разверните раздел **Manage** (Управление) и выберите пункт **Connections** (Подключения):  
+1. На сайте [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) разверните раздел **Manage** (Управление) и выберите пункт **Connections** (Подключения):  
    
     ![Выбор подключений](./media/cloud-storage-blob-connections/connections.png)
 2. Щелкните **New connection** (Создать подключение) и выберите подключение к облачному хранилищу. Например, вы можете выбрать службу **OneDrive**.

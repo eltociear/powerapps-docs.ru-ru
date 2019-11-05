@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ecbe46f28d7be215a5ec9d8efecebde5dc4656d4
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 71cb3318ceb83b5c18ebce621a07be08fc60e9c8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993027"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73536987"
 ---
 # <a name="edit-a-canvas-app-in-powerapps"></a>Изменение приложения на основе холста в PowerApps
 Вы можете изменить любое приложение на основе холста, которое вы создали, которым владеете или для которого у вас есть разрешения **Может изменять**. Вы можете изменить приложение в PowerApps Studio. При попытке изменить приложение, которое уже открыто для редактирования в другом месте, появится сообщение о том, что приложение уже открыто вами или другим пользователем.
 
 ## <a name="verify-your-permissions"></a>Проверка разрешений
-1. Войдите в [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), затем щелкните (коснитесь) **Приложения** в меню **Файл** (с левой стороны).
+1. Войдите в [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), затем щелкните (коснитесь) **Приложения** в меню **Файл** (с левой стороны).
    
     ![Пункт "Приложения" в меню "Файл"](./media/edit-app/file-apps.png)
 

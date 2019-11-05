@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 4795e7ec7a3d7906efd68e82ac51e929a3800328
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: b4b0be6e3a5e08fc2c6b4679cf84669280c9271c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72976675"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542575"
 ---
 # <a name="edit-css"></a>Редактирование CSS
 
@@ -24,10 +24,10 @@ ms.locfileid: "72976675"
 
 1.  [Измените портал](manage-existing-portals.md#edit) , чтобы открыть его в PowerApps Portals Studio.  
 
-2.  В левой части **экрана выберите значок тема темы** ![значок](media/theme-icon.png "темы") из воле. Отобразятся доступные темы.  
+2.  Выберите ![значок тема](media/theme-icon.png "Значок темы") темы из воле в левой части экрана. Отобразятся доступные темы.  
 
     > [!div class=mx-imgBorder]
-    > ![](media/theme-pane.png "Область") темы области темы  
+    > ![Область темы](media/theme-pane.png "Область темы")  
 
 3.  Выберите нужный CSS, чтобы открыть его в редакторе кода.
 
@@ -37,12 +37,12 @@ ms.locfileid: "72976675"
 
 1.  [Измените портал](manage-existing-portals.md#edit) , чтобы открыть его в PowerApps Portals Studio.  
 
-2.  В левой части **экрана выберите значок тема темы** ![значок](media/theme-icon.png "темы") из воле. Отобразятся доступные темы.  
+2.  Выберите ![значок тема](media/theme-icon.png "Значок темы") темы из воле в левой части экрана. Отобразятся доступные темы.  
 
 3. Выберите **Отправить настраиваемую таблицу CSS**.
 
     > [!div class=mx-imgBorder]
-    > ![](media/upload-css.png "Область") темы области темы  
+    > ![Область темы](media/upload-css.png "Область темы")  
 
 4. Найдите и выберите файл CSS для отправки.
 

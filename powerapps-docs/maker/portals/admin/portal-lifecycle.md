@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: c2ee82be5526cce41451c8a703971c0f97d32ea0
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: 5476bb0306b5d9e0767f451fba36a567a70c4c54
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977319"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542948"
 ---
 # <a name="about-portal-lifecycle"></a>Жизненный цикл портала
 
@@ -30,7 +30,7 @@ ms.locfileid: "72977319"
 
 Портал всегда создается в качестве пробного портала. Если у вас есть необходимые лицензии, его можно преобразовать в рабочую среду из центра администрирования PowerApps Portals. Сведения о преобразовании пробного портала в рабочую среду см. в статье [Преобразование пробной версии портала в рабочую среду](#convert-a-trial-portal-to-production).
 
-Чтобы преобразовать пробный портал в рабочую среду, в среде должны быть нужны надстройки для внешних пользователей или лицензия для внутренних пользователей. Дополнительные сведения о лицензировании см. в разделе [вопросы и ответы по лицензированию powerapps и Microsoft Flow](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-flow-licensing-faq) и [Лицензирование порталов PowerApps](https://docs.microsoft.com/en-us/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-powerapps-portals-licensing).
+Чтобы преобразовать пробный портал в рабочую среду, в среде должны быть нужны надстройки для внешних пользователей или лицензия для внутренних пользователей. Дополнительные сведения о лицензировании см. в разделе [вопросы и ответы по лицензированию powerapps и Microsoft Flow](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) и [Лицензирование порталов PowerApps](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-powerapps-portals-licensing).
 
 ### <a name="suspended-portal"></a>Приостановленный портал
 
@@ -54,12 +54,12 @@ ms.locfileid: "72977319"
 Когда вы открываете [центр администрирования порталов PowerApps](admin-overview.md) и переходите на вкладку [сведения о портале](portal-details.md) , вы увидите уведомление об истечении срока действия пробной версии, отображенной под полем **тип** .
 
 > [!div class=mx-imgBorder]
-> Уведомление пробной версии ![вкладки сведений о портале]на(../media/admin-center-convert-notif.png "вкладке \"сведения о портале") "
+> ![Пробное уведомление на вкладке "сведения о портале"](../media/admin-center-convert-notif.png "Пробное уведомление на вкладке "сведения о портале"")
 
 На других страницах центра администрирования уведомление отображается в верхней части страницы.
 
 > [!div class=mx-imgBorder]
-> Пробное уведомление ![на других]вкладках на(../media/admin-center-convert-notif-all.png "других вкладках")
+> ![Пробное уведомление на других вкладках](../media/admin-center-convert-notif-all.png "Пробное уведомление на других вкладках")
 
 Чтобы преобразовать пробный портал в рабочую среду, выполните следующие действия.
 
@@ -68,4 +68,4 @@ ms.locfileid: "72977319"
 2.  Нажмите кнопку **подтвердить**.
 
     > [!div class=mx-imgBorder]
-    > Подтверждение пробного использования пробной ![версии](../media/trial-to-prod-confirm.png "в") рабочей среде
+    > ![Подтверждение пробной версии в рабочей среде](../media/trial-to-prod-confirm.png "Подтверждение пробной версии в рабочей среде")

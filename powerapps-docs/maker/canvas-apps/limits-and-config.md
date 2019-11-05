@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2a1696437f434063b4297df220f1cb406bc993f8
-ms.sourcegitcommit: 98f6ce1531e69e2aae1000eda7548434d77cafe0
+ms.openlocfilehash: 69d29136f5184ed50be6380ee1a91847d4506d6a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73142613"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541198"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Требования к системе, ограничения и значения конфигурации для приложений на основе холста
 В этой статье приводятся требования к платформе устройств и веб-браузеру, а также ограничения и значения конфигурации для PowerApps.
@@ -98,10 +98,10 @@ ms.locfileid: "73142613"
 | graph.microsoft.com<br>graph.windows.net |https |Azure Graph — для получения сведений о пользователе (например, фотографии профиля) |
 | gallery.azure.com |https |Примеры и шаблоны приложений. |
 | \*. azure-apim.net |https |Концентраторы API — разные поддомены для каждого языкового стандарта. |
-| \*. powerapps.com |https | create.powerapps.com, make.powerapps.com, content.powerapps.com и web.powerapps.com |
-| \*. azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com и web.powerapps.com |
+| \*. powerapps.com |https | create.powerapps.com, make.powerapps.com, content.powerapps.com и make.powerapps.com |
+| \*. azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com и make.powerapps.com |
 | \*. blob.core.windows.net |https | Хранилище BLOB-объектов |
-| \*. flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com и web.powerapps.com |
+| \*. flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com и make.powerapps.com |
 | *. dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |Телеметрия |
 | localhost | https | PowerApps Mobile

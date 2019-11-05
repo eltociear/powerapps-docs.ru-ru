@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3a25654f0304fce9978ae1f7b1410cfb557ef32c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 3144f2f6517cbaa641227ff7b2f9482ed1d2e476
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995301"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542433"
 ---
 # <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>Отображение, сортировка и фильтрация данных в коллекции PowerApps
 В этой статье приведены сведения о создании коллекции с изображениями товара и данными о нем, а также о параметрах сортировки и фильтрации.
@@ -32,10 +31,10 @@ ms.PowerAppsDecimalTransform: true
 > 
 
 ### <a name="prerequisites"></a>Технические условия
-* [Зарегистрируйтесь](../signup-for-powerapps.md) в PowerApps, а затем [войдите в систему](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) с помощью учетных данных, использовавшихся при регистрации.
+* [Зарегистрируйтесь](../signup-for-powerapps.md) в PowerApps, а затем [войдите в систему](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) с помощью учетных данных, использовавшихся при регистрации.
 * Создайте приложение для планшета с помощью [шаблона](get-started-test-drive.md) или [данных](get-started-create-from-data.md) либо создайте его с [нуля](get-started-create-from-blank.md).
 * Узнайте, как [настроить элемент управления](add-configure-controls.md).
-* В рамках этого руководства используются демонстрационные входные данные [CreateFirstApp](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip), куда входят изображения в формате JPG. Этот ZIP-файл содержит XML-файл, который можно преобразовать в Excel. В противном случае PowerApps автоматически считывает и импортирует файлы в ZIP-файлах. Вы можете скачать и использовать этот образец данных или импортировать собственный.
+* В рамках этого руководства используются демонстрационные входные данные [CreateFirstApp](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip), куда входят изображения в формате JPG. Этот ZIP-файл содержит XML-файл, который можно преобразовать в Excel. В противном случае PowerApps автоматически считывает и импортирует файлы в ZIP-файлах. Вы можете скачать и использовать этот образец данных или импортировать собственный.
 
 ## <a name="show-data-in-a-gallery"></a>Отображение данных в коллекции
 1. Создайте коллекцию с именем **Товары** на основе образца данных. Для этого:  
@@ -121,7 +120,7 @@ ms.PowerAppsDecimalTransform: true
 1. Выберите любой элемент в коллекции *за исключением* первого.
 2. Сейчас для свойства **[Items](controls/properties-core.md)** задано значение Inventory (Товары) (имя коллекции). Измените его на следующее:  
    
-    **Sort(Inventory; ProductName)**
+    **Sort(Inventory, ProductName)**
    
     За счет этого элементы коллекции сортируются по названию товара в порядке возрастания: ![][11]  
    
@@ -134,11 +133,11 @@ ms.PowerAppsDecimalTransform: true
 2. Настройте ползунок таким образом, чтобы пользователи не могли указывать значение, превышающее доступное количество единиц каждого товара:  
    
    1. На вкладке **Содержимое** выберите **Минимум**, а затем введите следующее выражение:  
-      ```Min(Inventory; UnitsInStock)```  
+      ```Min(Inventory, UnitsInStock)```  
    2. На вкладке **Содержимое** выберите **Максимум**, а затем введите следующее выражение:  
-      ```Max(Inventory; UnitsInStock)```
+      ```Max(Inventory, UnitsInStock)```
 3. Выберите любой элемент в коллекции *за исключением* первого. Задайте для свойства **[Items](controls/properties-core.md)** коллекции следующее выражение:  
-   ```Filter(Inventory; UnitsInStock<=StockFilter.Value)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value)```
 4. В окне **предварительного просмотра** передвиньте ползунок на значение, которое находится между максимальным и минимальным количеством единиц товара в коллекции. При изменении положения ползунка в коллекции будут отображаться только те товары, количество единиц которых меньше указанного значения:  
    ![][13]  
 
@@ -147,7 +146,7 @@ ms.PowerAppsDecimalTransform: true
 1. Вернитесь в режим конструктора.
 2. На вкладке **Вставка** выберите **Текст**, **Input Text** (Вводимый текст), а затем измените имя нового элемента управления на **NameFilter**. Поместите элемент управления "Текст" под ползунком.
 3. Задайте для свойства **[Items](controls/properties-core.md)** коллекции следующее выражение:  
-   ```Filter(Inventory; UnitsInStock<=StockFilter.Value && NameFilter.Text in ProductName)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value && NameFilter.Text in ProductName)```
 4. В окне **предварительного просмотра** установите ползунок на *30* и в текстовом поле для ввода введите букву *ж*. В коллекции отобразятся только товары, которых имеется в наличии менее 30 единиц и *в* имени которых есть буква "ж".  
    ![][14]  
 

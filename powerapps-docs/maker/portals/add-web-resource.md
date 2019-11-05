@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: ed1053c758f97234ad94a09832683ff00ef17744
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: c735513bc0a8f325aaf0debca2170131d45178dc
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72977572"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543129"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>Добавление веб-ресурса хранилища Azure в форму
 
@@ -27,7 +27,7 @@ ms.locfileid: "72977572"
 
 Когда файл (например, вложение. zip) отправляется в службу хранилища Azure с помощью портала, он представляется заметкой сущности и заполнителя вложения.
 
-![Вложение в](media/notes-attachment-lead-form.png "заполнитель формы для вложения в форму")
+![Вложение в форму](media/notes-attachment-lead-form.png "Заполнитель для вложения в форму")
 
 Обратите внимание, что файл вложения теперь называется вложение. zip. txt. По умолчанию Common Data Service не имеет замысла файла Azure, поэтому файл PlaceHolder. txt хранится в Common Data Service. В контексте хранилища Azure для файла заполнителя отображаются сведения о файле.
 ```
@@ -57,11 +57,11 @@ ms.locfileid: "72977572"
 
 8. Сохраните форму, а затем опубликуйте изменения.
 
-   ![Добавление веб-ресурса](media/add-web-resource.png "Добавление веб-ресурса")
+   ![Добавить веб-ресурс](media/add-web-resource.png "Добавление веб-ресурса")
 
 Теперь новый элемент управления будет отображен на странице, что дает возможность управлять вложениями в службе хранилища Azure.
 
-![Вложение файлов Azure в форму](media/azure-file-attachment-lead-form.png "Вложение файла Azure в форме")
+![Вложение файлов Azure в форму](media/azure-file-attachment-lead-form.png "Вложение файлов Azure в форму")
 
 Значок скрепки был заменен значком облака, чтобы отметить, что этот файл хранится в службе хранилища Azure. Вы можете продолжить хранение вложений в Common Data Service; Эти файлы будут отмечены значком скрепки.
 
@@ -80,11 +80,11 @@ ms.locfileid: "72977572"
 > [!Note]
 > Функция эскиза ограничена изображениями размером от 1 МБ.
 
-![](media/notes-thumbnail.png "Эскиз") примечаний примечаний
+![Эскиз заметок](media/notes-thumbnail.png "Эскиз заметок")
 
 ## <a name="cors-protocol-support"></a>Поддержка протокола CORS
 
-Протокол [CORS](http://www.w3.org/TR/cors/) состоит из набора заголовков, указывающих, можно ли предоставить общий доступ к ответу другому домену.
+Протокол [CORS](https://www.w3.org/TR/cors/) состоит из набора заголовков, указывающих, можно ли предоставить общий доступ к ответу другому домену.
 Для настройки CORS используются следующие параметры сайта.
 
 |                 Имя                  |                                                                            Description                                                                            |

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ea94b076126aca3bc3dd687a853393e20901eeb8
-ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
+ms.openlocfilehash: 54d8ac3d347c0f60f82fdd73949eb2fd8545519c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256133"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541478"
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Пользовательский визуальный элемент PowerApps для Power BI
 
@@ -53,7 +52,7 @@ Power BI позволяет анализировать данные и прин
 
     ![Пользовательская формула](./media/powerapps-custom-visual/custom-formula.png)
 
-    Эта формула соединяет данные Power BI с источником данных клиента: `LookUp(Customer;Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
+    Эта формула соединяет данные Power BI с источником данных клиента: `LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
 
    Отчет Power BI и запущенный экземпляр PowerApps Studio используют общее активное подключение к данным. Если открыты оба этих компонента, вы можете фильтровать или изменять данные в отчете, и эти изменения будут немедленно отражаться в приложении в PowerApps Studio.
 
@@ -78,7 +77,7 @@ Power BI позволяет анализировать данные и прин
 - Пользовательский визуальный элемент PowerApps не может фильтровать данные или отправлять их обратно в отчет.
 - Общий доступ к приложению PowerApps необходимо предоставлять отдельно от отчета. Узнайте, как [предоставлять общий доступ к приложениям в PowerApps](share-app.md).
 - Сервер отчетов Power BI и мобильное приложение для Power BI не поддерживают пользовательский визуальный элемент PowerApps.
-- При использовании функции Повербиинтегратион. Refresh () необходимо использовать источник, поддерживающий [DirectQuery](https://docs.microsoft.com/en-us/power-bi/desktop-directquery-data-sources) , а подключение к данным должно быть создано с помощью метода DirectQuery.
+- При использовании функции Повербиинтегратион. Refresh () необходимо использовать источник, поддерживающий [DirectQuery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources) , а подключение к данным должно быть создано с помощью метода DirectQuery.
 - PowerApps в Power BI Desktop предоставляет данные для PowerApps Studio при создании приложений, но не во время редактирования. Используйте Power BI Web для предварительного просмотра данных при редактировании приложений.
 
 > [!NOTE]
@@ -86,7 +85,7 @@ Power BI позволяет анализировать данные и прин
 
 ## <a name="browser-support"></a>Поддержка браузера
 
-В следующей таблице перечислены поддерживаемые обозреватели действия по просмотру, созданию и изменению действий пользовательского визуального элемента PowerApps. Поддерживаемые браузеры и действия определяются галочкой ( &check; ).
+В следующей таблице перечислены поддерживаемые обозреватели действия по просмотру, созданию и изменению действий пользовательского визуального элемента PowerApps. Поддерживаемые браузеры и действия определяются галочкой (&check;).
 
 |Браузер|Режиме|Создания|Изменений
 |-|-|-|-
@@ -106,7 +105,7 @@ Power BI позволяет анализировать данные и прин
 3. Используйте клавиши **Ctrl + Right** на клавиатуре, чтобы ввести визуальный элемент.
 3. Используйте клавишу **Tab** на клавиатуре, пока не будет выбран нужный компонент визуального элемента.
 
-Дополнительные сведения см. в следующих статьях: [Документация по специальным возможностям Power BI]( https://docs.microsoft.com/en-us/power-bi/desktop-accessibility)
+Дополнительные сведения см. в [документации по специальным возможностям Power BI]( https://docs.microsoft.com/power-bi/desktop-accessibility) .
 
 
 ## <a name="next-steps"></a>Дальнейшие действия

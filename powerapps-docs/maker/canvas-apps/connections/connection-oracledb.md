@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1ca519e4b082f45c03184510182fb8dce07b9eec
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: c8db848e0d6874fd44fedbe9b84539e548867e76
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993924"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541029"
 ---
 # <a name="connect-to-an-oracle-database-from-powerapps"></a>Подключение к базе данных Oracle из PowerApps
 Создание списка таблиц, а также создание, чтение, обновление и удаление строк таблицы в базе данных Oracle после подключения и создания приложения в PowerApps. Подключение к базе данных Oracle поддерживает полное делегирование фильтрации, сортировки и других функций, но не триггеров или хранимых процедур.
@@ -35,7 +35,7 @@ ms.locfileid: "71993924"
 Локальный шлюз данных выполняет функцию моста, обеспечивая быструю и безопасную передачу данных (которые не находятся в облаке) между локальной средой и службами Power BI, Microsoft Flow, Logic Apps и PowerApps. Вы можете использовать один шлюз с несколькими службами и несколькими источниками данных. Дополнительные сведения см. в статье [Общие сведения о локальных шлюзах данных в Microsoft PowerApps](../gateway-reference.md).
 
 ### <a name="install-oracle-client"></a>Установка клиента Oracle
-На компьютере с локальным шлюзом данных установите [64-разрядную версию ODAC 12c, выпуск 4 (12.1.0.2.4) для Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html). В противном случае при попытке создания или использования подключения появится сообщение об ошибке, как описано в списке известных проблем.
+На компьютере с локальным шлюзом данных установите [64-разрядную версию ODAC 12c, выпуск 4 (12.1.0.2.4) для Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html). В противном случае при попытке создания или использования подключения появится сообщение об ошибке, как описано в списке известных проблем.
 
 ## <a name="create-an-app-from-a-table-in-an-oracle-database"></a>Создание приложения из таблицы в базе данных Oracle
 1. В PowerApps Studio в меню **Файл** (у левого края экрана) выберите **Создать**.
@@ -44,7 +44,7 @@ ms.locfileid: "71993924"
 2. В разделе **Начать с данных** щелкните стрелку.
    
       Появится список имеющихся подключений.
-3. Щелкните **New connection** (Создать подключение).
+3. Щелкните **Новое подключение**.
    
    ![Создание подключения](./media/connection-oracledb/new-connection.png)
 4. В списке подключений выберите **База данных Oracle**.

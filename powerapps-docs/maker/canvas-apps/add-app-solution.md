@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c908e3d25530b52b103ef58989545e46b931e791
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 0748f78665b389d57989c9170ca21077721f6633
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71987706"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540999"
 ---
 # <a name="create-a-canvas-app-from-within-a-solution"></a>Создание приложения Canvas из решения
 
@@ -34,7 +34,7 @@ ms.locfileid: "71987706"
 
 Эту процедуру можно пропустить, если у вас уже есть решение, в котором вы хотите создать приложение или связать его с приложением.
 
-1. [Войдите](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в PowerApps, а затем (при необходимости) переключитесь в соответствующую среду:
+1. [Войдите](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в PowerApps, а затем (при необходимости) переключитесь в соответствующую среду:
 
     - Если вы хотите создать приложение из решения, переключитесь в любую среду, содержащую Common Data Service базу данных.
     - Если требуется связать существующее приложение с решением, переключитесь в среду, содержащую это приложение.
@@ -65,7 +65,7 @@ ms.locfileid: "71987706"
 
 В решении можно создать пустое приложение Canvas. Вы не можете автоматически создать приложение с тремя экранами или настроить шаблон или пример приложения из решения.
 
-1. [Войдите](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в PowerApps.
+1. [Войдите](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в PowerApps.
 
 1. При необходимости переключитесь на среду, содержащую решение, в котором нужно создать приложение Canvas.
 
@@ -96,7 +96,7 @@ ms.locfileid: "71987706"
 
 Если вы хотите связать приложение с решением, оба должны находиться в той же среде, и приложение должно быть создано из решения.
 
-1. [Войдите](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в PowerApps.
+1. [Войдите](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в PowerApps.
 
 1. При необходимости переключитесь на среду, содержащую решение, с которым необходимо связать приложение.
 

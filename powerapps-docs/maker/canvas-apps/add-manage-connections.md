@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ad7f01da3217faa1cd4c55b1d33acd03953434f5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: e8f40f9cd3b15dddfd9fdadbcd15495e33464967
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987341"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540897"
 ---
 # <a name="manage-canvas-app-connections-in-powerapps"></a>Управление подключениями из приложений на основе холста в PowerApps
-На сайте [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) можно создать или удалить подключение к одному или нескольким источникам данных, а также обновить для него учетные данные.
+На сайте [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) можно создать или удалить подключение к одному или нескольким источникам данных, а также обновить для него учетные данные.
 
 Приложение на основе холста может подключаться к SharePoint, SQL Server, Office 365, OneDrive для бизнеса, Salesforce, Excel и многим другим [источникам данных](connections-list.md).
 
@@ -32,11 +32,11 @@ ms.locfileid: "71987341"
 * подключение к серверу SQL Server и обновление таблицы из приложения.
 * отправка сообщения электронной почты в Office 365;
 * отправка твита.
-* Подключение к Twilio и отправка SMS-сообщений из приложения;
+* подключение к Twilio и отправка SMS-сообщений из приложения;
 
 ## <a name="prerequisites"></a>Технические условия
 1. [Зарегистрируйтесь](../signup-for-powerapps.md) в PowerApps.
-2. Войдите в [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), используя те же учетные данные, которые вы ввели при регистрации.
+2. Войдите в [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), используя те же учетные данные, которые вы ввели при регистрации.
 
 ## <a name="background-on-data-connections"></a>Основные сведения о подключениях к данным
 Большинство приложений PowerApps используют внешние сведения (**источники данных**), хранящиеся в облачных службах. Типичный пример — это таблица в файле Excel, который хранится в службе OneDrive для бизнеса. Приложения получают доступ к источникам данных с помощью **подключений**.
@@ -47,17 +47,17 @@ ms.locfileid: "71987341"
 
 С помощью элементов управления **[Gallery](controls/control-gallery.md)** (Коллекция), **[Display form](controls/control-form-detail.md)** (Форма отображения) и **[Edit form](controls/control-form-detail.md)** (Форма изменения) можно легко создать приложение, которое считывает и записывает данные из источника данных. Чтобы начать работу, ознакомьтесь со статьей о [формах данных](working-with-forms.md).
 
-Помимо создания подключений и управления ими на сайте [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), создать подключение также можно перечисленными ниже способами.
+Помимо создания подключений и управления ими на сайте [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), создать подключение также можно перечисленными ниже способами.
 
 * Создайте [приложение на основе данных](app-from-sharepoint.md) автоматически, например пользовательский список SharePoint.
 * Обновите существующее приложение или создайте новое, как описано в статье о [добавлении подключения](add-data-connection.md).
 * Откройте приложение, которое создал и к которому [предоставил вам доступ](share-app.md) другой пользователь.
 
 > [!NOTE]
-> В PowerApps Studio можно открыть меню **Файл** и выбрать пункт **Подключения**. Откроется сайт [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), на котором можно создавать подключения и управлять ими.
+> В PowerApps Studio можно открыть меню **Файл** и выбрать пункт **Подключения**. Откроется сайт [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), на котором можно создавать подключения и управлять ими.
 
 ## <a name="create-a-new-connection"></a>Создание подключения
-1. Если вы еще не сделали этого, войдите на сайт [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Если вы еще не сделали этого, войдите на сайт [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2. На панели навигации слева щелкните или нажмите **Connections** (Подключения).
    
     ![Управление подключениями](./media/add-manage-connections/open-connections.png)

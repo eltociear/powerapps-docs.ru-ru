@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ac6586067105d5f6cd1ce2aab5568450804fe4c6
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 03411202ecc9c4c04713f7eb9cf6286809109684
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71991364"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541530"
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>Создание коллекции заказов в приложении Canvas
 
@@ -39,7 +38,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="create-a-blank-app"></a>Создание пустого приложения
 
-1. [Войдите в PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)и создайте пустое приложение для планшетов.
+1. [Войдите в PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)и создайте пустое приложение для планшетов.
 
     > [!div class="mx-imgBorder"]
     > ![приложение Canvas из пустой плитки](media/northwind-orders-canvas-part1/start-01.png)
@@ -106,8 +105,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. В строке формул задайте в качестве значения свойства **Items** коллекции следующую формулу:
 
-    ```powerapps-comma
-    Sort( Orders; 'Order Number'; Descending )
+    ```powerapps-dot
+    Sort( Orders, 'Order Number', Descending )
     ```
 
     Функция [**Sort**](functions/function-sort.md) упорядочивает список таким образом, чтобы сначала появился самый новый заказ (который имеет самый высокий порядковый номер).
@@ -133,7 +132,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. В строке формул задайте для свойства **Text** метки следующее выражение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     "Order " & ThisItem.'Order Number'
     ```
 
@@ -149,7 +148,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. В строке формул задайте для свойства **Text** метки следующее выражение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Customer.Company
     ```
 
@@ -193,7 +192,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **Text** новой метки следующее выражение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.'Order Status'
     ```
 
@@ -216,12 +215,12 @@ ms.PowerAppsDecimalTransform: true
 
 1. В строке формул задайте для свойства **Цвет** метки состояние значение эта формула:
 
-    ```powerapps-comma
-    Switch( ThisItem.'Order Status';
-        'Orders Status'.Closed; Green;
-        'Orders Status'.New; Black;
-        'Orders Status'.Invoiced; Blue;
-        'Orders Status'.Shipped; Purple
+    ```powerapps-dot
+    Switch( ThisItem.'Order Status',
+        'Orders Status'.Closed, Green,
+        'Orders Status'.New, Black,
+        'Orders Status'.Invoiced, Blue,
+        'Orders Status'.Shipped, Purple
     )
     ```
 
@@ -251,8 +250,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. В строке формул задайте для свойства **Text** новой метки значение Следующая формула:
 
-    ```powerapps-comma
-    Text( Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( Sum( ThisItem.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -283,8 +282,8 @@ ms.PowerAppsDecimalTransform: true
 - Выражение для отображения номера заказа: `"Orders " & ThisItem.OrderNumber`
 - Поле в связи "многие к одному": `ThisItem.Customer.Company`
 - Метка, показывающая имя параметра в наборе: `ThisItem.'Order Status'`
-- Метка, которая изменяет формат в зависимости от того, какой параметр в наборе содержит метку: `Switch( ThisItem.'Order Status'; 'Orders Status'.Closed; Green; ...`
-- Комплексная агрегатная функция над связью «один ко многим»: `Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' )`
+- Метка, которая изменяет формат в зависимости от того, какой параметр в наборе содержит метку: `Switch( ThisItem.'Order Status', 'Orders Status'.Closed, Green, ...`
+- Комплексная агрегатная функция над связью «один ко многим»: `Sum( ThisItem.'Order Details', Quantity * 'Unit Price' )`
 
 ## <a name="next-topic"></a>Следующий раздел
 

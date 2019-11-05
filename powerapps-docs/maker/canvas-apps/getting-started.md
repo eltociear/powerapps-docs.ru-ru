@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a104638ad365ae58a1c3b8c5fbd0c7fef5b2b792
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8b352cb4a30c090d01b2ec1b34fa8ba119265204
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990174"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541264"
 ---
 # <a name="what-are-canvas-apps-in-powerapps"></a>Основные сведения о приложениях на основе холста в PowerApps
 Проектируйте и создавайте бизнес-приложения на основе холста в Microsoft PowerApps без написания кода на традиционном языке программирования, например C#. Разрабатывайте приложение путем перетаскивания элементов на холст так, как если бы вы создавали слайд в PowerPoint. Создавайте схожие с Excel выражения для указания логики и работы с данными. Создавайте приложения, которые интегрируют бизнес-данные из [разнообразных источников Майкрософт и сторонних поставщиков](connections-list.md). Открывайте к приложению общий доступ, чтобы пользователи могли запускать его в браузере или на мобильном устройстве. Внедряйте приложение, предоставляя пользователям возможность использовать его в SharePoint, Power BI или Teams.
@@ -33,7 +33,7 @@ ms.locfileid: "71990174"
 - [SharePoint](app-from-sharepoint.md)
 - [Excel](get-started-create-from-data.md)
 
-[Войдите](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в PowerApps и выберите **Начать из данных** или выберите пример приложения, например, **Служба поддержки** или **Сведения о бюджете**.
+[Войдите](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в PowerApps и выберите **Начать из данных** или выберите пример приложения, например, **Служба поддержки** или **Сведения о бюджете**.
 
 ![Сайт PowerApps](./media/getting-started/create-page-samples.png)
 
@@ -58,5 +58,5 @@ ms.locfileid: "71990174"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 - [Регистрация для получения бесплатной лицензии](../signup-for-powerapps.md)
-- [Вход в PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+- [Вход в PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 - [Открытие примера приложения](open-and-run-a-sample-app.md)

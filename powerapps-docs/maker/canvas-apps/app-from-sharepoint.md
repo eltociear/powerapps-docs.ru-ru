@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 101c77b7bdd84e2d2ed31febc441e54944eb9fa3
-ms.sourcegitcommit: fa6ad01cf6d025d46564d755915caaa9db517c41
+ms.openlocfilehash: 50f84e06206a73c39feaee286ce1f4c9258c4958
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72902449"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541106"
 ---
 # <a name="generate-a-canvas-app-in-powerapps-from-a-sharepoint-list"></a>Создание приложения на основе холста в PowerApps из списка SharePoint
 
@@ -42,7 +42,7 @@ ms.locfileid: "72902449"
 
 ## <a name="generate-an-app-from-within-powerapps"></a>Создание приложения в PowerApps
 
-1. Войдите в [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Войдите в [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. В области **Создавайте собственные приложения** наведите указатель на плитку **Начать с данных** и выберите команду **Создать это приложение**.
 

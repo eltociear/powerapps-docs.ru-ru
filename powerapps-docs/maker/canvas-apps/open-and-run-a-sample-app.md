@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f03240e2fb2e850df0f1b18fb126833fb5759326
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 7a979944d25d683c5b2b4c772cd6859e6ac52f0e
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989704"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541563"
 ---
 # <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>Создание приложения Canvas из примера в PowerApps
 В этом кратком руководстве вы создадите приложение на основе холста из образца, чтобы изучить возможности проектирования и принципы, которые можно применять при разработке собственных приложений на основе холста.
@@ -28,7 +28,7 @@ ms.locfileid: "71989704"
 Если у вас нет лицензии на PowerApps, вы можете [зарегистрироваться для получения бесплатной версии](../signup-for-powerapps.md).
 
 ## <a name="open-a-sample-app"></a>Открытие примера приложения
-1. Войдите в [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Войдите в [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. В списке примеров приложений наведите указатель мыши на один из примеров (например, **Cost Estimator**).
 

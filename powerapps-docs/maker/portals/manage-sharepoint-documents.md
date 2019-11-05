@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: ab51a2b1a309921e32949a806adb4a7bf3273ccf
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: f94dee983d5d2d9cedf417f2843a2c10c46b82c1
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72974697"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543329"
 ---
 # <a name="manage-sharepoint-documents"></a>Работа с документами SharePoint
 
@@ -38,7 +38,7 @@ Common Data Service поддерживает интеграцию с [!INCLUDE[p
 
 ## <a name="step-1-enable-document-management-functionality-in-model-driven-apps-in-dynamics-365"></a>Шаг 1. Включение функций управления документами в приложениях, управляемых моделями, в Dynamics 365
 
-Необходимо включить функции управления документами в приложениях, управляемых моделями, в Dynamics 365 с помощью интеграции [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] на основе сервера. Серверная интеграция [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] позволяет приложениям, основанным на моделях, в Dynamics 365 и [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] выполнять подключение типа "сервер-сервер". На портале используется [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] запись сайта по умолчанию. Сведения о том, как включить функции управления документами в приложениях на основе моделей в Dynamics 365, см. в разделе [Настройка приложений, управляемых моделями в dynamics 365 для использования SharePoint Online](https://docs.microsoft.com/en-us/power-platform/admin/set-up-dynamics-365-online-to-use-sharepoint-online).
+Необходимо включить функции управления документами в приложениях, управляемых моделями, в Dynamics 365 с помощью интеграции [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] на основе сервера. Серверная интеграция [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] позволяет приложениям, основанным на моделях, в Dynamics 365 и [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] выполнять подключение типа "сервер-сервер". На портале используется [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] запись сайта по умолчанию. Сведения о том, как включить функции управления документами в приложениях на основе моделей в Dynamics 365, см. в разделе [Настройка приложений, управляемых моделями в dynamics 365 для использования SharePoint Online](https://docs.microsoft.com/power-platform/admin/set-up-dynamics-365-online-to-use-sharepoint-online).
 
 ## <a name="step-2-set-up-sharepoint-integration-from-powerapps-portals-admin-center"></a>Шаг 2. Настройка интеграции SharePoint из центра администрирования порталов PowerApps
 
@@ -52,7 +52,7 @@ Common Data Service поддерживает интеграцию с [!INCLUDE[p
 2.  Перейдите к разделу **Настройка интеграции [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]**  > **включить интеграцию [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]** .
 
     > [!div class=mx-imgBorder]
-    > ![Включение интеграции с SharePoint](media/enable-sharepoint-integration.png "Включение интеграции с SharePoint")
+    > ![Включить интеграцию с SharePoint](media/enable-sharepoint-integration.png "Включить интеграцию с SharePoint")
 
 3.  В окне подтверждения выберите **включить** . Это позволит порталу взаимодействовать с [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]. При включении интеграции [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] портал перезапускается и будет недоступен в течение нескольких минут. При включении интеграции [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] появляется сообщение.
 
@@ -61,12 +61,12 @@ Common Data Service поддерживает интеграцию с [!INCLUDE[p
 - **Отключить интеграцию [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]** : позволяет отключить интеграцию [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] с порталом. При отключении интеграции [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] портал перезапускается и будет недоступен в течение нескольких минут. При отключении интеграции [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] появляется сообщение.
 
     > [!div class=mx-imgBorder]
-    > ![Отключить интеграцию с SharePoint](media/disable-sharepoint-integration.png "Отключение интеграции с SharePoint")
+    > ![Отключить интеграцию с SharePoint](media/disable-sharepoint-integration.png "Отключить интеграцию с SharePoint")
 
 Включение или отключение [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]ной интеграции приведет к обновлению приложения [!INCLUDE[pn-azure-active-directory](../../includes/pn-azure-active-directory.md)] ([!INCLUDE[pn-azure-shortest](../../includes/pn-azure-shortest.md)] AD) для портала и добавлению или удалению необходимых разрешений [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] соответственно. Вы также будете перенаправлены, чтобы предоставить согласие на внесение изменений в приложение [!INCLUDE[pn-azure-shortest](../../includes/pn-azure-shortest.md)] AD. 
 
 > [!div class=mx-imgBorder]
-> ![Отключить интеграцию с SharePoint](media/sharepoint-integration-consent.png "Отключение интеграции с SharePoint")
+> ![Отключить интеграцию с SharePoint](media/sharepoint-integration-consent.png "Отключить интеграцию с SharePoint")
 
 Если вы не предпредоставите согласие:
 
@@ -76,7 +76,7 @@ Common Data Service поддерживает интеграцию с [!INCLUDE[p
 
 
 ## <a name="step-3-enable-document-management-for-entities"></a>Шаг 3. Включение управления документами для сущностей
-Необходимо включить управление документами для сущностей, чтобы хранить документы, связанные с записями сущностей, в [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]. Сведения о включении управления документами для сущностей см. в разделе [Включение управления документами SharePoint для конкретных сущностей](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/enable-sharepoint-document-management-specific-entities).
+Необходимо включить управление документами для сущностей, чтобы хранить документы, связанные с записями сущностей, в [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)]. Сведения о включении управления документами для сущностей см. в разделе [Включение управления документами SharePoint для конкретных сущностей](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-sharepoint-document-management-specific-entities).
 
 ## <a name="step-4-configure-the-appropriate-form-to-display-documents"></a>Шаг 4. Настройка соответствующей формы для вывода документов
 
@@ -150,12 +150,12 @@ Common Data Service поддерживает интеграцию с [!INCLUDE[p
         в) Откройте **веб-узел — измените регистр** в редакторе форм.
 
          > [!div class=mx-imgBorder]
-         > ![Веб-редактирование формы вариантов](media/web-edit-case-form.png "веб — изменение формы вариантов")
+         > ![Веб-форма изменения регистра](media/web-edit-case-form.png "Веб-форма изменения регистра")
     
         г) Выберите поле **создано** в форме, а затем на вкладке **Вставка** выберите **Вложенная сетка**.
 
          > [!div class=mx-imgBorder]
-         > ![Добавление вложенной сетки в форму "веб-изменение варианта]" Добавление вложенной(media/add-sub-grid.png "сетки в форму \"веб-редактирование вариантов\"")
+         > ![Добавление вложенной сетки в форму веб-редактирования](media/add-sub-grid.png "Добавление вложенной сетки в форму веб-редактирования")
     
         и. В диалоговом окне **Задание свойств** задайте следующие свойства и нажмите кнопку **ОК**.
 
@@ -168,7 +168,7 @@ Common Data Service поддерживает интеграцию с [!INCLUDE[p
          - **Представление по умолчанию**: Активные расположения документов
 
          > [!div class=mx-imgBorder]
-         > Свойства вложенной(media/sub-grid-properties.png "сетки") ![Свойства подсетки]
+         > ![Свойства вложенной сетки](media/sub-grid-properties.png "Свойства вложенной сетки")
 
         ж. В редакторе форм выберите **сохранить** и щелкните **опубликовать**.
 
@@ -189,7 +189,7 @@ Common Data Service поддерживает интеграцию с [!INCLUDE[p
          - **Разрешение сущности**: включено
     
          > [!div class=mx-imgBorder]
-         > ![Служба "клиенты" — изменение варианта]"(media/customer-service-edit-case-form.png "Служба клиентов\" — изменение формы регистра")
+         > ![Служба клиентов — форма изменения регистра](media/customer-service-edit-case-form.png "Служба клиентов — форма изменения регистра")
     
         г) Если вы внесли изменения в форму, нажмите кнопку **сохранить**.
 
@@ -218,17 +218,17 @@ Common Data Service поддерживает интеграцию с [!INCLUDE[p
     - **Привилегии**: чтение, создание, добавление, запись, удаление
 
       > [!div class=mx-imgBorder]
-      > ![](media/customer-service-entity-permission.png "Разрешение") сущности обслуживания клиентов для сущности обслуживания клиентов
+      > ![Разрешение сущности "служба клиента"](media/customer-service-entity-permission.png "Разрешение сущности "служба клиента"")
   
    4. Войдите на портал, чтобы обеспечить включение управления документами для сущности вариантов.
 
       а) Перейдите на страницу **поддержки** .
 
       > [!div class=mx-imgBorder]
-      > ![](media/portal-support-page.png "Страница") поддержки портала для портала страницы поддержки
+      > ![Страница поддержки портала](media/portal-support-page.png "Страница поддержки портала")
 
       б) Щелкните в списке существующую запись варианта. Перейдите к разделу **документы вариантов** на странице и просмотрите добавленный список документов.
 
       > [!div class=mx-imgBorder]
-      > ![](media/case-document.png "Документ") обращения к документу с учетом регистра
+      > ![Документ с вариантом](media/case-document.png "Документ с вариантом")
 

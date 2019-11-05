@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b544b03fbe181265599bab520eddc2a2a646c477
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 78f091705a01a54b7e6eb008630949796ffac453
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994671"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541188"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Использование файлов мультимедиа в PowerApps
 
@@ -27,7 +26,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="prerequisites"></a>Технические условия
 
-[Зарегистрируйтесь](../signup-for-powerapps.md) в PowerApps, а затем [войдите в систему](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) с помощью учетных данных, использовавшихся при регистрации.
+[Зарегистрируйтесь](../signup-for-powerapps.md) в PowerApps, а затем [войдите в систему](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) с помощью учетных данных, использовавшихся при регистрации.
 
 ## <a name="add-media-from-a-file-or-the-cloud"></a>Добавление мультимедиа из файла или из облака
 
@@ -79,12 +78,12 @@ ms.PowerAppsDecimalTransform: true
 ## <a name="add-images-from-the-cloud-to-your-app"></a>Добавление изображений из облака в приложение
 В этом разделе вы сохраните изображения в учетную запись облачного хранилища OneDrive для бизнеса. Затем вы сохраните путь к изображениям в таблице Excel и просмотрите эти изображения в элементе управления "Коллекция" в приложении.
 
-В этом сценарии мы будем использовать файл [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip), содержащий несколько JPEG-файлов.
+В этом сценарии мы будем использовать файл [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip), содержащий несколько JPEG-файлов.
 
 > [!NOTE]
 > Путь к этим изображениям, сохраненным в файле Excel, должен содержать прямые косые черты. Когда служба PowerApps сохраняет изображения в таблице Excel, путь к файлам содержит символы обратной косой черты. Если вы используете пути к изображениям из таблицы Excel, измените эти пути, заменив все символы обратной косой черты на обычную косую черту. В противном случае изображения не будут отображаться.  
 
-1. Загрузите файл [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) и извлеките папку **Assets** в облачную учетную запись хранения.
+1. Загрузите файл [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) и извлеките папку **Assets** в облачную учетную запись хранения.
 
 2. Измените имя папки **Assets** на **Assets_images**.
 
@@ -106,7 +105,7 @@ ms.PowerAppsDecimalTransform: true
 
     Когда вы присваиваете значение свойству **Items**, в таблицу Excel автоматически добавляется новый столбец **PowerAppsId**.
 
-    В таблице Excel путь к изображению может содержать URL-адрес изображения. Рассмотрим пример файла [Flooring Estimates](http://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx). Вы можете загрузить этот файл в учетную запись облачного хранилища, добавить таблицу `FlooringEstimates` в качестве источника данных для приложения, а затем установить значение `FlooringEstimates` для элемента управления "Коллекция". Коллекция автоматически заполнится изображениями.
+    В таблице Excel путь к изображению может содержать URL-адрес изображения. Рассмотрим пример файла [Flooring Estimates](https://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx). Вы можете загрузить этот файл в учетную запись облачного хранилища, добавить таблицу `FlooringEstimates` в качестве источника данных для приложения, а затем установить значение `FlooringEstimates` для элемента управления "Коллекция". Коллекция автоматически заполнится изображениями.
 
 ## <a name="upload-pen-drawings-to-the-cloud"></a>Отправка нарисованных с помощью пера рисунков в облако
 В этом разделе вы узнаете, как отправить нарисованные с помощью пера рисунки в источник данных (OneDrive для бизнеса) и проверить параметры их хранения.
@@ -159,7 +158,7 @@ ms.PowerAppsDecimalTransform: true
 
 8. На вкладке **Вставка** добавьте элемент управления **Кнопка** и в качестве значения свойства **OnSelect** задайте следующую формулу:
 
-    **Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})**
+    **Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})**
 
 9. Добавьте в приложение элемент управления **Коллекция изображений** (вкладка **Вставка** > **Коллекция**) и назначьте его свойству **Items** значение `Drawings`. Свойство **Image** для элемента управления "Коллекция" автоматически получает значение `ThisItem.Image`.
 

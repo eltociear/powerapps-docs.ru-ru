@@ -13,19 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d8ba0cef60b268caafb57e18ae80a522905ba45b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: ca0b81cb1150fb744251b3dfca30c9b6ed8f90a5
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992744"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73537108"
 ---
 # <a name="relate-and-unrelate-functions-in-powerapps"></a>Функции связывания и отсвязи в PowerApps
 
 Свяжите и отменяйте связи между записями двух сущностей с помощью связи «один ко многим» или «многие ко многим».
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 
 Функция **Relate** связывает две записи через связь "один ко многим" или "многие ко многим" в Common Data Service. Функция **unrelate** обращается к процессу и удаляет ссылку.
 
@@ -44,12 +43,12 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="syntax"></a>Синтаксис
 
-**Связь**( *Entity1RelatedTable*; *Entity2Record* )
+**Связь**( *Entity1RelatedTable*, *Entity2Record* )
 
 * *Entity1RelatedTable* — обязательный. Для записи *сущности Entity1*таблица записей *Entity2* , связанных с отношением «один ко многим» или «многие ко многим».
 * *Entity2Record* — обязательный. Запись *Entity2* , которую необходимо добавить в связь.
 
-**Unrelate**( *Entity1RelatedTable*; *Entity2Record* )
+**Unrelate**( *Entity1RelatedTable*, *Entity2Record* )
 
 * *Entity1RelatedTable* — обязательный. Для записи *сущности Entity1*таблица записей *Entity2* , связанных с отношением «один ко многим» или «многие ко многим».
 * *Entity2Record* — обязательный. Запись *Entity2* , которую необходимо удалить из связи.
@@ -61,33 +60,33 @@ ms.PowerAppsDecimalTransform: true
 | Отображаемое имя связи | Связанная сущность | Тип связи |
 | --- | --- |
 | Резервирование продукта | Предваритель | Один ко многим |
-| Продукт @no__t — 0 контакта | Связь | Многие ко многим |
+| Контакт &harr; продукта | Связь | Многие ко многим |
 
 **Продукты** и **резервирования** связаны через связь «один ко многим».  Чтобы связать первую запись сущности **резервирования** с первой записью сущности **Products** , выполните следующие действия.
 
-`Relate( First( Products ).Reservations; First( Reservations ) )`
+`Relate( First( Products ).Reservations, First( Reservations ) )`
 
 Чтобы удалить связь между этими записями, выполните следующие действия.
 
-`Unrelate( First( Products ).Reservations; First( Reservations ) )`
+`Unrelate( First( Products ).Reservations, First( Reservations ) )`
 
 В то время, когда мы не создали или удалили или запись, была изменена только связь между записями.
 
 **Продукты** и **Контакты** связаны через связь «многие ко многим».  Чтобы связать первую запись сущности **Contacts** с первой записью сущности **Products** , выполните следующие действия.
 
-`Relate( First( Products ).Contacts; First( Contacts ) )`
+`Relate( First( Products ).Contacts, First( Contacts ) )`
 
 Так как связи «многие ко многим» являются симметричными, мы могли бы также сделать это в обратном направлении:
 
-`Relate( First( Contacts ).Products; First( Products ) )`
+`Relate( First( Contacts ).Products, First( Products ) )`
 
 Чтобы удалить связь между этими записями, выполните следующие действия.
 
-`Unrelate( First( Products ).Contacts; First( Contacts ) )`
+`Unrelate( First( Products ).Contacts, First( Contacts ) )`
 
 ни
 
-`Unrelate( First( Contacts ).Products; First( Products ) )`
+`Unrelate( First( Contacts ).Products, First( Products ) )`
 
 В следующем пошаговом руководстве выполняются именно эти операции с этими сущностями с помощью приложения с элементами управления " **коллекция** **" и "поле со списком"** для выбора задействованных записей.
 
@@ -103,7 +102,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. На вкладке **Вид** выберите **источники данных**.
 
-1. На панели **данные** выберите **добавить источник данных** > **Common Data Service** **продукты** >   > **Connect**.  
+1. На панели **данные** выберите **добавить источник данных** > **Common Data Service** > **продукты** > **Подключиться**.  
 
     Сущность Products является частью образца данных, загруженных выше.
 
@@ -153,8 +152,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. В **Gallery2**задайте для свойства **OnSelect** **NextArrow2**следующую формулу:
 
-    ```powerapps-comma
-    Relate( ComboBox1.Selected.Reservations; ThisItem )
+    ```powerapps-dot
+    Relate( ComboBox1.Selected.Reservations, ThisItem )
     ```
 
     Когда пользователь выбирает этот значок, текущее резервирование изменяется на продукт, который пользователь выбрал в **ComboBox1**.
@@ -173,15 +172,15 @@ ms.PowerAppsDecimalTransform: true
 
 1. На вкладке **Вид** выберите **источники данных**.
 
-1. На панели **данных** выберите **добавить источник данных** > **Common Data Service** **резервирования** >   > **Connect**.
+1. На панели **данные** выберите **добавить источник данных** > **Common Data Service** > **резервирования** > **подключить**.
 
 1. В **Gallery2**Задайте формулу **OnSelect** для **NextArrow2** в этой формуле:
 
-    ```powerapps-comma
-    If( IsBlank( ComboBox1.Selected );
-        Unrelate( Gallery1.Selected.Reservations; ThisItem );
-        Relate( ComboBox1.Selected.Reservations; ThisItem )
-    );;
+    ```powerapps-dot
+    If( IsBlank( ComboBox1.Selected ),
+        Unrelate( Gallery1.Selected.Reservations, ThisItem ),
+        Relate( ComboBox1.Selected.Reservations, ThisItem )
+    );
     Refresh( Reservations )
     ```
     ![Значок "настроить правый"](media/function-relate-unrelate/reservations-relate-unrelate.png)
@@ -194,8 +193,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Убедитесь, что дубликат **Gallery2** имеет имя **Gallery2_1**, а затем задайте для свойства **Items** значение этой формулы:
 
-    ```powerapps-comma
-    Filter( Reservations; IsBlank( 'Product Reservation' ) )
+    ```powerapps-dot
+    Filter( Reservations, IsBlank( 'Product Reservation' ) )
     ```
 
     Отображается предупреждение о делегировании, но в этом примере не имеет значения небольшой объем данных.
@@ -212,7 +211,7 @@ ms.PowerAppsDecimalTransform: true
 
 Образец данных не включает связь «многие ко многим», но вы создадите ее между сущностью Products и сущностью Contacts. Пользователи могут связывать каждый продукт с несколькими контактами и с каждым из них на несколько продуктов.
 
-1. На [этой странице](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)выберите **данные** на левой панели навигации, а затем выберите **сущности**.
+1. На [этой странице](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)выберите **данные** на левой панели навигации, а затем выберите **сущности**.
 
     ![Открытие списка сущностей](media/function-relate-unrelate/entity-list.png)
 
@@ -226,7 +225,7 @@ ms.PowerAppsDecimalTransform: true
 
     ![Вкладка "связи" для сущности "продукт"](media/function-relate-unrelate/entity-relationships.png)
 
-1. Выберите **Добавить отношение** > **многие ко**многим.
+1. Выберите **Добавить связь** > " **многие ко многим**".
 
     ![Добавить связь "многие ко многим"](media/function-relate-unrelate/entity-manytomany.png)
 
@@ -234,7 +233,7 @@ ms.PowerAppsDecimalTransform: true
 
     ![Выбор сущности "контакт"](media/function-relate-unrelate/entity-contact.png)
 
-1. Выберите **Done** > **Сохранить сущность**.
+1. Выберите **готово** > **Сохранить сущность**.
 
     ![Список отношений для сущности Products](media/function-relate-unrelate/entity-done.png)
 
@@ -266,15 +265,15 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте в качестве значения свойства **OnSelect** значка **отмены** следующую формулу: 
 
-    ```powerapps-comma
-    Unrelate( Gallery1.Selected.Contacts; ThisItem )
+    ```powerapps-dot
+    Unrelate( Gallery1.Selected.Contacts, ThisItem )
     ```
 
     ![Настройка значка отмены](media/function-relate-unrelate/contacts-unrelate.png)
 
 1. На вкладке **Вид** выберите **источники данных**.
 
-1. На панели « **данные** » выберите **добавить источник данных** > **Common Data Service** > **Contacts** > **Connect**.
+1. На панели **данные** выберите **добавить источник данных** > **Common Data Service** > **Контакты** > **Подключиться**.
 
 1. В **разделе Gallery2**добавьте элемент управления **"поле со списком"** , убедитесь, что он называется **ComboBox1**, а затем установите для свойства **Items** значение **Contacts**.
 
@@ -286,8 +285,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Вставьте значок **добавления** и задайте для его свойства **OnSelect** значение этой формулы: 
 
-    ```powerapps-comma
-    Relate( Gallery1.Selected.Contacts; ComboBox1.Selected )
+    ```powerapps-dot
+    Relate( Gallery1.Selected.Contacts, ComboBox1.Selected )
     ```
 
     ![Настройка значка добавления](media/function-relate-unrelate/contacts-relate.png)
@@ -325,9 +324,9 @@ ms.PowerAppsDecimalTransform: true
     - Label1_1. Text = `"Selected Contact Products"`
     - Gallery2_1. Items = `Gallery1_1.Selected.Products`
     - Title2_1. Text = `ThisItem.Name`
-    - Icon1_1. OnSelect = `Unrelate( Gallery1_1.Selected.Products; ThisItem )`
+    - Icon1_1. OnSelect = `Unrelate( Gallery1_1.Selected.Products, ThisItem )`
     - ComboBox1_1. Items = `Products`
-    - Icon2_1. OnSelect = `Relate( Gallery1_1.Selected.Products; ComboBox1_1.Selected )`
+    - Icon2_1. OnSelect = `Relate( Gallery1_1.Selected.Products, ComboBox1_1.Selected )`
 
     Результат будет очень похож на предыдущий экран, но поступает на связь со стороны **контактов** .
 

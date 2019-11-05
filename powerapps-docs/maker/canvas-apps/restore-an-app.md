@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 49023d1eb0fadacb62ab985d0fe13e55e28a8da5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 191bd21b84bfa4a4c1b6c2822a8c957e15164435
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995752"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541449"
 ---
 # <a name="restore-a-canvas-app-to-a-previous-version-in-powerapps"></a>Восстановление предыдущей версии приложения на основе холста в PowerApps
 Из этой статьи вы узнаете, как восстановить предыдущую версию приложения на основе холста, которая была сохранена в облаке из вашей учетной записи PowerApps.
 
 ## <a name="restore-an-app-from-your-account"></a>Восстановление приложения из учетной записи
-1. На сайте [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) на панели навигации слева щелкните или коснитесь **Apps** (Приложения).
+1. На сайте [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) на панели навигации слева щелкните или нажмите **Apps** (Приложения).
 
     ![Панель навигации слева](./media/restore-an-app/file-apps.png)
 

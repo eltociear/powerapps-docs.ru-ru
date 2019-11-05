@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9204c26cc54f4230496943d48934af75d21c5319
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2841da7f5d7b19cd727f169c6fe89588f69bf1ec
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994970"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541675"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>Отображение данных в виде графика, круговой или линейчатой диаграммы в PowerApps
 
@@ -36,21 +35,21 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="prerequisites"></a>Технические условия
 
-* [Зарегистрируйтесь](../signup-for-powerapps.md) в PowerApps, а затем [войдите в систему](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) с помощью учетных данных, использовавшихся при регистрации.
-* Создайте приложение с помощью [шаблона](get-started-test-drive.md) или [данных](get-started-create-from-data.md) или создайте его с [нуля](get-started-create-from-blank.md).
+* [Зарегистрируйтесь](../signup-for-powerapps.md) в PowerApps, а затем [войдите в систему](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) с помощью учетных данных, использовавшихся при регистрации.
+* Создайте приложение на основе [шаблона](get-started-test-drive.md) или [данных](get-started-create-from-data.md) либо [с нуля](get-started-create-from-blank.md).
 * Узнайте, как [настроить элемент управления](add-configure-controls.md) в PowerApps.
-* Скачайте файл [ChartData.zip](http://pwrappssamples.blob.core.windows.net/samples/ChartData.zip) с демонстрационными данными в виде XML-файла. Выполните действия, описанные в этом разделе, чтобы импортировать его непосредственно в приложение. Кроме того, вы можете распаковать ZIP-файл, открыть XML-файл в Excel и сохранить его в [учетной записи хранения в облаке](connections/cloud-storage-blob-connections.md).
+* Скачайте файл [ChartData.zip](https://pwrappssamples.blob.core.windows.net/samples/ChartData.zip) с демонстрационными данными в виде XML-файла. Выполните действия, описанные в этом разделе, чтобы импортировать его непосредственно в приложение. Кроме того, вы можете распаковать ZIP-файл, открыть XML-файл в Excel и сохранить его в [учетной записи хранения в облаке](connections/cloud-storage-blob-connections.md).
 
 ## <a name="import-the-sample-data"></a>Импорт демонстрационных данных
 Далее мы импортируем демонстрационные данные в коллекцию с именем **ProductRevenue**.
 
-1. На вкладке **Вставка** выберите **Элементы управления**, а затем щелкните **Импорт**.  
+1. На вкладке **Вставка** выберите **Элементы управления**, а затем щелкните **Импорт**:  
 
     ![][11]  
 
 2. Задайте для свойства элемента управления **[OnSelect](controls/properties-core.md)** следующую функцию.  
 
-   ```Collect(ProductRevenue; Import1.Data)```
+   ```Collect(ProductRevenue, Import1.Data)```
 
 3. Нажмите клавишу F5, чтобы открыть режим предварительного просмотра, а затем нажмите кнопку **Импорт данных**.
 

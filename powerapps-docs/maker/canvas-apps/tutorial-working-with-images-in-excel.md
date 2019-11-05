@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f201d1fbad574174e4427698ae28439f26419514
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
-ms.translationtype: HT
+ms.openlocfilehash: 7b6f1056a6d2b5ceaf1fcefe1ccc7d583470450c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63318376"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541715"
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>Как сохранить изображения в файл Excel и добавить их в приложение
 
@@ -36,7 +35,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="create-the-excel-file-as-a-table"></a>Создание таблицы в формате файла Excel
 
-1. Откройте пустой файл Excel и присвойте в нем столбцу имя **Image [image]**.
+1. Откройте пустой файл Excel и присвойте в нем столбцу имя **Image [image]** .
 2. Создайте таблицу, выполнив следующие действия:    
    
    1. Выберите любой элемент данных в любой строке и любом столбце. Например, выберите **изображение**.
@@ -59,7 +58,7 @@ ms.PowerAppsDecimalTransform: true
    
    ![Переименовать](./media/tutorial-working-with-images-in-excel/rename-mypen.png)
 4. Добавьте элемент управления **Кнопка** (через меню **Вставка**) и задайте в качестве значения свойства **OnSelect** следующую формулу:  
-   `Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})`
+   `Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})`
 5. Добавьте в приложение элемент управления **Коллекция изображений** (через меню **Вставка** > **Коллекция**) и назначьте его свойству **Items** значение `Drawings`. Свойство **Image** для элемента управления "Коллекция" автоматически получает значение `ThisItem.Image`.
    
    Окно должно выглядеть следующим образом:  
@@ -75,12 +74,12 @@ ms.PowerAppsDecimalTransform: true
 ## <a name="add-the-image-in-an-excel-file-to-your-app"></a>Добавление в приложение изображений из файла Excel
 В следующем примере вы сохраните изображения в облачную учетную запись хранения, а затем примените таблицу Excel для отображения изображений в приложении.
 
-Для этого примера нам понадобится файл [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) с несколькими изображениями в формате JPEG.
+Для этого примера нам понадобится файл [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) с несколькими изображениями в формате JPEG.
 
 > [!NOTE]
 > Если вы используете файл Excel для отображения изображений, путь к файлам должен содержать символы косой черты. Когда PowerApps сохраняет изображения в таблице Excel (как в предыдущих шагах), путь к файлам содержит символы обратной косой черты. Вы можете использовать в этом примере файлы **SavePen_images** из предыдущего примера. Но для этого нужно изменить пути в таблице Excel, заменив все символы обратной косой черты обычной косой чертой. В противном случае изображения не будут отображаться.  
 
-1. Загрузите файл [CreateFirstApp.zip](http://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) и извлеките папку **Assets** в облачную учетную запись хранения.
+1. Загрузите файл [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) и извлеките папку **Assets** в облачную учетную запись хранения.
 2. В электронной таблице Excel создайте таблицу, которая выглядит следующим образом:
    
     ![Таблица Jackets](./media/tutorial-working-with-images-in-excel/jackets.png)
@@ -96,7 +95,7 @@ ms.PowerAppsDecimalTransform: true
 
 Когда вы присваиваете значение свойству Items, в таблицу Excel автоматически добавляется новый столбец с именем **PowerAppsId**.
 
-В таблице Excel путь к изображению может содержать URL-адрес изображения. Загрузите пример файла [Flooring Estimates](http://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx) в облачную учетную запись хранения, добавьте таблицу `FlooringEstimates` в качестве источника данных для приложения, а затем установите значение `FlooringEstimates` для элемента управления "Коллекция". Коллекция автоматически заполнится изображениями.
+В таблице Excel путь к изображению может содержать URL-адрес изображения. Загрузите пример файла [Flooring Estimates](https://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx) в облачную учетную запись хранения, добавьте таблицу `FlooringEstimates` в качестве источника данных для приложения, а затем установите значение `FlooringEstimates` для элемента управления "Коллекция". Коллекция автоматически заполнится изображениями.
 
 ## <a name="learn-more"></a>Дополнительные сведения
 [Using multimedia files in PowerApps](add-images-pictures-audio-video.md) (Использование файлов мультимедиа в PowerApps)  

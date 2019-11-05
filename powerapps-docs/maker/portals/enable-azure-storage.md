@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: c9201f02074920b65fdf904c5dbe81826114f4c6
-ms.sourcegitcommit: 5338e01d2591f76d71f09b1fb229d405657a0c1c
+ms.openlocfilehash: 3da40cfdcb88726384218c4b1df370c301f8ac16
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72975479"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542557"
 ---
 # <a name="enable-azure-storage"></a>Включение службы хранилища Azure
 
 Интеграция службы хранилища Azure для порталов позволяет воспользоваться преимуществами большего объема хранилища файлов в Azure, используя тот же интерфейс и предоставляя те же возможности пользователя, что и для вложений файлов по умолчанию. Эта функция поддерживается для веб-файлов, форм сущностей и веб-форм.
 
-В качестве модели развертывания необходимо создать учетную запись хранения с помощью **Resource Manager** . [!include[More information](../../includes/proc-more-information.md)] [создать учетную запись хранения Azure](https://docs.microsoft.com/en-us/azure/storage/storage-create-storage-account#create-a-storage-account).
+В качестве модели развертывания необходимо создать учетную запись хранения с помощью **Resource Manager** . [!include[More information](../../includes/proc-more-information.md)] [создать учетную запись хранения Azure](https://docs.microsoft.com/azure/storage/storage-create-storage-account#create-a-storage-account).
 
 Когда учетная запись хранения будет запущена, порталам требуются определенные глобальные параметры, которые указывают приложению, как определить размещение учетной записи хранения. В приложении управления портала перейдите в раздел **параметры** > **создать**и добавьте новый параметр с именем **филестораже/CloudStorageAccount**.
 
@@ -35,13 +35,13 @@ ms.locfileid: "72975479"
 
 3. Выберите **ключи доступа**.
 
-    ![Поиск значения строки подключения из портал Azure](media/key-azure-storage.png "Поиск значения для строки подключения из портал Azure")
+    ![Поиск значения строки подключения из портал Azure](media/key-azure-storage.png "Поиск значения строки подключения из портал Azure")
 
 4. На появившейся панели выберите поле **строка подключения**. Щелкните значок **копирования** рядом с полем, для которого необходимо скопировать значение, а затем вставьте это значение в новый параметр:
 
-    Первичное значение(media/primary-connection-string-azure-storage.png "строки") подключения значение Первичная строка ![подключения]
+    ![Первичное значение строки подключения](media/primary-connection-string-azure-storage.png "Первичное значение строки подключения")
 
-    ![Параметр портала для параметра портала учетной записи облачного хранилища](media/portal-site-setting-cloud-storage-account.png "для учетной записи облачного хранилища")
+    ![Параметр портала для учетной записи облачного хранилища](media/portal-site-setting-cloud-storage-account.png "Параметр портала для учетной записи облачного хранилища")
 
 ## <a name="specify-the-storage-container"></a>Укажите контейнер хранилища
 
@@ -49,7 +49,7 @@ ms.locfileid: "72975479"
 
 В [приложении управления портала](configure/configure-portal.md)перейдите в раздел **Параметры** > **создать**и добавьте новый параметр с именем **филестораже/клаудсторажеконтаинернаме**, используя имя контейнера в качестве значения.
 
-![Параметр портала для параметра портала контейнера облачного хранилища](media/portal-site-setting-cloud-storage-container.png "для контейнера облачного хранилища")
+![Параметр портала для контейнера облачного хранилища](media/portal-site-setting-cloud-storage-container.png "Параметр портала для контейнера облачного хранилища")
 
 ## <a name="add-cors-rule"></a>Добавить правило CORS
 

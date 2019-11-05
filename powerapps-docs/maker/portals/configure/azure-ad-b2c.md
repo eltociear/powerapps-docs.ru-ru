@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: aead447bbab7f6e5758cdea0a9c6be5c0e8f41e2
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 5f902dd900e074c2e6b3f08f8848475dcd907ee4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72978400"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542839"
 ---
 # <a name="azure-ad-b2c-provider-settings-for-portals"></a>Параметры поставщика Azure AD B2C для порталов
 
@@ -497,7 +497,7 @@ ms.locfileid: "72978400"
 
 **Формат**: Атрибут1 = claim1, атрибут2 = claim2, attribute3 = claim3
 
-Например: FirstName =<http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle>
+Например: FirstName =<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle>
 
 > [!NOTE]
 > Убедитесь, что адрес электронной почты сопоставлен с основной электронной почтой (emailaddress1) контакта. Если вы добавили дополнительный адрес электронной почты (emailAddress2) или запасной адрес электронной почты (emailAddress3) в запись контакта и сопоставили его с сообщением электронной почты, сведения об удостоверении не будут добавлены в контакт, а новый будет создан с адресом электронной почты, используемым для регистрации в основной адрес электронной почты (emailaddress1).
@@ -512,7 +512,7 @@ ms.locfileid: "72978400"
 
 **Формат**: Атрибут1 = claim1, атрибут2 = claim2, attribute3 = claim3
 
-Например: FirstName =<http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle> 
+Например: FirstName =<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle> 
 
 Имя утверждения — это поле типа утверждения, указанное рядом с атрибутом в утверждениях приложения политики входа.
 

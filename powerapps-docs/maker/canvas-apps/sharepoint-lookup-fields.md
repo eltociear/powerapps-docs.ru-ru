@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8b7b718564ec62d9a7fa2ca78d52727831635c1c
-ms.sourcegitcommit: dd74c98f48587730466e6669fc94da250d5c631e
+ms.openlocfilehash: 2c1cce350c394d2809de4c3354b7b471af987236
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2019
-ms.locfileid: "66224957"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541403"
 ---
 # <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-powerapps"></a>Как связать списки SharePoint с помощью поля подстановки в PowerApps
 
@@ -96,7 +96,7 @@ SharePoint предоставляет два типа полей подстан�
 ## <a name="create-an-app-from-the-assets-list"></a>Создание приложения из списка "Ресурсы"
 Это приложение позволяет добавлять данные в список **Ресурсы**.
 
-1. [Войдите в PowerApps Studio](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Если вы еще не работали в PowerApps, [зарегистрируйтесь для получения бесплатной версии](https://powerapps.microsoft.com), используя адрес электронной почты организации.
+1. [Войдите в PowerApps Studio](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Если вы еще не работали в PowerApps, [зарегистрируйтесь для получения бесплатной версии](https://powerapps.microsoft.com), используя адрес электронной почты организации.
 
 2. В меню **Файл** (с левой стороны) щелкните **Создать**, а затем выберите **SharePoint**.
 

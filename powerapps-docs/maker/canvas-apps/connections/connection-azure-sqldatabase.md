@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ca79c60e90c330f21af6ed8a12b98c3667535bb8
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: bcadf4abfd55a317cf67196c9ba2158a001a015a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987405"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541139"
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>Подключение к SQL Server из PowerApps
 ![Значок SQL Server](./media/connection-azure-sqldatabase/sqlicon.png)
@@ -27,7 +27,7 @@ ms.locfileid: "71987405"
 
 ## <a name="prerequisites"></a>Технические условия
 
-* [Зарегистрируйтесь](../../signup-for-powerapps.md) в PowerApps, а затем [войдите в систему](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), указав учетные данные, использованные при регистрации.
+* [Зарегистрируйтесь](../../signup-for-powerapps.md) в PowerApps, а затем [войдите в систему](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), указав учетные данные, использованные при регистрации.
 * Соберите следующие сведения о базе данных, которая содержит по крайней мере одну таблицу с первичным ключом:
   
   * имя базы данных;
@@ -68,7 +68,7 @@ ms.locfileid: "71987405"
 8. Настройте приложение, используя методики, описанные в статье о [создании приложения из Excel](../get-started-create-from-data.md). Начните настройку с изменения макета приложения.
 
 ## <a name="build-an-app-from-scratch"></a>Создание приложения с нуля
-1. Войдите на сайт [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) с помощью той же учетной записи, которая использовалась для регистрации PowerApps.
+1. Войдите на сайт [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) с помощью той же учетной записи, которая использовалась для регистрации PowerApps.
 2. На панели навигации слева выберите меню **Подключения**.  
    
     ![Управление подключениями](./media/connection-azure-sqldatabase/manage-connections.png)
@@ -113,7 +113,7 @@ ms.locfileid: "71987405"
 * Узнайте, как [отобразить данные из источника данных](../add-gallery.md).
 * Узнайте, как [создать, обновить записи и просмотреть сведения о них](../add-form.md).
 * См. другие типы [источников данных](../connections-list.md), к которым можно подключаться.  
-* [Общие сведения о таблицах и записях](../working-with-tables.md) с табличными источниками данных.
+* Ознакомьтесь с [общими сведениями о таблицах и записях](../working-with-tables.md) с табличными источниками данных.
 
 <!--NotAvailableYet
 ## View the available functions ##

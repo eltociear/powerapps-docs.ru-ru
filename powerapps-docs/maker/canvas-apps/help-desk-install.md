@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6c9195bb9256c3d977300e61efe3f2cc88cfbf67
-ms.sourcegitcommit: 0e7bdaea83adaa15da4d5c9ddbcd0b2bcbee01df
+ms.openlocfilehash: dd5d8b8e6757b18feb5da03c503b19e689ca3efe
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73063401"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541252"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>Установка и настройка примера "Служба поддержки" в PowerApps
 
@@ -40,7 +40,7 @@ ms.locfileid: "73063401"
 
 ## <a name="prerequisites"></a>Технические условия
 
-- [Зарегистрируйтесь](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в PowerApps.
+- [Зарегистрируйтесь](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в PowerApps.
 - Необходимо иметь действительную лицензию на SharePoint Online и разрешение на создание списков.
 
 ## <a name="create-the-helpdesk-sharepoint-list"></a>Создание списка SharePoint HelpDesk (Служба поддержки)
@@ -140,11 +140,11 @@ ms.locfileid: "73063401"
 
 ## <a name="download-the-app"></a>Скачать приложение
 
-1.  [Скачайте](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) пакет PowerApps и сохраните его на компьютер.
+1.  [Скачайте](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) пакет PowerApps и сохраните его на компьютер.
 
 ## <a name="create-connections"></a>Создание подключений
 
-1.  В веб-браузере зайдите на страницу [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  В веб-браузере перейдите по адресу [make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2.  Выполните вход, используя те же учетные данные, что и при регистрации.
 3.  В меню слева выберите **Данные**, а затем — **Подключения**.
     
@@ -174,7 +174,7 @@ ms.locfileid: "73063401"
 
 ## <a name="import-the-app"></a>Импорт приложения
 
-1. В веб-браузере перейдите к https://web.powerapps.com.
+1. В веб-браузере перейдите к https://make.powerapps.com.
 2. Выполните вход, используя те же учетные данные, что и при регистрации.
 3. В меню слева выберите **Приложения**. 
 4. Щелкните **Импорт пакета (предварительная версия)** .

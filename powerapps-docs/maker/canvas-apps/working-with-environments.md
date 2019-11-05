@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d7783113c7102d9c8b292d0ee84d4329709eeaa7
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 9cff6054c9c238aeceaff63b5f178f5db3b16727
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71705238"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542330"
 ---
 # <a name="working-with-environments-and-microsoft-powerapps"></a>Работа со средами и Microsoft PowerApps
 С помощью PowerApps можно работать в различных средах и легко переключаться между ними. Общие сведения о средах см. в [обзоре сред](../../administrator/environments-overview.md), в котором подробно объясняется, для чего предназначены среды, а также рассматриваются способы создания и управления ими. В этой статье будут рассмотрены следующие темы, касающиеся сред:
@@ -45,13 +45,13 @@ ms.locfileid: "71705238"
 
 Чтобы создать приложение в правой среде, сделайте следующее:
 
-1. [Войдите в PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. [Войдите в PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. Как описано в предыдущем разделе, выберите среду, в которой вы хотите создать приложение.
 
 1. Выберите **приложения** рядом с левым ребром, а затем выберите **создать приложение**.
 
 ## <a name="view-apps-in-the-right-environment"></a>Просмотр приложений в правильной среде
-При работе с веб-сайтом [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) или PowerApps Studio отображаемый список приложений, подключений и пр. всегда фильтруется с учетом среды, выбранной в раскрывающемся списке. Если вы не видите нужные приложения, всегда проверяя, выбрана ли нужная среда.
+При работе с веб-сайтом [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) или PowerApps Studio отображаемый список приложений, подключений и пр. всегда фильтруется с учетом среды, выбранной в раскрывающемся списке. Если вы не видите нужные приложения, всегда проверяя, выбрана ли нужная среда.
 
 Дополнительные сведения о средах см. в [этом обзоре](../../administrator/environments-overview.md).

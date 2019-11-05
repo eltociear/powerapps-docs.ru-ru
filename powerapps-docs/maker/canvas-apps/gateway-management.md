@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 90a0bd777e808bb3aaab10b249d4fd765fbad654
-ms.sourcegitcommit: 6984ce43cc5653ccb957219d2a687907ebb5520c
+ms.openlocfilehash: 54d8fb369cb63721de16c5bf280660dbd15796b5
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72560922"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541299"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>Управление локальным шлюзом данных в PowerApps
 
@@ -46,7 +46,7 @@ ms.locfileid: "72560922"
 
 ## <a name="view-and-manage-gateway-permissions"></a>Просмотр разрешений шлюза и управление ими
 
-1. На сайте [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) на панели навигации слева щелкните **Gateways** (Шлюзы), а затем выберите нужный шлюз.
+1. На сайте [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) на панели навигации слева щелкните **Gateways** (Шлюзы), а затем выберите нужный шлюз.
 
 2. Добавьте пользователя в шлюз. Для этого щелкните **Users** (Пользователи), укажите пользователя или группу и уровень разрешений.
 
@@ -58,7 +58,7 @@ ms.locfileid: "72560922"
 
 ## <a name="view-and-manage-gateway-connections"></a>Просмотр подключений к шлюзу и управление ими
 
-1. На сайте [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) на панели навигации слева щелкните **Gateways** (Шлюзы), а затем выберите нужный шлюз.
+1. На сайте [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) на панели навигации слева щелкните **Gateways** (Шлюзы), а затем выберите нужный шлюз.
 
 2. Щелкните **Подключения**, затем щелкните (коснитесь) подключение, чтобы просмотреть сведения о нем, изменить его параметры или удалить его.
 

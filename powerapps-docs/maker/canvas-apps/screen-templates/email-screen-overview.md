@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2fd03b1a54b54c1abe1d6c30270861b6fc9b8054
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b6f977154a350c6ca4b0b630cb4a4050e6d015c8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989336"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541501"
 ---
 # <a name="overview-of-the-email-screen-template-for-canvas-apps"></a>Обзор шаблона экрана электронной почты для приложений Canvas
 
@@ -43,11 +42,11 @@ ms.PowerAppsDecimalTransform: true
 
 Чтобы добавить экран электронной почты из шаблона, выполните следующие действия.
 
-1. [Войдите](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в PowerApps, а затем создайте приложение или откройте существующее приложение в PowerApps Studio.
+1. [Войдите](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в PowerApps, а затем создайте приложение или откройте существующее приложение в PowerApps Studio.
 
     В этом разделе показано приложение для телефона, но те же принципы применимы к планшетному приложению.
 
-1. На вкладке ленты **Главная** выберите **создать экран** > **адрес электронной почты**.
+1. На вкладке ленты **Главная** выберите **создать экран** > **электронной почте**.
 
     По умолчанию экран выглядит примерно так:
 
@@ -83,14 +82,14 @@ ms.PowerAppsDecimalTransform: true
     `TextEmailMessage1.Y + TextEmailMessage1.Height + 20`
     
 1. После вставки элемента управления **аддмедиависимаже** установите его высоту меньше 210.
-1. В представлении дерева элементов управления выберите **аддмедиависимаже** >  **...**  > .**упорядочение** > **на задний план**.
+1. В представлении дерева элементов управления выберите **аддмедиависимаже** >  **...**  > **изменить порядок** > **отправить на задний план**.
    Это предотвращает появление элемента управления перед элементом управления **пеоплебровсегаллери** .
 1. Измените свойство **Height** объекта **емаилпеоплегаллери** на следующую формулу:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Min( 
         ( EmailPeopleGallery1.TemplateHeight + EmailPeopleGallery1.TemplatePadding * 2 ) *
-            RoundUp( CountRows( EmailPeopleGallery1.AllItems ) / 2; 0 ); 
+            RoundUp( CountRows( EmailPeopleGallery1.AllItems ) / 2, 0 ), 
         304
     )
     ```
@@ -103,31 +102,31 @@ ms.PowerAppsDecimalTransform: true
     
 1. Измените свойство **OnSelect** элемента управления **иконмаил** на следующую формулу:
 
-    ```powerapps-comma
-    Set( _emailRecipientString; Concat(MyPeople; Mail & ";") );;
-    If( IsBlank( UploadedImage1 );
-        'Office365'.SendEmail( _emailRecipientString; 
-            TextEmailSubject1.Text; 
-            TextEmailMessage1.Text; 
+    ```powerapps-dot
+    Set( _emailRecipientString, Concat(MyPeople, Mail & ";") );
+    If( IsBlank( UploadedImage1 ),
+        'Office365'.SendEmail( _emailRecipientString, 
+            TextEmailSubject1.Text, 
+            TextEmailMessage1.Text, 
             { Importance: "Normal" }
-        );
-        'Office365'.SendEmail( _emailRecipientString; 
-            TextEmailSubject1.Text; 
-            TextEmailMessage1.Text; 
+        ),
+        'Office365'.SendEmail( _emailRecipientString, 
+            TextEmailSubject1.Text, 
+            TextEmailMessage1.Text, 
             {
-                Importance: "Normal";
+                Importance: "Normal",
                 Attachments: Table(
                     {
-                        Name: "Image.jpg"; 
+                        Name: "Image.jpg", 
                         ContentBytes: UploadedImage1.Image
                     }
                 )
             }
         )
-    );;
-    Reset( TextEmailSubject1 );;
-    Reset( TextEmailMessage1 );;
-    Reset( AddMediaButton1 );;
+    );
+    Reset( TextEmailSubject1 );
+    Reset( TextEmailMessage1 );
+    Reset( AddMediaButton1 );
     Clear( MyPeople )
     ```
     
@@ -142,7 +141,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. В элементе управления **пеоплебровсегаллери** выберите изменяемую метку (или добавьте ее и не заключайте).
 
-1. Выбрав свойство **Text** , в строке формул замените содержимое на `ThisItem.`.
+1. Выбрав свойство **Text** , в строке формул замените содержимое на `ThisItem.`
 
     IntelliSense отображает список полей, которые можно выбрать.
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1e5c90fcc6e4f8d4c8e1d73eadc9a31fdbfe48ef
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: bb39701a61bcfb75c6fd66e90fc7a5002efcc410
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988300"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541632"
 ---
 # <a name="start-a-flow-in-a-canvas-app"></a>Запуск потока в приложении на основе холста
 
@@ -29,12 +29,12 @@ Microsoft Flow позволяет создать логику, выполняю
 
 ## <a name="prerequisites"></a>Технические условия
 
-- [Регистрация](../signup-for-powerapps.md) в PowerApps.
+- [Зарегистрируйтесь](../signup-for-powerapps.md) в PowerApps.
 - Узнайте, как [настроить элемент управления](add-configure-controls.md).
 
 ## <a name="create-a-flow"></a>Создание потока
 
-1. Войдите в [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Войдите в [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. На панели навигации слева выберите **бизнес-логика**, а затем выберите **последовательности.**
 

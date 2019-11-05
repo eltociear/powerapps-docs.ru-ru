@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3a2c3b468c7ccc09c49221c65113e66b562f5ed1
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: dca5d5189129e7c9dfe32d27fb4c1190b830c039
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71990865"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541340"
 ---
 # <a name="install-northwind-traders-database-and-apps"></a>Установка базы данных и приложений Northwind Traders
 
@@ -40,7 +40,7 @@ Northwind Trader — это вымышленная организация, ко�
 
 ## <a name="install-the-solution"></a>Установка решения
 
-1. Войдите в [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)и убедитесь, что вы работаете в среде, содержащей базу данных Common Data Service.
+1. Войдите в [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)и убедитесь, что вы работаете в среде, содержащей базу данных Common Data Service.
 
 1. В левой области навигации выберите **решения**, а затем щелкните **Импорт** на панели инструментов в верхней части экрана:
 

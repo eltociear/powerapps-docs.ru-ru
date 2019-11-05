@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3c061d43a766bfdcd0a560c5959756f79751a7f2
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 48605d97a8b311f806ff3556474d9bc5f32260e1
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61547503"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541077"
 ---
 # <a name="connect-to-dynamics-365-from-powerapps"></a>Подключение к Dynamics 365 из PowerApps
 PowerApps позволяет быстро создавать, настраивать, совместно использовать и запускать мобильные приложения с минимальным количеством кода или вообще без него. При помощи соединителя Dynamics 365 можно быстро создавать полезные мобильные приложения для совместного использования с другими сотрудниками вашей организации.
@@ -30,7 +29,7 @@ PowerApps позволяет быстро создавать, настраива
 Для выполнения инструкций из этого руководства потребуется учетная запись Microsoft Office 365, которая включает подписку Dynamics 365.
 
 ## <a name="create-a-connection"></a>Создание подключения
-1. [Войдите в PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. [Войдите в PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2. На панели навигации слева щелкните **Подключения**.
    
     ![Параметр "Подключения" в меню "Файл"](./media/connection-dynamics-crmonline/file-connections.png)
@@ -48,7 +47,7 @@ PowerApps позволяет быстро создавать, настраива
     Будет создано подключение.
 
 ## <a name="generate-an-app-automatically"></a>Автоматическое создание приложения
-1. [Войдите в PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), а затем нажмите кнопку **Создать приложение** в левом нижнем углу.
+1. [Войдите в PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), а затем нажмите кнопку **Создать приложение** в левом нижнем углу.
    
     ![Создать приложение](./media/connection-dynamics-crmonline/new-app.png)
 2. В разделе **Начать с данных** нажмите кнопку **Макет для телефона** на плитке **Dynamics 365**.
@@ -82,7 +81,7 @@ PowerApps создаст приложение с тремя экранами н�
     ![Выбор макета](./media/connection-dynamics-crmonline/select-layout.png)
 4. Скопируйте эту формулу, а затем, не отменяя выбор коллекции, вставьте формулу в строке формул (справа от кнопки **fx**):
    
-    `SortByColumns(Search(Filter(Contacts;statuscode=1); TextSearchBox1.Text; "lastname"); "lastname"; If(SortDescending1; Descending; Ascending))`
+    `SortByColumns(Search(Filter(Contacts,statuscode=1), TextSearchBox1.Text, "lastname"), "lastname", If(SortDescending1, Descending, Ascending))`
 5. На панели справа в верхнем раскрывающемся списке выберите пункт **firstname** (имя), а в среднем раскрывающемся списке — пункт **lastname** (фамилия).
    
     ![Выбор Body1](./media/connection-dynamics-crmonline/firstname-lastname.png)

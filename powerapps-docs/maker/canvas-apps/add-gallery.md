@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3df6227ed33c5154e1e5dd700e6a87c3e8305f01
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 6d48b7b6ef1d9d691b733bea9af6ce74d0f2b07a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987567"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540926"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>Отображение списка элементов в PowerApps
 
@@ -35,13 +34,13 @@ ms.PowerAppsDecimalTransform: true
     2. Отправьте файл Excel в [учетную запись облачного хранилища](connections/cloud-storage-blob-connections.md), например OneDrive для бизнеса.
 
 - Откройте пустое приложение:
-    1. [Войдите в PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+    1. [Войдите в PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     1. В разделе **Создание собственного приложения** выберите **Приложение на основе холста с нуля**.
 
     1. Укажите имя приложения, выберите **Телефон**, а затем выберите **Создать**.
 
-    1. Если отобразится диалоговое окно **Вас приветствует PowerApps Studio**, выберите в нем **Пропустить**.
+    1. Если отобразится диалоговое окно **Welcome to PowerApps Studio** (Вас приветствует PowerApps Studio), выберите в нем **Пропустить**.
 
     1. [Добавьте подключение](add-data-connection.md) в таблицу **FlooringEstimates** из файла Excel.
 
@@ -59,7 +58,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="add-a-gallery-in-a-screen"></a>Добавление коллекции на экран
 
-1. На вкладке **Главная** выберите **Новый экран** > **список**.
+1. На вкладке **Главная** выберите **Новый экран** > **списка**.
 
     Появится экран, содержащий элемент управления " **Галерея** " и другие элементы управления, например панель поиска.
 
@@ -99,20 +98,20 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **[Items](controls/properties-core.md)** элемента управления **Коллекция** следующую формулу:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Sort
         (If
-            (IsBlank(TextSearchBox1.Text);
-            FlooringEstimates;
+            (IsBlank(TextSearchBox1.Text),
+            FlooringEstimates,
             Filter(
-                FlooringEstimates;
+                FlooringEstimates,
                 TextSearchBox1.Text in Text(Name)
             )
-        );
-        Name;
+        ),
+        Name,
         If(
-            SortDescending1;
-            SortOrder.Descending;
+            SortDescending1,
+            SortOrder.Descending,
             SortOrder.Ascending
         )
     )
@@ -131,16 +130,16 @@ ms.PowerAppsDecimalTransform: true
 ## <a name="highlight-the-selected-item"></a>Выделение выбранного элемента
 Задайте для свойства **темплатефилл** элемента управления **галереи** формулу, похожую на этот пример, но при необходимости можно указать другие цвета:
 
-**If(ThisItem.IsSelected; LightCyan; White)**
+**If(ThisItem.IsSelected, LightCyan, White)**
 
 ## <a name="change-the-default-selection"></a>Изменение выбора по умолчанию
 Задайте для свойства **Default** элемента управления **Коллекция** запись, которую необходимо выбирать по умолчанию. Например, можно указать Пятый элемент в источнике данных **флуринжестиматес** :
 
-**Last(FirstN(FlooringEstimates; 5))**
+**Last(FirstN(FlooringEstimates, 5))**
 
 В этом примере укажите первый элемент в категории **Hardwood** источника данных **FlooringEstimates**:
 
-**First(Filter(FlooringEstimates; Category = "Hardwood"))**
+**First(Filter(FlooringEstimates, Category = "Hardwood"))**
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения см. в статье [Общие сведения о формах данных в Microsoft PowerApps](working-with-forms.md) и [Начало работы с формулами](working-with-formulas.md).

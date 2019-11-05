@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 25a26e6298fa3257f3db6d04ffd2937e8e71d3a1
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: be576425067079549d3174e6d6306814a6ddb13a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72978538"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542803"
 ---
 # <a name="configure-oauth2-provider-settings-for-portals"></a>Настройка параметров поставщика OAuth2 для порталов
 
@@ -31,7 +31,7 @@ ms.locfileid: "72978538"
 
 ## <a name="create-oauth-applications"></a>Создание приложений OAuth
 
-В общем случае, если поставщик OAuth использует параметры приложения, для которых требуется значение URI перенаправления, укажите <http://portal.contoso.com/or> http://portal.contoso.com/signin-\ [поставщик\] в зависимости от того, как поставщик выполняет проверку URI перенаправления (некоторые поставщики нуждаются в указании полного URL-пути вместе с доменное имя). Замените имя поставщика вместо \[поставщика\] в URI перенаправления.
+В общем случае, если поставщик OAuth использует параметры приложения, для которых требуется значение URI перенаправления, укажите <https://portal.contoso.com/or> https://portal.contoso.com/signin-\ [поставщик\] в зависимости от того, как поставщик выполняет проверку URI перенаправления (некоторые поставщики нуждаются в указании полного URL-пути вместе с доменное имя). Замените имя поставщика вместо \[поставщика\] в URI перенаправления.
 
 ### <a name="google"></a>Google
 
@@ -46,8 +46,8 @@ ms.locfileid: "72978538"
     - Нажмите кнопку**сохранить**.
 5. Перейдите в раздел**api & Проверка подлинности** &gt;**учетные данные** и создайте новый идентификатор клиента.
    - Тип приложения:**веб-приложение**
-   - Зарегистрированные источники [!INCLUDE[pn-javascript](../../../includes/pn-javascript.md)]: http://portal.contoso.com
-   - Зарегистрированные URI перенаправления: http://portal.contoso.com/signin-google 
+   - Зарегистрированные источники [!INCLUDE[pn-javascript](../../../includes/pn-javascript.md)]: https://portal.contoso.com
+   - Зарегистрированные URI перенаправления: https://portal.contoso.com/signin-google 
    - Выберите **создать идентификатор клиента**.
 
 ### <a name="facebook-app-settings"></a>Параметры приложения Facebook
@@ -64,7 +64,7 @@ ms.locfileid: "72978538"
     - Домены приложений (необязательно): portal.contoso.com 
     - Контактный адрес электронной почты: *&lt;адреса электронной почты по своему усмотрению&gt;* 
     - Выберите **Добавить платформу**, а затем выберите **веб-сайт**. 
-    - URL-адрес сайта: http://portal.contoso.com/ или http://portal.contoso.com/signin-facebook
+    - URL-адрес сайта: https://portal.contoso.com/ или https://portal.contoso.com/signin-facebook
 
 6. Нажмите кнопку **сохранить изменения**.
 7. Перейдите на вкладку **состояние & проверка** **состояния** &gt;.
@@ -75,7 +75,7 @@ ms.locfileid: "72978538"
 1. [Центр разработчиков[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)] для учетных записей](https://account.live.com/developers/applications/index)  
 2. Выберите **создать приложение** и укажите **имя приложения**.
 3. Выберите **я принимаю** , чтобы принять условия.
-4. Перейдите в раздел **параметры** &gt;**Параметры API**, а затем задайте для URL-адреса перенаправления значение http://portal.contoso.com/signin-microsoft 
+4. Перейдите в раздел **параметры** &gt;**Параметры API**, а затем задайте для URL-адреса перенаправления значение https://portal.contoso.com/signin-microsoft 
 
 ### <a name="twitter-apps-settings"></a>Параметры приложений Twitter
 
@@ -83,8 +83,8 @@ ms.locfileid: "72978538"
 2. Выберите **создать новое приложение**.
 
     - Укажите **имя** и **Описание** приложения.
-    - Задайте для URL-адреса веб-сайта http://portal.contoso.com.
-    - Задайте URL-адрес обратного вызова как http://portal.contoso.com или http://portal.contoso.com/signin-twitter.
+    - Задайте для URL-адреса веб-сайта https://portal.contoso.com.
+    - Задайте URL-адрес обратного вызова как https://portal.contoso.com или https://portal.contoso.com/signin-twitter.
 
 3. Выберите **создать приложение Twitter**.
 
@@ -94,9 +94,9 @@ ms.locfileid: "72978538"
 2. Выберите **Добавить новое приложение**.
 
     - Укажите **имя приложения**, **Описание**и т. д.
-    - Задайте для URL-адреса веб-сайта http://portal.contoso.com.
+    - Задайте для URL-адреса веб-сайта https://portal.contoso.com.
     - Задать соглашение пользователя OAuth/область по умолчанию: r\_басикпрофие и r\_EmailAddress
-    - Укажите URL-адрес перенаправления OAuth 2,0: http://portal.contoso.com/signin-linkedin.
+    - Укажите URL-адрес перенаправления OAuth 2,0: https://portal.contoso.com/signin-linkedin.
 
 3. Выберите **Добавить приложение**.
 

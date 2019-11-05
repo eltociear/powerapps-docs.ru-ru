@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9d16e4c7b8d15611b06644520c0ee39417fd3ee0
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 29fcc240bdf0dbe926acb702c26d535fb4536c16
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994711"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73537114"
 ---
 # <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>Добавление и настройка элемента управления приложения на основе холста в PowerApps
 
@@ -26,7 +26,7 @@ ms.locfileid: "71994711"
 
 ## <a name="prerequisites"></a>Технические условия
 
-1. Если у вас еще нет лицензии PowerApps, [Зарегистрируйтесь](../signup-for-powerapps.md), а затем выполните [Вход](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Если у вас еще нет лицензии PowerApps, [Зарегистрируйтесь](../signup-for-powerapps.md), а затем выполните [Вход](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 1. В разделе **Создание собственного приложения**наведите указатель мыши на **приложение Canvas с пустого**поля, а затем выберите **сделать это приложение**.
 1. Если появится запрос на вводный обзор, нажмите кнопку **Далее** , чтобы ознакомиться с основными областями интерфейса PowerApps (или выберите **пропустить**).
 

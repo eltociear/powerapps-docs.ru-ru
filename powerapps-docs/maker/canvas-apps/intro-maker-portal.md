@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dd50652f0021079b4b9d4d23568ba148a8ce6a5b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: f4babe6356ab0be34b6b08a3d158462b58cbb0cd
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989981"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541232"
 ---
 # <a name="sign-in-to-powerapps-for-the-first-time"></a>Вход в PowerApps в первый раз
 
-Когда вы входите на [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), сайт предлагает различные варианты для создания собственных приложений, открытия приложений, созданных вами или другими пользователями, и выполнения сопутствующих задач. Это могут быть самые простые задачи, например поиск лицензий для доступа, или более сложные, например создание настраиваемых подключений для определенных источников данных.
+Когда вы входите на [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), сайт предлагает различные варианты для создания собственных приложений, открытия приложений, созданных вами или другими пользователями, и выполнения сопутствующих задач. Это могут быть самые простые задачи, например поиск лицензий для доступа, или более сложные, например создание настраиваемых подключений для определенных источников данных.
 
 Вы можете выбирать варианты в трех основных областях:
 

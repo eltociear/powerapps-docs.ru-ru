@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 339a8b221474bd9d98ed8e425f730bab1dbb1e0a
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 19dca44c26565bc55dcfaace48987b69dd0a195f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72978331"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73542730"
 ---
 # <a name="configure-site-settings-for-portals"></a>Настройка параметров сайта для порталов
 
@@ -64,10 +64,10 @@ ms.locfileid: "72978331"
 |Поиск и включение|УСЛОВИЯ|Логическое значение, указывающее, включен ли поиск.|
 |Поиск и фильтры|Содержимое: adx_webpage; События: adx_event, adx_eventschedule;<br>Блоги: adx_blog, adx_blogpost, adx_blogpostcomment;<br>Форумы: adx_communityforum, adx_communityforumthread, adx_communityforumpost;<br>Идеи: adx_ideaforum, adx_idea, adx_ideacomment;<br>Проблемы: adx_issueforum, adx_issue, adx_issuecomment; Служба технической поддержки: инцидент|Коллекция параметров фильтра логического имени поиска. Определение значения позволяет добавить параметры фильтра раскрывающегося списка к поиску на уровне сайта. Это значение должно быть в виде пар "имя-значение", имена и значения, разделенные двоеточием, и пары, разделенные точкой с запятой.<br>Например: "форумы: adx_communityforum, adx_communityforumthread, adx_communityforumpost; Блоги: adx_blog, adx_blogpost, adx_blogpostcomment.|
 |Поиск и Индекскуеринаме|Поиск на портале|Имя системного представления, используемое поисковым запросом на портале. По умолчанию: Поиск на портале|
-|Поиск и запрос|\+ (@Query) _title:(@Query) _logicalname: adx_webpage ~ 0.9 ^ 0,2<br> -_logicalname: adx_webfile ~ 0.9 adx_partialurl:(@Query)<br> _logicalname: adx_blogpost ~ 0.9 ^ 0,1-_logicalname: adx_communityforumthread ~ 0.9|Переопределите запрос для поиска сайта, чтобы применить дополнительные весовые коэффициенты и фильтры. @Query — текст запроса, вводимых пользователем. Справочник по синтаксису запросов Lucene: [http://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html](http://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html)| 
+|Поиск и запрос|\+ (@Query) _title:(@Query) _logicalname: adx_webpage ~ 0.9 ^ 0,2<br> -_logicalname: adx_webfile ~ 0.9 adx_partialurl:(@Query)<br> _logicalname: adx_blogpost ~ 0.9 ^ 0,1-_logicalname: adx_communityforumthread ~ 0.9|Переопределите запрос для поиска сайта, чтобы применить дополнительные весовые коэффициенты и фильтры. @Query — текст запроса, вводимых пользователем. Справочник по синтаксису запросов Lucene: [https://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html](https://lucene.apache.org/core/old_versioned_docs/versions/2_9_1/queryparsersyntax.html)| 
 |Поиск и парадигматические модули|английский|Язык, используемый алгоритмом извлечения корней для поиска на портале. По умолчанию: Английский|
 |Кустомерсуппорт/Дисплайаллусерактивитиесонтимелине|ISFALSE| |
-|Authentication/[Протокол]/[поставщик]/Алловконтактмаппингвисемаил| |Разрешить автоматическое связывание с записью контакта на основе электронной почты. Для получения дополнительных сведений щелкните [здесь](https://docs.microsoft.com/en-us/dynamics365/portals/azure-ad-b2c#allow-auto-association-to-a-contact-record-based-on-email).|
+|Authentication/[Протокол]/[поставщик]/Алловконтактмаппингвисемаил| |Разрешить автоматическое связывание с записью контакта на основе электронной почты. Для получения дополнительных сведений щелкните [здесь](azure-ad-b2c.md#allow-auto-association-to-a-contact-record-based-on-email).|
 |||
 
 Параметры сайта, относящиеся к различным возможностям портала, см. в следующих статьях:
@@ -79,10 +79,9 @@ ms.locfileid: "72978331"
 - [WS-Federation](configure-ws-federation-settings.md)
 - [SAML 2,0](configure-saml2-settings.md)
 - [Миграция поставщиков удостоверений в Azure AD B2C](migrate-identity-providers.md)
-- [Поиск в содержимом вложенных файлов](https://docs.microsoft.com/dynamics365/customer-engagement/portals/search-file-attachment)
-- [Поведение и формат поля даты и времени](https://docs.microsoft.com/dynamics365/customer-engagement/portals/behavior-format-date-time-field)
-- [Добавить географическое расположение](https://docs.microsoft.com/dynamics365/customer-engagement/portals/add-geolocation)
-- [Служба интеграции полей](https://docs.microsoft.com/dynamics365/customer-engagement/portals/integrate-field-service)
+- [Поиск в содержимом вложенных файлов](search-file-attachment.md)
+- [Поведение и формат поля даты и времени](behavior-format-date-time-field.md)
+- [Добавить географическое расположение](add-geolocation.md)
 - [Реализация общих правил защиты данных](https://docs.microsoft.com/dynamics365/customer-engagement/portals/implement-gdpr)
 - [Включение кэширования вывода верхнего и нижнего колонтитулов](https://docs.microsoft.com/dynamics365/customer-engagement/portals/enable-header-footer-output-caching)
 
