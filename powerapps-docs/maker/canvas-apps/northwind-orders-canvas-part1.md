@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/29/2019
 ms.locfileid: "71991364"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>Создание коллекции заказов в приложении Canvas
 
@@ -105,8 +106,8 @@ ms.locfileid: "71991364"
 
 1. В строке формул задайте в качестве значения свойства **Items** коллекции следующую формулу:
 
-    ```powerapps-dot
-    Sort( Orders, 'Order Number', Descending )
+    ```powerapps-comma
+    Sort( Orders; 'Order Number'; Descending )
     ```
 
     Функция [**Sort**](functions/function-sort.md) упорядочивает список таким образом, чтобы сначала появился самый новый заказ (который имеет самый высокий порядковый номер).
@@ -132,7 +133,7 @@ ms.locfileid: "71991364"
 
 1. В строке формул задайте для свойства **Text** метки следующее выражение:
 
-    ```powerapps-dot
+    ```powerapps-comma
     "Order " & ThisItem.'Order Number'
     ```
 
@@ -148,7 +149,7 @@ ms.locfileid: "71991364"
 
 1. В строке формул задайте для свойства **Text** метки следующее выражение:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Customer.Company
     ```
 
@@ -192,7 +193,7 @@ ms.locfileid: "71991364"
 
 1. Задайте для свойства **Text** новой метки следующее выражение:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.'Order Status'
     ```
 
@@ -215,12 +216,12 @@ ms.locfileid: "71991364"
 
 1. В строке формул задайте для свойства **Цвет** метки состояние значение эта формула:
 
-    ```powerapps-dot
-    Switch( ThisItem.'Order Status',
-        'Orders Status'.Closed, Green,
-        'Orders Status'.New, Black,
-        'Orders Status'.Invoiced, Blue,
-        'Orders Status'.Shipped, Purple
+    ```powerapps-comma
+    Switch( ThisItem.'Order Status';
+        'Orders Status'.Closed; Green;
+        'Orders Status'.New; Black;
+        'Orders Status'.Invoiced; Blue;
+        'Orders Status'.Shipped; Purple
     )
     ```
 
@@ -250,8 +251,8 @@ ms.locfileid: "71991364"
 
 1. В строке формул задайте для свойства **Text** новой метки значение Следующая формула:
 
-    ```powerapps-dot
-    Text( Sum( ThisItem.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
+    ```powerapps-comma
+    Text( Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -282,8 +283,8 @@ ms.locfileid: "71991364"
 - Выражение для отображения номера заказа: `"Orders " & ThisItem.OrderNumber`
 - Поле в связи "многие к одному": `ThisItem.Customer.Company`
 - Метка, показывающая имя параметра в наборе: `ThisItem.'Order Status'`
-- Метка, которая изменяет формат в зависимости от того, какой параметр в наборе содержит метку: `Switch( ThisItem.'Order Status', 'Orders Status'.Closed, Green, ...`
-- Комплексная агрегатная функция над связью «один ко многим»: `Sum( ThisItem.'Order Details', Quantity * 'Unit Price' )`
+- Метка, которая изменяет формат в зависимости от того, какой параметр в наборе содержит метку: `Switch( ThisItem.'Order Status'; 'Orders Status'.Closed; Green; ...`
+- Комплексная агрегатная функция над связью «один ко многим»: `Sum( ThisItem.'Order Details'; Quantity * 'Unit Price' )`
 
 ## <a name="next-topic"></a>Следующий раздел
 

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73539182"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Учебник. Настройка коллекции в PowerApps
 
@@ -95,7 +96,7 @@ ms.locfileid: "73539182"
 
 1. Скопируйте эту формулу и вставьте ее в строку формул.
 
-    ```SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, Descending, Ascending))```
+    ```SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; Descending; Ascending))```
 
     Эта формула действует следующим образом:
 
