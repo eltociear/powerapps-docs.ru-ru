@@ -13,21 +13,21 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 758d986660137d4e513919911589cbbc0dc304a2
-ms.sourcegitcommit: 7016ff837eff2cb0985fc71edab95cbf99335677
+ms.openlocfilehash: 8456e82cfd2680fcbb722c8b4b2b5b32ef73dbde
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71160194"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540272"
 ---
 # <a name="container-control-in-powerapps-experimental"></a>Контейнерный элемент управления в PowerApps (экспериментальный)
 Предоставляет возможность создания иерархии.
 
 > [!IMPORTANT]
 > Это экспериментальная функция. Экспериментальные функции могут существенно измениться или полностью исчезнуть в любое время.
-> Дополнительные сведения см. [в статье экспериментальные и предварительные версии функций в PowerApps](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/working-with-experimental-preview).
+> Дополнительные сведения см. [в статье экспериментальные и предварительные версии функций в PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview).
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
  Контейнер может содержать набор элементов управления и имеет собственные свойства. 
 
 Вы можете начать с вставки пустого контейнера, затем настроить его, добавив в него элементы управления, изменив его размер, переместив, скрывая и внеся другие изменения. Можно также начать с ряда элементов управления, выбрать их и добавить в контейнер с помощью контекстного меню в представлении в виде дерева или щелкнуть правой кнопкой мыши на холсте. 

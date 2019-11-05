@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8ac88e1b9e81b9c42c8c9ac187d569573fc10ac3
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: c9b84a8ce89863d94b9f3e4ac390c88e194a2894
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992987"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540194"
 ---
 # <a name="choices-function-in-powerapps"></a>Функция Choices в PowerApps
 Возвращает таблицу из возможных значений для столбца подстановки.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функция **Choices** возвращает таблицу из возможных значений для столбца подстановки.  
 
 Используйте функцию **Choices** для получения списка вариантов для пользователей. Эта функция обычно используется с элементом управления [**поле со списком**](../controls/control-combo-box.md) в формах редактирования.
@@ -53,7 +53,7 @@ ms.locfileid: "71992987"
 
     Создается множество сущностей, таких как **Accounts**.
 
-    **Примечание**. Имена сущностей являются единственными для web.powerapps.com и plural в PowerApps Studio.
+    **Примечание**. имена сущностей являются единственными для make.powerapps.com и plural в PowerApps Studio.
 
     ![Частичный список полей сущности Account в Common Data Service для приложений, в котором основное контактное лицо является полем подстановки.](media/function-choices/entity-account.png)
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ae82166b9cc21de1e25f99f7606ce7b95b2152b9
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: e534d5b3cf21cbbed78b16960a5f4a83a44bfe24
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71993964"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540350"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>Подключение к SharePoint из приложения Canvas
 
@@ -40,7 +40,7 @@ ms.locfileid: "71993964"
 
 ## <a name="create-a-connection"></a>Создание подключения
 
-1. [Войдите в PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), выберите **данные** > **подключения** на левой панели навигации, а затем выберите **новое подключение** в левом верхнем углу.
+1. [Войдите в PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), выберите **данные** > **подключения** на левой панели навигации, а затем выберите **новое подключение** в левом верхнем углу.
 
     > [!div class="mx-imgBorder"]
     > ![выберите данные > подключения на левой панели навигации, а затем выберите новое подключение в левом верхнем углу.](./media/connection-sharepoint-online/new-connection.png)

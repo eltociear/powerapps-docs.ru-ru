@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ac4699818c7f5b3a136db122fad9621d865bf5f1
-ms.sourcegitcommit: f296922b8039b573e5adb81423a544f70c56c1ee
+ms.openlocfilehash: 99594d99aa0ab1ae4971f3ec2eb1987bb7dcfbcc
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256112"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73539027"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Интеграция приложений на основе холста в веб-сайты и другие службы
 Создаваемые приложения часто наиболее полезны, когда они доступны, когда люди выполняют свою работу. Внедрение приложений Canvas в IFRAME позволяет интегрировать эти приложения на веб-сайты и другие службы, такие как Power BI или SharePoint.
@@ -32,7 +32,7 @@ ms.locfileid: "71256112"
 - Доступ к внедренному приложению могут получить только пользователи PowerApps того же клиента.
 - Чтобы получить доступ к PowerApps в Internet Explorer 11, необходимо отключить просмотр в режиме совместимости.
 
-Можно также интегрировать приложения Canvas в SharePoint Online без использования IFRAME. Дополнительные сведения: [Используйте веб-часть PowerApps](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c).
+Можно также интегрировать приложения Canvas в SharePoint Online без использования IFRAME. Дополнительные сведения см. [в разделе Использование веб-части PowerApps](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c).
 
 ## <a name="set-uri-parameters-for-your-app"></a>Задание параметров URI для приложения
 При наличии приложения, которое вы хотите внедрить, в первую очередь необходимо задать параметры для универсального кода ресурса (URI), чтобы IFrame знал, где найти ваше приложение. URI имеет следующий вид:
@@ -42,11 +42,11 @@ https://apps.powerapps.com/play/[AppID]?source=iframe
 ```
 
 > [!IMPORTANT]
-> По состоянию на 2019 августа формат URI изменился с https://web.powerapps.com/webplayer на https://apps.powerapps.com/play. Обновите все внедренные элементы iframe, чтобы использовать новый формат URI. Ссылки на предыдущий формат будут перенаправляться на новый универсальный код ресурса (URI) для обеспечения совместимости.
+> По состоянию на 2019 августа формат URI изменился с https://make.powerapps.com/webplayer на https://apps.powerapps.com/play. Обновите все внедренные элементы iframe, чтобы использовать новый формат URI. Ссылки на предыдущий формат будут перенаправляться на новый универсальный код ресурса (URI) для обеспечения совместимости.
 >
 > Предыдущий формат:
 > 
-> HTTPS\://веб.повераппс.ком/вебплайер/ифрамеапп? Source = IFRAME & AppID =/провидерс/Микрософт.повераппс/АППС/[AppID]
+> HTTPS\://Маке.повераппс.ком/вебплайер/ифрамеапп? Source = IFRAME & appId =/Провидерс/Микрософт.повераппс/АППС/[AppID]
 
 Вам только нужно указать в URI идентификатор своего приложения вместо AppID, в том числе [' & ']. Вскоре мы покажем, как получить это значение, но сначала рассмотрим все параметры, доступные в URI:
 

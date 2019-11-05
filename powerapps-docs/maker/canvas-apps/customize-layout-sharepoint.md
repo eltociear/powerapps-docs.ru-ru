@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d12f667c1ff1fbf8424840b887e0f9394197ee2c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 6b3a33f327aab7e4f02c954dbd31c412e35dd661
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986055"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73539182"
 ---
-# <a name="tutorial-customize-a-gallery-in-powerapps"></a>Показано Настройка коллекции в PowerApps
+# <a name="tutorial-customize-a-gallery-in-powerapps"></a>Учебник. Настройка коллекции в PowerApps
 
 С помощью этого руководства вы настроите список записей, называемый коллекцией, и внесете ряд других изменений в приложение, автоматически созданное в Microsoft PowerApps. Пользователи смогут управлять данными в приложении и без этих изменений, но настройка с учетом требований вашей организации упростит работу.
 
@@ -44,7 +43,7 @@ ms.PowerAppsDecimalTransform: true
 
 При работе с этим руководством мы будем использовать приложение, созданное на основе определенного источника данных. Но те же принципы применимы для любого приложения, создаваемого в PowerApps из списка SharePoint, таблицы Excel или других источников данных.
 
-Если вы не зарегистрированы в PowerApps, перед началом работы [пройдите бесплатную регистрацию](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+Если вы не зарегистрированы в PowerApps, перед началом работы [пройдите бесплатную регистрацию](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## <a name="prerequisites"></a>Технические условия
 
@@ -52,13 +51,13 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="open-the-generated-app"></a>Открытие созданного приложения
 
-1. Войдите в [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), а затем выберите **Приложения** у левого края экрана.
+1. Войдите в [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), а затем выберите **Приложения** у левого края экрана.
 
 1. Найдите созданное приложение, щелкните значок многоточия ( **...** ), а затем выберите **Редактировать**.
 
     ![Открытие приложения для изменения](./media/customize-layout-sharepoint/open-app.png)
 
-1. Если отобразится диалоговое окно **Вас приветствует PowerApps Studio**, выберите в нем **Пропустить**.
+1. Если отобразится диалоговое окно **Welcome to PowerApps Studio** (Вас приветствует PowerApps Studio), выберите в нем **Пропустить**.
 
 ## <a name="change-the-layout"></a>изменить макета;
 
@@ -96,7 +95,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Скопируйте эту формулу и вставьте ее в строку формул.
 
-    ```SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; Descending; Ascending))```
+    ```SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, Descending, Ascending))```
 
     Эта формула действует следующим образом:
 

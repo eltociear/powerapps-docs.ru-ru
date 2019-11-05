@@ -13,21 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 375c4f19ed7715eed662c8456c539d5590c9f1ec
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1c930c233f96a481700748960f90d731be397af0
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993211"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540319"
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>Создание и обновление коллекции в приложении Canvas
 
-Используйте коллекцию для хранения данных, которыми могут управлять пользователи в приложении. Коллекция — это группа элементов, которые похожи, например продукты в списке продуктов. Дополнительные сведения о различных типах переменных, таких как коллекции: [Общие сведения о переменных приложения Canvas](working-with-variables.md).
+Используйте коллекцию для хранения данных, которыми могут управлять пользователи в приложении. Коллекция — это группа элементов, которые похожи, например продукты в списке продуктов. Дополнительные сведения о различных типах переменных, таких как коллекции, см. в статье [сведения о переменных приложения Canvas](working-with-variables.md).
 
 ## <a name="prerequisites"></a>Технические условия
 
-- [Зарегистрируйтесь](../signup-for-powerapps.md) в PowerApps, а затем [войдите в систему](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), указав учетные данные, использованные при регистрации.
+- [Зарегистрируйтесь](../signup-for-powerapps.md) в PowerApps, а затем [войдите в систему](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), указав учетные данные, использованные при регистрации.
 - Создайте приложение в PowerApps или откройте уже существующее.
 - Узнайте, как [настроить элемент управления](add-configure-controls.md) в PowerApps.
 
@@ -51,15 +50,15 @@ ms.PowerAppsDecimalTransform: true
 
 1. В строке формул замените **дропдовнсампле** следующим выражением:
 
-    `["Red";"Green";"Blue"]`
+    `["Red","Green","Blue"]`
 
 1. Добавьте элемент управления **Button** , присвойте его свойству **Text** значение **Add**и задайте для его свойства **OnSelect** значение этой формулы:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Collect(
-        ProductList;
+        ProductList,
         {
-            Product: ProductName.Text;
+            Product: ProductName.Text,
             Color: Colors.Selected.Value
         }
     )
@@ -107,7 +106,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте в качестве значения свойства " **OnSelect** " значка следующую формулу:
 
-    `Remove(ProductList; ThisItem)`
+    `Remove(ProductList, ThisItem)`
 
 1. За пределами коллекции добавьте кнопку, задайте для ее свойства **Text** значение **"Clear"** и задайте для его свойства **OnSelect** значение этой формулы:
 
@@ -121,7 +120,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Добавьте кнопку и установите для ее свойства **[OnSelect](controls/properties-core.md)** эту функцию, заменив *ListName* именем вашего списка SharePoint:<br>
 
-    `Collect(MySPCollection; ListName)`
+    `Collect(MySPCollection, ListName)`
 
     Эта функция создает коллекцию с именем **MySPCollection**, которая содержит те же данные, что и ваш список SharePoint.
 
@@ -129,7 +128,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. используемых Чтобы просмотреть созданную коллекцию, выберите **коллекции** в меню **файл** .
 
-Сведения о том, как отображать данные из списка SharePoint (например, даты, варианты выбора и людей) в коллекции: [Отображение столбцов списка в коллекции](connections/connection-sharepoint-online.md#show-list-columns-in-a-gallery). Сведения о том, как отображать данные в форме (с раскрывающимися списками, выбора даты и лицами, которые выбираются людьми): [Изменение формы и отображение элементов управления формы](controls/control-form-detail.md).
+Сведения о том, как отображать данные из списка SharePoint (например, даты, варианты выбора и людей) в коллекции: [Отображать столбцы списка в галерее](connections/connection-sharepoint-online.md#show-list-columns-in-a-gallery). Сведения о том, как отображать данные в форме (с раскрывающимися списками, выбора даты и лицами, которые выбираются людьми): [Редактирование формы и отображение элементов управления формы](controls/control-form-detail.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

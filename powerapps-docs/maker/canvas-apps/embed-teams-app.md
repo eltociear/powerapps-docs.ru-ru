@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 42075fbaee40ec98bec0d47e6bfd3c00dc6f9ef6
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e2cce61533bf86063d907882024a5a83c2e03fb7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73182484"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73539002"
 ---
-# <a name="embed-an-app-in-teams"></a>Внедрение приложения в группы
+# <a name="embed-an-app-in-teams"></a>Внедрение приложения в Teams
 
 Вы можете поделиться созданной вами PowerApps, внедрив ее непосредственно в Microsoft Teams. По завершении пользователи могут выбрать **+** , чтобы добавить приложение в любой канал **команды или** беседы в группе, в которой вы являетесь. Приложение отображается в виде плитки в разделе **вкладок команды**.
 
@@ -36,7 +36,7 @@ ms.locfileid: "73182484"
 
 ## <a name="download-the-app"></a>Скачать приложение
 
-1. Войдите в [Web.powerapps.com](https://web.powerapps.com)и выберите **приложения** в меню.
+1. Войдите в [make.powerapps.com](https://make.powerapps.com)и выберите **приложения** в меню.
 
     ![Отобразить список приложений](./media/embed-teams-app/file-apps2.png "Открытие списка приложений")
 

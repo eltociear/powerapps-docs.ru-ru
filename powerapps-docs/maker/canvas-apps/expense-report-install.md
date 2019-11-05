@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 20b49aee68b7c8c357b49dac2218d994153da230
-ms.sourcegitcommit: 0e7bdaea83adaa15da4d5c9ddbcd0b2bcbee01df
+ms.openlocfilehash: afdeb89b0bd026b20e0c940b05be60d4d3238b81
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73063384"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540204"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Установка и настройка примера "Отчет о расходах" для приложений на основе холста в PowerApps
 
@@ -204,13 +204,13 @@ ms.locfileid: "73063384"
 
 1. В веб-браузере перейдите по следующей ссылке:
 
-    [http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip](http://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip).
+    [https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip).
 
 2. Скачайте пакет примера приложения PowerApps "Отчет о расходах" и сохраните его на компьютер.
 
 ## <a name="create-connections"></a>Создание подключений
 
-1.  В веб-браузере зайдите на страницу [web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  В веб-браузере перейдите по адресу [make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2.  Выполните вход, используя те же учетные данные, что и при регистрации.
 3.  В меню слева выберите **Подключения**.
 
@@ -239,7 +239,7 @@ ms.locfileid: "73063384"
 
 ## <a name="import-the-app"></a>Импорт приложения
 
-1. В веб-браузере перейдите к https://web.powerapps.com.
+1. В веб-браузере перейдите к https://make.powerapps.com.
 1. Выполните вход, используя те же учетные данные, что и при регистрации.
 1. На левой панели навигации выберите **Приложения**, а затем выберите **Импорт пакета (предварительная версия)** .
 

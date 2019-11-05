@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ba852093da05c3fa69cc47b219a0bef65908c170
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 13219dad84e693582ee649a11013d78b6fc69544
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71992624"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73538925"
 ---
 # <a name="json-function-in-powerapps"></a>Функция JSON в PowerApps
 
@@ -26,7 +26,7 @@ ms.locfileid: "71992624"
 
 ## <a name="description"></a>Description
 
-Функция **JSON** возвращает представление НОТАЦИЯ объектов JavaScript (JSON) структуры данных в виде текста, чтобы его можно было хранить или передавать по сети. [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) и [IETF RFC 8259](https://tools.ietf.org/html/rfc8259) описывают формат, который широко используется JavaScript и другими языками программирования.
+Функция **JSON** возвращает представление НОТАЦИЯ объектов JavaScript (JSON) структуры данных в виде текста, чтобы его можно было хранить или передавать по сети. [ECMA-404](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) и [IETF RFC 8259](https://tools.ietf.org/html/rfc8259) описывают формат, который широко используется JavaScript и другими языками программирования.
 
 Приложения Canvas поддерживают [типы данных](data-types.md) , приведенные в этой таблице, с подробными сведениями о их текстовом представлении:
 

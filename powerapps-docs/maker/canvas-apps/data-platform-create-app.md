@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f9dedc515ee130a950c1dc12793751d43aa3804f
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 7175ac7d96989de4abd7e9fa3446631ca04d5f1b
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993085"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540144"
 ---
 # <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>Создание приложения Canvas на основе Common Data Service в PowerApps
 
 В PowerApps автоматически создает приложение Canvas на основе списка примеров учетных записей в [Common Data Service](../common-data-service/data-platform-intro.md). В этом приложении можно просматривать все учетные записи, отображать подробные сведения о отдельной записи, а также создавать, изменять и удалять учетные записи.
 
-Если вы не зарегистрированы в PowerApps, перед началом работы [пройдите бесплатную регистрацию](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+Если вы не зарегистрированы в PowerApps, перед началом работы [пройдите бесплатную регистрацию](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## <a name="prerequisites"></a>Технические условия
 
@@ -32,7 +32,7 @@ ms.locfileid: "71993085"
 
 ## <a name="generate-an-app"></a>Создание приложения
 
-1. Войдите в [PowerApps](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) и переключитесь на среду, соответствующую указанным выше требованиям.
+1. Войдите в [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) и переключитесь на среду, соответствующую указанным выше требованиям.
 
 1. В области **Создавайте собственные приложения** наведите указатель на плитку **Начать с данных** и выберите команду **Создать это приложение**.
 
@@ -44,7 +44,7 @@ ms.locfileid: "71993085"
 
 1. В поле **Выберите таблицу** выберите **Учетные записи**, а затем щелкните **Подключиться**.
 
-1. Если отобразится диалоговое окно **Вас приветствует PowerApps Studio**, выберите в нем **Пропустить**.
+1. Если отобразится диалоговое окно **Welcome to PowerApps Studio** (Вас приветствует PowerApps Studio), выберите в нем **Пропустить**.
 
 Откроется приложение с окном обзора, в котором приведен список учетных записей в элементе управления, называемом коллекцией. В верхней части экрана в строке заголовка отображаются значки для обновления данных в коллекции, сортировки данных в коллекции в алфавитном порядке и добавления данных в коллекцию. Под заголовком есть поле поиска, с помощью которого можно отфильтровать данные в коллекции по введенному или вставленному тексту. 
 

@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: afc0e231fbc645b0fd1c597ae2776b7b90d28c1b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: f1f8e2edd92d36ce4c3a2b08b5ae9d2481c339ec
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993121"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540242"
 ---
 # <a name="delete-a-canvas-app-from-powerapps"></a>Удаление приложения на основе холста из PowerApps
 Из этой статьи вы узнаете, как удалить приложение на основе холста из своей учетной записи PowerApps, а также из учетных записей всех пользователей, которым к нему был предоставлен доступ.
 
 ## <a name="delete-an-app-from-your-account"></a>Удаление приложения из учетной записи
-1. Откройте [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), а затем выберите **приложения** в левой панели **представления дерева** .
+1. Откройте [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), а затем выберите **приложения** в левой панели **представления дерева** .
    
     ![](./media/delete-app/file-apps.png)
 2. (Необязательно.) В левом верхнем углу отфильтруйте список приложений, чтобы отобразить только те из них, которые вам принадлежат или в создании которых вы участвуете.
@@ -51,6 +51,6 @@ ms.locfileid: "71993121"
 
 ## <a name="more-resources"></a>Дополнительные ресурсы
 [Общий доступ к приложению](share-app.md)  
-[Изменение названия и плитки приложения](set-name-tile.md)  
+[Изменение имени и элемента приложения](set-name-tile.md)  
 [Восстановление предыдущей версии приложения](restore-an-app.md)  
 

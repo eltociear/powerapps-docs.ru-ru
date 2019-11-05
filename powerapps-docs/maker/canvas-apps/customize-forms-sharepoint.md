@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 67e7e0074259731bb1d3c50474e8020e3f4fcf1b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: ccaa918bc0bd1e4ca666e62094fa137e31d3243f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993190"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73540265"
 ---
 # <a name="customize-a-canvas-app-form-in-powerapps"></a>Настройка формы в приложении на основе холста в PowerApps
 
@@ -34,27 +34,27 @@ ms.locfileid: "71993190"
 
 ## <a name="show-and-hide-cards"></a>Отображение и скрытие карточек
 
-1. Войдите в [PowerApps](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), а затем Откройте созданное и настроенное приложение.
+1. Войдите в [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), а затем Откройте созданное и настроенное приложение.
 
 1. В левой панели навигации введите или вставьте **D** в строке поиска, чтобы отфильтровать список элементов, а затем выберите **DetailForm1**.
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0Select Details Screen @ no__t-1
+    > ![экран "Выбор сведений"](./media/customize-forms-sharepoint/select-detailform.png)
 
 1. На вкладке **Свойства** на панели справа выберите **Изменить поля**, чтобы открыть панель **Поля**.
 
     > [!div class="mx-imgBorder"]
-    > область полей @no__t 0Open @ no__t-1
+    > ![открыть область полей](./media/customize-forms-sharepoint/edit-fields.png)
 
 1. Скройте поле, например **Описание**, наведя на него указатель мыши, нажав кнопку с многоточием (...), а затем выбрав **Удалить**.
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0List Fields @ no__t-1
+    > ![список полей](./media/customize-forms-sharepoint/hide-fields.png)
 
 1. Чтобы отобразить поле, выберите **Добавить поле**, введите или вставьте первые несколько букв имени поля в поле поиска, установите флажок поля и нажмите кнопку **Добавить**.
 
     > [!div class="mx-imgBorder"]
-    > @no__t 0List Fields @ no__t-1
+    > ![список полей](./media/customize-forms-sharepoint/show-field.png)
 
 ## <a name="reorder-the-cards"></a>Изменение порядка карточек
 
@@ -63,7 +63,7 @@ ms.locfileid: "71993190"
     Карты в **DetailForm1** отражая изменение.
 
     > [!div class="mx-imgBorder"]
-    > карты ![Reordered @ no__t-1
+    > ![переупорядоченные карточки](./media/customize-forms-sharepoint/reordered-card.png)
 
 1. используемых Переупорядочивайте другие карточки в следующую последовательность:
 
@@ -71,10 +71,10 @@ ms.locfileid: "71993190"
     - Количество сотрудников
     - Годовой доход
     - Основной телефон
-    - Адрес 1: улица, дом (строка 1)
-    - Адрес 1: Улица 2
-    - Адрес 1: Город
-    - Адрес 1: Почтовый индекс
+    - Адрес 1: улица 1
+    - Адрес 1: улица 2
+    - Адрес 1: город
+    - Адрес 1: почтовый индекс
 
 1. На панели навигации слева введите или вставьте **ED** в строке поиска, а затем выберите **EditForm1** , чтобы выбрать его.
 
@@ -87,37 +87,37 @@ ms.locfileid: "71993190"
 1. Откройте режим предварительного просмотра, нажав клавишу F5 (или выбрав значок **предварительного просмотра** в правом верхнем углу).
 
     > [!div class="mx-imgBorder"]
-    > значок @no__t 0Preview @ no__t-1
+    > значок предварительного просмотра ![](./media/customize-forms-sharepoint/open-preview.png)
 
 1. В правом верхнем углу щелкните значок "плюс", чтобы добавить запись в **EditScreen1**.
 
     > [!div class="mx-imgBorder"]
-    > ![Add запись @ no__t-1
+    > ![добавить](./media/customize-forms-sharepoint/add-record.png) записи
 
 1. Добавьте необходимые данные, а затем щелкните значок флажка в правом верхнем углу, чтобы сохранить изменения и вернуться в **BrowseScreen1**.
 
     > [!div class="mx-imgBorder"]
-    > ![Save запись @ no__t-1
+    > ![сохранить](./media/customize-forms-sharepoint/save-record.png) записи
 
 1. Выберите стрелку для элемента, который вы только что создали, чтобы отобразить сведения об этом элементе в **DetailScreen1**.
 
     > [!div class="mx-imgBorder"]
-    > ![Right стрелка @ no__t-1
+    > ![стрелка вправо](./media/customize-forms-sharepoint/right-arrow.png)
 
 1. В правом верхнем углу страницы щелкните значок редактирования, чтобы обновить запись в **EditScreen1**.
 
     > [!div class="mx-imgBorder"]
-    > ![Edit запись @ no__t-1
+    > ![изменить](./media/customize-forms-sharepoint/edit-record.png) записи
 
 1. Измените данные в одном или нескольких полях, а затем установите флажок в правом верхнем углу, чтобы сохранить изменения и вернуться к **DetailScreen1**.
 
     > [!div class="mx-imgBorder"]
-    > @no__t изменения 0Save @ no__t-1
+    > ![сохранить изменения](./media/customize-forms-sharepoint/save-record.png)
 
 1. В правом верхнем углу экрана щелкните значок Корзина-можно удалить только что обновленную запись и вернуться к **BrowseScreen1**.
 
     > [!div class="mx-imgBorder"]
-    > ![Delete запись @ no__t-1
+    > ![удалить запись](./media/customize-forms-sharepoint/delete-record.png)
 
 1. Закройте режим предварительного просмотра, нажав клавишу ESC (или щелкнув значок Закрыть в левом верхнем углу).
 
