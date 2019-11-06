@@ -1,30 +1,29 @@
 ---
 title: Справка по элементу управления "Выбор даты" | Документация Майкрософт
 description: Сведения об элементе управления "Выбор даты" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eae69ba2337c6b220b4c83a4900846bad6589615
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 4a7def7990723e9531c4c7a3075c3c2259a45a37
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986775"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650588"
 ---
 # <a name="date-picker-control-in-powerapps"></a>Элемент управления "Выбор даты" в PowerApps
 Элемент управления, который используется для указания даты.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Добавив элемент управления **Выбор даты** вместо элемента управления **[Ввод текста](control-text-input.md)** , вы обеспечите ввод даты пользователем в правильном формате.
 
 ## <a name="key-properties"></a>Основные свойства
@@ -62,13 +61,13 @@ ms.PowerAppsDecimalTransform: true
 
 **[Fill](properties-color-border.md)**  — цвет фона элемента управления.
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)** — вес текста в элементе управления: **Полужирный**, **полужирный**, **обычный**или **более светлый**.
+**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Жирный**, **Полужирный**, **Обычный** или **Очень тонкий**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -112,7 +111,7 @@ ms.PowerAppsDecimalTransform: true
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте элемент управления **[Метка](control-text-box.md)** и задайте в качестве значения свойства **[Text](properties-core.md)** следующую формулу:
-   <br>**DateDiff(Today(); Deadline.SelectedDate) & " days to go!"**
+   <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
 
     Нужны дополнительные сведения о функции **[DateDiff](../functions/function-dateadd-datediff.md)** или [других функциях](../formula-reference.md)?
 3. Нажмите клавишу F5, выберите дату в элементе управления **Крайний срок** и нажмите кнопку **ОК**.
@@ -130,7 +129,7 @@ ms.PowerAppsDecimalTransform: true
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
+* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
 
 > [!TIP]
 > Когда календарь открыт, нажимайте на страницу **вверх** и **вниз** , чтобы перейти между месяцами и **Shift + Page Up** и **Shift + Page Down** для перехода между годами.

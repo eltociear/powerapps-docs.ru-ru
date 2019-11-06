@@ -1,30 +1,29 @@
 ---
 title: Справка по элементам управления "Гистограмма" и "График" | Документация Майкрософт
 description: Сведения об элементах управления "Гистограмма" и "График" с описанием их свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d9595a466477f9fc8ac535b08f43fe352ea0fd8b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 355793d572f6c4b6578d6cabff221c79e0724a93
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993513"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650659"
 ---
 # <a name="column-chart-and-line-chart-controls-in-powerapps"></a>Элементы управления "Гистограмма" и "График" в PowerApps
 Элементы управления "Гистограмма" и "График" отображают данные на диаграммах с осями X и Y.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 **Гистограмма** и **График** относятся к сгруппированным элементам управления. Каждая группа содержит три элемента управления: **[заголовок](control-text-box.md)** , график диаграммы и **легенда**.
 
 ## <a name="chart-key-properties"></a>Основные свойства диаграммы
@@ -53,7 +52,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[HoverBorderColor](properties-color-border.md)**  — цвет границы элемента управления при удерживании указателя мыши на нем.
 
-**ItemColorSet** — цвет каждой точки данных в диаграмме.
+**ItemColorSet** — цвет каждой точки данных в диаграмме.
 
 **ItemsGap** — расстояние между столбцами в гистограмме.
 
@@ -114,16 +113,16 @@ ms.PowerAppsDecimalTransform: true
 **YLabelAngle** — угол наклона меток рядом с осью Y гистограммы или графика.
 
 ## <a name="related-functions"></a>Связанные функции
-[**Max**(*источник*; *столбец*)](../functions/function-aggregates.md)
+[**Max**(*источник*, *столбец*)](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **[Кнопка](control-button.md)** и задайте следующую формулу в качестве значения свойства **[OnSelect](properties-core.md)** :<br>
-   **Collect(Доход;; {Год:"2013";; Европа:24000;; Ганимед:22300;; Каллисто:21200};; {Год:"2014";; Европа:26500;; Ганимед:25700;; Каллисто:24700};;{Год:"2014";; Европа:27900;; Ганимед:28300;; Каллисто:25600})**
+   **Collect(Доход; {Год:"2013"; Европа:24000; Ганимед:22300; Каллисто:21200}; {Год:"2014"; Европа:26500; Ганимед:25700; Каллисто:24700};{Год:"2014"; Европа:27900; Ганимед:28300; Каллисто:25600})**
    
     Не знаете, как [добавить и настроить элемент управления](../add-configure-controls.md)?
    
     Нужны дополнительные сведения о функции **[Collect](../functions/function-clear-collect-clearcollect.md)** или [других функциях](../formula-reference.md)?
-2. Нажмите клавишу F5, щелкните элемент управления **[Кнопка](control-button.md)** (или коснитесь его), а затем нажмите клавишу Esc, чтобы вернуться в рабочую область по умолчанию.
+2. Нажмите клавишу F5, щелкните элемент управления **[Кнопка](control-button.md)** (или коснитесь его), а затем нажмите клавишу ESC, чтобы вернуться в рабочую область по умолчанию.
 3. Добавьте элемент управления **Гистограмма** или **График** и назначьте его свойству **[Items](properties-core.md)** значение **Доход**, а свойству **NumberOfSeries** — значение **3**.
    
     В элементе управления будут показаны данные о доходах от продажи каждого товара за три года.

@@ -1,24 +1,24 @@
 ---
 title: Справка по элементу управления "Плитка Power BI" | Документация Майкрософт
 description: Сведения об элементе управления "Плитка Power BI" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 07/07/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f258beee317fcdad46d71b504f9c8a3046bb3641
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 6ec04214bdee40cbe7ed5379a527fcd70d9229e7
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993366"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650314"
 ---
 # <a name="power-bi-tile-control-in-powerapps"></a>Элемент управления "Плитка Power BI" в PowerApps
 
@@ -26,7 +26,7 @@ ms.locfileid: "71993366"
 
 У вас нет Power BI? [Зарегистрируйтесь](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi).
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 
 Воспользуйтесь всеми преимуществами анализа данных и отчетности, отобразив в своих приложениях **[плитки Power BI](https://docs.microsoft.com/power-bi/service-dashboard-tiles)** . Укажите плитку, которую требуется отобразить, задав для нее свойства **Рабочая область**, **Панель мониторинга** и **Плитка** на вкладке **Данные** на панели параметров.
 

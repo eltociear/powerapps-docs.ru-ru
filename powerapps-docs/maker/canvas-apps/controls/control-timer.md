@@ -1,30 +1,29 @@
 ---
 title: Справка по элементу управления "Таймер" | Документация Майкрософт
 description: Сведения об элементе управления "Таймер" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 00863f00768a0c4eec95ecec778c2da219fd08d3
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 46b5cb0761027c7e39ac95619974d2c0187225a2
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986183"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649649"
 ---
 # <a name="timer-control-in-powerapps"></a>Элемент управления "Таймер" в PowerApps
 Элемент управления, определяющий поведение приложения по истечении заданного количества времени.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Например, таймеры могут определять, как долго отображается элемент управления или как изменяются его свойства по истечении заданного количества времени.
 
 > [!NOTE]
@@ -63,13 +62,13 @@ ms.PowerAppsDecimalTransform: true
 
 **[Fill](properties-color-border.md)**  — цвет фона элемента управления.
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)** — вес текста в элементе управления: **Полужирный**, **полужирный**, **обычный**или **более светлый**.
+**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Жирный**, **Полужирный**, **Обычный** или **Очень тонкий**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -91,7 +90,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[PressedFill](properties-color-border.md)**  — цвет фона элемента управления при щелчке или касании.
 
-**[Reset](properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.
+**[Reset](properties-core.md)**  — свойство, которое указывает, возвращается ли элемент управления к значению по умолчанию.
 
 **[Size](properties-text.md)**  — размер шрифта текста, отображаемого в элементе управления.
 
@@ -126,7 +125,7 @@ ms.PowerAppsDecimalTransform: true
 2. Укажите для свойства **Duration** значение **10000**, а для свойств **Repeat** и **Autostart** — значение **true**.
 3. (Необязательно) Сделайте таймер удобным для чтения, указав следующие значения для перечисленных свойств: **[Height](properties-size-location.md)**  — **160**, **[Width](properties-size-location.md)**  — **600** и **[Size](properties-text.md)**  — **60**.
 4. Добавьте метку и установите в ее свойстве **[Text](properties-core.md)** формулу:
-   <br>**"Осталось секунд: " & RoundUp(10-Countdown.Value/1000; 0)**
+   <br>**"Осталось секунд: " & RoundUp(10-Countdown.Value/1000, 0)**
 
     Нужны дополнительные сведения о функции **[RoundUp](../functions/function-round.md)** или [других функциях](../formula-reference.md)?
 
@@ -139,7 +138,7 @@ ms.PowerAppsDecimalTransform: true
 2. Укажите для свойства таймера **Duration** значение **5000**, для свойства **Repeat** — **true**, для свойства **[Text](properties-core.md)** — **Toggle animation** (Переключить анимацию).
 3. (Необязательно) Сделайте таймер удобным для чтения, указав следующие значения для перечисленных свойств: **[Height](properties-size-location.md)**  — **160**, **[Width](properties-size-location.md)**  — **600** и **[Size](properties-text.md)**  — **60**.
 4. Добавьте метку и задайте для свойства **[Text](properties-core.md)** отображение слова **Приветствуем!** , а для свойства **[Color](properties-color-border.md)**  — следующую формулу:
-   <br>**ColorFade(Color.BlueViolet; FadeIn.Value/5000)**
+   <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
 
     Нужны дополнительные сведения о функции **[ColorFade](../functions/function-colors.md)** или [других функциях](../formula-reference.md)?
 

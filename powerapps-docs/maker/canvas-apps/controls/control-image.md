@@ -1,34 +1,33 @@
 ---
 title: Справка по элементу управления "Изображение" | Документация Майкрософт
 description: Сведения об элементе управления "Изображение" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cc25c16e9d79a80a5a21f793e66ce1cbc38960cb
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: fb0ce1bca968d0e23dc10544a824b340ab336936
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993459"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650459"
 ---
 # <a name="image-control-in-powerapps"></a>Элемент управления "Изображение" в PowerApps
 Этот элемент управления служит для показа изображения из локального файла или источника данных.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Добавив в приложение один или несколько элементов управления **Изображение**, можно отобразить изображения, не входящие в набор данных, или изображения из записей в источниках данных.
 
 ## <a name="key-properties"></a>Основные свойства
-**[Image](properties-visual.md)**  — имя изображения, которое отображается в элементе управления "Изображение", "Звук" или "Микрофон".
+**[Image](properties-visual.md)**  — имя изображения, которое отображается в элементе управления "Изображение", "Звук" или "Микрофон".
 
 ## <a name="additional-properties"></a>Дополнительные свойства
 **[AccessibleLabel](properties-accessibility.md)** — метка для средств чтения с экрана.
@@ -57,7 +56,7 @@ ms.PowerAppsDecimalTransform: true
 
 **FlipVertical** — переворачивание изображения по вертикали перед отображением.
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
@@ -67,7 +66,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[HoverFill](properties-color-border.md)**  — цвет фона элемента управления при удерживании указателя мыши на нем.
 
-**[ImagePosition](properties-visual.md)**  — расположение изображения на экране или в элементе управления, если его размеры отличаются от размеров изображения (**Fill**, **Fit**, **Stretch**, **Tile** или **Center**).
+**[ImagePosition](properties-visual.md)** — расположение изображения на экране или в элементе управления, если его размеры отличаются от размеров изображения: **Fill** (Заполнить), **Fit** (По размеру), **Stretch** (Растянуть), **Tile** (Плитка) или **Center** (По центру).
 
 **ImageRotation** — поворачивание изображения перед его отображением.  Значения: без поворота, по часовой стрелке на 90 градусов, против часовой стрелки на 90 градусов и по часовой стрелке на 180 градусов.
 
@@ -77,7 +76,7 @@ ms.PowerAppsDecimalTransform: true
 
 **OriginalWidth** — исходная ширина изображения (активируется свойством **CalculateOriginalDimensions**).
 
-**[PaddingBottom](properties-size-location.md)**  — расстояние между текстом в элементе управления и нижним краем элемента управления.
+**[PaddingBottom](properties-size-location.md)**  — расстояние между текстом в элементе управления и нижним краем элемента управления.
 
 **[PaddingLeft](properties-size-location.md)**  — расстояние между текстом в элементе управления и левым краем элемента управления.
 
@@ -112,7 +111,7 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Remove**( *DataSource*;; ThisItem )](../functions/function-remove-removeif.md)
+[**Remove**( *DataSource*; ThisItem )](../functions/function-remove-removeif.md)
 
 ## <a name="examples"></a>Примеры
 ### <a name="show-an-image-from-a-local-file"></a>Показ изображения из локального файла
@@ -154,7 +153,7 @@ ms.PowerAppsDecimalTransform: true
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Если графика используется как кнопка, значение **[TabIndex](properties-accessibility.md)** должно быть равно нулю и выше. При этом пользователи смогут применять клавиатуру для навигации.
-* Индикаторы фокусировки должны быть четко видны, если графика используется как кнопка. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
+* Индикаторы фокусировки должны быть четко видны, если графика используется как кнопка. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
 
     > [!NOTE]
   > Если значение **[TabIndex](properties-accessibility.md)** равно нулю или больше него, **изображение** воспринимается в качестве кнопки. Внешне это незаметно, но средства чтения с экрана правильно распознают изображение в качестве кнопки. Если значение **[TabIndex](properties-accessibility.md)** меньше нуля, **изображение** воспринимается только как изображение.

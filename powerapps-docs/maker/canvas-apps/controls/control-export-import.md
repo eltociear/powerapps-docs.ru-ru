@@ -1,30 +1,29 @@
 ---
 title: Справка по элементам управления "Экспорт" и "Импорт" | Документация Майкрософт
 description: Сведения об элементах управления "Экспорт" и "Импорт", а также свойства и примеры
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 271d37c5cbd68b41a2818441161572bd9386e107
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 942b4b1f5f10cf17d2a33e9f9604661256d99ea6
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986740"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650544"
 ---
 # <a name="export-control-and-import-control-in-powerapps"></a>Элементы управления "Экспорт" и "Импорт" в PowerApps
 Элементы управления для экспорта данных в локальный файл, а затем импорта этих данных в другое приложение в PowerApps.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Если необходимо создать несколько приложений, в которых используются одни и те же данные и только в их пределах, эти данные можно экспортировать и импортировать с помощью элементов управления **Экспорт** и **Импорт**. При экспорте данных создается сжатый файл, который можно скопировать на другой компьютер и прочитать только в PowerApps.
 
 ## <a name="warning"></a>Предупреждение
@@ -61,13 +60,13 @@ ms.PowerAppsDecimalTransform: true
 
 **[Fill](properties-color-border.md)**  — цвет фона элемента управления.
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)** — вес текста в элементе управления: **Полужирный**, **полужирный**, **обычный**или **более светлый**.
+**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Жирный**, **Полужирный**, **Обычный** или **Очень тонкий**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -117,7 +116,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **[Кнопка](control-button.md)** и задайте следующую формулу в качестве значения свойства **[OnSelect](properties-core.md)** :
-   <br>**ClearCollect(Products; {Name:"Европа"; Price:"10,99"}; {Name:"Ганимед"; Price:"12,49"}; {Name:"Каллисто"; Price:"11,79"})**
+   <br>**ClearCollect(Products, {Name:"Европа", Price:"10,99"}, {Name:"Ганимед", Price:"12,49"}, {Name:"Каллисто", Price:"11,79"})**
    
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
    
@@ -127,7 +126,7 @@ ms.PowerAppsDecimalTransform: true
 4. Нажмите клавишу F5, щелкните элемент управления **Экспорт** или коснитесь его, а затем укажите имя файла, в который необходимо экспортировать данные.
 5. Щелкните или коснитесь **Сохранить** и нажмите клавишу ESC, чтобы вернуться в рабочую область по умолчанию.
 6. В новое или имеющееся приложение добавьте элемент управления **Импорт**, назовите его **MyData** и задайте для его свойства **[OnSelect](properties-core.md)** эту формулу:<br>
-   **Collect(ImportedProducts; MyData.Data)**
+   **Collect(ImportedProducts, MyData.Data)**
 7. Нажмите клавишу F5, щелкните или коснитесь **MyData**, щелкните экспортированный файл или коснитесь его, а затем выберите или коснитесь **Открыть**.
 8. Нажмите клавишу ESC, в меню **Файл** выберите или коснитесь **Коллекции** и убедитесь, что текущее приложение содержит экспортированные данные.
 

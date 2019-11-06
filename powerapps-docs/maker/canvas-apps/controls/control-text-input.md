@@ -1,34 +1,33 @@
 ---
 title: Справка по элементу управления "Текстовое поле" | Документация Майкрософт
 description: Сведения об элементе управления "Текстовое поле" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b5b8e0b9bae3a7733a8499fb096c04e19c878045
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: e17f580a98013f385080ea1189281607825ce7a8
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993286"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649875"
 ---
 # <a name="text-input-control-in-powerapps"></a>Элемент управления "Текстовое поле" в PowerApps
 Поле, в котором пользователь может вводить текст, числа и другие данные.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Пользователь может вводить данные в элементе управления "Текстовое поле". В зависимости от настройки приложения эти данные могут добавляться в источник, использоваться для вычисления временного значения или применяться иным способом.
 
 ## <a name="key-properties"></a>Основные свойства
-**[Default](properties-core.md)** . Начальное значение элемента управления до его изменения пользователем.
+**[Default](properties-core.md)**  — начальное значение элемента управления до его изменения пользователем.
 
 **[Text](properties-core.md)**  — текст, отображаемый в элементе управления, или текст, который пользователь вводит в элемент управления.
 
@@ -59,13 +58,13 @@ ms.PowerAppsDecimalTransform: true
 
 **[Fill](properties-color-border.md)**  — цвет фона элемента управления.
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)** — вес текста в элементе управления: **Полужирный**, **полужирный**, **обычный**или **более светлый**.
+**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Жирный**, **Полужирный**, **Обычный** или **Очень тонкий**.
 
 **Format** — это значение определяет, может ли пользователь вводить только цифры или любой другой текст.
 
@@ -87,7 +86,7 @@ ms.PowerAppsDecimalTransform: true
 
 **Mode** — определяет режим **SingleLine** (Однострочный), **MultiLine** (Многострочный) или **Password** (Пароль).
 
-**[OnChange](properties-core.md)**  — поведение приложения, когда пользователь изменяет значение элемента управления (например, перемещая ползунок).
+**[OnChange](properties-core.md)**  — поведение приложения, когда пользователь изменяет значение элемента управления (например, перемещая ползунок).
 
 **[OnSelect](properties-core.md)**  — поведение приложения, когда пользователь щелкает элемент управления или касается его.
 
@@ -113,7 +112,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[RadiusTopRight](properties-size-location.md)**  — градус скругления верхнего правого угла элемента управления.
 
-**[Reset](properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.
+**[Reset](properties-core.md)**  — свойство, которое указывает, возвращается ли элемент управления к значению по умолчанию.
 
 **[Size](properties-text.md)**  — размер шрифта текста, отображаемого в элементе управления.
 
@@ -144,7 +143,7 @@ ms.PowerAppsDecimalTransform: true
    
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте кнопку, укажите для ее свойства **[Text](properties-core.md)** значение **Добавить**, а для свойства **[OnSelect](properties-core.md)** следующую формулу:<br>
-   **Collect(Names; {FirstName:inputFirst.Text; LastName:inputLast.Text})**
+   **Collect(Names, {FirstName:inputFirst.Text, LastName:inputLast.Text})**
    
     Нужны дополнительные сведения о функции **[Collect](../functions/function-clear-collect-clearcollect.md)** или [других функциях](../formula-reference.md)?
 3. Добавьте коллекцию текстов в портретной (вертикальной) ориентации, укажите для свойства **[Items](properties-core.md)** значение **Names**, а для свойства **[Text](properties-core.md)** элемента **Subtitle1** значение **ThisItem.FirstName**.
@@ -157,7 +156,7 @@ ms.PowerAppsDecimalTransform: true
 1. Добавьте элемент управления "Текстовое поле", назовите его **inputPassword** и укажите для свойства **Mode** значение **Password**.
 
 1. Добавьте метку и установите в ее свойстве **[Text](properties-core.md)** формулу:<br>
-   **If(inputPassword.Text = "P@ssw0rd"; "Доступ предоставлен"; "Доступ запрещен")**
+   **If(inputPassword.Text = "P@ssw0rd", "Доступ предоставлен", "Доступ запрещен")**
 
     Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 

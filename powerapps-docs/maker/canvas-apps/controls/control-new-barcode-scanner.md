@@ -1,30 +1,30 @@
 ---
 title: 'Штрихкод — управление сканером: Reference | Документация Майкрософт'
 description: Сведения, включая свойства и примеры, об элементе управления "средство проверки штрихкодов"
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 11/25/2018
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 56d8ca116b4b683d7096ef08f550dfa11c32d3c6
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: c7c3079ebbdeea0097f50acc2ce7f5d4e4089947
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986446"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650418"
 ---
 # <a name="barcode-scanner-control-for-canvas-apps"></a>Штрихкод — элемент управления сканера для приложений Canvas
 
 Проверяет штрихкоды, QR-коды и коды матриц данных на устройствах Android или iOS. Не поддерживается в веб-браузере.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 
 Элемент управления открывает собственный сканер на устройстве Android или iOS. Средство проверки автоматически обнаруживает штрихкод, QR-код или код матрицы данных в представлении. Элемент управления не поддерживает проверку в веб-браузере.
 
@@ -36,7 +36,7 @@ ms.locfileid: "71986446"
 - EAN 13
 - КОД 39
 - КОД 128
-- ИТФ
+- итф
 - PDF 417
 
 ## <a name="key-properties"></a>Основные свойства

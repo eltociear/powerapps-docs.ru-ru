@@ -1,31 +1,30 @@
 ---
 title: Справка по элементу управления "Коллекция" | Документация Майкрософт
 description: Сведения об элементе управления "Коллекция" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 05/25/2017
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 964f57c427b8e9e2e2f7a50e3d6e149ddea8e8b0
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: a532af505e579e66d3dfa0dce22a1c3ac6a4a6cc
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986666"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650524"
 ---
 # <a name="gallery-control-in-canvas-apps"></a>Элемент управления "Галерея" в приложениях Canvas
 
 Элемент управления, содержащий другие элементы управления и отображающий набор данных.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 
 Элемент управления **Коллекция** отображает несколько записей из источника данных, и каждая запись может содержать данные нескольких типов. Например, элемент управления **Коллекция** может отображать несколько контактов, включая имя, адрес и номер телефона для каждого из них. Каждое поле данных отображается в отдельном элементе управления в составе элемента управления **Коллекция**, и вы можете настраивать эти элементы управления в шаблоне. Шаблон отображается в качестве первого элемента коллекции с левого края элемента управления **Коллекция** в горизонтальной (альбомной) ориентации и вверху элемента управления **Коллекция** в вертикальной (книжной) ориентации. Все внесенные в шаблон изменения отражаются во всем элементе управления **Коллекция**.
 
@@ -39,7 +38,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Default](properties-core.md)**  — элемент или запись из источника данных, выбираемые в коллекции при запуске приложения.
 
-**[Items](properties-core.md)** — источник данных, отображаемых в элементе управления, такой как коллекция, список или диаграмма.
+**[Items](properties-core.md)**  — источник данных, отображаемых в элементе управления, такой как коллекция, список или диаграмма.
 
 **Selected** — выбранный элемент.
 
@@ -93,7 +92,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Filter**(*источник*; *формула*)](../functions/function-filter-lookup.md)
+[**Filter**(*источник*, *формула*)](../functions/function-filter-lookup.md)
 
 ## <a name="examples"></a>Примеры
 

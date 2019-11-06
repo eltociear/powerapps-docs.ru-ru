@@ -1,29 +1,29 @@
 ---
 title: Справка по элементу управления "Средство просмотра PDF" | Документация Майкрософт
 description: Сведения об элементе управления "Средство просмотра PDF" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9fdd7f25a729fa71111e1fd5d82e04b7cea874f3
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 9f7349faf01d2270427c8cd5862a55e413033023
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986421"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650392"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>Элемент управления "Средство просмотра PDF" (экспериментальная функция) в PowerApps
 Экспериментальный элемент управления, отображающий содержимое PDF-файла.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Для отображения текста, рисунков и прочего содержимого PDF-файла добавьте этот элемент управления и укажите для его свойства **Document** URL-адрес нужного файла, заключив его в двойные кавычки.
 
 ## <a name="limitations"></a>Ограничений
@@ -89,9 +89,9 @@ ms.locfileid: "71986421"
 
 **[PressedBorderColor](properties-color-border.md)**  — цвет границы элемента управления при щелчке или касании.
 
-**ShowControls** — определяет, отображаются ли в звуковом или видеопроигрывателе такие элементы, как кнопка воспроизведения или ползунок громкости, а в элементе управления "Ввод с помощью пера" — значки команд рисования, стирания и очистки.
+**ShowControls** — показывает ли аудио- или видеопроигрыватель такие элементы, как кнопка воспроизведения или ползунок громкости, а элемент управления "Ввод с помощью пера" — значки команд рисования, стирания и очистки.
 
-**[Tooltip](properties-core.md)**  — пояснительный текст, отображаемый при наведении указателя мыши на элемент управления.
+**[Tooltip](properties-core.md)** — пояснительный текст, отображаемый при наведении указателя мыши на элемент управления.
 
 **[Visible](properties-core.md)** определяет, отображается ли элемент управления или он скрыт.
 

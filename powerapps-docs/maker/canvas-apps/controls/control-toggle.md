@@ -1,30 +1,29 @@
 ---
 title: Справка по элементу управления "Выключатель" | Документация Майкрософт
 description: Сведения об элементе управления "Переключатель" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4ec115eecc676a7ec5bea3b04b135eeb63268449
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: be21e2b0c24d7b4aaf9da12b0793899fd95acd06
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993246"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649814"
 ---
 # <a name="toggle-control-in-powerapps"></a>Элемент управления "Переключатель" в PowerApps
 "Переключатель" — это элемент управления, который пользователь может включить или отключить.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Элемент управления "Переключатель" разработан для современных пользовательских интерфейсов, но работает так же, как флажок.
 
 ## <a name="key-properties"></a>Основные свойства
@@ -53,7 +52,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Fill](properties-color-border.md)**  — цвет фона элемента управления.
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
@@ -77,7 +76,7 @@ ms.PowerAppsDecimalTransform: true
 
 **RailHoverFill** — фоновый цвет прямоугольника в переключателе, когда он имеет значение **false**, или цвет линии справа от маркера ползунка при наведении указателя мыши на переключатель или ползунок.
 
-**[Reset](properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.
+**[Reset](properties-core.md)**  — свойство, которое указывает, возвращается ли элемент управления к значению по умолчанию.
 
 **ShowLabel** — отображение текстовой метки возле переключателя.
 
@@ -106,14 +105,14 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**If**( *Condition*;; *Result* )](../functions/function-if.md)
+[**If**( *Condition*; *Result* )](../functions/function-if.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте в приложение переключатель и назовите его **Скидка**.
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте метку и установите в ее свойстве **[Text](properties-core.md)** формулу:
-   <br>**If(Скидка.Value = true; "Цена: 75 руб."; "Цена: 100 руб.")**
+   <br>**If(Скидка.Value = true, "Цена: 75 руб.", "Цена: 100 руб.")**
 
     Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 3. Нажмите клавишу F5 и измените значение переключателя **Скидка**.

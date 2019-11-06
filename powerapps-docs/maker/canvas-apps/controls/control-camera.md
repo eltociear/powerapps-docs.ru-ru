@@ -1,30 +1,29 @@
 ---
 title: Справка по элементу управления "Камера" | Документация Майкрософт
 description: Сведения об элементе управления "Камера" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 88b6b9faf8c4d7c14a09bfc89791a050e3c07ca2
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 14f802a899171dce052c8975f9fc63b07e448afc
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986848"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650714"
 ---
 # <a name="camera-control-in-powerapps"></a>Элемент управления "Камера" в PowerApps
 С помощью элемента управления "Камера" пользователь может делать фотографии, используя камеру устройства.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Если этот элемент управления добавлен в приложение, пользователь может обновить источник данных одной или несколькими фотографиями.
 
 ## <a name="key-properties"></a>Основные свойства
@@ -45,7 +44,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[DisplayMode](properties-core.md)** — в зависимости от значения этого режима элемент управления разрешает пользователю вводить данные (**Изменение**), только отображает данные (**Просмотр**) или элемент вообще отключен (**Отключено**).
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
@@ -74,12 +73,12 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Patch**( *DataSource*;; *BaseRecord*;; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Пример
 ### <a name="add-photos-to-an-image-gallery-control"></a>Добавление фотографий в коллекцию изображений
 1. Добавьте в приложение элемент управления **Камера**, назовите его **MyCamera** и назначьте его свойству **[OnSelect](properties-core.md)** следующую формулу:<br>
-   **Collect(MyPix; MyCamera.Photo)**
+   **Collect(MyPix, MyCamera.Photo)**
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
@@ -92,7 +91,7 @@ ms.PowerAppsDecimalTransform: true
 
     Сделанная вами фотография появится в элементе управления **Коллекция изображений**.
 6. Сделайте столько фотографий, сколько хотите, а затем вернитесь в рабочую область по умолчанию, нажав клавишу Esc.
-7. (Необязательно.) Назначьте свойству **OnSelect** элемента управления **Изображение** в элементе управления **Коллекция изображений** формулу **Remove(MyPix;; ThisItem)** , нажмите клавишу F5, а затем щелкните фотографию, чтобы удалить ее.
+7. (Необязательно.) Назначьте свойству **OnSelect** элемента управления **Изображение** в элементе управления **Коллекция изображений** формулу **Remove(MyPix; ThisItem)** , нажмите клавишу F5, а затем щелкните фотографию, чтобы удалить ее.
 
 Для сохранения фотографий на локальном устройстве используйте функцию **[SaveData](../functions/function-savedata-loaddata.md)** , а для обновления источника данных — функцию **[Patch](../functions/function-patch.md)** .
 

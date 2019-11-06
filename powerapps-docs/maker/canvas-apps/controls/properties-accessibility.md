@@ -1,24 +1,24 @@
 ---
 title: Свойства специальных возможностей для приложений Canvas | Документация Майкрософт
 description: Справочные сведения о свойствах, таких как TabIndex и ToolTip
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 01/26/2017
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2e11de4af02347154c65500659df94a6b2183540
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 056d54fa086a72c0528e51a2eb264692a865f94f
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73539438"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649625"
 ---
 # <a name="accessibility-properties-for-canvas-apps"></a>Свойства специальных возможностей для приложений Canvas
 

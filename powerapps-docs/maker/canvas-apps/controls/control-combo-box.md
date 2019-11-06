@@ -1,29 +1,29 @@
 ---
 title: Справка по элементу управления "Поле со списком" | Документация Майкрософт
 description: Сведения об элементе управления "Поле со списком" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 09/13/2017
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dbbff1f85ccc104a1a0f88c6b9670c45c0528592
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8c4316c8f4aac11903aaad8cb624ff881173b403
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993477"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650627"
 ---
 # <a name="combo-box-control-in-powerapps"></a>Элемент управления "Поле со списком" в PowerApps
 Это элемент управления, который позволяет выбирать из доступных вариантов.  Поддерживает поиск и выбор нескольких вариантов.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Элемент управления **Поле со списком** позволяет выполнять поиск элементов, которые необходимо выбрать.  Поиск выполняется на стороне сервера с помощью свойства SearchField, что не влияет на производительность при использовании больших источников данных.  
 
 Режим одиночного или множественного выбора настраивается с использованием свойства SelectMultiple.
@@ -59,7 +59,7 @@ ms.locfileid: "71993477"
 
 **[DisplayMode](properties-core.md)** — в зависимости от значения этого режима элемент управления разрешает пользователю вводить данные (**Изменение**), только отображает данные (**Просмотр**) или элемент вообще отключен (**Отключено**).
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
@@ -106,7 +106,7 @@ ms.locfileid: "71993477"
 * **ChevronFill** и **ChevronBackground**;
 * **ChevronHoverFill** и **ChevronHoverBackground**;
 * **SelectionColor** и **SelectionFill**;
-* элементов **SelectionFill** и **[Fill](properties-color-border.md)** ;
+* **SelectionFill** и **[Fill](properties-color-border.md)** ;
 * элементов **SelectionTagColor** и **SelectionTagFill**.
 
 Это дополнение к [стандартным требованиям по цветовому контрасту](../accessible-apps-color.md).
@@ -119,7 +119,7 @@ ms.locfileid: "71993477"
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
+* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
 
     > [!NOTE]
   > Клавиша TAB позволяет переходить к полю со списком. Клавиши со стрелками позволяют переходить по содержимому поля со списком. Клавиша ESC закрывает открытый раскрывающийся список.

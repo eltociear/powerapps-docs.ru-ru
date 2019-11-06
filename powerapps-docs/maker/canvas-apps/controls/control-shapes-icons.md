@@ -1,30 +1,29 @@
 ---
 title: Справка по элементам управления "Фигуры" и "Значки" | Документация Майкрософт
 description: Сведения о фигурах и значках с описанием их свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 46f1974b5ff32cf21d1e9f24c15362c24b44fbe3
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 7cbc7d0a51a4bab24214f31321264d3347fbb152
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986340"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649741"
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>Фигуры и значки в PowerApps
 Фигуры и значки — это элементы управления, для которых можно настроить внешний вид и поведение.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Эти элементы управления включают стрелки, геометрические фигуры, значки действий и символы, для которых можно настроить такие свойства, как заливка, размеры и расположение. Можно также настроить свойство **[OnSelect](properties-core.md)** , чтобы приложение отвечало, когда пользователь выбирает элемент управления.
 
 ## <a name="key-properties-icons-and-shapes"></a>Ключевые свойства (значки и фигуры)
@@ -45,7 +44,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[DisplayMode](properties-core.md)** — в зависимости от значения этого режима элемент управления разрешает пользователю вводить данные (**Изменение**), только отображает данные (**Просмотр**) или элемент вообще отключен (**Отключено**).
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
@@ -69,7 +68,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Navigate**( *ScreenName*;; *ScreenTransition* )](../functions/function-navigate.md)
+[**Navigate**( *ScreenName*; *ScreenTransition* )](../functions/function-navigate.md)
 
 ## <a name="example"></a>Пример
 
@@ -81,7 +80,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. В элементе **Источник** добавьте элемент управления **Фигура** и назначьте его свойству **[OnSelect](properties-core.md)** следующую формулу:
 
-  `Navigate(Target; ScreenTransition.Fade)`
+  `Navigate(Target, ScreenTransition.Fade)`
   
 1. Нажмите клавишу F5, а затем выберите элемент управления **фигурой** .
 
@@ -89,7 +88,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. (Необязательно) Нажмите клавишу Esc, чтобы вернуться в рабочую область по умолчанию, добавьте элемент управления **Фигура** к элементу **Цель** и назначьте свойству **[OnSelect](properties-core.md)** элемента управления **Фигура** следующую формулу:
 
-  `Navigate(Source; ScreenTransition.Fade)`
+  `Navigate(Source, ScreenTransition.Fade)`
 
 ## <a name="accessibility-guidelines"></a>Руководство по настройке специальных возможностей
 
@@ -98,7 +97,7 @@ ms.PowerAppsDecimalTransform: true
 Следующее касается только графических элементов, которые используются в качестве кнопок. Иными словами, не только для визуализации.
 
 Для значков:
-- **[Color](properties-color-border.md)** и **[Fill](properties-color-border.md)** ;
+- **[Color](properties-color-border.md)** и **[Fill](properties-color-border.md)**
 - применяются другие [стандартные требования по цветовому контрасту](../accessible-apps-color.md) (при использовании в качестве кнопки).
 
 Для фигур с границами:

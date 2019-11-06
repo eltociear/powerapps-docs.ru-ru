@@ -1,30 +1,29 @@
 ---
 title: Справка по элементу управления "Микрофон" | Документация Майкрософт
 description: Сведения об элементе управления "Микрофон" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 915f5c15af06914cf10a749bf8d995926fd1bf2f
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2ae158e17873ed7433b301cc5c88d195515a9a5c
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993417"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650430"
 ---
 # <a name="microphone-control-in-powerapps"></a>Элемент управления "Микрофон" в PowerApps
 Элемент управления, позволяющий пользователям записывать звук на устройстве.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Пользователи приложения могут записывать звук, если устройство, на котором выполняется приложение, оснащено микрофоном.
 
 Звук хранится в формате 3GP на устройствах Android, в формате AAC на устройствах iOS и в формате OGG в браузерах.
@@ -55,7 +54,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Fill](properties-color-border.md)**  — цвет фона элемента управления.
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
@@ -81,7 +80,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[PressedFill](properties-color-border.md)**  — цвет фона элемента управления при щелчке или касании.
 
-**[Reset](properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.
+**[Reset](properties-core.md)**  — свойство, которое указывает, возвращается ли элемент управления к значению по умолчанию.
 
 **[TabIndex](properties-accessibility.md)** — порядок навигации с помощью клавиатуры относительно других элементов управления.
 
@@ -96,12 +95,12 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Patch**( *DataSource*;; *BaseRecord*;; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Пример
 ### <a name="add-sounds-to-a-custom-gallery-control"></a>Добавление звуков в пользовательскую коллекцию
 1. Добавьте элемент управления**Микрофон**, назовите его **MyMic** и назначьте его свойству **OnStop** следующую формулу:<br>
-   **Collect(MySounds; MyMic.Audio)**
+   **Collect(MySounds, MyMic.Audio)**
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
@@ -111,7 +110,7 @@ ms.PowerAppsDecimalTransform: true
 4. Нажмите клавишу F5 и щелкните элемент **MyMic** (или коснитесь его), чтобы начать запись. Чтобы прекратить запись, щелкните или коснитесь его еще раз.
 5. В элементе управления **Пользовательская коллекция** нажмите кнопку воспроизведения в элементе управления **[Звук](control-audio-video.md)** , чтобы воспроизвести запись.
 6. Добавьте столько записей, сколько хотите, а затем вернитесь в рабочую область по умолчанию, нажав клавишу Esc.
-7. (Необязательно) В шаблоне для элемента управления **Пользовательская коллекция** добавьте элемент управления **[Кнопка](control-button.md)** , назначьте его свойству **[OnSelect](properties-core.md)** формулу **Remove(MySounds;; ThisItem)** , нажмите клавишу F5, а затем удалите запись с помощью соответствующего элемента управления **Кнопка**.
+7. (Необязательно) В шаблоне для элемента управления **Пользовательская коллекция** добавьте элемент управления **[Кнопка](control-button.md)** , назначьте его свойству **[OnSelect](properties-core.md)** формулу **Remove(MySounds; ThisItem)** , нажмите клавишу F5, а затем удалите запись с помощью соответствующего элемента управления **Кнопка**.
 
 Для сохранения записей на локальном устройстве используйте функцию **[SaveData](../functions/function-savedata-loaddata.md)** , а для обновления источника данных — функцию **[Patch](../functions/function-patch.md)** .
 

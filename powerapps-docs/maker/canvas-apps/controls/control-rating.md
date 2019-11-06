@@ -1,34 +1,33 @@
 ---
 title: Справка по элементу управления "Оценка" | Документация Майкрософт
 description: Сведения об элементе управления "Оценка" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 774b5294f9d03564caa658a04aff0f682a7bb43f
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 212fc44b6c1cec981f17d134f4cd8f8131b7af9a
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993346"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649920"
 ---
 # <a name="rating-control-in-powerapps"></a>Элемент управления "Оценка" в PowerApps
 Элемент управления, позволяющий пользователю указать значение от 1 до заданного вами максимального числа.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 В этом элементе управления пользователь может, например, выбрать определенное количество звездочек, показывая, насколько ему что-либо нравится.
 
 ## <a name="key-properties"></a>Основные свойства
-**[Default](properties-core.md)**  — начальное значение элемента управления до его изменения пользователем.
+**[Default](properties-core.md)**  — начальное значение элемента управления до его изменения пользователем.
 
 **Max** — максимальное значение, которое может задать пользователь с помощью ползунка или оценки.
 
@@ -45,21 +44,21 @@ ms.PowerAppsDecimalTransform: true
 
 **[Fill](properties-color-border.md)**  — цвет фона элемента управления.
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
-**[OnChange](properties-core.md)**  — поведение приложения, когда пользователь изменяет значение элемента управления (например, перемещая ползунок).
+**[OnChange](properties-core.md)**  — поведение приложения, когда пользователь изменяет значение элемента управления (например, перемещая ползунок).
 
 **[OnSelect](properties-core.md)**  — поведение приложения, когда пользователь щелкает элемент управления или касается его.
 
 **RatingFill** — цвет звездочек в элементе управления "Оценка".
 
-**ReadOnly** — определяет, может ли пользователь изменить значение ползунка или оценки.
+**ReadOnly** — определяет, может ли пользователь изменить значение элемента управления "Ползунок" или "Оценка".
 
-**[Reset](properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.
+**[Reset](properties-core.md)**  — свойство, которое указывает, возвращается ли элемент управления к значению по умолчанию.
 
 **ShowValue** — определяет, отображается от значение ползунка или элемента управления "Оценка", когда пользователь изменяет это значение или наводит указатель на элемент управления.
 
@@ -76,7 +75,7 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Average**(*значение1*; *значение2;* ...)](../functions/function-aggregates.md)
+[**Average**(*значение1*, *значение2,* ...)](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **Оценка** и назовите его **Quantitative**.
@@ -84,9 +83,9 @@ ms.PowerAppsDecimalTransform: true
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте элемент управления **[Текстовое поле](control-text-input.md)** , назовите его **Qualitative** и поместите под элементом управления **Оценка**.
 3. Укажите для свойства **[Default](properties-core.md)** элемента управления **[Текстовое поле](control-text-input.md)** значение **""** , а для свойства **HintText** следующую формулу:
-   <br>**If(Quantitative.Value > 3; "Что вам особенно понравилось?"; "Как это улучшить?")**
+   <br>**If(Quantitative.Value > 3, "Что вам особенно понравилось?", "Как это улучшить?")**
    
-    Нужны дополнительные сведения о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
+    Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 4. Нажмите клавишу F5 и выберите четыре или пять звездочек в элементе управления **Оценка**.
    
     Текст подсказки в элементе управления **[Текстовое поле](control-text-input.md)** изменяется, отражая высокую оценку.
@@ -111,7 +110,7 @@ ms.PowerAppsDecimalTransform: true
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
+* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
 * Попробуйте использовать другой элемент управления, если есть слишком много звезд. Его использование может быть сложным для навигации с помощью клавиатуры и точного выделения точно с помощью сенсорного экрана.
 
     > [!NOTE]

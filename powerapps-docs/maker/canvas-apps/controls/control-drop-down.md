@@ -1,30 +1,29 @@
 ---
 title: Справка по элементу управления "Раскрывающийся список" | Документация Майкрософт
 description: Сведения об элементе управления "Раскрывающийся список" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4a838100398196c63ef948f8f2e94d098c03a373
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 53e78383733af1b5fdb71f5649d342f07605340e
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993446"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650579"
 ---
 # <a name="drop-down-control-in-powerapps"></a>Элемент управления "Раскрывающийся список" в PowerApps
 Раскрывающийся список — это список, у которого в свернутом состоянии виден только первый элемент.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Элемент управления **Раскрывающийся список** экономит место на экране, особенно если список содержит много элементов. Пока пользователь не пытается воспользоваться таким списком, он занимает лишь одну строку.  Элемент управления отображает не более 500 элементов.
 
 ## <a name="key-properties"></a>Основные свойства
@@ -63,13 +62,13 @@ ms.PowerAppsDecimalTransform: true
 
 **[Fill](properties-color-border.md)**  — цвет фона элемента управления.
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)** — вес текста в элементе управления: **Полужирный**, **полужирный**, **обычный**или **более светлый**.
+**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Жирный**, **Полужирный**, **Обычный** или **Очень тонкий**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -81,7 +80,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Italic](properties-text.md)** определяет, когда текст в элементе управления отображается курсивом.
 
-**[OnChange](properties-core.md)**  — поведение приложения, когда пользователь изменяет значение элемента управления (например, перемещая ползунок).
+**[OnChange](properties-core.md)**  — поведение приложения, когда пользователь изменяет значение элемента управления (например, перемещая ползунок).
 
 **[OnSelect](properties-core.md)**  — поведение приложения, когда пользователь щелкает элемент управления или касается его.
 
@@ -99,11 +98,11 @@ ms.PowerAppsDecimalTransform: true
 
 **[PressedFill](properties-color-border.md)**  — цвет фона элемента управления при щелчке или касании.
 
-**[Reset](properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.
+**[Reset](properties-core.md)**  — свойство, которое указывает, возвращается ли элемент управления к значению по умолчанию.
 
 **Селектедтекст (не рекомендуется)** — строковое значение, представляющее выбранный элемент.
 
-**[SelectionColor](properties-color-border.md)**  — цвет текста выбранного элемента или элементов списка или цвет инструмента выделения в элементе управления рукописным вводом.
+**[SelectionColor](properties-color-border.md)**  — цвет текста выбранного элемента или элементов списка или цвет инструмента выделения в элементе управления "Ввод с помощью пера".
 
 **[SelectionFill](properties-color-border.md)**  — цвет фона выбранного элемента или элементов списка или выделенной области элемента управления "Ввод с помощью пера".
 
@@ -131,7 +130,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Добавьте элемент управления **Раскрывающийся список**, а затем установите для его свойства **[Items](properties-core.md)** следующее выражение:
 
-    `["Seattle"; "Tokyo"; "London"; "Johannesburg"; "Rio de Janeiro"]`
+    `["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]`
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
@@ -144,13 +143,13 @@ ms.PowerAppsDecimalTransform: true
 
 1. Добавьте элемент управления **Раскрывающийся список** и назначьте его свойству **[Items](properties-core.md)** следующую формулу:
 
-    `Distinct(Accounts; address1_city)`
+    `Distinct(Accounts, address1_city)`
 
     Эта формула показывает все города в сущности **Учетные записи**. Если один город указан в нескольких записях, функция **[Distinct](../functions/function-distinct.md)** скрывает повторения в элементе управления раскрывающегося списка.
 
 1. (Необязательно.) Переименуйте элемент управления **Раскрывающийся список** в **Города**, добавьте вертикальный элемент управления **Коллекция** и задайте свойству коллекции **[Items](properties-core.md)** следующую формулу:
 
-    `Filter(Accounts; address1_city = Cities.Selected.Value)`
+    `Filter(Accounts, address1_city = Cities.Selected.Value)`
 
     Функция **[Filter](../functions/function-filter-lookup.md)** отображает только те записи в сущности **Учетные записи**, для которых город совпадает с выбранным значением в элементе управления **Города**.
 

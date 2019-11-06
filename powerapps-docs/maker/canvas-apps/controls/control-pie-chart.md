@@ -1,30 +1,29 @@
 ---
 title: Справка по элементу управления "Круговая диаграмма" | Документация Майкрософт
 description: Сведения об элементе управления "Круговая диаграмма" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7a7c69be8fea874a6d911fa26909a7b3ece0bce5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2037de5ab55839b5908fb4789ca3fcda6836f4d9
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986403"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650345"
 ---
 # <a name="pie-chart-control-in-powerapps"></a>Элемент управления "Круговая диаграмма" в PowerApps
 Элемент управления, отображающий относительные значения в сравнении друг с другом.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Добавьте элемент управления **Круговая диаграмма**, если вам нужно отобразить относительные данные из таблицы, содержащей подписи в крайнем левом столбце и значения во втором слева столбце.
 
 Этот элемент управления — это группа из трех элементов управления: **[Label](control-text-box.md)** для заголовка, средство графического оформления диаграммы и **Legend**.
@@ -80,11 +79,11 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Max**(*источник*; *столбец*)](../functions/function-aggregates.md)
+[**Max**(*источник*, *столбец*)](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **[Кнопка](control-button.md)** и задайте следующую формулу в качестве значения свойства **[OnSelect](properties-core.md)** :<br>
-   **Collect(Revenue2015; {Product:"Europa"; Revenue:27000}; {Product:"Ganymede"; Revenue:26300}; {Product:"Callisto"; Revenue:29200})**
+   **Collect(Revenue2015, {Product:"Europa", Revenue:27000}, {Product:"Ganymede", Revenue:26300}, {Product:"Callisto", Revenue:29200})**
    
     Не знаете, как [добавить и настроить элемент управления](../add-configure-controls.md)?
    

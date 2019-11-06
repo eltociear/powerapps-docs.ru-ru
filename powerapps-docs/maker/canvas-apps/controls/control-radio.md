@@ -1,31 +1,30 @@
 ---
 title: Справка по элементу управления "Переключатель" | Документация Майкрософт
 description: Сведения об элементе управления "Переключатель" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 07/06/2018
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e3a1e1c5a62552f9ef034b6f4985213b65247627
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: cba6b072721efa04ce28606cd027939823c2f7c9
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986385"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649769"
 ---
 # <a name="radio-control-in-powerapps"></a>Элемент управления "Переключатель" в PowerApps
 
 Элемент ввода, отображающий несколько вариантов, из которых пользователи могут одновременно выбрать только один.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 
 Элемент управления **Переключатель** — стандартный HTML-элемента ввода — лучше всего использовать с несколькими взаимоисключающими вариантами.
 
@@ -39,7 +38,7 @@ ms.PowerAppsDecimalTransform: true
 
 **Layout** — вертикальное или горизонтальное расположение.
 
-**[Value](properties-core.md)**  — значение элемента управления для ввода.
+**[Value](properties-core.md)**  — значение элемента управления.
 
 **Выбрано** — запись данных, представляющая выбранный элемент.
 
@@ -65,13 +64,13 @@ ms.PowerAppsDecimalTransform: true
 
 **[Fill](properties-color-border.md)**  — цвет фона элемента управления.
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)** — вес текста в элементе управления: **Полужирный**, **полужирный**, **обычный**или **более светлый**.
+**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Жирный**, **Полужирный**, **Обычный** или **Очень тонкий**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -83,7 +82,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[LineHeight](properties-text.md)**  — расстояние, например, между строками текста или элементами списка.
 
-**[OnChange](properties-core.md)**  — поведение приложения, когда пользователь изменяет значение элемента управления (например, перемещая ползунок).
+**[OnChange](properties-core.md)**  — поведение приложения, когда пользователь изменяет значение элемента управления (например, перемещая ползунок).
 
 **[OnSelect](properties-core.md)**  — поведение приложения, когда пользователь щелкает элемент управления или касается его.
 
@@ -107,7 +106,7 @@ ms.PowerAppsDecimalTransform: true
 
 **RadioSize** — диаметр кругов в переключателе.
 
-**[Reset](properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.
+**[Reset](properties-core.md)**  — свойство, которое указывает, возвращается ли элемент управления к значению по умолчанию.
 
 **Селектедтекст (не рекомендуется)** — строковое значение, представляющее выбранный элемент.
 
@@ -131,19 +130,19 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Distinct**(*источник*; *столбец*)](../functions/function-distinct.md)
+[**Distinct**(*источник*, *столбец*)](../functions/function-distinct.md)
 
 ## <a name="example"></a>Пример
 
 1. Добавьте элемент управления **Переключатель**, назовите его **Pricing** и укажите для свойства **[Items](properties-core.md)** следующую формулу:
 
-    **["Standard"; "Premium"]**
+    **["Standard", "Premium"]**
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
 2. Добавьте элемент управления **[Метка](control-text-box.md)** , переместите его под элемент управления **Переключатель** и укажите для свойства **[Text](properties-core.md)** элемента **[Метка](control-text-box.md)** следующую формулу:
 
-    **If("Premium" in Pricing.Selected.Value; "200 долларов в день"; "150 долларов в день")**
+    **If("Premium" in Pricing.Selected.Value, "200 долларов в день", "150 долларов в день")**
 
     Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 

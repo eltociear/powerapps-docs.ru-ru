@@ -1,29 +1,29 @@
 ---
 title: Справка по элементу управления "Редактор форматированного текста" | Документы Майкрософт
 description: Сведения об элементе управления "Редактор форматированного текста" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 05/24/2018
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c6b94f636ebf6d373c3fc2117b589116b5a4a2fd
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: ec991f54ff4b395026c9a869c315f75a549da79e
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986343"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649792"
 ---
 # <a name="rich-text-editor-control-in-powerapps"></a>Элемент управления "Редактор форматированного текста" в PowerApps
 Позволяет конечным пользователям форматировать текст внутри области редактирования WYSIWYG.  Выходные данные имеют формат HTML.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Элемент управления **Редактор форматированного текста** предоставляет пользователям приложения область для форматирования текста в режиме WYSIWYG.  Входные и выходные данные элемента управления имеют формат HTML.
 
 Элемент управления позволяет вставлять форматированный текст, скопированный, например, из веб-браузера или приложения Word.  

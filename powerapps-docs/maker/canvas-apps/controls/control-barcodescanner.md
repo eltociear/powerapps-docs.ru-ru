@@ -1,31 +1,30 @@
 ---
 title: 'Веб-штрихкод — управление сканером: Reference | Документация Майкрософт'
 description: Сведения, включая свойства и примеры, об элементе управления "средство проверки штрихкодов"
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d1162c0c9954e67196eb4d3e42b2c91bdc3bf804
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: e80f34917bba942f85e141c382cf3b1caa5e6d44
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987001"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650754"
 ---
 # <a name="web-barcode-scanner-control-experimental-in-powerapps"></a>Веб-штрихкод — элемент управления сканера (экспериментальная версия) в PowerApps
 
 Устаревший элемент управления для сканирования штрихкодов, который является устаревшим, но может быть полезен для сканирования кодов в веб-браузере.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 
 Элемент управления показывает канал камеры в приложении, чтобы пользователи могли проверять штрихкоды на всех устройствах. Элемент управления устарел из-за низкой производительности, и элемент управления " **[сканер штрихкодов](control-new-barcode-scanner.md)** мобильных устройств" заменяет этот элемент управления.
 
@@ -67,7 +66,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Patch**( *DataSource*;; *BaseRecord*;; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Пример
 

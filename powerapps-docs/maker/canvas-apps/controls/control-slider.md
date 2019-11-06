@@ -1,40 +1,39 @@
 ---
 title: Справка по элементу управления "Ползунок" | Документация Майкрософт
 description: Сведения об элементе управления "Ползунок" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4c0d108f6aac4df7d0e10a316ba51f6f35ee3338
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 45314238783e4cbf53332e8531bc0d76c679265f
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993305"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649865"
 ---
 # <a name="slider-control-in-powerapps"></a>Элемент управления "Ползунок" в PowerApps
 Элемент управления, позволяющий пользователю указывать значение, перетаскивая маркер.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Пользователь может выбрать значение между заданными минимальным и максимальным значениями, передвигая маркер ползунка влево-вправо или вверх-вниз в зависимости от выбранного вами направления.
 
 ## <a name="key-properties"></a>Основные свойства
-**[Default](properties-core.md)**  — начальное значение элемента управления до его изменения пользователем.
+**[Default](properties-core.md)**  — начальное значение элемента управления до его изменения пользователем.
 
 **Max** — максимальное значение, которое может задать пользователь с помощью ползунка или оценки.
 
 **Min** — минимальное значение, которое может задать пользователь с помощью ползунка или оценки.
 
-**[Value](properties-core.md)**  — значение элемента управления для ввода.
+**[Value](properties-core.md)**  — значение элемента управления.
 
 ## <a name="additional-properties"></a>Дополнительные свойства
 **[AccessibleLabel](properties-accessibility.md)** — метка для средств чтения с экрана.
@@ -49,7 +48,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[DisabledBorderColor](properties-color-border.md)** — цвет границы элемента управления, если для его свойства **[DisplayMode](properties-core.md)** установлено значение **Отключено**.
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
@@ -65,9 +64,9 @@ ms.PowerAppsDecimalTransform: true
 
 **[HoverBorderColor](properties-color-border.md)**  — цвет границы элемента управления при удерживании указателя мыши на нем.
 
-**Layout** — направление прокрутки коллекции или передвижения ползунка пользователем: **Vertical** (сверху вниз) или **Horizontal** (слева направо).
+**Layout** — направление прокрутки коллекции или передвижения ползунка пользователем: сверху вниз (**Vertical**) или слева направо (**Horizontal**).
 
-**[OnChange](properties-core.md)**  — поведение приложения, когда пользователь изменяет значение элемента управления (например, перемещая ползунок).
+**[OnChange](properties-core.md)**  — поведение приложения, когда пользователь изменяет значение элемента управления (например, перемещая ползунок).
 
 **[OnSelect](properties-core.md)**  — поведение приложения, когда пользователь щелкает элемент управления или касается его.
 
@@ -75,11 +74,11 @@ ms.PowerAppsDecimalTransform: true
 
 **RailFill** — фоновый цвет прямоугольника в переключателе, когда он имеет значение **false**, или цвет линии справа от маркера ползунка.
 
-**RailHoverFill** — фоновый цвет прямоугольника в переключателе, когда он имеет значение **false**, или цвет линии справа от маркера ползунка при наведении указателя мыши на переключатель или ползунок.
+**RailHoverFill** — фоновый цвет прямоугольника в переключателе, когда он имеет значение **false**, или цвет линии справа от маркера ползунка при наведении указателя мыши на переключатель или ползунок.
 
 **ReadOnly** — определяет, может ли пользователь изменить значение элемента управления "Ползунок" или "Оценка".
 
-**[Reset](properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.
+**[Reset](properties-core.md)**  — свойство, которое указывает, возвращается ли элемент управления к значению по умолчанию.
 
 **ShowValue** — определяет, отображается от значение ползунка или элемента управления "Оценка", когда пользователь изменяет это значение или наводит указатель на элемент управления.
 
@@ -87,7 +86,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Tooltip](properties-core.md)** — пояснительный текст, отображаемый при наведении указателя мыши на элемент управления.
 
-**ValueFill** — фоновый цвет прямоугольника в переключателе, когда он имеет значение **true**, или цвет линии слева от маркера ползунка.
+**ValueFill** — цвет фона прямоугольника в переключателе, когда он имеет значение **true**, или цвет линии слева от маркера ползунка.
 
 **ValueHoverFill** — фоновый цвет прямоугольника в переключателе, когда он имеет значение **true**, или цвет линии слева от маркера ползунка при наведении указателя мыши на переключатель или ползунок.
 
@@ -100,11 +99,11 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Sum**(*значение1*; *значение2*)](../functions/function-aggregates.md)
+[**Sum**(*значение1*, *значение2*)](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте кнопку и задайте следующую формулу в качестве значения свойства **[OnSelect](properties-core.md)** :
-   <br>**ClearCollect(CityPopulations; {City:"Лондон"; Country:"Соединенное Королевство"; Population:8615000}; {City:"Берлин"; Country:"Германия"; Population:3562000}; {City:"Мадрид"; Country:"Испания"; Population:3165000}; {City:"Рим"; Country:"Италия"; Population:2874000}; {City:"Париж"; Country:"Франция"; Population:2273000}; {City:"Гамбург"; Country:"Германия"; Population:1760000}; {City:"Барселона"; Country:"Испания"; Population:1602000}; {City:"Мюнхен"; Country:"Германия"; Population:1494000}; {City:"Милан"; Country:"Италия"; Population:1344000})**
+   <br>**ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
    
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
    
@@ -113,8 +112,8 @@ ms.PowerAppsDecimalTransform: true
 3. Добавьте ползунок, переместите его под кнопку и назовите **MinPopulation**.
 4. Укажите для свойства **Max** ползунка значение **5000000**, а для свойства **Min** — **1000000**.
 5. Добавьте коллекцию текста с вертикальной (книжной) ориентацией, переместите ее под ползунок и укажите для ее свойства **[Items](properties-core.md)** следующую формулу:<br>
-   **Filter(CityPopulations; Population > MinPopulation)**
-6. В первом элементе коллекции укажите для свойства **[Text](properties-core.md)** верхней метки значение **ThisItem.City**, а для свойства **[Text](properties-core.md)** нижней метки следующую формулу:<br> **Text(ThisItem.Population; "##,###")**
+   **Filter(CityPopulations, Population > MinPopulation)**
+6. В первом элементе коллекции укажите для свойства **[Text](properties-core.md)** верхней метки значение **ThisItem.City**, а для свойства **[Text](properties-core.md)** нижней метки следующую формулу:<br> **Text(ThisItem.Population, "##,###")**
 7. Нажмите клавишу F5 и измените значение элемента **MinPopulation**, чтобы отображались только города с численностью населения, превышающей заданное вами значение.
 8. Нажмите клавишу ESC, чтобы вернуться в рабочую область по умолчанию.
 
@@ -124,7 +123,7 @@ ms.PowerAppsDecimalTransform: true
 Необходимо настроить достаточный контраст для следующих элементов:
 * элементы **ValueFill** и **RailFill**;
 * элементы **ValueHoverFill** и **RailHoverFill**;
-* элемент **[FocusedBorderColor](properties-color-border.md)** и цвета за его пределами;
+* **[FocusedBorderColor](properties-color-border.md)** и цвета за пределами элемента.
 * элемента **ValueFill** и цвета фона;
 * элемента **RailFill** и цвета фона;
 * элемента **ValueHoverFill** и цвета фона;
@@ -135,7 +134,7 @@ ms.PowerAppsDecimalTransform: true
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
+* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
 * Значение ползунка должно отображаться при взаимодействии с помощью клавиатуры. Это можно сделать одним из следующих методов:
     * задать для **ShowValue** значение **true**;
     * добавить смежный элемент **[Label](control-text-box.md)** к ползунку;. задать для элемента **[Text](properties-core.md)** метки значение **[Value](properties-core.md)** ползунка.
