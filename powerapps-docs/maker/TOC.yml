@@ -1054,15 +1054,17 @@
           href: ./model-driven-apps/unified-interface-playbook.md
         - name: Подготовка к переходу на единый интерфейс
           href: ./model-driven-apps/approaching-unified-interface.md
+        - name: Контрольный список. Переход на единый интерфейс
+          href: ./model-driven-apps/checklist-transition-unified-interface.md
     - name: Специальные возможности в конструкторе приложений PowerApps
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: "Настройка приложения Dynamics\_365 для Outlook"
       href: ./model-driven-apps/app-for-outlook-customize.md
     - name: Для разработчиков
       href: ../developer/model-driven-apps/overview.md
-- name: Порталы
+- name: Portals
   items:
-    - name: Что такое порталы PowerApps?
+    - name: Сведения о порталах PowerApps
       href: ./portals/overview.md
     - name: Проектирование и сборка портала
       items:
@@ -1072,7 +1074,9 @@
           href: ./portals/create-portal.md
         - name: "Создание портала с использованием среды Dynamics\_365"
           href: ./portals/create-dynamics-portal.md
-        - name: Устройство конструктора портала
+        - name: Подготовка портала с помощью надстройки портала более старой версии
+          href: ./portals/provision-portal-add-on.md
+        - name: Структура порталов PowerApps
           href: ./portals/portal-designer-anatomy.md
         - name: Поддерживаемые веб-браузеры для конструктора портала
           href: ./portals/supported-browser.md
@@ -1150,6 +1154,58 @@
               href: ./portals/configure/configure-saml2-settings.md
             - name: Миграция поставщиков удостоверений в Azure AD B2C
               href: ./portals/configure/migrate-identity-providers.md
+        - name: Search
+          items:
+            - name: Сведения о поиске
+              href: ./portals/configure/search.md
+            - name: Оптимизация поиска с помощью фасетного поиска
+              href: ./portals/configure/improve-portal-search-faceted-search.md
+            - name: Поиск во вложенных файлах
+              href: ./portals/configure/search-file-attachment.md
+        - name: Включение поддержки нескольких языков
+          href: ./portals/configure/enable-multiple-language-support.md
+        - name: Создание веб-файлов и управление ими
+          href: ./portals/configure/web-files.md
+        - name: Управление веб-ссылками
+          href: ./portals/configure/manage-web-links.md
+        - name: Создание шаблонов страниц и управление ими
+          href: ./portals/configure/page-templates.md
+        - name: Управление фрагментами содержимого
+          href: ./portals/configure/customize-content-snippets.md
+        - name: Создание URL-адреса перенаправления
+          href: ./portals/configure/add-redirect-url.md
+        - name: Использование сочетаний клавиш для размещения дочерних узлов
+          href: ./portals/configure/place-child-nodes.md
+        - name: Поведение и формат поля "Дата и время"
+          href: ./portals/configure/behavior-format-date-time-field.md
+        - name: Добавление диаграммы на веб-страницу на портале
+          href: ./portals/configure/add-chart.md
+        - name: Работа с формами сущностей
+          href: ./portals/configure/entity-forms.md
+        - name: Работа со списками сущностей
+          href: ./portals/configure/entity-lists.md
+        - name: Работа с веб-формами
+          items:
+            - name: Определение свойств веб-формы
+              href: ./portals/configure/web-form-properties.md
+            - name: Шаги веб-формы
+              items:
+                - name: Определение шагов веб-формы
+                  href: ./portals/configure/web-form-steps.md
+                - name: Определение загрузки формы и типа шага вкладки формы
+                  href: ./portals/configure/load-form-step.md
+                - name: Добавление типа шага перенаправления
+                  href: ./portals/configure/add-redirect-step.md
+                - name: Добавление типа условного шага
+                  href: ./portals/configure/add-conditional-step.md
+                - name: Добавление пользовательского элемента JavaScript
+                  href: ./portals/configure/add-custom-javascript.md
+            - name: Настройка метаданных веб-формы
+              href: ./portals/configure/configure-web-form-metadata.md
+            - name: Настройка вложенной сетки веб-формы
+              href: ./portals/configure/configure-web-form-subgrid.md
+            - name: Добавление геолокации
+              href: ./portals/configure/add-geolocation.md
     - name: Расширенные возможности портала
       items:
         - name: Работа с шаблонами Liquid
@@ -1196,6 +1252,20 @@
                   href: ./portals/liquid/render-site-header-primary-navigation.md
         - name: Поток неявного предоставления OAuth 2.0
           href: ./portals/oauth-implicit-grant-flow.md
+    - name: Управление пользователями и их защита на портале
+      items:
+        - name: Настройка контактов
+          href: ./portals/configure/configure-contacts.md
+        - name: Приглашение контактов
+          href: ./portals/configure/invite-contacts.md
+        - name: Создание веб-ролей
+          href: ./portals/configure/create-web-roles.md
+        - name: Назначение разрешений сущности
+          href: ./portals/configure/assign-entity-permissions.md
+        - name: Управление доступом к веб-странице
+          href: ./portals/configure/webpage-access-control.md
+        - name: Создание разрешений на доступ к веб-сайту
+          href: ./portals/configure/website-access-permission.md
     - name: Хранение документов на порталах
       items:
         - name: Настройка заметок

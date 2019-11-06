@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: c91add6569b3a74f26c48a70852df54d0d357657
-ms.sourcegitcommit: 5b623b64fba72dda893c97f497666d0adc39e0c6
+ms.openlocfilehash: 470d8e2a144e708162b886f6127bd6f9a498d093
+ms.sourcegitcommit: 6bec6932071db2411bb4ad1e01c059f57d8c9bca
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71709220"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566976"
 ---
 <div id="main"
    class="v2">
@@ -89,7 +89,7 @@ ms.locfileid: "71709220"
                               </a>
                            </li>
                            <li>
-                              <a href="https://powerapps.microsoft.com/en-us/blog/">
+                              <a href="https://powerapps.microsoft.com/blog/">
                                  <div class="cardSize">
                                     <div class="cardPadding">
                                        <div class="card">
@@ -288,9 +288,9 @@ ms.locfileid: "71709220"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Порталы</h3>
+                                    <h3 style="font-size: 1.15rem">Portals</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">Что такое порталы PowerApps?</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">Сведения о порталах PowerApps</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">Создание портала</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/manage-existing-portals">Управление существующими порталами</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/admin/admin-overview">Администрирование портала</a></p>
@@ -319,7 +319,7 @@ ms.locfileid: "71709220"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/cds-processes">Применение бизнес-логики</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/solutions-overview">Решения</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/wp-security">Безопасность в Common Data Service</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/en-us/download/details.aspx?id=57777">Технический документ. Реализация ALM с помощью платформы решений</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">Технический документ. Реализация ALM с помощью платформы решений</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-powerbi-connector">Создание отчетов Power BI на основе данных Common Data Service</a></p>
                                  </div>
                               </div>
@@ -608,7 +608,7 @@ ms.locfileid: "71709220"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/checker/webapi/overview">Использование средства проверки PowerApps</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/isv-app-management">Мониторинг приложений от независимых поставщиков ПО и управление этими приложениями</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/publish-app-appsource">Публикация приложения в AppSource</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/en-us/download/details.aspx?id=57777">Технический документ. Реализация ALM с помощью платформы решений</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">Технический документ. Реализация ALM с помощью платформы решений</a></p>
                                  </div>
                               </div>
                            </div>

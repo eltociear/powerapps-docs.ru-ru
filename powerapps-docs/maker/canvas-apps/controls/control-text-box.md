@@ -1,31 +1,30 @@
 ---
 title: Справка по элементу управления "Метка" | Документация Майкрософт
 description: Сведения об элементе управления "Метка" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f62aa84867a3aa4eae582b3fde320e84becdeeff
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 66de4ee34cf52f3c351fe3f9c624596e5dd1211d
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986302"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649847"
 ---
 # <a name="label-control-in-canvas-apps"></a>Элемент управления Label в приложениях Canvas
 
 Поле, в котором отображаются данные, например текст, числа, даты и валюта.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 
 В метке отображаются данные, которые вводятся как строковый литерал (текст отображается точно так, как вы его вводите) или как формула, результатом которой является строка текста. Метки часто отображаются вне других элементов управления (например, заголовок, определяющий экран), в качестве метки для другого элемента управления (например, элемента "Оценка" или "Звук") или в коллекции для отображения определенного типа сведений об элементе.
 
@@ -63,11 +62,11 @@ ms.PowerAppsDecimalTransform: true
 
 **[Fill](properties-color-border.md)**  — цвет фона элемента управления.
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
-**[FontWeight](properties-text.md)** — вес текста в элементе управления: **Полужирный**, **полужирный**, **обычный**или **более светлый**.
+**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Жирный**, **Полужирный**, **Обычный** или **Очень тонкий**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -131,7 +130,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Text**(*значение*; "*формат_текста*")](../functions/function-text.md)
+[**Text**(*значение*, "*формат_текста*")](../functions/function-text.md)
 
 ## <a name="examples"></a>Примеры
 
@@ -156,7 +155,7 @@ ms.PowerAppsDecimalTransform: true
 Здесь вы создадите набор данных с названием **CityPopulations**, содержащий данные о численности населения в разных городах Европы. Затем вы покажете эти данные в коллекции, содержащей три метки, и укажете тип данных, отображаемых в каждой метке.
 
 1. Добавьте кнопку и задайте следующую формулу в качестве значения свойства **[OnSelect](properties-core.md)** :<br>
-   **ClearCollect(CityPopulations; {City:"Лондон"; Country:"Соединенное Королевство"; Population:8615000}; {City:"Берлин"; Country:"Германия"; Population:3562000}; {City:"Мадрид"; Country:"Испания"; Population:3165000}; {City:"Рим"; Country:"Италия"; Population:2874000}; {City:"Париж"; Country:"Франция"; Population:2273000}; {City:"Гамбург"; Country:"Германия"; Population:1760000}; {City:"Барселона"; Country:"Испания"; Population:1602000}; {City:"Мюнхен"; Country:"Германия"; Population:1494000}; {City:"Милан"; Country:"Италия"; Population:1344000})**
+   **ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
 2. Нажмите клавишу F5, нажмите кнопку, затем нажмите клавишу ESC.
 3. Добавьте текстовую коллекцию и укажите для свойства **[Items](properties-core.md)** значение **CityPopulations**.
 
@@ -173,7 +172,7 @@ ms.PowerAppsDecimalTransform: true
 
 Необходимо настроить достаточный контраст для следующих элементов:
 
-* **[Color](properties-color-border.md)** и **[Fill](properties-color-border.md)** ;
+* **[Color](properties-color-border.md)** и **[Fill](properties-color-border.md)**
 * применяются другие [стандартные требования по цветовому контрасту](../accessible-apps-color.md) (при использовании в качестве кнопки или ссылки).
 
 ### <a name="screen-reader-support"></a>Поддержка чтения с экрана
@@ -193,4 +192,4 @@ ms.PowerAppsDecimalTransform: true
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 
 * Значение **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, если текст используется как кнопка или ссылка. При этом пользователи смогут применять клавиатуру для навигации.
-* Индикаторы фокусировки должны быть четко видны, если текст используется как кнопка или ссылка. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
+* Индикаторы фокусировки должны быть четко видны, если текст используется как кнопка или ссылка. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .

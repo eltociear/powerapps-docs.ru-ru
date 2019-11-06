@@ -1,30 +1,29 @@
 ---
 title: Справка по элементу управления "Добавить изображение" | Документация Майкрософт
 description: Сведения об элементе управления "Добавить изображение" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 81c96c7a2a23a770acfcc1936147a3b466f8c86d
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1970c373b7614644897620e2c6d60f4472add568
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993883"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650826"
 ---
 # <a name="add-picture-control-in-powerapps"></a>Элемент управления "Добавить изображение" в PowerApps
 Делает снимок или загружает изображения с локального устройства.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 С помощью этого элемента управления пользователи могут делать снимки или передавать файлы изображений со своих устройств, а также обновлять источник данных с применением этого содержимого. На мобильном устройстве пользователя откроется диалоговое окно выбора устройства, в котором можно выбрать один из вариантов: сделать снимок или выбирать уже имеющийся.
 
 Этот элемент управления является групповым и состоит из двух элементов — **изображение** и **кнопки добавления мультимедиа**. Элемент управления **Изображение** отображает переданное изображение или заполнитель, если изображение не передавалось. **Кнопка добавления мультимедиа** выдает запрос по передаче изображения.
@@ -58,13 +57,13 @@ ms.PowerAppsDecimalTransform: true
 
 **[Fill](properties-color-border.md)**  — цвет фона элемента управления.
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)** — вес текста в элементе управления: **Полужирный**, **полужирный**, **обычный**или **более светлый**.
+**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Жирный**, **Полужирный**, **Обычный** или **Очень тонкий**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -78,7 +77,7 @@ ms.PowerAppsDecimalTransform: true
 
 **Media** — идентификатор клипа, воспроизводимого элементом управления "Звук" или "Видео".
 
-**[OnChange](properties-core.md)**  — поведение приложения, когда пользователь изменяет значение элемента управления (например, перемещая ползунок).
+**[OnChange](properties-core.md)**  — поведение приложения, когда пользователь изменяет значение элемента управления (например, перемещая ползунок).
 
 **[OnSelect](properties-core.md)**  — поведение приложения, когда пользователь щелкает элемент управления или касается его.
 
@@ -90,7 +89,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[PressedFill](properties-color-border.md)**  — цвет фона элемента управления при щелчке или касании.
 
-**[Reset](properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.
+**[Reset](properties-core.md)**  — свойство, которое указывает, возвращается ли элемент управления к значению по умолчанию.
 
 **[Size](properties-text.md)**  — размер шрифта текста, отображаемого в элементе управления.
 
@@ -115,7 +114,7 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Patch**( *DataSource*;; *BaseRecord*;; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="examples"></a>Примеры
 ### <a name="add-images-to-an-image-gallery-control"></a>Добавление изображений в коллекцию
@@ -124,7 +123,7 @@ ms.PowerAppsDecimalTransform: true
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. В диалоговом окне **Открыть** выберите файл изображения и нажмите **Открыть**.
 3. Добавьте элемент управления **[Кнопка](control-button.md)** , переместите его под элемент управления **Добавить изображение** и укажите для свойства **[OnSelect](properties-core.md)** элемента **[Кнопка](control-button.md)** следующую формулу:<br>
-   **Collect(MyPix; AddMediaButton1.Media)**
+   **Collect(MyPix, AddMediaButton1.Media)**
    
     Нужны дополнительные сведения о функции **[Collect](../functions/function-clear-collect-clearcollect.md)** или [других функциях](../formula-reference.md)?
 4. Добавьте элемент управления **Коллекция изображений** и укажите для его свойства **[Items](properties-core.md)** значение **MyPix**.
@@ -140,7 +139,7 @@ ms.PowerAppsDecimalTransform: true
 
 
 ## <a name="accessibility-guidelines"></a>Руководство по настройке специальных возможностей
-Применяются те же рекомендации, что и для **[кнопки](control-button.md)** и **[изображения](control-image.md)** . Кроме того, рассмотрим следующее.
+Применяются те же рекомендации, что и для **[кнопки](control-button.md)** и **[изображения](control-image.md)** . Попробуйте следующее:
 
 ### <a name="color-contrast"></a>Контрастность
 * Текст и фон **кнопки добавления мультимедиа** должны быть достаточно контрастными. Так как в переданном изображении могут присутствовать разные цвета, используйте непрозрачную **[заливку](properties-color-border.md)** для **кнопки добавления мультимедиа**, чтобы гарантировать достаточную контрастность.
@@ -150,5 +149,5 @@ ms.PowerAppsDecimalTransform: true
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Для элемента **[TabIndex](properties-accessibility.md)** **кнопки добавления мультимедиа** должно быть задано значение ноль или больше, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Для **кнопки добавления мультимедиа** должны быть предусмотрены явно различимые индикаторы фокуса. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
+* Для **кнопки добавления мультимедиа** должны быть предусмотрены явно различимые индикаторы фокуса. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
  

@@ -1,38 +1,37 @@
 ---
 title: Справка по элементу управления "Флажок" | Документация Майкрософт
 description: Сведения об элементе управления "Флажок" с описанием его свойств и примерами
-author: fikaradz
+author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.date: 10/25/2016
-ms.author: fikaradz
+ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d943eacabaab8d9542352ee0b1c092244c171d86
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2a89f2afcceedada0ffdda53628e9253433e8f95
+ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986818"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650683"
 ---
 # <a name="check-box-control-in-powerapps"></a>Элемент управления "Флажок" в PowerApps
 Элемент управления, который пользователь может установить или снять, задавая значение **true** или **false** соответственно.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Пользователь может указывать логическое значение с помощью этого знакомого элемента управления, который уже не одно десятилетие используется в графических пользовательских интерфейсах.
 
 ## <a name="key-properties"></a>Основные свойства
-**[Default](properties-core.md)** . Начальное значение элемента управления до его изменения пользователем.
+**[Default](properties-core.md)**  — начальное значение элемента управления до его изменения пользователем.
 
 **[Text](properties-core.md)**  — текст, отображаемый в элементе управления, или текст, который пользователь вводит в элемент управления.
 
-**[Value](properties-core.md)**  — значение элемента управления.
+**[Value](properties-core.md)**  — значение элемента управления.
 
 ## <a name="additional-properties"></a>Дополнительные свойства
 **[BorderColor](properties-color-border.md)**  — цвет границы элемента управления.
@@ -61,13 +60,13 @@ ms.PowerAppsDecimalTransform: true
 
 **[Fill](properties-color-border.md)**  — цвет фона элемента управления.
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)** — вес текста в элементе управления: **Полужирный**, **полужирный**, **обычный**или **более светлый**.
+**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Жирный**, **Полужирный**, **Обычный** или **Очень тонкий**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -83,7 +82,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[OnSelect](properties-core.md)**  — поведение приложения, когда пользователь щелкает элемент управления или касается его.
 
-**OnUncheck** — поведение приложения, когда значение флажка или переключателя изменяется на **false**.
+**OnUncheck** — поведение приложения, когда значение флажка или переключателя изменяется на **false**.
 
 **[PaddingBottom](properties-size-location.md)**  — расстояние между текстом в элементе управления и нижним краем элемента управления.
 
@@ -99,7 +98,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[PressedFill](properties-color-border.md)**  — цвет фона элемента управления при щелчке или касании.
 
-**[Reset](properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.
+**[Reset](properties-core.md)**  — свойство, которое указывает, возвращается ли элемент управления к значению по умолчанию.
 
 **[Size](properties-text.md)**  — размер шрифта текста, отображаемого в элементе управления.
 
@@ -122,14 +121,14 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**If**( *Condition*;; *Result* )](../functions/function-if.md)
+[**If**( *Condition*; *Result* )](../functions/function-if.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **Флажок**, назовите его **chkReserve** и укажите для свойства **[Text](properties-core.md)** значение **Зарезервировать**.
    
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте элемент управления **[Средство выбора даты](control-date-picker.md)** и укажите для свойства **[Visible](properties-core.md)** следующую формулу:
-   <br>**If(chkReserve.Value = true; true)**
+   <br>**If(chkReserve.Value = true, true)**
    
     Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 3. Нажмите клавишу F5, выберите элемент **chkReserve** и укажите для свойства **[Value](properties-core.md)** значение **true**, затем еще раз выберите элемент **chkReserve** и укажите для свойства **[Value](properties-core.md)** значение **false**.
