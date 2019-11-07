@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/25/2019
+ms.date: 11/06/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7a975669d1e22289b7152b830808631992389a1f
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 010d567369e9c580b57a55ad251ac5ef01da3597
+ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71991610"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73741370"
 ---
 # <a name="create-a-detail-gallery-in-a-canvas-app"></a>Создание коллекции сведений в приложении Canvas
 
@@ -65,14 +64,14 @@ ms.PowerAppsDecimalTransform: true
     > [!div class="mx-imgBorder"]
     > ![расположение по умолчанию коллекции "Order-Details"](media/northwind-orders-canvas-part3/details-04.png)
 
-1. Закройте панель **данных** , а затем измените размер и переместите коллекцию сведений в правый нижний угол под новой строкой заголовка:
+1. Закройте диалоговое окно "вылет источника данных", а затем измените размер и переместите коллекцию сведений в правый нижний угол под новой строкой заголовка:
 
     > [!div class="mx-imgBorder"]
     > ![конечное расположение коллекции «Order-Details»](media/northwind-orders-canvas-part3/details-05.png)
 
 1. Задайте для свойства **Items** коллекции Details следующую формулу:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gallery1.Selected.'Order Details'
     ```
 
@@ -104,7 +103,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **Text** новой метки следующую формулу:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Product.'Product Name'
     ```
 
@@ -142,7 +141,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте **для свойства Image образа следующую** формулу:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Product.Picture
     ```
 
@@ -162,7 +161,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **Text** новой метки следующее выражение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ThisItem.Quantity
     ```
 
@@ -180,8 +179,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **Text** новой метки следующую формулу:
 
-    ```powerapps-comma
-    Text( ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
     ```
 
     Если вы не включили тег Language ( **[$-en-US]** ), он будет добавлен в соответствии с языком и регионом. Если используется другой тег языка, необходимо удалить **$** сразу после закрывающей квадратной скобки ( **]** ), а затем добавить в эту точку собственный символ валюты.
@@ -198,8 +197,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **Text** новой метки следующую формулу:
 
-    ```powerapps-comma
-    Text( ThisItem.Quantity * ThisItem.'Unit Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( ThisItem.Quantity * ThisItem.'Unit Price', "[$-en-US]$ #,###.00" )
     ```
 
     Опять же, если вы не включили тег Language ( **[$-en-US]** ), он будет добавлен в соответствии с языком и регионом. Если тег отличается, вместо **$** сразу после закрывающей квадратной скобки необходимо использовать собственный символ валюты.
@@ -274,8 +273,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **Text** новой метки следующую формулу:
 
-    ```powerapps-comma
-    Sum( Gallery1.Selected.'Order Details'; Quantity )
+    ```powerapps-dot
+    Sum( Gallery1.Selected.'Order Details', Quantity )
     ```
 
     В этой формуле отображается предупреждение о делегировании, но его можно игнорировать, так как ни один заказ не будет содержать более 500 продуктов.
@@ -289,8 +288,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **Text** копии следующую формулу:
 
-    ```powerapps-comma
-    Text( Sum( Gallery1.Selected.'Order Details'; Quantity * 'Unit Price' ); "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( Sum( Gallery1.Selected.'Order Details', Quantity * 'Unit Price' ), "[$-en-US]$ #,###.00" )
     ```
 
     В этой формуле отображается предупреждение о делегировании, но его можно игнорировать, так как ни один заказ не будет содержать более 500 продуктов.
@@ -321,32 +320,6 @@ ms.PowerAppsDecimalTransform: true
     > [!div class="mx-imgBorder"]
     > ![изменить заливку метки на светло-синий](media/northwind-orders-canvas-part3/add-details-03.png)
 
-## <a name="add-the-order-details-data-source"></a>Добавление источника данных «Order Details»
-
-1. На вкладке **вид** выберите **Источники данных**, а затем в области **данные** выберите **Добавить источник данных** :
-
-    > [!div class="mx-imgBorder"]
-    > ![добавить](media/northwind-orders-canvas-part3/add-details-04.png) источника данных
-
-1. Выберите **Common Data Service**:
-
-    > [!div class="mx-imgBorder"]
-    > ![выберите Common Data Service](media/northwind-orders-canvas-part3/add-details-05.png)
-
-1. В верхней части панели **данных** введите **Order** в поле поиска, установите флажок **Order Details (сведения о заказе** ), а затем выберите **подключить** в нижней части панели:
-
-    > [!div class="mx-imgBorder"]
-    > ![указать сущность «сведения о заказе»](media/northwind-orders-canvas-part3/add-details-06.png)
-
-    Вы только что добавили в приложение еще один источник данных:
-
-    > [!div class="mx-imgBorder"]
-    > ![список источников данных](media/northwind-orders-canvas-part3/add-details-07.png)
-
-    Необходимо добавить этот источник данных, так как приложение может выполнять чтение через связь "один ко многим". это приложение еще не может записать изменения обратно. Приложение должно вносить изменения непосредственно в связанную сущность.
-
-1. Закройте панель « **данные** ».
-
 ## <a name="select-a-product"></a>Выберите продукт
 
 1. На вкладке **Вставка** выберите **элементы управления** > **поле со списком**:
@@ -356,23 +329,12 @@ ms.PowerAppsDecimalTransform: true
 
     Элемент управления [ **"поле со списком"** ](controls/control-combo-box.md) отображается в левом верхнем углу.
 
-1. Задайте для свойства **Items** поля со списком следующую формулу:
-
-    ```powerapps-comma
-    Choices( 'Order Details'.Product )
-    ```
+1. В диалоговом окне "вылет" выберите источник данных **Order Products** :
 
     > [!div class="mx-imgBorder"]
     > ![задать свойство Items поля со списком](media/northwind-orders-canvas-part3/add-details-09.png)
 
-    Функция [**choice**](functions/function-choices.md) возвращает таблицу со всеми возможными значениями поля **Product** в сущности **Order Details** . Это поле является уточняющим запросом в связи «многие к одному», поэтому **выборка** возвращает все записи в сущности « **заказ товаров** ».
-
-    > [!NOTE]
-    > Можно также использовать **варианты** с наборами параметров, чтобы получить таблицу со всеми параметрами. Эти шаги не упоминали этот подход, но вы уже использовали его при добавлении поля со списком, которое показывает **состояние заказа** в форме сводки.
-
-1. На панели **данных** откройте список **основной текст** и выберите **nwind_productname**. 
-
-1. Откройте список **сеарчфиелд** , а затем выберите **nwind_productname**.
+1. На вкладке **Свойства** поля со списком выберите **изменить** (рядом с **полями**), чтобы открыть панель **данных** .  Убедитесь, что для **основного текста** и **сеарчфиелд** задано значение **nwind_productname**.
 
     Логическое имя указывается, так как панель **данных** пока не поддерживает отображаемые имена в этом случае:
 
@@ -419,7 +381,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **Image** образа значение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ComboBox1.Selected.Picture
     ```
 
@@ -468,8 +430,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Измените размер и переместите метку справа от элемента управления вводом текста и задайте в качестве значения свойства **Text** метки следующую формулу:
 
-    ```powerapps-comma
-    Text( ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -489,8 +451,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **Text** новой метки следующую формулу:
 
-    ```powerapps-comma
-    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price'; "[$-en-US]$ #,###.00" )
+    ```powerapps-dot
+    Text( Value(TextInput1.Text) * ComboBox1.Selected.'List Price', "[$-en-US]$ #,###.00" )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -519,18 +481,18 @@ ms.PowerAppsDecimalTransform: true
 
 1. Измените размер и переместите этот значок на правой границе светло-синей области, а затем присвойте свойству **OnSelect** значка следующую формулу:
 
-    ```powerapps-comma
-    Patch( 'Order Details';
-        Defaults('Order Details');
+    ```powerapps-dot
+    Patch( 'Order Details',
+        Defaults('Order Details'),
         {
-            Order: Gallery1.Selected;
-            Product: ComboBox1.Selected;
-            Quantity: Value(TextInput1.Text);
+            Order: Gallery1.Selected,
+            Product: ComboBox1.Selected,
+            Quantity: Value(TextInput1.Text),
             'Unit Price': ComboBox1.Selected.'List Price'
         }
-    );;
-    Refresh( Orders );;
-    Reset( ComboBox1 );;
+    );
+    Refresh( Orders );
+    Reset( ComboBox1 );
     Reset( TextInput1 )
     ```
 
@@ -583,8 +545,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Измените размер и переместите значок корзины на правую сторону шаблона коллекции подробных сведений и задайте в качестве значения свойства " **OnSelect** " этой формулы:
 
-    ```powerapps-comma
-    Remove( 'Order Details'; ThisItem );; Refresh( Orders )
+    ```powerapps-dot
+    Remove( 'Order Details', ThisItem ); Refresh( Orders )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -609,7 +571,7 @@ ms.PowerAppsDecimalTransform: true
 - Связь «многие к одному» из сущности « **сведения о заказе** » в сущность « **заказ товаров** »: `ThisItem.Product.'Product Name'` и `ThisItem.Product.Picture`
 - Функция **выбора** для получения списка продуктов: `Choices( 'Order Details'.Product' )`
 - **Выбранное** свойство поля со списком в качестве полной связанной записи "многие к одному": `ComboBox1.Selected.Picture` и `ComboBox1.Selected.'List Price'`
-- Функция **Patch** для создания записи **сведений о заказе** : `Patch( 'Order Details'; Defaults( 'Order Details' ); ... )`
-- Функция **Remove** для удаления записи **сведений о заказе** : `Remove( 'Order Details'; ThisItem )`
+- Функция **Patch** для создания записи **сведений о заказе** : `Patch( 'Order Details', Defaults( 'Order Details' ), ... )`
+- Функция **Remove** для удаления записи **сведений о заказе** : `Remove( 'Order Details', ThisItem )`
 
 В этой серии разделов было кратко пошаговое руководство по использованию отношений Common Data Service и наборов параметров в приложении Canvas в целях обучения. Перед выпуском любого приложения в рабочей среде следует учитывать проверку полей, обработку ошибок и многие другие факторы.

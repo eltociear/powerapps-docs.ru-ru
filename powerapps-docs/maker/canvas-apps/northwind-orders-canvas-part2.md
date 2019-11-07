@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/25/2019
+ms.date: 11/06/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d151249caebdb2a6f142943074a409bc626ff662
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 6f49057e55ea52dac98c92109752a05276eec831
+ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71995858"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73741836"
 ---
 # <a name="create-a-summary-form-in-a-canvas-app"></a>Создание формы сводки в приложении Canvas
 
@@ -95,28 +94,32 @@ ms.PowerAppsDecimalTransform: true
     > [!div class="mx-imgBorder"]
     > ![переместить и изменить размер элемента управления формы редактирования](media/northwind-orders-canvas-part2/form-03.png)
 
-1. В строке формул задайте для свойства **DataSource** формы следующее значение:
+1. В области **Свойства** выберите раскрывающийся список **источник данных** .
 
-    ```powerapps-comma
-    Orders
-    ```
+    > [!div class="mx-imgBorder"]
+    > ![задать свойство DataSource элемента управления формы редактирования](media/northwind-orders-canvas-part2/form-04a.png)
+
+1. Выберите источник данных **Orders** .
 
     > [!div class="mx-imgBorder"]
     > ![задать свойство DataSource элемента управления формы редактирования](media/northwind-orders-canvas-part2/form-04.png)
 
-    Одно и то же свойство можно задать на вкладке **Свойства** рядом с правым ребром, но этот подход добавляет поля, которые не нужны в форме. Если используется строка формул, форма остается пустой.
-
 ## <a name="add-and-arrange-fields"></a>Добавление и упорядочивание полей
 
-1. На вкладке **Свойства** , расположенной рядом с правой границей, выберите **изменить поля** , чтобы открыть панель **поля** :
+1. На вкладке **Свойства** , расположенной рядом с правой границей, выберите **изменить поля** , чтобы открыть панель **поля** .
 
     > [!div class="mx-imgBorder"]
     > ![открыть область полей](media/northwind-orders-canvas-part2/form-05.png)
 
-1. В области **поля** выберите **Добавить поле**, а затем установите флажки для полей **Customer** и **Employee** .
+1. Если область **поля** не пуста, удалите уже вставленные поля.  
 
     > [!div class="mx-imgBorder"]
-    > ![добавить поля «Клиент» и «сотрудник» в элемент управления «форма редактирования»](media/northwind-orders-canvas-part2/form-06.png)
+    > ![открыть область полей](media/northwind-orders-canvas-part2/form-06a.png)
+
+1. После пустого списка полей выберите **Добавить поле**, а затем установите флажки для полей **Customer** и **Employee** .
+
+    > [!div class="mx-imgBorder"]
+    > ![добавить поля «Клиент» и «сотрудник» в элемент управления «форма редактирования»](media/northwind-orders-canvas-part2/form-06b.png)
 
 1. Прокрутите вниз, пока эти поля не отобразятся, а затем установите их флажки:
 
@@ -127,11 +130,14 @@ ms.PowerAppsDecimalTransform: true
     - **Оплаченная Дата**
 
     > [!div class="mx-imgBorder"]
-    > ![добавить в элемент управления формы редактирования пять полей](media/northwind-orders-canvas-part2/form-07.png)
+    > ![добавить в элемент управления формы редактирования пять полей](media/northwind-orders-canvas-part2/form-06c.png)
+
+    > [!div class="mx-imgBorder"]
+    > ![добавить в элемент управления формы редактирования пять полей](media/northwind-orders-canvas-part2/form-06d.png)
 
 1. В нижней части области **поля** выберите **Добавить**, а затем закройте область **поля** .
 
-    В форме показаны семь полей:
+    В форме показаны семь полей, которые могут быть в другом порядке:
 
     > [!div class="mx-imgBorder"]
     > ![элемент управления формы Edit отображает семь полей](media/northwind-orders-canvas-part2/form-08.png)
@@ -216,7 +222,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **элемента** формы сводки следующее выражение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gallery1.Selected
     ```
 
@@ -261,7 +267,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="use-a-many-to-one-relationship"></a>Использование связи «многие к одному»
 
-Сущность **Orders** имеет связь «многие к одному» с сущностью « **сотрудники** »: каждый сотрудник может создать много заказов, но каждый заказ может быть назначен только одному сотруднику. Когда пользователь выбирает сотрудника в элементе управления [ **"поле со списком"** ](controls/control-combo-box.md) , его **выбранное** свойство предоставляет всю запись сотрудника из сущности **Employees** . В результате можно настроить элемент управления [**Image**](controls/control-image.md) для отображения изображения любого сотрудника, выбранного пользователем в поле со списком.
+Сущность **Orders** имеет связь «многие к одному» с сущностью « **сотрудники** »: каждый сотрудник может создать много заказов, но каждый заказ может быть назначен только одному сотруднику. Когда пользователь выбирает сотрудника в элементе управления [**"поле со списком"**](controls/control-combo-box.md) , его **выбранное** свойство предоставляет всю запись сотрудника из сущности **Employees** . В результате можно настроить элемент управления [**Image**](controls/control-image.md) для отображения изображения любого сотрудника, выбранного пользователем в поле со списком.
 
 1. Выберите карточку данных **сотрудника** :
 
@@ -295,7 +301,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для **свойства Image изображения эту** формулу, заменив номер в конце датакардвалуе при необходимости:
 
-    ```powerapps-comma
+    ```powerapps-dot
     DataCardValue7.Selected.Picture
     ```
 
@@ -328,7 +334,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. В области **представление в виде дерева** убедитесь, что имя формы — **Form1**, а затем задайте для свойства **OnSelect** значка следующую формулу:
 
-    ```powerapps-comma
+    ```powerapps-dot
     SubmitForm( Form1 )
     ```
 
@@ -339,8 +345,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **DisplayMode** этого значка следующую формулу:
 
-    ```powerapps-comma
-    If( Form1.Unsaved; DisplayMode.Edit; DisplayMode.Disabled )
+    ```powerapps-dot
+    If( Form1.Unsaved, DisplayMode.Edit, DisplayMode.Disabled )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -350,7 +356,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Присвойте свойству **дисабледколор** значка это значение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gray
     ```
 
@@ -381,7 +387,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте в качестве значения свойства **OnSelect** значка отмены следующую формулу:
 
-    ```powerapps-comma
+    ```powerapps-dot
     ResetForm( Form1 )
     ```
 
@@ -392,8 +398,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **DisplayMode** значка отмены следующую формулу:
 
-    ```powerapps-comma
-    If( Form1.Unsaved Or Form1.Mode = FormMode.New; DisplayMode.Edit; DisplayMode.Disabled )
+    ```powerapps-dot
+    If( Form1.Unsaved Or Form1.Mode = FormMode.New, DisplayMode.Edit, DisplayMode.Disabled )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -403,7 +409,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **дисабледколор** значка отмены следующее значение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gray
     ```
 
@@ -434,7 +440,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте в этой формуле **свойство добавления** значка:
 
-    ```powerapps-comma
+    ```powerapps-dot
     NewForm( Form1 )
     ```
 
@@ -445,8 +451,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте в качестве значения свойства **DisplayMode** значка следующую формулу:
 
-    ```powerapps-comma
-    If( Form1.Unsaved Or Form1.Mode = FormMode.New; DisplayMode.Disabled; DisplayMode.Edit )
+    ```powerapps-dot
+    If( Form1.Unsaved Or Form1.Mode = FormMode.New, DisplayMode.Disabled, DisplayMode.Edit )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -459,7 +465,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **дисабледколор** значка это значение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gray
     ```
 
@@ -493,8 +499,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Присвойте свойству " **OnSelect** " значка корзины следующую формулу:
 
-    ```powerapps-comma
-    Remove( Orders; Gallery1.Selected )
+    ```powerapps-dot
+    Remove( Orders, Gallery1.Selected )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -504,8 +510,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **DisplayMode** значка корзины следующую формулу:
 
-    ```powerapps-comma
-    If( Form1.Mode = FormMode.New; DisplayMode.Disabled; DisplayMode.Edit )
+    ```powerapps-dot
+    If( Form1.Mode = FormMode.New, DisplayMode.Disabled, DisplayMode.Edit )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -515,7 +521,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **дисабледколор** значка корзины следующее значение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gray
     ```
 
@@ -538,7 +544,7 @@ ms.PowerAppsDecimalTransform: true
 - Значок для сохранения изменений в заказе: `SubmitForm( Form1 )`
 - Значок для отмены изменений в заказе: `ResetForm( Form1 )`
 - Значок для создания заказа: `NewForm( Form1 )`
-- Значок для удаления заказа: `Remove( Orders; Gallery1.Selected )`
+- Значок для удаления заказа: `Remove( Orders, Gallery1.Selected )`
 
 ## <a name="next-step"></a>Дальнейшие действия
 
