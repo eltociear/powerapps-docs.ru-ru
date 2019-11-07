@@ -1006,6 +1006,8 @@
           href: ./model-driven-apps/templates-overview.md
         - name: Использование тем для применения фирменной символики организации
           href: ./model-driven-apps/create-themes-organization-branding.md
+        - name: Создание интерактивной помощи для приложения
+          href: ./common-data-service/create-custom-help-pages.md
         - name: Добавление отчетов в приложение
           href: ./model-driven-apps/add-reporting-to-app.md
           items:
@@ -1042,6 +1044,8 @@
           href: ./model-driven-apps/change-custom-entity-icons.md
         - name: Распространение приложений с помощью решений
           href: ./model-driven-apps/distribute-model-driven-app.md
+        - name: Включение настраиваемой справки
+          href: ./model-driven-apps/use-customizable-help.md
         - name: Создание интерактивной помощи
           href: ./model-driven-apps/create-guided-help-learning-path.md
     - name: Переход на единый интерфейс
@@ -1056,6 +1060,8 @@
           href: ./model-driven-apps/approaching-unified-interface.md
         - name: Контрольный список. Переход на единый интерфейс
           href: ./model-driven-apps/checklist-transition-unified-interface.md
+        - name: 'Часто задаваемые вопросы: Переход на единый интерфейс'
+          href: ./model-driven-apps/faqs-transition-unified-interface.md
     - name: Специальные возможности в конструкторе приложений PowerApps
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: "Настройка приложения Dynamics\_365 для Outlook"
