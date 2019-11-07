@@ -2,48 +2,49 @@
   href: /
   topicHref: /
   items:
-    - name: PowerApps
-      tocHref: /powerapps/
-      topicHref: /powerapps/
+    - name: Платформа Power
+      href: /power-platform/
+      topichref: /power-platform/
       items:
-        - name: Создание приложений
-          tocHref: /powerapps/maker/common-data-service/
-          topicHref: /powerapps/maker/index
-        - name: Создание приложений
-          tocHref: /powerapps/maker/model-driven-apps/
-          topicHref: /powerapps/maker/index
-        - name: Создание приложений
-          tocHref: /powerapps/maker/canvas-apps/
-          topicHref: /powerapps/maker/index
-        - name: Создание приложений
-          tocHref: /powerapps/developer/common-data-service/
-          topicHref: /powerapps/maker/index
+        - name: PowerApps
+          tocHref: /powerapps/
+          topicHref: /powerapps/
           items:
-            - name: Common Data Service
+            - name: Создание приложений
+              tocHref: /powerapps/maker/common-data-service/
+              topicHref: /powerapps/maker/index
+            - name: Создание приложений
+              tocHref: /powerapps/maker/model-driven-apps/
+              topicHref: /powerapps/maker/index
+            - name: Создание приложений
+              tocHref: /powerapps/maker/canvas-apps/
+              topicHref: /powerapps/maker/index
+            - name: Создание приложений
               tocHref: /powerapps/developer/common-data-service/
-              topicHref: /powerapps/maker/common-data-service/index
+              topicHref: /powerapps/maker/index
               items:
-                - name: Developer
+                - name: Common Data Service
                   tocHref: /powerapps/developer/common-data-service/
-                  topicHref: /powerapps/developer/common-data-service/index
+                  topicHref: /powerapps/maker/common-data-service/index
                   items:
-                    - name: Служба организации
-                      tocHref: /powerapps/developer/common-data-service/org-service/
-                      topicHref: /powerapps/developer/common-data-service/org-service/index
-                    - name: Веб-API
-                      tocHref: /powerapps/developer/common-data-service/webapi/
-                      topicHref: /powerapps/developer/common-data-service/webapi/index
-        - name: Создание приложений
-          tocHref: /powerapps/developer/model-driven-apps/
-          topicHref: /powerapps/maker/index
-          items:
-            - name: Приложения на основе модели
+                    - name: Developer
+                      tocHref: /powerapps/developer/common-data-service/
+                      topicHref: /powerapps/developer/common-data-service/index
+                      items:
+                        - name: Служба организации
+                          tocHref: /powerapps/developer/common-data-service/org-service/
+                          topicHref: /powerapps/developer/common-data-service/org-service/index
+                        - name: Веб-API
+                          tocHref: /powerapps/developer/common-data-service/webapi/
+                          topicHref: /powerapps/developer/common-data-service/webapi/index
+            - name: Создание приложений
               tocHref: /powerapps/developer/model-driven-apps/
-              topicHref: /powerapps/maker/model-driven-apps/index
+              topicHref: /powerapps/maker/index
               items:
-                - name: Developer
+                - name: Приложения на основе модели
                   tocHref: /powerapps/developer/model-driven-apps/
-                  topicHref: /powerapps/developer/model-driven-apps/index
-        - name: Пошаговое изучение
-          tocHref: /powerapps/guided-learning/
-          topicHref: /powerapps/guided-learning/index
+                  topicHref: /powerapps/maker/model-driven-apps/index
+                  items:
+                    - name: Developer
+                      tocHref: /powerapps/developer/model-driven-apps/
+                      topicHref: /powerapps/developer/model-driven-apps/index
