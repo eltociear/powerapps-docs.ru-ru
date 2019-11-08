@@ -14,17 +14,17 @@ search.app:
 - D365CE
 - PowerApps
 - Powerplatform
-ms.openlocfilehash: 0f376d8e6b86a7abf65e744275fc4e90beabde43
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 1f1f0901f5ba641dfc4e183164d55225d3aeb05c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "61526501"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73537067"
 ---
 # <a name="view-analytics-reports-for-your-app"></a>Просмотр отчетов по аналитике приложений
 Вы создали приложение и предоставили к нему общий доступ в организации?  Вам интересно знать, сколько коллег используют его каждый день?
 
-Мы рады представить первый отчет по аналитике в PowerApps, доступный на сайте [web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Это **отчет об использовании приложения**.
+Представляем первый отчет аналитики PowerApps, который теперь доступен в [make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc); **отчет об использовании приложения**.
 
 С помощью отчета об использовании приложения вы можете отслеживать количество пользователей вашего приложения за последние 30 дней по дням, платформе устройства и расположению.
 
@@ -36,7 +36,7 @@ ms.locfileid: "61526501"
 ## <a name="where-do-i-find-my-apps-reports"></a>Где находятся отчеты о приложении?
 Чтобы просмотреть отчеты о приложении, выполните следующие действия.
 
-1. Перейдите на сайт [web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Перейдите по адресу [make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2. Выберите **Приложения** на панели навигации слева.
    
     ![Панель навигации слева](./media/app-analytics/left-nav.png)

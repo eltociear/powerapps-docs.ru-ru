@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 10/15/2019
 ms.author: v-dehaas
 ms.reviewer: kvivek
-ms.openlocfilehash: 10b4a92285c33727ad5a53b85666b07debb2434c
-ms.sourcegitcommit: 6984ce43cc5653ccb957219d2a687907ebb5520c
+ms.openlocfilehash: 3213692d769f0f0c1ad5095df59cd3dbc8ba5476
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72560979"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73541790"
 ---
 # <a name="use-ai-builder-in-powerapps"></a>Использование построителя искусственного интеллекта в PowerApps
 
 AI Builder — это новая возможность платформы управления питанием для групп с бизнес-опытом, позволяющую легко автоматизировать процессы и прогнозировать результаты для повышения производительности бизнеса. Искусственный интеллект — это готовое решение, объединяющее возможности Microsoft AI с точки зрения и нажатия кнопки и интегрированного в PowerApps и Microsoft Flow. Дополнительные сведения: [что такое построитель AI?](/ai-builder/)
 
-Модели AI можно создавать с помощью нового параметра **AI Builder** в левой области навигации [Web.powerapps.com](https://web.powerapps.com). Дополнительные сведения: [типы моделей AI](/ai-builder/model-types)
+Модели AI можно создавать с помощью нового параметра **AI Builder** в левой области навигации [make.powerapps.com](https://make.powerapps.com). Дополнительные сведения: [типы моделей AI](/ai-builder/model-types)
 
 ![Построитель искусственного интеллекта в PowerApps](media/ai-builder.png "Построитель искусственного интеллекта в PowerApps")
 

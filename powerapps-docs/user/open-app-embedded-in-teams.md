@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dc13524f4f567365cdcb6bf9898b62fcb6eac4c4
-ms.sourcegitcommit: 7a96b693e320d0fced7a82987c012b80002cfd84
+ms.openlocfilehash: 62a7166f228545f2a200570186ee23c868650b79
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70848232"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543494"
 ---
 # <a name="add-an-app-to-microsoft-teams"></a>Добавление приложения в Microsoft Teams
 
@@ -29,7 +29,7 @@ Microsoft Teams — это платформа для совместной ра�
 
 ![Приложение, внедренное в Microsoft Teams](./media/open-app-embedded-in-teams/embedded-app.png)
 
-Если вы не зарегистрированы в PowerApps, перед началом работы [пройдите бесплатную регистрацию](https://web.powerapps.com/signup?redirect=marketing&email=).
+Если вы не зарегистрированы в PowerApps, перед началом работы [пройдите бесплатную регистрацию](https://make.powerapps.com/signup?redirect=marketing&email=).
 
 ## <a name="prerequisites"></a>Технические условия
 
@@ -37,7 +37,7 @@ Microsoft Teams — это платформа для совместной ра�
 
 ## <a name="sign-in-to-powerapps"></a>Вход в PowerApps
 
-Войдите в PowerApps по адресу [https://web.powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+Войдите в PowerApps по адресу [https://make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## <a name="add-an-app"></a>Добавление приложения
 
@@ -84,7 +84,7 @@ Microsoft Teams — это платформа для совместной ра�
 
 * Приложения должны загружать содержимое, такое как изображения и PDF-файлы, через защищенное подключение (HTTPS).
 * Поддерживаются не все датчики, в том числе **Ускорение**, **Компас** и **Расположение**.
-* Поддерживаются только следующие форматы звука: AAC, H264 Single bitrate, OGG Vorbis и WAV.
+* Поддерживаются только эти звуковые форматы: AAC, H264, OGG Vorbis и WAV.
 
 ## <a name="clean-up-resources"></a>Очистка ресурсов
 

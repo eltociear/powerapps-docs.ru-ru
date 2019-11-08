@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 76241ae2e26752a98e32e7ad72c54780da3934ae
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: c5c620590400fc6fe276c8107c94d89b3daa42b9
+ms.sourcegitcommit: 6380b5ac248fc5d2f5d4a34af8831b4f7b6ef1aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71705310"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801083"
 ---
 # <a name="enhanced-user-experience-with-the-unified-interface-for-model-driven-apps"></a>Улучшенное взаимодействие с пользователем с единым интерфейсом для приложений на основе моделей 
 
@@ -29,8 +29,10 @@ ms.locfileid: "71705310"
 > [!div class="mx-imgBorder"]
 > ![Унифицированный интерфейс адаптируется к экрану](media/Reflow.png "Унифицированный интерфейс адаптируется к экрану")
 
+Общие сведения об Объединенном интерфейсе в приложениях, управляемых моделями, см. в этом видео: [Введение в единый интерфейс](https://www.youtube.com/watch?v=_VPOi_Iq6ko)
+
 > [!NOTE]
-> Устаревший веб-клиент будет устаревшим, и клиенты должны перейти на единый интерфейс до 1 октября 2020 г. Дополнительные сведения см. в [блоге: объявление временной шкалы для перехода к единому интерфейсу](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/). Дополнительные сведения о переходе см. в разделе [Быстрый запуск для перехода](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/transition-web-app).
+> Устаревший веб-клиент будет устаревшим, и клиенты должны перейти на единый интерфейс до 1 октября 2020 г. Дополнительные сведения см. в [блоге: объявление временной шкалы для перехода к единому интерфейсу](https://cloudblogs.microsoft.com/dynamics365/it/2019/09/10/announcing-the-timeline-to-move-to-unified-interface/). Дополнительные сведения о переходе см. в разделе [Быстрый запуск для перехода](https://docs.microsoft.com/powerapps/maker/model-driven-apps/transition-web-app).
 
 ## <a name="navigation"></a>Месяца
 

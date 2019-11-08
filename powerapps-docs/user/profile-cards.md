@@ -15,19 +15,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 67441e506ba2715a9994f6b81cd08426e37e0fc8
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 276c7d3cbf95947306fab768da8af3c4c66b33e0
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71950917"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73543374"
 ---
 # <a name="view-the-profile-card-for-a-contact-or-user"></a>Просмотр карточки профиля для контакта или пользователя
 
-Используйте карточку профиля для получения кратких сведений о контакте или пользователе. При выборе поля контакта или пользователя в приложениях, управляемых моделью, в Dynamics 365, таких как Dynamics 365 Sales и Dynamics 365, можно найти сведения, связанные с ними, на карте профиля. Дополнительные сведения о картах профилей см. [в разделе карты профилей в Office 365](https://support.office.com/en-us/article/Profile-cards-in-Office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501).
+Используйте карточку профиля для получения кратких сведений о контакте или пользователе. При выборе поля контакта или пользователя в приложениях, управляемых моделью, в Dynamics 365, таких как Dynamics 365 Sales и Dynamics 365, можно найти сведения, связанные с ними, на карте профиля. Дополнительные сведения о картах профилей см. [в разделе карты профилей в Office 365](https://support.office.com/article/Profile-cards-in-Office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501).
 
 > [!NOTE]
->  - Карта профиля доступна для сущности **контакта** и **пользователя** . Дополнительные сведения см. [в разделе Включение карты профиля (для администраторов)](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/enable-profile-card).
+>  - Карта профиля доступна для сущности **контакта** и **пользователя** . Дополнительные сведения см. [в разделе Включение карты профиля (для администраторов)](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-profile-card).
 >  - Карта профиля в Common Data Service не отображается, если для службы Office delve включена многофакторная идентификация в Azure Active Directory.
 
 ## <a name="view-a-contacts-profile"></a>Просмотр профиля контакта
@@ -62,7 +62,7 @@ ms.locfileid: "71950917"
 ### <a name="where-is-information-shown-in-the-profile-card-coming-from"></a>Где отображаются сведения, отображаемые в карточке профиля?
 Информация, отображаемая на карточке профиля контакта, извлекается из Common Data Service (а не Microsoft Exchange). Это означает, что контактные данные поступают из Dynamics 365.
 
-Сведения, отображаемые на карточке профиля пользователя, извлекаться из Office 365 (Azure Active Directory). Дополнительные сведения см. [в разделе карты профилей в Office 365 (раздел "Администратор")](https://support.office.com/en-us/article/Profile-cards-in-Office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501).
+Сведения, отображаемые на карточке профиля пользователя, извлекаться из Office 365 (Azure Active Directory). Дополнительные сведения см. [в разделе карты профилей в Office 365 (раздел "Администратор")](https://support.office.com/article/Profile-cards-in-Office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501).
 
 ### <a name="how-can-i-customize-the-fields-shown-on-the-profile-card"></a>Как настроить поля, отображаемые в карточке профиля?
 В настоящее время список полей, отображаемых в карточке профиля, не открыт для настройки.
