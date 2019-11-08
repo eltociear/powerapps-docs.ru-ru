@@ -1,11 +1,12 @@
-- name: 'Начало работы: Что такое PowerApps?'
-  href: ../powerapps-overview.md
+- name: Начало работы
   items:
+    - name: Что такое PowerApps?
+      href: ../powerapps-overview.md
     - name: Регистрация для получения 30-дневной пробной версии
       href: signup-for-powerapps.md
     - name: Регистрация для работы в рамках плана сообщества
       href: dev-community-plan.md
-    - name: Новые возможности
+    - name: Что нового?
       href: ../whats-new.md
 - name: Поиск и запуск приложений
   href: ../user/index.md
@@ -23,13 +24,15 @@
     - name: Из AppSource
       href: ../user/app-source.md
     - name: Использование приложений на основе модели
-      href: ../user/use-model-driven-apps.md
       items:
+        - name: Обзор
+          href: ../user/use-model-driven-apps.md
         - name: Единый интерфейс
           href: ../user/unified-interface.md
         - name: Навигация и основные сведения
-          href: ../user/navigation.md
           items:
+            - name: Обзор
+              href: ../user/navigation.md
             - name: Просмотр профиля
               href: ../user/view-your-user-profile.md
             - name: Поиск администратора или специалиста поддержки
@@ -814,8 +817,9 @@
         - name: Внедрение приложений на основе холста в другие приложения
           href: ./canvas-apps/embedding-sdk.md
 - name: Приложения на основе модели
-  href: ./model-driven-apps/model-driven-app-overview.md
   items:
+    - name: Основные сведения о приложениях на основе модели
+      href: ./model-driven-apps/model-driven-app-overview.md
     - name: Обзор примеров приложений
       href: ./model-driven-apps/overview-model-driven-samples.md
     - name: Создание первого приложения
@@ -1289,11 +1293,13 @@
     - name: 'Порталы PowerApps: вопросы и ответы'
       href: ./portals/faq.md
 - name: Common Data Service
-  href: ./common-data-service/data-platform-intro.md
   items:
+    - name: Что такое Common Data Service?
+      href: ./common-data-service/data-platform-intro.md
     - name: Работа с сущностями
-      href: ./common-data-service/entity-overview.md
       items:
+        - name: Обзор сущностей
+          href: ./common-data-service/entity-overview.md
         - name: Создание сущности
           href: ./common-data-service/data-platform-create-entity.md
         - name: Создание настраиваемой сущности с компонентами
