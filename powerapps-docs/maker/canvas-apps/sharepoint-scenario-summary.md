@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ed4b729926cc8a818f8c2d47b98656c91b934788
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 76d4a1ffdc569a3ccfc2567229c99136e744191a
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542485"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899294"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>Пошаговое руководство по реализации готового сценария интеграции SharePoint Online
 > [!NOTE]
-> Эта статья входит в серию руководств по использованию PowerApps, Microsoft Flow и Power BI совместно с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
+> Эта статья является частью серии руководств по использованию PowerApps, автоматизации Powering и Power BI с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
 
 В рамках этой серии руководств мы рассмотрели очень много тем — от создания приложений на основе холста и потоков до создания и внедрения отчетов в SharePoint. Мы надеемся, что вы многому научились и узнали об интеграции этих технологий. И теперь вы можете интегрировать приложения на основе холста, потоки и отчеты в SharePoint, исходя из своих потребностей. В завершение серии мы рассмотрим сценарий, на примере которого вы увидите, как взаимодействуют все компоненты.
 
@@ -155,13 +155,13 @@ ms.locfileid: "73542485"
     ![Письмо с оповещением из Power BI](./media/sharepoint-scenario-summary/09-06-04-email-powerbi.png)
 5. Ниже показана папка "Входящие" пользователя, включенного в поток оповещений о данных (в нашем примере это Артем Кузнецов).
    
-    ![Письмо с оповещением из Microsoft Flow](./media/sharepoint-scenario-summary/09-06-05-email-flow.png)
+    ![Оповещение по электронной почте от Power автоматизиру](./media/sharepoint-scenario-summary/09-06-05-email-flow.png)
 6. Теперь, когда у вас есть сведения о проектах в состоянии ожидания, при необходимости вы можете утвердить любой из них.
 
 На этом мы завершаем текущее пошаговое руководство и всю серию связанных руководств. Мы рекомендуем вам продолжить изучение материалов на следующих сайтах:
 
 * [PowerApps](https://www.powerapps.com/)
-* [Microsoft Flow](https://flow.microsoft.com)
+* [Автоматизация электропитания](https://flow.microsoft.com)
 * [Power BI](https://www.powerbi.com)
 * [Сообщество бизнес-пользователей](https://powerusers.microsoft.com/)
 * [SharePoint](https://sharepoint.microsoft.com)

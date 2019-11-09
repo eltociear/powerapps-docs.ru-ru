@@ -13,25 +13,25 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 89c22bec8972c0d58c559a09d4e9f0a8a8e3b7f5
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: b8495c22a703a267cd3ab888247e5cbf6ef6a81d
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61537583"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73900402"
 ---
 # <a name="set-up-data-alerts-for-the-power-bi-dashboard"></a>Настройка оповещений о данных для панели мониторинга Power BI
 > [!NOTE]
-> Эта статья входит в серию руководств по использованию PowerApps, Microsoft Flow и Power BI совместно с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
+> Эта статья является частью серии руководств по использованию PowerApps, автоматизации Powering и Power BI с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
 
 В этой задаче мы добавим в Power BI оповещение о проектах, для утверждения которых превышено время ожидания, и поток операций, выполняемых после этого оповещения. Дополнительные сведения об оповещениях см. в статье [Оповещения о данных в службе Power BI](https://docs.microsoft.com/power-bi/service-set-data-alerts).
 
-## <a name="step-1-create-an-alert"></a>Шаг 1. Создать оповещение
+## <a name="step-1-create-an-alert"></a>Шаг 1. Создание оповещения
 1. В службе Power BI откройте панель мониторинга, созданную в предыдущей задаче.
-2. На карте с числом нажмите кнопку с многоточием (**...**).
+2. На карте с числом нажмите кнопку с многоточием ( **...** ).
    
     ![Карта максимального числа дней в ожидании утверждения](./media/sharepoint-scenario-alerts-flow/07-01-01-tile-ellipsis.png)
-3. Выберите стрелку ![Значок колокольчика](./media/sharepoint-scenario-alerts-flow/icon-bell.png).
+3. Щелкните ![Значок колокольчика](./media/sharepoint-scenario-alerts-flow/icon-bell.png).
    
     ![Меню с плитками](./media/sharepoint-scenario-alerts-flow/07-01-02-tile-bell.png)
 4. В области справа нажмите кнопку **Добавить правило оповещения**.
@@ -43,12 +43,12 @@ ms.locfileid: "61537583"
 
 Сейчас оповещение не активируется, несмотря на то, что 56 превышает пороговое значение 25. Оповещение активируется во время обновления данных. Мы увидим это при [сквозном выполнении сценария](sharepoint-scenario-summary.md).
 
-При активации оповещения его автору отправляется сообщение электронной почты из службы Power BI. На следующем этапе вы узнаете, как отправлять дополнительные сообщения с помощью Microsoft Flow.
+При срабатывании оповещений Power BI отправляет сообщение электронной почты создателю оповещения, и мы покажем, как отправлять дополнительную почту с помощью Power автоматизиру, на следующем шаге.
 
-## <a name="step-2-create-a-flow-that-responds-to-the-alert"></a>Шаг 2. Создание последовательности, выполняемых после оповещения
+## <a name="step-2-create-a-flow-that-responds-to-the-alert"></a>Шаг 2. Создание потока операций, выполняемых после оповещения
 1. Войдите на веб-сайт flow.microsoft.com, выберите **Службы**, а затем — **Power BI**.
    
-    ![Power BI в Microsoft Flow](./media/sharepoint-scenario-alerts-flow/07-01-05-power-bi.png)
+    ![Power BI в Power автоматизирующие](./media/sharepoint-scenario-alerts-flow/07-01-05-power-bi.png)
 2. Выберите шаблон **Отправка электронного письма кому угодно при активации оповещения о данных Power BI**.
    
     ![Отправка сообщение электронной почты при активации оповещения о данных Power BI](./media/sharepoint-scenario-alerts-flow/07-01-06-alert-flow.png)

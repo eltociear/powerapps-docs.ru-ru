@@ -13,17 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 503ffa049ecd737cfd9e948c3e2af25c8cdd831d
-ms.sourcegitcommit: dbd922de8f2e97a478df64e7e9ba33b48574af5c
+ms.openlocfilehash: aa927559c13726bd2d780c7ce3841c5a53317c8f
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65088127"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899219"
 ---
 # <a name="create-a-canvas-app-to-manage-projects"></a>Создание приложения на основе холста для управления проектами
 > [!NOTE]
-> Эта статья входит в серию руководств по использованию PowerApps, Microsoft Flow и Power BI совместно с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
+> Эта статья является частью серии руководств по использованию PowerApps, автоматизации Powering и Power BI с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
 
 В этом примере мы выполним сборку приложения на основе холста с нуля. Это приложение позволяет пользователям назначать руководителей проектов и обновлять сведения о проектах. Хотя вы увидите некоторые элементы управления и формулы, используемые в первом приложении, сейчас вы самостоятельно создадите другие компоненты приложения. Так как это более сложная задача, выполняя ее, вы многому научитесь.
 
@@ -49,14 +48,14 @@ ms.PowerAppsDecimalTransform: true
 1. В PowerApps Studio щелкните **New** (Создать), а затем в разделе **Blank app** (Пустое приложение) — **Phone Layout** (Макет для телефона).
    
     ![Элементы управления "Пустое приложение" и "Макет для телефона"](./media/sharepoint-scenario-build-app/04-01-01-blank-phone-app.png)
-2. Щелкните **File** (Файл). Откроется вкладка **App settings** (Параметры приложения). Введите имя "Приложение для управления проектом".
+2. Щелкните **файл**, чтобы открыть вкладку **Параметры приложения** . Введите имя "приложение управления проектами".
    
     ![Ввод имени приложения](./media/sharepoint-scenario-build-app/04-01-02-app-name.png)
 3. Щелкните **Save as** (Сохранить как), убедитесь, что приложение будет сохранено в облако, а затем щелкните **Save** (Сохранить) в правом нижнем углу.
    
     ![Сохранение в облако](./media/sharepoint-scenario-build-app/04-01-03-save-to-cloud.png)
 
-4. Выберите стрелку ![Значок возврата в приложение](./media/sharepoint-scenario-build-app/icon-back-to-app.png) для возврата в приложение.
+4. Щелкните ![Значок возврата в приложение](./media/sharepoint-scenario-build-app/icon-back-to-app.png) для возврата в приложение.
 
 ### <a name="add-four-screens-to-the-app"></a>Добавление четырех экранов в приложение
 На этом этапе мы создадим четыре пустых экрана для приложения. Мы будем использовать разные макеты экранов; у каждого из них свое назначение. Мы добавим эти экраны позже.
@@ -79,7 +78,7 @@ ms.PowerAppsDecimalTransform: true
    1. Выберите **NewScreen** (Создать экран), а затем — **Scrollable screen** (Окно с прокруткой). Назовите экран **AssignManager** (Назначение руководителя).
    2. Щелкните **NewScreen** (Создать экран), а затем — **List screen** (Окно списка). Назовите экран **ViewProjects** (Просмотр проектов).
    3. Щелкните **NewScreen** (Создать экран), а затем — **Form screen** (Окно формы). Назовите экран **UpdateDetails** (Обновление сведений).
-4. Нажмите кнопку с многоточием (**...** ) рядом с **Screen1** (Экран 1), а затем нажмите кнопку **Delete** (Удалить).
+4. Нажмите кнопку с многоточием ( **...** ) рядом с **Screen1** (Экран 1), а затем нажмите кнопку **Delete** (Удалить).
    
     ![Удаление экрана](./media/sharepoint-scenario-build-app/04-01-04a-delete-screen.png)
 
@@ -88,7 +87,7 @@ ms.PowerAppsDecimalTransform: true
 ![Приложение с экранами](./media/sharepoint-scenario-build-app/04-01-05-all-screens.png)
 
 ## <a name="step-2-connect-to-a-sharepoint-list"></a>Шаг 2. Подключение к списку SharePoint
-На этом шаге мы будем подключаться к **сведения о проекте** списка SharePoint. Мы используем только один список в этом приложении, но вы можете легко подключиться и к другим, чтобы расширить свое приложение.
+На этом шаге мы подключимся к списку SharePoint **сведения о проекте** . Мы используем только один список в этом приложении, но вы можете легко подключиться и к другим, чтобы расширить свое приложение.
 
 1. На панели навигации слева щелкните экран **SelectTask** (Выбор задачи).
 2. В области справа нажмите кнопку **Add data source** (Добавить источник данных).
@@ -114,7 +113,7 @@ ms.PowerAppsDecimalTransform: true
    
     ![Вкладка "Источники данных"](./media/sharepoint-scenario-build-app/04-02-06-data-sources.png)
 
-## <a name="step-3-build-the-selecttask-screen"></a>Шаг 3. Создание экрана SelectTask
+## <a name="step-3-build-the-selecttask-screen"></a>Шаг 3. Создание экрана "SelectTask" (Выбор задачи)
 На этом этапе мы определим способ перехода к другим экранам в приложении, используя элементы управления, формулы и параметры форматирования, доступные в PowerApps.
 
 ### <a name="update-the-title-and-insert-introductory-text"></a>Изменение заголовка и вставка вводного текста
@@ -131,7 +130,7 @@ ms.PowerAppsDecimalTransform: true
 
    * свойство **Size** = **18**;
 
-   * свойство **Text** = **"Щелкните, чтобы продолжить..."**.
+   * свойство **Text** = **"Щелкните, чтобы продолжить..."** .
      
      ![Изменение текста метки](./media/sharepoint-scenario-build-app/04-03-04-text-updated.png)
 
@@ -141,18 +140,18 @@ ms.PowerAppsDecimalTransform: true
     ![Добавление кнопки](./media/sharepoint-scenario-build-app/04-03-05-button-default.png)
 2. В строке формул определите следующие свойства для кнопки:
    
-   * свойство **OnSelect** = **Navigate(AssignManager; Fade)** — запустив приложение и нажав на эту кнопку, вы перейдете на второй экран в приложении (так переход будет незаметным);
+   * свойство **OnSelect** = **Navigate(AssignManager, Fade)** — запустив приложение и нажав на эту кнопку, вы перейдете на второй экран в приложении (так переход будет незаметным);
 
-   * свойство **Text** = **"Назначить руководителя"**.
+   * свойство **Text** = **"Назначить руководителя"** .
 
 3. Измените размер кнопки, чтобы вместить текст.
    
     ![Изменение текста кнопки](./media/sharepoint-scenario-build-app/04-03-06-button-updated.png)
 4. Вставьте еще одну кнопку со следующими свойствами:
    
-   * свойство **OnSelect** = **Navigate(ViewProjects; Fade)**;
+   * свойство **OnSelect** = **Navigate(ViewProjects, Fade)** ;
 
-   * свойство **Text** = **"Обновить сведения"**.
+   * свойство **Text** = **"Обновить сведения"** .
      
      ![Изменение текста кнопки](./media/sharepoint-scenario-build-app/04-03-08-buttons-final.png)
      
@@ -164,13 +163,13 @@ ms.PowerAppsDecimalTransform: true
 
 1. Щелкните экран **SelectTask** (Выбор задачи). Приложение всегда запускается в PowerApps Studio с выбранным экраном в режиме предварительного просмотра.
 
-2. Выберите стрелку ![Значок запуска приложения](./media/sharepoint-scenario-build-app/icon-run-arrow.png) в правом верхнем углу, чтобы запустить приложение.
+2. Щелкните ![Значок запуска приложения](./media/sharepoint-scenario-build-app/icon-run-arrow.png) в правом верхнем углу, чтобы запустить приложение.
 
 3. Нажмите на одну из кнопок, чтобы перейти на другой экран.
 
-4. Выберите стрелку ![Значок закрытия предварительного просмотра приложения](./media/sharepoint-scenario-build-app/icon-close-preview.png) в правом верхнем углу, чтобы закрыть приложение.
+4. Щелкните ![Значок закрытия предварительного просмотра приложения](./media/sharepoint-scenario-build-app/icon-close-preview.png) в правом верхнем углу, чтобы закрыть приложение.
 
-## <a name="step-4-build-the-assignmanager-screen"></a>Шаг 4. Создание экрана AssignManager
+## <a name="step-4-build-the-assignmanager-screen"></a>Шаг 4. Создание экрана "AssignManager" (Назначение руководителя)
 На этом этапе с помощью коллекции отобразим все проекты, которые утверждены и которым еще не назначен руководитель. Мы добавим другие элементы управления, чтобы вы могли назначать руководителя.
 
 > [!NOTE]
@@ -190,7 +189,7 @@ ms.PowerAppsDecimalTransform: true
 
    * свойство **Size** = **18**;
 
-   * свойство **Text** — **"Выберите проект, а затем назначьте руководителя"**.
+   * свойство **Text** — **"Выберите проект, а затем назначьте руководителя"** .
      
      ![Макет экрана "Назначение руководителя"](./media/sharepoint-scenario-build-app/04-04-01-layout.png)
 
@@ -208,7 +207,7 @@ ms.PowerAppsDecimalTransform: true
 
    * свойство **Height** = **40**;
 
-   * свойство **OnSelect** = **Navigate(SelectTask; Fade)**;
+   * свойство **OnSelect** = **Navigate(SelectTask, Fade)** ;
 
    * свойство **Width** = **40**.
      
@@ -234,7 +233,7 @@ ms.PowerAppsDecimalTransform: true
 
    * свойство **BorderStyle** = **Dotted**;
 
-   * свойство **Items** = **Filter('Project Details'; PMAssigned="Unassigned")**. В коллекции отображаются только те проекты, которым не назначен руководитель.
+   * свойство **Items** = **Filter('Project Details', PMAssigned="Unassigned")** . В коллекции отображаются только те проекты, которым не назначен руководитель.
      
      ![Коллекция с текстом из списка](./media/sharepoint-scenario-build-app/04-04-06-gallery-updated.png)
 
@@ -244,7 +243,7 @@ ms.PowerAppsDecimalTransform: true
 
    * **Status;**
 
-   * **Title;**
+   * **Title.**
      
      ![Поля коллекции](./media/sharepoint-scenario-build-app/04-04-07-gallery-fields.png)
 
@@ -258,7 +257,7 @@ ms.PowerAppsDecimalTransform: true
 
 ### <a name="change-the-color-of-an-item-if-its-selected"></a>Изменение цвета элемента при его выборе
 
-1. Выберите коллекцию, а затем присвойте свойству **TemplateFill** значение **If (ThisItem.IsSelected=true, Orange, White)**.
+1. Выберите коллекцию, а затем присвойте свойству **TemplateFill** значение **If (ThisItem.IsSelected=true, Orange, White)** .
 
 2. Выберите элемент в коллекции. Теперь экран должен выглядеть приблизительно так:
    
@@ -272,13 +271,13 @@ ms.PowerAppsDecimalTransform: true
    
    * свойство **Size** = **20**;
 
-   * свойство **Text** = **"Руководитель:"**.
+   * свойство **Text** = **"Руководитель:"** .
    
    ![Добавление метки "Руководитель"](./media/sharepoint-scenario-build-app/04-04-09-controls-text.png)
 
 3. На вкладке **Insert** (Вставка) щелкните **Text** (Текст), а затем — **Text input** (Ввод текста). Перетащите поле ввода текста под коллекцию в центр. Определите следующие свойства для раскрывающегося списка:
    
-   * свойство **Default** = **""**;
+   * свойство **Default** = **""** ;
 
    * свойство **Height** = **60**;
 
@@ -292,13 +291,13 @@ ms.PowerAppsDecimalTransform: true
    
    * свойство **Height** = **60**;
 
-   * **OnSelect** свойство = **Patch ('Project Details'; LookUp ('Project Details'; ID = Gallery1.Selected.ID); {PMAssigned: TextInput1.Text})**. См. [подробные сведения о формулах](#formula-deep-dive).
+   * свойство **OnSelect** = **Patch('Project Details', LookUp('Project Details', ID = Gallery1.Selected.ID), {PMAssigned: TextInput1.Text})** . См. [подробные сведения о формулах](#formula-deep-dive).
 
    * Эта формула обновляет список **Project Details** (Сведения о проекте), определяя значение для поля "PMAssigned".
 
    * свойство **Size** = **20**;
 
-   * свойство **Text** — **"ОК"**;
+   * свойство **Text** — **"ОК"** ;
 
    * свойство **Width** — **80**.
    
@@ -308,7 +307,7 @@ ms.PowerAppsDecimalTransform: true
 
 ![Готовый экран "AssignManager" (Назначение руководителя)](./media/sharepoint-scenario-build-app/04-04-12-complete.png)
 
-## <a name="step-5-build-the-viewprojects-screen"></a>Шаг 5. Создание экрана ViewProjects
+## <a name="step-5-build-the-viewprojects-screen"></a>Шаг 5. Создание экрана "ViewProjects" (Просмотр проектов)
 На этом этапе мы изменим свойства коллекции на экране **ViewProjects** (Просмотр проектов). Эта галерея содержит элементы из списка **Project Details** (Сведения о проекте). Выберите элемент на экране, а затем измените сведения на экране **UpdateDetails** (Обновление сведений).
 
 1. На панели навигации слева щелкните экран **ViewProjects** (Просмотр проектов).
@@ -325,9 +324,9 @@ ms.PowerAppsDecimalTransform: true
    
     ![Коллекция с текстом по умолчанию](./media/sharepoint-scenario-build-app/04-04-04b-gallery-default.png)
 
-5. Нажмите на кнопку ![Значок обновления](./media/sharepoint-scenario-build-app/icon-refresh.png), чтобы обновить сведения, и присвойте свойству **OnSelect** значение **Refresh('Project Details')**.
+5. Нажмите на кнопку ![Значок обновления](./media/sharepoint-scenario-build-app/icon-refresh.png), чтобы обновить сведения, и присвойте свойству **OnSelect** значение **Refresh('Project Details')** .
 
-6. Нажмите на кнопку ![Значок добавления нового элемента](./media/sharepoint-scenario-build-app/icon-add-item.png), чтобы создать элемент, и присвойте свойству **OnSelect** значение **NewForm(EditForm1);; Navigate(UpdateDetails; ScreenTransition.None)**.
+6. Нажмите на кнопку ![Значок добавления нового элемента](./media/sharepoint-scenario-build-app/icon-add-item.png), чтобы создать элемент, и присвойте свойству **OnSelect** значение **NewForm(EditForm1); Navigate(UpdateDetails, ScreenTransition.None)** .
 
 ### <a name="add-a-back-arrow-to-return-to-the-selecttask-screen"></a>Добавление стрелки "Назад" для возврата на экран "SelectTask" (Выбор задачи)
 
@@ -339,15 +338,15 @@ ms.PowerAppsDecimalTransform: true
    
     ![Кнопка "Назад"](./media/sharepoint-scenario-build-app/04-05-04-left-arrow-v.png)
    
-    Для кнопки также доступны все свойства, включая свойство **OnSelect** со значением **Navigate(SelectTask; Fade)**.
+    Для кнопки также доступны все свойства, включая свойство **OnSelect** со значением **Navigate(SelectTask, Fade)** .
 
 ### <a name="change-the-data-source-for-the-browsegallery1-gallery"></a>Изменение источника данных для коллекции BrowseGallery1
 
-1. Выберите коллекцию **BrowseGallery1** и присвойте свойству **Items** коллекции значение **SortByColumns(Filter('Project Details'; StartsWith(Title; TextSearchBox1.Text)); "Title"; If(SortDescending1; Descending; Ascending))**.
+1. Выберите коллекцию **BrowseGallery1** и присвойте свойству **Items** коллекции значение **SortByColumns(Filter('Project Details', StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))** .
    
     Так вы определяете для списка **Project Details** (Сведения о проекте) источник данных коллекции и назначаете поле **Title** для поиска и сортировки.
 
-2. Выберите в первом элементе коллекции стрелку ![Значок со стрелкой для перехода к сведениям](./media/sharepoint-scenario-build-app/icon-details-arrow.png) и присвойте свойству **OnSelect** значение **Navigate(UpdateDetails; None)**.
+2. Выберите в первом элементе коллекции стрелку ![Значок со стрелкой для перехода к сведениям](./media/sharepoint-scenario-build-app/icon-details-arrow.png) и присвойте свойству **OnSelect** значение **Navigate(UpdateDetails, None)** .
    
     ![ Коллекция "ViewProjects" (Просмотр проектов) — первый выбранный элемент](./media/sharepoint-scenario-build-app/04-05-05b-gallery-arrow-v.png)
 
@@ -357,7 +356,7 @@ ms.PowerAppsDecimalTransform: true
 
    * **PMAssigned;**
 
-   * **Title;**
+   * **Title.**
      
      ![Поля коллекции](./media/sharepoint-scenario-build-app/04-05-06-gallery-fields.png)
      
@@ -365,7 +364,7 @@ ms.PowerAppsDecimalTransform: true
      
      ![Готовый экран "ViewProject" (Просмотр проектов)](./media/sharepoint-scenario-build-app/04-05-07-viewprojects-final.png)
 
-## <a name="step-6-build-the-updatedetails-screen"></a>Шаг 6. Создание экрана UpdateDetails
+## <a name="step-6-build-the-updatedetails-screen"></a>Шаг 6. Создание экрана "UpdateDetails" (Обновление сведений)
 На этом этапе мы подключим форму редактирования на экране **UpdateDetails** (Обновление сведений) к источнику данных, а затем изменим свойства и поля. На этом экране можно изменить сведения о проекте, выбранном на экране **ViewProjects** (Просмотр проектов).
 
 1. На панели навигации слева щелкните экран **UpdateDetails** (Обновление сведений).
@@ -376,7 +375,7 @@ ms.PowerAppsDecimalTransform: true
 
 4. Определите следующие свойства для формы:
    
-   * свойство **DataSource** = **'Project Details'**;
+   * свойство **DataSource** = **'Project Details'** ;
 
    * свойство **Item** = **BrowseGallery1.Selected**.
 
@@ -397,9 +396,9 @@ ms.PowerAppsDecimalTransform: true
    * **ActualDays**
      
      ![Изменение полей формы](./media/sharepoint-scenario-build-app/04-06-03-edit-fields.png)
-6. Выберите кнопку отмены ![Значок отмены](./media/sharepoint-scenario-build-app/icon-cancel.png) и присвойте свойству **OnSelect** значение **ResetForm(EditForm1);; Back()**.
+6. Выберите кнопку отмены ![Значок отмены](./media/sharepoint-scenario-build-app/icon-cancel.png) и присвойте свойству **OnSelect** значение **ResetForm(EditForm1); Back()** .
 
-7. Выберите кнопку ![Значок с галочкой](./media/sharepoint-scenario-build-app/icon-check-mark.png), чтобы сохранить изменения, и присвойте свойству **OnSelect** значение **SubmitForm(EditForm1)**. Так как мы используем такой элемент управления, как форма редактирования, можно использовать **Submit()**, вместо **Patch()** как это делалось ранее.
+7. Выберите кнопку ![Значок с галочкой](./media/sharepoint-scenario-build-app/icon-check-mark.png), чтобы сохранить изменения, и присвойте свойству **OnSelect** значение **SubmitForm(EditForm1)** . Так как мы используем такой элемент управления, как форма редактирования, можно использовать **Submit()** , вместо **Patch()** как это делалось ранее.
 
 Готовый экран должен выглядеть приблизительно так (если поля пустые, убедитесь, что на экране **ViewProjects** (Просмотр проектов) выбран нужный элемент):
 
@@ -413,7 +412,7 @@ ms.PowerAppsDecimalTransform: true
    
     ![PowerApps в средстве запуска приложений Office 365](./media/sharepoint-scenario-build-app/04-07-02a-waffle.png)
 
-2. В PowerApps нажмите на кнопку с многоточием (**...** ) рядом с **приложением для управления проектами**, а затем — на кнопку **Open** (Открыть).
+2. В PowerApps нажмите на кнопку с многоточием ( **...** ) рядом с **приложением для управления проектами**, а затем — на кнопку **Open** (Открыть).
    
     ![Выбор приложения для управления проектами](./media/sharepoint-scenario-build-app/04-07-02b-select-app.png)
 
@@ -497,7 +496,7 @@ ms.PowerAppsDecimalTransform: true
 ## <a name="formula-deep-dive"></a>Подробные сведения о формулах
 Это второй раздел с дополнительными сведениями о формулах PowerApps. В первом разделе мы рассмотрели одну из формул, создаваемых в PowerApps для настройки коллекции обзора в приложении с тремя экранами. В этом разделе мы рассмотрим формулу, которая используется для настройки экрана **AssignManager** (Назначение руководителя) нашего второго приложения. Формула выглядит так:
 
-**Patch ('Project Details'; LookUp ('Project Details'; ID = Gallery1.Selected.ID); {PMAssigned: TextInput1.Text} )**
+**Patch (' сведения о проекте ', уточняющий запрос (' сведения о проекте ', ID = Gallery1.Selected.ID), {Пмассигнед: TextInput1. Text})**
 
 Для чего же используется эта формула? Когда вы выбираете элемент в коллекции и нажимаете кнопку **ОК**, формула обновляет список **Project Details** (Сведения о проекте), присваивая столбцу **PMAssigned** значение, указанное в поле ввода текста. Для этого в формуле используются следующие функции:
 

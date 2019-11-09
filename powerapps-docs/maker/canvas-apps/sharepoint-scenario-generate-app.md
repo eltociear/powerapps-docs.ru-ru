@@ -13,17 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c9c7e58c8127b1c2784e0b1d79e78a1cb9478054
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 9bfd103d2f8e6503e2897855a0d424807b9573e6
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321207"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899498"
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>Создание приложения на основе холста для обработки запросов проекта
 > [!NOTE]
-> Эта статья входит в серию руководств по использованию PowerApps, Microsoft Flow и Power BI совместно с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
+> Эта статья является частью серии руководств по использованию PowerApps, автоматизации Powering и Power BI с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
 
 Теперь, когда списки SharePoint подключены, можно создать и настроить первое приложение. PowerApps интегрируется с SharePoint, что позволяет легко создавать базовые *приложения с тремя экранами* непосредственно из списка. С помощью этого приложения вы сможете не только просматривать сводные и подробные сведения о каждом элементе списка, а также обновлять и создавать элементы. Если вы создаете приложение непосредственно из списка, оно отображается как *представление* этого списка. Такое приложение можно запустить в браузере или на мобильном телефоне.
 
@@ -78,7 +77,7 @@ ms.PowerAppsDecimalTransform: true
 
    * **Requestor.**
 
-   * **Title;**
+   * **Title.**
 
      ![Поля коллекции](./media/sharepoint-scenario-generate-app/02-03-02-gallery-fields.png)
 
@@ -86,7 +85,7 @@ ms.PowerAppsDecimalTransform: true
    
     ![Свойство Items](./media/sharepoint-scenario-generate-app/02-03-03-items.png)
 
-6. Вставьте формулу **SortByColumns(Filter('Project Requests'; StartsWith(Title; TextSearchBox1.Text)); "Title"; If(SortDescending1; Descending; Ascending))**.
+6. Вставьте формулу **SortByColumns(Filter('Project Requests', StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))** .
    
     ![Строка формул](./media/sharepoint-scenario-generate-app/02-03-04-formula.png)
    
@@ -94,7 +93,7 @@ ms.PowerAppsDecimalTransform: true
 
 6. Откройте меню **File** (Файл) и выберите **Save** (Сохранить). Щелкните ![Значок возврата к приложению](./media/sharepoint-scenario-generate-app/icon-back-to-app.png), чтобы вернуться к приложению.
 
-## <a name="step-4-review-the-apps-details-screen-and-edit-screen"></a>Шаг 4. Просмотрите экран сведений приложения и экран редактирования
+## <a name="step-4-review-the-apps-details-screen-and-edit-screen"></a>Шаг 4. Просмотр экрана сведений и редактирования в приложении
 1. Выберите экран сведений.
    
     Здесь используется другой макет экрана, состоящий из *формы просмотра* для отображения сведений об элементе, выбранном в коллекции. Также в нем содержатся элементы управления, с помощью которых можно отредактировать и удалить элементы списка или вернуться к экрану обзора.
@@ -107,7 +106,7 @@ ms.PowerAppsDecimalTransform: true
 
     ![Форма редактирования](./media/sharepoint-scenario-generate-app/02-04-03-edit.png)
 
-## <a name="step-5-run-the-app-from-the-list"></a>Шаг 5. Запустите приложение из списка
+## <a name="step-5-run-the-app-from-the-list"></a>Шаг 5. Запуск приложения из списка
 
 1. В списке **Project Requests** (Запросы проекта) выберите **All Items** (Все элементы) и **Приложение для запросов проектов**.
    
@@ -120,7 +119,7 @@ ms.PowerAppsDecimalTransform: true
    
     ![Первый элемент коллекции](./media/sharepoint-scenario-generate-app/02-05-04-first-item.png)
 
-4. Выберите стрелку ![Значок редактирования с изображением карандаша](./media/sharepoint-scenario-generate-app/icon-pencil.png) для изменения элемента.
+4. Щелкните ![Значок редактирования с изображением карандаша](./media/sharepoint-scenario-generate-app/icon-pencil.png) для изменения элемента.
 
 5. Обновите данные в поле **Description**. Для этого замените последнее слово group словом team и щелкните ![Значок с галочкой](./media/sharepoint-scenario-generate-app/icon-check-mark.png).
    

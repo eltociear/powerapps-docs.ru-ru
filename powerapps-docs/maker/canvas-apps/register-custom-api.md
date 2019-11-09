@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 206a28c15b4bb23d46acb0a707bda5072a43cced
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 7beb08afe2e7a6fa68f5017ff70f95f5dcee75f8
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61540159"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899832"
 ---
 # <a name="custom-connectors-for-canvas-apps"></a>Пользовательские соединители для приложений на основе холста
 
-Вы можете создавать рабочие процессы и приложения на основе холста с помощью [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps), [Microsoft Flow](https://flow.microsoft.com) и [PowerApps](https://powerapps.microsoft.com) без необходимости писать код. Эти службы включают [более 180 соединителей](https://docs.microsoft.com/connectors/), которые помогут вам интегрировать свои данные и бизнес-процессы. Они предназначены для служб и продуктов Майкрософт и других служб, таких как GitHub, Salesforce и Twitter.
+Без написания кода можно создавать рабочие процессы и приложения Canvas с помощью [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps), [автоматизации](https://flow.microsoft.com)и [PowerApps](https://powerapps.microsoft.com). Эти службы включают [более 180 соединителей](https://docs.microsoft.com/connectors/), которые помогут вам интегрировать свои данные и бизнес-процессы. Они предназначены для служб и продуктов Майкрософт и других служб, таких как GitHub, Salesforce и Twitter.
 
 Однако иногда требуется отправлять вызовы к API-интерфейсам, службам и системам, которые недоступны в виде готовых соединителей. Для поддержки более специализированных сценариев вы можете создавать *пользовательские соединители* с собственными триггерами и действиями. Мы предоставляем полный набор базовых и дополнительных руководств по пользовательским соединителям на соответствующем сайте с документацией. Мы рекомендуем начать с [обзора пользовательского соединителя](https://docs.microsoft.com/connectors/custom-connectors/), но можно также перейти непосредственно к следующим интересующим вас разделам:
 

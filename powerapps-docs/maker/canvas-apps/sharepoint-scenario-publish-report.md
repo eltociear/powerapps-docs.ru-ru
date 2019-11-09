@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 43e95b88cdf305e7c4b768def83a6b41fa0fcae7
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 4bb09a9aefd3db1981727642d766f308ad9d0ede
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63319343"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73900297"
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>Публикация отчета о проекте и создание панели мониторинга в Power BI
 > [!NOTE]
-> Эта статья входит в серию руководств по использованию PowerApps, Microsoft Flow и Power BI совместно с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
+> Эта статья является частью серии руководств по использованию PowerApps, автоматизации Powering и Power BI с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
 
 В этом руководстве мы опубликуем набор данных и отчет в службе Power BI, а также создадим панель мониторинга на основе отчета. В большинстве случаев отчет включает множество визуализаций, из которых только часть используется на панели мониторинга. В этом примере мы добавим на панель мониторинга четыре визуализации.
 
@@ -42,11 +42,11 @@ ms.locfileid: "63319343"
 5. Опубликовав отчет, перейдите по ссылке **Открыть project-analysis.pbx в Power BI**.
    
     ![Публикация выполнена](./media/sharepoint-scenario-publish-report/06-01-05-open-report.png)
-6. Служба Power BI загрузит отчет в браузер. Если панель навигации слева не развернута, откройте меню в левом верхнем углу **(а)**.
+6. Служба Power BI загрузит отчет в браузер. Если панель навигации слева не развернута, откройте меню в левом верхнем углу **(а)** .
    
     ![Отчет в службе Power BI](./media/sharepoint-scenario-publish-report/06-01-06-service-report.png)
    
-    Как видите, после публикации отчета в Power BI Desktop загружается набор **(г)** и отчет **(в)**. Панели мониторинга создаются в службе, а не приложении Power BI Desktop. В этой рабочей области еще нет панелей мониторинга **(б)**. Скоро мы создадим ее.
+    Как видите, после публикации отчета в Power BI Desktop загружается набор **(г)** и отчет **(в)** . Панели мониторинга создаются в службе, а не приложении Power BI Desktop. В этой рабочей области еще нет панелей мониторинга **(б)** . Скоро мы создадим ее.
 
 ## <a name="step-2-configure-credentials-for-refresh"></a>Шаг 2. Настройка учетных данных для обновления
 1. В правом верхнем углу службы щелкните ![Значок с шестеренкой](./media/sharepoint-scenario-publish-report/icon-gear.png) и выберите **Параметры**.

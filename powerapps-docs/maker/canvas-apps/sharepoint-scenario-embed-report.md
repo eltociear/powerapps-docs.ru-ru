@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 92ae77237064d28e3070f7e7bc9cb94c4493a3c6
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 1ab23d8b71d36346d2013ac3b988eb2d058e2324
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321224"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73898434"
 ---
 # <a name="embed-the-power-bi-project-report-in-sharepoint-online"></a>Внедрение отчета о проекте Power BI в SharePoint Online
 > [!NOTE]
-> Эта статья входит в серию руководств по использованию PowerApps, Microsoft Flow и Power BI совместно с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
+> Эта статья является частью серии руководств по использованию PowerApps, автоматизации Powering и Power BI с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
 
 Теперь мы внедрим отчет Power BI на тот же веб-сайт SharePoint Online, где размещены два наших списка. Power BI поддерживает разные способы внедрения, включая интеграцию непосредственно в страницы SharePoint для мобильных представлений и веб-представлений.
 
@@ -60,7 +60,7 @@ ms.locfileid: "63321224"
    
     ![Завершение внедрения отчета](./media/sharepoint-scenario-embed-report/08-01-09-report-complete.png)
 
-## <a name="step-3-grant-access-to-the-report"></a>Шаг 3. Предоставьте доступ к отчету.
+## <a name="step-3-grant-access-to-the-report"></a>Шаг 3. Предоставление доступа к отчету.
 Если вы, как и рекомендуется, используете группы Office 365, убедитесь, что пользователи, которым необходим доступ, являются членами рабочей области группы в службе Power BI. Так они смогут просматривать содержимое группы. Дополнительные сведения см. в разделе [Совместная работа в рабочей области приложения Power BI](https://docs.microsoft.com/power-bi/service-collaborate-power-bi-workspace).
 
 На этом мы завершим работу в Power BI для текущего сценария. Мы начали с извлечения данных из списков SharePoint в Power BI и завершили полный цикл внедрением отчета Power BI назад в SharePoint.

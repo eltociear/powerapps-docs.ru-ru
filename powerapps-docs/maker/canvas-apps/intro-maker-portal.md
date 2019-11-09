@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f4babe6356ab0be34b6b08a3d158462b58cbb0cd
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 06dad46643a3de8b8727d890865c9b6f847a825f
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541232"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899234"
 ---
 # <a name="sign-in-to-powerapps-for-the-first-time"></a>Вход в PowerApps в первый раз
 
@@ -121,5 +121,5 @@ ms.locfileid: "73541232"
 Расширьте функциональные возможности своих приложений с помощью следующих задач:
 
 - Управление сущностями, наборами параметров и интеграцией данных в [Common Data Service](../common-data-service/data-platform-intro.md).
-- Настройка бизнес-логики в [Microsoft Flow](https://docs.microsoft.com/flow/getting-started).
+- Настройка бизнес-логики в [Power Автоматизация](https://docs.microsoft.com/flow/getting-started).
 - Создание, упаковка и обслуживание [решений](../../developer/common-data-service/introduction-solutions.md).

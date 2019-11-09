@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 040ba26d486cb16830bfd895f1c09a4e273cfa07
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: f60db0449a163c83691658095b15f41083316c91
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994777"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899185"
 ---
 # <a name="powerapps-webinar-listing"></a>Список вебинаров PowerApps #
 Эти вебинары помогут вам использовать возможности и функции Microsoft PowerApps. Вебинары будут доступны по запросу после трансляции. Обратите внимание, что в некоторых случаях необходимо будет повторно ввести сведения о регистрации, после чего вы получите ссылку на запись по электронной почте. 
@@ -70,7 +70,7 @@ ms.locfileid: "71994777"
 **Администрирование PowerApps | Часто задаваемые вопросы**
 <br>Автор: Манас Махешвари (Manas Maheshwari) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Administration-FAQ/m-p/127369#M44)
 
-@no__t — 0Inside приложение универсального аудита: Узнайте, какие возможности PowerApps и Flow поддерживаются Пол Калмси @ no__t-0
+**Возможности приложения Universal Audit. Узнайте о возможностях PowerApps и Flow с Полом Кульмзее (Paul Culmsee)**
 <br>Пол Кульмзее (Paul Culmsee) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Inside-the-Universal-Audit-App-See-what-PowerApps-and-Flow-are/m-p/127370#M45)
 
 ## <a name="advanced-webinar-series"></a>Серии вебинаров для продвинутых пользователей ##
@@ -90,7 +90,7 @@ ms.locfileid: "71994777"
 <br>Автор: Давид ван Херден (Dawid van Heerden) [Смотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-PowerApps-and-Flow-for-Business-Process-Management/m-p/116907)
 
 ### <a name="connector-series"></a>Серия о соединителях ###
-**Оптимизация соединителей в PowerApps и Microsoft Flow**
+**Оптимизация соединителей в PowerApps и Power автоматизирующие**
 <br>Тереза Палмер-Бороски (Theresa Palmer-Boroski) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Optimizing-Connectors-in-PowerApps-and-Microsoft-Flow-by-Theresa/m-p/116874)
 
 **Советы и рекомендации по совместной работе Teams и PowerApps**
@@ -102,13 +102,13 @@ ms.locfileid: "71994777"
 **Подключение к локальным данным из PowerApps**
 <br>Арчана Наир (Archana Nair) и Димах Зайдалклани (Dimah Zaidalklani) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-On-Premises-Data-from-PowerApps/m-p/116885)
 
-@no__t 0Working с соединителями: Использование соединителя планировщика @ no__t-0
+**Работа с соединителями: использование соединителя планировщика**
 <br> Одри Гордон (Audrie Gordon) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-the-Planner-Connector/m-p/116886)
 
 **Возможности Office Graph в сочетании с PowerApps**
 <br>Одри Гордон [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/The-Power-of-Office-Graph-with-PowerApps/m-p/116888)
 
-@no__t 0Working с соединителями: Project Online (PWA) **
+**Работа с соединителями: Project Online (PWA)**
 <br>Одри Гордон [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-Project-Online-PWA/m-p/116889)
 
 ## <a name="sharepoint-series"></a>Серия о SharePoint ##
@@ -150,5 +150,5 @@ ms.locfileid: "71994777"
 **Создание диалоговых окон или всплывающих сообщений в PowerApps**
 <br>Автор: Вероника Уорд (Veronica Ward) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Dialogs-in-PowerApps-by-Veronica-Ward/m-p/117627#M39)
 
-@no__t 0Look за прикрытием с одним из разработчиков PowerApps, более подробно Взгляните на шаблоны: Марие Хоежер @ no__t-0
+**Профессиональные секреты разработчиков PowerApps: подробный обзор шаблонов с Мари Хогер (Marie Hoeger)**
 <br>Одри Гордон [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Developer-Intro-and-Discussing-Templates/m-p/116848)

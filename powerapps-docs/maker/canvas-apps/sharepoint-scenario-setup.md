@@ -1,5 +1,5 @@
 ---
-title: Настройка списков для интеграции SharePoint Online с PowerApps, Microsoft Flow и Power BI | Документация Майкрософт
+title: Настройка списков интеграции SharePoint Online с PowerApps, Power автоматизиру и Power BI | Документация Майкрософт
 description: В этом примере мы настроим списки SharePoint, чтобы использовать их в качестве источника данных для приложений, потоков, отчетов и панелей мониторинга.
 author: NickWaggoner
 manager: kvivek
@@ -13,20 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7be4a0574c1a81684188eaede4b6e80b02e7b7cc
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: ec34399818120464a2ad2caca5834baa87d8a25c
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63319163"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899172"
 ---
-# <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-microsoft-flow-and-power-bi"></a>Настройка списков для интеграции SharePoint Online с PowerApps, Microsoft Flow и Power BI
+# <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-power-automate-and-power-bi"></a>Настройка списков интеграции SharePoint Online с PowerApps, Power автоматизиру и Power BI
 > [!NOTE]
-> Эта статья входит в серию руководств по использованию PowerApps, Microsoft Flow и Power BI совместно с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
+> Эта статья является частью серии руководств по использованию PowerApps, автоматизации Powering и Power BI с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
 
-В SharePoint доступно много возможностей для совместной работы, но мы сосредоточимся на одной из них для этого сценария: [Списки SharePoint](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7). Список — это коллекция данных с возможностью совместного использования с участниками группы и другими пользователями сайта. Сначала мы рассмотрим возможности списков, используемых в этом сценарии, а затем создадим их на сайте SharePoint Online.
+Хотя в SharePoint доступно много функций для обеспечения общего доступа и совместной работы, сейчас мы сосредоточимся на одной из них — [списках SharePoint](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7). Список — это коллекция данных с возможностью совместного использования с участниками группы и другими пользователями сайта. Сначала мы рассмотрим возможности списков, используемых в этом сценарии, а затем создадим их на сайте SharePoint Online.
 
-## <a name="step-1-understand-the-lists"></a>Шаг 1. Понять списки
+## <a name="step-1-understand-the-lists"></a>Шаг 1. Общие сведения о списках
 Первый список — **Project Requests** (Запросы проекта), в который пользователь, запрашивающий проекты, добавляет запрос. Пользователь, утверждающий проекты, просматривает запрос, а затем утверждает или отклоняет его.
 
 | **Столбец в списке** | **Тип данных** | **Примечания** |
@@ -51,7 +51,7 @@ ms.locfileid: "63319163"
 | ApprovedDate |Date | |
 | Состояние |Однострочный текст |Значения: не начато, выполняется, завершено. |
 | ProjectedStartDate |Date |Рассчитанная руководителем дата начала проекта. |
-| ProjectedEndDate |Дата |Рассчитанная руководителем дата завершения проекта. |
+| ProjectedEndDate |Date |Рассчитанная руководителем дата завершения проекта. |
 | ProjectedDays |Номер |Рабочие дни; как правило, вычисляются, но не в нашем примере. |
 | ActualDays |Номер |Для завершенных проектов. |
 | PMAssigned |Однострочный текст |Руководитель проекта. |
@@ -105,7 +105,7 @@ ms.locfileid: "63319163"
 4. Скопируйте данные, вставьте их в сетку в SharePoint и нажмите кнопку **Готово**.
    
     ![Список, заполненный данными](./media/sharepoint-scenario-setup/01-01-09-full-grid.png)
-5. Повторите создание и копирование для списка "Project Details", используя книгу project-details.xlsx. См. в таблице Project Details в [шаг 1: Понять списки](#step-1-understand-the-lists) для столбцов имена и типы данных.
+5. Повторите создание и копирование для списка "Project Details", используя книгу project-details.xlsx. Сведения об именах и типах данных столбцов см. в таблице Project Details в разделе [Шаг 1. Общие сведения о списках](#step-1-understand-the-lists).
 
 ## <a name="step-3-update-connections-to-samples---optional"></a>Шаг 3. Обновление подключения к примерам (необязательно)
 Как отмечено во введении, мы включили в [скачиваемый пакет](https://aka.ms/o4ia0f) два примера приложений и пример отчета. Это руководство можно пройти и без этих примеров. Но если вы решили их использовать, вам нужно обновить подключения к спискам SharePoint. Так примеры приложений смогут использовать как источник данных *ваши* списки вместо наших.
@@ -121,7 +121,7 @@ ms.locfileid: "63319163"
 4. На ленте откройте вкладку **View** (Представление) и щелкните **Data sources** (Источники данных).
 
     ![Источники данных в PowerApps](./media/sharepoint-scenario-setup/01-03-01-data-sources.png)
-5. На панели **Данные** нажмите символ многоточия (**...**) рядом с элементом **Сведения о проекте**, а затем выберите **Удалить**.
+5. На панели **Данные** нажмите символ многоточия ( **...** ) рядом с элементом **Сведения о проекте**, а затем выберите **Удалить**.
    
     ![Удаление источника данных "Project Details"](./media/sharepoint-scenario-setup/01-03-02-remove.png)
 6. Выберите **Добавить источник данных**.
@@ -153,7 +153,7 @@ ms.locfileid: "63319163"
    
     ![Источники данных](./media/sharepoint-scenario-setup/01-03-03e-data-sources.png)
 
-10. Нажмите значок многоточия (**...**) рядом с элементом **Сведения о проекте**, а затем выберите **Обновить**.
+10. Нажмите значок многоточия ( **...** ) рядом с элементом **Сведения о проекте**, а затем выберите **Обновить**.
     
     ![Обновление источника данных "Project Details"](./media/sharepoint-scenario-setup/01-03-02-remove.png)
 

@@ -13,17 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7eb5e7385c57e0cabaab1c8457f17dc1feff96fb
-ms.sourcegitcommit: c52c1869510a9a37d9f7b127e06f07583529588b
+ms.openlocfilehash: 9693e45da894348acd27b96f73d1358819812ae4
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64671045"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73900330"
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Создание отчета Power BI для анализа проектов
 > [!NOTE]
-> Эта статья входит в серию руководств по использованию PowerApps, Microsoft Flow и Power BI совместно с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
+> Эта статья является частью серии руководств по использованию PowerApps, автоматизации Powering и Power BI с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
 
 В этой задаче мы создадим отчет Power BI на основе двух списков SharePoint. Мы загрузим данные списков в Power BI Desktop, немного их очистим, выполним основное моделирование и создадим набор визуальных элементов, которые содержат сведения о данных.
 
@@ -31,9 +30,9 @@ ms.PowerAppsDecimalTransform: true
 > [Пакет загрузки](https://aka.ms/o4ia0f) для нашего примера содержит полную версию этого отчета: project-analysis.pbix.
 
 ## <a name="quick-review-of-power-bi-desktop"></a>Краткий обзор Power BI Desktop
-Прежде чем перейти к созданию отчетов, ознакомимся с Power BI Desktop. Это мощный инструмент с множеством функций, поэтому мы рассмотрим только те области, которые будут использоваться в этой задаче. Существует три основных рабочих области или *представления* в Power BI Desktop: **Отчет** представлении **данных** представление, и **связи** представления. Power BI Desktop также включает **редактор запросов**, который открывается в отдельном окне.
+Прежде чем перейти к созданию отчетов, ознакомимся с Power BI Desktop. Это мощный инструмент с множеством функций, поэтому мы рассмотрим только те области, которые будут использоваться в этой задаче. В Power BI Desktop есть три основных рабочих области или *представления*: **Отчет**, **Данные** и **Связи**. Power BI Desktop также включает **редактор запросов**, который открывается в отдельном окне.
 
-На следующем экране показаны значки трех представлений в левой части Power BI Desktop: **Отчет**, **данных**, и **связи**, сверху вниз. Желтая полоска слева обозначает текущее представление. В нашем примере отображается представление **Отчет**. Чтобы изменить представление, щелкните любой значок.
+На следующем рисунке показано три значка представлений на левой панели Power BI Desktop: сверху вниз расположены **Отчет**, **Данные** и **Связи**. Желтая полоска слева обозначает текущее представление. В нашем примере отображается представление **Отчет**. Чтобы изменить представление, щелкните любой значок.
 
 ![Представления Power BI Desktop](./media/sharepoint-scenario-build-report/05-00-00-tabs.png)
 
@@ -66,7 +65,7 @@ ms.PowerAppsDecimalTransform: true
 
 ![Редактор запросов Power BI Desktop](./media/sharepoint-scenario-build-report/05-00-03-query.png)
 
-## <a name="step-1-get-data-into-power-bi-desktop"></a>Шаг 1. Получение данных в Power BI Desktop
+## <a name="step-1-get-data-into-power-bi-desktop"></a>Шаг 1. Загрузка данных в Power BI Desktop
 На этом этапе мы сначала подключимся к двум спискам. Затем мы очистим данные, удалив столбцы, которые не нужны для анализа данных. Также мы изменим типы данных в некоторых из оставшихся столбцов, чтобы вычисления работали правильно. См. дополнительные сведения о [получении и очистке данных в Power BI Desktop](https://powerbi.microsoft.com/guided-learning/powerbi-learning-1-1-overview-of-power-bi-desktop) в рамках этой серии статей.
 
 ### <a name="connect-to-sharepoint-lists"></a>Подключение к спискам SharePoint
@@ -95,7 +94,7 @@ ms.PowerAppsDecimalTransform: true
 2. На центральной панели выберите столбец **FileSystemObjectType**, а затем щелкните **Удалить столбцы**.
    
     ![Удаление столбцов](./media/sharepoint-scenario-build-report/05-01-07-remove-column.png)
-3. Удалите два столбца после **идентификатор** столбца: **ServerRedirectedEmbedURL** и **ContentTypeId**. 
+3. Удалите два столбца после столбца **Id**: **ServerRedirectedEmbedURL** и **ContentTypeId**. 
    > [!TIP]
    > Выберите оба столбца с нажатой клавишей SHIFT, а затем нажмите **Удалить столбцы**.
 4. Удалите все столбцы справа от столбца **PMAssigned** (всего 22 столбца). Таблица должна выглядеть приблизительно так:
@@ -106,11 +105,11 @@ ms.PowerAppsDecimalTransform: true
     ![ Таблица Project Requests в редакторе запросов](./media/sharepoint-scenario-build-report/05-01-09-table-requests.png)
 
 ### <a name="change-the-data-type-on-project-details-columns"></a>Изменение типа данных в столбцах таблицы Project Details
-1. Выберите **ProjectedDays** столбец, щелкните или коснитесь **тип данных: Любой**, затем **целое число**.
+1. Выберите столбец **ProjectedDays** и щелкните **Тип данных: любой**. Затем выберите параметр **Целое число**.
    
     ![Изменение типа данных на целое число](./media/sharepoint-scenario-build-report/05-01-10-datatype-number.png)
 2. Повторите предыдущий шаг для столбца **ActualDays**.
-3. Выберите **ApprovedDate** столбец, щелкните или коснитесь **тип данных: Любой**, затем **даты**.
+3. Выберите столбец **ApprovedDate** и щелкните **Тип данных: любой**. Затем выберите параметр **Дата**.
    
     ![ Изменение типа данных на дату](./media/sharepoint-scenario-build-report/05-01-11-datatype-date.png)
 
@@ -118,9 +117,9 @@ ms.PowerAppsDecimalTransform: true
 
 ### <a name="change-the-data-type-on-project-requests-columns"></a>Изменение типа данных в столбцах таблицы Project Requests
 
-1. Выберите **EstimatedDays** столбец, щелкните или коснитесь **тип данных: Любой**, затем **целое число**.
+1. Выберите столбец **EstimatedDays** и щелкните **Тип данных: любой**. Затем выберите параметр **Целое число**.
 
-2. Выберите **RequestDate** столбец, щелкните или коснитесь **тип данных: Любой**, затем **даты**.
+2. Выберите столбец **RequestDate** и щелкните **Тип данных: любой**. Затем выберите параметр **Дата**.
 
 ### <a name="apply-and-save-changes"></a>Применение и сохранение изменений
 
@@ -130,7 +129,7 @@ ms.PowerAppsDecimalTransform: true
 
 2. Выберите **Файл**, затем— **Сохранить** и сохраните файл под именем project-analysis.pbix.
 
-## <a name="step-2-improve-the-data-model"></a>Шаг 2. Улучшения модели данных
+## <a name="step-2-improve-the-data-model"></a>Шаг 2. Улучшение модели данных
 Теперь, когда мы загрузили в PowerBI Desktop данные из списков SharePoint, перейдем к моделированию данных. Моделирование данных может занять много времени, но мы вкратце рассмотрим некоторые действия, которые помогут вам эффективно использовать данные списка в Power BI Desktop.
 
 * Изменение способа связи между двумя таблицами.
@@ -143,7 +142,7 @@ ms.PowerAppsDecimalTransform: true
 ### <a name="change-table-relationships"></a>Изменение связи между таблицами
 Когда в приложение Power BI Desktop загружаются списки, оно создает связи между ними на основе столбца **Id** в обеих таблицах. На самом деле должны быть связаны столбец **Id** в таблице **Project Requests** и столбец **RequestId** в таблице **Project Details**. Исправим это.
 
-1. Щелкните значок **Представление "Данные"**.
+1. Щелкните значок **Представление "Данные"** .
    
     ![Представление "Данные"](./media/sharepoint-scenario-build-report/05-02-01-data-view.png)
 
@@ -171,7 +170,7 @@ ms.PowerAppsDecimalTransform: true
 1. Нажмите кнопку **Создать таблицу**.
    
     ![Создать таблицу](./media/sharepoint-scenario-build-report/05-02-05-modeling-table.png)
-2. Введите эту формулу в строке формул: **Dates = CALENDARAUTO()**.
+2. Введите следующую формулу в строке формул: **Dates = CALENDARAUTO()** .
    
     ![Строка формул с формулой Dates = CALENDARAUTO()](./media/sharepoint-scenario-build-report/05-02-06-formula-bar.png)
    
@@ -186,7 +185,7 @@ ms.PowerAppsDecimalTransform: true
 1. Оставаясь в таблице "Dates", нажмите кнопку **Создать столбец**.
    
     ![Создать столбец](./media/sharepoint-scenario-build-report/05-02-00-modeling-column.png)
-2. Введите эту формулу в строке формул: **IsWeekDay = SWITCH(WEEKDAY(Dates[Date]); 1;0;7;0;1)**.
+2. Введите следующую формулу в строке формул: **IsWeekDay = SWITCH(WEEKDAY(Dates[Date]), 1,0,7,0,1)** .
    
     Эта формула определяет, является ли дата в столбце **Date** рабочим днем. Если дата является рабочим днем, столбец **IsWeekDay** возвращает значение 1. В противном случае он возвращает значение 0.
 3. Нажмите клавишу ВВОД, чтобы добавить столбец **IsWeekDay** в таблицу **Dates**.
@@ -341,7 +340,7 @@ ms.PowerAppsDecimalTransform: true
 4. Выберите значок **Формат** (малярный валик), затем установите для параметра **Граница** значение **Вкл**.
    
     ![Формат — граница](./media/sharepoint-scenario-build-report/05-03-13a-format.png)
-5. Установите для параметра **Заголовок** значение **Вкл.**, затем добавьте имя "Max days pending approval" (Максимальное число дней в ожидании утверждения).
+5. Установите для параметра **Заголовок** значение **Вкл.** , затем добавьте имя "Max days pending approval" (Максимальное число дней в ожидании утверждения).
    
     ![Добавление заголовка](./media/sharepoint-scenario-build-report/05-03-13b-title.png)
    
@@ -359,7 +358,7 @@ ms.PowerAppsDecimalTransform: true
 3. Перетащите столбцы **PMAssigned**, **Title** и **ApprovedStartDiff** из таблицы **Project Details** на панели **Поля** в таблицу **Values** (Значения) на панели **Визуализации**.
    
     ![Таблица Values на панели "Визуализации"](./media/sharepoint-scenario-build-report/05-03-16-value-diff.png)
-4. Перетащите столбец **ProjectedStartDate** из таблицы **Project Details** на панели **Поля** в область **Фильтры** панели **Визуализации**. Затем выберите все даты, кроме **(Пусто)**.
+4. Перетащите столбец **ProjectedStartDate** из таблицы **Project Details** на панели **Поля** в область **Фильтры** панели **Визуализации**. Затем выберите все даты, кроме **(Пусто)** .
    
     ![Фильтрация по значению ProjectedStartDate](./media/sharepoint-scenario-build-report/05-03-17-filters-diff.png)
 5. Измените размер столбцов таблицы так, чтобы все данные были хороши видны, и настройте сортировку по убыванию по столбцу **ApprovedStartDiff**. Визуализация должна выглядеть приблизительно так:
