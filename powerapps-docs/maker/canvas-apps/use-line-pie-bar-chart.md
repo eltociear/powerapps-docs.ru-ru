@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73541675"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>Отображение данных в виде графика, круговой или линейчатой диаграммы в PowerApps
 
@@ -49,7 +50,7 @@ ms.locfileid: "73541675"
 
 2. Задайте для свойства элемента управления **[OnSelect](controls/properties-core.md)** следующую функцию.  
 
-   ```Collect(ProductRevenue, Import1.Data)```
+   ```Collect(ProductRevenue; Import1.Data)```
 
 3. Нажмите клавишу F5, чтобы открыть режим предварительного просмотра, а затем нажмите кнопку **Импорт данных**.
 

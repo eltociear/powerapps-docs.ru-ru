@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/06/2019
 ms.locfileid: "73649814"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="toggle-control-in-powerapps"></a>Элемент управления "Переключатель" в PowerApps
 "Переключатель" — это элемент управления, который пользователь может включить или отключить.
@@ -105,14 +106,14 @@ ms.locfileid: "73649814"
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**If**( *Condition*; *Result* )](../functions/function-if.md)
+[**If**( *Condition*;; *Result* )](../functions/function-if.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте в приложение переключатель и назовите его **Скидка**.
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте метку и установите в ее свойстве **[Text](properties-core.md)** формулу:
-   <br>**If(Скидка.Value = true, "Цена: 75 руб.", "Цена: 100 руб.")**
+   <br>**If(Скидка.Value = true; "Цена: 75 руб."; "Цена: 100 руб.")**
 
     Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 3. Нажмите клавишу F5 и измените значение переключателя **Скидка**.

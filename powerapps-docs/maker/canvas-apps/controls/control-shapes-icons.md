@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/06/2019
 ms.locfileid: "73649741"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="shape-controls-and-icon-controls-in-powerapps"></a>Фигуры и значки в PowerApps
 Фигуры и значки — это элементы управления, для которых можно настроить внешний вид и поведение.
@@ -68,7 +69,7 @@ ms.locfileid: "73649741"
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Navigate**( *ScreenName*; *ScreenTransition* )](../functions/function-navigate.md)
+[**Navigate**( *ScreenName*;; *ScreenTransition* )](../functions/function-navigate.md)
 
 ## <a name="example"></a>Пример
 
@@ -80,7 +81,7 @@ ms.locfileid: "73649741"
 
 1. В элементе **Источник** добавьте элемент управления **Фигура** и назначьте его свойству **[OnSelect](properties-core.md)** следующую формулу:
 
-  `Navigate(Target, ScreenTransition.Fade)`
+  `Navigate(Target; ScreenTransition.Fade)`
   
 1. Нажмите клавишу F5, а затем выберите элемент управления **фигурой** .
 
@@ -88,7 +89,7 @@ ms.locfileid: "73649741"
 
 1. (Необязательно) Нажмите клавишу Esc, чтобы вернуться в рабочую область по умолчанию, добавьте элемент управления **Фигура** к элементу **Цель** и назначьте свойству **[OnSelect](properties-core.md)** элемента управления **Фигура** следующую формулу:
 
-  `Navigate(Source, ScreenTransition.Fade)`
+  `Navigate(Source; ScreenTransition.Fade)`
 
 ## <a name="accessibility-guidelines"></a>Руководство по настройке специальных возможностей
 
