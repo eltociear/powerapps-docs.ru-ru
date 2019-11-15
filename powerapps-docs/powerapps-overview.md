@@ -12,12 +12,12 @@ ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: 625629826d2fb0d39c0569b2a757fbfc46118acc
-ms.sourcegitcommit: 133c51f10fc4fe6cd105c2a6af83fc15634143d7
+ms.openlocfilehash: 69322a21510289f5db92f3969ef524fbcd8421c8
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73068780"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73899247"
 ---
 # <a name="what-is-powerapps"></a>Что такое PowerApps?
 
@@ -49,7 +49,7 @@ PowerApps также предоставляет расширяемую плат�
 
 - **Центр администрирования PowerApps** ([admin.powerapps.com](https://admin.powerapps.com)) для создания сред, пользователей, ролей и политик защиты от потери данных и управления ими. 
 
-- **Центр администрирования Power Platform** ([Admin.powerplatform.Microsoft.com](https://admin.powerplatform.microsoft.com)) для управления средами, получения рекомендаций и поддержки для PowerApps и Microsoft Flow, а затем просмотра Common Data Service Analytics. 
+- **Центр администрирования Power Platform Center** ([Admin.powerplatform.Microsoft.com](https://admin.powerplatform.microsoft.com)) для управления средами, получения рекомендаций для самостоятельного устранения проблем и поддержки PowerApps и автоматизации питания, а затем просмотрите Common Data Service Analytics. 
 
 Дополнительные сведения: [Администрирование PowerApps](/power-platform/admin/admin-guide)
 
