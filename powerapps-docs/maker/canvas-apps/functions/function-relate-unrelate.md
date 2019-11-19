@@ -19,13 +19,12 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73537108"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="relate-and-unrelate-functions-in-powerapps"></a>Функции связывания и отсвязи в PowerApps
 
 Свяжите и отменяйте связи между записями двух сущностей с помощью связи «один ко многим» или «многие ко многим».
 
-## <a name="description"></a>Description
+## <a name="description"></a>Описание
 
 Функция **Relate** связывает две записи через связь "один ко многим" или "многие ко многим" в Common Data Service. Функция **unrelate** обращается к процессу и удаляет ссылку.
 
@@ -44,12 +43,12 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="syntax"></a>Синтаксис
 
-**Связь**( *Entity1RelatedTable*; *Entity2Record* )
+**Связь**( *Entity1RelatedTable*, *Entity2Record* )
 
 * *Entity1RelatedTable* — обязательный. Для записи *сущности Entity1*таблица записей *Entity2* , связанных с отношением «один ко многим» или «многие ко многим».
 * *Entity2Record* — обязательный. Запись *Entity2* , которую необходимо добавить в связь.
 
-**Unrelate**( *Entity1RelatedTable*; *Entity2Record* )
+**Unrelate**( *Entity1RelatedTable*, *Entity2Record* )
 
 * *Entity1RelatedTable* — обязательный. Для записи *сущности Entity1*таблица записей *Entity2* , связанных с отношением «один ко многим» или «многие ко многим».
 * *Entity2Record* — обязательный. Запись *Entity2* , которую необходимо удалить из связи.
@@ -65,29 +64,29 @@ ms.PowerAppsDecimalTransform: true
 
 **Продукты** и **резервирования** связаны через связь «один ко многим».  Чтобы связать первую запись сущности **резервирования** с первой записью сущности **Products** , выполните следующие действия.
 
-`Relate( First( Products ).Reservations; First( Reservations ) )`
+`Relate( First( Products ).Reservations, First( Reservations ) )`
 
 Чтобы удалить связь между этими записями, выполните следующие действия.
 
-`Unrelate( First( Products ).Reservations; First( Reservations ) )`
+`Unrelate( First( Products ).Reservations, First( Reservations ) )`
 
 В то время, когда мы не создали или удалили или запись, была изменена только связь между записями.
 
 **Продукты** и **Контакты** связаны через связь «многие ко многим».  Чтобы связать первую запись сущности **Contacts** с первой записью сущности **Products** , выполните следующие действия.
 
-`Relate( First( Products ).Contacts; First( Contacts ) )`
+`Relate( First( Products ).Contacts, First( Contacts ) )`
 
 Так как связи «многие ко многим» являются симметричными, мы могли бы также сделать это в обратном направлении:
 
-`Relate( First( Contacts ).Products; First( Products ) )`
+`Relate( First( Contacts ).Products, First( Products ) )`
 
 Чтобы удалить связь между этими записями, выполните следующие действия.
 
-`Unrelate( First( Products ).Contacts; First( Contacts ) )`
+`Unrelate( First( Products ).Contacts, First( Contacts ) )`
 
 ни
 
-`Unrelate( First( Contacts ).Products; First( Products ) )`
+`Unrelate( First( Contacts ).Products, First( Products ) )`
 
 В следующем пошаговом руководстве выполняются именно эти операции с этими сущностями с помощью приложения с элементами управления " **коллекция** **" и "поле со списком"** для выбора задействованных записей.
 
@@ -153,8 +152,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. В **Gallery2**задайте для свойства **OnSelect** **NextArrow2**следующую формулу:
 
-    ```powerapps-comma
-    Relate( ComboBox1.Selected.Reservations; ThisItem )
+    ```powerapps-dot
+    Relate( ComboBox1.Selected.Reservations, ThisItem )
     ```
 
     Когда пользователь выбирает этот значок, текущее резервирование изменяется на продукт, который пользователь выбрал в **ComboBox1**.
@@ -177,11 +176,11 @@ ms.PowerAppsDecimalTransform: true
 
 1. В **Gallery2**Задайте формулу **OnSelect** для **NextArrow2** в этой формуле:
 
-    ```powerapps-comma
-    If( IsBlank( ComboBox1.Selected );
-        Unrelate( Gallery1.Selected.Reservations; ThisItem );
-        Relate( ComboBox1.Selected.Reservations; ThisItem )
-    );;
+    ```powerapps-dot
+    If( IsBlank( ComboBox1.Selected ),
+        Unrelate( Gallery1.Selected.Reservations, ThisItem ),
+        Relate( ComboBox1.Selected.Reservations, ThisItem )
+    );
     Refresh( Reservations )
     ```
     ![Значок "настроить правый"](media/function-relate-unrelate/reservations-relate-unrelate.png)
@@ -192,17 +191,17 @@ ms.PowerAppsDecimalTransform: true
 
 1. используемых Если вы добавили метку выше **Gallery2**, повторите предыдущие два шага для этой метки.
 
-1. Убедитесь, что дубликат **Gallery2** имеет имя **Gallery2_1**, а затем задайте для свойства **Items** значение этой формулы:
+1. Убедитесь, что дубликат **Gallery2** имеет имя **Gallery2_1**, а затем задайте для его свойства **Items** значение этой формулы:
 
-    ```powerapps-comma
-    Filter( Reservations; IsBlank( 'Product Reservation' ) )
+    ```powerapps-dot
+    Filter( Reservations, IsBlank( 'Product Reservation' ) )
     ```
 
     Отображается предупреждение о делегировании, но в этом примере не имеет значения небольшой объем данных.
 
-    ![Задание свойства Items объекта Gallery2_1](media/function-relate-unrelate/reservations-lost.png)
+    ![Задание свойства Items для Gallery2_1](media/function-relate-unrelate/reservations-lost.png)
 
-После внесения этих изменений пользователи могут снять выделение в **ComboBox1** для контакта, если он не зарезервирован для продукта. Контакты, которые не зарезервированы, отображаются в **Gallery2_1** , где пользователи могут назначать каждому контакту продукт.
+После внесения этих изменений пользователи могут снять выделение в **ComboBox1** для контакта, если он не зарезервирован для продукта. Контакты, которые не зарезервированы, отображаются в **Gallery2_1** , где пользователи могут назначать каждый контакт с продуктом.
 
    ![Демонстрация функций связывания и отсвязи в приложении "один ко многим"](media/function-relate-unrelate/reservations-lostandfound.gif)
 
@@ -266,8 +265,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте в качестве значения свойства **OnSelect** значка **отмены** следующую формулу: 
 
-    ```powerapps-comma
-    Unrelate( Gallery1.Selected.Contacts; ThisItem )
+    ```powerapps-dot
+    Unrelate( Gallery1.Selected.Contacts, ThisItem )
     ```
 
     ![Настройка значка отмены](media/function-relate-unrelate/contacts-unrelate.png)
@@ -286,8 +285,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Вставьте значок **добавления** и задайте для его свойства **OnSelect** значение этой формулы: 
 
-    ```powerapps-comma
-    Relate( Gallery1.Selected.Contacts; ComboBox1.Selected )
+    ```powerapps-dot
+    Relate( Gallery1.Selected.Contacts, ComboBox1.Selected )
     ```
 
     ![Настройка значка добавления](media/function-relate-unrelate/contacts-relate.png)
@@ -313,11 +312,11 @@ ms.PowerAppsDecimalTransform: true
 
 1. Повторяющаяся **Screen1**.
 
-    Дубликат будет называться **Screen1_1** и образовывать базу для просмотра связей на стороне контактов.
+    Дубликат будет называться **Screen1_1** и формирует базу для просмотра связей от стороны контактов.
 
     ![Дублирование экрана](media/function-relate-unrelate/contacts-duplicate.png)
 
-1. Чтобы создать обратный просмотр, измените эти формулы в элементах управления **Screen1_1**:
+1. Чтобы создать обратные представления, измените эти формулы в элементах управления **Screen1_1**:
 
     - Screen1_1. OnVisible = `Refresh( Contacts )`
     - Gallery1_1. Items = `Contacts`
@@ -325,15 +324,15 @@ ms.PowerAppsDecimalTransform: true
     - Label1_1. Text = `"Selected Contact Products"`
     - Gallery2_1. Items = `Gallery1_1.Selected.Products`
     - Title2_1. Text = `ThisItem.Name`
-    - Icon1_1. OnSelect = `Unrelate( Gallery1_1.Selected.Products; ThisItem )`
+    - Icon1_1. OnSelect = `Unrelate( Gallery1_1.Selected.Products, ThisItem )`
     - ComboBox1_1. Items = `Products`
-    - Icon2_1. OnSelect = `Relate( Gallery1_1.Selected.Products; ComboBox1_1.Selected )`
+    - Icon2_1. OnSelect = `Relate( Gallery1_1.Selected.Products, ComboBox1_1.Selected )`
 
     Результат будет очень похож на предыдущий экран, но поступает на связь со стороны **контактов** .
 
     ![Отображение связи "многие ко многим", начиная с контактов](media/function-relate-unrelate/reverse-screen.png)
 
-1. Вставьте **стрелку "вверх** " и задайте для свойства **OnSelect** значение **Navigate (Screen1, None)** .  Сделайте то же самое в **Screen1** с помощью формулы **навигации (Screen1_1, None)** .
+1. Вставьте **стрелку "вверх** " и задайте для свойства **OnSelect** значение **Navigate (Screen1, None)** .  Сделайте то же самое в **Screen1** с формулой **навигации (Screen1_1, None)** .
 
     ![Добавление навигации между экранами](media/function-relate-unrelate/reverse-navigate.png)
 
