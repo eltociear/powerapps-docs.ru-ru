@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "71992556"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="and-or-and-not-functions-in-powerapps"></a>Функции And, Or и Not в PowerApps
 
@@ -44,8 +45,8 @@ ms.locfileid: "71992556"
 
 ## <a name="syntax"></a>Синтаксис
 
-**And**( *логическая_формула_1*, *логическая_формула_2* [, *логическая_формула_3*, ...])<br>
-**Or**( *LogicalFormula1*, *LogicalFormula2* [, *LogicalFormula3*, ... ] )<br>
+**And**( *логическая_формула_1*; *логическая_формула_2* [; *логическая_формула_3*; ...])<br>
+**Or**( *LogicalFormula1*; *LogicalFormula2* [; *LogicalFormula3*; ... ] )<br>
 **Not**(*логическая_формула*)
 
 - *логическая_формула_x* — обязательный аргумент.  Это логические формулы, которые возвращают логические значения и с которыми выполняет операцию соответствующая функция.
@@ -62,8 +63,8 @@ ms.locfileid: "71992556"
 
 Чтобы создать эти глобальные переменные в приложении, вставьте элемент управления [**Button**](../controls/control-button.md) и задайте для его свойства **OnSelect** значение этой формулы:
 
-```powerapps-dot
-Set( a, false ); Set( b, true ); Set( x, 10 ); Set( y, 100 ); Set( s, "Hello World" )
+```powerapps-comma
+Set( a; false );; Set( b; true );; Set( x; 10 );; Set( y; 100 );; Set( s; "Hello World" )
 ```
 
 Нажмите кнопку (щелкнув ее, удерживая нажатой клавишу Alt), а затем задайте для свойства **Text** элемента управления [**Метка**](../controls/control-text-box.md) формулу в первом столбце следующей таблицы.
