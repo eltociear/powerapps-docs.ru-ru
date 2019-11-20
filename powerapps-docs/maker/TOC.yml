@@ -1140,6 +1140,8 @@
           href: ./portals/admin/migrate-portal-configuration.md
         - name: Жизненный цикл портала
           href: ./portals/admin/portal-lifecycle.md
+        - name: Обновление портала
+          href: ./portals/admin/upgrade-portal.md
     - name: Расширенная настройка портала
       items:
         - name: Обзор
@@ -1188,12 +1190,22 @@
           href: ./portals/configure/place-child-nodes.md
         - name: Поведение и формат поля "Дата и время"
           href: ./portals/configure/behavior-format-date-time-field.md
+        - name: Просмотр записей электронной почты на временной шкале портала
+          href: ./portals/configure/view-email-in-timeline.md
+        - name: Оценка веб-страницы
+          href: ./portals/configure/rate-webpage.md
+        - name: Включение кэширования выходных данных верхнего и нижнего колонтитула на портале
+          href: ./portals/configure/enable-header-footer-output-caching.md
         - name: Добавление диаграммы на веб-страницу на портале
           href: ./portals/configure/add-chart.md
         - name: Работа с формами сущностей
           href: ./portals/configure/entity-forms.md
         - name: Работа со списками сущностей
           href: ./portals/configure/entity-lists.md
+        - name: Управление веб-сайтами
+          href: ./portals/configure/websites.md
+        - name: Создание привязок веб-сайта и управление ими
+          href: ./portals/configure/website-bindings.md
         - name: Работа с веб-формами
           items:
             - name: Определение свойств веб-формы
@@ -1216,6 +1228,8 @@
               href: ./portals/configure/configure-web-form-subgrid.md
             - name: Добавление геолокации
               href: ./portals/configure/add-geolocation.md
+        - name: Реализация GDPR на порталах
+          href: ./portals/configure/implement-gdpr.md
     - name: Расширенные возможности портала
       items:
         - name: Работа с шаблонами Liquid
@@ -1262,6 +1276,8 @@
                   href: ./portals/liquid/render-site-header-primary-navigation.md
         - name: Поток неявного предоставления OAuth 2.0
           href: ./portals/oauth-implicit-grant-flow.md
+        - name: Управление веб-страницами
+          href: ./portals/configure/web-page.md
     - name: Управление пользователями и их защита на портале
       items:
         - name: Настройка контактов
@@ -1446,6 +1462,8 @@
           href: ./common-data-service/solution-history.md
         - name: Использование средства проверки решений
           href: ./common-data-service/use-powerapps-checker.md
+        - name: 'Распространенные проблемы и решения: средство проверки решений'
+          href: ./common-data-service/common-issues-resolutions-solution-checker.md
         - name: Использование сегментированных решений
           href: ./common-data-service/use-segmented-solutions-patches-simplify-updates.md
         - name: Изменение префикса издателя решений

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 69d29136f5184ed50be6380ee1a91847d4506d6a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 1c8591790fe14d184f5d5e4ef5fc79ff0bfe0e2a
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541198"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74177896"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Требования к системе, ограничения и значения конфигурации для приложений на основе холста
 В этой статье приводятся требования к платформе устройств и веб-браузеру, а также ограничения и значения конфигурации для PowerApps.
@@ -27,12 +27,12 @@ ms.locfileid: "73541198"
 
 | **Минимальные требования** | **Рекомендуется** |
 | --- | --- |
-| iOS 12 или более поздняя версия |iOS 12 или более поздняя версия|
-| Android 7 или более поздней версии |Android 7 или более поздней версии |
+| iOS 12 or later |iOS 12 or later|
+| Android 7 or later |Android 7 or later |
 | Windows 8.1 или более поздней версии (только ПК) |Windows 10 Fall Creators Update с не менее чем 8 ГБ ОЗУ|
 
 > [!NOTE]
-> Сейчас мы не поддерживаем новые возможности на платформе Windows для приложения PowerApps. Такие функции, как улучшенный параметр Common Data Service и гостевой доступ, недоступны на этой платформе. Мы рекомендуем использовать веб-проигрыватель в Windows, чтобы использовать полный набор возможностей. Обновления для платформы приложения PowerApps для Windows будут объявлены в будущем.
+> We currently don't support new features on Windows platform for PowerApps app. Features such as the Improved Common Data Service option and guest access are not available on this platform. We recommend using a web player on Windows to leverage the full set of capabilities. Updates to the PowerApps app for Windows platform will be announced in future.
 
 ## <a name="supported-browsers-for-running-canvas-apps"></a>Поддерживаемые браузеры для запуска приложений на основе холста
 
@@ -75,17 +75,17 @@ ms.locfileid: "73541198"
 
 | Регион | Исходящие IP-адреса |
 | --- | --- |
-| Азия | 13.75.36.64-13.75.36.79, 13.67.8.240-13.67.8.255, 52.175.23.169, 52.187.68.19 |
-| Австралия  | 13.70.72.192-13.70.72.207, 13.72.243.10, 13.77.50.240-13.77.50.255, 13.70.136.174 |
-| Бразилия | 191.233.203.192–191.233.203.207, 104.214.19.48–104.214.19.63, 13.65.86.57, 104.41.59.51 |
-| Канада | 13.71.170.208-13.71.170.223, 13.71.170.224-13.71.170.239, 52.237.24.126, 40.69.106.240-40.69.106.255, 52.242.35.152|
-| Европа | 13.69.227.208-13.69.227.223, 52.178.150.68, 13.69.64.208-13.69.64.223, 52.174.88.118, 137.117.161.181|
-| Индия  | 104.211.81.192-104.211.81.207, 52.172.211.12, 40.78.194.240-40.78.194.255, 13.71.125.22, 104.211.146.224-104.211.146.239, 104.211.189.218 |
-| Япония | 13.78.108.0-13.78.108.15, 13.71.153.19, 40.74.100.224-40.74.100.239, 104.215.61.248 |
+| Азия | 13.75.36.64 - 13.75.36.79, 13.67.8.240 - 13.67.8.255, 52.175.23.169, 52.187.68.19 |
+| Австралия  | 13.70.72.192 - 13.70.72.207, 13.72.243.10, 13.77.50.240 - 13.77.50.255, 13.70.136.174 |
+| Brazil | 191.233.203.192–191.233.203.207, 104.214.19.48–104.214.19.63, 13.65.86.57, 104.41.59.51 |
+| Канада | 13.71.170.208 - 13.71.170.223, 13.71.170.224 - 13.71.170.239, 52.237.24.126, 40.69.106.240 - 40.69.106.255, 52.242.35.152|
+| Европа | 13.69.227.208 - 13.69.227.223, 52.178.150.68, 13.69.64.208 - 13.69.64.223, 52.174.88.118, 137.117.161.181|
+| Индия  | 104.211.81.192 - 104.211.81.207, 52.172.211.12, 40.78.194.240 - 40.78.194.255, 13.71.125.22, 104.211.146.224 - 104.211.146.239, 104.211.189.218 |
+| Япония | 13.78.108.0 - 13.78.108.15, 13.71.153.19, 40.74.100.224 - 40.74.100.239, 104.215.61.248 |
 | Южная Америка | 191.233.203.192–191.233.203.207, 104.214.19.48–104.214.19.63, 13.65.86.57, 104.41.59.51 |
-| Великобритания | 51.140.148.0–51.140.148.15, 51.140.80.51, 51.140.211.0–51.140.211.15, 51.141.47.105 |
-| США | 13.89.171.80-13.89.171.95, 52.173.245.164, 40.71.11.80-40.71.11.95, 40.71.249.205, 40.70.146.208-40.70.146.223, 52.232.188.154, 52.162.107.160-52.162.107.175, 52.162.242.161, 40.112.243.160-40.112.243.175, 104.42.122.49 |
-| США (ранний доступ)  | 13.71.195.32-13.71.195.47, 52.161.102.22, 13.66.140.128-13.66.140.143, 52.183.78.157 |
+| United Kingdom | 51.140.148.0–51.140.148.15, 51.140.80.51, 51.140.211.0–51.140.211.15, 51.141.47.105 |
+| США | 13.89.171.80 - 13.89.171.95, 52.173.245.164, 40.71.11.80 - 40.71.11.95, 40.71.249.205, 40.70.146.208 - 40.70.146.223, 52.232.188.154, 52.162.107.160 - 52.162.107.175, 52.162.242.161, 40.112.243.160 - 40.112.243.175, 104.42.122.49 |
+| США (ранний доступ)  | 13.71.195.32 - 13.71.195.47, 52.161.102.22, 13.66.140.128 - 13.66.140.143, 52.183.78.157 |
 
 ## <a name="required-services"></a>Необходимые службы
 Этот список содержит все службы, к которым обращается PowerApps Studio, а также сведения об их применении. Сеть **не** должна блокировать эти службы.
@@ -95,45 +95,47 @@ ms.locfileid: "73541198"
 | management.azure.com |https |RP. |
 | msmanaged-na.azure-apim.net |https |Среда выполнения соединителей или интерфейсов API. |
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL. |
-| graph.microsoft.com<br>graph.windows.net |https |Azure Graph — для получения сведений о пользователе (например, фотографии профиля) |
+| graph.microsoft.com<br>graph.windows.net |https |Azure Graph - For getting user info (e.g., profile photo) |
 | gallery.azure.com |https |Примеры и шаблоны приложений. |
-| \*. azure-apim.net |https |Концентраторы API — разные поддомены для каждого языкового стандарта. |
-| \*. powerapps.com |https | create.powerapps.com, make.powerapps.com, content.powerapps.com и make.powerapps.com |
-| \*. azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com и make.powerapps.com |
-| \*. blob.core.windows.net |https | Хранилище BLOB-объектов |
-| \*. flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com и make.powerapps.com |
-| *. dynamics.com | https | Common Data Service |
+| \*.azure-apim.net |https |Концентраторы API — разные поддомены для каждого языкового стандарта. |
+| \*.powerapps.com |https | create.powerapps.com, make.powerapps.com, content.powerapps.com, and make.powerapps.com |
+| \*.azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com, and make.powerapps.com |
+| \*.blob.core.windows.net |https | Хранилище BLOB-объектов |
+| \*.flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com, and make.powerapps.com |
+| *.dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |Телеметрия |
 | localhost | https | PowerApps Mobile
 
 > [!NOTE]
 > Если вы используете VPN, необходимо настроить исключение localhost из туннелирования для PowerApps Mobile.
 
-## <a name="size-limits"></a>Ограничения размера
+## <a name="size-limits"></a>Size limits
 
-Сведения об ограничениях размера текста, гиперссылок, изображений и мультимедиа можно найти в [типах данных](functions/data-types.md#text-hyperlink-image-and-media).
+You can find information about size limits on text, hyperlinks, images, and media in [Data types](functions/data-types.md#text-hyperlink-image-and-media).
 
-## <a name="powerapps-per-app-plan"></a>План для каждого приложения PowerApps
+## <a name="powerapps-per-app-plan"></a>PowerApps per app plan
 
-План PowerApps для каждого приложения позволяет отдельным пользователям запускать 2 приложения на одном портале для конкретного бизнес-сценария на основе всех возможностей PowerApps. Этот план предоставляет пользователям простой способ приступить к работе с платформой до более широкой адаптации к масштабированию.
+PowerApps per app plan allows individual users to run 2 applications on a single portal for a specific business scenario based on the full capabilities of PowerApps. This plan provides an easy way for users to get started with the platform before broader scale adoption.
 
-После того как администратор выделит план PowerApps для каждого приложения в среду, они назначаются пользователям по умолчанию при совместном использовании приложения с ними. Вы можете увидеть, как Администратор выделяет планы приложений в [этой статье](https://docs.microsoft.com/power-platform/admin/capacity-add-on).
+After an admin allocates PowerApps per app plan to an environment, they're assigned to unlicensed users when an app in that environment is shared with them. You can see how an admin allocates per app plans [here](https://docs.microsoft.com/power-platform/admin/capacity-add-on).
 
-Выполните следующие действия, чтобы отключить назначение планов для каждого приложения пользователям при совместном использовании приложения.
+Follow these steps to turn off the assigning per app plans for users when an app is shared with them:
 
-- Выберите **приложение**.
-- Выберите **Параметры**.
-- Измените переключатель " **Автоматическое назначение на приложение** " в разделе " **назначение передачи**".
+- Choose the **App**.
+- Select **Settings**.
+- Change the **Auto assign per app passes** toggle under **Pass assignment**.
 
-Переключатель **Автоматическое назначение для каждого приложения подается** во всех параметрах приложения.
+The **Auto assign per app passes** toggle appears in all app setting.
 
 > [!NOTE]
-> Отключение плана "на приложение" сейчас доступно только для приложений Canvas.  Приложения и порталы, управляемые моделью, будут иметь эту возможность в будущем.
+> Disabling the per app plan is currently available for only canvas apps.  Model-driven apps and Portals will have this ability in the future.
+>
+> The ability to control per app plan assignment for an app is only available for apps that are in an environment that had Per app plans allocated in the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).  
 
-### <a name="app-settings"></a>Параметры приложения
+### <a name="app-settings"></a>App Settings
 
-![Параметры приложения Canvas](./media/limits-and-config/app_settings.png "Параметры приложения Canvas")
+![Canvas app settings](./media/limits-and-config/app_settings.png "Canvas app settings")
 
-### <a name="pass-assignment"></a>Передача назначения
+### <a name="pass-assignment"></a>Pass assignment
 
-![Передача параметров приложения Canvas](./media/limits-and-config/app_settings_pass_assignment.png "Передача параметров приложения Canvas")
+![Canvas app settings pass assignment](./media/limits-and-config/app_settings_pass_assignment.png "Canvas app settings pass assignment")
