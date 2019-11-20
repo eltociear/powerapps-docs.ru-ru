@@ -1,20 +1,12 @@
----
-ms.openlocfilehash: 747ea34b784b852261debe91f587d64ee3277804
-ms.sourcegitcommit: ad203331ee9737e82ef70206ac04eeb72a5f9c7f
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67212516"
----
-Установив и включив решение [!INCLUDE[pn_gamification](pn-gamification.md)], идентификаторы учетной записи пользователя (например, имя, фамилия и адрес электронной почты) будут сохранены в [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], чтобы разрешить авторизацию с помощью службы [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)], которая размещена в [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]. Это относится ко всем пользователям, которые включены администратором в службу [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)]. Решение [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] отправляет настроенные администратором данные ключевых показателей эффективности в службу [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]. Эти данные хранятся в структурированном хранилище [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], а также хранилище больших двоичных объектов.  Каждый пользовательский аватар, награды и логотип компании хранится в [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], но информация не возвращается в [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)].  
+В результате установки и включения решения [!INCLUDE[pn_gamification](pn-gamification.md)] идентификаторы организации пользователя (например, имя, фамилия и адрес электронной почты) будут сохранены в [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] для получения авторизации от службы [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)], размещенной в [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)]. Это применяется ко всем пользователям, включенным в службе [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] администратором. Решение [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] отправляет данные ключевых показателей эффективности, настроенные администратором, в службу [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], и эти данные сохраняются в структурированном хранилище [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], а также в хранилище BLOB-объектов.  Аватар, пользовательские награды и логотип компании каждого пользователя хранятся в [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], но информация не возвращается в [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)].  
   
-Обратите внимание, что администраторы и авторизованные пользователи могут использовать данные [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)], такие как телефонные звонки, возможности и забронированные доходы, чтобы настроить KPI для использования в играх. Служба [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] не инициирует вызовы [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)] и отвечает только на данные, такие как игры, в которых используются KPI, которые возвращаются к [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)].  
+Обратите внимание, что администраторы и авторизованные пользователи могут использовать данные [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)], например вызовы, возможные сделки и зарезервированный доход, чтобы настраивать ключевые показатели эффективности для использования в играх. Служба [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] не инициирует вызовы [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)] и реагирует только на данные, например игры, в которых используются ключевые показатели эффективности, которые возвращаются в [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)].  
   
-Администратор также может разрешить публикацию телевизионного потока [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)]. Игровые менеджеры могут настроить телевизионные потоки [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] и включить общедоступную потоковую передачу для просмотра телевизионного потока всех пользователей Интернета, у которых есть ссылка на канал.  
+Администратор также может разрешить сделать ТВ-поток [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] общедоступным. Руководители игр, которые настраивают ТВ-потоки [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] и включают общедоступную потоковую передачу, разрешат просмотр ТВ-потока всем пользователям в Интернете, имеющим ссылку на поток.  
   
-После этого администратор может отключить функциональность [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)], удалив это решение из организации [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)].  
+Впоследствии администратор может отключить функцию [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)], удалив это решение из организации [!INCLUDE[pn_microsoftcrm](pn-microsoftcrm.md)].  
   
-Компоненты и службы [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], используемые с функцией [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)], подробно рассматриваются в следующих разделах.  
+Компоненты и службы [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], используемые с [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)], подробно рассматриваются в следующих разделах.  
   
 [!INCLUDE[cc_privacy_note_azure_trust_center](cc-privacy-note-azure-trust-center.md)]  
   
@@ -22,7 +14,7 @@ ms.locfileid: "67212516"
   
  **Служба конструктора (веб-роль)**  
   
-Это обеспечивает несколько веб-служб для связи между [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)] ​​организацией и многопользовательскими [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] компонентами. Например, сведения об игрофикации хранятся в [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] SQL Storage.  В игровых вычислениях используется очередь [!INCLUDE[pn_azure_service_bus](pn-azure-service-bus.md)] и возвращается для оценки и отображения в службе.  Пользовательские и загруженные пользователем образы хранятся в [!INCLUDE[pn_azure_blob_storage](pn-azure-blob-storage.md)]. Все запросы проходят проверку подлинности в [!INCLUDE[pn_azure_active_directory](pn-azure-active-directory.md)].  
+Эта веб-роль предоставляет несколько веб-служб для обмена данными между организацией [!INCLUDE[pn_crm_shortest](pn-crm-shortest.md)] и компонентами [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], поддерживающими обслуживание нескольких развертываний одним экземпляром. Например, сведения о Gamification сохраняются в хранилище SQL [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)].  Расчеты игр используют очередь [!INCLUDE[pn_azure_service_bus](pn-azure-service-bus.md)] и возвращаются для хранения и отображения в службе.  Отправляемые пользователем и клиентом изображения сохраняются в [!INCLUDE[pn_azure_blob_storage](pn-azure-blob-storage.md)]. Аутентификация всех запросов выполняется с помощью [!INCLUDE[pn_azure_active_directory](pn-azure-active-directory.md)].  
   
 [Azure Key Vault](https://azure.microsoft.com/services/key-vault/)  
   
@@ -32,20 +24,20 @@ ms.locfileid: "67212516"
   
 [!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] использует SQL [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] для хранения:  
   
-- Данные ключевого показателя эффективности  
+- Данные КПЭ  
   
-- Вычисления игры  
+- Расчеты игры  
   
-- данных организации (владельца).  
+- данных организаций (клиентов).  
   
 [Хранилище BLOB-объектов Azure](https://azure.microsoft.com/services/storage/)  
   
-Аватары, логотипы компании и другие обновленные пользовательские образы хранятся в [!INCLUDE[pn_azure_blob_storage](pn-azure-blob-storage.md)].  
+Аватары, логотипы компании и другие отправляемые клиентом изображения сохраняются в [!INCLUDE[pn_azure_blob_storage](pn-azure-blob-storage.md)].  
   
-[Сеть доставки содержимого Azure (CDN)](https://azure.microsoft.com/services/cdn/)  
+[Сеть доставки содержимого (CDN) Azure](https://azure.microsoft.com/services/cdn/)  
   
-[!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] использует [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] CDN во время выполнения статического содержимого, например образов (включая загруженные образы, такие как пользовательские логотипы), [!INCLUDE[pn_JavaScript](pn-javascript.md)] и CSS.  
+[!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] использует сеть доставки содержимого [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] для предоставления статического содержимого в среду выполнения, например изображений (включая отправленные изображения, такие как логотипы клиентов), [!INCLUDE[pn_JavaScript](pn-javascript.md)] и CSS.  
   
 [Azure Active Directory](https://azure.microsoft.com/services/active-directory/)  
   
-[!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] использует [!INCLUDE[pn_azure_active_directory](pn-azure-active-directory.md)] для проверки подлинности пользователей и определения права на использование платформы.
+[!INCLUDE[pn_gamification_shortest](pn-gamification-shortest.md)] использует [!INCLUDE[pn_azure_active_directory](pn-azure-active-directory.md)] для проверки подлинности пользователей и определения их прав на использование платформы.

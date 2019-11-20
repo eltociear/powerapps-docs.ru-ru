@@ -5,7 +5,7 @@
  Компоненты и службы [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], используемые с функцией плана обучения, подробно рассматриваются в следующих разделах.  
   
 > [!NOTE]
->  Дополнительные сведения о дополнительных предложениях служб Azure см. в разделе [Центр управления безопасностью Microsoft Azure](https://azure.microsoft.com/support/trust-center/).  
+>  Дополнительные сведения о других предлагаемых службах Azure см. в [центре управления безопасностью Microsoft Azure](https://azure.microsoft.com/support/trust-center/).  
   
  [Облачные службы](https://azure.microsoft.com/services/cloud-services/)  
   

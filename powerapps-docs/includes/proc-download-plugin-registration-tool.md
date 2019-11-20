@@ -1,1 +1,1 @@
-Скачать средство регистрации подключаемых модулей можно из раздела [Скачивание средств из NuGet](../developer/common-data-service/download-tools-nuget.md).
+Загрузить средство регистрации подключаемых модулей можно из раздела [Скачивание средств из NuGet](../developer/common-data-service/download-tools-nuget.md).

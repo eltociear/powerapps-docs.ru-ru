@@ -10,7 +10,7 @@
   
  **[!INCLUDE[pn_customerinsight_full](pn-customer-insights-full.md)]**  
   
- В работающей в [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] службе [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)] хранятся данные [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)], включая личные данные клиентов, с целью расчетов для анализа отношений. Использование предварительной версии [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)] регулируется следующими [дополнительными условиями использования предварительных версий функций](http://go.microsoft.com/fwlink/p/?LinkId=511446).  
+ В работающей в [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] службе [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)] хранятся данные [!INCLUDE[pn_dynamics_crm](pn-dynamics-crm.md)], включая личные данные клиентов, с целью расчетов для анализа отношений. Использование предварительной версии [!INCLUDE[pn_customerinsight_short](pn-customer-insights-short.md)] регулируется следующими [дополнительными условиями использования предварительных версий функций](https://go.microsoft.com/fwlink/p/?LinkId=511446).  
   
  [Дополнительные сведения о предварительной версии Customer Insights](https://azure.microsoft.com/services/customer-insights/).  
   

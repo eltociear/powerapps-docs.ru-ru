@@ -6,7 +6,7 @@
  Ниже представлен список компонентов и служб [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)], используемых с функцией "Помочь улучшить Unified Service Desk".  
   
 > [!NOTE]
->  Дополнительные сведения о дополнительных предложениях служб [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] см. в разделе [Центр управления безопасностью Microsoft Azure](https://azure.microsoft.com/support/trust-center/).  
+>  Дополнительные сведения о других предлагаемых службах [!INCLUDE[pn_azure_shortest](pn-azure-shortest.md)] см. в [центре управления безопасностью Microsoft Azure](https://azure.microsoft.com/support/trust-center/).  
   
  [Облачные службы](https://azure.microsoft.com/services/cloud-services/) REST API данных OrgInsights (веб-роль)  
   

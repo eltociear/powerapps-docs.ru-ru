@@ -31,7 +31,7 @@
 - Служба хранилища [!INCLUDE[pn-azure-shortest](../includes/pn-azure-shortest.md)]
 
 > [!NOTE]
-> Подробнее о других предлагаемых службах [!INCLUDE[pn-azure-shortest](../includes/pn-azure-shortest.md)] см. в разделе [!INCLUDE[cc_privacy_note_azure_trust_center](../includes/cc_privacy_note_azure_trust_center.md)] (<https://azure.microsoft.com/support/trust-center/>).
+> Дополнительные сведения о других предлагаемых службах [!INCLUDE[pn-azure-shortest](../includes/pn-azure-shortest.md)] см. на сайте [!INCLUDE[cc_privacy_note_azure_trust_center](../includes/cc_privacy_note_azure_trust_center.md)] (<https://azure.microsoft.com/support/trust-center/>).
 
 ### [!INCLUDE[pn-customer-insights-full](../includes/pn-customer-insights-full.md)]
 
