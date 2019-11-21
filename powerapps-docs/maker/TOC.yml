@@ -174,20 +174,30 @@
               items:
                 - name: Common Data Service
                   href: canvas-apps/connections/connection-common-data-service.md
+                - name: Облачное хранилище
+                  href: canvas-apps/connections/cloud-storage-blob-connections.md
+                - name: "Dynamics\_365."
+                  href: canvas-apps/connections/connection-dynamics-crmonline.md
+                - name: Dynamics AX
+                  href: canvas-apps/connections/connection-dynamicsax.md
+                - name: Excel
+                  href: canvas-apps/connections/connection-excel.md
+                - name: Microsoft Translator
+                  href: canvas-apps/connections/connection-microsoft-translator.md
+                - name: "Outlook в Office\_365"
+                  href: canvas-apps/connections/connection-office365-outlook.md
+                - name: "Пользователи Office\_365"
+                  href: canvas-apps/connections/connection-office365-users.md
+                - name: База данных Oracle
+                  href: canvas-apps/connections/connection-oracledb.md
+                - name: Power BI
+                  href: canvas-apps/connections/connection-powerbi.md
                 - name: SharePoint
                   href: canvas-apps/connections/connection-sharepoint-online.md
                 - name: SQL Server
                   href: canvas-apps/connections/connection-azure-sqldatabase.md
-                - name: "Dynamics\_365."
-                  href: canvas-apps/connections/connection-dynamics-crmonline.md
-                - name: "Пользователи Office\_365"
-                  href: canvas-apps/connections/connection-office365-users.md
-                - name: "Outlook в Office\_365"
-                  href: canvas-apps/connections/connection-office365-outlook.md
-                - name: Excel
-                  href: canvas-apps/connections/connection-excel.md
-                - name: Облачное хранилище
-                  href: canvas-apps/connections/cloud-storage-blob-connections.md
+                - name: Twitter
+                  href: canvas-apps/connections/connection-twitter.md
             - name: Добавление подключения
               href: ./canvas-apps/add-data-connection.md
             - name: Управление подключениями
@@ -262,6 +272,8 @@
               href: ./canvas-apps/add-images-pictures-audio-video.md
             - name: Добавление данных Power BI
               href: ./canvas-apps/powerapps-custom-visual.md
+            - name: Работа с коллекцией
+              href: ./canvas-apps/show-images-text-gallery-sort-filter.md
             - name: Справка по элементу управления
               items:
                 - name: Список элементов управления и свойств
@@ -288,6 +300,8 @@
                   href: ./canvas-apps/controls/control-column.md
                 - name: Поле со списком
                   href: ./canvas-apps/controls/control-combo-box.md
+                - name: Контейнер (экспериментальная функция)
+                  href: ./canvas-apps/controls/control-container.md
                 - name: Таблица данных
                   href: ./canvas-apps/controls/control-data-table.md
                 - name: Выбор даты
@@ -348,6 +362,20 @@
                   href: ./canvas-apps/controls/control-audio-video.md
                 - name: Веб-сканер штрихкодов (экспериментальная функция)
                   href: ./canvas-apps/controls/control-barcodescanner.md
+            - name: Общие свойства
+              items:
+                - name: Возможности доступа
+                  href: ./canvas-apps/controls/properties-accessibility.md
+                - name: Цвет и граница
+                  href: ./canvas-apps/controls/properties-color-border.md
+                - name: Ядро
+                  href: ./canvas-apps/controls/properties-core.md
+                - name: Изображение
+                  href: ./canvas-apps/controls/properties-visual.md
+                - name: Размер и расположение
+                  href: ./canvas-apps/controls/properties-size-location.md
+                - name: Text
+                  href: ./canvas-apps/controls/properties-text.md
         - name: Настройка функций приложения
           items:
             - name: Начало работы с формулами
