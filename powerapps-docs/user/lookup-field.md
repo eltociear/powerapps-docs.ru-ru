@@ -1,5 +1,5 @@
 ---
-title: Использование поля подстановки в записи | MicrosoftDocs
+title: Use the lookup field on a record | MicrosoftDocs
 author: mduelae
 manager: kvivek
 ms.service: powerapps
@@ -14,95 +14,100 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c37e6e9e2b540dcad2c166a4ebf9d71d3b503978
-ms.sourcegitcommit: 10b2798d8f4acd01da15412a2e9fc872d1212d7c
+ms.openlocfilehash: 4ef67695603f3badeba92f46c6da90e21715c98b
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73728410"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74177855"
 ---
 #  <a name="use-the-lookup-field-on-a-record"></a>Использование поля подстановки в записи
 
-Поиск позволяет выбрать записи из связанной сущности. При выборе связанной сущности и вводе условий поиска, таких как имя или адрес электронной почты, поиск автоматически начинает разрешать частичный текст и отображает все совпадающие записи. Если после ввода полного текста условий поиска никакие записи не отображаются, отображается сообщение с указанием на отсутствие записей.
+Lookup helps you to choose records from a related entity. When you select a related entity and enter search criteria, such as a name or email address, lookup automatically begins to resolve the partial text and displays any matching records. If no records are displayed after you have typed the full text of your search criteria, a message is displayed specifying that there are no records.
 
-Например, можно выполнить поиск по имени **Эдриан думитраску**. При вводе **AD**можно автоматически заполнять и отображать соответствующие записи.
+For example, you might search for the name **Adrian Dumitrascu**. When you type **ad**, possible matching records are automatically populated and displayed.
 
   > [!div class="mx-imgBorder"]
-  > ![Автоматически заполняет совпадающие записи](media/automatically-populate-matching-records.png "Автоматически заполняет совпадающие записи")
+  > ![Automatically populates matching records](media/automatically-populate-matching-records.png "Automatically populates matching records")
   
 >[!NOTE] 
->Администратор может определить критерии, используемые подстановкой для разрешения частичного поиска текста.
+>An administrator can define the criteria that lookup uses for resolving partial search text.
 
-Кроме того, можно создать новую запись, нажав кнопку **создать** . Необходимо иметь достаточные разрешения для просмотра кнопки **создать** и создания записи. При выборе поля подстановки отображаются пять последних использованных записей вместе с пятью избранными записями. Отображаемые записи зависят от истории просмотра и избранного. 
+Also, you can create a new record by selecting the **New** button. You must have sufficient permissions to view the **New** button and create a record. When you select the lookup field, the five most recently used records are displayed along with five favorite records. Which records are displayed depends on your view history and the favorites you’ve pinned. 
 
-Например, если в журнале имеется только три записи, в подстановке отобразятся эти три, а также семь избранных записей. Если вы не закреплять Избранное, будут отображаться только самые последние просмотренные записи.
+For example, if you have only three records in your history, lookup will display those three, along with seven of your favorite records. If you have not pinned any favorites, only the most recently viewed records will be displayed.
 
-## <a name="types-of-lookups"></a>Типы уточняющих запросов
+## <a name="types-of-lookups"></a>Types of lookups
 
-Уточняющие запросы подразделяются на следующие: 
+Lookups are classified into the following: 
 
-- **Простой поиск:** Выберите одну запись в поле из одной сущности. 
+- **Simple lookup:** Select a single record in a field from a single entity. 
 
-- **Поля типа PartyList:** Используется для выбора нескольких записей из нескольких сущностей в уточняющем запросе. Используйте поля PartyList-Type, чтобы выбрать несколько записей. Это позволяет добавить каждую запись, выполняя новый поиск несколько раз. Каждый раз, когда вы выберете запись, вы сможете выполнить новый поиск другой записи.
+- **PartyList-type fields:** Use to select multiple records from multiple entities in a lookup. Use partylist-type fields to select multiple records. This allows you to add each record by performing a new search, multiple times. Every time you select a record, you will be able to perform a new search for another record.
   
-- **Поля, относящиеся к типу:** Используется для выбора одной записи из нескольких сущностей в уточняющем запросе. 
+- **Regarding-type fields:** Use to select a single record from multiple entities in a lookup. 
 
-## <a name="search-in-a-lookup-field"></a>Поиск в поле подстановки 
-Чтобы выполнить поиск по подстановке, выберите текстовое поле и введите условия поиска. Если для уточняющего запроса включены последние записи, последние записи будут отображаться при выборе текстового поля.
-
-  > [!div class="mx-imgBorder"]
-  > ![Просмотр поля подстановки](media/MRU.png "Просмотр поля подстановки")  
-
-## <a name="browse-in-a-lookup-field"></a>Просмотр в поле подстановки
-Чтобы просмотреть подстановку, щелкните значок поиска (лупа). Полный список элементов будет отображаться в раскрывающемся списке.
+## <a name="search-in-a-lookup-field"></a>Search in a lookup field 
+To search a lookup, select the textbox and type your search criteria. If recent records are enabled for your lookup, your recent records will be displayed when you select the textbox.
 
   > [!div class="mx-imgBorder"]
-  > ![Поиск в поле подстановки](media/MRU_1.png "Поиск в поле подстановки")  
+  > ![Browse a lookup field](media/MRU.png "Browse a lookup field")  
+  
+>[!NOTE]   
+> The default search result for lookup search is, begins with. This means results include records that begin with a specific word. For example, if you want to search for **Alpine Ski House**, type **alp** in the search box; if you type **ski**, the record will not show up in the search result.
+>
+> For a wildcard search use asterisks: For example, type *ski or *ski.
+
+## <a name="browse-in-a-lookup-field"></a>Browse in a lookup field
+To browse a lookup, select the lookup icon (magnifying glass). A full list of items will be shown in the dropdown.
+
+  > [!div class="mx-imgBorder"]
+  > ![Search a lookup field](media/MRU_1.png "Search a lookup field")  
  
-## <a name="most-recently-used-record-type-images"></a>Недавно использовавшиеся образы типов записей
-В списке последних использованных записей показано изображение, помогающее отличать типы записей.
+## <a name="most-recently-used-record-type-images"></a>Most recently used record type images
+The most recently used list of records shows an image to help distinguish between record types.
 
 >[!NOTE] 
->Последние записи не фильтруются по условию поиска или выбранному представлению.
+>Recent records are not filtered by search term or selected view.
 
   > [!div class="mx-imgBorder"]
-  > ![В полях подстановок отображается изображение](media/Lookup_03-MRU_Entity_Images_56[1].png "В полях подстановок отображается изображение")  
+  > ![Lookup fields shows image](media/Lookup_03-MRU_Entity_Images_56[1].png "Lookup fields shows image")  
   
-## <a name="record-type-selection-list"></a>Список выбора типа записей  
-Если результаты охватывают несколько типов записей, можно увидеть, сколько типов записей есть, и выбрать их из списка.
+## <a name="record-type-selection-list"></a>Record type selection list  
+When results span multiple record types, you can see how many types of records there are and select them from the list.
 
   > [!div class="mx-imgBorder"]
-  > ![Просмотр количества записей](media/Lookup_04-MultipleEntityTypes[1].gif "Просмотр количества записей")  
+  > ![See how many records](media/Lookup_04-MultipleEntityTypes[1].gif "See how many records")  
   
-## <a name="create-a-new-record-if-you-dont-find-an-existing-record"></a>Создать новую запись, если не найдена существующая запись
+## <a name="create-a-new-record-if-you-dont-find-an-existing-record"></a>Create a new record if you don’t find an existing record
 
-Если запись не найдена, выберите пункт **создать** в области поиска, чтобы создать новую запись.
+If you do not find a record, select **New** in the lookup area to create a new record.
 
 
-### <a name="replace-an-existing-record-from-a-lookup-field"></a>Замена существующей записи из поля подстановки
+### <a name="replace-an-existing-record-from-a-lookup-field"></a>Replace an existing record from a lookup field
 
-Можно заменить существующую запись при помощи простых поисков и типов, касающихся типа. Поиск записи. Затем выберите запись и замените ее новой записью.
+You can replace an existing record while using simple and regarding-type lookups. Search for a record. Then select the record, and replace it with a new record.
 
-### <a name="change-a-view-in-a-lookup-field"></a>Изменение представления в поле подстановки 
+### <a name="change-a-view-in-a-lookup-field"></a>Change a view in a lookup field 
 
-Выбор **представления изменений** позволяет определить следующее.
- - Способ просмотра записей, таких как **отслеживаемые контакты**, **представление поиска контактов**или **активные контакты**.
- - Данные, которые нужно просмотреть в записях, например имя, адрес электронной почты или номер телефона. Например, если вы хотите просмотреть только следующие контакты, выберите **изменить представление** \> **Контакты будут**выполняться. Будут показаны только те контакты, которые вы используете, как показано здесь. 
+Selecting **Change View** lets you determine:
+ - How you want to view records such as **Contacts Being Followed**, **Contacts Lookup View**, or **Active Contacts**.
+ - What you want to view in the records, such as name, email, or telephone number. For example, if you want to view only the contacts that you follow, select **Change View** \> **Contacts being followed**. Only the contacts that you are following will be displayed, as illustrated here. 
 
-    ![Изменить тип представления контактов](media/change-view.png "Изменить тип представления контактов")
+    ![Change view contacts types](media/change-view.png "Change view contacts types")
 
 >[!IMPORTANT] 
->Параметр **изменить представление** не будет виден, если администратор не настроил параметр для отображения в представлениях.
+>The **Change View** option will not be visible if your administrator hasn't configured the option to appear in your views.
 
-### <a name="choose-from-multiple-records"></a>Выбор из нескольких записей
+### <a name="choose-from-multiple-records"></a>Choose from multiple records
 
-Если в поле поиска больше записей, чем может поместиться в доступной области отображения, область отображения сворачивается, то есть записи, которые соответствуют отображаемой области, отображаются рядом с числом записей, которые не отображаются. Чтобы просмотреть все записи, выберите число. На следующих изображениях показано различие между свернутыми и не свернутыми полями.
+When lookup has more records in a field than can fit in the available display area, the display area is collapsed—that is, the records that do fit the display area are shown next to the number of records that are not shown. To view all records, select the number. The following images show the difference between collapsed and non-collapsed fields.
 
-**Свернута**
+**Collapsed:**
 
-![Свернутая область просмотра с множественным поиском](media/collapsed-multi-lookup-display-area.png "Свернутая область просмотра с множественным поиском")
+![Collapsed multi-lookup display area](media/collapsed-multi-lookup-display-area.png "Collapsed multi-lookup display area")
 
 
-**Без свертывания:**
+**Non-collapsed:**
 
-![Несвернутая область просмотра с множественным поиском](media/non-collapsed-multi-lookup-display-area.png "Несвернутая область просмотра с множественным поиском")
+![Non-collapsed multi-lookup display area](media/non-collapsed-multi-lookup-display-area.png "Non-collapsed multi-lookup display area")
