@@ -11,7 +11,7 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 996b31766641376e9a01cbefc876f3eb2b7aabc7
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73543234"
@@ -131,7 +131,7 @@ Group #1 + Leslie: John, Pete, Hannah, Leslie
 Jack Robinson
 ```
 
-### <a name="first"></a>Началь
+### <a name="first"></a>началь
 
 Возвращает первый элемент массива.
 
@@ -197,7 +197,7 @@ New York:
 Jack Robinson
 ```
 
-### <a name="join"></a>К
+### <a name="join"></a>к
 
 Соединяет элементы массива с символом, переданным в качестве параметра. Результатом является одна строка.
 
@@ -285,7 +285,7 @@ John, Pete, Hannah
 Pete
 ```
 
-### <a name="select"></a>Метьте
+### <a name="select"></a>метьте
 
 Выбирает значение заданного атрибута для каждого элемента в массиве и возвращает эти значения в виде массива.
 
@@ -321,7 +321,7 @@ John, Pete, Hannah
 Hannah, John, Pete
 ```
 
-### <a name="size"></a>Изменять
+### <a name="size"></a>изменять
 
 Возвращает количество элементов в массиве.
 
@@ -407,7 +407,7 @@ Dave Thomas, Jack Robinson, Jake Johnson, John Smith
 John Smith, Jake Johnson, Jack Robinson, Dave Thomas
 ```
 
-### <a name="where"></a>Которому
+### <a name="where"></a>которому
 
 Выберите все объекты в массиве, где заданный атрибут имеет заданное значение.
 

@@ -11,7 +11,7 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: af5b0ae8eddb68127c7271fccb4696a23fedfc60
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73542745"
@@ -64,7 +64,7 @@ ms.locfileid: "73542745"
    > - Индекс: н/д (0)                                              
    > - URL-адрес: **https://portal.contoso.com/signin-saml2**
 
-8. Настройка удостоверений. Укажите https://portal.contoso.com/ , выберите **Добавить**, а затем нажмите кнопку **Далее**.
+8. Настройка удостоверений. Укажите https://portal.contoso.com/, выберите **Добавить**, а затем нажмите кнопку **Далее**.
    Если применимо, можно добавить дополнительные удостоверения для каждого дополнительного портала проверяющей стороны. Пользователи смогут проходить проверку подлинности в любом или всех доступных удостоверениях.
 9. Выберите правила авторизации выдачи: выберите **разрешите всем пользователям доступ к этой проверяющей стороне**, а затем нажмите кнопку **Далее**.
 10. Готово к добавлению отношения доверия: нажмите кнопку **Далее**.
@@ -98,7 +98,7 @@ ms.locfileid: "73542745"
 Можно настроить несколько служб IdP, подставив метку для тега [Provider]. Каждая уникальная метка образует группу параметров, связанных с IdP. Примеры: ADFS, [!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)]AD, Мидп
 
 
-| Имя параметра сайта                                             | Description                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Имя параметра сайта                                             | Описание                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Проверка подлинности/регистрация/Екстерналлогиненаблед              | Включает или отключает вход и регистрацию внешней учетной записи. Значение по умолчанию: true                                                                                                                                                                                                                                                                                                                                                            |
 | Authentication/SAML2/[поставщик]/Метадатааддресс             | Обязательно. URL-адрес метаданных [WS-Federation](https://msdn.microsoft.com/library/bb498017.aspx) сервера [!include[](../../../includes/pn-adfs-short.md)] (STS). Обычно она заканчивается путем:/FederationMetadata/2007-06/FederationMetadata. XML. Пример: `https://adfs.contoso.com/FederationMetadata/2007-06/FederationMetadata.xml`. [!include[](../../../includes/proc-more-information.md)] [WsFederationAuthenticationOptions. MetadataAddress](https://msdn.microsoft.com/library/microsoft.owin.security.wsfederation.wsfederationauthenticationoptions.metadataaddress.aspx) |  
@@ -241,7 +241,7 @@ Write-Output $idpInitiatedUrl
 
 ## <a name="shibboleth-identity-provider-3"></a>Поставщик удостоверений Shibboleth 3
 
-Используйте следующие рекомендации для правильной настройки [поставщика удостоверений Shibboleth](https://wiki.shibboleth.net/confluence/display/IDP30/Home) в качестве службы IDP. В следующем примере предполагается, что IdP размещается в https://idp.contoso.com домена.  
+Используйте следующие рекомендации для правильной настройки [поставщика удостоверений Shibboleth](https://wiki.shibboleth.net/confluence/display/IDP30/Home) в качестве службы IDP. В следующем примере предполагается, что IdP размещается в https://idp.contoso.comдомена.  
 
 URL-адрес метаданных федерации — https://idp.contoso.com/idp/shibboleth
 

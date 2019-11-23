@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/25/2016
+ms.date: 11/22/2019
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e17f580a98013f385080ea1189281607825ce7a8
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 7dd961568fe9cf2a9eb58ad761403b20c99824be
+ms.sourcegitcommit: 8f32eed48adf4b24b9ca607bbf6db3d19749c46f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649875"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74415513"
 ---
 # <a name="text-input-control-in-powerapps"></a>Элемент управления "Текстовое поле" в PowerApps
 Поле, в котором пользователь может вводить текст, числа и другие данные.
@@ -56,6 +55,8 @@ ms.PowerAppsDecimalTransform: true
 **[DisabledColor](properties-color-border.md)** — цвет текста в элементе управления, если для его свойства **[DisplayMode](properties-core.md)** установлено значение **Отключено**.
 
 **[DisabledFill](properties-color-border.md)** — цвет фона элемента управления, если для его свойства **[DisplayMode](properties-core.md)** установлено значение **Отключено**.
+
+**EnableSpellCheck** – Whether a text-input control should use the browser spell check function. Power Apps for Windows doesn't support this property.
 
 **[Fill](properties-color-border.md)**  — цвет фона элемента управления.
 
@@ -125,7 +126,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Underline](properties-text.md)** определяет, когда под текстом, отображаемым в элементе управления, проходит линия.
 
-**Виртуалкэйбоардмоде** — тип виртуальной клавиатуры, текста или цифр, который отображается на сенсорном экране пользователя приложения. Свойство **Format** определяет значение по умолчанию. Поддержка устройств различается. На устройствах под управлением iOS должна быть установлена версия не ниже 12,2. Рекомендуемая версия Android — 9,0, а возможности цифровых клавиатур различаются для устройств Android. Windows 10 не поддерживает это свойство.  
+**VirtualKeyboardMode** – Type of virtual keyboard, text or numeric, that appears on an app user's touch screen. The **Format** property determines the default value. Device support varies. Devices that are running iOS must have at least version 12.2. The recommended version of Android is 9.0, and capabilities of numeric keyboards vary for Android devices. Windows 10 doesn't support this property.  
 
 **[Visible](properties-core.md)** определяет, отображается ли элемент управления или он скрыт.
 
@@ -144,7 +145,7 @@ ms.PowerAppsDecimalTransform: true
    
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте кнопку, укажите для ее свойства **[Text](properties-core.md)** значение **Добавить**, а для свойства **[OnSelect](properties-core.md)** следующую формулу:<br>
-   **Collect(Names; {FirstName:inputFirst.Text; LastName:inputLast.Text})**
+   **Collect(Names, {FirstName:inputFirst.Text, LastName:inputLast.Text})**
    
     Нужны дополнительные сведения о функции **[Collect](../functions/function-clear-collect-clearcollect.md)** или [других функциях](../formula-reference.md)?
 3. Добавьте коллекцию текстов в портретной (вертикальной) ориентации, укажите для свойства **[Items](properties-core.md)** значение **Names**, а для свойства **[Text](properties-core.md)** элемента **Subtitle1** значение **ThisItem.FirstName**.
@@ -157,7 +158,7 @@ ms.PowerAppsDecimalTransform: true
 1. Добавьте элемент управления "Текстовое поле", назовите его **inputPassword** и укажите для свойства **Mode** значение **Password**.
 
 1. Добавьте метку и установите в ее свойстве **[Text](properties-core.md)** формулу:<br>
-   **If(inputPassword.Text = "P@ssw0rd"; "Доступ предоставлен"; "Доступ запрещен")**
+   **If(inputPassword.Text = "P@ssw0rd", "Доступ предоставлен", "Доступ запрещен")**
 
     Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 

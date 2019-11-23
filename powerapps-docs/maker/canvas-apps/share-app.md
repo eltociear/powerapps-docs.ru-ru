@@ -25,7 +25,7 @@ ms.locfileid: "74177862"
 Создав приложение на основе холста, решающее определенную бизнес-задачу, вы можете указать, кто в организации может запускать или изменять приложение и даже предоставлять к нему доступ кому-то еще. Укажите каждого пользователя по имени или выберите группу безопасности в Azure Active Directory. Если с приложением будут работать все пользователи, укажите, что его может запускать вся организация.
 
 > [!IMPORTANT]
-> For a shared app to function as you expect, you must also manage permissions for the data source or sources on which the app is based, such as [Common Data Service](#common-data-service) or [Excel](share-app-data.md). Может также потребоваться предоставить общий доступ к [другим ресурсам](share-app-resources.md), от которых зависит приложение, например к потокам, шлюзам или подключениям.
+> Чтобы общее приложение функционировало в соответствии с ожиданиями, необходимо также управлять разрешениями для источников данных или источников, на которых основано приложение, например [Common Data Service](#common-data-service) или [Excel](share-app-data.md). Может также потребоваться предоставить общий доступ к [другим ресурсам](share-app-resources.md), от которых зависит приложение, например к потокам, шлюзам или подключениям.
 
 ## <a name="prerequisites"></a>Технические условия
 
@@ -41,204 +41,204 @@ ms.locfileid: "74177862"
 
     ![Открытие списка приложений](./media/share-app/file-apps.png)
 
-1. Select the app that you want to share by selecting its icon.
+1. Выберите приложение, к которому вы хотите предоставить общий доступ, выбрав его значок.
 
-    ![Select an app](./media/share-app/select-app.png)
+    ![Выберите приложение](./media/share-app/select-app.png)
 
-1. In the banner, select **Share**.
+1. В баннере выберите **Share (общий доступ**).
 
     ![Открытие экрана общего доступа](./media/share-app/banner-share.png)
 
-1. Specify by name or alias the users or security groups in Azure Active Directory with which you want to share the app.
+1. Укажите по имени или псевдониму пользователей или групп безопасности в Azure Active Directory, с которыми вы хотите предоставить общий доступ к приложению.
 
-    - To allow your entire organization to run the app (but not modify or share it), type **Everyone** in the sharing panel.
-    - You can share an app with a list of aliases, friendly names, or a combination of those (for example, **Jane Doe &lt;jane.doe@contoso.com** ) if the items are separated by semi-colons. If more than one person has the same name but different aliases, the first person found will be added to the list. A tooltip appears if a name or alias already has permission or can't be resolved. 
+    - Чтобы разрешить всей организации запускать приложение (но не изменять его или предоставлять к нему общий доступ), введите **все** на панели Общий доступ.
+    - Вы можете поделиться приложением со списком псевдонимов, понятными именами или их сочетанием (например, **Мария петров &lt;jane.doe@contoso.com>** ), если элементы разделены точками с запятой. Если несколько человек имеют одно и то же имя, но разные псевдонимы, в список будет добавлен первый найденный пользователь. Всплывающая подсказка появляется, если имя или псевдоним уже имеют разрешение или не удается разрешить. 
 
-    ![Specify users and co-owners](./media/share-app/share-everyone.png)
-
-    > [!NOTE]
-    > You can't share an app with a distribution group in your organization or with a group outside your organization.
-
-1. If you want to allow those with whom you're sharing the app to edit and share it (in addition to running it), select the **Co-owner** check box.
-
-    You can't grant **Co-owner** permission to a security group if you [created the app from within a solution](add-app-solution.md).
+    ![Указание пользователей и совладельцев](./media/share-app/share-everyone.png)
 
     > [!NOTE]
-    > Regardless of permissions, no two people can edit an app at the same time. If one person opens the app for editing, other people can run it but not edit it.
+    > Вы не можете поделиться приложением с группой рассылки в вашей организации или с группой за пределами Организации.
 
-1. If your app connects to data for which users need access permissions, specify them.
+1. Если вы хотите разрешить пользователям, которым вы предоставляете доступ к приложению, редактировать их и предоставить к ним общий доступ (помимо запуска), установите флажок **совладелец** .
 
-    For example, your app might connect to an entity in a Common Data Service database. When you share such an app, the sharing panel prompts you to manage security for that entity.
+    Вы не можете предоставить права **совладельца** группе безопасности, если вы [создали приложение в рамках решения](add-app-solution.md).
+
+    > [!NOTE]
+    > Независимо от разрешений, два человека не могут одновременно изменять приложение. Если один пользователь открывает приложение для редактирования, другие пользователи могут запускать его, но не редактировать его.
+
+1. Если приложение подключается к данным, для которых пользователям требуются разрешения на доступ, укажите их.
+
+    Например, приложение может подключаться к сущности в Common Data Service базе данных. При совместном использовании такого приложения панель общего доступа предложит вам управлять безопасностью для этой сущности.
 
     > [!div class="mx-imgBorder"]
-    > ![Assign a security role](media/share-app/cds-assign-security-role.png)
+    > ![назначить роль безопасности](media/share-app/cds-assign-security-role.png)
 
-    For more information about managing security for an entity, see [Manage entity permissions](share-app.md#manage-entity-permissions) later in this topic.
+    Дополнительные сведения об управлении безопасностью для сущности см. в разделе [Управление разрешениями сущностей](share-app.md#manage-entity-permissions) далее в этой статье.
 
-1. If you want to help people find your app, select the **Send an email invitation to new users** check box.
+1. Если вы хотите помочь людям находить ваше приложение, установите флажок **Отправить приглашение по электронной почте для новых пользователей** .
 
-1. At the bottom of the share panel, select **Share**.
+1. В нижней части панели общего доступа выберите **общий доступ**.
 
-    Everyone with whom you shared the app can run it in PowerApps Mobile on a mobile device or in AppSource on [Dynamics 365](https://home.dynamics.com) in a browser. Co-owners can edit and share the app in [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+    Все, кому предоставлен общий доступ к приложению, могут запускать его в PowerApps Mobile на мобильном устройстве или в AppSource в [Dynamics 365](https://home.dynamics.com) в браузере. Совладельцы могут изменять и предоставлять общий доступ к приложению в [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
-    If you sent an email invitation, everyone with whom you shared the app can run it by selecting a link in the invitation.
+    Если вы отправили приглашение по электронной почте, все, кому предоставлен общий доступ к приложению, смогут запустить его, выбрав ссылку в приглашении.
 
-    - If a user selects the link on a mobile device, the app opens in PowerApps Mobile.
-    - If a user selects the link on a desktop computer, the app opens in a browser.
+    - Если пользователь выбирает ссылку на мобильном устройстве, приложение открывается в PowerApps Mobile.
+    - Если пользователь выбирает ссылку на настольном компьютере, приложение открывается в браузере.
 
-    Co-owners who receive an invitation get another link that opens the app for editing in PowerApps Studio.
+    Совладельцы, получившие приглашение, получают другую ссылку, которая открывает приложение для редактирования в PowerApps Studio.
 
-You can change permissions for a user or a security group by selecting their name and then performing either of these steps:
+Вы можете изменить разрешения для пользователя или группы безопасности, выбрав их имя и выполнив одно из следующих действий.
 
-- To allow co-owners to run the app but no longer edit or share it, clear the **Co-owner** check box.
-- To stop sharing the app with that user or group, select the Remove (x) icon.
+- Чтобы разрешить совладельцам запускать приложение, но больше не изменять его или предоставлять к нему доступ, снимите флажок **совладелец** .
+- Чтобы отменить общий доступ к приложению для этого пользователя или группы, щелкните значок Удалить (x).
 
 ## <a name="security-group-considerations"></a>Вопросы, касающиеся групп безопасности
 
 - Если общий доступ к приложению предоставляется группе безопасности, указываемые для группы разрешения предоставляются всем участникам группы и каждому, кто к ней присоединится. Каждый пользователь, выходящий из группы, теряет эти разрешения, если он не состоит в другой группе с доступом или ему не предоставлено разрешение как отдельному пользователю.
 
-- У каждого участника группы безопасности есть те же разрешения на приложение, которые назначались группе в целом. Однако можно предоставить больше разрешений одному или нескольким участникам группы, чтобы расширить для них права доступа. For example, you can give Security Group A permission to run an app, but you can also give User B, who belongs to that group, **Co-owner** permission. Каждый участник группы безопасности сможет запускать приложение, но только пользователь Б сможет изменять его. If you give Security Group A **Co-owner** permission and User B permission to run the app, that user can still edit the app.
+- У каждого участника группы безопасности есть те же разрешения на приложение, которые назначались группе в целом. Однако можно предоставить больше разрешений одному или нескольким участникам группы, чтобы расширить для них права доступа. Например, можно предоставить группе безопасности разрешение на запуск приложения, но вы также можете предоставить пользователю б, который входит в эту группу, разрешение **совладельца** . Каждый участник группы безопасности сможет запускать приложение, но только пользователь Б сможет изменять его. Если предоставить группе безопасности разрешение **совладельца** и разрешение пользователя б для запуска приложения, этот пользователь все равно сможет изменить приложение.
 
 ## <a name="manage-entity-permissions"></a>Управление разрешениями сущности
 
 ### <a name="common-data-service"></a>Common Data Service
 
-If you create an app based on Common Data Service, you must also ensure that the users with whom you share the app have the appropriate permissions for the entity or entities on which the app relies. Specifically, those users must belong to a security role that can perform tasks such as creating, reading, writing, and deleting relevant records. In many cases, you'll want to create one or more custom security roles with the exact permissions that users need to run the app. You can then assign a role to each user as appropriate.
+Если вы создаете приложение на основе Common Data Service, необходимо также убедиться, что пользователи, которым предоставлен общий доступ к приложению, имеют соответствующие разрешения для сущности или сущностей, на которые полагается приложение. В частности, эти пользователи должны принадлежать к роли безопасности, которая может выполнять такие задачи, как создание, чтение, запись и удаление соответствующих записей. Во многих случаях необходимо создать одну или несколько настраиваемых ролей безопасности с точно такими разрешениями, которые требуются пользователям для запуска приложения. Затем можно назначить роль каждому пользователю.
 
 > [!NOTE]
-> As of this writing, you can assign security roles to individual users and security groups in Azure Active Directory but not to Office groups.
+> На момент написания этой статьи вы можете назначать роли безопасности отдельным пользователям и группам безопасности в Azure Active Directory, но не в группы Office.
 
 #### <a name="prerequisite"></a>Необходимое условие
 
-To assign a role, you must have **System administrator** permissions for a Common Data Service database.
+Чтобы назначить роль, необходимо иметь разрешения **системного администратора** для базы данных Common Data Service.
 
-#### <a name="assign-a-security-group-in-azure-ad-to-a-role"></a>Assign a security group in Azure AD to a role
+#### <a name="assign-a-security-group-in-azure-ad-to-a-role"></a>Назначение роли группе безопасности в Azure AD
 
-1. In the sharing panel, select **Assign a security role** under **Data permissions**.
+1. На панели совместного доступа выберите **назначить роль безопасности** в разделе **разрешения**на доступ к данным.
 
-1. Select the role or roles in Common Data Service that you want to assign to the user or the security group in Azure AD with which you want to share the app.
+1. Выберите роль или роли в Common Data Service, которые вы хотите назначить пользователю или группе безопасности в Azure AD, к которой вы хотите предоставить общий доступ к приложению.
      > [!div class="mx-imgBorder"] 
-     > ![Security role list](media/share-app/cds-assign-security-role-list.png "Security role list")
+     > ![Список ролей безопасности](media/share-app/cds-assign-security-role-list.png "Список ролей безопасности")
 
 ### <a name="common-data-service-previous-version"></a>Common Data Service (предыдущая версия)
 
-When you share an app that's based on an older version of Common Data Service, you must share the runtime permission to the service separately. If you don’t have permission to do this, see your environment administrator.
+При совместном использовании приложения, основанного на более ранней версии Common Data Service, необходимо предоставить разрешение среды выполнения отдельно для службы. Если у вас нет разрешения на это, обратитесь к администратору среды.
 
-## <a name="share-with-guests"></a>Share with guests
+## <a name="share-with-guests"></a>Поделиться с гостями
  
-PowerApps canvas apps can be shared with guest users of an Azure Active Directory tenant. This enables inviting external business partners, contractors, and third parties to run your company’s canvas apps. 
+Приложения PowerApps Canvas можно совместно использовать с гостевыми пользователями Azure Active Directory клиента. Это позволяет приглашать внешних бизнес-партнеров, подрядчиков и сторонних производителей запускать приложения для работы с холстами компании. 
 
 > [!NOTE]
-> Guests may only be assigned the **User** role, and not the **Co-owner** role, for apps shared with them.
+> Гостям может быть назначена только роль **пользователя** , а не роль **совладельца** , для приложений, которым они предоставлены.
 
 ### <a name="prerequisites"></a>Технические условия
-- In Azure Active Directory (Azure AD), enable B2B external collaboration for the tenant. More information: [Enable B2B external collaboration and manage who can invite guests](/azure/active-directory/b2b/delegate-invitations)
-    - Enable B2B external collaboration is on by default. However, the settings can be changed by a tenant admin.  For more information about Azure AD B2B, see [What is guest user access in Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)  
-- Access to an account that can add guest users to an Azure AD tenant. Admins and users with the Guest Inviter role can add guests to a tenant.   
-- The guest user must have a license with Power Apps use rights that matches the capability of the app assigned through one of the following tenants:
-    - The tenant hosting the app being shared.
-    - The home tenant of the guest user.
+- В Azure Active Directory (Azure AD) включите внешнюю совместную работу B2B для клиента. Дополнительные сведения: [Включение внешней совместной работы B2B и управление пользователями, которые могут приглашать гостей](/azure/active-directory/b2b/delegate-invitations)
+    - Включение внешней совместной работы B2B включено по умолчанию. Однако параметры могут быть изменены администратором клиента.  Дополнительные сведения об Azure AD B2B см [. в статье что такое доступ гостевых пользователей в Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)  
+- Доступ к учетной записи, которая может добавлять гостевых пользователей в клиент Azure AD. Администраторы и пользователи с ролью гостя может добавлять гостей в клиент.   
+- Гостевой пользователь должен иметь лицензию, в которой приложения Power Apps используют права, соответствующие возможности приложения, назначенного одним из следующих клиентов:
+    - Клиент, на котором размещено приложение, к которому предоставляется общий доступ.
+    - Домашний клиент гостевого пользователя.
 
-### <a name="steps-to-grant-guest-access"></a>Steps to grant guest access
-1. Select **New guest user** to add guest users in Azure AD. More information: [Quickstart: Add a new guest user in Azure AD](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
+### <a name="steps-to-grant-guest-access"></a>Действия по предоставлению гостевого доступа
+1. Выберите **Новый гостевой пользователь** , чтобы добавить гостевых пользователей в Azure AD. Дополнительные сведения см. [в кратком руководстве: Добавление нового гостевого пользователя в Azure AD](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
     > [!div class="mx-imgBorder"] 
-    > ![Add guest in Azure AD](media/share-app/guest_access_doc_1.png "Add guest in Azure AD")
-2. If the guest user doesn't already have a license in their home tenant, assign a license to the guest user.
-   - To assign guest users from admin.microsoft.com, see [Assign licenses to one user](/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
-   - To assign guest users from portal.azure.com, see [Assign or remove licenses](/azure/active-directory/fundamentals/license-users-groups).
+    > ![Добавление гостя в Azure AD](media/share-app/guest_access_doc_1.png "Добавление гостя в Azure AD")
+2. Если у гостевого пользователя еще нет лицензии в своем домашнем клиенте, назначьте лицензию для гостевого пользователя.
+   - Сведения о назначении гостевых пользователей из admin.microsoft.com см. в статье [Назначение лицензий одному пользователю](/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+   - Сведения о назначении гостевых пользователей из portal.azure.com см. в статье [назначение или удаление лицензий](/azure/active-directory/fundamentals/license-users-groups).
  
    > [!IMPORTANT]
-   > You may need to disable the Microsoft 365 admin center preview to assign a license to a guest. 
+   > Чтобы назначить лицензию для гостя, может потребоваться отключить Microsoft 365 предварительной версии центра администрирования. 
 
-3. Share the canvas app. 
-    1. Sign in to https://make.powerapps.com  
-    2. Go to **Apps**, select a canvas app, and then on the command bar select **Share**. 
-    3. Enter an email address for a guest user from an Azure AD tenant. More information: [What is guest user access in Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)
+3. Предоставьте общий доступ к приложению Canvas. 
+    1. Войдите в https://make.powerapps.com  
+    2. Перейдите в раздел **приложения**, выберите приложение Canvas, а затем на панели команд выберите **Общая папка**. 
+    3. Введите адрес электронной почты гостевого пользователя из клиента Azure AD. Дополнительные сведения см. [в разделе что такое доступ гостевых пользователей в Azure AD B2B?](/azure/active-directory/b2b/what-is-b2b)
           > [!div class="mx-imgBorder"] 
-          > ![Share with guest](media/share-app/guest_access_doc_2.png "Share with guest")
+          > ![Поделиться с гостевой службой](media/share-app/guest_access_doc_2.png "Поделиться с гостевой службой")
  
-After you share an app for guest access, guests can discover and access apps shared with them from the email sent to them as part of sharing.
+После того как вы поделитесь своим приложением для гостевого доступа, гости смогут обнаруживать приложения и получать к ним доступ из сообщения электронной почты, отправленного им в рамках общего доступа.
 
 > [!div class="mx-imgBorder"]  
-> ![Guests receive app share email](media/share-app/guest_access_doc_4.png "Guests receive app share email")
+> ![Гости получают адрес электронной почты для общего ресурса приложения](media/share-app/guest_access_doc_4.png "Гости получают адрес электронной почты для общего ресурса приложения")
 
 ### <a name="frequently-asked-questions"></a>Часто задаваемые вопросы
 
-#### <a name="whats-the-difference-between-canvas-app-guest-access-and-powerapps-portals"></a>What’s the difference between canvas app guest access and PowerApps Portals? 
-Canvas apps enable building an app, tailored to digitizing a business processes, without writing code in a traditional programming language such as C#. Guest access for canvas apps enables teams of individuals made up of different organizations participating in a common business process to access the same app resources that may be integrated with a wide variety of Microsoft and third-party sources. More information: [Overview of canvas-app connectors for PowerApps](/powerapps/maker/canvas-apps/connections-list).
+#### <a name="whats-the-difference-between-canvas-app-guest-access-and-powerapps-portals"></a>В чем разница между гостевым доступом к приложениям Canvas и порталами PowerApps? 
+Приложения Canvas позволяют создавать приложения, адаптированные к работе с бизнес-процессами, без написания кода на традиционном языке программирования, например C#. Гостевой доступ для приложений Canvas позволяет группам лиц, которые участвуют в разных организациях, состоять в общем бизнес-процессе, получать доступ к тем же ресурсам приложения, которые могут интегрироваться с разнообразными источниками Майкрософт и сторонних источников. Дополнительные сведения см. [в обзоре соединителей Canvas-App Connectors for PowerApps](/powerapps/maker/canvas-apps/connections-list).
 
-[PowerApps Portals](/powerapps/maker/portals/overview) provide the ability to build low-code, responsive websites that allow external users to interact with the data stored in Common Data Service. It allows organizations to create websites that can be shared with users external to their organization either anonymously or through the login provider of their choice, such as LinkedIn, Microsoft Account, or other commercial login providers. 
+[Порталы PowerApps](/powerapps/maker/portals/overview) предоставляют возможность создавать низкоуровневые, реагирующие на запросы веб-сайты, которые позволяют внешним пользователям взаимодействовать с данными, хранящимися в Common Data Service. Она позволяет организациям создавать веб-сайты, которые могут использоваться совместно с пользователями, внешними по отношению к Организации, либо анонимно, либо через поставщика входа по своему усмотрению, например LinkedIn, учетная запись Майкрософт или другие коммерческие поставщики входа. 
 
-The following table outlines a few core capability differences between PowerApps Portals and canvas apps.  
+В следующей таблице приведены несколько различий между основными возможностями между порталами PowerApps и приложениями Canvas.  
 
-| | Интерфейс | Проверка подлинности | Accessible data sources |
+| | Интерфейс | Проверка подлинности | Доступные источники данных |
 |------|--------|----------|-------------------|
-| PowerApps Portals | Browser only experience | Allows anonymous and authenticated access | Common Data Service |
-| Приложения на основе холста | Browser and mobile apps | Requires authentication via Azure AD | Any ~150 out-of-box connectors and any custom connector  |
+| Порталы PowerApps | Взаимодействие только с браузером | Разрешение анонимного доступа и доступ с проверкой подлинности | Common Data Service |
+| Приложения на основе холста | Браузер и мобильные приложения | Требуется проверка подлинности с помощью Azure AD | Любые соединители ~ 150 и любой пользовательский соединитель.  |
 ||
 
-#### <a name="can-guests-access-customized-forms-in-sharepoint"></a>Can guests access customized forms in SharePoint?
-Да. Any user that can access a SharePoint list with a customized form can create and edit items in the list, using the form, without any Power Apps license.
+#### <a name="can-guests-access-customized-forms-in-sharepoint"></a>Могут ли гости обращаться к настроенным формам в SharePoint?
+Да. Любой пользователь, который может получить доступ к списку SharePoint с помощью настраиваемой формы, может создавать и изменять элементы в списке, используя форму без лицензии на Power Apps.
 
-#### <a name="can-guests-access-apps-embedded-in-sharepoint"></a>Can guests access apps embedded in SharePoint? 
-Да. Though, access to canvas standalone apps require a license with Power Apps use rights that matches the capability of the app, including apps that are embedded. When embedding a canvas app in SharePoint via the Microsoft PowerApps embed control, enter the app id. To do this, enter the app ID in the **App web link or ID** box. 
-
-> [!div class="mx-imgBorder"]  
-> ![Embed canvas app in SharePoint for guests](media/share-app/guest_access_doc_5.PNG "Embed canvas app in SharePoint for guests")
-
-When embedding a canvas app in SharePoint via the iFrame HTML tag, reference the app using the full web URL. To find the URL, go to https://make.powerapps.com, select an app, select the **Details** tab, and the URL is displayed under **Web link**.
+#### <a name="can-guests-access-apps-embedded-in-sharepoint"></a>Могут ли гости получать доступ к приложениям, внедренным в SharePoint? 
+Да. Однако доступ к автономным приложениям для холста требует наличия лицензии с приложениями Power Apps, которые соответствуют возможностям приложения, включая внедренные приложения. При внедрении приложения Canvas в SharePoint с помощью элемента управления Microsoft PowerApps embed введите идентификатор приложения. Для этого введите идентификатор приложения в поле " **веб-ссылка приложения" или "идентификатор** ". 
 
 > [!div class="mx-imgBorder"]  
-> ![Canvas app details](media/share-app/guest_access_doc_6.PNG "Canvas app details")
+> ![Внедрение приложения Canvas в SharePoint для гостей](media/share-app/guest_access_doc_5.PNG "Внедрение приложения Canvas в SharePoint для гостей")
 
-#### <a name="how-come-guests-can-launch-the-app-shared-with-them-but-connections-fail-to-be-created"></a>How come guests can launch the app shared with them but connections fail to be created?
-As with non-guests, the underlying data source(s) accessed by the app must also be made accessible to the guest.
+При внедрении приложения Canvas в SharePoint с помощью HTML-тега iFrame сослаться на приложение, используя полный веб-URL. Чтобы найти URL-адрес, перейдите на https://make.powerapps.com, выберите приложение, перейдите на вкладку " **сведения** ", и URL-адрес отобразится в разделе " **веб-ссылка**".
 
-#### <a name="what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them"></a>What license must be assigned to my guest so they can run an app shared with them?
-The same license that’s required for non-guests to run an app. For instance, if the app uses premium connecters then a PowerApps Per App Plan or a PowerApps Per User Plan must be assigned to the guest.  
+> [!div class="mx-imgBorder"]  
+> ![Сведения о приложении Canvas](media/share-app/guest_access_doc_6.PNG "Сведения о приложении Canvas")
 
-|                                 | SharePoint customized form | Standalone canvas app using non-premium connectors | Standalone canvas app using premium connectors | Model driven app |
+#### <a name="how-come-guests-can-launch-the-app-shared-with-them-but-connections-fail-to-be-created"></a>Как гости могут запустить приложение, к которому предоставлен общий доступ, но подключения не удается создать?
+Как и в случае с не являющимися гостями, базовые источники данных, к которым обращается приложение, также должны быть доступны для гостей.
+
+#### <a name="what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them"></a>Какая лицензия должна быть назначена моей гостевой виртуальной машине, чтобы они могли запускать приложение с общим доступом?
+Та же самая лицензия, которая необходима для запуска приложения не-гостями. Например, если приложение использует подключаемые программы уровня "Премиум", то гостевой пользователь должен назначить план PowerApps на уровне приложения или PowerApps на пользователя.  
+
+|                                 | Настраиваемая форма SharePoint | Автономное приложение Canvas с использованием соединителей без категории "Премиум" | Автономное приложение Canvas с использованием соединителей категории "Премиум" | Приложение, управляемое моделью |
 |---------------------------------|----------------------------|----------------------------------------------------|------------------------------------------------|------------------|
-| SharePoint user (no PA license) | x                          |                                                    |                                                |                  |
-| Power Apps Included w/ Office    | x                          | x                                                  |                                                |                  |
-| Power Apps Per App Plan          | x                          | x                                                  | x                                              | x                |
-| Power Apps Per User Plan         | x                          | x                                                  | x                                              | x                |
+| Пользователь SharePoint (без лицензии PA) | x                          |                                                    |                                                |                  |
+| Включенные приложения Power Apps    | x                          | x                                                  |                                                |                  |
+| Power Apps на план приложений          | x                          | x                                                  | x                                              | x                |
+| Пользовательский план Power Apps на пользователя         | x                          | x                                                  | x                                              | x                |
 
 
-#### <a name="in-powerapps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>In PowerApps Mobile, how does a guest see apps for their home tenant?
-Any user that has accessed an canvas app, on their mobile device, that’s published in an Azure AD tenant that isn’t their home tenant must sign-out of PowerApps and sign back in to PowerApps Mobile.  
+#### <a name="in-powerapps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>Как в PowerApps Mobile вы видите приложения для своего домашнего клиента?
+Любой пользователь, который получил доступ к приложению Canvas, на мобильном устройстве, опубликованном в клиенте Azure AD, который не является своим домашним клиентом, должен выйти из PowerApps и войти в службу PowerApps Mobile.  
 
-#### <a name="must-a-guest-accept-the-azure-ad-guest-invitation-prior-to-sharing-an-app-with-the-guest"></a>Must a guest accept the Azure AD guest invitation prior to sharing an app with the guest?
-Нет. If a guest launches an app shared with them prior to accepting a guest invitation the guest will be prompted to accept the invitation as part of the sign-in experience while launching the app.  
+#### <a name="must-a-guest-accept-the-azure-ad-guest-invitation-prior-to-sharing-an-app-with-the-guest"></a>Должен ли гостевой компьютер принять приглашение гостя Azure AD перед предоставлением общего доступа к приложению?
+Нет. Если гостевой сервер запускает приложение, к которому предоставлен общий доступ, перед принятием приглашения гостя, во время запуска приложения гостевой системе будет предложено принять приглашение в процессе входа.  
 
-#### <a name="what-azure-ad-tenant-are-connections-for-a-guest-user-created-in"></a>What Azure AD tenant are connections for a guest user created in?
-Connections for an app are always made in the context of the Azure AD tenant the app is associated. For instance, if an app is created in the Contoso tenant then connections made for Contoso internal and guest users are made in the context of the Contoso tenant.
+#### <a name="what-azure-ad-tenant-are-connections-for-a-guest-user-created-in"></a>Какие клиенты Azure AD являются подключениями для гостевого пользователя, созданного в?
+Подключения для приложения всегда вносятся в контексте клиента Azure AD, с которым связано приложение. Например, если приложение создано в клиенте Contoso, то подключения для внутренних и гостевых пользователей Contoso выполняются в контексте клиента Contoso.
 
-#### <a name="can-guests-use-microsoft-graph-via-microsoft-security-graph-connector-or-a-custom-connector-using-microsoft-graph-apis"></a>Can guests use Microsoft Graph via Microsoft Security Graph connector or a custom connector using Microsoft Graph APIs?
-No, Azure AD guests can't query Microsoft Graph to retrieve information for a tenant in which they’re a guest.
+#### <a name="can-guests-use-microsoft-graph-via-microsoft-security-graph-connector-or-a-custom-connector-using-microsoft-graph-apis"></a>Могут ли гости использовать Microsoft Graph через соединитель Microsoft Security Graph или пользовательский соединитель с помощью Microsoft Graph API?
+Нет, гости Azure AD не могут запрашивать Microsoft Graph для получения сведений о клиенте, в котором они являются гостевыми.
 
-#### <a name="what-intune-policies-apply-to-guests-using-my-powerapps"></a>What InTune policies apply to guests using my PowerApps?
-InTune only applies policies of a user’s home tenant. For instance, if Alice@Contoso.com shares an app with Vikram@Fabrikam.com, InTune continues to apply Fabrikam.com policies on Virkam’s device regardless of the PowerApps he runs.
+#### <a name="what-intune-policies-apply-to-guests-using-my-powerapps"></a>Какие политики InTune применяются к гостям с помощью моей PowerApps?
+InTune применяет политики для домашнего клиента пользователя. Например, если Alice@Contoso.com использует приложение совместно с Vikram@Fabrikam.com, InTune продолжит применять политики Fabrikam.com на устройстве Виркам независимо от того, какой PowerApps он работает.
 
-#### <a name="what-connectors-support-guest-access"></a>What connectors support guest access?
-All connectors that do not perform Azure AD authentication of any type supports guest access. The following table enumerates all connectors that perform Azure AD authentication and which connectors currently support guest access. Many of these will be updated leading up to general availability.
+#### <a name="what-connectors-support-guest-access"></a>Какие соединители поддерживают гостевой доступ?
+Все соединители, которые не выполняют проверку подлинности Azure AD любого типа, поддерживают гостевой доступ. В следующей таблице перечислены все соединители, которые выполняют аутентификацию Azure AD и какие соединители в настоящее время поддерживают гостевой доступ. Многие из них будут обновлены до выхода общедоступной версии.
 
-| **Connector**                                     | **Supports guest access**                                              |
+| **Другую**                                     | **Поддержка гостевого доступа**                                              |
 |---------------------------------------------------|------------------------------------------------------------------------|
 | 10to8-Appointment Scheduling                      | Нет                                                                     |
 | Adobe Creative Cloud                              | Нет                                                                     |
 | Adobe Sign                                        | Нет                                                                     |
 | Asana                                             | Нет                                                                     |
-| AtBot Admin                                       | Нет                                                                     |
-| AtBot Logic                                       | Нет                                                                     |
+| Администратор Атбот                                       | Нет                                                                     |
+| Логика Атбот                                       | Нет                                                                     |
 | Azure AD                                          | Да                                                                    |
 | Автоматизация Azure                                  | Да                                                                    |
-| Azure Container Instance                          | Да                                                                    |
-| Azure Data Factory                                | Да                                                                    |
+| Экземпляр контейнера Azure                          | Да                                                                    |
+| Фабрика данных Azure                                | Да                                                                    |
 | Azure Data Lake                                   | Да                                                                    |
 | Azure DevOps                                      | Нет                                                                     |
 | Сетка событий Azure                                  | Нет                                                                     |
-| Azure IoT Central                                 | Да                                                                    |
+| IoT Central Azure                                 | Да                                                                    |
 | Azure Key Vault                                   | Нет                                                                     |
 | Azure Kusto                                       | Да                                                                    |
 | Azure Log Analytics                               | Да                                                                    |
@@ -248,25 +248,25 @@ All connectors that do not perform Azure AD authentication of any type supports 
 | Bitly                                             | Нет                                                                     |
 | bttn                                              | Нет                                                                     |
 | Buffer                                            | Нет                                                                     |
-| Business Central                                  | Нет                                                                     |
-| CandidateZip                                      | Нет                                                                     |
+| Бизнес-Центральная                                  | Нет                                                                     |
+| кандидатезип                                      | Нет                                                                     |
 | Capsule CRM                                       | Нет                                                                     |
-| Cloud PKI Management                              | Нет                                                                     |
+| Облачное управление PKI                              | Нет                                                                     |
 | Cognito Forms                                     | Нет                                                                     |
 | Common Data Service                               | Нет                                                                     |
-| Common Data Service (Legacy)                      | Нет                                                                     |
-| D&B Optimizer                                     | Нет                                                                     |
+| Common Data Service (устаревший)                      | Нет                                                                     |
+| Оптимизатор D & B                                     | Нет                                                                     |
 | Derdack SIGNL4                                    | Нет                                                                     |
 | Disqus                                            | Нет                                                                     |
-| Document Merge                                    | Нет                                                                     |
+| Слияние документов                                    | Нет                                                                     |
 | Dynamics 365.                                      | Нет                                                                     |
-| Dynamics 365 AI for Sales                         | Да                                                                    |
-| Dynamics 365 for Fin & Ops                        | Нет                                                                     |
+| Dynamics 365 AI для продаж                         | Да                                                                    |
+| Dynamics 365 для операций FIN &                        | Нет                                                                     |
 | Enadoc                                            | Нет                                                                     |
 | Eventbrite                                        | Нет                                                                     |
-| Excel Online (Business)                           | Нет                                                                     |
+| Excel Online (для бизнеса)                           | Нет                                                                     |
 | Excel Online (OneDrive)                           | Нет                                                                     |
-| Expiration Reminder                               | Нет                                                                     |
+| Напоминание об истечении срока действия                               | Нет                                                                     |
 | FreshBooks                                        | Нет                                                                     |
 | GoToMeeting                                       | Нет                                                                     |
 | GoToTraining                                      | Нет                                                                     |
@@ -279,17 +279,17 @@ All connectors that do not perform Azure AD authentication of any type supports 
 | JotForm                                           | Нет                                                                     |
 | kintone                                           | Нет                                                                     |
 | LinkedIn                                          | Нет                                                                     |
-| Marketing Content Hub                             | Нет                                                                     |
+| Центр содержимого маркетинга                             | Нет                                                                     |
 | Средняя                                            | Нет                                                                     |
-| Metatask                                          | Нет                                                                     |
+| Метазадачи                                          | Нет                                                                     |
 | Microsoft Forms                                   | Нет                                                                     |
 | Microsoft Forms Pro                               | Нет                                                                     |
-| Microsoft Graph Security                          | Нет                                                                     |
+| Безопасность Microsoft Graph                          | Нет                                                                     |
 | Microsoft Kaizala                                 | Нет                                                                     |
 | Microsoft School Data Sync                        | Нет                                                                     |
 | Microsoft StaffHub                                | Нет                                                                     |
 | Microsoft Teams                                   | Да                                                                    |
-| Microsoft To-Do (Business)                        | Нет                                                                     |
+| Microsoft to-do (бизнес)                        | Нет                                                                     |
 | Muhimbi PDF                                       | Нет                                                                     |
 | NetDocuments                                      | Нет                                                                     |
 | Группы Office 365                                 | Да                                                                    |
@@ -304,21 +304,21 @@ All connectors that do not perform Azure AD authentication of any type supports 
 | Outlook.com                                       | Нет                                                                     |
 | Paylocity                                         | Нет                                                                     |
 | Планировщик                                           | Нет                                                                     |
-| Plumsail Forms                                    | Нет                                                                     |
+| Plumsail формы                                    | Нет                                                                     |
 | Power BI                                          | Да                                                                    |
 | Project Online                                    | Нет                                                                     |
-| ProjectWise Design Integration                    | Нет                                                                     |
-| Projectwise Share                                 | Нет                                                                     |
+| Интеграция проектирования Прожектвисе                    | Нет                                                                     |
+| Общий ресурс прожектвисе                                 | Нет                                                                     |
 | SharePoint                                        | Да                                                                    |
-| SignNow                                           | Нет                                                                     |
-| Skype for Business Online                         | Нет                                                                     |
+| сигннов                                           | Нет                                                                     |
+| Skype для бизнеса Online                         | Нет                                                                     |
 | Soft1                                             | Нет                                                                     |
-| Stormboard                                        | Нет                                                                     |
+| стормбоард                                        | Нет                                                                     |
 | Survey123                                         | Нет                                                                     |
 | SurveyMonkey                                      | Нет                                                                     |
 | Toodledo                                          | Нет                                                                     |
 | Typeform                                          | Нет                                                                     |
 | Vimeo                                             | Нет                                                                     |
-| Webex Teams                                       | Нет                                                                     |
-| Windows Defender Advanced Threat Protection (ATP) | Нет                                                                     |
-| Word Online (Business)                            | Нет                                                                     |
+| Команды WebEx                                       | Нет                                                                     |
+| Расширенная защита от угроз в Защитнике Windows (ATP) | Нет                                                                     |
+| Word Online (для бизнеса)                            | Нет                                                                     |

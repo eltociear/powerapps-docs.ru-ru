@@ -11,7 +11,7 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: be576425067079549d3174e6d6306814a6ddb13a
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/04/2019
 ms.locfileid: "73542803"
@@ -31,7 +31,7 @@ ms.locfileid: "73542803"
 
 ## <a name="create-oauth-applications"></a>Создание приложений OAuth
 
-В общем случае, если поставщик OAuth использует параметры приложения, для которых требуется значение URI перенаправления, укажите <https://portal.contoso.com/or> https://portal.contoso.com/signin-\ [поставщик\] в зависимости от того, как поставщик выполняет проверку URI перенаправления (некоторые поставщики нуждаются в указании полного URL-пути вместе с доменное имя). Замените имя поставщика вместо \[поставщика\] в URI перенаправления.
+В общем случае, если поставщик OAuth использует параметры приложения, для которых требуется значение URI перенаправления, укажите <https://portal.contoso.com/or> https://portal.contoso.com/signin-\[поставщик\] в зависимости от того, как поставщик выполняет проверку URI перенаправления (для некоторых поставщиков требуется указать полный путь URL-адреса вместе с именем домена). Замените имя поставщика вместо \[поставщика\] в URI перенаправления.
 
 ### <a name="google"></a>Google
 
