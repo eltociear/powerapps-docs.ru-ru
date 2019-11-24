@@ -31,7 +31,7 @@ ms.locfileid: "73650812"
 
 1. Вы можете отправлять файлы только в том случае, если они имеют размер 10 МБ или меньше.  
 
-## <a name="description"></a>Description
+## <a name="description"></a>Описание
 Элемент управления **вложениями** позволяет открывать, добавлять и удалять файлы из списка SharePoint или сущности Common Data Service.
 
 ## <a name="key-properties"></a>Основные свойства
@@ -60,7 +60,7 @@ ms.locfileid: "73650812"
 
 **[DisplayMode](properties-core.md)** — в зависимости от значения этого режима элемент управления разрешает пользователю добавлять и редактировать файлы (**Изменение**) или только отображать данные (**Просмотр**), либо элемент будет вообще отключен (**Отключено**).
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
@@ -119,4 +119,4 @@ ms.locfileid: "73650812"
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
+* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
