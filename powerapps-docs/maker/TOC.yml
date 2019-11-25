@@ -68,6 +68,8 @@
               href: ../user/track-your-progress-with-dashboard-and-charts.md
             - name: "Добавление панелей мониторинга Power\_BI"
               href: ../user/add-powerbi-dashboards.md
+            - name: "Совместная работа с помощью\_SharePoint"
+              href: ../user/collaborate-using-sharepoint.md
         - name: Поиск в записях
           items:
             - name: Сравнение вариантов поиска
@@ -260,6 +262,8 @@
                   href: ./canvas-apps/working-with-form-layout.md
                 - name: Общие сведения о карточках
                   href: ./canvas-apps/working-with-cards.md
+                - name: Показ полноразмерного изображения
+                  href: ./canvas-apps/display-full-image-on-form.md
             - name: Добавление списка
               items:
                 - name: 'Добавление списка, раскрывающегося списка и переключателей'
