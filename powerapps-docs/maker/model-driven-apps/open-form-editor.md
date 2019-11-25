@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 8478a07a-c697-4784-874b-36958eb4f95d
 caps.latest.revision: 63
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f922908611d56afc99c5ebc844ff75c94d48657c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759527"
 ---
-
 # <a name="open-the-model-driven-app-form-editor"></a>Открытие редактора форм управляемых моделью приложений 
 Редактор форм позволяет разрабатывать формы путем перетаскивания компонентов, таких как разделы, вкладки, поля и элементы управления на холст редактора форм. В этом разделе вы познакомитесь с несколькими различными способами получения доступа к редактору форм.
  
@@ -30,7 +35,7 @@ search.app:
 
 ## <a name="access-the-form-editor-from-the-powerapps-site"></a>Доступ к редактору форм с сайта PowerApps
 
-1. Выполните вход в [PowerApps](https://web.powerapps.com/). 
+1. Выполните вход в [PowerApps](https://make.powerapps.com/). 
 
 2. Выберите **Данные** > **Сущности** > затем выберите требуемую сущность, например сущность организации. 
 
@@ -51,7 +56,7 @@ search.app:
   
 2.  Если существует несколько основных форм для сущности, проверьте, что необходимо изменить именно данную форму. В противном случае используйте средство выбора форм для выбора формы, которую требуется изменить.  
   
-3.  Выберите кнопку **Дополнительные команды** ![Кнопка "Дополнительные команды" в действии встречи](media/more-commands.gif "Кнопка \"Дополнительные команды\" в действии встречи").  
+3.  Выберите кнопку **Дополнительные команды** ![Кнопка "Дополнительные команды" в действии встречи](media/more-commands.gif "Дополнительные кнопки команд для действий встречи").  
   
 4.  Выберите **Редактор форм**.  
 
@@ -79,6 +84,6 @@ search.app:
   
 6.  В списке форм дважды щелкните форму, которую требуется изменить.  
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 [Создание и разработка форм](create-design-forms.md)
