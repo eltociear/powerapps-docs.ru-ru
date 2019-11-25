@@ -1,31 +1,36 @@
 ---
 title: Указание свойств для управляемых моделью приложений единого интерфейса в PowerApps | MicrosoftDocs
-description: 'Узнайте, как настраивать элемент управления сетки для приложения'
+description: Узнайте, как настраивать элемент управления сетки для приложения
 keywords: ''
 ms.date: 06/03/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 3ecea4a7-0d18-4ccd-9609-3a62179e9e1b
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 0
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: efca6e540a962295553222805052fda2c9a8ddf6
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710918"
 ---
-
 # <a name="specify-properties-for-model-driven-unified-interface-apps"></a>Указание свойств для управляемых моделью приложений единого интерфейса
 
 В платформе единого интерфейса используются принципы гибкого веб-дизайна для оптимального просмотра и взаимодействия на экранах любых размеров и любой ориентации. С приложениями, управляемыми моделью, которые используют платформу единого интерфейса элемент управления сетки (представления) является отзывчивым. Как размер контейнера уменьшается, — например, на телефонах и окнах просмотра меньшего размера, — сетка преобразуется в список. 
@@ -53,7 +58,7 @@ search.app:
     
 4. Выберите устройства (**Интернет**, **Телефон** или **Планшет**), для которых необходимо сделать сетку доступной только для чтения.
 
-    ![Выбор типа устройства](media/UnifiedInterface_ReadOnlyGrid_SelectDevice.png "Выбор типа устройства")
+    ![Выбор типа устройства](media/UnifiedInterface_ReadOnlyGrid_SelectDevice.png "Выбор устройств")
 
 5. Настройте свойство **Форма карточки**.
 
@@ -61,7 +66,7 @@ search.app:
 
     a. Выберите значок карандаша рядом с пунктом **Форма карточки**.
 
-    ![Изменение формы карточки](media/UnifiedInterface_ReadOnlyGrid_CardForm.png "Изменение формы карточки")
+    ![Редактирование формы карточки](media/UnifiedInterface_ReadOnlyGrid_CardForm.png "Редактирование формы карточки")
 
     b.  Выберите типы **Сущность** и **Форма карточки**.
 
@@ -93,5 +98,5 @@ search.app:
 ## <a name="conditional-image"></a>Условное изображение
 Можно отображать настраиваемый значок вместо значения в списке и установить логику, используемую для их выбора на основе значений в столбцах, используя JavaScript. Дополнительные сведения об условных изображениях см. в разделе [Отображение настраиваемых значков вместо значений в представлениях списка](../common-data-service/display-custom-icons-instead.md).
 
-## <a name="next-steps"></a>Дальнейшие действия
-[Создание и редактирование представления](create-edit-views.md)
+## <a name="next-steps"></a>Дальнейшие шаги
+[Создание и изменение представления](create-edit-views.md)

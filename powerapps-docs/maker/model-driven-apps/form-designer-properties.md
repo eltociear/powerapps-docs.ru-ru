@@ -1,5 +1,5 @@
 ---
-title: 'Свойства, доступные в конструкторе форм | MicrosoftDocs'
+title: Свойства, доступные в конструкторе форм | MicrosoftDocs
 ms.custom: ''
 ms.date: 08/26/2019
 ms.reviewer: ''
@@ -8,27 +8,32 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 38a2ebe769fdff6ebeeebd82824fffecae5ff00e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700358"
 ---
-
 # <a name="properties-available-in-the-form-designer"></a>Свойства, доступные в конструкторе форм
 
 Размещенные в правой панели конструктора управляемых моделью форм, область свойств позволяет быстро просмотреть и обновлять свойства любого элемента, выбранного из областей предварительного просмотра и представления в виде дерева. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/form-designer-property-pane.png "Область свойств конструктора форм")
+> ![](media/form-designer-property-pane.png "Form designer property pane")
 
 ## <a name="form-properties"></a>Свойства формы
 

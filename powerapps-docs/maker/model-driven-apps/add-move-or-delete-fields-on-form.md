@@ -1,5 +1,5 @@
 ---
-title: 'Добавление, настройка, перемещение или удаление полей в форме | Документация Майкрософт'
+title: Добавление, настройка, перемещение или удаление полей в форме | Документация Майкрософт
 ms.custom: ''
 ms.date: 08/26/2019
 ms.reviewer: ''
@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: eaa02abdc4c85d4d6abd5e5ca3afe176144c4027
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2701546"
 ---
-
 # <a name="add-configure-move-or-delete-fields-on-a-form"></a>Добавление, настройка, перемещение или удаление полей в форме  
 Добавление, настройка, перемещение или удаление полей с помощью конструктора форм.
 
@@ -30,7 +35,7 @@ search.app:
 Для добавления полей в форму используйте область **Поля**. Область **Поля** позволяет осуществлять поиск и фильтрацию, чтобы можно было быстро находить нужные поля. Она также включает параметр для отображения только неиспользуемых полей. 
 
 > [!div class="mx-imgBorder"] 
->    ![](media/FormDesignerFieldsPane.png "Область полей")
+>    ![](media/FormDesignerFieldsPane.png "Fields pane")
 
 ### <a name="add-fields-to-a-form-using-drag-and-drop"></a>Добавление полей в форму с помощью перетаскивания
 > [!NOTE]

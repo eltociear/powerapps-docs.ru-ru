@@ -5,15 +5,18 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 07/18/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 8351ca8d3befec80a9e97da03ca62980383b01b1
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709906"
 ---
-
 # <a name="clear-the-server-side-cache-for-a-portal"></a>Очистка кэша на стороне сервера для портала
-
-[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Как администратор портала вы можете очистить кэш на стороне сервера для всего портала, чтобы обновленные данные от Common Data Service сразу же отображались на портале. Обновления из Common Data Service передаются на портал в асинхронном режиме, поэтому может возникнуть задержка между временем, когда данные обновляются в Common Data Service, и временем, когда обновленные данные будут отображены на портале. Чтобы устранить эту задержку &mdash; например, когда она мешает настройке портала &mdash; вы можете выполнить принудительное обновление кэша портала сразу же.
 

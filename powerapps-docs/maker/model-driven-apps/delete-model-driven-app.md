@@ -1,43 +1,46 @@
 ---
 title: Удаление управляемого моделью приложения | MicrosoftDocs
-description: 'Узнайте, как удалить или изъять управляемое моделью приложение из среды PowerApps.'
+description: Узнайте, как удалить или изъять управляемое моделью приложение из среды PowerApps.
 keywords: ''
-ms.date: 05/31/2018
-ms.service: crm-online
-ms.custom: null
+ms.date: 10/08/2019
+ms.service: powerapps
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: e82e7f64-37ad-41e5-acd7-16309881c6a2
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 9
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 026420ad6a5f3ab3e74c9c0d11f87f8a52ffa417
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2756227"
 ---
-
 # <a name="delete-a-model-driven-app"></a>Удаление управляемого моделью приложения
-
 Удаляйте или изымайте приложения, которые больше не нужны в среде.
 
-1. Выполните вход в [PowerApps](https://web.powerapps.com/).
-2. Откройте [обозреватель решений](advanced-navigation.md#solution-explorer). 
-3. В окне решения в разделе **Компоненты** выберите **Приложения**.
-4. Выберите приложение, которое необходимо удалить, затем выберите **Удалить** на панели команд.
+> [!IMPORTANT]
+> Если управляемое моделью приложение было установлено в решение по умолчанию как часть управляемого решения, см. раздел [Удаление приложения на основе модели, которое было установлено в составе управляемого решения](#delete-a-model-driven-app-that-was-installed-as-part-of-a-managed-solution).
 
-    ![Удаление приложения](media/app-module-solution-window.png "Удаление приложения")
-
-5. В открывшемся сообщении с запросом подтверждения выберите **Удалить**.
+1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+2. В левой области переходов выберите **Приложения**. 
+3. Выберите приложение, которое необходимо удалить, затем выберите **Удалить** на панели команд.
+4. В открывшемся сообщении с запросом подтверждения выберите **Удалить**.
 
    Приложение удаляется из вашей среды.
   
@@ -46,4 +49,12 @@ search.app:
 > [!NOTE]
 > При удалении приложения рекомендуется удалять связанную с ним карту сайта. Если не удалить связанную карту сайта, в конструкторе карт сайта отображается ошибка при первой попытке создать другое приложение с тем же именем. Однако можно игнорировать эту ошибку, и эта ошибка не будет отображаться при повторной попытке создания приложения.
 
+## <a name="delete-a-model-driven-app-that-was-installed-as-part-of-a-managed-solution"></a>Удаление приложения на основе модели, которое было установлено в составе управляемого решения
+Для удаления управляемого моделью приложения, которое было установлено в среду как часть управляемого решения, удалите управляемое решение. 
+
+### <a name="delete-a-managed-solution"></a>Удаление управляемого решения 
+При удалении решения удаляются все компоненты управляемого решения.
+1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+2.  В левой области навигации выберите **Решения**.
+3.  В списке **Решения** выберите управляемое решение, которое требуется удалить, затем на панели инструментов выберите **Удалить**. 
 

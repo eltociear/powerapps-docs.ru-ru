@@ -1,16 +1,21 @@
 ---
 title: Использование тегов потока управления для портала | Документация Майкрософт
-description: 'Узнайте о тегах потоков управления, доступных на портале.'
+description: Узнайте о тегах потоков управления, доступных на портале.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 77fcc7db0adf68cd6decbcc95e11d8e803761535
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708586"
 ---
-
 # <a name="control-flow-tags"></a>Теги потока управления
 
 Теги потока управления определяют, какой блок кода должен исполняться и какое содержимое должно отображаться на основе заданных условий. Условия построены с использованием доступных [операторов Liquid](liquid-operators.md), или только основанных на [правильности или ложности указанного значения](liquid-conditional-operators.md).  

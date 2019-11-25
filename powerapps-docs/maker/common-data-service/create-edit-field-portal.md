@@ -8,21 +8,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 231970fb08886b993b55dcc6506ef387c9a20018
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757987"
 ---
 # <a name="create-and-edit-fields-for-common-data-service-using-powerapps-portal"></a>Создание и изменение полей для Common Data Service с помощью портала PowerApps
 
-[Портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) обеспечивает простой способ создания и изменения полей сущностей в Common Data Service.
+[Портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) обеспечивает простой способ создания и изменения полей сущностей в Common Data Service.
 
 Портал позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. <br />Дополнительные сведения: 
 - [Создание и изменение полей для Common Data Service](create-edit-fields.md)
@@ -30,7 +36,7 @@ search.app:
 
 ## <a name="view-fields"></a>Просмотр полей
 
-1. На [портале PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите режим конструирования **Управляемые моделью** или **Холст**.
+1. На [портале PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите режим конструирования **на основе модели** или **Холст**.
 2. Выберите **Данные** > **Сущности** и выберите сущность с полями, которые необходимо просмотреть.
 3. На вкладке **Поля** можно выбрать следующие представления. 
 

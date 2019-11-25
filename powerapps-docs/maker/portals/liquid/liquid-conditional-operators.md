@@ -1,16 +1,21 @@
 ---
-title: Использование условных операторов Liquid для портала | Документация Майкрософт
+title: Использование условных операторов Liquid для портала | MicrosoftDocs
 description: Узнайте о доступных условных операторах Liquid на портале.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: def132ebc0f8ef93121b10b221479a2452a1d4fb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708278"
 ---
-
 # <a name="available-liquid-conditional-operators"></a>Доступные условные операторы Liquid
 
 При использовании в условных операторах (**if**, **unless**) некоторые значения Liquid считаются истинными значениями (true), а другие значения обрабатываются как ложные значения (false).

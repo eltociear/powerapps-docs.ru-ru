@@ -3,14 +3,14 @@ title: Разработка управляемых моделью приложе
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: aa6aca00-f95a-4f06-bec4-18b427b4618c
 ms.author: matp
 manager: kvivek
@@ -18,12 +18,17 @@ author: Mattp123
 caps.latest.revision: 17
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a9ec701c921c9ad488d9d9b8b3a1f6615c5a9cd7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2703658"
 ---
-
 # <a name="design-model-driven-apps-by-using-the-app-designer"></a>Разработка управляемых моделью приложений с помощью конструктора приложения
 
 С помощью PowerApps управляемые моделью приложения составляются из компонентов, таких как сущности, панели мониторинга, формы, представления, диаграммы и бизнес-процессы.  
@@ -40,11 +45,11 @@ search.app:
   
 |Шаг|Описание|См. также|  
 |----------|-----------------|--------------------|  
-|![Шаг 1](media/walkthrough-green-1.png "Шаг 1")|Определите свойства приложения.|[Создание и изменение приложения](create-edit-app.md)|  
-|![Шаг 2](media/walkthrough-green-2.png "Шаг 2")|Укажите навигацию для приложения с использованием конструктора карты сайта.|[Создание карты сайта для приложения](create-site-map-app.md)|  
-|![Шаг 3](media/walkthrough-green-3.png "Шаг 3")|Приложения строятся из компонентов, таких как панели мониторинга, сущности, последовательности операций бизнес-процессов, формы, представления и диаграммы. Включите необходимые компоненты в ваше приложение с помощью конструктора приложения.|[Добавление или изменение компонентов приложения](add-edit-app-components.md)|  
-|![Шаг 4](media/walkthrough-green-4.png "Шаг 4")|Проверьте свое приложение на предмет отсутствия каких-либо требуемых компонентов. Когда все обязательные компоненты добавлены, сделайте приложение доступным для использования. |[Проверка и публикация приложения](validate-app.md)|  
-|![Шаг 5](media/walkthrough-green-5.png "Шаг 5")|Предоставьте пользователям доступ к созданным вами приложениям с помощью ролей безопасности.|[Общий доступ к управляемому моделью приложению](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/share-model-driven-app)|  
+|![Шаг 1](media/walkthrough-green-1.png "Шаг 1.")|Определите свойства приложения.|[Создание и изменение приложения](create-edit-app.md)|  
+|![Шаг 2](media/walkthrough-green-2.png "Шаг 2.")|Укажите навигацию для приложения с использованием конструктора карты сайта.|[Создание карты сайта для приложения](create-site-map-app.md)|  
+|![Шаг 3](media/walkthrough-green-3.png "Шаг 3.")|Приложения строятся из компонентов, таких как панели мониторинга, сущности, последовательности операций бизнес-процессов, формы, представления и диаграммы. Включите необходимые компоненты в ваше приложение с помощью конструктора приложения.|[Добавление или изменение компонентов приложения](add-edit-app-components.md)|  
+|![Шаг 4](media/walkthrough-green-4.png "Шаг 4.")|Проверьте свое приложение на предмет отсутствия каких-либо требуемых компонентов. Когда все обязательные компоненты добавлены, сделайте приложение доступным для использования. |[Проверка и публикация приложения](validate-app.md)|  
+|![Шаг 5](media/walkthrough-green-5.png "Шаг 5.")|Предоставьте пользователям доступ к созданным вами приложениям с помощью ролей безопасности.|[Общий доступ к управляемому моделью приложению](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app)|  
   
 ## <a name="support-matrix-for-the-app-designer-and-site-map-designer"></a>Матрица поддержки для конструктора приложения и конструктора карты сайта  
  В следующей таблице указаны поддерживаемые операционные системы и браузеры.  
@@ -60,6 +65,6 @@ search.app:
 | Google Chrome |Да|Да|Да||  
 | Apple Safari ||||Да|  
   
-## <a name="next-steps"></a>Дальнейшие действия  
- [Создание первого управляемого моделью приложения с нуля](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/build-first-model-driven-app)
+## <a name="next-steps"></a>Дальнейшие шаги  
+ [Создание первого управляемого моделью приложения с нуля](https://docs.microsoft.com/powerapps/maker/model-driven-apps/build-first-model-driven-app)
 

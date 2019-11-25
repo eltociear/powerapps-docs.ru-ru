@@ -4,9 +4,9 @@ description: Познакомьтесь со свойствами интерне
 Keywords: Основная форма; Свойства iFrame; Dynamics 365
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
 ms.date: 06/18/2018
@@ -14,10 +14,16 @@ ms.service: powerapps
 ms.topic: article
 ms.assetid: 1b7e6a0c-18a9-47e2-aa7d-0cffb8c93b19
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 532b720277cdc9649e8ef161e9ff623298c5f570
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754053"
 ---
 # <a name="iframe-properties-for-model-driven-app-main-forms"></a>Свойства iFrame для основных форм управляемых моделью приложений
 
@@ -25,7 +31,7 @@ search.app:
 
 Чтобы просмотреть свойства iFrame, выполните следующие действия.
 
-1.  Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2.  Разверните **Данные**, выберите **Сущности**, выберите требуемую сущность, затем выберите вкладку **Формы**. 
 

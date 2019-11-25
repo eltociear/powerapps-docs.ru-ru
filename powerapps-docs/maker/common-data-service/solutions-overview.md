@@ -9,26 +9,31 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: ece68f5f-ad40-4bfa-975a-3e5bafb854aa
 caps.latest.revision: 55
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 391220159917462833afac204183cdc68a94f898
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759043"
 ---
-   
 # <a name="solutions-overview"></a>Обзор решений  
 
   В PowerApps решения используются для переноса приложений и компонентов из одной среды в другую или для применения набора настроек для существующих приложений. Решение может содержать одно или несколько приложений, а также другие компоненты, такие как карты сайта, сущности, процессы, веб-ресурсы, наборы параметров и многое другое.  Решение можно получить из [AppSource](https://appsource.microsoft.com/) или от независимого поставщика программного обеспечения (ISV).
   
-Дополнительные сведения: [Технический документ. Управление жизненным циклом решения](https://www.microsoft.com/en-us/download/details.aspx?id=57777)  
+Дополнительные сведения: [Технический документ. Управление жизненным циклом решения](https://www.microsoft.com/download/details.aspx?id=57777)  
   
 > [!NOTE]
 >  Если вы независимый поставщик программного обеспечения и создаете приложение, которое планируете распространять, вам необходимо использовать решения. Дополнительные сведения об использовании решений см. в разделе [Руководство разработчика. Введение в решения](/powerapps/developer/common-data-service/introduction-solutions)  
@@ -38,6 +43,8 @@ search.app:
 ### <a name="components"></a>Компоненты  
  Компонент представляет что-либо, может потенциально можно настроить. Все, что может быть включено в решение, — это компонент. Ниже приведен список компонентов, которые можно просмотреть в решении:  
   
+-   Модель ИИ
+
 -   Лента приложения  
   
 -   Шаблон статьи  
@@ -51,6 +58,8 @@ search.app:
 -   Роль подключения  
   
 -   Шаблон контракта  
+
+-   Настраиваемый соединитель
  
 -   Пользовательский элемент управления
   
@@ -61,6 +70,8 @@ search.app:
 -   Сущность  
   
 -   Отношение сущности  
+
+-   Переменная среды
   
 -   Поле  
   

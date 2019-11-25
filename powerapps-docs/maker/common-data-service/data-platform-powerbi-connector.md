@@ -1,6 +1,6 @@
 ---
 title: Создание отчета PowerBI | Microsoft Docs
-description: Подключение к вашим данным из PowerBI Desktop с помощью соединителя Common Data Service.
+description: Подключение к данным из PowerBI Desktop с помощью соединителя Common Data Service.
 author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
@@ -9,13 +9,19 @@ ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 24972d4c159db30c4abb142adf258a5930c8ace9
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758959"
 ---
 # <a name="create-a-power-bi-report"></a>Создание отчета Power BI
-Common Data Service позволяет подключаться напрямую с вашим данными с помощью Power BI Desktop для создания отчетов и публикации их в Power BI. Из Power BI отчеты можно использовать в панелях мониторинга, предоставлять к ним доступ другим пользователям и получать доступ с различных платформ в мобильных приложениях Power BI.
+Common Data Service позволяет подключаться напрямую к данным с помощью Power BI Desktop для создания отчетов и публикации их в Power BI. Из Power BI отчеты можно использовать в панелях мониторинга, предоставлять к ним доступ другим пользователям и получать доступ с различных платформ в мобильных приложениях Power BI.
 
 ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/PBIDesktop.png "Power BI Desktop")
 
@@ -26,9 +32,9 @@ Common Data Service позволяет подключаться напрямую
 * Загрузите и установите бесплатное приложение Power BI Desktop, которое выполняется на локальном компьютере. Вы можете скачать Power BI Desktop [здесь](https://powerbi.microsoft.com/desktop/).
 * Среда Common Data Service с разрешениями создателя для доступа к порталу и разрешениям чтения для доступа к данным в сущностях.
 
-## <a name="finding-your-common-data-service-environment-url"></a>Поиск URL-адреса среды Common Data Service
+## <a name="finding-your-common-data-service-environment-url"></a>Определение URL-адреса среды Common Data Service
 
-1. Откройте [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) и выберите среду, к которой требуется подключиться, затем нажмите **шестеренку параметров** в правом верхнем углу и нажмите **Дополнительные настройки**
+1. Откройте [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) и выберите среду, к которой требуется подключиться, затем нажмите **шестеренку параметров** в правом верхнем углу и нажмите **Дополнительные настройки**
 
     ![Среда Common Data Service](./media/data-platform-cds-powerbi-connector/CDSEnv1.png "Среда Common Data Service")
 

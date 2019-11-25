@@ -1,19 +1,22 @@
 ---
-title: Изменение базового URL-адреса портала | Документация Майкрософт
+title: Изменение базового URL-адреса портала | MicrosoftDocs
 description: Сведения об изменении базового URL-адреса портала.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 07/18/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: cfc2fd0ca753aebfe7bc77b73c7e7ec1ca011387
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709994"
 ---
-
 # <a name="change-the-base-url-of-a-portal"></a>Изменение базового URL-адреса портала
-
-[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Можно изменить базовый URL-адрес портала после его подготовки. Например, если выбрать `contosocommunity.microsoftcrmportals.com` в качестве основного URL-адреса при подготовке портала, позже можно изменить его на `contosocommunityportal.microsoftcrmportals.com` для удовлетворения собственных требований.
 

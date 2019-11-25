@@ -1,33 +1,39 @@
 ---
 title: Поля с автоматической нумерацией в Common Data Service | MicrosoftDocs
-description: 'Узнайте, как создавать, контролировать и использовать поля с автоматической нумерацией'
+description: Узнайте, как создавать, контролировать и использовать поля с автоматической нумерацией
 keywords: ''
 ms.date: 02/26/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: daemelia
-ms.assetid: null
+ms.assetid: ''
 ms.author: daemelia
 manager: kvivek
 ms.reviewer: Mattp123
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.suite: ''
+ms.tgt_pltfrm: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5735e425dd0d19dd5e52603433d56cc37e897cd6
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758404"
 ---
 # <a name="autonumber-fields"></a>Поля с автоматической нумерацией
 
 Поля с автоматической нумерацией — это поля, которые автоматически формируют алфавитно-цифровые строки, когда они создаются. Создатели могут настраивать формат этих полей на свое усмотрение, а затем они полагаются на систему для генерации соответствующих значений, которые автоматически заполняют поля во время выполнения.
 
-Хотя поля с автоматической нумерацией формально являются простыми текстовыми полями с дополнительной функцией, [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) упрощают эту концепцию, просто представляя **Автономер** как отдельный тип данных в категории **Текст**. Важно отметить, что [классический обозреватель решений](use-solution-explorer.md#classic-solution-explorer) не поддерживает создание или управление полями с автоматической нумерацией.
+Хотя поля с автоматической нумерацией формально являются простыми текстовыми полями с дополнительной функцией, [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) упрощают эту концепцию, просто представляя **Автономер** как отдельный тип данных в категории **Текст**. Важно отметить, что [классический обозреватель решений](use-solution-explorer.md#classic-solution-explorer) не поддерживает создание или управление полями с автоматической нумерацией.
 
 Для создания полей с автонумерацией выполните те же действия, что и для [создания полей](create-edit-field-portal.md#create-a-field), и просто выберите **Автонумерация** в раскрывающемся списке **Тип данных**. 
 
@@ -64,7 +70,7 @@ search.app:
 
 ## <a name="create-an-autonumber-field"></a>Создание поля с автоматической нумерацией
   
-1.  Выполните вход на [портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Выполните вход на [портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
   
 2.  В левой области разверните **Данные** и выберите **Сущности**.
   
@@ -75,7 +81,7 @@ search.app:
 5.  В правой области введите **Отображаемое имя** и выберите **Автонумерация** для параметра **Тип данных**.
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/create-autonumber-field.png "Создание поля с автоматической нумерацией")
+    > ![](media/create-autonumber-field.png "Create an autonumber field")
   
 6. Если требуется, задайте необязательные поля. Дополнительные сведения: [Создание и изменение полей](create-edit-field-portal.md#create-a-field)
 

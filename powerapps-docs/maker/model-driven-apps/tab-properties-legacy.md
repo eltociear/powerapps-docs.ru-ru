@@ -4,9 +4,9 @@ description: Познакомьтесь со свойствами вкладок
 Keywords: Свойства вкладки; Dynamics 365; Основные формы
 author: matp
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: Mattp123
 manager: kvivek
 ms.date: 06/07/2018
@@ -14,10 +14,16 @@ ms.service: powerapps
 ms.topic: article
 ms.assetid: e0790865-c5a4-4e86-bce2-584af2b8ed93
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bd97c61829aaba7279f56019f0eec7fa9829a6ea
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2756271"
 ---
 # <a name="tab-properties-for-model-driven-app-forms-overview"></a>Свойства вкладок для форм управляемых моделью приложений
 
@@ -26,7 +32,7 @@ search.app:
  Вкладки содержат до трех столбцов, причем ширину каждого столбца можно задать в качестве процента от общей ширины. При создании новой вкладки каждый столбец автоматически заполняется разделом.  
 
 Можно получить доступ к пункту **Свойства вкладок** с сайта PowerApps. 
-1.  На сайте [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Управляемые моделью** (в левой нижней части панели навигации).  
+1.  На сайте [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Управляемые моделью** (в левой нижней части панели навигации).  
 
      ![Режим разработки, управляемый моделью](media/model-driven-switch.png)
 

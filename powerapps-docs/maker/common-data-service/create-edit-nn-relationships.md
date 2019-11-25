@@ -1,6 +1,6 @@
 ---
 title: Обзор создания отношений сущностей "многие-ко-многим" в Common Data Service | MicrosoftDocs
-description: 'Узнайте, как создавать отношения сущностей многие-ко-многим'
+description: Узнайте, как создавать отношения сущностей многие-ко-многим
 ms.custom: ''
 ms.date: 05/29/2018
 ms.reviewer: ''
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 248cecfd-c9e8-430b-b4b0-860669866084
 caps.latest.revision: 33
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 90658adac8f04ea131968816a6004b4789ff42e4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757779"
 ---
 # <a name="create-many-to-many-entity-relationships-overview"></a>Обзор создания отношений сущностей "многие-ко-многим"
 
@@ -37,7 +43,7 @@ search.app:
 
 |Дизайнер| Описание|
 |--|--|
-|[Портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание отношений сущностей "многие-ко-многим" в Common Data Service с помощью портала PowerApps](create-edit-nn-relationships-portal.md)|
+|[портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание отношений сущностей "многие-ко-многим" в Common Data Service с помощью портала PowerApps](create-edit-nn-relationships-portal.md)|
 |Обозреватель решений|Не так прост, но предоставляет больше гибкости для менее распространенных требований.<br />Дополнительные сведения: [Создание отношений сущностей N:N (многие-ко-многим) в Common Data Service с помощью обозревателя решений](create-edit-nn-relationships-solution-explorer.md) |
 
 > [!NOTE]

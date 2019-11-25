@@ -1,6 +1,6 @@
 ---
-title: 'Специальные возможности в конструкторе приложений, конструкторе карты сайта и на странице "Мои приложения" в PowerApps | Microsoft Docs'
-description: 'Узнайте о специальных возможностях в управляемом моделью приложении в конструкторе приложений, конструкторе карты сайта и на странице "Мои приложения" в PowerApps'
+title: Специальные возможности в конструкторе приложений, конструкторе карты сайта и на странице "Мои приложения" в PowerApps | Microsoft Docs
+description: Узнайте о специальных возможностях в управляемом моделью приложении в конструкторе приложений, конструкторе карты сайта и на странице "Мои приложения" в PowerApps
 keywords: Конструктор приложений; конструктор карты сайта; мои приложения; Dynamics 365
 author: Mattp123
 ms.author: matp
@@ -8,20 +8,25 @@ manager: kvivek
 ms.date: 05/20/2019
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 26c79c20-2987-476e-983a-406e0db13034
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c0f845b1b1b390bb6033efa282792b0b5116e6fc
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752077"
 ---
-
 # <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>Доступность в конструкторе приложений, конструкторе карты сайта и на странице "Мои приложения" в PowerApps
 
-Корпорация Майкрософт полна решимости сделать свои продукты и сервисы более простыми и доступными для всех. Дополнительные сведения: [Специальные возможности Майкрософт](http://www.microsoft.com/enable/default.aspx)  
+Корпорация Майкрософт полна решимости сделать свои продукты и сервисы более простыми и доступными для всех. Дополнительные сведения: [Специальные возможности Майкрософт](https://www.microsoft.com/enable/default.aspx)  
  
 В этом разделе описываются специальные возможности, доступные в управляемых моделью приложениях.  
   
@@ -96,11 +101,11 @@ search.app:
  Сведения о специальных возможностях вашего браузера можно найти на следующих веб-сайтах:  
   
   
--   [Специальные возможности Windows](http://www.microsoft.com/enable/products/ie9/default.aspx)  
+-   [Специальные возможности Windows](https://www.microsoft.com/enable/products/ie9/default.aspx)  
   
--   [Специальные возможности Firefox](http://support.mozilla.org/kb/accessibility-features-firefox-make-firefox-and-we?redirectlocale=en-US&redirectslug=accessibility)  
+-   [Специальные возможности Firefox](https://support.mozilla.org/kb/accessibility-features-firefox-make-firefox-and-we?redirectlocale=en-US&redirectslug=accessibility)  
   
--   [Специальные возможности Safari](http://www.apple.com/accessibility/)  
+-   [Специальные возможности Safari](https://www.apple.com/accessibility/)  
   
 -   [Техническая документация по специальным возможностям Google Chrome](https://sites.google.com/a/chromium.org/dev/developers/design-documents/accessibility)
 

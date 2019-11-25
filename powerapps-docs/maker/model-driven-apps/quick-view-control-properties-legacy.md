@@ -4,20 +4,26 @@ description: Познакомьтесь со свойствами элемент
 Keywords: Свойства элементов управления экспресс-форм; Dynamics 365; Основные формы
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
-ms.date: 06/06/2018
+ms.date: 10/28/2019
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 68f68d5b-6c71-4b95-bb46-d48c59d9008e
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b2d4a8f55bf9b6f3e54f948ad16be36fdecb6d20
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755106"
 ---
 # <a name="model-driven-app-quick-view-control-properties"></a>Свойства элемента управления экспресс-формами управляемых моделью приложений
 
@@ -27,7 +33,7 @@ search.app:
 > ![Экспресс-форма контакта на форме организации](media/quick-view-form-contact.png "Экспресс-форма контакта на форме организации")  
 
 Можно получить доступ к пункту **Свойства элементов управления экспресс-формами** с сайта PowerApps. 
-1.  Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 
 2.  Разверните **Данные**, выберите **Сущности**, выберите требуемую сущность, затем выберите вкладку **Формы**. 
@@ -46,7 +52,7 @@ search.app:
 |**Экспресс-форма**|Если **Связанная сущность** имеет экспресс-формы, их можно выбирать здесь. В противном случае выберите **Создать**, чтобы создать новую запись.<br /><br /> Выберите **Изменить**, чтобы изменить выбранную экспресс-форму.|  
 |**Дополнительные свойства**|Можно указать стиль отображения по умолчанию, выбрав флажок.|
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Дальнейшие шаги
 
 [Использование основной формы и ее компонентов](use-main-form-and-components.md)
  

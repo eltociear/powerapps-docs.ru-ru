@@ -1,6 +1,6 @@
 ---
 title: Использование основной формы управляемого моделью приложения и ее компонентов в PowerApps | Microsoft Docs
-description: 'Узнайте, как использовать основную форму и ее компоненты в приложениях на основе единого интерфейса'
+description: Узнайте, как использовать основную форму и ее компоненты в приложениях на основе единого интерфейса
 keywords: Основные формы; Customer Service; Центр обслуживания клиентов; Dynamics 365
 author: Mattp123
 ms.author: matp
@@ -9,15 +9,21 @@ ms.date: 06/06/2018
 ms.service: powerapps
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: 43bfface-4dc2-411d-99a1-83e934646989
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 610a4baf51a2affea142b496d016d732fa626d20
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755919"
 ---
 # <a name="use-the-model-driven-app-main-form-and-its-components"></a>Использование основной формы управляемого моделью приложения и ее компонентов
 
@@ -37,7 +43,7 @@ search.app:
 
 ### <a name="access-the-form-editor-through-app-designer-in-powerapps"></a>Доступ к редактору форм с помощью конструктора приложений в PowerApps
 
-1.  Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  В левой навигационной панели выберите **Приложения**, выберите требуемое приложение, затем на панели инструментов выберите **Изменить**.  
 

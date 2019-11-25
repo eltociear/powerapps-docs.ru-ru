@@ -1,26 +1,32 @@
 ---
-title: 'Привилегии, необходимые для настройки управляемых моделью приложений | MicrosoftDocs'
+title: Привилегии, необходимые для настройки управляемых моделью приложений | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 43cf7f3a-7e26-4990-8b5a-c817ac6d51bb
 caps.latest.revision: 13
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2dd56a541ab765bc990bba8fe7911d193b3eacc7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711534"
 ---
 # <a name="privileges-required-for-model-driven-app-customization"></a>Привилегии, необходимые для настройки управляемых моделью приложений
 

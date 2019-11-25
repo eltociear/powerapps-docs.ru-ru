@@ -1,6 +1,6 @@
 ---
 title: Настройка панелей мониторинга интерактивного взаимодействия управляемых моделью приложений в PowerApps | Microsoft Docs
-description: 'Узнайте, как настраивать панели мониторинга интерактивного взаимодействия в PowerApps'
+description: Узнайте, как настраивать панели мониторинга интерактивного взаимодействия в PowerApps
 keywords: Интерактивные панели мониторинга; Customer Service; Microsoft Dynamics 365; Центр интерактивного обслуживания
 author: Mattp123
 ms.author: matp
@@ -13,17 +13,22 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: d1446a95-14bf-4b15-a905-72fce07f4c76
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4e73097b6b02f98b6ac5dc83a7f1d833e07a8696
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752618"
 ---
-
 # <a name="configure-model-driven-app-interactive-experience-dashboards"></a>Настройка панелей мониторинга интерактивного взаимодействия управляемых моделью приложений
 
 Панели мониторинга интерактивного взаимодействия могут быть универсальной рабочей областью для пользователей приложений, например представителей по сервисному обслуживанию, для просмотра данных сведений о нагрузке и выполнения действия. Они являются полностью настраиваемыми, основаны на ролях безопасности и предоставляют данные о нагрузке по нескольким потокам в реальном времени. Пользователям интерактивной панели мониторинга не нужно проходить через страницы приложения в поисках определенной записи; они могут выполнить действие с ней непосредственно с панели мониторинга. 
@@ -51,13 +56,13 @@ search.app:
 ### <a name="multi-stream-dashboard-tile-view"></a>Представление плиток многопотоковой панели мониторинга  
  Аналогичная панель мониторинга только представлении плиток.  
   
- ![Представление плитки многопотоковой панели мониторинга](media/interactive-dashboards-multi-stream-tiles.png "Представление плитки многопотоковой панели мониторинга")  
+ ![Представление плиток многопотоковой панели мониторинга](media/interactive-dashboards-multi-stream-tiles.png "Представление плиток многопотоковой панели мониторинга")  
   
 ### <a name="multi-stream-dashboard-layouts"></a>Макеты многопотоковых панелей мониторинга  
  Для многопотоковых панелей мониторинга можно выбрать различные макеты.  
 
  > [!div class="mx-imgBorder"] 
- > ![Компоновки многопотоковой панели мониторинга](media/interactive-dashboards-multi-stream-layout.png "Компоновки многопотоковой панели мониторинга")  
+ > ![Макеты многопотоковых панелей мониторинга](media/interactive-dashboards-multi-stream-layout.png "Макеты многопотоковых панелей мониторинга")  
   
 ### <a name="multi-stream-entity-specific-dashboard"></a>Многопотоковая панель мониторинга конкретной сущности  
  Здесь показана панель мониторинга конкретный сущности для сущности обращения.  
@@ -67,13 +72,13 @@ search.app:
 ### <a name="single-stream-dashboard"></a>Однопотоковая панель мониторинга  
  Однопотоковая панель мониторинга содержит поток данных слева и визуальные фильтры и плитки справа.  
   
- ![Однопотоковая панель мониторинга интерактивного центра обслуживания](media/interactive-dashboards-single-stream.png "Однопотоковая панель мониторинга интерактивного центра обслуживания")  
+ ![Панель мониторинга интерактивного центра обслуживания с одним потоком](media/interactive-dashboards-single-stream.png "Панель мониторинга интерактивного центра обслуживания с одним потоком")  
   
 ### <a name="single-stream-dashboard-layouts"></a>Макеты однопотоковых панелей мониторинга  
  Для однопотоковых панелей мониторинга можно выбрать различные макеты.  
  
  > [!div class="mx-imgBorder"] 
- > ![Компоновки однопотоковой панели мониторинга.](media/interactive-dashboards-single-stream-layout.png "Компоновки однопотоковой панели мониторинга.")  
+ > ![Макеты однопотоковых панелей мониторинга.](media/interactive-dashboards-single-stream-layout.png "Макеты однопотоковых панелей мониторинга.")  
   
 <a name="BKMK_Enable"></a>   
 ## <a name="configure-filter-fields-and-security-roles-for-the-interactive-dashboards"></a>Настройка полей фильтра и ролей безопасности для интерактивных панелей мониторинга  
@@ -102,7 +107,7 @@ search.app:
   
  Здесь показано окно всплывающего меню глобального фильтра:  
   
- ![Добавление двух полей глобального фильтра](media/global-filter-escalated.png "Поля глобального фильтра")  
+ ![Добавить два поля глобального фильтра](media/global-filter-escalated.png "Поля глобального фильтра")  
   
 > [!TIP]
 >  При настройке визуального фильтра, основанного на таких полях, как состояние или приоритет, рекомендуется также включить отображение этих полей (приоритет, состояние) в глобальном фильтре.  
@@ -119,7 +124,7 @@ search.app:
 
 На следующем рисунке показано диалоговое окно всплывающего меню со списком доступных полей для сортировки в раскрывающемся списке. Сортировка по умолчанию всегда задается в поле **Дата и время изменения**.  
   
- ![Сортировка с помощью раскрывающегося списка](media/sort-field.png "Сортировка с помощью раскрывающегося списка")    
+ ![Раскрывающийся список "Сортировать по"](media/sort-field.png "Раскрывающийся список "Сортировать по"")    
     
 ### <a name="enable-security-roles"></a>Включение ролей безопасности  
  Выберите и включите роли безопасности, которые позволят просматривать интерактивные панели мониторинга.  
@@ -144,7 +149,7 @@ search.app:
   
 ### <a name="configure-a-multi-stream-interactive-dashboard-using-the-4-column-layout"></a>Настройка многопотоковой интерактивной панели мониторинга с помощью макета из 4 столбцов  
  
-1.  Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
   
 2.  Выберите **Данные** > **Сущности** > выберите требуемую сущность. 
 
@@ -198,7 +203,7 @@ search.app:
   
 #### <a name="edit-or-delete-individual-streams-of-an-existing-dashboard"></a>Изменение или удаление отдельных потоков существующей панели мониторинга  
   
-1. Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).   
+1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).   
   
 2. Выберите **Данные** > **Сущности** > выберите требуемую сущность. Выберите вкладку **Панели мониторинга**.  
   
@@ -221,7 +226,7 @@ search.app:
 
 Например, вместо выбора сущности некоторые поля на панели мониторинга конкретной сущности-уже предварительно настроены для сущности, для которой создается панель мониторинга.  
   
-1.  Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2.  Выберите **Данные** > **Сущности** > выберите требуемую сущность. 
 

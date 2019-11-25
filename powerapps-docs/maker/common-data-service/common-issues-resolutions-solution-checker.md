@@ -1,23 +1,29 @@
 ---
 title: Общие проблемы и их разрешение для средства проверки решений | Microsoft Docs
-description: ' Список общих проблем и их разрешения для средства проверки решений'
+description: " Список общих проблем и их разрешения для средства проверки решений"
 keywords: ''
 ms.date: 02/11/2019
 ms.service: powerapps
 ms.custom:
-  - ''
+- ''
 ms.topic: article
 ms.assetid: caa4e3f2-9700-49b8-87ed-8a68e8878b02
 author: jowells1
 ms.author: jowells
 manager: austinj
-ms.reviewer: null
-robots: 'noindex,nofollow'
+ms.reviewer: ''
+robots: noindex,nofollow
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6f9168f51f8bfffc2ef9519e183e951706b7a024
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758339"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>Общие проблемы и их разрешение для средства проверки решений
 
@@ -58,7 +64,7 @@ search.app:
 
 Чтобы удалить решение средства проверки PowerApps:
 
-1. Как системный администратор или настройщик системы, откройте портал PowerApps, перейдя по адресу https://web.powerapps.com/environments.
+1. Как системный администратор или настройщик системы, откройте портал PowerApps, перейдя по адресу https://make.powerapps.com/environments.
 2. Выберите **Решения**.
 3. Выберите **Средство проверки PowerApps**, затем на панели инструментов решений выберите **Удалить**.
 
@@ -66,13 +72,13 @@ search.app:
 
 Чтобы установить средство проверки PowerApps обратно в среду Common Data Service:
 
-1. Как системный администратор или настройщик системы, откройте портал PowerApps, перейдя по адресу https://web.powerapps.com/environments.
+1. Как системный администратор или настройщик системы, откройте портал PowerApps, перейдя по адресу https://make.powerapps.com/environments.
 2. Выберите **Решения**.
 3. На панели инструментов выберите **Средство проверки PowerApps**, затем выберите **Установить**.
 
 ## <a name="solution-checker-cant-access-organizations-in-administration-mode"></a>Средство проверки решений не может получить доступ к организациям в режиме администрирования
 
-Организации, которые были переведены в [режим администрирования](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/manage-sandbox-instances#administration-mode), нарочно ограничивают доступ только пользователями с ролями системного администратора или специалиста по настройке системы. Поскольку идентификатору приложения средства проверки PowerApps по умолчанию не назначена ни одна из этих ролей, оно не может получить доступ к организациям, работающим в этом режиме.
+Организации, которые были переведены в [режим администрирования](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-sandbox-instances#administration-mode), нарочно ограничивают доступ только пользователями с ролями системного администратора или специалиста по настройке системы. Поскольку идентификатору приложения средства проверки PowerApps по умолчанию не назначена ни одна из этих ролей, оно не может получить доступ к организациям, работающим в этом режиме.
 
 Чтобы использовать средство проверки решений в этой организации режим администрирования должен быть отключен.
 

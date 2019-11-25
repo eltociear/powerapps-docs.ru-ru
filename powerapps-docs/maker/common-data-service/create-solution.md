@@ -4,24 +4,30 @@ description: Инструкции по созданию решения
 ms.custom: ''
 ms.date: 10/30/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Mattp123
 ms.assetid: e21a4876-08b4-417a-a644-c577a27c5cf1
 caps.latest.revision: 12
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9e57aa7395b6c8fdbcfe35c944f625d9790f592a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757679"
 ---
 # <a name="create-a-solution"></a>Создание решения
 
@@ -29,7 +35,7 @@ search.app:
   
  Дополнительные сведения об основных понятиях решения см. в разделе [Работа с решениями](solutions-overview.md).  
   
-1.  Войдите в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) и выберите **Решения** в левой области навигации. 
+1.  Войдите в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) и выберите **Решения** в левой области навигации. 
   
 2.  Щелкните **Создать решение** и заполните обязательные поля для решения.
   
@@ -51,7 +57,7 @@ search.app:
   
  При этом может появиться диалоговое окно **Отсутствуют необходимые компоненты**.  
    
- ![Диалоговое окно добавления необходимых компонентов](media/crm-itpro-cust-addrequiredcomponents.PNG "Диалоговое окно добавления необходимых компонентов")  
+ ![Диалоговое окно "Добавить необходимые компоненты"](media/crm-itpro-cust-addrequiredcomponents.PNG "Диалоговое окно "Добавить необходимые компоненты"")  
   
  Это диалоговое окно сообщает, что компонент решения имеет зависимости от других компонентов решения. При выборе варианта **Нет, не включать необходимые компоненты** решение может завершиться ошибкой при импорте его в другую организацию, где всех этих требуемых компонентов нет. Если импорт решения пройдет успешно, поведение в другом решении может быть не идентичным поведению в исходной организации, потому что компоненты настроены не так, как в исходном решении.  
   

@@ -1,33 +1,38 @@
 ---
-title: Использование решения по умолчанию для настройки с PowerApps | MicrosoftDocs
-description: 'Узнайте, как настроить решение по умолчанию'
+title: Использование решения по умолчанию для настройки с помощью PowerApps | MicrosoftDocs
+description: Узнайте, как настроить решение по умолчанию
 ms.custom: ''
 ms.date: 10/29/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: f993c4ed-1fc3-4e47-bef1-d38695ddb11a
 caps.latest.revision: 57
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0676d24ef79f2fe92da2971028a6e22fbdc76c62
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755194"
 ---
-
-# <a name="use-the-common-data-services-default-solution"></a>Использование решения по умолчанию Common Data Service  
+# <a name="use-the-common-data-services-default-solution"></a>Использование решения по умолчанию служб Common Data Service  
   
  Все среды PowerApps включают следующие решения.
--   **Решение по умолчанию Common Data Service**— это базовое решение, которое доступно разработчикам для использования по умолчанию для своих настроек в среде.
+-   **Решение по умолчанию Common Data Service** — это базовое решение, которое доступно разработчикам для использования по умолчанию для своих настроек в среде.
 -   **Решение по умолчанию** — это специальное решение, которое содержит все настройки из всех решений в среде. 
 <!-- **Base Custom Controls Core** - This solution includes a core set of controls. Controls are used in user interface elements, such as fields, lists, and views. -->
 
@@ -52,4 +57,4 @@ search.app:
 ## <a name="see-also"></a>См. также  
 [Общие сведения о компонентах управляемых моделью приложений](../model-driven-apps/model-driven-app-components.md)
  <br/>
- [(Технический документ) Принципы и шаблоны для разработчиков решений](http://go.microsoft.com/fwlink/p/?LinkID=533946)
+ [(Технический документ) Принципы и шаблоны для разработчиков решений](https://go.microsoft.com/fwlink/p/?LinkID=533946)

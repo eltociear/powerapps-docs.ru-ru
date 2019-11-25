@@ -1,31 +1,36 @@
 ---
-title: 'Создание или изменение приложения, управляемого моделью, в конструкторе приложений в PowerApps | MicrosoftDocs'
-description: 'Узнайте, как создавать или изменять приложения с помощью конструктора приложений'
+title: Создание или изменение приложения, управляемого моделью, в конструкторе приложений в PowerApps | MicrosoftDocs
+description: Узнайте, как создавать или изменять приложения с помощью конструктора приложений
 keywords: ''
 ms.date: 02/05/2019
-ms.service: crm-online
-ms.custom: null
+ms.service: powerapps
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 2a44229e-44f0-4c4e-ba21-a476210d0a12
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 19
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fb852ce8b6137d16eb8544da4eb6c9b92c12e29e
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759307"
 ---
-
 # <a name="create-a-model-driven-app-by-using-the-app-designer"></a>Создание управляемого моделью приложения с помощью конструктора приложений
 
 В этом разделе вы узнаете основы по созданию и изменению управляемого моделью приложения с помощью конструктора приложений на основании плиток.
@@ -38,7 +43,7 @@ search.app:
 <a name="createApp"></a>   
 ## <a name="create-an-app"></a>Создание приложения  
 
-1.  В [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) на странице **Главная** выберите параметр **Управляемое моделью приложение с нуля** для управляемого моделью приложения.  
+1.  В [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) на странице **Главная** выберите параметр **Управляемое моделью приложение с нуля** для управляемого моделью приложения.  
 
     > [!IMPORTANT]
     > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment). 
@@ -61,7 +66,7 @@ search.app:
       > [!NOTE]
       > Если выбрать **Решение по умолчанию** при добавлении карты сайта, компоненты, которые связаны с этой картой сайта, автоматически добавляются к приложению.  
 
-      ![Использовать имеющееся решение для создания приложения](media/use-existing-solution-to-create-the-app.png "Использовать имеющееся решение для создания приложения") 
+      ![Использовать имеющееся решение для создания страницы приложения](media/use-existing-solution-to-create-the-app.png "Использовать имеющееся решение для создания приложения") 
 
     - **Выберите начальную страницу**. Этот параметр позволяет выбирать из веб-ресурсов, доступных в вашей организации. Создаваемые вами приветственные страницы могут содержать полезные сведения для пользователей, такие как ссылки на видеозаписи, инструкции по обновлению или информация по началу работы. Страница приветствия отображается при открытии приложения. Пользователи могут выбрать **Больше не показывать этот экран приветствия** на странице приветствия, отключив таким образом эту страницу, чтобы она не открывалась при следующем запуске приложения. Обратите внимание, что параметр **Больше не показывать этот экран приветствия** задается на уровне пользователя и не может контролироваться администраторами или создателями приложений. Дополнительные сведения о том, как создать веб-ресурс, например HTML-файл, который можно использовать в качестве начальной страницы: [Создание и изменение веб-ресурсов для расширения веб-приложения](create-edit-web-resources.md)  
       
@@ -77,7 +82,7 @@ search.app:
 <a name="editApp"></a>   
 ## <a name="edit-an-app"></a>Изменение приложения  
   
-1.  Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 > [!IMPORTANT]
 > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment). 
@@ -87,7 +92,7 @@ search.app:
 3. В конструкторе приложений добавьте или измените компоненты приложения согласно требованиям. Дополнительные сведения: [Добавление или изменение компонентов приложения](add-edit-app-components.md)  
  
   
-### <a name="next-steps"></a>Дальнейшие действия  
+### <a name="next-steps"></a>Дальнейшие шаги  
  [Добавление или изменение компонентов приложения](add-edit-app-components.md)   
 
 

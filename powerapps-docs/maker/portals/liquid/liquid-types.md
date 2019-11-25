@@ -1,16 +1,21 @@
 ---
-title: Использование типов Liquid для портала | Документация Майкрософт
+title: Использование типов Liquid для портала | MicrosoftDocs
 description: Узнайте о доступных типах Liquid на портале.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: dd6da4788f6563c2026f57914c8156caedfadad3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708102"
 ---
-
 # <a name="available-liquid-types"></a>Доступные типы Liquid
 
 Объекты Liquid могут возвращать один из основных 7 типов: **String**, **Number**, **Boolean**, **Array**, **Dictionary**, **DateTime** или **Null**. Переменные Liquid могут инициализировать с помощью тегов **assign** или **capture**.

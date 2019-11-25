@@ -1,27 +1,33 @@
 ---
 title: Отображение или скрытие элементов формы управляемого моделью приложения с PowerApps | MicrosoftDocs
-description: 'Узнайте, как отображать или скрывать элементы формы, такие как вкладки, разделы или поля'
+description: Узнайте, как отображать или скрывать элементы формы, такие как вкладки, разделы или поля
 ms.custom: ''
 ms.date: 06/11/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 7b9e8dc2-229c-455f-ae18-49e8d879ff71
 caps.latest.revision: 63
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6004aab267da345dc1681dd920913e7858986d9d
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710258"
 ---
 # <a name="show-or-hide-model-driven-app-form-elements"></a>Отображение или скрытие элементов формы управляемого моделью приложения
 

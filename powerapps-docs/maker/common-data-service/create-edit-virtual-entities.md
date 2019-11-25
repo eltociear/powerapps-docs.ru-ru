@@ -1,5 +1,5 @@
 ---
-title: Создание и изменение виртуальных сущностей с помощью Common Data Service | MicrosoftDocs
+title: Создание и изменение виртуальных сущностей в Common Data Service | MicrosoftDocs
 description: Инструкции по созданию виртуальных сущностей
 ms.custom: ''
 ms.date: 06/27/2018
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: 44834893-0bf6-4a64-8f06-7583fe08330d
 caps.latest.revision: 11
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ecb0731d3cbba030f3b819e2b2744cb6a7b29c20
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2706914"
 ---
 # <a name="create-and-edit-virtual-entities-that-contain-data-from-an-external-data-source"></a>Создание и изменение виртуальных сущностей, содержащих данные из внешнего источника данных
 
@@ -41,7 +47,7 @@ Common Data Service включает поставщика данных OData, к
   
 ## <a name="virtual-entity-benefits"></a>Преимущества виртуальных сущностей  
   
-- Разработчики могут реализовывать подключаемые модули для чтения внешних данных с помощью веб-служб Common Data Service и средства регистрации подключаемых модулей .  
+- Разработчики могут реализовывать подключаемые модули для чтения внешних данных с помощью веб-служб Common Data Service и средства регистрации подключаемых модулей.  
 - Настройщики системы используют обозреватель решений PowerApps для конфигурирования записи источника данных и создания виртуальных сущностей, которые используются для доступа к внешним данным без написания кода.  
 - Конечные пользователи работают с записями, созданными виртуальной сущностью, для просмотра данных в полях, сетках, результатах поиска, а также в отчетах и на панелях мониторинга на основе Fetch XML.  
   

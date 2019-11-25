@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 7920ef78-2540-48ad-ba25-9ce9cb995ed1
 caps.latest.revision: 63
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: dc5f2c366d77ca49e5103c89d7114f1defd44b52
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752367"
 ---
 # <a name="additional-controls-for-dynamics-365-for-phones-and-tablets"></a>Дополнительные элементы управления для Dynamics 365 для телефонов и планшетов 
 
@@ -149,7 +155,7 @@ search.app:
  Используйте элемент управления предварительного просмотра веб-сайта для сопоставления поля URL-адреса и отображения предварительного просмотра веб-сайта.  
   
 > [!IMPORTANT]
->  Включив этот элемент управления, вы даете внешней системе разрешение на совместный доступ пользователей к определенной информации устройства. Данные импортированные из внешних систем в приложение PowerApps или приложений Dynamics 365 таких как Dynamics 365 Sales или Dynamics 365 Customer Service подпадают под действие нашего заявления о конфиденциальности на [заявление о конфиденциальности и файлы cookie корпорации Майкрософт](http://go.microsoft.com/fwlink/p/?LinkId=521839).  
+>  Включив этот элемент управления, вы даете внешней системе разрешение на совместный доступ пользователей к определенной информации устройства. Данные импортированные из внешних систем в приложение PowerApps или приложений Dynamics 365 таких как Dynamics 365 Sales или Dynamics 365 Customer Service подпадают под действие нашего заявления о конфиденциальности на [заявление о конфиденциальности и файлы cookie корпорации Майкрософт](https://go.microsoft.com/fwlink/p/?LinkId=521839).  
 >   
 >  [Уведомления о конфиденциальности](use-the-form-editor-legacy.md#BKMK_PrivacyNotices)  
   

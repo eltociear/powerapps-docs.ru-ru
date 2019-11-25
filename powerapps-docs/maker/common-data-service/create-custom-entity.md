@@ -9,12 +9,17 @@ ms.topic: tutorial
 ms.date: 01/23/2019
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 436e4f03a38efc3d61a0d4fb9f027ae6eff1c931
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754842"
 ---
-
 # <a name="create-a-custom-entity-that-has-components-in-powerapps"></a>Создание настраиваемой сущности с компонентами в PowerApps
 
 В PowerApps можно адаптировать приложение к отраслевой специфике, терминологии и уникальным бизнес-процессам вашей организации. Разработка приложений PowerApps включает добавление стандартных готовых сущностей или создание настраиваемых сущностей. Сущность определяет сведения, которые вы хотите отслеживать в форме записей, которые обычно включают свойства, такие как название компании, местоположение, продукты, адрес электронной почты и телефон. 
@@ -29,9 +34,9 @@ search.app:
 
 В разделе рассматривается компания Contoso, у которой имеется бизнес ухода за домашними животными, обслуживающий собак и кошек. Contoso необходимо приложение для отслеживания клиентов и домашних животных, которое сотрудниками могут использовать на различных устройствах.
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Необходимые компоненты
 
-Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Если у вас еще нет учетной записи PowerApps, выберите **Начать работу бесплатно** на сайте [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Если у вас еще нет учетной записи PowerApps, выберите **Начать работу бесплатно** на сайте [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## <a name="create-a-custom-entity"></a>Создание настраиваемой сущности
 

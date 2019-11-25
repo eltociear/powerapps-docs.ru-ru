@@ -1,6 +1,6 @@
 ---
 title: Определение и запрос иерархических данных с помощью Common Data Service | MicrosoftDocs
-description: 'Узнайте, как определять и запрашивать иерархически связанных данные'
+description: Узнайте, как определять и запрашивать иерархически связанных данные
 ms.custom: ''
 ms.date: 06/02/2018
 ms.reviewer: ''
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 0cf62817-5ff5-40bb-ad17-e1f6b0921720
 caps.latest.revision: 42
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c829665baf2688c755bdfba7debb19d7b69a1c46
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758691"
 ---
 # <a name="define-and-query-hierarchically-related-data"></a>Определение и запрос иерархически связанных данных
 
@@ -35,7 +41,7 @@ search.app:
 
 ## <a name="define-hierarchical-data"></a>Определение иерархических данных
 
-С Common Data Service структуры иерархических данных поддерживаются *ссылающимися на себя отношениями* "один-ко-многим" (1:N) связанных записей. 
+С Common Data Service структуры иерархических данных поддерживаются *ссылающимися на себя* отношениями "один-ко-многим" (1:N) связанных записей. 
 
 > [!NOTE]
 > *Ссылка на себя* означает, что сущность связана сама с собой. Например, сущность "Организация" имеет поле подстановки для связи ее с записью другой сущности организации.
@@ -92,5 +98,5 @@ search.app:
 [Создание и изменение отношений сущностей 1:N ("один-ко-многим") или N:1 ("многие-к-одному")](create-edit-1n-relationships.md)<br />
 [Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) с помощью обозревателя решений](create-edit-1n-relationships-solution-explorer.md)<br />
 [Визуализация иерархических данных с управляемыми моделью приложениями](visualize-hierarchical-data.md)<br />
-[Видео: Моделирование иерархической безопасности](http://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07)<br />
-[Видео: Визуализация иерархии](http://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)
+[Видео: Моделирование иерархической безопасности](https://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07)<br />
+[Видео: Визуализация иерархии](https://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)

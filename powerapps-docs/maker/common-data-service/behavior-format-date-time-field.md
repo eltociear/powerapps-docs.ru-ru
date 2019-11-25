@@ -8,23 +8,29 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 73d691c7-344e-4c96-8979-c661c290bf81
 caps.latest.revision: 47
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cbb327956558e57713040ec8ab1a26d3af78c6c7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711842"
 ---
 # <a name="behavior-and-format-of-the-date-and-time-field"></a>Поведение и формат поля "Дата и время"
 
-В Common Data Service тип данных "Дата и время" используется во многих стандартных полях сущностей. В зависимости от типа даты, который представляет поле, можно выбрать различные поведения поля: **Часовой пояс пользователя**, **Только дата** или **Независимо от часового пояса**.  
+В Common Data Service тип данных "Дата и время" используется во многих полях стандартных сущностей. В зависимости от типа даты, который представляет поле, можно выбрать различные поведения поля: **Часовой пояс пользователя**, **Только дата** или **Независимо от часового пояса**.  
   
 <a name="Behavior"></a>   
 

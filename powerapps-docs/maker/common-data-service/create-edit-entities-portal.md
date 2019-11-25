@@ -1,6 +1,6 @@
 ---
 title: Создание и изменение сущностей с помощью портала PowerApps | MicrosoftDocs
-description: 'Узнайте, как создать и изменить сущности с помощью портала PowerApps'
+description: Узнайте, как создавать и изменять сущности с помощью портала PowerApps
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
@@ -9,23 +9,28 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 author: Mattp123
 ms.assetid: fa04f99d-a5f9-48cb-8bfb-f0f50718ccee
 caps.latest.revision: 41
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6b1fb1e479237face89e0a19ee145f7fa428cb62
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758119"
 ---
-
 # <a name="create-and-edit-entities-using-powerapps-portal"></a>Создание и изменение сущностей с помощью портала PowerApps
 
-[Портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) обеспечивает простой способ создания и изменения сущностей для Common Data Service.
+[Портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) обеспечивает простой способ создания и изменения сущностей для Common Data Service.
 
 Портал позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. Дополнительные сведения: 
 - [Создание и изменение сущностей в Common Data Service](create-edit-entities.md)
@@ -33,7 +38,7 @@ search.app:
 
 ## <a name="view-entities"></a>Просмотр сущностей
 
-1. На [портале PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите режим конструирования **Управляемые моделью** или **Холст**.
+1. На [портале PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите режим конструирования **на основе модели** или **Холст**.
 2. Выберите **Данные** > **Сущности**.
 
 ![Просмотр сущностей](media/view-entities-portal.png)
@@ -62,7 +67,7 @@ search.app:
 |--|--|
 |**отображаемое имя;**|Это имя сущности в единственном числе, которое будет отображаться в приложении. Его можно изменить позже.|
 |**Отображаемое имя во множественном числе**|Это имя сущности во множественном числе, которое будет отображаться в приложении. Его можно изменить позже.|
-|**Название**|Это поле предварительно заполняется в зависимости от введенного значения **Отображаемое имя**. Оно включает настраиваемый префикс для издателя решения Common Data Service. Изменить его после сохранения сущности невозможно.|
+|**Название**|Это поле предварительно заполняется в зависимости от введенного значения **Отображаемое имя**. Сюда относится префикс настройки для издателя решения Common Data Service. Изменить его после сохранения сущности невозможно.|
 |**Описание**|Предоставьте осмысленное описание назначения сущности.|
 
 Выберите **Далее** для продолжения. Это приведет к закрытию панели **Создать сущность** и отображению списка полей.

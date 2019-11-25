@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8e032cc95f64e842552308ccf9d179fc153b49fd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710434"
 ---
-
 # <a name="using-the-tree-view-in-the-form-designer"></a>Использование представления дерева в конструкторе форм
 В области **Представление в виде дерева** отображается визуальная иерархия компонентов в форме. Значки в представлении в виде дерева помогают быстро определить тип поля или компонента. 
 
@@ -31,7 +36,7 @@ search.app:
 Можно развернуть или свернуть узлы в представлении в виде дерева, чтобы просмотреть или скрыть элементы внутри узла. Когда пользователь выбирает элемент в представлении в виде дерева, оно выделяется в представлении предварительного просмотра формы, а на панели свойств отображаются свойства этого элемента. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/FormDesignerTreeView.png "Представление в виде дерева")
+> ![](media/FormDesignerTreeView.png "Tree view")
 
 ### <a name="open-the-tree-view"></a>Открытие представления в виде дерева 
 1. Откройте конструктор форм для создания или редактирования формы. 

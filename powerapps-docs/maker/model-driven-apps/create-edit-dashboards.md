@@ -8,19 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 641885d2-4a08-41b8-b914-d9a244e4d5b1
 caps.latest.revision: 10
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1e6fa3440f0deef99f94ce94352177a105abf7b7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759263"
 ---
 # <a name="create-or-edit-model-driven-app-dashboards"></a>Создание или изменение панелей мониторинга управляемых моделью приложений
 
@@ -29,7 +35,7 @@ search.app:
 <a name="BKMK_createdashboard"></a>   
 ## <a name="create-a-new-dashboard"></a>Создать новую панель мониторинга  
   
-1.  Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     > [!IMPORTANT]
     > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment).   
@@ -51,7 +57,7 @@ search.app:
 <a name="BKMK_editdashboard"></a>   
 ## <a name="edit-an-existing-dashboard"></a>Изменение существующей панели мониторинга  
   
-1. Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
     > [!IMPORTANT]
     > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment).    
@@ -66,15 +72,15 @@ search.app:
   
 4.  По завершении внесения изменений сохраните их, а затем опубликуйте.  
   
- Дополнительные задачи системных панелей мониторинга:  
+Дополнительные задачи системных панелей мониторинга:  
   
-    -   Удаление списка или диаграммы из панели мониторинга  
-  
-    -   Добавление диаграммы или списка на панель мониторинга  
-  
-    -   Назначение панели мониторинга по умолчанию  
-  
-    -   Использование ролей безопасности для отображения панелей мониторинга только для некоторых ролей.    
-  
+-   Удаление списка или диаграммы из панели мониторинга  
+
+-   Добавление диаграммы или списка на панель мониторинга  
+
+-   Назначение панели мониторинга по умолчанию  
+
+-   Использование ролей безопасности для отображения панелей мониторинга только для некоторых ролей.    
+
 ## <a name="next-steps"></a>Дальнейшие действия  
 [Установка свойств диаграммы или списка, включенных на панель мониторинга](set-properties-chart-list-included-dashboard.md)

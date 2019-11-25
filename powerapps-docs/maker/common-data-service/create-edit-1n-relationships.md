@@ -1,6 +1,6 @@
 ---
-title: 'Создание отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) в обзоре PowerApps | MicrosoftDocs'
-description: 'Узнайте, как создавать отношения сущностей "один-ко-многим" или "многие-к-одному".'
+title: Создание отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) в обзоре PowerApps | MicrosoftDocs
+description: Узнайте, как создавать отношения сущностей "один-ко-многим" или "многие-к-одному".
 ms.custom: ''
 ms.date: 05/27/2018
 ms.reviewer: ''
@@ -9,20 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 52c00707-b2bc-4950-abec-89baefd94f6e
 caps.latest.revision: 33
 ms.author: matp
 manager: kvivek
-tags: null
+tags: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 724a887df3a5347f1d403ac30201297abf5201aa
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758207"
 ---
 # <a name="create-one-to-many-or-many-to-one-entity-relationships-overview"></a>Создание отношений сущностей "один-ко-многим" или "многие-к-одному" с помощью обзора
 
@@ -34,7 +40,7 @@ search.app:
 
 |Дизайнер| Описание|
 |--|--|
-|[Портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) на портале PowerApps](create-edit-1n-relationships-portal.md)|
+|[портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) на портале PowerApps](create-edit-1n-relationships-portal.md)|
 |Обозреватель решений|Не так прост, но предоставляет больше гибкости для менее распространенных требований. <br />Дополнительные сведения: [Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) с помощью обозревателя решений](create-edit-1n-relationships-solution-explorer.md) |
 
 > [!NOTE]
@@ -58,7 +64,7 @@ search.app:
 
 ## <a name="community-tools"></a>Средства сообщества
 
-**[Создатель диаграмм отношений сущностей](https://www.xrmtoolbox.com/plugins/JourneyIntoCRM.XrmToolbox.ERDPlugin/)** — это средство, разработанное сообществом XrmToolbox для Common Data Service. Дополнительные средства, разработанные сообществом, см. в разделе [Средства разработчика для Common Data Service](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools).
+**[Создатель диаграмм отношений сущностей](https://www.xrmtoolbox.com/plugins/JourneyIntoCRM.XrmToolbox.ERDPlugin/)** — это средство, разработанное сообществом XrmToolbox для Common Data Service. Дополнительные средства разработки от сообщества см. в разделе [Средства разработчика для Common Data Service](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-tools).
 
 > [!NOTE]
 > Средства сообществ не являются продуктом корпорации Майкрософт, и на них не распространяется поддержка. При наличии вопросов по средству обращайтесь к его издателю. Дополнительные сведения: [XrmToolBox](https://www.xrmtoolbox.com).

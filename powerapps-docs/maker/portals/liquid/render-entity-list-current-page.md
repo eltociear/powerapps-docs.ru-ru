@@ -1,16 +1,21 @@
 ---
-title: 'Отобразить список сущностей, связанных с текущей страницей на портале | Документация Майкрософт'
-description: 'Пример кода для отображения списка сущностей, связанных с текущей страницей на портале.'
+title: Отобразить список сущностей, связанных с текущей страницей на портале | MicrosoftDocs
+description: Пример кода для отображения списка сущностей, связанных с текущей страницей на портале.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: e31f83efb7cedfa42b6c4c9e7da83280b261d9c8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2707970"
 ---
-
 # <a name="render-the-entity-list-associated-with-the-current-page"></a>Обработка списка сущностей, связанных с текущей страницей
 
 Отображение списка сущностей, связанных с текущей страницей, в виде допускающей сортировку таблицы с разбиением на страницы. Использует параметры [entitylist](liquid-objects.md#entitylist), [entityview](liquid-objects.md#entityview), [теги сущностей Common Data Service PowerApps](portals-entity-tags.md), [страница](liquid-objects.md#page) и [запрос](liquid-objects.md#request), а также включает поиск и выбор нескольких представлений.  

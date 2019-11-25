@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4d0b13a43f595c5b9bae7b9a8146b7ccb2b8308d
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2703878"
 ---
-
 # <a name="add-and-configure-a-quick-view-component-on-a-form"></a>Добавление или настройка компонента экспресс-формы в форме  
 Основная форма в которой отображаются сведения записи может использовать быстрые компонент экспресс-формы для отображения доступных только для чтения сведений связанной записи (поиск). Данные, отображаемые компонентом экспресс-формы, определяются экспресс-формой связанной сущности. Когда нет связанной записи, такой как поиск, компонент экспресс-формы автоматически скрывается.
 

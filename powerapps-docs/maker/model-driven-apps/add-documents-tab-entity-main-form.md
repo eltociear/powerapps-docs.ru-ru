@@ -1,22 +1,28 @@
 ---
 title: Добавить вкладку документов в основную форму для сущности | Документация Майкрософт
-description: 'Узнайте, как добавить вкладку документов в основную форму для сущности'
-s.custom: null
+description: Узнайте, как добавить вкладку документов в основную форму для сущности
+s.custom: ''
 ms.date: 09/05/2019
-ms.reviewer: null
+ms.reviewer: ''
 ms.service: crm-online
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: Mattp123
-ms.assetid: null
-caps.latest.revision: null
+ms.assetid: ''
+caps.latest.revision: ''
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - customizer
+- customizer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: d8a81b531f43f3e252f2df348b8ae95551e068d4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702822"
 ---
 # <a name="add-the-sharepoint-documents-tab-to-the-main-form-for-an-entity"></a>Добавить вкладку документов SharePoint в основную форму для сущности
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -45,7 +51,7 @@ search.app:
 11. Прокрутите страницу вниз до элемента идентификатор элемента управления="*имя поля*", например, **идентификатор элемента управления="address1_city"** и замените весь элемент [примером XML](#xml-sample-for-adding-the-documents-tab-to-a-form) в данном разделе. 
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/form-xml.png "Точки вставки примера XML")
+    > ![](media/form-xml.png "XML sample insertion point")
 
 12. Внесите эти изменения в пример XML. 
     

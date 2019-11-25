@@ -1,6 +1,6 @@
 ---
-title: 'Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) с помощью обозревателя решений | MicrosoftDocs'
-description: 'Узнайте, как создать отношение сущностей "один-ко-многим" или "многие-к-одному" с помощью обозревателя решений PowerApps'
+title: Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) с помощью обозревателя решений | MicrosoftDocs
+description: Узнайте, как создать отношение сущностей "один-ко-многим" или "многие-к-одному" с помощью обозревателя решений PowerApps
 ms.custom: ''
 ms.date: 10/28/2018
 ms.reviewer: ''
@@ -9,24 +9,29 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3488b8228841f7b5323daee972472884e7c873d8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758163"
 ---
-
 # <a name="create-and-edit-1n-one-to-many-or-n1-many-to-one-entity-relationships-using-solution-explorer"></a>Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) с помощью обозревателя решений 
 
 Обозреватель решений предоставляет один способ создания и изменения отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) для Common Data Service.
 
-[Портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. Дополнительные сведения: 
+[Портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. Дополнительные сведения: 
 - [Создание отношений 1: N (один-ко-многим) или N:1 (многие-к-одному)](create-edit-1n-relationships.md)
 - [Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) на портале PowerApps](create-edit-1n-relationships-portal.md)
   

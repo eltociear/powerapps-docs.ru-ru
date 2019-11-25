@@ -1,46 +1,52 @@
 ---
 title: Создание формы карточки с PowerApps | MicrosoftDocs
-description: 'Узнайте, как создавать и использовать формы карточки в PowerApps'
+description: Узнайте, как создавать и использовать формы карточки в PowerApps
 keywords: ''
 ms.date: 03/05/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Mattp123
 ms.assetid: be93b9d7-f1c2-4ee7-8d7c-0f5c34dfa5f7
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d9adcde6d35b0f2d336bf86b8e4e26bcec1edec2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752439"
 ---
 # <a name="create-a-card-form"></a>Создание формы карточки
 Формы карточки используются в представлениях для приложений единого интерфейса. Формы карточек предназначены для представления данных в компактном формате, подходящем для мобильных устройств. Например, форма карточки по умолчанию для представления "Мои активные организации" определяет сведения, отображаемые для каждой записи организации. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/account-cardform-for-myactiveaccounts-view.png "Форма карточки организации для представления \"Мои активные организации\"")
+> ![](media/account-cardform-for-myactiveaccounts-view.png "Account card form for my active accounts view")
 
 Хотя формы карточек можно создавать и изменять таким же образом, как формы других типов, формы карточек добавляются в приложения иначе. Вместо добавления формы в качестве компонента приложения, настраиваемые формы карточек добавляются в представления с помощью элемента управления **Сетка только для чтения**. 
 
 ## <a name="create-a-card-form"></a>Создание формы карточки
-1. Для создания формы карточки войдите в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1. Для создания формы карточки войдите в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
 2. Разверните **Данные**, выберите **Сущности**, выберите требуемую сущность, затем выберите вкладку **Формы**.
 3. На панели инструментов выберите **Добавить форму**, затем выберите **Форма карточки**. Кроме того, можно открыть существующий **Тип формы**, который является формой **Карточка**, и изменить ее.
 4. Добавьте требуемые поля. Рекомендуется ограничить число полей, чтобы форма хорошо отображалась на небольших экранах. 
 5. Выберите **Сохранить**, затем выберите **Опубликовать**. 
 
 ## <a name="add-a-card-form-to-a-view"></a>Добавление формы карточки в представление 
-1. Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2. Разверните **Данные**, выберите требуемую сущность, затем выберите вкладку **Представления**.
 3. Выберите нужное представление, затем на панели инструментов конструктора представлений выберите **Перейти в классический режим**.
 4. Выберите **Пользовательские элементы управления** в области **Общие задачи**.

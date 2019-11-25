@@ -1,27 +1,33 @@
 ---
 title: Удаление или деактивация представления управляемого моделью приложения в PowerApps | MicrosoftDocs
-description: 'Узнайте, как удалить или деактивировать представление'
+description: Узнайте, как удалить или деактивировать представление
 ms.custom: ''
 ms.date: 06/12/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 60865f78-7482-42da-8960-adbd3c155028
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3dd7e6a6838f9ba148c8d90719746c4a1488c559
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711314"
 ---
 # <a name="delete-or-deactivate-a-model-driven-app-view"></a>Удаление или деактивация представления управляемого моделью приложения 
 
@@ -30,7 +36,7 @@ search.app:
  Вы можете иметь представление, которое не хотите отображать для других пользователей. В зависимости от типа представления его можно удалить или сделать неактивным.  
   
 ## <a name="delete-a-view"></a>Удаление представления  
- Можно удалить любое настраиваемое общее представление. Выполните действия в разделе [Доступ к определениям представлений](accessing-view-definitions.md), чтобы найти представление, которое требуется удалить, и выполните команду ![Кнопка удаления](media/delete.gif "Кнопка удаления")**Удалить**. После подтверждения удаления представление будет безвозвратно удалено.  
+ Можно удалить любое настраиваемое общее представление. Выполните действия в разделе [Доступ к определениям представлений](accessing-view-definitions.md), чтобы найти представление, которое требуется удалить, и выполните команду ![Кнопка удаления](media/delete.gif "Кнопка «Удалить»")**Удалить**. После подтверждения удаления представление будет безвозвратно удалено.  
   
  Если вы не хотите удалять представление безвозвратно, его можно сделать неактивным.  
   
@@ -47,5 +53,5 @@ search.app:
   
 4.  Выберите **Опубликовать все настройки**. 
 
-## <a name="next-steps"></a>Дальнейшие действия
-[Создание и редактирование представления](create-and-edit-views.md)
+## <a name="next-steps"></a>Дальнейшие шаги
+[Создание и изменение представления](create-and-edit-views.md)

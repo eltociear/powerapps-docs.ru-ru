@@ -1,6 +1,6 @@
 ---
 title: Общий доступ к управляемому моделью приложению с помощью PowerApps | Microsoft Docs
-description: 'Узнайте, как предоставить общий доступ к управляемому моделью приложению'
+description: Узнайте, как предоставить общий доступ к управляемому моделью приложению
 documentationcenter: ''
 author: Mattp123
 manager: kvivek
@@ -13,12 +13,17 @@ ms.component: model
 ms.date: 03/19/2019
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1c44bd0ce65bd995d79f291bd6af36193c4165a5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711094"
 ---
-
 # <a name="share-a-model-driven-app-with-powerapps"></a>Общий доступ к управляемому моделью приложению с помощью PowerApps
 
 Приложения [!INCLUDE [powerapps](../../includes/powerapps.md)] используют основанную на ролях систему безопасности для общего доступа. Основная концепция в основанной на ролях системе безопасности заключается в том, что роль безопасности включает права, определяющие набор действий, которые можно выполнять в приложении. Всем пользователям приложения следует назначить одну или несколько готовых или настраиваемых ролей. Роли могут также назначаться рабочим группам. Когда пользователь или рабочая группа назначена одной из этих ролей, пользователь или участники рабочей группы получают набор прав, связанный с этой ролью. 
@@ -31,7 +36,7 @@ search.app:
 ## <a name="prerequisites"></a>Необходимые условия
 Для общего доступа к приложению необходима роль администратора среды [!INCLUDE [powerapps](../../includes/powerapps.md)] или администратора системы. 
 
-## <a name="sign-in-to-powerapps"></a>Вход в PowerApps
+## <a name="sign-in-to-powerapps"></a>Выполнить вход в PowerApps
 Выполните вход в [PowerApps](https://powerapps.microsoft.com/). Если у вас еще нет учетной записи [!INCLUDE [powerapps](../../includes/powerapps.md)], выберите **Начать работу бесплатно** на сайте.
 
 ## <a name="share-an-app"></a>Совместное использование приложения 

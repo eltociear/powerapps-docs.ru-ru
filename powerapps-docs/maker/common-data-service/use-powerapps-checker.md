@@ -9,12 +9,17 @@ ms.topic: article
 ms.date: 07/09/2019
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c42dfe260fd77f40cd3046f754177838b17eefc2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758890"
 ---
-
 # <a name="use-solution-checker-to-validate-your-model-driven-apps-in-powerapps"></a>Использование средства проверки решений для проверки управляемых моделью приложений в PowerApps
 
 Чтобы обеспечивать сложные бизнес-требования, создатели управляемых моделью приложений часто могут в конечном счете создавать в высокой степени развитые приложения, которые настраивают и расширяют платформу Common Data Service. Со сложными реализациями возникает риск возникновения проблем производительности, устойчивости и надежности, что может отрицательно повлиять на опыт работы пользователя. Выявление этих проблем и разработка способов их устранения может быть сложной задачей, требующей много времени. С функцией проверки решения можно выполнить проверку решений с широким статическим анализом ваших решений по набору правил оптимальной работы и быстро выявить эти проблемные закономерности. После завершения проверки вы получите подробный отчет со списком выявленных проблем, затронутыми компонентами и кодом, а также со ссылками на документацию, в которой описываются способы решения каждой проблемы.
@@ -34,7 +39,7 @@ search.app:
 ## <a name="enable-the-solution-checker"></a>Включение средства проверки решений
 Средство проверки решений включено по умолчанию в каждой среде Common Data Service. Пункт меню **Средство проверки решений** доступно при выборе неуправляемого решения в области **Решения** в PowerApps. Если пункт **Выполнить** недоступен в меню **Средство проверки решений**, можно включить его, установив средство проверки решений PowerApps. Для установки выполните следующие шаги.   
 
-1. Войдите в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) и выберите среду Common Data Service, в которой необходимо включить средство проверки решений. 
+1. Войдите в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) и выберите среду Common Data Service, в которой необходимо включить средство проверки решений. 
 2. В левой области навигации выберите **Решения**.
 3. На панели инструментов выберите **Средство проверки решений**, затем выберите пункт **Установить** — откроется страница Microsoft AppSource. Необходимо включить всплывающие окна, если браузер блокирует открытие страницы. 
 
@@ -61,7 +66,7 @@ When you install the PowerApps checker these solution specific components are cr
 ## <a name="run-the-solution-checker"></a>Запуск средства проверки решений
 После установки средства проверки PowerApps в вашу среду пункт меню **Средство проверки решений** будет доступно при выборе неуправляемого решения в области **Решения** PowerApps. 
 
-1. Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
 2. В левой области выберите **Решения**. 
 3. Рядом с неуправляемым решением, которое требуется проанализировать, выберите пункт **...**, укажите на пункт **Средство проверки решений**, затем выберите **Выполнить**. 
 
@@ -110,7 +115,7 @@ When you install the PowerApps checker these solution specific components are cr
 3. Выберите проблему для просмотра сведений и инструкций о возможных способах решения.
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/solution-checker-viewresults.png "Просмотр результатов работы средства проверки решений")
+    > ![](media/solution-checker-viewresults.png "Solution checker view results")
 
 Результаты проверки решения также доступны для загрузки. ZIP-файл средства проверки решений загружается в папку, указанную браузером. Отчет загружается в формате [!INCLUDE [pn-excel-short](../../includes/pn-excel-short.md)] и содержит несколько элементов визуализации и столбцов, помогающих в идентификации влияния, типа и расположения каждой из проблем, обнаруженных в решении. Ссылка на детальную инструкцию о том, как устранить проблему, также предусмотрена. 
 
@@ -140,40 +145,40 @@ When you install the PowerApps checker these solution specific components are cr
 
 |Компонент решения  |Имя правила  |Описание правила  |
 |---------|---------|---------|
-|Подключаемый модуль или действие бизнес-процесса   | [рис-указать-столбец](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-specify-column&client=PAChecker&source=featuredocs)  | Избегайте выбора всех столбцов через API запросов Common Data Service.     |
-|Подключаемый модуль или действие бизнес-процесса   | [мета-удалить-дублирующую-регистрацию](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-dup-reg&client=PAChecker&source=featuredocs)     | Избегайте дублирования регистрации подключаемых модулей Common Data Service.     |
-|Подключаемый модуль или действие бизнес-процесса   | [рис-отключение-проверки-активности](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-turn-off-keepalive&client=PAChecker&source=featuredocs)   | Задайте для KeepAlive значение false при взаимодействии с внешними узлами в подключаемом модуле Common Data Service.     |
-|Подключаемый модуль или действие бизнес-процесса   | [рис-избегать-неопубликованных-метаданных](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-unpub-metadata&client=PAChecker&source=featuredocs)   | Избегайте извлечения неопубликованных метаданных Common Data Service.     |
-|Подключаемый модуль или действие бизнес-процесса   | [рис-избегать-пакетного-режима-подключаемых-модулей](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-batch-plugin&client=PAChecker&source=featuredocs)   | Не используйте пакетные типы запросов в подключаемых модулях и действиях бизнес-процессов в Common Data Service.    |
-|Подключаемый модуль или действие бизнес-процесса   | [мета-избегать-регистрации-без-атрибутов](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-reg-no-attribute&client=PAChecker&source=featuredocs)  | Включите атрибуты фильтрации в регистрации подключаемых модулей Common Data Service.    |
-|Подключаемый модуль или действие бизнес-процесса   | [мета-избегать-регистрации-для-извлечения](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-reg-retrieve&client=PAChecker&source=featuredocs)  | Соблюдайте осторожность с подключаемыми модулями Common Data Service, зарегистрированными для сообщений Retrieve и RetrieveMultiple.    |
-|Подключаемый модуль или действие бизнес-процесса   | [мета-удалить-неактивный](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-inactive&client=PAChecker&source=featuredocs)    | Удалите неактивные конфигурации в Common Data Service.    |
-|Подключаемый модуль или действие бизнес-процесса   | [рис-мета-избегать-устаревших-сообщений-crm2011](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-crm2011-depr-message&client=PAChecker&source=featuredocs)  | Не используйте устаревшие сообщения Microsoft Dynamics CRM 2011.     |
-|Подключаемый модуль или действие бизнес-процесса   | [мета-избегать-событие-crm4](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-crm4-event&client=PAChecker&source=featuredocs) | Не используйте этап регистрации подключаемого модуля Microsoft Dynamics CRM 4.0.    |
-|Подключаемый модуль или действие бизнес-процесса   | [рис-избегать-специализированных-операций-обновления](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-specialized-update-ops&client=PAChecker&source=featuredocs)  | Не используйте специализированные запросы операции обновления в Common Data Service.    | 
-| Подключаемый модуль или действие бизнес-процесса |  [рис-использование-функции-автонумерации](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-use-autonumber-feature&client=PAChecker)  |Использование функции автоматической нумерации вместо настраиваемого решения автоматической нумерации. | 
-| Подключаемый модуль или действие бизнес-процесса  | [рис-избегать-параллельного-режима-подключаемых-модулей](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-parallel-plugin&client=PAChecker)  | Следует избегать параллельных схем внутри подключаемых модулей.  |
-| Подключаемый модуль или действие бизнес-процесса  | [рис-избегать-блокировки-подключаемых-модулей](http://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-lock-plugin&client=PAChecker)  | Не блокируйте статических участников в подключаемых модулях.  |
-| Подключаемый модуль или действие бизнес-процесса  | [мета-избегать-извлечения-нескольких-аннотаций](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-retrievemultiple-annotation&client=PAChecker)  | Избегайте регистрации подключаемого модуля для RetrieveMultiple аннотации.  |
-|Веб-ресурсы  | [веб-использовать-асинхронно](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-async&client=PAChecker&source=featuredocs)  |  Взаимодействуйте с ресурсами HTTP и HTTPS асинхронно.   |
-|Веб-ресурсы  | [мета-удалить-недействительные-обработчики-форм](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-invalid-form-handler&client=PAChecker&source=featuredocs)  | Исправьте или удалите недействительные регистрации событий формы Common Data Service.   |
-|Веб-ресурсы  | [мета-удалить-потерянные-элементы-форм](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-orphaned-form-element&client=PAChecker&source=featuredocs)  | Исправьте или удалите потерянные регистрации событий формы Common Data Service.   |
-|Веб-ресурсы  | [веб-избегать-модальных-диалогов](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-modals&client=PAChecker&source=featuredocs)  | Не используйте модальные диалоги.   |
-|Веб-ресурсы  | [веб-избегать-службу-odata-crm2011](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-odata&client=PAChecker&source=featuredocs)   | Не используйте в качестве цели конечную точку Microsoft Dynamics CRM 2011 OData 2.0.     |
-|Веб-ресурсы  | [веб-избегать-службы-soap-crm2011](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-soap&client=PAChecker&source=featuredocs)  | Не используйте в качестве цели службы Microsoft Dynamics CRM 2011 SOAP.   |
-|Веб-ресурсы  | [веб-избегать-специальные-api-браузера](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-browser-specific-api&client=PAChecker&source=featuredocs) | Не используйте устаревшие API-интерфейсы Internet Explorer или подключаемые модули браузера.   |
-|Веб-ресурсы  | [веб-избегать-2011-api](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-2011-api&client=PAChecker&source=featuredocs)  | Не используйте устаревшую объектную модель Microsoft Dynamics CRM 2011.  |
-|Веб-ресурсы  | [веб-используйте-относительный-uri](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-relative-uri&client=PAChecker&source=featuredocs)   | Не используйте абсолютные URL-адреса конечной точки Common Data Service.    |
-|Веб-ресурсы  | [веб-используйте-контекст-клиента](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-client-context&client=PAChecker&source=featuredocs)  | Используйте контексты клиента.   |
-|Веб-ресурсы  | [веб-использовать-параметры-api-диалога](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-dialog-api-param&client=PAChecker&source=featuredocs)   | Используйте параметры API-интерфейса диалога.   |
-|Веб-ресурсы  | [веб-использовать-параметр-организации](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-org-setting&client=PAChecker&source=featuredocs)   | Используйте параметры организации.   |
-|Веб-ресурсы  | [веб-использовать-api-сетки](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-grid-api&client=PAChecker&source=featuredocs)   | Используйте API-интерфейсы сетки.    |
-|Веб-ресурсы  | [веб-избегать-isActivityType](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-isActivityType&client=PAChecker&source=featuredocs)   | Замените метод Xrm.Utility.isActivityType новым методом Xrm.Utility.getEntityMetadata и не используйте в правилах ленты.    |
-|Веб-ресурсы  | [мета-избегать-Silverlight](http://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-silverlight&client=PAChecker&source=featuredocs)   | Использование веб-ресурса Silverlight устарело.   |
-| Веб-ресурсы  | [интернет-удалите-отладочный-скрипт](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-remove-debug-script&client=PAChecker)  | Не включайте отладочный скрипт в средах, отличных от среды разработки.  | 
-| Веб-ресурсы  | [интернет-использование-строгого-режима](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-mode&client=PAChecker)  | При возможности используйте строгий режим.  | 
-| Веб-ресурсы  | [интернет-использование-операторов-строгого-равенства](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-equality-operators&client=PAChecker)  | Используйте операторы строгого равенства.  | 
-| Веб-ресурсы  | [интернет-избегайте-eval](http://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-eval&client=PAChecker)  | Не используйте функцию "eval" или ее функциональные эквиваленты.  | 
+|Подключаемый модуль или действие бизнес-процесса   | [рис-указать-столбец](https://go.microsoft.com/fwlink/?LinkID=398563&error=il-specify-column&client=PAChecker&source=featuredocs)  | Избегайте выбора всех столбцов через API запросов Common Data Service.     |
+|Подключаемый модуль или действие бизнес-процесса   | [мета-удалить-дублирующую-регистрацию](https://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-dup-reg&client=PAChecker&source=featuredocs)     | Избегайте дублирования регистрации подключаемых модулей Common Data Service.     |
+|Подключаемый модуль или действие бизнес-процесса   | [рис-отключение-проверки-активности](https://go.microsoft.com/fwlink/?LinkID=398563&error=il-turn-off-keepalive&client=PAChecker&source=featuredocs)   | Задайте для KeepAlive значение false при взаимодействии с внешними узлами в подключаемом модуле Common Data Service.     |
+|Подключаемый модуль или действие бизнес-процесса   | [рис-избегать-неопубликованных-метаданных](https://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-unpub-metadata&client=PAChecker&source=featuredocs)   | Избегайте извлечения неопубликованных метаданных Common Data Service.     |
+|Подключаемый модуль или действие бизнес-процесса   | [рис-избегать-пакетного-режима-подключаемых-модулей](https://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-batch-plugin&client=PAChecker&source=featuredocs)   | Не используйте пакетные типы запросов в подключаемых модулях и действиях бизнес-процессов в Common Data Service.    |
+|Подключаемый модуль или действие бизнес-процесса   | [мета-избегать-регистрации-без-атрибутов](https://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-reg-no-attribute&client=PAChecker&source=featuredocs)  | Включите атрибуты фильтрации в регистрации подключаемых модулей Common Data Service.    |
+|Подключаемый модуль или действие бизнес-процесса   | [мета-избегать-регистрации-для-извлечения](https://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-reg-retrieve&client=PAChecker&source=featuredocs)  | Соблюдайте осторожность с подключаемыми модулями Common Data Service, зарегистрированными для сообщений Retrieve и RetrieveMultiple.    |
+|Подключаемый модуль или действие бизнес-процесса   | [мета-удалить-неактивный](https://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-inactive&client=PAChecker&source=featuredocs)    | Удалите неактивные конфигурации в Common Data Service.    |
+|Подключаемый модуль или действие бизнес-процесса   | [рис-мета-избегать-устаревших-сообщений-crm2011](https://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-crm2011-depr-message&client=PAChecker&source=featuredocs)  | Не используйте устаревшие сообщения Microsoft Dynamics CRM 2011.     |
+|Подключаемый модуль или действие бизнес-процесса   | [мета-избегать-событие-crm4](https://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-crm4-event&client=PAChecker&source=featuredocs) | Не используйте этап регистрации подключаемого модуля Microsoft Dynamics CRM 4.0.    |
+|Подключаемый модуль или действие бизнес-процесса   | [рис-избегать-специализированных-операций-обновления](https://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-specialized-update-ops&client=PAChecker&source=featuredocs)  | Не используйте специализированные запросы операции обновления в Common Data Service.    | 
+| Подключаемый модуль или действие бизнес-процесса |  [рис-использование-функции-автонумерации](https://go.microsoft.com/fwlink/?LinkID=398563&error=il-use-autonumber-feature&client=PAChecker)  |Использование функции автоматической нумерации вместо настраиваемого решения автоматической нумерации. | 
+| Подключаемый модуль или действие бизнес-процесса  | [рис-избегать-параллельного-режима-подключаемых-модулей](https://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-parallel-plugin&client=PAChecker)  | Следует избегать параллельных схем внутри подключаемых модулей.  |
+| Подключаемый модуль или действие бизнес-процесса  | [рис-избегать-блокировки-подключаемых-модулей](https://go.microsoft.com/fwlink/?LinkID=398563&error=il-avoid-lock-plugin&client=PAChecker)  | Не блокируйте статических участников в подключаемых модулях.  |
+| Подключаемый модуль или действие бизнес-процесса  | [мета-избегать-извлечения-нескольких-аннотаций](https://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-retrievemultiple-annotation&client=PAChecker)  | Избегайте регистрации подключаемого модуля для RetrieveMultiple аннотации.  |
+|Веб-ресурсы  | [веб-использовать-асинхронно](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-async&client=PAChecker&source=featuredocs)  |  Взаимодействуйте с ресурсами HTTP и HTTPS асинхронно.   |
+|Веб-ресурсы  | [мета-удалить-недействительные-обработчики-форм](https://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-invalid-form-handler&client=PAChecker&source=featuredocs)  | Исправьте или удалите недействительные регистрации событий формы Common Data Service.   |
+|Веб-ресурсы  | [мета-удалить-потерянные-элементы-форм](https://go.microsoft.com/fwlink/?LinkID=398563&error=meta-remove-orphaned-form-element&client=PAChecker&source=featuredocs)  | Исправьте или удалите потерянные регистрации событий формы Common Data Service.   |
+|Веб-ресурсы  | [веб-избегать-модальных-диалогов](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-modals&client=PAChecker&source=featuredocs)  | Не используйте модальные диалоги.   |
+|Веб-ресурсы  | [веб-избегать-службу-odata-crm2011](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-odata&client=PAChecker&source=featuredocs)   | Не используйте в качестве цели конечную точку Microsoft Dynamics CRM 2011 OData 2.0.     |
+|Веб-ресурсы  | [веб-избегать-службы-soap-crm2011](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-crm2011-service-soap&client=PAChecker&source=featuredocs)  | Не используйте в качестве цели службы Microsoft Dynamics CRM 2011 SOAP.   |
+|Веб-ресурсы  | [веб-избегать-специальные-api-браузера](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-browser-specific-api&client=PAChecker&source=featuredocs) | Не используйте устаревшие API-интерфейсы Internet Explorer или подключаемые модули браузера.   |
+|Веб-ресурсы  | [веб-избегать-2011-api](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-2011-api&client=PAChecker&source=featuredocs)  | Не используйте устаревшую объектную модель Microsoft Dynamics CRM 2011.  |
+|Веб-ресурсы  | [веб-используйте-относительный-uri](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-relative-uri&client=PAChecker&source=featuredocs)   | Не используйте абсолютные URL-адреса конечной точки Common Data Service.    |
+|Веб-ресурсы  | [веб-используйте-контекст-клиента](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-client-context&client=PAChecker&source=featuredocs)  | Используйте контексты клиента.   |
+|Веб-ресурсы  | [веб-использовать-параметры-api-диалога](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-dialog-api-param&client=PAChecker&source=featuredocs)   | Используйте параметры API-интерфейса диалога.   |
+|Веб-ресурсы  | [веб-использовать-параметр-организации](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-org-setting&client=PAChecker&source=featuredocs)   | Используйте параметры организации.   |
+|Веб-ресурсы  | [веб-использовать-api-сетки](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-grid-api&client=PAChecker&source=featuredocs)   | Используйте API-интерфейсы сетки.    |
+|Веб-ресурсы  | [веб-избегать-isActivityType](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-isActivityType&client=PAChecker&source=featuredocs)   | Замените метод Xrm.Utility.isActivityType новым методом Xrm.Utility.getEntityMetadata и не используйте в правилах ленты.    |
+|Веб-ресурсы  | [мета-избегать-Silverlight](https://go.microsoft.com/fwlink/?LinkID=398563&error=meta-avoid-silverlight&client=PAChecker&source=featuredocs)   | Использование веб-ресурса Silverlight устарело.   |
+| Веб-ресурсы  | [интернет-удалите-отладочный-скрипт](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-remove-debug-script&client=PAChecker)  | Не включайте отладочный скрипт в средах, отличных от среды разработки.  | 
+| Веб-ресурсы  | [интернет-использование-строгого-режима](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-mode&client=PAChecker)  | При возможности используйте строгий режим.  | 
+| Веб-ресурсы  | [интернет-использование-операторов-строгого-равенства](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-use-strict-equality-operators&client=PAChecker)  | Используйте операторы строгого равенства.  | 
+| Веб-ресурсы  | [интернет-избегайте-eval](https://go.microsoft.com/fwlink/?LinkID=398563&error=web-avoid-eval&client=PAChecker)  | Не используйте функцию "eval" или ее функциональные эквиваленты.  | 
 
 
 ### <a name="see-also"></a>См. также

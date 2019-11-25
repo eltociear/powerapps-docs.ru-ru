@@ -1,5 +1,5 @@
 ---
-title: Создание бизнес-правила в Common Data Service | Microsoft Docs
+title: Создание бизнес-правила в Common Data Service | Документация Майкрософт
 description: Пошаговые инструкции по созданию бизнес-правила в Common Data Service.
 author: lancedMicrosoft
 manager: kfile
@@ -9,12 +9,17 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 45d0d4ce80d1552ace70ae5b25a67e570141d261
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754754"
 ---
-
 # <a name="create-a-business-rule-for-an-entity"></a>Создание бизнес-правила для сущности
 
 Вы можете создать бизнес-правила и рекомендации, чтобы применить логику и проверку без написания кода или создания подключаемых модулей. Бизнес-правила предоставляют простой интерфейс для реализации и поддержки быстро меняющихся, широко используемых бизнес-правил.
@@ -46,7 +51,7 @@ search.app:
 
 ## <a name="create-a-business-rule"></a>Создание бизнес-правила
   
-1. Войдите в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), а затем щелкните или нажмите на стрелку вниз для **Данные** рядом с левым краем.
+1. Войдите в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), затем щелкните или нажмите на стрелку вниз для **Данные** рядом с левым краем.
 
 2. В открывшемся списке щелкните или нажмите **Сущности**.
   

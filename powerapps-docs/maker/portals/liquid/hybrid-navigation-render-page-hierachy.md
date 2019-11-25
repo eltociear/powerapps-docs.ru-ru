@@ -1,16 +1,21 @@
 ---
-title: Использование гибридной навигации для отображения иерархии страницы для портала | Документация Майкрософт
+title: Использование гибридной навигации для отображения иерархии страницы для портала | MicrosoftDocs
 description: Инструкции по использованию гибридной навигации для отображения иерархии страницы для портала.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: aace949be3cc191af5edd95c461e422b9c3217f5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708366"
 ---
-
 # <a name="render-up-to-three-levels-of-page-hierarchy-by-using-hybrid-navigation"></a>Отображение до трех уровней иерархии страниц с помощью гибридной навигации
 
 Этот пример отображает тип гибридной навигации, основанный на карте сайта портала, который отображает до трех уровней иерархии страниц. Правила для этого компонента:

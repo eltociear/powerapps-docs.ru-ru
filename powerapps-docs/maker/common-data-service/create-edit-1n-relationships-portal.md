@@ -1,6 +1,6 @@
 ---
 title: Создание и изменение отношений сущностей "Один-ко-многим" или "Многие-к-одному" на портале PowerApps | Документация Майкрософт
-description: 'Узнайте, как создать отношение сущностей "один-ко-многим" или "многие-к-одному" с помощью портала PowerApps.'
+description: Узнайте, как создать отношение сущностей "один-ко-многим" или "многие-к-одному" с помощью портала PowerApps.
 ms.custom: ''
 ms.date: 06/11/2018
 ms.reviewer: ''
@@ -9,21 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 70f48af48b2a9221029735de484b555bc03a66c4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2756535"
 ---
 # <a name="create-and-edit-one-to-many-or-many-to-one-entity-relationships-using-powerapps-portal"></a>Создание и изменение отношений сущностей "Один-ко-многим" или "Многие-к-одному" на портале PowerApps
 
-[Портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) обеспечивает простой способ создания и изменения отношений 1:N (один-ко-многим) или N:1 (многие-к-одному) в Common Data Service.
+[Портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) обеспечивает простой способ создания и изменения отношений 1:N (один-ко-многим) или N:1 (многие-к-одному) в Common Data Service.
 
 Портал позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. Дополнительные сведения: 
 - [Создание и изменение отношений 1:N (один-ко-многим) или N:1 (многие-к-одному)](create-edit-1n-relationships.md)
@@ -31,7 +37,7 @@ search.app:
 
 ## <a name="view-entity-relationships"></a>Просмотр отношений сущностей
 
-1. На [портале PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите режим конструирования **на основе модели** или **Холст**.
+1. На [портале PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите режим конструирования **на основе модели** или **Холст**.
 2. Выберите **Данные** > **Сущности** и выберите сущность с отношениями, которые необходимо просмотреть.
 3. На вкладке **Отношения** можно выбрать следующие представления. 
 

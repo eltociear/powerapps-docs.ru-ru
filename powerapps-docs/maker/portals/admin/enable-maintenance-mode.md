@@ -1,19 +1,22 @@
 ---
-title: Включить режим обслуживания для портала | Документация Майкрософт
-description: 'Узнайте, как включить режим обслуживания с порталом.'
+title: Включить режим обслуживания для портала | MicrosoftDocs
+description: Узнайте, как включить режим обслуживания с порталом.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 07/18/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: e53380c39257645e9056a271226b6f7ef8c8c721
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709950"
 ---
-
 # <a name="maintenance-mode-for-a-portal"></a>Режим обслуживания для портала
-
-[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Могут быть случаи, когда веб-сайт проходит плановое обслуживание или не работает из-за временного сбоя. Когда клиент получает доступ к веб-сайту во время обслуживания, непрогнозируемое поведение и прерывистая недоступность могут возникать. 
 
@@ -45,7 +48,7 @@ ms.reviewer: null
 5. Щелкните **Включить**. Во время включения режима обслуживания портал перезапускается и недоступен в течение нескольких минут. 
 
     > [!div class=mx-imgBorder]
-    > ![Включение параметров режима обслуживания](../media/enable-maint-mode.png "Включение параметров режима обслуживания")
+    > ![Параметры включения режима обслуживания](../media/enable-maint-mode.png "Параметры включения режима обслуживания")
 
 ## <a name="configure-or-disable-maintenance-mode"></a>Настроить или отключить режим обслуживания
 
@@ -58,7 +61,7 @@ ms.reviewer: null
 2. Выберите **Действия портала** > **Настроить или отключить режим обслуживания**.
 
     > [!div class=mx-imgBorder]
-    > ![Настройка режима обслуживания](../media/configure-maint-mode-button.png "Настройка режима обслуживания")
+    > ![Настроить режим обслуживания](../media/configure-maint-mode-button.png "Настроить режим обслуживания")
 
 3. Измените настройки, как требуется, и выберите **Обновить**. Например, вы можете выбрать отображение страницы по умолчанию, если ранее выбрали отображение пользовательской страницы.
 

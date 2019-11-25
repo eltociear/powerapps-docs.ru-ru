@@ -8,19 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: c765b6d9-4d87-4c2d-aae2-5b1c3b664a71
 caps.latest.revision: 28
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 400fb236df41fefc8a9cfa7175ebfd8260ec96bd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2707486"
 ---
 # <a name="entity-relationships-overview"></a>Обзор отношений сущностей
 Отношения сущностей определяют, как записи можно связывать друг с другом в базе данных. На самом простом уровне добавление поля поиска в сущность создает новое отношение 1:N (один ко многим) между двумя сущностями, а также позволяет поместить это поле поиска в форму. При наличии поля поиска пользователи могут связать несколько *дочерних* записей данной сущности с одной *родительской* записью сущности.  

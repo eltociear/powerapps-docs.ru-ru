@@ -1,27 +1,33 @@
 ---
 title: Элемент управления "Таймер" управляемых моделью приложений в PowerApps | MicrosoftDocs
-description: 'Узнайте, как можно использовать элемент управления "Таймер"'
+description: Узнайте, как можно использовать элемент управления "Таймер"
 ms.custom: ''
 ms.date: 06/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: b2b64771-083b-42f9-a3d5-2218f9d8a713
 caps.latest.revision: 63
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 31b7f2b55f10e404841517aada26b0b38df7fbbf
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710830"
 ---
 # <a name="model-driven-app-timer-control-overview"></a>Обзор элемента управления "таймер" управляемых моделью приложений
 

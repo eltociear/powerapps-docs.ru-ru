@@ -1,6 +1,6 @@
 ---
-title: Определение переходов причины состояния с помощью PowerApps | MicrosoftDocs
-description: 'Узнайте, как определять переходы причин состояния'
+title: Определение переходов причин состояния с помощью PowerApps | MicrosoftDocs
+description: Узнайте, как определять переходы причин состояния
 ms.custom: ''
 ms.date: 05/25/2018
 ms.reviewer: ''
@@ -9,21 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: dbc4f436-0b23-42f9-8079-b0de482aaebe
 caps.latest.revision: 11
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9fb1fc93b5559c47cebeef4fb73ebd095a48f0a5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2705594"
 ---
-
 # <a name="define-status-reason-transitions-for-the-case-or-custom-entities"></a>Определение переходов причин состояния для обращений или настраиваемых сущностей
 
 Можно указывать переходы причин состояний для сущности "Инцидент" (**Обращение**) или настраиваемой сущности.

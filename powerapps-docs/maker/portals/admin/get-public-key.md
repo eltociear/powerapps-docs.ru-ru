@@ -1,19 +1,22 @@
 ---
-title: Загрузка открытого ключа портала | Документация Майкрософт
+title: Загрузка открытого ключа портала | MicrosoftDocs
 description: Научитесь загружать открытый ключ портала.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 09/16/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 39e909acb325bd870f73e16a72da78b4bec07c79
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709862"
 ---
-
 # <a name="download-public-key-of-portal"></a>Загрузка открытого ключа портала
-
-[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Открытый ключ портала используется для настройки работы Live Assist for приложений на основе модели в Dynamics 365 с посетителями портала, прошедшими проверку подлинности. [Live Assist](https://www.cafex.com/en/products/live-assist-dynamics-365/) от CafeX предоставляет решение чата, с помощью которого пользователи могут внедрять помощь живого чата в свой портал. Дополнительные сведения о том, как использовать открытый ключ для внедрения чата на портал: [Посетители, прошедшие проверку подлинности на портале клиентов Dynamics](https://www.liveassistfor365.com/en/support/authenticated-visitors-in-the-dynamics-customer-portal/)
 

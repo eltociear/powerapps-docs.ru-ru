@@ -1,29 +1,34 @@
 ---
-title: Определение полей сведения с PowerApps | MicrosoftDocs
+title: Определение полей свертки с помощью PowerApps | MicrosoftDocs
 description: Сведения об определении полей сведения
 ms.custom: ''
 ms.date: 05/23/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: ff0504a1-01bd-4f9b-b884-7f84911d86c3
 caps.latest.revision: 58
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9691912bab995fac0b3489580aaa1fef82f9dcc8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758647"
 ---
-
 # <a name="define-rollup-fields-that-aggregate-values"></a>Определение полей свертки, которые агрегируют значения
 
 Поля свертки предназначены для того, чтобы помочь пользователям преобразовать аналитические сведения в данные за счет мониторинга ключевых бизнес-показателей. Поле свертки содержит совокупное значение, рассчитываемое на основании записей, связанных с определенной записью. К ним относятся регулярные сущности и сущности действий, такие как сообщения электронной почты и встречи.
@@ -75,7 +80,7 @@ search.app:
 
 Для просмотра заданий свертки:
 
-1. Во время просмотра **решения по умолчанию Common Data Service** измените URL-адрес, удалив все после `dynamics.com` и обновите страницу.
+1. Во время просмотра **решения по умолчанию Common Data Service** измените URL-адрес, удалив все после `dynamics.com`, и обновите страницу.
 2. В области **Параметры** выберите **Система** > **Системные задания**.<br />![Перейдите к системным заданиям](media/navigate-system-jobs.png)
 1. В селекторе представления выберите **Повторяющиеся системные задания**.
 2. Чтобы быстро найти необходимое задание, можно отфильтровать задания по типу системного задания: **Массовый расчет поля свертки** или **Расчет поля свертки**.
@@ -212,5 +217,5 @@ search.app:
 [Определение вычисляемых полей](define-calculated-fields.md)<br />
 [Поведение и формат поля "Дата и время"](behavior-format-date-time-field.md)<br />
 [Определение и запрос иерархически связанных данных](define-query-hierarchical-data.md)<br />
-[Видео: поля свертки и вычисляемые поля](http://www.youtube.com/watch?v=RoahCH1p3T8&list=PLC3591A8FE4ADBE07&index=8)<br />
-[Видео: Использование Power BI](http://www.youtube.com/watch?v=PkQe4BFlBS8&list=PLC3591A8FE4ADBE07&index=3)
+[Видео: поля свертки и вычисляемые поля](https://www.youtube.com/watch?v=RoahCH1p3T8&list=PLC3591A8FE4ADBE07&index=8)<br />
+[Видео: Использование Power BI](https://www.youtube.com/watch?v=PkQe4BFlBS8&list=PLC3591A8FE4ADBE07&index=3)

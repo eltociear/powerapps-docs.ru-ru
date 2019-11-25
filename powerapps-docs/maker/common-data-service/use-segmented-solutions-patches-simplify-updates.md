@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 5c05f683-e1bd-4885-be23-b6973128773f
 caps.latest.revision: 15
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8f2b890766c6643da0a5363f49ef9b5c233b0b0b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2703130"
 ---
 # <a name="use-segmented-solutions-and-patches-to-export-selected-entity-assets"></a>Использование сегментированных решений и исправлений для экспорта выбранных активов сущности
 
@@ -82,19 +88,19 @@ search.app:
   
  Следуйте указаниям мастера. В шаге 1 выберите активы (упорядочены по алфавиту) для первой сущности — `Account`, как показано ниже.  
   
- ![Запустите мастера.](media/solution-segmentation-wizard-starts-admin.png "Запустите мастера.")  
+ ![Запустите мастер.](media/solution-segmentation-wizard-starts-admin.png "Запустите мастер.")  
   
  Откройте вкладку **Поля** и выберите поле **Код организации**.  
   
- ![Выберите активы сущности "Организация".](media/solution-segmentation-select-account-assets-admin.png "Выберите активы сущности \"Организация\".")  
+ ![Выберите активы сущности "Организация".](media/solution-segmentation-select-account-assets-admin.png "Выберите активы сущности "Организация".")  
   
  В шаге 2 для сущности **Обращение** добавьте все активы.  
   
- ![Выберите активы сущности "Обращение".](media/solution-segmentation-select-case-assets-admin.png "Выберите активы сущности \"Обращение\".")  
+ ![Выберите активы сущности "Обращение".](media/solution-segmentation-select-case-assets-admin.png "Выберите активы сущности "Обращение".")  
   
  В шаге 3 добавьте поле **Годовщина** для сущности **Контакт**.  
   
- ![Выберите активы сущности "Контакт".](media/solution-segmentation-select-contact-assets-admin.png "Выберите активы сущности \"Контакт\".")  
+ ![Выберите активы сущности "Контакт".](media/solution-segmentation-select-contact-assets-admin.png "Выберите активы сущности "Контакт".")  
   
  В результате созданное сегментированное решение содержит три сущности — `Account`, `Case` и `Contact`. Каждая сущность содержит только те активы, которые были выбраны.  
   
@@ -121,7 +127,7 @@ search.app:
   
  В диалоговом окне **Клонировать в исправление** видно, что номер версии для исправления основан на номере версии родительского решения, а номер сборки увеличен на единицу. Каждое последующее исправление имеет более высокий номер сборки или редакции по сравнению с предыдущим исправлением.  
   
- ![Используйте диалоговое окно "Клонировать в исправление".](media/solution-segmentation-clone-patch-dialog-admin.png "Используйте диалоговое окно \"Клонировать в исправление\".")  
+ ![Используйте диалоговое окно "Клонировать в исправление".](media/solution-segmentation-clone-patch-dialog-admin.png "Используйте диалоговое окно "Клонировать в исправление".")  
   
  Следующий скриншот показывает базовое решение **SegmentedSolutionExample**, версия **1.0.1.0** и исправление **SegmentedSolutionExample_Patch**, версия **1.0.2.0**.  
   
@@ -143,13 +149,13 @@ search.app:
   
  В продолжении примера вы видите диалоговое окно **Клонировать в решение**, которое содержит новый номер версии решения.  
   
- ![Используйте диалоговое окно "Клонировать в решение".](media/solution-segmentation-clone-solution-dialog-admin.png "Используйте диалоговое окно \"Клонировать в решение\".")  
+ ![Используйте диалоговое окно "Клонировать в решение".](media/solution-segmentation-clone-solution-dialog-admin.png "Используйте диалоговое окно "Клонировать в решение".")  
   
  После клонирования новая версия решения содержит 3 первоначальных сущности (`Account`, `Case` и `Contact`) и настраиваемую сущность `Book`, добавленную в исправлении. Каждая сущность содержит только те активы, которые были добавлены в примере.  
   
  > [!div class="mx-imgBorder"] 
  > ![Клонированное решение со свернутым исправлением.](media/solution-segmentation-solution-rolled-up-patch-admin.png "Клонированное решение со свернутым исправлением.")  
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Дальнейшие шаги  
  [Обзор решений](solutions-overview.md) [Создание исправлений для упрощения обновления решений]
 

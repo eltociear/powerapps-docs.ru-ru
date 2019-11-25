@@ -1,6 +1,6 @@
 ---
 title: Определение альтернативных ключей для ссылки на записи с Common Data Service | MicrosoftDocs
-description: 'Узнайте, как определить альтернативные ключи, которые можно использовать для ссылки на записи в Common Data Service'
+description: Узнайте, как определить альтернативные ключи, которые можно использовать для ссылки на записи в Common Data Service
 ms.custom: ''
 ms.date: 06/04/2019
 ms.reviewer: ''
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 29e53691-0b18-4fde-a1d0-7490aa227898
 caps.latest.revision: 10
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d6c620f518331f46ef3e662040975cd8c6c5625a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758823"
 ---
 # <a name="define-alternate-keys-to-reference-records"></a>Определение альтернативных ключей для ссылки на записи
 
@@ -49,7 +55,7 @@ search.app:
 
 |Дизайнер| Описание|
 |--|--|
-|[Портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые параметры недоступны.<br />Дополнительные сведения: [Определение альтернативных ключей с помощью портала PowerApps](define-alternate-keys-portal.md)|
+|[портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые параметры недоступны.<br />Дополнительные сведения: [Определение альтернативных ключей с помощью портала PowerApps](define-alternate-keys-portal.md)|
 |Обозреватель решений|Не так прост, но предоставляет больше гибкости для менее распространенных требований.<br />Дополнительные сведения: [Определение альтернативных ключей с помощью обозревателя решений](define-alternate-keys-solution-explorer.md) |
 
 > [!NOTE]
@@ -59,7 +65,7 @@ search.app:
 
 Информация в этом разделе поможет вам выбрать конструктор для использования. 
 
-Нужно использовать [портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) для создания альтернативных ключей, если только вам не нужно выполнить любое из следующих требований:
+Нужно использовать [портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) для создания альтернативных ключей, если только вам не нужно выполнить любое из следующих требований:
 
 - Создать альтернативный ключ в решении, отличном от решения по умолчанию Common Data Service
 - Требуется легко отслеживать созданное системное задание, отслеживающее ход создания индексов поддержки

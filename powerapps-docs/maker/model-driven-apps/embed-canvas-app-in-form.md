@@ -8,22 +8,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 00e62904-2ce9-4730-a113-02b1fedbf22e
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1d763fd341c3537f908720ea9616b1646bda1745
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2704846"
 ---
-
 # <a name="embed-a-canvas-app-on-a-model-driven-form"></a>Внедрение приложения на основе холста в управляемую моделью форму
 
 Приложения на основе холста позволяют создателям легко разрабатывать и создавать собственные макеты создать с помощью WYSIWYG-конструктора приложений на основе холста с малым количеством кода. Приложения на основе холста также позволяют создателям подключать и отображать в своих формах данные из более 200 источников данных.

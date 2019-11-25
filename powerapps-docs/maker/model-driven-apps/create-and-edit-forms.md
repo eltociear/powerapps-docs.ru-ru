@@ -1,5 +1,5 @@
 ---
-title: 'Создание, изменение или настройка форм с помощью конструктора форм, управляемых моделью | Документация Майкрософт'
+title: Создание, изменение или настройка форм с помощью конструктора форм, управляемых моделью | Документация Майкрософт
 ms.custom: ''
 ms.date: 08/26/2019
 ms.reviewer: ''
@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c357649ba68e6bce1b9df51d9601507c337afd31
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752491"
 ---
-
 # <a name="create-edit-or-configure-forms-using-the-form-designer"></a>Создание, изменение или настройка форм с помощью конструктора форм 
 Используйте новый конструктор форм для создания, изменения или настройки форм для управляемых моделью приложений. 
 
@@ -30,7 +35,7 @@ search.app:
 > Новый конструктор управляемых моделью форм в настоящее не время поддерживает редактирование форм карточек. Дополнительные сведения: [Типы форм](types-forms.md)
 
 ## <a name="create-a-form"></a>Создание формы 
-1. Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
 2. В левой области навигации разверните **Данные**, затем выберите **Сущности**. 
 3. Выберите сущность, например сущность организации, затем выберите вкладку **Формы**. 
 4. Выберите **Добавить форму**, затем выберите один из следующих вариантов
@@ -41,7 +46,7 @@ search.app:
 5. После завершения внесения изменений в форму выберите **Сохранить** для сохранения формы или выберите **Опубликовать**, если требуется сохранить изменения и сделать их видимыми пользователям приложения.  
 
 ## <a name="edit-a-form"></a>Редактирование формы 
-1. Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
 2. В левой области навигации разверните **Данные**, затем выберите **Сущности**. 
 3. Выберите сущность, например сущность организации, затем выберите вкладку **Формы**.
 4. Выберите имя формы, которую необходимо изменить.  

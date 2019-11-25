@@ -1,29 +1,34 @@
 ---
-title: Создание или изменение экспресс-форм управляемого моделью приложения в PowerApps | MicrosoftDocs
+title: Создание или изменение экспресс-форм приложений на основе модели в PowerApps | Документация Майкрософт
 description: Инструкции по созданию и изменению экспресс-формы
 ms.custom: ''
 ms.date: 05/23/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 9b101734-cc11-4d05-bd45-eb611eae9931
 caps.latest.revision: 14
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0384b233ddd9df0f88019df6064f5a99ef8af0bd
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759131"
 ---
-
 # <a name="create-a-model-driven-app-quick-view-form-to-view-information-about-a-related-entity"></a>Создание экспресс-формы управляемого моделью приложения для просмотра сведений по связанной сущности
 
 В этом разделе вы узнаете о порядке создания экспресс-формы и порядке добавления элемента управления быстрого просмотра в основную форму. 
@@ -38,7 +43,7 @@ search.app:
 ## <a name="create-a-quick-view-form"></a>Создание экспресс-формы  
  Экспресс-формы создаются с помощью редактора форм таким же образом, как и другие формы. Экспресс-формы доступны только для чтения. Используйте их для создания форм, которые предназначены только для чтения.  
   
-1. Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 
     > [!IMPORTANT]
@@ -74,7 +79,7 @@ search.app:
 ## <a name="add-a-quick-view-control-to-a-main-form"></a>Добавление элемента управления экспресс-формы в основную форму  
  Экспресс-формы можно добавлять только в основную форму, в которой существует поле поиска, которое предназначается для сущности экспресс-формы.  
   
-1.  Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
     > [!IMPORTANT]
     > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment).     

@@ -9,21 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: ece68f5f-ad40-4bfa-975a-3e5bafb854aa
 caps.latest.revision: 55
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6109721781e4a73858527daa7aeabe09c3435dd9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710786"
 ---
-   
 # <a name="use-excel-and-word-templates"></a>Использование шаблонов Excel и Word
 
 Можно использовать шаблоны разнообразными способами, чтобы ускорить работу и повысить согласованность. С шаблонами Excel можно легко создавать настроенный анализ и делиться им с другими пользователями в организации. Можно использовать шаблоны Word для создания унифицированных автоматически заполняемых документов с данными Common Data Service.
@@ -37,19 +42,19 @@ search.app:
 3. Если вы видите опубликованные приложения, выберите приложение, чтобы его открыть. В противном случае перейдите к шагу 5.
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/published-apps.png "Опубликованные приложения") 
+   > ![](media/published-apps.png "Published apps") 
 
 4. В правом верхнем углу выберите значок шестеренки, затем выберите **Дополнительные параметры**. Если вы не видите пункта **Дополнительные параметры**, переходите к следующему шагу.
 
 5. Выберите **Параметры** > **Шаблоны**.
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/settings-templates.png "Параметры Шаблоны") 
+   > ![](media/settings-templates.png "Settings Templates") 
 
 6. На странице **Шаблоны** выберите **Шаблон документа** для работы с шаблонами Excel или Word.
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/document-templates.png "Шаблоны документов") 
+   > ![](media/document-templates.png "Document Templates") 
 
 Дополнительные сведения об использовании шаблонов см. в следующей документации:
 

@@ -1,6 +1,6 @@
 ---
 title: Добавление переходов формы управляемого моделью приложения для связанных сущностей в PowerApps | MicrosoftDocs
-description: 'Узнайте, как добавить навигацию по форме для связанных сущностей'
+description: Узнайте, как добавить навигацию по форме для связанных сущностей
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
@@ -9,25 +9,31 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Mattp123
 ms.assetid: b4098c96-bce1-4f57-804f-8694e6254e81
 caps.latest.revision: 15
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 34b1680d7596719cd050c71af8cc6c355f6353e3
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2751924"
 ---
 # <a name="add-model-driven-app-form-navigation-for-related-entities"></a>Добавление переходов формы управляемого моделью приложения для связанных сущностей
 
 В этом разделе вы используете область навигации формы, которая используется для добавления ссылок на связанные сущности. Если пользователь приложения щелкает одну из ссылок в записи, то отображается связанное представление для сущности.   
   
-1.  Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
   
     > [!IMPORTANT]
@@ -82,5 +88,5 @@ search.app:
 > [!NOTE]
 > Установка решения или публикация настроек может помешать нормальной работе системы. Рекомендуется запланировать импорт решения в оптимальный для пользователей период.
   
-## <a name="next-steps"></a>Дальнейшие действия  
+## <a name="next-steps"></a>Дальнейшие шаги  
  [Создание и изменение отношений сущностей для Common Data Service](../common-data-service/create-edit-entity-relationships.md)

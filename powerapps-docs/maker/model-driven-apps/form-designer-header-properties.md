@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b0724ccf7c44240fd3d3fd80fb69b6d91a80d1ed
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2705770"
 ---
-
 # <a name="configure-header-properties-in-the-form-designer"></a>Настройка свойств верхнего колонтитула в конструкторе форм
 
 Создатели могут контролировать плотность верхних колонтитулов форм управляемых моделью приложений, чтобы они соответствовали потребностям любого, кто использует форму.
@@ -106,7 +111,7 @@ search.app:
 
 Это сообщение помогает повысить осведомленность о заголовке высокой плотности и его преимуществах.
 
-### <a name="field-moved-to-header-flyout-the-header-supports-displaying-up-to-four-read-only-field-values-the-field-field-display-name-will-now-only-be-available-from-the-flyout"></a>Поле перемещено во всплывающее меню заголовка: заголовок поддерживает отображение до четырех доступных только для чтения значений полей. Поле *[отображаемое имя пользователя]* теперь будет доступно только во всплывающем меню.
+### <a name="field-moved-to-header-flyout-the-header-supports-displaying-up-to-four-read-only-field-values-the-field-field-display-name-will-now-only-be-available-from-the-flyout"></a>Поле перемещено во всплывающее меню заголовка: заголовок поддерживает отображение до четырех доступных только для чтения значений полей. Поле *[отображаемое имя поля]* теперь будет доступно только во всплывающем меню.
 Это сообщение отображается в конструкторе форм, если форма использует заголовок высокой плотности с видимым всплывающим меню заголовка.  
   
 В заголовке высокой плотности отображаются доступные только для чтения значения первых четырех полей в заголовке. Когда создатели добавляют поле в заголовок в четыре первых положения, это приводит к тому, что существующее поле, которая ранее отображалось непосредственно в заголовке, становится расширенным и видимым только во всплывающем меню заголовка.      

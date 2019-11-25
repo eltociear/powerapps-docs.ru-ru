@@ -1,38 +1,43 @@
 ---
 title: Просмотр журнала решения | MicrosoftDocs
-description: 'Узнайте, как просмотреть журнал решения'
-keywords: null
+description: Узнайте, как просмотреть журнал решения
+keywords: ''
 ms.date: 05/19/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
-ms.assetid: null
+ms.assetid: ''
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
-caps.latest.revision: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
+caps.latest.revision: ''
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 67239062f30efb80fb8ee416614c1088e20c4075
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702206"
 ---
-
 # <a name="view-the-history-of-a-solution"></a>Просмотр журнала решения
 Можно просмотреть подробные сведения об операциях решения в области **Решения** управляемого моделью приложения. Операция может быть импортом, экспортом или удалением решения. Журнал решения содержит такие сведения, как версия решения, издатель решения, тип операции, времени начала и завершения операции, а также состояние операции.
 
 > [!div class="mx-imgBorder"] 
-> ![](media/solutions-history-custom-view.png "Настраиваемое представление журнала решений")
+> ![](media/solutions-history-custom-view.png "Solutions history custom view")
 
 ## <a name="view-solution-history"></a>Просмотр журнала решений
 1. Выберите **Настройки**, затем выберите **Журнал решений**.
 
      > [!div class="mx-imgBorder"] 
-     > ![](media/solution-history-sitemap.png "Область журнала решений")
+     > ![](media/solution-history-sitemap.png "Solution History area")
 
      > [!NOTE]
      > Чтобы перейти в область **Параметры** из приложения на основе модели единого интерфейса PowerApps, выберите **Параметры** ![Параметры](../model-driven-apps/media/powerapps-gear.png) на панели инструментов приложения, затем выберите **Дополнительные параметры**. 
@@ -57,12 +62,12 @@ search.app:
 Когда операция решения включает сбой, можно выбрать его для отображения страницы с дополнительными сведениями об ошибке. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/solution-history-with-failure.png "Журнал решения с ошибкой операции")
+> ![](media/solution-history-with-failure.png "Solution history with operation error")
 
 На странице сведений содержатся сведения, включая **Сообщение об исключении**, которые могут помочь диагностировать первопричину сбоя операции. Некоторые ошибки, включая ошибки зависимостей решений, могут содержать ссылки на **слои решения**, чтобы упростить диагностику проблемы. **Идентификаторы действия** может быть полезен в случаях, где необходимо обратиться в службу технической поддержки клиентов Майкрософт. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/solution-history-error-details.png "Сведения об ошибке операции решения")
+> ![](media/solution-history-error-details.png "Solution operation error details")
 
 ### <a name="see-also"></a>См. также
 [Просмотр слоев решения](solution-layers.md)  <br />

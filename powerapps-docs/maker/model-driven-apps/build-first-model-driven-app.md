@@ -1,6 +1,6 @@
 ---
 title: Создание первого управляемого моделью приложения с нуля с помощью PowerApps | Microsoft Docs
-description: 'Узнайте, как создать простое управляемое моделью приложение.'
+description: Узнайте, как создать простое управляемое моделью приложение.
 documentationcenter: ''
 author: Mattp123
 manager: kvivek
@@ -13,20 +13,25 @@ ms.component: model
 ms.date: 02/05/2019
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9c41feb81fbe90c1ca675105fe898b667f61b2b9
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752600"
 ---
-
 # <a name="build-your-first-model-driven-app-from-scratch"></a>Создание первого управляемого моделью приложения с нуля
 Разработка управляемого моделью приложения — это основанный на компонентах подход к разработке приложений. В этом разделе можно упростить создание управляемого моделью приложения с помощью одной из стандартных сущностей, доступных в среде PowerApps.
 
 > [!TIP]
 > Дополнительные сведения о создании управляемых моделью приложений см. в разделе [Общие сведения о компонентах управляемых моделью приложений](model-driven-app-components.md). 
 
-## <a name="sign-in-to-powerapps"></a>Вход в PowerApps
-Выполните вход в [PowerApps](https://web.powerapps.com/). Если у вас еще нет учетной записи [!INCLUDE [powerapps](../../includes/powerapps.md)], выберите **Начать работу бесплатно** на сайте. 
+## <a name="sign-in-to-powerapps"></a>Выполнить вход в PowerApps
+Выполните вход в [PowerApps](https://make.powerapps.com/). Если у вас еще нет учетной записи [!INCLUDE [powerapps](../../includes/powerapps.md)], выберите **Начать работу бесплатно** на сайте. 
 
 ## <a name="create-your-model-driven-app"></a>Создание управляемого моделью приложения
 
@@ -45,7 +50,7 @@ search.app:
 Сведения о дополнительных свойствах приложения см. в разделе [Создание приложения](create-edit-app.md#create-an-app).
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/create-new-app.png "Создание нового приложения") 
+    > ![](media/create-new-app.png "Create a new app") 
 
 
 ## <a name="add-components-to-your-app"></a>Добавление компонентов в приложение

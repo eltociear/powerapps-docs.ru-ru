@@ -1,6 +1,6 @@
 ---
 title: Использование локального шлюза данных в потоках данных Power Platform | Документация Майкрософт
-description: 'Узнайте, как пользоваться локального шлюза данных в потоках данных Power Platform'
+description: Узнайте, как пользоваться локального шлюза данных в потоках данных Power Platform
 ms.custom: ''
 ms.date: 08/05/2019
 ms.reviewer: ''
@@ -9,20 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
-ms.assetid: null
-caps.latest.revision: null
+ms.assetid: ''
+caps.latest.revision: ''
 ms.author: matp
 manager: kvivek
-tags: null
+tags: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4a47f082520b4680c9045209f85c26beb3586875
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752253"
 ---
 # <a name="using-an-on-premises-data-gateway-in-power-platform-dataflows"></a>Использование локального шлюза данных в потоках данных Power Platform
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -46,7 +52,7 @@ search.app:
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 
--   Учетная запись PowerApps. Нет ни одной из них? [Зарегистрируйтесь на 30 дней бесплатно](https://docs.microsoft.com/en-us/powerapps/maker/signup-for-powerapps).
+-   Учетная запись PowerApps. Нет ни одной из них? [Зарегистрируйтесь на 30 дней бесплатно](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps).
 
 -   Административные разрешения на шлюзе. Эти разрешения предоставляются по умолчанию для устанавливаемых вами шлюзов. Администраторы могут предоставлять другим пользователям разрешения для шлюзов. 
 
@@ -55,11 +61,11 @@ search.app:
 -   Шлюзы и локальные соединения могут создаваться и использоваться только в пользовательской среде по умолчанию. Дополнительные сведения см. в разделе [Работа со средами и Microsoft PowerApps](../canvas-apps/working-with-environments.md).
 
 ## <a name="install-a-gateway"></a>Установка шлюза
-1.  В левой области навигации на странице [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Шлюзы**.
+1.  В левой области навигации на странице [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Шлюзы**.
 
     ![Шлюзы в левой области навигации](media/nav-pane-gateways.png)
 
-2.  Выберите шлюз из списка. Если у вас нет прав администратора для шлюза, выберите [Установить шлюз сейчас](http://go.microsoft.com/fwlink/?LinkID=820931), и следуйте инструкциям мастера.
+2.  Выберите шлюз из списка. Если у вас нет прав администратора для шлюза, выберите [Установить шлюз сейчас](https://go.microsoft.com/fwlink/?LinkID=820931), и следуйте инструкциям мастера.
 
      ![Установка шлюзов](media/install-gateway-now.png)
 
@@ -81,7 +87,7 @@ search.app:
 
 
 ## <a name="view-and-manage-gateway-permissions"></a>Просмотр и управление разрешениями шлюза
-1.  В левой области навигации на странице [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Шлюзы**, а затем выберите нужный шлюз.
+1.  В левой области навигации на странице [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Шлюзы**, а затем выберите нужный шлюз.
 
 2.  Чтобы добавить пользователя в шлюз, выберите **Пользователи**, укажите пользователя или группу, а затем укажите уровень разрешений:
 

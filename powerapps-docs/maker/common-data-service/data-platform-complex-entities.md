@@ -1,6 +1,6 @@
 ---
-title: 'Сложные сущности, требующие лицензии PowerApps плана 2 | Документация Майкрософт'
-description: 'Список сложных сущностей в Common Data Service, которым требуется лицензия PowerApps плана 2.'
+title: Сложные сущности, требующие лицензии PowerApps плана 2 | Документация Майкрософт
+description: Список сложных сущностей в Common Data Service, которым требуется лицензия PowerApps плана 2.
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -9,12 +9,17 @@ ms.topic: reference
 ms.date: 09/26/2019
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f5ec7419ea7369a57308e046ae820557303f0d15
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2706650"
 ---
-
 # <a name="complex-entities-and-licensing"></a>Сложные сущности и лицензирование
 
 > [!IMPORTANT]

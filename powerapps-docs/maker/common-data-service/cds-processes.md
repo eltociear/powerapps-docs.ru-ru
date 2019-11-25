@@ -1,6 +1,6 @@
 ---
 title: Применение бизнес-логики в Common Data Service | MicrosoftDocs
-description: 'Узнайте о различных типах бизнес-логики, которые можно применять в вашем приложении'
+description: Узнайте о различных типах бизнес-логики, которые можно применять в вашем приложении
 ms.custom: ''
 ms.date: 08/06/2018
 ms.reviewer: ''
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: 0b4e6602-5701-4859-81cc-6f6fe50901b2
 caps.latest.revision: 44
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 24e1ed3f2c2836bef1d861a2ef6b4b1f61dc09b9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702646"
 ---
 # <a name="apply-business-logic-in-common-data-service"></a>Применение бизнес-логики в Common Data Service
 

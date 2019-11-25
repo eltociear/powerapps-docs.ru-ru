@@ -1,31 +1,36 @@
 ---
 title: Распространение управляемого моделью приложения с помощью решения | MicrosoftDocs
-description: 'Узнайте, как распространять управляемое моделью приложение с помощью решений'
+description: Узнайте, как распространять управляемое моделью приложение с помощью решений
 keywords: ''
 ms.date: 08/06/2018
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: e82e7f64-37ad-41e5-acd7-16309881c6a2
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 9
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 72f5ad809983738526a03f306c3479f53745d991
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755414"
 ---
-
 # <a name="distribute-a-model-driven-app-using-a-solution"></a>Распространение управляемого моделью приложения с помощью решения
 
 Приложения, управляемые моделью, распространяются как компоненты решения. После создания приложения, управляемого моделью, можно сделать его доступным для использования в других средах, упаковав приложение в решение, затем выполнив экспорт его в ZIP-файл. После успешного импорта решения (ZIP-файла) в целевую среду упакованное приложение доступно для использования. 
@@ -33,7 +38,7 @@ search.app:
 ## <a name="add-an-app-to-a-solution"></a>Добавление приложения в решение
 Для распространения приложения вы создаете решение, чтобы приложение можно было упаковать для экспорта.
 
-1. Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2. Выберите **Решения**, затем выберите **Создать решение**.
 3. Заполните поля на странице **Создать решение**, после чего выберите **Сохранить**. Дополнительные сведения: [Создание решения](../common-data-service/create-solution.md)
@@ -45,7 +50,7 @@ search.app:
 6. На странице **Решение** выберите **Сохранить и закрыть**.
 
 ## <a name="export-a-solution"></a>Экспорт решения
-Для распространения приложения, чтобы его можно было импортировать в другую среду или сделать его доступным в [Microsoft AppSource](https://appsource.microsoft.com/), экспортируйте решение с ZIP-файл. Затем ZIP-файл, содержащий приложение и компоненты, можно импортировать в другие среды.
+Для распространения приложения, чтобы его можно было импортировать в другую среду или сделать его доступным в [Microsoft AppSource](https://appsource.microsoft.com/), экспортируйте решение в ZIP-файл. Затем ZIP-файл, содержащий приложение и компоненты, можно импортировать в другие среды.
 
 1. Откройте [страницу решений](advanced-navigation.md#solutions). 
 2. Выберите решение, которое нужно экспортировать, затем на панели инструментов выберите **Экспорт**. 
@@ -61,7 +66,7 @@ search.app:
 ## <a name="import-a-solution"></a>Импорт решения  
 Получив ZIP-файл решения, содержащий приложение, которое требуется импортировать, откройте страницу компонентов решений и импортируйте решение. Когда решение будет успешно импортировано, приложение будет доступно в вашей среде.
 
-1. Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2. Выберите **Решения**, затем на панели инструментов выберите **Импорт**.
 3. Перейдите к файлу, который нужно импортировать, затем выберите **Далее**.

@@ -1,33 +1,39 @@
 ---
 title: Создание или изменение системной диаграммы управляемого моделью приложения в PowerApps | MicrosoftDocs
-description: 'Узнайте, как создать или изменить диаграмму'
+description: Узнайте, как создать или изменить диаграмму
 ms.custom: ''
 ms.date: 05/23/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Mattp123
 ms.assetid: e02d58f7-6b1c-4a51-b801-a4d9f24729c5
 caps.latest.revision: 29
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c1286c0d234a93bb3316d1afa0aac809b5455142
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759087"
 ---
 # <a name="create-a-model-driven-app-system-chart"></a>Создание системной диаграммы управляемого моделью приложения
 
 В этом разделе вы узнаете, как создать системную диаграмму. Системные диаграммы принадлежат организации, что делает их доступными любому пользователю, имеющему доступ для чтения данных при выполнении приложения. Системные диаграммы нельзя назначить конкретным пользователям приложения или предоставить им общий доступ.  
   
-1. Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
     > [!IMPORTANT]
     > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment).     
@@ -51,5 +57,8 @@ search.app:
   
 5.  Выберите **Сохранить и закрыть**.  
 
-## <a name="next-steps"></a>Дальнейшие действия  
-[Создание или изменение панели мониторинга](create-edit-dashboards.md)
+## <a name="known-issues"></a>Известные проблемы  
+В конструкторе диаграмм добавление "упорядочить по" в некоторых вычисляемых полях не поддерживается и приводит к ошибке.  Вычисляемые поля, вызывающие это, используют другие вычисляемые поля, поле связанной сущности или локальное поле для сущности.
+
+## <a name="next-steps"></a>Дальнейшие шаги  
+[Создание и изменение панелей мониторинга](create-edit-dashboards.md)

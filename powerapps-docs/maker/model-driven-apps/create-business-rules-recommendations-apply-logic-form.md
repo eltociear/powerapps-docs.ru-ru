@@ -8,21 +8,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 00e62904-2ce9-4730-a113-02b1fedbf22e
 caps.latest.revision: 31
 author: Mattp123
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3937b56ea5ed9aa03085f48de8f4846328d6e836
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700578"
 ---
 # <a name="create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>Создание бизнес-правил и рекомендаций для применения логики в форме управляемого моделью приложения
 
@@ -143,12 +149,12 @@ search.app:
 4.  В конструкторе бизнес-правил выберите каждое условие и действие, чтобы проверить все поля, указанные в каждом условии и действии. 
 
      > [!div class="mx-imgBorder"] 
-     > ![](media/business-rule-field.png "Поля, указанные в бизнес-правиле, имеются в сущности")
+     > ![](media/business-rule-field.png "Field referenced in business rule exists in entity")
 
  5. Проверьте, что каждой поле, указанное в бизнес-правиле, также включено в форму. Если нет, добавьте недостающее поле в форму.
 
      > [!div class="mx-imgBorder"] 
-     > ![](media/account-name-on-form.png "Поле имени организации в форме")
+     > ![](media/account-name-on-form.png "Account name field on form")
 
 ## <a name="frequently-asked-questions-faq"></a>Вопросы и ответы
 *Могут ли бизнес-правила разблокировать поля в доступной только для чтения форме?*

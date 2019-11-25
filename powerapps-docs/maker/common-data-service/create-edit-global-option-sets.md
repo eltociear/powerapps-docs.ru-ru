@@ -8,19 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: f06b8941-8dca-4601-b965-341cfb6fc3b2
 caps.latest.revision: 11
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e1b89a4f87938ac0147a6724e27441517728baef
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757855"
 ---
 # <a name="create-and-edit-global-option-sets-overview"></a>Обзор создания и изменения глобальных наборов параметров 
 
@@ -37,7 +43,7 @@ search.app:
 
 |Дизайнер| Описание|
 |--|--|
-|[портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание набора параметров](custom-picklists.md) |
+|[портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание набора параметров](custom-picklists.md) |
 |Обозреватель решений|Не так прост, но предоставляет больше гибкости для менее распространенных требований. <br />Дополнительные сведения: [Создание и изменение глобальных наборов параметров для Common Data Service с помощью обозревателя решений](create-edit-global-option-sets-solution-explorer.md) |
 
 > [!NOTE]
@@ -47,7 +53,7 @@ search.app:
 
 Информация в этом разделе поможет вам выбрать конструктор для использования. 
 
-Нужно использовать [портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) для работы с глобальными наборами параметров, если только вам не нужно выполнить любое из следующих требований:
+Нужно использовать [портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) для работы с глобальными наборами параметров, если только вам не нужно выполнить любое из следующих требований:
 
 - Назначение цветов параметрам
 - Изменение порядка параметров

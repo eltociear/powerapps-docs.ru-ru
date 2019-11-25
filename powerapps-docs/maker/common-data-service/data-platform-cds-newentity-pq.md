@@ -10,12 +10,17 @@ ms.component: cds
 ms.date: 03/21/2018
 ms.author: millopis
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 22920502b75d16dedba7a70ced60b9b3f373ff10
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757591"
 ---
-
 # <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>Добавление данных в сущность в Common Data Service с помощью Power Query
 В этой процедуре вы создадите сущность в [Common Data Service](data-platform-intro.md) и заполните эту сущность данными из канала OData с помощью Power Query. Можно использовать эти же методы для интеграции данных в том числе и из следующих сетевых и локальных источников:
 
@@ -32,14 +37,14 @@ search.app:
 
 При отсутствии лицензии на PowerApps можно [зарегистрироваться бесплатно](../signup-for-powerapps.md).
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Необходимые компоненты
 Для выполнения инструкций этого раздела необходимо перейти в [среду](../canvas-apps/working-with-environments.md), в которой вы можете создавать сущности.
 
 ## <a name="specify-the-source-data"></a>Указание источника данных
 
-1. Войдите в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), а затем щелкните или нажмите на стрелку вниз для **Данные** рядом с левым краем.
+1. Войдите в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), затем щелкните или нажмите на стрелку вниз для **Данные** рядом с левым краем.
 
-    ![Начальная страница PowerApps](./media/data-platform-cds-newentity-pq/sign-in.png)
+    ![Домашняя страница PowerApps](./media/data-platform-cds-newentity-pq/sign-in.png)
 
 1. В списке, который появится, щелкните или нажмите **Интеграция данных**, затем щелкните или нажмите **Новый проект** рядом с правым верхним углом окна.
 
@@ -48,7 +53,7 @@ search.app:
     ![Выберите соединитель OAuth](./media/data-platform-cds-newentity-pq/choose-odata.png)
 
 1. В разделе **Параметры подключений** введите или вставьте этот URL-адрес, затем выберите **Далее**:<br>
-`http://services.odata.org/V4/Northwind/Northwind.svc/`
+`https://services.odata.org/V4/Northwind/Northwind.svc/`
 
 1. В списке таблиц установите флажок **Клиенты**, затем щелкните или нажмите **Далее**.
 

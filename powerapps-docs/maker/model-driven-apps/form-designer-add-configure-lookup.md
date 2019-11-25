@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8ba09c46a46d0a4d40891419e1f6eb787f75f096
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2703922"
 ---
-
 # <a name="configure-a-lookup-component-on-a-form"></a>Настройка компонента поиска в форме  
 Поле поиска может использоваться для ссылки на запись в другой сущности. Компонент поиска автоматически используется при добавлении поля поиска в форму. Разработчики могут настроить компонент поиска с использованием конструктора формы.
 

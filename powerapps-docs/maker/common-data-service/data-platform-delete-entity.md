@@ -1,24 +1,29 @@
 ---
 title: Удаление настраиваемой сущности | Microsoft Docs
 description: Пошаговые инструкции по удалению настраиваемой сущности и очистки всех данных в PowerApps
-author: clwesene
+author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8b4b9fb7942a7977bf6795ca21985b93c5469d26
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754930"
 ---
-
 # <a name="delete-a-custom-entity"></a>Удаление настраиваемого объекта
 Можно удалить настраиваемые сущности, но нельзя удалить стандартные сущности.
 
-1. На сайте [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) разверните раздел **Данные** и щелкните или нажмите **Сущности** на левой панели навигации.
+1. На сайте [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) разверните раздел **Данные** и щелкните или нажмите **Сущности** на левой панели навигации.
 
     ![Сведения о сущности](./media/data-platform-cds-create-entity/entitylist.png "Список сущностей")
 

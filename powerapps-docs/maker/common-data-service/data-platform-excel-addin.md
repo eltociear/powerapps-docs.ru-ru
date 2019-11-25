@@ -9,18 +9,24 @@ ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fa1602b59ed0fdfeec09a8bc7e5f1126249f071f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757503"
 ---
 # <a name="open-entity-data-in-excel"></a>Открытие данных сущности в Excel
-Открыв данные сущности в Microsoft Excel, можно быстро и легко просматривать и редактировать данные с помощью надстройки Microsoft PowerApps Excel. Для надстройки PowerApps Excel нужен Microsoft Excel 2016.
+Открыв данные сущности в Microsoft Excel, можно быстро и легко просматривать и редактировать данные с помощью надстройки Microsoft PowerApps Excel. Для надстройки PowerApps Excel требуется Microsoft Excel 2016.
 
 ![Надстройка Excel](./media/data-platform-cds-excel-addin/ExcelAddin.png "Надстройка PowerApps Excel")
 
 ## <a name="open-entity-data-in-excel"></a>Открытие данных сущности в Excel
-1. На сайте [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) разверните раздел **Данные** и щелкните или нажмите **Сущности** на левой панели навигации. Все сущности отображаются.
+1. На сайте [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) разверните раздел **Данные** и щелкните или нажмите **Сущности** на левой панели навигации. Все сущности отображаются.
 2. Щелкните многоточие (...) справа от интересующей вас сущности.
 3. Щелкните **Открыть в Excel**, затем откройте книгу, которая создается. Эта книга содержит данные для привязки сущности, указатель на вашу среду и указатель на надстройку PowerApps Excel.  
 4. В Excel щелкните **Включить изменение**, чтобы разрешить работу надстройки PowerApps Excel. Надстройка Excel запускается в области с правой стороны окна Excel.
@@ -78,6 +84,6 @@ search.app:
 ## <a name="next-steps"></a>Дальнейшие действия
 * [Управление полями в сущности](data-platform-manage-fields.md)
 * [Определение отношений между сущностями](data-platform-entity-lookup.md)
-* [Создание приложения с помощью Common Data Service](../canvas-apps/data-platform-create-app.md)
+* [Формирование приложения с использованием Common Data Service](../canvas-apps/data-platform-create-app.md)
 * [Создание приложения с нуля с помощью Common Data Service](../canvas-apps/data-platform-create-app-scratch.md)
 

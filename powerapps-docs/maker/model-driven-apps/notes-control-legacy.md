@@ -3,28 +3,34 @@ title: Настройка элемента управления примечан
 ms.custom: ''
 ms.date: 05/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: f10cdf1c-3540-439c-a171-27a10e72da45
 caps.latest.revision: 63
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bb60588e34e66fc1a0222d18e90d50af672bcc69
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711710"
 ---
 # <a name="set-up-the-model-driven-app-notes-control-to-access-information-about-posts"></a>Настройка элемента управления примечаний управляемых моделью приложений для доступа к информации о записях
 
- В формах PowerApps для некоторых системных сущностей, использующих [обновленные формы](main-form-presentations.md#updated-forms), элемент управления "Примечания" предоставляет возможность получить доступ к данным **Записи**, **Действия** и **Примечания**. В случае настраиваемых сущностей, в которых включены примечаний и действий, будут отображаться только **Примечания** и **Действия**. Чтобы включить **Записи**, необходимо включить их для настраиваемой сущности.  
+ В формах PowerApps для некоторых системных сущностей, использующих [обновленные формы](main-form-presentations.md#updated-forms), элемент управления "Примечания" предоставляет возможность получить доступ к данным **записей**, **действий** и **примечаний**. В случае настраиваемых сущностей, в которых включены примечаний и действий, будут отображаться только **Примечания** и **Действия**. Чтобы включить **Записи**, необходимо включить их для настраиваемой сущности.  
   
 ## <a name="enable-posts-for-a-custom-entity"></a>Включение записей для настраиваемой сущности  
   

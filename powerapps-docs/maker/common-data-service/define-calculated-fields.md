@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 6d58a297-2ddf-4236-be3a-47249b49d5fa
 caps.latest.revision: 67
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d4f66e3f047da19fd040cccdd3f9af2da913df09
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758779"
 ---
 # <a name="define-calculated-fields-to-automate-manual-calculations"></a>Определение вычисляемых полей для автоматизации ручных расчетов
 
@@ -54,9 +60,9 @@ search.app:
 
 ## <a name="create-a-calculated-field"></a>Создание вычисляемого поля
 
-С помощью редактора поля укажите вычисляемое поле. В этом примере мы будем использовать [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), но при использовании обозревателя решений шаги аналогичны. Дополнительные сведения: [Создание и изменение полей](create-edit-fields.md)
+С помощью редактора поля укажите вычисляемое поле. В этом примере мы будем использовать [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), но при использовании обозревателя решений шаги аналогичны. Дополнительные сведения: [Создание и изменение полей](create-edit-fields.md)
   
-1. Откройте [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+1. Откройте [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 1. Разверните **Данные** > **Сущности**.  
 1. Выберите требуемую сущность и щелкните **Поля**. Выберите **Добавить поле**.  
 1. Введите обязательные сведения для поля, включая **Отображаемое имя**, **Имя** и **Тип данных**. 
@@ -228,4 +234,4 @@ search.app:
  
 [Создание и изменение полей](create-edit-fields.md)<br />
 [Определение полей свертки, которые агрегируют значения](define-rollup-fields.md)<br />
-[Видео: поля свертки и вычисляемые поля](http://go.microsoft.com/fwlink/p/?LinkId=517727)
+[Видео: поля свертки и вычисляемые поля](https://go.microsoft.com/fwlink/p/?LinkId=517727)

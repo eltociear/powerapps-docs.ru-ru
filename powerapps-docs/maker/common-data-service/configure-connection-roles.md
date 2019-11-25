@@ -1,24 +1,30 @@
 ---
 title: Настройка ролей подключения | MicrosoftDocs
 ms.custom: ''
-ms.date: 05/27/2018
+ms.date: 10/17/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 028be1172621c9bdb510f5e57d16eb226b10f92b
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758251"
 ---
 # <a name="configure-connection-roles"></a>Настройка ролей подключения
 
@@ -28,16 +34,30 @@ search.app:
 
 Любой пользователь с правами на запись для сущности **Роль подключения** может установить, какие подключения будут доступны для использования пользователями.
 
+> [!IMPORTANT]
+> Чтобы сущность была доступна в качестве типа записей для новой или существующей роли подключения, свойство **Включить подключения** должно быть включено для этой сущности. 
+
+## <a name="enable-connection-roles-for-an-entity"></a>Включение ролей подключения для сущности
+1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+2. Разверните **Данные**, затем выберите **Сущности**. 
+3. Выберите сущность, которую необходимо включить для ролей подключения, затем на панели команд выберите **Параметры**. 
+4. В области **Параметры** разверните область **Совместная работа**, затем выберите **Включить подключения**.
+    > [!div class="mx-imgBorder"] 
+    > ![Настройка включения подключений](media/enable-connections.png "Настройка включения подключений")
+
+6. Выберите **Готово**. 
+
 ## <a name="view-connection-roles"></a>Просмотр ролей подключения
 
 В Common Data Service для приложений уже настроено несколько стандартных ролей подключения. Для их просмотра необходимо перейти в область параметров. 
 
 ### <a name="navigate-to-the-settings-area"></a>Переход в область параметров
 
-1. Во время просмотра управляемого моделью приложения измените URL-адрес для удаления всего, что следует после `dynamics.com`, и обновите страницу.
-1. Перейдите в раздел **Параметры** > **Бизнес** > **Управление бизнесом** и выберите **Роли подключения**.
+1. В управляемом моделью приложении выберите **Параметры** > **Дополнительные параметры**. 
+2. Перейдите в раздел **Параметры** > **Бизнес** > **Управление бизнесом** и выберите **Роли подключения**.
 
-![Роли подключения в параметрах "Управление бизнесом"](media/navigate-settings-connection-roles.png)
+   > [!div class="mx-imgBorder"] 
+    > ![Роли подключения в параметрах "Управление бизнесом"](media/navigate-settings-connection-roles.png "Роли подключения в параметрах "Управление бизнесом"")
 
 В этом представлении можно просмотреть все роли подключения, доступные для этой среды, и изменить их.
 

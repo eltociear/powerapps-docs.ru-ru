@@ -1,6 +1,6 @@
 ---
 title: Пошаговое руководство по созданию виртуальной сущности с использованием поставщика данных OData в Common Data Service | Документация Майкрософт
-description: 'Узнайте, как использовать поставщика данных OData v4 с виртуальной сущностью'
+description: Узнайте, как использовать поставщика данных OData v4 с виртуальной сущностью
 ms.custom: ''
 ms.date: 06/04/2018
 ms.reviewer: ''
@@ -9,21 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
-ms.assetid: null
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
+ms.assetid: ''
 caps.latest.revision: 11
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b7aa64e5ecdc620b5f376601ffb826c3708f98d3
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752121"
 ---
-
 # <a name="virtual-entity-walkthrough-using-the-odata-v4-data-provider"></a>Пошаговое руководство по созданию виртуальной сущности с использованием поставщика данных OData v4
 
 Представьте, что вам требуется доступ к информации о билетах из внешнего источника данных в рамках приложения на основе модели. В этом простом пошаговом руководстве вы моделируете виртуальную сущность с полями, составленными внешней схеме, которая извлекает данные о билетах на время выполнения из веб-службы OData.
@@ -32,7 +37,7 @@ search.app:
 
 Поскольку источник данных, используемый для данного пошагового руководства, имеет веб-службу OData v4, мы можем использовать поставщик данных OData v4, имеющийся в вашей среде.
 
-URL-адрес веб-службы: `http://contosowebservice.azurewebsites.net/odata/` 
+URL-адрес веб-службы: `https://contosowebservice.azurewebsites.net/odata/` 
 
 > [!IMPORTANT]
 > URL-адрес веб-службы, используемый для этого пошагового руководства, не является действующей веб-службой.
@@ -69,7 +74,7 @@ URL-адрес веб-службы: `http://contosowebservice.azurewebsites.net/
     |Поле|Значение|
     |--|--|
     |**Название**|Пример источника данных Contoso|
-    |**URL-адрес**|`http://contosowebservice.azurewebsites.net/odata` |
+    |**URL-адрес**|`https://contosowebservice.azurewebsites.net/odata` |
     |**Время ожидания**|30|
     |**Вернуть количество в строке**|Истина|
 

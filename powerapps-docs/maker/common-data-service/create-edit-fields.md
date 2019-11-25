@@ -8,19 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: d88677fa-2caf-47b0-aec6-10a25a7ec9c3
 caps.latest.revision: 55
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fd5d17f33490aab049a166fa53ce541bdea2235a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757943"
 ---
 # <a name="how-to-create-and-edit-fields"></a>Создание и изменение полей
 
@@ -32,7 +38,7 @@ search.app:
 
 |Дизайнер| Описание|
 |--|--|
-|[портал PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание и изменение полей для Common Data Service с помощью портала PowerApps](create-edit-field-portal.md)|
+|[портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание и изменение полей для Common Data Service с помощью портала PowerApps](create-edit-field-portal.md)|
 |Обозреватель решений|Не так прост, но предоставляет больше гибкости для менее распространенных требований.<br />Дополнительные сведения: [Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps](create-edit-field-solution-explorer.md) |
 
 > [!NOTE]

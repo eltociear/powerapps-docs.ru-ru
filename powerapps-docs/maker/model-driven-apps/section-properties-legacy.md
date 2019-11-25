@@ -4,9 +4,9 @@ description: Познакомьтесь со свойствами раздела
 Keywords: Основная форма; Свойства раздела; Dynamics 365
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
 ms.date: 06/06/2018
@@ -14,10 +14,16 @@ ms.service: powerapps
 ms.topic: article
 ms.assetid: 2d3af6e9-e8a4-4129-b708-383b2740c015
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 45764a992215c697361f77da656182bdbb0e7783
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755018"
 ---
 # <a name="model-driven-app-form-section-properties"></a>Свойства раздела формы управляемых моделью приложений
 
@@ -27,8 +33,8 @@ search.app:
   
  Заголовки и нижние колонтитулы похожи на разделы, но их невозможно удалить. Если они не содержат данные, которые не будут отображаться. 
 
-Можно получить доступ к пункту **Свойства раздела** с сайта PowerApps. 
-1. Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+Можно получить доступ к пункту **Свойства разделов** с сайта PowerApps. 
+1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  Разверните **Данные**, выберите **Сущности**, выберите требуемую сущность, затем выберите вкладку **Формы**. 
 

@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: af866aed-2586-4b6f-bb1c-3519baae3645
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e1facad3d5d6cb95e0441800f4d743d429f50787
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2705506"
 ---
 # <a name="display-custom-icons-alongside-values-in-list-views"></a>Отображение настраиваемых значков вместе со значениями в представлениях списка
 
@@ -30,7 +36,7 @@ search.app:
  Администраторы и специалисты по настройте среды PowerApps могут добавить графику в представление и настроить логику, используемую для выбора графики на основе значения столбца, используя JavaScript. Эта возможность позволяет настраивать представления списка для отображения значков наряду с текстом или численными значениями. 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/icon-in-opportunity-view.png "Представление \"Все возможные сделки\", в столбце \"Оценка\" которого отображаются значки и текстовое значение")
+> ![](media/icon-in-opportunity-view.png "All Opportunities view with Rating column displaying icons and text value")
   
 > [!NOTE]
 >  Значки таблицы отображаются только в веб-интерфейсе. Они не отображаются в [!INCLUDE[pn_Outlook_short](../../includes/pn-outlook-short.md)] или в мобильном приложении.  

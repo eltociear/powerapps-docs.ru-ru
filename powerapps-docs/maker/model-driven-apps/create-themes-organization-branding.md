@@ -13,10 +13,16 @@ caps.latest.revision: 17
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b1aae7d51b22939f84478ad0537ef9285daf7631
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753846"
 ---
 # <a name="create-a-theme"></a>Создание темы
 
@@ -68,7 +74,7 @@ search.app:
 ## <a name="copy-and-alter-the-existing-theme"></a>Копирование и изменение существующей темы  
  Самый простой и быстрый способ создать новую тему — клонировать и изменить существующую тему, а затем сохранить ее, просмотреть и опубликовать. 
  
-1.  Выполните вход в [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2.  Выберите **Управляемое моделью** (в левом нижнем углу). 
 
@@ -107,7 +113,7 @@ search.app:
   
  На следующем снимке экрана показаны кнопки на панели команд для предварительного просмотра и публикации.  
   
- ![Использование кнопок предварительного просмотра для входа в режим предварительного просмотра и выхода из него](media/themes-preview-buttons.PNG "Использование кнопок предварительного просмотра для входа в режим предварительного просмотра и выхода из него")  
+ ![Использование кнопок предварительного просмотра для входа в режим просмотра и выхода из него](media/themes-preview-buttons.PNG "Использование кнопок предварительного просмотра для входа в режим просмотра и выхода из него")  
   
 <a name="BestPracticies"></a>   
 ## <a name="best-practices"></a>Лучшие методики  
@@ -143,5 +149,5 @@ search.app:
   
 ## <a name="see-also"></a>См. также  
          
- [Видео: темы](http://go.microsoft.com/fwlink/p/?LinkId=529568) [Запрос и изменение темы организации](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
+ [Видео: темы](https://go.microsoft.com/fwlink/p/?LinkId=529568) [Запрос и изменение темы организации](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
 
