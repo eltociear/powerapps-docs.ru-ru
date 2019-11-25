@@ -30,7 +30,7 @@ ms.locfileid: "73543081"
 2. Выберите **Дополнительные команды (...)**  > **Параметры**.
 
     > [!div class=mx-imgBorder]
-    > ![Параметр "Параметры портала"](../media/portal-settings-option.png "Параметр "Параметры портала"")
+    > ![Параметр Параметры портала](../media/portal-settings-option.png "Параметр Параметры портала")
 
 3. В области **Параметры портала** выберите **Администрирование**.
 
@@ -46,7 +46,7 @@ ms.locfileid: "73543081"
 2. Скопируйте значение из поля **Application ID (идентификатор приложения** ).
 
     > [!div class=mx-imgBorder]
-    > ![Вкладка "сведения о портале"](../media/portal-details-admin.png "Вкладка "сведения о портале"")
+    > ![Вкладка сведения о портале](../media/portal-details-admin.png "Вкладка сведения о портале")
 
 3. Перейдите к Azure AD, связанному с вашим клиентом. [!include[](../../../includes/proc-more-information.md)] [получить неуправляемый каталог от имени администратора в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-manage-o365-subscription)
 
