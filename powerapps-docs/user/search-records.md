@@ -1,5 +1,5 @@
 ---
-title: Search for records in model-driven apps| MicrosoftDocs
+title: Поиск записей в приложениях, управляемых моделью | MicrosoftDocs
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -22,184 +22,184 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74262131"
 ---
-# <a name="search-for-records-in-an-app"></a>Search for records in an app
+# <a name="search-for-records-in-an-app"></a>Поиск записей в приложении
 
-You can search for records across multiple entities by using Relevance search or Categorized search in Common Data Service. 
+Можно выполнять поиск записей по нескольким сущностям с помощью поиска релевантности или поиска по категориям в Common Data Service. 
 
-- Relevance search delivers fast and comprehensive results across multiple entities, in a single list, sorted by relevance. It uses a dedicated search service external to Common Data Service (powered by [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)]) to boost search performance. 
-- Categorized search returns search results grouped by entity types, such as accounts, contacts or leads.
+- Поиск релевантности обеспечивает быстрый и исчерпывающий результат для нескольких сущностей в одном списке, отсортированном по релевантности. Он использует выделенную службу поиска External to Common Data Service (на базе [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)]) для повышения производительности поиска. 
+- Поиск по категориям возвращает результаты поиска, сгруппированные по типам сущностей, таким как учетные записи, контакты или интересы.
 
-Normally, Categorized search is the default search option. However, if Relevance search is enabled by your organization, it becomes the default search experience.  
+Обычно поиск по категориям является параметром поиска по умолчанию. Однако если в вашей организации включен Поиск релевантности, он становится интерфейсом поиска по умолчанию.  
   
-## <a name="quick-find-entity-specific-quick-find-or-multi-entity-categorized-search"></a>Quick Find (entity-specific Quick Find or multi-entity Categorized Search) 
+## <a name="quick-find-entity-specific-quick-find-or-multi-entity-categorized-search"></a>Быстрый поиск (быстрый поиск и поиск по категориям, определяемые несколькими сущностями) 
 
-To find records of one type only, you can use the Quick Find View in the entity's grid.
+Чтобы найти записи только одного типа, можно использовать представление быстрого поиска в сетке сущностей.
 
-With Categorized Search (also called multi-entity quick find), you can search records that begin with a specific word or use a wildcard.
+При поиске по категориям (также называемых быстрым поиском нескольких сущностей) можно выполнять поиск записей, начинающихся с определенного слова, или использовать подстановочный знак.
   
-- **Begins with**: Results include records that begin with a specific word. For example, if you want to search for “Alpine Ski House,” type **alp** in the search box; if you type **ski**, the record won’t show up.  
+- **Начинается с**: результаты включают записи, которые начинаются с определенного слова. Например, если вы хотите выполнить поиск по слову "Alpine Ski House", введите **Ахметом** в поле поиска. Если ввести **Ski**, запись не отобразится.  
   
-- **Wildcard**: For example, *ski or *ski\*. 
+- **Подстановочный знак**: например, * Ski или * Ski\*. 
 
   > [!NOTE]
-  >  Using a wildcard at the beginning of your Quick Find (single or multi-entity) search query may result in slower performance.
+  >  Использование подстановочного знака в начале поискового запроса с одним или несколькими сущностями может привести к снижению производительности.
   
-## <a name="relevance-search"></a>Relevance search
+## <a name="relevance-search"></a>Поиск релевантности
   
-  Relevance Search is available in addition to other Common Data Service searches you are already familiar with. You can continue using single-entity Quick Find on the entity grid or Multi-Entity Quick Find (called Categorized Search, if you have Relevance Search enabled). For more comprehensive and faster results, we recommend using Relevance Search.  
+  Поиск релевантности доступен в дополнение к другим Common Data Service поисков, с которыми вы уже знакомы. Можно продолжить использование быстрого поиска одиночной сущности в сетке сущностей или с помощью быстрого поиска нескольких сущностей (Поиск по категориям, если включен Поиск релевантности). Для более сложных и быстрых результатов рекомендуется использовать поиск релевантности.  
 
- Relevance Search brings the following enhancements and benefits:  
+ Поиск релевантности предоставляет следующие улучшения и преимущества:  
   
-- Improves performance with external indexing and [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] search technology.  
+- Повышает производительность с помощью внешней технологии индексирования и [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] поиска.  
   
-- Finds matches to any word in the search term in any field in the entity. Matches can include inflectional words like **stream**, **streaming**, or **streamed**.  
+- Находит совпадения с любым словом в поисковом выражении в любом поле сущности. Соответствия могут включать слова с символами прописью, такие как **поток**, **потоковая передача**или **потоковая**передача.  
   
-- Returns results from all searchable entities in a single list sorted by relevance, based on factors like number of words matched or their proximity to each other in the text.  
+- Возвращает результаты из всех сущностей с возможностью поиска в одном списке, отсортированных по релевантности, в зависимости от таких факторов, как число совпадающих слов или их сходство друг с другом в тексте.  
   
-- Highlights matches in the result list.  
+- Выделяет совпадения в списке результатов.  
 
-- You'll find search results for text in a document that is stored in Common Data Service, including text in notes, email attachments, or appointments. The following file formats are supported for search: PDF, Microsoft Office documents, HTML, XML, ZIP, EML, plain text, and JSON.  
+- Результаты поиска можно найти в документе, который хранится в Common Data Service, включая текст в примечаниях, вложениях электронной почты или встречах. Для поиска поддерживаются следующие форматы файлов: PDF, документы Microsoft Office, HTML, XML, ZIP, EML, обычный текст и JSON.  
   
-- You can search for records that are shared with you and records that you own.  
+- Вы можете искать записи, к которым вам предоставлен доступ, и свои собственные записи.  
   
   > [!NOTE]
-  >  Hierarchical security models aren't supported.  Even if you see a row in Common Data Service because you have access to it through hierarchical security, you won't see the result in Relevance Search.  
+  >  Иерархические модели безопасности не поддерживаются.  Даже если вы видите строку в Common Data Service так как у вас есть доступ к ней через иерархическую безопасность, вы не увидите результаты в поиске релевантности.  
   
-- You can also search for option sets  and lookups. For example, let's say you want to find a retail store account that has **Pharmaceuticals** in the name. When you search for **Pharmaceutical Retail**, you'll find the result because there's a match to the Industry field, which is a searchable option set.  
+- Можно также выполнить поиск наборов параметров и уточняющих запросов. Например, предположим, что вам нужно найти учетную запись розничного магазина с **Pharmaceuticals** в имени. При поиске **фармацевтических Retail**вы обнаружите результат, так как в поле отрасли имеется совпадение, которое является набором параметров для поиска.  
   
-  Because your results might include a mix of entities, you can narrow your search results to a specific entity by selecting an entity in the **Filter with** drop-down list. When you filter on a specific record type, you can include activities and notes related to the selected record in your search results. To do that, select the **Search activities and notes for selected records** check box to the right of the **Filter with** drop-down list. The check box is selected after you select a record in the **Filter with** drop-down list; it is cleared if you didn't select an entity in the **Filter with** list. The activities and notes are returned as top-level results.
+  Так как результаты могут содержать сочетание сущностей, можно уменьшить результаты поиска до определенной сущности, выбрав сущность в раскрывающемся списке **Фильтр** . При фильтрации по определенному типу записей можно включить в результаты поиска действия и примечания, связанные с выбранной записью. Для этого установите флажок **Поиск действий и заметок для выбранных записей** справа от поля **Фильтр с** раскрывающимся списком. Этот флажок устанавливается после выбора записи в раскрывающемся списке **Фильтр** . Если вы не выбрали сущность в списке **Фильтр с** , он удаляется. Действия и заметки возвращаются в виде результатов верхнего уровня.
   
   > [!NOTE]
-  > - Relevance Search is disabled by default. Your administrator needs to enable it for the organization. After Relevance Search is enabled, you might have to wait up to an hour or more, depending on the size of your organization, before you start seeing Relevance Search results for your apps. Smaller changes in indexed data can take up to 15 minutes to show up in your system.
-  > - Enabling Relevance Search allows all users in the organization to use it.  
-  > - Relevance search is text-based, and can search only on fields of type Single Line of Text, Multiple Lines of Text, Option Sets, or Lookups. It doesn't support searching in fields of Numeric or Date data type. 
+  > - Поиск релевантности по умолчанию отключен. Администратор должен включить его для Организации. После включения поиска релевантности может потребоваться подождать до часа или более, в зависимости от размера организации, прежде чем приступить к просмотру результатов поиска релевантности для ваших приложений. Для отображения в системе небольших изменений в индексированных данных может потребоваться до 15 минут.
+  > - Включение поиска релевантности позволяет всем пользователям в Организации использовать его.  
+  > - Поиск релевантности основан на тексте и может выполнять поиск только по полям типа "одна строка текста", "несколько строк текста", "наборы параметров" или "уточняющие запросы". Поиск в полях с типом данных numeric или Date не поддерживается. 
   
- Although Relevance Search finds matches to any word in the search term in any field in an entity, in Quick Find&mdash;even with full-text search enabled&mdash;all words from the search term must be found in one field.  
+ Хотя Поиск релевантности находит совпадения с любым словом в поисковом выражении в любом поле сущности, в быстром поиске&mdash;даже с включенным полнотекстовым поиском&mdash;все слова из искомого термина должны находиться в одном поле.  
   
- In Relevance Search, the better the match, the higher it appears in the results. A match has a higher relevancy if more words from the search term are found in close proximity to each other. The smaller the amount of text where the search words are found, the higher the relevancy. For example, if you find the search words in a company name and address, it might be a better match than the same words found in a large article, far apart from each other. Because the results are returned in a single list, you can see a mix of records displayed one after another, such as accounts, opportunities, leads, and so on. The matched words in the list are highlighted.  
+ В поиске релевантности, чем выше совпадение, тем выше оно отображается в результатах. Совпадение имеет более высокую релевантность, если больше слов из искомого термина находится в близком расположении друг к другу. Чем меньше объем текста, где обнаруживаются слова поиска, тем выше релевантность. Например, если найти слова для поиска в названии и адресе компании, это может быть более точно, чем те же слова, которые встречаются в большой статье далеко друг от друга. Так как результаты возвращаются в одном списке, можно увидеть сочетание записей, которые отображаются один за другим, например учетные записи, возможности, интересы и т. д. Сопоставленные слова в списке выделяются.  
   
- Use syntax in your search term to get the results you want. For example, type **car silver 2-door** to include matches for any word in the search term in the search results. Type **car+silver+2-door** to find only matches that include all three words. Type **car&#124;silver&#124;2-door** to  get results that contain **car** or **silver** or **2-door**, or all three words. More information about syntax you can use in your search queries: [Simple query syntax in Azure Search](https://docs.microsoft.com/rest/api/searchservice/simple-query-syntax-in-azure-search)
+ Для получения нужных результатов используйте синтаксис в поисковом выражении. Например, введите **автомобиль серебристый 2-дверь** , чтобы включить совпадения для любого слова в поисковом выражении в результатах поиска. Введите **автомобиль + серебристый +2-дверь** , чтобы найти только совпадения, включающие все три слова. Введите **автомобиль&#124;Серебряный&#124;2-дверь** , чтобы получить результаты, содержащие **автомобиль** или **серебряную** или **2-дверцу**, или все три слова. Дополнительные сведения о синтаксисе, который можно использовать в поисковых запросах: [простой синтаксис запросов в службе поиска Azure](https://docs.microsoft.com/rest/api/searchservice/simple-query-syntax-in-azure-search)
 
 
 > [!NOTE]
-> You'll see hit highlights when your search term matches a term in your app. The hit highlights appear as bold and italicized text in your search results. These are often returned as a portion of the full value in a field because only the matched terms are highlighted. 
+> При совпадении условия поиска с термином в приложении будет видно нажатие. Выделенные фрагменты отображаются в результатах поиска полужирным шрифтом и курсивом. Они часто возвращаются в виде части полного значения в поле, так как выделены только соответствующие термины. 
   
   
 <a name=" #BKMK_DefaultOption "></a>
-## <a name="switch-between-relevance-and-categorized-search"></a>Switch between Relevance and Categorized search
+## <a name="switch-between-relevance-and-categorized-search"></a>Переключение между релевантностью и поиском по категориям
 
-If your organization has turned on both search options (Relevance and Categorized search), then you can switch between the two.
+Если в вашей организации включены оба варианта поиска (релевантность и поиск по категориям), то можно переключаться между ними.
 
-1. To switch between search types, on the navigation bar, select the **Search** button.
+1. Чтобы переключиться между типами поиска, нажмите кнопку **Поиск** на панели навигации.
 
-2. On the left, select the drop-down menu to switch between **Relevance Search** or **Categorized Search**.
+2. Слева выберите раскрывающееся меню, чтобы переключиться между **поиском релевантности** или **поиском по категориям**.
 
    > [!div class="mx-imgBorder"]
-   > ![Switch between Relevance and Categorized search](media/switch-search.png "Switch between Relevance and Categorized search") 
+   > ![Переключение между релевантностью и поиском по категориям](media/switch-search.png "Переключение между релевантностью и поиском по категориям") 
     
-### <a name="set-a-default-experience"></a>Set a default experience
+### <a name="set-a-default-experience"></a>Настройка интерфейса по умолчанию
 
-If your organization has turned on both search options then you can select a default search experience in your personal settings.
+Если ваша организация включила оба варианта поиска, вы можете выбрать в личных настройках интерфейс поиска по умолчанию.
 
-1. In the upper-right corner of the page, select **Settings** and then select **Personalization Settings**.  
+1. В правом верхнем углу страницы щелкните **Параметры** , а затем выберите **параметры персонализации**.  
   
    > [!div class="mx-imgBorder"]
-   > ![Select default search experience](media/relevance-search-personal-settings.png "Select default search experience")  
+   > ![Выбор интерфейса поиска по умолчанию](media/relevance-search-personal-settings.png "Выбор интерфейса поиска по умолчанию")  
 
-2. On the **General** tab, in the **Select the default search experience** section, for the **Default Search Experience**, select your default experience. 
+2. На вкладке **Общие** в разделе **Выбор службы поиска по** умолчанию для **поиска по умолчанию**выберите свой интерфейс по умолчанию. 
 
    > [!div class="mx-imgBorder"]
-   > ![Select default search experience](media/default.png "Select default search experience")  
+   > ![Выбор интерфейса поиска по умолчанию](media/default.png "Выбор интерфейса поиска по умолчанию")  
  
 
 
-## <a name="start-a-search"></a>Start a search 
+## <a name="start-a-search"></a>Начать поиск 
  
-1.  From the top nav bar, select the **Search** button.  
+1.  На верхней панели навигации нажмите кнопку **Поиск** .  
   
-2.  Type your search words in the search box and then select **Search** button.   
+2.  Введите слова для поиска в поле поиска и нажмите кнопку **поиска** .   
 
     > [!div class="mx-imgBorder"]
-    > ![Search option](media/search-option.png "Search option")  
+    > ![Параметр поиска](media/search-option.png "Параметр поиска")  
   
-## <a name="filter-categorized-search-results"></a>Filter Categorized Search results 
+## <a name="filter-categorized-search-results"></a>Фильтровать результаты поиска по категориям 
   
--   To filter results by one record type, on the search screen, choose a record type from the **Filter with:** drop-down box.  
+-   Чтобы отфильтровать результаты по одному типу записей, на экране поиска выберите тип записи из раскрывающегося списка **Фильтр:** .  
   
--   To search against all record types, choose **None** in the **Filter with:** drop-down box.  
+-   Чтобы выполнить поиск по всем типам записей, выберите **нет** в раскрывающемся списке **Фильтр с:** .  
 
     > [!div class="mx-imgBorder"]
-    > ![Filter Search](media/filter-search.png "Filter Search")  
+    > ![Фильтрация поиска](media/filter-search.png "Фильтрация поиска")  
 
-## <a name="filter-records-with-facets-works-with-relevance-search"></a>Filter records with facets (works with Relevance Search)  
- With Common Data Service, you can now refine your search results by using facets and filters. Facets are available in the left pane. Immediately after you perform a search, the following global facets are available for four common fields:  
+## <a name="filter-records-with-facets-works-with-relevance-search"></a>Фильтрация записей с аспектами (работает с поиском релевантности)  
+ С помощью Common Data Service теперь можно уточнить результаты поиска, используя аспекты и фильтры. На левой панели доступны аспекты. Сразу после выполнения поиска можно использовать следующие глобальные аспекты для четырех общих полей:  
   
--   Record Type  
+-   Тип записи  
   
 -   Owner  
   
--   Created On  
+-   Создано  
   
--   Modified On  
+-   Изменено  
   
-### <a name="record-type-facets"></a>Record Type facets  
- To narrow your search results to a specific entity, select the entity under the **Record Type** section.  
+### <a name="record-type-facets"></a>Аспекты типа записи  
+ Чтобы уменьшить результаты поиска для конкретной сущности, выберите сущность в разделе **тип записи** .  
  
   > [!div class="mx-imgBorder"]
-  > ![Record Type facet to narrow the search results](media/relevance-search-record-type-facet.png "Record Type facet used to narrow search results")  
+  > ![Аспект типа записи для ограничения результатов поиска](media/relevance-search-record-type-facet.png "Аспект типа записи, используемый для уменьшения результатов поиска")  
   
- When you filter on a specific record type, you can include activities and notes that are related to the selected record in your search results. To do that, select the **Related Notes & Activities** check box. The activities and notes will appear in top-level results.  
+ При фильтрации по определенному типу записей можно включить в результаты поиска действия и примечания, связанные с выбранной записью. Для этого установите флажок **связанные примечания & действия** . Действия и заметки будут отображаться в результатах верхнего уровня.  
   
  
   > [!div class="mx-imgBorder"]
-  > ![Include notes and activities related to a record type in the search results](media/relevance-search-record-type-facet-related-notes-activities.png "Include notes and activities related to a record type in the search results")  
+  > ![Включить примечания и действия, связанные с типом записи в результатах поиска](media/relevance-search-record-type-facet-related-notes-activities.png "Включить примечания и действия, связанные с типом записи в результатах поиска")  
   
- Search results that are found in email attachments or appointment entities  are shown in the search results under their parent record, either Email or Appointment.  
+ Результаты поиска, найденные во вложениях электронной почты или сущностях встреч, отображаются в результатах поиска под их родительской записью: по электронной почте или в виде встречи.  
   
- When you refine by record type, the facet scope switches to the selected entity, and up to four facets that are specific to the entity are shown. For example, if you select the Account entity, you'll see the **Primary Contact** facet in addition to the global facets.  
+ При уточнении по типу записи область аспекта переключается на выбранную сущность и отображаются до четырех аспектов, относящихся к сущности. Например, если выбрать сущность учетная запись, то в дополнение к глобальным аспектам будет показан **основной аспект связи** .  
   
- In the **Set Personal Options** dialog box, you can also choose other facets from the ones that your system administrator or customer has made available to you. The user setting overrides the default setting. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Configure facets and filters for the search](#BKMK_ConfigureFacets)  
+ В диалоговом окне **задать личные параметры** можно также выбрать другие аспекты из тех, которые были доступны системному администратору или заказчику. Параметр User переопределяет значение по умолчанию. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [настроить аспекты и фильтры для поиска](#BKMK_ConfigureFacets)  
   
-### <a name="text-based-facets"></a>Text-based facets  
- All lookups, option sets, and record types are text-based facets. For example, the text-based facet Owner consists of a list of field values and their corresponding counts.  
+### <a name="text-based-facets"></a>Текстовые аспекты  
+ Все уточняющие запросы, наборы параметров и типы записей являются аспектами на основе текста. Например, владелец текстового аспекта состоит из списка значений полей и их соответствующих счетчиков.  
  
   > [!div class="mx-imgBorder"]
-  > ![Text-based facet in Relevance Search](media/relevance-search-text-based-facets.png "Text-based facet in Relevance Search")  
+  > ![Текстовый аспект в поиске релевантности](media/relevance-search-text-based-facets.png "Текстовый аспект в поиске релевантности")  
   
- Filters in these facets are sorted in descending order by count. The top four facet values are displayed by default. When there are more than four facet values, you'll see a **SHOW MORE** link that you can select to expand the list and see up to 15 top facet values. Select each value to filter the search results to show only records where the field has the value you've selected. For example, if you select **Kim Abercrombie**, the search results will show all records where the owner is Kim Abercrombie. When you select a Lookup or Option Set facet value, search results are filtered to only include records with the value that you specified.  
+ Фильтры в этих аспектах сортируются в порядке убывания по количеству. По умолчанию отображаются первые четыре значения аспекта. Если имеется более четырех значений аспекта, вы увидите ссылку **Показать дополнительные сведения** , которую можно развернуть и просмотреть до 15 значений с верхними аспектами. Выберите каждое значение, чтобы отфильтровать результаты поиска, чтобы отображались только те записи, в которых поле имеет выбранное значение. Например, если выбрать **Kim аберкромбие**, в результатах поиска будут показаны все записи, в которых владелец имеет значение Kim аберкромбие. При выборе значения аспекта уточняющего запроса или набора параметров результаты поиска фильтруются, добавляя только записи с указанным значением.  
   
-### <a name="date-and-time-facets"></a>Date and time facets  
- Like other facets, you can use date and time facets to filter and see search results for a specific time. To select a range of values, drag the slider or select one of the vertical columns.  
+### <a name="date-and-time-facets"></a>Аспекты даты и времени  
+ Как и другие аспекты, можно использовать аспекты даты и времени для фильтрации и просмотра результатов поиска в течение определенного времени. Чтобы выбрать диапазон значений, перетащите ползунок или выберите один из вертикальных столбцов.  
  
   > [!div class="mx-imgBorder"]
-  > ![Date and time facets for Relevance Search](media/relevance-search-date-time-facets.png "Date and time facets for Relevance Search")  
+  > ![Аспекты даты и времени для поиска релевантности](media/relevance-search-date-time-facets.png "Аспекты даты и времени для поиска релевантности")  
   
 <a name="BKMK_ConfigureFacets"></a>   
-### <a name="configure-facets-and-filters-for-the-search"></a>Configure facets and filters for the search  
- Facets and filters let you drill into and explore the results of your current search without having to repeatedly refine your search term. Configure the facets and filters you want in the **Set Personal Options** dialog box.  
+### <a name="configure-facets-and-filters-for-the-search"></a>Настройка аспектов и фильтров для поиска  
+ Аспекты и фильтры позволяют детализировать и исследовать результаты текущего поиска без необходимости повторного уточнения условия поиска. Настройте нужные аспекты и фильтры в диалоговом окне **Задание личных параметров** .  
   
 > [!NOTE]
->  The system customizer can set the default experience for all entities, but you can configure your own facets and filters.  
+>  Настройщик системы может установить интерфейс по умолчанию для всех сущностей, но можно настроить собственные аспекты и фильтры.  
   
-#### <a name="to-configure-facets-for-yourself"></a>To configure facets for yourself  
+#### <a name="to-configure-facets-for-yourself"></a>Настройка аспектов для себя  
   
-1. In the upper-right corner of the page, select **Settings** and then select **Personalization Settings**.  
+1. В правом верхнем углу страницы щелкните **Параметры** , а затем выберите **параметры персонализации**.  
   
    > [!div class="mx-imgBorder"]
-   > ![Select default search experience](media/relevance-search-personal-settings.png "Select default search experience")  
+   > ![Выбор интерфейса поиска по умолчанию](media/relevance-search-personal-settings.png "Выбор интерфейса поиска по умолчанию")  
   
-2. On the **General** tab, in the **Select the default search experience** section, for the **Facets and Filters** field, select **Configure**.  
+2. На вкладке **Общие** в разделе **Выбор службы поиска по умолчанию** для поля **аспекты и фильтры** выберите **Настройка**.  
   
-3. In the **Configure Facets and Filters** dialog box, specify the facets you'd like to see for an entity. Your system administrator or customizer can set a default experience for all entities, but you can set your own here.  
+3. В диалоговом окне **Настройка аспектов и фильтров** укажите аспекты, которые вы хотите видеть для сущности. Системный администратор или настраиваемый компонент может установить интерфейс по умолчанию для всех сущностей, но вы можете задать его здесь.  
   
-   - In the **Select Entity** drop-down list, select an entity you want to configure facets for. This drop-down list contains only the entities that are enabled for Relevance Search.  
+   - В раскрывающемся списке **выберите сущность** выберите сущность, для которой требуется настроить аспекты. Этот раскрывающийся список содержит только сущности, для которых включен Поиск релевантности.  
   
-   - For the selected entity, select up to four facet fields. By default, the first four facetable fields in the **Quick Find** view for the selected entity are selected in the list. At any time, you can only have four fields selected as facets.  
+   - Для выбранной сущности выберите до четырех полей аспекта. По умолчанию в списке выбираются четыре первых поля в представлении **быстрого поиска** для выбранной сущности. В любое время в качестве аспектов можно выбрать только четыре поля.  
   
-     You can update multiple entities at one time. When you select **OK**, the changes for all entities that you've configured are saved. To revert to the default behavior for an entity that you previously configured, select **Default**.  
+     Можно обновить несколько сущностей за один раз. При нажатии **кнопки ОК**изменения для всех настроенных сущностей сохраняются. Чтобы вернуться к поведению по умолчанию для ранее настроенной сущности, выберите **значение по умолчанию**.  
   
    > [!NOTE]
-   > - If a system customizer deletes a field or makes it no longer searchable, and you've saved a facet for that field, it will no longer show up as a facet.  
-   >   -   You'll only see the fields that exist in the default solution and that are configured as searchable by your system customizer.  
+   > - Если Настройщик системы удаляет поле или делает его недоступным для поиска, и вы сохранили аспект для этого поля, он больше не будет отображаться в качестве аспекта.  
+   >   -   Вы увидите только те поля, которые существуют в решении по умолчанию и настроены как доступные для поиска средством настройки системы.  
   
  

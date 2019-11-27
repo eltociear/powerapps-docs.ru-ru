@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74262093"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="powerapps-custom-visual-for-power-bi"></a>Пользовательский визуальный элемент PowerApps для Power BI
 
@@ -53,7 +52,7 @@ Power BI позволяет анализировать данные и прин
 
     ![Пользовательская формула](./media/powerapps-custom-visual/custom-formula.png)
 
-    Эта формула соединяет данные Power BI с источником данных клиента: `LookUp(Customer;Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
+    Эта формула соединяет данные Power BI с источником данных клиента: `LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
 
    Отчет Power BI и запущенный экземпляр PowerApps Studio используют общее активное подключение к данным. Если открыты оба этих компонента, вы можете фильтровать или изменять данные в отчете, и эти изменения будут немедленно отражаться в приложении в PowerApps Studio.
 

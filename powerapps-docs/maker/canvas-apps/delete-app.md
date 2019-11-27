@@ -24,33 +24,33 @@ ms.locfileid: "74177620"
 Из этой статьи вы узнаете, как удалить приложение на основе холста из своей учетной записи PowerApps, а также из учетных записей всех пользователей, которым к нему был предоставлен доступ.
 
 ## <a name="delete-an-app-from-your-account"></a>Удаление приложения из учетной записи
-1. Open [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), and then select **Apps** in the left **Tree view** pane.
+1. Откройте [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), а затем выберите **приложения** в левой панели **представления дерева** .
    
-    ![Apps](./media/delete-app/file-apps.png)
-2. (optional) Near the upper-right corner, filter the list of apps to show only those apps that you own or only those apps to which you contribute.
+    ![Приложениям](./media/delete-app/file-apps.png)
+2. используемых В правом верхнем углу отфильтруйте список приложений, чтобы отображались только те приложения, которыми вы владеете, или только те из них, в которых вы участвуете.
    
     ![Фильтр приложений](./media/delete-app/filter-list.png)
    
     > [!NOTE]
    > Если приложение, которое нужно удалить, не отображается, убедитесь, что находитесь в правильном окружении.
-3. Select **More Commands** (...) for the app that you want to delete.
+3. Выберите **Дополнительные команды** (...) для приложения, которое требуется удалить.
    
-    ![More Commands](./media/delete-app/app-options.png)
-4. Select the trash-can icon to delete the app.
+    ![Дополнительные команды](./media/delete-app/app-options.png)
+4. Щелкните значок Корзина — можно удалить приложение.
    
-    ![Delete](./media/delete-app/delete-icon.png)
+    ![Удален](./media/delete-app/delete-icon.png)
    
     > [!NOTE]
    > Для удаления приложения необходимы разрешения **участника** на доступ к нему.
-5. In the dialog box that appears, select **Delete from cloud**.  
+5. В появившемся диалоговом окне выберите **удалить из облака**.  
    
     > [!IMPORTANT]
    > В результате этого действия приложение будет удалено без возможности восстановления не только из вашей учетной записи, но и из учетных записей всех пользователей, которым к нему был предоставлен доступ.
    
-    ![Delete from cloud](./media/delete-app/delete-button.png)
+    ![Удалить из облака](./media/delete-app/delete-button.png)
 
 ## <a name="more-resources"></a>Дополнительные ресурсы
 [Общий доступ к приложению](share-app.md)  
-[Изменение имени и элемента приложения](set-name-tile.md)  
+[Изменение названия и плитки приложения](set-name-tile.md)  
 [Восстановление предыдущей версии приложения](restore-an-app.md)  
 
