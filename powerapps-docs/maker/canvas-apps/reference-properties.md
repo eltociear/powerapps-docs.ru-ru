@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm-msft
-ms.date: 9/20/2019
+ms.date: 11/26/2019
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dfed631c695cd764396a24311826bedc63eacffb
-ms.sourcegitcommit: 7016ff837eff2cb0985fc71edab95cbf99335677
+ms.openlocfilehash: 53b4adc44addb08432ad6abbe11bf2b217be1534
+ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71159827"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74598478"
 ---
 # <a name="controls-and-properties-in-powerapps"></a>Элементы управления и свойства в PowerApps
 
@@ -60,7 +60,7 @@ ms.locfileid: "71159827"
 
 **[Форма редактирования](controls/control-form-detail.md)** — изменение и создание записей в источнике данных с помощью формы.
 
-**[Форма сущности](entity-form-control.md)** — экспериментальная функция: Добавьте динамические формы, в которых пользователи могут просматривать, перемещать и изменять реляционные данные из Common Data Service.
+**[Форма сущности](entity-form-control.md)** — экспериментальная функция. Добавление динамических форм, с помощью которых пользователи могут просматривать и редактировать реляционные данные из Common Data Service и переходить по ним.
 
 **[Экспорт](controls/control-export-import.md)** — экспорт данных для использования в любом компоненте PowerApps.
 
@@ -144,7 +144,7 @@ ms.locfileid: "71159827"
 
 ### <a name="b"></a>B
 
-**[BackgroundImage](controls/properties-visual.md)** — имя файла изображения, которое отображается в качестве фона экрана.  Применяется к элементу управления **[Экран](controls/control-screen.md)** .
+**[BackgroundImage](controls/properties-visual.md)**  — имя файла изображения, которое используется в качестве фона экрана.  Применяется к элементу управления **[Экран](controls/control-screen.md)** .
 
 **[BorderColor](controls/properties-color-border.md)**  — цвет границы элемента управления.  Применяется к многим элементам управления.
 
@@ -190,7 +190,7 @@ ms.locfileid: "71159827"
 
 **[DataSource](controls/control-form-detail.md)** — источник данных, используемый для просмотра, изменения и создания записи.  Применяется к элементам управления **[Форма отображения](controls/control-form-detail.md)** и **[Форма редактирования](controls/control-form-detail.md)** .
 
-**[Default](controls/properties-core.md)** . Начальное значение элемента управления до его изменения пользователем.  Применяется к многим элементам управления.
+**[Default](controls/properties-core.md)**  — начальное значение элемента управления до его изменения пользователем.  Применяется к многим элементам управления.
 
 **[DefaultDate](controls/control-date-picker.md)**  — начальное значение элемента управления датой до его изменения пользователем.  Применяется к элементу управления **[Средство выбора даты](controls/control-date-picker.md)** .
 
@@ -240,7 +240,7 @@ ms.locfileid: "71159827"
 
 **[Font](controls/properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.  Применяется к многим элементам управления.
 
-**[FontWeight](controls/properties-text.md)** — вес текста в элементе управления: **Полужирный**, **полужирный**, **обычный**или **более светлый**.  Применяется к многим элементам управления.
+**[FontWeight](controls/properties-text.md)**  — толщина текста в элементе управления: **Жирный**, **Полужирный**, **Обычный** или **Очень тонкий**.  Применяется к многим элементам управления.
 
 ### <a name="g"></a>G
 
@@ -270,7 +270,7 @@ ms.locfileid: "71159827"
 
 **[Image](controls/properties-visual.md)**  — имя изображения, которое отображается в элементе управления "Изображение", "Звук" или "Микрофон".  Применяется к элементам управления **[Звук](controls/control-audio-video.md)** , **[Изображение](controls/control-image.md)** , **[Микрофон](controls/control-microphone.md)** и **[Видео](controls/control-audio-video.md)** .
 
-**[ImagePosition](controls/properties-visual.md)**  — расположение изображения на экране или в элементе управления, если его размеры отличаются от размеров изображения (**Fill**, **Fit**, **Stretch**, **Tile** или **Center**).  Применяется к многим элементам управления.
+**[ImagePosition](controls/properties-visual.md)** — расположение изображения на экране или в элементе управления, если его размеры отличаются от размеров изображения: **Fill** (Заполнить), **Fit** (По размеру), **Stretch** (Растянуть), **Tile** (Плитка) или **Center** (По центру).  Применяется к многим элементам управления.
 
 **[Input](controls/control-pen-input.md)** — ввод данных.  Применяется к элементу управления **[Ввод с помощью пера](controls/control-pen-input.md)** .
 
@@ -420,7 +420,7 @@ ms.locfileid: "71159827"
 
 **[RadiusTopRight](controls/properties-size-location.md)**  — градус скругления верхнего правого угла элемента управления.  Применяется к многим элементам управления.
 
-**RailFill** — фоновый цвет прямоугольника в переключателе, когда он имеет значение **false**, или цвет линии справа от маркера ползунка.  Применяется к элементам управления **[Ползунок](controls/control-slider.md)** и **[Переключатель](controls/control-toggle.md)** .
+**RailFill** — фоновый цвет прямоугольника в переключателе, когда он имеет значение **false**, или цвет линии справа от маркера ползунка.  Применяется к элементам управления **[Ползунок](controls/control-slider.md)** и **[Переключатель](controls/control-toggle.md)** .
 
 **RailHoverFill** — фоновый цвет прямоугольника в переключателе, когда он имеет значение **false**, или цвет линии справа от маркера ползунка при наведении указателя мыши на переключатель или ползунок.  Применяется к элементам управления **[Ползунок](controls/control-slider.md)** и **[Переключатель](controls/control-toggle.md)** .
 
@@ -432,7 +432,7 @@ ms.locfileid: "71159827"
 
 **[Required](controls/control-card.md)** — определяет, обязательно наличие значения для карты при редактировании поля источника данных.  Применяется к элементу управления **[Карта](controls/control-card.md)** .
 
-**[Reset](controls/properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.  Применяется к многим элементам управления.  См. также сведения о функции **[Reset](functions/function-reset.md)** .
+**[Reset](controls/properties-core.md)**  — свойство, которое указывает, возвращается ли элемент управления к значению по умолчанию.  Применяется к многим элементам управления.  См. также сведения о функции **[Reset](functions/function-reset.md)** .
 
 ### <a name="s"></a>S
 
@@ -440,9 +440,9 @@ ms.locfileid: "71159827"
 
 **[SelectedDate](controls/control-date-picker.md)** — дата, выбранная в элементе управления датой.  Применяется к элементу управления **[Средство выбора даты](controls/control-date-picker.md)** .
 
-**[SelectionColor](controls/properties-color-border.md)**  — цвет текста выбранного элемента или элементов списка или цвет инструмента выделения в элементе управления рукописным вводом.  Применяется к элементам управления **[Раскрывающийся список](controls/control-drop-down.md)** , **[Поле со списком](controls/control-list-box.md)** и **[Ввод с помощью пера](controls/control-pen-input.md)** .
+**[SelectionColor](controls/properties-color-border.md)**  — цвет текста выбранного элемента или элементов списка или цвет инструмента выделения в элементе управления "Ввод с помощью пера".  Применяется к элементам управления **[Раскрывающийся список](controls/control-drop-down.md)** , **[Поле со списком](controls/control-list-box.md)** и **[Ввод с помощью пера](controls/control-pen-input.md)** .
 
-**[SelectionFill](controls/properties-color-border.md)** — цвет фона выбранного элемента или элементов списка или выделенной области элемента управления рукописным вводом.  Применяется к элементам управления **[Раскрывающийся список](controls/control-drop-down.md)** и **[Поле со списком](controls/control-list-box.md)** .
+**[SelectionFill](controls/properties-color-border.md)**  — цвет фона выбранного элемента или элементов списка или выделенной области элемента управления "Ввод с помощью пера".  Применяется к элементам управления **[Раскрывающийся список](controls/control-drop-down.md)** и **[Поле со списком](controls/control-list-box.md)** .
 
 **[SelectionThickness](controls/control-pen-input.md)** — толщина средство выбора элемента управления рукописным вводом.  Применяется к элементу управления **[Ввод с помощью пера](controls/control-pen-input.md)** .
 
@@ -452,7 +452,7 @@ ms.locfileid: "71159827"
 
 **[SeriesAxisMin](controls/control-column-line-chart.md)** — минимальное значение оси Y на гистограмме.  Применяется к элементу управления **[Гистограмма](controls/control-column-line-chart.md)** .
 
-**ShowControls** — определяет, будут ли отображаться элементы управления, например кнопка воспроизведения и ползунок регулировки громкости в звуковом или видеопроигрывателе и значки рисования, стирания и удаления для пера.  Применяется к элементам управления **[Звук](controls/control-audio-video.md)** , **[Средство просмотра PDF](controls/control-pdf-viewer.md)** , **[Ввод с помощью пера](controls/control-pen-input.md)** и **[Видео](controls/control-audio-video.md)** .
+**ShowControls** — показывает ли аудио- или видеопроигрыватель такие элементы, как кнопка воспроизведения или ползунок громкости, а элемент управления "Ввод с помощью пера" — значки команд рисования, стирания и очистки.  Применяется к элементам управления **[Звук](controls/control-audio-video.md)** , **[Средство просмотра PDF](controls/control-pdf-viewer.md)** , **[Ввод с помощью пера](controls/control-pen-input.md)** и **[Видео](controls/control-audio-video.md)** .
 
 **[ShowLabels](controls/control-pie-chart.md)**  — определяет, будут ли отображаться на круговой диаграмме значения, связанные со всеми ее секторами.  Применяется к элементу управления **[Круговая диаграмма](controls/control-pie-chart.md)** .
 
@@ -510,11 +510,11 @@ ms.locfileid: "71159827"
 
 **Valid** — это свойство показывает, содержит ли элемент управления **[Карта](controls/control-card.md)** или **[Форма редактирования](controls/control-form-detail.md)** допустимые значения, готовые к отправке в источник данных.  Применяется к элементам управления **[Карта](controls/control-card.md)** и **[Форма редактирования](controls/control-form-detail.md)** .
 
-**[Value](controls/properties-core.md)**  — значение элемента управления для ввода.  Применяется к элементам управления **[Флажок](controls/control-check-box.md)** , **[Переключатель](controls/control-radio.md)** , **[Ползунок](controls/control-slider.md)** и **[Переключатель](controls/control-toggle.md)** .
+**[Value](controls/properties-core.md)**  — значение элемента управления.  Применяется к элементам управления **[Флажок](controls/control-check-box.md)** , **[Переключатель](controls/control-radio.md)** , **[Ползунок](controls/control-slider.md)** и **[Переключатель](controls/control-toggle.md)** .
 
 **ValueFill** — цвет фона прямоугольника в переключателе, когда он имеет значение **true**, или цвет линии слева от маркера ползунка.  Применяется к элементам управления **[Ползунок](controls/control-slider.md)** и **[Переключатель](controls/control-toggle.md)** .
 
-**ValueHoverFill** — цвет фона прямоугольника в переключателе, когда он имеет значение **true**, или цвет линии слева от маркера ползунка при наведении указателя мыши на переключатель или ползунок.  Применяется к элементам управления **[Ползунок](controls/control-slider.md)** и **[Переключатель](controls/control-toggle.md)** .
+**ValueHoverFill** — фоновый цвет прямоугольника в переключателе, когда он имеет значение **true**, или цвет линии слева от маркера ползунка при наведении указателя мыши на переключатель или ползунок.  Применяется к элементам управления **[Ползунок](controls/control-slider.md)** и **[Переключатель](controls/control-toggle.md)** .
 
 **[VerticalAlign](controls/properties-text.md)**  — расположение текста в элементе управления относительно центра этого элемента управления по вертикали.  Применяется к многим элементам управления.
 
