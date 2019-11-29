@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ec991f54ff4b395026c9a869c315f75a549da79e
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 26ba133612e1c69ed470984fabafe6a6cdfddb1c
+ms.sourcegitcommit: d03915b4e2583327526b448ec10474cedfd7efe0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649792"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74550589"
 ---
 # <a name="rich-text-editor-control-in-powerapps"></a>Элемент управления "Редактор форматированного текста" в PowerApps
 Позволяет конечным пользователям форматировать текст внутри области редактирования WYSIWYG.  Выходные данные имеют формат HTML.
@@ -50,6 +50,8 @@ ms.locfileid: "73649792"
 **[AccessibleLabel](properties-accessibility.md)** — метка для средств чтения с экрана. Необходимо описать назначение вложений.
 
 **[DisplayMode](properties-core.md)** — в зависимости от значения этого режима элемент управления разрешает пользователю добавлять и редактировать файлы (**Изменение**) или только отображать данные (**Просмотр**), либо элемент будет вообще отключен (**Отключено**).
+
+**Енаблеспеллчекк** — включена ли проверка орфографии браузера. Обратите внимание, что эта функция обеспечит проверку орфографии только на языке браузера по умолчанию.  Power Apps для Windows не поддерживает это свойство.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
