@@ -262,8 +262,6 @@
                   href: ./canvas-apps/working-with-form-layout.md
                 - name: Общие сведения о карточках
                   href: ./canvas-apps/working-with-cards.md
-                - name: Показ полноразмерного изображения
-                  href: ./canvas-apps/display-full-image-on-form.md
             - name: Добавление списка
               items:
                 - name: 'Добавление списка, раскрывающегося списка и переключателей'
@@ -1534,6 +1532,8 @@
       href: ./common-data-service/import-translated-entity-field-text.md
     - name: Безопасность в Common Data Service
       href: /power-platform/admin/wp-security
+    - name: Обзор ограничений API
+      href: ./common-data-service/api-limits-overview.md
     - name: Для разработчиков
       href: ../developer/common-data-service/overview.md
 - name: Построитель искусственного интеллекта
