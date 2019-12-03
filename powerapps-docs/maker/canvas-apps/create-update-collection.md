@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1c930c233f96a481700748960f90d731be397af0
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 47233d4ead10ab01fe57c1f0573a4123894f9e58
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540319"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678679"
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>Создание и обновление коллекции в приложении Canvas
 
@@ -27,13 +26,13 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="prerequisites"></a>Технические условия
 
-- [Зарегистрируйтесь](../signup-for-powerapps.md) в PowerApps, а затем [войдите в систему](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), указав учетные данные, использованные при регистрации.
+- [Зарегистрируйтесь](../signup-for-powerapps.md) в Power Apps, а затем выполните [Вход](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) , указав те же учетные данные, которые использовались для регистрации.
 - Создайте приложение в PowerApps или откройте уже существующее.
 - Узнайте, как [настроить элемент управления](add-configure-controls.md) в PowerApps.
 
 ## <a name="create-a-multicolumn-collection"></a>Создание многостолбцовой коллекции
 
-1. В PowerApps Studio добавьте элемент управления **Ввод текста** .
+1. В Power Apps Studio добавьте элемент управления **Text input** .
 
     ![Вставка элемента управления вводом текста](./media/create-update-collection/add-textbox.png)
 
@@ -51,15 +50,15 @@ ms.PowerAppsDecimalTransform: true
 
 1. В строке формул замените **дропдовнсампле** следующим выражением:
 
-    `["Red";"Green";"Blue"]`
+    `["Red","Green","Blue"]`
 
 1. Добавьте элемент управления **Button** , присвойте его свойству **Text** значение **Add**и задайте для его свойства **OnSelect** значение этой формулы:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Collect(
-        ProductList;
+        ProductList,
         {
-            Product: ProductName.Text;
+            Product: ProductName.Text,
             Color: Colors.Selected.Value
         }
     )
@@ -107,7 +106,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте в качестве значения свойства " **OnSelect** " значка следующую формулу:
 
-    `Remove(ProductList; ThisItem)`
+    `Remove(ProductList, ThisItem)`
 
 1. За пределами коллекции добавьте кнопку, задайте для ее свойства **Text** значение **"Clear"** и задайте для его свойства **OnSelect** значение этой формулы:
 
@@ -121,7 +120,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Добавьте кнопку и установите для ее свойства **[OnSelect](controls/properties-core.md)** эту функцию, заменив *ListName* именем вашего списка SharePoint:<br>
 
-    `Collect(MySPCollection; ListName)`
+    `Collect(MySPCollection, ListName)`
 
     Эта функция создает коллекцию с именем **MySPCollection**, которая содержит те же данные, что и ваш список SharePoint.
 

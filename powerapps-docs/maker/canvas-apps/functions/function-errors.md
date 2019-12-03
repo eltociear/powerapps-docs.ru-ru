@@ -1,6 +1,6 @@
 ---
 title: Функция Errors | Документация Майкрософт
-description: Справочные сведения о функции Errors в PowerApps, в том числе описание синтаксиса и примеры и примеры
+description: Справочные сведения о функции Errors в PowerApps, в том числе описание синтаксиса и примеры
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 114474696f85980da315b6dd225250dc1b197805
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0a0871374bad90156f9b3626b58a68eb77bfb499
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992793"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680243"
 ---
 # <a name="errors-function-in-powerapps"></a>Функция Errors в PowerApps
 В этой статье приведены сведения об ошибках, связанных с предыдущими изменениями [источника данных](../working-with-data-sources.md).
@@ -31,7 +30,7 @@ ms.PowerAppsDecimalTransform: true
 
 Некоторые ошибки можно устранить до их возникновения с помощью функций **[Validate](function-validate.md)** и **[DataSourceInfo](function-datasourceinfo.md)** .  Дополнительные сведения о работе с ошибками и их устранении см. в статье [Общие сведения об источниках данных в PowerApps](../working-with-data-sources.md).
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функция **Errors** возвращает [таблицу](../working-with-tables.md) ошибок, содержащую следующие [столбцы](../working-with-tables.md#columns):
 
 * **Record** (Запись).  Запись в источнике данных, содержащем ошибку.  Если ошибка произошла во время создания записи, этот столбец будет *пустым*.
@@ -39,7 +38,7 @@ ms.PowerAppsDecimalTransform: true
 * **Message** (Сообщение).  Описание ошибки.  Эта строка ошибки может быть отображена для пользователя.  Учтите, что это сообщение может быть создано источником данных. Оно может быть длинным и содержать прямые имена столбцов, которые, возможно, не будут понятны для пользователя.
 * **Error** (Ошибка).  Код ошибки, который можно использовать в формулах для ее устранения.
 
-| Значение свойства ErrorKind | Описание |
+| ErrorKind (Тип ошибки) | Description |
 | --- | --- |
 | ErrorKind.Conflict |В ту же запись было внесено другое изменение, что привело к конфликту изменений.  Используйте функцию **[Refresh](function-refresh.md)** , чтобы загрузить запись заново, и повторите попытку изменения. |
 | ErrorKind.ConstraintViolation |Нарушено одно или несколько ограничений. |
@@ -62,7 +61,7 @@ ms.PowerAppsDecimalTransform: true
 Если ошибок нет, таблица, которую возвращает функция **Errors**, будет [пустой](function-isblank-isempty.md), и ее можно будет проверить с помощью функции **[IsEmpty](function-isblank-isempty.md)** .
 
 ## <a name="syntax"></a>Синтаксис
-**Errors**( *DataSource* [; *Record* ] )
+**Errors**( *DataSource* [, *Record* ] )
 
 * *Источник_данных* — обязательный аргумент. Источник данных, для которого необходимо вернуть ошибки.
 * *Record* — необязательный аргумент.  Определенная запись, для которой необходимо вернуть ошибки. Если этот аргумент не указан, функция возвратит ошибки для всего источника данных.
@@ -75,33 +74,33 @@ ms.PowerAppsDecimalTransform: true
 
 С помощью приложения пользователь загружает запись Chocolate в форму ввода данных, а затем изменяет значение свойства **Quantity** на 90.  Запись помещается в [переменную контекста](../working-with-variables.md#use-a-context-variable) **EditRecord**.
 
-* **UpdateContext( { EditRecord: First( Filter( IceCream; Flavor = "Chocolate" ) ) } )**
+* **UpdateContext( { EditRecord: First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
 
 Внести эти изменения в источник можно с помощью функции **[Patch](function-patch.md)** .
 
-* **Patch( IceCream; EditRecord; Gallery.Updates )** ,
+* **Patch( IceCream, EditRecord, Gallery.Updates )** ,
 
 где **Gallery.Updates** равно **{ Quantity: 90 }** , так как только свойство **Quantity** изменено.
 
-К сожалению, прямо перед вызовом функции **[Patch](function-patch.md)** кто-то изменил значение свойства **Quantity** для записи Chocolate на 80.  PowerApps определит это и не допустит конфликтного изменения.  Вы можете проверить, случилось ли нечто подобное, с помощью формулы:
+К сожалению, прямо перед вызовом функции **[Patch](function-patch.md)** кто-то изменил значение свойства **Quantity** для записи Chocolate на 80.  Power Apps обнаружит это и не разрешит возникновения конфликтующих изменений.  Вы можете проверить, случилось ли нечто подобное, с помощью формулы:
 
-* **IsEmpty( Errors( IceCream; EditRecord ) )** ,
+* **IsEmpty( Errors( IceCream, EditRecord ) )** ,
 
 которая возвращает значение **false**, так как функция **Errors** возвратила приведенную ниже таблицу.
 
 | Запись | Столбец | Сообщение | Ошибка |
 | --- | --- | --- | --- |
-| { Flavor: "Chocolate", Quantity: 100 } |*пустое значение* |"Запись, которую вы пытаетесь изменить, изменена другим пользователем. Перезагрузите ее и повторите попытку". |ErrorKind.Conflict |
+| { Flavor: "Chocolate", Quantity: 100 } |*пусто* |"Запись, которую вы пытаетесь изменить, изменена другим пользователем. Перезагрузите ее и повторите попытку". |ErrorKind.Conflict |
 
 Вы можете поместить метку в форме для отображения данной ошибки пользователю.
 
 * Чтобы отобразить ошибку, задайте для свойства **[Text](../controls/properties-core.md)** метки эту формулу:<br>
-  **Label.Text = First(Errors( IceCream; EditRecord )).Message**
+  **Label.Text = First(Errors( IceCream, EditRecord )).Message**
 
 Вы также можете добавить в форму кнопку **Перезагрузить**, чтобы пользователь мог эффективно разрешить конфликт.
 
 * Чтобы отображать кнопку только при возникновении конфликта, задайте для свойства **[Visible](../controls/properties-core.md)** кнопки эту формулу:<br>
-    **!IsEmpty( Lookup( Errors( IceCream; EditRecord ); Error = ErrorKind.Conflict ) )**
+    **!IsEmpty( Lookup( Errors( IceCream, EditRecord ), Error = ErrorKind.Conflict ) )**
 * Чтобы пользователь мог отменять изменение нажатием кнопки, задайте в качестве значения свойства **[OnSelect](../controls/properties-core.md)** следующую формулу:<br>
-    **ReloadButton.OnSelect = Revert( IceCream; EditRecord )**
+    **ReloadButton.OnSelect = Revert( IceCream, EditRecord )**
 

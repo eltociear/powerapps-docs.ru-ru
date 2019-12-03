@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8ba2d504cc731725d154d8141854373fbf67dc2a
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: eb698f5e2775f1acfed6a7af70475a6079753abb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992926"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678472"
 ---
 # <a name="formula-reference-for-powerapps"></a>Справочник формул для PowerApps
 Формулы объединяют множество элементов.  Ниже перечислены следующие элементы:
@@ -207,7 +207,7 @@ IsReference **[— проверяет](functions/function-astype-istype.md)** , 
 
 **[Ln](functions/function-numericals.md)** — возвращает натуральный логарифм.
 
-**[LoadData](functions/function-savedata-loaddata.md)** — загружает коллекцию из частного хранилища PowerApps.
+**[LoadData](functions/function-savedata-loaddata.md)** — загружает коллекцию из частного хранилища Power Apps.
 
 **[Location](functions/signals.md)** — возвращает расположение в виде координат на карте, используя глобальную навигационную спутниковую систему (GPS) и другие сведения.
 
@@ -295,7 +295,7 @@ IsReference **[— проверяет](functions/function-astype-istype.md)** , 
 **[RoundUp](functions/function-round.md)** — округляет до ближайшего числа в большую сторону.
 
 ## <a name="s"></a>S
-**[SaveData](functions/function-savedata-loaddata.md)** — сохраняет коллекцию в частном хранилище PowerApps.
+**[SaveData](functions/function-savedata-loaddata.md)** — сохраняет коллекцию в частном хранилище Power Apps.
 
 **[Search](functions/function-filter-lookup.md)** — находит записи в таблице, содержащие строку в одном из столбцов.  
 

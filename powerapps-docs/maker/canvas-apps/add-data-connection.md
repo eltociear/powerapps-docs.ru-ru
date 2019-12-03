@@ -13,27 +13,27 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 420728d60555c3aeaf5fd5e844a900d412b0c3ef
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d81b1648fc3c45d0498efb9eba0cc14ffbc6142b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540967"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679277"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>Добавление подключения к данным в приложение на основе холста в PowerApps
 
-В PowerApps вы можете добавить подключение к данным в существующее приложение на основе холста или в приложение, создаваемое с нуля. Приложение может подключаться к SharePoint, Common Data Service, Salesforce, OneDrive или [многим другим источникам данных](connections-list.md).
+В Power Apps добавьте подключение к данным в существующее приложение Canvas или в приложение, которое вы создаете с нуля. Приложение может подключаться к SharePoint, Common Data Service, Salesforce, OneDrive или [многим другим источникам данных](connections-list.md).
 
 Выполнив действия, описанные в этой статье, приступайте к [следующему шагу](#next-steps) — отображению и администрированию данных из источника в приложении, как в следующих примерах:
 
 * подключение к OneDrive и управление данными в книге Excel в приложении;
-* Подключение к Twilio и отправка SMS-сообщений из приложения;
+* подключение к Twilio и отправка SMS-сообщений из приложения;
 * Подключитесь к Common Data Service и обновите сущность из приложения.
 * подключение к серверу SQL Server и обновление таблицы из приложения.
 
 ## <a name="prerequisites"></a>Технические условия
 
-[Зарегистрируйтесь](../signup-for-powerapps.md) в PowerApps, а затем [войдите в систему](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), указав учетные данные, использованные при регистрации.
+[Зарегистрируйтесь](../signup-for-powerapps.md) в Power Apps, а затем выполните [Вход](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) , указав те же учетные данные, которые использовались для регистрации.
 
 ## <a name="open-a-blank-app"></a>Пустое приложение
 
@@ -41,7 +41,7 @@ ms.locfileid: "73540967"
 
 1. Укажите имя приложения и нажмите кнопку **создать**.
 
-1. Если отобразится диалоговое окно **Welcome to PowerApps Studio** (Вас приветствует PowerApps Studio), выберите в нем **Пропустить**.
+1. Если откроется диалоговое окно " **Добро пожаловать в Power Apps Studio** ", выберите **пропустить**.
 
 ## <a name="add-data-source"></a>Добавление источника данных
 
@@ -51,7 +51,7 @@ ms.locfileid: "73540967"
 
 1. Выберите **Добавить источник данных**.
 
-1. Если список подключений содержит нужный, выберите его, чтобы добавить в приложение. В противном случае переходите к следующему шагу.
+1. Если список подключений содержит нужный, выберите его, чтобы добавить в приложение. Или переходите к следующему шагу.
 
     ![Выбрать существующее подключение](./media/add-data-connection/choose-existing-connection.png)
 
@@ -65,7 +65,7 @@ ms.locfileid: "73540967"
 
 1. Выберите **Создать**, чтобы создать подключение и добавить его в приложение.
 
-    Для некоторых соединителей, таких как **Office 365 Outlook**, дополнительные действия не требуются. Данные из них можно отобразить сразу же. Другие соединители могут предложить вам учетные данные, указать определенный набор данных или выполнить другие действия. Например, для соединителей [SharePoint](connections/connection-sharepoint-online.md) и [SQL Server](connections/connection-azure-sqldatabase.md) потребуется указать дополнительную информацию, прежде чем вы сможете их использовать. С [Common Data Service](connections/connection-common-data-service.md)можно изменить среду перед тем, как выбрать сущность.
+    Для некоторых соединителей, таких как **Office 365 Outlook**, дополнительные действия не требуются. Данные из них можно отобразить сразу же. Другие соединители могут предложить вам учетные данные, указать определенный набор данных или выполнить другие действия. Например, для соединителей [SharePoint](connections/connection-sharepoint-online.md) и [SQL Server](connections/connection-azure-sqldatabase.md) потребуется указать дополнительную информацию, прежде чем вы сможете их использовать. С [Common Data Service](connections/connection-common-data-service.md)можно изменить среду перед тем, как выбрать сущность.
 
 ## <a name="identify-or-change-a-data-source"></a>Определение или изменение источника данных
 Если вы обновляете приложение, может потребоваться определить или изменить источник данных, который отображается в коллекции, форме или другом элементе управления. Например, может потребоваться задать источник данных при обновлении приложения, созданного другим пользователем или созданного давно.

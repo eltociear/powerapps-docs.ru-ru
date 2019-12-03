@@ -13,25 +13,24 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7ab695d461cb980556a3027297c3e7f5ac5bde61
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0f2f51596e8973bf41e26e4ed56df9f1c6e34844
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985530"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680312"
 ---
 # <a name="concurrent-function-in-powerapps"></a>Функция Concurrent в PowerApps
 Оценивает несколько формул одновременно.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функция **Concurrent** вычисляет несколько формул одновременно. Обычно несколько формул оцениваются путем их сцепления вместе с оператором [ **;** ](operators.md) , который вычисляет каждый последовательно по порядку. Когда приложение выполняет операции одновременно, пользователи тратят меньше времени на ожидание результата.
 
 В свойстве [**OnStart**](../controls/control-screen.md) в приложении используйте функцию **Concurrent**, чтобы повысить производительность при загрузке данных. Если вызов данных не начинается до завершения предыдущего вызова, время ожидания в приложении будет суммой времени выполнения всех запросов по очереди. Если вызовы данных запускаются одновременно, временем ожидания будет время выполнения самого долгого запроса. Веб-браузеры часто повышают производительность, одновременно выполняя операции с данными.
 
-Невозможно предсказать порядок, в котором формулы в функции **Concurrent** начинают и завершают вычисление. Формулы в функции **Concurrent** не должны содержать зависимости от других формул в той же функции **Concurrent**. В противном случае в PowerApps возникнет ошибка. Вы можете спокойно создавать зависимости от формул за пределами функции **Concurrent**, поскольку они будут выполнены до запуска функции **Concurrent**. Формулы после **параллельной** функции могут безопасно принимать зависимости от формул в: они все завершаются до завершения **параллельной** функции и переходят к следующей формуле в цепочке (если используется оператор **;** ). Остерегайтесь незаметных зависимостей от порядка, если вызываете функции или методы службы с побочными эффектами.
+Невозможно предсказать порядок, в котором формулы в функции **Concurrent** начинают и завершают вычисление. Формулы в пределах **параллельной** функции не должны содержать зависимости от других формул в пределах одной и той же **параллельной** функции, а при попытке использовать Power Apps отображается ошибка. Вы можете спокойно создавать зависимости от формул за пределами функции **Concurrent**, поскольку они будут выполнены до запуска функции **Concurrent**. Формулы после **параллельной** функции могут безопасно принимать зависимости от формул в: они все завершаются до завершения **параллельной** функции и переходят к следующей формуле в цепочке (если используется оператор **;** ). Остерегайтесь незаметных зависимостей от порядка, если вызываете функции или методы службы с побочными эффектами.
 
-Можно связать формулы вместе с оператором **;** внутри аргумента для **параллельного**. Например, **Concurrent( Set( a; 1 );; Set( b; a+1 ); Set( x; 2 );; Set( y; x+2 ) )** вычисляет **Set( a; 1 );; Set( b; a+1 )** одновременно с **Set( x; 2 );; Set( y; x+2 )** . В этом случае зависимости в формулах допускаются: **a** устанавливается до **b**, а **x** устанавливается до **y**.
+Можно связать формулы вместе с оператором **;** внутри аргумента для **параллельного**. Например, **Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) )** вычисляет **Set( a, 1 ); Set( b, a+1 )** одновременно с **Set( x, 2 ); Set( y, x+2 )** . В этом случае зависимости в формулах допускаются: **a** устанавливается до **b**, а **x** устанавливается до **y**.
 
 В зависимости от устройства или браузера, в котором выполняется приложение, только некоторые формулы могут вычисляться одновременно. Функция **Concurrent** использует доступные возможности и не завершится, пока не будут вычислены все формулы.
 
@@ -40,7 +39,7 @@ ms.PowerAppsDecimalTransform: true
 Функцию **Concurrent** можно использовать только в [формулах поведения](../working-with-formulas-in-depth.md).
 
 ## <a name="syntax"></a>Синтаксис
-**Concurrent**( *Формула1*; *Формула2* [; ...] )
+**Concurrent**( *Формула1*, *Формула2* [, ...] )
 
 * *Формулы* — обязательный параметр. Формулы для одновременного вычисления. Необходимо указать по крайней мере две формулы.
 
@@ -50,17 +49,17 @@ ms.PowerAppsDecimalTransform: true
 
 1. Создайте приложение и добавьте четыре источника данных из Common Data Service, SQL Server или SharePoint. 
 
-    В этом примере используется четыре таблицы из [образца базы данных Adventure Works для SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). После создания базы данных подключитесь к ней из PowerApps, используя полное имя сервера (например, srvname.database.windows.net):
+    В этом примере используется четыре таблицы из [образца базы данных Adventure Works для SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). После создания базы данных подключитесь к ней из Power Apps, используя полное имя сервера (например, srvname.database.windows.net):
 
     ![Подключение к базе данных Adventure Works в Azure](media/function-concurrent/connect-database.png)
 
 2. Добавьте элемент управления **[Кнопка](../controls/control-button.md)** и задайте следующую формулу в качестве значения свойства **OnSelect**:
 
-    ```powerapps-comma
-    ClearCollect( Product; '[SalesLT].[Product]' );;
-    ClearCollect( Customer; '[SalesLT].[Customer]' );;
-    ClearCollect( SalesOrderDetail; '[SalesLT].[SalesOrderDetail]' );; 
-    ClearCollect( SalesOrderHeader; '[SalesLT].[SalesOrderHeader]' )
+    ```powerapps-dot
+    ClearCollect( Product, '[SalesLT].[Product]' );
+    ClearCollect( Customer, '[SalesLT].[Customer]' );
+    ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ); 
+    ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
     ```
 
 3. В [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) или [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) включите средства разработчика для отслеживания сетевого трафика во время работы приложения.
@@ -75,16 +74,16 @@ ms.PowerAppsDecimalTransform: true
 
 5. Сохраните, закройте и повторно откройте приложение.
 
-    PowerApps кэширует данные, поэтому, если вы снова нажмете на кнопку, это не обязательно приведет к четырем новым запросам. Каждый раз, когда вы собираетесь протестировать производительность, закройте и снова откройте приложение. Если вы включили функцию регулирования в сети, стоит отключить ее до выполнения следующего теста.
+    Power Apps кэширует данные, поэтому повторное нажатие кнопки не обязательно приведет к четырем новым запросам. Каждый раз, когда вы собираетесь протестировать производительность, закройте и снова откройте приложение. Если вы включили функцию регулирования в сети, стоит отключить ее до выполнения следующего теста.
 
 1. Добавьте второй элемент управления **[Кнопка](../controls/control-button.md)** и задайте следующую формулу в качестве значения свойства **OnSelect**:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Concurrent( 
-        ClearCollect( Product; '[SalesLT].[Product]' ); 
-        ClearCollect( Customer; '[SalesLT].[Customer]' );
-        ClearCollect( SalesOrderDetail; '[SalesLT].[SalesOrderDetail]' );
-        ClearCollect( SalesOrderHeader; '[SalesLT].[SalesOrderHeader]' )
+        ClearCollect( Product, '[SalesLT].[Product]' ), 
+        ClearCollect( Customer, '[SalesLT].[Customer]' ),
+        ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),
+        ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
     )
     ```
 
@@ -112,19 +111,19 @@ ms.PowerAppsDecimalTransform: true
 
 3. Добавьте элемент управления **Кнопка** и задайте следующую формулу в качестве значения свойства **OnSelect**:
 
-    ```powerapps-comma
-    Set( StartTime; Value( Now() ) );;
+    ```powerapps-dot
+    Set( StartTime, Value( Now() ) );
     Concurrent(
-        Set( FRTrans; MicrosoftTranslator.Translate( TextInput1.Text; "fr" ) );; 
-            Set( FRTransTime; Value( Now() ) );
-        Set( DETrans; MicrosoftTranslator.Translate( TextInput1.Text; "de" ) );; 
-            Set( DETransTime; Value( Now() ) )
-    );;
-    Collect( Results;
+        Set( FRTrans, MicrosoftTranslator.Translate( TextInput1.Text, "fr" ) ); 
+            Set( FRTransTime, Value( Now() ) ),
+        Set( DETrans, MicrosoftTranslator.Translate( TextInput1.Text, "de" ) ); 
+            Set( DETransTime, Value( Now() ) )
+    );
+    Collect( Results,
         { 
-            Input: TextInput1.Text;
-            French: FRTrans; FrenchTime: FRTransTime - StartTime; 
-            German: DETrans; GermanTime: DETransTime - StartTime; 
+            Input: TextInput1.Text,
+            French: FRTrans, FrenchTime: FRTransTime - StartTime, 
+            German: DETrans, GermanTime: DETransTime - StartTime, 
             FrenchFaster: FRTransTime < DETransTime
         }
     )
@@ -150,4 +149,4 @@ ms.PowerAppsDecimalTransform: true
 
     В некоторых случаях перевод на французский выполняется быстрее, чем на немецкий, и наоборот. Обе операции перевода начинаются одновременно, но одна возвращается раньше другой по нескольким причинам, включая задержки сети и обработку на сервере.
 
-    [Состояние гонки](https://en.wikipedia.org/wiki/Race_condition) возникает в случае, если приложение зависит от того, что один перевод завершится быстрее. К счастью, PowerApps отмечает большинство зависимостей от времени, которые может обнаружить.
+    [Состояние гонки](https://en.wikipedia.org/wiki/Race_condition) возникает в случае, если приложение зависит от того, что один перевод завершится быстрее. К счастью, в Power apps установлены флаги большинства временных зависимостей, которые он может обнаружить.

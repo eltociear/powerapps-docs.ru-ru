@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fb051ffcdfed2aef2cb635d8dd2bf2bcfb44176e
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 712d7ed6166b2ea655a086b1f9a4416af1e8065f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990338"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676574"
 ---
-# <a name="show-items-of-different-heights-in-a-powerapps-gallery"></a>Отображение элементов разной высоты в коллекции PowerApps
+# <a name="show-items-of-different-heights-in-a-power-apps-gallery"></a>Отображение элементов различной высоты в коллекции Power Apps
 Если разные элементы в наборе данных содержат различные объемы данных в одном поле, можно полностью отобразить элементы с большим объемом данных, не добавляя пустое место после элементов с меньшим объемом данных. Добавление и настройка элемента управления коллекцией **Изменяющаяся высота** позволит делать следующее:
 
 * Настраивать элементы управления **Метка**, изменяющие размер в зависимости от содержимого.
@@ -41,7 +41,7 @@ ms.locfileid: "71990338"
 
 2. Отправьте файл Excel в облачную учетную запись хранения, например OneDrive Dropbox или Google Drive.
 
-3. В PowerApps Studio в меню **Файл** выберите **Создать**.
+3. В Power Apps Studio щелкните **создать** в меню **файл** .
 
 4. На плитке **Blank app** (Пустое приложение) щелкните или нажмите **Phone layout** (Макет телефона).
 

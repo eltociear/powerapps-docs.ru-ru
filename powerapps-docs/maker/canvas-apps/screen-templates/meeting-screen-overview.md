@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2b300b0d90803ae08aaf262dde5642f4d448c05f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5b8df0acad3f5ad90eb114bd5fdd5d3377b3f6fb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541436"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675050"
 ---
 # <a name="overview-of-the-meeting-screen-template-for-canvas-apps"></a>Обзор шаблона экрана собрания для приложений Canvas
 
@@ -39,7 +38,7 @@ ms.PowerAppsDecimalTransform: true
 
 Чтобы добавить экран собрания из шаблона, выполните следующие действия.
 
-1. [Войдите](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в PowerApps, а затем создайте приложение или откройте существующее приложение в PowerApps Studio.
+1. [Войдите](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в Power Apps, а затем создайте приложение или откройте существующее приложение в Power Apps Studio.
 
     В этом разделе показано приложение для телефона, но те же принципы применимы к планшетному приложению.
 
@@ -59,10 +58,10 @@ ms.PowerAppsDecimalTransform: true
 * Чтобы создать собрание, необходимо добавить хотя бы одного пользователя в качестве участника, предоставить тему и выбрать время собрания на вкладке **Расписание** .
 * После отправки приглашения на собрание удаляется вся информация для этого собрания.
 * Инструкция **OnSelect** значка Send (правый верхний угол) содержит следующую формулу:
-    ```powerapps-comma
-    Set( _myCalendarName; 
-        LookUp( 'Office365'.CalendarGetTables().value; DisplayName = "Calendar" ).Name 
-    );;
+    ```powerapps-dot
+    Set( _myCalendarName, 
+        LookUp( 'Office365'.CalendarGetTables().value, DisplayName = "Calendar" ).Name 
+    );
     ```
 * "Calendar" — отображаемое имя по умолчанию для большинства календарей пользователя Office, но ваша организация может отличаться. Если это так, можно изменить "Calendar" на соответствующий термин для вашей организации.
 * Если вы попытаетесь запланировать собрание, которое выполняется в прошлом, или добавить более 20 человек к встрече, возникает ошибка.

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 565f751017bc8c145c34058bd4dd57d047127d45
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 455ffff4813b457c2a439f2081c10418ace2e306
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987178"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678725"
 ---
 # <a name="connect-to-excel-from-powerapps"></a>Подключение к Excel из PowerApps
 ![Excel](./media/connection-excel/excelicon.png)
@@ -31,7 +31,7 @@ Excel — это *вид* подключения. Для отображения
 4. Для отображения этой информации в вашем приложении можно выполнить [автоматическое создание приложения](../get-started-create-from-data.md) или добавить и настроить, например, управление **коллекцией**.
 
 > [!NOTE]
-> После подключения к таблице Excel из PowerApps эта служба создаст новый столбец с именем **\_PowerAppsId_** и уникальным идентификатором для каждой строки таблицы Excel.
+> При подключении к таблице Excel из Power Apps будет создан столбец с именем **\_PowerAppsId_** с уникальным идентификатором для каждой строки таблицы Excel.
 
 В разделе с [общими сведениями о подключении к облачному хранилищу](cloud-storage-blob-connections.md) показано, как добавить подключение, добавить таблицу Excel в качестве источника данных и использовать данные Excel в приложении.
 

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7b6f1056a6d2b5ceaf1fcefe1ccc7d583470450c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f2b401fb4054d63e19b1dcab29cbabf27cc3c117
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541715"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674625"
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>Как сохранить изображения в файл Excel и добавить их в приложение
 
@@ -50,7 +49,7 @@ ms.PowerAppsDecimalTransform: true
 3. Присвойте файлу Excel имя **SavePen.xlsx** и сохраните файл в облачную учетную запись хранения (OneDrive для бизнеса, Dropbox и т. п).
 
 ## <a name="create-an-app-with-the-pen-control"></a>Создание приложения с элементом управления "Ввод с помощью пера"
-1. В службе PowerApps создайте [пустое приложение](get-started-create-from-blank.md).
+1. В Power Apps создайте [пустое приложение](get-started-create-from-blank.md).
 2. В этом приложении добавьте облачную учетную запись хранения в качестве [источника данных](add-data-connection.md). Когда вы добавите источник данных, добавьте файл **SavePen.xlsx** в роли подключения, а затем выберите таблицу **Drawings**.  
    ![Подключение](./media/tutorial-working-with-images-in-excel/savepen.png)  
    
@@ -59,7 +58,7 @@ ms.PowerAppsDecimalTransform: true
    
    ![Переименовать](./media/tutorial-working-with-images-in-excel/rename-mypen.png)
 4. Добавьте элемент управления **Кнопка** (через меню **Вставка**) и задайте в качестве значения свойства **OnSelect** следующую формулу:  
-   `Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})`
+   `Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})`
 5. Добавьте в приложение элемент управления **Коллекция изображений** (через меню **Вставка** > **Коллекция**) и назначьте его свойству **Items** значение `Drawings`. Свойство **Image** для элемента управления "Коллекция" автоматически получает значение `ThisItem.Image`.
    
    Окно должно выглядеть следующим образом:  
@@ -78,7 +77,7 @@ ms.PowerAppsDecimalTransform: true
 Для этого примера нам понадобится файл [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) с несколькими изображениями в формате JPEG.
 
 > [!NOTE]
-> Если вы используете файл Excel для отображения изображений, путь к файлам должен содержать символы косой черты. Когда PowerApps сохраняет изображения в таблице Excel (как в предыдущих шагах), путь к файлам содержит символы обратной косой черты. Вы можете использовать в этом примере файлы **SavePen_images** из предыдущего примера. Но для этого нужно изменить пути в таблице Excel, заменив все символы обратной косой черты обычной косой чертой. В противном случае изображения не будут отображаться.  
+> Если вы используете файл Excel для отображения изображений, путь к файлам должен содержать символы косой черты. Когда Power Apps сохраняет изображения в таблицу Excel (как в предыдущих шагах), путь использует символы обратной косой черты. Вы можете использовать в этом примере файлы **SavePen_images** из предыдущего примера. Но для этого нужно изменить пути в таблице Excel, заменив все символы обратной косой черты обычной косой чертой. В противном случае изображения не будут отображаться.  
 
 1. Загрузите файл [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) и извлеките папку **Assets** в облачную учетную запись хранения.
 2. В электронной таблице Excel создайте таблицу, которая выглядит следующим образом:

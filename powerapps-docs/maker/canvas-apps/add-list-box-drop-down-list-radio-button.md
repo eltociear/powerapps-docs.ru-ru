@@ -1,6 +1,6 @@
 ---
 title: Добавление списка, раскрывающегося списка и переключателей в приложение на основе холста | Документация Майкрософт
-description: Создание и настройка элементов множественного выбора в приложении на основе холста в PowerApps
+description: В Power Apps Создайте или настройте параметры выборки в приложении Canvas.
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 211a5be4a97780a440bf151157576a5ab56933a5
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 9bf03693a182a9c6f85ad43c431b10fabf21b48d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71987496"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678955"
 ---
 # <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app"></a>Добавление списка, раскрывающегося списка и переключателей в приложение на основе холста
 
@@ -37,7 +36,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Добавьте элемент управления **List box** (Список) с именем **MyListBox** и присвойте его свойству **Items** следующее выражение:
 
-    ```["circle";"triangle";"rectangle"]```  <br/>
+    ```["circle","triangle","rectangle"]```  <br/>
 
     Содержимое конструктора будет выглядеть примерно так:
 
@@ -55,9 +54,9 @@ ms.PowerAppsDecimalTransform: true
 
    | Фигура | Функция в свойстве Visible |
    | --- | --- |
-   | круг |```If("circle" in MyListBox.SelectedItems.Value; true)``` |
-   | треугольник |```If("triangle" in MyListBox.SelectedItems.Value; true)``` |
-   | прямоугольник |```If("rectangle" in MyListBox.SelectedItems.Value; true)``` |
+   | круг |```If("circle" in MyListBox.SelectedItems.Value, true)``` |
+   | треугольник |```If("triangle" in MyListBox.SelectedItems.Value, true)``` |
+   | прямоугольник |```If("rectangle" in MyListBox.SelectedItems.Value, true)``` |
 
 7. Удерживая клавишу ALT, выберите одну или несколько фигур в **MyListBox**.
 
@@ -73,7 +72,7 @@ ms.PowerAppsDecimalTransform: true
     ![][10]  
 
 3. Переименуйте **переключатель** в **Choices** (Варианты выбора) и установите для свойства **[Items](controls/properties-core.md)** (Элементы) следующую формулу:  
-   ```["red";"green";"blue"]```  <br/>
+   ```["red","green","blue"]```  <br/>
 
     ![][12]  
 
@@ -82,7 +81,7 @@ ms.PowerAppsDecimalTransform: true
 4. На вкладке **Insert** (Вставка) выберите **Icons** (Значки), а затем — круг.
 
 5. Установите для свойства **[Fill](controls/properties-color-border.md)** (Заливка) круга следующую функцию:  
-   ```If(Choices.Selected.Value = "red"; Red; Choices.Selected.Value = "green"; Green; Choices.Selected.Value = "blue"; Blue)```  
+   ```If(Choices.Selected.Value = "red", Red, Choices.Selected.Value = "green", Green, Choices.Selected.Value = "blue", Blue)```  
 
     В этой формуле цвет круга меняется в зависимости от того, какой переключатель установлен.
 

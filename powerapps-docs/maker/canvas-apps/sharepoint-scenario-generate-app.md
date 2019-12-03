@@ -13,19 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9bfd103d2f8e6503e2897855a0d424807b9573e6
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 42ca4a12f75c82bb685396a857e5ae825d8d7fa1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899498"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674797"
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>Создание приложения на основе холста для обработки запросов проекта
 > [!NOTE]
-> Эта статья является частью серии руководств по использованию PowerApps, автоматизации Powering и Power BI с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
+> Эта статья входит в серию руководств по использованию Power Apps, Power автоматизиру и Power BI с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
 
-Теперь, когда списки SharePoint подключены, можно создать и настроить первое приложение. PowerApps интегрируется с SharePoint, что позволяет легко создавать базовые *приложения с тремя экранами* непосредственно из списка. С помощью этого приложения вы сможете не только просматривать сводные и подробные сведения о каждом элементе списка, а также обновлять и создавать элементы. Если вы создаете приложение непосредственно из списка, оно отображается как *представление* этого списка. Такое приложение можно запустить в браузере или на мобильном телефоне.
+Теперь, когда списки SharePoint подключены, можно создать и настроить первое приложение. Power Apps интегрировано с SharePoint, поэтому вы можете легко создать базовое *приложение с тремя экранами* непосредственно из списка. С помощью этого приложения вы сможете не только просматривать сводные и подробные сведения о каждом элементе списка, а также обновлять и создавать элементы. Если вы создаете приложение непосредственно из списка, оно отображается как *представление* этого списка. Такое приложение можно запустить в браузере или на мобильном телефоне.
 
 > [!TIP]
 > [Пакет загрузки](https://aka.ms/o4ia0f) для нашего примера содержит полную версию этого приложения: project-requests-app.msapp.
@@ -36,19 +35,19 @@ ms.PowerAppsDecimalTransform: true
    
     ![Создание приложения](./media/sharepoint-scenario-generate-app/02-01-01-create-app.png)
 
-2. Введите имя приложения, например "Приложение для запросов проектов", и нажмите кнопку **Create** (Создать). Созданное приложение откроется в PowerApps Studio.
+2. Введите имя приложения, например "Приложение для запросов проектов", и нажмите кнопку **Create** (Создать). Когда приложение будет готово, оно откроется в Power Apps Studio.
    
     ![Выбор имени приложения](./media/sharepoint-scenario-generate-app/02-01-02-create-app-name.png)
 
-## <a name="step-2-review-the-app-in-powerapps-studio"></a>Шаг 2. Просмотр приложения в PowerApps Studio
+## <a name="step-2-review-the-app-in-power-apps-studio"></a>Шаг 2. Проверка приложения в Power Apps Studio
 
-1. В PowerApps Studio на панели навигации слева по умолчанию отображается иерархическое представление экранов и элементов управления приложения.
+1. В Power Apps Studio левая панель навигации по умолчанию показывает иерархическое представление экранов и элементов управления в приложении.
    
-    ![PowerApps Studio с иерархическим представлением](./media/sharepoint-scenario-generate-app/02-02-01-studio-screens-hierarchy.png)
+    ![Power Apps Studio с иерархическим представлением](./media/sharepoint-scenario-generate-app/02-02-01-studio-screens-hierarchy.png)
 
 2. Щелкните значок эскиза, чтобы переключить представление.
    
-    ![Выбор представления в PowerApps Studio](./media/sharepoint-scenario-generate-app/02-02-02-studio-view-selector.png)
+    ![Выбор представления Power Apps Studio](./media/sharepoint-scenario-generate-app/02-02-02-studio-view-selector.png)
 
 3. Щелкните любой экран, чтобы открыть его на центральной панели. Отобразится три экрана:
    
@@ -58,7 +57,7 @@ ms.PowerAppsDecimalTransform: true
     
     (c). **Экран изменения или создания** — изменение существующего элемента или создание нового.
       
-      ![PowerApps Studio с представлением эскиза](./media/sharepoint-scenario-generate-app/02-02-03-studio-screens-thumbnails.png)
+      ![Power Apps Studio с представлением эскизов](./media/sharepoint-scenario-generate-app/02-02-03-studio-screens-thumbnails.png)
 
 ## <a name="step-3-customize-the-apps-browse-screen"></a>Шаг 3. Настройка экрана обзора приложения
 
@@ -86,11 +85,11 @@ ms.PowerAppsDecimalTransform: true
    
     ![Свойство Items](./media/sharepoint-scenario-generate-app/02-03-03-items.png)
 
-6. Вставьте формулу **SortByColumns(Filter('Project Requests'; StartsWith(Title; TextSearchBox1.Text)); "Title"; If(SortDescending1; Descending; Ascending))** .
+6. Вставьте формулу **SortByColumns(Filter('Project Requests', StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))** .
    
     ![Строка формул](./media/sharepoint-scenario-generate-app/02-03-04-formula.png)
    
-    Это позволит сортировать и искать по полю **Title**, вместо поля по умолчанию, выбранного PowerApps. См. [подробные сведения о формулах](#formula-deep-dive).
+    Это позволяет сортировать и выполнять поиск по полю **Title** , а не по умолчанию, выбранным Power Apps. См. [подробные сведения о формулах](#formula-deep-dive).
 
 6. Откройте меню **File** (Файл) и выберите **Save** (Сохранить). Щелкните ![Значок возврата к приложению](./media/sharepoint-scenario-generate-app/icon-back-to-app.png), чтобы вернуться к приложению.
 
@@ -138,7 +137,7 @@ ms.PowerAppsDecimalTransform: true
 Это приложение очень простое. Мы использовали только несколько основных настроек, но из примера видно, что можно быстро создать и более интересное решение. Мы переходим к следующей задаче. Но вы можете протестировать приложение еще раз, чтобы увидеть, как взаимодействуют элементы управления и формулы, определяющие поведение приложения.
 
 ## <a name="formula-deep-dive"></a>Подробные сведения о формулах
-Это дополнительный раздел, в котором подробно описано, как работают формулы. На этапе 3 этой задачи мы изменили формулу для свойства **Items** в коллекции **BrowseGallery1**. В частности, мы заменили поле для сортировки и поиска, выбранное PowerApps, полем **Title**. Вот измененная формула:
+Это дополнительный раздел, в котором подробно описано, как работают формулы. На этапе 3 этой задачи мы изменили формулу для свойства **Items** в коллекции **BrowseGallery1**. В частности, мы изменили сортировку и поиск для использования поля **Title** вместо поля, которое выбираются Power Apps. Вот измененная формула:
 
 **SortByColumns ( Filter ( 'Project Requests', StartsWith ( Title, TextSearchBox1.Text ) ), "Title", If ( SortDescending1, Descending, Ascending ) )**
 

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 78f091705a01a54b7e6eb008630949796ffac453
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5612f97a3dde96fdb9ea017e34986b7e21c43bd7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541188"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679231"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>Использование файлов мультимедиа в PowerApps
 
@@ -27,7 +26,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="prerequisites"></a>Технические условия
 
-[Зарегистрируйтесь](../signup-for-powerapps.md) в PowerApps, а затем [войдите в систему](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) с помощью учетных данных, использовавшихся при регистрации.
+[Зарегистрируйтесь](../signup-for-powerapps.md) в Power Apps, а затем [Войдите в](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) систему, используя те же учетные данные, которые использовались для регистрации.
 
 ## <a name="add-media-from-a-file-or-the-cloud"></a>Добавление мультимедиа из файла или из облака
 
@@ -68,7 +67,7 @@ ms.PowerAppsDecimalTransform: true
 
 2. После публикации скопируйте URL-адрес видео.
 
-3. В PowerApps добавьте элемент управления **Видео** в меню **Вставка > Мультимедиа**.
+3. В Power Apps добавьте элемент управления **видео** из **вставки > носитель**.
 
 4. Задайте свойство **Media** для скопированного URL-адреса.
 
@@ -82,7 +81,7 @@ ms.PowerAppsDecimalTransform: true
 В этом сценарии мы будем использовать файл [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip), содержащий несколько JPEG-файлов.
 
 > [!NOTE]
-> Путь к этим изображениям, сохраненным в файле Excel, должен содержать прямые косые черты. Когда служба PowerApps сохраняет изображения в таблице Excel, путь к файлам содержит символы обратной косой черты. Если вы используете пути к изображениям из таблицы Excel, измените эти пути, заменив все символы обратной косой черты на обычную косую черту. В противном случае изображения не будут отображаться.  
+> Путь к этим изображениям, сохраненным в файле Excel, должен содержать прямые косые черты. Когда Power Apps сохраняет пути к изображениям в таблице Excel, путь использует символы обратной косой черты. Если вы используете пути к изображениям из таблицы Excel, измените эти пути, заменив все символы обратной косой черты на обычную косую черту. В противном случае изображения не будут отображаться.  
 
 1. Загрузите файл [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) и извлеките папку **Assets** в облачную учетную запись хранения.
 
@@ -131,7 +130,7 @@ ms.PowerAppsDecimalTransform: true
 
 3. Сохраните файл Excel в OneDrive для бизнеса, задав ему имя **SavePen.xlsx**.
 
-4. В службе PowerApps создайте [пустое приложение](get-started-create-from-blank.md).
+4. В Power Apps создайте [пустое приложение](get-started-create-from-blank.md).
 
 5. В приложении добавьте учетную запись OneDrive для бизнеса в качестве [источника данных](add-data-connection.md):
 
@@ -159,7 +158,7 @@ ms.PowerAppsDecimalTransform: true
 
 8. На вкладке **Вставка** добавьте элемент управления **Кнопка** и в качестве значения свойства **OnSelect** задайте следующую формулу:
 
-    **Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})**
+    **Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})**
 
 9. Добавьте в приложение элемент управления **Коллекция изображений** (вкладка **Вставка** > **Коллекция**) и назначьте его свойству **Items** значение `Drawings`. Свойство **Image** для элемента управления "Коллекция" автоматически получает значение `ThisItem.Image`.
 

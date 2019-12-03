@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c107e337733f771212359618c5761cb7a89d3177
-ms.sourcegitcommit: a7f2313a048d3b8a03516a2e4c349f3fb08f4a22
+ms.openlocfilehash: 3d67ef4b05b61f59fec49b0bbc0961970d8070bf
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74072537"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678518"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>Интеграция приложений на основе холста в веб-сайты и другие службы
 Создаваемые приложения часто наиболее полезны, когда они доступны, когда люди выполняют свою работу. Внедрение приложений Canvas в IFRAME позволяет интегрировать эти приложения на веб-сайты и другие службы, такие как Power BI или SharePoint.
@@ -29,10 +29,10 @@ ms.locfileid: "74072537"
 
 Помните о следующих ограничениях:
 
-- Доступ к внедренному приложению могут получить только пользователи PowerApps того же клиента.
-- Чтобы получить доступ к PowerApps в Internet Explorer 11, необходимо отключить просмотр в режиме совместимости.
+- Только пользователи Power Apps в одном клиенте могут получить доступ к внедренному приложению.
+- Для доступа к Power Apps с помощью Internet Explorer 11 необходимо отключить режим совместимости.
 
-Можно также интегрировать приложения Canvas в SharePoint Online без использования IFRAME. Дополнительные сведения см. [в разделе Использование веб-части PowerApps](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c).
+Можно также интегрировать приложения Canvas в SharePoint Online без использования IFRAME. Дополнительные сведения см. [в разделе Использование веб-части Power Apps](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c).
 
 ## <a name="set-uri-parameters-for-your-app"></a>Задание параметров URI для приложения
 При наличии приложения, которое вы хотите внедрить, в первую очередь необходимо задать параметры для универсального кода ресурса (URI), чтобы IFrame знал, где найти ваше приложение. URI имеет следующий вид:

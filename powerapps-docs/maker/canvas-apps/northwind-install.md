@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dca5d5189129e7c9dfe32d27fb4c1190b830c039
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fe1192adca08d1fbde82b4b49ded5f5ca6a409e0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541340"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675797"
 ---
 # <a name="install-northwind-traders-database-and-apps"></a>Установка базы данных и приложений Northwind Traders
 
@@ -28,7 +28,7 @@ Northwind Trader — это вымышленная организация, ко�
 
 ## <a name="prerequisites"></a>Технические условия
 
-- Лицензия PowerApps, которая поддерживает Common Data Service. [Бесплатную пробную лицензию можно использовать в](../signup-for-powerapps.md) течение 30 дней.
+- Лицензия на Power Apps, которая поддерживает Common Data Service. [Бесплатную пробную лицензию можно использовать в](../signup-for-powerapps.md) течение 30 дней.
 - Среда с Common Data Serviceной базой данных. Вы можете [создать такую среду](https://docs.microsoft.com/power-platform/admin/create-environment) , если у вас есть соответствующие разрешения.
 
 ## <a name="download-the-solution"></a>Скачивание решения

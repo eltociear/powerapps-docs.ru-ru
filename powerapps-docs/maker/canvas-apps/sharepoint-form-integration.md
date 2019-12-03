@@ -13,16 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c1ee3d00bab865bf63dc06181a9430fd0a9a6674
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: fbfe1b62091ff7a4fb84b899518fc941f99d7abb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988376"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674859"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>Общие сведения об интеграции форм SharePoint
-Теперь вы можете легко [настроить любую форму списка SharePoint](customize-list-form.md) в PowerApps. В этой статье мы подробно рассмотрим, как работают эти формы и как их можно настроить.
+Теперь можно легко [настроить любую форму списка SharePoint](customize-list-form.md) в Power Apps. В этой статье мы подробно рассмотрим, как работают эти формы и как их можно настроить.
 
 Если вы уже настраивали форму для списка SharePoint, вероятно вы заметили, что созданная по умолчанию форма подходит для всех операций, включая создание, отображение или изменение элементов. Это возможно благодаря созданным формулам и элементу управления **SharePointIntegration**.
 
@@ -36,13 +35,13 @@ ms.PowerAppsDecimalTransform: true
 
     * **DataSource** — список, для которого настроена форма.
 
-    * **Item** — выбранный в списке элемент. Для этого элемента в списке задано значение First(), чтобы обеспечить удобство при работе в PowerApps Studio.
+    * **Item** — выбранный в списке элемент. Этот элемент имеет значение First () в списке для удобства при работе в Power Apps Studio.
 
-        **If(IsBlank(SharePointIntegration.Selected) || IsEmpty(SharePointIntegration.Selected);First('*имя_вашего_списка*');SharePointIntegration.Selected)**
+        **If(IsBlank(SharePointIntegration.Selected) || IsEmpty(SharePointIntegration.Selected),First('*имя_вашего_списка*'),SharePointIntegration.Selected)**
 
     * **OnSuccess** — когда элемент успешно создан или сохранен, настройки формы сбрасываются и SharePoint скрывает форму.
 
-        **ResetForm(SharePointForm1);; RequestHide()**
+        **ResetForm(SharePointForm1); RequestHide()**
 
 * **SharePointIntegration** — элемент управления, который отвечает за синхронизацию пользовательских действий в SharePoint и PowerApps.
 
@@ -70,7 +69,7 @@ ms.PowerAppsDecimalTransform: true
 
         **ResetForm(SharePointForm1)**
 
-Эти значения по умолчанию отвечают за работу формы при выполнении в SharePoint. Они изменяют режим формы PowerApps, когда пользователь взаимодействует с формой в SharePoint, а также обеспечивают отправку изменений в SharePoint.
+Эти значения по умолчанию обеспечивают работу формы при работе в SharePoint. они изменяют режим формы Power Apps при взаимодействии пользователя с ним в SharePoint и гарантируют, что изменения отправляются в SharePoint.
 
 ## <a name="understand-the-sharepointintegration-control"></a>Общие сведения об элементе управления SharePointIntegration
 Элемент управления **SharePointIntegration** синхронизирует пользовательские действия в SharePoint и PowerApps.
@@ -78,7 +77,7 @@ ms.PowerAppsDecimalTransform: true
 ![](./media/sharepoint-form-integration/sharepointintegration-object.png)
 
 >[!NOTE]
->Свойства элемента управления **SharePointIntegration** доступны, только если форма открыта в SharePoint. Они недоступны при настройке формы в PowerApps Studio. Эти свойства могут быть недоступны в **OnStart** или **OnVisible**. 
+>Доступ к свойствам элемента управления **SharePointIntegration** можно получить только в том случае, если форма выполняется в SharePoint, а не при настройке формы в Power Apps Studio. Эти свойства могут быть недоступны в **OnStart** или **OnVisible**. 
 
 Элемент управления **SharePointIntegration** имеет следующие свойства:
 

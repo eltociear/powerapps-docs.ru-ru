@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c9b84a8ce89863d94b9f3e4ac390c88e194a2894
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 7adf3391ef418a2b42861df63bc8396adc22f93a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540194"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679461"
 ---
 # <a name="choices-function-in-powerapps"></a>Функция Choices в PowerApps
 Возвращает таблицу из возможных значений для столбца подстановки.
@@ -53,7 +53,7 @@ ms.locfileid: "73540194"
 
     Создается множество сущностей, таких как **Accounts**.
 
-    **Примечание**. имена сущностей являются единственными для make.powerapps.com и plural в PowerApps Studio.
+    **Примечание**. имена сущностей в единственном числе для make.powerapps.com и plural в Power Apps Studio.
 
     ![Частичный список полей сущности Account в Common Data Service для приложений, в котором основное контактное лицо является полем подстановки.](media/function-choices/entity-account.png)
 

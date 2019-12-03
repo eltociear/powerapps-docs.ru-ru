@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4eab4585a2abd8633704c76b57cde52702982e97
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 387089ea2ee40e8a0d418ab110d7544c17d7c423
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994023"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679898"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>Подключение к Microsoft Translator из PowerApps
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -34,7 +33,7 @@ ms.PowerAppsDecimalTransform: true
 [!INCLUDE [connection-requirements](../../../includes/connection-requirements.md)]
 
 ## <a name="connect-to-microsoft-translator"></a>Подключение к Microsoft Translator
-1. Откройте PowerApps и выберите команду **Создать**, а затем — пункт **Пустое приложение**. Выберите макет для телефона или планшета. Макет для планшета обеспечивает больше рабочего пространства:  
+1. Откройте Power Apps, выберите **создать**, а затем создайте **пустое приложение**. Выберите макет для телефона или планшета. Макет для планшета обеспечивает больше рабочего пространства:  
 
    ![Пустое приложение](./media/connection-microsoft-translator/blank-app.png)
 2. На панели справа откройте вкладку **Данные**, а затем нажмите кнопку **Добавить источник данных**.
@@ -43,7 +42,7 @@ ms.PowerAppsDecimalTransform: true
     ![Подключение к Microsoft Translator](./media/connection-microsoft-translator/addconnection.png)
 
     ![Подключение к Microsoft Translator](./media/connection-microsoft-translator/add-translator.png)
-4. Выберите команду **Создать**. Ваше подключение появится в разделе **Источники данных**.  
+4. Выберите команду **Создать**. В разделе **Источники данных** появится подключение:  
 
     ![Подключение к Microsoft Translator](./media/connection-microsoft-translator/translatordatasource.png)
 
@@ -58,7 +57,7 @@ ms.PowerAppsDecimalTransform: true
     `MicrosoftTranslator.Languages()`
 4. Добавьте метку, расположите ее ниже элемента управления **TargetLang** и назначьте ее свойству **[Text](../controls/properties-core.md)** следующую формулу:  
 
-    `MicrosoftTranslator.Translate(Source.Text; TargetLang.Selected.Value)`
+    `MicrosoftTranslator.Translate(Source.Text, TargetLang.Selected.Value)`
 5. Введите какой-либо текст в поле **Source** и выберите язык в списке **TargetLang**. В метке будет выведен текст, переведенный на выбранный вами язык.  
 
     ![Перевод текста с английского на испанский язык](./media/connection-microsoft-translator/translate-text.png)
@@ -72,11 +71,11 @@ ms.PowerAppsDecimalTransform: true
 2. Переименуйте вторую метку (не **Source**), назначив ей имя **Target**.
 3. Добавьте элемент управления **Звук** (**Вставка** > **Мультимедиа**) и назначьте его свойству **Media** следующую формулу:  
 
-    `MicrosoftTranslator.TextToSpeech(Target.Text; TargetLang.Selected.Value)`
+    `MicrosoftTranslator.TextToSpeech(Target.Text, TargetLang.Selected.Value)`
 4. Нажмите клавишу F5 или кнопку предварительного просмотра (![](./media/connection-microsoft-translator/preview.png)). Введите какой-либо текст в поле **Source**, выберите язык в списке **TargetLang**, а затем нажмите кнопку воспроизведения в элементе управления "Звук".
 
     Приложение озвучит введенный текст на выбранном вами языке.
-5. Нажмите клавишу Esc, чтобы вернуться в рабочую область по умолчанию.
+5. Нажмите клавишу ESC, чтобы вернуться в рабочую область по умолчанию.
 
 ### <a name="detect-the-source-language"></a>Определение исходного языка
 В этом разделе используются те же текстовые элементы управления **Source** и **Target**. При желании вы можете создать новые элементы управления, но следите за тем, чтобы в формулах использовались правильные имена.
@@ -91,7 +90,7 @@ ms.PowerAppsDecimalTransform: true
 ## <a name="view-the-available-functions"></a>Просмотр доступных функций
 Это подключение включает следующие функции:
 
-| Имя функции | Описание |
+| Имя функции | Description |
 | --- | --- |
 | [Languages](connection-microsoft-translator.md#languages) |Возвращает все языки, поддерживаемые службой Microsoft Translator. |
 | [Translate](connection-microsoft-translator.md#translate) |Переводит текст на указанный язык с помощью службы Microsoft Translator. |
@@ -100,24 +99,24 @@ ms.PowerAppsDecimalTransform: true
 | [TextToSpeech](connection-microsoft-translator.md#texttospeech) |Преобразует указанный текст в речь в виде звукового потока в формате звукозаписи. |
 
 ### <a name="languages"></a>Языки
-Получить языки: Возвращает все языки, поддерживаемые службой Microsoft Translator.
+Эта функция возвращает все языки, поддерживаемые службой Microsoft Translator.
 
 #### <a name="input-properties"></a>Входные свойства
 Нет.
 
 #### <a name="output-properties"></a>Выходные свойства
 
-| Имя свойства | Тип данных | Требуется | Описание |
+| Имя свойства | Тип данных | Требуется | Description |
 | --- | --- | --- | --- |
 | Код |строка |Нет | |
 | Имя |строка |Нет | |
 
 ### <a name="translate"></a>Translate
-Перевести текст: Переводит текст на указанный язык с помощью службы Microsoft Translator.
+Эта функция переводит текст на указанный язык с помощью службы Microsoft Translator.
 
 #### <a name="input-properties"></a>Входные свойства
 
-| Имя | Тип данных | Требуется | Описание |
+| Имя | Тип данных | Требуется | Description |
 | --- | --- | --- | --- |
 | query |строка |да |Текст, который нужно перевести. |
 | languageTo |строка |да |Код целевого языка (например, 'fr'). |
@@ -128,40 +127,40 @@ ms.PowerAppsDecimalTransform: true
 Нет.
 
 ### <a name="detect"></a>Detect
-Определить язык: Определяет исходный язык текста.
+Эта функция распознает исходный язык указанного текста.
 
 #### <a name="input-properties"></a>Входные свойства
 
-| Имя | Тип данных | Требуется | Описание |
+| Имя | Тип данных | Требуется | Description |
 | --- | --- | --- | --- |
 | query |строка |да |Текст, язык которого нужно распознать. |
 
 #### <a name="output-properties"></a>Выходные свойства
 
-| Имя свойства | Тип данных | Требуется | Описание |
+| Имя свойства | Тип данных | Требуется | Description |
 | --- | --- | --- | --- |
 | Код |строка |Нет | |
 | Имя |строка |Нет | |
 
 ### <a name="speechlanguages"></a>SpeechLanguages
-Получить языки речи: Возвращает языки, доступные для синтеза речи.
+Эта функция возвращает языки, доступные для синтеза речи.
 
 #### <a name="input-properties"></a>Входные свойства
 Нет.
 
 #### <a name="output-properties"></a>Выходные свойства
 
-| Имя свойства | Тип данных | Требуется | Описание |
+| Имя свойства | Тип данных | Требуется | Description |
 | --- | --- | --- | --- |
 | Код |строка |Нет | |
 | Имя |строка |Нет | |
 
 ### <a name="texttospeech"></a>TextToSpeech
-Преобразование текста в речь: Преобразует указанный текст в речь в виде звукового потока в формате звукозаписи.
+Эта функция преобразует заданный текст в речь в виде звукового потока в формате звукозаписи.
 
 #### <a name="input-properties"></a>Входные свойства
 
-| Имя | Тип данных | Требуется | Описание |
+| Имя | Тип данных | Требуется | Description |
 | --- | --- | --- | --- |
 | query |строка |да |Текст, который нужно преобразовать. |
 | language |строка |да |Код языка для синтеза речи (например, 'en-us'). |

@@ -1,6 +1,6 @@
 ---
 title: Добавление прокручиваемого экрана в приложение на основе холста | Документы Майкрософт
-description: Создайте в приложении на основе холста в PowerApps экран, который можно будет прокручивать для просмотра дополнительного контента.
+description: В Power Apps Создайте экран, который пользователи могут прокручивать для отображения большего числа типов содержимого, чем экран может быть показан одновременно в приложении Canvas.
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9e1d6f19803e5856083266ff65497e4c0b017eff
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 8f2ff84ba79b202a888ab3909a09b3e66dd45640
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71987476"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678932"
 ---
 # <a name="add-a-scrolling-screen-to-a-canvas-app-in-powerapps"></a>Добавление прокручиваемого экрана в приложение на основе холста в PowerApps
 

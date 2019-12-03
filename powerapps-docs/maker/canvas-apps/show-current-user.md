@@ -1,6 +1,6 @@
 ---
 title: Показ сведений о текущем пользователе в приложении на основе холста | Документы Майкрософт
-description: Отображение в PowerApps имени и адреса электронной почты пользователя, выполнившего вход в приложение на основе холста
+description: В Power Apps отобразите имя и адрес электронной почты пользователя, выполнившего вход, в приложении Canvas.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: afd5dffc75dea4186058ba96adbaf0dbde8dc3d8
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: f77ec80cfaf579c836277f0e29d3b84b325a0462
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71988451"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674608"
 ---
-# <a name="show-information-about-a-powerapps-user-in-a-canvas-app"></a>Отображение сведений о пользователе PowerApps в приложении на основе холста
+# <a name="show-information-about-a-power-apps-user-in-a-canvas-app"></a>Отображение сведений о пользователе Power Apps в приложении Canvas
 
-В PowerApps вы можете отобразить полное имя, электронный адрес и фото, связанные с пользователем, выполнившим вход в приложение на основе холста. Эти сведения можно использовать, например, для автоматического заполнения какой-то формы.
+В Power Apps отобразите полное имя, адрес электронной почты и рисунок, связанный с пользователем, который вошел в приложение Canvas. Эти сведения можно использовать, например, для автоматического заполнения какой-то формы.
 
 Например, можно использовать эту функцию для следующего.
 

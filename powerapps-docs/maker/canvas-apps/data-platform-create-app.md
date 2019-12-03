@@ -1,6 +1,6 @@
 ---
 title: Создание приложения Canvas из Common Data Service | Документация Майкрософт
-description: В PowerApps автоматически создает приложение Canvas для управления данными в Common Data Service
+description: В Power Apps автоматически создает приложение Canvas для управления данными в Common Data Service
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7175ac7d96989de4abd7e9fa3446631ca04d5f1b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f1737a70a8b9f6be30c73a91116c88df38609966
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540144"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678564"
 ---
 # <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>Создание приложения Canvas на основе Common Data Service в PowerApps
 
-В PowerApps автоматически создает приложение Canvas на основе списка примеров учетных записей в [Common Data Service](../common-data-service/data-platform-intro.md). В этом приложении можно просматривать все учетные записи, отображать подробные сведения о отдельной записи, а также создавать, изменять и удалять учетные записи.
+В Power Apps автоматически создает приложение Canvas на основе списка примеров учетных записей в [Common Data Service](../common-data-service/data-platform-intro.md). В этом приложении можно просматривать все учетные записи, отображать подробные сведения о отдельной записи, а также создавать, изменять и удалять учетные записи.
 
-Если вы не зарегистрированы в PowerApps, перед началом работы [пройдите бесплатную регистрацию](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+Если вы еще не зарегистрированы в Power Apps, [Зарегистрируйтесь бесплатно](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) , прежде чем начать.
 
 ## <a name="prerequisites"></a>Технические условия
 
@@ -44,7 +44,7 @@ ms.locfileid: "73540144"
 
 1. В поле **Выберите таблицу** выберите **Учетные записи**, а затем щелкните **Подключиться**.
 
-1. Если отобразится диалоговое окно **Welcome to PowerApps Studio** (Вас приветствует PowerApps Studio), выберите в нем **Пропустить**.
+1. Если откроется диалоговое окно " **Добро пожаловать в Power Apps Studio** ", выберите **пропустить**.
 
 Откроется приложение с окном обзора, в котором приведен список учетных записей в элементе управления, называемом коллекцией. В верхней части экрана в строке заголовка отображаются значки для обновления данных в коллекции, сортировки данных в коллекции в алфавитном порядке и добавления данных в коллекцию. Под заголовком есть поле поиска, с помощью которого можно отфильтровать данные в коллекции по введенному или вставленному тексту. 
 

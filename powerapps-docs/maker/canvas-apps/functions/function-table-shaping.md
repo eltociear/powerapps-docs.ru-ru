@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6f2dfae897a19c66e493cbdecd897df87b8194c2
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 55e38d2be5f43e1b13fc1894f88aac26a26bd57e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992210"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678219"
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>Функции AddColumns, DropColumns, RenameColumns и ShowColumns в Microsoft PowerApps
 Изменение формата [таблицы](../working-with-tables.md) путем добавления, удаления, переименования и выбора ее [столбцов](../working-with-tables.md#columns).
@@ -31,14 +30,14 @@ ms.PowerAppsDecimalTransform: true
 * Добавьте в таблицу вычисляемый столбец (например, столбец **Общая цена** с результатами умножения значений из столбцов **Количество** и **Цена за единицу**).
 * Переименуйте столбец, чтобы его имя было более понятным в представлениях для пользователей или в формулах.
 
-Таблица в PowerApps считается значением, как любая строка или число.  Таблицы можно использовать в качестве аргумента формулы, и функции могут возвращать таблицу.
+Таблица — это значение в Power Apps, как строка или число.  Таблицы можно использовать в качестве аргумента формулы, и функции могут возвращать таблицу.
 
 > [!NOTE]
 > Функции, описанные в этом разделе, не изменяют исходную таблицу. Вместо этого они принимают эту таблицу в качестве аргумента и возвращают новую таблицу с примененным преобразованием. Подробнее это описано [здесь](../working-with-tables.md).  
 
 Вы не можете с помощью этих функций изменять столбцы [источника данных](../working-with-data-sources.md). Такие данные следует изменять прямо в источнике данных. Вы можете добавить столбцы к [коллекции](../working-with-data-sources.md#collections) с помощью функции **[Collect](function-clear-collect-clearcollect.md)** . Подробнее это описано [здесь](../working-with-data-sources.md).  
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функция **AddColumns** добавляет столбец к таблице и с помощью формулы определяет значения для этого столбца. Существующие столбцы сохраняются без изменений.
 
 Формула вычисляется отдельно для каждой записи этой таблицы.
@@ -54,10 +53,10 @@ ms.PowerAppsDecimalTransform: true
 
 Аргументы этих функций поддерживают делегирование. Например, функция **фильтра** , используемая в качестве аргумента для получения связанных записей, выполняет поиск по всем вхождениям, даже если **"[dbo]. [ Алллистингс] "** источник данных содержит миллион строк:
 
-```powerapps-comma
-AddColumns( RealEstateAgents; 
-    "Listings";  
-    Filter(  '[dbo].[AllListings]'; ListingAgentName = AgentName ) 
+```powerapps-dot
+AddColumns( RealEstateAgents, 
+    "Listings",  
+    Filter(  '[dbo].[AllListings]', ListingAgentName = AgentName ) 
 )
 ```
 
@@ -66,26 +65,26 @@ AddColumns( RealEstateAgents;
 При использовании **AddColumns** таким образом **Фильтр** должен выполнять отдельные вызовы к источнику данных для каждой из первых записей в **реалестатеажентс**, что приводит к большому числу сетевых chatter. If **[dbo]. [ Алллистингс]** достаточно мал и не изменяется часто, можно вызвать функцию " **получить** " в [**OnStart**](signals.md#app) для кэширования источника данных в приложении при запуске. В качестве альтернативы можно изменить структуру приложения, чтобы извлечь связанные записи, только когда пользователь запросит их.  
 
 ## <a name="syntax"></a>Синтаксис
-**AddColumns**( *Table*; *ColumnName1*; *Formula1* [; *ColumnName2*; *Formula2*; ... ] )
+**AddColumns**( *Table*, *ColumnName1*, *Formula1* [, *ColumnName2*, *Formula2*, ... ] )
 
-* *Table* — обязательный аргумент.  Таблица, для которой выполняется операция.
+* *Table* — обязательный аргумент.  Таблица, с которой выполняются операции.
 * *ColumnName* — обязательный аргумент. Имена столбцов для добавления.  Этот аргумент принимает строку (например, **"Name"** в двойных кавычках).
 * *Formula(s)* — обязательный параметр.  Формула или формулы, вычисляемые для каждой записи таблицы. Результат добавляется в итоговую таблицу как значение соответствующего нового столбца. Вы можете использовать в этой формуле ссылки на другие столбцы таблицы.
 
-**DropColumns**( *Table*; *ColumnName1* [; *ColumnName2*; ... ] )
+**DropColumns**( *Table*, *ColumnName1* [, *ColumnName2*, ... ] )
 
-* *Table* — обязательный аргумент.  Таблица, для которой выполняется операция.
+* *Table* — обязательный аргумент.  Таблица, с которой выполняются операции.
 * *ColumnName* — обязательный аргумент. Имена столбцов для исключения. Этот аргумент принимает строку (например, **"Name"** в двойных кавычках).
 
-**RenameColumns**( *Table*; *OldColumnName1*; *NewColumnName1* [; *OldColumnName2*; *NewColumnName2*;...])
+**RenameColumns**( *Table*, *OldColumnName1*, *NewColumnName1* [, *OldColumnName2*, *NewColumnName2*,...])
 
-* *Table* — обязательный аргумент.  Таблица, для которой выполняется операция.
+* *Table* — обязательный аргумент.  Таблица, с которой выполняются операции.
 * *OldColumnName* — обязательный аргумент. Имя столбца исходной таблицы, который требуется переименовать. Этот элемент отображается первым в паре аргументов (или первым в каждой из пар, если формула содержит несколько пар). Этот аргумент принимает строку (например, **"Name"** в двойных кавычках).
 * *NewColumnName* — обязательный аргумент. Имя, которое нужно использовать вместо старого. Этот элемент отображается последним в паре аргументов (или последним в каждой из пар, если формула содержит несколько пар). Этот аргумент принимает строку (например, **"Customer Name"** в двойных кавычках).
 
-**ShowColumns**( *Table*; *ColumnName1* [; *ColumnName2*; ... ] )
+**ShowColumns**( *Table*, *ColumnName1* [, *ColumnName2*, ... ] )
 
-* *Table* — обязательный аргумент.  Таблица, для которой выполняется операция.
+* *Table* — обязательный аргумент.  Таблица, с которой выполняются операции.
 * *ColumnName* — обязательный аргумент. Имена столбцов для включения. Этот аргумент принимает строку (например, **"Name"** в двойных кавычках).
 
 ## <a name="examples"></a>Примеры
@@ -95,14 +94,14 @@ AddColumns( RealEstateAgents;
 
 Ни один из этих примеров не изменяет исходную таблицу источника данных **IceCreamSales**. Каждая функция преобразует ее в новую таблицу и возвращает полученную таблицу в результате.
 
-| Формула | Описание | Возвращаемый результат |
+| Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
-| **AddColumns( IceCreamSales; "Revenue"; UnitPrice * QuantitySold )** |Добавляет к результату столбец **Revenue**.  Для каждой записи вычисляется выражение **UnitPrice * QuantitySold**. Результат вычисления помещается в новый столбец. |<style> img { max-width: none; } </style> ![](media/function-table-shaping/icecream-add-revenue.png) |
-| **DropColumns( IceCreamSales; "UnitPrice" )** |Исключает из результата столбец **UnitPrice**. Эта функция позволяет исключить столбцы, а **ShowColumns** включает их. |![](media/function-table-shaping/icecream-drop-price.png) |
-| **ShowColumns( IceCreamSales; "Flavor" )** |Включает в результат только столбец **Flavor**. Эта функция позволяет включить столбцы, а **DropColumns** исключает их. |![](media/function-table-shaping/icecream-select-flavor.png) |
-| **RenameColumns( IceCreamSales; "UnitPrice"; "Price")** |Переименовывает столбец **UnitPrice** в результате. |![](media/function-table-shaping/icecream-rename-price.png) |
-| **RenameColumns( IceCreamSales; "UnitPrice"; "Price"; "QuantitySold"; "Number")** |Переименовывает столбцы **UnitPrice** и **QuantitySold**. |![](media/function-table-shaping/icecream-rename-price-quant.png) |
-| **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales; "Revenue";<br>UnitPrice * QuantitySold );<br>"UnitPrice"; "Price" );<br>"Quantity" )** |Поочередно выполняет следующие преобразования, начиная с "внутренней стороны" формулы. <ol><li>Добавляет столбец **Revenue** заполняемый данными по формуле **UnitPrice * Quantity**.<li>Переименовывает столбец **UnitPrice** в **Price**.<li>Исключает столбец **Quantity**.</ol>  Обратите внимание, что порядок выполнения имеет значение. Например, мы не сможем вычислить **UnitPrice** после того, как переименуем его. |![](media/function-table-shaping/icecream-all-transforms.png) |
+| **AddColumns( IceCreamSales, "Revenue", UnitPrice * QuantitySold )** |Добавляет к результату столбец **Revenue**.  Для каждой записи вычисляется выражение **UnitPrice * QuantitySold**. Результат вычисления помещается в новый столбец. |<style> img { max-width: none; } </style> ![](media/function-table-shaping/icecream-add-revenue.png) |
+| **DropColumns( IceCreamSales, "UnitPrice" )** |Исключает из результата столбец **UnitPrice**. Эта функция позволяет исключить столбцы, а **ShowColumns** включает их. |![](media/function-table-shaping/icecream-drop-price.png) |
+| **ShowColumns( IceCreamSales, "Flavor" )** |Включает в результат только столбец **Flavor**. Эта функция позволяет включить столбцы, а **DropColumns** исключает их. |![](media/function-table-shaping/icecream-select-flavor.png) |
+| **RenameColumns( IceCreamSales, "UnitPrice", "Price")** |Переименовывает столбец **UnitPrice** в результате. |![](media/function-table-shaping/icecream-rename-price.png) |
+| **RenameColumns( IceCreamSales, "UnitPrice", "Price", "QuantitySold", "Number")** |Переименовывает столбцы **UnitPrice** и **QuantitySold**. |![](media/function-table-shaping/icecream-rename-price-quant.png) |
+| **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales, "Revenue",<br>UnitPrice * QuantitySold ),<br>"UnitPrice", "Price" ),<br>"Quantity" )** |Поочередно выполняет следующие преобразования, начиная с "внутренней стороны" формулы. <ol><li>Добавляет столбец **Revenue** заполняемый данными по формуле **UnitPrice * Quantity**.<li>Переименовывает столбец **UnitPrice** в **Price**.<li>Исключает столбец **Quantity**.</ol>  Обратите внимание, что порядок выполнения имеет значение. Например, мы не сможем вычислить **UnitPrice** после того, как переименуем его. |![](media/function-table-shaping/icecream-all-transforms.png) |
 
 ### <a name="step-by-step"></a>Шаг за шагом
 
@@ -110,12 +109,12 @@ AddColumns( RealEstateAgents;
 
 1. Создайте коллекцию, добавив элемент управления **[Button](../controls/control-button.md)** и задав для его свойства **OnSelect** следующую формулу:
 
-    ```powerapps-comma
-    ClearCollect( IceCreamSales; 
+    ```powerapps-dot
+    ClearCollect( IceCreamSales, 
         Table(
-            { Flavor: "Strawberry"; UnitPrice: 1,99; QuantitySold: 20 }; 
-            { Flavor: "Chocolate"; UnitPrice: 2,99; QuantitySold: 45 };
-            { Flavor: "Vanilla"; UnitPrice: 1,50; QuantitySold: 35 }
+            { Flavor: "Strawberry", UnitPrice: 1.99, QuantitySold: 20 }, 
+            { Flavor: "Chocolate", UnitPrice: 2.99, QuantitySold: 45 },
+            { Flavor: "Vanilla", UnitPrice: 1.50, QuantitySold: 35 }
         )
     )
     ```
@@ -124,9 +123,9 @@ AddColumns( RealEstateAgents;
 
 1. Добавьте второй элемент управления **Button** , установите для этой формулы свойство **OnSelect** , а затем выполните его:
 
-    ```powerapps-comma
-    ClearCollect( FirstExample; 
-        AddColumns( IceCreamSales; "Revenue"; UnitPrice * QuantitySold )
+    ```powerapps-dot
+    ClearCollect( FirstExample, 
+        AddColumns( IceCreamSales, "Revenue", UnitPrice * QuantitySold )
     ) 
     ```
 1. В меню **файл** выберите **коллекции**, а затем выберите **ицекреамсалес** , чтобы отобразить эту коллекцию.

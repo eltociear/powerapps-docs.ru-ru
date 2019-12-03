@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0b1c81dd808b224ca30d9de3d4bab252a2676cf4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f44d28ab57bb012f1cb4a847920a4cf0597e3b68
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542316"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74673504"
 ---
 # <a name="understand-record-references-and-polymorphic-lookups-in-canvas-apps"></a>Общие сведения о ссылках на записи и полиморфизме в приложениях Canvas
 
@@ -51,8 +50,8 @@ Common Data Service также поддерживает операции пои�
 
 Чтобы отобразить это поле в сущности **учетной записи** :
 
-1. Откройте [сайт PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
-1. На панели навигации слева выберите **данные**  > **сущности**.
+1. Откройте [этот сайт Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. На панели навигации слева выберите **данные** > **сущности**.
 1. В списке сущностей выберите **учетная запись**.
 1. В правом верхнем углу откройте список фильтров (по умолчанию задано значение **по** умолчанию), а затем выберите **все**.
 1. Прокрутите вниз, пока не появится поле **Owner (владелец** ).
@@ -79,10 +78,10 @@ Common Data Service также поддерживает операции пои�
 
 Используя эти источники данных, используйте эту формулу для вывода имени пользователя или команды:
 
-```powerapps-comma
-If( IsType( ThisItem.Owner; [@Teams] );
-    "Team: " & AsType( ThisItem.Owner; [@Teams] ).'Team Name';
-    "User: " & AsType( ThisItem.Owner; [@Users] ).'Full Name' )
+```powerapps-dot
+If( IsType( ThisItem.Owner, [@Teams] ),
+    "Team: " & AsType( ThisItem.Owner, [@Teams] ).'Team Name',
+    "User: " & AsType( ThisItem.Owner, [@Users] ).'Full Name' )
 ```
 
 > [!div class="mx-imgBorder"]
@@ -101,10 +100,10 @@ If( IsType( ThisItem.Owner; [@Teams] );
 
 Затем замените предыдущую формулу на следующую:
 
-```powerapps-comma
+```powerapps-dot
 IfError(
-    "Team: " & AsType( ThisItem.Owner; [@Teams] ).'Team Name';
-    "User: " & AsType( ThisItem.Owner; [@Users] ).'Full Name' )
+    "Team: " & AsType( ThisItem.Owner, [@Teams] ).'Team Name',
+    "User: " & AsType( ThisItem.Owner, [@Users] ).'Full Name' )
 ```
 
 ## <a name="filter-based-on-an-owner"></a>Фильтр, основанный на владельце
@@ -121,8 +120,8 @@ IfError(
 
 Чтобы отфильтровать коллекцию по конкретному пользователю, выбранному из этого поля со списком, задайте для свойства **Items** коллекции следующую формулу:
 
-```powerapps-comma
-Filter( Accounts; Owner = ComboBox1.Selected )
+```powerapps-dot
+Filter( Accounts, Owner = ComboBox1.Selected )
 ```
 
 > [!div class="mx-imgBorder"]
@@ -137,7 +136,7 @@ Filter( Accounts; Owner = ComboBox1.Selected )
 
 1. Освободите место в верхней части экрана, изменив размер коллекции и переместив поле со списком, вставьте [элемент управления " **переключатель** ](controls/control-radio.md) " над галереей, а затем задайте следующие свойства для нового элемента управления:
 
-    - **Элементы**: `[ "All"; "Users"; "Teams" ]`
+    - **Элементы**: `[ "All", "Users", "Teams" ]`
     - **Макет**: `Layout.Horizontal`
 
 1. Для элемента управления **"поле со списком"** установите это свойство (если поле со списком исчезнет, выберите **Пользователи** в элементе управления "переключатель"):
@@ -153,8 +152,8 @@ Filter( Accounts; Owner = ComboBox1.Selected )
 
 1. Наконец, задайте для свойства **Items** элемента управления **галереи** следующую формулу:
 
-    ```powerapps-comma
-    Filter( Accounts;
+    ```powerapps-dot
+    Filter( Accounts,
         Radio1.Selected.Value = "All"
         Or (Radio1.Selected.Value = "Users" And Owner = ComboBox1.Selected)
         Or (Radio1.Selected.Value = "Teams" And Owner = ComboBox1_1.Selected)
@@ -180,8 +179,8 @@ Filter( Accounts; Owner = ComboBox1.Selected )
 
 Поле " **владелец** " можно обновить так же, как и любые другие операции поиска. Чтобы задать владельца выбранной учетной записи для первой команды, сделайте следующее:
 
-```powerapps-comma
-Patch( Accounts; Gallery1.Selected; { Owner: First( Teams ) } )
+```powerapps-dot
+Patch( Accounts, Gallery1.Selected, { Owner: First( Teams ) } )
 ```
 
 Этот подход не отличается от обычного поиска, поскольку приложение знает тип **первого (команды)** . Если вы хотите вместо этого использовать первого пользователя, замените его **первым (Users)** . Функция **Patch** знает, что полю **owner** может быть присвоено значение любого из этих двух типов сущностей.
@@ -207,8 +206,8 @@ Patch( Accounts; Gallery1.Selected; { Owner: First( Teams ) } )
 
 1. Выберите скопированный элемент управления **радио** , а затем измените следующие свойства:
 
-    - Элементы: `[ "Users"; "Teams" ]`
-    - Значение по умолчанию: `If( IsType( Gallery1.Selected.Owner; Users ); "Users"; "Teams" )`
+    - Элементы: `[ "Users", "Teams" ]`
+    - Значение по умолчанию: `If( IsType( Gallery1.Selected.Owner, Users ), "Users", "Teams" )`
 
     > [!div class="mx-imgBorder"]
     > ![все элементы, выбранные в переключателе, удалены](media/working-with-references/patch-noall.png) 
@@ -217,9 +216,9 @@ Patch( Accounts; Gallery1.Selected; { Owner: First( Teams ) } )
 
 1. Выберите видимый элемент управления **"поле со списком"** , а затем задайте для свойства **дефаултселектедитемс** следующую формулу:
 
-    ```powerapps-comma
-    If( IsType( Gallery1.Selected.Owner; Users );
-        AsType( Gallery1.Selected.Owner; Users );
+    ```powerapps-dot
+    If( IsType( Gallery1.Selected.Owner, Users ),
+        AsType( Gallery1.Selected.Owner, Users ),
         Blank()
     )
     ```
@@ -233,9 +232,9 @@ Patch( Accounts; Gallery1.Selected; { Owner: First( Teams ) } )
 
 1. Выберите видимый элемент управления **"поле со списком"** для команд, а затем задайте для свойства **дефаултселектедитемс** следующую формулу:
 
-    ```powerapps-comma
-    If( IsType( Gallery1.Selected.Owner; Teams );
-        AsType( Gallery1.Selected.Owner; Teams );
+    ```powerapps-dot
+    If( IsType( Gallery1.Selected.Owner, Teams ),
+        AsType( Gallery1.Selected.Owner, Teams ),
         Blank()
     )
     ```
@@ -247,10 +246,10 @@ Patch( Accounts; Gallery1.Selected; { Owner: First( Teams ) } )
 
 1. Задайте в качестве значения свойства **OnSelect** кнопки следующую формулу:
 
-    ```powerapps-comma
-    Patch( Accounts; Gallery1.Selected;
-        { Owner: If( Radio1_1.Selected.Value = "Users";
-                ComboBox1_2.Selected;
+    ```powerapps-dot
+    Patch( Accounts, Gallery1.Selected,
+        { Owner: If( Radio1_1.Selected.Value = "Users",
+                ComboBox1_2.Selected,
                 ComboBox1_3.Selected ) } )
     ```
 
@@ -294,10 +293,10 @@ Patch( Accounts; Gallery1.Selected; { Owner: First( Teams ) } )
 
 1. Вставьте элемент управления **Label** в настраиваемую карточку, а затем задайте для свойства **Text** метки формулу, которая использовалась в коллекции.
 
-    ```powerapps-comma
-    If( IsType( ThisItem.Owner; Teams );
-        "Team: " & AsType( ThisItem.Owner; Teams ).'Team Name';
-        "User: " & AsType( ThisItem.Owner; Users ).'Full Name' )
+    ```powerapps-dot
+    If( IsType( ThisItem.Owner, Teams ),
+        "Team: " & AsType( ThisItem.Owner, Teams ).'Team Name',
+        "User: " & AsType( ThisItem.Owner, Users ).'Full Name' )
     ```
 
     > [!div class="mx-imgBorder"]
@@ -326,7 +325,7 @@ Patch( Accounts; Gallery1.Selected; { Owner: First( Teams ) } )
 > [!div class="mx-imgBorder"]
 > ![учетных записей, групп, пользователей и контактов на панели «Данные»](media/working-with-references/customer-datasources.png)
 
-Обработка полей **Customer** и **owner** похожа на то, что можно буквально скопировать приложение (**файл**  > **Сохранить как**, а затем указать другое имя) и сделать эти простые замены.
+Обработка полей **Customer** и **owner** похожа на то, что можно буквально скопировать приложение (**файл** > **Сохранить как**, а затем указать другое имя) и сделать эти простые замены.
 
 | Location | Пример **владельца** | Пример **клиента** |
 |----------|-----------|------------------|
@@ -336,14 +335,14 @@ Patch( Accounts; Gallery1.Selected; { Owner: First( Teams ) } )
 | Свойство **Items** коллекции | **Организаций** | **Контакты** |
 | Свойство **Items** формы | **Организаций** | **Контакты** |
 | Первый аргумент **исправления**<br>в свойстве **OnSelect** кнопки | **Организаций** | **Контакты** |
-| Свойство **элементов** переключателя фильтра | **[&nbsp;"все";&nbsp;"Пользователи";&nbsp;"команды"&nbsp;]** | **[&nbsp;"ALL";&nbsp;"Accounts";&nbsp;"Contacts"&nbsp;]** |
-| Свойство **элементов** радио исправления | **["Пользователи"; "команды"]** | **["Accounts"; "Contacts"]** |
+| Свойство **элементов** переключателя фильтра | **[&nbsp;"все",&nbsp;"Пользователи",&nbsp;"команды"&nbsp;]** | **[&nbsp;"ALL",&nbsp;"Accounts",&nbsp;"Contacts"&nbsp;]** |
+| Свойство **элементов** радио исправления | **["Пользователи", "команды"]** | **["Accounts", "Contacts"]** |
 | Свойство **Visible** поля со списком | **"Пользователи"** и **"команды** " | **"Учетные записи"** и **"Контакты"** |
 
 Например, Новая коллекция должна иметь свойство **Items** :
 
-```powerapps-comma
-Filter( Contacts;
+```powerapps-dot
+Filter( Contacts,
     Radio1.Selected.Value = "All"
     Or (Radio1.Selected.Value = "Accounts" And 'Company Name' = ComboBox1.Selected)
     Or (Radio1.Selected.Value = "Contacts" And 'Company Name' = ComboBox1_1.Selected)
@@ -361,11 +360,11 @@ Filter( Contacts;
 
 Оба эти изменения находятся в одной и той же формуле, которая отображается в пользовательской карточке в форме, а также в свойстве **Text** элемента управления Label в галерее:
 
-```powerapps-comma
-If( IsBlank( ThisItem.'Company Name' ); "";
-    IsType( ThisItem.'Company Name'; [@Accounts] );
-        "Account: " & AsType( ThisItem.'Company Name'; [@Accounts] ).'Account Name';
-    "Contact: " & AsType( ThisItem.'Company Name'; [@Contacts] ).'Full Name'
+```powerapps-dot
+If( IsBlank( ThisItem.'Company Name' ), "",
+    IsType( ThisItem.'Company Name', [@Accounts] ),
+        "Account: " & AsType( ThisItem.'Company Name', [@Accounts] ).'Account Name',
+    "Contact: " & AsType( ThisItem.'Company Name', [@Contacts] ).'Full Name'
 )
 ```
 
@@ -397,12 +396,12 @@ If( IsBlank( ThisItem.'Company Name' ); "";
 
 Важное отличие **в том, что оно не** ограничено **учетными записями** и **контактами**. Фактически, список сущностей может быть расширен с помощью пользовательских сущностей. Большая часть приложения может разместить эту точку без изменения, но необходимо обновить формулу для метки в коллекции и в форме:
 
-```powerapps-comma
-If( IsBlank( ThisItem.Regarding ); "";
-    IsType( ThisItem.Regarding; [@Accounts] );
-        "Account: " & AsType( ThisItem.Regarding; [@Accounts] ).'Account Name';
-    IsType( ThisItem.Regarding; [@Contacts] );
-        "Contacts: " & AsType( ThisItem.Regarding; [@Contacts] ).'Full Name';
+```powerapps-dot
+If( IsBlank( ThisItem.Regarding ), "",
+    IsType( ThisItem.Regarding, [@Accounts] ),
+        "Account: " & AsType( ThisItem.Regarding, [@Accounts] ).'Account Name',
+    IsType( ThisItem.Regarding, [@Contacts] ),
+        "Contacts: " & AsType( ThisItem.Regarding, [@Contacts] ).'Full Name',
     ""
 )
 ```
@@ -503,11 +502,11 @@ If( IsBlank( ThisItem.Regarding ); "";
 
 С помощью этой формулы можно отобразить тип записи в элементе управления Label в коллекции:
 
-```powerapps-comma
-If( IsType( ThisItem; [@Faxes] ); "Fax";
-    IsType( ThisItem; [@'Phone Calls'] ); "Phone Call";
-    IsType( ThisItem; [@'Email Messages'] ); "Email Message";
-    IsType( ThisItem; [@Chats] ); "Chat";
+```powerapps-dot
+If( IsType( ThisItem, [@Faxes] ), "Fax",
+    IsType( ThisItem, [@'Phone Calls'] ), "Phone Call",
+    IsType( ThisItem, [@'Email Messages'] ), "Email Message",
+    IsType( ThisItem, [@Chats] ), "Chat",
     "Unknown"
 )
 ```
@@ -517,14 +516,14 @@ If( IsType( ThisItem; [@Faxes] ); "Fax";
 
 **Астипе** также можно использовать для доступа к полям конкретного типа. Например, эта формула определяет тип каждого действия, а для телефонных звонков показывает номер телефона и направление вызова из сущности **номера телефона** :
 
-```powerapps-comma
-If( IsType( ThisItem; [@Faxes] ); "Fax";
-    IsType( ThisItem; [@'Phone Calls'] );
+```powerapps-dot
+If( IsType( ThisItem, [@Faxes] ), "Fax",
+    IsType( ThisItem, [@'Phone Calls'] ),
        "Phone Call: " &
-       AsType( ThisItem; [@'Phone Calls'] ).'Phone Number' &
-       " (" & AsType( ThisItem; [@'Phone Calls'] ).Direction & ")";
-    IsType( ThisItem; [@'Email Messages'] ); "Email Message";
-    IsType( ThisItem; [@Chats] ); "Chat";
+       AsType( ThisItem, [@'Phone Calls'] ).'Phone Number' &
+       " (" & AsType( ThisItem, [@'Phone Calls'] ).Direction & ")",
+    IsType( ThisItem, [@'Email Messages'] ), "Email Message",
+    IsType( ThisItem, [@Chats] ), "Chat",
     "Unknown"
 )
 ```
@@ -560,7 +559,7 @@ If( IsType( ThisItem; [@Faxes] ); "Fax";
 >
 > Однако доступна связь Обратная **заметка** один ко многим, поэтому можно отфильтровать список заметок для записи, для которой разрешены вложения. Можно также использовать функцию « [**связать**](functions/function-relate-unrelate.md) » для добавления примечания к таблице **примечаний** записи, но сначала необходимо создать Примечание, как в следующем примере:
 >
->`Relate( ThisItem.Notes; Patch( Notes; Defaults( Notes ); { Title: "A new note" } ) )`
+>`Relate( ThisItem.Notes, Patch( Notes, Defaults( Notes ), { Title: "A new note" } ) )`
 
 ## <a name="activity-parties"></a>Стороны действий
 

@@ -1,6 +1,6 @@
 ---
 title: Функции Calendar и Clock | Документация Майкрософт
-description: Справочные сведения о функциях Calendar и Clock в PowerApps, включая описание синтаксиса и примеры.
+description: Справочные сведения по функциям календаря и часов в Power Apps, включая синтаксис и примеры
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,22 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a4b3540d8a7d499d4da1206f70298ea4a2541b16
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 62a500ad6e39451a3fb62932b9eeafb1d38f772a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985442"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679392"
 ---
 # <a name="calendar-and-clock-functions-in-powerapps"></a>Функции Calendar и Clock в PowerApps
 Извлекает сведения о дате и времени для текущего значения языкового стандарта.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функции **Calendar** и **Clock** представляют собой набор функций, получающих сведения о текущем языковом стандарте.
 
 Эти функции можно использовать для отображения значений даты и времени на языке текущего пользователя.  Таблицы с одним столбцом, возвращаемые функциями **Calendar** и **Clock**, могут использоваться непосредственно со свойством **[Items](../controls/properties-core.md)** элементов управления раскрывающегося меню и списка.
 
-| Функция | Описание |
+| Функция | Description |
 | --- | --- |
 | **Calendar.MonthsLong()** |Таблица с одним столбцом, которая содержит полные названия месяцев, начиная с "January" (январь). |
 | **Calendar.MonthsShort()** |Таблица с одним столбцом, которая содержит краткие названия месяцев, начиная с "Jan" (январь). |
@@ -64,7 +64,7 @@ ms.locfileid: "71985442"
 
 В Соединенных Штатах, если функция **[Language](function-language.md)** возвращает значение "en-US", то функции **Calendar** возвращают следующие результаты:
 
-| Формула | Описание | Возвращаемый результат |
+| Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
 | **Calendar.MonthsLong()** |Возвращаемое значение содержит полное название каждого месяца, начиная с "Январь". |[ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ] |
 | **Calendar.MonthsShort()** |Возвращаемое значение содержит сокращенное название каждого месяца, начиная с "Январь". |[ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ] |

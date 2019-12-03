@@ -1,6 +1,6 @@
 ---
 title: Создание приложения на основе холста из шаблона | Документы Майкрософт
-description: Пошаговые инструкции по созданию приложения на основе холста автоматически на базе шаблона PowerApps.
+description: Пошаговые инструкции по автоматическому созданию приложения Canvas на основе шаблона Power Apps.
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e127aa75d0d99a80fab5532efd555eb00b7262de
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: eac22ce84d5864e79c2964d42ffa5fe37853bc97
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73537020"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676256"
 ---
 # <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>Создание приложения на основе холста из шаблона в PowerApps
 
@@ -26,7 +26,7 @@ ms.locfileid: "73537020"
 
 Для создания приложения на основе шаблона требуется облачная учетная запись хранения (например, DropBox, OneDrive или Google Диск), в которой будет храниться образец данных шаблона.
 
-Если у вас нет лицензии на PowerApps, вы можете [зарегистрироваться для получения бесплатной версии](../signup-for-powerapps.md).
+Если у вас нет лицензии на Power Apps, вы можете [зарегистрироваться бесплатно](../signup-for-powerapps.md).
 
 ## <a name="create-an-app"></a>Создание приложения
 
@@ -42,7 +42,7 @@ ms.locfileid: "73537020"
 
 4. В списке шаблонов выберите желаемый вариант и щелкните или коснитесь **Использовать** (в правом нижнем углу).
 
-    ![Открытие шаблона PowerApps](./media/get-started-test-drive/open-template.png)
+    ![Открытие шаблона Power Apps](./media/get-started-test-drive/open-template.png)
 
     В учетную запись облачного хранилища копируются образцы данных, затем создается приложение и отображается его домашняя страница.
 

@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f704b96150b0021b7170fc095cc6561cd3aac908
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 44c94a712402ef26a4fa6b36d84e287d3fa506e1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987785"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679300"
 ---
 # <a name="accessible-colors-for-canvas-apps-in-powerapps"></a>Цвета высокой контрастности для приложений на основе холста в PowerApps
-Используемые в приложении на основе холста цвета должны восприниматься пользователями с цветовой слепотой и (или) слабым зрением. Все темы PowerApps по умолчанию имеют высокий уровень контрастности. Если вы решите изменить цвета в приложении, соблюдайте эти рекомендации, чтобы обеспечить восприятие цветов. В Интернете можно найти ряд инструментов для выявления проблем с контрастностью цветов.
+Используемые в приложении на основе холста цвета должны восприниматься пользователями с цветовой слепотой и (или) слабым зрением. По умолчанию доступны все темы Power Apps. Если вы решите изменить цвета в приложении, соблюдайте эти рекомендации, чтобы обеспечить восприятие цветов. В Интернете можно найти ряд инструментов для выявления проблем с контрастностью цветов.
 
 ## <a name="minimum-contrast-for-text"></a>Минимальная контрастность текста
 * Контрастность между текстом и фоном должна составлять не менее 4.5:1.
@@ -29,7 +29,7 @@ ms.locfileid: "71987785"
 * К выключенному тексту не применяются требования по контрастности.
 
 На практике это означает, что все интерактивные элементы управления должны иметь достаточную контрастность между следующими значениями:
-* **[Color](controls/properties-color-border.md)** и **[Fill](controls/properties-color-border.md)** ;
+* **[Color](controls/properties-color-border.md)** и **[Fill](controls/properties-color-border.md)**
 * **[PressedColor](controls/properties-color-border.md)** и **[PressedFill](controls/properties-color-border.md)** ;
 * **[HoverColor](controls/properties-color-border.md)** и **[HoverFill](controls/properties-color-border.md)** .
 
@@ -55,7 +55,7 @@ ms.locfileid: "71987785"
 * **[HoverFill](controls/properties-color-border.md)** и цвета за его пределами.
 
 ### <a name="graphical-objects"></a>Графические объекты
-Если изображение содержит важные сведения, мы рекомендуем применить к нему требования к контрастности. Это относится к элементам управления, в которых можно отобразить изображение: **[Аудио](controls/control-audio-video.md)** , **[изображение](controls/control-image.md)** , **[микрофон](controls/control-microphone.md)** и **[видео](controls/control-audio-video.md)** .
+Если изображение содержит важные сведения, мы рекомендуем применить к нему требования к контрастности. Это относится к элементам управления, которые могут отображать изображения: **[Audio](controls/control-audio-video.md)** , **[Image](controls/control-image.md)** , **[Microphone](controls/control-microphone.md)** или **[Video](controls/control-audio-video.md)** .
 
 Также мы рекомендуем проверить контрастность для видео. Вместо этого или в дополнение к этому можно также предоставить [скрытые субтитры](controls/control-audio-video.md) с описанием видео.
 
@@ -65,4 +65,4 @@ ms.locfileid: "71987785"
 Чтобы передать такие сообщения, можно использовать дополнительные подсказки, например **[значки](controls/control-shapes-icons.md)** , или стили текста, такие как **[курсив](controls/properties-text.md)** и **[подчеркивание](controls/properties-text.md)** .
 
 ## <a name="next-steps"></a>Дальнейшие действия
-Узнайте больше о [свойствах специальных возможностей](controls/properties-accessibility.md) в элементах управления PowerApps и воспользуйтесь [проверкой читаемости](accessibility-checker.md).
+Узнайте о [свойствах специальных возможностей](controls/properties-accessibility.md) в элементах управления Power Apps и попробуйте [воспользоваться средством проверки специальных возможностей](accessibility-checker.md).

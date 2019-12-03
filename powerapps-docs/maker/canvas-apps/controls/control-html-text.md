@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d514342bc51cdd6aa737da1b893530d702127bd1
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: ed104f5ae4e7244e5a49b6cbc67745fd2f9e24dc
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650471"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678610"
 ---
 # <a name="html-text-control-in-powerapps"></a>Элемент управления "HTML-текст" в PowerApps
 Поле, в котором отображается текст, а HTML-теги преобразуются в форматирование.
@@ -76,7 +75,7 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Find**(*текст_для_поиска*; *в_тексте*)](../functions/function-find.md)
+[**Find**(*текст_для_поиска*, *в_тексте*)](../functions/function-find.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **[Метка](control-text-box.md)** , назовите его **Source** и укажите в качестве значения свойства **[Text](properties-core.md)** следующую строку:
@@ -103,4 +102,4 @@ ms.PowerAppsDecimalTransform: true
 * Должен присутствовать элемент **HtmlText**.
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
-* Элемент **HtmlText** не должен содержать интерактивные элементы, такие как `<button>`, `<a>`, или `<input>`. Система **[TabIndex](properties-accessibility.md)** в PowerApps не обрабатывает элементы в **HtmlText**.
+* Элемент **HtmlText** не должен содержать интерактивные элементы, такие как `<button>`, `<a>`, или `<input>`. Система **[TabIndex](properties-accessibility.md)** в Power Apps не учитывает **элементы внутри.**

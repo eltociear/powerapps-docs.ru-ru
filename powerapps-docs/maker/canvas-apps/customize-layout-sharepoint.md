@@ -13,17 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6b3a33f327aab7e4f02c954dbd31c412e35dd661
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a3afda5686c6b791243126c70b9c6d33762beae0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73539182"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679668"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>Учебник. Настройка коллекции в PowerApps
 
-С помощью этого руководства вы настроите список записей, называемый коллекцией, и внесете ряд других изменений в приложение, автоматически созданное в Microsoft PowerApps. Пользователи смогут управлять данными в приложении и без этих изменений, но настройка с учетом требований вашей организации упростит работу.
+В этом руководстве вы настроите список записей, называемый коллекцией, и вносите другие изменения в приложение, которое было автоматически создано в Microsoft Power Apps. Пользователи смогут управлять данными в приложении и без этих изменений, но настройка с учетом требований вашей организации упростит работу.
 
 Например, коллекция в данном руководстве по умолчанию соответствует этому рисунку. Адрес электронной указан более явно, чем другие типы данных, поэтому пользователи могут выполнять сортировку и фильтрацию содержимого коллекции на основе текста в этом адресе.
 
@@ -42,9 +41,9 @@ ms.PowerAppsDecimalTransform: true
 > * Изменение заголовка экрана.
 > * Включение полосы прокрутки
 
-При работе с этим руководством мы будем использовать приложение, созданное на основе определенного источника данных. Но те же принципы применимы для любого приложения, создаваемого в PowerApps из списка SharePoint, таблицы Excel или других источников данных.
+При работе с этим руководством мы будем использовать приложение, созданное на основе определенного источника данных. Тем не менее те же принципы применяются ко всем приложениям, создаваемым в Power Apps, из списка SharePoint, таблицы Excel или другого источника данных.
 
-Если вы не зарегистрированы в PowerApps, перед началом работы [пройдите бесплатную регистрацию](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+Если вы еще не зарегистрированы в Power Apps, [Зарегистрируйтесь бесплатно](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) , прежде чем начать.
 
 ## <a name="prerequisites"></a>Технические условия
 
@@ -58,7 +57,7 @@ ms.PowerAppsDecimalTransform: true
 
     ![Открытие приложения для изменения](./media/customize-layout-sharepoint/open-app.png)
 
-1. Если отобразится диалоговое окно **Welcome to PowerApps Studio** (Вас приветствует PowerApps Studio), выберите в нем **Пропустить**.
+1. Если откроется диалоговое окно " **Добро пожаловать в Power Apps Studio** ", выберите **пропустить**.
 
 ## <a name="change-the-layout"></a>изменить макета;
 
@@ -96,7 +95,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Скопируйте эту формулу и вставьте ее в строку формул.
 
-    ```SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; Descending; Ascending))```
+    ```SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, Descending, Ascending))```
 
     Эта формула действует следующим образом:
 

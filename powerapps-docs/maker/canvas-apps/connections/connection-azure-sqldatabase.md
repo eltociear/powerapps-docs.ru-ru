@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bcadf4abfd55a317cf67196c9ba2158a001a015a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: eed7a0bd6b9ee269877b6dfe4fcfd5bc6c56e3af
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541139"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678817"
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>Подключение к SQL Server из PowerApps
 ![Значок SQL Server](./media/connection-azure-sqldatabase/sqlicon.png)
@@ -27,7 +27,7 @@ ms.locfileid: "73541139"
 
 ## <a name="prerequisites"></a>Технические условия
 
-* [Зарегистрируйтесь](../../signup-for-powerapps.md) в PowerApps, а затем [войдите в систему](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), указав учетные данные, использованные при регистрации.
+* [Зарегистрируйтесь](../../signup-for-powerapps.md) в Power Apps, а затем выполните [Вход](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) , указав те же учетные данные, которые использовались для регистрации.
 * Соберите следующие сведения о базе данных, которая содержит по крайней мере одну таблицу с первичным ключом:
   
   * имя базы данных;
@@ -42,7 +42,7 @@ ms.locfileid: "73541139"
   > Пользователь может создавать и использовать шлюзы и локальные подключения только в своей [среде по умолчанию](../working-with-environments.md).
 
 ## <a name="generate-an-app-automatically"></a>Автоматическое создание приложения
-1. В PowerApps Studio выберите **Создать** в меню **Файл** (у левого края экрана).
+1. В Power Apps Studio щелкните **создать** в меню **файл** (вдоль левого края).
    
     ![Пункт "Создать" в меню "Файл"](./media/connection-azure-sqldatabase/file-new.png)
 2. В разделе **Начать с данных** выберите стрелку вправо в конце строки соединителей.
@@ -64,7 +64,7 @@ ms.locfileid: "73541139"
 6. Нажмите кнопку **Подключиться**.
 7. Выберите вариант в полях **Выбрать набор данных** и **Выбрать таблицу**, затем нажмите кнопку **Подключиться**.
    
-    PowerApps создает приложение, которое отображает данные в трех окнах. Эвристика предлагает данные для отображения, но вы можете настроить пользовательский интерфейс по своему усмотрению.
+    Power Apps создает приложение, которое показывает данные на трех экранах. Эвристика предлагает данные для отображения, но вы можете настроить пользовательский интерфейс по своему усмотрению.
 8. Настройте приложение, используя методики, описанные в статье о [создании приложения из Excel](../get-started-create-from-data.md). Начните настройку с изменения макета приложения.
 
 ## <a name="build-an-app-from-scratch"></a>Создание приложения с нуля
@@ -88,7 +88,7 @@ ms.locfileid: "73541139"
 6. Создайте приложение, используя методики, описанные в статье о [создании приложения с нуля](../get-started-create-from-blank.md).
 
 ## <a name="update-an-existing-app"></a>Обновление существующего приложения
-1. В PowerApps Studio откройте приложение, которое нужно обновить.
+1. В Power Apps Studio откройте приложение, которое требуется обновить.
 2. Откройте вкладку **Представление** и выберите пункт **Источники данных**.
 3. На панели справа выберите команду **Добавить источник данных**.
    

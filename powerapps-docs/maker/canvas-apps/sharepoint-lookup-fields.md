@@ -1,6 +1,6 @@
 ---
 title: Создание связи между списками SharePoint с помощью поля подстановки в приложении на основе холста | Документы Майкрософт
-description: Создание связи между списками SharePoint с помощью поля подстановки в приложении на основе холста в PowerApps.
+description: В Power Apps создайте связь между списками SharePoint с помощью поля подстановки в приложении Canvas.
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2c1cce350c394d2809de4c3354b7b471af987236
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bef5a66569a201a76c36da9b1e828169df7f3cb9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541403"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674825"
 ---
 # <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-powerapps"></a>Как связать списки SharePoint с помощью поля подстановки в PowerApps
 
@@ -96,7 +96,7 @@ SharePoint предоставляет два типа полей подстан�
 ## <a name="create-an-app-from-the-assets-list"></a>Создание приложения из списка "Ресурсы"
 Это приложение позволяет добавлять данные в список **Ресурсы**.
 
-1. [Войдите в PowerApps Studio](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Если вы еще не работали в PowerApps, [зарегистрируйтесь для получения бесплатной версии](https://powerapps.microsoft.com), используя адрес электронной почты организации.
+1. [Войдите в Power Apps Studio](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Если вы не знакомы с Power Apps, [Зарегистрируйтесь бесплатно](https://powerapps.microsoft.com) , используя свой адрес электронной почты организации.
 
 2. В меню **Файл** (с левой стороны) щелкните **Создать**, а затем выберите **SharePoint**.
 

@@ -1,5 +1,5 @@
 ---
-title: Настройка списков интеграции SharePoint Online с PowerApps, Power автоматизиру и Power BI | Документация Майкрософт
+title: Настройка списков интеграции SharePoint Online с Power Apps, Power автоматизиру и Power BI | Документация Майкрософт
 description: В этом примере мы настроим списки SharePoint, чтобы использовать их в качестве источника данных для приложений, потоков, отчетов и панелей мониторинга.
 author: NickWaggoner
 manager: kvivek
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ec34399818120464a2ad2caca5834baa87d8a25c
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: c1b2e7dc4bb3f56983ddcdec39ecf7d37a283754
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899172"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674720"
 ---
-# <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-power-automate-and-power-bi"></a>Настройка списков интеграции SharePoint Online с PowerApps, Power автоматизиру и Power BI
+# <a name="set-up-lists-for-sharepoint-online-integration-with-power-apps-power-automate-and-power-bi"></a>Настройка списков интеграции SharePoint Online с Power Apps, Power автоматизиру и Power BI
 > [!NOTE]
-> Эта статья является частью серии руководств по использованию PowerApps, автоматизации Powering и Power BI с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
+> Эта статья входит в серию руководств по использованию Power Apps, Power автоматизиру и Power BI с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
 
 Хотя в SharePoint доступно много функций для обеспечения общего доступа и совместной работы, сейчас мы сосредоточимся на одной из них — [списках SharePoint](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7). Список — это коллекция данных с возможностью совместного использования с участниками группы и другими пользователями сайта. Сначала мы рассмотрим возможности списков, используемых в этом сценарии, а затем создадим их на сайте SharePoint Online.
 
@@ -40,7 +40,7 @@ ms.locfileid: "73899172"
 | Approved |Однострочный текст |Значения: в ожидании, да, нет. |
 
 > [!NOTE]
-> Также мы используем скрытый по умолчанию столбец **ID**, который автоматически создается в SharePoint. Для простоты мы будем использовать базовые типы данных. Но в реальных приложениях могут использоваться более сложные типы, например **пользователь или группа** для столбца **Requestor**. Сведения о типах данных, поддерживаемых в PowerApps, см. в статье [Подключение Microsoft PowerApps к SharePoint](connections/connection-sharepoint-online.md#known-issues).
+> Также мы используем скрытый по умолчанию столбец **ID**, который автоматически создается в SharePoint. Для простоты мы будем использовать базовые типы данных. Но в реальных приложениях могут использоваться более сложные типы, например **пользователь или группа** для столбца **Requestor**. Сведения о типах данных, поддерживаемых Power Apps, см. [в статье подключение из Microsoft Power apps к SharePoint](connections/connection-sharepoint-online.md#known-issues).
 
 Второй список — **Project Details** (Сведения о проекте), в котором отслеживаются сведения обо всех утвержденных проектах (например, о назначенном руководителе проекта).
 
@@ -112,15 +112,15 @@ ms.locfileid: "73899172"
 
 ### <a name="update-connections-for-the-sample-apps"></a>Обновление подключения для примеров приложений
 
-1. В [PowerApps Studio](https://create.powerapps.com/studio/) нажмите **Открыть** в области слева. 
+1. В [Power Apps Studio](https://create.powerapps.com/studio/)щелкните **Открыть** в левой области. 
 
 2. Выберите **Обзор**, затем откройте скачанный ранее файл **project-management-app.msapp**.
 
-3. Щелкните **Allow** (Разрешить), чтобы служба PowerApps могла использовать SharePoint.
+3. Щелкните **Разрешить**, чтобы приложения Power Apps могли использовать SharePoint.
 
 4. На ленте откройте вкладку **View** (Представление) и щелкните **Data sources** (Источники данных).
 
-    ![Источники данных в PowerApps](./media/sharepoint-scenario-setup/01-03-01-data-sources.png)
+    ![Источники данных Power Apps](./media/sharepoint-scenario-setup/01-03-01-data-sources.png)
 5. На панели **Данные** нажмите символ многоточия ( **...** ) рядом с элементом **Сведения о проекте**, а затем выберите **Удалить**.
    
     ![Удаление источника данных "Project Details"](./media/sharepoint-scenario-setup/01-03-02-remove.png)
@@ -128,7 +128,7 @@ ms.locfileid: "73899172"
    
     ![Добавление источника данных](./media/sharepoint-scenario-setup/01-03-03-add.png)
 
-7. Есть два способа подключиться к списку. Выбор способа зависит от того, установлено ли подключение PowerApps к SharePoint. 
+7. Мы покажем вам два способа подключения к списку в зависимости от того, установлено ли в Power Apps подключение SharePoint. 
 
     * Если подключение SharePoint уже отображается, выберите его.
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9f7349faf01d2270427c8cd5862a55e413033023
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: f7e1b4ff10a12d454380c394b2f6ae64389bc23e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650392"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679737"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>Элемент управления "Средство просмотра PDF" (экспериментальная функция) в PowerApps
 Экспериментальный элемент управления, отображающий содержимое PDF-файла.
@@ -27,7 +27,7 @@ ms.locfileid: "73650392"
 Для отображения текста, рисунков и прочего содержимого PDF-файла добавьте этот элемент управления и укажите для его свойства **Document** URL-адрес нужного файла, заключив его в двойные кавычки.
 
 ## <a name="limitations"></a>Ограничений
-1. Архитектура безопасности PowerApps требует, чтобы средство просмотра PDF поддерживало только HTTPS-ссылки, а не HTTP.  
+1. Архитектура безопасности Power Apps требует, чтобы средство просмотра PDF поддерживало только HTTPS-ссылки, а не HTTP.  
 
 2. Свойство **документа** должно ссылаться непосредственно на PDF-файл. Перенаправления сервера или HTML-представления документа не поддерживаются.
 

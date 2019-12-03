@@ -1,6 +1,6 @@
 ---
 title: Внедрение приложения в группы | Документация Майкрософт
-description: Вы можете внедрить приложение, созданное в PowerApps в Microsoft Teams, чтобы поделиться им.
+description: Вы можете внедрить приложение, созданное в Power Apps, в Microsoft Teams, чтобы поделиться им.
 author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e2cce61533bf86063d907882024a5a83c2e03fb7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0b8750733ac6c97d1669c1063700a3d075fbabbe
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73539002"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678495"
 ---
 # <a name="embed-an-app-in-teams"></a>Внедрение приложения в Teams
 
-Вы можете поделиться созданной вами PowerApps, внедрив ее непосредственно в Microsoft Teams. По завершении пользователи могут выбрать **+** , чтобы добавить приложение в любой канал **команды или** беседы в группе, в которой вы являетесь. Приложение отображается в виде плитки в разделе **вкладок команды**.
+Вы можете поделиться созданными вами приложениями для управления питанием, внедрив его непосредственно в Microsoft Teams. По завершении пользователи могут выбрать **+** , чтобы добавить приложение в любой канал **команды или** беседы в группе, в которой вы являетесь. Приложение отображается в виде плитки в разделе **вкладок команды**.
 
 Администратор может отправить приложение, чтобы оно выводилось для **всех** команд в вашем клиенте в **разделе все вкладки**. См. раздел [совместное использование приложения в Microsoft Teams](https://docs.microsoft.com/power-platform/admin/embed-app-teams).
 
@@ -31,7 +31,7 @@ ms.locfileid: "73539002"
 
 ## <a name="prerequisites"></a>Технические условия
 
-- Требуется действительная [Лицензия PowerApps](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus).
+- Вам потребуется действительная [Лицензия на Power Apps](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus).
 - Чтобы внедрить приложение в команды, вам потребуется существующее приложение, [созданное с помощью PowerApps](data-platform-create-app.md).
 
 ## <a name="download-the-app"></a>Скачать приложение
@@ -44,7 +44,7 @@ ms.locfileid: "73539002"
 
     ![Сведения о приложении](./media/embed-teams-app/add-to-teams.png "Добавить в команды")
 
-3. На панели добавить в команды выберите **скачать**. Затем PowerApps создаст файл манифеста команд, используя описание приложения и логотип, которые вы уже задали в своем приложении.
+3. На панели добавить в команды выберите **скачать**. Затем Power Apps создаст файл манифеста команд, используя описание приложения и логотип, которые вы уже задали в своем приложении.
 
     ![Сведения о приложении](./media/embed-teams-app/download-app.png "Скачать приложение")
 

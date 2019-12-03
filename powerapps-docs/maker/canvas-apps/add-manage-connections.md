@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e8f40f9cd3b15dddfd9fdadbcd15495e33464967
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5eb7bac0197856988f344ae2779bf2b43d1f797f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540897"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679990"
 ---
 # <a name="manage-canvas-app-connections-in-powerapps"></a>Управление подключениями из приложений на основе холста в PowerApps
 На сайте [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) можно создать или удалить подключение к одному или нескольким источникам данных, а также обновить для него учетные данные.
@@ -39,7 +39,7 @@ ms.locfileid: "73540897"
 2. Войдите в [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), используя те же учетные данные, которые вы ввели при регистрации.
 
 ## <a name="background-on-data-connections"></a>Основные сведения о подключениях к данным
-Большинство приложений PowerApps используют внешние сведения (**источники данных**), хранящиеся в облачных службах. Типичный пример — это таблица в файле Excel, который хранится в службе OneDrive для бизнеса. Приложения получают доступ к источникам данных с помощью **подключений**.
+Большинство приложений Power Apps используют внешние сведения, называемые **источниками данных** , которые хранятся в облачных службах. Типичный пример — это таблица в файле Excel, который хранится в службе OneDrive для бизнеса. Приложения получают доступ к источникам данных с помощью **подключений**.
 
 Самый распространенный вид источников данных — это таблица, которую можно использовать для получения и хранения информации. Подключения к источникам можно использовать для чтения и записи данных в книгах Microsoft Excel, списках SharePoint, таблицах SQL и во многих ресурсах других форматов, которые могут храниться в облачных службах, таких как OneDrive для бизнеса, DropBox, SQL Server и другие.
 
@@ -54,7 +54,7 @@ ms.locfileid: "73540897"
 * Откройте приложение, которое создал и к которому [предоставил вам доступ](share-app.md) другой пользователь.
 
 > [!NOTE]
-> В PowerApps Studio можно открыть меню **Файл** и выбрать пункт **Подключения**. Откроется сайт [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), на котором можно создавать подключения и управлять ими.
+> Если вместо этого вы хотите использовать Power Apps Studio, откройте меню **файл** , а затем выберите **подключения**. [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) откроется, чтобы можно было создавать подключения и управлять ими.
 
 ## <a name="create-a-new-connection"></a>Создание подключения
 1. Если вы еще не сделали этого, войдите на сайт [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).

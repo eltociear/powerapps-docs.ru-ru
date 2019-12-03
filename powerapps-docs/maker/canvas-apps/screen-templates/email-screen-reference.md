@@ -13,17 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7663668b77c6f8186ef54c3182230fa843f86577
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 7226433c5e95537346841f2e2f9474ea68e42dda
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995691"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675091"
 ---
 # <a name="reference-information-about-the-email-screen-template-for-canvas-apps"></a>Справочные сведения о шаблоне экрана электронной почты для приложений Canvas
 
-Для приложений Canvas в PowerApps изучите, как каждый важный элемент управления в шаблоне на экране электронной почты влияет на общую функциональность экрана по умолчанию. Этот подробный обзор содержит формулы поведения и значения других свойств, определяющих реакцию элементов управления на вводимые пользователем данные. Подробное описание функциональных возможностей этого экрана по умолчанию см. в [обзоре электронной почты](email-screen-overview.md).
+Для приложений Canvas в Power Apps необходимо понять, как каждый важный элемент управления в шаблоне на экране электронной почты влияет на общую функциональность экрана по умолчанию. Этот подробный обзор содержит формулы поведения и значения других свойств, определяющих реакцию элементов управления на вводимые пользователем данные. Подробное описание функциональных возможностей этого экрана по умолчанию см. в [обзоре электронной почты](email-screen-overview.md).
 
 В этом разделе описываются некоторые важные элементы управления и объясняются выражения или формулы, в которых задаются различные свойства (например, **элементы** и **OnSelect**) этих элементов управления.
 
@@ -53,12 +52,12 @@ ms.PowerAppsDecimalTransform: true
 
 Элемент управления " **Добавление значка** " позволяет пользователям приложений добавлять пользователей, которые не существуют в Организации, в список получателей создаваемого сообщения электронной почты.
 
-* Свойства **Ярлык**<br>
-    Значений Логика для отображения элемента управления только в том случае, если пользователь вводит в поле поиска допустимый адрес электронной почты:
+* Свойство: **Visible**<br>
+    Значение: логика для отображения элемента управления, только если пользователь вводит в поле поиска допустимый адрес электронной почты:
 
-    ```powerapps-comma
+    ```powerapps-dot
     !IsBlank( TextSearchBox.Text ) &&
-        IsMatch( TextSearchBox.Text; Match.Email ) &&
+        IsMatch( TextSearchBox.Text, Match.Email ) &&
         Not( Trim( TextSearchBox.Text ) in MyPeople.UserPrincipalName )
     ```
   Построчно, приведенный выше блок кода говорит о том, что элемент управления " **Добавление значка** " будет виден только в том случае, если:
@@ -67,17 +66,17 @@ ms.PowerAppsDecimalTransform: true
     * Текст в **текстсеарчбокс** является допустимым адресом электронной почты.
     * Текст в **текстсеарчбокс** еще не существует в коллекции **мипеопле** .
 
-* Свойства **OnSelect**<br>
-    Значений При выборе этого варианта в коллекцию **мипеопле** добавляется допустимый адрес электронной почты. Эта коллекция используется на экране в качестве списка получателей:
+* Свойство: **OnSelect**<br>
+    Значение: при выборе этого параметра в коллекцию **мипеопле** добавляется допустимый адрес электронной почты. Эта коллекция используется на экране в качестве списка получателей:
 
-    ```powerapps-comma
-    Collect( MyPeople;
+    ```powerapps-dot
+    Collect( MyPeople,
         { 
-            DisplayName: TextSearchBox.Text; 
-            UserPrincipalName: TextSearchBox.Text; 
+            DisplayName: TextSearchBox.Text, 
+            UserPrincipalName: TextSearchBox.Text, 
             Mail: TextSearchBox.Text
         }
-    );;
+    );
     Reset( TextSearchBox )
     ```
   
@@ -87,43 +86,43 @@ ms.PowerAppsDecimalTransform: true
 
    ![Элемент управления Пеоплебровсегаллери](media/email-screen/email-browse-gall.png)
 
-* Свойства **Файлов**<br>
-    Значений 15 лучших результатов поиска искомого текста, введенного в элемент управления **текстсеарчбокс** :
+* Свойство: **элементы**<br>
+    Значение: 15 лучших результатов поиска искомого текста, введенного в элемент управления **текстсеарчбокс** :
     
-    ```powerapps-comma
-    If( !IsBlank( Trim(TextSearchBox.Text ) ); 
-        'Office365Users'.SearchUser( {searchTerm: Trim( TextSearchBox.Text ); top: 15} )
+    ```powerapps-dot
+    If( !IsBlank( Trim(TextSearchBox.Text ) ), 
+        'Office365Users'.SearchUser( {searchTerm: Trim( TextSearchBox.Text ), top: 15} )
     )
     ```
 
   Элементы этой коллекции заполняются результатами поиска из операции [Office 365. сеарчусер](https://docs.microsoft.com/connectors/office365users/#searchuser) . Операция принимает текст в `Trim(TextSearchBox)` в качестве условия поиска и возвращает 15 лучших результатов, основанных на этом поиске.
   
-  **Текстсеарчбокс** заключен в функцию `Trim()`, так как поиск пользователя в пробелах является недопустимым. Операция `Office365Users.SearchUser` заключается в функции `If(!IsBlank(Trim(TextSearchBox.Text)) ... )`, что означает, что операция выполняется только в том случае, если поле поиска содержит текст, указанный пользователем. Это повышает производительность. 
+  **Текстсеарчбокс** заключен в функцию `Trim()`, так как поиск пользователя в пробелах является недопустимым. Операция `Office365Users.SearchUser` упаковывается в функцию `If(!IsBlank(Trim(TextSearchBox.Text)) ... )`, что означает, что операция выполняется только в том случае, если поле поиска содержит текст, указанный пользователем. Это повышает производительность. 
 
 ### <a name="people-browse-gallery-title-control"></a>Элемент управления заголовка коллекции людей
 
    ![Элемент управления "заголовок Пеоплебровсегаллери"](media/email-screen/email-browse-gall-title.png)
 
-* Свойства **Текст**<br>
+* Свойство: **текст**<br>
     Значение: `ThisItem.DisplayName`
 
   Отображает отображаемое имя пользователя из профиля Office 365.
 
-* Свойства **OnSelect**<br>
-    Значений Код, чтобы добавить пользователя в коллекцию уровня приложения, а затем выберите пользователя:
+* Свойство: **OnSelect**<br>
+    Значение: код для добавления пользователя в коллекцию уровня приложения, а затем выберите пользователя:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Concurrent(
-        Set( _selectedUser; ThisItem );
-        Reset( TextSearchBox );
-        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ); 
-            Collect( MyPeople; ThisItem )
+        Set( _selectedUser, ThisItem ),
+        Reset( TextSearchBox ),
+        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ), 
+            Collect( MyPeople, ThisItem )
         )
     )
     ```
 Выбор этого элемента управления делает три вещи одновременно:
 
-   * Задает переменную **_selectedUser** для выбранного элемента.
+   * Задает **_selectedUserую** переменную для выбранного элемента.
    * Сбрасывает условие поиска в **текстсеарчбокс**.
    * Добавляет выбранный элемент в коллекцию **мипеопле** , коллекцию всех выбранных пользователей, которые экран электронной почты использует в качестве набора получателей.
 
@@ -131,27 +130,27 @@ ms.PowerAppsDecimalTransform: true
 
    ![Элемент управления Емаилпеоплегаллери](media/email-screen/email-people-gall.png)
 
-* Свойства **Файлов**<br>
+* Свойство: **элементы**<br>
     Значение: `MyPeople`
 
   Это коллекция пользователей, инициализированных или добавленных в, путем выбора элемента управления **заголовка пеоплебровсегаллери** .
 
-* Свойства **Равно**<br>
-    Значений Логика для задания высоты на основе числа элементов в коллекции в данный момент:
+* Свойство: **Высота**<br>
+    Значение: логика для задания высоты в зависимости от числа элементов в коллекции.
 
-    ```powerapps-comma
+    ```powerapps-dot
     Min( 
         ( EmailPeopleGallery.TemplateHeight + EmailPeopleGallery.TemplatePadding * 2) *
-            RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2; 0 );
+            RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2, 0 ),
         304
     )
     ```
 
   Высота этой коллекции корректируется на число элементов в коллекции с максимальной высотой 304.
   
-  Она принимает `TemplateHeight + TemplatePadding * 2` в качестве общей высоты одной строки **емаилпеоплегаллери**, а затем умножает ее на число строк. Начиная с `WrapCount = 2`, число истинных строк равно `RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2; 0)`.
+  Она занимает `TemplateHeight + TemplatePadding * 2` как общая высота одной строки **емаилпеоплегаллери**, а затем умножает ее на число строк. С момента `WrapCount = 2`число истинных строк равно `RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2, 0)`.
 
-* Свойства **шовскроллбар**<br>
+* Свойство: **шовскроллбар**<br>
     Значение: `EmailPeopleGallery.Height >= 304`
   
   Когда высота коллекции достигает 304, отображается полоса прокрутки.
@@ -160,46 +159,46 @@ ms.PowerAppsDecimalTransform: true
 
    ![Элемент управления "заголовок Емаилпеоплегаллери"](media/email-screen/email-people-gall-text.png)
 
-* Свойства **OnSelect**<br>
-    Значение: `Set(_selectedUser; ThisItem)`
+* Свойство: **OnSelect**<br>
+    Значение: `Set(_selectedUser, ThisItem)`
 
-  Задает переменную **_selectedUser** для элемента, выбранного в **емаилпеоплегаллери**.
+  Задает **_selectedUser** переменную для элемента, выбранного в **емаилпеоплегаллери**.
 
 ### <a name="email-people-gallery-iconremove-control"></a>Элемент управления Иконремове коллекции пользователей электронной почты
 
    ![Элемент управления "заголовок Монсдайгаллери"](media/email-screen/email-people-gall-delete.png)
 
-* Свойства **OnSelect**<br>
-    Значение: `Remove( MyPeople; LookUp( MyPeople; UserPrincipalName = ThisItem.UserPrincipalName ) )`
+* Свойство: **OnSelect**<br>
+    Значение: `Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) )`
 
   Выполняет поиск записи в коллекции **мипеопле** , где **userPrincipalName** соответствует **userPrincipalName** выбранного элемента, и удаляет эту запись из коллекции.
 
 ## <a name="mail-icon"></a>Значок почты
 
-* Свойства **OnSelect**<br>
-    Значений Логика для отправки сообщения электронной почты пользователя:
+* Свойство: **OnSelect**<br>
+    Значение: логика для отправки сообщения электронной почты пользователя:
 
-    ```powerapps-comma
-    Set( _emailRecipientString; Concat( MyPeople; Mail & ";" ) );;
-    'Office365'.SendEmail( _emailRecipientString; 
-        TextEmailSubject.Text;  
-        TextEmailMessage.Text; 
+    ```powerapps-dot
+    Set( _emailRecipientString, Concat( MyPeople, Mail & ";" ) );
+    'Office365'.SendEmail( _emailRecipientString, 
+        TextEmailSubject.Text,  
+        TextEmailMessage.Text, 
         { Importance:"Normal" }
-    );;
-    Reset( TextEmailSubject );;
-    Reset( TextEmailMessage );;
+    );
+    Reset( TextEmailSubject );
+    Reset( TextEmailMessage );
     Clear( MyPeople )
     ```
 
   Для отправки сообщения электронной почты требуется строка адресов электронной почты, разделенная точкой с запятой. В приведенном выше коде:
-  1. Первая строка кода принимает поле **mail** из всех строк в коллекции **мипеопле** , объединяет их в одну строку адресов электронной почты, разделенных точкой с запятой, и присваивает переменной **_emailRecipientString** значение этой строки. значений.
+  1. Первая строка кода принимает поле « **почта** » из всех строк в коллекции **мипеопле** , объединяет их в одну строку адресов электронной почты, разделенных точкой с запятой, и присваивает переменной **_emailRecipientString** значение этого строкового значения.
 
   1. Затем он использует операцию [Office 365. SendEmail](https://docs.microsoft.com/connectors/office365/#sendemail) , чтобы отправить сообщение получателям по электронной почте.
     Операция имеет три обязательных **параметра:,** , **subject**и **Body**, а также один необязательный параметр —**важность**. В приведенном выше коде это **_emailRecipientString**, **текстемаилсубжект**. Текст, **текстемаилмессаже**. Текст и **обычные**соответственно.
   1. Наконец, он сбрасывает элементы управления **текстемаилсубжект** и **текстемаилмессаже** и очищает коллекцию **мипеопле** .
 
-* Свойства **DisplayMode**<br>
-    Значений `If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ); DisplayMode.Edit; DisplayMode.Disabled )` для отправки сообщения электронной почты строка темы электронной почты должна содержать текст, а коллекция получателей (**мипеопле**) не должна быть пустой.
+* Свойство: **DisplayMode**<br>
+    Значение: `If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ), DisplayMode.Edit, DisplayMode.Disabled )` для отправки сообщения электронной почты строка темы электронной почты должна содержать текст, а коллекция получателей (**мипеопле**) не должна быть пустой.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

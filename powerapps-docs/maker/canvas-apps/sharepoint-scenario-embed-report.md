@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1ab23d8b71d36346d2013ac3b988eb2d058e2324
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 8363f6ca03f80fe9f082e05c5d28dc8ba5f7e7f0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73898434"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674752"
 ---
 # <a name="embed-the-power-bi-project-report-in-sharepoint-online"></a>Внедрение отчета о проекте Power BI в SharePoint Online
 > [!NOTE]
-> Эта статья является частью серии руководств по использованию PowerApps, автоматизации Powering и Power BI с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
+> Эта статья входит в серию руководств по использованию Power Apps, Power автоматизиру и Power BI с SharePoint Online. Обязательно просмотрите [вводные сведения](sharepoint-scenario-intro.md), чтобы получить общее представление о процессе и скачать связанные файлы.
 
 Теперь мы внедрим отчет Power BI на тот же веб-сайт SharePoint Online, где размещены два наших списка. Power BI поддерживает разные способы внедрения, включая интеграцию непосредственно в страницы SharePoint для мобильных представлений и веб-представлений.
 

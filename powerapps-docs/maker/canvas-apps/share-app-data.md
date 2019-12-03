@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3348db5897b0c58d7addef775d2a871809fc491b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b2eca27d418a762820bf0955edafff435a176efb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995220"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674930"
 ---
 # <a name="share-excel-data-used-by-your-app"></a>Совместное использование данных Excel, используемых приложением
 Пользователи приложения могут совместно использовать данные Excel в [облачной учетной записи](connections/cloud-storage-blob-connections.md), например OneDrive.
@@ -30,20 +30,20 @@ ms.locfileid: "71995220"
 В этом разделе показано, как совместно использовать данные в электронной таблице Excel, используя Dropbox, OneDrive и Google Диск. Чтобы создать приложение, которое отображает данные из файла Excel, изучите раздел [Создание приложения на основе данных Excel](get-started-create-from-data.md).
 
 ## <a name="share-data-in-dropbox"></a>Совместное использование данных в Dropbox
-1. Войдите в Dropbox с помощью учетной записи, использованной для создания подключения PowerApps к Dropbox.
+1. Войдите в Dropbox, используя ту же учетную запись, которая использовалась для создания подключения из Power apps к Dropbox.
 2. Выберите папку, содержащую файл Excel, а затем выберите **Поделиться**.  
    
-    ![Кнопка "Поделиться"](./media/share-app-data/dropbox-share.png)
+    ![Пункт "Совместный доступ"](./media/share-app-data/dropbox-share.png)
 3. В диалоговом окне введите электронные адреса, с помощью которых пользователи приложения входят в Dropbox.  
    
     ![Общий доступ в Dropbox](./media/share-app-data/dropbox-perms.png)
-4. Если пользователи приложения будет добавлять, изменять или удалять данные в приложении, выберите **Может изменять**. В противном случае выберите **Может просматривать**.
+4. Если пользователи приложения будет добавлять, изменять или удалять данные в приложении, выберите **Может изменять**. В противном случае выберите **Просмотр**.
 5. Выберите **Поделиться**.
 
 Дополнительные сведения см. в разделе [Общие папки: как предоставить доступ к файлам с возможностью редактирования](https://www.dropbox.com/en/help/19).
 
 ## <a name="share-data-in-onedrive"></a>Совместное использование данных в OneDrive
-1. Войдите в OneDrive с помощью учетной записи, использованной для создания подключения PowerApps к OneDrive.
+1. Войдите в OneDrive, используя ту же учетную запись, которая использовалась при создании подключения из Power apps к OneDrive.
 2. Выберите папку, содержащую файл, а затем выберите **Общий доступ**.  
    
     ![Пункт "Совместный доступ"](./media/share-app-data/onedrive-share.png)
@@ -60,7 +60,7 @@ ms.locfileid: "71995220"
 Дополнительные сведения см. в разделе [Общий доступ к файлам и папкам OneDrive](https://support.office.com/article/Share-OneDrive-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07).
 
 ## <a name="share-data-in-google-drive"></a>Совместное использование данных на Google Диске
-1. Войдите в Google Диск с помощью учетной записи, использованной для создания подключения PowerApps к Google Диску.
+1. Войдите на Google Drive, используя ту же учетную запись, с которой вы создали подключение из Power apps к Google Drive.
 2. Щелкните правой кнопкой мыши папку, содержащую файл Excel, а затем выберите **Совместный доступ**.  
    
     ![Пункт "Совместный доступ"](./media/share-app-data/googledrive-share.png)

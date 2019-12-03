@@ -1,6 +1,6 @@
 ---
 title: Создание диаграммы в приложении на основе холста | Документы Майкрософт
-description: Отображение категорий данных в виде графиков, круговых диаграмм или гистограмм в приложении на основе холста в PowerApps
+description: В Power Apps отображение категорий данных в виде графиков, круговых диаграмм или линейчатых диаграмм в приложении Canvas
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2841da7f5d7b19cd727f169c6fe89588f69bf1ec
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 65076c38a1beeb41c9f6f308b6c0c7e82d30fc80
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541675"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674417"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>Отображение данных в виде графика, круговой или линейчатой диаграммы в PowerApps
 
@@ -32,11 +31,11 @@ ms.PowerAppsDecimalTransform: true
 
 ![][9]
 
-Вы можете создавать и использовать эти диаграммы в PowerApps. Приступим.
+Вы можете создавать и использовать эти диаграммы в приложениях Power Apps. Приступим.
 
 ## <a name="prerequisites"></a>Технические условия
 
-* [Зарегистрируйтесь](../signup-for-powerapps.md) в PowerApps, а затем [войдите в систему](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) с помощью учетных данных, использовавшихся при регистрации.
+* [Зарегистрируйтесь](../signup-for-powerapps.md) в Power Apps, а затем [Войдите в](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) систему, используя те же учетные данные, которые использовались для регистрации.
 * Создайте приложение на основе [шаблона](get-started-test-drive.md) или [данных](get-started-create-from-data.md) либо [с нуля](get-started-create-from-blank.md).
 * Узнайте, как [настроить элемент управления](add-configure-controls.md) в PowerApps.
 * Скачайте файл [ChartData.zip](https://pwrappssamples.blob.core.windows.net/samples/ChartData.zip) с демонстрационными данными в виде XML-файла. Выполните действия, описанные в этом разделе, чтобы импортировать его непосредственно в приложение. Кроме того, вы можете распаковать ZIP-файл, открыть XML-файл в Excel и сохранить его в [учетной записи хранения в облаке](connections/cloud-storage-blob-connections.md).
@@ -50,7 +49,7 @@ ms.PowerAppsDecimalTransform: true
 
 2. Задайте для свойства элемента управления **[OnSelect](controls/properties-core.md)** следующую функцию.  
 
-   ```Collect(ProductRevenue; Import1.Data)```
+   ```Collect(ProductRevenue, Import1.Data)```
 
 3. Нажмите клавишу F5, чтобы открыть режим предварительного просмотра, а затем нажмите кнопку **Импорт данных**.
 

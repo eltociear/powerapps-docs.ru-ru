@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fb0ce1bca968d0e23dc10544a824b340ab336936
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 02c9e680582b6d51a613fd8089709401f1e80b32
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650459"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679760"
 ---
 # <a name="image-control-in-powerapps"></a>Элемент управления "Изображение" в PowerApps
 Этот элемент управления служит для показа изображения из локального файла или источника данных.
@@ -112,7 +111,7 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Remove**( *DataSource*;; ThisItem )](../functions/function-remove-removeif.md)
+[**Remove**( *DataSource*; ThisItem )](../functions/function-remove-removeif.md)
 
 ## <a name="examples"></a>Примеры
 ### <a name="show-an-image-from-a-local-file"></a>Показ изображения из локального файла
@@ -126,7 +125,7 @@ ms.PowerAppsDecimalTransform: true
 
 ### <a name="show-a-set-of-images-from-a-data-source"></a>Показ набора изображений из источника данных
 1. Сохраните этот [файл Excel](https://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx) на локальном устройстве.
-2. В PowerApps Studio создайте или откройте приложение, затем щелкните (коснитесь) **Добавить источник данных** в правой области.
+2. В Power Apps Studio создайте или откройте приложение, а затем нажмите кнопку **Добавить источник данных** на правой панели.
 
     Если в правой области не отображается элемент **Добавить источник данных**, щелкните (коснитесь) любой экран на панели навигации слева.
 3. Выберите команду **Добавить статические данные для приложения**, укажите скачанный файл Excel и нажмите кнопку **Открыть**.

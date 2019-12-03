@@ -1,6 +1,6 @@
 ---
 title: Создание приложения на основе холста из списка SharePoint | Документы Майкрософт
-description: Автоматическое создание приложения на основе холста в PowerApps для управления данными в списке SharePoint
+description: 'В Power Apps: автоматическое создание приложения Canvas для управления данными в списке SharePoint'
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 50f84e06206a73c39feaee286ce1f4c9258c4958
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3181c00a4ef0836c043ee0402a29d3b7dadbef21
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541106"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678886"
 ---
-# <a name="generate-a-canvas-app-in-powerapps-from-a-sharepoint-list"></a>Создание приложения на основе холста в PowerApps из списка SharePoint
+# <a name="generate-a-canvas-app-in-power-apps-from-a-sharepoint-list"></a>Создание приложения Canvas в Power Apps из списка SharePoint
 
-В этом разделе с помощью PowerApps вы автоматически создадите приложение на основе холста, используя элементы из списка SharePoint. Вы можете создать приложение в PowerApps или SharePoint Online. В PowerApps вы можете создать приложение на основе списка на локальном сайте SharePoint, если вы [подключаетесь к сайту](connections/connection-sharepoint-online.md#create-a-connection) через шлюз данных.
+В этом разделе вы будете использовать Power Apps для автоматического создания приложения Canvas на основе элементов в списке SharePoint. Вы можете создать приложение в Power Apps или SharePoint Online. В Power Apps вы можете создать приложение на основе списка на локальном сайте SharePoint, если вы [подключаетесь к нему](connections/connection-sharepoint-online.md#create-a-connection) через шлюз данных.
 
 Созданное приложение будет иметь три экрана:
 
@@ -38,7 +38,7 @@ ms.locfileid: "73541106"
 Принципы создания приложения останутся теми же, даже если вы создаете гораздо более сложный список со множеством столбцов различных типов, таких как текст, даты, числа и денежные значения.
 
 > [!IMPORTANT]
-> PowerApps не поддерживает все типы данных SharePoint. Дополнительные сведения см. в разделе с описанием [известных проблем](connections/connection-sharepoint-online.md#known-issues).
+> Power Apps не поддерживает все типы данных SharePoint. Дополнительные сведения см. в разделе с описанием [известных проблем](connections/connection-sharepoint-online.md#known-issues).
 
 ## <a name="generate-an-app-from-within-powerapps"></a>Создание приложения в PowerApps
 
@@ -80,7 +80,7 @@ ms.locfileid: "73541106"
 
     ![Присвоение имени приложению](./media/app-from-sharepoint/app-name.png)
 
-    В веб-браузере откроется новая вкладка с приложением, созданным автоматически на основе вашего списка SharePoint. Приложение откроется в PowerApps Studio, где его можно настроить.
+    В веб-браузере откроется новая вкладка с приложением, созданным автоматически на основе вашего списка SharePoint. Приложение появится в Power Apps Studio, где его можно настроить.
 
     ![Приложение по умолчанию](./media/app-from-sharepoint/default-app.png)
 
@@ -93,10 +93,10 @@ ms.locfileid: "73541106"
 
     - Чтобы удалить представление из SharePoint, выберите **Удалить это представление**.
 
-        Чтобы удалить приложение из PowerApps, [удалите приложение](delete-app.md).
+        Чтобы удалить приложение из Power Apps, [удалите приложение](delete-app.md).
 
 > [!NOTE]
-> Приложения, созданные из списка SharePoint, в настоящее время не отображаются на мобильном устройстве PowerApps.
+> Приложения, созданные из списка SharePoint, в настоящее время не отображаются в Power Apps Mobile.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 В этом разделе вы создали приложение для управления данными в списке SharePoint. Далее вы создадите приложение на основе более сложного списка и настроите его (начиная с экрана обзора) так, как вам требуется.

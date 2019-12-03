@@ -13,17 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6d48b7b6ef1d9d691b733bea9af6ce74d0f2b07a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fd48455f24cd07a09ce3a7cdb44b2fa6da2a0166
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540926"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679254"
 ---
 # <a name="show-a-list-of-items-in-powerapps"></a>Отображение списка элементов в PowerApps
 
-Чтобы отобразить список элементов из любого источника данных, добавьте в приложение на основе холста элемент управления **[Коллекция](controls/control-gallery.md)** . В этой статье в качестве источника используется Excel. Чтобы отфильтровать список, настройте элемент управления **Коллекция** таким образом, чтобы в нем отображались только элементы, соответствующие определенному условию, которое задается в **[поле для ввода текста](controls/control-text-input.md)** .
+Чтобы отобразить список элементов из любого источника данных, добавьте в приложение на основе холста элемент управления **[Коллекция](controls/control-gallery.md)** . В этой статье в качестве источника данных используется Excel. Чтобы отфильтровать список, настройте элемент управления **Коллекция** таким образом, чтобы в нем отображались только элементы, соответствующие определенному условию, которое задается в **[поле для ввода текста](controls/control-text-input.md)** .
 
 ## <a name="prerequisites"></a>Технические условия
 
@@ -41,7 +40,7 @@ ms.PowerAppsDecimalTransform: true
 
     1. Укажите имя приложения, выберите **Телефон**, а затем выберите **Создать**.
 
-    1. Если отобразится диалоговое окно **Welcome to PowerApps Studio** (Вас приветствует PowerApps Studio), выберите в нем **Пропустить**.
+    1. Если откроется диалоговое окно " **Добро пожаловать в Power Apps Studio** ", выберите **пропустить**.
 
     1. [Добавьте подключение](add-data-connection.md) в таблицу **FlooringEstimates** из файла Excel.
 
@@ -99,20 +98,20 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **[Items](controls/properties-core.md)** элемента управления **Коллекция** следующую формулу:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Sort
         (If
-            (IsBlank(TextSearchBox1.Text);
-            FlooringEstimates;
+            (IsBlank(TextSearchBox1.Text),
+            FlooringEstimates,
             Filter(
-                FlooringEstimates;
+                FlooringEstimates,
                 TextSearchBox1.Text in Text(Name)
             )
-        );
-        Name;
+        ),
+        Name,
         If(
-            SortDescending1;
-            SortOrder.Descending;
+            SortDescending1,
+            SortOrder.Descending,
             SortOrder.Ascending
         )
     )
@@ -131,16 +130,16 @@ ms.PowerAppsDecimalTransform: true
 ## <a name="highlight-the-selected-item"></a>Выделение выбранного элемента
 Задайте для свойства **темплатефилл** элемента управления **галереи** формулу, похожую на этот пример, но при необходимости можно указать другие цвета:
 
-**If(ThisItem.IsSelected; LightCyan; White)**
+**If(ThisItem.IsSelected, LightCyan, White)**
 
 ## <a name="change-the-default-selection"></a>Изменение выбора по умолчанию
 Задайте для свойства **Default** элемента управления **Коллекция** запись, которую необходимо выбирать по умолчанию. Например, можно указать Пятый элемент в источнике данных **флуринжестиматес** :
 
-**Last(FirstN(FlooringEstimates; 5))**
+**Last(FirstN(FlooringEstimates, 5))**
 
 В этом примере укажите первый элемент в категории **Hardwood** источника данных **FlooringEstimates**:
 
-**First(Filter(FlooringEstimates; Category = "Hardwood"))**
+**First(Filter(FlooringEstimates, Category = "Hardwood"))**
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения см. в статье [Общие сведения о формах данных в Microsoft PowerApps](working-with-forms.md) и [Начало работы с формулами](working-with-formulas.md).

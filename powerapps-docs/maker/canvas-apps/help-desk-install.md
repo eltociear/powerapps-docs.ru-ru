@@ -1,6 +1,6 @@
 ---
 title: Установка и настройка примера "Служба поддержки" для приложений на основе холста | Документы Майкрософт
-description: Пошаговые инструкции по установке и настройке примера "Служба поддержки" для приложений на основе холста в PowerApps.
+description: Пошаговые инструкции для, в Power Apps. Установка и Настройка примера службы поддержки для приложений Canvas.
 author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dd5d8b8e6757b18feb5da03c503b19e689ca3efe
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fce460ffe808b7a604e1cdceac05a2696b8e10ed
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541252"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676150"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>Установка и настройка примера "Служба поддержки" в PowerApps
 
-Пошаговые инструкции по установке и настройке примера "Служба поддержки" для приложений на основе холста в PowerApps.
+Пошаговые инструкции для, в Power Apps. Установка и Настройка примера службы поддержки для приложений Canvas.
 
 Предполагаемое время выполнения этой процедуры: **10–15 минут**
 
@@ -140,7 +140,7 @@ ms.locfileid: "73541252"
 
 ## <a name="download-the-app"></a>Скачать приложение
 
-1.  [Скачайте](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) пакет PowerApps и сохраните его на компьютер.
+1.  [Скачайте](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip) пакет Power Apps и сохраните его на компьютере.
 
 ## <a name="create-connections"></a>Создание подключений
 
@@ -242,7 +242,7 @@ ms.locfileid: "73541252"
     
    > [!TIP]
    > При наличии нескольких администраторов используйте запятую для разделения списка администраторов. Пример: "admin1@microsoft.com","admin2@microsoft.com".
-   > Чтобы обеспечить соответствие адресов в списке AdminList формату, ожидаемому PowerApps, выберите "Вид" > "Переменные" > "Глобальные" > "Мой профиль" и просмотрите ожидаемый формат электронной почты в столбце "Почта".
+   > Чтобы убедиться, что адреса в Админлист соответствуют приложениям формата Power Apps, выберите View > Variables > Global > Мипрофиле и просмотрите столбец "почта", чтобы увидеть ожидаемый формат адреса электронной почты.
 
 1. Выберите **Файл** > **Сохранить** > **Опубликовать** > **Опубликовать эту версию**.
 

@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7a979944d25d683c5b2b4c772cd6859e6ac52f0e
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e6ebc516c6b07f149e2b965b967966c3832476c9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541563"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675498"
 ---
 # <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>Создание приложения Canvas из примера в PowerApps
 В этом кратком руководстве вы создадите приложение на основе холста из образца, чтобы изучить возможности проектирования и принципы, которые можно применять при разработке собственных приложений на основе холста.
 
 Во всех примерах используются вымышленные данные для демонстрации реальной ситуации. Для хранения этих данных потребуется облачная учетная запись хранения, например Dropbox, Google Диск или OneDrive.
 
-Если у вас нет лицензии на PowerApps, вы можете [зарегистрироваться для получения бесплатной версии](../signup-for-powerapps.md).
+Если у вас нет лицензии на Power Apps, вы можете [зарегистрироваться бесплатно](../signup-for-powerapps.md).
 
 ## <a name="open-a-sample-app"></a>Открытие примера приложения
 1. Войдите в [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
@@ -36,7 +36,7 @@ ms.locfileid: "73541563"
 
 1. Нажмите значок телефона, чтобы создать версию приложения для мобильных устройств (либо оставьте выбранным значок планшета), а затем нажмите **Создать это приложение**.
 
-1. В PowerApps Studio выберите **Создать собственное приложение** на баннере в центре верхней части экрана.
+1. В Power Apps Studio щелкните **создать мое приложение** в баннере рядом с верхней частью экрана.
 
     ![](./media/open-and-run-a-sample-app/banner.png)
 

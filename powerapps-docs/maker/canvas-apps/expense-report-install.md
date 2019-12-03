@@ -1,6 +1,6 @@
 ---
 title: Установка и настройка примера "Отчет о расходах" для приложений на основе холста | Документы Майкрософт
-description: Пошаговые инструкции по установке и настройке примера "Отчет о расходах" для приложений на основе холста в PowerApps.
+description: Пошаговые инструкции для, в Power Apps. Установка и Настройка образца отчета о затратах для приложений Canvas.
 author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: afdeb89b0bd026b20e0c940b05be60d4d3238b81
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f66ae4ba95d19e871e101979496760931b6821e3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540204"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679530"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>Установка и настройка примера "Отчет о расходах" для приложений на основе холста в PowerApps
 
@@ -206,7 +206,7 @@ ms.locfileid: "73540204"
 
     [https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip).
 
-2. Скачайте пакет примера приложения PowerApps "Отчет о расходах" и сохраните его на компьютер.
+2. Скачайте образец пакета Power Report restores и сохраните его на своем компьютере.
 
 ## <a name="create-connections"></a>Создание подключений
 

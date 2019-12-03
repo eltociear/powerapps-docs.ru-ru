@@ -1,6 +1,6 @@
 ---
 title: Форматирование таблицы в Excel | Документы Майкрософт
-description: Чтобы использовать данные Excel в PowerApps, данные необходимо отформатировать как таблицу. Добавление ключевого слова "изображение" в имена столбцов
+description: Чтобы использовать данные Excel в Power Apps, необходимо отформатировать данные как таблицу. Добавление ключевого слова "изображение" в имена столбцов
 author: yifwang
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 164de5c1b2534901563ab888cfd83641dbe5a9c5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: da70ef7fe2447653c97bb17dbcd40a126ceb6888
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990025"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675701"
 ---
 # <a name="format-a-table-in-excel-and-naming-tips"></a>Советы по форматированию таблицы в Excel и присвоению имен
-В PowerApps можно создать приложение на основе холста по данным Excel только в том случае, если они отформатированы в виде таблицы. Прочитав эту статью, вы узнаете, как форматировать таблицу в Excel, и получите некоторые советы по именованию столбцов Excel.
+В Power Apps можно создать приложение Canvas на основе данных Excel только в том случае, если оно форматировано как таблица. Прочитав эту статью, вы узнаете, как форматировать таблицу в Excel, и получите некоторые советы по именованию столбцов Excel.
 
 ## <a name="how-to-format-a-table-in-excel"></a>Форматирование таблицы в Excel
 Данные можно преобразовать в таблицу, нажав кнопку **Форматировать как таблицу** на вкладке **Главная** в Excel.

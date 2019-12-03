@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f60db0449a163c83691658095b15f41083316c91
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: bf83473e8b53d13e58b653974495acbe2595513f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899185"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674224"
 ---
-# <a name="powerapps-webinar-listing"></a>Список вебинаров PowerApps #
-Эти вебинары помогут вам использовать возможности и функции Microsoft PowerApps. Вебинары будут доступны по запросу после трансляции. Обратите внимание, что в некоторых случаях необходимо будет повторно ввести сведения о регистрации, после чего вы получите ссылку на запись по электронной почте. 
+# <a name="power-apps-webinar-listing"></a>Список веб – семинаров по Power Apps #
+Эти веб – семинары помогут вам использовать функции и функции Microsoft Power Apps. Вебинары будут доступны по запросу после трансляции. Обратите внимание, что в некоторых случаях необходимо будет повторно ввести сведения о регистрации, после чего вы получите ссылку на запись по электронной почте. 
 
 ## <a name="beginner-webinar-series"></a>Серии вебинаров для новичков ##
 **5 основных советов по разработке приложений для бизнеса**
@@ -36,13 +36,13 @@ ms.locfileid: "73899185"
 **Начало работы с формами в PowerApps**
 <br>Одри Гордон [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Getting-Started-with-PowerApp-Forms/m-p/116842)
 
-**Начало работы с элементами управления PowerApps**
+**Начало работы с элементами управления Power Apps**
 <br>Одри Гордон [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Introduction-to-PowerApps-Controls/m-p/116844)
 
-**Возможности и преимущества сообщества PowerApps**
+**Возможности сообщества Power Apps & вознаграждения**
 <br> Одри Гордон (Audrie Gordon) и Маккензи Линг (Mackenzie Lyng) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Community-Opportunities-and-Rewards/m-p/116856)
 
-**Обзор предстоящих выпусков PowerApps на 2017 год**
+**Обзор выпусков Power Apps для 2017**
 <br>Даршан Десаи (Darshan Desai) [Просмотреть сейчас](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Overview-of-PowerApps-Feature-Releases-for-2017/m-p/116858)
 
 **Изучение шаблонов Office Graph**
@@ -55,10 +55,10 @@ ms.locfileid: "73899185"
 **Жизненный цикл приложения с новыми возможностями сохранения и публикации в PowerApps**
 <br>Картик Бхарати (Karthik Bharathy) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Application-LIfecycle-with-the-new-Save-and-publish-options-in/m-p/116860)
 
-**Функция поиска в PowerApps**
+**Приложения Power Apps сосредоточены на использовании функции Lookup**
 <br>Одри Гордон [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Focus-on-Using-the-Lookup-Function/m-p/116866)
 
-**Использование PowerApps и Microsoft Flow для создания порталов бизнес-приложений**
+**Использование Power Apps и Flow для создания бизнес-порталов**
 <br>Вишвас Лел (Vishwas Lele) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-PowerApps-and-Flow-to-create-Line-of-Business-portals-by/m-p/116869)
 
 **Лора Роджерс (Laura Rogers) из IWMentor расскажет о рекомендациях для приложений рабочей среды**
@@ -67,33 +67,33 @@ ms.locfileid: "73899185"
 **Серия вебинаров о соединителях | Приложения Microsoft StaffHub (планирование смен) с PowerApps**
 <br>Автор: Марк-Андре Лепин (Marc-André Lépine) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connector-Series-Shift-Scheduling-Apps-with-PowerApps-StaffHub/m-p/122036)
 
-**Администрирование PowerApps | Часто задаваемые вопросы**
+**Администрирование Power Apps | Часто задаваемые вопросы**
 <br>Автор: Манас Махешвари (Manas Maheshwari) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/PowerApps-Administration-FAQ/m-p/127369#M44)
 
-**Возможности приложения Universal Audit. Узнайте о возможностях PowerApps и Flow с Полом Кульмзее (Paul Culmsee)**
+**В универсальном приложении аудита: Ознакомьтесь с возможностями Power Apps и Flow, которые могут иметь пол Калмси**
 <br>Пол Кульмзее (Paul Culmsee) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Inside-the-Universal-Audit-App-See-what-PowerApps-and-Flow-are/m-p/127370#M45)
 
 ## <a name="advanced-webinar-series"></a>Серии вебинаров для продвинутых пользователей ##
-**Формулы PowerApps**
+**Формулы для Power Apps**
 <br>Грег Линдхорст (Greg Lindhorst) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Deep-dive-on-formulas-by-Greg-Lindhorst/m-p/116899)
 
-**Создание решений для обновления с помощью PowerApps — Брайан Бланшард (Brian Blanchard)**
+**Создание решений для установки исправлений сервера с помощью приложений Power apps от Брайан Бланчард**
 <br>Брайан Бланшард (Brian Blanchard) и Одри Гордон (Audrie Gordon) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Server-Patching-Solutions-with-PowerApps-by-Brian/m-p/116901)
 
-**Создание решений для обновления с помощью PowerApps — Брайан Бланшард (Brian Blanchard), часть 2**
+**Создание решений для установки исправлений сервера с помощью приложений Power apps от Брайан Бланчард (часть 2)**
 <br>Брайан Бланшард (Brian Blanchard) и Одри Гордон (Audrie Gordon) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Server-Patching-Solutions-with-PowerApps-by-Brian/m-p/116902)
 
-**Аналитика переходов по ссылкам в PowerApps — Вивек Бавиши (Vivek Bavishi)**
+**Управление приложениями Power Apps с помощью Вивек Бавиши**
 <br>Вивек Бавиши (Vivek Bavishi) и Одри Гордон (Audrie Gordon) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Click-Through-PowerApps-Analytics-by-Vivek-Bavishi/m-p/116906)
 
- **Использование PowerApps для управления бизнес-процессами (BPM) — Давид ван Херден (Dawid van Heerden)**
+ **Использование Power Apps для управления бизнес-процессами (BPM) с помощью Давид Van Хирден**
 <br>Автор: Давид ван Херден (Dawid van Heerden) [Смотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-PowerApps-and-Flow-for-Business-Process-Management/m-p/116907)
 
 ### <a name="connector-series"></a>Серия о соединителях ###
-**Оптимизация соединителей в PowerApps и Power автоматизирующие**
+**Оптимизация соединителей в Power Apps и Power Автоматизация**
 <br>Тереза Палмер-Бороски (Theresa Palmer-Boroski) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Optimizing-Connectors-in-PowerApps-and-Microsoft-Flow-by-Theresa/m-p/116874)
 
-**Советы и рекомендации по совместной работе Teams и PowerApps**
+**Команды + Power Apps — советы и рекомендации**
 <br>Одри Гордон [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Teams-PowerApps-Tips-and-Tricks/m-p/116846)
 
 **Советы по подключению к Excel в OneDrive для бизнеса из PowerApps**
@@ -112,16 +112,16 @@ ms.locfileid: "73899185"
 <br>Одри Гордон [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-Project-Online-PWA/m-p/116889)
 
 ## <a name="sharepoint-series"></a>Серия о SharePoint ##
-**Быстрое создание приложений с помощью PowerApps Studio**
+**Быстро создавайте приложения с помощью Power Apps Studio**
 <br>Картик Бхарати (Karthik Bharathy) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Rapidly-build-applications-with-PowerApps-Studio/m-p/116849)
 
 **Перестроение формы InfoPath Designer в PowerApps**
 <br>Дэниэл Кристиан (Daniel Christian) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Rebuilding-an-InfoPath-Designer-Form/m-p/116909)
 
-**Советы для разработчиков InfoPath, осуществляющих переход к PowerApps, часть 1**
+**Советы для разработчиков InfoPath, которые переходят в Power Apps, часть 1**
 <br>Одри Гордон [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Tips-for-InfoPath-Designers-Transitioning-to-PowerApps-Part-1/m-p/116910)
 
-**Советы по переходу с приложений InfoPath на PowerApps, часть 2**
+**Советы по переходу с InfoPath на Power Apps. часть 2**
 <br>Одри Гордон [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Tips-for-InfoPath-Designers-Transitioning-to-PowerApps-Part-2/m-p/116912)
 
 **Общие сведения о формах списков в SharePoint Online**
@@ -150,5 +150,5 @@ ms.locfileid: "73899185"
 **Создание диалоговых окон или всплывающих сообщений в PowerApps**
 <br>Автор: Вероника Уорд (Veronica Ward) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Dialogs-in-PowerApps-by-Veronica-Ward/m-p/117627#M39)
 
-**Профессиональные секреты разработчиков PowerApps: подробный обзор шаблонов с Мари Хогер (Marie Hoeger)**
+**Взгляните на прикрытием с одним из разработчиков Power Apps, более подробно рассмотрим шаблоны: Марие Хоежер**
 <br>Одри Гордон [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Developer-Intro-and-Discussing-Templates/m-p/116848)

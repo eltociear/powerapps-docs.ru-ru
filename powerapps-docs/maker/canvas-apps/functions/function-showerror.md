@@ -13,23 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5e18b64910bbc7efca8c460100163e1a0716a089
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1a02a83e00b9f377f3882cb32c1e6b6606b5cc2a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992155"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678242"
 ---
 # <a name="notify-function-in-powerapps"></a>Функция Notify в PowerApps
 Отображает баннер с сообщением для пользователя.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функция **Notify** отображает баннер с сообщением для пользователя в верхней части экрана поверх текущего содержимого.  
 
 Используемые цвет и значок зависят от типа сообщения.   Тип определяется вторым аргументом функции.
 
-| Аргумент NotificationType | Описание |
+| Аргумент NotificationType | Description |
 | --- | --- |
 | **NotificationType.Error** | Выводится сообщение об ошибке. |
 | **NotificationType.Information** (по умолчанию) | Выводится информационное сообщение.  |
@@ -42,14 +41,14 @@ ms.PowerAppsDecimalTransform: true
 
 Функцию **Notify** можно использовать совместно с функцией [**IfError**](function-iferror.md) для определения ошибок и выдачи пользовательских сообщений об ошибках.
 
-PowerApps может также отправлять push-уведомления из функции **Notify** с помощью совершенно другого механизма.  Дополнительные сведения см. в статье [Отправка push-уведомлений в PowerApps](../add-notifications.md).
+Power Apps также может отправлять push-уведомления, используя совершенно другой механизм **уведомления**.  Дополнительные сведения см. в статье [Отправка push-уведомлений в PowerApps](../add-notifications.md).
 
 Функция **Notify** всегда возвращает *true*.
 
-Метим Эта функция ранее называлась **ShowError** , когда она может отображать только сообщения об ошибках.
+Примечание. Ранее эта функция называлась **ShowError** и могла выводить только сообщения об ошибках.
 
 ## <a name="syntax"></a>Синтаксис
-**Notify**(*Message*; [*NotificationType*])
+**Notify**(*Message*, [*NotificationType*])
 
 * *Message* — обязательный аргумент.  Сообщение, отображаемое для пользователя.
 * *NotificationType* — необязательный аргумент.  Тип сообщения для отображения из приведенной выше таблицы.  Тип по умолчанию — **NotificationType.Information**.  
@@ -62,7 +61,7 @@ PowerApps может также отправлять push-уведомления
 
 2. Укажите следующее значение для свойства **OnSelect** элемента управления **Button**:
 
-    **Notify(Hello; World)**
+    **Notify(Hello, World)**
 
 3. Нажмите кнопку.  
 
@@ -72,7 +71,7 @@ PowerApps может также отправлять push-уведомления
 
 4. Измените тип сообщения на сообщение об ошибке.  Добавьте в формулу второй аргумент:
 
-    **Notify("Hello, World"; NotificationType.Error)**
+    **Notify("Hello, World", NotificationType.Error)**
 
 5. Нажмите кнопку.
 
@@ -82,7 +81,7 @@ PowerApps может также отправлять push-уведомления
 
 4. Измените тип сообщения на предупреждение.  Измените второй аргумент в формуле:
 
-    **Notify("Hello, World"; NotificationType.Warning)**
+    **Notify("Hello, World", NotificationType.Warning)**
 
 5. Нажмите кнопку.
 
@@ -92,7 +91,7 @@ PowerApps может также отправлять push-уведомления
 
 4. Измените тип сообщения на сообщение об успешном выполнении.  Измените второй аргумент в формуле:
 
-    **Notify("Hello, World"; NotificationType.Success)**
+    **Notify("Hello, World", NotificationType.Success)**
 
 5. Нажмите кнопку.
 

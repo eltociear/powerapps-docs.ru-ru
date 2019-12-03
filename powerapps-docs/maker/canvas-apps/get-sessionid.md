@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 11f749f241f978ebd94e460833e98cca894fe7fa
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 81c1db4ab44f3ca8517c6154f0516ca9dad5f825
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990197"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676515"
 ---
 # <a name="get-a-session-id-or-a-canvas-app-id"></a>Получение идентификатора сеанса или приложения на основе холста
-Если с приложением на основе холста, созданным в PowerApps, возникает проблема, вы можете помочь корпорации Майкрософт устранить ее значительно эффективнее, если укажете идентификатор сеанса и (или) приложения.
+Если возникла проблема с приложением Canvas, созданным в Power Apps, вы можете помочь корпорации Майкрософт устранить проблему гораздо эффективнее, если указать идентификатор сеанса, идентификатор приложения или и то, и другое для этой проблемы.
 
 ## <a name="get-the-session-id"></a>Получение идентификатора сеанса
 
@@ -32,7 +32,7 @@ ms.locfileid: "71990197"
 
 1. В разделе **Диагностика** выберите **Сведения о сеансе**.
 
-    ![Получение идентификатор сеанса из PowerApps Studio](media/get-sessionid/studio.png)
+    ![Получение идентификатора сеанса из Power Apps Studio](media/get-sessionid/studio.png)
 
 ### <a name="when-running-an-app-in-a-browser"></a>При запуске приложения в браузере
 1. В правом верхнем углу щелкните значок шестеренки.

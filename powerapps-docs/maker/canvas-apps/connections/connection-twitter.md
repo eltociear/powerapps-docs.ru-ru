@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f58f8e15d1bd522bd9c24d7e3e1dfe9a69b4d257
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 21effecae904675e39c914145ee10df9c81ec752
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541012"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679852"
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>Подключение к Twitter из PowerApps
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -33,7 +32,7 @@ Twitter позволяет публиковать и получать твиты
 [!INCLUDE [connection-requirements](../../../includes/connection-requirements.md)]
 
 ## <a name="connect-to-twitter"></a>Подключение к Twitter
-1. Откройте PowerApps, выберите **Создать** и создайте **пустое приложение**. Выберите макет для телефона или планшета. Макет для планшета обеспечивает больше рабочего пространства:  
+1. Откройте Power Apps, выберите **создать**, а затем создайте **пустое приложение**. Выберите макет для телефона или планшета. Макет для планшета обеспечивает больше рабочего пространства:  
 
    ![Пустое приложение](./media/connection-twitter/blank-app.png)
 2. На панели справа откройте вкладку **Данные**, а затем нажмите кнопку **Добавить источник данных**.
@@ -66,7 +65,7 @@ Twitter позволяет публиковать и получать твиты
 
        В коллекции задайте для свойства Items следующую формулу:  
 
-       `Twitter.UserTimeline(Tweep.Text; {maxResults:5}).TweetText`
+       `Twitter.UserTimeline(Tweep.Text, {maxResults:5}).TweetText`
 
        В коллекции автоматически отображаются твиты указанного пользователя Twitter.
 
@@ -95,7 +94,7 @@ Twitter позволяет публиковать и получать твиты
 
        В коллекции задайте для свойства Items следующую формулу:  
 
-       `Twitter.Followers(Tweep.Text; {maxResults:5})`
+       `Twitter.Followers(Tweep.Text, {maxResults:5})`
 
        В коллекции автоматически отображаются подписчики указанного пользователя Twitter.
 
@@ -124,7 +123,7 @@ Twitter позволяет публиковать и получать твиты
 
        В коллекции задайте для свойства Items следующую формулу:  
 
-       `Twitter.Following(Tweep.Text; {maxResults:5})`
+       `Twitter.Following(Tweep.Text, {maxResults:5})`
 
        В коллекции автоматически отображаются имена других пользователей, на которых вы подписаны.
 
@@ -161,8 +160,8 @@ Twitter позволяет публиковать и получать твиты
     > [!TIP]
    > Отобразите первые пять результатов с помощью аргумента maxResults:  
 
-    `Twitter.SearchTweet(SearchTerm.Text; {maxResults:5}).TweetText`
-2. Присвойте свойству **Items** коллекции значение `Twitter.SearchTweet(SearchTerm.Text; {maxResults:5})`.
+    `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5}).TweetText`
+2. Присвойте свойству **Items** коллекции значение `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5})`.
 
     Если выбрать коллекцию, в правой области отобразятся ее параметры.
 3. В первом списке выберите **TweetText**, во втором — **TweetedBy**, а в третьем — **CreatedAt**.
