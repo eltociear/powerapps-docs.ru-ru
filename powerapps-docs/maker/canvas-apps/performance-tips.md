@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0bf2502d22adb90993f5f7ebb8e05c72f51215a5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9b2e3298f09857e26df4c3707d8ae36737557b08
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675442"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732815"
 ---
-# <a name="optimize-canvas-app-performance-in-powerapps"></a>Оптимизация производительности приложений на основе холста в PowerApps
+# <a name="optimize-canvas-app-performance-in-power-apps"></a>Оптимизация холста — производительность приложения в Power Apps
 Корпорация Майкрософт работает над улучшением производительности всех приложений, работающих на платформе Power Apps. Следуйте рекомендациям этого раздела, чтобы повысить производительность созданных приложений.
 
 Когда пользователь открывает приложение, перед показом любого пользовательского интерфейса, он проходит такие этапы выполнения. 
@@ -98,7 +98,7 @@ Set(CustomerPhone, CustomerOrder.Phone);
 
 ![Использование делегирования](./media/performance-tips/perfdelegation1.png)
 
-Например, SharePoint перечисляет поддержку делегирования из функции [**Filter**](functions/function-filter-lookup.md), вместо функции [**Search**](functions/function-filter-lookup.md). Поэтому следует использовать **Filter** вместо **Search** для поиска элементов в коллекции, если список SharePoint содержит более чем 500 элементов. Дополнительные советы см. в разделе [Working with large SharePoint lists in PowerApps](https://powerapps.microsoft.com/blog/powerapps-now-supports-working-with-more-than-256-items-in-sharepoint-lists/) (Работа с большими списками SharePoint в PowerApps) (запись блога). 
+Например, SharePoint перечисляет поддержку делегирования из функции [**Filter**](functions/function-filter-lookup.md), вместо функции [**Search**](functions/function-filter-lookup.md). Поэтому следует использовать **Filter** вместо **Search** для поиска элементов в коллекции, если список SharePoint содержит более чем 500 элементов. Дополнительные советы см. [в разделе Работа с большими списками SharePoint в Power Apps](https://powerapps.microsoft.com/blog/powerapps-now-supports-working-with-more-than-256-items-in-sharepoint-lists/) (запись блога). 
 
 ## <a name="use-delayed-load"></a>Используйте отложенную загрузку
 Включите [экспериментальную функцию](working-with-experimental.md) для отложенной загрузки, если ваше приложение имеет более 10 экранов и множество элементов управления, которые находятся на нескольких экранах и напрямую связаны с источником данных, и не имеют правил. Если вы создаете этот тип приложения и не включаете эту функцию, производительность приложения может снизится, так как элементы управления должны заполняться на всех экранах, даже на экранах, которые не открыты. Кроме того, все экраны приложения должны обновляться всякий раз, когда изменяется источник данных, например, когда пользователь добавляет запись.

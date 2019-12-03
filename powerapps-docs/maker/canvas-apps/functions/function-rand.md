@@ -1,6 +1,6 @@
 ---
 title: Функция Rand | Документация Майкрософт
-description: Справочные сведения, включая описание синтаксиса, относительно функции Rand в PowerApps
+description: Справочные сведения, включая синтаксис, для функции RAND в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e04a4e4e00d1f35f36b7e5d68cfb32d83b19b86b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 5f34be9a38f4e30bdf19f337a24580615a16697c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992541"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730424"
 ---
-# <a name="rand-function-in-powerapps"></a>Функция Rand в PowerApps
+# <a name="rand-function-in-power-apps"></a>Функция RAND в Power Apps
 Возвращает псевдослучайное число.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функция **Rand** возвращает псевдослучайное число не меньше 0 и меньше 1.
 
 ## <a name="volatile-functions"></a>Переменные функции
@@ -63,7 +62,7 @@ ms.PowerAppsDecimalTransform: true
 #### <a name="create-a-table-of-random-numbers"></a>Создание таблицы случайных чисел
 1. Добавьте элемент управления **[Кнопка](../controls/control-button.md)** и задайте следующую формулу в качестве значения свойства **[OnSelect](../controls/properties-core.md)** :
 
-    **ClearCollect( RandomNumbers; ForAll( [ 1; 2; 3; 4; 5 ]; Rand() ))**
+    **ClearCollect( RandomNumbers, ForAll( [ 1, 2, 3, 4, 5 ], Rand() ))**
 
     Эта формула создает таблицу с одним столбцом, которая используется для пятикратной итерации, в результате чего возвращаются пять случайных чисел.
 
@@ -81,4 +80,4 @@ ms.PowerAppsDecimalTransform: true
 
     ![Тот же экран, отображающий таблицу данных с новым набором из пяти разных десятичных значений — 0,414, 0,128, 0,860, 0,303, 0,568](media/function-rand/rand-collection-2.png)
 
-Чтобы создать вместо таблицы одно случайное число, используйте **Set( RandomNumber; Rand() )** .
+Чтобы создать вместо таблицы одно случайное число, используйте **Set( RandomNumber, Rand() )** .

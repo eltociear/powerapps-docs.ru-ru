@@ -1,6 +1,6 @@
 ---
 title: Справочник по шаблонам экрана для людей | Документация Майкрософт
-description: Сведения о том, как шаблон экрана "люди" для приложений Canvas работает в PowerApps
+description: Сведения о том, как шаблон экрана "люди" для приложений Canvas работает в Power Apps
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ab4b7683d4ea550ebe5704cb7e5580ccbae48deb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e4e67b4905003f8134d8f6868671e74fdece3d6b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674975"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732593"
 ---
 # <a name="reference-information-about-the-people-screen-template-for-canvas-apps"></a>Справочные сведения о шаблоне "люди — экран" для приложений Canvas
 
@@ -33,7 +32,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="prerequisite"></a>Необходимое условие
 
-Знакомство с добавлением и настройкой экранов и других элементов управления при [создании приложения в PowerApps](../data-platform-create-app-scratch.md).
+Знакомство с добавлением и настройкой экранов и других элементов управления при [создании приложения в Power Apps](../data-platform-create-app-scratch.md).
 
 ## <a name="text-search-box"></a>Текстовое поле поиска
 
@@ -51,11 +50,11 @@ ms.PowerAppsDecimalTransform: true
 * Свойство: **элементы**<br>
     Значение: логика для поиска пользователей, когда пользователь начинает вводить:
     
-    ```powerapps-comma
-    If( !IsBlank( Trim( TextSearchBox.Text ) ); 
+    ```powerapps-dot
+    If( !IsBlank( Trim( TextSearchBox.Text ) ), 
         'Office365Users'.SearchUser(
             {
-                searchTerm: Trim( TextSearchBox.Text ); 
+                searchTerm: Trim( TextSearchBox.Text ), 
                 top: 15
             }
         )
@@ -77,12 +76,12 @@ ms.PowerAppsDecimalTransform: true
 * Свойство: **OnSelect**<br>
     Значение: код для добавления пользователя в коллекцию уровня приложения, а затем выберите пользователя:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Concurrent(
-        Set( _selectedUser; ThisItem );
-        Reset( TextSearchBox );
-        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ); 
-            Collect( MyPeople; ThisItem )
+        Set( _selectedUser, ThisItem ),
+        Reset( TextSearchBox ),
+        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ), 
+            Collect( MyPeople, ThisItem )
         )
     )
     ```
@@ -99,9 +98,9 @@ ms.PowerAppsDecimalTransform: true
 * Свойство: **изображение**<br>
     Значение: логика для получения фотографии профиля пользователя.
 
-    ```powerapps-comma
+    ```powerapps-dot
     If( !IsBlank( ThisItem.Id ) && 
-            'Office365Users'.UserPhotoMetadata( ThisItem.Id ).HasPhoto;
+            'Office365Users'.UserPhotoMetadata( ThisItem.Id ).HasPhoto,
         'Office365Users'.UserPhoto( ThisItem.Id )
     )
     ```
@@ -127,7 +126,7 @@ ms.PowerAppsDecimalTransform: true
 ![Элемент управления "заголовок Пеоплеаддедгаллери"](media/people-screen/people-people-gall-title.png)
 
 * Свойство: **OnSelect**<br>
-    Значение: `Set( _selectedUser; ThisItem )`
+    Значение: `Set( _selectedUser, ThisItem )`
 
 Задает **_selectedUser** переменную для элемента, выбранного в **емаилпеоплегаллери**.
 
@@ -136,7 +135,7 @@ ms.PowerAppsDecimalTransform: true
 ![Элемент управления Пеоплеаддедгаллери Иконремове](media/people-screen/people-people-gall-delete.png)
 
 * Свойство: **OnSelect**<br>
-    Значение: `Remove( MyPeople; LookUp( MyPeople; UserPrincipalName = ThisItem.UserPrincipalName ) )`
+    Значение: `Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) )`
 
 Выполняет поиск записи в коллекции **мипеопле** , где **userPrincipalName** соответствует **userPrincipalName** выбранного элемента, а затем удаляет эту запись из коллекции.
 

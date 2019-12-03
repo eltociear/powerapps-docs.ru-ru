@@ -1,6 +1,6 @@
 ---
 title: Функция UpdateContext | Документация Майкрософт
-description: Справочные сведения о функции UpdateContext в PowerApps, в том числе описание синтаксиса и примеры.
+description: Справочные сведения, включая синтаксис и примеры, для функции Упдатеконтекст в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 646a5de203c713d59965f7787dabe087c0a33f51
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7112d48b447140533ca432ec6d5e78b9ed367203
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678173"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729899"
 ---
-# <a name="updatecontext-function-in-powerapps"></a>Функция UpdateContext в PowerApps
+# <a name="updatecontext-function-in-power-apps"></a>Функция Упдатеконтекст в Power Apps
 Функция UpdateContext создает или обновляет [переменные контекста](../working-with-variables.md#use-a-context-variable) текущего экрана.
 
 ## <a name="overview"></a>Обзор
@@ -63,7 +62,7 @@ Power Apps основано на формулах, которые автомат
 
 * *UpdateRecord* — обязательный аргумент. Запись, содержащая имя хотя бы одного столбца и его значение. Переменная контекста создается или обновляется для каждого указанного столбца и значения.
 
-**UpdateContext**( { *ContextVariable1*: *Value1* [; *ContextVariable2*: *Value2* [; ... ] ] } )
+**UpdateContext**( { *ContextVariable1*: *Value1* [, *ContextVariable2*: *Value2* [, ... ] ] } )
 
 * *ContextVariable1* — обязательный аргумент.  Имя создаваемой или обновляемой переменной контекста.
 * *Value1* — обязательное значение.  Значение, присваиваемое переменной контекста.
@@ -75,18 +74,18 @@ Power Apps основано на формулах, которые автомат
 | --- | --- | --- |
 | **UpdateContext( {&nbsp;Counter:&nbsp;1&nbsp;} )** |Создает или изменяет переменную контекста **Counter**, задавая для нее значение **1**. |Переменная контекста **Counter** имеет значение **1**. Вы можете добавить ссылку на эту переменную по имени **Counter** в формуле. |
 | **UpdateContext( {&nbsp;Counter:&nbsp;2&nbsp;} )** |Изменяет значение переменной контекста **Counter** из предыдущего примера на **2**. |Переменная контекста **Counter** имеет значение **2**. |
-| **UpdateContext( {&nbsp;Name:&nbsp;"Lily";&nbsp;Score:&nbsp;10&nbsp;} )** |Создает или изменяет переменные контекста **Name** и **Score**, задавая для них значения **Lily** и **10** соответственно. |Переменная контекста **Name** имеет значение **Lily**, а переменная **Score** — **10**. |
-| **UpdateContext( {&nbsp;Person:&nbsp;{&nbsp;Name:&nbsp;"Milton"; Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;} )** |Создает или изменяет переменную контекста **Person**, задавая для нее запись в качестве значения. Запись содержит два столбца: **Name** и **Address**. Столбец **Name** имеет значение **Milton**, а столбец **Address** — **1 Main St**. |Переменной контекста **Person** присваивается значение записи **{&nbsp;Name:&nbsp;"Milton"; Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** .<br><br>Добавьте ссылку на эту запись в целом по имени **Person** или на ее отдельный столбец с помощью параметра **Person.Name** или **Person.Address**. |
-| **UpdateContext( {&nbsp;Person: Patch(&nbsp;Person;&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;) }&nbsp;)** |В сочетании с функцией **[Patch](function-patch.md)** позволяет обновить переменную контекста **Person**, задав для столбца **Address** значение **2 Main St**. |Переменной контекста **Person** присваивается значение записи **{&nbsp;Name:&nbsp;"Milton"; Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** . |
+| **UpdateContext( {&nbsp;Name:&nbsp;"Lily",&nbsp;Score:&nbsp;10&nbsp;} )** |Создает или изменяет переменные контекста **Name** и **Score**, задавая для них значения **Lily** и **10** соответственно. |Переменная контекста **Name** имеет значение **Lily**, а переменная **Score** — **10**. |
+| **UpdateContext( {&nbsp;Person:&nbsp;{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;} )** |Создает или изменяет переменную контекста **Person**, задавая для нее запись в качестве значения. Запись содержит два столбца: **Name** и **Address**. Столбец **Name** имеет значение **Milton**, а столбец **Address** — **1 Main St**. |Переменной контекста **Person** присваивается значение записи **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** .<br><br>Добавьте ссылку на эту запись в целом по имени **Person** или на ее отдельный столбец с помощью параметра **Person.Name** или **Person.Address**. |
+| **UpdateContext( {&nbsp;Person: Patch(&nbsp;Person,&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;) }&nbsp;)** |В сочетании с функцией **[Patch](function-patch.md)** позволяет обновить переменную контекста **Person**, задав для столбца **Address** значение **2 Main St**. |Переменной контекста **Person** присваивается значение записи **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;}** . |
 
 ### <a name="step-by-step-example"></a>Пошаговый пример
 1. Присвойте экрану по умолчанию имя **Source** и добавьте еще один экран с именем **Target**.
 2. На экране **Source** добавьте две кнопки и задайте для их свойств **[Text](../controls/properties-core.md)** значения **English** и **Spanish**.
-3. В качестве значения свойства **[OnSelect](../controls/properties-core.md)** кнопки **English** задайте это выражение:<br>**Navigate(Target; ScreenTransition.Fade; {Language:"English"})**
-4. В качестве значения свойства **[OnSelect](../controls/properties-core.md)** кнопки **Spanish** задайте это выражение:<br>**Navigate(Target; ScreenTransition.Fade; {Language:"Spanish"})**
-5. На экране **Target** добавьте метку и задайте в качестве значения ее свойства **[Text](../controls/properties-core.md)** это выражение:<br>**If(Language="English"; "Hello!"; "Hola!")**
+3. В качестве значения свойства **[OnSelect](../controls/properties-core.md)** кнопки **English** задайте это выражение:<br>**Navigate(Target, ScreenTransition.Fade, {Language:"English"})**
+4. В качестве значения свойства **[OnSelect](../controls/properties-core.md)** кнопки **Spanish** задайте это выражение:<br>**Navigate(Target, ScreenTransition.Fade, {Language:"Spanish"})**
+5. На экране **Target** добавьте метку и задайте в качестве значения ее свойства **[Text](../controls/properties-core.md)** это выражение:<br>**If(Language="English", "Hello!", "Hola!")**
 6. На экране **Target** перейдите на вкладку **Вставка**, выберите **Фигуры** и нажмите кнопку со стрелкой "Назад".
-7. Задайте для свойства **[OnSelect](../controls/properties-core.md)** стрелки "Назад" эту формулу:<br>**Navigate(Source; ScreenTransition.Fade)**
+7. Задайте для свойства **[OnSelect](../controls/properties-core.md)** стрелки "Назад" эту формулу:<br>**Navigate(Source, ScreenTransition.Fade)**
 8. На экране **Source** нажмите клавишу F5, а затем нажмите кнопку для любого языка.
 
     После этого на экране **Target** появится метка на языке, соответствующем нажатой кнопке.

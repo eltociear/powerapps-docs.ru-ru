@@ -1,6 +1,6 @@
 ---
 title: Функция Exit | Документация Майкрософт
-description: Справочные сведения о функции Exit в PowerApps, включая описание синтаксиса и примеры.
+description: Справочные сведения, включая синтаксис и примеры, для функции exit в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1bcaa98388c2adafac3456bc123b6d766e790697
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 25db774c6d8516cdc64f8a11e5bf70e4d342b231
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984991"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730996"
 ---
-# <a name="exit-function-in-powerapps"></a>Функция Exit в PowerApps
+# <a name="exit-function-in-power-apps"></a>Функция exit в Power Apps
 Выполняет выход из запущенного приложения.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функция **Exit** выполняет выход из запущенного приложения.  Пользователь возвращается к списку приложений, где он может выбрать другое приложение и открыть его.
 
 ## <a name="syntax"></a>Синтаксис

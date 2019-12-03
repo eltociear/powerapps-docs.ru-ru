@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 233fd99eeba86151f616a22955cf28c2114de43e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 500154ecde380a1cf339f934728807216d29c804
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679622"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731632"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Создание зависимых раскрывающихся списков в приложении Canvas
 
@@ -50,7 +49,7 @@ ms.PowerAppsDecimalTransform: true
 | пемброке       | Производить          |
 | пемброке       | Цветочно-           |
 
-В списке **инцидентов** отображаются контактные данные и сведения о каждом инциденте. Создайте столбец Date в качестве столбца **дат** , но создайте другие столбцы в виде **одной строки текстовых** столбцов, чтобы упростить настройку и избежать предупреждений о [делегировании](./delegation-overview.md) в Microsoft PowerApps.
+В списке **инцидентов** отображаются контактные данные и сведения о каждом инциденте. Создайте столбец Date как столбец **дат** , но создайте другие столбцы в виде **одной строки текстовых** столбцов, чтобы упростить настройку и избежать предупреждений о [делегировании](./delegation-overview.md) в Microsoft Power Apps.
 
 | Имя | Фамилия | Номер телефона     | Location | Department | Description       | Date      |
 |------------|-----------|------------------|----------------|------------|-------------------------|-----------|
@@ -139,7 +138,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **Items** элемента **ддлокатион** следующую формулу:
 
-    `Distinct(Locations; Location)`
+    `Distinct(Locations, Location)`
 
 1. используемых Удерживая нажатой клавишу Alt, откройте **ддлокатион**и убедитесь, что в списке показаны три расположения.
 
@@ -159,7 +158,7 @@ ms.PowerAppsDecimalTransform: true
 
     Для свойства **Items** объекта **дддепартмент** задана следующая формула:
 
-    `Filter(Locations; Location = ddLocation.Selected.Result)`
+    `Filter(Locations, Location = ddLocation.Selected.Result)`
 
     Эта формула фильтрует элементы в **дддепартмент** в зависимости от того, что пользователь выбирает в **ддлокатион**. Такая конфигурация гарантирует, что "дочерний" список отделов будет отражать данные для своего "родительского" расположения, так как в списке **расположений** в SharePoint указано.
 

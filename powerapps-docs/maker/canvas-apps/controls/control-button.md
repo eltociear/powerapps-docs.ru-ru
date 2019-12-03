@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 430452514cd37930e145e8061ee6ac64c697b6e9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 02d5f59f16b68ce7f140857591b86a5cd8e54cd5
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679806"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74722962"
 ---
-# <a name="button-control-in-powerapps"></a>Элемент управления "Кнопка" в PowerApps
+# <a name="button-control-in-power-apps"></a>Элемент управления "Кнопка" в Power Apps
 Элемент управления, который пользователь нажимает для взаимодействия с приложением.
 
 ## <a name="description"></a>Description
@@ -118,7 +117,7 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-**[Navigate( *имя_экрана*; *тип_перехода* )](../functions/function-navigate.md)**
+**[Navigate( *имя_экрана*, *тип_перехода* )](../functions/function-navigate.md)**
 
 ## <a name="examples"></a>Примеры
 ### <a name="add-a-basic-formula-to-a-button"></a>Добавление основной формулы для кнопки
@@ -145,7 +144,7 @@ ms.PowerAppsDecimalTransform: true
 1. Для свойства **[HintText](control-text-input.md)** текстового поля **Source** задайте значение "Введите число".
 2. Задайте для свойства **[OnSelect](properties-core.md)** кнопки **Add** эту формулу:
    
-    **UpdateContext({Total:Total + Value(Source.Text)});;<br>UpdateContext({ClearInput: ""})**
+    **UpdateContext({Total:Total + Value(Source.Text)});<br>UpdateContext({ClearInput: ""})**
    
     > [!NOTE]
    > Если указывается несколько формул, их следует разделять точками с запятой ( **;** ).

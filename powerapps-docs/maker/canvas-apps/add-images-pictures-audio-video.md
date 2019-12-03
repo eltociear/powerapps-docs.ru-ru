@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5612f97a3dde96fdb9ea017e34986b7e21c43bd7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 58b96ab5758fd30a05d9f325cb623bbc338b0d00
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679231"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724748"
 ---
-# <a name="using-multimedia-files-in-powerapps"></a>Использование файлов мультимедиа в PowerApps
+# <a name="using-multimedia-files-in-power-apps"></a>Использование мультимедийных файлов в Power Apps
 
 В этом разделе показано, как внедрять файлы мультимедиа в приложение на основе холста, отправлять нарисованные с помощью пера рисунки в источник данных и просматривать изображения из источника данных в приложении на основе холста. В качестве источника данных мы используем файл Excel в OneDrive для бизнеса.
 
@@ -159,7 +158,7 @@ ms.PowerAppsDecimalTransform: true
 
 8. На вкладке **Вставка** добавьте элемент управления **Кнопка** и в качестве значения свойства **OnSelect** задайте следующую формулу:
 
-    **Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})**
+    **Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})**
 
 9. Добавьте в приложение элемент управления **Коллекция изображений** (вкладка **Вставка** > **Коллекция**) и назначьте его свойству **Items** значение `Drawings`. Свойство **Image** для элемента управления "Коллекция" автоматически получает значение `ThisItem.Image`.
 

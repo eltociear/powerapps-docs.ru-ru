@@ -1,6 +1,6 @@
 ---
 title: Функции Date и Time | Документация Майкрософт
-description: Справочные сведения о функциях Date и Time в PowerApps, включая описание синтаксиса и примеры.
+description: Справочные сведения, включая синтаксис и примеры, для функций даты и времени в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: efd6e2cdea45f511a545ccfe2f38309bdf622110
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 01fdccf295dbf21e61790d537f74af562dce69f0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985221"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731213"
 ---
-# <a name="date-and-time-functions-in-powerapps"></a>Функции Date и Time в PowerApps
+# <a name="date-and-time-functions-in-power-apps"></a>Функции даты и времени в Power Apps
 Преобразуют компоненты даты и времени в значение даты и времени.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функция **Date** преобразует отдельные значения Year (Год), Month (Месяц) и Day (День) в единое значение даты и времени.  В качестве времени в этом значении указывается полночь.
 
 * Если значение аргумента Year находится в диапазоне от 0 до 1899 (включительно), то функция прибавляет это значение к числу 1900 и вычисляет год.  **70** превращается в **1970**.
@@ -38,26 +37,26 @@ ms.PowerAppsDecimalTransform: true
 Ознакомьтесь также с дополнительными сведениями в статье о [работе с датами и временем](../show-text-dates-times.md).
 
 ## <a name="syntax"></a>Синтаксис
-**Date**( *Год*; *Месяц*; *День* )
+**Date**( *Год*, *Месяц*, *День* )
 
 * *Год* — обязательный аргумент.  Числа больше 1899 интерпретируются как абсолютные (1980 интерпретируется как 1980), а числа в диапазоне от 0 до 1899 интерпретируются как относительные по отношению к 1900. (Например, 80 интерпретируется как 1980.)
 * *Месяц* — обязательный аргумент.  Число в диапазоне от 1 до 12.
 * *День* — обязательный аргумент. Число в диапазоне от 1 до 31.
 
-**Time**( *Часы*; *Минуты*; *Секунды* )
+**Time**( *Часы*, *Минуты*, *Секунды* )
 
 * *Часы* — обязательный аргумент.  Число в диапазоне от 0 (12:00 AM) до 23 (11:00 PM).
 * *Минуты* — обязательный аргумент. Число в диапазоне от 0 до 59.
 * *Секунды* — обязательный аргумент. Число в диапазоне от 0 до 59.
 
 ## <a name="examples"></a>Примеры
-### <a name="date"></a>Дата
+### <a name="date"></a>Date
 Если пользователь ввел **1979** в элемент управления для ввода текста с именем **HireYear**, а также ввел **3** — в **HireMonth** и **17** — в **HireDay**, то эта функция должна вернуть значение **3/17/1979**:
 
-**Date(Value(HireYear.Text); Value(HireMonth.Text); Value(HireDay.Text))**
+**Date(Value(HireYear.Text), Value(HireMonth.Text), Value(HireDay.Text))**
 
 ### <a name="time"></a>Time
 Если пользователь ввел **14** в элемент управления для ввода текста с именем **BirthHour**, а также ввел **50** — в **BirthMinute** и **24** — в **BirthSecond**, то эта функция должна вернуть значение **02:50:24 p**.
 
-**Text(Time(Value(BirthHour.Text); Value(BirthMinute.Text); Value(BirthSecond.Text)); "hh:mm:ss a/p")**
+**Text(Time(Value(BirthHour.Text), Value(BirthMinute.Text), Value(BirthSecond.Text)), "hh:mm:ss a/p")**
 

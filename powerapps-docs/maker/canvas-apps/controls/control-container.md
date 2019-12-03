@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eec6400b4953f1183ffbb294093c13aebb53fe8d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e22800dc929c32f0a605137b6dc94820b984459c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678656"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727319"
 ---
 # <a name="container-control-in-power-apps-experimental"></a>Контейнерные элементы управления в Power Apps (экспериментальные)
 Предоставляет возможность создания иерархии.
 
 > [!IMPORTANT]
 > Это экспериментальная функция. Экспериментальные функции могут существенно измениться или полностью исчезнуть в любое время.
-> Дополнительные сведения см. [в статье экспериментальные и предварительные версии функций в PowerApps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview).
+> Дополнительные сведения см. [в статье экспериментальные и предварительные версии функций Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview).
 
 ## <a name="description"></a>Description
  Контейнер может содержать набор элементов управления и имеет собственные свойства. 

@@ -1,6 +1,6 @@
 ---
 title: Функция Find | Документация Майкрософт
-description: Справочные сведения о функции Find в PowerApps, включая описание синтаксиса и примеры.
+description: Справочные сведения, включая синтаксис и примеры, для функции поиска в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,24 +13,23 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fbdd29ed1757301f076ab6bebea548fcd7a963cc
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 62254bf46836ffc8ed5fa5b7685561b611db49a7
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984956"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730977"
 ---
-# <a name="find-function-in-powerapps"></a>Функция Find в PowerApps
+# <a name="find-function-in-power-apps"></a>Функция поиска в Power Apps
 Находит текстовую строку, если она существует, в другой строке.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функция **Find** выполняет поиск строки в другой строке и учитывает регистр. Чтобы не учитывать регистр, сначала примените к аргументам функцию **[Lower](function-lower-upper-proper.md)** .
 
 Функция **Find** возвращает начальную позицию найденной строки.  Позиция 1 — это первый знак строки. Функция **Find** возвращает значение *blank* (пусто), если строка, в которой выполняется поиск, не содержит искомой строки.
 
 ## <a name="syntax"></a>Синтаксис
-**Find**( *Искомая_строка*; *Строка* [; *Начальная_позиция* ] )
+**Find**( *Искомая_строка*, *Строка* [, *Начальная_позиция* ] )
 
 * *Искомая_строка* — обязательный аргумент.  Строка, которую требуется найти.
 * *Строка* — обязательный аргумент.  Строка, в которой требуется выполнить поиск.

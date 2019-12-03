@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9e96b0733e139657c3105ec020470d55fe5008dd
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: af4412e2f098d6e7e5996b2de436b674cfa60a40
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679201"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724637"
 ---
-# <a name="add-images-to-excel-from-powerapps"></a>Добавление изображений в Excel из PowerApps
+# <a name="add-images-to-excel-from-power-apps"></a>Добавление изображений в Excel из Power Apps
 Вы можете автоматически создать приложение, в котором пользователи смогут показывать, добавлять и удалять изображения из файлов и рисунки, созданные с помощью элемента управления **Перо**. Это приложение основано на файле Excel, который вы создаете и отправляете в учетную запись облачного хранилища.
 
 ## <a name="prerequisites"></a>Технические условия

@@ -1,6 +1,6 @@
 ---
 title: Функция Shuffle | Документация Майкрософт
-description: Справочные сведения, включая синтаксис и пример, для функции Shuffle в PowerApps
+description: Справочные сведения, включая синтаксис и пример для функции случайного обращения в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 181ef038a90c9bfc7e3fe72af9514a34afce9776
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: c67e8095a7c0ed3246bce0401bbe787becd7cea0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983926"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730160"
 ---
-# <a name="shuffle-function-in-powerapps"></a>Функция Shuffle в PowerApps
+# <a name="shuffle-function-in-power-apps"></a>Функция случайного перемещения в Power Apps
 Случайным образом изменяет порядок [записей](../working-with-tables.md#records) в [таблице](../working-with-tables.md).
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функция **Shuffle** изменяет порядок записей в таблице (перемешивает таблицу).
 
 Функция **Shuffle** возвращает таблицу, в которой столько же [столбцов](../working-with-tables.md#columns) и строк, сколько в таблице-аргументе.

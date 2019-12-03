@@ -1,6 +1,6 @@
 ---
 title: Функции Trim и TrimEnds | Документация Майкрософт
-description: Справочные сведения, включая синтаксис и пример, для функций Trim и TrimEnds в PowerApps
+description: Справочные сведения, включая синтаксис и пример для функций Trim и Тримендс в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 79f035271b2a98faf6ddb7bba716c7107e311183
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: cf87c96e2e49f9bc01f6d6c749844bd473099cad
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71991913"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729960"
 ---
-# <a name="trim-and-trimends-functions-in-powerapps"></a>Функции Trim и TrimEnds в PowerApps
+# <a name="trim-and-trimends-functions-in-power-apps"></a>Функции Trim и Тримендс в Power Apps
 Удаляют лишние пробелы из текстовой строки.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функция **Trim** удаляет все пробелы из текстовой строки, за исключением одиночных пробелов между словами.  
 
 Функция **TrimEnds** удаляет все пробелы из начала и конца текстовой строки, но оставляет пробелы между словами без изменений.
@@ -36,7 +35,7 @@ ms.PowerAppsDecimalTransform: true
 ## <a name="syntax"></a>Синтаксис
 **Trim**( *строка* )<br>**TrimEnds**( *строка* )
 
-* *строка* — обязательный аргумент. Строка текста, из которой необходимо удалить лишние пробелы.
+* *Строка* — обязательный аргумент. Строка текста, из которой необходимо удалить лишние пробелы.
 
 **Trim**( *таблица_из_одного_столбца* )<br>**TrimEnds**( *таблица_из_одного_столбца* )
 
@@ -44,7 +43,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="example"></a>Пример
 
-| Формула | Описание | Возвращаемый результат |
+| Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
 | **Trim(&nbsp;"&nbsp;&nbsp;&nbsp;Привет,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;мир&nbsp;&nbsp;&nbsp;"&nbsp;)** |Удаляет все пробелы из начала и конца строки и лишние пробелы внутри строки. |"Hello World" |
 | **TrimEnds(&nbsp;"&nbsp;&nbsp;&nbsp;Привет,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;мир&nbsp;&nbsp;&nbsp;"&nbsp;)** |Удаляет все пробелы из начала и конца строки. |"Привет,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;мир" |
@@ -54,9 +53,9 @@ ms.PowerAppsDecimalTransform: true
 ![](media/function-trim/input-strings.png)
 
 Для создания этой коллекции установите в свойстве **OnSelect** элемента управления **[Button](../controls/control-button.md)** следующую формулу, откройте режим предварительного просмотра и нажмите кнопку:
-<br>**ClearCollect( Spaces; [ "&nbsp;&nbsp;&nbsp;Елена&nbsp;&nbsp;&nbsp;Иванова&nbsp;&nbsp;&nbsp;"; "&nbsp;&nbsp;&nbsp;&nbsp;Иван&nbsp;&nbsp;&nbsp;да&nbsp;&nbsp;&nbsp;Марья"; "Уже&nbsp;без пробелов"; "&nbsp;&nbsp;&nbsp;Венера,&nbsp;&nbsp;&nbsp;Земля,&nbsp;&nbsp;&nbsp;Марс&nbsp;&nbsp;"; "Масло&nbsp;и&nbsp;вода&nbsp;&nbsp;&nbsp;" ] )**
+<br>**ClearCollect( Spaces, [ "&nbsp;&nbsp;&nbsp;Елена&nbsp;&nbsp;&nbsp;Иванова&nbsp;&nbsp;&nbsp;", "&nbsp;&nbsp;&nbsp;&nbsp;Иван&nbsp;&nbsp;&nbsp;да&nbsp;&nbsp;&nbsp;Марья", "Уже&nbsp;без пробелов", "&nbsp;&nbsp;&nbsp;Венера,&nbsp;&nbsp;&nbsp;Земля,&nbsp;&nbsp;&nbsp;Марс&nbsp;&nbsp;", "Масло&nbsp;и&nbsp;вода&nbsp;&nbsp;&nbsp;" ] )**
 
-| Формула | Описание | Возвращаемый результат |
+| Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
 | **Trim(&nbsp;Spaces&nbsp;)** |Удаляет все пробелы в начале и конце каждой строки и лишние пробелы внутри строк для каждой строки в коллекции **Spaces**. |<style> img { max-width: none } </style> ![](media/function-trim/output-trim.png) |
 | **TrimEnds(&nbsp;Spaces&nbsp;)** |Удаляет все пробелы в начале и конце каждой строки в коллекции **Spaces**. |<style> img { max-width: none } </style> ![](media/function-trim/output-trimends.png) |

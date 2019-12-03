@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f7e1b4ff10a12d454380c394b2f6ae64389bc23e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: df568e6a61ca43f6c98ee80c33ed9efe4148de9e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679737"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729082"
 ---
-# <a name="pdf-viewer-control-experimental-in-powerapps"></a>Элемент управления "Средство просмотра PDF" (экспериментальная функция) в PowerApps
+# <a name="pdf-viewer-control-experimental-in-power-apps"></a>Элемент управления средства просмотра PDF (экспериментальный) в Power Apps
 Экспериментальный элемент управления, отображающий содержимое PDF-файла.
 
 ## <a name="description"></a>Description

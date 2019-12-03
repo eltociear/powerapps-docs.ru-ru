@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4e895cbd482e24a1e61d499e6baae7d1ec9c1e82
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4b159bbfe568e4f3a6501a0d98af83ac062b8c19
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674512"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732947"
 ---
-# <a name="understand-data-cards-in-powerapps"></a>Общие сведения о картах данных в PowerApps
+# <a name="understand-data-cards-in-power-apps"></a>Общие сведения о карточках данных в Power Apps
 
 Элементы управления **[Карта](controls/control-card.md)** являются стандартными блоками элементов управления **[Форма редактирования](controls/control-form-detail.md)** и **[Форма отображения](controls/control-form-detail.md)** в приложениях на основе холста. Форма представляет всю запись, а каждая карта представляет одно поле этой записи.
 

@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2a89f2afcceedada0ffdda53628e9253433e8f95
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 7bb993de28435478c65e061e959b2fa8945e73d1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650683"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727419"
 ---
-# <a name="check-box-control-in-powerapps"></a>Элемент управления "Флажок" в PowerApps
+# <a name="check-box-control-in-power-apps"></a>Элемент управления "флажок" в Power Apps
 Элемент управления, который пользователь может установить или снять, задавая значение **true** или **false** соответственно.
 
 ## <a name="description"></a>Description
@@ -122,14 +121,14 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**If**( *Condition*;; *Result* )](../functions/function-if.md)
+[**If**( *Condition*; *Result* )](../functions/function-if.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **Флажок**, назовите его **chkReserve** и укажите для свойства **[Text](properties-core.md)** значение **Зарезервировать**.
    
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте элемент управления **[Средство выбора даты](control-date-picker.md)** и укажите для свойства **[Visible](properties-core.md)** следующую формулу:
-   <br>**If(chkReserve.Value = true; true)**
+   <br>**If(chkReserve.Value = true, true)**
    
     Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 3. Нажмите клавишу F5, выберите элемент **chkReserve** и укажите для свойства **[Value](properties-core.md)** значение **true**, затем еще раз выберите элемент **chkReserve** и укажите для свойства **[Value](properties-core.md)** значение **false**.

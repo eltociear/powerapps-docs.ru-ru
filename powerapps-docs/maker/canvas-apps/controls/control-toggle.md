@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: be21e2b0c24d7b4aaf9da12b0793899fd95acd06
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 17bceb06af2c460eb122f1bab0dc382b00838ee5
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649814"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731934"
 ---
-# <a name="toggle-control-in-powerapps"></a>Элемент управления "Переключатель" в PowerApps
+# <a name="toggle-control-in-power-apps"></a>Переключить элемент управления в Power Apps
 "Переключатель" — это элемент управления, который пользователь может включить или отключить.
 
 ## <a name="description"></a>Description
@@ -106,14 +105,14 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**If**( *Condition*;; *Result* )](../functions/function-if.md)
+[**If**( *Condition*; *Result* )](../functions/function-if.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте в приложение переключатель и назовите его **Скидка**.
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте метку и установите в ее свойстве **[Text](properties-core.md)** формулу:
-   <br>**If(Скидка.Value = true; "Цена: 75 руб."; "Цена: 100 руб.")**
+   <br>**If(Скидка.Value = true, "Цена: 75 руб.", "Цена: 100 руб.")**
 
     Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 3. Нажмите клавишу F5 и измените значение переключателя **Скидка**.

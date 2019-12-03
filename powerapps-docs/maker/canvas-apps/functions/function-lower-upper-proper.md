@@ -1,6 +1,6 @@
 ---
 title: Функции Lower, Upper и Proper | Документация Майкрософт
-description: Справочные сведения, включая описание синтаксиса и примеры, для функций Lower, Upper и Proper в PowerApps
+description: Справочные сведения, включая синтаксис и примеры, для нижних, верхних и правильных функций в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 413f07bcca9d238ab1a6f6b020f1d1436f2ca737
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 115b5e51f816778d763481999f8f487a1d64037a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984564"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730590"
 ---
-# <a name="lower-upper-and-proper-functions-in-powerapps"></a>Функции Lower, Upper и Proper в PowerApps
+# <a name="lower-upper-and-proper-functions-in-power-apps"></a>Нижние, верхние и правильные функции в Power Apps
 Преобразуют буквы текстовой строки во все строчные, все прописные или в правильный регистр.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функции **Lower**, **Upper** и **Proper** преобразуют регистр букв в строках.
 
 * **Lower** преобразует все прописные буквы в строчные.
@@ -38,7 +37,7 @@ ms.PowerAppsDecimalTransform: true
 ## <a name="syntax"></a>Синтаксис
 **Lower**( *строка* )<br>**Upper**( *строка* )<br>**Proper**( *строка* )
 
-* *строка* — обязательный аргумент. Строка для преобразования.
+* *Строка* — обязательный аргумент. Строка для преобразования.
 
 **Lower**( *таблица_из_одного_столбца* )<br>**Upper**( *таблица_из_одного_столбца* )<br>**Proper**( *таблица_из_одного_столбца* )
 
@@ -48,7 +47,7 @@ ms.PowerAppsDecimalTransform: true
 ### <a name="single-string"></a>Одна строка
 Примеры в этом разделе используют элемент управления для ввода текста с именем **Author** в качестве [источника данных](../working-with-data-sources.md). Элемент управления содержит строку "И. И. ИваНОВ".
 
-| Формула | Описание | Возвращаемый результат |
+| Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
 | **Lower(&nbsp;Author.Text&nbsp;)** |Преобразует все прописные буквы в строке в строчные. |"и. и. иванов" |
 | **Upper(&nbsp;Author.Text&nbsp;)** |Преобразует все строчные буквы в строке в прописные. |"И. И. ИВАНОВ" |
@@ -61,11 +60,11 @@ ms.PowerAppsDecimalTransform: true
 
 Каждая формула возвращает таблицу из одного столбца, содержащую преобразованные строки.
 
-| Формула | Описание | Возвращаемый результат |
+| Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
-| **Lower( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Преобразует все строчные буквы в прописные. |<style> img { max-width:none; } </style> ![](media/function-lower-upper-proper/people-table-lower.png) |
-| **Upper( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Преобразует все строчные буквы в прописные. |![](media/function-lower-upper-proper/people-table-upper.png) |
-| **Proper( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;) )** |Преобразует все первые буквы слов из строчных в прописные, а все другие буквы — из прописных в строчные. |![](media/function-lower-upper-proper/people-table-proper.png) |
+| **Lower( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Преобразует все строчные буквы в прописные. |<style> img { max-width:none; } </style> ![](media/function-lower-upper-proper/people-table-lower.png) |
+| **Upper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Преобразует все строчные буквы в прописные. |![](media/function-lower-upper-proper/people-table-upper.png) |
+| **Proper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |Преобразует все первые буквы слов из строчных в прописные, а все другие буквы — из прописных в строчные. |![](media/function-lower-upper-proper/people-table-proper.png) |
 
 ### <a name="step-by-step-example"></a>Пошаговый пример
 1. Добавьте элемент управления **[Текстовое поле](../controls/control-text-input.md)** и назовите его **Source**.

@@ -1,6 +1,6 @@
 ---
 title: Обмен ресурсами в приложении на основе холста | Документы Майкрософт
-description: Сведения о предоставлении общего доступа к ресурсам, используемым в приложении на основе холста в PowerApps
+description: Общие сведения о совместном использовании ресурсов, используемых приложением Canvas в Power Apps
 author: archnair
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2160855d1b5ce67a4c11f5e227eb4d889d927d08
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a0dec0f593dee36cbdcff62667177c194abfc6e0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542347"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732469"
 ---
-# <a name="share-canvas-app-resources-in-powerapps"></a>Обмен ресурсами в приложении на основе холста в PowerApps
+# <a name="share-canvas-app-resources-in-power-apps"></a>Общий доступ к холсту — ресурсы приложения в Power Apps
 
 Прежде чем [предоставить общий доступ к приложению на основе холста](share-app.md), проанализируйте используемые им типы ресурсов, например, какие-то из следующих:
 

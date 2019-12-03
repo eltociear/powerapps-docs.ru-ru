@@ -1,6 +1,6 @@
 ---
 title: Руководство по настройке коллекции в созданном приложении | Документация Майкрософт
-description: С помощью этого руководства вы настроите отображаемые в коллекции данные и другие элементы приложения, автоматически созданного в PowerApps.
+description: В этом руководстве вы настроите данные, отображаемые в коллекции, и другие элементы приложения, которые были автоматически созданы в Power Apps.
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a3afda5686c6b791243126c70b9c6d33762beae0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 02d6e3b7a3dc18ab4c7d4d3d5f510b6c3bbd227a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679668"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731724"
 ---
-# <a name="tutorial-customize-a-gallery-in-powerapps"></a>Учебник. Настройка коллекции в PowerApps
+# <a name="tutorial-customize-a-gallery-in-power-apps"></a>Руководство. Настройка коллекции в Power Apps
 
 В этом руководстве вы настроите список записей, называемый коллекцией, и вносите другие изменения в приложение, которое было автоматически создано в Microsoft Power Apps. Пользователи смогут управлять данными в приложении и без этих изменений, но настройка с учетом требований вашей организации упростит работу.
 
@@ -52,7 +51,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="open-the-generated-app"></a>Открытие созданного приложения
 
-1. Войдите в [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), а затем выберите **Приложения** у левого края экрана.
+1. Войдите в [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), а затем выберите **приложения** , расположенные в левом углу.
 
 1. Найдите созданное приложение, щелкните значок многоточия ( **...** ), а затем выберите **Редактировать**.
 
@@ -96,7 +95,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Скопируйте эту формулу и вставьте ее в строку формул.
 
-    ```SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; Descending; Ascending))```
+    ```SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, Descending, Ascending))```
 
     Эта формула действует следующим образом:
 

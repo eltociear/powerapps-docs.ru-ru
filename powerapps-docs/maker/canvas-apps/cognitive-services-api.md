@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2afd849a716034e4a4dbd50fd4ad58af059be18b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: c1860320715798d1e3acc72af7f158f91b8f3cd0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680013"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724355"
 ---
-# <a name="use-cognitive-services-in-powerapps"></a>Использование служб Cognitive Services с PowerApps
+# <a name="use-cognitive-services-in-power-apps"></a>Использование Cognitive Services в Power Apps
 В этой статье показано, как создать простое приложение Canvas, которое использует [API анализа текста Cognitive Services Azure](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) для анализа текста. Мы объясним, как установить API анализа текста и подключиться к нему с помощью [соединителя для анализа текста](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/). Затем мы покажем, как создать приложение на основе холста, которое вызывает API.
 
 > [!NOTE]
@@ -70,7 +69,7 @@ Cognitive Services Azure — это набор API-интерфейсов, па�
 Теперь, когда у вас есть API анализа текста, вы подключаетесь к нему из Power Apps и создаете приложение, которое вызывает API. У этого приложения будет один экран и такие же функциональные возможности, как у демоверсии на странице API анализа текста. Приступим к созданию.
 
 ### <a name="create-the-app-and-add-a-connection"></a>Создание приложения и добавление подключения
-Сначала создайте пустое приложение для телефона и добавьте подключение с помощью соединителя **Текстовая аналитика**. Дополнительные сведения об этих задачах см. в статьях [Создание приложения с нуля](get-started-create-from-blank.md) и [Управление подключениями в PowerApps](add-manage-connections.md).
+Сначала создайте пустое приложение для телефона и добавьте подключение с помощью соединителя **Текстовая аналитика**. Дополнительные сведения об этих задачах см. в статье [Создание приложения с нуля](get-started-create-from-blank.md) и [Управление подключениями в Power Apps](add-manage-connections.md).
 
 1. На странице [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Создать на основе шаблона** > ![Значок приложения для телефона](./media/cognitive-services-api/icon-phone-app.png) (телефон) > **Создать это приложение**.
 
@@ -128,34 +127,34 @@ Cognitive Services Azure — это набор API-интерфейсов, па�
 
 И теперь ко всему этому мы добавим формулу для свойства кнопки **OnSelect**. И тут происходит все самое интересное.
 
-```powerapps-comma
-If( chkLanguage.Value = true;
-    ClearCollect( languageCollect; 
+```powerapps-dot
+If( chkLanguage.Value = true,
+    ClearCollect( languageCollect, 
         TextAnalytics.DetectLanguage(
             {
-                numberOfLanguagesToDetect: 1; 
+                numberOfLanguagesToDetect: 1, 
                 text: tiTextToAnalyze.Text
             }
         ).detectedLanguages.name
     )
-);;
+);
 
-If( chkPhrases.Value = true;
-    ClearCollect( phrasesCollect; 
+If( chkPhrases.Value = true,
+    ClearCollect( phrasesCollect, 
         TextAnalytics.KeyPhrases(
             {
-                language: "en"; 
+                language: "en", 
                 text: tiTextToAnalyze.Text
             }
         ).keyPhrases
     )
-);;
+);
 
-If( chkSentiment.Value = true;
-    ClearCollect( sentimentCollect; 
+If( chkSentiment.Value = true,
+    ClearCollect( sentimentCollect, 
         TextAnalytics.DetectSentiment(
             {
-                language: "en"; 
+                language: "en", 
                 text: tiTextToAnalyze.Text
             }
         ).score
@@ -190,7 +189,7 @@ If( chkSentiment.Value = true;
    
     Функция **First()** возвращает первую (и в нашем случае единственную) запись из коллекции **languageCollect**, а затем приложение отображает значение единственного поля **name** для этой записи.
 
-2. Для свойства **Текст** метки тональности задайте следующее: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value; 3)\*100 & "% positive."`.
+2. Для свойства **Текст** метки тональности задайте следующее: `"The sentiment score is " & Round(First(sentimentCollect.Value).Value, 3)\*100 & "% positive."`.
    
     Эта формула также использует функцию **First()** , возвращает **значение** (0–1) из первой и единственной записи, а затем форматирует его в виде процентов.
 

@@ -1,6 +1,6 @@
 ---
 title: Функции Blank, Coalesce, IsBlank и IsEmpty | Документация Майкрософт
-description: Справочные сведения о функциях Blank, Coalesce, IsBlank и IsEmpty в PowerApps, в том числе описание синтаксиса и примеры
+description: Справочные сведения, в том числе синтаксис и примеры, для функций пусто, Объединенных, чистых и IsEmpty в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -14,15 +14,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a026d801a6bda6ae82884f5fab94f09b4fdde571
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 59314375b68a73e4c46bd3274a3fefc994465b4d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680381"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730765"
 ---
-# <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>Функции Blank, Coalesce, IsBlank и IsEmpty в PowerApps
+# <a name="blank-coalesce-isblank-and-isempty-functions-in-power-apps"></a>Пустые, Объединенные, чистые и IsEmpty функции в Power Apps
 Эти функции позволяют проверить, является ли значение пустым и отсутствуют ли в [таблице](../working-with-tables.md) [записи](../working-with-tables.md#records), а также позволяют создавать *пустые* значения.
 
 ## <a name="overview"></a>Обзор
@@ -40,11 +39,11 @@ ms.PowerAppsDecimalTransform: true
 ## <a name="description"></a>Description
 Функция **Blank** возвращает *пустое* значение. Используйте эту функцию, чтобы сохранить значение NULL в источнике данных, который поддерживает эти значения, и удалить все значения из этого поля.
 
-Функция **IsEmpty** проверяет наличие *пустого* значения или пустой строки.  Тест включает пустые строки для упрощения создания приложений, так как некоторые источники данных и элементы управления используют пустую строку, если значение не существует.  Чтобы протестировать специально для *пустого* значения, используйте `if( Value = Blank(); ...` вместо **"blank".**
+Функция **IsEmpty** проверяет наличие *пустого* значения или пустой строки.  Тест включает пустые строки для упрощения создания приложений, так как некоторые источники данных и элементы управления используют пустую строку, если значение не существует.  Чтобы протестировать специально для *пустого* значения, используйте `if( Value = Blank(), ...` вместо **"blank".**
 
 Функция **объединения** вычисляет свои аргументы по порядку и возвращает первое значение, которое не является *пустым* или пустой строкой.  Используйте эту функцию, чтобы заменить *пустое* значение или пустую строку другим значением, но оставьте*непустые* и непустые строковые значения без изменений.  Если все аргументы *пусты* или являются пустыми строками, функция возвращает *пустое*значение, делая **объединением** пустого способа преобразовать пустые строки в *пустые* значения.  Все аргументы для **Coalesce** должны относиться к одному типу. Например, нельзя комбинировать числа с текстовыми строками.  
 
-`Coalesce( value1; value2 )` является более кратким эквивалентом `If( Not IsBlank( value1 ); value1; Not IsBlank( value2 ); value2 )` и не требует, чтобы вычислить значение **Значение1** и **value2** дважды.  Функция [ **If** ](function-if.md) возвращает значение *Blank* , если в этом случае отсутствует формула "else".
+`Coalesce( value1, value2 )` является более кратким эквивалентом `If( Not IsBlank( value1 ), value1, Not IsBlank( value2 ), value2 )` и не требует, чтобы вычислить значение **Значение1** и **value2** дважды.  Функция [ **If** ](function-if.md) возвращает значение *Blank* , если в этом случае отсутствует формула "else".
 
 Функция **IsEmpty** проверяет, содержит ли таблица какие-либо записи. Это аналогично использованию функции **[CountRows](function-table-counts.md)** и проверке на наличие нулевых значений. Чтобы проверить на наличие ошибок источника данных, можно использовать функцию **IsEmpty** вместе с функцией **[Errors](function-errors.md)** .
 
@@ -53,7 +52,7 @@ ms.PowerAppsDecimalTransform: true
 ## <a name="syntax"></a>Синтаксис
 **Blank**()
 
-**Coalesce**( *Value1* [; *Value2*; ... ] )
+**Coalesce**( *Value1* [, *Value2*, ... ] )
 
 * Значения *Value* — обязательные аргументы. Проверяемые значения.  Каждое значение вычисляется по порядку, пока не будет обнаружено значение, *которое не является пустым, а не* пустой строкой.  Значения после этой точки не оцениваются.  
 
@@ -73,8 +72,8 @@ ms.PowerAppsDecimalTransform: true
 1. Создайте приложение с нуля и добавьте элемент управления **Кнопка**.
 2. Задайте для свойства кнопки **[OnSelect](../controls/properties-core.md)** эту формулу:
 
-    ```powerapps-comma
-    ClearCollect( Cities; { Name: "Seattle"; Weather: "Rainy" } )
+    ```powerapps-dot
+    ClearCollect( Cities, { Name: "Seattle", Weather: "Rainy" } )
     ```
 3. Просмотрите приложение, нажмите добавленную кнопку, а затем закройте режим предварительного просмотра.  
 4. В меню **Файл** щелкните или коснитесь **Коллекции**.
@@ -85,15 +84,15 @@ ms.PowerAppsDecimalTransform: true
 5. Нажмите кнопку со стрелкой "Назад", чтобы вернуться в рабочую область по умолчанию.
 6. Добавьте элемент управления **Метка** и задайте в качестве значения свойства **Text** следующую формулу:
 
-    ```powerapps-comma
+    ```powerapps-dot
     IsBlank( First( Cities ).Weather )
     ```
 
     Метка отображает значение **false**, так как поле **Weather** содержит значение (Rainy).
 7. Добавьте вторую кнопку и задайте в качестве значения свойства **OnSelect** следующую формулу:
 
-    ```powerapps-comma
-    Patch( Cities; First( Cities ); { Weather: Blank() } )
+    ```powerapps-dot
+    Patch( Cities, First( Cities ), { Weather: Blank() } )
     ```
 8. Просмотрите приложение, нажмите добавленную кнопку, а затем закройте режим предварительного просмотра.  
 
@@ -116,8 +115,8 @@ ms.PowerAppsDecimalTransform: true
 1. Создайте приложение с нуля, добавьте элемент управления "Текстовое поле" и назовите его **FirstName**.
 2. Добавьте метку и установите в ее свойстве **[Text](../controls/properties-core.md)** формулу:
 
-    ```powerapps-comma
-    If( IsBlank( FirstName.Text ); "First Name is a required field." )
+    ```powerapps-dot
+    If( IsBlank( FirstName.Text ), "First Name is a required field." )
     ```
 
     По умолчанию свойство элемента управления "Текстовое поле" **[Text](../controls/properties-core.md)** имеет значение **Text input**. Так как свойство содержит значение, оно не пустое и метка не отображает никакие сообщения.
@@ -135,14 +134,14 @@ ms.PowerAppsDecimalTransform: true
 | **IsBlank( "" )** |Строка, которая не содержит символы. |**true** |
 | **IsBlank( "Hello" )** |Строка, содержащая один или несколько символов. |**false** |
 | **IsBlank( *AnyCollection* )** |Так как [коллекция](../working-with-data-sources.md#collections) существует, она не считается пустой, даже если не содержит ни одной записи. Чтобы проверить наличие пустой коллекции, используйте функцию **IsEmpty**. |**false** |
-| **IsBlank( Mid( "Hello"; 17; 2 ) )** |Начальный символ для **[Mid](function-left-mid-right.md)** выходит за пределы строки.  Результатом является пустая строка. |**true** |
-| **IsBlank( If( false; false ) )** |Функция **[If](function-if.md)** без *ElseResult*.  Так как условие всегда имеет значение **false**, **[If](function-if.md)** всегда возвращает *пустое значение*. |**true** |
+| **IsBlank( Mid( "Hello", 17, 2 ) )** |Начальный символ для **[Mid](function-left-mid-right.md)** выходит за пределы строки.  Результатом является пустая строка. |**true** |
+| **IsBlank( If( false, false ) )** |Функция **[If](function-if.md)** без *ElseResult*.  Так как условие всегда имеет значение **false**, **[If](function-if.md)** всегда возвращает *пустое значение*. |**true** |
 
 ### <a name="isempty"></a>IsEmpty
 1. Создайте приложение с нуля и добавьте элемент управления **Кнопка**.
 2. Задайте для свойства кнопки **[OnSelect](../controls/properties-core.md)** эту формулу:
 
-    **Collect( IceCream; { Flavor: "Strawberry"; Quantity: 300 }; { Flavor: "Chocolate"; Quantity: 100 } )**
+    **Collect( IceCream, { Flavor: "Strawberry", Quantity: 300 }, { Flavor: "Chocolate", Quantity: 100 } )**
 3. Просмотрите приложение, нажмите добавленную кнопку, а затем закройте режим предварительного просмотра.  
 
     Создается коллекция с именем **IceCream**, в которой содержатся такие данные:
@@ -165,7 +164,7 @@ ms.PowerAppsDecimalTransform: true
 
 | Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
-| **IsEmpty( [&nbsp;1;&nbsp;2;&nbsp;3 ] )** |Таблица с одним столбцом содержит три записи, а значит, не является пустой. |**false** |
+| **IsEmpty( [&nbsp;1,&nbsp;2,&nbsp;3 ] )** |Таблица с одним столбцом содержит три записи, а значит, не является пустой. |**false** |
 | **IsEmpty( [&nbsp;] )** |Таблица с одним столбцом не содержит записей, а значит, является пустой. |**true** |
-| **IsEmpty( Filter( [&nbsp;1;&nbsp;2;&nbsp;3&nbsp;]; Value > 5 ) )** |Таблица с одним столбцом не содержит значений, превышающих 5.  В результате фильтр не обнаруживает подходящие записи и остается пустым. |**true** |
+| **IsEmpty( Filter( [&nbsp;1,&nbsp;2,&nbsp;3&nbsp;], Value > 5 ) )** |Таблица с одним столбцом не содержит значений, превышающих 5.  В результате фильтр не обнаруживает подходящие записи и остается пустым. |**true** |
 

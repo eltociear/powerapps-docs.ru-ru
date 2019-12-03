@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 02c9e680582b6d51a613fd8089709401f1e80b32
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d35150434d8fec7694f493f2d62c67997e2c839c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679760"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727169"
 ---
-# <a name="image-control-in-powerapps"></a>Элемент управления "Изображение" в PowerApps
+# <a name="image-control-in-power-apps"></a>Элемент управления "изображение" в Power Apps
 Этот элемент управления служит для показа изображения из локального файла или источника данных.
 
 ## <a name="description"></a>Description
@@ -112,7 +111,7 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Remove**( *DataSource*;; ThisItem )](../functions/function-remove-removeif.md)
+[**Remove**( *DataSource*; ThisItem )](../functions/function-remove-removeif.md)
 
 ## <a name="examples"></a>Примеры
 ### <a name="show-an-image-from-a-local-file"></a>Показ изображения из локального файла

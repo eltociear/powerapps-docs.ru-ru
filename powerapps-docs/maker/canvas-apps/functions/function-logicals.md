@@ -1,6 +1,6 @@
 ---
 title: Функции And, Or и Not | Документация Майкрософт
-description: Справочные сведения, включая описание синтаксиса и примеры, относительно функций And, Or и Not в PowerApps
+description: Справочные сведения, включая синтаксис и примеры, для функций и, OR и not в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,19 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a2b04e6a752ade561ec1b95658bcacda759b1a1c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1dae72a288c93b624d232402e32fe0e82cbaaead
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992556"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730614"
 ---
-# <a name="and-or-and-not-functions-in-powerapps"></a>Функции And, Or и Not в PowerApps
+# <a name="and-or-and-not-functions-in-power-apps"></a>Функции and, OR и not в Power Apps
 
 Логические булевы функции, широко используемые для обработки результатов сравнений и проверок.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 
 Функция **And** возвращает **true** (истина), если все ее аргументы принимают значение **true**.
 
@@ -45,8 +44,8 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="syntax"></a>Синтаксис
 
-**And**( *логическая_формула_1*; *логическая_формула_2* [; *логическая_формула_3*; ...])<br>
-**Or**( *LogicalFormula1*; *LogicalFormula2* [; *LogicalFormula3*; ... ] )<br>
+**And**( *логическая_формула_1*, *логическая_формула_2* [, *логическая_формула_3*, ...])<br>
+**Or**( *LogicalFormula1*, *LogicalFormula2* [, *LogicalFormula3*, ... ] )<br>
 **Not**(*логическая_формула*)
 
 - *логическая_формула_x* — обязательный аргумент.  Это логические формулы, которые возвращают логические значения и с которыми выполняет операцию соответствующая функция.
@@ -63,13 +62,13 @@ ms.PowerAppsDecimalTransform: true
 
 Чтобы создать эти глобальные переменные в приложении, вставьте элемент управления [**Button**](../controls/control-button.md) и задайте для его свойства **OnSelect** значение этой формулы:
 
-```powerapps-comma
-Set( a; false );; Set( b; true );; Set( x; 10 );; Set( y; 100 );; Set( s; "Hello World" )
+```powerapps-dot
+Set( a, false ); Set( b, true ); Set( x, 10 ); Set( y, 100 ); Set( s, "Hello World" )
 ```
 
 Нажмите кнопку (щелкнув ее, удерживая нажатой клавишу Alt), а затем задайте для свойства **Text** элемента управления [**Метка**](../controls/control-text-box.md) формулу в первом столбце следующей таблицы.
 
-| Формула | Описание | Возвращаемый результат |
+| Формула | Description | Возвращаемый результат |
 |---------|-------------|--------|
 | **And (a, b)** | Проверяет значения **a** и **b**.  Один из аргументов имеет *значение false*, поэтому функция возвращает *значение false*. | *false* |
 | **a и b** | То же, что и в предыдущем примере, с использованием Visual Basic нотации. | *false* |

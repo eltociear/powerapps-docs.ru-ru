@@ -1,6 +1,6 @@
 ---
 title: Функция Language | Документация Майкрософт
-description: Справочные сведения о функции Language в PowerApps, в том числе описание синтаксиса и примеры
+description: Справочные сведения, включая синтаксис и примеры, для функции Language в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 33dcc3ab5e1682783c997adf4dd1185d59b0db2b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: a7e41f9becc6cf974bffdeca127e549191ee9379
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678334"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730685"
 ---
-# <a name="language-function-in-powerapps"></a>Функция Language в PowerApps
+# <a name="language-function-in-power-apps"></a>Функция языка в Power Apps
 Эта функция возвращает тег языка текущего пользователя.
 
 ## <a name="description"></a>Description
@@ -40,7 +39,7 @@ ms.PowerAppsDecimalTransform: true
 
 Power Apps использует формат [языкового тега IETF BCP-47](https://tools.ietf.org/html/bcp47) .  
 
-Чтобы увидеть список поддерживаемых тегов языка, введите в строке формул или в расширенном представлении команду **Value( "1"; )** и изучите список языковых обозначений, которые будут предложены в качестве значений для второго аргумента.  
+Чтобы увидеть список поддерживаемых тегов языка, введите в строке формул или в расширенном представлении команду **Value( "1", )** и изучите список языковых обозначений, которые будут предложены в качестве значений для второго аргумента.  
 
 Функции **[Text](function-text.md)** и **[Value](function-value.md)** также используют теги языка.  Используйте эти функции для преобразования содержимого в текстовые строки и наоборот в повсеместно известном формате.  При передаче тега языка этим функциям, когда регион ни на что не влияет, можно использовать только языковую часть тега.
 
@@ -79,7 +78,7 @@ Power Apps использует формат [языкового тега IETF B
 
 В приложении вместо текста **Hello**, который использовался ранее, вставьте следующую формулу:
 
-* **LookUp( Table1; TextID = "Hello" && (LanguageTag = Left( Language(); 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
+* **LookUp( Table1, TextID = "Hello" && (LanguageTag = Left( Language(), 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
 
 Эта формула выполнит поиск соответствующего значения **LocalizedText** для языка пользователя. Если его не удастся обнаружить, будет возвращена *пустая строка* по умолчанию. 
 
@@ -93,7 +92,7 @@ Power Apps использует формат [языкового тега IETF B
 
 В приложении вместо текста **Hello**, который использовался ранее, вставьте следующую формулу:
 
-* **MicrosoftTranslator.Translate( "Hello"; Language() )**
+* **MicrosoftTranslator.Translate( "Hello", Language() )**
 
 Служба Microsoft Translator использует те же теги языка, которые возвращаются функцией **Language**.
 

@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 53e78383733af1b5fdb71f5649d342f07605340e
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: cc9b12f6cf899d0a57e56eda9fe0dd4bc5ba6c2e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650579"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723111"
 ---
-# <a name="drop-down-control-in-powerapps"></a>Элемент управления "Раскрывающийся список" в PowerApps
+# <a name="drop-down-control-in-power-apps"></a>Раскрывающийся список элементов управления в Power Apps
 Раскрывающийся список — это список, у которого в свернутом состоянии виден только первый элемент.
 
 ## <a name="description"></a>Description
@@ -131,7 +130,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Добавьте элемент управления **Раскрывающийся список**, а затем установите для его свойства **[Items](properties-core.md)** следующее выражение:
 
-    `["Seattle"; "Tokyo"; "London"; "Johannesburg"; "Rio de Janeiro"]`
+    `["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]`
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
@@ -144,13 +143,13 @@ ms.PowerAppsDecimalTransform: true
 
 1. Добавьте элемент управления **Раскрывающийся список** и назначьте его свойству **[Items](properties-core.md)** следующую формулу:
 
-    `Distinct(Accounts; address1_city)`
+    `Distinct(Accounts, address1_city)`
 
     Эта формула показывает все города в сущности **Учетные записи**. Если один город указан в нескольких записях, функция **[Distinct](../functions/function-distinct.md)** скрывает повторения в элементе управления раскрывающегося списка.
 
 1. (Необязательно.) Переименуйте элемент управления **Раскрывающийся список** в **Города**, добавьте вертикальный элемент управления **Коллекция** и задайте свойству коллекции **[Items](properties-core.md)** следующую формулу:
 
-    `Filter(Accounts; address1_city = Cities.Selected.Value)`
+    `Filter(Accounts, address1_city = Cities.Selected.Value)`
 
     Функция **[Filter](../functions/function-filter-lookup.md)** отображает только те записи в сущности **Учетные записи**, для которых город совпадает с выбранным значением в элементе управления **Города**.
 

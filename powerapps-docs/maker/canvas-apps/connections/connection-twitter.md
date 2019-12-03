@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 21effecae904675e39c914145ee10df9c81ec752
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 50b783bce993d40ae88c438c115b2b859a08b7f8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679852"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723279"
 ---
-# <a name="connect-to-twitter-from-powerapps"></a>Подключение к Twitter из PowerApps
+# <a name="connect-to-twitter-from-power-apps"></a>Подключение к Twitter из Power Apps
 ![Twitter](./media/connection-twitter/twittericon.png)
 
 Twitter позволяет публиковать и получать твиты, временную шкалу, друзей и подписчиков из учетной записи Twitter.
@@ -66,7 +65,7 @@ Twitter позволяет публиковать и получать твиты
 
        В коллекции задайте для свойства Items следующую формулу:  
 
-       `Twitter.UserTimeline(Tweep.Text; {maxResults:5}).TweetText`
+       `Twitter.UserTimeline(Tweep.Text, {maxResults:5}).TweetText`
 
        В коллекции автоматически отображаются твиты указанного пользователя Twitter.
 
@@ -95,7 +94,7 @@ Twitter позволяет публиковать и получать твиты
 
        В коллекции задайте для свойства Items следующую формулу:  
 
-       `Twitter.Followers(Tweep.Text; {maxResults:5})`
+       `Twitter.Followers(Tweep.Text, {maxResults:5})`
 
        В коллекции автоматически отображаются подписчики указанного пользователя Twitter.
 
@@ -124,7 +123,7 @@ Twitter позволяет публиковать и получать твиты
 
        В коллекции задайте для свойства Items следующую формулу:  
 
-       `Twitter.Following(Tweep.Text; {maxResults:5})`
+       `Twitter.Following(Tweep.Text, {maxResults:5})`
 
        В коллекции автоматически отображаются имена других пользователей, на которых вы подписаны.
 
@@ -161,8 +160,8 @@ Twitter позволяет публиковать и получать твиты
     > [!TIP]
    > Отобразите первые пять результатов с помощью аргумента maxResults:  
 
-    `Twitter.SearchTweet(SearchTerm.Text; {maxResults:5}).TweetText`
-2. Присвойте свойству **Items** коллекции значение `Twitter.SearchTweet(SearchTerm.Text; {maxResults:5})`.
+    `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5}).TweetText`
+2. Присвойте свойству **Items** коллекции значение `Twitter.SearchTweet(SearchTerm.Text, {maxResults:5})`.
 
     Если выбрать коллекцию, в правой области отобразятся ее параметры.
 3. В первом списке выберите **TweetText**, во втором — **TweetedBy**, а в третьем — **CreatedAt**.

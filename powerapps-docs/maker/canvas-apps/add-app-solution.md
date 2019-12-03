@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f6b34a5ea1b2f269a26ad70de6a6a530a30bc240
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 679dab28c49d71e8f28a9ace047b9481c4d53cc2
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679346"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725096"
 ---
 # <a name="create-a-canvas-app-from-within-a-solution"></a>Создание приложения Canvas из решения
 
@@ -65,7 +65,7 @@ ms.locfileid: "74679346"
 
 В решении можно создать пустое приложение Canvas. Вы не можете автоматически создать приложение с тремя экранами или настроить шаблон или пример приложения из решения.
 
-1. [Войдите](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в PowerApps.
+1. [Войдите](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в Power Apps.
 
 1. При необходимости переключитесь на среду, содержащую решение, в котором нужно создать приложение Canvas.
 
@@ -96,7 +96,7 @@ ms.locfileid: "74679346"
 
 Если вы хотите связать приложение с решением, оба должны находиться в той же среде, и приложение должно быть создано из решения.
 
-1. [Войдите](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в PowerApps.
+1. [Войдите](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в Power Apps.
 
 1. При необходимости переключитесь на среду, содержащую решение, с которым необходимо связать приложение.
 
@@ -121,7 +121,7 @@ ms.locfileid: "74679346"
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-Сведения об известных ограничениях см. [в статье Использование решений в PowerApps](../common-data-service/use-solution-explorer.md#known-limitations). 
+Сведения об известных ограничениях см. [в статье Использование решений в Power Apps](../common-data-service/use-solution-explorer.md#known-limitations). 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

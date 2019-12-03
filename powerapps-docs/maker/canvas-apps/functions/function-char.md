@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 641b22945dc6398e0f1ab57b03813eb7db02c79f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: efd5b1ca4f30a5ab1131765d2bb38d21af7c2d2b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678426"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731380"
 ---
-# <a name="char-function-in-powerapps"></a>Функция Char в PowerApps
+# <a name="char-function-in-power-apps"></a>Функция char в Power Apps
 
 Эта функция преобразовывает код знака в строку.
 
@@ -47,7 +46,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. На пустом экране в планшетном приложении добавьте элемент управления [**галереи**](../controls/control-gallery.md) с **пустой горизонтальной** компоновкой, а затем задайте следующие свойства:
 
-    - **Элементы**: `[0;1;2;3;4;5;6;7]`
+    - **Элементы**: `[0,1,2,3,4,5,6,7]`
     - **Ширина**: 800
     - **Высота**: 500
     - **Темплатесизе**: 100
@@ -55,7 +54,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. В этой коллекции добавьте элемент управления **галереи** с **пустой вертикальной** компоновкой, а затем задайте следующие свойства:
 
-    - **Элементы**: `ForAll( [0;2;3;4;5;6;7;8;9;10;11;12;13;14;15]; Value + ThisItem.Value * 16 )`
+    - **Элементы**: `ForAll( [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 )`
     - **Ширина**: 100
     - **Высота**: 500
     - **Темплатесизе**: 30
@@ -80,7 +79,7 @@ ms.PowerAppsDecimalTransform: true
 
 Чтобы отобразить символы расширенного набора ASCII, задайте для свойства **Items** второй коллекции эту формулу, которая добавляет 128 к каждому символьному значению:
 
-`ForAll( [0;2;3;4;5;6;7;8;9;10;11;12;13;14;15]; Value + ThisItem.Value * 16 + 128)`
+`ForAll( [0,2,3,4,5,6,7,8,9,10,11,12,13,14,15], Value + ThisItem.Value * 16 + 128)`
 
 ![Расширенные символы ASCII](media/function-char/chart-higher.png)
 

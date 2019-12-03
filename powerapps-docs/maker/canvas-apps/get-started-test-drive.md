@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eac22ce84d5864e79c2964d42ffa5fe37853bc97
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 682657a62db520c431bd0f594a87ae50c5e3ac0c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676256"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732177"
 ---
-# <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>Создание приложения на основе холста из шаблона в PowerApps
+# <a name="create-a-canvas-app-from-a-template-in-power-apps"></a>Создание приложения Canvas на основе шаблона в Power Apps
 
 Вы можете автоматически создать из шаблона приложение на основе холста для определенного сценария, например для отслеживания бюджета или планирования отпусков, а затем запустить приложение, чтобы посмотреть, как оно работает по умолчанию.
 
@@ -30,7 +30,7 @@ ms.locfileid: "74676256"
 
 ## <a name="create-an-app"></a>Создание приложения
 
-1. Войдите в [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Войдите в [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. В области **Создавайте собственные приложения** наведите указатель на плитку **Начать с данных** и выберите команду **Создать это приложение**.
 

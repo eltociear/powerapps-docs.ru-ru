@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ed104f5ae4e7244e5a49b6cbc67745fd2f9e24dc
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: a49cfef13cb7c52c972ab67287cd4e886d981cb0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678610"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727242"
 ---
-# <a name="html-text-control-in-powerapps"></a>Элемент управления "HTML-текст" в PowerApps
+# <a name="html-text-control-in-power-apps"></a>HTML-элемент управления "текст" в Power Apps
 Поле, в котором отображается текст, а HTML-теги преобразуются в форматирование.
 
 ## <a name="description"></a>Description
@@ -76,7 +75,7 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Find**(*текст_для_поиска*; *в_тексте*)](../functions/function-find.md)
+[**Find**(*текст_для_поиска*, *в_тексте*)](../functions/function-find.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **[Метка](control-text-box.md)** , назовите его **Source** и укажите в качестве значения свойства **[Text](properties-core.md)** следующую строку:

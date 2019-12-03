@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d2ec1d3fc39749f29a57fd8ca8e518e325c2a11a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 02b95408a0e4d3d519c1a1105002c69372670f55
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679503"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731587"
 ---
 # <a name="canvas-apps-for-enterprise-developers-partners-and-isvs"></a>Приложения на основе холста для корпоративных разработчиков, партнеров и независимых поставщиков ПО
 
@@ -26,7 +26,7 @@ ms.locfileid: "74679503"
 
 ## <a name="canvas-apps-for-enterprise-developers"></a>Приложения Canvas для корпоративных разработчиков
 
-Корпоративные разработчики могут дать своим организациям возможность создавать в PowerApps надежные специализированные решения:
+Как разработчик предприятия, предоставьте своей организации возможность создавать надежные специализированные решения в Power Apps:
 
 - **Создание настраиваемых соединителей**. Разрабатывайте пользовательские соединители для подключения к данным и веб-службам вашей организации. [Дополнительные сведения](https://docs.microsoft.com/connectors/custom-connectors/)
 

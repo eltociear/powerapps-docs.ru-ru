@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 600e474117290c5f52793c1d9c3ec72aefc35783
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 543084f04e2c5456182a17f4f193c5cf722cbe27
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676653"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729525"
 ---
 # <a name="what-are-canvas-apps-in-power-apps"></a>Что такое приложения Canvas в Power Apps?
 Создавайте и создавайте бизнес-приложения на холсте в Microsoft Power Apps без написания кода на традиционном языке программирования, C#например. Разрабатывайте приложение путем перетаскивания элементов на холст так, как если бы вы создавали слайд в PowerPoint. Создавайте схожие с Excel выражения для указания логики и работы с данными. Создавайте приложения, которые интегрируют бизнес-данные из [разнообразных источников Майкрософт и сторонних поставщиков](connections-list.md). Открывайте к приложению общий доступ, чтобы пользователи могли запускать его в браузере или на мобильном устройстве. Внедряйте приложение, предоставляя пользователям возможность использовать его в SharePoint, Power BI или Teams.
@@ -48,7 +48,7 @@ ms.locfileid: "74676653"
 
 ## <a name="learn-more"></a>Дополнительные сведения
 * Изучите пошаговые руководства, общие и справочные статьи, ссылки на которые есть слева в области навигации.
-* Просмотрите список [вебинаров](webinars-listing.md), доступ к которым вы можете получить по запросу, чтобы узнать больше о возможностях и функциях PowerApps.
+* Ознакомьтесь с [интерактивными веб-семинарами](webinars-listing.md) , которые можно использовать по запросу для использования функций и функций Power Apps.
 * Ознакомьтесь с [стандартами кодирования](https://aka.ms/powerappscanvasguidelines) для максимизации производительности приложений и упрощения обслуживания приложений.
 
 ## <a name="share-your-experience"></a>Оставьте свой отзыв
@@ -58,5 +58,5 @@ ms.locfileid: "74676653"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 - [Регистрация для получения бесплатной лицензии](../signup-for-powerapps.md)
-- [Вход в PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+- [Войдите в Power Apps.](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 - [Открытие примера приложения](open-and-run-a-sample-app.md)

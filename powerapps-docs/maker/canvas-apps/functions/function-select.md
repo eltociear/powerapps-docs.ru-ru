@@ -1,6 +1,6 @@
 ---
 title: Функция Select | Документация Майкрософт
-description: Справочные сведения, включая синтаксис, для функции Select в PowerApps
+description: Справочные сведения, включая синтаксис, для функции SELECT в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ed31bd165eb2289819800b6f2e01121c2681ae9e
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: bba742d85a11f05cb5f503146e7e940222edf169
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984081"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730253"
 ---
-# <a name="select-function-in-powerapps"></a>Функция Select в PowerApps
+# <a name="select-function-in-power-apps"></a>Выбор функции в Power Apps
 Имитирует выбор действия для элемента управления, активируя вычисление формулы **OnSelect**.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функция **Select** имитирует выбор действия для элемента управления, как если бы этот элемент управления выбрал пользователь. В результате для целевого элемента управления вычисляется формула **OnSelect**.
 
 Используйте функцию **Select**, чтобы распространить действие выбора на родительский элемент управления. Такой тип распространения является поведением по умолчанию, например, в коллекциях. По умолчанию для свойства **OnSelect** любого элемента управления в элементе управления **[Gallery](../controls/control-gallery.md)** задано значение **Select( Parent )** . Так вы можете задать значение свойства **OnSelect** элемента управления Gallery. При этом формула будет вычисляться независимо от того, где именно в этом элементе управления пользователь может щелкнуть или коснуться.
@@ -84,7 +83,7 @@ ms.PowerAppsDecimalTransform: true
 
 5. Назначьте свойству **OnSelect** элемента управления Image следующую формулу:
 
-    **Notify( "Image Selected"; Success )**
+    **Notify( "Image Selected", Success )**
 
 6. Удерживая нажатой клавишу Alt, щелкайте разные элементы коллекции или касайтесь их.
 

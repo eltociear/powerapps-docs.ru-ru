@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4a7def7990723e9531c4c7a3075c3c2259a45a37
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: d34e5d128f6a38c430432f8acfcc40edaa80c034
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650588"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727254"
 ---
-# <a name="date-picker-control-in-powerapps"></a>Элемент управления "Выбор даты" в PowerApps
+# <a name="date-picker-control-in-power-apps"></a>Элемент управления "Выбор даты" в Power Apps
 Элемент управления, который используется для указания даты.
 
 ## <a name="description"></a>Description
@@ -112,7 +111,7 @@ ms.PowerAppsDecimalTransform: true
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте элемент управления **[Метка](control-text-box.md)** и задайте в качестве значения свойства **[Text](properties-core.md)** следующую формулу:
-   <br>**DateDiff(Today(); Deadline.SelectedDate) & " days to go!"**
+   <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
 
     Нужны дополнительные сведения о функции **[DateDiff](../functions/function-dateadd-datediff.md)** или [других функциях](../formula-reference.md)?
 3. Нажмите клавишу F5, выберите дату в элементе управления **Крайний срок** и нажмите кнопку **ОК**.

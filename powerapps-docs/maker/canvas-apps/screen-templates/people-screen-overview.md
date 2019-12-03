@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4f54a2f6d3bfa7c843b7b095f999050602e063b0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b530fe0623c72f9df1adda1067638a3d1a1099f1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675012"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732543"
 ---
 # <a name="overview-of-the-people-screen-template-for-canvas-apps"></a>Обзор шаблона экрана "люди" для приложений Canvas
 
@@ -37,7 +36,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="prerequisite"></a>Необходимое условие
 
-Знакомство с добавлением и настройкой экранов и других элементов управления при [создании приложения в PowerApps](../data-platform-create-app-scratch.md).
+Знакомство с добавлением и настройкой экранов и других элементов управления при [создании приложения в Power Apps](../data-platform-create-app-scratch.md).
 
 ## <a name="default-functionality"></a>Функциональные возможности по умолчанию
 
@@ -95,19 +94,19 @@ ms.PowerAppsDecimalTransform: true
 1. Задайте для свойства **OnSelect** **значка** "некоторая" значение `Back()`.
 1. Задайте для свойства **OnSelect** **сендикон** следующую формулу:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Office365.SendEmail( 
-        Concat( MyPeople; UserPrincipalName & ";" ); 
-        SubjectLine.Text; 
+        Concat( MyPeople, UserPrincipalName & ";" ), 
+        SubjectLine.Text, 
         MessageBody.Text 
     )
     ```
     
-    Здесь вы используете соединитель Outlook для отправки сообщения электронной почты. Он передается `Concat(MyPeople; UserPrincipalName & ";")` как список получателей. Эта формула объединяет все адреса электронной почты в коллекции **мипеопле** в одну строку, разделив их точкой с запятой. Это не отличается от записи строки адресов электронной почты, разделенных точкой с запятой, в строке "Кому" вашего любимого почтового клиента.
+    Здесь вы используете соединитель Outlook для отправки сообщения электронной почты. Он передается `Concat(MyPeople, UserPrincipalName & ";")` как список получателей. Эта формула объединяет все адреса электронной почты в коллекции **мипеопле** в одну строку, разделив их точкой с запятой. Это не отличается от записи строки адресов электронной почты, разделенных точкой с запятой, в строке "Кому" вашего любимого почтового клиента.
     * Вы передаете `SubjectLine.Text` в качестве темы сообщения и `MessageBody.Text` в качестве текста сообщения.
 1. На экране "люди" в правом верхнем углу вставьте значок " **почта** ".
    Измените цвет значка на любой масть.
-1. Задайте для свойства **OnSelect** объекта **сендикон** значение `Navigate( EmailScreen; None )`.
+1. Задайте для свойства **OnSelect** объекта **сендикон** значение `Navigate( EmailScreen, None )`.
 
     Теперь у вас есть приложение из двух экранов, в котором можно выбрать пользователей, создать сообщение электронной почты и отправить его. Вы можете протестировать его, но будьте внимательны, так как приложение отправляет сообщения электронной почты всем, кто добавляется в коллекцию **мипеопле** .
 

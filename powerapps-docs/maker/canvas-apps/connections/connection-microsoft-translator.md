@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 387089ea2ee40e8a0d418ab110d7544c17d7c423
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 772f74b13d254746b75253012940efd8bda6e9d3
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679898"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723813"
 ---
-# <a name="connect-to-microsoft-translator-from-powerapps"></a>Подключение к Microsoft Translator из PowerApps
+# <a name="connect-to-microsoft-translator-from-power-apps"></a>Подключение к Microsoft Translator из Power Apps
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
 
 Добавьте в приложение соединитель Microsoft Translator для отображения переведенного текста в элементе управления **Метка**. Например, вы можете создать одно текстовое поле для ввода текста, который нужно перевести, и вторую метку для вывода переведенного текста.
@@ -58,7 +57,7 @@ ms.PowerAppsDecimalTransform: true
     `MicrosoftTranslator.Languages()`
 4. Добавьте метку, расположите ее ниже элемента управления **TargetLang** и назначьте ее свойству **[Text](../controls/properties-core.md)** следующую формулу:  
 
-    `MicrosoftTranslator.Translate(Source.Text; TargetLang.Selected.Value)`
+    `MicrosoftTranslator.Translate(Source.Text, TargetLang.Selected.Value)`
 5. Введите какой-либо текст в поле **Source** и выберите язык в списке **TargetLang**. В метке будет выведен текст, переведенный на выбранный вами язык.  
 
     ![Перевод текста с английского на испанский язык](./media/connection-microsoft-translator/translate-text.png)
@@ -72,7 +71,7 @@ ms.PowerAppsDecimalTransform: true
 2. Переименуйте вторую метку (не **Source**), назначив ей имя **Target**.
 3. Добавьте элемент управления **Звук** (**Вставка** > **Мультимедиа**) и назначьте его свойству **Media** следующую формулу:  
 
-    `MicrosoftTranslator.TextToSpeech(Target.Text; TargetLang.Selected.Value)`
+    `MicrosoftTranslator.TextToSpeech(Target.Text, TargetLang.Selected.Value)`
 4. Нажмите клавишу F5 или кнопку предварительного просмотра (![](./media/connection-microsoft-translator/preview.png)). Введите какой-либо текст в поле **Source**, выберите язык в списке **TargetLang**, а затем нажмите кнопку воспроизведения в элементе управления "Звук".
 
     Приложение озвучит введенный текст на выбранном вами языке.

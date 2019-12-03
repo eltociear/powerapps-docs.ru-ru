@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ff3e2db1c0d02fda91215ae0e5cc6dd4ae712dd9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 861d343e653a78af685a1e0cb82deb5b2ad59591
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675100"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732571"
 ---
 # <a name="overview-of-the-email-screen-template-for-canvas-apps"></a>Обзор шаблона экрана электронной почты для приложений Canvas
 
@@ -37,7 +36,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="prerequisite"></a>Необходимое условие
 
-Знакомство с добавлением и настройкой экранов и других элементов управления при [создании приложения в PowerApps](../data-platform-create-app-scratch.md).
+Знакомство с добавлением и настройкой экранов и других элементов управления при [создании приложения в Power Apps](../data-platform-create-app-scratch.md).
 
 ## <a name="default-functionality"></a>Функциональные возможности по умолчанию
 
@@ -87,10 +86,10 @@ ms.PowerAppsDecimalTransform: true
    Это предотвращает появление элемента управления перед элементом управления **пеоплебровсегаллери** .
 1. Измените свойство **Height** объекта **емаилпеоплегаллери** на следующую формулу:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Min( 
         ( EmailPeopleGallery1.TemplateHeight + EmailPeopleGallery1.TemplatePadding * 2 ) *
-            RoundUp( CountRows( EmailPeopleGallery1.AllItems ) / 2; 0 ); 
+            RoundUp( CountRows( EmailPeopleGallery1.AllItems ) / 2, 0 ), 
         304
     )
     ```
@@ -103,31 +102,31 @@ ms.PowerAppsDecimalTransform: true
     
 1. Измените свойство **OnSelect** элемента управления **иконмаил** на следующую формулу:
 
-    ```powerapps-comma
-    Set( _emailRecipientString; Concat(MyPeople; Mail & ";") );;
-    If( IsBlank( UploadedImage1 );
-        'Office365'.SendEmail( _emailRecipientString; 
-            TextEmailSubject1.Text; 
-            TextEmailMessage1.Text; 
+    ```powerapps-dot
+    Set( _emailRecipientString, Concat(MyPeople, Mail & ";") );
+    If( IsBlank( UploadedImage1 ),
+        'Office365'.SendEmail( _emailRecipientString, 
+            TextEmailSubject1.Text, 
+            TextEmailMessage1.Text, 
             { Importance: "Normal" }
-        );
-        'Office365'.SendEmail( _emailRecipientString; 
-            TextEmailSubject1.Text; 
-            TextEmailMessage1.Text; 
+        ),
+        'Office365'.SendEmail( _emailRecipientString, 
+            TextEmailSubject1.Text, 
+            TextEmailMessage1.Text, 
             {
-                Importance: "Normal";
+                Importance: "Normal",
                 Attachments: Table(
                     {
-                        Name: "Image.jpg"; 
+                        Name: "Image.jpg", 
                         ContentBytes: UploadedImage1.Image
                     }
                 )
             }
         )
-    );;
-    Reset( TextEmailSubject1 );;
-    Reset( TextEmailMessage1 );;
-    Reset( AddMediaButton1 );;
+    );
+    Reset( TextEmailSubject1 );
+    Reset( TextEmailMessage1 );
+    Reset( AddMediaButton1 );
     Clear( MyPeople )
     ```
     
@@ -164,5 +163,5 @@ ms.PowerAppsDecimalTransform: true
 ## <a name="next-steps"></a>Дальнейшие действия
 
 * [Просмотрите справочную документацию по этому экрану](./email-screen-reference.md).
-* Дополнительные [сведения о соединителе пользователей Office 365 в PowerApps](../connections/connection-office365-users.md).
-* [Просмотрите все доступные подключения в PowerApps](../connections-list.md).
+* Дополнительные [сведения о соединителе пользователей Office 365 в Power Apps](../connections/connection-office365-users.md).
+* [Просмотрите все доступные подключения в Power Apps](../connections-list.md).

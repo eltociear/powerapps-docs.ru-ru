@@ -1,6 +1,6 @@
 ---
 title: Функция Concurrent | Документация Майкрософт
-description: Справочные сведения, включая синтаксис, для функции Concurrent в PowerApps
+description: Справочные сведения, включая синтаксис, для параллельной функции в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0f2f51596e8973bf41e26e4ed56df9f1c6e34844
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e6e2aa2e46625d14a197dc43206bcaac4f31efe1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680312"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731294"
 ---
-# <a name="concurrent-function-in-powerapps"></a>Функция Concurrent в PowerApps
+# <a name="concurrent-function-in-power-apps"></a>Параллельная функция в Power Apps
 Оценивает несколько формул одновременно.
 
 ## <a name="description"></a>Description
@@ -31,7 +30,7 @@ ms.PowerAppsDecimalTransform: true
 
 Невозможно предсказать порядок, в котором формулы в функции **Concurrent** начинают и завершают вычисление. Формулы в пределах **параллельной** функции не должны содержать зависимости от других формул в пределах одной и той же **параллельной** функции, а при попытке использовать Power Apps отображается ошибка. Вы можете спокойно создавать зависимости от формул за пределами функции **Concurrent**, поскольку они будут выполнены до запуска функции **Concurrent**. Формулы после **параллельной** функции могут безопасно принимать зависимости от формул в: они все завершаются до завершения **параллельной** функции и переходят к следующей формуле в цепочке (если используется оператор **;** ). Остерегайтесь незаметных зависимостей от порядка, если вызываете функции или методы службы с побочными эффектами.
 
-Можно связать формулы вместе с оператором **;** внутри аргумента для **параллельного**. Например, **Concurrent( Set( a; 1 );; Set( b; a+1 ); Set( x; 2 );; Set( y; x+2 ) )** вычисляет **Set( a; 1 );; Set( b; a+1 )** одновременно с **Set( x; 2 );; Set( y; x+2 )** . В этом случае зависимости в формулах допускаются: **a** устанавливается до **b**, а **x** устанавливается до **y**.
+Можно связать формулы вместе с оператором **;** внутри аргумента для **параллельного**. Например, **Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) )** вычисляет **Set( a, 1 ); Set( b, a+1 )** одновременно с **Set( x, 2 ); Set( y, x+2 )** . В этом случае зависимости в формулах допускаются: **a** устанавливается до **b**, а **x** устанавливается до **y**.
 
 В зависимости от устройства или браузера, в котором выполняется приложение, только некоторые формулы могут вычисляться одновременно. Функция **Concurrent** использует доступные возможности и не завершится, пока не будут вычислены все формулы.
 
@@ -40,7 +39,7 @@ ms.PowerAppsDecimalTransform: true
 Функцию **Concurrent** можно использовать только в [формулах поведения](../working-with-formulas-in-depth.md).
 
 ## <a name="syntax"></a>Синтаксис
-**Concurrent**( *Формула1*; *Формула2* [; ...] )
+**Concurrent**( *Формула1*, *Формула2* [, ...] )
 
 * *Формулы* — обязательный параметр. Формулы для одновременного вычисления. Необходимо указать по крайней мере две формулы.
 
@@ -56,11 +55,11 @@ ms.PowerAppsDecimalTransform: true
 
 2. Добавьте элемент управления **[Кнопка](../controls/control-button.md)** и задайте следующую формулу в качестве значения свойства **OnSelect**:
 
-    ```powerapps-comma
-    ClearCollect( Product; '[SalesLT].[Product]' );;
-    ClearCollect( Customer; '[SalesLT].[Customer]' );;
-    ClearCollect( SalesOrderDetail; '[SalesLT].[SalesOrderDetail]' );; 
-    ClearCollect( SalesOrderHeader; '[SalesLT].[SalesOrderHeader]' )
+    ```powerapps-dot
+    ClearCollect( Product, '[SalesLT].[Product]' );
+    ClearCollect( Customer, '[SalesLT].[Customer]' );
+    ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ); 
+    ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
     ```
 
 3. В [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) или [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) включите средства разработчика для отслеживания сетевого трафика во время работы приложения.
@@ -79,12 +78,12 @@ ms.PowerAppsDecimalTransform: true
 
 1. Добавьте второй элемент управления **[Кнопка](../controls/control-button.md)** и задайте следующую формулу в качестве значения свойства **OnSelect**:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Concurrent( 
-        ClearCollect( Product; '[SalesLT].[Product]' ); 
-        ClearCollect( Customer; '[SalesLT].[Customer]' );
-        ClearCollect( SalesOrderDetail; '[SalesLT].[SalesOrderDetail]' );
-        ClearCollect( SalesOrderHeader; '[SalesLT].[SalesOrderHeader]' )
+        ClearCollect( Product, '[SalesLT].[Product]' ), 
+        ClearCollect( Customer, '[SalesLT].[Customer]' ),
+        ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' ),
+        ClearCollect( SalesOrderHeader, '[SalesLT].[SalesOrderHeader]' )
     )
     ```
 
@@ -112,19 +111,19 @@ ms.PowerAppsDecimalTransform: true
 
 3. Добавьте элемент управления **Кнопка** и задайте следующую формулу в качестве значения свойства **OnSelect**:
 
-    ```powerapps-comma
-    Set( StartTime; Value( Now() ) );;
+    ```powerapps-dot
+    Set( StartTime, Value( Now() ) );
     Concurrent(
-        Set( FRTrans; MicrosoftTranslator.Translate( TextInput1.Text; "fr" ) );; 
-            Set( FRTransTime; Value( Now() ) );
-        Set( DETrans; MicrosoftTranslator.Translate( TextInput1.Text; "de" ) );; 
-            Set( DETransTime; Value( Now() ) )
-    );;
-    Collect( Results;
+        Set( FRTrans, MicrosoftTranslator.Translate( TextInput1.Text, "fr" ) ); 
+            Set( FRTransTime, Value( Now() ) ),
+        Set( DETrans, MicrosoftTranslator.Translate( TextInput1.Text, "de" ) ); 
+            Set( DETransTime, Value( Now() ) )
+    );
+    Collect( Results,
         { 
-            Input: TextInput1.Text;
-            French: FRTrans; FrenchTime: FRTransTime - StartTime; 
-            German: DETrans; GermanTime: DETransTime - StartTime; 
+            Input: TextInput1.Text,
+            French: FRTrans, FrenchTime: FRTransTime - StartTime, 
+            German: DETrans, GermanTime: DETransTime - StartTime, 
             FrenchFaster: FRTransTime < DETransTime
         }
     )

@@ -1,6 +1,6 @@
 ---
 title: Функция Reset | Документация Майкрософт
-description: Справочные сведения о функции Reset в PowerApps, включая описание синтаксиса и пример
+description: Справочные сведения, включая синтаксис и пример для функции Reset в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,23 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4ab24458c1ce98c6b499bf2ba05d682568938079
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 20109be5e9c77af75409973a32fe46c353d57282
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984044"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730311"
 ---
-# <a name="reset-function-in-powerapps"></a>Функция Reset в PowerApps
+# <a name="reset-function-in-power-apps"></a>Функция Reset в Power Apps
 Сбрасывает элемент управления до значения по умолчанию и отменяет все изменения, внесенные пользователем.  
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функция **Reset** сбрасывает элемент управления до значения свойства **Default** и  отменяет все изменения, внесенные пользователем.
 
 Элементы управления, которые включены в элементы управления [**Коллекция**](../controls/control-gallery.md) или [**Форма изменения**](../controls/control-form-detail.md), невозможно сбросить извне.  Вы можете их сбросить в формулах элементов управления в пределах той же коллекции или формы.  Кроме того, с помощью функции [**ResetForm**](function-form.md) можно сбросить все элементы управления в форме. 
 
-Функция **Reset** используется как предпочтительная альтернатива переключению свойства **Reset** для элементов управления вводом.  Свойство **Reset** может быть более удобным, если необходимо одновременно сбросить несколько элементов управления из нескольких формул.  Переключить свойство **Reset** можно с помощью элемента управления [**Button**](../controls/control-button.md) с формулой **Reset = Button.Pressed**. Либо с помощью переменной с формулой **Reset = MyVar** и переключением **MyVar** с формулой **Button.OnSelect = Set( MyVar; true );; Set( MyVar; false )** .    
+Функция **Reset** используется как предпочтительная альтернатива переключению свойства **Reset** для элементов управления вводом.  Свойство **Reset** может быть более удобным, если необходимо одновременно сбросить несколько элементов управления из нескольких формул.  Переключить свойство **Reset** можно с помощью элемента управления [**Button**](../controls/control-button.md) с формулой **Reset = Button.Pressed**. Либо с помощью переменной с формулой **Reset = MyVar** и переключением **MyVar** с формулой **Button.OnSelect = Set( MyVar, true ); Set( MyVar, false )** .    
 
 Элементы управления ввода также сбрасываются при изменении их свойства **Default**.
 

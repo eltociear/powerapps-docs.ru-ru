@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eed7a0bd6b9ee269877b6dfe4fcfd5bc6c56e3af
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 08e54e48b371e71364edd2da09648af354a4d9ec
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678817"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723896"
 ---
-# <a name="connect-to-sql-server-from-powerapps"></a>Подключение к SQL Server из PowerApps
+# <a name="connect-to-sql-server-from-power-apps"></a>Подключение к SQL Server из Power Apps
 ![Значок SQL Server](./media/connection-azure-sqldatabase/sqlicon.png)
 
-Подключайтесь к SQL Server в Azure или к локальной базе данных, чтобы отображать данные из базы данных в PowerApps.
+Подключитесь к SQL Server, в Azure или в локальной базе данных, чтобы в Power Apps можно было отображать сведения из нее.
 
 ## <a name="prerequisites"></a>Технические условия
 
@@ -68,7 +68,7 @@ ms.locfileid: "74678817"
 8. Настройте приложение, используя методики, описанные в статье о [создании приложения из Excel](../get-started-create-from-data.md). Начните настройку с изменения макета приложения.
 
 ## <a name="build-an-app-from-scratch"></a>Создание приложения с нуля
-1. Войдите на сайт [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) с помощью той же учетной записи, которая использовалась для регистрации PowerApps.
+1. Войдите в [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) с той же учетной записью, которая использовалась для регистрации в Power Apps.
 2. На панели навигации слева выберите меню **Подключения**.  
    
     ![Управление подключениями](./media/connection-azure-sqldatabase/manage-connections.png)

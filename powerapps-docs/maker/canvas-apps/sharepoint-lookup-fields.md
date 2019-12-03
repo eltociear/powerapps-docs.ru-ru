@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bef5a66569a201a76c36da9b1e828169df7f3cb9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f1464c7ca75f4fa811a53d18866ce89037b5e47a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674825"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733037"
 ---
-# <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-powerapps"></a>Как связать списки SharePoint с помощью поля подстановки в PowerApps
+# <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-power-apps"></a>Как связать списки SharePoint с помощью поля подстановки в Power Apps
 
 В этом руководстве показано, как связать два списка SharePoint с помощью поля подстановки в приложении на основе холста.
 

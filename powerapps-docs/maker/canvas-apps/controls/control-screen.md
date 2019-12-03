@@ -13,19 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1b9f819ab7e047b68e60b9c78e6f7f000502abb8
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b0e189bc2bfd922839373f009fcc54a34217daba
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993317"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732059"
 ---
-# <a name="screen-control-in-powerapps"></a>Элемент управления "Экран" в PowerApps
+# <a name="screen-control-in-power-apps"></a>Элемент управления "экран" в Power Apps
 
 Элемент пользовательского интерфейса приложения, содержащий один или несколько других элементов управления.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 
 В большинстве приложений есть несколько элементов управления **Экран**, которые содержат элементы управления **[Метка](control-text-box.md)** , **[Кнопка](control-button.md)** и другие, отображающие данные и поддерживающие навигацию. Сведения о том, как добавить экран, изменить порядок экранов и настроить навигацию, см. [в статье Добавление экрана](../add-screen-context-variables.md).
 
@@ -39,7 +38,7 @@ ms.PowerAppsDecimalTransform: true
 
 **Height** — высота экрана. Если приложение отвечает ([**масштабирование**](../set-aspect-ratio-portrait-landscape.md#change-screen-size-and-orientation) **отключено),** а устройство, на котором работает приложение, короче этого свойства, экран может прокручиваться вертикально.
 
-**[ImagePosition](properties-visual.md)**  — расположение изображения на экране или в элементе управления, если его размеры отличаются от размеров изображения (**Fill**, **Fit**, **Stretch**, **Tile** или **Center**).
+**[ImagePosition](properties-visual.md)** — расположение изображения на экране или в элементе управления, если его размеры отличаются от размеров изображения: **Fill** (Заполнить), **Fit** (По размеру), **Stretch** (Растянуть), **Tile** (Плитка) или **Center** (По центру).
 
 **Имя** — имя экрана.
 
@@ -55,13 +54,13 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Distinct**(*источник*; *столбец*)](../functions/function-distinct.md)
+[**Distinct**(*источник*, *столбец*)](../functions/function-distinct.md)
 
 ## <a name="example"></a>Пример
 
 1. Добавьте элемент управления **[Переключатель](control-radio.md)** , назовите его **ScreenFills** и укажите для свойства **[Items](properties-core.md)** следующее значение:
 
-    `["Red"; "Green"]`
+    `["Red", "Green"]`
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
@@ -69,17 +68,17 @@ ms.PowerAppsDecimalTransform: true
 
 1. В окне **источник**добавьте элемент управления **[Shape](control-shapes-icons.md)** (например, стрелка) и задайте для его свойства **[OnSelect](properties-core.md)** значение этой формулы:
 
-    `Navigate(Target; ScreenTransition.Fade)`
+    `Navigate(Target, ScreenTransition.Fade)`
 
     Нужны дополнительные сведения о функции **[Navigate](../functions/function-navigate.md)** или [других функциях](../formula-reference.md)?
 
 1. В элементе **Target** добавьте элемент управления **[Фигура](control-shapes-icons.md)** (например, стрелку) и укажите для свойства **[OnSelect](properties-core.md)** следующую формулу:
 
-    `Navigate(Source; ScreenTransition.Fade)`
+    `Navigate(Source, ScreenTransition.Fade)`
 
 1. Укажите для свойства **[Fill](properties-color-border.md)** элемента **Target** следующую формулу:
 
-    `If("Red" in ScreenFills.Selected.Value; RGBA(255; 0; 0; 1); RGBA(54; 176; 75; 1))`
+    `If("Red" in ScreenFills.Selected.Value, RGBA(255, 0, 0, 1), RGBA(54, 176, 75, 1))`
 
 1. Выберите **Исходный** экран и, удерживая нажатой клавишу Alt, выберите любой из вариантов в элементе управления **[радио](control-radio.md)** , а затем выберите элемент управления **[Shape](control-shapes-icons.md)** .
 

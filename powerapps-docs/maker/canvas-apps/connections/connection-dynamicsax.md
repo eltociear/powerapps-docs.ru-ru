@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6027589bc1cb5ae5a7e23ce2969e303d62151b96
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4c0d6a2c30ed601808ad31f0be5325fc1b3858bb
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679875"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723785"
 ---
 # <a name="connect-from-microsoft-power-apps-to-dynamics-ax"></a>Подключение из Microsoft Power apps к Dynamics AX
 ![Dynamics AX Online](./media/connection-dynamicsax/dynamics-ax.png)
@@ -33,7 +33,7 @@ ms.locfileid: "74679875"
 
 Сведения о том, как добавить данные из Dynamics AX в существующее приложение, см. в разделе [Добавление подключения к данным](../add-data-connection.md).
 
-Просмотрите [список доступных подключений](../connections-list.md) и узнайте, как [управлять подключениями](../add-manage-connections.md) в PowerApps.
+См. [список доступных подключений](../connections-list.md)и Узнайте, как [управлять подключениями](../add-manage-connections.md) в Power Apps.
 
 ### <a name="next-steps"></a>Дальнейшие действия
 * Узнайте, как [отобразить данные из источника данных](../add-gallery.md).

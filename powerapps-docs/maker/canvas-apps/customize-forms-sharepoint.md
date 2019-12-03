@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6732dabea803cd7680ef618e4e8d1c4e88f7afe5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f522f520c0f0f042e73932630980dee93bc5c89c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678633"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731766"
 ---
-# <a name="customize-a-canvas-app-form-in-powerapps"></a>Настройка формы в приложении на основе холста в PowerApps
+# <a name="customize-a-canvas-app-form-in-power-apps"></a>Настройка формы Canvas-App в Power Apps
 
 В приложении на основе холста вы можете настроить элементы управления **Форма отображения** и **Форма редактирования** для показа наиболее важных данных в интуитивно понятном порядке. Это сделает их более понятными пользователям и упростит их редактирование.
 
@@ -34,7 +34,7 @@ ms.locfileid: "74678633"
 
 ## <a name="show-and-hide-cards"></a>Отображение и скрытие карточек
 
-1. Войдите в [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), а затем Откройте созданное и настроенное приложение.
+1. Войдите в [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), а затем Откройте созданное и настроенное приложение.
 
 1. В левой панели навигации введите или вставьте **D** в строке поиска, чтобы отфильтровать список элементов, а затем выберите **DetailForm1**.
 

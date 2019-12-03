@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 212fc44b6c1cec981f17d134f4cd8f8131b7af9a
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: a5e91f8ff3b760e173ac01b32a68c7f60a488014
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649920"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732077"
 ---
-# <a name="rating-control-in-powerapps"></a>Элемент управления "Оценка" в PowerApps
+# <a name="rating-control-in-power-apps"></a>Управление рейтингом в Power Apps
 Элемент управления, позволяющий пользователю указать значение от 1 до заданного вами максимального числа.
 
 ## <a name="description"></a>Description
@@ -76,7 +75,7 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Average**(*значение1*; *значение2;* ...)](../functions/function-aggregates.md)
+[**Average**(*значение1*, *значение2,* ...)](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **Оценка** и назовите его **Quantitative**.
@@ -84,7 +83,7 @@ ms.PowerAppsDecimalTransform: true
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте элемент управления **[Текстовое поле](control-text-input.md)** , назовите его **Qualitative** и поместите под элементом управления **Оценка**.
 3. Укажите для свойства **[Default](properties-core.md)** элемента управления **[Текстовое поле](control-text-input.md)** значение **""** , а для свойства **HintText** следующую формулу:
-   <br>**If(Quantitative.Value > 3; "Что вам особенно понравилось?"; "Как это улучшить?")**
+   <br>**If(Quantitative.Value > 3, "Что вам особенно понравилось?", "Как это улучшить?")**
    
     Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 4. Нажмите клавишу F5 и выберите четыре или пять звездочек в элементе управления **Оценка**.

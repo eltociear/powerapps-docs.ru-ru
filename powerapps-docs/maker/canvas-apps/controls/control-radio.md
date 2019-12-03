@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cba6b072721efa04ce28606cd027939823c2f7c9
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 09e8e12a2a6bc94fcc7e3fb2482ff89b058c369f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649769"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732134"
 ---
-# <a name="radio-control-in-powerapps"></a>Элемент управления "Переключатель" в PowerApps
+# <a name="radio-control-in-power-apps"></a>Управление радио в Power Apps
 
 Элемент ввода, отображающий несколько вариантов, из которых пользователи могут одновременно выбрать только один.
 
@@ -131,19 +130,19 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Distinct**(*источник*; *столбец*)](../functions/function-distinct.md)
+[**Distinct**(*источник*, *столбец*)](../functions/function-distinct.md)
 
 ## <a name="example"></a>Пример
 
 1. Добавьте элемент управления **Переключатель**, назовите его **Pricing** и укажите для свойства **[Items](properties-core.md)** следующую формулу:
 
-    **["Standard"; "Premium"]**
+    **["Standard", "Premium"]**
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
 2. Добавьте элемент управления **[Метка](control-text-box.md)** , переместите его под элемент управления **Переключатель** и укажите для свойства **[Text](properties-core.md)** элемента **[Метка](control-text-box.md)** следующую формулу:
 
-    **If("Premium" in Pricing.Selected.Value; "200 долларов в день"; "150 долларов в день")**
+    **If("Premium" in Pricing.Selected.Value, "200 долларов в день", "150 долларов в день")**
 
     Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 

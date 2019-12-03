@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f2b401fb4054d63e19b1dcab29cbabf27cc3c117
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 5ee1d56e6144f0c7f4e1b3ca440063f87b7bdc5d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674625"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733067"
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>Как сохранить изображения в файл Excel и добавить их в приложение
 
@@ -59,7 +58,7 @@ ms.PowerAppsDecimalTransform: true
    
    ![Переименовать](./media/tutorial-working-with-images-in-excel/rename-mypen.png)
 4. Добавьте элемент управления **Кнопка** (через меню **Вставка**) и задайте в качестве значения свойства **OnSelect** следующую формулу:  
-   `Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})`
+   `Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})`
 5. Добавьте в приложение элемент управления **Коллекция изображений** (через меню **Вставка** > **Коллекция**) и назначьте его свойству **Items** значение `Drawings`. Свойство **Image** для элемента управления "Коллекция" автоматически получает значение `ThisItem.Image`.
    
    Окно должно выглядеть следующим образом:  
@@ -101,5 +100,5 @@ ms.PowerAppsDecimalTransform: true
 ## <a name="learn-more"></a>Дополнительные сведения
 [Using multimedia files in PowerApps](add-images-pictures-audio-video.md) (Использование файлов мультимедиа в PowerApps)  
 [Show data in a line, pie, or bar chart in your app](use-line-pie-bar-chart.md) (Отображение данных в виде графика, круговой или линейчатой диаграммы)  
-[Understand tables and records in PowerApps](working-with-tables.md) (Общие сведения о таблицах и записях PowerApps)
+[Общие сведения о таблицах и записях в Power Apps](working-with-tables.md)
 

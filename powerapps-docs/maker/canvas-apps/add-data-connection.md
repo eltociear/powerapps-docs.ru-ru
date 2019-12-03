@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d81b1648fc3c45d0498efb9eba0cc14ffbc6142b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d1397f9fd2859611a3cd54023210a27cd5977834
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679277"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724925"
 ---
-# <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>Добавление подключения к данным в приложение на основе холста в PowerApps
+# <a name="add-a-data-connection-to-a-canvas-app-in-power-apps"></a>Добавление подключения к данным в приложение Canvas в Power Apps
 
 В Power Apps добавьте подключение к данным в существующее приложение Canvas или в приложение, которое вы создаете с нуля. Приложение может подключаться к SharePoint, Common Data Service, Salesforce, OneDrive или [многим другим источникам данных](connections-list.md).
 

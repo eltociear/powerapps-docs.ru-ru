@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 53b4adc44addb08432ad6abbe11bf2b217be1534
-ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
+ms.openlocfilehash: 6a4f85b5eb4d47bb4973de6902b0a69bb98df585
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74598478"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732785"
 ---
-# <a name="controls-and-properties-in-powerapps"></a>Элементы управления и свойства в PowerApps
+# <a name="controls-and-properties-in-power-apps"></a>Элементы управления и свойства в Power Apps
 
 Настройка оформления и поведения элемента управления с помощью задания одного из его свойств. У каждого типа элемента управления имеется собственный набор свойств. Некоторые свойства, такие как **Height** и **Width**, являются общими почти для всех типов элементов управления, но другие свойства, такие как **CheckboxSize**, характерны для одного типа.
 
@@ -62,7 +62,7 @@ ms.locfileid: "74598478"
 
 **[Форма сущности](entity-form-control.md)** — экспериментальная функция. Добавление динамических форм, с помощью которых пользователи могут просматривать и редактировать реляционные данные из Common Data Service и переходить по ним.
 
-**[Экспорт](controls/control-export-import.md)** — экспорт данных для использования в любом компоненте PowerApps.
+**[Экспорт](controls/control-export-import.md)** — экспорт данных для использования в других приложениях Power Apps.
 
 **[Коллекция](controls/control-gallery.md)** — вывод списка записей, который может содержать несколько типов данных.
 
@@ -72,7 +72,7 @@ ms.locfileid: "74598478"
 
 **[Изображение](controls/control-image.md)** — отображение изображения, например, из локального файла или источника данных.
 
-**[Импорт](controls/control-export-import.md)** — импорт данных из любого компонента в PowerApps.
+**[Импорт](controls/control-export-import.md)** — импорт данных из других расположений в Power Apps.
 
 **[График](controls/control-column-line-chart.md)** — отображение значений в виде точек данных относительно двух осей.
 

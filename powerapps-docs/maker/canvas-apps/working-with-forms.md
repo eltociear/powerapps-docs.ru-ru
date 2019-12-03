@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 462830806165b4eb52eebb17436e11798dbdb267
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6ab9a39a63e14cfd220edc79db37a78bc5bcd924
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674464"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732444"
 ---
-# <a name="understand-canvas-app-forms-in-microsoft-powerapps"></a>Общие сведения о формах в приложении на основе холста в Microsoft PowerApps
+# <a name="understand-canvas-app-forms-in-microsoft-power-apps"></a>Знакомство с формами Canvas-App в Microsoft Power Apps
 
 Вы можете добавлять в приложение на основе холста три типа элементов управления, позволяющие пользователям просматривать записи и сведения о них, а также создавать и изменять записи:
 
@@ -40,7 +39,7 @@ ms.PowerAppsDecimalTransform: true
 ## <a name="prerequisites"></a>Технические условия
 
 * [Зарегистрируйтесь](../signup-for-powerapps.md) в Power Apps, а затем выполните [Вход](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) , указав те же учетные данные, которые использовались для регистрации.
-* Узнайте, как [настроить элемент управления](add-configure-controls.md) в PowerApps.
+* Узнайте, как [настроить элемент управления](add-configure-controls.md) в Power Apps.
 
 ## <a name="explore-a-generated-app"></a>Обзор созданного приложения
 Power Apps может автоматически создавать приложение на основе указанного источника данных. Каждое приложение содержит три экрана с описанными ранее элементами управления и формулами, которые связывают их. Эти "готовые" приложения можно запустить, настроить для определенных задач или посмотреть, как они работают, чтобы изучить полезные идеи для собственных приложений. В следующих разделах изучите экраны, элементы управления и формулы, определяющие создаваемое приложение.  
@@ -53,8 +52,8 @@ Power Apps может автоматически создавать прилож
 | Элемент управления | Поддерживаемое поведение | Формула |
 | --- | --- | --- |
 | **BrowseGallery1** |Отображение записей из источника данных **Assets**. |Для свойства коллекции **[Items](controls/properties-core.md)** задана формула на основе источника данных **Assets**. |
-| **ImageNewItem1** |Отображается экран **Edit and Create**, в каждом поле которого установлено значение по умолчанию, чтобы пользователь без труда мог создать запись. |Для свойства **[OnSelect](controls/properties-core.md)** на рисунке задана эта формула:<br> **NewForm( EditForm1 );;<br>Navigate( EditScreen1; None )** |
-| **NextArrow1** (в коллекции) |Отображение экрана **Details** для просмотра нескольких или всех полей текущей выбранной записи. |Для свойства стрелки **[OnSelect](controls/properties-core.md)** задана эта формула:<br>**Navigate( DetailScreen1; None )** |
+| **ImageNewItem1** |Отображается экран **Edit and Create**, в каждом поле которого установлено значение по умолчанию, чтобы пользователь без труда мог создать запись. |Для свойства **[OnSelect](controls/properties-core.md)** на рисунке задана эта формула:<br> **NewForm( EditForm1 );<br>Navigate( EditScreen1, None )** |
+| **NextArrow1** (в коллекции) |Отображение экрана **Details** для просмотра нескольких или всех полей текущей выбранной записи. |Для свойства стрелки **[OnSelect](controls/properties-core.md)** задана эта формула:<br>**Navigate( DetailScreen1, None )** |
 
 Здесь основной элемент управления **BrowseGallery1** охватывает большую часть области экрана. Пользователь может просматривать коллекцию, чтобы найти конкретную запись для отображения дополнительных полей или обновления.
 
@@ -64,7 +63,7 @@ Power Apps может автоматически создавать прилож
 > В созданном приложении для свойства **[Items](controls/properties-core.md)** задана значительно более сложная формула по умолчанию, чтобы пользователь мог сортировать записи и искать их. Вы узнаете, как создать такую формулу далее в этом разделе; сейчас достаточно более простой версии.
 
 Вместо поиска записи для ее просмотра или изменения, пользователь может создать запись, выбрав символ "+" над коллекцией. Создайте этот эффект, добавив элемент управления **[Изображение](controls/control-image.md)** , отображающий символ "+", и задайте для его свойства **[OnSelect](controls/properties-core.md)** эту формулу:
-<br>**NewForm( EditForm1 );; Navigate( EditScreen1; None )**
+<br>**NewForm( EditForm1 ); Navigate( EditScreen1, None )**
 
 Эта формула открывает экран **Edit and Create**, на котором содержится элемент управления **[Форма редактирования](controls/control-form-detail.md)** с именем **EditForm1**. Формула также переключает эту форму в режим **New**, в котором форма отображает значения по умолчанию из источника данных, чтобы пользователь без труда мог создать запись с нуля.
 
@@ -75,7 +74,7 @@ Power Apps может автоматически создавать прилож
 В этом примере для свойства **[Text](controls/properties-core.md)** элемента управления задано значение **ThisItem.AssignedTo**, которое является полем в источнике данных **Assets**. Для свойства **[Text](controls/properties-core.md)** других трех элементов управления **[Метка](controls/control-text-box.md)** в коллекции заданы аналогичные формулы, и все элементы управления отображают разные поля в источнике данных.  
 
 Выберите элемент управления **[Форма](controls/control-shapes-icons.md)** (стрелка) и подтвердите, что для его свойства **[OnSelect](controls/properties-core.md)** задана эта формула:
-<br>**Navigate( DetailScreen1; None )**
+<br>**Navigate( DetailScreen1, None )**
 
 Если пользователь найдет запись в **BrowseGallery1**, он может выбрать стрелку для этой записи, чтобы отобразить дополнительные сведения о ней на экране **DetailScreen1**. Выбрав стрелку, пользователь изменяет значение свойства **Selected** в **BrowseGallery1**. В этом приложении данное свойство определяет, какая запись отображается не только в **DetailScreen1**, но также, если пользователь решил обновить запись, на экране **Edit and Create**.
 
@@ -90,8 +89,8 @@ Power Apps может автоматически создавать прилож
 | **DetailForm1** |Определяет запись для отображения. В созданном приложении отображает запись, которую пользователь выбрал в коллекции. |Задайте для свойства **[Item](controls/control-form-detail.md)** этого элемента управления такое значение:<br>**BrowseGallery1.Selected** |
 | Элементы управления **[Карта](controls/control-card.md)** |Отображение отдельного поля в записи в элементе управления **[Форма редактирования](controls/control-form-detail.md)** . |Задайте для свойства **[DataField](controls/control-card.md)** в качестве значения имя поля, заключив его в двойные кавычки (например, **"Имя"** ). |
 | **ImageBackArrow1** |Если пользователь выбирает этот элемент управления, открывается экран **BrowseScreen1**. |Задайте для свойства **[OnSelect](controls/properties-core.md)** эту формулу:<br>**Back()** |
-| **ImageDelete1** |Если пользователь выбирает этот элемент управления, происходит удаление записи. |Задайте для свойства **[OnSelect](controls/properties-core.md)** эту формулу:<br>**Remove( Assets; BrowseGallery1.Selected )** |
-| **ImageEdit1** |Если пользователь выбирает этот элемент управления, открывается экран **Edit and Create** для текущей записи. |Задайте для свойства **[OnSelect](controls/properties-core.md)** эту формулу:<br>**Navigate( EditScreen1; None )** |
+| **ImageDelete1** |Если пользователь выбирает этот элемент управления, происходит удаление записи. |Задайте для свойства **[OnSelect](controls/properties-core.md)** эту формулу:<br>**Remove( Assets, BrowseGallery1.Selected )** |
+| **ImageEdit1** |Если пользователь выбирает этот элемент управления, открывается экран **Edit and Create** для текущей записи. |Задайте для свойства **[OnSelect](controls/properties-core.md)** эту формулу:<br>**Navigate( EditScreen1, None )** |
 
 В верхней части экрана, за пределами формы **DetailForm1** располагаются три изображения и действуют как кнопки, управляя процессами между тремя экранами этого приложения.
 
@@ -119,7 +118,7 @@ Power Apps может автоматически создавать прилож
 | **EditForm1** |Отображение записи в источнике данных **Assets**. |Задайте для свойства **[DataSource](controls/control-form-detail.md)** значение **Assets**. |
 | **EditForm1** |Определяет запись для отображения. В созданном приложении отображает запись, которую пользователь выбрал в **BrowseScreen1**. |Задайте для свойства **[Item](controls/control-form-detail.md)** такое значение:<br>**BrowseGallery1.Selected** |
 | Элементы управления **[Карта](controls/control-card.md)** |В элементе управления **[Форма редактирования](controls/control-form-detail.md)** предоставляются элементы управления, чтобы пользователь мог изменить одно или несколько полей в записи. |Задайте для свойства **[DataField](controls/control-card.md)** в качестве значения имя поля, заключив его в двойные кавычки (например, **"Имя"** ). |
-| **ImageCancel1** |Если пользователь выбирает этот элемент управления, отменяет все текущие изменения и открывает экран **Details**. |Задайте для свойства **[OnSelect](controls/properties-core.md)** эту формулу:<br>**ResetForm( EditForm1 );; Back()** |
+| **ImageCancel1** |Если пользователь выбирает этот элемент управления, отменяет все текущие изменения и открывает экран **Details**. |Задайте для свойства **[OnSelect](controls/properties-core.md)** эту формулу:<br>**ResetForm( EditForm1 ); Back()** |
 | **ImageAccept1** |Если пользователь выбирает этот элемент управления, отправляет изменения в источник данных. |Задайте для свойства **[OnSelect](controls/properties-core.md)** эту формулу:<br>**SubmitForm( EditForm1 )** |
 | **EditForm1** |Если изменения принимаются, возвращает на предыдущий экран. |Задайте для свойства **[OnSuccess](controls/control-form-detail.md)** эту формулу:<br>**Back()** |
 | **EditForm1** |Если изменения не приняты, остается на текущем экране, чтобы пользователь мог исправить ошибки и повторить попытку отправить. |Оставляет свойство **[OnFailure](controls/control-form-detail.md)** пустым. |
@@ -224,7 +223,7 @@ Power Apps может автоматически создавать прилож
 1. Перейдите на первый экран, на котором находится элемент управления **[Коллекция](controls/control-gallery.md)** , и выберите стрелку в первом элементе коллекции.
 
 2. Задайте для свойства фигуры **[OnSelect](controls/properties-core.md)** кнопки эту формулу:
-   <br>**Navigate( Screen2; None )**
+   <br>**Navigate( Screen2, None )**
    
     ![Форма просмотра для источника данных Ice Cream с кнопкой "Назад"](./media/working-with-forms/gallery-icecream-nav-new.png)
 
@@ -260,7 +259,7 @@ Power Apps может автоматически создавать прилож
 
 Чтобы добавить навигацию на этом экране:
 
-1. Добавьте еще один элемент управления **[Кнопка](controls/control-button.md)** , задайте значение **Cancel** для ее свойства **[Text](controls/properties-core.md)** и задайте следующую формулу в качестве значения свойства **[OnSelect](controls/properties-core.md)** : <br>**ResetForm( Form1 );; Back()**
+1. Добавьте еще один элемент управления **[Кнопка](controls/control-button.md)** , задайте значение **Cancel** для ее свойства **[Text](controls/properties-core.md)** и задайте следующую формулу в качестве значения свойства **[OnSelect](controls/properties-core.md)** : <br>**ResetForm( Form1 ); Back()**
    
     Эта формула удаляет все несохраненные изменения и открывает предыдущий экран.
    
@@ -270,7 +269,7 @@ Power Apps может автоматически создавать прилож
     Если обновления успешно сохранены, автоматически откроется предыдущий экран (в данном случае экран сведений).
    
     ![Изменение формы с помощью добавленного правила OnSuccess](./media/working-with-forms/edit-icecream-onsuccess.png)
-3. На экране **Display** добавьте кнопку, укажите для свойства **[Text](controls/properties-core.md)** значение **Edit**, а для свойства **[OnSelect](controls/properties-core.md)** задайте следующую формулу:<br> **Navigate( Screen3; None )**
+3. На экране **Display** добавьте кнопку, укажите для свойства **[Text](controls/properties-core.md)** значение **Edit**, а для свойства **[OnSelect](controls/properties-core.md)** задайте следующую формулу:<br> **Navigate( Screen3, None )**
    
     ![Форма просмотра с добавленной кнопкой "Изменить"](./media/working-with-forms/viewform-icecream-edit.png)
 
@@ -289,7 +288,7 @@ Power Apps может автоматически создавать прилож
 
 1. На экране с коллекцией добавьте элемент управления **[Кнопка](controls/control-button.md)** .
 2. Для свойства **[Text](controls/properties-core.md)** задайте значение **New**, а для свойства **[OnSelect](controls/properties-core.md)** задайте следующую формулу:<br>
-   **NewForm( Form1 );; Navigate( Screen3; None )**
+   **NewForm( Form1 ); Navigate( Screen3, None )**
    
     Эта формула переключает элемент управления **[Форма редактирования](controls/control-form-detail.md)** на экране **Screen3** в режим **New** и открывает этот экран, чтобы пользователь мог заполнить его.
 
@@ -300,7 +299,7 @@ Power Apps может автоматически создавать прилож
 ## <a name="delete-a-record"></a>Удаление записи
 1. На экране **Display** добавьте кнопку, а затем задайте для свойства **[Text](controls/properties-core.md)** отображение надписи **Delete**.
 2. Задайте для свойства кнопки **[OnSelect](controls/properties-core.md)** эту формулу:
-   <br>**Remove( 'Ice Cream'; Gallery1.Selected );; Back()**
+   <br>**Remove( 'Ice Cream', Gallery1.Selected ); Back()**
    
     ![Форма просмотра с добавленной кнопкой "Изменить"](./media/working-with-forms/viewform-icecream-remove.png)
 
@@ -341,14 +340,14 @@ Power Apps может автоматически создавать прилож
 
 Эта переменная контекста используется в формуле для свойства **[Items](controls/properties-core.md)** элемента управления **[Коллекция](controls/control-gallery.md)** наряду с текстом в элементе управления **TextSearchBox1**:
 
-```powerapps-comma
+```powerapps-dot
 Sort( 
-    If( IsBlank(TextSearchBox1.Text);
-        Assets;
-        Filter( Assets; TextSearchBox1.Text in Text(ApproverEmail) ) 
-    );
-    ApproverEmail;
-    If(SortDescending1; Descending; Ascending) 
+    If( IsBlank(TextSearchBox1.Text),
+        Assets,
+        Filter( Assets, TextSearchBox1.Text in Text(ApproverEmail) ) 
+    ),
+    ApproverEmail,
+    If(SortDescending1, Descending, Ascending) 
 )
 ```
 

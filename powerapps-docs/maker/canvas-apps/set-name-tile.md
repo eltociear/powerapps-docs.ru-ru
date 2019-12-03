@@ -1,6 +1,6 @@
 ---
 title: Изменение имени и значка приложения на основе холста | Документы Майкрософт
-description: Пошаговые инструкции по изменению параметров приложения на основе холста, в частности его имени и значка, в PowerApps
+description: Пошаговые инструкции по изменению параметров, таких как имя приложения и значок, для приложения Canvas в Power Apps
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 68e6b4495c6f3c69b5a0b21f1ad8a5fc26e032de
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b258e5fb9361746c30873c478d11c486b2e62727
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989095"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732503"
 ---
-# <a name="change-app-name-and-icon-for-a-canvas-app-in-powerapps"></a>Изменение имени и значка приложения на основе холста в PowerApps
+# <a name="change-app-name-and-icon-for-a-canvas-app-in-power-apps"></a>Изменение имени и значка приложения для холста в Power Apps
 Настройка приложения на основе холста посредством изменения его имени и значка.
 
 ## <a name="prerequisites"></a>Технические условия

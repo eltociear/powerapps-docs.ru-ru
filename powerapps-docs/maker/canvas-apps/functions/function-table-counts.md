@@ -1,6 +1,6 @@
 ---
 title: Функции Count, CountA, CountIf и CountRows | Документация Майкрософт
-description: Справочные сведения, включая синтаксис и пример для функций Count, Count, СЧЁТЕСЛИ и CountRows в PowerApps
+description: Справочные сведения, включая синтаксис и пример для функций Count, Count, СЧЁТЕСЛИ и CountRows в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 70950a52050226a25270be7531f4589671f0d46f
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: a0c9d7d96b4ca6ce75993586de5a39fd33906f3b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983902"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730059"
 ---
-# <a name="count-counta-countif-and-countrows-functions-in-powerapps"></a>Функции Count, CountA, CountIf и CountRows в PowerApps
+# <a name="count-counta-countif-and-countrows-functions-in-power-apps"></a>Функции Count, Count, СЧЁТЕСЛИ и CountRows в Power Apps
 Подсчитывает все [записи](../working-with-tables.md#records) в [таблице](../working-with-tables.md) или подсчитывает количество записей, удовлетворяющих условию.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функция **Count** подсчитывает количество содержащих число записей в таблице из одного столбца.
 
 Функция **CountA** подсчитывает количество *непустых* записей в таблице из одного столбца. При подсчете учитываются [пустые](function-isblank-isempty.md) текстовые строки ("").
@@ -43,7 +42,7 @@ ms.PowerAppsDecimalTransform: true
 
 * *SingleColumnTable* — обязательный аргумент.  Столбец записей для подсчета.  
 
-**CountIf**( *таблица*; *логическая_формула* )
+**CountIf**( *таблица*, *логическая_формула* )
 
 * *Table* — обязательный аргумент.  Таблица с записями для подсчета.
 * *Логическая_формула* — обязательный аргумент.  Формула для вычисления для каждой записи таблицы.  Учитываются записи, возвращающие по этой формуле значение **true**.  Формула может ссылаться на столбцы таблицы.
@@ -56,7 +55,7 @@ ms.PowerAppsDecimalTransform: true
 1. Импортируйте или создайте [коллекцию](../working-with-data-sources.md#collections) с именем **Inventory**, как описано в первом шаге описания [показа текста и изображений в коллекции](../show-images-text-gallery-sort-filter.md).
 2. Добавьте метку и установите в ее свойстве **[Text](../controls/properties-core.md)** формулу:
    
-    **CountIf(Inventory; UnitsInStock < 30)**
+    **CountIf(Inventory, UnitsInStock < 30)**
    
     Метка показывает **2**, так как по двум продуктам (Ganymede и Callisto) на складе меньше 30 единиц.
 3. Добавьте другую метку и установите в ее свойстве **[Text](../controls/properties-core.md)** формулу:

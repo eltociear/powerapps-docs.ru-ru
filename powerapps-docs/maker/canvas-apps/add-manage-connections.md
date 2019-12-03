@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5eb7bac0197856988f344ae2779bf2b43d1f797f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 503ab33c2c31854bb39baa8d523dda41f085ae2a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679990"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724388"
 ---
-# <a name="manage-canvas-app-connections-in-powerapps"></a>Управление подключениями из приложений на основе холста в PowerApps
+# <a name="manage-canvas-app-connections-in-power-apps"></a>Управление холстами. подключения приложений в Power Apps
 На сайте [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) можно создать или удалить подключение к одному или нескольким источникам данных, а также обновить для него учетные данные.
 
 Приложение на основе холста может подключаться к SharePoint, SQL Server, Office 365, OneDrive для бизнеса, Salesforce, Excel и многим другим [источникам данных](connections-list.md).
@@ -35,7 +35,7 @@ ms.locfileid: "74679990"
 * подключение к Twilio и отправка SMS-сообщений из приложения;
 
 ## <a name="prerequisites"></a>Технические условия
-1. [Зарегистрируйтесь](../signup-for-powerapps.md) в PowerApps.
+1. [Зарегистрируйтесь](../signup-for-powerapps.md) в Power Apps.
 2. Войдите в [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), используя те же учетные данные, которые вы ввели при регистрации.
 
 ## <a name="background-on-data-connections"></a>Основные сведения о подключениях к данным

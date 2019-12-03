@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f447a467319f814fd79aab6827bf623d35345102
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: dbc33f1a1e4ff0434ee69ad9f7c34ead441f6776
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674543"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733172"
 ---
-# <a name="understand-data-form-layout-for-canvas-apps-in-powerapps"></a>Общие сведения о макете форм данных в приложениях на основе холста в PowerApps
+# <a name="understand-data-form-layout-for-canvas-apps-in-power-apps"></a>Общие сведения о макете форм данных для приложений Canvas в Power Apps
 
 Легко создавайте привлекательную и эффективную форму при создании приложения Canvas в Power Apps. Например, рассмотрим следующую простую форму записи для заказа на продажу.
 

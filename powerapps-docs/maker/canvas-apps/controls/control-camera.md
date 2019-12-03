@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 14f802a899171dce052c8975f9fc63b07e448afc
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: c58f5695e47c27be261c6c85c273fe22952dd98a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650714"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727497"
 ---
-# <a name="camera-control-in-powerapps"></a>Элемент управления "Камера" в PowerApps
+# <a name="camera-control-in-power-apps"></a>Управление камерой в Power Apps
 С помощью элемента управления "Камера" пользователь может делать фотографии, используя камеру устройства.
 
 ## <a name="description"></a>Description
@@ -74,12 +73,12 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Patch**( *DataSource*;; *BaseRecord*;; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Пример
 ### <a name="add-photos-to-an-image-gallery-control"></a>Добавление фотографий в коллекцию изображений
 1. Добавьте в приложение элемент управления **Камера**, назовите его **MyCamera** и назначьте его свойству **[OnSelect](properties-core.md)** следующую формулу:<br>
-   **Collect(MyPix; MyCamera.Photo)**
+   **Collect(MyPix, MyCamera.Photo)**
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
@@ -92,7 +91,7 @@ ms.PowerAppsDecimalTransform: true
 
     Сделанная вами фотография появится в элементе управления **Коллекция изображений**.
 6. Сделайте столько фотографий, сколько хотите, а затем вернитесь в рабочую область по умолчанию, нажав клавишу Esc.
-7. (Необязательно.) Назначьте свойству **OnSelect** элемента управления **Изображение** в элементе управления **Коллекция изображений** формулу **Remove(MyPix;; ThisItem)** , нажмите клавишу F5, а затем щелкните фотографию, чтобы удалить ее.
+7. (Необязательно.) Назначьте свойству **OnSelect** элемента управления **Изображение** в элементе управления **Коллекция изображений** формулу **Remove(MyPix; ThisItem)** , нажмите клавишу F5, а затем щелкните фотографию, чтобы удалить ее.
 
 Для сохранения фотографий на локальном устройстве используйте функцию **[SaveData](../functions/function-savedata-loaddata.md)** , а для обновления источника данных — функцию **[Patch](../functions/function-patch.md)** .
 

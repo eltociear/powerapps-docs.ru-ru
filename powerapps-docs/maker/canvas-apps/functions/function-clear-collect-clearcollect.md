@@ -1,6 +1,6 @@
 ---
 title: Функции Collect, Clear и ClearCollect | Документация Майкрософт
-description: Справочные сведения о функциях Collect, Clear и ClearCollect в PowerApps, включая описание синтаксиса и примеры
+description: Справочные сведения, включая синтаксис и примеры, для функций "получить", "очистить" и "Клеарколлект" в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 02a69fd7844de8965607cd828c6b3e17437ce34f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6c4d9362819790d60faaf68173c119f67b895fb9
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678403"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731345"
 ---
-# <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>Функции Collect, Clear и ClearCollect в PowerApps
+# <a name="collect-clear-and-clearcollect-functions-in-power-apps"></a>Получение, очистка и Клеарколлект функций в Power Apps
 
 Создание и удаление [коллекций](../working-with-data-sources.md#collections) и добавление [записей](../working-with-tables.md#records) в любом [источнике данных](../working-with-data-sources.md).
 
@@ -49,7 +48,7 @@ ms.PowerAppsDecimalTransform: true
 
 Функция **Clear** удаляет все записи из коллекции.  Столбцы в коллекции остаются.
 
-Обратите внимание, что функция **Clear** работает только с коллекциями и не работает с источниками данных другого типа.  Для этой цели можно использовать формулу **[RemoveIf](function-remove-removeif.md)( *DataSource*; true )** .  Будьте осторожны, так как это приведет к удалению всех записей из хранилища источника данных и может повлиять на других пользователей.
+Обратите внимание, что функция **Clear** работает только с коллекциями и не работает с источниками данных другого типа.  Для этой цели можно использовать формулу **[RemoveIf](function-remove-removeif.md)( *DataSource*, true )** .  Будьте осторожны, так как это приведет к удалению всех записей из хранилища источника данных и может повлиять на других пользователей.
 
 Можно использовать функцию **[Remove](function-remove-removeif.md)** для выборочного удаления записей.
 
@@ -63,7 +62,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="syntax"></a>Синтаксис
 
-**Collect**( *DataSource*; *Item*; ... )
+**Collect**( *DataSource*, *Item*, ... )
 
 * *Источник_данных* — обязательный аргумент. Это источник данных, в который необходимо добавить данные.  Если он еще не существует, создается новая коллекция.
 * *Item(s)*  — обязательный аргумент.  Одна или несколько записей или таблиц, которые необходимо добавить в источник данных.  
@@ -72,7 +71,7 @@ ms.PowerAppsDecimalTransform: true
 
 * *Collection* — обязательный аргумент. Коллекция, которую необходимо очистить.
 
-**ClearCollect**( *Collection*; *Item*; ... )
+**ClearCollect**( *Collection*, *Item*, ... )
 
 * *Collection* — обязательный аргумент. Коллекция, которую необходимо очистить, а затем добавить в нее данные.
 * *Item(s)*  — обязательный аргумент.  Одна или несколько записей или таблиц, которые необходимо добавить в источник данных.  
@@ -87,8 +86,8 @@ ms.PowerAppsDecimalTransform: true
 
 | Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
-| **ClearCollect( IceCream; {&nbsp;Flavor:&nbsp;"Strawberry";&nbsp;Quantity:&nbsp;300&nbsp;} )** |Выполняется удаление всех данных из коллекции **IceCream** и добавляется запись, в которой указано количестве клубничного мороженого. |<style>img {max-width: None}</style> ![таблицу с одной записью](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>Коллекция **ицекреам** также была изменена. |
-| **Collect( IceCream; {&nbsp;Flavor:&nbsp;"Pistachio";&nbsp;Quantity:&nbsp;40&nbsp;}; {&nbsp;Flavor:&nbsp;"Orange";&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Добавляет две записи в коллекцию **ицекреам** , включающую количество фисташковые и оранжевый мороженого. |Таблица ![с двумя записями](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>Коллекция **ицекреам** также была изменена. |
+| **ClearCollect( IceCream, {&nbsp;Flavor:&nbsp;"Strawberry",&nbsp;Quantity:&nbsp;300&nbsp;} )** |Выполняется удаление всех данных из коллекции **IceCream** и добавляется запись, в которой указано количестве клубничного мороженого. |<style>img {max-width: None}</style> ![таблицу с одной записью](media/function-clear-collect-clearcollect/icecream-clearcollect.png)<br><br>Коллекция **ицекреам** также была изменена. |
+| **Collect( IceCream, {&nbsp;Flavor:&nbsp;"Pistachio",&nbsp;Quantity:&nbsp;40&nbsp;}, {&nbsp;Flavor:&nbsp;"Orange",&nbsp;Quantity:&nbsp;200&nbsp;}  )** |Добавляет две записи в коллекцию **ицекреам** , включающую количество фисташковые и оранжевый мороженого. |Таблица ![с двумя записями](media/function-clear-collect-clearcollect/icecream-collect.png)<br><br>Коллекция **ицекреам** также была изменена. |
 | **Clear( IceCream )** |Выполняется удаление всех записей из коллекции **IceCream**. |![пустую таблицу](media/function-clear-collect-clearcollect/icecream-clear.png)<br><br>Коллекция **ицекреам** также была изменена. |
 
 Пошаговые примеры создания коллекции см. в разделе [Создание и обновление коллекции](../create-update-collection.md).
@@ -99,7 +98,7 @@ ms.PowerAppsDecimalTransform: true
 
 | Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
-| **Клеарколлект (Ицекреам; {&nbsp;;&nbsp;"шоколад";&nbsp;Quantity:&nbsp;100&nbsp;}; {&nbsp;версия:&nbsp;"обычный";&nbsp;Quantity:&nbsp;200&nbsp;})** | Очистите все данные, а затем добавляет две записи в коллекцию **ицекреам** , включающую количество шоколадного и обычныйного мороженого.  Добавляемые записи предоставляются как отдельные аргументы функции.| ![записей шоколада и обычный, добавленных в коллекцию](media/function-clear-collect-clearcollect/icecream.png) <br><br>Коллекция **ицекреам** также была изменена. |
-| **Клеарколлект (Ицекреам; таблица ({&nbsp;разновидность:&nbsp;"шоколад";&nbsp;Quantity:&nbsp;100&nbsp;}; {&nbsp;версия:&nbsp;"обычный";&nbsp;Quantity:&nbsp;200&nbsp;}))** | То же, что и в предыдущем примере, за исключением того, что записи объединяются в таблицу и передаются через один аргумент. Содержимое таблицы извлекается по записи перед добавлением в коллекцию **ицекреам** . | ![записей шоколада и обычный, добавленных в коллекцию](media/function-clear-collect-clearcollect/icecream.png)<br><br>Коллекция **ицекреам** также была изменена. |
-| **Клеарколлект (Ицекреам;<br>{&nbsp;Мифаворитес: Table ({&nbsp;версия:&nbsp;"шоколад";&nbsp;Quantity:&nbsp;100&nbsp;}; {&nbsp;версия:&nbsp;"обычный";&nbsp;Quantity:&nbsp;200&nbsp;}))** | То же, что и в предыдущем примере, за исключением того, что таблица упакована в запись.  Записи таблицы не извлекаются, а вместо этого вся таблица добавляется в качестве подтаблицы записи. | ![записей шоколада и обычный, добавленных в коллекцию](media/function-clear-collect-clearcollect/icecream-myfavorites.png)<br><br>Коллекция **ицекреам** также была изменена. |
+| **Клеарколлект (Ицекреам, {&nbsp;,&nbsp;"шоколад",&nbsp;Quantity:&nbsp;100&nbsp;}, {&nbsp;версия:&nbsp;"обычный",&nbsp;Quantity:&nbsp;200&nbsp;})** | Очистите все данные, а затем добавляет две записи в коллекцию **ицекреам** , включающую количество шоколадного и обычныйного мороженого.  Добавляемые записи предоставляются как отдельные аргументы функции.| ![записей шоколада и обычный, добавленных в коллекцию](media/function-clear-collect-clearcollect/icecream.png) <br><br>Коллекция **ицекреам** также была изменена. |
+| **Клеарколлект (Ицекреам, таблица ({&nbsp;разновидность:&nbsp;"шоколад",&nbsp;Quantity:&nbsp;100&nbsp;}, {&nbsp;версия:&nbsp;"обычный",&nbsp;Quantity:&nbsp;200&nbsp;}))** | То же, что и в предыдущем примере, за исключением того, что записи объединяются в таблицу и передаются через один аргумент. Содержимое таблицы извлекается по записи перед добавлением в коллекцию **ицекреам** . | ![записей шоколада и обычный, добавленных в коллекцию](media/function-clear-collect-clearcollect/icecream.png)<br><br>Коллекция **ицекреам** также была изменена. |
+| **Клеарколлект (Ицекреам,<br>{&nbsp;Мифаворитес: Table ({&nbsp;версия:&nbsp;"шоколад",&nbsp;Quantity:&nbsp;100&nbsp;}, {&nbsp;версия:&nbsp;"обычный",&nbsp;Quantity:&nbsp;200&nbsp;}))** | То же, что и в предыдущем примере, за исключением того, что таблица упакована в запись.  Записи таблицы не извлекаются, а вместо этого вся таблица добавляется в качестве подтаблицы записи. | ![записей шоколада и обычный, добавленных в коллекцию](media/function-clear-collect-clearcollect/icecream-myfavorites.png)<br><br>Коллекция **ицекреам** также была изменена. |
 

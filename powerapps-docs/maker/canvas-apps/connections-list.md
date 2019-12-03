@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6cda843ea95f79e907aa738a6546d63a6a3be270
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9449c9ab8e03159ffdc4e5657d7eb8ca92cbf0f0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678863"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724044"
 ---
-# <a name="overview-of-canvas-app-connectors-for-powerapps"></a>Общие сведения о соединителях для приложений на основе холста в PowerApps
-Данные являются основой большинства приложений, включая те, которые вы создаете в Power Apps. Эти данные хранятся в *источниках данных*. Вы переносите их в приложение при создании *подключения*. Для подключения используется определенный *соединитель*, который обеспечивает обмен данными с источником данных. В Power Apps есть соединители для многих популярных служб и локальных источников данных, включая SharePoint, SQL Server, Office 365, Salesforce и Twitter. Чтобы начать добавлять данные в приложение на основе холста, ознакомьтесь со статьей [Добавление подключения к данным в PowerApps](add-data-connection.md).
+# <a name="overview-of-canvas-app-connectors-for-power-apps"></a>Общие сведения о соединителях Canvas-App для Power Apps
+Данные являются основой большинства приложений, включая те, которые вы создаете в Power Apps. Эти данные хранятся в *источниках данных*. Вы переносите их в приложение при создании *подключения*. Для подключения используется определенный *соединитель*, который обеспечивает обмен данными с источником данных. В Power Apps есть соединители для многих популярных служб и локальных источников данных, включая SharePoint, SQL Server, Office 365, Salesforce и Twitter. Чтобы приступить к добавлению данных в приложение Canvas, см. статью [Добавление подключения к данным в Power Apps](add-data-connection.md).
 
 Соединитель может предоставлять **таблицы** данных или **действия**. Некоторые соединители предоставляют только таблицы, некоторые — только действия, а некоторые — и то, и другое. Соединитель может быть стандартным или настраиваемым.
 
@@ -37,13 +37,13 @@ ms.locfileid: "74678863"
 
 Дополнительные сведения о настройке формулы с таблицами см. в следующих разделах:
 
-  [Общие сведения об источниках данных в PowerApps](working-with-data-sources.md)<br> 
+  [Общие сведения об источниках данных в Power Apps](working-with-data-sources.md)<br> 
   [Создание приложения на основе данных Excel](get-started-create-from-data.md)<br> 
   [Создание приложения с нуля](get-started-create-from-blank.md)<br>
-  [Understand tables and records in PowerApps](working-with-tables.md) (Общие сведения о таблицах и записях PowerApps)
+  [Общие сведения о таблицах и записях в Power Apps](working-with-tables.md)
 
   > [!NOTE]
-  > Чтобы подключиться к данным в книге Excel, необходимо разместить книгу в службе облачного хранения, например OneDrive. Дополнительные сведения см. в статье о [подключении к облачным хранилищам из PowerApps](connections/cloud-storage-blob-connections.md).
+  > Чтобы подключиться к данным в книге Excel, необходимо разместить книгу в службе облачного хранения, например OneDrive. Дополнительные сведения см. [в статье подключение к хранилищу в облаке из Power Apps](connections/cloud-storage-blob-connections.md).
 
 ## <a name="actions"></a>Действия
 

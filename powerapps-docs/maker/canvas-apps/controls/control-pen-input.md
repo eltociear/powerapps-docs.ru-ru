@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4da95086c99c03fdd56214a0d2fb637beaa6243c
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: a5645f2f0d515d7eca125f3cd89ecff0c63cfa51
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650359"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729044"
 ---
-# <a name="pen-input-control-in-powerapps"></a>Элемент управления "Ввод с помощью пера" в PowerApps
+# <a name="pen-input-control-in-power-apps"></a>Элемент управления вводом с помощью пера в Power Apps
 Элемент управления "Ввод с помощью пера" позволяет рисовать, стирать и выделять области изображения.
 
 ## <a name="description"></a>Description
@@ -72,7 +71,7 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Collect**( *CollectionName*;; *DatatoCollect* )](../functions/function-clear-collect-clearcollect.md)
+[**Collect**( *CollectionName*; *DatatoCollect* )](../functions/function-clear-collect-clearcollect.md)
 
 ## <a name="example"></a>Пример
 ### <a name="create-a-set-of-images"></a>Создание набора изображений
@@ -81,7 +80,7 @@ ms.PowerAppsDecimalTransform: true
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте элемент управления **[Кнопка](control-button.md)** и расположите его под элементом **MyDoodles**. Затем задайте для свойства **[Text](properties-core.md)** этой **[кнопки](control-button.md)** значение **Добавить**.
 3. Назначьте свойству **[OnSelect](properties-core.md)** элемента управления **[Кнопка](control-button.md)** следующую формулу:<br>
-   **Collect(Doodles;; {Sketch:MyDoodles.Image})**
+   **Collect(Doodles; {Sketch:MyDoodles.Image})**
 4. Добавьте элемент управления **Коллекция изображений** и расположите его под элементом **[Кнопка](control-button.md)** . Затем измените ширину **коллекции изображений** так, чтобы в ней отображалось три элемента.
 5. Назначьте свойству **[Items](properties-core.md)** для **коллекции изображений** значение **Doodles** и нажмите клавишу F5.
 6. Нарисуйте изображение в элементе **MyDoodles** и щелкните элемент управления **[Кнопка](control-button.md)** .
@@ -89,7 +88,7 @@ ms.PowerAppsDecimalTransform: true
     Нарисованное вами изображение появится в элементе управления **Коллекция изображений**.
 7. (Необязательно) В элементе управления **Ввод с помощью пера** щелкните значок (или коснитесь значка), чтобы очистить нарисованное изображение, нарисуйте другое изображение, а затем щелкните элемент управления **[Кнопка](control-button.md)** .
 8. В элементе управления **Коллекция изображений** назначьте свойству **[OnSelect](properties-core.md)** элемента управления **[Изображение](control-image.md)** следующую формулу:<br>
-   **Remove(Doodles;; ThisItem)**
+   **Remove(Doodles; ThisItem)**
 9. Удалите рисунок, щелкнув его (или коснувшись его) в элементе управления **Коллекция изображений**.
 
 Для сохранения рисунков на локальном устройстве используйте функцию **[SaveData](../functions/function-savedata-loaddata.md)** , а для сохранения в источнике данных — функцию **[Patch](../functions/function-patch.md)** .

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 140fa7c51c30199360a08adc86c6e118e4e5bc52
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4980d7989a65032cec28aab1bc70ae3e01d1747d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679944"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724164"
 ---
 # <a name="preview-create-a-canvas-app-from-azure-sql-database"></a>Предварительная версия: создание приложения Canvas из базы данных SQL Azure
 
@@ -43,7 +43,7 @@ ms.locfileid: "74679944"
 
 1. Войдите на [портал Azure](https://portal.azure.com).
 2. Перейдите к базе данных SQL.
-3. Выберите PowerApps.
+3. Выберите Power Apps.
 
     
     ![Параметры Power Apps в параметрах базы данных SQL](./media/app-from-azure-sql-database/powerapps-link-azure-portal.png "Параметр Power Apps в базе данных SQL")
@@ -109,10 +109,10 @@ Power Apps может подключаться к базе данных SQL, **�
 В этом кратком руководстве вы создали приложение, использующее данные из базы данных SQL, используя портал Azure. В качестве следующего шага настройте приложение с помощью элементов управления, изображений и логики, чтобы они лучше соответствовали потребностям вашего бизнеса.
 
 > [!div class="nextstepaction"]
-> [Проектирование интерфейса приложения Canvas в PowerApps](add-configure-controls.md)
+> [Проектирование интерфейса приложения Canvas в Power Apps](add-configure-controls.md)
 
 ## <a name="see-also"></a>См. также
 
-- [Совместное использование приложения Canvas в PowerApps](share-app.md) </br>
-- [Добавление подключения к данным в приложение Canvas в PowerApps](add-data-connection.md#add-data-source)</br>
-- [Microsoft Learn: Настройка приложения Canvas в PowerApps](https://docs.microsoft.com/learn/modules/customize-apps-in-powerapps/)
+- [Совместное использование приложения Canvas в Power Apps](share-app.md) </br>
+- [Добавление подключения к данным в приложение Canvas в Power Apps](add-data-connection.md#add-data-source)</br>
+- [Microsoft Learn: Настройка приложения Canvas в Power Apps](https://docs.microsoft.com/learn/modules/customize-apps-in-powerapps/)

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 42ca4a12f75c82bb685396a857e5ae825d8d7fa1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: cbf5fdaf3ae6cbba2f89124316ac6d23455a712c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674797"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733055"
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>Создание приложения на основе холста для обработки запросов проекта
 > [!NOTE]
@@ -86,7 +85,7 @@ ms.PowerAppsDecimalTransform: true
    
     ![Свойство Items](./media/sharepoint-scenario-generate-app/02-03-03-items.png)
 
-6. Вставьте формулу **SortByColumns(Filter('Project Requests'; StartsWith(Title; TextSearchBox1.Text)); "Title"; If(SortDescending1; Descending; Ascending))** .
+6. Вставьте формулу **SortByColumns(Filter('Project Requests', StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))** .
    
     ![Строка формул](./media/sharepoint-scenario-generate-app/02-03-04-formula.png)
    
@@ -167,7 +166,7 @@ ms.PowerAppsDecimalTransform: true
 
 4. Теперь данные в коллекции можно отсортировать с помощью функции **SortByColumns**. В этом случае данные сортируются по полю **Title**. Но можно также сортировать и по другим полям (не только по тому, по которому выполняется поиск).
 
-Если вы дошли до этих строк, мы надеемся, что теперь вы понимаете, как работает эта формула, а также знаете, как можно объединять функции и другие элементы, чтобы добиться нужного поведения приложения. Дополнительные сведения см. в [справочнике по формулам для PowerApps](formula-reference.md).
+Если вы дошли до этих строк, мы надеемся, что теперь вы понимаете, как работает эта формула, а также знаете, как можно объединять функции и другие элементы, чтобы добиться нужного поведения приложения. Дополнительные сведения см. в разделе [Справочник по формулам для Power Apps](formula-reference.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Следующий этап в этой серии руководств — [создание потока для управления утверждениями проектов](sharepoint-scenario-approval-flow.md).

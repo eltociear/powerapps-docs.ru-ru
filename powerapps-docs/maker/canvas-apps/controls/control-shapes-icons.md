@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7cbc7d0a51a4bab24214f31321264d3347fbb152
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: f46199d0265cf042ebae5dd27ae308fad7eca8e6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649741"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732042"
 ---
-# <a name="shape-controls-and-icon-controls-in-powerapps"></a>Фигуры и значки в PowerApps
+# <a name="shape-controls-and-icon-controls-in-power-apps"></a>Фигурные элементы управления и значки в Power Apps
 Фигуры и значки — это элементы управления, для которых можно настроить внешний вид и поведение.
 
 ## <a name="description"></a>Description
@@ -69,7 +68,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Navigate**( *ScreenName*;; *ScreenTransition* )](../functions/function-navigate.md)
+[**Navigate**( *ScreenName*; *ScreenTransition* )](../functions/function-navigate.md)
 
 ## <a name="example"></a>Пример
 
@@ -81,7 +80,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. В элементе **Источник** добавьте элемент управления **Фигура** и назначьте его свойству **[OnSelect](properties-core.md)** следующую формулу:
 
-  `Navigate(Target; ScreenTransition.Fade)`
+  `Navigate(Target, ScreenTransition.Fade)`
   
 1. Нажмите клавишу F5, а затем выберите элемент управления **фигурой** .
 
@@ -89,7 +88,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. (Необязательно) Нажмите клавишу Esc, чтобы вернуться в рабочую область по умолчанию, добавьте элемент управления **Фигура** к элементу **Цель** и назначьте свойству **[OnSelect](properties-core.md)** элемента управления **Фигура** следующую формулу:
 
-  `Navigate(Source; ScreenTransition.Fade)`
+  `Navigate(Source, ScreenTransition.Fade)`
 
 ## <a name="accessibility-guidelines"></a>Руководство по настройке специальных возможностей
 

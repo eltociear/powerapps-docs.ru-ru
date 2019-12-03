@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 455ffff4813b457c2a439f2081c10418ace2e306
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ba582906c34b2831fffbfedcf645a00bd7cdb7d6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678725"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74728296"
 ---
-# <a name="connect-to-excel-from-powerapps"></a>Подключение к Excel из PowerApps
+# <a name="connect-to-excel-from-power-apps"></a>Подключение к Excel из Power Apps
 ![Excel](./media/connection-excel/excelicon.png)
 
 Excel — это *вид* подключения. Для отображения данных Excel в вашем приложении сделайте следующее:
@@ -35,7 +35,7 @@ Excel — это *вид* подключения. Для отображения
 
 В разделе с [общими сведениями о подключении к облачному хранилищу](cloud-storage-blob-connections.md) показано, как добавить подключение, добавить таблицу Excel в качестве источника данных и использовать данные Excel в приложении.
 
-Сведения о подключении к данным других типов см. в [списке подключений для PowerApps](../connections-list.md).
+Сведения о подключении к другим типам данных см. в [списке подключений для Power Apps](../connections-list.md).
 
 ### <a name="known-limitations"></a>Известные ограничения
 [Просмотрите эти ограничения](cloud-storage-blob-connections.md#sharing-excel-tables) для совместного использовании данных Excel в организации.

@@ -1,6 +1,6 @@
 ---
 title: Использование примера приложения | Документация Майкрософт
-description: Пошаговые инструкции по созданию приложения на основе холста с помощью образца в PowerApps
+description: Пошаговые инструкции по созданию приложения Canvas на основе примера в Power Apps
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e6ebc516c6b07f149e2b965b967966c3832476c9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 853edb00d0325e287ff69149e1d807ff2529b915
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675498"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732807"
 ---
-# <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>Создание приложения Canvas из примера в PowerApps
+# <a name="create-a-canvas-app-from-a-sample-in-power-apps"></a>Создание приложения Canvas из примера в Power Apps
 В этом кратком руководстве вы создадите приложение на основе холста из образца, чтобы изучить возможности проектирования и принципы, которые можно применять при разработке собственных приложений на основе холста.
 
 Во всех примерах используются вымышленные данные для демонстрации реальной ситуации. Для хранения этих данных потребуется облачная учетная запись хранения, например Dropbox, Google Диск или OneDrive.
@@ -28,7 +28,7 @@ ms.locfileid: "74675498"
 Если у вас нет лицензии на Power Apps, вы можете [зарегистрироваться бесплатно](../signup-for-powerapps.md).
 
 ## <a name="open-a-sample-app"></a>Открытие примера приложения
-1. Войдите в [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Войдите в [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. В списке примеров приложений наведите указатель мыши на один из примеров (например, **Cost Estimator**).
 
@@ -52,7 +52,7 @@ ms.locfileid: "74675498"
     - Приложение позволяет собрать такие сведения, как адрес и площадь объекта, и рассчитать стоимость с учетом скидки и ставки налога.
     - Также можно отфильтровать список встреч. Таким образом, на экране можно отобразить либо полный список встреч, либо только те встречи, для которых оценка уже выполнена, либо только те встречи, для которых оценка еще не выполнена.
     
-1. Завершив изучение приложения, закройте режим предварительного просмотра, нажав клавишу ESC (либо значок закрытия в правом верхнем углу под строкой заголовка PowerApps).
+1. Завершив изучение приложения, закройте режим предварительного просмотра, нажав клавишу ESC (или щелкнув значок закрытия рядом с верхним правым углом в строке заголовка для Power Apps).
 
 ## <a name="save-the-app"></a>Сохранение приложения
 1. В левом верхнем углу экрана выберите вкладку **Файл**.

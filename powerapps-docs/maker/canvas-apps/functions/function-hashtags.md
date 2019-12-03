@@ -1,6 +1,6 @@
 ---
 title: Функция HashTags | Документация Майкрософт
-description: Справочные сведения о функции HashTags в PowerApps, включая описание синтаксиса и примеры
+description: Справочные сведения, включая синтаксис и примеры, для функции "хэш" в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d29fa336ae96a164a6f189010c66deff970ba5a7
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: a88371e9c151ed097d2c86bcb64121c68a6d62d0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984897"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730795"
 ---
-# <a name="hashtags-function-in-powerapps"></a>Функция HashTags в PowerApps
+# <a name="hashtags-function-in-power-apps"></a>Функции "хэш" в Power Apps
 Извлекает хэш-теги (#string — строки) из строки или текста.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функция **HashTags** проверяет строку на наличие хэш-тегов. Хэш-теги начинаются с символа решетки (#), после которого следует комбинация из:
 
 * прописных и строчных букв;
@@ -37,13 +36,13 @@ ms.PowerAppsDecimalTransform: true
 ## <a name="syntax"></a>Синтаксис
 **HashTags**( *String* )
 
-* *String* — обязательный аргумент.  Строка, проверяемая на наличие хэш-тегов.
+* *Строка* — обязательный аргумент.  Строка, проверяемая на наличие хэш-тегов.
 
 ## <a name="examples"></a>Примеры
 ### <a name="step-by-step"></a>Шаг за шагом
 1. Добавьте элемент управления **[Текстовое поле](../controls/control-text-input.md)** , назовите его **Tweet** и введите следующее предложение:
    
-    **Это #приложение #ПРОСТО_СУПЕР и может #сЧитать123 или #123абв; но не #1–23 и не #$\*(#\@")**
+    **Это #приложение #ПРОСТО_СУПЕР и может #сЧитать123 или #123абв, но не #1–23 и не #$\*(#\@")**
 2. Добавьте вертикальную пользовательскую коллекцию и задайте для свойства **[Items](../controls/properties-core.md)** следующую функцию:
    
     **HashTags(Tweet.Text)**

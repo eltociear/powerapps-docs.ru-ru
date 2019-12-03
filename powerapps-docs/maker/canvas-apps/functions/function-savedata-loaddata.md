@@ -1,6 +1,6 @@
 ---
 title: Функции SaveData и LoadData | Документация Майкрософт
-description: Справочные сведения, включая описание синтаксиса, относительно функций SaveData и LoadData в PowerApps
+description: Справочные сведения, включая синтаксис, для функций SaveData и LoadData в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1be652ef905d73baeeafd9ddf06f74584851b457
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8ad9eee5230d46e67f3a0c5370fd0960e0c6787b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678311"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730277"
 ---
-# <a name="savedata-and-loaddata-functions-in-powerapps"></a>Функции SaveData и LoadData в PowerApps
+# <a name="savedata-and-loaddata-functions-in-power-apps"></a>Функции SaveData и LoadData в Power Apps
 Сохраняют и загружают [коллекцию](../working-with-data-sources.md#collections).
 
 ## <a name="description"></a>Description
@@ -40,7 +39,7 @@ ms.PowerAppsDecimalTransform: true
 Хранилище данных зашифровано и располагается в закрытой папке на локальном устройстве, изолированной от других пользователей и приложений.
 
 ## <a name="syntax"></a>Синтаксис
-**SaveData**(*коллекция*; *имя*)<br>**LoadData**( *коллекция*; *имя* [; *IgnoreNonexistentFile* ])
+**SaveData**(*коллекция*, *имя*)<br>**LoadData**( *коллекция*, *имя* [, *IgnoreNonexistentFile* ])
 
 * *коллекция* — обязательный аргумент.  Коллекция, которую требуется сохранить или загрузить.
 * *имя* — обязательный аргумент.  Название хранилища. Для сохранения и загрузки одного набора данных необходимо использовать одинаковое имя. Пространство имен не используется совместно с другими приложениями и пользователями.
@@ -50,6 +49,6 @@ ms.PowerAppsDecimalTransform: true
 
 | Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
-| **If(Connection.Connected; ClearCollect(LocalTweets; Twitter.SearchTweet("PowerApps"; {maxResults: 100}));LoadData(LocalTweets; "Tweets"; true))** |Если устройство подключено, загрузите коллекцию LocalTweets из службы Twitter. В противном случае — загрузите коллекцию из кэша локальных файлов. |Содержимое отображается независимо от того, в каком режиме находится устройство: оперативном или автономном. |
-| **SaveData(LocalTweets; "Tweets")** |Сохраняет коллекцию LocalTweets в кэше локальных файлов на устройстве. |Данные сохраняются локально, поэтому функция **LoadData** может загрузить их в коллекцию. |
+| **If(Connection.Connected, ClearCollect(LocalTweets, Twitter.SearchTweet("PowerApps", {maxResults: 100})),LoadData(LocalTweets, "Tweets", true))** |Если устройство подключено, загрузите коллекцию LocalTweets из службы Twitter. В противном случае — загрузите коллекцию из кэша локальных файлов. |Содержимое отображается независимо от того, в каком режиме находится устройство: оперативном или автономном. |
+| **SaveData(LocalTweets, "Tweets")** |Сохраняет коллекцию LocalTweets в кэше локальных файлов на устройстве. |Данные сохраняются локально, поэтому функция **LoadData** может загрузить их в коллекцию. |
 

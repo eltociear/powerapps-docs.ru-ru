@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 355793d572f6c4b6578d6cabff221c79e0724a93
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 22bd949dc11171d90a7ed358528c91999c4acc3e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650659"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74722832"
 ---
-# <a name="column-chart-and-line-chart-controls-in-powerapps"></a>Элементы управления "Гистограмма" и "График" в PowerApps
+# <a name="column-chart-and-line-chart-controls-in-power-apps"></a>Гистограмма и график элементов управления в Power Apps
 Элементы управления "Гистограмма" и "График" отображают данные на диаграммах с осями X и Y.
 
 ## <a name="description"></a>Description
@@ -114,11 +113,11 @@ ms.PowerAppsDecimalTransform: true
 **YLabelAngle** — угол наклона меток рядом с осью Y гистограммы или графика.
 
 ## <a name="related-functions"></a>Связанные функции
-[**Max**(*источник*; *столбец*)](../functions/function-aggregates.md)
+[**Max**(*источник*, *столбец*)](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **[Кнопка](control-button.md)** и задайте следующую формулу в качестве значения свойства **[OnSelect](properties-core.md)** :<br>
-   **Collect(Доход;; {Год:"2013";; Европа:24000;; Ганимед:22300;; Каллисто:21200};; {Год:"2014";; Европа:26500;; Ганимед:25700;; Каллисто:24700};;{Год:"2014";; Европа:27900;; Ганимед:28300;; Каллисто:25600})**
+   **Collect(Доход; {Год:"2013"; Европа:24000; Ганимед:22300; Каллисто:21200}; {Год:"2014"; Европа:26500; Ганимед:25700; Каллисто:24700};{Год:"2014"; Европа:27900; Ганимед:28300; Каллисто:25600})**
    
     Не знаете, как [добавить и настроить элемент управления](../add-configure-controls.md)?
    

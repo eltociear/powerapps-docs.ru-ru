@@ -1,6 +1,6 @@
 ---
 title: Объект приложения | Документация Майкрософт
-description: Справочные сведения, включая синтаксис и примеры, для объекта приложения в PowerApps
+description: Справочные сведения, включая синтаксис и примеры, для объекта приложения в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c2e34a9f466fcb64bcf14ef6a504d5b18b0a596d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f5f09bab44f3f229b47d9a801703b3aa10cba06d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676743"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729758"
 ---
-# <a name="app-object-in-powerapps"></a>Объект приложения в PowerApps
+# <a name="app-object-in-power-apps"></a>Объект приложения в Power Apps
 
 Предоставляет сведения о работающем в настоящее время приложении и контроле над поведением приложения.
 
@@ -84,7 +83,7 @@ ms.PowerAppsDecimalTransform: true
   - Прокрутка для переключения на другое приложение в Power Apps Mobile.
   - Нажатие кнопки "назад" на устройстве Android.
 
-Точный вид диалогового окна подтверждения может различаться для разных устройств и версий PowerApps.
+Точный вид диалогового окна подтверждения может различаться для разных устройств и версий Power Apps.
 
 Диалоговое окно подтверждения не отображается в Power Apps Studio.
 
@@ -102,7 +101,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **конфирмексит** объекта **приложения** следующее выражение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     AccountForm.Unsaved Or ContactForm.Unsaved
     ```
 
@@ -113,9 +112,9 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **конфирмекситмессаже** объекта **приложения** следующую формулу:
 
-    ```powerapps-comma
-    If( AccountsForm.Unsaved;
-        "Accounts form has unsaved changes.";
+    ```powerapps-dot
+    If( AccountsForm.Unsaved,
+        "Accounts form has unsaved changes.",
         "Contacts form has unsaved changes."
     )
     ```

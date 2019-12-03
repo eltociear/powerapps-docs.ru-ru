@@ -1,6 +1,6 @@
 ---
 title: Отправка push-уведомлений | Документация Майкрософт
-description: Узнайте, как отправлять системные push-уведомления в приложения в PowerApps.
+description: Узнайте, как отправлять собственные push-уведомления в приложение в Power Apps.
 author: kavishi
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d3f526b8795c8771d3f0e43c2951d207f7f1bfb0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b336b6d73cbd3db8aac435035d44859080208534
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678909"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724619"
 ---
-# <a name="send-a-push-notification-in-powerapps"></a>Отправка push-уведомлений в PowerApps
+# <a name="send-a-push-notification-in-power-apps"></a>Отправка push-уведомления в Power Apps
 Push-уведомления используются в мобильных приложениях преимущественно при работе с потребителями и в бизнес-сценариях для привлечения пользователей приложений и определения приоритетности ключевых задач. В Power Apps можно отправлять уведомления с помощью соединителя уведомлений Power Apps. Собственные push-уведомления можно отправлять в любое приложение, создаваемое в Power Apps. В будущем мы планируем добавить больше типов уведомлений.
 
 ![Пример того, как выглядит push-уведомление](./media/add-notifications/pic1-notification-screenshot.png)
@@ -61,7 +60,7 @@ Push-уведомления используются в мобильных пр�
 ## <a name="send-a-notification-from-an-app"></a>Отправка уведомления из приложения
 Вы можете отправлять push-уведомления из одного приложения в другое или то же приложение.
 
-1. В [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) перейдите к приложению, в которое необходимо отправить push-уведомления.
+1. В [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)перейдите к приложению, для которого нужно отправить push-уведомления.
 2. На вкладке **Подробности** скопируйте **идентификатор приложения**.
 
     ![Получение идентификатора приложения](./media/add-notifications/grab-id.png)
@@ -87,7 +86,7 @@ Push-уведомления используются в мобильных пр�
 Можно настроить, чтобы при открытии приложения открывалась страница, например, **Сведения об обращении**.
 
 1. Добавьте элемент управления **Таймер** и задайте для свойства **OnTimerEnd** следующую формулу в качестве значения:
-   <br>**Navigate(EditCase; ScreenTransition.None)** .
+   <br>**Navigate(EditCase, ScreenTransition.None)** .
 2. (Необязательно.) Чтобы скрыть элемент управления **Таймер**, задайте для его свойства **Visible** значение **false**.
 3. Для свойства экрана **OnVisible** установите значение **Timer.Start()** .
 
@@ -115,10 +114,10 @@ Push-уведомления используются в мобильных пр�
 ### <a name="sample-formulas"></a>Примеры формул
 Отправьте базовое уведомление.
 
-```powerapps-comma
+```powerapps-dot
 PowerAppsNotification.SendPushNotification(
     {
-        recipients: ["f60ccf6f-7579-4f92-967c-2920473c966b"; "72f988bf-86f1-41af-91ab-2d7cd011db47"];
+        recipients: ["f60ccf6f-7579-4f92-967c-2920473c966b", "72f988bf-86f1-41af-91ab-2d7cd011db47"],
         message: "A new case was assigned to you."
     }
 )
@@ -126,12 +125,12 @@ PowerAppsNotification.SendPushNotification(
 
 Отправьте уведомление, которое открывает приложение и передает определенные параметры.
 
-```powerapps-comma
+```powerapps-dot
 PowerAppsNotification.SendPushNotification(
     {
-        recipients: ["email1@contoso.com"; "email2@contoso.com"];
-        message: "message in the notif toast";
-        params: Table({key:"notificationKey"; value:"The value for notificationKey"});
+        recipients: ["email1@contoso.com", "email2@contoso.com"],
+        message: "message in the notif toast",
+        params: Table({key:"notificationKey", value:"The value for notificationKey"}),
         openApp: true
     }
 )

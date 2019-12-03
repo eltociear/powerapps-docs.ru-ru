@@ -1,6 +1,6 @@
 ---
 title: Функции Round, RoundDown и RoundUp | Документация Майкрософт
-description: Справочные сведения о функциях Round, RoundDown и RoundUp в PowerApps, включая описание синтаксиса
+description: Справочные сведения, включая синтаксис, для функций Round, RoundDown и RoundUp в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8480d66949994ba59f5ab84aef7999ab36a20b51
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 3b319f831291b1d0d21f3ed4699a144beb023611
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983986"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730285"
 ---
-# <a name="round-rounddown-and-roundup-functions-in-powerapps"></a>Функции Round, RoundDown и RoundUp в PowerApps
+# <a name="round-rounddown-and-roundup-functions-in-power-apps"></a>Функции Round, RoundDown и RoundUp в Power Apps
 Округление чисел.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функции **Round**, **RoundDown** и **RoundUp** округляют число до указанного количества знаков после запятой (десятичных разрядов).
 
 * Функция **Round** округляет число в большую сторону, если следующая цифра после запятой больше или равна 5. В противном случае число округляется в меньшую сторону.
@@ -34,7 +33,7 @@ ms.PowerAppsDecimalTransform: true
 При передаче одного числа возвращаемое значение является округленной версией такого числа.  При передаче [таблицы](../working-with-tables.md), содержащей один столбец с числами, возвращаемое значение представляет таблицу из одного столбца с округленными числами. Таблицу с несколькими столбцами можно преобразовать в таблицу с одним столбцом, как описано в статье об [использовании таблиц](../working-with-tables.md).
 
 ## <a name="syntax"></a>Синтаксис
-**Round**( *Number*; *DecimalPlaces* )<br>**RoundDown**( *Number*; *DecimalPlaces* )<br>**RoundUp**( *Number*; *DecimalPlaces* )
+**Round**( *Number*, *DecimalPlaces* )<br>**RoundDown**( *Number*, *DecimalPlaces* )<br>**RoundUp**( *Number*, *DecimalPlaces* )
 
 * *Number* — обязательный аргумент. Число, которое нужно округлить.
 * *DecimalPlaces* — обязательный аргумент.  Количество знаков после запятой, до которого нужно округлить число.  Используйте 0, если необходимо округлить до целого числа.  

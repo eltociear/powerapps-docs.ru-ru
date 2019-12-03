@@ -1,6 +1,6 @@
 ---
 title: Функции Enable и Disable | Документация Майкрософт
-description: Справочные сведения о функциях Enable и Disable в PowerApps, включая описание синтаксиса и примеры.
+description: Справочные сведения, включая синтаксис и примеры, для функций включения и отключения в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1b58b57ae880f54fc7fccb5aa4c49f0e2fcad6d0
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: af1522934bcfee13c00950a3686583393699d0ad
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992764"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731104"
 ---
-# <a name="enable-and-disable-functions-in-powerapps"></a>Функции Enable и Disable в PowerApps
+# <a name="enable-and-disable-functions-in-power-apps"></a>Включение и отключение функций в Power Apps
 Включает или отключает [сигнал](signals.md).
 
 ## <a name="overview"></a>Обзор
@@ -28,7 +28,7 @@ ms.locfileid: "71992764"
 
 Когда сигнал не используется, он автоматически отключается.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функции **Enable** и **Disable** включают и отключают сигнал соответственно.
 
 В настоящее время эти функции работают только для сигнала **[Location](signals.md)** .

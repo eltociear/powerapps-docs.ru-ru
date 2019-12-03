@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5ac2eaf3a0cfa4dc5c2a2150aa4a02ab127e5154
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b7d4471fde0bf22ec2900f303347d5d4783381ed
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676544"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729562"
 ---
-# <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>Управление локальным шлюзом данных в PowerApps
+# <a name="manage-an-on-premises-data-gateway-in-power-apps"></a>Управление локальным шлюзом данных в Power Apps
 
 Установите локальный шлюз данных, чтобы быстро и безопасно передавать данные между приложением Canvas, которое встроено в Power Apps, и источником данных, который не находится в облаке, например локальной SQL Server базы данных или локального сайта SharePoint. Просматривайте все шлюзы, для которых у вас есть административные разрешения, и управляйте связанными разрешениями и подключениями.
 
@@ -35,7 +35,7 @@ ms.locfileid: "74676544"
 
 ## <a name="prerequisites"></a>Технические условия
 
-* Имя пользователя и пароль, которые использовались для [регистрации](../signup-for-powerapps.md) в PowerApps.
+* Имя пользователя и пароль, которые использовались для [регистрации](../signup-for-powerapps.md) в Power Apps.
 * Административные разрешения для шлюза. У вас по умолчанию есть эти разрешения для всех устанавливаемых шлюзов. Администратор другого шлюза может предоставить вам соответствующие разрешения.
 * Лицензия, которая поддерживает доступ к локальным данным через локальный шлюз. Дополнительные сведения см. в разделе "Подключение" на [странице цен](https://powerapps.microsoft.com/pricing/);
 * Пользователь может создавать и использовать шлюзы и локальные подключения только в своей [среде по умолчанию](working-with-environments.md).

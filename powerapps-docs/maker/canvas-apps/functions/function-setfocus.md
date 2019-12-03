@@ -1,6 +1,6 @@
 ---
 title: SetFocus, функция | Документация Майкрософт
-description: Справочные сведения, включая синтаксис, для функции SetFocus в PowerApps
+description: Справочные сведения, включая синтаксис, для функции SetFocus в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cdf34c3c4909697b70a105e5145620ab5bd31ea9
-ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
+ms.openlocfilehash: 6347a76765fef433880754038d4e098fcb0fd6ee
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71038155"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730224"
 ---
-# <a name="setfocus-function-in-powerapps"></a>Функция SetFocus в PowerApps
+# <a name="setfocus-function-in-power-apps"></a>Функция SetFocus в Power Apps
 Перемещает фокус ввода на конкретный элемент управления. 
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функция **SetFocus** обеспечивает управление фокусом ввода.  После этого элемент управления получает нажатия клавиш пользователя, позволяя им вводить данные в элемент управления Text Input или использовать клавишу *Ввод* для выбора кнопки.  Пользователь может также использовать клавишу *Tab* , касание, мышь или другой жест для перемещения фокуса ввода. Поведение клавиши *Tab* регулируется [свойством **TabIndex** ](../controls/properties-accessibility.md).
 
 Используйте функцию **SetFocus** для установки фокуса, когда (каждый с примером ниже):
@@ -34,7 +33,7 @@ ms.PowerAppsDecimalTransform: true
 
 Элемент управления с фокусом может визуально отличаться в зависимости от свойств [**фокуседбордерколор**](../controls/properties-color-border.md) и [**фокуседбордерсиккнесс**](../controls/properties-color-border.md) .
 
-## <a name="limitations"></a>Ограничения
+## <a name="limitations"></a>Ограничений
 
 Функция **SetFocus** может использоваться только с:
 - Элемент управления [**Button**](../controls/control-button.md)
@@ -54,7 +53,7 @@ ms.PowerAppsDecimalTransform: true
 Функцию **SetFocus** можно использовать только в [формулах поведения](../working-with-formulas-in-depth.md).
 
 ## <a name="syntax"></a>Синтаксис
-**SetFocus** ( *Элемент управления* )
+**SetFocus**( *элемент управления* )
 
 * *Control* — обязательный аргумент.  Элемент управления для получения фокуса ввода.
 
@@ -82,14 +81,14 @@ SetFocus( BillingName )
 1. Добавьте [элемент управления **"флажок"** ](../controls/control-check-box.md) и переименуйте его в **синкаддрессес**.
 1. Задайте для свойства **Text** этого элемента управления формулу `"Use Shipping address as Billing address"`.
 1. Добавьте [элемент управления **Text input** ](../controls/control-text-input.md) и переименуйте его в **биллингнаме**.
-1. Задайте в качестве значения свойства **по умолчанию** для этого `ShippingName`элемента управления формулу.
-1. Задайте для свойства **DisplayMode** этого элемента управления формулу `If( SyncAddresses.Value; DisplayMode.View; DisplayMode.Edit )`.  Это позволит автоматически включить или отключить этот элемент управления в зависимости от состояния элемента управления "флажок".
+1. Присвойте свойству **по умолчанию** этого элемента управления формулу `ShippingName`.
+1. Задайте для свойства **DisplayMode** этого элемента управления формулу `If( SyncAddresses.Value, DisplayMode.View, DisplayMode.Edit )`.  Это позволит автоматически включить или отключить этот элемент управления в зависимости от состояния элемента управления "флажок".
 1. Добавьте [элемент управления **Text input** ](../controls/control-text-input.md) и переименуйте его в **биллингаддресс**.
-1. Задайте в качестве значения свойства **по умолчанию** для этого `ShippingAddress`элемента управления формулу.
-1. Задайте для свойства **DisplayMode** этого элемента управления формулу `If( SyncAddresses.Value; DisplayMode.View; DisplayMode.Edit )`.  Это позволит автоматически включить или отключить этот элемент управления в зависимости от состояния элемента управления "флажок".
-1. Установите для свойства флажка значение **по умолчанию** для формулы `true`.  По умолчанию адрес выставления счета будет использовать то же значение, что и адрес доставки.
-1. Установите в качестве значения свойства **oncheck** флажка формулу `Reset( BillingName );; Reset( BillingAddress )`.  Если пользователь решит синхронизировать адреса доставки и выставления счетов, это приведет к очистке всех вводимых пользователем данных в полях адреса выставления счетов, позволяя свойствам **по умолчанию** для каждого из полей адреса доставки получать значения.
-1. Задайте для свойства **онунчекк** флажка значение формула `SetFocus( BillingName )`.  Если пользователь выбирает другой адрес для выставления счетов, он перемещает фокус на первый элемент управления в адресе выставления счета.  Элементы управления уже будут включены из-за их свойств **DisplayMode** .
+1. Присвойте свойству **по умолчанию** этого элемента управления формулу `ShippingAddress`.
+1. Задайте для свойства **DisplayMode** этого элемента управления формулу `If( SyncAddresses.Value, DisplayMode.View, DisplayMode.Edit )`.  Это позволит автоматически включить или отключить этот элемент управления в зависимости от состояния элемента управления "флажок".
+1. Установите для свойства флажка **по умолчанию** `true`формулу.  По умолчанию адрес выставления счета будет использовать то же значение, что и адрес доставки.
+1. Установите в качестве значения свойства **oncheck** флажка формулу `Reset( BillingName ); Reset( BillingAddress )`.  Если пользователь решит синхронизировать адреса доставки и выставления счетов, это приведет к очистке всех вводимых пользователем данных в полях адреса выставления счетов, позволяя свойствам **по умолчанию** для каждого из полей адреса доставки получать значения.
+1. Установите для свойства **онунчекк** флажка значение формулы `SetFocus( BillingName )`.  Если пользователь выбирает другой адрес для выставления счетов, он перемещает фокус на первый элемент управления в адресе выставления счета.  Элементы управления уже будут включены из-за их свойств **DisplayMode** .
 
 ### <a name="focus-on-validation-issues"></a>Сосредоточьтесь на проблемах проверки
 
@@ -102,24 +101,24 @@ SetFocus( BillingName )
 
 В этой анимации кнопка проверки будет многократно нажата, пока все поля не будут заполнены должным образом.  Обратите внимание, что указатель мыши не перемещается в верхней части экрана.   Вместо этого функция **SetFocus** переместила фокус ввода на элемент управления, требующий внимания к этой формуле:
 
-```powerapps-comma
-If( IsBlank( Name ); 
-        Notify( "Name requires a value"; Error );; SetFocus( Name );
-    IsBlank( Street1 ); 
-        Notify( "Street Address 1 requires a value"; Error );; SetFocus( Street1 );
-    IsBlank( Street2 ); 
-        Notify( "Street Address 2 requires a value"; Error );; SetFocus( Street2 );
-    IsBlank( City ); 
-        Notify( "City requires a value"; Error );; SetFocus( City );
-    IsBlank( County ); 
-        Notify( "County requires a value"; Error );; SetFocus( County );
-    IsBlank( StateProvince ); 
-        Notify( "State or Province requires a value"; Error );; SetFocus( StateProvince );
-    IsBlank( PostalCode ); 
-        Notify( "Postal Code requires a value"; Error );; SetFocus( PostalCode );
-    IsBlank( Phone ); 
-        Notify( "Contact Phone requires a value"; Error );; SetFocus( Phone );
-    Notify( "Form is Complete"; Success )
+```powerapps-dot
+If( IsBlank( Name ), 
+        Notify( "Name requires a value", Error ); SetFocus( Name ),
+    IsBlank( Street1 ), 
+        Notify( "Street Address 1 requires a value", Error ); SetFocus( Street1 ),
+    IsBlank( Street2 ), 
+        Notify( "Street Address 2 requires a value", Error ); SetFocus( Street2 ),
+    IsBlank( City ), 
+        Notify( "City requires a value", Error ); SetFocus( City ),
+    IsBlank( County ), 
+        Notify( "County requires a value", Error ); SetFocus( County ),
+    IsBlank( StateProvince ), 
+        Notify( "State or Province requires a value", Error ); SetFocus( StateProvince ),
+    IsBlank( PostalCode ), 
+        Notify( "Postal Code requires a value", Error ); SetFocus( PostalCode ),
+    IsBlank( Phone ), 
+        Notify( "Contact Phone requires a value", Error ); SetFocus( Phone ),
+    Notify( "Form is Complete", Success )
 )
 ```
 
@@ -128,7 +127,7 @@ If( IsBlank( Name );
 1. В меню **Вставка** выберите **создать экран**, а затем щелкните **прокручиваемый**.
 1. В центральном разделе экрана добавьте элементы управления **вводом текста** и назовите их **Name**, **Street1**, **Street2**, **City**, **округ**, **StateProvince**, **PostalCode**и **Phone**. Добавьте элементы управления **Label** над каждым из них для обозначения полей.  Может потребоваться изменить размер раздела, если он недостаточно длинный для размещения всех элементов управления.
 1. Добавьте [элемент управления " **значок** ](../controls/control-shapes-icons.md) флажка" в верхней части экрана, над разделом с прокруткой.  
-1. Присвойте свойству **OnSelect** элемента управления Icon указанную выше `If( IsBlank( ...` формулу.
+1. Задайте для свойства **OnSelect** элемента управления "значок" формулу `If( IsBlank( ...` указанным выше.
 
 ### <a name="focus-when-displaying-a-screen"></a>Фокус при отображении экрана
 
@@ -143,7 +142,7 @@ If( IsBlank( Name );
 
 Справа у нас есть точно такое же приложение со свойством **OnVisible** экрана ввода данных, установленным в этой формуле:
 
-```powerapps-comma
+```powerapps-dot
 SetFocus( Name )
 ```
 
@@ -151,7 +150,7 @@ SetFocus( Name )
 
 Чтобы создать этот пример, сделайте следующее:
 1. Создайте приложение "сосредоточиться на проблемах проверки", описанное выше.
-1. На этом экране задайте формуле `SetFocus( Name )`для свойства **OnVisible** .
+1. На этом экране задайте для свойства **OnVisible** `SetFocus( Name )`формулу.
 1. Добавьте второй экран.
 1. Добавьте [элемент управления **Button** ](../controls/control-button.md).
 1. Задайте для свойства **OnSelect** этого элемента управления формулу `Navigate( Screen1 )`.

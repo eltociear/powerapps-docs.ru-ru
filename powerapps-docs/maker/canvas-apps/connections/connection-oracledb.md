@@ -1,6 +1,6 @@
 ---
 title: Подключение к базе данных Oracle | Документация Майкрософт
-description: Узнайте, как подключиться к базе данных Oracle и создавать приложения в PowerApps с ее помощью.
+description: Узнайте, как подключиться к Oracle Database и использовать его для создания приложений в Power Apps.
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 31bf18342de1191dbd816093186fe33e31755232
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b742193e2d127993779e2bba94f35c0c24ecfd7b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678748"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74728414"
 ---
-# <a name="connect-to-an-oracle-database-from-powerapps"></a>Подключение к базе данных Oracle из PowerApps
+# <a name="connect-to-an-oracle-database-from-power-apps"></a>Подключение к базе данных Oracle из Power Apps
 Список таблиц, создание, чтение, обновление и удаление строк таблицы в базе данных Oracle после создания подключения и построения приложения в Power Apps. Подключение к базе данных Oracle поддерживает полное делегирование фильтрации, сортировки и других функций, но не триггеров или хранимых процедур.
 
 ## <a name="prerequisites"></a>Технические условия

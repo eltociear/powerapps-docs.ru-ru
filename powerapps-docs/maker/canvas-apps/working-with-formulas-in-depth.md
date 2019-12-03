@@ -1,6 +1,6 @@
 ---
 title: Основные сведения о формулах поведения в приложении на основе холста | Документы Майкрософт
-description: Справочные сведения о работе с формулами поведения, которые изменяют состояние приложения на основе холста в PowerApps
+description: Справочные сведения о работе с формулами поведения, которые изменяют состояние приложения Canvas в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,19 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 546c19dd0bc767758fcf854e383be0f075717525
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 3402931e6a20fffb68ac9af37f62a2372afc5f57
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988006"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732245"
 ---
-# <a name="understand-behavior-formulas-for-canvas-apps-in-powerapps"></a>Основные сведения о формулах поведения в приложениях на основе холста в PowerApps
+# <a name="understand-behavior-formulas-for-canvas-apps-in-power-apps"></a>Общие сведения о формулах поведения для приложений Canvas в Power Apps
 
 Большинство формул предназначены для вычисления значений.  Как и в электронной таблице Excel, повторное вычисление выполняется автоматически при изменении значений.  Например, можно сделать так, чтобы значение в элементе управления **[Метка](controls/control-text-box.md)** становилось красным, если оно меньше нуля, и черным в противном случае. Таким образом, вы можете задать в качестве значения свойства **[Color](controls/properties-color-border.md)** этого элемента управления такую формулу:
 
-**If( Value(TextBox1.Text) >= 0; Color.Black; Color.Red )**
+**If( Value(TextBox1.Text) >= 0, Color.Black, Color.Red )**
 
 При этом, если пользователь выберет элемент управления **[Кнопка](controls/control-button.md)** ,  значения не изменятся, поэтому новые вычисления не выполняются. В Excel нет эквивалента элементу управления **[Кнопка](controls/control-button.md)** .  
 
@@ -42,7 +41,7 @@ ms.PowerAppsDecimalTransform: true
 ### <a name="more-than-one-action"></a>Несколько действий
 Чтобы создать список выполняемых действий, перечислите их через точку с запятой. Например, можно указать, что после обновления переменной контекста необходимо возвратиться на предыдущий экран:
 
-* **UpdateContext( { x: 1 } );; Back()**
+* **UpdateContext( { x: 1 } ); Back()**
 
 Действия выполняются в том порядке, в котором они указаны в формуле.  Следующая функция не выполняется до тех пор, пока не завершится выполнение текущей. В случае ошибки запуск последующих функций становится невозможным.
 

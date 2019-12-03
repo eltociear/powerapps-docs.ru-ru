@@ -1,6 +1,6 @@
 ---
 title: Функция Defaults | Документация Майкрософт
-description: Справочные сведения о функции Defaults в PowerApps, включая описание синтаксиса и примеры.
+description: Справочные сведения, включая синтаксис и примеры, для функции по умолчанию в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b51d956f2c188e0b877530b28dec933d42c905a6
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: ad3d8198d73a698abb771aef7230c12b48ff0f56
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992835"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731120"
 ---
-# <a name="defaults-function-in-powerapps"></a>Функция Defaults в PowerApps
+# <a name="defaults-function-in-power-apps"></a>Функция по умолчанию в Power Apps
 Возвращает значения по умолчанию для [источника данных](../working-with-data-sources.md).  
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Используйте функцию **Defaults** для предварительного заполнения формы ввода данных, чтобы облегчить ее заполнение.
 
 Эта функция возвращает [запись](../working-with-tables.md#records), которая содержит значения по умолчанию для источника данных.  Если [столбец](../working-with-tables.md#columns) в источнике данных не содержит значения по умолчанию, то это свойство не будет отображаться.
@@ -39,7 +39,7 @@ ms.locfileid: "71992835"
 
 ## <a name="examples"></a>Примеры
 
-| Формула | Описание | Возвращаемый результат |
+| Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
-| **Defaults(&nbsp;Scores&nbsp;)** |Возвращает значения по умолчанию для источника данных **Scores**. |**{Score: 0}** |
+| **Defaults(&nbsp;Scores&nbsp;)** |Возвращает значения по умолчанию для источника данных **Scores**. |**{ Score: 0 }** |
 

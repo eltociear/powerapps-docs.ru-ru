@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0f745516ab0c282ab6519f0bac8ac8cfd5f46598
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 284d63d7ebc0eb57e11dae055a9178b3b92646cd
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675742"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729506"
 ---
 # <a name="sign-in-to-power-apps-for-the-first-time"></a>Первый вход в Power Apps
 
-Когда вы входите на [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), сайт предлагает различные варианты для создания собственных приложений, открытия приложений, созданных вами или другими пользователями, и выполнения сопутствующих задач. Это могут быть самые простые задачи, например поиск лицензий для доступа, или более сложные, например создание настраиваемых подключений для определенных источников данных.
+При входе в [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)сайт предоставляет разнообразные возможности для создания собственных приложений, открытия приложений, созданных вами или другими пользователями, и выполнения связанных задач. Это могут быть самые простые задачи, например поиск лицензий для доступа, или более сложные, например создание настраиваемых подключений для определенных источников данных.
 
 Вы можете выбирать варианты в трех основных областях:
 
@@ -112,7 +112,7 @@ ms.locfileid: "74675742"
   - [Обзор соединителей приложений на основе холста](connections-list.md)
   - [Создание и сертификация настраиваемых соединителей для приложений на основе холста](register-custom-api.md)
   - [Управление локальным шлюзом данных](gateway-management.md)
-  - [Администрирование PowerApps](../../administrator/index.md)
+  - [Администрирование Power Apps](../../administrator/index.md)
   - [Общие сведения о лицензировании](../../administrator/pricing-billing-skus.md)
   - [Общие сведения о создании приложения на основе модели](../model-driven-apps/model-driven-app-overview.md)
 

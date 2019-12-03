@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f1737a70a8b9f6be30c73a91116c88df38609966
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b98fcb51e5b379e6507e73f680100c9702ec24a8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678564"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731665"
 ---
-# <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>Создание приложения Canvas на основе Common Data Service в PowerApps
+# <a name="generate-a-canvas-app-from-common-data-service-in-power-apps"></a>Создание приложения Canvas из Common Data Service в Power Apps
 
 В Power Apps автоматически создает приложение Canvas на основе списка примеров учетных записей в [Common Data Service](../common-data-service/data-platform-intro.md). В этом приложении можно просматривать все учетные записи, отображать подробные сведения о отдельной записи, а также создавать, изменять и удалять учетные записи.
 
@@ -32,7 +32,7 @@ ms.locfileid: "74678564"
 
 ## <a name="generate-an-app"></a>Создание приложения
 
-1. Войдите в [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) и переключитесь на среду, соответствующую указанным выше требованиям.
+1. Войдите в [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) и при необходимости переключите среды, как указано ранее в этом разделе.
 
 1. В области **Создавайте собственные приложения** наведите указатель на плитку **Начать с данных** и выберите команду **Создать это приложение**.
 

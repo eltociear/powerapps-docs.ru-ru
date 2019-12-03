@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fce460ffe808b7a604e1cdceac05a2696b8e10ed
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 01fdadfd5ecf19d56ac115e53cef08a2cff2a254
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676150"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729649"
 ---
-# <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>Установка и настройка примера "Служба поддержки" в PowerApps
+# <a name="install-and-configure-the-help-desk-sample-in-power-apps"></a>Установка и Настройка примера службы поддержки в Power Apps
 
 Пошаговые инструкции для, в Power Apps. Установка и Настройка примера службы поддержки для приложений Canvas.
 
@@ -40,7 +40,7 @@ ms.locfileid: "74676150"
 
 ## <a name="prerequisites"></a>Технические условия
 
-- [Зарегистрируйтесь](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в PowerApps.
+- [Зарегистрируйтесь](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) в Power Apps.
 - Необходимо иметь действительную лицензию на SharePoint Online и разрешение на создание списков.
 
 ## <a name="create-the-helpdesk-sharepoint-list"></a>Создание списка SharePoint HelpDesk (Служба поддержки)

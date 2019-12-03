@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7a64c7e0eeff1a48385ea251597a9e8d91c075f1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: c8610f726c0bd65cec5681cd817d5c93ec3d3c1d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675343"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732699"
 ---
-# <a name="save-and-publish-a-canvas-app-in-powerapps"></a>Сохранение и публикация приложения на основе холста в PowerApps
+# <a name="save-and-publish-a-canvas-app-in-power-apps"></a>Сохранение и публикация приложения Canvas в Power Apps
 Когда вы сохраняете изменения в приложении на основе холста, они автоматически публикуются только для вас и пользователей, у которых есть разрешения на изменение этого приложения. Внесенные изменения следует опубликовать явным образом, чтобы сделать доступными для всех пользователей, которым предоставлен общий доступ к приложению.
 
 Сведения о том, как предоставить общий доступ к приложению, вы найдете в статье [Общий доступ к приложению](share-app.md).

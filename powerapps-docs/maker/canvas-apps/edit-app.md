@@ -1,6 +1,6 @@
 ---
 title: Изменение приложения на основе холста | Документы Майкрософт
-description: Пошаговые инструкции по изменению приложений на основе холста и сценарии блокировки сеансов в PowerApps.
+description: Пошаговые инструкции по редактированию приложений Canvas и сценариев блокировки сеансов в Power Apps.
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 29cf712e6938d34136c3d47b2f73fbcbd3d53a00
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e68d34d6a8f6b6a115bdd272235e9c5c0f155a2c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679553"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731566"
 ---
-# <a name="edit-a-canvas-app-in-powerapps"></a>Изменение приложения на основе холста в PowerApps
+# <a name="edit-a-canvas-app-in-power-apps"></a>Изменение приложения Canvas в Power Apps
 Вы можете изменить любое приложение на основе холста, которое вы создали, которым владеете или для которого у вас есть разрешения **Может изменять**. Приложение можно изменить в Power Apps Studio. При попытке изменить приложение, которое уже открыто для редактирования в другом месте, появится сообщение о том, что приложение уже открыто вами или другим пользователем.
 
 ## <a name="verify-your-permissions"></a>Проверка разрешений
-1. Войдите в [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), затем щелкните (коснитесь) **Приложения** в меню **Файл** (с левой стороны).
+1. Войдите в [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), а затем нажмите или коснитесь пункта **приложения** в меню **файл** (на левой границе).
    
     ![Пункт "Приложения" в меню "Файл"](./media/edit-app/file-apps.png)
 

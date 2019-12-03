@@ -1,6 +1,6 @@
 ---
 title: Функция Choices | Документация Майкрософт
-description: Справочные сведения, включая синтаксис, для функции Choices в PowerApps
+description: Справочные сведения, включая синтаксис, для функции Choice в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7adf3391ef418a2b42861df63bc8396adc22f93a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2ebe6b2019652b1f2e59419c718136aced81c62e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679461"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731408"
 ---
-# <a name="choices-function-in-powerapps"></a>Функция Choices в PowerApps
+# <a name="choices-function-in-power-apps"></a>Функции выбора в Power Apps
 Возвращает таблицу из возможных значений для столбца подстановки.
 
 ## <a name="description"></a>Description

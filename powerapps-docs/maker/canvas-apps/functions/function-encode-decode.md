@@ -1,6 +1,6 @@
 ---
 title: Функции EncodeUrl и PlainText | Документация Майкрософт
-description: Справочные сведения о функциях EncodeUrl и PlainText в PowerApps, включая описание синтаксиса и примеры.
+description: Справочные сведения, включая синтаксис и примеры, для функций Енкодеурл и обычного текста в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c21cae9e39e3a9a1461ac3fafe576f40b70c0818
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: fe02683e0b420a97fe674543a2f0d16bb076f266
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985015"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731025"
 ---
-# <a name="encodeurl-and-plaintext-functions-in-powerapps"></a>Функции EncodeUrl и PlainText в PowerApps
+# <a name="encodeurl-and-plaintext-functions-in-power-apps"></a>Функции Енкодеурл и обычного текста в Power Apps
 Кодируют и декодируют строки.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функция **енкодеурл** кодирует строку URL-адреса, заменяя определенные символы, отличные от буквенно-цифровых, на% и шестнадцатеричное число.  
 
 Функция с **открытым текстом** УДАЛЯЕТ теги HTML и XML, преобразуя некоторые теги, такие как, в соответствующий символ:
@@ -36,11 +36,11 @@ ms.locfileid: "71985015"
 ## <a name="syntax"></a>Синтаксис
 **EncodeUrl**( *String* )
 
-* *Строка* — обязательный аргумент.  URL-адрес, который необходимо кодировать.
+* *Строка* — обязательный аргумент.  URL-адрес, который необходимо кодировать.
 
 **PlainText**( *String* )
 
-* *строка* — обязательный аргумент. Строка, из которой будут удалены HTML- и XML-теги.
+* *Строка* — обязательный аргумент. Строка, из которой будут удалены HTML- и XML-теги.
 
 ## <a name="examples"></a>Примеры
 Если показать RSS-канал в коллекции текста, а затем задать свойству **[Text](../controls/properties-core.md)** метки в этой коллекции значение **ThisItem.description**, то метка может отобразить необработанный HTML- или XML-код, как в этом примере:

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 94eb220bbe386b47e2fbb678f9487fcef8612415
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 60577eb3b6c272093222f1c14685d5ffe1d433f9
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679484"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731533"
 ---
 # <a name="embed-a-new-canvas-app-in-a-power-bi-report"></a>Внедрение нового приложения на основе холста в отчет Power BI
 
@@ -36,7 +36,7 @@ ms.locfileid: "74679484"
 
 * Браузер [Google Chrome](https://www.google.com/chrome/browser/) или [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge)
 * [Подписка на Power BI](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi) с установленным [примером "Анализ возможностей"](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample)
-* Умение [создавать приложения в PowerApps](data-platform-create-app-scratch.md) и [изменять отчеты Power BI](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)
+* Общие сведения о [создании приложений в Power Apps](data-platform-create-app-scratch.md) и [редактировании отчетов Power BI](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)
 
 ## <a name="import-the-power-apps-custom-visual"></a>Импорт пользовательского визуального элемента Power Apps
 

@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5b8df0acad3f5ad90eb114bd5fdd5d3377b3f6fb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ac6b75d60f41cd68ee1723c913766ea701bc6ca8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675050"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732527"
 ---
 # <a name="overview-of-the-meeting-screen-template-for-canvas-apps"></a>Обзор шаблона экрана собрания для приложений Canvas
 
@@ -33,7 +32,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="prerequisite"></a>Необходимое условие
 
-Знакомство с добавлением и настройкой экранов и других элементов управления при [создании приложения в PowerApps](../data-platform-create-app-scratch.md).
+Знакомство с добавлением и настройкой экранов и других элементов управления при [создании приложения в Power Apps](../data-platform-create-app-scratch.md).
 
 ## <a name="default-functionality"></a>Функциональные возможности по умолчанию
 
@@ -59,10 +58,10 @@ ms.PowerAppsDecimalTransform: true
 * Чтобы создать собрание, необходимо добавить хотя бы одного пользователя в качестве участника, предоставить тему и выбрать время собрания на вкладке **Расписание** .
 * После отправки приглашения на собрание удаляется вся информация для этого собрания.
 * Инструкция **OnSelect** значка Send (правый верхний угол) содержит следующую формулу:
-    ```powerapps-comma
-    Set( _myCalendarName; 
-        LookUp( 'Office365'.CalendarGetTables().value; DisplayName = "Calendar" ).Name 
-    );;
+    ```powerapps-dot
+    Set( _myCalendarName, 
+        LookUp( 'Office365'.CalendarGetTables().value, DisplayName = "Calendar" ).Name 
+    );
     ```
 * "Calendar" — отображаемое имя по умолчанию для большинства календарей пользователя Office, но ваша организация может отличаться. Если это так, можно изменить "Calendar" на соответствующий термин для вашей организации.
 * Если вы попытаетесь запланировать собрание, которое выполняется в прошлом, или добавить более 20 человек к встрече, возникает ошибка.

@@ -1,6 +1,6 @@
 ---
 title: Справка по элементу управления "Столбец" | Документация Майкрософт
-description: В этом разделе содержатся сведения об элементе управления "Столбец" в Microsoft PowerApps.
+description: В этом разделе содержатся сведения об элементе управления столбцами в Microsoft Power Apps.
 author: chmoncay
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 21bc7e025515397fa853e5de7f2df574a3768935
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 6fcf4d94677a21f013734fedc8a4db70955f40b9
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650644"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727476"
 ---
-# <a name="column-control-in-powerapps"></a>Элемент управления "Столбец" в PowerApps
+# <a name="column-control-in-power-apps"></a>Элемент управления столбца в Power Apps
 Обеспечивает отображение отдельного поля в элементе управления [**Таблица данных**](control-data-table.md).
 
 ## <a name="description"></a>Description

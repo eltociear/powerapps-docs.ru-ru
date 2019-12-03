@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 979c24de10eab4d91a89fbaf9e33b53a09b0ba58
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f53f46562c401e978975da35c81e2ecb77a6673e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676312"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729749"
 ---
-# <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>Создание приложения на основе холста из Excel в PowerApps
+# <a name="generate-a-canvas-app-from-excel-in-power-apps"></a>Создание приложения Canvas из Excel в Power Apps
 
 В этом разделе вы автоматически создадите первое приложение Canvas в Power Apps, используя данные из таблицы Excel. Вы выберете файл Excel, создадите приложение, а затем запустите его. Каждое создаваемое приложение имеет экраны для просмотра списка записей и подробных сведений об отдельных записях, а также для создания и изменения записей. Вы можете быстро создать приложение, использующее данные Excel, а затем настроить его так, как вам требуется. 
 
@@ -37,7 +37,7 @@ ms.locfileid: "74676312"
 
 ## <a name="generate-the-app"></a>Создание приложения
 
-1. Войдите в [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Войдите в [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. В области **Создавайте собственные приложения** наведите указатель на плитку **Начать с данных** и выберите команду **Создать это приложение**.
 

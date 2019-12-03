@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 349365c84e9d59ea2edf3c61077e468ba16ab27e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2462f82420713e93c3ac0598a73e2dc43bc7c0b1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679645"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731939"
 ---
-# <a name="timer-control-in-powerapps"></a>Элемент управления "Таймер" в PowerApps
+# <a name="timer-control-in-power-apps"></a>Элемент управления Timer в Power Apps
 Элемент управления, определяющий поведение приложения по истечении заданного количества времени.
 
 ## <a name="description"></a>Description
@@ -126,7 +125,7 @@ ms.PowerAppsDecimalTransform: true
 2. Укажите для свойства **Duration** значение **10000**, а для свойств **Repeat** и **Autostart** — значение **true**.
 3. (Необязательно) Сделайте таймер удобным для чтения, указав следующие значения для перечисленных свойств: **[Height](properties-size-location.md)**  — **160**, **[Width](properties-size-location.md)**  — **600** и **[Size](properties-text.md)**  — **60**.
 4. Добавьте метку и установите в ее свойстве **[Text](properties-core.md)** формулу:
-   <br>**"Осталось секунд: " & RoundUp(10-Countdown.Value/1000; 0)**
+   <br>**"Осталось секунд: " & RoundUp(10-Countdown.Value/1000, 0)**
 
     Нужны дополнительные сведения о функции **[RoundUp](../functions/function-round.md)** или [других функциях](../formula-reference.md)?
 
@@ -139,7 +138,7 @@ ms.PowerAppsDecimalTransform: true
 2. Укажите для свойства таймера **Duration** значение **5000**, для свойства **Repeat** — **true**, для свойства **[Text](properties-core.md)** — **Toggle animation** (Переключить анимацию).
 3. (Необязательно) Сделайте таймер удобным для чтения, указав следующие значения для перечисленных свойств: **[Height](properties-size-location.md)**  — **160**, **[Width](properties-size-location.md)**  — **600** и **[Size](properties-text.md)**  — **60**.
 4. Добавьте метку и задайте для свойства **[Text](properties-core.md)** отображение слова **Приветствуем!** , а для свойства **[Color](properties-color-border.md)**  — следующую формулу:
-   <br>**ColorFade(Color.BlueViolet; FadeIn.Value/5000)**
+   <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
 
     Нужны дополнительные сведения о функции **[ColorFade](../functions/function-colors.md)** или [других функциях](../formula-reference.md)?
 

@@ -1,6 +1,6 @@
 ---
 title: Функции Left, Mid и Right | Документация Майкрософт
-description: Справочные сведения, включая синтаксис и примеры, для функций Left, Mid и Right в PowerApps
+description: Справочные сведения, включая синтаксис и примеры, для функций Left, MID и right в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 81220ab8df16dcea74dbdc9db48e692e379e1b4d
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 182731aaeb82b17e6040c4246f31f7fccc22f923
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992618"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730673"
 ---
-# <a name="left-mid-and-right-functions-in-powerapps"></a>Функции Left, Mid и Right в PowerApps
+# <a name="left-mid-and-right-functions-in-power-apps"></a>Функции Left, MID и right в Power Apps
 Извлекают левую, среднюю или правую часть текстовой строки.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 Функции **Left**, **Mid** и **Right** возвращают часть строки.
 
 * **Left** возвращает начальные символы строки.
@@ -36,13 +35,13 @@ ms.PowerAppsDecimalTransform: true
 Если начальная позиция отрицательна или за пределами строки, **Mid** возвращает *пустое значение*.  Проверить длину строки можно с помощью функции **[Len](function-len.md)** . При запросе большего количества символов, чем есть в строке, функция вернет максимальное возможное количество символов.
 
 ## <a name="syntax"></a>Синтаксис
-**Left**( *строка*; *количество_символов* )<br>**Mid**( *строка*; *начальная_позиция*; *количество_символов* )<br>**Right**( *строка*; *количество_символов* )
+**Left**( *строка*, *количество_символов* )<br>**Mid**( *строка*, *начальная_позиция*, *количество_символов* )<br>**Right**( *строка*, *количество_символов* )
 
 * *Строка* — обязательный аргумент. Строка, из которой нужно извлечь результат.
 * *Начальная_позиция* — обязательный аргумент (только для функции **Mid**).  Начальная позиция в строке.  Первый символ строки находится в позиции 1.
 * *Нумберофчарактерс* — обязательный (только**слева** и **справа** ).  Число возвращаемых символов.  Если аргумент опущен для функции **MID** , функция возвращает часть из начальной точки до конца строки.
 
-**Left**( *таблица_с_одним_столбцом*; *количество_символов* )<br>**Mid**( *таблица_с_одним_столбцом*; *начальная_позиция*; *количество_символов* )<br>**Right**( *таблица_с_одним_столбцом*; *количество_символов* )
+**Left**( *таблица_с_одним_столбцом*, *количество_символов* )<br>**Mid**( *таблица_с_одним_столбцом*, *начальная_позиция*, *количество_символов* )<br>**Right**( *таблица_с_одним_столбцом*, *количество_символов* )
 
 * *SingleColumnTable* — обязательный аргумент. Таблица с одним столбцом, из которой нужно извлечь результаты.
 * *Начальная_позиция* — обязательный аргумент (только для функции **Mid**).  Начальная позиция в строке.  Первый символ строки находится в позиции 1.
@@ -52,7 +51,7 @@ ms.PowerAppsDecimalTransform: true
 ### <a name="single-string"></a>Одна строка
 Примеры в этом разделе используют в качестве [источника данных](../working-with-data-sources.md) элемент управления для ввода текста. Элемент управления называется **Author** и содержит строку "И. И. Иванов".
 
-| Формула | Описание | Возвращаемый результат |
+| Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
 | **Left ( Author.Text 5 )** |Извлекает до пяти символов от начала строки. |"И. И." |
 | **Mid ( Author.Text, 7, 4 )** |Извлекает до четырех символов, начиная с седьмого знака в строке. |"Иван" |
@@ -64,17 +63,17 @@ ms.PowerAppsDecimalTransform: true
 
 ![](media/function-left-mid-right/people-table.png)
 
-| Формула | Описание | Возвращаемый результат |
+| Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
-| **Left( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;); 8 )** |Извлекает первые восемь символов каждой строки. |<style> img { max-width: none } </style> ![](media/function-left-mid-right/people-table-left.png) |
-| **Mid( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;); 5; 7 )** |Извлекает средние семь символов каждой строки, начиная с пятого символа. |![](media/function-left-mid-right/people-table-mid.png) |
-| **Right( ShowColumns(&nbsp;People;&nbsp;"Address"&nbsp;); 7 )** |Извлекает последние семь символов каждой строки. |![](media/function-left-mid-right/people-table-right.png) |
+| **Left( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 8 )** |Извлекает первые восемь символов каждой строки. |<style> img { max-width: none } </style> ![](media/function-left-mid-right/people-table-left.png) |
+| **Mid( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 5, 7 )** |Извлекает средние семь символов каждой строки, начиная с пятого символа. |![](media/function-left-mid-right/people-table-mid.png) |
+| **Right( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 7 )** |Извлекает последние семь символов каждой строки. |![](media/function-left-mid-right/people-table-right.png) |
 
 ### <a name="step-by-step-example"></a>Пошаговый пример
 1. Импортируйте или создайте [коллекцию](../working-with-data-sources.md#collections) с именем **Inventory**, затем покажите ее в коллекции, как это описано в первой процедуре раздела [Показ изображений и текстов в коллекции](../show-images-text-gallery-sort-filter.md).
 2. Задайте в свойстве **[Text](../controls/properties-core.md)** нижней метки в коллекции следующую функцию:
    
-    **Right(ThisItem.ProductName; 3)**
+    **Right(ThisItem.ProductName, 3)**
    
     Метка будет показывать три последних символа названия каждого продукта.
 

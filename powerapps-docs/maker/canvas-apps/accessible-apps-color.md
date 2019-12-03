@@ -1,6 +1,6 @@
 ---
 title: Цвета высокой контрастности в приложениях на основе холста | Документы Майкрософт
-description: Рекомендации по повышению контрастности цветов в приложениях на основе холста в PowerApps
+description: Рекомендации по контрастам цветов для приложений Canvas в Power Apps
 author: tahoon
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 44c94a712402ef26a4fa6b36d84e287d3fa506e1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 26fd45efc56ad03bc37635c29ddc7a6dbbe71568
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679300"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725374"
 ---
-# <a name="accessible-colors-for-canvas-apps-in-powerapps"></a>Цвета высокой контрастности для приложений на основе холста в PowerApps
+# <a name="accessible-colors-for-canvas-apps-in-power-apps"></a>Доступные цвета для приложений Canvas в Power Apps
 Используемые в приложении на основе холста цвета должны восприниматься пользователями с цветовой слепотой и (или) слабым зрением. По умолчанию доступны все темы Power Apps. Если вы решите изменить цвета в приложении, соблюдайте эти рекомендации, чтобы обеспечить восприятие цветов. В Интернете можно найти ряд инструментов для выявления проблем с контрастностью цветов.
 
 ## <a name="minimum-contrast-for-text"></a>Минимальная контрастность текста

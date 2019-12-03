@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b2a2aa1baf93008fa908ca3f73aebfde64c9b239
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ae33122d140b6c13f744acb292362d8ec804233e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680059"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725216"
 ---
-# <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>Добавление и настройка элемента управления приложения на основе холста в PowerApps
+# <a name="add-and-configure-a-canvas-app-control-in-power-apps"></a>Добавление и настройка элемента управления Canvas-App в Power Apps
 
 Вы можете добавлять в приложение на основе холста различные элементы пользовательского интерфейса и настраивать их внешний вид и поведение непосредственно на панели инструментов, вкладке **Свойства** или в строке формул. Эти элементы пользовательского интерфейса называются элементами управления, а настраиваемые параметры — свойствами.
 

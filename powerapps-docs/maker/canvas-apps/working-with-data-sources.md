@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0bb04f9c3c1fc0d2b330e53dd39b355421af84aa
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 351e6cd6c680d4d5dc89f4e77c98bdd520f4c2ee
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674272"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732338"
 ---
-# <a name="understand-data-sources-for-canvas-apps-in-powerapps"></a>Общие сведения об источниках данных для приложений на основе холста в PowerApps
+# <a name="understand-data-sources-for-canvas-apps-in-power-apps"></a>Общие сведения об источниках данных для приложений Canvas в Power Apps
 
 В Power Apps большинство приложений Canvas используют внешние данные, хранящиеся в облачных службах, называемых **источниками данных**. Типичный пример — это таблица в файле Excel, который хранится в службе OneDrive для бизнеса. Приложения получают доступ к источникам данных с помощью **подключений**.
 

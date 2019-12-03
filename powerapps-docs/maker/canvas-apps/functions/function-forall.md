@@ -1,6 +1,6 @@
 ---
 title: Функция ForAll | Документация Майкрософт
-description: Справочные сведения о функции ForEach в PowerApps, в том числе описание синтаксиса
+description: Справочные сведения, включая синтаксис и примеры, для функции ForEach в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3d53a721e5abba3ce7e844420d9e8415b908cdde
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9bca1ffe29adb7a7eac55a89040b4ffa486fdc1d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680220"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730939"
 ---
-# <a name="forall-function-in-powerapps"></a>Функция ForAll в PowerApps
+# <a name="forall-function-in-power-apps"></a>Функция ForAll в Power Apps
 Вычисляет значения и выполняет действия для всех [записей](../working-with-tables.md#records) в [таблице](../working-with-tables.md).
 
 ## <a name="description"></a>Description
@@ -52,7 +51,7 @@ ms.PowerAppsDecimalTransform: true
 [!INCLUDE [delegation-no-one](../../../includes/delegation-no-one.md)]
 
 ## <a name="syntax"></a>Синтаксис
-**ForAll**( *Table*; *Formula* )
+**ForAll**( *Table*, *Formula* )
 
 * *Table* — обязательный аргумент. Это таблица, с которой нужно выполнить действия.
 * *Formula* - обязательный аргумент.  Это формула, используемая для вычисления всех записей *Table*.
@@ -65,12 +64,12 @@ ms.PowerAppsDecimalTransform: true
 
 Для создания этого источника данных как коллекции установите в качестве значения свойства **OnSelect** элемента управления **Кнопка** следующую формулу, перейдите в режим предварительного просмотра и нажмите кнопку.
 
-`ClearCollect( Squares; [ "1"; "4"; "9" ] )`
+`ClearCollect( Squares, [ "1", "4", "9" ] )`
 
 | Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
-| **ForAll(&nbsp;Squares; Sqrt(&nbsp;Value&nbsp;)&nbsp;)**<br><br>**Sqrt(&nbsp;Squares&nbsp;)** |Для всех записей входной таблицы вычисляется квадратный корень из столбца **Value**.  Функцию **Sqrt** можно также использовать с таблицей, состоящей из одного столбца, благодаря чему в этом примере можно избежать использования **ForAll**. |<style> img { max-width: none } </style> ![](media/function-forall/sqrt.png) |
-| **ForAll(&nbsp;Squares; Power(&nbsp;Value;&nbsp;3&nbsp;)&nbsp;)** |Для всех записей входной таблицы значения столбца **Value** возводятся в куб.  Функция **Power** не поддерживает таблицы из одного столбца. Таким образом, в данном случае следует использовать функцию **ForAll**. |<style> img { max-width: none } </style> ![](media/function-forall/power3.png) |
+| **ForAll(&nbsp;Squares, Sqrt(&nbsp;Value&nbsp;)&nbsp;)**<br><br>**Sqrt(&nbsp;Squares&nbsp;)** |Для всех записей входной таблицы вычисляется квадратный корень из столбца **Value**.  Функцию **Sqrt** можно также использовать с таблицей, состоящей из одного столбца, благодаря чему в этом примере можно избежать использования **ForAll**. |<style> img { max-width: none } </style> ![](media/function-forall/sqrt.png) |
+| **ForAll(&nbsp;Squares, Power(&nbsp;Value,&nbsp;3&nbsp;)&nbsp;)** |Для всех записей входной таблицы значения столбца **Value** возводятся в куб.  Функция **Power** не поддерживает таблицы из одного столбца. Таким образом, в данном случае следует использовать функцию **ForAll**. |<style> img { max-width: none } </style> ![](media/function-forall/power3.png) |
 
 ### <a name="using-a-connection"></a>Использование подключения
 В приведенных ниже примерах используется [источник данных](../working-with-data-sources.md) **Expressions**.
@@ -79,14 +78,14 @@ ms.PowerAppsDecimalTransform: true
 
 Для создания этого источника данных как коллекции установите в качестве значения свойства **OnSelect** элемента управления **Кнопка** следующую формулу, перейдите в режим предварительного просмотра и нажмите кнопку.
 
-`ClearCollect( Expressions; [ "Hello"; "Good morning"; "Thank you"; "Goodbye" ] )`
+`ClearCollect( Expressions, [ "Hello", "Good morning", "Thank you", "Goodbye" ] )`
 
 В этом примере используется также подключение к [Microsoft Translator](../connections/connection-microsoft-translator.md).  Сведения о том, как добавить это подключение в приложение, см. в разделе об [управлении подключениями](../add-manage-connections.md).
 
 | Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
-| **ForAll( Expressions; MicrosoftTranslator.Translate( Value; "es" ) )** |Для всех записей в таблице Expressions содержимое столбца **Value** переводится на испанский язык (сокращение «es»). |<style> img { max-width: none } </style> ![](media/function-forall/translate-es.png) |
-| **ForAll( Expressions; MicrosoftTranslator.Translate( Value; "fr" ) )** |Для всех записей в таблице Expressions содержимое столбца **Value** переводится на французский язык (сокращение «fr»). |<style> img { max-width: none } </style> ![](media/function-forall/translate-fr.png) |
+| **ForAll( Expressions, MicrosoftTranslator.Translate( Value, "es" ) )** |Для всех записей в таблице Expressions содержимое столбца **Value** переводится на испанский язык (сокращение «es»). |<style> img { max-width: none } </style> ![](media/function-forall/translate-es.png) |
+| **ForAll( Expressions, MicrosoftTranslator.Translate( Value, "fr" ) )** |Для всех записей в таблице Expressions содержимое столбца **Value** переводится на французский язык (сокращение «fr»). |<style> img { max-width: none } </style> ![](media/function-forall/translate-fr.png) |
 
 ### <a name="copying-a-table"></a>Копирование таблицы
 Иногда требуется фильтровать и сортировать данные, а также формировать их и обрабатывать.  Power Apps предоставляет ряд функций для выполнения таких задач, как **Filter**, **AddColumns**и **Sort**.  Приложения Power Apps рассматривают каждую таблицу как значение, позволяя перемещаться по формулам и легко использовать их.      
@@ -105,13 +104,13 @@ ms.PowerAppsDecimalTransform: true
 
 Для создания этого источника данных как коллекции установите в качестве значения свойства **OnSelect** элемента управления **Кнопка** следующую формулу, перейдите в режим предварительного просмотра и нажмите кнопку.
 
-```powerapps-comma
-ClearCollect( Products; 
+```powerapps-dot
+ClearCollect( Products, 
     Table( 
-        { Product: "Widget";    'Quantity Requested': 6;  'Quantity Available': 3 }; 
-        { Product: "Gadget";    'Quantity Requested': 10; 'Quantity Available': 20 };
-        { Product: "Gizmo";     'Quantity Requested': 4;  'Quantity Available': 11 };
-        { Product: "Apparatus"; 'Quantity Requested': 7;  'Quantity Available': 6 } 
+        { Product: "Widget",    'Quantity Requested': 6,  'Quantity Available': 3 }, 
+        { Product: "Gadget",    'Quantity Requested': 10, 'Quantity Available': 20 },
+        { Product: "Gizmo",     'Quantity Requested': 4,  'Quantity Available': 11 },
+        { Product: "Apparatus", 'Quantity Requested': 7,  'Quantity Available': 6 } 
     )
 )
 ```
@@ -125,14 +124,14 @@ ClearCollect( Products;
 #### <a name="table-shaping-on-demand"></a>Формирование таблицы по запросу
 Не создавайте копию!  В любом случае можно использовать следующую формулу:
 
-```powerapps-comma
-// Table shaping on demand; no need for a copy of the result
+```powerapps-dot
+// Table shaping on demand, no need for a copy of the result
 ShowColumns( 
     AddColumns( 
-        Filter( Products; 'Quantity Requested' > 'Quantity Available' ); 
-        "Quantity To Order"; 'Quantity Requested' - 'Quantity Available' 
-    ); 
-    "Product"; 
+        Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+        "Quantity To Order", 'Quantity Requested' - 'Quantity Available' 
+    ), 
+    "Product", 
     "Quantity To Order"
 )
 ```
@@ -146,11 +145,11 @@ ShowColumns(
 #### <a name="forall-on-demand"></a>ForAll по запросу
 Другой способ — использовать функцию **ForAll** вместо функций формирования таблицы:
 
-```powerapps-comma
-ForAll( Products; 
-    If( 'Quantity Requested' > 'Quantity Available'; 
+```powerapps-dot
+ForAll( Products, 
+    If( 'Quantity Requested' > 'Quantity Available', 
         { 
-            Product: Product; 
+            Product: Product, 
             'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
         } 
     ) 
@@ -166,25 +165,25 @@ ForAll( Products;
 
 Мы используем такой же способ формирования таблицы, как и в предыдущих двух примерах, но сохраним результат в виде коллекции:
 
-```powerapps-comma
-ClearCollect( NewOrder; 
+```powerapps-dot
+ClearCollect( NewOrder, 
     ShowColumns( 
         AddColumns( 
-            Filter( Products; 'Quantity Requested' > 'Quantity Available' ); 
-            "Quantity To Order"; 'Quantity Requested' - 'Quantity Available' 
-        ); 
-        "Product"; 
+            Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+            "Quantity To Order", 'Quantity Requested' - 'Quantity Available' 
+        ), 
+        "Product", 
         "Quantity To Order"
     )
 )
 ```
 
-```powerapps-comma
-ClearCollect( NewOrder; 
-    ForAll( Products; 
-        If( 'Quantity Requested' > 'Quantity Available'; 
+```powerapps-dot
+ClearCollect( NewOrder, 
+    ForAll( Products, 
+        If( 'Quantity Requested' > 'Quantity Available', 
             { 
-                Product: Product; 
+                Product: Product, 
                 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
             } 
         } 
@@ -197,13 +196,13 @@ ClearCollect( NewOrder;
 #### <a name="collect-within-forall"></a>Выполнение функции Collect в ForAll
 Наконец, мы можем выполнить операцию **Collect** непосредственно в функции **ForAll**:
 
-```powerapps-comma
-Clear( ProductsToOrder );; 
-ForAll( Products; 
-    If( 'Quantity Requested' > 'Quantity Available'; 
-        Collect( NewOrder;  
+```powerapps-dot
+Clear( ProductsToOrder ); 
+ForAll( Products, 
+    If( 'Quantity Requested' > 'Quantity Available', 
+        Collect( NewOrder,  
             { 
-                Product: Product; 
+                Product: Product, 
                 'Quantity To Order': 'Quantity Requested' - 'Quantity Available' 
             } 
         )

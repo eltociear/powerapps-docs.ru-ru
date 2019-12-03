@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3181c00a4ef0836c043ee0402a29d3b7dadbef21
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: cda7635798b26b1936a44d7947ab1dc7c36a25c8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678886"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724189"
 ---
 # <a name="generate-a-canvas-app-in-power-apps-from-a-sharepoint-list"></a>Создание приложения Canvas в Power Apps из списка SharePoint
 
@@ -40,9 +40,9 @@ ms.locfileid: "74678886"
 > [!IMPORTANT]
 > Power Apps не поддерживает все типы данных SharePoint. Дополнительные сведения см. в разделе с описанием [известных проблем](connections/connection-sharepoint-online.md#known-issues).
 
-## <a name="generate-an-app-from-within-powerapps"></a>Создание приложения в PowerApps
+## <a name="generate-an-app-from-within-power-apps"></a>Создание приложения в Power Apps
 
-1. Войдите в [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Войдите в [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. В области **Создавайте собственные приложения** наведите указатель на плитку **Начать с данных** и выберите команду **Создать это приложение**.
 

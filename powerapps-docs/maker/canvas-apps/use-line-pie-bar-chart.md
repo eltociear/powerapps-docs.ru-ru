@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 65076c38a1beeb41c9f6f308b6c0c7e82d30fc80
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8b5a5366f3de487b7d34d60d989274223340f4e6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674417"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732418"
 ---
-# <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>Отображение данных в виде графика, круговой или линейчатой диаграммы в PowerApps
+# <a name="show-data-in-a-line-pie-or-bar-chart-in-power-apps"></a>Отображение данных на графике, круговой или линейчатой диаграмме в Power Apps
 
 Используйте графики, круговые диаграммы и гистограммы для отображения данных в приложении на основе холста. При работе с диаграммами импортируемые данные должны быть структурированы с учетом следующих условий:
 
@@ -38,7 +37,7 @@ ms.PowerAppsDecimalTransform: true
 
 * [Зарегистрируйтесь](../signup-for-powerapps.md) в Power Apps, а затем [Войдите в](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) систему, используя те же учетные данные, которые использовались для регистрации.
 * Создайте приложение на основе [шаблона](get-started-test-drive.md) или [данных](get-started-create-from-data.md) либо [с нуля](get-started-create-from-blank.md).
-* Узнайте, как [настроить элемент управления](add-configure-controls.md) в PowerApps.
+* Узнайте, как [настроить элемент управления](add-configure-controls.md) в Power Apps.
 * Скачайте файл [ChartData.zip](https://pwrappssamples.blob.core.windows.net/samples/ChartData.zip) с демонстрационными данными в виде XML-файла. Выполните действия, описанные в этом разделе, чтобы импортировать его непосредственно в приложение. Кроме того, вы можете распаковать ZIP-файл, открыть XML-файл в Excel и сохранить его в [учетной записи хранения в облаке](connections/cloud-storage-blob-connections.md).
 
 ## <a name="import-the-sample-data"></a>Импорт демонстрационных данных
@@ -50,7 +49,7 @@ ms.PowerAppsDecimalTransform: true
 
 2. Задайте для свойства элемента управления **[OnSelect](controls/properties-core.md)** следующую функцию.  
 
-   ```Collect(ProductRevenue; Import1.Data)```
+   ```Collect(ProductRevenue, Import1.Data)```
 
 3. Нажмите клавишу F5, чтобы открыть режим предварительного просмотра, а затем нажмите кнопку **Импорт данных**.
 

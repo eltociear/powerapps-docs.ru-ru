@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 56e5ec7f303706ded114655e5c6d473408e9ddd7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9f80332a490289cc5b59de7131d1c2b2483633e1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680036"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725298"
 ---
-# <a name="create-accessible-canvas-apps-in-powerapps"></a>Создание приложений на основе холста со специальными возможностями в PowerApps
+# <a name="create-accessible-canvas-apps-in-power-apps"></a>Создание приложений с поддержкой полотна в Power Apps
 Для успешной работы с приложениями на основе холста пользователям с нарушениями зрения, слуха и других функций требуются особые возможности.  Приведенные ниже рекомендации помогут обеспечить соответствие требованиям многих государственных организаций и корпораций. Кроме того, выполнив эти указания, вы повысите удобство для всех пользователей, независимо от их возможностей.
 
 Используйте **[проверку читаемости](accessibility-checker.md)** для проверки потенциальных проблем со специальными возможностями в вашем приложении. 
@@ -70,4 +70,4 @@ ms.locfileid: "74680036"
 Сопутствующая информация:
 - [Свойства специальных возможностей](controls/properties-accessibility.md)
 - [Использование проверки читаемости](accessibility-checker.md)
-- [Цвета высокой контрастности в PowerApps](accessible-apps-color.md)
+- [Доступные цвета в Power Apps](accessible-apps-color.md)

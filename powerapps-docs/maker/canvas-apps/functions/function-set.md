@@ -1,6 +1,6 @@
 ---
 title: Функция Set | Документация Майкрософт
-description: Справочные сведения о функции Set в PowerApps, включая описание синтаксиса и примеры
+description: Справочные сведения, включая синтаксис и примеры, для функции SET в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 72adafedfe09a125fda2a48d5617b2cd8c79242a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6c0e4cfc1a180e183f29392181cd7699b6cb9242
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678196"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730213"
 ---
-# <a name="set-function-in-powerapps"></a>Функция Set в PowerApps
+# <a name="set-function-in-power-apps"></a>Настройка функции в Power Apps
 Задает значение глобальной переменной.
 
 ## <a name="overview"></a>Обзор
@@ -51,7 +50,7 @@ Power Apps основано на формулах, которые автомат
 Функция **Set** не возвращает значение, и ее можно использовать только в [формуле поведения](../working-with-formulas-in-depth.md).
 
 ## <a name="syntax"></a>Синтаксис
-**Set**( *VariableName*; *Value* )
+**Set**( *VariableName*, *Value* )
 
 * *VariableName* — обязательный аргумент.  Имя создаваемой или обновляемой глобальной переменной.
 * *Value* — обязательный аргумент.  Значение, присваиваемое переменной контекста.
@@ -60,10 +59,10 @@ Power Apps основано на формулах, которые автомат
 
 | Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
-| **Set(&nbsp;Counter;&nbsp;1&nbsp;)** |Создает или изменяет глобальную переменную **Counter**, задав для нее значение **1**. |Переменная контекста **Counter** имеет значение **1**. Вы можете добавить ссылку на эту переменную, используя имя **Counter** в формуле на любом экране. |
-| **Set(&nbsp;Counter;&nbsp;2&nbsp;)** |Изменяет значение глобальной переменной **Counter** из предыдущего примера на **2**. |Переменная контекста **Counter** имеет значение **2**. |
-| **Set(&nbsp;Counter;&nbsp;Counter + 1&nbsp;)** |Увеличивает значение глобальной переменной **Counter** из предыдущего примера до **3**. |Глобальная переменная **Counter** имеет значение **3**. |
-| **Set(&nbsp;Name;&nbsp;"Lily" )** |Создает или изменяет глобальную переменную **Name**, задав для нее значение **Lily**. |Глобальная переменная **Name** имеет значение **Lily**. |
-| **Set(&nbsp;Person;&nbsp;{&nbsp;Name:&nbsp;"Milton"; Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;} )** |Создает или изменяет глобальную переменную **Person**, задавая для нее запись в качестве значения. Запись содержит два столбца: **Name** и **Address**. Столбец **Name** имеет значение **Milton**, а столбец **Address** — **1 Main St**. |Глобальной переменной **Person** присваивается значение записи **{&nbsp;Name:&nbsp;"Milton"; Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}** .<br><br>Добавьте ссылку на эту запись в целом по имени **Person** или на ее отдельный столбец с помощью параметра **Person.Name** или **Person.Address**. |
-| **Set(&nbsp;Person; Patch(&nbsp;Person;&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;)&nbsp;)** |В сочетании с функцией **[Patch](function-patch.md)** обновляет глобальную переменную **Person**, задав для столбца **Address** значение **2 Main St**. |Глобальной переменной **Person** присваивается значение записи **{&nbsp;Name:&nbsp;"Milton"; Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}** . |
+| **Set(&nbsp;Counter,&nbsp;1&nbsp;)** |Создает или изменяет глобальную переменную **Counter**, задав для нее значение **1**. |Переменная контекста **Counter** имеет значение **1**. Вы можете добавить ссылку на эту переменную, используя имя **Counter** в формуле на любом экране. |
+| **Set(&nbsp;Counter,&nbsp;2&nbsp;)** |Изменяет значение глобальной переменной **Counter** из предыдущего примера на **2**. |Переменная контекста **Counter** имеет значение **2**. |
+| **Set(&nbsp;Counter,&nbsp;Counter + 1&nbsp;)** |Увеличивает значение глобальной переменной **Counter** из предыдущего примера до **3**. |Глобальная переменная **Counter** имеет значение **3**. |
+| **Set(&nbsp;Name,&nbsp;"Lily" )** |Создает или изменяет глобальную переменную **Name**, задав для нее значение **Lily**. |Глобальная переменная **Name** имеет значение **Lily**. |
+| **Set(&nbsp;Person,&nbsp;{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;} )** |Создает или изменяет глобальную переменную **Person**, задавая для нее запись в качестве значения. Запись содержит два столбца: **Name** и **Address**. Столбец **Name** имеет значение **Milton**, а столбец **Address** — **1 Main St**. |Глобальной переменной **Person** присваивается значение записи **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"1&nbsp;Main&nbsp;St"&nbsp;}** .<br><br>Добавьте ссылку на эту запись в целом по имени **Person** или на ее отдельный столбец с помощью параметра **Person.Name** или **Person.Address**. |
+| **Set(&nbsp;Person, Patch(&nbsp;Person,&nbsp;{Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}&nbsp;)&nbsp;)** |В сочетании с функцией **[Patch](function-patch.md)** обновляет глобальную переменную **Person**, задав для столбца **Address** значение **2 Main St**. |Глобальной переменной **Person** присваивается значение записи **{&nbsp;Name:&nbsp;"Milton", Address:&nbsp;"2&nbsp;Main&nbsp;St"&nbsp;}** . |
 

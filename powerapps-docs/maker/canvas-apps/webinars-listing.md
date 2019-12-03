@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bf83473e8b53d13e58b653974495acbe2595513f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e9c4adb124971ba468ee25efbe012c124b3906e6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674224"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732320"
 ---
 # <a name="power-apps-webinar-listing"></a>Список веб – семинаров по Power Apps #
 Эти веб – семинары помогут вам использовать функции и функции Microsoft Power Apps. Вебинары будут доступны по запросу после трансляции. Обратите внимание, что в некоторых случаях необходимо будет повторно ввести сведения о регистрации, после чего вы получите ссылку на запись по электронной почте. 
@@ -30,10 +30,10 @@ ms.locfileid: "74674224"
 **Начало работы с коллекциями в PowerApps**
 <br>Одри Гордон [Зарегистрироваться и просмотреть](https://info.microsoft.com/US-EAD-WBNR-FY17-02Feb-28-GettingStartedwithPowerAppsGalleries300759_01Registration-ForminBody.html)
 
-**Начало работы с формулами в PowerApps**
+**Начало работы с формулами в Power Apps**
 <br>Одри Гордон [Зарегистрироваться и просмотреть](https://info.microsoft.com/US-EAD-WBNR-FY17-03Mar-14-GettingStartedwithPowerAppsFormulas300770_01Registration-ForminBody.html)
 
-**Начало работы с формами в PowerApps**
+**Начало работы с формами в Power Apps**
 <br>Одри Гордон [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Getting-Started-with-PowerApp-Forms/m-p/116842)
 
 **Начало работы с элементами управления Power Apps**
@@ -52,7 +52,7 @@ ms.locfileid: "74674224"
 <br>Эмма Купер (Emma Cooper) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Getting-Started-New-Office-Graph-Templates-Part-2-by-Emma-Cooper/m-p/116840)
 
 ## <a name="intermediate-webinar-series"></a>Серии вебинаров для пользователей со средним уровнем знаний ##
-**Жизненный цикл приложения с новыми возможностями сохранения и публикации в PowerApps**
+**Жизненный цикл приложения с новыми параметрами сохранения и публикации в Power Apps**
 <br>Картик Бхарати (Karthik Bharathy) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Application-LIfecycle-with-the-new-Save-and-publish-options-in/m-p/116860)
 
 **Приложения Power Apps сосредоточены на использовании функции Lookup**
@@ -64,7 +64,7 @@ ms.locfileid: "74674224"
 **Лора Роджерс (Laura Rogers) из IWMentor расскажет о рекомендациях для приложений рабочей среды**
 <br>Лора Роджерс (Laura Rogers) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Laura-Rogers-from-IWMentor-Shares-Best-Practices-for-Production/m-p/116871)
 
-**Серия вебинаров о соединителях | Приложения Microsoft StaffHub (планирование смен) с PowerApps**
+**Ряд соединителей | Приложения Microsoft StaffHub (смена планирования) с помощью Power Apps**
 <br>Автор: Марк-Андре Лепин (Marc-André Lépine) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connector-Series-Shift-Scheduling-Apps-with-PowerApps-StaffHub/m-p/122036)
 
 **Администрирование Power Apps | Часто задаваемые вопросы**
@@ -96,16 +96,16 @@ ms.locfileid: "74674224"
 **Команды + Power Apps — советы и рекомендации**
 <br>Одри Гордон [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Teams-PowerApps-Tips-and-Tricks/m-p/116846)
 
-**Советы по подключению к Excel в OneDrive для бизнеса из PowerApps**
+**Советы по подключению к Excel в OneDrive для бизнеса из Power Apps**
 <br>Одри Гордон [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Pro-tips-for-connecting-to-Excel-from-PowerApps-by-Audrie-Gordon/m-p/116881)
 
-**Подключение к локальным данным из PowerApps**
+**Подключение к локальным данным из Power Apps**
 <br>Арчана Наир (Archana Nair) и Димах Зайдалклани (Dimah Zaidalklani) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-On-Premises-Data-from-PowerApps/m-p/116885)
 
 **Работа с соединителями: использование соединителя планировщика**
 <br> Одри Гордон (Audrie Gordon) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-the-Planner-Connector/m-p/116886)
 
-**Возможности Office Graph в сочетании с PowerApps**
+**Возможности Office Graph с помощью Power Apps**
 <br>Одри Гордон [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/The-Power-of-Office-Graph-with-PowerApps/m-p/116888)
 
 **Работа с соединителями: Project Online (PWA)**
@@ -115,7 +115,7 @@ ms.locfileid: "74674224"
 **Быстро создавайте приложения с помощью Power Apps Studio**
 <br>Картик Бхарати (Karthik Bharathy) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Rapidly-build-applications-with-PowerApps-Studio/m-p/116849)
 
-**Перестроение формы InfoPath Designer в PowerApps**
+**Перестроение формы конструктора InfoPath в Power Apps**
 <br>Дэниэл Кристиан (Daniel Christian) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Rebuilding-an-InfoPath-Designer-Form/m-p/116909)
 
 **Советы для разработчиков InfoPath, которые переходят в Power Apps, часть 1**
@@ -147,7 +147,7 @@ ms.locfileid: "74674224"
 **Создание приложений для принятия пользователями и эффективного использования**
 <br>Автор: Вероника Уорд (Veronica Ward) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Apps-for-Adoption-and-Usability-with-Veronica-Ward/m-p/117625#M38)
 
-**Создание диалоговых окон или всплывающих сообщений в PowerApps**
+**Создание диалоговых окон или всплывающих сообщений в Power Apps**
 <br>Автор: Вероника Уорд (Veronica Ward) [Просмотреть](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Dialogs-in-PowerApps-by-Veronica-Ward/m-p/117627#M39)
 
 **Взгляните на прикрытием с одним из разработчиков Power Apps, более подробно рассмотрим шаблоны: Марие Хоежер**

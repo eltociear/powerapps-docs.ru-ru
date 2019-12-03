@@ -1,6 +1,6 @@
 ---
 title: Отображение, сортировка и фильтрация данных в коллекции | Документация Майкрософт
-description: Сведения об отображении изображений и текста в коллекции, а также о сортировке и фильтрации изображений в PowerApps.
+description: Сведения об отображении изображений и текста в коллекции, Сортировка и фильтрация изображений в Power Apps.
 author: adrianorth
 manager: kvivek
 ms.service: powerapps
@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6b65a2a6fcc4899ac92238ec76d45cb4fd2d62c8
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 14925b5e50f1731efc935bc8a3379342283ec2a0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674637"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732450"
 ---
 # <a name="show-sort-and-filter-data-in-a-power-apps-gallery"></a>Отображение, сортировка и фильтрация данных в коллекции Power Apps
 В этой статье приведены сведения о создании коллекции с изображениями товара и данными о нем, а также о параметрах сортировки и фильтрации.
@@ -121,7 +120,7 @@ ms.PowerAppsDecimalTransform: true
 1. Выберите любой элемент в коллекции *за исключением* первого.
 2. Сейчас для свойства **[Items](controls/properties-core.md)** задано значение Inventory (Товары) (имя коллекции). Измените его на следующее:  
    
-    **Sort(Inventory; ProductName)**
+    **Sort(Inventory, ProductName)**
    
     За счет этого элементы коллекции сортируются по названию товара в порядке возрастания: ![][11]  
    
@@ -134,11 +133,11 @@ ms.PowerAppsDecimalTransform: true
 2. Настройте ползунок таким образом, чтобы пользователи не могли указывать значение, превышающее доступное количество единиц каждого товара:  
    
    1. На вкладке **Содержимое** выберите **Минимум**, а затем введите следующее выражение:  
-      ```Min(Inventory; UnitsInStock)```  
+      ```Min(Inventory, UnitsInStock)```  
    2. На вкладке **Содержимое** выберите **Максимум**, а затем введите следующее выражение:  
-      ```Max(Inventory; UnitsInStock)```
+      ```Max(Inventory, UnitsInStock)```
 3. Выберите любой элемент в коллекции *за исключением* первого. Задайте для свойства **[Items](controls/properties-core.md)** коллекции следующее выражение:  
-   ```Filter(Inventory; UnitsInStock<=StockFilter.Value)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value)```
 4. В окне **предварительного просмотра** передвиньте ползунок на значение, которое находится между максимальным и минимальным количеством единиц товара в коллекции. При изменении положения ползунка в коллекции будут отображаться только те товары, количество единиц которых меньше указанного значения:  
    ![][13]  
 
@@ -147,7 +146,7 @@ ms.PowerAppsDecimalTransform: true
 1. Вернитесь в режим конструктора.
 2. На вкладке **Вставка** выберите **Текст**, **Input Text** (Вводимый текст), а затем измените имя нового элемента управления на **NameFilter**. Поместите элемент управления "Текст" под ползунком.
 3. Задайте для свойства **[Items](controls/properties-core.md)** коллекции следующее выражение:  
-   ```Filter(Inventory; UnitsInStock<=StockFilter.Value && NameFilter.Text in ProductName)```
+   ```Filter(Inventory, UnitsInStock<=StockFilter.Value && NameFilter.Text in ProductName)```
 4. В окне **предварительного просмотра** установите ползунок на *30* и в текстовом поле для ввода введите букву *ж*. В коллекции отобразятся только товары, которых имеется в наличии менее 30 единиц и *в* имени которых есть буква "ж".  
    ![][14]  
 

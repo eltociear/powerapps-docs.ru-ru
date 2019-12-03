@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ed7493dcc9c2ef5f0b84052a11dbadb0947af38e
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 37b7117f599c29f886da3cafeb158db145ad1364
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994208"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724906"
 ---
 # <a name="show-edit-or-add-a-record-in-a-canvas-app"></a>Отображение, изменение или Добавление записи в приложении Canvas
 
@@ -27,7 +26,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="prerequisites"></a>Технические условия
 
-- Узнайте, как [добавить и настроить элемент управления](add-configure-controls.md) в PowerApps.
+- Узнайте, как [Добавить и настроить элемент управления](add-configure-controls.md) в Power Apps.
 - Скачайте [этот файл Excel](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx), содержащий образец данных для этого руководства.
 - Отправьте файл Excel в [учетную запись облачного хранилища](connections/cloud-storage-blob-connections.md), например OneDrive для бизнеса.
 - Создайте или откройте приложение для телефонов, [Добавьте подключение](add-data-connection.md) к таблице **Флуринжестиматес** в файле Excel.
@@ -42,7 +41,7 @@ ms.PowerAppsDecimalTransform: true
     > [!NOTE]
    > Если вы не знаете, как добавить и переименовать элемент управления или установить для него свойство, см. статью о [добавлении и настройке элементов управления](add-configure-controls.md).
 
-1. На вкладке **Свойства** в правой области задайте для **элементов** **значение** `FlooringEstimates` и выберите `Name`.
+1. На вкладке **Свойства** в правой области задайте для **элементов** **значение** `FlooringEstimates` и `Name`.
 
     ![Задание свойства элементов формы](./media/add-form/items-property.png)
 
@@ -57,7 +56,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **[DataSource](controls/control-form-detail.md)** формы значение **флуринжестиматес** , а для свойства **[Item](controls/control-form-detail.md)** — следующую формулу:
 
-    `First(Filter(FlooringEstimates; Name=ChooseProduct.Selected.Value))`
+    `First(Filter(FlooringEstimates, Name=ChooseProduct.Selected.Value))`
 
    Формула настроена таким образом, что после завершения настройки формы в ней будет отображаться запись, выбранная пользователем в списке **ChooseProduct**.
 

@@ -1,6 +1,6 @@
 ---
 title: Справочник по шаблону экрана электронной почты для приложений Canvas | Документация Майкрософт
-description: Сведения о том, как шаблон экрана электронной почты для приложений Canvas работает в PowerApps
+description: Сведения о том, как шаблон экрана электронной почты для приложений Canvas работает в Power Apps
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7226433c5e95537346841f2e2f9474ea68e42dda
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f173b4898df8853ef31d1660af6efe9298f838b0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675091"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732627"
 ---
 # <a name="reference-information-about-the-email-screen-template-for-canvas-apps"></a>Справочные сведения о шаблоне экрана электронной почты для приложений Canvas
 
@@ -35,7 +34,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="prerequisite"></a>Необходимое условие
 
-Знакомство с добавлением и настройкой экранов и других элементов управления при [создании приложения в PowerApps](../data-platform-create-app-scratch.md).
+Знакомство с добавлением и настройкой экранов и других элементов управления при [создании приложения в Power Apps](../data-platform-create-app-scratch.md).
 
 ## <a name="text-search-box"></a>Текстовое поле поиска
 
@@ -56,9 +55,9 @@ ms.PowerAppsDecimalTransform: true
 * Свойство: **Visible**<br>
     Значение: логика для отображения элемента управления, только если пользователь вводит в поле поиска допустимый адрес электронной почты:
 
-    ```powerapps-comma
+    ```powerapps-dot
     !IsBlank( TextSearchBox.Text ) &&
-        IsMatch( TextSearchBox.Text; Match.Email ) &&
+        IsMatch( TextSearchBox.Text, Match.Email ) &&
         Not( Trim( TextSearchBox.Text ) in MyPeople.UserPrincipalName )
     ```
   Построчно, приведенный выше блок кода говорит о том, что элемент управления " **Добавление значка** " будет виден только в том случае, если:
@@ -70,14 +69,14 @@ ms.PowerAppsDecimalTransform: true
 * Свойство: **OnSelect**<br>
     Значение: при выборе этого параметра в коллекцию **мипеопле** добавляется допустимый адрес электронной почты. Эта коллекция используется на экране в качестве списка получателей:
 
-    ```powerapps-comma
-    Collect( MyPeople;
+    ```powerapps-dot
+    Collect( MyPeople,
         { 
-            DisplayName: TextSearchBox.Text; 
-            UserPrincipalName: TextSearchBox.Text; 
+            DisplayName: TextSearchBox.Text, 
+            UserPrincipalName: TextSearchBox.Text, 
             Mail: TextSearchBox.Text
         }
-    );;
+    );
     Reset( TextSearchBox )
     ```
   
@@ -90,9 +89,9 @@ ms.PowerAppsDecimalTransform: true
 * Свойство: **элементы**<br>
     Значение: 15 лучших результатов поиска искомого текста, введенного в элемент управления **текстсеарчбокс** :
     
-    ```powerapps-comma
-    If( !IsBlank( Trim(TextSearchBox.Text ) ); 
-        'Office365Users'.SearchUser( {searchTerm: Trim( TextSearchBox.Text ); top: 15} )
+    ```powerapps-dot
+    If( !IsBlank( Trim(TextSearchBox.Text ) ), 
+        'Office365Users'.SearchUser( {searchTerm: Trim( TextSearchBox.Text ), top: 15} )
     )
     ```
 
@@ -112,12 +111,12 @@ ms.PowerAppsDecimalTransform: true
 * Свойство: **OnSelect**<br>
     Значение: код для добавления пользователя в коллекцию уровня приложения, а затем выберите пользователя:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Concurrent(
-        Set( _selectedUser; ThisItem );
-        Reset( TextSearchBox );
-        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ); 
-            Collect( MyPeople; ThisItem )
+        Set( _selectedUser, ThisItem ),
+        Reset( TextSearchBox ),
+        If( Not( ThisItem.UserPrincipalName in MyPeople.UserPrincipalName ), 
+            Collect( MyPeople, ThisItem )
         )
     )
     ```
@@ -139,17 +138,17 @@ ms.PowerAppsDecimalTransform: true
 * Свойство: **Высота**<br>
     Значение: логика для задания высоты в зависимости от числа элементов в коллекции.
 
-    ```powerapps-comma
+    ```powerapps-dot
     Min( 
         ( EmailPeopleGallery.TemplateHeight + EmailPeopleGallery.TemplatePadding * 2) *
-            RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2; 0 );
+            RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2, 0 ),
         304
     )
     ```
 
   Высота этой коллекции корректируется на число элементов в коллекции с максимальной высотой 304.
   
-  Она занимает `TemplateHeight + TemplatePadding * 2` как общая высота одной строки **емаилпеоплегаллери**, а затем умножает ее на число строк. С момента `WrapCount = 2`число истинных строк равно `RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2; 0)`.
+  Она занимает `TemplateHeight + TemplatePadding * 2` как общая высота одной строки **емаилпеоплегаллери**, а затем умножает ее на число строк. С момента `WrapCount = 2`число истинных строк равно `RoundUp(CountRows(EmailPeopleGallery.AllItems) / 2, 0)`.
 
 * Свойство: **шовскроллбар**<br>
     Значение: `EmailPeopleGallery.Height >= 304`
@@ -161,7 +160,7 @@ ms.PowerAppsDecimalTransform: true
    ![Элемент управления "заголовок Емаилпеоплегаллери"](media/email-screen/email-people-gall-text.png)
 
 * Свойство: **OnSelect**<br>
-    Значение: `Set(_selectedUser; ThisItem)`
+    Значение: `Set(_selectedUser, ThisItem)`
 
   Задает **_selectedUser** переменную для элемента, выбранного в **емаилпеоплегаллери**.
 
@@ -170,7 +169,7 @@ ms.PowerAppsDecimalTransform: true
    ![Элемент управления "заголовок Монсдайгаллери"](media/email-screen/email-people-gall-delete.png)
 
 * Свойство: **OnSelect**<br>
-    Значение: `Remove( MyPeople; LookUp( MyPeople; UserPrincipalName = ThisItem.UserPrincipalName ) )`
+    Значение: `Remove( MyPeople, LookUp( MyPeople, UserPrincipalName = ThisItem.UserPrincipalName ) )`
 
   Выполняет поиск записи в коллекции **мипеопле** , где **userPrincipalName** соответствует **userPrincipalName** выбранного элемента, и удаляет эту запись из коллекции.
 
@@ -179,15 +178,15 @@ ms.PowerAppsDecimalTransform: true
 * Свойство: **OnSelect**<br>
     Значение: логика для отправки сообщения электронной почты пользователя:
 
-    ```powerapps-comma
-    Set( _emailRecipientString; Concat( MyPeople; Mail & ";" ) );;
-    'Office365'.SendEmail( _emailRecipientString; 
-        TextEmailSubject.Text;  
-        TextEmailMessage.Text; 
+    ```powerapps-dot
+    Set( _emailRecipientString, Concat( MyPeople, Mail & ";" ) );
+    'Office365'.SendEmail( _emailRecipientString, 
+        TextEmailSubject.Text,  
+        TextEmailMessage.Text, 
         { Importance:"Normal" }
-    );;
-    Reset( TextEmailSubject );;
-    Reset( TextEmailMessage );;
+    );
+    Reset( TextEmailSubject );
+    Reset( TextEmailMessage );
     Clear( MyPeople )
     ```
 
@@ -199,10 +198,10 @@ ms.PowerAppsDecimalTransform: true
   1. Наконец, он сбрасывает элементы управления **текстемаилсубжект** и **текстемаилмессаже** и очищает коллекцию **мипеопле** .
 
 * Свойство: **DisplayMode**<br>
-    Значение: `If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ); DisplayMode.Edit; DisplayMode.Disabled )` для отправки сообщения электронной почты строка темы электронной почты должна содержать текст, а коллекция получателей (**мипеопле**) не должна быть пустой.
+    Значение: `If( Len( Trim( TextEmailSubject.Text ) ) > 0 && !IsEmpty( MyPeople ), DisplayMode.Edit, DisplayMode.Disabled )` для отправки сообщения электронной почты строка темы электронной почты должна содержать текст, а коллекция получателей (**мипеопле**) не должна быть пустой.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 * [Дополнительные сведения об этом экране](./email-screen-overview.md)
-* [Дополнительные сведения о соединителе Office 365 Outlook в PowerApps](../connections/connection-office365-outlook.md)
-* [Дополнительные сведения о соединителе пользователей Office 365 в PowerApps](../connections/connection-office365-users.md)
+* [Дополнительные сведения о соединителе Office 365 Outlook в Power Apps](../connections/connection-office365-outlook.md)
+* [Дополнительные сведения о соединителе пользователей Office 365 в Power Apps](../connections/connection-office365-users.md)

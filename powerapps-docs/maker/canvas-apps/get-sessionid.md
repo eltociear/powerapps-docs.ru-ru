@@ -1,6 +1,6 @@
 ---
 title: Получение идентификатора сеанса или приложения на основе холста | Документы Майкрософт
-description: Как получить идентификатор сеанса или приложения на основе холста для устранения неполадок в PowerApps
+description: Получение идентификатора сеанса или идентификатора приложения для устранения неполадок в Power Apps
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 81c1db4ab44f3ca8517c6154f0516ca9dad5f825
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: bad3f118da62d0c4eb6c0873aa6aed03516a9085
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676515"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729617"
 ---
 # <a name="get-a-session-id-or-a-canvas-app-id"></a>Получение идентификатора сеанса или приложения на основе холста
 Если возникла проблема с приложением Canvas, созданным в Power Apps, вы можете помочь корпорации Майкрософт устранить проблему гораздо эффективнее, если указать идентификатор сеанса, идентификатор приложения или и то, и другое для этой проблемы.
@@ -59,7 +59,7 @@ ms.locfileid: "74676515"
     ![Получение идентификатора сеанса из внедренного приложения](media/get-sessionid/embedded.png)
 
 ## <a name="get-an-app-id"></a>Получение идентификатора приложения
-1. [Войдите в PowerApps](https://powerapps.microsoft.com).
+1. [Войдите в Power Apps](https://powerapps.microsoft.com).
 
 1. Слева на экране выберите **Приложения**.
 

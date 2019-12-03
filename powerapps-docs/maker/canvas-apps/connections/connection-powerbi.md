@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 100b69583593bd506cb6860890ee3dfcfc82ebdf
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 40741bbaaba75f6cb1312057d5bba8c02ea15835
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540432"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723614"
 ---
-# <a name="connect-to-power-bi-from-powerapps"></a>Подключение к Power BI из PowerApps
+# <a name="connect-to-power-bi-from-power-apps"></a>Подключение к Power BI из Power Apps
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
 
 Power BI — это набор средств бизнес-аналитики для анализа данных и обмена сведениями. Отслеживайте свою бизнес-деятельность и быстро получайте ответы на вопросы, используя многофункциональные информационные панели на каждом устройстве. В приложении можно проверить состояние оповещений о данных, настроенных в службе Power BI. Дополнительные сведения об оповещениях о данных в Power BI см. на [странице документации](https://docs.microsoft.com/power-bi/service-set-data-alerts).

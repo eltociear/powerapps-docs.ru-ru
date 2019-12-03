@@ -1,6 +1,6 @@
 ---
 title: Функция Patch | Документация Майкрософт
-description: Справочные сведения о функции Patch в PowerApps, в том числе описание синтаксиса и примеры
+description: Справочные сведения, включая синтаксис и примеры, для функции patch в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 711a15a93d1e3ed9839f5d51c0bfa32e00563852
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1b23ac058632c4a4b2196c48ed5ffaf6d63fc2bd
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984317"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730452"
 ---
-# <a name="patch-function-in-powerapps"></a>Функция Patch в PowerApps
+# <a name="patch-function-in-power-apps"></a>Функция patch в Power Apps
 Эта функция изменяет или создает одну или несколько [записей](../working-with-tables.md#records) в [источнике данных](../working-with-data-sources.md) или объединяет записи вне этого источника.
 
 Используйте функцию **Patch**, чтобы изменять записи в сложных ситуациях, например при автоматическом выполнении обновлений или при использовании форм, охватывающих несколько экранов.
@@ -31,17 +30,17 @@ ms.PowerAppsDecimalTransform: true
 ## <a name="overview"></a>Обзор
 Используйте функцию **Patch**, чтобы изменить одну или несколько записей источника данных.  Значения определенных [полей](../working-with-tables.md#elements-of-a-table) изменяются, не затрагивая другие свойства. Например, следующая формула изменяет номер телефона клиента с именем Contoso:
 
-`Patch( Customers; First( Filter( Customers; Name = "Contoso" ) ); { Phone: “1-212-555-1234” } )`
+`Patch( Customers, First( Filter( Customers, Name = "Contoso" ) ), { Phone: “1-212-555-1234” } )`
 
 Используйте функцию **Patch** с функцией **[Defaults](function-defaults.md)** для создания записей. Используйте это поведение, чтобы настроить [единый экран](../working-with-data-sources.md) для создания и изменения записей. Например, следующая формула создает запись для клиента с именем Contoso:
 
-`Patch( Customers; Defaults( Customer ); { Name: “Contoso” } )`
+`Patch( Customers, Defaults( Customer ), { Name: “Contoso” } )`
 
 Даже если вы не работаете с источником данных, вы можете использовать функцию **Patch**, чтобы объединить две записи или более. Например, следующая формула объединяет две записи в одну, которая определяет и номер телефона, и расположение Contoso:
 
-`Patch( { Name: "Contoso"; Phone: “1-212-555-1234” }; { Name: "Contoso"; Location: “Midtown”  } )`
+`Patch( { Name: "Contoso", Phone: “1-212-555-1234” }, { Name: "Contoso", Location: “Midtown”  } )`
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 ### <a name="modify-or-create-a-record-in-a-data-source"></a>Изменение или создание записи в источнике данных
 Чтобы использовать эту функцию с источником данных, укажите источник данных, а затем укажите базовую запись.
 
@@ -70,21 +69,21 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="syntax"></a>Синтаксис
 #### <a name="modify-or-create-a-record-in-a-data-source"></a>Изменение или создание записи в источнике данных
-**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord1* [; *ChangeRecord2*; … ])
+**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord1* [, *ChangeRecord2*, … ])
 
-* *источник_данных* — обязательный аргумент. Это источник данных, содержащий запись, которую необходимо изменить. Или же тот, который будет содержать запись, которую вы хотите создать.
+* *Источник_данных* — обязательный аргумент. Это источник данных, содержащий запись, которую необходимо изменить. Или же тот, который будет содержать запись, которую вы хотите создать.
 * *BaseRecord* — обязательный аргумент. Это запись, которую необходимо изменить или создать.  Если запись является частью источника данных, она будет найдена и изменена. Если используется результат функции **[Defaults](function-defaults.md)** , тогда запись создается.
 * *ChangeRecord(s)*  — обязательный аргумент.  Одна или несколько записей, содержащих свойства для изменения в *BaseRecord*.  Изменения записей обрабатываются от начала и до конца списка аргументов. При этом последние значения свойства переопределяют ранее созданные.
 
 #### <a name="modify-or-create-a-set-of-records-in-a-data-source"></a>Изменение или создание набора записей в источнике данных
-**Исправление**( *DataSource*; *Басерекордстабле*; *ChangeRecordTable1* [; *ChangeRecordTable2*;... ] )
+**Исправление**( *DataSource*, *Басерекордстабле*, *ChangeRecordTable1* [, *ChangeRecordTable2*,... ] )
 
-* *источник_данных* — обязательный аргумент. Это источник данных, содержащий запись, которую необходимо изменить. Или же тот, который будет содержать запись, которую вы хотите создать.
+* *Источник_данных* — обязательный аргумент. Это источник данных, содержащий запись, которую необходимо изменить. Или же тот, который будет содержать запись, которую вы хотите создать.
 * *BaseRecordTable* — обязательный аргумент. Таблица записей, которые нужно изменить или создать.  Если запись является частью источника данных, она будет найдена и изменена. Если используется результат функции **[Defaults](function-defaults.md)** , тогда запись создается.
 * *ChangeRecordTable(s)*  — обязательный аргумент.  Одна или несколько таблиц записей, содержащих свойства, которые необходимо изменить, для каждой записи в *BaseRecordTable*.  Изменения записей обрабатываются от начала и до конца списка аргументов. При этом последние значения свойства переопределяют ранее созданные.
 
 #### <a name="merge-records"></a>Объединение записей
-**Patch**( *Record1*; *Record2* [; …] )
+**Patch**( *Record1*, *Record2* [, …] )
 
 * *Record(s)*  — обязательный аргумент.  Необходимо указать как минимум несколько записей для объединения. Записи обрабатываются от начала и до конца списка аргументов. При этом последние значения свойства переопределяют ранее созданные.
 
@@ -94,10 +93,10 @@ ms.PowerAppsDecimalTransform: true
 
 ![](media/function-patch/icecream.png)
 
-| Формула | Описание | Возвращаемый результат |
+| Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
-| **Patch(&nbsp;IceCream;<br>First( Filter( IceCream; Flavor = "Chocolate" ) ); {&nbsp;Quantity:&nbsp;400&nbsp;} )** |Изменяет запись в источнике данных **IceCream**.<ul><li> Столбец записи **ID**, которую необходимо изменить, содержит значение **1**. (Это значение задано для записи **Chocolate**.)</li><li>Значение в столбце **Quantity** изменится на **400**. |{&nbsp;ID:&nbsp;1, Flavor:&nbsp;"Chocolate", Quantity:&nbsp;400 }<br><br>Запись **Chocolate** в источнике данных **IceCream** была изменена. |
-| **Patch( IceCream; Defaults(&nbsp;IceCream ); {&nbsp;Flavor:&nbsp;“Strawberry”&nbsp;}&nbsp;)** |Функция создает запись в источнике данных **IceCream**.<ul><li>Столбец **ID** содержит значение **3**, которое источник данных создает автоматически.</li><li>Столбец **Quantity** содержит значение **0**, которое является значением по умолчанию для этого столбца в источнике данных **IceCream** в соответствии с функцией **[Defaults](function-defaults.md)** .<li>Столбец **Flavor** содержит значение **Strawberry**.</li> |{ ID:&nbsp;3, Flavor:&nbsp;“Strawberry”, Quantity:&nbsp;0&nbsp;}<br><br>В источнике данных **IceCream** была создана запись **Strawberry**. |
+| **Patch(&nbsp;IceCream,<br>First( Filter( IceCream, Flavor = "Chocolate" ) ), {&nbsp;Quantity:&nbsp;400&nbsp;} )** |Изменяет запись в источнике данных **IceCream**.<ul><li> Столбец записи **ID**, которую необходимо изменить, содержит значение **1**. (Это значение задано для записи **Chocolate**.)</li><li>Значение в столбце **Quantity** изменится на **400**. |{&nbsp;ID:&nbsp;1, Flavor:&nbsp;"Chocolate", Quantity:&nbsp;400 }<br><br>Запись **Chocolate** в источнике данных **IceCream** была изменена. |
+| **Patch( IceCream, Defaults(&nbsp;IceCream ), {&nbsp;Flavor:&nbsp;“Strawberry”&nbsp;}&nbsp;)** |Функция создает запись в источнике данных **IceCream**.<ul><li>Столбец **ID** содержит значение **3**, которое источник данных создает автоматически.</li><li>Столбец **Quantity** содержит значение **0**, которое является значением по умолчанию для этого столбца в источнике данных **IceCream** в соответствии с функцией **[Defaults](function-defaults.md)** .<li>Столбец **Flavor** содержит значение **Strawberry**.</li> |{ ID:&nbsp;3, Flavor:&nbsp;“Strawberry”, Quantity:&nbsp;0&nbsp;}<br><br>В источнике данных **IceCream** была создана запись **Strawberry**. |
 
 После вычисления формул выше источник данных получил следующие значения:
 
@@ -105,7 +104,7 @@ ms.PowerAppsDecimalTransform: true
 
 #### <a name="merge-records-outside-of-a-data-source"></a>Объединение записей (вне источника данных)
 
-| Формула | Описание | Возвращаемый результат |
+| Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
-| **Patch(&nbsp;{&nbsp;Name:&nbsp;"James";&nbsp;Score:&nbsp;90&nbsp;}; {&nbsp;Name:&nbsp;"Jim";&nbsp;Passed:&nbsp;true&nbsp;} )** |Функция объединяет две записи вне источника данных.<br><ul><li>Значения в столбце **Name** для каждой записи не совпадают. Результат содержит значение (**Jim**) в записи в конце списка аргументов вместо значения (**James**) в начале этого списка.</li><li>Первая запись содержит столбец (**Score**), который отсутствует во второй записи. Результат содержит этот столбец со значением (**90**).</li><li>Вторая запись содержит столбец (**Passed**), который отсутствует в первой записи. Результат содержит этот столбец со значением (**true**). |{&nbsp;Name:&nbsp;"Jim", Score:&nbsp;90, Passed:&nbsp;true&nbsp;} |
+| **Patch(&nbsp;{&nbsp;Name:&nbsp;"James",&nbsp;Score:&nbsp;90&nbsp;}, {&nbsp;Name:&nbsp;"Jim",&nbsp;Passed:&nbsp;true&nbsp;} )** |Функция объединяет две записи вне источника данных.<br><ul><li>Значения в столбце **Name** для каждой записи не совпадают. Результат содержит значение (**Jim**) в записи в конце списка аргументов вместо значения (**James**) в начале этого списка.</li><li>Первая запись содержит столбец (**Score**), который отсутствует во второй записи. Результат содержит этот столбец со значением (**90**).</li><li>Вторая запись содержит столбец (**Passed**), который отсутствует в первой записи. Результат содержит этот столбец со значением (**true**). |{&nbsp;Name:&nbsp;"Jim", Score:&nbsp;90, Passed:&nbsp;true&nbsp;} |
 

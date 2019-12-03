@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3970c5181939f8ab6e8bd1ad4f396595d7083ff3
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 324c7880643a6e06bc147d1bbafb1b9638b8f2ec
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679576"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731596"
 ---
 # <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>Предоставление клиентам тестовых выпусков приложения на основе холста в AppSource
 
@@ -60,9 +59,9 @@ Power Apps изначально поддерживает создание при
 
 Если приложение доступно для чтения и записи, сначала извлекаются данные из каждой таблицы в *коллекцию*, которая представляет собой табличную структуру данных в Power Apps. Затем вместо таблицы используйте коллекцию. Чтобы переместить данные из таблиц **SiteInspector** и **SitePhotos** в коллекции **SiteInspectorCollect** и **SitePhotosCollect**, используйте следующую формулу:
 
-```powerapps-comma
-ClearCollect( SiteInspectorCollect; SiteInspector );; 
-ClearCollect( SitePhotosCollect; SitePhotos )
+```powerapps-dot
+ClearCollect( SiteInspectorCollect, SiteInspector ); 
+ClearCollect( SitePhotosCollect, SitePhotos )
 ```
 
 С помощью этой формулы можно очистить обе коллекции, а затем переместить данные из каждой таблицы в соответствующую коллекцию.
@@ -78,12 +77,12 @@ ClearCollect( SitePhotosCollect; SitePhotos )
 
 **Чтобы добавить строку в коллекцию**, используйте [Collect( DataSource, Item, ... )](../canvas-apps/functions/function-clear-collect-clearcollect.md):
 
-```powerapps-comma
-Collect( SiteInspectorCollect;
+```powerapps-dot
+Collect( SiteInspectorCollect,
     {
-        ID: Value( Max( SiteInspectorCollect; ID ) + 1 );
-        Title: TitleText.Text;
-        SubTitle: SubTitleText.Text;
+        ID: Value( Max( SiteInspectorCollect, ID ) + 1 ),
+        Title: TitleText.Text,
+        SubTitle: SubTitleText.Text,
         Description: DescriptionText.Text
     }
 )
@@ -91,12 +90,12 @@ Collect( SiteInspectorCollect;
 
 **Чтобы обновить строку в коллекции**, используйте [UpdateIf( DataSource, Condition1, ChangeRecord1 [, Condition2, ChangeRecord2, ...] )](../canvas-apps/functions/function-update-updateif.md):
 
-```powerapps-comma
-UpdateIf( SiteInspectorCollect;
-    ID = record.ID;
+```powerapps-dot
+UpdateIf( SiteInspectorCollect,
+    ID = record.ID,
     {
-        Title: TitleEditText.Text;
-        SubTitle: SubTitleEditText.Text;
+        Title: TitleEditText.Text,
+        SubTitle: SubTitleEditText.Text,
         Description: DescriptionEditText.Text
     }
 )
@@ -104,8 +103,8 @@ UpdateIf( SiteInspectorCollect;
 
 **Чтобы удалить строку из коллекции**, используйте [RemoveIf( DataSource, Condition [, ...] )](../canvas-apps/functions/function-remove-removeif.md):
 
-```powerapps-comma
-RemoveIf( SiteInspectorCollect; ID = record.ID )
+```powerapps-dot
+RemoveIf( SiteInspectorCollect, ID = record.ID )
 ```
 
 > [!NOTE]
@@ -114,7 +113,7 @@ RemoveIf( SiteInspectorCollect; ID = record.ID )
 Таким образом, вы можете создать версию приложения с внедренными данными, что имитирует работу приложения при подключении к внешним данным. После внедрения данных вы сможете опубликовать это приложение как решение для тестирования на сайте AppSource.com.
 
 ## <a name="how-do-i-list-my-test-drive-solution-on-appsourcecom"></a>Как добавить решение для тестирования на сайте AppSource.com?
-Теперь, когда приложение готово, его можно опубликовать на сайте AppSource.com. Чтобы начать, заполните [форму заявки](https://powerapps.microsoft.com/partners/get-listed/) на сайте PowerApps.com.
+Теперь, когда приложение готово, его можно опубликовать на сайте AppSource.com. Чтобы начать этот процесс, заполните [форму приложения](https://powerapps.microsoft.com/partners/get-listed/) в Power Apps.com.
 
 После подачи заявки вы получите электронное письмо с инструкциями о том, как отправить приложение для публикации на сайте AppSource.com. Документацию по подключению, в которой полностью описывается этот процесс, можно скачать [отсюда](https://go.microsoft.com/fwlink/?linkid=851031).
 

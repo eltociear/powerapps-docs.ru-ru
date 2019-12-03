@@ -1,6 +1,6 @@
 ---
 title: С функцией | Документация Майкрософт
-description: Справочные сведения, включая синтаксис, для функции with в PowerApps
+description: Справочные сведения, включая синтаксис, для функции with в Power Apps
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c8d793fcfd2992a781f92d529002e22a34a9df5a
-ms.sourcegitcommit: 742a5a21e73a811e9cea353d8275f09c22366afc
+ms.openlocfilehash: 886482e9093fa44c34fb1f72b93d51181d4fbc10
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70130338"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729865"
 ---
-# <a name="with-function-in-powerapps"></a>Функция with в PowerApps
+# <a name="with-function-in-power-apps"></a>Функция with в Power Apps
 Вычисляет значения и выполняет действия для одной [записи](../working-with-tables.md#records), включая встроенные записи именованных значений.
 
-## <a name="description"></a>Описание
+## <a name="description"></a>Description
 
 Функция **with** вычисляет формулу для отдельной записи.  Формула может рассчитать значение и (или) выполнить действия, например изменить данные или работу с подключением.  Используйте функцию [ **ForAll** ](function-forall.md) для вычисления формулы для всех записей в таблице записей.
 
@@ -37,21 +36,21 @@ ms.PowerAppsDecimalTransform: true
 Если аргумент *записи* **with** является ошибкой, эта ошибка будет возвращена функцией, а *Формула* не будет вычисляться.
 
 ## <a name="syntax"></a>Синтаксис
-**С помощью** ( *Запись*, *Формула* )
+**With**( *запись*, *Формула* )
 
-* *Запись* — обязательное. Запись, по которой выполняется операция.  Для значений имен используйте встроенный синтаксис`{ name1: value1; name2: value2; ... }`
+* *Запись* — обязательное. Запись, по которой выполняется операция.  Для значений имен используйте встроенный синтаксис `{ name1: value1, name2: value2, ... }`
 * *Формула* — обязательная.  Формула для вычисления *записи*.  Формула может ссылаться на любое поле *записи* непосредственно в качестве области записи.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="simple-named-values"></a>Простые именованные значения
 
-```powerapps-comma
-With( { radius: 10; 
-        height: 15 };
+```powerapps-dot
+With( { radius: 10, 
+        height: 15 },
     Pi() * (radius*radius) * height
 )
-// Result: 4712,38898038 (as shown in a label control)
+// Result: 4712.38898038 (as shown in a label control)
 ```
 
 В этом примере используется запись именованных значений для вычисления объема цилиндра.  **With** используется для совместного захвата всех входных значений, что упрощает их отделение от самого вычисления.  
@@ -60,24 +59,24 @@ With( { radius: 10;
 
 ![Калькулятор интересов, использующий функцию with](media/function-with/interest-calculator.gif)
 
-```powerapps-comma
-With( { AnnualRate: RateSlider/8/100;        // slider moves in 1/8th increments and convert to decimal
-        Amount: AmountSlider*10000;          // slider moves by 10;000 increment
-        Years: YearsSlider;                  // slider moves in single year increments; no adjustment required
-        AnnualPayments: 12 };                // number of payments per year
-      With( { r: AnnualRate/AnnualPayments;  // interest rate
-              P: Amount;                     // loan amount
-              n: Years*AnnualPayments };     // number of payments
+```powerapps-dot
+With( { AnnualRate: RateSlider/8/100,        // slider moves in 1/8th increments and convert to decimal
+        Amount: AmountSlider*10000,          // slider moves by 10,000 increment
+        Years: YearsSlider,                  // slider moves in single year increments, no adjustment required
+        AnnualPayments: 12 },                // number of payments per year
+      With( { r: AnnualRate/AnnualPayments,  // interest rate
+              P: Amount,                     // loan amount
+              n: Years*AnnualPayments },     // number of payments
             r*P / (1 - (1+r)^-n)             // standard interest calculation
       )
 )  
 ```
 
-В этом примере вложены функции, чтобы создать двухуровневый расчет для ежемесячных [выплат](https://en.wikipedia.org/wiki/Mortgage_calculator#Monthly_payment_formula)по закладной.  Пока нет конфликта, все внешние **с** именованными значениями доступны внутри внутреннего **с**.
+В этом примере вложены **функции,** чтобы создать двухуровневый расчет для [ежемесячных выплат по закладной](https://en.wikipedia.org/wiki/Mortgage_calculator#Monthly_payment_formula).  Пока нет конфликта, все внешние **с** именованными значениями доступны внутри внутреннего **с**.
 
 Поскольку элементы управления "ползунок" могут перемещаться только с шагом 1, ползунки делятся или умножаются, чтобы создать эффективный пользовательский инкремент.  В случае процентной ставки **ратеслидер** имеет свойство **Max** , равное **48**, деленное на 8 для приращения в процентах 1/8 и деленное на 100, чтобы преобразовать процентную долю в десятичную, охватывающую диапазон от 0,125% до 6%.  В случае с суммой ссуды **амаунтслидер** имеет свойство **Max** , равное **60** и умноженное на 10 000, охватывающее диапазон от 10 000 до 600 000.
 
-Параметр **with** автоматически пересчитывается при перемещении ползунков и показываемой новой оплате по ссуде.  Переменные не используются, и нет необходимости использовать свойство OnChange элементов управления "ползунок".
+Параметр **with** автоматически пересчитывается при перемещении ползунков и показываемой новой оплате по ссуде.  Переменные не используются, и нет необходимости использовать свойство **onChange** элементов управления "ползунок".
 
 Ниже приведены подробные инструкции по созданию этого приложения.
 1. Создайте новое приложение.
@@ -95,12 +94,12 @@ With( { AnnualRate: RateSlider/8/100;        // slider moves in 1/8th increments
 
 ### <a name="primary-key-returned-from-patch"></a>Первичный ключ, возвращенный из исправления
 
-```powerapps-comma
-With( Patch( Orders; Defaults( Orders ); { OrderStatus: "New" } );
-      ForAll( NewOrderDetails; 
-              Patch( OrderDetails; Defaults( OrderDetails ); 
-                     { Order: OrderID;          // from With's first argument; primary key of Patch result
-                       Quantity: Quantity;      // from ForAll's NewOrderDetails table
+```powerapps-dot
+With( Patch( Orders, Defaults( Orders ), { OrderStatus: "New" } ),
+      ForAll( NewOrderDetails, 
+              Patch( OrderDetails, Defaults( OrderDetails ), 
+                     { Order: OrderID,          // from With's first argument, primary key of Patch result
+                       Quantity: Quantity,      // from ForAll's NewOrderDetails table
                        ProductID: ProductID }   // from ForAll's NewOrderDetails table
               )
       )
@@ -111,12 +110,12 @@ With( Patch( Orders; Defaults( Orders ); { OrderStatus: "New" } );
 
 ### <a name="extracted-values-with-a-regular-expression"></a>Извлеченные значения с регулярным выражением
 
-```powerapps-comma
+```powerapps-dot
 With( 
-    Match( "PT2H1M39S"; "PT(?:<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" );
-    Time( Value( hours ); Value( minutes ); Value( seconds ) )
+    Match( "PT2H1M39S", "PT(?:<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
+    Time( Value( hours ), Value( minutes ), Value( seconds ) )
 )
-// Result: 2:01 AM (as shown in a label control; use the Text function to see the seconds)
+// Result: 2:01 AM (as shown in a label control, use the Text function to see the seconds)
 ```
 
 Этот пример извлекает часы, минуты и секунды из значения длительности ISO 8601, а затем использует эти подзапросы для создания значения даты и времени. 

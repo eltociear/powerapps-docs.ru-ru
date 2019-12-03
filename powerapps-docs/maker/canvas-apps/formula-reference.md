@@ -1,6 +1,6 @@
 ---
 title: Функции, сигналы и перечисления | Документация Майкрософт
-description: Справочные сведения о функциях, сигналах и перечислениях в PowerApps.
+description: Справочные сведения о функциях, сигналах и перечислениях в Power Apps.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eb698f5e2775f1acfed6a7af70475a6079753abb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7712af247376d6db54aa6777eb2a3051f0e31f93
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678472"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731422"
 ---
-# <a name="formula-reference-for-powerapps"></a>Справочник формул для PowerApps
+# <a name="formula-reference-for-power-apps"></a>Справочник по формулам для Power Apps
 Формулы объединяют множество элементов.  Ниже перечислены следующие элементы:
 
 * **Функции** принимают параметры, выполняют операцию и возвращают значение. Например, **Sqrt(25)** возвращает значение **5**. Функции построены по принципу функций Microsoft Excel.  Некоторые функции вызывают побочные действия, такие как **SubmitForm**, что должно происходить только в [формуле поведения](working-with-formulas-in-depth.md), такой как **Button.OnSelect**.

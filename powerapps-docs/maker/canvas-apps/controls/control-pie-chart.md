@@ -13,15 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2037de5ab55839b5908fb4789ca3fcda6836f4d9
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 4b7125da14cc315595a305d97d710766fcc8ff3e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650345"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74728642"
 ---
-# <a name="pie-chart-control-in-powerapps"></a>Элемент управления "Круговая диаграмма" в PowerApps
+# <a name="pie-chart-control-in-power-apps"></a>Элемент управления "круговая диаграмма" в Power Apps
 Элемент управления, отображающий относительные значения в сравнении друг с другом.
 
 ## <a name="description"></a>Description
@@ -80,11 +79,11 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Max**(*источник*; *столбец*)](../functions/function-aggregates.md)
+[**Max**(*источник*, *столбец*)](../functions/function-aggregates.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **[Кнопка](control-button.md)** и задайте следующую формулу в качестве значения свойства **[OnSelect](properties-core.md)** :<br>
-   **Collect(Revenue2015; {Product:"Europa"; Revenue:27000}; {Product:"Ganymede"; Revenue:26300}; {Product:"Callisto"; Revenue:29200})**
+   **Collect(Revenue2015, {Product:"Europa", Revenue:27000}, {Product:"Ganymede", Revenue:26300}, {Product:"Callisto", Revenue:29200})**
    
     Не знаете, как [добавить и настроить элемент управления](../add-configure-controls.md)?
    

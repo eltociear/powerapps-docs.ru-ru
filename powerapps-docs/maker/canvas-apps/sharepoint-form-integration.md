@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fbfe1b62091ff7a4fb84b899518fc941f99d7abb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9befcf4cb0e7267820c62ab78a14ee28ba985490
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674859"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732379"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>Общие сведения об интеграции форм SharePoint
 Теперь можно легко [настроить любую форму списка SharePoint](customize-list-form.md) в Power Apps. В этой статье мы подробно рассмотрим, как работают эти формы и как их можно настроить.
@@ -38,13 +37,13 @@ ms.PowerAppsDecimalTransform: true
 
     * **Item** — выбранный в списке элемент. Этот элемент имеет значение First () в списке для удобства при работе в Power Apps Studio.
 
-        **If(IsBlank(SharePointIntegration.Selected) || IsEmpty(SharePointIntegration.Selected);First('*имя_вашего_списка*');SharePointIntegration.Selected)**
+        **If(IsBlank(SharePointIntegration.Selected) || IsEmpty(SharePointIntegration.Selected),First('*имя_вашего_списка*'),SharePointIntegration.Selected)**
 
     * **OnSuccess** — когда элемент успешно создан или сохранен, настройки формы сбрасываются и SharePoint скрывает форму.
 
-        **ResetForm(SharePointForm1);; RequestHide()**
+        **ResetForm(SharePointForm1); RequestHide()**
 
-* **SharePointIntegration** — элемент управления, который отвечает за синхронизацию пользовательских действий в SharePoint и PowerApps.
+* **SharePointIntegration** — элемент управления, отвечающий за взаимодействие пользовательских действий между SharePoint и Power Apps.
 
     * **DataSource** — список, для которого настроена форма.
 
@@ -73,7 +72,7 @@ ms.PowerAppsDecimalTransform: true
 Эти значения по умолчанию обеспечивают работу формы при работе в SharePoint. они изменяют режим формы Power Apps при взаимодействии пользователя с ним в SharePoint и гарантируют, что изменения отправляются в SharePoint.
 
 ## <a name="understand-the-sharepointintegration-control"></a>Общие сведения об элементе управления SharePointIntegration
-Элемент управления **SharePointIntegration** синхронизирует пользовательские действия в SharePoint и PowerApps.
+Элемент управления **SharePointIntegration** взаимодействует с пользовательскими действиями SharePoint и Power Apps.
 
 ![](./media/sharepoint-form-integration/sharepointintegration-object.png)
 

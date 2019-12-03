@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8c4316c8f4aac11903aaad8cb624ff881173b403
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 68fad4cb2c73bcaeb448212012133c171d682cb4
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650627"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723009"
 ---
-# <a name="combo-box-control-in-powerapps"></a>Элемент управления "Поле со списком" в PowerApps
+# <a name="combo-box-control-in-power-apps"></a>Элемент управления "поле со списком" в Power Apps
 Это элемент управления, который позволяет выбирать из доступных вариантов.  Поддерживает поиск и выбор нескольких вариантов.
 
 ## <a name="description"></a>Description

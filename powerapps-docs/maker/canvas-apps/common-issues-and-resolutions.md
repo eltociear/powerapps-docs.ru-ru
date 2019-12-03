@@ -1,6 +1,6 @@
 ---
 title: Распространенные проблемы и решения для Power Apps | Документация Майкрософт
-description: Список распространенных проблем в PowerApps их решений.
+description: Список распространенных проблем и способов их устранения в Power Apps.
 author: KumarVivek
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c8f05c74141301d0c41238daa20625874eec98aa
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b578d34217647658bb872ed22cd7ee8b3cc4a1cd
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678794"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723861"
 ---
-# <a name="common-issues-and-resolutions-for-powerapps"></a>Распространенные проблемы в PowerApps и их решение
+# <a name="common-issues-and-resolutions-for-power-apps"></a>Распространенные проблемы и решения для Power Apps
 
 В этой статье перечислены некоторые распространенные проблемы, которые могут возникнуть при использовании Power Apps. Где это возможно, приведены решения.
 
@@ -85,7 +85,7 @@ ms.locfileid: "74678794"
 
 1. **Выпуск 2.0.700 на устройствах Android**
 
-    Если вы устанавливаете выпуск 2.0.700 на устройстве Android, а затем не можете открывать приложения (или приложение перестает отвечать), удалите Power Apps, перезапустите устройство, а затем переустановите PowerApps.
+    Если вы устанавливаете выпуск 2.0.700 на устройстве Android, а затем не можете открывать приложения (или приложение перестает отвечать), удалите Power Apps, перезапустите устройство, а затем переустановите Power Apps.
 
 1. **"Пустая" коллекция при открытии приложения**
 

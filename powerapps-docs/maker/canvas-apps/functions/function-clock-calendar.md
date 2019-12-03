@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 62a500ad6e39451a3fb62932b9eeafb1d38f772a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8cde35a14147eb8dd0e0e63da2bad54b89472957
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679392"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731336"
 ---
-# <a name="calendar-and-clock-functions-in-powerapps"></a>Функции Calendar и Clock в PowerApps
+# <a name="calendar-and-clock-functions-in-power-apps"></a>Функции календаря и часов в Power Apps
 Извлекает сведения о дате и времени для текущего значения языкового стандарта.
 
 ## <a name="description"></a>Description
