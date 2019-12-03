@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 79d59c484f82f4d356f3b2ac40f02bdddd125901
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e5b961fb665ad0706d5b3c2c272a95dd4530c1d2
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676603"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74709480"
 ---
 # <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>Создание с нуля приложения на основе холста из данных Excel
 
@@ -51,7 +50,7 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="open-a-blank-app"></a>Пустое приложение
 
-1. Войдите в [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Войдите в [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. В разделе **Создание собственного приложения** выберите **Приложение на основе холста с нуля**.
 
@@ -112,17 +111,17 @@ ms.PowerAppsDecimalTransform: true
 
     Формула соответствует следующему примеру:
 
-    ```powerapps-comma
+    ```powerapps-dot
     SortByColumns(
         Search(
-            Schedule;
-            TextSearchBox1.Text;
+            Schedule,
+            TextSearchBox1.Text,
             "Volunteer"
-        );
-        "Volunteer";
+        ),
+        "Volunteer",
         If(
-            SortDescending1;
-            SortOrder.Descending;
+            SortDescending1,
+            SortOrder.Descending,
             SortOrder.Ascending
         )
     )
@@ -197,7 +196,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Для свойства **OnSelect** этой кнопки введите следующую формулу:
 
-    `NewForm(EditForm1);;Navigate(ChangeScreen;ScreenTransition.None)`
+    `NewForm(EditForm1);Navigate(ChangeScreen,ScreenTransition.None)`
 
     Когда пользователь щелкнет этот значок, откроется экран **ChangeScreen** с пустыми полями для быстрого создания записи.
 
@@ -207,7 +206,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **OnSelect** этой стрелки следующую формулу:
 
-    `EditForm(EditForm1);; Navigate(ChangeScreen; ScreenTransition.None)`
+    `EditForm(EditForm1); Navigate(ChangeScreen, ScreenTransition.None)`
 
     Когда пользователь щелкнет этот значок, отобразится экран **ChangeScreen** с информацией из выбранной записи в каждом поле, что позволит легко изменить или удалить эту запись.
 
@@ -219,7 +218,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Для свойства **OnSelect** этой кнопки введите следующую формулу:
 
-    `ResetForm(EditForm1);;Navigate(ViewScreen; ScreenTransition.None)`
+    `ResetForm(EditForm1);Navigate(ViewScreen, ScreenTransition.None)`
 
     Когда пользователь щелкнет этот значок, отменятся все внесенные на этом экране изменения и отобразится экран просмотра.
 
@@ -229,7 +228,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **OnSelect** этой галочки следующую формулу:
 
-    `SubmitForm(EditForm1);; Navigate(ViewScreen; ScreenTransition.None)`
+    `SubmitForm(EditForm1); Navigate(ViewScreen, ScreenTransition.None)`
 
     Когда пользователь щелкнет этот значок, сохранятся все внесенные на этом экране изменения и отобразится экран просмотра.
 
@@ -247,7 +246,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Для свойства **OnSelect** значка мусорной корзины введите следующую формулу:
 
-    `Remove(Schedule; BrowseGallery1.Selected);; Navigate(ViewScreen; ScreenTransition.None)`
+    `Remove(Schedule, BrowseGallery1.Selected); Navigate(ViewScreen, ScreenTransition.None)`
 
     Когда пользователь щелкнет этот значок, выбранная запись будет удалена из источника данных и откроется экран просмотра.
 

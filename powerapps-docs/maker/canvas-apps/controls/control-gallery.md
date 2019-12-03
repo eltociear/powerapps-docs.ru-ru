@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 05/25/2017
+ms.date: 12/02/2019
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a532af505e579e66d3dfa0dce22a1c3ac6a4a6cc
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 449948efb53fd5fdc3b0f65f5277d50b6a831dc7
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650524"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74709383"
 ---
 # <a name="gallery-control-in-canvas-apps"></a>Элемент управления "Галерея" в приложениях Canvas
 
@@ -93,7 +92,12 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Filter**(*источник*; *формула*)](../functions/function-filter-lookup.md)
+[**Filter**(*источник*, *формула*)](../functions/function-filter-lookup.md)
+
+[ **Reset**( *элемент управления* )](../functions/function-reset.md) — сброс коллекции в исходное состояние. Начальное состояние включает прокрутку к первому элементу и выбор первого элемента или значения по умолчанию при его наличии. 
+
+  > [!NOTE]
+  > Элемент управления **сбросом** не рекурсивно сбрасывает все дочерние элементы коллекции.
 
 ## <a name="examples"></a>Примеры
 

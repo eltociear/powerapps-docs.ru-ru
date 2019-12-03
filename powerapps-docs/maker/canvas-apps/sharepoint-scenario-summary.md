@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cba5d7bd1214866cc24ba01c64909cf15e0ca96d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d6ee64ddb2ae2f2a9c114a70970843627b92efb1
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674677"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74709715"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>Пошаговое руководство по реализации готового сценария интеграции SharePoint Online
 > [!NOTE]
@@ -160,7 +160,7 @@ ms.locfileid: "74674677"
 
 На этом мы завершаем текущее пошаговое руководство и всю серию связанных руководств. Мы рекомендуем вам продолжить изучение материалов на следующих сайтах:
 
-* [PowerApps](https://www.powerapps.com/)
+* [Power Apps](https://www.powerapps.com/)
 * [Автоматизация электропитания](https://flow.microsoft.com)
 * [Power BI](https://www.powerbi.com)
 * [Сообщество бизнес-пользователей](https://powerusers.microsoft.com/)
