@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74674625"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>Как сохранить изображения в файл Excel и добавить их в приложение
 
@@ -58,7 +59,7 @@ ms.locfileid: "74674625"
    
    ![Переименовать](./media/tutorial-working-with-images-in-excel/rename-mypen.png)
 4. Добавьте элемент управления **Кнопка** (через меню **Вставка**) и задайте в качестве значения свойства **OnSelect** следующую формулу:  
-   `Patch(Drawings, Defaults(Drawings), {Image:MyPen.Image})`
+   `Patch(Drawings; Defaults(Drawings); {Image:MyPen.Image})`
 5. Добавьте в приложение элемент управления **Коллекция изображений** (через меню **Вставка** > **Коллекция**) и назначьте его свойству **Items** значение `Drawings`. Свойство **Image** для элемента управления "Коллекция" автоматически получает значение `ThisItem.Image`.
    
    Окно должно выглядеть следующим образом:  

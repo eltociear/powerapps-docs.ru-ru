@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74679576"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>Предоставление клиентам тестовых выпусков приложения на основе холста в AppSource
 
@@ -59,9 +60,9 @@ Power Apps изначально поддерживает создание при
 
 Если приложение доступно для чтения и записи, сначала извлекаются данные из каждой таблицы в *коллекцию*, которая представляет собой табличную структуру данных в Power Apps. Затем вместо таблицы используйте коллекцию. Чтобы переместить данные из таблиц **SiteInspector** и **SitePhotos** в коллекции **SiteInspectorCollect** и **SitePhotosCollect**, используйте следующую формулу:
 
-```powerapps-dot
-ClearCollect( SiteInspectorCollect, SiteInspector ); 
-ClearCollect( SitePhotosCollect, SitePhotos )
+```powerapps-comma
+ClearCollect( SiteInspectorCollect; SiteInspector );; 
+ClearCollect( SitePhotosCollect; SitePhotos )
 ```
 
 С помощью этой формулы можно очистить обе коллекции, а затем переместить данные из каждой таблицы в соответствующую коллекцию.
@@ -77,12 +78,12 @@ ClearCollect( SitePhotosCollect, SitePhotos )
 
 **Чтобы добавить строку в коллекцию**, используйте [Collect( DataSource, Item, ... )](../canvas-apps/functions/function-clear-collect-clearcollect.md):
 
-```powerapps-dot
-Collect( SiteInspectorCollect,
+```powerapps-comma
+Collect( SiteInspectorCollect;
     {
-        ID: Value( Max( SiteInspectorCollect, ID ) + 1 ),
-        Title: TitleText.Text,
-        SubTitle: SubTitleText.Text,
+        ID: Value( Max( SiteInspectorCollect; ID ) + 1 );
+        Title: TitleText.Text;
+        SubTitle: SubTitleText.Text;
         Description: DescriptionText.Text
     }
 )
@@ -90,12 +91,12 @@ Collect( SiteInspectorCollect,
 
 **Чтобы обновить строку в коллекции**, используйте [UpdateIf( DataSource, Condition1, ChangeRecord1 [, Condition2, ChangeRecord2, ...] )](../canvas-apps/functions/function-update-updateif.md):
 
-```powerapps-dot
-UpdateIf( SiteInspectorCollect,
-    ID = record.ID,
+```powerapps-comma
+UpdateIf( SiteInspectorCollect;
+    ID = record.ID;
     {
-        Title: TitleEditText.Text,
-        SubTitle: SubTitleEditText.Text,
+        Title: TitleEditText.Text;
+        SubTitle: SubTitleEditText.Text;
         Description: DescriptionEditText.Text
     }
 )
@@ -103,8 +104,8 @@ UpdateIf( SiteInspectorCollect,
 
 **Чтобы удалить строку из коллекции**, используйте [RemoveIf( DataSource, Condition [, ...] )](../canvas-apps/functions/function-remove-removeif.md):
 
-```powerapps-dot
-RemoveIf( SiteInspectorCollect, ID = record.ID )
+```powerapps-comma
+RemoveIf( SiteInspectorCollect; ID = record.ID )
 ```
 
 > [!NOTE]

@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74674580"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="show-text-dates-and-times-in-powerapps"></a>Отображение текста, дат и времени в PowerApps
 В Power Apps Добавьте даты и время в приложение Canvas и отформатируйте их, чтобы показать нужный уровень детализации или отразить языковой стандарт. Вычислите промежуток времени между двумя датами или вычислите дату, которая следует через определенное время до или после указанной даты. Преобразуйте даты в отдельные значения дней, месяцев и лет (и наоборот) и преобразуйте время в отдельные значения часов, минут и секунд (и наоборот).
@@ -46,7 +47,7 @@ ms.locfileid: "74674580"
    
     Если на компьютере настроен языковый стандарт "Французский", то текущие дата и время отображаются в следующем формате:  .<br>*дд/мм/гггг чч:мм AM/PM*
 2. Задайте в качестве значения свойства **[Text](controls/properties-core.md)** для **ShowText** следующую формулу.
-   <br>**DateDiff(Today(), DateValue("01/01/2020"))**
+   <br>**DateDiff(Today(); DateValue("01/01/2020"))**
    
     ![Число дней между текущей датой и 1 января 2020 г.](./media/show-text-dates-times/date-diff-text.png)
    
@@ -60,7 +61,7 @@ ms.locfileid: "74674580"
 4. В **BirthDate** введите месяц и день рождения (например, **05/18**).
 
 5. Задайте в качестве значения свойства **[Text](controls/properties-core.md)** для **ShowText** следующую формулу.
-   <br>**DateDiff(Today(), DateValue(BirthDate.Text))**
+   <br>**DateDiff(Today(); DateValue(BirthDate.Text))**
    
     ![Число дней между текущей датой и днем вашего рождения](./media/show-text-dates-times/birth-diff.png)
    
@@ -88,7 +89,7 @@ ms.locfileid: "74674580"
    
     **ShowDate** показывает введенные вами сведения, но преобразованные из текста в значение и по-другому отформатированные. Например, год показан в виде четырех цифр, а не двух.
 3. Измените значение свойства **[Text](controls/properties-core.md)** для **ShowDate**, введя следующую формулу.
-   <br>**DateTimeValue(ArrivalDateTime.Text, "fr")**
+   <br>**DateTimeValue(ArrivalDateTime.Text; "fr")**
    
     ![Отображение значения даты и времени в формате французского языкового стандарта](./media/show-text-dates-times/date-value-fr.png)
    
@@ -101,7 +102,7 @@ ms.locfileid: "74674580"
    > 
    > 
 4. Чтобы использовать один из нескольких встроенных форматов, задайте для свойства **[Text](controls/properties-core.md)** элемента управления **ShowDate** следующую формулу.
-   <br>**Text(DateTimeValue(ArrivalDateTime.Text), DateTimeFormat.LongDateTime)**
+   <br>**Text(DateTimeValue(ArrivalDateTime.Text); DateTimeFormat.LongDateTime)**
    
     ![Отображение значения даты и времени в формате французского языкового стандарта](./media/show-text-dates-times/long-date-time.png)
    
@@ -112,7 +113,7 @@ ms.locfileid: "74674580"
    > 
    > 
 5. Чтобы использовать настраиваемый формат, измените значение свойства **[Text](controls/properties-core.md)** для **ShowDate**, введя следующую формулу.
-   <br>**Text(DateTimeValue(ArrivalDateTime.Text), "mm/dd/yyyy hh:mm:ss.fff AM/PM")**
+   <br>**Text(DateTimeValue(ArrivalDateTime.Text); "mm/dd/yyyy hh:mm:ss.fff AM/PM")**
    
     ![Отображение значения даты и времени в формате французского языкового стандарта](./media/show-text-dates-times/format-milliseconds.png)
    
@@ -132,15 +133,15 @@ ms.locfileid: "74674580"
    
     **FormatDate** показывает введенную дату, за исключением того, что год отображается в виде четырех цифр.
 3. Задайте в качестве значения свойства **[Text](controls/properties-core.md)** для **FormatDate** следующую формулу.
-   <br>**DateValue(ArrivalDate.Text, "fr")**
+   <br>**DateValue(ArrivalDate.Text; "fr")**
    
     **FormatDate** отображает день перед месяцем, как ожидал бы французский пользователь.
 4. Чтобы использовать один из нескольких встроенных форматов, задайте для свойства **[Text](controls/properties-core.md)** элемента управления **FormatDate** следующую формулу.
-   <br>**Text(DateValue(ArrivalDate.Text), DateTimeFormat.LongDate)**
+   <br>**Text(DateValue(ArrivalDate.Text); DateTimeFormat.LongDate)**
    
     **FormatDate** показывает день недели, месяц, день и год.
 5. Чтобы использовать настраиваемый формат, задайте для значения свойства **[Text](controls/properties-core.md)** для **FormatDate** следующую формулу.
-   <br>**Text(DateValue(ArrivalDate.Text), "yy/mm/dd")**
+   <br>**Text(DateValue(ArrivalDate.Text); "yy/mm/dd")**
    
     **FormatDate** показывает дату в указанном вами формате.
 
@@ -151,11 +152,11 @@ ms.locfileid: "74674580"
 2. Добавьте элемент управления **[Метка](controls/control-text-box.md)** с именем **ShowTime**.
 
 3. Чтобы использовать один из нескольких встроенных форматов, задайте для свойства **[Text](controls/properties-core.md)** элемента управления **ShowTime** следующую формулу.
-   <br>**Text(DateTimeValue(ArrivalTime.Text), DateTimeFormat.LongTime)**
+   <br>**Text(DateTimeValue(ArrivalTime.Text); DateTimeFormat.LongTime)**
    
     **ShowTime** показывает время, которое вы указали, включая секунды.
 4. Чтобы использовать настраиваемый формат, задайте для значения свойства **[Text](controls/properties-core.md)** для **ShowTime** следующую формулу.
-   <br>**Text(DateTimeValue(ArrivalTime.Text), "hh:mm:ss.fff AM/PM")**
+   <br>**Text(DateTimeValue(ArrivalTime.Text); "hh:mm:ss.fff AM/PM")**
    
     **ShowTime** показывает время, которое вы указали, включая секунды и миллисекунды.
    
@@ -171,12 +172,12 @@ ms.locfileid: "74674580"
 2. Введите **4/1/2015** в **Start** и **1/1/2016** — в **End**.
 
 3. Добавьте элемент управления **[Метка](controls/control-text-box.md)** **DateDiff** и задайте для его свойства **[Text](controls/properties-core.md)** следующую формулу:
-   <br>**DateDiff(DateValue(Start.Text), DateValue(End.Text))**
+   <br>**DateDiff(DateValue(Start.Text); DateValue(End.Text))**
    
     ![Сравнение двух дат](./media/show-text-dates-times/date-diff.png)
    
     **DateDiff** показывает **275**. Это число дней между 1 апреля 2015 года и 1 января 2016 года.
-4. Задайте в качестве значения свойства **[Text](controls/properties-core.md)** для **DateDiff** следующую формулу.  <br>**DateDiff(DateValue(Start.Text), DateValue(End.Text), Months)**
+4. Задайте в качестве значения свойства **[Text](controls/properties-core.md)** для **DateDiff** следующую формулу.  <br>**DateDiff(DateValue(Start.Text); DateValue(End.Text); Months)**
    
     **DateDiff** показывает **9**. Это число месяцев между 1 апреля 2015 года и 1 января 2016 года. Замените **Months** на **Quarters** или **Years**, чтобы отобразить значение в кварталах или годах.
 
@@ -185,19 +186,19 @@ ms.locfileid: "74674580"
 1. Добавьте элемент управления **[Текстовое поле](controls/control-text-input.md)** с именем **Start** и введите в нем **5/10/1985**.
 
 2. Добавьте элемент управления **[Метка](controls/control-text-box.md)** **DateAdd** и задайте для его свойства **[Text](controls/properties-core.md)** следующую формулу:
-   <br>**DateAdd(DateValue(Start.Text), 3)**
+   <br>**DateAdd(DateValue(Start.Text); 3)**
    
     ![Добавление трех дней](./media/show-text-dates-times/date-add.png)
    
     **DateAdd** показывает **5/13/1985**. Это дата на три дня позже даты в **Start**.
 3. Задайте в качестве значения свойства **[Text](controls/properties-core.md)** для **DateAdd** следующую формулу.
-   <br>**DateAdd(DateValue(Start.Text), -3)**
+   <br>**DateAdd(DateValue(Start.Text); -3)**
    
     ![Вычитание трех дней](./media/show-text-dates-times/date-subtract.png)
    
     **DateAdd** показывает **5/7/1985**. Это дата на три дня раньше даты в **Start**.
 4. Измените значение свойства **[Text](controls/properties-core.md)** для **DateAdd**, введя следующую формулу.
-   <br>**DateAdd(DateValue(Start.Text), 3, Months)**
+   <br>**DateAdd(DateValue(Start.Text); 3; Months)**
    
     ![Добавление трех месяцев](./media/show-text-dates-times/date-add-months.png)
    
@@ -208,16 +209,16 @@ ms.locfileid: "74674580"
 1. Добавьте три элемента управления **[Раскрывающийся список](controls/control-drop-down.md)** , **Year**, **Month** и **Day**.
 
 2. Задайте для свойства **[Items](controls/properties-core.md)** элемента управления **Year** следующую формулу.
-   <br>**Table({Year:"2014"}, {Year:"2015"}, {Year:"2016"})**
+   <br>**Table({Year:"2014"}; {Year:"2015"}; {Year:"2016"})**
 
 3. Задайте для свойства **[Items](controls/properties-core.md)** элемента управления **Month** следующую формулу.
-   <br>**Table({Month:"1"}, {Month:"2"}, {Month:"3"}, {Month:"4"}, {Month:"5"}, {Month:"6"}, {Month:"7"}, {Month:"8"}, {Month:"9"}, {Month:"10"}, {Month:"11"}, {Month:"12"})**
+   <br>**Table({Month:"1"}; {Month:"2"}; {Month:"3"}; {Month:"4"}; {Month:"5"}; {Month:"6"}; {Month:"7"}; {Month:"8"}; {Month:"9"}; {Month:"10"}; {Month:"11"}; {Month:"12"})**
 
 4. Задайте для свойства **[Items](controls/properties-core.md)** элемента управления **Day** следующую формулу.
-   <br>**Table({Day:"1"}, {Day:"2"}, {Day:"3"}, {Day:"4"}, {Day:"5"}, {Day:"6"}, {Day:"7"}, {Day:"8"}, {Day:"9"}, {Day:"10"}, {Day:"11"}, {Day:"12"}, {Day:"13"}, {Day:"14"}, {Day:"15"}, {Day:"16"}, {Day:"17"}, {Day:"18"}, {Day:"19"}, {Day:"20"}, {Day:"21"}, {Day:"22"}, {Day:"23"}, {Day:"24"}, {Day:"25"}, {Day:"26"}, {Day:"27"}, {Day:"28"}, {Day:"29"}, {Day:"30"}, {Day:"31"})**
+   <br>**Table({Day:"1"}; {Day:"2"}; {Day:"3"}; {Day:"4"}; {Day:"5"}; {Day:"6"}; {Day:"7"}; {Day:"8"}; {Day:"9"}; {Day:"10"}; {Day:"11"}; {Day:"12"}; {Day:"13"}; {Day:"14"}; {Day:"15"}; {Day:"16"}; {Day:"17"}; {Day:"18"}; {Day:"19"}; {Day:"20"}; {Day:"21"}; {Day:"22"}; {Day:"23"}; {Day:"24"}; {Day:"25"}; {Day:"26"}; {Day:"27"}; {Day:"28"}; {Day:"29"}; {Day:"30"}; {Day:"31"})**
 
 5. Добавьте элемент управления **[Метка](controls/control-text-box.md)** и задайте в качестве значения свойства **[Text](controls/properties-core.md)** следующую формулу:
-   <br>**Text(Date(Value(Year.Selected.Value), Value(Month.Selected.Value), Value(Day.Selected.Value)), DateTimeFormat.LongDate)**
+   <br>**Text(Date(Value(Year.Selected.Value); Value(Month.Selected.Value); Value(Day.Selected.Value)); DateTimeFormat.LongDate)**
    
     По умолчанию отображается **Среда, 1 января, 2014**. Выберите другие значения в элементах управления **[Раскрывающийся список](controls/control-drop-down.md)** , чтобы изменить дату в элементе управления **[Метка](controls/control-text-box.md)** .
 
@@ -236,17 +237,17 @@ ms.locfileid: "74674580"
 1. Добавьте два элемента управления **Раскрывающийся список**, **Hour** и **Minute**.
 
 2. Задайте для свойства **[Items](controls/properties-core.md)** элемента управления **Hour** следующую формулу.
-   <br>**Table({Hour:"9"}, {Hour:"10"}, {Hour:"11"}, {Hour:"12"}, {Hour:"13"}, {Hour:"14"}, {Hour:"15"}, {Hour:"16"}, {Hour:"17"})**
+   <br>**Table({Hour:"9"}; {Hour:"10"}; {Hour:"11"}; {Hour:"12"}; {Hour:"13"}; {Hour:"14"}; {Hour:"15"}; {Hour:"16"}; {Hour:"17"})**
 
 3. Задайте для свойства **[Items](controls/properties-core.md)** элемента управления **Minute** следующую формулу.
-   <br>**Table({Minute:"0"}, {Minute:"15"}, {Minute:"30"}, {Minute:"45"})**
+   <br>**Table({Minute:"0"}; {Minute:"15"}; {Minute:"30"}; {Minute:"45"})**
 
 4. Добавьте элемент управления **[Метка](controls/control-text-box.md)** и задайте в качестве значения свойства **[Text](controls/properties-core.md)** следующую формулу:  
-   <br>**Text(Time(Value(Hour.Selected.Value), Value(Minute.Selected.Value), 0), DateTimeFormat.ShortTime)**
+   <br>**Text(Time(Value(Hour.Selected.Value); Value(Minute.Selected.Value); 0); DateTimeFormat.ShortTime)**
 
 5. Выберите **15** в списке **Hour** и **45** — в списке **Minute**.
    
     В элементе управления **[Метка](controls/control-text-box.md)** отображается **15:45**.
    
-    Можно добавить записи в списки **Hour** и **Minute**, чтобы пользователи могли выбирать больший диапазон часов и более точное значение минут. Можно также добавить третий элемент управления **[Раскрывающийся список](controls/control-drop-down.md)** , чтобы пользователи могли указать секунды. Если вы добавили третий список, в свойстве **[Text](controls/properties-core.md)** элемента управления **[Метка](controls/control-text-box.md)** укажите следующее выражение.<br>**Text(Time(Value(Hour.Selected.Value), Value(Minute.Selected.Value), Value(Second.Selected.Value)), DateTimeFormat.LongTime)**
+    Можно добавить записи в списки **Hour** и **Minute**, чтобы пользователи могли выбирать больший диапазон часов и более точное значение минут. Можно также добавить третий элемент управления **[Раскрывающийся список](controls/control-drop-down.md)** , чтобы пользователи могли указать секунды. Если вы добавили третий список, в свойстве **[Text](controls/properties-core.md)** элемента управления **[Метка](controls/control-text-box.md)** укажите следующее выражение.<br>**Text(Time(Value(Hour.Selected.Value); Value(Minute.Selected.Value); Value(Second.Selected.Value)); DateTimeFormat.LongTime)**
 

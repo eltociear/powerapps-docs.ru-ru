@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74674797"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>Создание приложения на основе холста для обработки запросов проекта
 > [!NOTE]
@@ -85,7 +86,7 @@ ms.locfileid: "74674797"
    
     ![Свойство Items](./media/sharepoint-scenario-generate-app/02-03-03-items.png)
 
-6. Вставьте формулу **SortByColumns(Filter('Project Requests', StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))** .
+6. Вставьте формулу **SortByColumns(Filter('Project Requests'; StartsWith(Title; TextSearchBox1.Text)); "Title"; If(SortDescending1; Descending; Ascending))** .
    
     ![Строка формул](./media/sharepoint-scenario-generate-app/02-03-04-formula.png)
    

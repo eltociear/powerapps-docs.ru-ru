@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/02/2019
 ms.locfileid: "74675050"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="overview-of-the-meeting-screen-template-for-canvas-apps"></a>Обзор шаблона экрана собрания для приложений Canvas
 
@@ -58,10 +59,10 @@ ms.locfileid: "74675050"
 * Чтобы создать собрание, необходимо добавить хотя бы одного пользователя в качестве участника, предоставить тему и выбрать время собрания на вкладке **Расписание** .
 * После отправки приглашения на собрание удаляется вся информация для этого собрания.
 * Инструкция **OnSelect** значка Send (правый верхний угол) содержит следующую формулу:
-    ```powerapps-dot
-    Set( _myCalendarName, 
-        LookUp( 'Office365'.CalendarGetTables().value, DisplayName = "Calendar" ).Name 
-    );
+    ```powerapps-comma
+    Set( _myCalendarName; 
+        LookUp( 'Office365'.CalendarGetTables().value; DisplayName = "Calendar" ).Name 
+    );;
     ```
 * "Calendar" — отображаемое имя по умолчанию для большинства календарей пользователя Office, но ваша организация может отличаться. Если это так, можно изменить "Calendar" на соответствующий термин для вашей организации.
 * Если вы попытаетесь запланировать собрание, которое выполняется в прошлом, или добавить более 20 человек к встрече, возникает ошибка.
