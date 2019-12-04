@@ -3,9 +3,9 @@
   items:
     - name: Начало работы
       items:
-        - name: Какова роль администратора PowerApps?
+        - name: Какова роль администратора Power Apps?
           href: overview-role-powerapps-admin.md
-        - name: Технический документ по развертыванию корпоративной версии PowerApps
+        - name: Технический документ по развертыванию корпоративной версии Power Apps
           href: admin-powerapps-enterprise-deployment.md
     - name: Лицензирование
       items:
@@ -23,7 +23,7 @@
           href: admin-manage-apps.md
         - name: Перемещение приложения между клиентами и средами
           href: environment-and-tenant-migration.md
-        - name: Поддержка PowerShell в PowerApps (предварительная версия)
+        - name: Поддержка PowerShell в Power Apps (предварительная версия)
           href: powerapps-powershell.md
         - name: Регистрация действий для PowerApps
           href: 'https://docs.microsoft.com/power-platform/admin/logging-powerapps'
@@ -39,7 +39,7 @@
               href: powerapps-gdpr-dsr-guide-systemlogs.md
             - name: Интеграция данных для Common Data Service
               href: data-integration-gdpr-dsr-guide.md
-            - name: Данные клиента PowerApps
+            - name: Данные клиента Power Apps
               href: powerapps-gdpr-dsr-guide.md
               items:
                 - name: Экспорт данных

@@ -1,6 +1,6 @@
 - name: Начало работы
   items:
-    - name: Что такое PowerApps?
+    - name: Что такое Power Apps?
       href: ../powerapps-overview.md
     - name: Регистрация для получения 30-дневной пробной версии
       href: signup-for-powerapps.md
@@ -118,7 +118,7 @@
   items:
     - name: Обзор
       href: index.md
-    - name: Вход в PowerApps
+    - name: Вход в Power Apps
       href: ./canvas-apps/intro-maker-portal.md
 - name: Приложения на основе холста
   items:
@@ -824,7 +824,7 @@
               href: ./canvas-apps/sharepoint-scenario-summary.md
         - name: Cognitive Services
           href: ./canvas-apps/cognitive-services-api.md
-        - name: Преобразуйте формы InfoPath в приложения PowerApps
+        - name: Преобразование форм InfoPath в Power Apps
           href: ./canvas-apps/transform-infopath.md
     - name: Для разработчиков
       items:
@@ -1096,7 +1096,7 @@
           href: ./model-driven-apps/checklist-transition-unified-interface.md
         - name: 'Часто задаваемые вопросы: Переход на единый интерфейс'
           href: ./model-driven-apps/faqs-transition-unified-interface.md
-    - name: Специальные возможности в конструкторе приложений PowerApps
+    - name: Специальные возможности в конструкторе приложений Power Apps
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: "Настройка приложения Dynamics\_365 для Outlook"
       href: ./model-driven-apps/app-for-outlook-customize.md
@@ -1104,7 +1104,7 @@
       href: ../developer/model-driven-apps/overview.md
 - name: Portals
   items:
-    - name: Сведения о порталах PowerApps
+    - name: Что такое порталы Power Apps?
       href: ./portals/overview.md
     - name: Проектирование и сборка портала
       items:
@@ -1116,7 +1116,7 @@
           href: ./portals/create-dynamics-portal.md
         - name: Подготовка портала с помощью надстройки портала более старой версии
           href: ./portals/provision-portal-add-on.md
-        - name: Структура порталов PowerApps
+        - name: Структура студии порталов Power Apps
           href: ./portals/portal-designer-anatomy.md
         - name: Поддерживаемые веб-браузеры для конструктора портала
           href: ./portals/supported-browser.md
@@ -1162,7 +1162,7 @@
           href: ./portals/admin/manage-auth-key.md
         - name: Настройка ограничения IP-адресов
           href: ./portals/admin/ip-address-restrict.md
-        - name: Обновление домена порталов PowerApps
+        - name: Обновление домена порталов Power Apps
           href: ./portals/admin/update-portal-domain.md
         - name: Очистка кэша на стороне сервера
           href: ./portals/admin/clear-server-side-cache.md
@@ -1288,7 +1288,7 @@
                   href: ./portals/liquid/variable-tags.md
                 - name: Теги шаблонов
                   href: ./portals/liquid/template-tags.md
-                - name: Теги сущности Common Data Service службы PowerApps
+                - name: Теги сущностей Common Data Service
                   href: ./portals/liquid/portals-entity-tags.md
             - name: Доступные фильтры Liquid
               href: ./portals/liquid/liquid-filters.md
@@ -1336,7 +1336,7 @@
           href: ./portals/manage-sharepoint-documents.md
     - name: Известные проблемы
       href: ./portals/known-issues.md
-    - name: 'Порталы PowerApps: вопросы и ответы'
+    - name: Вопросы и ответы. Порталы Power Apps
       href: ./portals/faq.md
 - name: Common Data Service
   items:
@@ -1362,13 +1362,13 @@
           href: ./common-data-service/create-edit-virtual-entities.md
         - name: "Поставщик данных виртуальной сущности OData\_v4"
           href: ./common-data-service/virtual-entity-odata-provider-requirements.md
-        - name: Определение альтернативных ключей с помощью портала PowerApps
+        - name: Определение альтернативных ключей с помощью портала Power Apps
           href: ./common-data-service/define-alternate-keys-portal.md
         - name: Определение альтернативных ключей с помощью обозревателя решений
           href: ./common-data-service/define-alternate-keys-solution-explorer.md
         - name: Практические руководства. Учреждение
           items:
-            - name: Создание сущностей с помощью портала PowerApps
+            - name: Создание сущностей с помощью портала Power Apps
               href: ./common-data-service/create-edit-entities-portal.md
             - name: Создание сущностей с помощью обозревателя решений
               href: ./common-data-service/create-edit-entities-solution-explorer.md
@@ -1407,7 +1407,7 @@
           href: ./common-data-service/create-edit-1n-relationships-portal.md
         - name: Создание отношений сущностей "один ко многим" с помощью обозревателя решений
           href: ./common-data-service/create-edit-1n-relationships-solution-explorer.md
-        - name: Создание отношений сущностей "многие ко многим" с помощью портала PowerApps
+        - name: Создание отношений сущностей "многие ко многим" с помощью портала Power Apps
           href: ./common-data-service/create-edit-nn-relationships-portal.md
         - name: Настройка управляемых свойств для отношений сущностей
           href: ./common-data-service/set-managed-properties-relationships.md
@@ -1419,9 +1419,9 @@
           href: ./common-data-service/configure-connection-roles.md
         - name: Практические руководства. Связи
           items:
-            - name: Создание отношений "многие ко многим" с помощью портала PowerApps
+            - name: Создание отношений "многие ко многим" с помощью портала Power Apps
               href: ./common-data-service/create-edit-nn-relationships-portal.md
-            - name: Создание отношений "многие ко многим" с помощью обозревателя решений PowerApps
+            - name: Создание отношений "многие ко многим" с помощью обозревателя решений Power Apps
               href: ./common-data-service/create-edit-nn-relationships-solution-explorer.md
             - name: Настройка управляемых свойств для отношений
               href: ./common-data-service/set-managed-properties-relationships.md
@@ -1450,11 +1450,11 @@
               href: ./common-data-service/create-edit-fields.md
             - name: Управление полями
               href: ./common-data-service/data-platform-manage-fields.md
-            - name: Создание полей с помощью портала PowerApps
+            - name: Создание полей с помощью портала Power Apps
               href: ./common-data-service/create-edit-field-portal.md
-            - name: Создание полей с помощью обозревателя решений PowerApps
+            - name: Создание полей с помощью обозревателя решений Power Apps
               href: ./common-data-service/create-edit-field-solution-explorer.md
-            - name: Создание набора параметров с помощью портала PowerApps
+            - name: Создание набора параметров с помощью портала Power Apps
               href: ./common-data-service/custom-picklists.md
             - name: Создание глобальных наборов параметров с помощью обозревателя решений
               href: ./common-data-service/create-edit-global-option-sets-solution-explorer.md
@@ -1538,7 +1538,7 @@
       href: ../developer/common-data-service/overview.md
 - name: Построитель искусственного интеллекта
   items:
-    - name: Использование построителя искусственного интеллекта в PowerApps
+    - name: Использование AI Builder в Power Apps
       href: ../use-ai-builder.md
 - name: Узнать от других пользователей
   items:
@@ -1556,7 +1556,7 @@
       href: ./canvas-apps/common-issues-and-resolutions.md
     - name: Получение идентификатора сеанса или приложения
       href: ./canvas-apps/get-sessionid.md
-    - name: "Устранение неполадок с запуском\_PowerApps"
+    - name: Устранение неполадок с запуском Power Apps
       href: troubleshooting-startup-issues.md
     - name: "Устранение неполадок Power\_Query"
       href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md

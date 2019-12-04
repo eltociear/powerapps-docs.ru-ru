@@ -1,7 +1,7 @@
 ---
 layout: HubPage
-title: Документация по Microsoft PowerApps | Документация Майкрософт
-description: Документация по Microsoft PowerApps
+title: Документация по Microsoft Power Apps | Документация Майкрософт
+description: Документация по Microsoft Power Apps
 searchScope:
 - PowerApps
 featureFlags:
@@ -9,17 +9,17 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: 470d8e2a144e708162b886f6127bd6f9a498d093
-ms.sourcegitcommit: 6bec6932071db2411bb4ad1e01c059f57d8c9bca
+ms.openlocfilehash: ff7ac06904426ad990a99098b97814701e24ee22
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566976"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680197"
 ---
 <div id="main"
    class="v2">
    <div class="container">
-      <h1>Документация по PowerApps</h1>
+      <h1>Документация по Power Apps</h1>
       <ul class="pivots">
          <li>
             <a href="#home"></a>
@@ -42,8 +42,8 @@ ms.locfileid: "73566976"
                                              </div>
                                           </div>
                                           <div class="cardText">
-                                             <h3>Что такое PowerApps?</h3>
-                                             <p>Начните работу с документацией с обзора PowerApps.</p>
+                                             <h3>Что такое Power Apps?</h3>
+                                             <p>Начните работу с документацией, просмотрев общие сведения о Power Apps.</p>
                                           </div>
                                        </div>
                                     </div>
@@ -80,8 +80,8 @@ ms.locfileid: "73566976"
                                              </div>
                                           </div>
                                           <div class="cardText">
-                                             <h3>Изучение PowerApps</h3>
-                                             <p>Ознакомьтесь со схемами обучения Microsoft Learn, позволяющими пошагово изучить работу с PowerApps. Это бесплатно!</p>
+                                             <h3>Изучение Power Apps</h3>
+                                             <p>Ознакомьтесь со схемами обучения Microsoft Learn — пошаговым руководством по изучению Power Apps. Это бесплатно!</p>
                                           </div>
                                        </div>
                                     </div>
@@ -100,7 +100,7 @@ ms.locfileid: "73566976"
                                           </div>
                                           <div class="cardText">
                                              <h3>Блог</h3>
-                                             <p>В официальном блоге PowerApps публикуются объявления и информация о новейших функциях PowerApps.</p>
+                                             <p>Просматривайте официальный Блог Power Apps, где публикуются объявления и информация о новейших функциях Power Apps.</p>
                                           </div>
                                        </div>
                                     </div>
@@ -119,7 +119,7 @@ ms.locfileid: "73566976"
                                           </div>
                                           <div class="cardText">
                                              <h3>Сообщество</h3>
-                                             <p>Общайтесь с коллегами по отрасли, обменивайтесь идеями и учитесь новому у экспертов на форуме сообщества PowerApps.</p>
+                                             <p>Общайтесь с коллегами по отрасли, обменивайтесь идеями и учитесь новому у специалистов на форуме сообщества Power Apps.</p>
                                           </div>
                                        </div>
                                     </div>
@@ -138,7 +138,7 @@ ms.locfileid: "73566976"
                                           </div>
                                           <div class="cardText">
                                              <h3>Лицензирование</h3>
-                                             <p>Ознакомьтесь с тонкостями лицензирования PowerApps.</p>
+                                             <p>Ознакомьтесь с разными вариантами лицензирования Power Apps.</p>
                                           </div>
                                        </div>
                                     </div>
@@ -215,7 +215,7 @@ ms.locfileid: "73566976"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>Создатели приложений могут управлять критически важными данными организации, быстро создавая пользовательские бизнес-приложения без написания кода. В PowerApps можно создавать приложения трех типов: <strong>на основе холста</strong>, <strong>на основе модели</strong> и <strong>на основе портала</strong>. <strong>Common Data Service</strong> — это платформа для безопасного хранения данных, используемых в бизнес-приложениях, и управления этими данными. Дополнительные сведения: <a href="/powerapps/maker">Создание приложений</a>.</p>
+                           <p>Создатели приложений могут управлять критически важными данными организации, быстро создавая пользовательские бизнес-приложения без написания кода. В Power Apps можно создавать приложения трех типов: <strong>на основе холста</strong>, <strong>на основе модели</strong> и <strong>на основе портала</strong>. <strong>Common Data Service</strong> — это платформа для безопасного хранения данных, используемых в бизнес-приложениях, и управления этими данными. Дополнительные сведения: <a href="/powerapps/maker">Создание приложений</a>.</p>
                            <hr/>
                            <br/>
                         </div>
@@ -290,11 +290,11 @@ ms.locfileid: "73566976"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Portals</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">Сведения о порталах PowerApps</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">Что такое порталы Power Apps?</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">Создание портала</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/manage-existing-portals">Управление существующими порталами</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/admin/admin-overview">Администрирование портала</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/faq">Порталы PowerApps: вопросы и ответы</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/faq">Вопросы и ответы. Порталы Power Apps</a></p>
                                  </div>
                               </div>
                            </div>
@@ -334,7 +334,7 @@ ms.locfileid: "73566976"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>С помощью центров администрирования PowerApps и платформы Power администраторы могут защищать данные, управлять средами и контролировать использование.</p>
+                           <p>С помощью центра администрирования Power Platform администраторы могут защищать данные, управлять средами и контролировать использование.</p>
                            <hr/>
                            <br/>
                         </div>
@@ -393,7 +393,7 @@ ms.locfileid: "73566976"
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/pricing-billing-skus">Общие сведения о лицензировании</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-entity-licenses">Требования к лицензиям для сущностей</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/powerapps-us-government">PowerApps US Government</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/powerapps-us-government">Power Apps для государственных организаций США</a></p>
                                  </div>
                               </div>
                            </div>
@@ -491,7 +491,7 @@ ms.locfileid: "73566976"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/customize-visualizations-dashboards">Настройка визуализаций и панелей мониторинга</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/client-scripting">Применение бизнес-логики с помощью клиентских скриптов</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/customize-commands-ribbon">Настройка команд и ленты</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/component-framework/overview">Создание пользовательских компонентов (платформа для компонентов PowerApps)</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/component-framework/overview">Создание пользовательских компонентов (платформа для компонентов Power Apps)</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/create-manage-model-driven-apps-using-code">Создание и публикация приложения, а также управление им</a></p>
                                  </div>
                               </div>
@@ -602,10 +602,10 @@ ms.locfileid: "73566976"
                                     <h3 style="font-size: 1.15rem">Упаковка и распространение приложений и расширений</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/introduction-solutions">Использование решений</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/build-tools-overview">Средства сборки PowerApps для Azure DevOps</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/build-tools-overview">Средства сборки Power Apps для Azure DevOps</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/compress-extract-solution-file-solutionpackager">Средство SolutionPackager</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">Средство Package Deployer</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/checker/webapi/overview">Использование средства проверки PowerApps</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/checker/webapi/overview">Использование средства проверки Power Apps</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/isv-app-management">Мониторинг приложений от независимых поставщиков ПО и управление этими приложениями</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/publish-app-appsource">Публикация приложения в AppSource</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">Технический документ. Реализация ALM с помощью платформы решений</a></p>
