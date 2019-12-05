@@ -1106,6 +1106,8 @@
   items:
     - name: Что такое порталы Power Apps?
       href: ./portals/overview.md
+    - name: Обновления выпуска
+      href: ./portals/release-updates.md
     - name: Проектирование и сборка портала
       items:
         - name: Шаблоны порталов
@@ -1260,6 +1262,12 @@
               href: ./portals/configure/add-geolocation.md
         - name: Реализация GDPR на порталах
           href: ./portals/configure/implement-gdpr.md
+        - name: Создание и запуск объявлений
+          href: ./portals/configure/create-run-advertisement.md
+        - name: Сбор отзывов с помощью опросов
+          href: ./portals/configure/gather-feedback-poll.md
+        - name: Создание состояний публикации и управление ими
+          href: ./portals/configure/publishing-states.md
     - name: Расширенные возможности портала
       items:
         - name: Работа с шаблонами Liquid
@@ -1338,6 +1346,8 @@
       href: ./portals/known-issues.md
     - name: Вопросы и ответы. Порталы Power Apps
       href: ./portals/faq.md
+    - name: 'Устаревший Adxstudio Portals, версия 7: вопросы и ответы'
+      href: ./portals/legacy-portal-faq.md
 - name: Common Data Service
   items:
     - name: Что такое Common Data Service?
