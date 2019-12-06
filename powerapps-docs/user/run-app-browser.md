@@ -16,29 +16,29 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 00b7d5dc7960429f7cc13215cd118e26e206d7d4
-ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
+ms.openlocfilehash: 76d2d4cdccc14e5c9c60cd5679bd7b88a2649380
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69896216"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680680"
 ---
 # <a name="run-an-app-in-a-web-browser"></a>Запуск приложения в веб-браузере
 Если вы создаете приложение или вам предоставляют доступ к приложению, его можно запускать на ОС Windows, iOS, Android или в веб-браузере. В этом разделе вы узнаете, как запустить приложение на основе холста или модели в веб-браузере с [домашней страницы Dynamics 365](https://home.dynamics.com).
 
 Для этого краткого руководства вам потребуется:
-- Лицензия на PowerApps. Она доступна с планом PowerApps, например [пробной версией PowerApps, план 2](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps), или любым планом [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) или [Dynamics 365](https://dynamics.microsoft.com/pricing/), который включает PowerApps. 
+- Лицензия на Power Apps. Эта возможность доступна в плане приложений Power Apps, например в [пробной версии Power Apps (план 2](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)) или любом из планов [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) или [Dynamics 365](https://dynamics.microsoft.com/pricing/) , включающих в себя Power Apps. 
 - Доступ к своему приложению или приложению, созданному и предоставленному вам другим пользователем.
 - Доступ к поддерживаемому веб-браузеру и операционной системе.
-   - Для приложений Canvas см.: [Требования к системе, ограничения и значения конфигурации](../maker/canvas-apps/limits-and-config.md)
-   - Для приложений, управляемых моделью, см.: [Поддерживаемые веб-браузеры и мобильные устройства](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)
+   - Для приложений на основе холста см. [Требования к системе, ограничения и значения конфигурации](../maker/canvas-apps/limits-and-config.md)
+   - Для приложений на основе модели см. раздел [Поддерживаемые веб-браузеры и мобильные устройства](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)
 
 
 ## <a name="sign-in-to-dynamics-365"></a>Вход в Dynamics 365
 Войдите в Dynamics 365 на сайте [https://home.dynamics.com](https://home.dynamics.com).
 
 ## <a name="find-an-app-on-the-home-page"></a>Поиск приложения на домашней странице
-На домашней странице может отображаться несколько типов бизнес-приложений, но вы можете найти определенное приложение, введя в поле поиска часть его имени. Кроме того, список можно отфильтровать по источнику приложения, например PowerApps. Для этого выберите **Фильтр** , а затем выберите источник.
+На домашней странице может отображаться несколько типов бизнес-приложений, но вы можете найти определенное приложение, введя в поле поиска часть его имени. Можно также отфильтровать список, чтобы отображались только приложения, созданные с помощью определенного источника, например Power Apps. Для этого выберите **Фильтр** , а затем выберите источник.
 
 Если вы недавно установили приложение, оно может не сразу появиться в списке приложений. Выберите **синхронизировать** , чтобы отобразить все приложения. Этот процесс может занять до одной минуты.
 

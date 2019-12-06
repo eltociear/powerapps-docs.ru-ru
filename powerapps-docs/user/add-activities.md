@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dee8b918efc60fed57cc6d8ca407e6cafe2b8060
-ms.sourcegitcommit: bee698ca0d11524377b67813a65e1a022d08c05e
+ms.openlocfilehash: e6a64a5849b351b625468894696251895375d0c2
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73609905"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74726076"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Добавление встречи, электронной почты, телефонного звонка, заметок или задачи во временной шкале 
 
@@ -34,7 +34,7 @@ ms.locfileid: "73609905"
 - Сообщение электронной почты с прикрепленным изображением будет отображаться в тексте сообщения электронной почты.
 
   > [!div class="mx-imgBorder"]
-  > ![Представление действий в PowerApps на временной шкале](media/TimelineViewOfActivity.png "Представление действий в PowerApps на временной шкале")  
+  > ![Представление действий в Power Apps на временной шкале](media/TimelineViewOfActivity.png "Представление действий в Power Apps на временной шкале")  
  
 ## <a name="add-an-activity-from-the-nav-bar"></a>Добавление действия из панели навигации
  
@@ -43,7 +43,7 @@ ms.locfileid: "73609905"
 1. На панели навигации нажмите ![кнопку "плюс создать запись"](media/create-record-button.png "Кнопка "создать запись""), а затем выберите **действия**. 
 
    > [!div class="mx-imgBorder"]
-   > ![Ярлык для добавления действия в PowerApps](media/QuickCreate.png "Ярлык для добавления действия в PowerApps")  
+   > ![Ярлык для добавления действия в Power Apps](media/QuickCreate.png "Ярлык для добавления действия в Power Apps")  
  
 2. Выберите тип действия, который вы хотите добавить.
 
@@ -60,7 +60,7 @@ ms.locfileid: "73609905"
 
 
    > [!div class="mx-imgBorder"]
-   > ![Добавление действия телефона в PowerApps](media/addphonecall.png "Добавление действия телефона в PowerApps")
+   > ![Добавление телефонного действия в Power Apps](media/addphonecall.png "Добавление телефонного действия в Power Apps")
   
 3. Заполните **Тему** вызова.
 

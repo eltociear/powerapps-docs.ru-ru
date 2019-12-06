@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a0b4e125749d5b0179489677e9a1103cb14a0697
-ms.sourcegitcommit: 481a89e50c282f1e533a8526035dd3c38e3818a2
+ms.openlocfilehash: 2a0474b17f62e30ec41cf04001f774a42ee2e849
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72023313"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725805"
 ---
 # <a name="deactivate-or-activate-an-account-or-contact"></a>Отключение или активация учетной записи или контакта
 
@@ -37,7 +37,7 @@ ms.locfileid: "72023313"
 2.  Выберите активную учетную запись или контакт, которые необходимо отключить, на панели команд выберите **Отключить**, а затем подтвердите деактивацию.
 
     > [!div class="mx-imgBorder"]
-    > ![Отключение учетной записи в powerapps](media/DeactiveAccounts.png "Отключение учетной записи в powerapps")
+    > ![Деактивация учетной записи в Power Apps](media/DeactiveAccounts.png "Деактивация учетной записи в Power Apps")
 
 
 ## <a name="activate-an-account-or-contact"></a>Активация учетной записи или контакта  
@@ -53,7 +53,7 @@ ms.locfileid: "72023313"
 5.  Выберите **активировать**, а затем подтвердите активацию.  
 
     > [!div class="mx-imgBorder"]
-    > ![Активация учетной записи в powerapps](media/ActiveAccounts.png "Активация учетной записи в powerapps")  
+    > ![Активация учетной записи в Power Apps](media/ActiveAccounts.png "Активация учетной записи в Power Apps")  
 
 
 

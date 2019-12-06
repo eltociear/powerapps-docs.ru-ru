@@ -16,28 +16,28 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 62a7166f228545f2a200570186ee23c868650b79
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 97be49797df13b82901425ae9389e85538068f5d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543494"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74726220"
 ---
 # <a name="add-an-app-to-microsoft-teams"></a>Добавление приложения в Microsoft Teams
 
-Microsoft Teams — это платформа для совместной работы на основе чата, использующая технологии Office 365. Вы можете настроить работу в Teams, добавив приложения PowerApps на основе холста в каналы Teams. В этом разделе вы узнаете, как добавить пример приложения Product Showcase в канал Teams, а затем открыть приложение из канала. 
+Microsoft Teams — это платформа для совместной работы на основе чата, использующая технологии Office 365. Вы можете настроить взаимодействие с группами, добавив приложения холста Power Apps в каналы в командах. В этом разделе вы узнаете, как добавить пример приложения Product Showcase в канал Teams, а затем открыть приложение из канала. 
 
 ![Приложение, внедренное в Microsoft Teams](./media/open-app-embedded-in-teams/embedded-app.png)
 
-Если вы не зарегистрированы в PowerApps, перед началом работы [пройдите бесплатную регистрацию](https://make.powerapps.com/signup?redirect=marketing&email=).
+Если вы еще не зарегистрированы в Power Apps, [Зарегистрируйтесь бесплатно](https://make.powerapps.com/signup?redirect=marketing&email=) , прежде чем начать.
 
 ## <a name="prerequisites"></a>Технические условия
 
 Для выполнения этой процедуры требуется [подписка на Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) и [канал в Teams](https://www.youtube.com/watch?v=he2f1quaR7M).
 
-## <a name="sign-in-to-powerapps"></a>Вход в PowerApps
+## <a name="sign-in-to-power-apps"></a>Вход в Power Apps
 
-Войдите в PowerApps по адресу [https://make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+Войдите в Power Apps на [https://make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## <a name="add-an-app"></a>Добавление приложения
 
@@ -92,7 +92,7 @@ Microsoft Teams — это платформа для совместной ра�
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-В этом разделе вы добавили пример приложения Product Showcase в канал Teams, а затем открыли приложение из канала. Чтобы узнать больше о PowerApps, перейдите к следующим учебникам.
+В этом разделе вы добавили пример приложения Product Showcase в канал Teams, а затем открыли приложение из канала. Чтобы узнать больше о Power Apps, перейдите к учебникам по Power Apps.
 
 > [!div class="nextstepaction"]
-> [Учебники по PowerApps](../maker/canvas-apps/get-started-create-from-blank.md)
+> [Учебники по Power Apps](../maker/canvas-apps/get-started-create-from-blank.md)
