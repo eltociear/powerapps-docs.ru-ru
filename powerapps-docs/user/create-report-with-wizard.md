@@ -1,6 +1,6 @@
 ---
 title: Создание отчета с помощью мастера отчетов | Документация Майкрософт
-description: Создание отчета с помощью мастера отчетов в PowerApps
+description: Создание отчета с помощью мастера отчетов в Power Apps
 author: mduelae
 manager: kvivek
 ms.service: powerapps
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0f953c44d81742baca39058cd68180ca63833eb6
-ms.sourcegitcommit: e9671e018c1ee4b640528915350a367758991b6a
+ms.openlocfilehash: 8c7bde8d3aa5406a7ddcc5ecb2df4c2c7db7051e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67420290"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733252"
 ---
 # <a name="create-a-report-using-the-report-wizard"></a>Создание отчета с помощью мастера отчетов
 
@@ -30,13 +30,13 @@ ms.locfileid: "67420290"
 
 Все отчеты, созданные с помощью мастера отчетов, — это отчеты на основе выборки. Обратите внимание, что все отчеты, созданные с помощью мастера отчетов, печатаются в альбомном режиме.
 
-## <a name="create-a-new-report"></a>Создание нового отчета
+## <a name="create-a-new-report"></a>Создать новый отчет
 
 1. В области навигации слева выберите область отчеты.  
 2. На панели команд выберите **создать**.
 
     > [!div class="mx-imgBorder"]
-    > ![Создание нового отчета](media/newreport.png "Создание нового отчета")
+    > ![Создание нового отчета](media/newreport.png "Создать новый отчет")
   
 3. Появится экран **отчета: новый отчет** . Для элемента **тип отчета** оставьте значение по умолчанию, **отчет мастера** отчетов и нажмите кнопку **Мастер отчетов** . 
 

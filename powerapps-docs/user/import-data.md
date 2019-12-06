@@ -16,12 +16,12 @@ search.app:
 - PowerApps
 - D365CE
 - D365CE
-ms.openlocfilehash: 37e9602d48bbfbb802afefa0f6d47fad241dc6f5
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 8f1105fc88fe87aabceaa10160b96e2d7299cbe0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "63321646"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733209"
 ---
 # <a name="import-data"></a>Импорт данных
 
@@ -58,7 +58,7 @@ ms.locfileid: "63321646"
     |Фамилия|  
     |Business Phone|  
     |Mobile Phone|  
-    |Название задания|  
+    |Должность|  
     |Business Street|  
     |Business City|  
     |Business State|  
@@ -81,7 +81,7 @@ ms.locfileid: "63321646"
 1. На панели команд выберите **Импорт из Excel** или **Импорт из CSV**.
 
    > [!div class="mx-imgBorder"]
-   > ![Главное меню в PowerApps](media/import.png "Main menu in PowerApps")
+   > ![Главное меню в Power Apps](media/import.png "Главное меню в Power Apps")
   
 2. Перейдите к папке с сохраненным файлом, содержащим экспортированные контакты. Выберите файл, щелкните **Открыть** и **Далее**.  
   
@@ -90,7 +90,7 @@ ms.locfileid: "63321646"
    
 3. Просмотрите имя файла и проверьте разделители полей и данных, используя параметр **Проверить сопоставление**. Если все правильно, выберите **Завершить импорт**.  
  
-## <a name="step-3-check-that-the-import-is-successful"></a>Шаг 3. Проверка успешного выполнения импорта
+## <a name="step-3-check-that-the-import-is-successful"></a>Шаг 3. Проверка успешности импорта
 
 По окончании работы мастера проверьте данные (например, список контактов), чтобы убедиться в успешном выполнении импорта.  
   
