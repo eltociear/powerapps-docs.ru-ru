@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74709383"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="gallery-control-in-canvas-apps"></a>Элемент управления "Галерея" в приложениях Canvas
 
@@ -92,7 +93,7 @@ ms.locfileid: "74709383"
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Filter**(*источник*, *формула*)](../functions/function-filter-lookup.md)
+[**Filter**(*источник*; *формула*)](../functions/function-filter-lookup.md)
 
 [ **Reset**( *элемент управления* )](../functions/function-reset.md) — сброс коллекции в исходное состояние. Начальное состояние включает прокрутку к первому элементу и выбор первого элемента или значения по умолчанию при его наличии. 
 

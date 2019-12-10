@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74730059"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="count-counta-countif-and-countrows-functions-in-power-apps"></a>Функции Count, Count, СЧЁТЕСЛИ и CountRows в Power Apps
 Подсчитывает все [записи](../working-with-tables.md#records) в [таблице](../working-with-tables.md) или подсчитывает количество записей, удовлетворяющих условию.
@@ -42,7 +43,7 @@ ms.locfileid: "74730059"
 
 * *SingleColumnTable* — обязательный аргумент.  Столбец записей для подсчета.  
 
-**CountIf**( *таблица*, *логическая_формула* )
+**CountIf**( *таблица*; *логическая_формула* )
 
 * *Table* — обязательный аргумент.  Таблица с записями для подсчета.
 * *Логическая_формула* — обязательный аргумент.  Формула для вычисления для каждой записи таблицы.  Учитываются записи, возвращающие по этой формуле значение **true**.  Формула может ссылаться на столбцы таблицы.
@@ -55,7 +56,7 @@ ms.locfileid: "74730059"
 1. Импортируйте или создайте [коллекцию](../working-with-data-sources.md#collections) с именем **Inventory**, как описано в первом шаге описания [показа текста и изображений в коллекции](../show-images-text-gallery-sort-filter.md).
 2. Добавьте метку и установите в ее свойстве **[Text](../controls/properties-core.md)** формулу:
    
-    **CountIf(Inventory, UnitsInStock < 30)**
+    **CountIf(Inventory; UnitsInStock < 30)**
    
     Метка показывает **2**, так как по двум продуктам (Ganymede и Callisto) на складе меньше 30 единиц.
 3. Добавьте другую метку и установите в ее свойстве **[Text](../controls/properties-core.md)** формулу:

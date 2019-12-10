@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74731187"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-power-apps"></a>Функции DateValue, TimeValue и Датетимевалуе в Power Apps
 Преобразует дату, время или оба этих параметра в строке в значение даты и времени.
@@ -48,7 +49,7 @@ ms.locfileid: "74731187"
 Чтобы преобразовать числа, см. статью о функции **[Value](function-value.md)** .
 
 ## <a name="syntax"></a>Синтаксис
-**DateValue**( *Строка* [, *Язык* ])<br>**DateTimeValue**( *Строка* [, *Язык* ])<br>**TimeValue**( *Строка* [, *Язык* ])
+**DateValue**( *Строка* [; *Язык* ])<br>**DateTimeValue**( *Строка* [; *Язык* ])<br>**TimeValue**( *Строка* [; *Язык* ])
 
 * *Строка* — обязательный аргумент.  Текстовая строка, которая содержит дату, время или комбинированное значение даты и времени.
 * *Язык* — необязательный аргумент.  Строка языка, такая как возвращается первыми двумя знаками из функции **[Language](function-language.md)** .  Если этот аргумент не указан, то используется язык клиента текущего пользователя.  
@@ -57,35 +58,35 @@ ms.locfileid: "74731187"
 ### <a name="datevalue"></a>DateValue
 Если вы ввели **10/11/2014** в элемент управления для ввода текста с именем **Startdate**, а затем задали свойству **[Text](../controls/properties-core.md)** метки такое значение функции:
 
-* **Text(DateValue(Startdate.Text), DateTimeFormat.LongDate)**
+* **Text(DateValue(Startdate.Text); DateTimeFormat.LongDate)**
   
     Метка отобразит **Saturday, October 11, 2014**, если на компьютере выбран языковой стандарт **en**.
   
     > [!NOTE]
   > С параметром **DateTimeFormat** можно использовать несколько вариантов, отличных от **LongDateTime**. Чтобы отобразить список этих вариантов, в поле функции введите параметр, а сразу за ним поставьте восклицательный знак.
-* **Text(DateValue(Startdate.Text, "fr"), DateTimeFormat.LongDate)**
+* **Text(DateValue(Startdate.Text; "fr"); DateTimeFormat.LongDate)**
   
     Метка отобразит **Monday, November 10, 2014**.
 
 Если вы сделали то же самое для даты **October 20, 2014**:
 
-* **DateDiff(DateValue(Startdate.Text), Today())**
+* **DateDiff(DateValue(Startdate.Text); Today())**
   
     Если на компьютере выбран языковой стандарт **en**, то метка отобразит **9**, что означает количество дней между 11 октября и 20 октября. Функция **[DateDiff](function-dateadd-datediff.md)** также может показывать разницу в месяцах, кварталах или годах.
 
 ### <a name="datetimevalue"></a>DateTimeValue
 Если вы ввели **10/11/2014 1:50:24.765 PM** в элемент управления для ввода текста с именем **Start**, а затем задали свойству **[Text](../controls/properties-core.md)** метки такое значение функции:
 
-* **Text(DateTimeValue(Start.Text), DateTimeFormat.LongDateTime)**
+* **Text(DateTimeValue(Start.Text); DateTimeFormat.LongDateTime)**
   
     Метка отобразит **Saturday, October 11, 2014 1:50:24 PM**, если на компьютере выбран языковой стандарт "en".
   
     > [!NOTE]
   > С параметром **DateTimeFormat** можно использовать несколько вариантов, отличных от **LongDateTime**. Чтобы отобразить список этих вариантов, в поле функции введите параметр, а сразу за ним поставьте восклицательный знак.
-* **Text(DateTimeValue(Start.Text, "fr"), DateTimeFormat.LongDateTime)**
+* **Text(DateTimeValue(Start.Text; "fr"); DateTimeFormat.LongDateTime)**
   
     Метка отобразит **Monday, November 10, 2014 1:50:24 PM**.
-* **Text(DateTimeValue(Start.Text), "dddd, mmmm dd, yyyy hh:mm:ss.fff AM/PM")**
+* **Text(DateTimeValue(Start.Text); "dddd, mmmm dd, yyyy hh:mm:ss.fff AM/PM")**
   
     Метка отобразит **Saturday, October 11, 2014 01:50:24:765 PM**, если на компьютере выбран языковой стандарт **en**.
   
@@ -94,7 +95,7 @@ ms.locfileid: "74731187"
 ### <a name="timevalue"></a>TimeValue
 Назовите элемент управления для ввода текста **FinishedAt** и задайте свойству **[Text](../controls/properties-core.md)** метки такое значение функции:
 
-**If(TimeValue(FinishedAt.Text)<TimeValue("5:00:00.000 PM"), "You made it!", "Too late!")**
+**If(TimeValue(FinishedAt.Text)<TimeValue("5:00:00.000 PM"); "You made it!"; "Too late!")**
 
 * Если ввести **4:59:59.999 PM** в элемент управления **FinishedAt**, то метка отобразит "You made it!".
 * Если ввести **5:00:00.000 PM** в элемент управления **FinishedAt**, то метка отобразит "Too late!".

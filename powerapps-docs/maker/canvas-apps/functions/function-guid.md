@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74730868"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="guid-function-in-power-apps"></a>Функция GUID в Power Apps
 Преобразует строку GUID([Глобальный уникальный идентификатор](https://en.wikipedia.org/wiki/Universally_unique_identifier)) в значение GUID или создает новое значение GUID.
@@ -69,7 +70,7 @@ ms.locfileid: "74730868"
 
 Используется в контексте, чтобы задать полю **Состояние** новой записи базы данных надежное значение:
 
-* **Patch( Products, Default( Products ), { Status: GUID( "F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4" ) } )**
+* **Patch( Products; Default( Products ); { Status: GUID( "F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4" ) } )**
 
 Вероятно, вы не хотите показывать идентификаторы GUID своим пользователям, но они могут помочь отладить приложение. Чтобы показать значение поля **Состояние** в записи, созданной в предыдущем примере, установите для этой формулы свойство **Text** элемента управления **Label**:
 
@@ -81,7 +82,7 @@ ms.locfileid: "74730868"
 
 1. Назначьте свойству **[OnSelect](../controls/properties-core.md)** элемента управления **[Кнопка](../controls/control-button.md)** следующую формулу:
 
-    **ClearCollect (NewGUIDs, ForAll ([1, 2, 3, 4, 5], GUID()))**
+    **ClearCollect (NewGUIDs; ForAll ([1; 2; 3; 4; 5]; GUID()))**
 
     Эта формула создает таблицу с одним столбцом, которая используется для пятикратной итерации, в результате чего возвращаются пять идентификаторов GUID.
 
@@ -99,4 +100,4 @@ ms.locfileid: "74730868"
 
 Чтобы создать единственный идентификатор GUID вместо таблицы, используйте следующую формулу:
 
-**Set(NewGUID, GUID())**
+**Set(NewGUID; GUID())**

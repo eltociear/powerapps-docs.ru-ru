@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74730399"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="remove-and-removeif-functions-in-power-apps"></a>Удаление и Ремовеиф функций в Power Apps
 Удаляют [записи](../working-with-tables.md#records) из [источника данных](../working-with-data-sources.md).
@@ -40,19 +41,19 @@ ms.locfileid: "74730399"
 [!INCLUDE [delegation-no](../../../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>Синтаксис
-**Remove**(*источник_данных*, *запись_1*[, *запись_2*, ... ] [, **All**])
+**Remove**(*источник_данных*; *запись_1*[; *запись_2*; ... ] [; **All**])
 
 * *Источник_данных* — обязательный аргумент. Это источник данных, содержащий запись или записи, которые требуется удалить.
 * *запись(_n)*  — обязательный аргумент. Запись или записи, которые требуется удалить.
 * **All** — необязательный аргумент. В коллекции допускается существование нескольких копий одной записи.  С помощью аргумента **All** можно удалить их все.
 
-**Remove**(*источник_данных*, *таблица*[, **All**])
+**Remove**(*источник_данных*; *таблица*[; **All**])
 
 * *Источник_данных* — обязательный аргумент. Это источник данных, содержащий записи, которые требуется удалить.
 * *таблица* — обязательный аргумент. Таблица с записями, которые требуется удалить.
 * **All** — необязательный аргумент. В коллекции допускается существование нескольких копий одной записи.  С помощью аргумента **All** можно удалить их все.
 
-**RemoveIf**(*источник_данных*, *условие*[, ... ])
+**RemoveIf**(*источник_данных*; *условие*[; ... ])
 
 * *Источник_данных* — обязательный аргумент. Это источник данных, содержащий запись или записи, которые требуется удалить.
 * *Condition(s)*  — обязательный аргумент. Формула, возвращающая значение **true** (истина) для записи или записей, которые требуется удалить.  В формуле можно использовать названия столбцов из *источника_данных*.  Если указано несколько *условий*, для удаления соответствующей записи все они должны возвращать значение **true**.
@@ -64,14 +65,14 @@ ms.locfileid: "74730399"
 
 | Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
-| **Remove(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;))** |Удаляет из источника данных запись **Chocolate**. |<style> img { max-width: none } </style> ![](media/function-remove-removeif/icecream-no-chocolate.png)<br><br>Источник данных **IceCream** изменен. |
-| **Remove(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;) First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Strawberry"&nbsp;)&nbsp;))** |Удаляет из источника данных две записи. |![](media/function-remove-removeif/icecream-only-vanilla.png)<br><br>Источник данных **IceCream** изменен. |
-| **RemoveIf(&nbsp;IceCream, Quantity&nbsp;>&nbsp;150)** |Удаляет записи со значением **Quantity** больше **150**. |![](media/function-remove-removeif/icecream-only-chocolate.png)<br><br>Источник данных **IceCream** изменен. |
-| **RemoveIf(&nbsp;IceCream, Quantity&nbsp;>&nbsp;150, Left(&nbsp;Flavor,&nbsp;1&nbsp;) = "S")** |Удаляет записи со значением **Quantity** больше 150 и значением **Flavor**, начинающимся с буквы **S**. |![](media/function-remove-removeif/icecream-no-strawberry.png)<br><br><br>Источник данных **IceCream** изменен. |
-| **RemoveIf(&nbsp;IceCream, true)** |Удаляет из источника данных все записи. |![](media/function-remove-removeif/icecream-empty.png)<br><br>Источник данных **IceCream** изменен. |
+| **Remove(&nbsp;IceCream;<br>First(&nbsp;Filter(&nbsp;IceCream;&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;))** |Удаляет из источника данных запись **Chocolate**. |<style> img { max-width: none } </style> ![](media/function-remove-removeif/icecream-no-chocolate.png)<br><br>Источник данных **IceCream** изменен. |
+| **Remove(&nbsp;IceCream;<br>First(&nbsp;Filter(&nbsp;IceCream;&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;) First(&nbsp;Filter(&nbsp;IceCream;&nbsp;Flavor="Strawberry"&nbsp;)&nbsp;))** |Удаляет из источника данных две записи. |![](media/function-remove-removeif/icecream-only-vanilla.png)<br><br>Источник данных **IceCream** изменен. |
+| **RemoveIf(&nbsp;IceCream; Quantity&nbsp;>&nbsp;150)** |Удаляет записи со значением **Quantity** больше **150**. |![](media/function-remove-removeif/icecream-only-chocolate.png)<br><br>Источник данных **IceCream** изменен. |
+| **RemoveIf(&nbsp;IceCream; Quantity&nbsp;>&nbsp;150; Left(&nbsp;Flavor;&nbsp;1&nbsp;) = "S")** |Удаляет записи со значением **Quantity** больше 150 и значением **Flavor**, начинающимся с буквы **S**. |![](media/function-remove-removeif/icecream-no-strawberry.png)<br><br><br>Источник данных **IceCream** изменен. |
+| **RemoveIf(&nbsp;IceCream; true)** |Удаляет из источника данных все записи. |![](media/function-remove-removeif/icecream-empty.png)<br><br>Источник данных **IceCream** изменен. |
 
 ### <a name="step-by-step"></a>Шаг за шагом
 1. Импортируйте или создайте коллекцию с именем **Inventory** и отобразите ее в коллекции, как описано в [этой статье](../show-images-text-gallery-sort-filter.md).
-2. В коллекции задайте для свойства **[OnSelect](../controls/properties-core.md)** изображения следующее выражение:<br>**Remove(Inventory, ThisItem)**
+2. В коллекции задайте для свойства **[OnSelect](../controls/properties-core.md)** изображения следующее выражение:<br>**Remove(Inventory; ThisItem)**
 3. Нажмите клавишу F5 и выберите изображение в коллекции.<br>Элемент будет удален из галереи и из коллекции.
 

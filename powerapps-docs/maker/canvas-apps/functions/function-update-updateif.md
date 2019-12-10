@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74730015"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="update-and-updateif-functions-in-power-apps"></a>Функции Update и Упдатеиф в Power Apps
 Обновление [записей](../working-with-tables.md#records) в [источнике данных](../working-with-data-sources.md).
@@ -44,14 +45,14 @@ ms.locfileid: "74730015"
 [!INCLUDE [delegation-no](../../../includes/delegation-no.md)]
 
 ## <a name="syntax"></a>Синтаксис
-**Update**( *DataSource*, *OldRecord*, *NewRecord* [, **All** ] )
+**Update**( *DataSource*; *OldRecord*; *NewRecord* [; **All** ] )
 
 * *Источник_данных* — обязательный аргумент. Это источник данных, содержащий записи, которые требуется заменить.
 * *OldRecord* — обязательный аргумент. Это запись для замены.
 * *NewRecord* — обязательный аргумент. Запись, которой нужно заменить исходную запись. Она не является записью изменения. Выполняется замена всей записи, а для отсутствующих свойств будет указано значение *blank*.
 * **All** — необязательный аргумент. В коллекции допускается существование нескольких копий одной записи. Укажите аргумент **All**, чтобы удалить все копии записи.
 
-**UpdateIf**( *DataSource*, *Condition1*, *ChangeRecord1* [, *Condition2*, *ChangeRecord2*, ... ] )
+**UpdateIf**( *DataSource*; *Condition1*; *ChangeRecord1* [; *Condition2*; *ChangeRecord2*; ... ] )
 
 * *Источник_данных* — обязательный аргумент. Это источник данных, содержащий запись или записи, которые требуется изменить.
 * *Condition(s)*  — обязательный аргумент. Формула, возвращающая значение **true** для одной или нескольких записей, которые необходимо изменить.  В формуле можно использовать названия столбцов из аргумента *DataSource*.  
@@ -64,16 +65,16 @@ ms.locfileid: "74730015"
 
 | Формула | Description | Возвращаемый результат |
 | --- | --- | --- |
-| **Update(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;), {&nbsp;ID:&nbsp;1,&nbsp;Flavor:&nbsp;"Mint&nbsp;Chocolate",&nbsp;Quantity:150&nbsp;} )** |Выполняется замена записи из источника данных. |<style> img { max-width: none } </style> ![](media/function-update-updateif/icecream-mint.png)<br><br>Источник данных **IceCream** изменен. |
-| **UpdateIf(&nbsp;IceCream, Quantity > 175, {&nbsp;Quantity:&nbsp;Quantity&nbsp;+&nbsp;10&nbsp;} )** |Выполняется изменение записей, в которых значение **Quantity** больше **150**.  Значение в поле **Quantity** увеличивается на 10, а остальные поля остаются без изменений. |![](media/function-update-updateif/icecream-mint-plus10.png)<br><br>Источник данных **IceCream** изменен. |
-| **Update(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream, Flavor="Strawberry"&nbsp;)&nbsp;),<br>{&nbsp;ID:&nbsp;3, Flavor:&nbsp;"Strawberry Swirl"} )** |Выполняется замена записи из источника данных. Свойство **Quantity** не указано в записи замены, так что для него будет возвращено значение *blank*. |![](media/function-update-updateif/icecream-mint-swirl.png)<br><br>Источник данных **IceCream** изменен. |
-| **UpdateIf(&nbsp;IceCream, true, {&nbsp;Quantity:&nbsp;0&nbsp;} )** |Эта формула устанавливает значение 0 для свойства **Quantity** во всех записях в источнике данных. |![ ](./media/function-update-updateif/icecream-mint-zero.png)<br> <br>Источник данных **IceCream** изменен. |
+| **Update(&nbsp;IceCream;<br>First(&nbsp;Filter(&nbsp;IceCream;&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;); {&nbsp;ID:&nbsp;1;&nbsp;Flavor:&nbsp;"Mint&nbsp;Chocolate";&nbsp;Quantity:150&nbsp;} )** |Выполняется замена записи из источника данных. |<style> img { max-width: none } </style> ![](media/function-update-updateif/icecream-mint.png)<br><br>Источник данных **IceCream** изменен. |
+| **UpdateIf(&nbsp;IceCream; Quantity > 175; {&nbsp;Quantity:&nbsp;Quantity&nbsp;+&nbsp;10&nbsp;} )** |Выполняется изменение записей, в которых значение **Quantity** больше **150**.  Значение в поле **Quantity** увеличивается на 10, а остальные поля остаются без изменений. |![](media/function-update-updateif/icecream-mint-plus10.png)<br><br>Источник данных **IceCream** изменен. |
+| **Update(&nbsp;IceCream;<br>First(&nbsp;Filter(&nbsp;IceCream; Flavor="Strawberry"&nbsp;)&nbsp;);<br>{&nbsp;ID:&nbsp;3; Flavor:&nbsp;"Strawberry Swirl"} )** |Выполняется замена записи из источника данных. Свойство **Quantity** не указано в записи замены, так что для него будет возвращено значение *blank*. |![](media/function-update-updateif/icecream-mint-swirl.png)<br><br>Источник данных **IceCream** изменен. |
+| **UpdateIf(&nbsp;IceCream; true; {&nbsp;Quantity:&nbsp;0&nbsp;} )** |Эта формула устанавливает значение 0 для свойства **Quantity** во всех записях в источнике данных. |![ ](./media/function-update-updateif/icecream-mint-zero.png)<br> <br>Источник данных **IceCream** изменен. |
 
 ### <a name="step-by-step"></a>Шаг за шагом
 1. Импортируйте или создайте коллекцию с именем **Inventory** и отобразите ее в коллекции, как описано в [этой статье](../show-images-text-gallery-sort-filter.md).
 2. Присвойте коллекции имя **ProductGallery**.
 3. Добавьте ползунок с именем **UnitsSold** и для его свойства **Max** задайте значение в виде следующего выражения:<br>**ProductGallery.Selected.UnitsInStock**
-4. Добавьте кнопку и задайте следующую формулу в качестве значения свойства **[OnSelect](../controls/properties-core.md)** :<br>**UpdateIf(Inventory, ProductName = ProductGallery.Selected.ProductName, {UnitsInStock:UnitsInStock-UnitsSold.Value})**
+4. Добавьте кнопку и задайте следующую формулу в качестве значения свойства **[OnSelect](../controls/properties-core.md)** :<br>**UpdateIf(Inventory; ProductName = ProductGallery.Selected.ProductName; {UnitsInStock:UnitsInStock-UnitsSold.Value})**
 5. Нажмите клавишу F5, выберите продукт в коллекции, укажите значение с помощью ползунка и затем нажмите кнопку.
    
     Указанное вами число единиц продукта в наличии уменьшится соответствующим образом.

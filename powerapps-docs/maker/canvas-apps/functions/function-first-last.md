@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74730965"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="first-firstn-last-and-lastn-functions-in-power-apps"></a>Функции First, FirstN, Last и Ластн в Power Apps
 Возвращает первый или последний набор [записей](../working-with-tables.md#records) таблицы.
@@ -41,7 +42,7 @@ ms.locfileid: "74730965"
 
 * *Table* — обязательный аргумент. Таблица, с которой выполняются операции.
 
-**FirstN**( *Таблица* [, *Число_записей* ] )<br>**LastN**( *Таблица* [, *Число_записей* ] )
+**FirstN**( *Таблица* [; *Число_записей* ] )<br>**LastN**( *Таблица* [; *Число_записей* ] )
 
 * *Table* — обязательный аргумент. Таблица, с которой выполняются операции.
 * *Число_записей* — необязательный аргумент.  Количество возвращаемых записей. Если не указать этот аргумент, то функция возвратит одну запись.
@@ -51,5 +52,5 @@ ms.locfileid: "74730965"
 **First(Employees)**
 
 Эта формула возвращает последние 15 записей из таблицы с именем **Employees**:<br>
-**LastN(Employees, 15)**
+**LastN(Employees; 15)**
 

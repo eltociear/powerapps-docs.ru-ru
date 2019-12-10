@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74732629"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="overview-of-the-calendar-screen-template-for-canvas-apps"></a>Общие сведения о шаблоне "Календарь-экран" для приложений Canvas
 
@@ -79,35 +80,35 @@ ms.locfileid: "74732629"
 
 1. Задайте для свойства **[OnStart](../controls/control-screen.md)** экрана по умолчанию в приложении следующую формулу:
 
-    ```powerapps-dot
-    Set( _userDomain, Right( User().Email, Len( User().Email ) - Find( "@", User().Email ) ) );
-    Set( _dateSelected, Today() );
-    Set( _firstDayOfMonth, DateAdd( Today(), 1 - Day( Today() ), Days ) );
-    Set( _firstDayInView, 
-        DateAdd( _firstDayOfMonth, -( Weekday( _firstDayOfMonth) - 2 + 1 ), Days )
-    );
-    Set( _lastDayOfMonth, DateAdd( DateAdd( _firstDayOfMonth, 1, Months ), -1, Days ) );
-    Set( _calendarVisible, false );
-    Set( _myCalendar, 
-        LookUp( Office365.CalendarGetTables().value, DisplayName = "{YourCalendarNameHere}" )
-    );
-    Set( _minDate, 
-        DateAdd( _firstDayOfMonth, -( Weekday(_firstDayOfMonth) - 2 + 1 ), Days )
-    );
-    Set( _maxDate, 
+    ```powerapps-comma
+    Set( _userDomain; Right( User().Email; Len( User().Email ) - Find( "@"; User().Email ) ) );;
+    Set( _dateSelected; Today() );;
+    Set( _firstDayOfMonth; DateAdd( Today(); 1 - Day( Today() ); Days ) );;
+    Set( _firstDayInView; 
+        DateAdd( _firstDayOfMonth; -( Weekday( _firstDayOfMonth) - 2 + 1 ); Days )
+    );;
+    Set( _lastDayOfMonth; DateAdd( DateAdd( _firstDayOfMonth; 1; Months ); -1; Days ) );;
+    Set( _calendarVisible; false );;
+    Set( _myCalendar; 
+        LookUp( Office365.CalendarGetTables().value; DisplayName = "{YourCalendarNameHere}" )
+    );;
+    Set( _minDate; 
+        DateAdd( _firstDayOfMonth; -( Weekday(_firstDayOfMonth) - 2 + 1 ); Days )
+    );;
+    Set( _maxDate; 
         DateAdd(
-            DateAdd( _firstDayOfMonth, -( Weekday(_firstDayOfMonth) - 2 + 1 ), Days ),
-            40, 
+            DateAdd( _firstDayOfMonth; -( Weekday(_firstDayOfMonth) - 2 + 1 ); Days );
+            40; 
             Days 
         )
-    );
-    ClearCollect( MyCalendarEvents, 
-        Office365.GetEventsCalendarViewV2( _myCalendar.Name, 
-            Text( _minDate, UTC ), 
-            Text( _maxDate, UTC ) 
+    );;
+    ClearCollect( MyCalendarEvents; 
+        Office365.GetEventsCalendarViewV2( _myCalendar.Name; 
+            Text( _minDate; UTC ); 
+            Text( _maxDate; UTC ) 
         ).value
-    );
-    Set( _calendarVisible, true )
+    );;
+    Set( _calendarVisible; true )
     ```
 
     > [!NOTE]
@@ -164,14 +165,14 @@ ms.locfileid: "74732629"
 
 1. Задайте для свойства **Items** элемента **календаревентсгаллери** следующую формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     SortByColumns(
         Filter(
-            MyCalendarEvents,
-            Text( Start, DateTimeFormat.ShortDate ) = 
-                Text( _dateSelected, DateTimeFormat.ShortDate ),
+            MyCalendarEvents;
+            Text( Start; DateTimeFormat.ShortDate ) = 
+                Text( _dateSelected; DateTimeFormat.ShortDate );
             ShowAs <> "Free"
-        ),
+        );
         "Start"
     )
     ```
@@ -180,11 +181,11 @@ ms.locfileid: "74732629"
 
 1. В календаре задайте для свойства **Visible** элемента управления **Circle** следующую формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     CountRows(
         Filter(
-            MyCalendarEvents,
-            DateValue( Text(Start) ) = DateAdd( _firstDayInView, ThisItem.Value, Days ),
+            MyCalendarEvents;
+            DateValue( Text(Start) ) = DateAdd( _firstDayInView; ThisItem.Value; Days );
             ShowAs <> "Free"
         )
     ) > 0 && !Subcircle1.Visible && Title2.Visible
@@ -222,14 +223,14 @@ ms.locfileid: "74732629"
 
 1. Задайте для свойства **Items** коллекции гибкой высоты следующую формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Table(
-        { Title: "Subject", Value: _selectedCalendarEvent.Subject },
+        { Title: "Subject"; Value: _selectedCalendarEvent.Subject };
         { 
-            Title: "Time", 
+            Title: "Time"; 
             Value: _selectedCalendarEvent.Start & " - " & _selectedCalendarEvent.End 
-        },
-        { Title: "Body", Value: _selectedCalendarEvent.Body }
+        };
+        { Title: "Body"; Value: _selectedCalendarEvent.Body }
     )
     ```
 
@@ -239,9 +240,9 @@ ms.locfileid: "74732629"
 
 1. В **календаревентсгаллери**задайте для свойства **OnSelect** элемента управления **Title** следующую формулу:
 
-    ```powerapps-dot
-    Set( _selectedCalendarEvent, ThisItem );
-    Navigate( EventDetailsScreen, None )
+    ```powerapps-comma
+    Set( _selectedCalendarEvent; ThisItem );;
+    Navigate( EventDetailsScreen; None )
     ```
 
     > [!Note]
@@ -255,27 +256,27 @@ ms.locfileid: "74732629"
 
 1. Чтобы получить профили Office 365 участников встречи, задайте для свойства **OnSelect** элемента управления **Title** в **календаревентсгаллери** следующую формулу:
 
-    ```powerapps-dot
-    Set( _selectedCalendarEvent, ThisItem );
-    ClearCollect( AttendeeEmailsTemp,
+    ```powerapps-comma
+    Set( _selectedCalendarEvent; ThisItem );;
+    ClearCollect( AttendeeEmailsTemp;
         Filter(
-            Split( ThisItem.RequiredAttendees & ThisItem.OptionalAttendees, ";" ),
+            Split( ThisItem.RequiredAttendees & ThisItem.OptionalAttendees; ";" );
             !IsBlank( Result )
         )
-    );
-    ClearCollect( AttendeeEmails,
-        AddColumns( AttendeeEmailsTemp, 
-            "InOrg",
-            Upper( _userDomain ) = Upper( Right( Result, Len( Result ) - Find( "@", Result ) ) )
+    );;
+    ClearCollect( AttendeeEmails;
+        AddColumns( AttendeeEmailsTemp; 
+            "InOrg";
+            Upper( _userDomain ) = Upper( Right( Result; Len( Result ) - Find( "@"; Result ) ) )
         )
-    );
-    ClearCollect( MyPeople,
-        ForAll( AttendeeEmails, If( InOrg, Office365Users.UserProfile( Result ) ) ) 
-    );
-    Collect( MyPeople,
-        ForAll( AttendeeEmails,
-            If( !InOrg, 
-                { DisplayName: Result, Id: "", JobTitle: "", UserPrincipalName: Result }
+    );;
+    ClearCollect( MyPeople;
+        ForAll( AttendeeEmails; If( InOrg; Office365Users.UserProfile( Result ) ) ) 
+    );;
+    Collect( MyPeople;
+        ForAll( AttendeeEmails;
+            If( !InOrg; 
+                { DisplayName: Result; Id: ""; JobTitle: ""; UserPrincipalName: Result }
             )
         )
     )
@@ -284,84 +285,84 @@ ms.locfileid: "74732629"
 В этом списке описывается, что делает каждая операция **клеарколлект** :
 
 - Клеарколлект (Аттендиемаилстемп)
-    ```powerapps-dot
-    ClearCollect( AttendeeEmailsTemp,
+    ```powerapps-comma
+    ClearCollect( AttendeeEmailsTemp;
         Filter(
-            Split( ThisItem.RequiredAttendees & ThisItem.OptionalAttendees, ";" ), 
+            Split( ThisItem.RequiredAttendees & ThisItem.OptionalAttendees; ";" ); 
             !IsBlank( Result)
         )
-    );
+    );;
     ```
 
     Эта формула объединяет обязательные и необязательные участники в одну строку, а затем разделяет эту строку на отдельные адреса с каждой точкой с запятой. Затем формула отфильтровывает пустые значения из этого набора и добавляет другие значения в коллекцию с именем **аттендиемаилстемп**.
 
 - Клеарколлект (Аттендиемаилс)
-    ```powerapps-dot
-    ClearCollect( AttendeeEmails,
-        AddColumns( AttendeeEmailsTemp, 
-            "InOrg",
-            Upper( _userDomain ) = Upper( Right( Result, Len(Result) - Find("@", Result) ) )
+    ```powerapps-comma
+    ClearCollect( AttendeeEmails;
+        AddColumns( AttendeeEmailsTemp; 
+            "InOrg";
+            Upper( _userDomain ) = Upper( Right( Result; Len(Result) - Find("@"; Result) ) )
         )
-    );
+    );;
     ```
     Эта формула приблизительно определяет, находится ли участник в вашей организации. Определение **_userDomain** — это просто URL-адрес домена в адресе электронной почты пользователя, запустившего приложение. Эта строка создает дополнительный столбец true/false с именем **инорг**в коллекции **аттендиемаилстемп** . Этот столбец содержит **значение true** , если **доменпользователя** эквивалентен URL-адресу домена адреса электронной почты в этой конкретной строке **аттендиемаилстемп**.
 
     Этот подход не всегда точен, но он довольно близок. Например, некоторые участники Организации могут иметь адрес электронной почты, например Jane@OnContoso.com, а **_userDomain** — contoso.com. Пользователь приложения и Мария могут работать в одной компании, но иметь небольшие вариации в своих адресах электронной почты. В таких случаях может потребоваться использовать следующую формулу:
 
-    `Upper(_userDomain) in Upper(Right(Result, Len(Result) - Find("@", Result)))`
+    `Upper(_userDomain) in Upper(Right(Result; Len(Result) - Find("@"; Result)))`
 
     Однако эта формула соответствует адресам электронной почты, таким как Jane@NotTheContosoCompany.com, с **_userDomain** , например contoso.com, и эти люди не работают в одной компании.
 
 - Клеарколлект (Мипеопле)
 
-    ```powerapps-dot
-    ClearCollect( MyPeople,
-        ForAll( AttendeeEmails, 
-            If( InOrg, 
+    ```powerapps-comma
+    ClearCollect( MyPeople;
+        ForAll( AttendeeEmails; 
+            If( InOrg; 
                 Office365Users.UserProfile( Result )
             )
         )
-    );
-    Collect( MyPeople,
-        ForAll( AttendeeEmails,
-            If( !InOrg, 
+    );;
+    Collect( MyPeople;
+        ForAll( AttendeeEmails;
+            If( !InOrg; 
                 { 
-                    DisplayName: Result, 
-                    Id: "", 
-                    JobTitle: "", 
+                    DisplayName: Result; 
+                    Id: ""; 
+                    JobTitle: ""; 
                     UserPrincipalName: Result
                 }
             )
         )
-    );
+    );;
     ```
     Чтобы получить профили Office 365, необходимо использовать операцию [Office365Users. UserProfile](https://docs.microsoft.com/connectors/office365users/#userprofile) или [Office365Users. UserProfileV2](https://docs.microsoft.com/connectors/office365users/#userprofile) . Эти операции сначала собирают все профили Office 365 для участников, которые находятся в организации пользователя. Затем операции добавляют несколько полей для участников за пределами Организации. Вы разделяете эти два элемента на разные операции, так как цикл **ForAll** не гарантирует порядок. Таким образом, **ForAll** может сначала получить участника, находящегося за пределами Организации. В этом случае схема для **мипеопле** содержит только **DisplayName**, **ID**, **JobTitle**и **userPrincipalName**. Однако операции UserProfile извлекают намного более широкие данные, чем это. Поэтому вы принудительно добавляете в коллекцию **мипеопле** профили Office 365 перед другими профилями.
 
     > [!NOTE]
     > Тот же результат можно получить только с одной функцией **клеарколлект** :
 
-    ```powerapps-dot
-    ClearCollect( MyPeople, 
+    ```powerapps-comma
+    ClearCollect( MyPeople; 
         ForAll(
             AddColumns(
                 Filter(
                     Split(
-                        ThisItem.RequiredAttendees & ThisItem.OptionalAttendees, 
+                        ThisItem.RequiredAttendees & ThisItem.OptionalAttendees; 
                         ";"
-                    ), 
+                    ); 
                     !IsBlank( Result )
-                ), 
-                "InOrg", _userDomain = Right( Result, Len( Result ) - Find( "@", Result ) )
-            ), 
-            If( InOrg, 
-                Office365Users.UserProfile( Result ), 
+                ); 
+                "InOrg"; _userDomain = Right( Result; Len( Result ) - Find( "@"; Result ) )
+            ); 
+            If( InOrg; 
+                Office365Users.UserProfile( Result ); 
                 { 
-                    DisplayName: Result, 
-                    Id: "", 
-                    JobTitle: "", 
-                    UserPrincipalName: Result, 
-                    Department: "", 
-                    OfficeLocation: "", 
+                    DisplayName: Result; 
+                    Id: ""; 
+                    JobTitle: ""; 
+                    UserPrincipalName: Result; 
+                    Department: ""; 
+                    OfficeLocation: ""; 
                     TelephoneNumber: ""
                 }
             )

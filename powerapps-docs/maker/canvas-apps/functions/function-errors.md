@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74731059"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="errors-function-in-power-apps"></a>Функции ошибок в Power Apps
 В этой статье приведены сведения об ошибках, связанных с предыдущими изменениями [источника данных](../working-with-data-sources.md).
@@ -61,7 +62,7 @@ ms.locfileid: "74731059"
 Если ошибок нет, таблица, которую возвращает функция **Errors**, будет [пустой](function-isblank-isempty.md), и ее можно будет проверить с помощью функции **[IsEmpty](function-isblank-isempty.md)** .
 
 ## <a name="syntax"></a>Синтаксис
-**Errors**( *DataSource* [, *Record* ] )
+**Errors**( *DataSource* [; *Record* ] )
 
 * *Источник_данных* — обязательный аргумент. Источник данных, для которого необходимо вернуть ошибки.
 * *Record* — необязательный аргумент.  Определенная запись, для которой необходимо вернуть ошибки. Если этот аргумент не указан, функция возвратит ошибки для всего источника данных.
@@ -74,17 +75,17 @@ ms.locfileid: "74731059"
 
 С помощью приложения пользователь загружает запись Chocolate в форму ввода данных, а затем изменяет значение свойства **Quantity** на 90.  Запись помещается в [переменную контекста](../working-with-variables.md#use-a-context-variable) **EditRecord**.
 
-* **UpdateContext( { EditRecord: First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
+* **UpdateContext( { EditRecord: First( Filter( IceCream; Flavor = "Chocolate" ) ) } )**
 
 Внести эти изменения в источник можно с помощью функции **[Patch](function-patch.md)** .
 
-* **Patch( IceCream, EditRecord, Gallery.Updates )** ,
+* **Patch( IceCream; EditRecord; Gallery.Updates )** ,
 
 где **Gallery.Updates** равно **{ Quantity: 90 }** , так как только свойство **Quantity** изменено.
 
 К сожалению, прямо перед вызовом функции **[Patch](function-patch.md)** кто-то изменил значение свойства **Quantity** для записи Chocolate на 80.  Power Apps обнаружит это и не разрешит возникновения конфликтующих изменений.  Вы можете проверить, случилось ли нечто подобное, с помощью формулы:
 
-* **IsEmpty( Errors( IceCream, EditRecord ) )** ,
+* **IsEmpty( Errors( IceCream; EditRecord ) )** ,
 
 которая возвращает значение **false**, так как функция **Errors** возвратила приведенную ниже таблицу.
 
@@ -95,12 +96,12 @@ ms.locfileid: "74731059"
 Вы можете поместить метку в форме для отображения данной ошибки пользователю.
 
 * Чтобы отобразить ошибку, задайте для свойства **[Text](../controls/properties-core.md)** метки эту формулу:<br>
-  **Label.Text = First(Errors( IceCream, EditRecord )).Message**
+  **Label.Text = First(Errors( IceCream; EditRecord )).Message**
 
 Вы также можете добавить в форму кнопку **Перезагрузить**, чтобы пользователь мог эффективно разрешить конфликт.
 
 * Чтобы отображать кнопку только при возникновении конфликта, задайте для свойства **[Visible](../controls/properties-core.md)** кнопки эту формулу:<br>
-    **!IsEmpty( Lookup( Errors( IceCream, EditRecord ), Error = ErrorKind.Conflict ) )**
+    **!IsEmpty( Lookup( Errors( IceCream; EditRecord ); Error = ErrorKind.Conflict ) )**
 * Чтобы пользователь мог отменять изменение нажатием кнопки, задайте в качестве значения свойства **[OnSelect](../controls/properties-core.md)** следующую формулу:<br>
-    **ReloadButton.OnSelect = Revert( IceCream, EditRecord )**
+    **ReloadButton.OnSelect = Revert( IceCream; EditRecord )**
 

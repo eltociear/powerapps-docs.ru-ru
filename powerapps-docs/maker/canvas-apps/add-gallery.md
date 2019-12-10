@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74724773"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="show-a-list-of-items-in-power-apps"></a>Отображение списка элементов в Power Apps
 
@@ -98,20 +99,20 @@ ms.locfileid: "74724773"
 
 1. Задайте для свойства **[Items](controls/properties-core.md)** элемента управления **Коллекция** следующую формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Sort
         (If
-            (IsBlank(TextSearchBox1.Text),
-            FlooringEstimates,
+            (IsBlank(TextSearchBox1.Text);
+            FlooringEstimates;
             Filter(
-                FlooringEstimates,
+                FlooringEstimates;
                 TextSearchBox1.Text in Text(Name)
             )
-        ),
-        Name,
+        );
+        Name;
         If(
-            SortDescending1,
-            SortOrder.Descending,
+            SortDescending1;
+            SortOrder.Descending;
             SortOrder.Ascending
         )
     )
@@ -130,16 +131,16 @@ ms.locfileid: "74724773"
 ## <a name="highlight-the-selected-item"></a>Выделение выбранного элемента
 Задайте для свойства **темплатефилл** элемента управления **галереи** формулу, похожую на этот пример, но при необходимости можно указать другие цвета:
 
-**If(ThisItem.IsSelected, LightCyan, White)**
+**If(ThisItem.IsSelected; LightCyan; White)**
 
 ## <a name="change-the-default-selection"></a>Изменение выбора по умолчанию
 Задайте для свойства **Default** элемента управления **Коллекция** запись, которую необходимо выбирать по умолчанию. Например, можно указать Пятый элемент в источнике данных **флуринжестиматес** :
 
-**Last(FirstN(FlooringEstimates, 5))**
+**Last(FirstN(FlooringEstimates; 5))**
 
 В этом примере укажите первый элемент в категории **Hardwood** источника данных **FlooringEstimates**:
 
-**First(Filter(FlooringEstimates, Category = "Hardwood"))**
+**First(Filter(FlooringEstimates; Category = "Hardwood"))**
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Дополнительные сведения см. в статье [Общие сведения о формах данных в Microsoft PowerApps](working-with-forms.md) и [Начало работы с формулами](working-with-formulas.md).

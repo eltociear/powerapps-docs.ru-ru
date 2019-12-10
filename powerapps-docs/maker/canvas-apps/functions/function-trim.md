@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74729960"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="trim-and-trimends-functions-in-power-apps"></a>Функции Trim и Тримендс в Power Apps
 Удаляют лишние пробелы из текстовой строки.
@@ -53,7 +54,7 @@ ms.locfileid: "74729960"
 ![](media/function-trim/input-strings.png)
 
 Для создания этой коллекции установите в свойстве **OnSelect** элемента управления **[Button](../controls/control-button.md)** следующую формулу, откройте режим предварительного просмотра и нажмите кнопку:
-<br>**ClearCollect( Spaces, [ "&nbsp;&nbsp;&nbsp;Елена&nbsp;&nbsp;&nbsp;Иванова&nbsp;&nbsp;&nbsp;", "&nbsp;&nbsp;&nbsp;&nbsp;Иван&nbsp;&nbsp;&nbsp;да&nbsp;&nbsp;&nbsp;Марья", "Уже&nbsp;без пробелов", "&nbsp;&nbsp;&nbsp;Венера,&nbsp;&nbsp;&nbsp;Земля,&nbsp;&nbsp;&nbsp;Марс&nbsp;&nbsp;", "Масло&nbsp;и&nbsp;вода&nbsp;&nbsp;&nbsp;" ] )**
+<br>**ClearCollect( Spaces; [ "&nbsp;&nbsp;&nbsp;Елена&nbsp;&nbsp;&nbsp;Иванова&nbsp;&nbsp;&nbsp;"; "&nbsp;&nbsp;&nbsp;&nbsp;Иван&nbsp;&nbsp;&nbsp;да&nbsp;&nbsp;&nbsp;Марья"; "Уже&nbsp;без пробелов"; "&nbsp;&nbsp;&nbsp;Венера,&nbsp;&nbsp;&nbsp;Земля,&nbsp;&nbsp;&nbsp;Марс&nbsp;&nbsp;"; "Масло&nbsp;и&nbsp;вода&nbsp;&nbsp;&nbsp;" ] )**
 
 | Формула | Description | Возвращаемый результат |
 | --- | --- | --- |

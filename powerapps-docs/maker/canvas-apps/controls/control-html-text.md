@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74727242"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="html-text-control-in-power-apps"></a>HTML-элемент управления "текст" в Power Apps
 Поле, в котором отображается текст, а HTML-теги преобразуются в форматирование.
@@ -75,7 +76,7 @@ ms.locfileid: "74727242"
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Find**(*текст_для_поиска*, *в_тексте*)](../functions/function-find.md)
+[**Find**(*текст_для_поиска*; *в_тексте*)](../functions/function-find.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **[Метка](control-text-box.md)** , назовите его **Source** и укажите в качестве значения свойства **[Text](properties-core.md)** следующую строку:

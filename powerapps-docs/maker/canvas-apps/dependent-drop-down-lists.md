@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74731632"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>Создание зависимых раскрывающихся списков в приложении Canvas
 
@@ -138,7 +139,7 @@ ms.locfileid: "74731632"
 
 1. Задайте для свойства **Items** элемента **ддлокатион** следующую формулу:
 
-    `Distinct(Locations, Location)`
+    `Distinct(Locations; Location)`
 
 1. используемых Удерживая нажатой клавишу Alt, откройте **ддлокатион**и убедитесь, что в списке показаны три расположения.
 
@@ -158,7 +159,7 @@ ms.locfileid: "74731632"
 
     Для свойства **Items** объекта **дддепартмент** задана следующая формула:
 
-    `Filter(Locations, Location = ddLocation.Selected.Result)`
+    `Filter(Locations; Location = ddLocation.Selected.Result)`
 
     Эта формула фильтрует элементы в **дддепартмент** в зависимости от того, что пользователь выбирает в **ддлокатион**. Такая конфигурация гарантирует, что "дочерний" список отделов будет отражать данные для своего "родительского" расположения, так как в списке **расположений** в SharePoint указано.
 

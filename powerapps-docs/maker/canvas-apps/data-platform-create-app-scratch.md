@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74709571"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Создание с нуля приложения на основе холста с помощью Common Data Service
 
@@ -60,7 +61,7 @@ ms.locfileid: "74709571"
 
 1. На панели навигации слева выберите пункт **BrowseGallery1**, а затем в качестве значения свойства **Items** укажите следующую формулу:
 
-    `SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))`
+    `SortByColumns(Search(Accounts; TextSearchBox1.Text; "name"); "name"; If(SortDescending1; SortOrder.Descending; SortOrder.Ascending))`
 
     Согласно этой формуле:
 
@@ -126,25 +127,25 @@ ms.locfileid: "74709571"
 
 1. Задайте в качестве значения свойства **OnSelect** значка плюса следующую формулу:
 
-    `NewForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
+    `NewForm(EditForm1);; Navigate(FormScreen; ScreenTransition.None)`
 
     ![Значок добавления](./media/data-platform-create-app-scratch/plus-icon.png)
 
 1. Задайте в качестве значения свойства **OnSelect** первой стрелки, направленной вправо, следующую формулу:
 
-    `EditForm(EditForm1); Navigate(FormScreen, ScreenTransition.None)`
+    `EditForm(EditForm1);; Navigate(FormScreen; ScreenTransition.None)`
 
     ![Значок "Далее"](./media/data-platform-create-app-scratch/next-icon.png)
 
 1. В окне **FormScreen** задайте в качестве значения свойства **OnSelect** значка отмены следующую формулу:
 
-    `ResetForm(EditForm1);Navigate(BrowseScreen, ScreenTransition.None)`
+    `ResetForm(EditForm1);;Navigate(BrowseScreen; ScreenTransition.None)`
 
     ![Значок отмены](./media/data-platform-create-app-scratch/cancel-icon.png)
 
 1. Задайте в качестве значения свойства **OnSelect** значка флажка следующую формулу:
 
-    `SubmitForm(EditForm1); Navigate(BrowseScreen, ScreenTransition.None)`
+    `SubmitForm(EditForm1);; Navigate(BrowseScreen; ScreenTransition.None)`
 
     ![Значок с галочкой](./media/data-platform-create-app-scratch/checkmark-icon.png)
 
@@ -152,7 +153,7 @@ ms.locfileid: "74709571"
 
 1. Задайте для свойства **Color** значка **Корзина** значение **White**, а в качестве значения свойства **OnSelect** укажите следующую формулу:
 
-    `Remove(Accounts, BrowseGallery.Selected); Navigate(BrowseScreen, ScreenTransition.None)`
+    `Remove(Accounts; BrowseGallery.Selected);; Navigate(BrowseScreen; ScreenTransition.None)`
 
     ![Значок корзины](./media/data-platform-create-app-scratch/trash-icon.png)
 
