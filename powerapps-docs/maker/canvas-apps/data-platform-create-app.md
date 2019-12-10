@@ -1,28 +1,28 @@
 ---
 title: Создание приложения Canvas из Common Data Service | Документация Майкрософт
-description: В Power Apps автоматически создает приложение Canvas для управления данными в Common Data Service
+description: 'В Power Apps: автоматическое создание приложения Canvas для управления данными в Common Data Service'
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: quickstart
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 05/06/2018
+ms.date: 12/05/2019
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b98fcb51e5b379e6507e73f680100c9702ec24a8
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: c62a690073e591c693d914000511b586dfc97b69
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731665"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959387"
 ---
-# <a name="generate-a-canvas-app-from-common-data-service-in-power-apps"></a>Создание приложения Canvas из Common Data Service в Power Apps
+# <a name="create-a-canvas-app-from-common-data-service-in-power-apps"></a>Создание приложения Canvas из Common Data Service в Power Apps
 
-В Power Apps автоматически создает приложение Canvas на основе списка примеров учетных записей в [Common Data Service](../common-data-service/data-platform-intro.md). В этом приложении можно просматривать все учетные записи, отображать подробные сведения о отдельной записи, а также создавать, изменять и удалять учетные записи.
+В Power Apps Создайте приложение Canvas на основе списка примеров учетных записей в [Common Data Service](../common-data-service/data-platform-intro.md). В этом приложении можно просматривать все учетные записи, отображать подробные сведения о отдельной записи, а также создавать, изменять и удалять учетные записи.
 
 Если вы еще не зарегистрированы в Power Apps, [Зарегистрируйтесь бесплатно](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) , прежде чем начать.
 
@@ -30,7 +30,7 @@ ms.locfileid: "74731665"
 
 Для выполнения этого краткого руководства необходимо назначить роль безопасности " [создатель среды](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles) ", и необходимо [переключиться на среду](working-with-environments.md) , в которой создана база данных Common Data Service, содержит данные и допускает обновления. Если такая среда отсутствует и у вас есть права администратора, вы можете [создать среду](https://docs.microsoft.com/power-platform/admin/environments-administration#create-an-environment), отвечающую этим требованиям.
 
-## <a name="generate-an-app"></a>Создание приложения
+## <a name="create-an-app"></a>Создание приложения
 
 1. Войдите в [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) и при необходимости переключите среды, как указано ранее в этом разделе.
 

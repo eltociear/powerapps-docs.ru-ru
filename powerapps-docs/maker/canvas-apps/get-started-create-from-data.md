@@ -1,5 +1,5 @@
 ---
-title: Создание приложения на основе холста из Excel | Документы Майкрософт
+title: Создание приложения Canvas из Excel | Документация Майкрософт
 description: Использование Power Apps для автоматического создания приложения Canvas с помощью файла Excel, хранящегося в учетной записи облачного хранилища
 author: tapanm-msft
 manager: kvivek
@@ -7,22 +7,22 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 01/14/2019
+ms.date: 12/05/2019
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f53f46562c401e978975da35c81e2ecb77a6673e
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 2199d94938e51154d0f616f424f674c408277b52
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729749"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959433"
 ---
-# <a name="generate-a-canvas-app-from-excel-in-power-apps"></a>Создание приложения Canvas из Excel в Power Apps
+# <a name="create-a-canvas-app-from-excel-in-power-apps"></a>Создание приложения Canvas из Excel в Power Apps
 
-В этом разделе вы автоматически создадите первое приложение Canvas в Power Apps, используя данные из таблицы Excel. Вы выберете файл Excel, создадите приложение, а затем запустите его. Каждое создаваемое приложение имеет экраны для просмотра списка записей и подробных сведений об отдельных записях, а также для создания и изменения записей. Вы можете быстро создать приложение, использующее данные Excel, а затем настроить его так, как вам требуется. 
+В этом разделе вы создадите первое приложение Canvas в Power Apps, используя данные из таблицы Excel. Выберите файл Excel, создайте приложение, а затем запустите созданное приложение. Каждое созданное приложение включает экраны для просмотра записей, отображения сведений о записи и создания или обновления записей. Вы можете быстро создать приложение, использующее данные Excel, а затем настроить его так, как вам требуется. 
 
 Файл Excel должен находиться в облачной учетной записи хранения, например OneDrive, Dropbox или Google Диск. В этой статье используется OneDrive для бизнеса.
 
@@ -35,7 +35,7 @@ ms.locfileid: "74729749"
 > [!IMPORTANT]
 > Вы можете использовать собственный файл Excel, однако данные в нем должны быть отформатированы в виде таблицы. Дополнительные сведения см. в разделе [Форматирование таблицы](how-to-excel-tips.md). 
 
-## <a name="generate-the-app"></a>Создание приложения
+## <a name="create-the-app"></a>Создание приложения
 
 1. Войдите в [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
@@ -79,7 +79,7 @@ ms.locfileid: "74729749"
 
     1. Добавьте необходимые данные, а затем щелкните значок флажка, чтобы сохранить изменения.
 
-        ![Значок "Сохранить"](./media/get-started-create-from-data/save-icon.png)
+        ![Значок сохранения](./media/get-started-create-from-data/save-icon.png)
 
 1. Изменить запись:
 
@@ -87,13 +87,13 @@ ms.locfileid: "74729749"
 
         ![Стрелка далее](./media/get-started-create-from-data/next-arrow.png)
 
-    1. Щелкните значок карандаша.
+    1. Выберите значок карандаша.
 
         ![Значок карандаша](./media/get-started-create-from-data/pencil-icon.png)
 
     1. Обновите одно или несколько полей, а затем щелкните значок флажка, чтобы сохранить изменения.
 
-        ![Значок "Сохранить"](./media/get-started-create-from-data/save-icon.png)
+        ![Значок сохранения](./media/get-started-create-from-data/save-icon.png)
 
         В качестве альтернативы щелкните значок Отмена, чтобы отменить изменения.
 

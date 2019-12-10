@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: ''
-ms.date: 12/19/2017
+ms.reviewer: tapanm
+ms.date: 12/05/2019
 ms.author: niwaggon
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bf61592dfdb5c7226846d814b75fd8c7584a50ff
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 45f33285b288dc273caeff1e85591210cc3deb8c
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732967"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959548"
 ---
 # <a name="integrate-power-apps-power-automate-and-power-bi-with-sharepoint-online"></a>Интеграция Power Apps, Power автоматизиру и Power BI с SharePoint Online
 Вы установили SharePoint Online и хотите больше автоматизировать и оптимизировать бизнес-процессы? Вы уже работали с Power Apps, Power автоматизация или Power BI, но вы не уверены, как их использовать в SharePoint Online? Вы обратились по адресу! В этой серии руководств рассматривается создание базового приложения Canvas для управления проектами на основе списков SharePoint и трех ключевых технологий, которые интегрируются с SharePoint Online: Power Apps, Power автоматизиру и Power BI. Эти технологии взаимосвязаны, что позволяет легко *анализировать* бизнес-процессы, *действовать* на основе результатов и *автоматизировать* рабочие процессы. В ходе работы с этой серией вы проработаете приблизительно такой сценарий:
@@ -31,7 +31,7 @@ ms.locfileid: "74732967"
 ## <a name="getting-started-quickly"></a>Быстрое начало работы
 В этой серии руководств представлен упрощенный сценарий по сравнению с созданием полнофункционального приложения для управления проектами и анализа. Тем не менее вам потребуется некоторое время, чтобы выполнить все задачи. Если вы хотите просто ознакомиться с использованием Power Apps, Power автоматизиру и Power BI с SharePoint, ознакомьтесь со следующими статьями:
 
-* **PowerApps**: [Создание приложения в SharePoint с помощью Power Apps](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online) и [Создание приложения для управления данными в списке SharePoint](app-from-sharepoint.md)
+* **PowerApps**: [Создание приложения в SharePoint с помощью Power Apps](app-from-sharepoint.md#create-an-app-from-within-sharepoint-online) и [Создание приложения для управления данными в списке SharePoint](app-from-sharepoint.md)
 * **Автоматизация электропитания**: [ожидание утверждения в Power автоматизиру](https://docs.microsoft.com/flow/wait-for-approvals)
 * **Power BI**: [Внедрение с помощью веб-части отчетов в SharePoint Online](https://docs.microsoft.com/power-bi/service-embed-report-spo)
 

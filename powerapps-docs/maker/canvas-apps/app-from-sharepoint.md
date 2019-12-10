@@ -1,5 +1,5 @@
 ---
-title: Создание приложения на основе холста из списка SharePoint | Документы Майкрософт
+title: Создание приложения Canvas из списка SharePoint | Документация Майкрософт
 description: 'В Power Apps: автоматическое создание приложения Canvas для управления данными в списке SharePoint'
 author: tapanm-msft
 manager: kvivek
@@ -7,24 +7,24 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 10/24/2018
+ms.date: 12/05/2019
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cda7635798b26b1936a44d7947ab1dc7c36a25c8
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 346bb27911549715b6c4fdc40f64552c524527be
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724189"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959456"
 ---
-# <a name="generate-a-canvas-app-in-power-apps-from-a-sharepoint-list"></a>Создание приложения Canvas в Power Apps из списка SharePoint
+# <a name="create-a-canvas-app-in-power-apps-from-a-sharepoint-list"></a>Создание приложения Canvas в Power Apps из списка SharePoint
 
-В этом разделе вы будете использовать Power Apps для автоматического создания приложения Canvas на основе элементов в списке SharePoint. Вы можете создать приложение в Power Apps или SharePoint Online. В Power Apps вы можете создать приложение на основе списка на локальном сайте SharePoint, если вы [подключаетесь к нему](connections/connection-sharepoint-online.md#create-a-connection) через шлюз данных.
+В этом разделе вы будете использовать Power Apps для создания приложения Canvas на основе элементов в списке SharePoint. Вы можете создать приложение в Power Apps или SharePoint Online. В Power Apps можно создать приложение на основе списка на локальном сайте SharePoint, если вы [подключаетесь к нему](connections/connection-sharepoint-online.md#create-a-connection) через шлюз данных.
 
-Созданное приложение будет иметь три экрана:
+Создаваемое приложение будет содержать три экрана:
 
 - На экране обзора вы можете просмотреть все элементы в списке.
 - На экране сведений отображается вся информация об отдельном элементе в списке.
@@ -40,7 +40,7 @@ ms.locfileid: "74724189"
 > [!IMPORTANT]
 > Power Apps не поддерживает все типы данных SharePoint. Дополнительные сведения см. в разделе с описанием [известных проблем](connections/connection-sharepoint-online.md#known-issues).
 
-## <a name="generate-an-app-from-within-power-apps"></a>Создание приложения в Power Apps
+## <a name="create-an-app-from-within-power-apps"></a>Создание приложения в Power Apps
 
 1. Войдите в [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
@@ -68,7 +68,7 @@ ms.locfileid: "74724189"
 
     Прежде чем использовать это приложение или представлять доступ к нему другим пользователям, вам, возможно, потребуется внести в него и другие изменения. Прежде чем продолжить, рекомендуем сохранить результаты работы, нажав клавиши CTRL+S. Укажите имя приложения и нажмите кнопку **Сохранить**.
 
-## <a name="generate-an-app-from-within-sharepoint-online"></a>Создание приложения в SharePoint Online
+## <a name="create-an-app-from-within-sharepoint-online"></a>Создание приложения в SharePoint Online
 
 Если создать приложение настраиваемого списка с помощью панели команд SharePoint Online, такое приложение будет доступно как представление этого списка. Помимо веб-браузера, это приложение можно запускать на устройствах iOS и Android.
 
@@ -80,7 +80,7 @@ ms.locfileid: "74724189"
 
     ![Присвоение имени приложению](./media/app-from-sharepoint/app-name.png)
 
-    В веб-браузере откроется новая вкладка с приложением, созданным автоматически на основе вашего списка SharePoint. Приложение появится в Power Apps Studio, где его можно настроить.
+    В веб-браузере появится новая вкладка, в которой будет показано приложение, созданное на основе списка SharePoint. Приложение появится в Power Apps Studio, где его можно настроить.
 
     ![Приложение по умолчанию](./media/app-from-sharepoint/default-app.png)
 
@@ -99,7 +99,7 @@ ms.locfileid: "74724189"
 > Приложения, созданные из списка SharePoint, в настоящее время не отображаются в Power Apps Mobile.
 
 ## <a name="next-steps"></a>Дальнейшие действия
-В этом разделе вы создали приложение для управления данными в списке SharePoint. Далее вы создадите приложение на основе более сложного списка и настроите его (начиная с экрана обзора) так, как вам требуется.
+В этом разделе вы создали приложение для управления данными в списке SharePoint. В качестве следующего шага Создайте приложение из более сложного списка, а затем настройте приложение (начиная с экрана обзора), чтобы лучше соответствовать вашим потребностям.
 
 > [!div class="nextstepaction"]
 > [Настройка экрана обзора по умолчанию](customize-layout-sharepoint.md)
