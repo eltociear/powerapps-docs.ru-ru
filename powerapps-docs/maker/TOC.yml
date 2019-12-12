@@ -140,7 +140,9 @@
           href: ./canvas-apps/sample-meeting-capture.md
     - name: Создание первого приложения
       items:
-        - name: 1. Создание приложения на основе данных
+        - name: 1. Создание приложения на основе шаблона
+          href: ./canvas-apps/get-started-test-drive.md
+        - name: 2. Создание приложения с использованием данных
           items:
             - name: На основе Common Data Service
               href: ./canvas-apps/data-platform-create-app.md
@@ -158,14 +160,12 @@
               href: ./canvas-apps/customize-forms-sharepoint.md
             - name: "3.\_Карточки"
               href: ./canvas-apps/customize-card.md
-        - name: 3. Самостоятельное создание приложения
-          items:
-            - name: На основе Common Data Service
-              href: ./canvas-apps/data-platform-create-app-scratch.md
-            - name: На основе Excel
-              href: ./canvas-apps/get-started-create-from-blank.md
-        - name: Создание приложения на основе шаблона
-          href: ./canvas-apps/get-started-test-drive.md
+    - name: Создание приложения с нуля
+      items:
+        - name: На основе Common Data Service
+          href: ./canvas-apps/data-platform-create-app-scratch.md
+        - name: На основе Excel
+          href: ./canvas-apps/get-started-create-from-blank.md
     - name: Проектирование и сборка приложения
       items:
         - name: Подключение к данным
