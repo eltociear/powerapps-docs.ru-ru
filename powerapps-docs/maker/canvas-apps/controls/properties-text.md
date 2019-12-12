@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5839de0a35adeee8106d583638edb50c5d53ab21
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: e65bbf31ade0d6eda655d5d307dd8af7ea9b024d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993149"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731873"
 ---
-# <a name="text-properties-in-powerapps"></a>Текстовые свойства в PowerApps
+# <a name="text-properties-in-power-apps"></a>Свойства текста в Power Apps
 Настройка текста, отображаемого в элементе управления, подсказке и указании, отображаемом при вводе данных пользователем, а также задание других характеристик текста.
 
 ## <a name="text-appearance"></a>Оформление текста

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0539eec636307a958658023376e1f8caf2e6c7eb
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2876ba3f5f5dd8b8a1dbf177487550c18f640e8a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993237"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731829"
 ---
-# <a name="core-properties-in-powerapps"></a>Основные свойства в PowerApps
+# <a name="core-properties-in-power-apps"></a>Основные свойства в Power Apps
 Настройка возможности видеть элемент управления или взаимодействовать с ним для пользователя.
 
 ### <a name="properties"></a>Свойства
