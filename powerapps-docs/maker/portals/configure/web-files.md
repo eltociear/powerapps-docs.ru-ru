@@ -1,5 +1,5 @@
 ---
-title: Создание веб-файлов и управление ими на порталах PowerApps | MicrosoftDocs
+title: Создание веб-файлов и управление ими на порталах Power Apps | MicrosoftDocs
 description: Научитесь создавать веб-файлы и управлять ими на портале.
 author: sbmjais
 manager: shujoshi
@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: dc67db92ac502611b0c10b5d387b100e8aa43da7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0e8487e211cf685c77aef545ebc39a43968f8e40
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760968"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864933"
 ---
 # <a name="create-and-manage-web-files"></a>Создание веб-файлов и управление ими
 
@@ -24,7 +24,7 @@ ms.locfileid: "2760968"
 
 ## <a name="manage-web-files"></a>Управление веб-файлами
 
-Веб-файлы доступны для создания, изменения и удаления на порталах PowerApps.
+Веб-файлы доступны для создания, изменения и удаления на порталах Power Apps.
 
 1. Откройте [Приложение управления порталом](configure-portal.md).
 

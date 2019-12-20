@@ -1,5 +1,5 @@
 ---
-title: Свойства элементов управления экспресс-форм для основных форм управляемых моделью приложений в PowerApps | MicrosoftDocs
+title: Свойства элементов управления экспресс-форм для основных форм управляемых моделью приложений в Power Apps | MicrosoftDocs
 description: Познакомьтесь со свойствами элементов управления экспресс-форм для основных форм
 Keywords: Свойства элементов управления экспресс-форм; Dynamics 365; Основные формы
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b2d4a8f55bf9b6f3e54f948ad16be36fdecb6d20
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 549728e2fb100f927de6660dd5fc5d5aa0da4f68
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755106"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873697"
 ---
 # <a name="model-driven-app-quick-view-control-properties"></a>Свойства элемента управления экспресс-формами управляемых моделью приложений
 
@@ -32,8 +32,8 @@ ms.locfileid: "2755106"
 > [!div class="mx-imgBorder"] 
 > ![Экспресс-форма контакта на форме организации](media/quick-view-form-contact.png "Экспресс-форма контакта на форме организации")  
 
-Можно получить доступ к пункту **Свойства элементов управления экспресс-формами** с сайта PowerApps. 
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+Можно получить доступ к пункту **Свойства элементов управления экспресс-формами** с сайта Power Apps. 
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 
 2.  Разверните **Данные**, выберите **Сущности**, выберите требуемую сущность, затем выберите вкладку **Формы**. 

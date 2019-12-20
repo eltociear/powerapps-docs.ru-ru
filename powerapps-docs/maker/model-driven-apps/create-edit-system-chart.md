@@ -1,5 +1,5 @@
 ---
-title: Создание или изменение системной диаграммы управляемого моделью приложения в PowerApps | MicrosoftDocs
+title: Создание или изменение системной диаграммы управляемого моделью приложения в Power Apps | MicrosoftDocs
 description: Узнайте, как создать или изменить диаграмму
 ms.custom: ''
 ms.date: 05/23/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c1286c0d234a93bb3316d1afa0aac809b5455142
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 24c932f34c23c42f938f54ffa4f328f25a714c59
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759087"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875193"
 ---
 # <a name="create-a-model-driven-app-system-chart"></a>Создание системной диаграммы управляемого моделью приложения
 
 В этом разделе вы узнаете, как создать системную диаграмму. Системные диаграммы принадлежат организации, что делает их доступными любому пользователю, имеющему доступ для чтения данных при выполнении приложения. Системные диаграммы нельзя назначить конкретным пользователям приложения или предоставить им общий доступ.  
   
-1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1. Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
     > [!IMPORTANT]
     > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment).     

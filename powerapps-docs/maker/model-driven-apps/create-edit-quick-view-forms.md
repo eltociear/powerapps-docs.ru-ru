@@ -1,5 +1,5 @@
 ---
-title: Создание или изменение экспресс-форм приложений на основе модели в PowerApps | Документация Майкрософт
+title: Создание или изменение экспресс-форм приложений на основе модели в Power Apps | Документация Майкрософт
 description: Инструкции по созданию и изменению экспресс-формы
 ms.custom: ''
 ms.date: 05/23/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0384b233ddd9df0f88019df6064f5a99ef8af0bd
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e6a4540927ad4329bab936fac631e2693d618104
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759131"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875281"
 ---
 # <a name="create-a-model-driven-app-quick-view-form-to-view-information-about-a-related-entity"></a>Создание экспресс-формы управляемого моделью приложения для просмотра сведений по связанной сущности
 
@@ -43,7 +43,7 @@ ms.locfileid: "2759131"
 ## <a name="create-a-quick-view-form"></a>Создание экспресс-формы  
  Экспресс-формы создаются с помощью редактора форм таким же образом, как и другие формы. Экспресс-формы доступны только для чтения. Используйте их для создания форм, которые предназначены только для чтения.  
   
-1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1. Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 
     > [!IMPORTANT]
@@ -79,7 +79,7 @@ ms.locfileid: "2759131"
 ## <a name="add-a-quick-view-control-to-a-main-form"></a>Добавление элемента управления экспресс-формы в основную форму  
  Экспресс-формы можно добавлять только в основную форму, в которой существует поле поиска, которое предназначается для сущности экспресс-формы.  
   
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
     > [!IMPORTANT]
     > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment).     

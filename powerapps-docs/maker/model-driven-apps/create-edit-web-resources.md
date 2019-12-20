@@ -1,5 +1,5 @@
 ---
-title: Создание или изменение веб-ресурсов управляемого моделью приложения в PowerApps | Документация Майкрософт
+title: Создание или изменение веб-ресурсов управляемого моделью приложения в Power Apps | Документация Майкрософт
 description: Инструкции по созданию и изменению веб-ресурса
 ms.custom: ''
 ms.date: 06/02/2018
@@ -22,19 +22,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6711d78a217bc5bcee34f0bd209f7bdfe56249c5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4aa4e0399395861cf94740c92f35b738998b8209
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702470"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860531"
 ---
 # <a name="create-or-edit-model-driven-app-web-resources-to-extend-an-app"></a>Создание или изменение веб-ресурсов управляемого моделью приложения для расширения приложения
 
 Веб-ресурсы обычно используются разработчиками для расширения приложения с использованием файлов, используемых в веб-разработке. Пользователям приложений может понадобиться управлять веб-ресурсами, предоставленными разработчиком или проектировщиком.  
 
 > [!TIP]
-> Всестороннее обсуждение веб-ресурсов см. в разделе [Документация для разработчиков. Веб-ресурсы для приложений на основе модели](/powerapps/developer/model-driven-apps/web-resources).<br /> Сведения о зависимостях веб-ресурсов, добавленных в PowerApps, см. в разделе [Документация для разработчиков. Зависимости веб-ресурсов](/dynamics365/customer-engagement/developer/web-resources).
+> Всестороннее обсуждение веб-ресурсов см. в разделе [Документация для разработчиков. Веб-ресурсы для приложений на основе модели](/powerapps/developer/model-driven-apps/web-resources).<br /> Сведения о зависимостях веб-ресурсов, добавленных в Power Apps, см. в разделе [Документация для разработчиков. Зависимости веб-ресурсов](/dynamics365/customer-engagement/developer/web-resources).
    
 <a name="BKMK_WhatAreWebResources"></a>
 

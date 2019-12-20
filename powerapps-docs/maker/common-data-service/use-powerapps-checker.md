@@ -1,5 +1,5 @@
 ---
-title: Использование средства проверки решений для проверки приложений в PowerApps | Документация Майкрософт
+title: Использование средства проверки решений для проверки приложений в Power Apps | Документация Майкрософт
 description: Использование средства проверки решений для проверки решения.
 author: Mattp123
 manager: kvivek
@@ -13,14 +13,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c42dfe260fd77f40cd3046f754177838b17eefc2
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e9a3fb0c291678c5c571895c900bfde10a7f42ed
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758890"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885389"
 ---
-# <a name="use-solution-checker-to-validate-your-model-driven-apps-in-powerapps"></a>Использование средства проверки решений для проверки управляемых моделью приложений в PowerApps
+# <a name="use-solution-checker-to-validate-your-model-driven-apps-in-power-apps"></a>Использование средства проверки решений для проверки управляемых моделью приложений в Power Apps
 
 Чтобы обеспечивать сложные бизнес-требования, создатели управляемых моделью приложений часто могут в конечном счете создавать в высокой степени развитые приложения, которые настраивают и расширяют платформу Common Data Service. Со сложными реализациями возникает риск возникновения проблем производительности, устойчивости и надежности, что может отрицательно повлиять на опыт работы пользователя. Выявление этих проблем и разработка способов их устранения может быть сложной задачей, требующей много времени. С функцией проверки решения можно выполнить проверку решений с широким статическим анализом ваших решений по набору правил оптимальной работы и быстро выявить эти проблемные закономерности. После завершения проверки вы получите подробный отчет со списком выявленных проблем, затронутыми компонентами и кодом, а также со ссылками на документацию, в которой описываются способы решения каждой проблемы.
 
@@ -33,13 +33,13 @@ ms.locfileid: "2758890"
 Средство проверки решений работает с неуправляемыми решениями, которые можно экспортировать из среды. 
 
 > [!NOTE]
-> - В этом разделе рассматривается порядок выполнения средства проверки решений из портала разработчика PowerApps. Модуль PowerShell также доступен, который можно использовать, чтобы взаимодействовать непосредственно с сервисом. Модуль Microsoft.PowerApps.Checker.PowerShell можно использовать для анализа управляемых и неуправляемых решений для поддерживаемых версии локальных и сетевых сред или чтобы автоматизировать и интегрировать сервис в каналы построения и выпуска. Дополнительные сведения: [Обзор Microsoft.PowerApps.Checker.PowerShell]( /powershell/powerapps/overview?view=pa-ps-latest#get-started-using-the-microsoftpowerappscheckerpowershell-module) 
+> - В этом разделе рассматривается порядок выполнения средства проверки решений из портала разработчика Power Apps. Модуль PowerShell также доступен, который можно использовать, чтобы взаимодействовать непосредственно с сервисом. Модуль Microsoft.PowerApps.Checker.PowerShell можно использовать для анализа управляемых и неуправляемых решений для поддерживаемых версии локальных и сетевых сред или чтобы автоматизировать и интегрировать сервис в каналы построения и выпуска. Дополнительные сведения: [Обзор Microsoft.PowerApps.Checker.PowerShell]( /powershell/powerapps/overview?view=pa-ps-latest#get-started-using-the-microsoftpowerappscheckerpowershell-module) 
 > - Средство проверки решений не работает с решениями, содержащими JavaScript с использованием ECMAScript 6 (2015) или более поздних версий. При обнаружении кода JavaScript, который используется одну из этих версий, выводится сообщение об ошибке синтаксиса JS001 для веб-ресурса.
 
 ## <a name="enable-the-solution-checker"></a>Включение средства проверки решений
-Средство проверки решений включено по умолчанию в каждой среде Common Data Service. Пункт меню **Средство проверки решений** доступно при выборе неуправляемого решения в области **Решения** в PowerApps. Если пункт **Выполнить** недоступен в меню **Средство проверки решений**, можно включить его, установив средство проверки решений PowerApps. Для установки выполните следующие шаги.   
+Средство проверки решений включено по умолчанию в каждой среде Common Data Service. Пункт меню **Средство проверки решений** доступно при выборе неуправляемого решения в области **Решения** в Power Apps. Если пункт **Выполнить** недоступен в меню **Средство проверки решений**, можно включить его, установив средство проверки решений Power Apps. Для установки выполните следующие шаги.   
 
-1. Войдите в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) и выберите среду Common Data Service, в которой необходимо включить средство проверки решений. 
+1. Войдите в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) и выберите среду Common Data Service, в которой необходимо включить средство проверки решений. 
 2. В левой области навигации выберите **Решения**.
 3. На панели инструментов выберите **Средство проверки решений**, затем выберите пункт **Установить** — откроется страница Microsoft AppSource. Необходимо включить всплывающие окна, если браузер блокирует открытие страницы. 
 
@@ -48,25 +48,25 @@ ms.locfileid: "2758890"
 
 4. Выберите **Бесплатная пробная версия** на странице AppSource. 
 
-5. Если вы соглашаетесь, примите условия и выберите среду для установки средства проверки решений PowerApps. 
-6. Когда установка завершена, обновите список **Решение** на сайте PowerApps, чтобы проверить доступность средства проверки решений.  
+5. Если вы соглашаетесь, примите условия и выберите среду для установки средства проверки решений Power Apps. 
+6. Когда установка завершена, обновите список **Решение** на сайте Power Apps, чтобы проверить доступность средства проверки решений.  
 7. Чтобы проверить решение, [запустите сродство проверки решений](#run-the-solution-checker).
 
 
-<!-- ### Components created with the PowerApps checker
-When you install the PowerApps checker these solution specific components are created. 
+<!-- ### Components created with the Power Apps checker
+When you install the Power Apps checker these solution specific components are created. 
 - Entities: The entities that are created are required to store the results of solution analysis and the status of analysis jobs in your environment.
    - Analysis Component
    - Analysis Job
    - Analysis Result
 - System job: A system job is created so admins can remove solution analysis data from the environment. The job contains a configuration value, currently set to remove the solution analysis data after 60 days, which an administrator can override. 
 - Security Roles: Two security roles, **Export Customizations**, and **Solution Checker** are created. These roles are required to export the solution for analysis, and storing the analysis results to the entities in your environment.
-- User principle: The **PowerApps Advisor** user is created that allows the checker to authenticate with your Common Data Service environment and assign the two security roles, Export Customizations and Solution Checker. The PowerApps Advisor is an application user and does not consume a license.  -->
+- User principle: The **Power Apps Advisor** user is created that allows the checker to authenticate with your Common Data Service environment and assign the two security roles, Export Customizations and Solution Checker. The Power Apps Advisor is an application user and does not consume a license.  -->
 
 ## <a name="run-the-solution-checker"></a>Запуск средства проверки решений
-После установки средства проверки PowerApps в вашу среду пункт меню **Средство проверки решений** будет доступно при выборе неуправляемого решения в области **Решения** PowerApps. 
+После установки средства проверки Power Apps в вашу среду пункт меню **Средство проверки решений** будет доступно при выборе неуправляемого решения в области **Решения** Power Apps. 
 
-1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1. Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
 2. В левой области выберите **Решения**. 
 3. Рядом с неуправляемым решением, которое требуется проанализировать, выберите пункт **...**, укажите на пункт **Средство проверки решений**, затем выберите **Выполнить**. 
 
@@ -83,7 +83,7 @@ When you install the PowerApps checker these solution specific components are cr
     
     - В это время отображается состояние **Выполняется...** в столбце **Средство проверки решений** столбца **Решение**. 
     
-    - Вы получите уведомление по электронной почте и уведомление в области **Уведомления** сайта PowerApps после завершения проверки.  
+    - Вы получите уведомление по электронной почте и уведомление в области **Уведомления** сайта Power Apps после завершения проверки.  
 
 5.  [Просмотрите отчет](#review-the-solution-checker-report), когда проверка будет завершена.
 

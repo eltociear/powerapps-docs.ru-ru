@@ -1,6 +1,6 @@
 ---
 title: Создание отношения между сущностями с помощью поля подстановки | Microsoft Docs
-description: Пошаговые инструкции по созданию отношения между сущностями в PowerApps с помощью поля подстановки.
+description: Пошаговые инструкции по созданию отношения между сущностями в Power Apps с помощью поля подстановки.
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ac4b57853e6dfc4c0969a4207538e15db0b58bc8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 468f31eeb48a3e79f79db9188be78a7fa6d28c18
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757547"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883587"
 ---
 # <a name="create-a-relationship-between-entities"></a>Создание отношения между сущностями
 Данные в одной сущности часто связаны с данными в другой сущности. Например, может иметься сущность **Преподаватели** и сущность **Класс**,и сущность **Класс** может иметь отношение подстановки с сущностью **Преподаватели** для отображения того, какой преподаватель преподает в этом классе. Можно использовать поле подстановки для отображения данных из сущности **Преподаватели**. Обычно это называется полем подстановки.
@@ -136,7 +136,7 @@ ms.locfileid: "2757547"
 Если [приложение создается автоматически](../canvas-apps/data-platform-create-app.md) из сущности, которая содержит поле подстановки, оно отображается как элемент управления **Раскрывающийся список**, содержащий данные из поля **Основное имя** сущности.
 
 ## <a name="add-1n-and-nn-relationships-for-canvas-apps"></a>Добавление отношений 1:N и N:N для приложений холста
-Воспользуйтесь функцией **Связать**, чтобы связать две записи с помощью отношения "один-ко-многим" или "многие-ко-многим" в Common Data Service. Дополнительные сведения: [Функции связывания и отмены связывания в PowerApps](../canvas-apps/functions/function-relate-unrelate.md)
+Воспользуйтесь функцией **Связать**, чтобы связать две записи с помощью отношения "один-ко-многим" или "многие-ко-многим" в Common Data Service. Дополнительные сведения: [Функции связывания и отмены связывания в Power Apps](../canvas-apps/functions/function-relate-unrelate.md)
 
 ## <a name="next-steps"></a>Дальнейшие шаги
 * [Формирование приложения с использованием базы данных Common Data Service](../canvas-apps/data-platform-create-app.md)

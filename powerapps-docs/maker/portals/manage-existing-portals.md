@@ -1,6 +1,6 @@
 ---
-title: Управлять существующими порталами в PowerApps | Документы Майкрософт
-description: Инструкции по управлению порталом в PowerApps.
+title: Управлять существующими порталами в Power Apps | Документы Майкрософт
+description: Инструкции по управлению порталом в Power Apps.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 82fbc5d8cafa6af13af63eaff106ea028830bd01
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0921e39c93b5f63a3f9a0ea038fd97389ea2b968
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756991"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883923"
 ---
-# <a name="manage-existing-portals-in-powerapps"></a>Управление существующими порталами в PowerApps
+# <a name="manage-existing-portals-in-power-apps"></a>Управление существующими порталами в Power Apps
 
-После создания портала он отображается в разделе **Последние приложения** на домашней странице PowerApps.
+После создания портала он отображается в разделе **Последние приложения** на домашней странице Power Apps.
 
 > [!div class=mx-imgBorder]
 > ![недавние приложения](media/recent-apps.png "Недавние приложения")  
@@ -30,7 +30,7 @@ ms.locfileid: "2756991"
 
 ## <a name="edit"></a>Изменить
 
-Открытие [Студии порталов PowerApps](portal-designer-anatomy.md) для редактирования содержимого и компонентов портала.  
+Открытие [Студии порталов Power Apps](portal-designer-anatomy.md) для редактирования содержимого и компонентов портала.  
 
 > [!div class=mx-imgBorder]
 > ![конструктор портала](media/portal-maker.png "Конструктор портала")  
@@ -42,7 +42,7 @@ ms.locfileid: "2756991"
 > [!div class=mx-imgBorder]
 > ![веб-сайт портала](media/portal-website.png "Веб-сайт портала")  
 
-Кроме того, вы также можете открыть портал для просмотра веб-сайта, выбрав **Обзор веб-сайта** в [студии порталов PowerApps](portal-designer-anatomy.md) для просмотра внесенных изменений в веб-сайте. Открывается веб-сайт в новых вкладках с URL-адресом веб-сайта.
+Кроме того, вы также можете открыть портал для просмотра веб-сайта, выбрав **Обзор веб-сайта** в [студии порталов Power Apps](portal-designer-anatomy.md) для просмотра внесенных изменений в веб-сайте. Открывается веб-сайт в новых вкладках с URL-адресом веб-сайта.
 
 ## <a name="share"></a>Общий доступ
 
@@ -91,7 +91,7 @@ ms.locfileid: "2756991"
 
 ## <a name="settings"></a>Параметры
 
-Отображает настройки портала и позволяет изменить имя портала. Можно также выполнить дополнительные действия как управлять порталом через центр администрирования порталов PowerApps и работа с настройками сайта. Параметры обеспечивают ссылки на центр администрирования порталов PowerApps и параметры сайта. Дополнительные сведения: [Расширенное администрирование портала](admin/admin-overview.md) и [Настройка параметров сайта](configure/configure-site-settings.md).  
+Отображает настройки портала и позволяет изменить имя портала. Можно также выполнить дополнительные действия как управлять порталом через центр администрирования порталов Power Apps и работа с настройками сайта. Параметры обеспечивают ссылки на центр администрирования порталов Power Apps и параметры сайта. Дополнительные сведения: [Расширенное администрирование портала](admin/admin-overview.md) и [Настройка параметров сайта](configure/configure-site-settings.md).  
 
 > [!div class=mx-imgBorder]
 > ![параметры портала](media/portal-settings.png "Параметры портала")  

@@ -20,20 +20,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8b1b38c94cbd4615ff0ab449944e65089865a823
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c13838bdd957d78552d71636b4a165902154e82c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758735"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865769"
 ---
 # <a name="define-alternate-keys-using-solution-explorer"></a>Определение альтернативных ключей с помощью обозревателя решений
 
 Обозреватель решений предоставляет один способ просмотра и создания альтернативных ключей для Common Data Service.
 
-[Портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. <br />Дополнительные сведения: 
+[Портал Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. <br />Дополнительные сведения: 
 - [Определение альтернативных ключей для ссылки на записи](define-alternate-keys-reference-records.md)<br />
-- [Определение альтернативных ключей с помощью портала PowerApps](define-alternate-keys-portal.md)
+- [Определение альтернативных ключей с помощью портала Power Apps](define-alternate-keys-portal.md)
 
 ## <a name="open-solution-explorer"></a>Откройте обозреватель решений
 
@@ -72,5 +72,5 @@ ms.locfileid: "2758735"
 ### <a name="see-also"></a>См. также
 
 [Определение альтернативных ключей для ссылки на записи](define-alternate-keys-reference-records.md)<br />
-[Определение альтернативных ключей с помощью портала PowerApps](define-alternate-keys-portal.md)<br />
+[Определение альтернативных ключей с помощью портала Power Apps](define-alternate-keys-portal.md)<br />
 [Документация для разработчиков. Определение альтернативных ключей для сущности](/dynamics365/customer-engagement/developer/define-alternate-keys-entity).

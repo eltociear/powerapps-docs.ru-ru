@@ -1,6 +1,6 @@
 ---
-title: Создание и изменение сущностей с помощью портала PowerApps | MicrosoftDocs
-description: Узнайте, как создавать и изменять сущности с помощью портала PowerApps
+title: Создание и изменение сущностей с помощью портала Power Apps | MicrosoftDocs
+description: Узнайте, как создавать и изменять сущности с помощью портала Power Apps
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
@@ -21,16 +21,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6b1fb1e479237face89e0a19ee145f7fa428cb62
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2aa8cb6f5bb0cd3e58eda61c2b9c7b9d03637ec7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758119"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866106"
 ---
-# <a name="create-and-edit-entities-using-powerapps-portal"></a>Создание и изменение сущностей с помощью портала PowerApps
+# <a name="create-and-edit-entities-using-power-apps-portal"></a>Создание и изменение сущностей с помощью портала Power Apps
 
-[Портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) обеспечивает простой способ создания и изменения сущностей для Common Data Service.
+[Портал Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) обеспечивает простой способ создания и изменения сущностей для Common Data Service.
 
 Портал позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. Дополнительные сведения: 
 - [Создание и изменение сущностей в Common Data Service](create-edit-entities.md)
@@ -38,7 +38,7 @@ ms.locfileid: "2758119"
 
 ## <a name="view-entities"></a>Просмотр сущностей
 
-1. На [портале PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите режим конструирования **на основе модели** или **Холст**.
+1. На [портале Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите режим конструирования **на основе модели** или **Холст**.
 2. Выберите **Данные** > **Сущности**.
 
 ![Просмотр сущностей](media/view-entities-portal.png)
@@ -143,7 +143,7 @@ ms.locfileid: "2758119"
 
 Во время [просмотра сущностей](#view-entities) выберите сущность и щелкните **Удалить сущность** в меню или контекстном меню.
 
-![Удаление сущности с помощью портала PowerApps](media/delete-entity-powerapps-portal.png)
+![Удаление сущности с помощью портала Power Apps](media/delete-entity-powerapps-portal.png)
 
 Если сущность имеет зависимости, которые не дают удалить сущность, отобразится сообщение об ошибке. Чтобы определить и удалить все зависимости, потребуется использовать обозреватель решений. Дополнительные сведения: [Определение зависимостей сущностей](create-edit-entities-solution-explorer.md#identify-entity-dependencies)
 

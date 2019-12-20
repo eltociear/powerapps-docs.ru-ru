@@ -1,6 +1,6 @@
 ---
-title: Переход в мои приложения, обозреватель решений и параметры в PowerApps | Microsoft Docs
-description: Узнайте, как найти расширенные области создания и настройки приложений в PowerApps.
+title: Переход в мои приложения, обозреватель решений и параметры в Power Apps | Microsoft Docs
+description: Узнайте, как найти расширенные области создания и настройки приложений в Power Apps.
 keywords: ''
 author: Mattp123
 ms.author: matp
@@ -22,27 +22,27 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9e28fdd31aa77a718f3a805214900954afcc3a74
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e0e9e71f1df22d091597add562b8a863504ed0aa
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752297"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885104"
 ---
 # <a name="navigate-to-advanced-model-driven-app-making-and-customization-areas"></a>Переход к расширенным областям создания и настройки управляемых моделью приложений
 
-В этом разделе описывается, как получить доступ к расширенным областям настройки и администрирования, доступным в среде PowerApps.
+В этом разделе описывается, как получить доступ к расширенным областям настройки и администрирования, доступным в среде Power Apps.
 
 ## <a name="solutions"></a>Решения
 В области решений можно просмотреть, изменить, создать, импортировать, экспортировать и удалить управляемые и неуправляемые решения. 
 
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2.  В левой области навигации выберите **Решения**. 
 
 ## <a name="solution-explorer"></a>Обозреватель решений
-Используйте обозреватель решений для выполнения задач создания и настройки приложений, которые невозможно выполнить на домашней странице PowerApps.
+Используйте обозреватель решений для выполнения задач создания и настройки приложений, которые невозможно выполнить на домашней странице Power Apps.
 
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
 2.  В левой области навигации выберите **Решения**.  
 3.  Выберите **Перейти в классический режим** на панели инструментов, чтобы открыть представление **Все решения**. 
     Обратите внимание, что команда **Перейти в классический режим** недоступна при выборе решения в списке.
@@ -52,7 +52,7 @@ ms.locfileid: "2752297"
 В области приложений перечислены управляемые модель приложения и приложения на основе холста, для которых у вас есть привилегии в среде. Помимо запуска приложения в области приложений можно также назначить ему роли безопасности. 
 
 Для совместного использования приложения:
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2.  Выберите **Приложения**.
  
@@ -69,7 +69,7 @@ ms.locfileid: "2752297"
 Во-первых, убедитесь, что нужный параметр находится в меню ![Значок "Параметры"](media/powerapps-gear.png)  > **Дополнительные настройки**.
 
 Чтобы найти параметры, недоступные в области **Дополнительные настройки**:  
-1.  Из управляемого моделью приложений PowerApps, выберите **Параметры** ![Параметры](../model-driven-apps/media/powerapps-gear.png) на панели инструментов приложения, затем выберите **Дополнительные параметры**. 
+1.  Из управляемого моделью приложений Power Apps, выберите **Параметры** ![Параметры](../model-driven-apps/media/powerapps-gear.png) на панели инструментов приложения, затем выберите **Дополнительные параметры**. 
 2.  Выберите **Параметры**, затем выберите нужную область параметров.
 
     > [!div class="mx-imgBorder"] 
@@ -77,4 +77,4 @@ ms.locfileid: "2752297"
 
 ## <a name="see-also"></a>См. также
 [Создание или изменение приложения, управляемого моделью, с помощью конструктора приложений](create-edit-app.md)
-[Создание или изменение приложений в PowerApps Studio для Web](../canvas-apps/create-app-browser.md)
+[Создание или изменение приложений в Power Apps Studio для Web](../canvas-apps/create-app-browser.md)

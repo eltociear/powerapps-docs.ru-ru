@@ -1,5 +1,5 @@
 ---
-title: Создание или изменение форм быстрого создания приложений на основе модели в PowerApps | Документация Майкрософт
+title: Создание или изменение форм быстрого создания приложений на основе модели в Power Apps | Документация Майкрософт
 description: Инструкции по созданию и изменению формы быстрого создания
 ms.custom: ''
 ms.date: 05/14/2019
@@ -22,20 +22,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b1496fcb600524e7934fe55ca17a7a7bafb54c75
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 171d64581fd0a9feb51d5a6111c79e63de1ba845
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759175"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875369"
 ---
 # <a name="create-or-edit-model-driven-app-quick-create-forms-for-a-streamlined-data-entry-experience"></a>Создание или изменение форм быстрого создания для управляемых моделью приложений для упрощения ввода данных
 
 В этом разделе вы будете создавать и изменять форму быстрого создания.
 
- Экспресс-формы создания оптимизируют в приложении ввод данных и обеспечивают полную поддержку логики, определенной в скриптах форм и бизнес-правилах. В приложении на основе модели PowerApps экспресс-формы создания появляются при выборе кнопки **Создать** в навигационной панели или при выборе **+ Создать** при создании новой записи из результатов поиска или вложенной сетки.
+ Экспресс-формы создания оптимизируют в приложении ввод данных и обеспечивают полную поддержку логики, определенной в скриптах форм и бизнес-правилах. В приложении на основе модели Power Apps экспресс-формы создания появляются при выборе кнопки **Создать** в навигационной панели или при выборе **+ Создать** при создании новой записи из результатов поиска или вложенной сетки.
   
- Мобильные приложения Dynamics 365 используют экспресс-формы создания для создания новых записей. Если для сущности уже настроена экспресс-форма создания, мобильные приложения используют эту форму. Если для сущности не настроена экспресс-форма создания, PowerApps создает экспресс-форму создания для создания записей в мобильных приложениях на основе определения основной формы.  
+ Мобильные приложения Dynamics 365 используют экспресс-формы создания для создания новых записей. Если для сущности уже настроена экспресс-форма создания, мобильные приложения используют эту форму. Если для сущности не настроена экспресс-форма создания, Power Apps создает экспресс-форму создания для создания записей в мобильных приложениях на основе определения основной формы.  
   
 <a name="BKMK_QuickCreateFormEntities"></a>   
 ## <a name="entities-with-quick-create-forms"></a>Сущности с экспресс-формами создания  
@@ -61,7 +61,7 @@ ms.locfileid: "2759175"
   
 ### <a name="how-to-create-a-quick-create-form"></a>Порядок создания экспресс-формы создания  
   
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 
 > [!IMPORTANT]
@@ -99,7 +99,7 @@ ms.locfileid: "2759175"
   
 ### <a name="to-edit-a-quick-create-form"></a>редактирование экспресс-формы создания  
   
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 > [!IMPORTANT]
 > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment).    

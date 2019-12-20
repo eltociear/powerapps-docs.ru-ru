@@ -1,5 +1,5 @@
 ---
-title: Свойства iFrame для основных форм управляемых моделью приложений в PowerApps | MicrosoftDocs
+title: Свойства iFrame для основных форм управляемых моделью приложений в Power Apps | MicrosoftDocs
 description: Познакомьтесь со свойствами интернет-кадров iFrame для основных форм
 Keywords: Основная форма; Свойства iFrame; Dynamics 365
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 532b720277cdc9649e8ef161e9ff623298c5f570
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 7c4d4348726dfb53b0b54e3a8d86a1809a568b7b
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754053"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875017"
 ---
 # <a name="iframe-properties-for-model-driven-app-main-forms"></a>Свойства iFrame для основных форм управляемых моделью приложений
 
@@ -31,7 +31,7 @@ ms.locfileid: "2754053"
 
 Чтобы просмотреть свойства iFrame, выполните следующие действия.
 
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2.  Разверните **Данные**, выберите **Сущности**, выберите требуемую сущность, затем выберите вкладку **Формы**. 
 

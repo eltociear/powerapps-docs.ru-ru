@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: eed1efac81b882d076e0e809c93ddec63f6a75f7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bf9b21936a0b1a9d843d248cf4941854dcdbbd7d
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759747"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874577"
 ---
 # <a name="quick-start-for-transitioning-your-legacy-web-client-application-to-unified-interface"></a>Краткое руководство по переводу старого приложения веб-клиента на единый интерфейс
 
@@ -43,7 +43,7 @@ ms.locfileid: "2759747"
 ## <a name="prepare-the-environment"></a>Подготовка среды
 Во-первых, выберите непроизводственную среду и включите режим **Использовать только единый интерфейс**, в результате чего единый интерфейс будет использоваться для всех управляемых моделью приложений в среде. Это также включает любое модули приложений Dynamics 365, первоначально настроенные для старого веб-клиента.
 
-1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), выберите **Среда**, затем выберите среду песочницы. 
+1. Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), выберите **Среда**, затем выберите среду песочницы. 
 
 2. Выберите **Параметры** > **Поведение**, затем включите **Использовать только единый интерфейс**.
 
@@ -62,7 +62,7 @@ ms.locfileid: "2759747"
 ## <a name="run-and-validate-your-application-in-the-unified-interface"></a>Запуск и проверка приложения в едином интерфейсе
 Запустите приложения, которые ранее были приложениями веб-клиента. Обратите внимание, что после включения параметра **Включить только единый интерфейс** все доступные приложения в среде используют единый интерфейс, даже если приложение было изначально настроено для веб-клиента.
 
-Для запуска приложения войдите в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), выберите **Приложения**, затем выберите приложение, которое требуется запустить. Кроме того, вы можете перейти непосредственно на страницу **Мои приложения**, например, *https://contoso.crm.dynamics.com/apps/*.
+Для запуска приложения войдите в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), выберите **Приложения**, затем выберите приложение, которое требуется запустить. Кроме того, вы можете перейти непосредственно на страницу **Мои приложения**, например, *https://contoso.crm.dynamics.com/apps/*.
 
 ### <a name="validate-your-app-processes-and-customizations"></a>Проверка приложения, процессов и настроек 
 Рекомендуется проверить все варианты использования. Можно начать с самых важных вариантов использования или группировать их в логические схемы дизайна. Поскольку единый интерфейс базируется на отзывчивом дизайне, рекомендуется выполнять тесты на различных устройствах с различным разрешением экрана. По мере тестирования приложения вы сможете убедиться, что настройки с совместимы с единым интерфейсом, а также определить, имеются ли какие-либо функции, которые требуют переработки или у которых отсутствует функциональность. Создайте план для проверки этих элементов и размещайте вопросы и отзывы на нашем форуме сообщества. 
@@ -118,10 +118,10 @@ ms.locfileid: "2759747"
 [Сборник схем единого интерфейса](unified-interface-playbook.md) <br />
 [Подход к пользовательскому опыту работы и переходу на единый интерфейс](approaching-unified-interface.md) <br />
 [Об едином интерфейсе](/dynamics365/customer-engagement/admin/about-unified-interface) <br />
-[Что такое приложения на основе модели в PowerApps?](model-driven-app-overview.md) <br />
+[Что такое приложения на основе модели в Power Apps?](model-driven-app-overview.md) <br />
 [Обновление приложений на единый интерфейс](/dynamics365/customer-engagement/admin/update-apps-to-unified-interface) <br />
 [Настройка панелей мониторинга интерактивного взаимодействия управляемых моделью приложений](configure-interactive-experience-dashboards.md) <br />
 [Использование настраиваемых элементов управления для визуализации данных управляемых моделью приложений](use-custom-controls-data-visualizations.md) <br />
-[Обзор PowerApps component framework](/powerapps/developer/component-framework/overview) <br />
+[Обзор Power Apps component framework](/powerapps/developer/component-framework/overview) <br />
 [Единый интерфейс для всех](/power-platform-release-plan/2019wave2/microsoft-powerapps/unified-interface-app-everybody)
 

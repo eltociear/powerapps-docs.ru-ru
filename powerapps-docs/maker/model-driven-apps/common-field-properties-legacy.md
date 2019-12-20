@@ -1,5 +1,5 @@
 ---
-title: Общие свойства полей приложений на основе модели в PowerApps | Документация Майкрософт
+title: Общие свойства полей приложений на основе модели в Power Apps | Документация Майкрософт
 description: Знакомство с общими свойствами полей для основной формы
 Keywords: Основная форма; Общие свойства полей; Dynamics 365
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e30d84206e92162327f1faf0035450ede9c05a8a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5da30442c2768701fbc48908653d8ae065c4fce9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701326"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863567"
 ---
 # <a name="model-driven-app-common-field-properties"></a>Общие свойства полей управляемых моделью приложений
 

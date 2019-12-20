@@ -1,5 +1,5 @@
 ---
-title: Изменение сообщений системной сущности с PowerApps | MicrosoftDocs
+title: Изменение сообщений системной сущности с Power Apps | MicrosoftDocs
 description: Узнайте, как редактировать сообщения системной сущности
 ms.custom: ''
 ms.date: 05/15/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f90f2fc6f3a4eb0707eda9d9ce73acfc422ed5d9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8272196bae92d9724cc41816eced2d1cfc2d2eac
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705418"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860998"
 ---
 # <a name="edit-system-entity-messages"></a>Редактирование сообщений системной сущности
 
 Отображаемое имя по умолчанию некоторых системных сущностей используется в тексте ИП и сообщениях об ошибках в Common Data Service. Если изменить отображаемое имя, следует также обновить все сообщения, в которых используется отображаемое имя по умолчанию. Например, при изменении отображаемого имени с *Организация* на *Компания*, в сообщении об ошибке по-прежнему будет отображаться старое имя.  
 
-Нельзя изменять системные сообщения с помощью портала PowerApps, необходимо использовать обозреватель решений.
+Нельзя изменять системные сообщения с помощью портала Power Apps, необходимо использовать обозреватель решений.
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 

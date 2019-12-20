@@ -1,5 +1,5 @@
 ---
-title: Задание управляемых свойств для отношений в PowerApps | MicrosoftDocs
+title: Задание управляемых свойств для отношений в Power Apps | MicrosoftDocs
 description: Узнайте, как задавать управляемые свойства отношения сущностей
 ms.custom: ''
 ms.date: 06/20/2018
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6eb71b72be40b581f7579709bdbe18ac72db1e1d
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5052f85fea1fb6c11976c2c1da021a03028c244c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702294"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865394"
 ---
 # <a name="set-managed-properties-for-relationships"></a>Настройка управляемых свойств для отношений
 

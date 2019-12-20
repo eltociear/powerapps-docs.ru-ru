@@ -1,5 +1,5 @@
 ---
-title: Сортировка записей в представлении управляемого моделью приложения в PowerApps | MicrosoftDocs
+title: Сортировка записей в представлении управляемого моделью приложения в Power Apps | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -21,18 +21,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7cd1e7b160550b877dd0ddd7a79b6babfbf56669
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5a80764f3f00df60b54c4c7c23d2e167de2e006b
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752554"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874797"
 ---
 # <a name="sort-records-in-a-model-driven-app-view"></a>Сортировка записей в представлении управляемого моделью приложения
 
  При создании или изменении представления можно настроить порядок сортировки по возрастанию или по убыванию.   
   
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 
 2.  Разверните **Данные**, выберите **Сущности**, а затем выберите требуемую сущность, например **Организации**.   

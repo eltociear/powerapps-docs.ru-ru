@@ -1,5 +1,5 @@
 ---
-title: Создание и изменение общих или системных представлений управляемых моделью приложений в PowerApps | Документация Майкрософт
+title: Создание и изменение общих или системных представлений управляемых моделью приложений в Power Apps | Документация Майкрософт
 description: Узнайте, как создавать или изменять представления с помощью конструктора приложений
 keywords: ''
 ms.date: 11/27/2018
@@ -24,18 +24,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3c3e7133076eb46718ed3f60d1df4f36a012c520
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 03bfaec424624be1094314dbae763114892d2a59
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753905"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884884"
 ---
 # <a name="create-and-edit-public-or-system-model-driven-app-views"></a>Создание и изменение общих или системных представлений управляемых моделью приложений
 
 В этом разделе вы выполните несколько задач, необходимых для работы с представлениями, например создание общего представления, добавление существующего представления к приложению и изменение столбцов, фильтров и порядка сортировки для представления.
 
-В PowerApps представления определяют отображение записей для конкретной сущности. Представление определяет следующее:
+В Power Apps представления определяют отображение записей для конкретной сущности. Представление определяет следующее:
 -  Отображаемые столбцы (атрибуты)
 -  Ширина столбцов
 -  Порядок сортировки записей по умолчанию
@@ -48,9 +48,9 @@ ms.locfileid: "2753905"
 
 Дополнительные сведения см. в разделе [Сведения о представлениях](create-edit-views.md)
 
-## <a name="create-a-public-view-in-powerapps"></a>Создание общего представления в PowerApps
-Как создатель приложения, вы можете создавать и изменять общие представления с помощью PowerApps.
-1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+## <a name="create-a-public-view-in-power-apps"></a>Создание общего представления в Power Apps
+Как создатель приложения, вы можете создавать и изменять общие представления с помощью Power Apps.
+1. Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 
     > [!IMPORTANT]
@@ -84,7 +84,7 @@ ms.locfileid: "2753905"
 ### <a name="open-and-add-a-view-in-the-app-designer"></a>Открытие и добавление представления в конструкторе приложений
 
 Следующие шаги объясняют, как открыть и добавить представление в конструкторе приложений.
-1. В PowerApps выберите **Приложения** в левой панели навигации, выберите **...** рядом с требуемым приложением, затем выберите **Изменить**. 
+1. В Power Apps выберите **Приложения** в левой панели навигации, выберите **...** рядом с требуемым приложением, затем выберите **Изменить**. 
 
 2. В разделе **Представление сущности** конструктора приложений выберите **Представления**.
 
@@ -181,7 +181,7 @@ ms.locfileid: "2753905"
 
 
 ## <a name="community-tools"></a>Средства сообщества
-**View Layout Replicator** и **View Designer** — это средства, разработанные сообществом XrmToolbox для PowerApps.
+**View Layout Replicator** и **View Designer** — это средства, разработанные сообществом XrmToolbox для Power Apps.
 
 Дополнительные сведения: [Средства для разработчиков](/powerapps/developer/common-data-service/developer-tools).
 

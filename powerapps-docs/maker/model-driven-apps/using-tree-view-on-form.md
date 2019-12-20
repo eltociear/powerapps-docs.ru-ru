@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8e032cc95f64e842552308ccf9d179fc153b49fd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 37f935bc8767f4738e2cfd317b7447653f848f65
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710434"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867558"
 ---
 # <a name="using-the-tree-view-in-the-form-designer"></a>Использование представления дерева в конструкторе форм
 В области **Представление в виде дерева** отображается визуальная иерархия компонентов в форме. Значки в представлении в виде дерева помогают быстро определить тип поля или компонента. 

@@ -1,5 +1,5 @@
 ---
-title: Изменение значков настраиваемой сущности управляемых моделью приложений в PowerApps | Документация Майкрософт
+title: Изменение значков настраиваемой сущности управляемых моделью приложений в Power Apps | Документация Майкрософт
 definition: Learn how to change the icon for a custom entity
 ms.custom: ''
 ms.date: 05/17/2018
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f7e23ece0ee37d15ef5401421d078e81dd5d590c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7d45a3fc5afae25f2a4e254c033f4e35be20c0ff
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2700798"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869274"
 ---
 # <a name="change-model-driven-app-custom-entity-icons"></a>Изменение значков настраиваемой сущности управляемых моделью приложений 
 
@@ -69,7 +69,7 @@ ms.locfileid: "2700798"
   
 ## <a name="community-tools"></a>Средства сообщества
 
-**[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)** — это средство, которое разработало сообщество XrmToolbox для PowerApps. См. раздел [Средства для разработчиков для Common Data Service](/powerapps/developer/common-data-service/developer-tools) для средств разработки от сообщества.
+**[Iconator](https://www.xrmtoolbox.com/plugins/MscrmTools.Iconator/)** — это средство, которое разработало сообщество XrmToolbox для Power Apps. См. раздел [Средства для разработчиков для Common Data Service](/powerapps/developer/common-data-service/developer-tools) для средств разработки от сообщества.
 
 > [!NOTE]
 > Средства сообществ не являются продуктом корпорации Майкрософт, и на них не распространяется поддержка. При наличии вопросов по средству обращайтесь к его издателю. Дополнительные сведения: [XrmToolBox](https://www.xrmtoolbox.com).

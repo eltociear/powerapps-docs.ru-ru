@@ -13,24 +13,24 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fa1602b59ed0fdfeec09a8bc7e5f1126249f071f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 24164d6eb03de550a1f3f4a8f3e8402154d03046
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757503"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865622"
 ---
 # <a name="open-entity-data-in-excel"></a>Открытие данных сущности в Excel
-Открыв данные сущности в Microsoft Excel, можно быстро и легко просматривать и редактировать данные с помощью надстройки Microsoft PowerApps Excel. Для надстройки PowerApps Excel требуется Microsoft Excel 2016.
+Открыв данные сущности в Microsoft Excel, можно быстро и легко просматривать и редактировать данные с помощью надстройки Microsoft Power Apps Excel. Для надстройки Power Apps Excel требуется Microsoft Excel 2016.
 
-![Надстройка Excel](./media/data-platform-cds-excel-addin/ExcelAddin.png "Надстройка PowerApps Excel")
+![Надстройка Excel](./media/data-platform-cds-excel-addin/ExcelAddin.png "Надстройка Power Apps Excel")
 
 ## <a name="open-entity-data-in-excel"></a>Открытие данных сущности в Excel
 1. На сайте [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) разверните раздел **Данные** и щелкните или нажмите **Сущности** на левой панели навигации. Все сущности отображаются.
 2. Щелкните многоточие (...) справа от интересующей вас сущности.
-3. Щелкните **Открыть в Excel**, затем откройте книгу, которая создается. Эта книга содержит данные для привязки сущности, указатель на вашу среду и указатель на надстройку PowerApps Excel.  
-4. В Excel щелкните **Включить изменение**, чтобы разрешить работу надстройки PowerApps Excel. Надстройка Excel запускается в области с правой стороны окна Excel.
-5. Если надстройка PowerApps Excel запускается впервые, щелкните **Доверять этой надстройке**, чтобы разрешить запуск надстройки Excel.
+3. Щелкните **Открыть в Excel**, затем откройте книгу, которая создается. Эта книга содержит данные для привязки сущности, указатель на вашу среду и указатель на надстройку Power Apps Excel.  
+4. В Excel щелкните **Включить изменение**, чтобы разрешить работу надстройки Power Apps Excel. Надстройка Excel запускается в области с правой стороны окна Excel.
+5. Если надстройка Power Apps Excel запускается впервые, щелкните **Доверять этой надстройке**, чтобы разрешить запуск надстройки Excel.
 6. Если будет предложено выполнить вход, щелкните **Войти**, после чего выполните вход с помощью тех же учетных данных, который вы использовали на сайте [powerapps.com](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Надстройка Excel будет использовать предыдущий контекст входа и автоматически выполнять вход, если она может. Поэтому проверьте имя пользователя в правом верхнем углу надстройки Excel.
 
 Надстройка Excel автоматически считывает данные для выбранной сущности. Обратите внимание, что книга не содержит данных, пока надстройка Excel не прочитает их.

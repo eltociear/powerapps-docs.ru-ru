@@ -1,6 +1,6 @@
 ---
-title: Определение альтернативных ключей с помощью портала PowerApps | MicrosoftDocs
-description: Узнайте, как определять альтернативные ключи с помощью портала PowerApps
+title: Определение альтернативных ключей с помощью портала Power Apps | MicrosoftDocs
+description: Узнайте, как определять альтернативные ключи с помощью портала Power Apps
 ms.custom: ''
 ms.date: 05/31/2018
 ms.reviewer: ''
@@ -20,16 +20,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fec01122ad00710507fb3e0976ec9f80115f06cf
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d52b3fa67863a43f82f020f3894bbabf5d38df84
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758907"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865482"
 ---
-# <a name="define-alternate-keys-using-powerapps-portal"></a>Определение альтернативных ключей с помощью портала PowerApps
+# <a name="define-alternate-keys-using-power-apps-portal"></a>Определение альтернативных ключей с помощью портала Power Apps
 
-[Портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) обеспечивает простой способ просмотра и создания альтернативных ключей сущностей в Common Data Service.
+[Портал Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) обеспечивает простой способ просмотра и создания альтернативных ключей сущностей в Common Data Service.
 
 Портал позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. <br />Дополнительные сведения: 
 - [Определение альтернативных ключей для ссылки на записи](define-alternate-keys-reference-records.md)
@@ -37,7 +37,7 @@ ms.locfileid: "2758907"
 
 ## <a name="view-alternate-keys"></a>Просмотр альтернативных ключей
 
-1. На [портале PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите режим конструирования **на основе модели** или **Холст**.
+1. На [портале Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите режим конструирования **на основе модели** или **Холст**.
 2. Выберите **Данные** > **Сущности** и выберите сущность, которую необходимо просмотреть.
 3. Выберите **Ключи** для просмотра списка всех альтернативных ключей, которые определены.
 

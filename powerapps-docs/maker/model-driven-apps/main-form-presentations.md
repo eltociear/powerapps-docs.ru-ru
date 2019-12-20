@@ -1,5 +1,5 @@
 ---
-title: Отображение основной формы управляемых моделью приложений в PowerApps | MicrosoftDocs
+title: Отображение основной формы управляемых моделью приложений в Power Apps | MicrosoftDocs
 description: Узнайте, как выглядят основные формы при отображении на различных устройствах
 ms.custom: ''
 ms.date: 06/27/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9ed031f75235cfb47a2206de0a814fb008a335bd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 03eca0ade83c4d241eca9e4f7a6004232aac2b87
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702558"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860118"
 ---
 # <a name="how-model-driven-app-main-forms-appear-on-different-devices"></a>Как основные формы управляемых моделью приложений выглядят на различных устройствах
 

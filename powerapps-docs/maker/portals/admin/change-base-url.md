@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: cfc2fd0ca753aebfe7bc77b73c7e7ec1ca011387
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a0ccf3fe2178b711a5eb61bc64814d343c648d25
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709994"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867338"
 ---
 # <a name="change-the-base-url-of-a-portal"></a>Изменение базового URL-адреса портала
 
@@ -23,7 +23,7 @@ ms.locfileid: "2709994"
 > [!NOTE]
 > Как только базовый URL-адрес портала будет изменен, доступ по старому URL-адресу будет прекращен, и адрес будет доступен другим клиентам для использования для их порталов.
 
-1.  Открытие [Центра администрирования портала PowerApps](admin-overview.md).
+1.  Открытие [Центра администрирования портала Power Apps](admin-overview.md).
 
 2.  Выберите **Действия портала** > **Изменить базовый URL-адрес**. 
 

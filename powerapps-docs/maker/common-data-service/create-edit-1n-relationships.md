@@ -1,5 +1,5 @@
 ---
-title: Создание отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) в обзоре PowerApps | MicrosoftDocs
+title: Создание отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) в обзоре Power Apps | MicrosoftDocs
 description: Узнайте, как создавать отношения сущностей "один-ко-многим" или "многие-к-одному".
 ms.custom: ''
 ms.date: 05/27/2018
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 724a887df3a5347f1d403ac30201297abf5201aa
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 07e173dff08a10de5354c08d3530605f530e512d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758207"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866150"
 ---
 # <a name="create-one-to-many-or-many-to-one-entity-relationships-overview"></a>Создание отношений сущностей "один-ко-многим" или "многие-к-одному" с помощью обзора
 
@@ -40,7 +40,7 @@ ms.locfileid: "2758207"
 
 |Дизайнер| Описание|
 |--|--|
-|[портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) на портале PowerApps](create-edit-1n-relationships-portal.md)|
+|[портал Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) на портале Power Apps](create-edit-1n-relationships-portal.md)|
 |Обозреватель решений|Не так прост, но предоставляет больше гибкости для менее распространенных требований. <br />Дополнительные сведения: [Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) с помощью обозревателя решений](create-edit-1n-relationships-solution-explorer.md) |
 
 > [!NOTE]
@@ -53,7 +53,7 @@ ms.locfileid: "2758207"
 
 Информация в этом разделе поможет вам выбрать конструктор для использования. 
 
-Следует использовать портал PowerApps для создания и редактирования отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) кроме случаев, когда необходимо выполнить любое из следующих требований:
+Следует использовать портал Power Apps для создания и редактирования отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) кроме случаев, когда необходимо выполнить любое из следующих требований:
 
 - Настройка сопоставлений полей
 - Настройка параметров области навигации для управляемого моделью приложения
@@ -72,7 +72,7 @@ ms.locfileid: "2758207"
 ### <a name="see-also"></a>См. также
 
 [Создание и изменение отношений между сущностями](create-edit-entity-relationships.md)<br />
-[Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) на портале PowerApps](create-edit-1n-relationships-portal.md)<br />
+[Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) на портале Power Apps](create-edit-1n-relationships-portal.md)<br />
 [Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) с помощью обозревателя решений](create-edit-1n-relationships-solution-explorer.md)<br />
 [Документация для разработчиков. Настройка метаданных отношений между сущностями](/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)<br />
 [Документация для разработчиков. Доступность отношений между сущностями](/dynamics365/customer-engagement/developer/entity-relationship-eligibility)

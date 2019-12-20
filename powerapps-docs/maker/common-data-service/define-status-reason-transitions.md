@@ -1,5 +1,5 @@
 ---
-title: Определение переходов причин состояния с помощью PowerApps | MicrosoftDocs
+title: Определение переходов причин состояния с помощью Power Apps | MicrosoftDocs
 description: Узнайте, как определять переходы причин состояния
 ms.custom: ''
 ms.date: 05/25/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9fb1fc93b5559c47cebeef4fb73ebd095a48f0a5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5dd257a07a21b2d0b0d2a449feb9df855d51d604
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705594"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861130"
 ---
 # <a name="define-status-reason-transitions-for-the-case-or-custom-entities"></a>Определение переходов причин состояния для обращений или настраиваемых сущностей
 
@@ -65,7 +65,7 @@ ms.locfileid: "2705594"
 Можно изменять варианты в поле причины состояния для сущности "Обращение" и настраиваемых сущностей, чтобы определить, какие другие варианты причин состояния могут выбирать пользователи. Единственное ограничение состоит в том, что каждый вариант причины состояния для активного состояния должен допускать хотя бы один путь к неактивному состоянию. В противном случае можно создать условие, где будет невозможно разрешить или отменить обращение.  
 
 > [!NOTE]
-> Для редактирования переходов причин состояния требуется использовать обозреватель решений. См. раздел [Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps](create-edit-field-solution-explorer.md) для получения сведения о порядке редактирования полей.
+> Для редактирования переходов причин состояния требуется использовать обозреватель решений. См. раздел [Создание и изменение полей для Common Data Service с помощью обозревателя решений Power Apps](create-edit-field-solution-explorer.md) для получения сведения о порядке редактирования полей.
   
  При изменении поля причины состояния кнопка **Редактировать переходы причин состояния** присутствует в меню. 
 
@@ -86,7 +86,7 @@ ms.locfileid: "2705594"
   
 ### <a name="see-also"></a>См. также  
 
-[Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps](create-edit-field-solution-explorer.md)<br />
+[Создание и изменение полей для Common Data Service с помощью обозревателя решений Power Apps](create-edit-field-solution-explorer.md)<br />
 [Метаданные сущности > Состояния сущности](/powerapps/developer/common-data-service/entity-metadata#entity-states)<br />
 [Определение переходов настраиваемой модели состояний](/dynamics365/customer-engagement/developer/define-custom-state-model-transitions)
 

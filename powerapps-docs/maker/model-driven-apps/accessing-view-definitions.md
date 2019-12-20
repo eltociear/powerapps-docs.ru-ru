@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3b29f863399c8a49ca0c0d60ebe2196d6de6414c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 43a35f82f93260b4f4a8f6b5084e6827e46eff8f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752033"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885148"
 ---
-# <a name="access-a-model-driven-app-view-definition-in-powerapps"></a>Доступ к определению представления управляемого моделью приложения в PowerApps
+# <a name="access-a-model-driven-app-view-definition-in-power-apps"></a>Доступ к определению представления управляемого моделью приложения в Power Apps
 
- В этом разделе вы откроете определение представления для отображения свойств и параметров для настройки представления. Существует несколько способов доступа к определениям представления в PowerApps. 
+ В этом разделе вы откроете определение представления для отображения свойств и параметров для настройки представления. Существует несколько способов доступа к определениям представления в Power Apps. 
   
   
 ## <a name="open-a-view-for-editing-in-the-latest-view-designer"></a>Открытие представления для редактирования в новейшем конструкторе представлений
@@ -39,7 +39,7 @@ ms.locfileid: "2752033"
 > [!IMPORTANT]
 > Последняя версия конструктора представлений в настоящее время находится на стадии версии для предварительного ознакомления. Некоторые функции, такие как усовершенствованная фильтрация, настраиваемые элементы управления и свойства столбца еще не поддерживаются. Для выполнения этих задач [откройте представление для редактирования в обозревателе решений](#open-a-view-for-editing-in-solution-explorer).
 
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 
     > [!IMPORTANT]

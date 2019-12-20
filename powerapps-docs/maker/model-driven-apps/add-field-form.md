@@ -1,5 +1,5 @@
 ---
-title: Добавление поля в форму управляемого моделью приложения в PowerApps | MicrosoftDocs
+title: Добавление поля в форму управляемого моделью приложения в Power Apps | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
@@ -21,20 +21,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1eb7d5c88031f7269472906b5bfcad7c91214417
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 38ada6c4c63807c16dd577339c287808f389681a
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2751880"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874973"
 ---
 # <a name="add-a-field-to-a-model-driven-app-form"></a>Добавление поля в форму управляемого моделью приложения 
 
-Если форма PowerApps для стандартной сущности не соответствует бизнес-требованиям вашего предприятия, можно настроить форму, изменив существующие поля или добавив новые. Хотя может быть проще изменить существующие на форме поля, иногда лучше добавить поле, решающее конкретную бизнес-задачу.
+Если форма Power Apps для стандартной сущности не соответствует бизнес-требованиям вашего предприятия, можно настроить форму, изменив существующие поля или добавив новые. Хотя может быть проще изменить существующие на форме поля, иногда лучше добавить поле, решающее конкретную бизнес-задачу.
 
 В этом разделе вы добавите поле в форму.   
   
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 
     > [!IMPORTANT]

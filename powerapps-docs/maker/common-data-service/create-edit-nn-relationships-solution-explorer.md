@@ -20,20 +20,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 68b64d5ec7c7f81352a2b9733310d2ec5e51d9c1
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8c5239874449772922ec9fa89ece7d2b3a5d7f06
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757811"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861354"
 ---
 # <a name="create-nn-many-to-many-entity-relationships-in-common-data-service-using-solution-explorer"></a>Создание отношений сущностей N:N (многие-ко-многим) в Common Data Service с помощью обозревателя решений
 
 Обозреватель решений предоставляет один способ создания и изменения отношений N:N (многие-ко-многим) для Common Data Service.
 
-[Портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. Дополнительные сведения:
+[Портал Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. Дополнительные сведения:
 - [Создание отношений сущностей N:N (многие-ко-многим)](create-edit-nn-relationships.md)
-- [Создание отношений сущностей "многие-ко-многим" в Common Data Service с помощью портала PowerApps](create-edit-nn-relationships-portal.md)
+- [Создание отношений сущностей "многие-ко-многим" в Common Data Service с помощью портала Power Apps](create-edit-nn-relationships-portal.md)
 
   
 ## <a name="open-solution-explorer"></a>Откройте обозреватель решений
@@ -112,5 +112,5 @@ ms.locfileid: "2757811"
 ### <a name="see-also"></a>См. также
 
 [Создание отношений сущностей N:N (многие-ко-многим)](create-edit-nn-relationships.md)<br />
-[Создание отношений сущностей "многие-ко-многим" в Common Data Service с помощью портала PowerApps](create-edit-nn-relationships-portal.md)<br />
+[Создание отношений сущностей "многие-ко-многим" в Common Data Service с помощью портала Power Apps](create-edit-nn-relationships-portal.md)<br />
 [Создание и изменение отношений сущностей 1:N ("один-ко-многим") или N:1 ("многие-к-одному")](create-edit-1n-relationships.md)

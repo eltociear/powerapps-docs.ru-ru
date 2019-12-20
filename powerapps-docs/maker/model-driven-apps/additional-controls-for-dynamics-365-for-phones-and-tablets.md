@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dc5f2c366d77ca49e5103c89d7114f1defd44b52
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d2883f0912f9708acf8c24b5ec32996cb96ad3c6
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752367"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863611"
 ---
 # <a name="additional-controls-for-dynamics-365-for-phones-and-tablets"></a>Дополнительные элементы управления для Dynamics 365 для телефонов и планшетов 
 
@@ -155,7 +155,7 @@ ms.locfileid: "2752367"
  Используйте элемент управления предварительного просмотра веб-сайта для сопоставления поля URL-адреса и отображения предварительного просмотра веб-сайта.  
   
 > [!IMPORTANT]
->  Включив этот элемент управления, вы даете внешней системе разрешение на совместный доступ пользователей к определенной информации устройства. Данные импортированные из внешних систем в приложение PowerApps или приложений Dynamics 365 таких как Dynamics 365 Sales или Dynamics 365 Customer Service подпадают под действие нашего заявления о конфиденциальности на [заявление о конфиденциальности и файлы cookie корпорации Майкрософт](https://go.microsoft.com/fwlink/p/?LinkId=521839).  
+>  Включив этот элемент управления, вы даете внешней системе разрешение на совместный доступ пользователей к определенной информации устройства. Данные импортированные из внешних систем в приложение Power Apps или приложений Dynamics 365 таких как Dynamics 365 Sales или Dynamics 365 Customer Service подпадают под действие нашего заявления о конфиденциальности на [заявление о конфиденциальности и файлы cookie корпорации Майкрософт](https://go.microsoft.com/fwlink/p/?LinkId=521839).  
 >   
 >  [Уведомления о конфиденциальности](use-the-form-editor-legacy.md#BKMK_PrivacyNotices)  
   

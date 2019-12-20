@@ -1,5 +1,5 @@
 ---
-title: Создание или изменение представления управляемого моделью приложения в PowerApps | MicrosoftDocs
+title: Создание или изменение представления управляемого моделью приложения в Power Apps | MicrosoftDocs
 description: Узнайте, как создать или изменить представление
 ms.custom: ''
 ms.date: 06/11/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7a83134fb655e67dba8b0aa211ba6f25ec383832
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 68d295e6c5426296cf4fb77e794b7c6edbf37021
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759351"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875589"
 ---
 # <a name="create-or-edit-a-model-driven-app-view"></a>Создание или изменение представления управляемого моделью приложения
 
@@ -37,7 +37,7 @@ ms.locfileid: "2759351"
   
 ### <a name="create-a-new-view"></a>Создать новое представление  
   
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
     
 
@@ -65,11 +65,11 @@ ms.locfileid: "2759351"
 
 7.  Нажмите кнопку **OK**, чтобы закрыть диалоговое окно **Изменить условия фильтра**, затем нажмите **Сохранить и закрыть** в редакторе представлений.  
   
-8.  Обратите внимание, что теперь представление доступно на вкладке **Представления** на сайте PowerApps, и его можно добавлять в приложение.
+8.  Обратите внимание, что теперь представление доступно на вкладке **Представления** на сайте Power Apps, и его можно добавлять в приложение.
   
 ### <a name="edit-a-view"></a>Изменение представления  
   
-1.  На вкладке **Представления** на сайте PowerApps выберите представление **Количество сотрудников**.
+1.  На вкладке **Представления** на сайте Power Apps выберите представление **Количество сотрудников**.
   
 2.  Измените **Имя** представления на **Количество сотрудников с 25 или более сотрудниками в Аризоне** и нажмите кнопку **OK**.  
 

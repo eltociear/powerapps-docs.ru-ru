@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 0aa057594b500c7019a4d645c70cafcfff183608
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 80f9cc89b0da2eec5d134f282507e68658e42a96
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756007"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2816398"
 ---
 # <a name="migrate-portal-configuration"></a>Перенос конфигурации портала
 
@@ -29,11 +29,16 @@ ms.locfileid: "2756007"
 > - Минимальная версия решения порталов, поддерживаемая файлами схемы для миграции данных конфигурации: 8.4.0.275. Однако рекомендуется использовать самую новую версию решения.
 
 Файлы схемы доступны для следующих типов порталов:
-- [портал сообщества;](https://go.microsoft.com/fwlink/p/?linkid=2019704)
-- [Портал самообслуживания клиентов](https://go.microsoft.com/fwlink/p/?linkid=2019705)
-- [портал партнеров.](https://go.microsoft.com/fwlink/p/?linkid=2019803)
-- [Портал самообслуживания сотрудников](https://go.microsoft.com/fwlink/p/?linkid=2019802)
-- [Пользовательский портал](https://go.microsoft.com/fwlink/p/?linkid=2019804)
+
+- **Порталы, созданные в среде с Common Data Service**
+    - [Настраиваемый портал (портал с нуля)](https://go.microsoft.com/fwlink/p/?linkid=2110477)
+
+- **Порталы, созданные в среде, содержащей приложения на основе моделей в Dynamics 365**
+    - [Настраиваемый портал (портал с нуля)](https://go.microsoft.com/fwlink/p/?linkid=2019804)
+    - [портал сообщества;](https://go.microsoft.com/fwlink/p/?linkid=2019704)
+    - [Портал самообслуживания клиентов](https://go.microsoft.com/fwlink/p/?linkid=2019705)
+    - [портал партнеров.](https://go.microsoft.com/fwlink/p/?linkid=2019803)
+    - [Портал самообслуживания сотрудников](https://go.microsoft.com/fwlink/p/?linkid=2019802)
 
 Файлы схемы по умолчанию содержат сведения о всех сущностях портала, отношениях и определениях уникальности для каждой сущности. Дополнительные сведения: [Экспорт данных конфигурации портала](#export-portal-configuration-data)
 

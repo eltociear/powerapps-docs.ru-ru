@@ -1,5 +1,5 @@
 ---
-title: Создание и изменение полей для Common Data Service с помощью портала PowerApps | MicrosoftDocs
+title: Создание и изменение полей для Common Data Service с помощью портала Power Apps | MicrosoftDocs
 ms.custom: ''
 ms.date: 08/13/2019
 ms.reviewer: ''
@@ -19,24 +19,24 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 231970fb08886b993b55dcc6506ef387c9a20018
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 21e0d713608b2c0bddcf9dc7d292973f0f58259f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757987"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861442"
 ---
-# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-portal"></a>Создание и изменение полей для Common Data Service с помощью портала PowerApps
+# <a name="create-and-edit-fields-for-common-data-service-using-power-apps-portal"></a>Создание и изменение полей для Common Data Service с помощью портала Power Apps
 
-[Портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) обеспечивает простой способ создания и изменения полей сущностей в Common Data Service.
+[Портал Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) обеспечивает простой способ создания и изменения полей сущностей в Common Data Service.
 
 Портал позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. <br />Дополнительные сведения: 
 - [Создание и изменение полей для Common Data Service](create-edit-fields.md)
-- [Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps](create-edit-field-solution-explorer.md)
+- [Создание и изменение полей для Common Data Service с помощью обозревателя решений Power Apps](create-edit-field-solution-explorer.md)
 
 ## <a name="view-fields"></a>Просмотр полей
 
-1. На [портале PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите режим конструирования **на основе модели** или **Холст**.
+1. На [портале Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите режим конструирования **на основе модели** или **Холст**.
 2. Выберите **Данные** > **Сущности** и выберите сущность с полями, которые необходимо просмотреть.
 3. На вкладке **Поля** можно выбрать следующие представления. 
 
@@ -233,7 +233,7 @@ ms.locfileid: "2757987"
 
 ### <a name="see-also"></a>См. также  
 [Создание и изменение полей для Common Data Service](create-edit-fields.md)<br />
-[Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps](create-edit-field-solution-explorer.md)<br />
+[Создание и изменение полей для Common Data Service с помощью обозревателя решений Power Apps](create-edit-field-solution-explorer.md)<br />
 [Типы полей и типы данных полей](types-of-fields.md)<br />
 [Определение вычисляемых полей для автоматизации ручных расчетов](define-calculated-fields.md)<br />
 [Определение полей свертки, которые агрегируют значения](define-rollup-fields.md)<br />

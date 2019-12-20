@@ -1,6 +1,6 @@
 ---
-title: Создание и изменение отношений сущностей "Один-ко-многим" или "Многие-к-одному" на портале PowerApps | Документация Майкрософт
-description: Узнайте, как создать отношение сущностей "один-ко-многим" или "многие-к-одному" с помощью портала PowerApps.
+title: Создание и изменение отношений сущностей "Один-ко-многим" или "Многие-к-одному" на портале Power Apps | Документация Майкрософт
+description: Узнайте, как создать отношение сущностей "один-ко-многим" или "многие-к-одному" с помощью портала Power Apps.
 ms.custom: ''
 ms.date: 06/11/2018
 ms.reviewer: ''
@@ -20,16 +20,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 70f48af48b2a9221029735de484b555bc03a66c4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 27f90d74025718eafca642040e40835530177c91
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756535"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861577"
 ---
-# <a name="create-and-edit-one-to-many-or-many-to-one-entity-relationships-using-powerapps-portal"></a>Создание и изменение отношений сущностей "Один-ко-многим" или "Многие-к-одному" на портале PowerApps
+# <a name="create-and-edit-one-to-many-or-many-to-one-entity-relationships-using-power-apps-portal"></a>Создание и изменение отношений сущностей "Один-ко-многим" или "Многие-к-одному" на портале Power Apps
 
-[Портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) обеспечивает простой способ создания и изменения отношений 1:N (один-ко-многим) или N:1 (многие-к-одному) в Common Data Service.
+[Портал Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) обеспечивает простой способ создания и изменения отношений 1:N (один-ко-многим) или N:1 (многие-к-одному) в Common Data Service.
 
 Портал позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. Дополнительные сведения: 
 - [Создание и изменение отношений 1:N (один-ко-многим) или N:1 (многие-к-одному)](create-edit-1n-relationships.md)
@@ -37,7 +37,7 @@ ms.locfileid: "2756535"
 
 ## <a name="view-entity-relationships"></a>Просмотр отношений сущностей
 
-1. На [портале PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите режим конструирования **на основе модели** или **Холст**.
+1. На [портале Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите режим конструирования **на основе модели** или **Холст**.
 2. Выберите **Данные** > **Сущности** и выберите сущность с отношениями, которые необходимо просмотреть.
 3. На вкладке **Отношения** можно выбрать следующие представления. 
 

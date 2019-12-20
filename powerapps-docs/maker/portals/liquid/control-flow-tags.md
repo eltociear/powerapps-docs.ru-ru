@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 77fcc7db0adf68cd6decbcc95e11d8e803761535
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8f5b3701aedc0e0e98d203d5048577647c276120
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2708586"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864787"
 ---
 # <a name="control-flow-tags"></a>Теги потока управления
 
@@ -91,4 +91,4 @@ Hello, stranger.
 [Теги итерирования](iteration-tags.md)<br>
 [Переменные теги](variable-tags.md)<br>
 [Теги шаблона](template-tags.md)<br>
-[Теги сущности Common Data Service PowerApps](portals-entity-tags.md)
+[Теги сущности Common Data Service Power Apps](portals-entity-tags.md)

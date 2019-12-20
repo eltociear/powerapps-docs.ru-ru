@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 38a1ac18a5c978c7b39d6dee85afcb9adf334534
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 9c4ea4e34dacf70a9bb51c28c5761700904a3053
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755831"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862234"
 ---
 # <a name="use-oauth-20-implicit-grant-flow-within-your-portal"></a>Использования последовательности операций неявного предоставления разрешений OAuth 2.0 в рамках портала 
 
@@ -127,11 +127,11 @@ GET https://aadb2cplayground.azurewebsites.net/#token=eyJ0eXAiOiJKV1QiLCJhbGciOI
 
 ## <a name="sample-code"></a>Пример кода
 
-Можно использовать следующий пример кода для начала работы с использованием неявного предоставления разрешений OAuth 2.0 с интерфейсами API порталов PowerApps.
+Можно использовать следующий пример кода для начала работы с использованием неявного предоставления разрешений OAuth 2.0 с интерфейсами API порталов Power Apps.
 
 ### <a name="use-portal-oauth-token-with-an-external-web-api"></a>Использование токена портала OAuth с внешним веб-API
 
-Этот пример является проектом на основе ASP.NET, который используется для проверки токена идентификатора, выданного порталами PowerApps. Полный пример можно найти здесь: [Использование токена портала OAuth с внешним веб-API](https://github.com/microsoft/PowerApps-Samples/tree/master/portals/ExternalWebApiConsumingPortalOAuthTokenSample).
+Этот пример является проектом на основе ASP.NET, который используется для проверки токена идентификатора, выданного порталами Power Apps. Полный пример можно найти здесь: [Использование токена портала OAuth с внешним веб-API](https://github.com/microsoft/PowerApps-Samples/tree/master/portals/ExternalWebApiConsumingPortalOAuthTokenSample).
 
 ### <a name="authorize-endpoint-sample"></a>Пример конечной точки авторизации
 
@@ -139,4 +139,4 @@ GET https://aadb2cplayground.azurewebsites.net/#token=eyJ0eXAiOiJKV1QiLCJhbGciOI
 
 ### <a name="token-endpoint-sample"></a>Пример конечной точки токена
 
-В этом примере показано, как можно использовать функцию getAuthenticationToken для получения токена идентификатора с помощью конечной точки токена в порталах PowerApps. Пример можно найти здесь: [Пример конечной точки токена](https://github.com/microsoft/PowerApps-Samples/blob/master/portals/TokenEndpoint.js).
+В этом примере показано, как можно использовать функцию getAuthenticationToken для получения токена идентификатора с помощью конечной точки токена в порталах Power Apps. Пример можно найти здесь: [Пример конечной точки токена](https://github.com/microsoft/PowerApps-Samples/blob/master/portals/TokenEndpoint.js).

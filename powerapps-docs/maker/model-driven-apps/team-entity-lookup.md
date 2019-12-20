@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3db46288b0f1fc384cae8c683648d1dd0a945d44
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 81b20a326be239445422cce51a54b2e0b991d5c4
+ms.sourcegitcommit: a7f2313a048d3b8a03516a2e4c349f3fb08f4a22
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710874"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "2805708"
 ---
-# <a name="add-the-team-entity-as-a-lookup-option-in-your-app"></a>Добавление сущности рабочей группы в качестве элемента подстановки в вашем приложении
+# <a name="add-an-entity-as-a-lookup-option-in-your-app"></a>Добавление сущности в качестве элемента подстановки в вашем приложении
 
-С приложениями единого интерфейса чтобы сущность рабочей группы была доступна в списке подстановки, она должна быть добавлена в приложение. Например, записи контакты могут назначаться пользователю или рабочей группе.  
+С приложениями единого интерфейса, чтобы сущность была доступна в списке подстановки, она должна быть добавлена в приложение. Например, записи контакты могут назначаться пользователю или рабочей группе.  
 
 > [!div class="mx-imgBorder"] 
 > ![](media/entity-lookup-teams.png "Entity lookup with both users and teams available")

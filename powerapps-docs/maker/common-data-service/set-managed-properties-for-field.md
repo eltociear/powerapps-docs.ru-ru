@@ -1,5 +1,5 @@
 ---
-title: Задание управляемых свойств для полей в PowerApps | MicrosoftDocs
+title: Задание управляемых свойств для полей в Power Apps | MicrosoftDocs
 description: Узнайте, как задавать управляемые свойства для поля
 ms.custom: ''
 ms.date: 06/19/2018
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 44f56e4c3430d52c8b921ece893c893c8258c858
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0b14b5ab55fe6bbaeeb11fb2de548621eb66501a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702030"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865350"
 ---
 # <a name="set-managed-properties-for-fields"></a>Задание управляемых свойств для полей
 

@@ -1,5 +1,5 @@
 ---
-title: Создание карты сайта управляемого моделью приложения для приложения в PowerApps | Документация Майкрософт
+title: Создание карты сайта управляемого моделью приложения для приложения в Power Apps | Документация Майкрософт
 description: Научитесь создавать карту сайта для приложения.
 keywords: ''
 ms.date: 05/29/2018
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 852cacde56cc76dfd166471b9985f28b5b995c13
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d225bba7469ba25f170bfa1f77af226996a9946b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2700666"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860338"
 ---
 # <a name="tutorial-create-a-model-driven-app-site-map-for-an-app-using-the-site-map-designer"></a>Учебник. Создание карты сайта управляемого моделью приложения для приложения с использованием конструктора карт сайта
 

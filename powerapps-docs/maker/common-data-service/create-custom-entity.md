@@ -1,6 +1,6 @@
 ---
-title: Создание настраиваемой сущности с компонентами в PowerApps | Microsoft Docs
-description: Раздел с пошаговыми инструкциями для создания и настройки сущности для использования с приложением PowerApps.
+title: Создание настраиваемой сущности с компонентами в Power Apps | Microsoft Docs
+description: Раздел с пошаговыми инструкциями для создания и настройки сущности для использования с приложением Power Apps.
 author: Mattp123
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 436e4f03a38efc3d61a0d4fb9f027ae6eff1c931
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 864bc9c8cfad92bac661db0b12b47d880cc86edf
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754842"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883807"
 ---
-# <a name="create-a-custom-entity-that-has-components-in-powerapps"></a>Создание настраиваемой сущности с компонентами в PowerApps
+# <a name="create-a-custom-entity-that-has-components-in-power-apps"></a>Создание настраиваемой сущности с компонентами в Power Apps
 
-В PowerApps можно адаптировать приложение к отраслевой специфике, терминологии и уникальным бизнес-процессам вашей организации. Разработка приложений PowerApps включает добавление стандартных готовых сущностей или создание настраиваемых сущностей. Сущность определяет сведения, которые вы хотите отслеживать в форме записей, которые обычно включают свойства, такие как название компании, местоположение, продукты, адрес электронной почты и телефон. 
+В Power Apps можно адаптировать приложение к отраслевой специфике, терминологии и уникальным бизнес-процессам вашей организации. Разработка приложений Power Apps включает добавление стандартных готовых сущностей или создание настраиваемых сущностей. Сущность определяет сведения, которые вы хотите отслеживать в форме записей, которые обычно включают свойства, такие как название компании, местоположение, продукты, адрес электронной почты и телефон. 
 
 В этом разделе вы создадите сущность, а затем добавите или настроите ключевые компоненты, такие как поля, отношения, представления и формы. Узнайте следующие темы:
 
@@ -36,7 +36,7 @@ ms.locfileid: "2754842"
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 
-Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Если у вас еще нет учетной записи PowerApps, выберите **Начать работу бесплатно** на сайте [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Если у вас еще нет учетной записи Power Apps, выберите **Начать работу бесплатно** на сайте [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 ## <a name="create-a-custom-entity"></a>Создание настраиваемой сущности
 

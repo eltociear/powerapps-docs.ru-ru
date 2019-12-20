@@ -1,5 +1,5 @@
 ---
-title: Использование сегментированных решений и исправлений для более простого обновлений решений с PowerApps | MicrosoftDocs
+title: Использование сегментированных решений и исправлений для более простого обновлений решений с Power Apps | MicrosoftDocs
 description: Научитесь использовать сегментацию решений для обновления своих решений
 ms.custom: ''
 ms.date: 06/18/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8f2b890766c6643da0a5363f49ef9b5c233b0b0b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c7a757e7c9b8342778ec2d9f12d05c2b9bc49dd4
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703130"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869779"
 ---
 # <a name="use-segmented-solutions-and-patches-to-export-selected-entity-assets"></a>Использование сегментированных решений и исправлений для экспорта выбранных активов сущности
 

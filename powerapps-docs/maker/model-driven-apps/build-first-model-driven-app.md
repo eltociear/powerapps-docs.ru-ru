@@ -1,5 +1,5 @@
 ---
-title: Создание первого управляемого моделью приложения с нуля с помощью PowerApps | Microsoft Docs
+title: Создание первого управляемого моделью приложения с нуля с помощью Power Apps | Microsoft Docs
 description: Узнайте, как создать простое управляемое моделью приложение.
 documentationcenter: ''
 author: Mattp123
@@ -17,25 +17,25 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9c41feb81fbe90c1ca675105fe898b667f61b2b9
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2a1e27dea75ba2e15ee7b96be2b7597430f89cba
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752600"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885060"
 ---
 # <a name="build-your-first-model-driven-app-from-scratch"></a>Создание первого управляемого моделью приложения с нуля
-Разработка управляемого моделью приложения — это основанный на компонентах подход к разработке приложений. В этом разделе можно упростить создание управляемого моделью приложения с помощью одной из стандартных сущностей, доступных в среде PowerApps.
+Разработка управляемого моделью приложения — это основанный на компонентах подход к разработке приложений. В этом разделе можно упростить создание управляемого моделью приложения с помощью одной из стандартных сущностей, доступных в среде Power Apps.
 
 > [!TIP]
 > Дополнительные сведения о создании управляемых моделью приложений см. в разделе [Общие сведения о компонентах управляемых моделью приложений](model-driven-app-components.md). 
 
-## <a name="sign-in-to-powerapps"></a>Выполнить вход в PowerApps
-Выполните вход в [PowerApps](https://make.powerapps.com/). Если у вас еще нет учетной записи [!INCLUDE [powerapps](../../includes/powerapps.md)], выберите **Начать работу бесплатно** на сайте. 
+## <a name="sign-in-to-power-apps"></a>Выполнить вход в Power Apps
+Выполните вход в [Power Apps](https://make.powerapps.com/). Если у вас еще нет учетной записи [!INCLUDE [powerapps](../../includes/powerapps.md)], выберите **Начать работу бесплатно** на сайте. 
 
 ## <a name="create-your-model-driven-app"></a>Создание управляемого моделью приложения
 
-1.  Выберите требуемую среду или перейдите в [центр администрирования PowerApps](https://admin.powerapps.com/), чтобы создать новую.
+1.  Выберите требуемую среду или перейдите в [центр администрирования Power Apps](https://admin.powerapps.com/), чтобы создать новую.
 
   > [!IMPORTANT]
   > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment).   

@@ -1,5 +1,5 @@
 ---
-title: Свойства раздела для основных форм управляемых моделью приложений в PowerApps | MicrosoftDocs
+title: Свойства раздела для основных форм управляемых моделью приложений в Power Apps | MicrosoftDocs
 description: Познакомьтесь со свойствами раздела для основной формы
 Keywords: Основная форма; Свойства раздела; Dynamics 365
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 45764a992215c697361f77da656182bdbb0e7783
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5e7b22ed1680a3f2377d8318eb46e1de791f21b2
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755018"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873653"
 ---
 # <a name="model-driven-app-form-section-properties"></a>Свойства раздела формы управляемых моделью приложений
 
@@ -33,8 +33,8 @@ ms.locfileid: "2755018"
   
  Заголовки и нижние колонтитулы похожи на разделы, но их невозможно удалить. Если они не содержат данные, которые не будут отображаться. 
 
-Можно получить доступ к пункту **Свойства разделов** с сайта PowerApps. 
-1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+Можно получить доступ к пункту **Свойства разделов** с сайта Power Apps. 
+1. Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  Разверните **Данные**, выберите **Сущности**, выберите требуемую сущность, затем выберите вкладку **Формы**. 
 

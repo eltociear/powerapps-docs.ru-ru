@@ -1,28 +1,28 @@
 ---
-title: Использование тегов сущности Common Data Service PowerApps для портала | Документация Майкрософт
-description: Сведения о тегах сущности Common Data Service PowerApps, доступных на портале.
+title: Использование тегов сущности Common Data Service Power Apps для портала | Документация Майкрософт
+description: Сведения о тегах сущности Common Data Service Power Apps, доступных на портале.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/28/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: b6efc3e176602d366315b9b54b66593005051e55
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f252b0c9ef0ea90f6206863fe45a36702e4ce481
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757151"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884664"
 ---
-# <a name="powerapps-common-data-service-entity-tags"></a>Теги сущности Common Data Service PowerApps
+# <a name="power-apps-common-data-service-entity-tags"></a>Теги сущности Common Data Service Power Apps
 
-Теги сущностей PowerApps используются для загрузки и отображения данных PowerApps или использования других служб платформы порталов PowerApps. Эти теги являются специфичными для PowerApps расширениями языка Liquid.
+Теги сущностей Power Apps используются для загрузки и отображения данных Power Apps или использования других служб платформы порталов Power Apps. Эти теги являются специфичными для Power Apps расширениями языка Liquid.
 
 ## <a name="chart"></a>Диаграмма
 
-Добавляет диаграммы PowerApps на веб-страницу. Тег "chart" можно добавить в поле "Копия" на веб-странице или в поле "Источник" на веб-шаблоне. Шаги для добавления диаграммы PowerApps на веб-страницу см. в разделе [Добавление диаграммы на веб-страницу на портале](../configure/add-chart.md).
+Добавляет диаграммы Power Apps на веб-страницу. Тег "chart" можно добавить в поле "Копия" на веб-странице или в поле "Источник" на веб-шаблоне. Шаги для добавления диаграммы Power Apps на веб-страницу см. в разделе [Добавление диаграммы на веб-страницу на портале](../configure/add-chart.md).
 
 ```
 {% chart id:"EE3C733D-5693-DE11-97D4-00155DA3B01E" viewid:"00000000-0000-0000-00AA-000010001006" %}
@@ -45,7 +45,7 @@ ms.locfileid: "2757151"
 Добавляет панели мониторинга и отчеты Power BI на страницы. Тег можно добавить в поле **Копия** на веб-странице или в поле **Источник** в веб-шаблоне. Шаги для добавления отчета или панели мониторинга Power BI на веб-страницу портала см. в разделе [Добавление отчета или панели мониторинга Power BI](../admin/add-powerbi-report.md) на веб-страницу портала.
 
 > [!NOTE]
-> Чтобы тег работал, необходимо [включить интеграцию Power BI](../admin/set-up-power-bi-integration.md) в центре администрирования порталов PowerApps. Если интеграция Power BI не включена, панель мониторинга или отчет не будет отображаться.
+> Чтобы тег работал, необходимо [включить интеграцию Power BI](../admin/set-up-power-bi-integration.md) в центре администрирования порталов Power Apps. Если интеграция Power BI не включена, панель мониторинга или отчет не будет отображаться.
 
 ### <a name="parameters"></a>Параметры
 
@@ -56,14 +56,14 @@ ms.locfileid: "2757151"
 Путь к отчету или панели мониторинга Power BI. Если отчет или панель мониторинга Power BI безопасна, необходимо указать тип проверки подлинности.
 
 ```
-{% powerbi path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
+{% powerbi authentication_type:"powerbiembedded" path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
 ```
 
 **authentication_type**
 
 Типа проверки подлинности, необходимый для отчета или панели мониторинга Power BI. Допустимые значения для этого параметра:
 
-- **Анонимный**: позволяет внедрять публикацию в отчеты Power BI. Тип проверки подлинности по умолчанию — Анонимный.
+- **Анонимный**: позволяет внедрять публикацию в отчеты Power BI. Тип проверки подлинности по умолчанию — Анонимный. При использовании типа аутентификации "Анонимно", вы должны получить URL-адрес отчета Power BI, как описано в: [Публикация в Интернете из Power BI](https://docs.microsoft.com/power-bi/service-publish-to-web)
 
 - **AAD**: Позволяет передать безопасные отчеты или панели мониторинга Power BI удостоверенным пользователям Power BI Azure Active Directory.
 
@@ -139,7 +139,7 @@ URL?filter=**Таблица**/**Поле** eq '**значение**'
 
 ## <a name="editable"></a>editable
 
-Отображает указанный объект CMS порталов PowerApps как редактируемый на портале для пользователей с разрешением изменения содержимого для этого объекта. Доступные для редактирования объекты включают [page](liquid-objects.md#page), [snippets](liquid-objects.md#snippets) и [weblinks](liquid-objects.md#weblinks).  
+Отображает указанный объект CMS порталов Power Apps как редактируемый на портале для пользователей с разрешением изменения содержимого для этого объекта. Доступные для редактирования объекты включают [page](liquid-objects.md#page), [snippets](liquid-objects.md#snippets) и [weblinks](liquid-objects.md#weblinks).  
 
 ```
 {% editable page 'adx_copy' type: 'html', title: 'Page Copy', escape: false, liquid: true %}
@@ -284,7 +284,7 @@ Loaded entity list {{ entitylist.adx_name }}.
 
 **language\_code**
 
-Код языка PowerApps в виде целого числа для выбора загружаемых локализованных подписей списка сущностей. Если language\_code не указан, будет использоваться язык по умолчанию подключения PowerApps приложения портала.
+Код языка Power Apps в виде целого числа для выбора загружаемых локализованных подписей списка сущностей. Если language\_code не указан, будет использоваться язык по умолчанию подключения Power Apps приложения портала.
 
 ```
 {% entitylist name:"My Entity List", language_code:1033 %}
@@ -296,7 +296,7 @@ Loaded entity list {{ entitylist.adx_name }}.
 
 ## <a name="entityview"></a>entityview
 
-Загружает указанное представление PowerApps по имени или идентификатору. Доступ к свойствам представления — метаданным столбца представления, записям результата разбиения на страницы и т. д., — можно затем получить с помощью [объекта entityview](liquid-objects.md#entityview), который будет доступен в блоке тега.  
+Загружает указанное представление Power Apps по имени или идентификатору. Доступ к свойствам представления — метаданным столбца представления, записям результата разбиения на страницы и т. д., — можно затем получить с помощью [объекта entityview](liquid-objects.md#entityview), который будет доступен в блоке тега.  
 
 Если представление загружено успешно, отображается содержимое внутри блока. Если представление не найдено, содержимое блока не отображается.
 
@@ -334,7 +334,7 @@ Loaded default view of the entity list associated with the current page, with {{
 
 ### <a name="parameters"></a>Параметры
 
-Для выбора загружаемого представления PowerApps укажите **или** id, **или** logical\_name с параметром name. Если ни один из этих параметров не указан и тег entityview находится внутри тега entitylist, будет загружено представление по умолчанию из окружающего entitylist.
+Для выбора загружаемого представления Power Apps укажите **или** id, **или** logical\_name с параметром name. Если ни один из этих параметров не указан и тег entityview находится внутри тега entitylist, будет загружено представление по умолчанию из окружающего entitylist.
 
 **id**
 
@@ -360,7 +360,7 @@ Loaded entity view {{ entityview.name }} using view query string request paramet
 
 **logical\_name**
 
-Логическое имя сущности PowerApps для загружаемого представления. Должно использоваться в сочетании с параметром name.
+Логическое имя сущности Power Apps для загружаемого представления. Должно использоваться в сочетании с параметром name.
 
 ```
 {% entityview logical_name:'contact', name:"Active Contacts" %}
@@ -372,7 +372,7 @@ Loaded entity view with {{ entityview.total_records }} total records.
 
 **name**
 
-Имя PowerApps для загружаемого представления. Должно использоваться в сочетании с logical\_name.
+Имя Power Apps для загружаемого представления. Должно использоваться в сочетании с logical\_name.
 
 ```
 {% entityview logical_name:'contact', name:"Active Contacts" %}
@@ -527,7 +527,7 @@ Loaded entity view with {{ entityview.total_records }} total records to which th
 
 **language\_code**
 
-Код языка PowerApps в виде целого числа для выбора локализованных подписей представления сущности (подписи заголовков столбцов и т. д.) для загрузки. Если language\_code не указан, будет использоваться язык по умолчанию подключения PowerApps приложения портала.
+Код языка Power Apps в виде целого числа для выбора локализованных подписей представления сущности (подписи заголовков столбцов и т. д.) для загрузки. Если language\_code не указан, будет использоваться язык по умолчанию подключения Power Apps приложения портала.
 
 Если entityview используется в блоке entitylist, entityview наследует конфигурацию кода языка из entitylist.
 
@@ -636,7 +636,7 @@ Loaded entity view {{ entityview.name }}.
 
 **logical\_names**
 
-Логические имена сущностей PowerApps, которыми будут ограниченны соответствующие результаты, в виде строки с разделителями-запятыми. Если не указаны, возвращаются все соответствующие сущности.
+Логические имена сущностей Power Apps, которыми будут ограниченны соответствующие результаты, в виде строки с разделителями-запятыми. Если не указаны, возвращаются все соответствующие сущности.
 
 ```
 {% searchindex query: request.params.query, logical_names: 'kbarticle,incident' %}
@@ -681,7 +681,7 @@ Loaded entity view {{ entityview.name }}.
 
 ## <a name="entityform"></a>entityform
 
-Полностью отображает настроенные в PowerApps формы сущности, по имени или идентификатору.  
+Полностью отображает настроенные в Power Apps формы сущности, по имени или идентификатору.  
 
 > [!Note]
 > Тег entityform доступен только для использования в содержимом, отображаемом внутри шаблона страницы, основанного на <em>[веб-шаблоне](store-content-web-templates.md)</em>. При попытке использовать этот тег внутри шаблона страницы, основанного на перезаписи, ничего не отображается. Может отображаться только один тег entityform или webform на одной странице. Теги entityform и webform после первого тега не будут отображаться.       
@@ -696,9 +696,9 @@ Loaded entity view {{ entityview.name }}.
 
 `{% entityform name:My Entity Form %}`
 
-### <a name="webform"></a>**webform**
+## <a name="webform"></a>webform
 
-Полностью отображает настроенную в PowerApps веб-форму, по имени или идентификатору. Тег webform доступен только для использования в содержимом, отображаемом внутри шаблона страницы, основанного на [веб-шаблоне](store-content-web-templates.md). При попытке использовать этот тег внутри шаблона страницы, основанного на перезаписи, ничего не отображается. Может отображаться только один тег entityform или webform на одной странице. Теги entityform и webform после первого тега не будут отображаться.                
+Полностью отображает настроенную в Power Apps веб-форму, по имени или идентификатору. Тег webform доступен только для использования в содержимом, отображаемом внутри шаблона страницы, основанного на [веб-шаблоне](store-content-web-templates.md). При попытке использовать этот тег внутри шаблона страницы, основанного на перезаписи, ничего не отображается. Может отображаться только один тег entityform или webform на одной странице. Теги entityform и webform после первого тега не будут отображаться.                
 `{% webform name: 'My Web Form' %}`
 
 ### <a name="parameters"></a>Параметры
@@ -708,6 +708,7 @@ Loaded entity view {{ entityview.name }}.
 Имя веб-формы, которую требуется загрузить.
 
 `{% webform name:My Web Form %}`
+
 
 ### <a name="see-also"></a>См. также
 

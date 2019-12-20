@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/11/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 3da40cfdcb88726384218c4b1df370c301f8ac16
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0d9b49857528cf0e55fa2ad3dfcaae2aa88b77c0
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759923"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2816014"
 ---
 # <a name="enable-azure-storage"></a>Включение хранилища Azure
 
@@ -55,7 +55,7 @@ ms.locfileid: "2759923"
 
 Необходимо добавить правило общего доступа к ресурсам независимо от источника (CORS) в учетной записи службы хранилища Azure, как указано ниже, в противном случае вы увидите обычный значок вложения, а не значок облака:
 
-- **Допустимые источники**: укажите свой домен. Например, contoso.crm.dynamics.com.
+- **Допустимые источники**: укажите свой домен. Например: `http://contoso.crm.dynamics.com`.
 - **Разрешенные команды**: GET, PUT, DELETE, HEAD, POST
 - **Разрешенные заголовки**: укажите заголовки запросов, которые исходный домен может указывать в запросе CORS. Например, x-ms-meta-data\*, x-ms-meta-target\*. 
 - **Предоставляемые заголовки**: укажите заголовки ответов, которые могут отправляться в ответ на запрос CORS браузером инициатору запроса. Например, x-ms-meta-\*.

@@ -16,18 +16,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 20a28b159158579b35fb9e8a1b650f718c5ef83b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 674147425097d75b96e14bfbf76b3c937f9fd999
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703966"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868464"
 ---
 # <a name="modeldrivenformintegration-control-properties-and-actions"></a>Свойства и действия элемента управления ModelDrivenFormIntegration
 Приложения холста, внедренные в управляемые моделью формы, содержат специальный элемент управления с именем **ModelDrivenFormIntegration**. Этот элемент управления не отвечает за перенос контекстных данных из управляемой моделью формы, в которой размещено приложение, во внедренное приложение на основе холста.  

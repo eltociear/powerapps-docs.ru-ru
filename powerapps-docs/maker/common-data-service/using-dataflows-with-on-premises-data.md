@@ -23,15 +23,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4a47f082520b4680c9045209f85c26beb3586875
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0b534e3c4a7aae36d38901b75b34cc87fd7f511e
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752253"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895255"
 ---
 # <a name="using-an-on-premises-data-gateway-in-power-platform-dataflows"></a>Использование локального шлюза данных в потоках данных Power Platform
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Установите локальный шлюз данных для быстрой и безопасной передачи данных между потоком данных Power Platform и источником данных, который не находится в облаке, таким как локальная база данных сервера SQL или локальный сайт SharePoint.
 Можно просматривать все шлюзы, для которых у вас есть административные разрешения, и управлять разрешениями и соединениями для этих шлюзов.
@@ -52,13 +51,13 @@ ms.locfileid: "2752253"
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 
--   Учетная запись PowerApps. Нет ни одной из них? [Зарегистрируйтесь на 30 дней бесплатно](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps).
+-   Учетная запись Power Apps. Нет ни одной из них? [Зарегистрируйтесь на 30 дней бесплатно](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps).
 
 -   Административные разрешения на шлюзе. Эти разрешения предоставляются по умолчанию для устанавливаемых вами шлюзов. Администраторы могут предоставлять другим пользователям разрешения для шлюзов. 
 
--   Лицензия, которая поддерживает доступ к локальным данным с использованием локального шлюза. Для получения дополнительной информации см. раздел «Подключение к вашим данным и системам» на странице [Найди свой план PowerApps](https://powerapps.microsoft.com/pricing/).
+-   Лицензия, которая поддерживает доступ к локальным данным с использованием локального шлюза. Для получения дополнительной информации см. раздел «Подключение к вашим данным и системам» на странице [Найди свой план Power Apps](https://powerapps.microsoft.com/pricing/).
 
--   Шлюзы и локальные соединения могут создаваться и использоваться только в пользовательской среде по умолчанию. Дополнительные сведения см. в разделе [Работа со средами и Microsoft PowerApps](../canvas-apps/working-with-environments.md).
+-   Шлюзы и локальные соединения могут создаваться и использоваться только в пользовательской среде по умолчанию. Дополнительные сведения см. в разделе [Работа со средами и Microsoft Power Apps](../canvas-apps/working-with-environments.md).
 
 ## <a name="install-a-gateway"></a>Установка шлюза
 1.  В левой области навигации на странице [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Шлюзы**.
@@ -107,9 +106,9 @@ ms.locfileid: "2752253"
     - Чтобы поделиться подключением, выберите **Общий доступ**, а затем добавьте или удалите пользователей.
 
       > [!NOTE]
-      > Вы можете использовать только некоторые типы соединений, например, соединение SQL Server. Чтобы получить дополнительные сведения, см. раздел [Поделиться ресурсами приложения на основе холста в PowerApps](../canvas-apps/share-app-resources.md). <br />
+      > Вы можете использовать только некоторые типы соединений, например, соединение SQL Server. Чтобы получить дополнительные сведения, см. раздел [Поделиться ресурсами приложения на основе холста в Power Apps](../canvas-apps/share-app-resources.md). <br />
       >
-      > Дополнительные сведения о том, как управлять подключением, см. в разделе [Управление соединениями приложения на основе холста в PowerApps](../canvas-apps/add-manage-connections.md).
+      > Дополнительные сведения о том, как управлять подключением, см. в разделе [Управление соединениями приложения на основе холста в Power Apps](../canvas-apps/add-manage-connections.md).
 
 
 ## <a name="limitations"></a>Ограничения
@@ -127,7 +126,7 @@ ms.locfileid: "2752253"
 
 ## <a name="next-steps"></a>Дальнейшие шаги
 
-- [Создание и использование потоков данных в PowerApps](create-and-use-dataflows.md)
+- [Создание и использование потоков данных в Power Apps](create-and-use-dataflows.md)
 
 - [Добавление данных в сущность в Common Data Service с помощью Power Query](data-platform-cds-newentity-pq.md)
 

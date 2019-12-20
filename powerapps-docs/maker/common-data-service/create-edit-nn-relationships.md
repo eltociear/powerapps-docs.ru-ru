@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 90658adac8f04ea131968816a6004b4789ff42e4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 907a1147630cc779e6c1af7be2486548f1907c5a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757779"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865794"
 ---
 # <a name="create-many-to-many-entity-relationships-overview"></a>Обзор создания отношений сущностей "многие-ко-многим"
 
@@ -43,7 +43,7 @@ ms.locfileid: "2757779"
 
 |Дизайнер| Описание|
 |--|--|
-|[портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание отношений сущностей "многие-ко-многим" в Common Data Service с помощью портала PowerApps](create-edit-nn-relationships-portal.md)|
+|[портал Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание отношений сущностей "многие-ко-многим" в Common Data Service с помощью портала Power Apps](create-edit-nn-relationships-portal.md)|
 |Обозреватель решений|Не так прост, но предоставляет больше гибкости для менее распространенных требований.<br />Дополнительные сведения: [Создание отношений сущностей N:N (многие-ко-многим) в Common Data Service с помощью обозревателя решений](create-edit-nn-relationships-solution-explorer.md) |
 
 > [!NOTE]
@@ -53,7 +53,7 @@ ms.locfileid: "2757779"
 
 Информация в этом разделе поможет вам выбрать конструктор для использования. 
 
-Следует использовать портал PowerApps для создания и редактирования отношений сущностей "многие-ко-многим" (N:N), кроме случаев, когда необходимо выполнить любое из следующих требований:
+Следует использовать портал Power Apps для создания и редактирования отношений сущностей "многие-ко-многим" (N:N), кроме случаев, когда необходимо выполнить любое из следующих требований:
 
 - Настройка параметров области навигации для управляемых моделью приложений.
 - Скрытие отношения от расширенного поиска в управляемых моделью приложениях.
@@ -61,7 +61,7 @@ ms.locfileid: "2757779"
 ## <a name="see-also"></a>См. также
 
 [Создание и изменение отношений между сущностями](create-edit-entity-relationships.md)<br />
-[Создание отношений сущностей "многие-ко-многим" в Common Data Service с помощью портала PowerApps](create-edit-nn-relationships-portal.md)<br />
+[Создание отношений сущностей "многие-ко-многим" в Common Data Service с помощью портала Power Apps](create-edit-nn-relationships-portal.md)<br />
 [Создание отношений сущностей N:N (многие-ко-многим) в Common Data Service с помощью обозревателя решений](create-edit-nn-relationships-solution-explorer.md)<br />
 [Документация для разработчиков. Настройка метаданных отношений между сущностями](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)<br />
 [Документация для разработчиков. Доступность отношений между сущностями](https://docs.microsoft.com/dynamics365/customer-engagement/developer/entity-relationship-eligibility)

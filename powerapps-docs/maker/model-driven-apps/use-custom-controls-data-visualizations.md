@@ -1,5 +1,5 @@
 ---
-title: Использование настраиваемых элементов управления для визуализации данных управляемых моделью приложений в PowerApps | MicrosoftDocs
+title: Использование настраиваемых элементов управления для визуализации данных управляемых моделью приложений в Power Apps | MicrosoftDocs
 description: Узнайте, как использовать настраиваемые элементы управления для полей
 ms.custom: ''
 ms.date: 06/07/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b34354a1bc0bdfb3556acc6ca999a1e0e8dcec74
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8fd79185c4db541700e3079e9151a1193ebd6247
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756051"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874510"
 ---
 # <a name="use-custom-controls-for-model-driven-app-data-visualizations"></a>Использование настраиваемых элементов управления для визуализации данных управляемых моделью приложений
 
@@ -48,7 +48,7 @@ ms.locfileid: "2756051"
 ## <a name="use-a-custom-control-to-add-visualizations-to-a-field"></a>Использование настраиваемого элемента управления для добавления элемента визуализации к полю  
  При выполнении шагов из этой процедуры надпись по умолчанию и текстовое поле **Сумма бюджета** изменятся на настраиваемый элемент управления "ползунок" для сущности "Возможная сделка". Можно использовать аналогичные шаги для замены существующего поля на настраиваемый элемент управления или для конфигурирования настраиваемого элемента управления для настраиваемого поля.  
   
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
      
 

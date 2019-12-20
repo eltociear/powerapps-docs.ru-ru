@@ -1,6 +1,6 @@
 ---
 title: Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) с помощью обозревателя решений | MicrosoftDocs
-description: Узнайте, как создать отношение сущностей "один-ко-многим" или "многие-к-одному" с помощью обозревателя решений PowerApps
+description: Узнайте, как создать отношение сущностей "один-ко-многим" или "многие-к-одному" с помощью обозревателя решений Power Apps
 ms.custom: ''
 ms.date: 10/28/2018
 ms.reviewer: ''
@@ -20,20 +20,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3488b8228841f7b5323daee972472884e7c873d8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2c40ea1fc52849290135e04274fed5c5e0c9232f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758163"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866238"
 ---
 # <a name="create-and-edit-1n-one-to-many-or-n1-many-to-one-entity-relationships-using-solution-explorer"></a>Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) с помощью обозревателя решений 
 
 Обозреватель решений предоставляет один способ создания и изменения отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) для Common Data Service.
 
-[Портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. Дополнительные сведения: 
+[Портал Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. Дополнительные сведения: 
 - [Создание отношений 1: N (один-ко-многим) или N:1 (многие-к-одному)](create-edit-1n-relationships.md)
-- [Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) на портале PowerApps](create-edit-1n-relationships-portal.md)
+- [Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) на портале Power Apps](create-edit-1n-relationships-portal.md)
   
 ## <a name="open-solution-explorer"></a>Откройте обозреватель решений
 
@@ -235,6 +235,6 @@ ms.locfileid: "2758163"
 
 [Создание и изменение отношений между сущностями](create-edit-entity-relationships.md)<br />
 [Создание и изменение отношений 1:N (один-ко-многим) или N:1 (многие-к-одному)](create-edit-1n-relationships.md)<br />
-[Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) на портале PowerApps](create-edit-1n-relationships-portal.md)<br />
+[Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) на портале Power Apps](create-edit-1n-relationships-portal.md)<br />
 [Создание отношений N:N (многие-ко-многим)](create-edit-nn-relationships.md)
 

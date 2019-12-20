@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 028be1172621c9bdb510f5e57d16eb226b10f92b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 434dea11e5238167e824561e247bc23ddbb7839b
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758251"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874181"
 ---
 # <a name="configure-connection-roles"></a>Настройка ролей подключения
 
@@ -38,7 +38,7 @@ ms.locfileid: "2758251"
 > Чтобы сущность была доступна в качестве типа записей для новой или существующей роли подключения, свойство **Включить подключения** должно быть включено для этой сущности. 
 
 ## <a name="enable-connection-roles-for-an-entity"></a>Включение ролей подключения для сущности
-1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1. Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
 2. Разверните **Данные**, затем выберите **Сущности**. 
 3. Выберите сущность, которую необходимо включить для ролей подключения, затем на панели команд выберите **Параметры**. 
 4. В области **Параметры** разверните область **Совместная работа**, затем выберите **Включить подключения**.

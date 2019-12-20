@@ -1,5 +1,5 @@
 ---
-title: Отключение автосохранения в управляемых моделью приложениях с помощью PowerApps | MicrosoftDocs
+title: Отключение автосохранения в управляемых моделью приложениях с помощью Power Apps | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fda8a194a47101eb26d000ea60ede5b38b0f235d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2f09cd488165643a3336c526050abc0b9223b49f
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759483"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875677"
 ---
 # <a name="disable-auto-save-in-a-model-driven-app"></a>Отключение автосохранения управляемого моделью приложении
 
@@ -63,7 +63,7 @@ ms.locfileid: "2759483"
 > [!NOTE]
 >  Автосохранение будет отключено для формы, но данные все же будут сохранены, когда пользователь выберет кнопку ![Кнопка автоматического сохранения](media/auto-save-icon.png "AКнопка автоматического сохранения") в нижнем правом углу. Если пользователь попытается покинуть или закрыть форму с измененными данными, появится запрос на сохранение изменений, только после этого форму можно будет покинуть или закрыть.  
   
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  Разверните **Данные**, выберите **Сущности**, выберите требуемую сущность, затем выберите вкладку **Формы**.  
   

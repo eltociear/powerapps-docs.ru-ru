@@ -1,5 +1,5 @@
 ---
-title: Создание или изменение приложения, управляемого моделью, в конструкторе приложений в PowerApps | MicrosoftDocs
+title: Создание или изменение приложения, управляемого моделью, в конструкторе приложений в Power Apps | MicrosoftDocs
 description: Узнайте, как создавать или изменять приложения с помощью конструктора приложений
 keywords: ''
 ms.date: 02/05/2019
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fb852ce8b6137d16eb8544da4eb6c9b92c12e29e
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ef8fa8e20afd7d0e4ad1593ae169a132246d3992
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759307"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875446"
 ---
 # <a name="create-a-model-driven-app-by-using-the-app-designer"></a>Создание управляемого моделью приложения с помощью конструктора приложений
 
@@ -37,13 +37,13 @@ ms.locfileid: "2759307"
 
 ## <a name="prerequisites"></a>Необходимые условия
 Проверьте следующие обязательные условия перед началом создания приложения:
-- Среда PowerApps. Дополнительные сведения: [Создание среды](https://docs.microsoft.com/powerapps/administrator/create-environment)
+- Среда Power Apps. Дополнительные сведения: [Создание среды](https://docs.microsoft.com/powerapps/administrator/create-environment)
 - Роль безопасности "Системный администратор" или "Настройщик системы". Дополнительные сведения: [О предопределенных ролях безопасности](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app#about-predefined-security-roles)
  
 <a name="createApp"></a>   
 ## <a name="create-an-app"></a>Создание приложения  
 
-1.  В [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) на странице **Главная** выберите параметр **Управляемое моделью приложение с нуля** для управляемого моделью приложения.  
+1.  В [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) на странице **Главная** выберите параметр **Управляемое моделью приложение с нуля** для управляемого моделью приложения.  
 
     > [!IMPORTANT]
     > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment). 
@@ -82,7 +82,7 @@ ms.locfileid: "2759307"
 <a name="editApp"></a>   
 ## <a name="edit-an-app"></a>Изменение приложения  
   
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 > [!IMPORTANT]
 > Если режим разработки **Управляемые моделью** недоступен, может потребоваться [создать среду](https://docs.microsoft.com/powerapps/administrator/create-environment). 

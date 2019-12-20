@@ -1,5 +1,5 @@
 ---
-title: Изменение сущности в PowerApps | MicrosoftDocs
+title: Изменение сущности в Power Apps | MicrosoftDocs
 description: Узнайте о разных способах редактирования сущности
 ms.custom: ''
 ms.date: 05/15/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3ec64583e2146703711b88456ff7bc91ece3e921
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: cff90011a80bd051882da08be1f479cb997a7a72
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757459"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863963"
 ---
 # <a name="edit-an-entity"></a>Изменение сущности
 
@@ -40,10 +40,10 @@ ms.locfileid: "2757459"
 
 |Дизайнер|Описание|
 |--|--|
-|[портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.|
+|[портал Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.|
 |Обозреватель решений|Не так прост, но предоставляет больше гибкости для менее распространенных требований.|
 
-Как на портале PowerApps, так и в обозревателе решений можно выполнить следующие действия:
+Как на портале Power Apps, так и в обозревателе решений можно выполнить следующие действия:
 
 - **Изменение полей сущности**. Дополнительные сведения: [Создание и изменение полей для Common Data Service](create-edit-fields.md)
   
@@ -63,9 +63,9 @@ ms.locfileid: "2757459"
 
 - **Диаграммы**. [Создание или изменение системной диаграммы](../model-driven-apps/create-edit-system-chart.md)
 
-## <a name="edit-using-powerapps-portal-designer"></a>Изменение с использованием конструктора портала PowerApps
+## <a name="edit-using-power-apps-portal-designer"></a>Изменение с использованием конструктора портала Power Apps
 
-В конструкторе портала PowerApps можно изменить только три свойства сущности:
+В конструкторе портала Power Apps можно изменить только три свойства сущности:
  - отображаемое имя;
  - Отображаемое имя во множественном числе
  - Описание

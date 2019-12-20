@@ -1,6 +1,6 @@
 ---
-title: Настройка панелей мониторинга интерактивного взаимодействия управляемых моделью приложений в PowerApps | Microsoft Docs
-description: Узнайте, как настраивать панели мониторинга интерактивного взаимодействия в PowerApps
+title: Настройка панелей мониторинга интерактивного взаимодействия управляемых моделью приложений в Power Apps | Microsoft Docs
+description: Узнайте, как настраивать панели мониторинга интерактивного взаимодействия в Power Apps
 keywords: Интерактивные панели мониторинга; Customer Service; Microsoft Dynamics 365; Центр интерактивного обслуживания
 author: Mattp123
 ms.author: matp
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4e73097b6b02f98b6ac5dc83a7f1d833e07a8696
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fefeebb0106907e59ea1fd5a13d620cdeb315774
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752618"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885016"
 ---
 # <a name="configure-model-driven-app-interactive-experience-dashboards"></a>Настройка панелей мониторинга интерактивного взаимодействия управляемых моделью приложений
 
@@ -149,7 +149,7 @@ ms.locfileid: "2752618"
   
 ### <a name="configure-a-multi-stream-interactive-dashboard-using-the-4-column-layout"></a>Настройка многопотоковой интерактивной панели мониторинга с помощью макета из 4 столбцов  
  
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
   
 2.  Выберите **Данные** > **Сущности** > выберите требуемую сущность. 
 
@@ -203,7 +203,7 @@ ms.locfileid: "2752618"
   
 #### <a name="edit-or-delete-individual-streams-of-an-existing-dashboard"></a>Изменение или удаление отдельных потоков существующей панели мониторинга  
   
-1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).   
+1. Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).   
   
 2. Выберите **Данные** > **Сущности** > выберите требуемую сущность. Выберите вкладку **Панели мониторинга**.  
   
@@ -226,7 +226,7 @@ ms.locfileid: "2752618"
 
 Например, вместо выбора сущности некоторые поля на панели мониторинга конкретной сущности-уже предварительно настроены для сущности, для которой создается панель мониторинга.  
   
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2.  Выберите **Данные** > **Сущности** > выберите требуемую сущность. 
 

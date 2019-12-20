@@ -6,24 +6,24 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/22/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 3735a0ef1a26fdd19b7bfb7f6db717cf9bd07861
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 722789d726d02b306eb794aa51665c13ce7f495d
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710082"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874709"
 ---
 # <a name="add-a-power-bi-report-or-dashboard-to-a-web-page-in-portal"></a>Добавление отчета или панели мониторинга Power BI на веб-страницу портала
 
-Чтобы добавить отчет или панель мониторинга Power BI на веб-страницу портала, используйте тег Liquid [powerbi](../liquid/portals-entity-tags.md#powerbi). Тег можно добавить в поле **Копия** на веб-странице или в поле **Источник** в веб-шаблоне. Если вы добавляете отчет или панель мониторинга Power BI, созданную в новой рабочей области в Power BI, необходимо указать тип проверки подлинности powerbiembedded в Liquid-теге powerbi.
+Чтобы добавить отчет или панель мониторинга Power BI на веб-страницу портала, используйте тег Liquid [powerbi](../liquid/portals-entity-tags.md#powerbi). Тег можно добавить в поле **Копия** на веб-странице или в поле **Источник** в веб-шаблоне. Если вы добавляете отчет или панель мониторинга Power BI, созданную в новой рабочей области в Power BI, необходимо указать тип проверки подлинности **powerbiembedded** в Liquid-теге powerbi.
 
 Например: 
 
 ```
-{% powerbi path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
+{% powerbi authentication_type:"powerbiembedded" path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
 ```
 
 > [!NOTE]

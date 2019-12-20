@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6be2a23a64108ec616fd95a0178d2008290bc289
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7d766a40dca689f6d0537be56edc9865437f62fa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706034"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868374"
 ---
 # <a name="customize-the-screen-size-and-orientation-of-a-canvas-app-embedded-on-a-model-driven-form"></a>Настройка размера и ориентации экрана приложения на основе холста, внедренного на управляемую моделью форму
 В этой теме рассматривается порядок настройки размера и ориентации экрана приложения на основе холста, внедренного на управляемую моделью форму.
@@ -34,7 +34,7 @@ ms.locfileid: "2706034"
 1.  Следуйте инструкциям для добавления или изменения внедренного приложения на основе холста на управляемой моделью форме.
     - [Добавление внедренного приложения на основе холста в управляемую моделью форму](embedded-canvas-app-add-classic-designer.md)
     - [Редактирование приложения на основе холста, внедренного в управляемую моделью форму](embedded-canvas-app-edit-classic-designer.md)
-2. С приложением на основе холста, открытом в PowerApps Studio, выберите вкладку **Файл**, затем выберите **Параметры приложения**.
+2. С приложением на основе холста, открытом в Power Apps Studio, выберите вкладку **Файл**, затем выберите **Параметры приложения**.
 3. Выберите вкладку **Размер + ориентация экрана**. По умолчанию для параметра **Размер** установлено значение **Настраиваемый**.
 4. Выберите из списка доступных параметров **Размер** и **Ориентация** или выберите **Настраиваемый** и укажите требуемые значения параметров **Ширина** и **Высота**.
     > [!NOTE]

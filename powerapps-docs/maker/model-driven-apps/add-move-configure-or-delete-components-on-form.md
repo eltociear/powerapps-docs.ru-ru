@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a40b0b9e5fc64856be931a2407a451c8d27ef8ec
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c77eeb17dfce8d98b7c573993e3096124c8a9bb6
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702382"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863884"
 ---
 # <a name="add-configure-move-or-delete-components-on-a-form"></a>Добавление, настройка, перемещение или удаление компонентов в форме  
 Используя конструктор формы, разработчики могут легко добавить и настроить популярные компоненты, такие как [вложенная сетка](form-designer-add-configure-subgrid.md), [экспресс-форма](form-designer-add-configure-quickview.md), дуговая ручка, линейный ползунок, и т.д.

@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 72f5ad809983738526a03f306c3479f53745d991
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2d9c6692f26e16b03872696b094ccd14a649299f
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755414"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873192"
 ---
 # <a name="distribute-a-model-driven-app-using-a-solution"></a>Распространение управляемого моделью приложения с помощью решения
 
@@ -38,7 +38,7 @@ ms.locfileid: "2755414"
 ## <a name="add-an-app-to-a-solution"></a>Добавление приложения в решение
 Для распространения приложения вы создаете решение, чтобы приложение можно было упаковать для экспорта.
 
-1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2. Выберите **Решения**, затем выберите **Создать решение**.
 3. Заполните поля на странице **Создать решение**, после чего выберите **Сохранить**. Дополнительные сведения: [Создание решения](../common-data-service/create-solution.md)
@@ -66,7 +66,7 @@ ms.locfileid: "2755414"
 ## <a name="import-a-solution"></a>Импорт решения  
 Получив ZIP-файл решения, содержащий приложение, которое требуется импортировать, откройте страницу компонентов решений и импортируйте решение. Когда решение будет успешно импортировано, приложение будет доступно в вашей среде.
 
-1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 2. Выберите **Решения**, затем на панели инструментов выберите **Импорт**.
 3. Перейдите к файлу, который нужно импортировать, затем выберите **Далее**.

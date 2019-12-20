@@ -1,5 +1,5 @@
 ---
-title: Настройка обработчиков событий для основных форм управляемых моделью приложений в PowerApps | Документация Майкрософт
+title: Настройка обработчиков событий для основных форм управляемых моделью приложений в Power Apps | Документация Майкрософт
 description: Узнайте, как настраивать обработчики событий
 author: Mattp123
 ms.author: matp
@@ -13,16 +13,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4a824183a3d208131754289984aeaa8377d4a352
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 385255d46ad358a8b33385e9e1495bd310cb1cb4
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701150"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863655"
 ---
 # <a name="configure-model-driven-app-form-event-handlers"></a>Настройка обработчиков событий форм управляемых моделью приложений
 
- Обработчики событий форм для форм PowerApps можно настроить для следующих областей в форме:  
+ Обработчики событий форм для форм Power Apps можно настроить для следующих областей в форме:  
   
 |Элемент|Мероприятие|Описание|  
 |-------------|-----------|-----------------|  

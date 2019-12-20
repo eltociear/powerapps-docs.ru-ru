@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5e579b7054171222819b2d1dd6bb21d9cb7400a9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 13ec511c692af8694012f94f881cb02ee1280ee2
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711578"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863171"
 ---
 # <a name="model-driven-sample-apps"></a>Примеры управляемых моделью приложений
 
@@ -60,7 +60,7 @@ ms.locfileid: "2711578"
 - Если настройки были сделаны в примере приложения, могут иметься [зависимости](https://docs.microsoft.com/dynamics365/customer-engagement/developer/dependency-tracking-solution-components), которое необходимо удалить перед удалением решения.
 
 ### <a name="steps"></a>Шаги
-1. Выполните вход на [портал администрирования PowerApps](https://admin.powerapps.com).
+1. Выполните вход на [портал администрирования Power Apps](https://admin.powerapps.com).
 
 2. Выберите среду.
 

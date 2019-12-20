@@ -1,5 +1,5 @@
 ---
-title: Импорт переведенного текста сущности и поля с помощью PowerApps | Документация Майкрософт
+title: Импорт переведенного текста сущности и поля с помощью Power Apps | Документация Майкрософт
 description: Узнайте, как импортировать переведенный текст сущности и поля
 ms.custom: ''
 ms.date: 06/19/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3836eaebd6f3064ad2e5f4209d86f1bc34898144
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9887132a8cba9a68faf0d9f16b2e7dbc64221f1b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706210"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863786"
 ---
 # <a name="import-translated-entity-and-field-text-back-into-an-app"></a>Импорт переведенного текста сущности и поля обратно в приложение
 
@@ -51,7 +51,7 @@ ms.locfileid: "2706210"
 
 ## <a name="community-tools"></a>Средства сообщества
 
-[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) — это средство, которое сообщество XrmToolBox разработало для PowerApps. Используйте Easy Translator для экспорта и импорта переводов с контекстными сведениями. 
+[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) — это средство, которое сообщество XrmToolBox разработало для Power Apps. Используйте Easy Translator для экспорта и импорта переводов с контекстными сведениями. 
 
 > [!NOTE]
 > Средства сообщества не поддерживаются Microsoft. При наличии вопросов по средству обращайтесь к его издателю. Дополнительные сведения: [XrmToolBox](https://www.xrmtoolbox.com).

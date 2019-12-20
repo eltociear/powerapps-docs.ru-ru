@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d6c620f518331f46ef3e662040975cd8c6c5625a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 7ad5f422c0d45bbeb60ae43e687329b1fb770c2b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758823"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861174"
 ---
 # <a name="define-alternate-keys-to-reference-records"></a>Определение альтернативных ключей для ссылки на записи
 
@@ -38,7 +38,7 @@ ms.locfileid: "2758823"
 Например, чтобы идентифицировать запись организации с помощью альтернативного ключа, можно использовать номер организации или поле кода организации в сочетании с некоторыми другими полями, имеющие значения, которые не должны изменяться.
 
 > [!NOTE]
-> Хотя альтернативные ключи можно определять с помощью PowerApps, использовать их можно только программным образом в коде. Дополнительные сведения о возможности программного использования альтернативных ключей см. в разделах:   
+> Хотя альтернативные ключи можно определять с помощью Power Apps, использовать их можно только программным образом в коде. Дополнительные сведения о возможности программного использования альтернативных ключей см. в разделах:   
 > - [Документация разработчика. Использование альтернативного ключа для создания записи](/dynamics365/customer-engagement/developer/use-alternate-key-create-record) 
 > - [Документация разработчика. Извлечение записи с помощью веб-API с использованием альтернативного ключа](/dynamics365/customer-engagement/developer/webapi/retrieve-entity-using-web-api#retrieve-using-an-alternate-key)
 
@@ -55,7 +55,7 @@ ms.locfileid: "2758823"
 
 |Дизайнер| Описание|
 |--|--|
-|[портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые параметры недоступны.<br />Дополнительные сведения: [Определение альтернативных ключей с помощью портала PowerApps](define-alternate-keys-portal.md)|
+|[портал Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые параметры недоступны.<br />Дополнительные сведения: [Определение альтернативных ключей с помощью портала Power Apps](define-alternate-keys-portal.md)|
 |Обозреватель решений|Не так прост, но предоставляет больше гибкости для менее распространенных требований.<br />Дополнительные сведения: [Определение альтернативных ключей с помощью обозревателя решений](define-alternate-keys-solution-explorer.md) |
 
 > [!NOTE]
@@ -65,7 +65,7 @@ ms.locfileid: "2758823"
 
 Информация в этом разделе поможет вам выбрать конструктор для использования. 
 
-Нужно использовать [портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) для создания альтернативных ключей, если только вам не нужно выполнить любое из следующих требований:
+Нужно использовать [портал Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) для создания альтернативных ключей, если только вам не нужно выполнить любое из следующих требований:
 
 - Создать альтернативный ключ в решении, отличном от решения по умолчанию Common Data Service
 - Требуется легко отслеживать созданное системное задание, отслеживающее ход создания индексов поддержки
@@ -120,7 +120,7 @@ ms.locfileid: "2758823"
   
 ### <a name="see-also"></a>См. также  
 
-[Определение альтернативных ключей с помощью портала PowerApps](define-alternate-keys-portal.md)<br />
+[Определение альтернативных ключей с помощью портала Power Apps](define-alternate-keys-portal.md)<br />
 [Определение альтернативных ключей с помощью обозревателя решений](define-alternate-keys-solution-explorer.md)<br />
 [Документация для разработчиков. Определение альтернативных ключей для сущности](/dynamics365/customer-engagement/developer/define-alternate-keys-entity).<br />
 [Документация разработчика. Использование альтернативного ключа для создания записи](/dynamics365/customer-engagement/developer/use-alternate-key-create-record)

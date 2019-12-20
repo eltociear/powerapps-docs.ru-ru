@@ -1,5 +1,5 @@
 ---
-title: Свойства вложенной сетки для основных форм управляемых моделью приложений в PowerApps | MicrosoftDocs
+title: Свойства вложенной сетки для основных форм управляемых моделью приложений в Power Apps | MicrosoftDocs
 description: Познакомьтесь со свойствами вложенной сетки для основных форм
 Keywords: Основная форма; Свойства вложенной сетки; Dynamics 365
 author: Mattp123
@@ -18,19 +18,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a6bb86fde69554808f8cbf75f0366dc49ea485f4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ff9b79565525cee42eedfcd48c59669c4fe277d8
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759703"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872840"
 ---
 # <a name="sub-grid-properties-for-model-driven-app-main-forms-overview"></a>Обзор свойства вложенной сетки для основных форм управляемых моделью приложений
 
 Можно настроить вложенную сетку в форме для отображения списка записей или диаграммы. Выберите **Показывать только диаграмму** на вкладке **Отображение**, чтобы отобразить диаграмму вместо списка.  
 
-Можно получить доступ к пункту **Свойства вложенной сетки** с сайта PowerApps. 
-1.  На сайте [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Управляемые моделью** (в левой нижней части панели навигации).  
+Можно получить доступ к пункту **Свойства вложенной сетки** с сайта Power Apps. 
+1.  На сайте [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Управляемые моделью** (в левой нижней части панели навигации).  
 
      ![Режим разработки, управляемый моделью](media/model-driven-switch.png)
 

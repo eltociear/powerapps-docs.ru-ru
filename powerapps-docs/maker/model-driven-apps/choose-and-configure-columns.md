@@ -1,5 +1,5 @@
 ---
-title: Выбор и настройка столбцов в представлениях управляемых моделью приложений в PowerApps | MicrosoftDocs
+title: Выбор и настройка столбцов в представлениях управляемых моделью приложений в Power Apps | MicrosoftDocs
 description: Узнайте, как выбирать и настраивать представления для приложения
 keywords: ''
 ms.date: 11/27/2018
@@ -24,18 +24,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d9f34be645a8e3dee1283f064e5aeda6a9d59e9a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: b259ea097ed5caf1683d2ba7b2450551d32e3a61
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754622"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874905"
 ---
 # <a name="choose-and-configure-columns-in-model-driven-app-views"></a>Выбор и настройка столбцов в представлениях управляемых моделью приложений
 
 <a name="BKMK_ChooseAndConfigureColumns"></a>   
 
- Наряду с условиями фильтра, столбцы, отображаемые в представлении PowerApps, очень важны для значения, предоставляемого представлением. В данной теме вы создадите или измените представления, выполнив следующие задачи.  
+ Наряду с условиями фильтра, столбцы, отображаемые в представлении Power Apps, очень важны для значения, предоставляемого представлением. В данной теме вы создадите или измените представления, выполнив следующие задачи.  
 
 -   [Открытие редактора представлений](choose-and-configure-columns.md#open-the-view-editor)  
    
@@ -57,7 +57,7 @@ ms.locfileid: "2754622"
 
 ### <a name="open-the-view-editor"></a>Открытие редактора представлений
 
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  Разверните **Данные**, выберите **Сущности**, выберите требуемую сущность, затем выберите вкладку **Представления**. 
 

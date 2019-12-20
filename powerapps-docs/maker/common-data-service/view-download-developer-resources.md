@@ -1,6 +1,6 @@
 ---
-title: Просмотр или загрузка ресурсов для разработчиков для PowerApps и Common Data Service | Документация Майкрософт
-description: Узнайте URL-адреса ресурсов разработчика и конечных точек службы PowerApps и Common Data Service
+title: Просмотр или загрузка ресурсов для разработчиков для Power Apps и Common Data Service | Документация Майкрософт
+description: Узнайте URL-адреса ресурсов разработчика и конечных точек службы Power Apps и Common Data Service
 keywords: ''
 ms.date: 09/25/2019
 ms.service: powerapps
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ae293843c38e7077580effd1c7670762cec91e1e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4cb1670334f676af1a6ddcb1e90ba47240ed46a4
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2700446"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869582"
 ---
 # <a name="view-or-download-developer-resources"></a>Просмотр и загрузка ресурсов для разработчиков
 
@@ -31,7 +31,7 @@ ms.locfileid: "2700446"
 
 ## <a name="view-the-developer-resources-page-for-your-environment"></a>Просмотр страницы ресурсов для разработчиков для вашей среды
 
-1. На портале PowerApps нажмите ![Параметры](../../administrator/media/settings-button-nav-bar.png) кнопку "Параметры" и выберите **Дополнительные настройки**.
+1. На портале Power Apps нажмите ![Параметры](../../administrator/media/settings-button-nav-bar.png) кнопку "Параметры" и выберите **Дополнительные настройки**.
 
     ![Дополнительные настройки](media/advanced-customizations-menu.png)
 
@@ -44,11 +44,11 @@ ms.locfileid: "2700446"
 
 |Связать |Описание|
 |---------|---------|
-|[Центр разработчиков](https://go.microsoft.com/fwlink/?LinkId=551006)|Начните здесь с документации для разработчиков по PowerApps и Common Data Service.|
-|[Сообщество/Форумы PowerApps](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)|Задавайте и отвечайте на вопросы в сообществе PowerApps.|
+|[Центр разработчиков](https://go.microsoft.com/fwlink/?LinkId=551006)|Начните здесь с документации для разработчиков по Power Apps и Common Data Service.|
+|[Сообщество/Форумы Power Apps](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)|Задавайте и отвечайте на вопросы в сообществе Power Apps.|
 |[Пакеты NuGet](https://www.nuget.org/profiles/crmsdk)|Дополнительные сведения о пакетах NuGet для добавления сборок SDK в проекты.|
 |[Средства загрузки](/powerapps/developer/common-data-service/download-tools-nuget)|Инструменты, которые потребуются, доступны для загрузки из NuGet. Используйте скрипт PowerShell на этой странице для получения последних версий.|
-|[Пример кода](https://go.microsoft.com/fwlink/?LinkId=553007)|Репозиторий GitHub для примеры PowerApps.|
+|[Пример кода](https://go.microsoft.com/fwlink/?LinkId=553007)|Репозиторий GitHub для примеры Power Apps.|
 |[Обзор для разработчика](https://go.microsoft.com/fwlink/?LinkId=550995)|Ссылка на раздел, содержащий обзор для разработчиков.|
 
 ## <a name="connect-your-apps-to-this-instance-of-common-data-service"></a>Подключите приложения к этому экземпляру Common Data Service

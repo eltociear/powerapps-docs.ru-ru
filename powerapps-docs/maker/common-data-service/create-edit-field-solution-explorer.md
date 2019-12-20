@@ -1,5 +1,5 @@
 ---
-title: Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps | Документация Майкрософт
+title: Создание и изменение полей для Common Data Service с помощью обозревателя решений Power Apps | Документация Майкрософт
 ms.custom: ''
 ms.date: 05/18/2018
 ms.reviewer: ''
@@ -19,20 +19,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8bbae644cddd24bebfa03ab5e2a15a86c6ecd44e
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8eee62b8190c2422e2e910fd28306a0d56da85ec
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758031"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865974"
 ---
-# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-solution-explorer"></a>Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps
+# <a name="create-and-edit-fields-for-common-data-service-using-power-apps-solution-explorer"></a>Создание и изменение полей для Common Data Service с помощью обозревателя решений Power Apps
 
 Обозреватель решений предоставляет один способ создания и изменения полей для Common Data Service.
 
-[Портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. <br />Дополнительные сведения: 
+[Портал Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) позволяет настроить самые распространенные параметры, но некоторые параметры можно задать только с помощью обозревателя решений. <br />Дополнительные сведения: 
 - [Создание и изменение полей для Common Data Service](create-edit-fields.md)
-- [Создание и изменение полей для Common Data Service с помощью портала PowerApps](create-edit-field-portal.md)
+- [Создание и изменение полей для Common Data Service с помощью портала Power Apps](create-edit-field-portal.md)
   
 ## <a name="open-solution-explorer"></a>Откройте обозреватель решений
 
@@ -268,7 +268,7 @@ ms.locfileid: "2758031"
 
 ### <a name="see-also"></a>См. также  
 [Создание и изменение полей для Common Data Service](create-edit-fields.md)<br />
-[Создание и изменение полей для Common Data Service с помощью портала PowerApps](create-edit-field-portal.md)<br />
+[Создание и изменение полей для Common Data Service с помощью портала Power Apps](create-edit-field-portal.md)<br />
 [Типы полей и типы данных полей](types-of-fields.md)<br />
 [Определение вычисляемых полей для автоматизации ручных расчетов](define-calculated-fields.md)<br />
 [Определение полей свертки, которые агрегируют значения](define-rollup-fields.md)<br />

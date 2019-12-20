@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8ba09c46a46d0a4d40891419e1f6eb787f75f096
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 67941c3793be4a7dbb6860a6787536759cc267c4
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703922"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868306"
 ---
 # <a name="configure-a-lookup-component-on-a-form"></a>Настройка компонента поиска в форме  
 Поле поиска может использоваться для ссылки на запись в другой сущности. Компонент поиска автоматически используется при добавлении поля поиска в форму. Разработчики могут настроить компонент поиска с использованием конструктора формы.

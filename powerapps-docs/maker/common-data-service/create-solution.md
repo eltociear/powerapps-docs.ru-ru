@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9e57aa7395b6c8fdbcfe35c944f625d9790f592a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c917314137580ffee9d70f702c87bfb265a55810
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757679"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872972"
 ---
 # <a name="create-a-solution"></a>Создание решения
 
@@ -35,7 +35,7 @@ ms.locfileid: "2757679"
   
  Дополнительные сведения об основных понятиях решения см. в разделе [Работа с решениями](solutions-overview.md).  
   
-1.  Войдите в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) и выберите **Решения** в левой области навигации. 
+1.  Войдите в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) и выберите **Решения** в левой области навигации. 
   
 2.  Щелкните **Создать решение** и заполните обязательные поля для решения.
   

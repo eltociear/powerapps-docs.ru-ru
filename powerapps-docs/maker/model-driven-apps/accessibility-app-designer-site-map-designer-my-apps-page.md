@@ -1,6 +1,6 @@
 ---
-title: Специальные возможности в конструкторе приложений, конструкторе карты сайта и на странице "Мои приложения" в PowerApps | Microsoft Docs
-description: Узнайте о специальных возможностях в управляемом моделью приложении в конструкторе приложений, конструкторе карты сайта и на странице "Мои приложения" в PowerApps
+title: Специальные возможности в конструкторе приложений, конструкторе карты сайта и на странице "Мои приложения" в Power Apps | Microsoft Docs
+description: Узнайте о специальных возможностях в управляемом моделью приложении в конструкторе приложений, конструкторе карты сайта и на странице "Мои приложения" в Power Apps
 keywords: Конструктор приложений; конструктор карты сайта; мои приложения; Dynamics 365
 author: Mattp123
 ms.author: matp
@@ -17,21 +17,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c0f845b1b1b390bb6033efa282792b0b5116e6fc
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5a2226e87193079c1b68858f30759f509562cbda
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752077"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885236"
 ---
-# <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>Доступность в конструкторе приложений, конструкторе карты сайта и на странице "Мои приложения" в PowerApps
+# <a name="accessibility-in-power-apps-app-designer-site-map-designer-and-my-apps-page"></a>Доступность в конструкторе приложений, конструкторе карты сайта и на странице "Мои приложения" в Power Apps
 
 Корпорация Майкрософт полна решимости сделать свои продукты и сервисы более простыми и доступными для всех. Дополнительные сведения: [Специальные возможности Майкрософт](https://www.microsoft.com/enable/default.aspx)  
  
 В этом разделе описываются специальные возможности, доступные в управляемых моделью приложениях.  
   
 ## <a name="keyboard-shortcuts"></a>Сочетания клавиш  
-В PowerApps предусмотрены различные сочетания клавиш для облегчения работы пользователям с ограниченной подвижностью пальцев или нарушением координации движений.  
+В Power Apps предусмотрены различные сочетания клавиш для облегчения работы пользователям с ограниченной подвижностью пальцев или нарушением координации движений.  
   
 |Страница "Мои приложения"|||  
 |------------------|-|-|  
@@ -111,4 +111,4 @@ ms.locfileid: "2752077"
 
 ## <a name="see-also"></a>См. также
 
-[Использование сочетаний клавиш в PowerApps](/powerapps/user/keyboard-shortcuts)
+[Использование сочетаний клавиш в Power Apps](/powerapps/user/keyboard-shortcuts)

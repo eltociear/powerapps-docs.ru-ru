@@ -1,5 +1,5 @@
 ---
-title: Удаление или деактивация представления управляемого моделью приложения в PowerApps | MicrosoftDocs
+title: Удаление или деактивация представления управляемого моделью приложения в Power Apps | MicrosoftDocs
 description: Узнайте, как удалить или деактивировать представление
 ms.custom: ''
 ms.date: 06/12/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3dd7e6a6838f9ba148c8d90719746c4a1488c559
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: fd754dabac61c744044dce088ca063dc31ba63af
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711314"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865241"
 ---
 # <a name="delete-or-deactivate-a-model-driven-app-view"></a>Удаление или деактивация представления управляемого моделью приложения 
 

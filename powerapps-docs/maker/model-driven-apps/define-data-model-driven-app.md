@@ -1,5 +1,5 @@
 ---
-title: Определение данных для управляемого моделью приложения в PowerApps | MicrosoftDocs
+title: Определение данных для управляемого моделью приложения в Power Apps | MicrosoftDocs
 description: Узнайте, как определять данные для управляемого моделью приложения
 Keywords: данные, сущность, поля, отношение, атрибуты, управляемое моделью приложение
 author: Mattp123
@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 65a4766be330fba6a2ec0ed25a532a5ea37f7138
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7bdd0a9fdfce45c1e8d61f76cc542de09a0d344d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705066"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860382"
 ---
 # <a name="define-data-for-your-model-driven-app"></a>Определение данных для управляемого моделью приложения
 

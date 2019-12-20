@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c58e70e596bc2382907da5baebfe8d901cb9f420
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 287df9ac6daa38022a269177247a5b446bdfa1fa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702338"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869999"
 ---
 # <a name="set-managed-properties-in-common-data-service-metadata"></a>Задание управляемых свойств в метаданных Common Data Service 
 
@@ -64,7 +64,7 @@ ms.locfileid: "2702338"
 
 ## <a name="field-managed-properties"></a>Управляемые свойства полей
 
-См. раздел [Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps](create-edit-field-solution-explorer.md) для получения сведения о порядке редактирования полей.
+См. раздел [Создание и изменение полей для Common Data Service с помощью обозревателя решений Power Apps](create-edit-field-solution-explorer.md) для получения сведения о порядке редактирования полей.
 
 Во время [просмотра полей](create-edit-field-solution-explorer.md#view-fields) выберите настраиваемое поле из неуправляемого решения, затем выберите **Другие действия** >  **Управляемые свойства** в строке меню.
 
@@ -100,6 +100,6 @@ ms.locfileid: "2702338"
 
 [Управляемые свойства](solutions-overview.md#managed-properties)<br />
 [Создание и изменение сущностей с помощью обозревателя решений](create-edit-entities-solution-explorer.md)<br />
-[Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps](create-edit-field-solution-explorer.md)<br />
+[Создание и изменение полей для Common Data Service с помощью обозревателя решений Power Apps](create-edit-field-solution-explorer.md)<br />
 [Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) с помощью обозревателя решений](create-edit-1n-relationships-solution-explorer.md)<br />
 [Создание отношений сущностей N:N (многие-ко-многим) в Common Data Service с помощью обозревателя решений](create-edit-nn-relationships-solution-explorer.md)

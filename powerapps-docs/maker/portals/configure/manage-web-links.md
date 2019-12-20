@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 5d0ead5104765ab71848ffcf8c4aaff801a58a20
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d8e2421545247f72b5b164e08b4ac210466048c1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760955"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866854"
 ---
 # <a name="manage-web-links"></a>Управление веб-ссылками
 
 Веб-ссылка может указывать на любой URL-адрес или она может указывать на другую веб-страницу на том же веб-сайте. Когда веб-ссылка указывает на веб-страницу, состояние безопасности и публикации веб-страницы также применяется к этой веб-ссылке. Веб-ссылки всегда входят в набор веб-ссылок. Набор веб-ссылок — это группа ссылок, таких как основная навигация или группа ссылок нижнего колонтитула. Наборы веб-ссылок допускают совместную группировку и упорядочивание внутренних, независимо от размещения на карте сайта, и внешних ссылок.
 
-## <a name="manage-web-links-in-powerapps-portals"></a>Управление веб-ссылками на порталах PowerApps
+## <a name="manage-web-links-in-power-apps-portals"></a>Управление веб-ссылками на порталах Power Apps
 
 После того как настройки портала были импортированы в вашу среду Common Data Service, веб-ссылками можно управлять из набора веб-ссылок.
 

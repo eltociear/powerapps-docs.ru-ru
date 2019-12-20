@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: da8e6ac6d4e86a12ba196393073706c3705e4a92
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: efc0ea8449e387d292063f16ee6e38f69863267c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756139"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867250"
 ---
 # <a name="restrict-portal-access-by-ip-address"></a>Ограничение доступа на портал с помощью IP-адреса
 
@@ -39,7 +39,7 @@ ms.locfileid: "2756139"
 > [!NOTE]
 > Необходимо указать общедоступный IP-адрес, к которому может получить доступ портал. Портал не может получить доступ к частному IP-адресу.
 
-1.  Открытие [Центра администрирования портала PowerApps](admin-overview.md).
+1.  Открытие [Центра администрирования портала Power Apps](admin-overview.md).
 
 2.  Перейдите к параметру **Настроить ограничение IP-адресов**. Отобразится список IP-адресов и их тип.
 
@@ -63,7 +63,7 @@ ms.locfileid: "2756139"
 
 Чтобы удалить доступ к порталу для разрешенного ранее IP-адреса, можно удалить IP-адрес из списка. Если будут удалены все IP-адреса, портал будет доступен с любого IP-адреса.
 
-1.  Открытие [Центра администрирования портала PowerApps](admin-overview.md).
+1.  Открытие [Центра администрирования портала Power Apps](admin-overview.md).
 
 2.  Перейдите к параметру **Настроить ограничение IP-адресов**. Отобразится список IP-адресов и их тип.
 

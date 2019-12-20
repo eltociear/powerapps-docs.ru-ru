@@ -1,5 +1,5 @@
 ---
-title: Использование решения по умолчанию для настройки с помощью PowerApps | MicrosoftDocs
+title: Использование решения по умолчанию для настройки с помощью Power Apps | MicrosoftDocs
 description: Узнайте, как настроить решение по умолчанию
 ms.custom: ''
 ms.date: 10/29/2018
@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0676d24ef79f2fe92da2971028a6e22fbdc76c62
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: da116f81addf057a5f3fd4c44264bc6305e7b884
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755194"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869691"
 ---
 # <a name="use-the-common-data-services-default-solution"></a>Использование решения по умолчанию служб Common Data Service  
   
- Все среды PowerApps включают следующие решения.
+ Все среды Power Apps включают следующие решения.
 -   **Решение по умолчанию Common Data Service** — это базовое решение, которое доступно разработчикам для использования по умолчанию для своих настроек в среде.
 -   **Решение по умолчанию** — это специальное решение, которое содержит все настройки из всех решений в среде. 
 <!-- **Base Custom Controls Core** - This solution includes a core set of controls. Controls are used in user interface elements, such as fields, lists, and views. -->

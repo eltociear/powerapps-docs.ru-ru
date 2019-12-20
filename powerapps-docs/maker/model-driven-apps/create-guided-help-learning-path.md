@@ -14,12 +14,12 @@ search.audienceType:
 - customizer
 search.app:
 - PowerApps
-ms.openlocfilehash: b9c0f192f96d9ce967d1b8e56266aadeb64646c9
-ms.sourcegitcommit: 7411b4cf9e30e71052fe932dfd3276e969854af4
+ms.openlocfilehash: bd40b60a82735d2bddb3629c8b34647df9e34857
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2768302"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875445"
 ---
 # <a name="create-guided-help-learning-path-for-your-app"></a>Создание управляемой справки (схемы обучения) для приложения
 
@@ -44,7 +44,7 @@ ms.locfileid: "2768302"
 
  Для создания содержимого схемы обучения необходимо:  
 
-- Используйте PowerApps или [!INCLUDE[pn_crm_online_shortest](../../includes/pn-crm-online-shortest.md)].  
+- Используйте Power Apps или [!INCLUDE[pn_crm_online_shortest](../../includes/pn-crm-online-shortest.md)].  
 
 - Согласиться на использование схемы обучения. Этот параметр включен по умолчанию, но мог быть отключен.  
 
@@ -64,7 +64,7 @@ ms.locfileid: "2768302"
 ## <a name="turn-on-learning-path-for-your-organization"></a>Включение схемы обучения для организации  
  Схема обучения — дополнительная функция, которую можно включить или отключить для организации. Можно отобразить содержимое схемы обучения, включенное в [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)], создать собственное содержимое схемы обучения для пользователей или и то, и другое.  
 
-1. Войдите в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) или [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)], используя учетную запись администратора.  
+1. Войдите в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) или [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)], используя учетную запись администратора.  
 
 2. Откройте **Параметры** и выберите **Администрирование** в разделе **Система**. Дополнительные сведения: [Параметры](/powerapps/maker/model-driven-apps/advanced-navigation#settings)
 
@@ -133,7 +133,7 @@ ms.locfileid: "2768302"
 <a name="ConfigureRoles"></a>   
 #### <a name="configure-security-roles"></a>Настройка ролей безопасности  
 
-1. Войдите в PowerApps с помощью учетной записи, имеющей соответствующие разрешения схемы обучения.  
+1. Войдите в Power Apps с помощью учетной записи, имеющей соответствующие разрешения схемы обучения.  
 
 2. Откройте раздел **Библиотека содержимого**.  
 

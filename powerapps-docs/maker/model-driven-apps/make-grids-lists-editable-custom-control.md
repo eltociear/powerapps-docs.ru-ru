@@ -1,5 +1,5 @@
 ---
-title: Предоставление возможности редактировать сетки (списки) управляемого моделью приложения с помощью настраиваемого элемента управления "Редактируемая сетка" в PowerApps | MicrosoftDocs
+title: Предоставление возможности редактировать сетки (списки) управляемого моделью приложения с помощью настраиваемого элемента управления "Редактируемая сетка" в Power Apps | MicrosoftDocs
 description: Узнайте, как использовать настраиваемый элемент управления редактируемой сетки
 ms.custom: ''
 ms.date: 06/27/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8ec97723dcc5c1e17b3907c7b683ba24977b69de
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 866c058ad873fa278ee0bb8bf026983ed0201df7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2700622"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867998"
 ---
 # <a name="make-model-driven-app-grids-lists-editable-using-the-editable-grid-custom-control"></a>Предоставление возможности редактировать сетки (списки) управляемых моделью приложений с помощью настраиваемого элемента управления "Редактируемая сетка"
 

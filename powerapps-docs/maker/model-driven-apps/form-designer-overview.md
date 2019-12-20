@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 96cae5273855fd6458a501aa0757da12ba8e1701
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b0c79dac6652940d214841328cae3bfe61b8601b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701678"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868218"
 ---
 # <a name="overview-of-the-model-driven-form-designer"></a>Обзор конструктора управляемых моделью форм
 Новый конструктор управляемых моделью форм предоставляет современное WYSIWYG-взаимодействие разработки при работе с управляемыми моделью формами. Он содержит несколько усовершенствований, недоступных в классическом конструкторе управляемых моделью форм. 

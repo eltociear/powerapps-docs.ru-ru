@@ -1,5 +1,5 @@
 ---
-title: Указание представления по умолчанию управляемого моделью приложения в PowerApps | MicrosoftDocs
+title: Указание представления по умолчанию управляемого моделью приложения в Power Apps | MicrosoftDocs
 description: Узнайте, как задавать представление по умолчанию
 ms.custom: ''
 ms.date: 06/12/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f47f0a70939c3799cba356dc3ffe8c88ac3e95d5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 08050d002f9c8b17ab63516b440ec3e26d6f3955
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711006"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862767"
 ---
 # <a name="specify-a-model-driven-app-default-view"></a>Указание представления по умолчанию управляемого моделью приложения
 

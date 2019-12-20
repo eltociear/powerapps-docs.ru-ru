@@ -16,18 +16,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1d763fd341c3537f908720ea9616b1646bda1745
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4a2f17995d92d09ad025d643589f5993041a2f96
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2704846"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884840"
 ---
 # <a name="embed-a-canvas-app-on-a-model-driven-form"></a>Внедрение приложения на основе холста в управляемую моделью форму
 
@@ -45,9 +45,9 @@ ms.locfileid: "2704846"
 Рекомендации по работе с внедренными приложениями на основе холста, а также полезные советы по устранению любых проблем, которые могут возникнуть, см. в разделе: [Рекомендации по работе с внедренными приложениями на основе холста](embedded-canvas-app-guidelines.md).
 
 ## <a name="see-also"></a>См. также
-[Что такое приложения на основе холста в PowerApps?](../canvas-apps/getting-started.md) <br />
-[Добавление и настройка элемента управления приложения на основе холста в PowerApps](../canvas-apps/add-configure-controls.md) <br />
-[Обзор соединителей приложений на основе холста для PowerApps](../canvas-apps/connections-list.md) <br />
+[Что такое приложения на основе холста в Power Apps?](../canvas-apps/getting-started.md) <br />
+[Добавление и настройка элемента управления приложения на основе холста в Power Apps](../canvas-apps/add-configure-controls.md) <br />
+[Обзор соединителей приложений на основе холста для Power Apps](../canvas-apps/connections-list.md) <br />
 [Добавление внедренного приложения на основе холста в управляемую моделью форму](embedded-canvas-app-add-classic-designer.md) <br />
 [Редактирование приложения на основе холста, внедренного в управляемую моделью форму](embedded-canvas-app-edit-classic-designer.md) <br />
 [Настройка размера и ориентации экрана приложения на основе холста, внедренного на управляемую моделью форму](embedded-canvas-app-customize-screen.md) <br />

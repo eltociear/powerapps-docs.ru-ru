@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4d0b13a43f595c5b9bae7b9a8146b7ccb2b8308d
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 758a7d2ce925526e5c0e7062f1e5134ac519e9eb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703878"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868262"
 ---
 # <a name="add-and-configure-a-quick-view-component-on-a-form"></a>Добавление или настройка компонента экспресс-формы в форме  
 Основная форма в которой отображаются сведения записи может использовать быстрые компонент экспресс-формы для отображения доступных только для чтения сведений связанной записи (поиск). Данные, отображаемые компонентом экспресс-формы, определяются экспресс-формой связанной сущности. Когда нет связанной записи, такой как поиск, компонент экспресс-формы автоматически скрывается.

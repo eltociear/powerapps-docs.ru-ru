@@ -1,6 +1,6 @@
 ---
 title: Удаление управляемого моделью приложения | MicrosoftDocs
-description: Узнайте, как удалить или изъять управляемое моделью приложение из среды PowerApps.
+description: Узнайте, как удалить или изъять управляемое моделью приложение из среды Power Apps.
 keywords: ''
 ms.date: 10/08/2019
 ms.service: powerapps
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 026420ad6a5f3ab3e74c9c0d11f87f8a52ffa417
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e8f7d58f7c5cf40f6b582bc5be7970211334d271
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756227"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874843"
 ---
 # <a name="delete-a-model-driven-app"></a>Удаление управляемого моделью приложения
 Удаляйте или изымайте приложения, которые больше не нужны в среде.
@@ -37,7 +37,7 @@ ms.locfileid: "2756227"
 > [!IMPORTANT]
 > Если управляемое моделью приложение было установлено в решение по умолчанию как часть управляемого решения, см. раздел [Удаление приложения на основе модели, которое было установлено в составе управляемого решения](#delete-a-model-driven-app-that-was-installed-as-part-of-a-managed-solution).
 
-1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 2. В левой области переходов выберите **Приложения**. 
 3. Выберите приложение, которое необходимо удалить, затем выберите **Удалить** на панели команд.
 4. В открывшемся сообщении с запросом подтверждения выберите **Удалить**.
@@ -54,7 +54,7 @@ ms.locfileid: "2756227"
 
 ### <a name="delete-a-managed-solution"></a>Удаление управляемого решения 
 При удалении решения удаляются все компоненты управляемого решения.
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
 2.  В левой области навигации выберите **Решения**.
 3.  В списке **Решения** выберите управляемое решение, которое требуется удалить, затем на панели инструментов выберите **Удалить**. 
 

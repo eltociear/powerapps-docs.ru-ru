@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24972d4c159db30c4abb142adf258a5930c8ace9
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ebecba9aedb8c475e3f8ce8628b7b24d104669e0
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758959"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873785"
 ---
 # <a name="create-a-power-bi-report"></a>Создание отчета Power BI
 Common Data Service позволяет подключаться напрямую к данным с помощью Power BI Desktop для создания отчетов и публикации их в Power BI. Из Power BI отчеты можно использовать в панелях мониторинга, предоставлять к ним доступ другим пользователям и получать доступ с различных платформ в мобильных приложениях Power BI.
@@ -34,7 +34,7 @@ Common Data Service позволяет подключаться напрямую
 
 ## <a name="finding-your-common-data-service-environment-url"></a>Определение URL-адреса среды Common Data Service
 
-1. Откройте [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) и выберите среду, к которой требуется подключиться, затем нажмите **шестеренку параметров** в правом верхнем углу и нажмите **Дополнительные настройки**
+1. Откройте [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) и выберите среду, к которой требуется подключиться, затем нажмите **шестеренку параметров** в правом верхнем углу и нажмите **Дополнительные настройки**
 
     ![Среда Common Data Service](./media/data-platform-cds-powerbi-connector/CDSEnv1.png "Среда Common Data Service")
 
@@ -57,7 +57,7 @@ Common Data Service позволяет подключаться напрямую
 
     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport2.png "Power BI Desktop")
 
-3. Вставьте ваш **URL-адрес среды Common Data Service** в поле **URL-адрес сервера** и нажмите **ОК**. Если это ваш первый раз, появится предложение выполнить вход, используя те же учетные данные, что вы используете для соединения с PowerApps и Common Data Service.
+3. Вставьте ваш **URL-адрес среды Common Data Service** в поле **URL-адрес сервера** и нажмите **ОК**. Если это ваш первый раз, появится предложение выполнить вход, используя те же учетные данные, что вы используете для соединения с Power Apps и Common Data Service.
 
     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport3.png "Power BI Desktop")
 

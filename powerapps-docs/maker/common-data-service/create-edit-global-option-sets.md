@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e1b89a4f87938ac0147a6724e27441517728baef
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 746f3b1677df7eb89ce35ef1161a291bfdb7d2be
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757855"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865886"
 ---
 # <a name="create-and-edit-global-option-sets-overview"></a>Обзор создания и изменения глобальных наборов параметров 
 
@@ -43,7 +43,7 @@ ms.locfileid: "2757855"
 
 |Дизайнер| Описание|
 |--|--|
-|[портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание набора параметров](custom-picklists.md) |
+|[портал Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание набора параметров](custom-picklists.md) |
 |Обозреватель решений|Не так прост, но предоставляет больше гибкости для менее распространенных требований. <br />Дополнительные сведения: [Создание и изменение глобальных наборов параметров для Common Data Service с помощью обозревателя решений](create-edit-global-option-sets-solution-explorer.md) |
 
 > [!NOTE]
@@ -53,7 +53,7 @@ ms.locfileid: "2757855"
 
 Информация в этом разделе поможет вам выбрать конструктор для использования. 
 
-Нужно использовать [портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) для работы с глобальными наборами параметров, если только вам не нужно выполнить любое из следующих требований:
+Нужно использовать [портал Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) для работы с глобальными наборами параметров, если только вам не нужно выполнить любое из следующих требований:
 
 - Назначение цветов параметрам
 - Изменение порядка параметров

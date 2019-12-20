@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: d660b570963cb57ac97426f35eb826a1bc9678c4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 4667a328775a41b254f80250caebaf88a8110a9f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757239"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866502"
 ---
 # <a name="work-with-liquid-templates"></a>Работа с шаблонами Liquid
 
@@ -22,9 +22,9 @@ ms.locfileid: "2757239"
 
 - Добавлять динамическое содержимое непосредственно в поле **Копировать** веб-страницы или в содержимое [фрагмента содержимого](../configure/customize-content-snippets.md).  
 
-- [Сохранять содержимое источника с помощью веб-шаблонов](store-content-web-templates.md), полностью путем задания конфигурации в PowerApps, для использования с помощью системы управления содержимым порталов PowerApps.  
+- [Сохранять содержимое источника с помощью веб-шаблонов](store-content-web-templates.md), полностью путем задания конфигурации в Power Apps, для использования с помощью системы управления содержимым порталов Power Apps.  
 
-- [Отображать заголовок веб-сайта и основную навигационную панель](render-site-header-primary-navigation.md), полностью путем задания конфигурации в PowerApps.  
+- [Отображать заголовок веб-сайта и основную навигационную панель](render-site-header-primary-navigation.md), полностью путем задания конфигурации в Power Apps.  
 
 
 ### <a name="see-also"></a>См. также

@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24e1ed3f2c2836bef1d861a2ef6b4b1f61dc09b9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9ee7770528f104d383bbf2f1b6c810d261334800
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702646"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "2780317"
 ---
 # <a name="apply-business-logic-in-common-data-service"></a>Применение бизнес-логики в Common Data Service
 
@@ -36,7 +36,7 @@ ms.locfileid: "2702646"
 > [!NOTE]
 > Чтобы определить бизнес-правило, применяемое к форме в управляемом моделью приложении, см. раздел [Создание бизнес-правил для формы управляемого моделью приложения](../model-driven-apps/create-business-rules-recommendations-apply-logic-form.md).
 
-Можно также использовать классические процессы Common Data Service, которые являются бизнес-процессами и действиями. Дополнительные сведения: [Microsoft Flow: использование бизнес-процессов](/flow/workflow-processes) и [Microsoft Flow: обзор действий](/flow/actions).
+Можно также использовать классические процессы Common Data Service, которые являются бизнес-процессами и действиями. Дополнительные сведения: [Power Automate: использование бизнес-процессов](/flow/workflow-processes) и [Power Automate: обзор действий](/flow/actions).
 
 ## <a name="see-also"></a>См. также
 

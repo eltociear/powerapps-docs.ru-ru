@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5735e425dd0d19dd5e52603433d56cc37e897cd6
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e4ffa1062d553e37776b1ff9a4625f7d80b4e46e
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758404"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874299"
 ---
 # <a name="autonumber-fields"></a>Поля с автоматической нумерацией
 
 Поля с автоматической нумерацией — это поля, которые автоматически формируют алфавитно-цифровые строки, когда они создаются. Создатели могут настраивать формат этих полей на свое усмотрение, а затем они полагаются на систему для генерации соответствующих значений, которые автоматически заполняют поля во время выполнения.
 
-Хотя поля с автоматической нумерацией формально являются простыми текстовыми полями с дополнительной функцией, [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) упрощают эту концепцию, просто представляя **Автономер** как отдельный тип данных в категории **Текст**. Важно отметить, что [классический обозреватель решений](use-solution-explorer.md#classic-solution-explorer) не поддерживает создание или управление полями с автоматической нумерацией.
+Хотя поля с автоматической нумерацией формально являются простыми текстовыми полями с дополнительной функцией, [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) упрощают эту концепцию, просто представляя **Автономер** как отдельный тип данных в категории **Текст**. Важно отметить, что [классический обозреватель решений](use-solution-explorer.md#classic-solution-explorer) не поддерживает создание или управление полями с автоматической нумерацией.
 
 Для создания полей с автонумерацией выполните те же действия, что и для [создания полей](create-edit-field-portal.md#create-a-field), и просто выберите **Автонумерация** в раскрывающемся списке **Тип данных**. 
 
@@ -70,7 +70,7 @@ ms.locfileid: "2758404"
 
 ## <a name="create-an-autonumber-field"></a>Создание поля с автоматической нумерацией
   
-1.  Выполните вход на [портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1.  Выполните вход на [портал Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
   
 2.  В левой области разверните **Данные** и выберите **Сущности**.
   
@@ -92,4 +92,4 @@ ms.locfileid: "2758404"
 9. Выберите **Готово**.
 
 ## <a name="see-also"></a>См. также
- [Создание и изменение полей для Common Data Service с помощью портала PowerApps](create-edit-field-portal.md)
+ [Создание и изменение полей для Common Data Service с помощью портала Power Apps](create-edit-field-portal.md)

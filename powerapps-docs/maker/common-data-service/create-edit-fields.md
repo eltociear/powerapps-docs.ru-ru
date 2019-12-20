@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fd5d17f33490aab049a166fa53ce541bdea2235a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 004e6e00d433473b6d7a700288dc2d0e920ab884
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757943"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861398"
 ---
 # <a name="how-to-create-and-edit-fields"></a>Создание и изменение полей
 
@@ -38,8 +38,8 @@ ms.locfileid: "2757943"
 
 |Дизайнер| Описание|
 |--|--|
-|[портал PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание и изменение полей для Common Data Service с помощью портала PowerApps](create-edit-field-portal.md)|
-|Обозреватель решений|Не так прост, но предоставляет больше гибкости для менее распространенных требований.<br />Дополнительные сведения: [Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps](create-edit-field-solution-explorer.md) |
+|[портал Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|Обеспечивает простое модернизированное взаимодействие, но некоторые специальные параметры недоступны.<br />Дополнительные сведения: [Создание и изменение полей для Common Data Service с помощью портала Power Apps](create-edit-field-portal.md)|
+|Обозреватель решений|Не так прост, но предоставляет больше гибкости для менее распространенных требований.<br />Дополнительные сведения: [Создание и изменение полей для Common Data Service с помощью обозревателя решений Power Apps](create-edit-field-solution-explorer.md) |
 
 > [!NOTE]
 > Можно также создать поля в среде с помощью следующих действий.
@@ -50,7 +50,7 @@ ms.locfileid: "2757943"
 
 Информация в этом разделе поможет вам выбрать конструктор для использования. 
 
-Нужно использовать портал PowerApps для создания и изменения полей для Common Data Service, если только вам не нужно выполнить любое из следующих требований:
+Нужно использовать портал Power Apps для создания и изменения полей для Common Data Service, если только вам не нужно выполнить любое из следующих требований:
 
 - Создание настраиваемого поля подстановки. 
    - Дополнительные сведения: [Различные типы поисков](types-of-fields.md#different-types-of-lookups)
@@ -73,7 +73,7 @@ ms.locfileid: "2757943"
    - Дополнительные сведения: [Задание управляемых свойств для полей](set-managed-properties-for-field.md)
 
 > [!NOTE]
-> Можно создать поле поиска на портале PowerApps или в обозревателе решений, создав отношение "один-ко-многим" в сущности. Но только обозреватель решений предлагает параметр для создания этого отношения во время создания поля.
+> Можно создать поле поиска на портале Power Apps или в обозревателе решений, создав отношение "один-ко-многим" в сущности. Но только обозреватель решений предлагает параметр для создания этого отношения во время создания поля.
 
 ## <a name="community-tools"></a>Средства сообщества
 
@@ -83,8 +83,8 @@ ms.locfileid: "2757943"
 > Средства сообществ не являются продуктом корпорации Майкрософт, и на них не распространяется поддержка. При наличии вопросов по средству обращайтесь к его издателю. Дополнительные сведения: [XrmToolBox](https://www.xrmtoolbox.com).
 
 ### <a name="see-also"></a>См. также  
-[Создание и изменение полей для Common Data Service с помощью портала PowerApps](create-edit-field-portal.md)<br />
-[Создание и изменение полей для Common Data Service с помощью обозревателя решений PowerApps](create-edit-field-solution-explorer.md)<br />
+[Создание и изменение полей для Common Data Service с помощью портала Power Apps](create-edit-field-portal.md)<br />
+[Создание и изменение полей для Common Data Service с помощью обозревателя решений Power Apps](create-edit-field-solution-explorer.md)<br />
 [Типы полей и типы данных полей](types-of-fields.md)<br />
 [Документация для разработчиков. Работа с метаданными атрибута](/dynamics365/customer-engagement/developer/org-service/work-attribute-metadata)
  

@@ -1,27 +1,24 @@
 ---
-title: Доступные шаблоны портала в PowerApps | Документы Майкрософт
-description: Узнайте о различных шаблонах портала, доступных в PowerApps.
+title: Доступные шаблоны портала в Power Apps | Документы Майкрософт
+description: Узнайте о различных шаблонах портала, доступных в Power Apps.
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 01995c7d1d23d4986441e8ccdcbba59029004cdf
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f37769e63d6231869aedfd83e834ffcdd86062ea
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755699"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884532"
 ---
 # <a name="portal-templates"></a>Шаблоны портала
 
-В зависимости от выбранной среды в PowerApps, можно создать начальный портал Common Data Service или портал в среде, содержащей приложения на основе модели в Dynamics 365.
-
-> [!NOTE]
-> Существующие порталы и существующие шаблоны портала (сообщество, партнер, самообслуживание сотрудника, самообслуживание клиента) не полностью поддерживаются в студии порталов PowerApps, и некоторые компоненты могут не отображаться. Тем не менее, вы можете продолжить редактирование остальных компонентов, как обычно.
+В зависимости от выбранной среды в Power Apps, можно создать начальный портал Common Data Service или портал в среде, содержащей приложения на основе модели в Dynamics 365.
 
 ## <a name="environment-with-common-data-service"></a>Среда в Common Data Service
 

@@ -1,5 +1,5 @@
 ---
-title: Использование основной формы управляемого моделью приложения и ее компонентов в PowerApps | Microsoft Docs
+title: Использование основной формы управляемого моделью приложения и ее компонентов в Power Apps | Microsoft Docs
 description: Узнайте, как использовать основную форму и ее компоненты в приложениях на основе единого интерфейса
 keywords: Основные формы; Customer Service; Центр обслуживания клиентов; Dynamics 365
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 610a4baf51a2affea142b496d016d732fa626d20
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3232099a5ad1526ad351aea37e8952afc6e474bf
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755919"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884291"
 ---
 # <a name="use-the-model-driven-app-main-form-and-its-components"></a>Использование основной формы управляемого моделью приложения и ее компонентов
 
@@ -41,9 +41,9 @@ ms.locfileid: "2755919"
 > При создании в процессе изменения формы каких-либо новых компонентов в именах компонентов будет использоваться префикс настройки издателя решения для решения по умолчанию и эти компоненты будут включены только в решение по умолчанию. Если новые компоненты решения требуется включить в определенное неуправляемое решение, необходимо открывать редактор форм в этом неуправляемом решении.
 
 
-### <a name="access-the-form-editor-through-app-designer-in-powerapps"></a>Доступ к редактору форм с помощью конструктора приложений в PowerApps
+### <a name="access-the-form-editor-through-app-designer-in-power-apps"></a>Доступ к редактору форм с помощью конструктора приложений в Power Apps
 
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  В левой навигационной панели выберите **Приложения**, выберите требуемое приложение, затем на панели инструментов выберите **Изменить**.  
 
@@ -64,7 +64,7 @@ ms.locfileid: "2755919"
 
 ### <a name="access-the-form-editor-through-the-default-solution"></a>Доступ к редактору форм с помощью решения по умолчанию
 
-1.  Выполните вход в [PowerApps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Выполните вход в [Power Apps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
 2.  Разверните **Данные**, выберите **Сущности**, выберите требуемую сущность, затем выберите вкладку **Формы**.  
 

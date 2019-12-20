@@ -1,5 +1,5 @@
 ---
-title: Настройка карт Bing в управляемых моделью приложениях с помощью PowerApps | MicrosoftDocs
+title: Настройка карт Bing в управляемых моделью приложениях с помощью Power Apps | MicrosoftDocs
 ms.custom: ''
 ms.date: 10/18/2019
 ms.reviewer: ''
@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ff7f5c01e913da60409bb60c637b37ebd4bfa096
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 132f5c2cfb5763714176a86c1ea846085588f862
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756491"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875237"
 ---
 # <a name="configure-a-map-on-a-form"></a>Настройка карты в форме
 По умолчанию элемент управления карт Bing настроен на главной форме как сущностей организация, так и сущностей контакт, что представляет возможность отображать карту в записях сущности. Хотя это не настроено по умолчанию, элемент управления карт Bing можно добавить к сущности пользователя системы. Элемент управления карт Bing также можно использовать с некоторыми другими сущностями, включенными с управляемыми моделью приложениями в Dynamics 365, такими как Dynamics 365 Sales и Dynamics 365 Customer Service. Например, сущности интереса, предложения с расценками, заказа, счета и конкурента. Элемент управления карт Bing нельзя использовать с настраиваемыми сущностями.  
@@ -49,7 +49,7 @@ ms.locfileid: "2756491"
     ![Включение карт в формах](media/enable-maps.png)
 
 ## <a name="configure-a-map"></a>Настройка карты 
-1. Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
+1. Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). 
 2. Выберите **Данные** > **Сущности**, затем выберите сущность, для которой требуется настроить карту на главной форме. 
 3. Выберите вкладку **Формы**, затем выберите основную форму, затем на панели команд выберите **Перейти в классический режим**. 
 4. В классическом конструкторе форм дважды щелкните элемент управления **Представление карты** для просмотра и редактирования свойств. Дополнительные сведения см.: [Просмотр и изменение свойств карты](#view-and-edit-map-properties)

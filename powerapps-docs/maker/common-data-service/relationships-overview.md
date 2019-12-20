@@ -1,6 +1,6 @@
 ---
-title: Обзор сущностей в PowerApps | MicrosoftDocs
-description: Узнайте, как создавать и изменять сущности с помощью портала PowerApps
+title: Обзор сущностей в Power Apps | MicrosoftDocs
+description: Узнайте, как создавать и изменять сущности с помощью портала Power Apps
 ms.custom: ''
 ms.date: 07/25/2018
 ms.reviewer: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9fd6f2bf14a8007dd2b4f840a901316a0d3607cd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 199c7705bd283cbc316b6a2b8056eba7f7507ea1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701018"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865439"
 ---
 # <a name="entity-relationships-overview"></a>Обзор отношений сущностей
 
@@ -37,4 +37,4 @@ ms.locfileid: "2701018"
 
 ## <a name="see-also"></a>См. также
 [Создание отношения между сущностями](data-platform-entity-lookup.md) <br/>
-[Создание отношений сущностей "многие-ко-многим" в Common Data Service с помощью портала PowerApps](create-edit-nn-relationships-portal.md)
+[Создание отношений сущностей "многие-ко-многим" в Common Data Service с помощью портала Power Apps](create-edit-nn-relationships-portal.md)

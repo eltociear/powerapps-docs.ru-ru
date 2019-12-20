@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: eaa02abdc4c85d4d6abd5e5ca3afe176144c4027
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d711a46676003786363f3496515dbd387024dadb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701546"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860690"
 ---
 # <a name="add-configure-move-or-delete-fields-on-a-form"></a>Добавление, настройка, перемещение или удаление полей в форме  
 Добавление, настройка, перемещение или удаление полей с помощью конструктора форм.
@@ -123,7 +123,7 @@ ms.locfileid: "2701546"
 5. В диалоговом окне **Новое поле** выберите **Тип данных** и настройте любые другие необходимые свойства поля.
 
      > [!NOTE]
-     >   -  Некоторые типы полей не отображаются при создании поля из конструктора формы. Если требуемый тип поля недоступен, вы можете выполнить действия, описанные в [Создание и редактирование полей для Common Data Service с использованием портала PowerApps](../common-data-service/create-edit-field-portal.md)
+     >   -  Некоторые типы полей не отображаются при создании поля из конструктора формы. Если требуемый тип поля недоступен, вы можете выполнить действия, описанные в [Создание и редактирование полей для Common Data Service с использованием портала Power Apps](../common-data-service/create-edit-field-portal.md)
 
 6. Выберите **Готово** для создания новых полей для сущности. Поле появляется на панели **Поля**.
 7. Если требуется добавление вновь созданное поля к форме, выполните действия, описанные в разделе [**Добавление поля в форму**](add-move-or-delete-fields-on-form.md#add-fields-to-a-form).

@@ -19,16 +19,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2ec1fb0471ad1f47f4afad083ad89e87633ce9ed
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7774090950b179e349c6c576439ebd4ad47da67b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2707310"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883763"
 ---
 # <a name="create-and-edit-entities-using-solution-explorer"></a>Создание и изменение сущностей с помощью обозревателя решений
 
-Можно легко создать сущность с помощью портала PowerApps для большинства распространенных ситуаций, но здесь реализованы не все возможности. Если необходимо выполнить требования, описанные в разделе [Создание и изменение сущностей в Common Data Service](create-edit-entities.md), вы можете создать или изменить сущности с помощью обозревателя решений.
+Можно легко создать сущность с помощью портала Power Apps для большинства распространенных ситуаций, но здесь реализованы не все возможности. Если необходимо выполнить требования, описанные в разделе [Создание и изменение сущностей в Common Data Service](create-edit-entities.md), вы можете создать или изменить сущности с помощью обозревателя решений.
 
 ## <a name="open-solution-explorer"></a>Откройте обозреватель решений
 
@@ -203,5 +203,5 @@ Both should point to this include
 
 ### <a name="see-also"></a>См. также
 [Создание и изменение сущностей в Common Data Service](create-edit-entities.md)<br />
-[Учебник. Создание настраиваемой сущности с компонентами в PowerApps](/powerapps/maker/common-data-service/create-custom-entity)<br />
+[Учебник. Создание настраиваемой сущности с компонентами в Power Apps](/powerapps/maker/common-data-service/create-custom-entity)<br />
 [Создание решения](create-solution.md)

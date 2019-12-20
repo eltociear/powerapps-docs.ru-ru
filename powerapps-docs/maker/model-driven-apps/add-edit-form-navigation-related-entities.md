@@ -1,5 +1,5 @@
 ---
-title: Добавление переходов формы управляемого моделью приложения для связанных сущностей в PowerApps | MicrosoftDocs
+title: Добавление переходов формы управляемого моделью приложения для связанных сущностей в Power Apps | MicrosoftDocs
 description: Узнайте, как добавить навигацию по форме для связанных сущностей
 ms.custom: ''
 ms.date: 06/18/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 34b1680d7596719cd050c71af8cc6c355f6353e3
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 9751a917dc553355c89aa2a42865ad69bfee5c10
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2751924"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874939"
 ---
 # <a name="add-model-driven-app-form-navigation-for-related-entities"></a>Добавление переходов формы управляемого моделью приложения для связанных сущностей
 
 В этом разделе вы используете область навигации формы, которая используется для добавления ссылок на связанные сущности. Если пользователь приложения щелкает одну из ссылок в записи, то отображается связанное представление для сущности.   
   
-1.  Выполните вход в [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1.  Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 
   
     > [!IMPORTANT]

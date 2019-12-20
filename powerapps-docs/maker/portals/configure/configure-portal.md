@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 2de821da110808432cc6769995e94c9d2a1e8523
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 36c6657e8f565b38495dded1f408c21cc0414356
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709070"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866986"
 ---
 # <a name="portal-management-app"></a>Приложение управления порталом
 
 Приложение управления порталом позволяет выполняет расширенные действия конфигурации на вашем портале. Приложение доступно после успешного создания базы данных Common Data Service.
 
-Чтобы открыть приложение управления порталом, перейдите в раздел **Ваши приложения** на домашней странице PowerApps, найдите приложение управления порталами и выберите его.
+Чтобы открыть приложение управления порталом, перейдите в раздел **Ваши приложения** на домашней странице Power Apps, найдите приложение управления порталами и выберите его.
 
 > [!div class=mx-imgBorder]
 > ![Приложение управления порталом](../media/portal-mgmt.png "Приложение управления порталом")

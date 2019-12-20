@@ -1,5 +1,5 @@
 ---
-title: Установка свойств диаграммы или списка управляемого моделью приложения, включенных на панель мониторинга в PowerApps | MicrosoftDocs
+title: Установка свойств диаграммы или списка управляемого моделью приложения, включенных на панель мониторинга в Power Apps | MicrosoftDocs
 description: Узнайте, как задавать свойства диаграммы или списка, включенных на панель мониторинга
 ms.custom: ''
 ms.date: 06/06/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b284b42c162c44d59fc7af22905be08748d9c766
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 46861b569be4140ca2ac66d016285930c5d9fc31
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711182"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862855"
 ---
 # <a name="set-properties-for-a-model-driven-app-chart-or-list-included-in-a-dashboard"></a>Установка свойств диаграммы или списка управляемого моделью приложения, включенных на панель мониторинга
 

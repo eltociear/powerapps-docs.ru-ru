@@ -1,5 +1,5 @@
 ---
-title: Создание разрешений доступа к веб-сайтам на порталах Dynamics 365 | MicrosoftDocs
+title: Создание разрешений доступа к веб-сайтам на порталах Power Apps | Документация Майкрософт
 description: Сведения о создании и связывании разрешений доступа к веб-сайту с элементами на портале.
 author: sbmjais
 manager: shujoshi
@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 0ac02992498204efc42a52e736284ea134ed42f5
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ab85eb4feca871089366c8675305b4f6c741f0af
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760951"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873477"
 ---
 # <a name="create-website-access-permissions"></a>Создание разрешений доступа к веб-сайтам
 
@@ -38,8 +38,10 @@ ms.locfileid: "2760951"
 
 4. В разделе **Общие** введите имя, веб-сайт и выберите требуемые разрешения.
 
-5. В разделе **Веб-роли** выберите и добавьте веб-роль, с которой требуется связать разрешение.
+    ![Создание разрешения доступа к веб-сайтам](../media/website-access-permission.png "Создание разрешения доступа к веб-сайтам")
+
+5. В разделе **Веб-роли** выберите **Добавить существующую веб-роль** и добавьте веб-роль, с которой требуется связать разрешение.
 
 6. Сохраните изменения.
 
-    ![Создание разрешения доступа к веб-сайтам](../media/website-access-permission.png "Создание разрешения доступа к веб-сайтам")  
+    
