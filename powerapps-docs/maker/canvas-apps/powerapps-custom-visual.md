@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4db4e62bb3813b605b1ff4cdf5c2b83d969a1d3a
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 9a1ff224557bd36074f7c981a5e76a9721943afb
+ms.sourcegitcommit: 366f0d1b8309ab1fd533ebd7e1b41a69a99fd25a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74709755"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302866"
 ---
 # <a name="power-apps-custom-visual-for-power-bi"></a>Пользовательский визуальный элемент Power Apps для Power BI
 
@@ -45,13 +44,16 @@ Power BI позволяет получать аналитические данн
 
     При создании нового приложения Power Apps создает простое приложение с уже настроенными необходимыми компонентами.
 
+    > [!NOTE]
+    > Чтобы функция `PowerBIIntegration.Refresh()` была доступна в приложении, необходимо создать новое приложение из пользовательского визуального элемента Power Apps в Power BI отчете.
+
     ![Создать приложение](./media/powerapps-custom-visual/new-app.png)
 
 4. Теперь в Power Apps Studio можно использовать поля данных, заданные на шаге 2. Объект `PowerBIIntegration` действует как любой источник данных или коллекция, предназначенные только для чтения Power Apps. С помощью этого объекта можно заполнять любой элемент управления или соединяться с другими источниками данных и фильтровать их.
 
     ![Пользовательская формула](./media/powerapps-custom-visual/custom-formula.png)
 
-    Эта формула соединяет данные Power BI с источником данных клиента: `LookUp(Customer;Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
+    Эта формула соединяет данные Power BI с источником данных клиента: `LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
 
    Отчет Power BI и экземпляр Power Apps, который был запущен, совместно используют динамическое подключение к данным. Пока они открыты, можно отфильтровать или изменить данные в отчете, чтобы увидеть обновленные данные сразу же в приложении в Power Apps Studio.
 
@@ -63,7 +65,7 @@ Power BI позволяет получать аналитические данн
 
     ![Рабочий отчет](./media/powerapps-custom-visual/working-report.gif)
 
-    Если необходимо внести изменения в приложение, откройте отчет в режиме редактирования, нажмите или коснитесь пункта **Дополнительные параметры** ( **...** ) в визуальном элементе Power Apps и выберите **изменить**.
+    Если необходимо внести изменения в приложение, откройте отчет в режиме редактирования, нажмите или коснитесь пункта **Дополнительные параметры** (**...**) в визуальном элементе Power Apps и выберите **изменить**.
 
     ![Изменение приложения](./media/powerapps-custom-visual/edit-app.png)
 
@@ -76,7 +78,9 @@ Power BI позволяет получать аналитические данн
 - Пользовательский визуальный элемент Power Apps не может отфильтровать данные или отправить данные обратно в отчет.
 - Необходимо предоставить общий доступ к приложению Power Apps отдельно от отчета. Сведения о [совместном использовании приложений в Power Apps](share-app.md).
 - Сервер отчетов Power BI и мобильное приложение для Power BI не поддерживают пользовательский визуальный элемент Power Apps.
-- При использовании функции Повербиинтегратион. Refresh () необходимо использовать источник, поддерживающий [DirectQuery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources) , а подключение к данным должно быть создано с помощью метода DirectQuery.
+- При использовании функции `PowerBIIntegration.Refresh()` применяются следующие ограничения.
+    - Чтобы эта функция была доступна в приложении, необходимо создать новое приложение из пользовательского визуального элемента Power Apps в Power BI отчете.
+    - Необходимо использовать источник, поддерживающий [DirectQuery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources) , и подключение к данным должно быть создано с помощью метода DirectQuery.
 - Power Apps в Power BI Desktop предоставляет данные для Power Apps Studio при создании приложений, но не во время редактирования. Используйте Power BI Web для предварительного просмотра данных при редактировании приложений.
 
 > [!NOTE]

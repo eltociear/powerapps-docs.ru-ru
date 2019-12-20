@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e175ff47a66ae000fb8303a9f3de8205bcbf51d8
-ms.sourcegitcommit: 9576b34403634a8e960eb5f8e320a14c4a03746c
+ms.openlocfilehash: c386e53569b942cbc539438f9cf30cabab15bb65
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72517412"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75203934"
 ---
 # <a name="add-or-edit-power-bi-visualizations-on-your-dashboard"></a>Добавление или изменение визуализаций Power BI на панели мониторинга
 
@@ -29,7 +29,7 @@ ms.locfileid: "72517412"
 > [!NOTE]
 > Чтобы добавить [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] визуализации в персональные панели мониторинга в приложении, управляемом моделью, необходимо:  
 > 
-> - Включите визуализации [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] для своей организации в окне **параметры**  > **Администрирование**  > **системные параметры**  >  вкладке**отчеты** > **разрешить внедрение визуализации**.  
+> - Включите визуализации [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] для своей организации в окне **параметры** > **Администрирование** > **системные параметры** > вкладке **отчеты** > **разрешить внедрение визуализации**.  
 > - Иметь учетную запись [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] и иметь доступ хотя бы к одной панели мониторинга [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)].  
 > - Избегайте добавления [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] визуализаций к системным панелям мониторинга. Он не поддерживается.
   
@@ -43,7 +43,7 @@ ms.locfileid: "72517412"
 
    
     > [!div class="mx-imgBorder"] 
-    > ![Добавить новую панель мониторинга Power BI](media/pbi_1.png "Добавление панели мониторинга Power BI Бев") 
+    > ![Добавить новую панель мониторинга Power BI](media/pbi_1.png "Добавить новую панель мониторинга Power BI") 
 
 3. В диалоговом окне **Свойства панели мониторинга Power BI** выберите рабочую область, а затем выберите панель мониторинга [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)], которую необходимо внедрить на панель мониторинга. Выберите **включить для мобильных устройств** , если вы хотите сделать панель мониторинга доступной для [!INCLUDE[pn_moca_full](../includes/pn-moca-full.md)] и [!INCLUDE[pn_Microsoft_Dynamics_CRM_Mobile](../includes/pn-dyn-365-phones.md)].
 
@@ -63,7 +63,7 @@ ms.locfileid: "72517412"
 3. На панели мониторинга выберите область, в которой должна отображаться плитка, а затем выберите **Power BI плитку** на панели инструментов.  
 
    > [!div class="mx-imgBorder"] 
-   > ![Добавить новую плитку Power BI](media/pbi_2.png "Добавить плитку Power BI Бев") 
+   > ![Добавить новую плитку Power BI](media/pbi_2.png "Добавить новую плитку Power BI") 
   
 4. В диалоговом окне **Power BI плитке** выберите рабочую область и щелкните плитку [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)], которую требуется отобразить на панели мониторинга. Выберите **включить для мобильных устройств** , если хотите сделать плитку доступной для [!INCLUDE[pn_moca_full](../includes/pn-moca-full.md)] и [!INCLUDE[pn_Microsoft_Dynamics_CRM_Mobile](../includes/pn-dyn-365-phones.md)].  
   
@@ -90,7 +90,7 @@ ms.locfileid: "72517412"
   
  
 ## <a name="share-a-personal-dashboard-that-contains-power-bi-visualizations"></a>Предоставление общего доступа к личной панели мониторинга, содержащей визуализации Power BI  
- Чтобы предоставить общий доступ к личной панели мониторинга, содержащей [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] визуализации, необходимо настроить совместное использование в Common Data Service и [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)], а у пользователя или группы должны быть одинаковые учетные данные и соответствующий уровень доступа в обеих службах. Чтобы поделиться личной панелью мониторинга в приложении, перейдите на **панель мониторинга**. В списке панелей мониторинга выберите нужную личную панель мониторинга, а затем выберите **общий доступ к панели мониторинга**. Дополнительные сведения о совместном использовании панели мониторинга в [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] см. в разделе [Power BI: предоставление общего доступа к панели мониторинга коллегам и другим пользователям](https://powerbi.microsoft.com/documentation/powerbi-service-share-unshare-dashboard/).  
+ Чтобы предоставить общий доступ к личной панели мониторинга, содержащей [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)] визуализации, необходимо настроить совместное использование в Common Data Service и [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)], а у пользователя или группы должны быть одинаковые учетные данные и соответствующий уровень доступа в обеих службах. Чтобы поделиться личной панелью мониторинга в приложении, перейдите на **панель мониторинга**. В списке панелей мониторинга выберите нужную личную панель мониторинга, а затем выберите **общий доступ к панели мониторинга**. Дополнительные сведения о совместном использовании панели мониторинга в [!INCLUDE[pn_power_bi_for_office_365_short](../includes/pn-power-bi-for-office-365-short.md)]см. в разделе [Power BI: предоставление общего доступа к панели мониторинга коллегам и другим пользователям](https://powerbi.microsoft.com/documentation/powerbi-service-share-unshare-dashboard/).  
   
 <a name="privacy"></a>   
 ## <a name="privacy-notice"></a>Уведомление о конфиденциальности  

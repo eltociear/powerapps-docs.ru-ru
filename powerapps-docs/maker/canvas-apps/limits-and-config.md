@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 569792d634916ce32a54404580fb58d43bf4f24d
-ms.sourcegitcommit: d4462233c8973def0bcc4e75019390d92eccf684
+ms.openlocfilehash: ed59b379b55a38a1e5a3454d26d07ae93d106e4f
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831343"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204118"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Требования к системе, ограничения и значения конфигурации для приложений на основе холста
-В этом разделе содержатся требования к платформе устройства и веб-браузеру, а также ограничения и значения конфигурации для Power Apps.
+В этом разделе содержатся требования к платформе устройства и веб-браузеру, а также ограничения и значения конфигурации для приложений Canvas.
 
-## <a name="supported-platforms-for-running-canvas-apps-using-the-power-apps-app"></a>Поддерживаемые платформы для запуска приложений Canvas с помощью приложения Power Apps
+## <a name="supported-platforms-for-running-canvas-apps-using-the-power-apps-mobile-app"></a>Поддерживаемые платформы для запуска приложений Canvas с помощью мобильного приложения Power Apps
 
 | **Минимальные требования** | **Рекомендуется** |
 | --- | --- |
@@ -32,7 +32,7 @@ ms.locfileid: "74831343"
 | Windows 8.1 или более поздней версии (только ПК) |Windows 10 Fall Creators Update с не менее чем 8 ГБ ОЗУ|
 
 > [!NOTE]
-> Сейчас мы не поддерживаем новые функции для приложения "платформа Windows для Power Apps". Такие функции, как улучшенный параметр Common Data Service и гостевой доступ, недоступны на этой платформе. Мы рекомендуем использовать веб-проигрыватель в Windows, чтобы использовать полный набор возможностей. Обновления для приложения Power Apps для платформы Windows будут объявлены в будущем.
+> Сейчас мы не поддерживаем новые функции в [мобильном приложении](/powerapps/user/run-app-client)платформы Windows для Power Apps. Такие функции, как улучшенный параметр Common Data Service и гостевой доступ, недоступны на этой платформе. Мы рекомендуем использовать веб-проигрыватель в Windows, чтобы использовать полный набор возможностей. Обновления мобильного приложения Power Apps для платформы Windows будут объявлены в будущем.
 
 ## <a name="supported-browsers-for-running-canvas-apps"></a>Поддерживаемые браузеры для запуска приложений на основе холста
 
@@ -83,7 +83,7 @@ ms.locfileid: "74831343"
 | Индия  | 104.211.81.192-104.211.81.207, 52.172.211.12, 40.78.194.240-40.78.194.255, 13.71.125.22, 104.211.146.224-104.211.146.239, 104.211.189.218 |
 | Япония | 13.78.108.0-13.78.108.15, 13.71.153.19, 40.74.100.224-40.74.100.239, 104.215.61.248 |
 | Южная Америка | 191.233.203.192–191.233.203.207, 104.214.19.48–104.214.19.63, 13.65.86.57, 104.41.59.51 |
-| Соединенное Королевство | 51.140.148.0–51.140.148.15, 51.140.80.51, 51.140.211.0–51.140.211.15, 51.141.47.105 |
+| Великобритания | 51.140.148.0–51.140.148.15, 51.140.80.51, 51.140.211.0–51.140.211.15, 51.141.47.105 |
 | США | 13.89.171.80-13.89.171.95, 52.173.245.164, 40.71.11.80-40.71.11.95, 40.71.249.205, 40.70.146.208-40.70.146.223, 52.232.188.154, 52.162.107.160-52.162.107.175, 52.162.242.161, 40.112.243.160-40.112.243.175, 104.42.122.49 |
 | США (ранний доступ)  | 13.71.195.32-13.71.195.47, 52.161.102.22, 13.66.140.128-13.66.140.143, 52.183.78.157 |
 
@@ -100,11 +100,11 @@ ms.locfileid: "74831343"
 | \*. azure-apim.net |https |Концентраторы API — разные поддомены для каждого языкового стандарта. |
 | \*. powerapps.com |https | create.powerapps.com, make.powerapps.com, content.powerapps.com и make.powerapps.com |
 | \*. azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com и make.powerapps.com |
-| \*.blob.core.windows.net; |https | Хранилище BLOB-объектов |
+| \*. blob.core.windows.net |https | Хранилище BLOB-объектов |
 | \*. flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com и make.powerapps.com |
 | *. dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |Телеметрия |
-| localhost | https | Power Apps Mobile
+| localhost | https | Приложения Power Apps для мобильных устройств
 
 > [!NOTE]
 > Если вы используете VPN, ее необходимо настроить для исключения localhost из режима туннелирования для мобильных приложений.

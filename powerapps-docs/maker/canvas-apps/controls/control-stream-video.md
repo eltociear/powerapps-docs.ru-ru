@@ -13,18 +13,21 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c9d3594ecf338c6cfa93786f56a09606b2de6296
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 00c13a3b57cce0f7c8831b0932f7e17bbb32efe7
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732014"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75203957"
 ---
 # <a name="microsoft-stream-video-control-in-power-apps"></a>Microsoft Stream элемент управления видео в Power Apps
 Видеопроигрыватель для Microsoft Stream видео и каналов.
 
 ## <a name="description"></a>Description
 Элемент управления позволит пользователям приложений воспроизводить видео и просматривать каналы из службы Microsoft Stream.
+
+## <a name="limitations"></a>Ограничения
+Сейчас элемент управления не поддерживается в собственном проигрывателе Windows для Power Apps.  Она успешно работает в веб-браузерах, а также в проигрывателях Android и iOS Power Apps.
 
 ## <a name="key-properties"></a>Основные свойства
 **Стреамурл** — URL-адрес Microsoft Stream видео или канал, который должен отображаться в элементе управления.
@@ -99,9 +102,9 @@ ms.locfileid: "74732014"
 * Параметр **ShowControls** должен иметь значение true, чтобы пользователи могли слушать или смотреть мультимедиа в нужном темпе. Это также позволит переключать скрытые субтитры и полноэкранный режим в видеоплеерах.
 * Для видеороликов должны быть предоставлены скрытые субтитры.
  * Рассмотрите возможность предоставления записи для аудио или видео с использованием одного из следующих способов:
-  1. Введите текст в поле **[Метка](control-text-box.md)** и расположите его рядом с мультимедийным проигрывателем. При необходимости создайте **[кнопку](control-button.md)** , чтобы переключить отображение текста.
-  2. Введите текст в другом окне. Создайте **[кнопку](control-button.md)** , которая перенаправит в окно, и расположите ее рядом с мультимедийным проигрывателем.
-  3. Если описание краткое, его можно ввести в поле **[AccessibleLabel](properties-accessibility.md)** .
+  1. Введите текст в поле **[Метка](control-text-box.md)** и расположите его рядом с мультимедийным проигрывателем. При необходимости создайте **[кнопку](control-button.md)**, чтобы переключить отображение текста.
+  2. Введите текст в другом окне. Создайте **[кнопку](control-button.md)**, которая перенаправит в окно, и расположите ее рядом с мультимедийным проигрывателем.
+  3. Если описание краткое, его можно ввести в поле **[AccessibleLabel](properties-accessibility.md)**.
 
 ### <a name="color-contrast"></a>Контрастность
 Необходимо настроить достаточный контраст для следующих элементов:
@@ -111,9 +114,9 @@ ms.locfileid: "74732014"
 Предоставьте скрытые субтитры или расшифровку, если содержимое видео имеет проблемы с цветовым контрастом.
 
 ### <a name="screen-reader-support"></a>Поддержка средства чтения с экрана
-* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)** .
+* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)**.
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
+* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.
 * Параметр **AutoStart** должен иметь значение false, потому что при использовании клавиатуры может быть сложно быстро остановить воспроизведение.

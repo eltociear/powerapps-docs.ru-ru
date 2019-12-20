@@ -13,19 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d34e5d128f6a38c430432f8acfcc40edaa80c034
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: ae11f42fef927509461d8219b8df4134a633ae5d
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727254"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204026"
 ---
 # <a name="date-picker-control-in-power-apps"></a>Элемент управления "Выбор даты" в Power Apps
 Элемент управления, который используется для указания даты.
 
 ## <a name="description"></a>Description
-Добавив элемент управления **Выбор даты** вместо элемента управления **[Ввод текста](control-text-input.md)** , вы обеспечите ввод даты пользователем в правильном формате.
+Добавив элемент управления **Выбор даты** вместо элемента управления **[Ввод текста](control-text-input.md)**, вы обеспечите ввод даты пользователем в правильном формате.
 
 ## <a name="key-properties"></a>Основные свойства
 **DefaultDate** — начальное значение элемента управления датой до его изменения пользователем.
@@ -92,6 +91,8 @@ ms.PowerAppsDecimalTransform: true
 
 **[Size](properties-text.md)**  — размер шрифта текста, отображаемого в элементе управления.
 
+**StartOfWeek** — день недели, отображаемый в столбце первый день элемента управления "Выбор даты".
+
 **StartYear** — первый год, который пользователь может выбрать в элементе управления "Выбор даты".
 
 **[TabIndex](properties-accessibility.md)** — порядок навигации с помощью клавиатуры относительно других элементов управления.
@@ -105,14 +106,14 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-**[Year](../functions/function-datetime-parts.md)** ( *DateTimeValue* )
+**[Year](../functions/function-datetime-parts.md)**( *DateTimeValue* )
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **Выбор даты** и назовите его **Крайний срок**.
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте элемент управления **[Метка](control-text-box.md)** и задайте в качестве значения свойства **[Text](properties-core.md)** следующую формулу:
-   <br>**DateDiff(Today(); Deadline.SelectedDate) & " days to go!"**
+   <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
 
     Нужны дополнительные сведения о функции **[DateDiff](../functions/function-dateadd-datediff.md)** или [других функциях](../formula-reference.md)?
 3. Нажмите клавишу F5, выберите дату в элементе управления **Крайний срок** и нажмите кнопку **ОК**.
@@ -126,11 +127,11 @@ ms.PowerAppsDecimalTransform: true
 * Применяются [стандартные требования по цветовому контрасту](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Поддержка средства чтения с экрана
-* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)** .
+* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)**.
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
+* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.
 
 > [!TIP]
 > Когда календарь открыт, нажимайте на страницу **вверх** и **вниз** , чтобы перейти между месяцами и **Shift + Page Up** и **Shift + Page Down** для перехода между годами.

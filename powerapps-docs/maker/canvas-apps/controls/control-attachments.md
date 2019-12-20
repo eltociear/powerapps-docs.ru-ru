@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: abbe0165041aa3fa496bae480fa1235d9c0b159c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: f5288e6a8ee655cf24479a7de3a5904b7f1a4e07
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727644"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204049"
 ---
 # <a name="attachments-control-in-power-apps"></a>Элемент управления вложениями в Power Apps
 Элемент управления, который позволяет пользователям загружать файлы на свое устройство, а также отправлять и удалять файлы из списка SharePoint или сущности Common Data Service.
 
-## <a name="limitations"></a>Ограничений
+## <a name="limitations"></a>Ограничения
 Элемент управления вложениями имеет следующие ограничения.
 1. Вложения поддерживаются в списках SharePoint и Common Data Service сущностях.
 
@@ -92,7 +92,7 @@ ms.locfileid: "74727644"
 
     Поле "Вложения", связанное со списком SharePoint, отобразится в форме.
 
-[Сведения о том, как добавить и настроить элемент управления].(../add-configure-controls.md)
+[Сведения о добавлении и настройке элемента управления](../add-configure-controls.md)
 
 
 ## <a name="accessibility-guidelines"></a>Руководство по настройке специальных возможностей
@@ -119,4 +119,4 @@ ms.locfileid: "74727644"
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
+* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.
