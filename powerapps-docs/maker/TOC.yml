@@ -170,7 +170,7 @@
       items:
         - name: Подключение к данным
           items:
-            - name: Список соединителей
+            - name: Обзор подключений
               href: ./canvas-apps/connections-list.md
             - name: Популярные соединители
               items:
@@ -1222,8 +1222,8 @@
           href: ./portals/configure/place-child-nodes.md
         - name: Поведение и формат поля "Дата и время"
           href: ./portals/configure/behavior-format-date-time-field.md
-        - name: Просмотр записей электронной почты на временной шкале портала
-          href: ./portals/configure/view-email-in-timeline.md
+        - name: Просмотр действий на временной шкале портала
+          href: ./portals/configure/view-all-activities-in-portal-timeline.md
         - name: Оценка веб-страницы
           href: ./portals/configure/rate-webpage.md
         - name: Включение кэширования выходных данных верхнего и нижнего колонтитула на портале
@@ -1488,8 +1488,12 @@
           href: ./common-data-service/use-solution-explorer.md
         - name: Использование решения Common Data Service по умолчанию
           href: ./common-data-service/use-solutions-for-your-customizations.md
-        - name: 'Импорт, обновление и экспорт решений'
+        - name: Импорт решений
           href: ./common-data-service/import-update-export-solutions.md
+        - name: Обновление решений
+          href: ./common-data-service/update-solutions.md
+        - name: Экспорт решений
+          href: ./common-data-service/export-solutions.md
         - name: Переход к конкретному решению
           href: ./common-data-service/navigate-specific-solution.md
         - name: Создание решения
