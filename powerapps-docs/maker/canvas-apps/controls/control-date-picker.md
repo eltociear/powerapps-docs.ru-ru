@@ -13,26 +13,25 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ae11f42fef927509461d8219b8df4134a633ae5d
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 3275c93aea5492384727701d1074982a345fae67
+ms.sourcegitcommit: fa88889cd109651d403ab03287b7f0521bb90e02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204026"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "75324949"
 ---
 # <a name="date-picker-control-in-power-apps"></a>Элемент управления "Выбор даты" в Power Apps
 Элемент управления, который используется для указания даты.
 
-## <a name="description"></a>Description
-Добавив элемент управления **Выбор даты** вместо элемента управления **[Ввод текста](control-text-input.md)**, вы обеспечите ввод даты пользователем в правильном формате.
+## <a name="description"></a>Описание
+Добавив элемент управления **Выбор даты** вместо элемента управления **[Ввод текста](control-text-input.md)** , вы обеспечите ввод даты пользователем в правильном формате.
 
 ## <a name="key-properties"></a>Основные свойства
 **DefaultDate** — начальное значение элемента управления датой до его изменения пользователем.
 
 **SelectedDate** — дата, выбранная в элементе управления датой.  Эта дата представлена в местном времени.
 
-**Format** — текстовый формат, в котором элемент управления отображает дату и в котором пользователь указывает дату. Для этого свойства можно задать значение **ShortDate** (по умолчанию) или **LongDate**, чтобы форматировать даты на основе свойства **Language** данного элемента управления. Для этого свойства можно также задать выражение, например **yyyy/mm/dd**, если требуется использовать одинаковый формат вне зависимости от языка. Пример.
+**Format** — текстовый формат, в котором элемент управления отображает дату и в котором пользователь указывает дату. Для этого свойства можно задать значение **ShortDate** (по умолчанию) или **LongDate**, чтобы форматировать даты на основе свойства **Language** данного элемента управления. Для этого свойства можно также задать выражение, например **yyyy/mm/dd**, если требуется использовать одинаковый формат вне зависимости от языка. как показано в примере ниже.
 
 * Элемент управления отобразит **12/31/2017**, если пользователь щелкнет (коснется) последний день 2017 года и при этом для свойства **Format** задано значение **ShortDate**, а для свойства **Language** — значение **en-us**.
 * Элемент управления отобразит **dimanche 31 decembre 2017**, если пользователь щелкнет (коснется) последний день 2017 года и при этом для свойства **Format** задано значение **LongDate**, а для свойства **Language** — значение **fr-fr**.
@@ -50,6 +49,8 @@ ms.PowerAppsDecimalTransform: true
 
 **[Color](properties-color-border.md)**  — цвет текста в элементе управления.
 
+**DateTimeZone** — указывает, следует ли отображать дату в **формате UTC** или в **местном** времени пользователя.
+
 **[DisplayMode](properties-core.md)** — в зависимости от значения этого режима элемент управления разрешает пользователю вводить данные (Изменение), только отображает данные (Просмотр) или элемент вообще отключен (Отключено).
 
 **[DisabledBorderColor](properties-color-border.md)** — цвет границы элемента управления, если для его свойства **[DisplayMode](properties-core.md)** установлено значение **Отключено**.
@@ -62,13 +63,13 @@ ms.PowerAppsDecimalTransform: true
 
 **[Fill](properties-color-border.md)**  — цвет фона элемента управления.
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Жирный**, **Полужирный**, **Обычный** или **Очень тонкий**.
+**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Bold** (Жирный), **Semibold** (Полужирный), **Normal** (Обычный) или **Lighter** (Очень тонкий).
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -78,11 +79,13 @@ ms.PowerAppsDecimalTransform: true
 
 **Инпуттекстплацехолдер** — пояснительный текст, который отображается, если даты не указаны.
 
+Для **редактирования** — можно ли изменять текст DatePicker. Если значение равно false, дату можно изменить только с помощью календаря.
+
 **[Italic](properties-text.md)** определяет, когда текст в элементе управления отображается курсивом.
 
 **[OnSelect](properties-core.md)**  — поведение приложения, когда пользователь щелкает элемент управления или касается его.
 
-**[PaddingBottom](properties-size-location.md)**  — расстояние между текстом в элементе управления и нижним краем элемента управления.
+**[PaddingBottom](properties-size-location.md)** — расстояние между текстом в элементе управления и нижним краем элемента управления.
 
 **[PaddingLeft](properties-size-location.md)**  — расстояние между текстом в элементе управления и левым краем элемента управления.
 
@@ -107,14 +110,14 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-**[Year](../functions/function-datetime-parts.md)**( *DateTimeValue* )
+**[Year](../functions/function-datetime-parts.md)** ( *DateTimeValue* )
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **Выбор даты** и назовите его **Крайний срок**.
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте элемент управления **[Метка](control-text-box.md)** и задайте в качестве значения свойства **[Text](properties-core.md)** следующую формулу:
-   <br>**DateDiff(Today(); Deadline.SelectedDate) & " days to go!"**
+   <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
 
     Нужны дополнительные сведения о функции **[DateDiff](../functions/function-dateadd-datediff.md)** или [других функциях](../formula-reference.md)?
 3. Нажмите клавишу F5, выберите дату в элементе управления **Крайний срок** и нажмите кнопку **ОК**.
@@ -128,11 +131,11 @@ ms.PowerAppsDecimalTransform: true
 * Применяются [стандартные требования по цветовому контрасту](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Поддержка средства чтения с экрана
-* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)**.
+* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)** .
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.
+* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
 
 > [!TIP]
 > Когда календарь открыт, нажимайте на страницу **вверх** и **вниз** , чтобы перейти между месяцами и **Shift + Page Up** и **Shift + Page Down** для перехода между годами.
