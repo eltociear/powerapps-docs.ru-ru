@@ -122,5 +122,5 @@ ms.locfileid: "2861174"
 
 [Определение альтернативных ключей с помощью портала Power Apps](define-alternate-keys-portal.md)<br />
 [Определение альтернативных ключей с помощью обозревателя решений](define-alternate-keys-solution-explorer.md)<br />
-[Документация для разработчиков. Определение альтернативных ключей для сущности](/dynamics365/customer-engagement/developer/define-alternate-keys-entity).<br />
+[Документация для разработчиков. Определение альтернативных ключей для сущности](/dynamics365/customer-engagement/developer/define-alternate-keys-entity)<br />
 [Документация разработчика. Использование альтернативного ключа для создания записи](/dynamics365/customer-engagement/developer/use-alternate-key-create-record)

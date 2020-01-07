@@ -73,4 +73,4 @@ ms.locfileid: "2865769"
 
 [Определение альтернативных ключей для ссылки на записи](define-alternate-keys-reference-records.md)<br />
 [Определение альтернативных ключей с помощью портала Power Apps](define-alternate-keys-portal.md)<br />
-[Документация для разработчиков. Определение альтернативных ключей для сущности](/dynamics365/customer-engagement/developer/define-alternate-keys-entity).
+[Документация для разработчиков. Определение альтернативных ключей для сущности](/dynamics365/customer-engagement/developer/define-alternate-keys-entity)

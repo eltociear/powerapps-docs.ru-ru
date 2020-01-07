@@ -66,4 +66,4 @@ ms.locfileid: "2865482"
 
 [Определение альтернативных ключей для ссылки на записи](define-alternate-keys-reference-records.md)<br />
 [Определение альтернативных ключей с помощью обозревателя решений](define-alternate-keys-solution-explorer.md)<br />
-[Документация для разработчиков. Определение альтернативных ключей для сущности](/dynamics365/customer-engagement/developer/define-alternate-keys-entity).
+[Документация для разработчиков. Определение альтернативных ключей для сущности](/dynamics365/customer-engagement/developer/define-alternate-keys-entity)

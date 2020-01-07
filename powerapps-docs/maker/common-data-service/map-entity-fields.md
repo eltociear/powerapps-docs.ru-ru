@@ -123,5 +123,5 @@ ms.locfileid: "2860910"
 
 ### <a name="see-also"></a>См. также
 [Создание и изменение отношений сущностей 1:N (один-ко-многим) или N:1 (многие-к-одному) с помощью обозревателя решений](create-edit-1n-relationships-solution-explorer.md)<br />
-[Документация для разработчиков. Настройка сопоставлений сущностей и атрибутов](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings).<br />
+[Документация для разработчиков. Настройка сопоставлений сущностей и атрибутов](/dynamics365/customer-engagement/developer/customize-entity-attribute-mappings)<br />
 [Документация для разработчиков. Веб-API создания новой сущности из другой сущности](/dynamics365/customer-engagement/developer/webapi/create-entity-web-api#create-a-new-entity-from-another-entity)
