@@ -84,7 +84,7 @@
               href: ../user/import-data.md
             - name: Экспорт данных в Excel Online
               href: ../user/export-to-excel-online.md
-            - name: Экспорт данных в Excel
+            - name: "Экспорт данных в\_Excel"
               href: ../user/export-data-excel.md
             - name: Экспорт в динамический лист
               href: ../user/export-excel-dynamic-worksheet.md
@@ -128,7 +128,7 @@
       href: ./canvas-apps/limits-and-config.md
     - name: Сочетания клавиш
       href: ./canvas-apps/keyboard-shortcuts.md
-    - name: Обзор примеров приложений
+    - name: Примеры приложений
       items:
         - name: Образец для создания приложения на основе холста
           href: ./canvas-apps/open-and-run-a-sample-app.md
@@ -178,7 +178,7 @@
                   href: canvas-apps/connections/connection-common-data-service.md
                 - name: Облачное хранилище
                   href: canvas-apps/connections/cloud-storage-blob-connections.md
-                - name: "Dynamics\_365."
+                - name: "Dynamics\_365"
                   href: canvas-apps/connections/connection-dynamics-crmonline.md
                 - name: Dynamics AX
                   href: canvas-apps/connections/connection-dynamicsax.md
@@ -192,11 +192,11 @@
                   href: canvas-apps/connections/connection-office365-users.md
                 - name: База данных Oracle
                   href: canvas-apps/connections/connection-oracledb.md
-                - name: Power BI
+                - name: "Power\_BI"
                   href: canvas-apps/connections/connection-powerbi.md
                 - name: SharePoint
                   href: canvas-apps/connections/connection-sharepoint-online.md
-                - name: SQL Server
+                - name: "SQL\_Server"
                   href: canvas-apps/connections/connection-azure-sqldatabase.md
                 - name: Twitter
                   href: canvas-apps/connections/connection-twitter.md
@@ -210,7 +210,7 @@
               href: ./canvas-apps/delegation-overview.md
             - name: Управление шлюзами
               href: ./canvas-apps/gateway-management.md
-            - name: Знакомство со шлюзами
+            - name: Общие сведения о шлюзах
               href: ./canvas-apps/gateway-reference.md
             - name: Общие сведения об источниках данных
               href: ./canvas-apps/working-with-data-sources.md
@@ -314,7 +314,7 @@
                   href: ./canvas-apps/controls/control-drop-down.md
                 - name: Форма редактирования
                   href: ./canvas-apps/controls/control-form-detail.md
-                - name: Экспортировать
+                - name: Экспорт
                   href: ./canvas-apps/controls/control-export-import.md
                 - name: Коллекция
                   href: ./canvas-apps/controls/control-gallery.md
@@ -324,7 +324,7 @@
                   href: ./canvas-apps/controls/control-shapes-icons.md
                 - name: Изображение
                   href: ./canvas-apps/controls/control-image.md
-                - name: Импортировать
+                - name: Импорт
                   href: ./canvas-apps/controls/control-export-import.md
                 - name: График
                   href: ./canvas-apps/controls/control-column-line-chart.md
@@ -350,7 +350,7 @@
                   href: ./canvas-apps/controls/control-screen.md
                 - name: Фигура
                   href: ./canvas-apps/controls/control-shapes-icons.md
-                - name: Ползунок
+                - name: '"Ползунок"'
                   href: ./canvas-apps/controls/control-slider.md
                 - name: Метка
                   href: ./canvas-apps/controls/control-text-box.md
@@ -360,7 +360,7 @@
                   href: ./canvas-apps/controls/control-timer.md
                 - name: Переключатель
                   href: ./canvas-apps/controls/control-toggle.md
-                - name: Видео
+                - name: Видеотехника
                   href: ./canvas-apps/controls/control-audio-video.md
                 - name: Веб-сканер штрихкодов (экспериментальная функция)
                   href: ./canvas-apps/controls/control-barcodescanner.md
@@ -370,13 +370,13 @@
                   href: ./canvas-apps/controls/properties-accessibility.md
                 - name: Цвет и граница
                   href: ./canvas-apps/controls/properties-color-border.md
-                - name: Ядро
+                - name: Общая
                   href: ./canvas-apps/controls/properties-core.md
                 - name: Изображение
                   href: ./canvas-apps/controls/properties-visual.md
                 - name: Размер и расположение
                   href: ./canvas-apps/controls/properties-size-location.md
-                - name: Text
+                - name: Текст
                   href: ./canvas-apps/controls/properties-text.md
         - name: Настройка функций приложения
           items:
@@ -386,11 +386,11 @@
               href: ./canvas-apps/working-with-variables.md
             - name: Общие сведения о формулах поведения
               href: ./canvas-apps/working-with-formulas-in-depth.md
-            - name: Вывод даты и времени
+            - name: Отображение дат и времени
               href: ./canvas-apps/show-text-dates-times.md
             - name: Создание коллекции
               href: ./canvas-apps/create-update-collection.md
-            - name: Вывод текущего пользователя
+            - name: Отображение текущего пользователя
               href: ./canvas-apps/show-current-user.md
             - name: Подключение списков с использованием подстановок
               href: ./canvas-apps/sharepoint-lookup-fields.md
@@ -398,7 +398,7 @@
               href: ./canvas-apps/using-logic-flows.md
             - name: Создание правила в приложениях холста
               href: ./canvas-apps/working-with-rules.md
-            - name: Справочник формул
+            - name: Справочник по формулам
               items:
                 - name: Обзор
                   href: ./canvas-apps/formula-reference.md
@@ -460,7 +460,7 @@
                   href: ./canvas-apps/functions/function-concatenate.md
                 - name: Concurrent
                   href: ./canvas-apps/functions/function-concurrent.md
-                - name: Connection
+                - name: Подключение
                   href: ./canvas-apps/functions/signals.md
                 - name: Count
                   href: ./canvas-apps/functions/function-table-counts.md
@@ -552,7 +552,7 @@
                   href: ./canvas-apps/functions/function-astype-istype.md
                 - name: JSON
                   href: ./canvas-apps/functions/function-json.md
-                - name: Language
+                - name: Язык
                   href: ./canvas-apps/functions/function-language.md
                 - name: Last
                   href: ./canvas-apps/functions/function-first-last.md
@@ -560,7 +560,7 @@
                   href: ./canvas-apps/functions/function-first-last.md
                 - name: Launch
                   href: ./canvas-apps/functions/function-param.md
-                - name: Left
+                - name: Слева
                   href: ./canvas-apps/functions/function-left-mid-right.md
                 - name: Len
                   href: ./canvas-apps/functions/function-len.md
@@ -620,11 +620,11 @@
                   href: ./canvas-apps/functions/function-trig.md
                 - name: Rand
                   href: ./canvas-apps/functions/function-rand.md
-                - name: Refresh
+                - name: Обновить
                   href: ./canvas-apps/functions/function-refresh.md
                 - name: Relate
                   href: ./canvas-apps/functions/function-relate-unrelate.md
-                - name: Remove
+                - name: Удалить
                   href: ./canvas-apps/functions/function-remove-removeif.md
                 - name: RemoveIf
                   href: ./canvas-apps/functions/function-remove-removeif.md
@@ -704,11 +704,11 @@
                   href: ./canvas-apps/functions/function-trim.md
                 - name: TrimEnds
                   href: ./canvas-apps/functions/function-trim.md
-                - name: Ungroup
+                - name: Разгруппировать
                   href: ./canvas-apps/functions/function-groupby.md
                 - name: Unrelate
                   href: ./canvas-apps/functions/function-relate-unrelate.md
-                - name: Update
+                - name: Обновить
                   href: ./canvas-apps/functions/function-update-updateif.md
                 - name: UpdateContext
                   href: ./canvas-apps/functions/function-updatecontext.md
@@ -716,7 +716,7 @@
                   href: ./canvas-apps/functions/function-update-updateif.md
                 - name: Upper
                   href: ./canvas-apps/functions/function-lower-upper-proper.md
-                - name: User
+                - name: Пользователь
                   href: ./canvas-apps/functions/function-user.md
                 - name: Validate
                   href: ./canvas-apps/functions/function-validate.md
@@ -730,7 +730,7 @@
                   href: ./canvas-apps/functions/function-datetime-parts.md
                 - name: С
                   href: ./canvas-apps/functions/function-with.md
-                - name: Year
+                - name: Год
                   href: ./canvas-apps/functions/function-datetime-parts.md
         - name: Создание приложения в решении
           href: ./canvas-apps/add-app-solution.md
@@ -746,7 +746,7 @@
               href: ./canvas-apps/northwind-orders-canvas-part2.md
             - name: 3. Создание коллекции сведений
               href: ./canvas-apps/northwind-orders-canvas-part3.md
-        - name: Создание глобального приложения
+        - name: Создание многоязычного приложения
           href: ./canvas-apps/global-apps.md
         - name: Создание приложения со специальными возможностями
           items:
@@ -804,7 +804,7 @@
           items:
             - name: Обзор
               href: ./canvas-apps/sharepoint-scenario-intro.md
-            - name: Настраивание списков SharePoint Online
+            - name: "Настройка списков SharePoint\_Online"
               href: ./canvas-apps/sharepoint-scenario-setup.md
             - name: Создание приложения
               href: ./canvas-apps/sharepoint-scenario-generate-app.md
@@ -820,7 +820,7 @@
               href: ./canvas-apps/sharepoint-scenario-embed-report.md
             - name: Создание потока для оповещений
               href: ./canvas-apps/sharepoint-scenario-alerts-flow.md
-            - name: Пошаговые инструкции к полному сценарию
+            - name: Прохождение готового сценария
               href: ./canvas-apps/sharepoint-scenario-summary.md
         - name: Cognitive Services
           href: ./canvas-apps/cognitive-services-api.md
@@ -834,9 +834,9 @@
           href: ./canvas-apps/register-custom-api.md
         - name: Интеграция с веб-сайтами и другими технологиями
           href: ./canvas-apps/embed-apps-dev.md
-        - name: 'Разработка приложений, поддерживающих автономный режим работы'
+        - name: Разработка приложений для автономной работы
           href: ./canvas-apps/offline-apps.md
-        - name: Дайте возможность клиентам протестировать ваши приложения
+        - name: Испытание приложений пользователями
           href: ./canvas-apps/dev-appsource-test-drive.md
         - name: Создание компонента
           items:
@@ -850,7 +850,7 @@
   items:
     - name: Основные сведения о приложениях на основе модели
       href: ./model-driven-apps/model-driven-app-overview.md
-    - name: Обзор примеров приложений
+    - name: Примеры приложений
       href: ./model-driven-apps/overview-model-driven-samples.md
     - name: Создание первого приложения
       href: ./model-driven-apps/build-first-model-driven-app.md
@@ -1028,6 +1028,10 @@
               items:
                 - name: Настройка элемента управления "Примечания"
                   href: ./model-driven-apps/notes-control-legacy.md
+                - name: Настройка элемента управления "Временная шкала"
+                  href: ./model-driven-apps/set-up-timeline-control.md
+                - name: Вопросы и ответы по "Временной шкале"
+                  href: ./model-driven-apps/faqs-timeline-control.md
                 - name: Свойства элемента управления экспресс-формы
                   href: ./model-driven-apps/quick-view-control-properties-legacy.md
                 - name: Дополнительные элементы управления для Dynamics 365 для телефонов и планшетов
@@ -1102,7 +1106,7 @@
       href: ./model-driven-apps/app-for-outlook-customize.md
     - name: Для разработчиков
       href: ../developer/model-driven-apps/overview.md
-- name: Portals
+- name: Порталы
   items:
     - name: Что такое порталы Power Apps?
       href: ./portals/overview.md
@@ -1152,7 +1156,7 @@
           href: ./portals/admin/add-custom-domain.md
         - name: Импорт преобразования метаданных
           href: ./portals/admin/import-metadata-translation.md
-        - name: Интеграция Power BI
+        - name: Интеграция с Power BI
           items:
             - name: Настройка интеграции с Power BI
               href: ./portals/admin/set-up-power-bi-integration.md
@@ -1198,7 +1202,7 @@
               href: ./portals/configure/configure-saml2-settings.md
             - name: Миграция поставщиков удостоверений в Azure AD B2C
               href: ./portals/configure/migrate-identity-providers.md
-        - name: Search
+        - name: Поиск
           items:
             - name: Сведения о поиске
               href: ./portals/configure/search.md
@@ -1376,7 +1380,7 @@
           href: ./common-data-service/define-alternate-keys-portal.md
         - name: Определение альтернативных ключей с помощью обозревателя решений
           href: ./common-data-service/define-alternate-keys-solution-explorer.md
-        - name: Практические руководства. Учреждение
+        - name: Практические руководства. Сущность
           items:
             - name: Создание сущностей с помощью портала Power Apps
               href: ./common-data-service/create-edit-entities-portal.md
@@ -1516,7 +1520,7 @@
           href: ./common-data-service/set-managed-properties-metadata.md
         - name: Публикация изменений
           href: ./common-data-service/publish-changes-for-use-customer-service-hub.md
-        - name: Рекомендации
+        - name: Советы и рекомендации
           href: ./common-data-service/solution-best-practices.md
     - name: Работа с потоками данных
       href: ./common-data-service/self-service-data-prep-with-dataflows.md
@@ -1550,7 +1554,7 @@
       href: ./common-data-service/api-limits-overview.md
     - name: Для разработчиков
       href: ../developer/common-data-service/overview.md
-- name: Построитель искусственного интеллекта
+- name: AI Builder
   items:
     - name: Использование AI Builder в Power Apps
       href: ../use-ai-builder.md
@@ -1566,7 +1570,7 @@
   items:
     - name: Советы по улучшению производительности приложений на основе холста
       href: ./canvas-apps/performance-tips.md
-    - name: Типичные проблемы и решения
+    - name: Распространенные проблемы и способы их решения
       href: ./canvas-apps/common-issues-and-resolutions.md
     - name: Получение идентификатора сеанса или приложения
       href: ./canvas-apps/get-sessionid.md
