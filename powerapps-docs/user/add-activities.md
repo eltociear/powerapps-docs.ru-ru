@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e6a64a5849b351b625468894696251895375d0c2
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 7f437b649111c4ff51d21f35e73dabb442c57112
+ms.sourcegitcommit: e3d3a608ef74e1d90ca74ed38de3e5aebc624713
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74726076"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "75333640"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Добавление встречи, электронной почты, телефонного звонка, заметок или задачи во временной шкале 
 
@@ -189,5 +189,12 @@ ms.locfileid: "74726076"
 > [!div class="mx-imgBorder"]
 > ![Управление действиями. png](media/ManageActivities.png "Манажеактивитиес. png")
 
+## <a name="see-also"></a>См. также:
 
+[Настройка элемента управления "временная шкала"](../maker/model-driven-apps/set-up-timeline-control.md)
 
+[Вопросы и ответы по управлению временной шкалой](../maker/model-driven-apps/faqs-timeline-control.md)
+
+[Часто задаваемые вопросы о действиях и стене временной шкалы](faq-for-timeline-and-activity.md)
+
+[Раздел временной шкалы в приложении центра обслуживания клиентов](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)

@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 08859f70e047d1c53379e8a79f56997d6beedc58
-ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
+ms.openlocfilehash: 78b4e997a398bfb806a4e89a70c0ed3e466be381
+ms.sourcegitcommit: e3d3a608ef74e1d90ca74ed38de3e5aebc624713
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67456986"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "75333617"
 ---
 # <a name="frequently-asked-questions-about-activities-and-the-timeline-wall"></a>Часто задаваемые вопросы о действиях и стене со временной шкалой  
 
@@ -38,7 +38,7 @@ ms.locfileid: "67456986"
 
 ## <a name="are-html-tags-supported-in-notes"></a>Поддерживает ли функция создания **заметок** теги HTML?
 
-Нет. При создании действия заметки для любой записи или сущности HTML-теги не поддерживаются. Например, если добавить `<TAG> </TAG>` в поле примечания, оно будет отображаться как. `<TAG_XXX="XX"> </TAG>`
+Нет. При создании действия заметки для любой записи или сущности HTML-теги не поддерживаются. Например, при добавлении `<TAG> </TAG>` в поле Примечания оно будет отображаться как `<TAG_XXX="XX"> </TAG>`.
 
 ## <a name="how-can-i-improve-performance-on-timeline-wall"></a>Как повысить производительность стены со временной шкалой?
 
@@ -51,7 +51,12 @@ ms.locfileid: "67456986"
 
 Если в Dynamics 365 выбрать параметр **Предварительный просмотр**, **стена со временной шкалой** будет отсутствовать в списке доступных функций. Вы сможете просмотреть **заметки**, но сведения о задачах или сообщениях электронной почты отображаться не будут.
 
+## <a name="see-also"></a>См. также:
 
+[Настройка элемента управления "временная шкала"](../maker/model-driven-apps/set-up-timeline-control.md)
 
+[Вопросы и ответы по управлению временной шкалой](../maker/model-driven-apps/faqs-timeline-control.md)
 
+[Добавление встречи, электронной почты, телефонного звонка, примечания или активности задачи на временную шкалу](add-activities.md)
 
+[Раздел временной шкалы в приложении центра обслуживания клиентов](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)
