@@ -6,25 +6,27 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 07/12/2017
+ms.date: 11/27/2019
 ms.author: matp
-ms.reviewer: ''
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 37818e3c7cca175218826c1707ab83cd5c193ae7
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 4285a80d3751285929378336aa9806b3639f3457
+ms.sourcegitcommit: 54d52a9c3c9242f95be54f4444054d9c41ed577c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723922"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75928960"
 ---
 # <a name="connect-to-dynamics-365-from-power-apps"></a>Подключение к Dynamics 365 из Power Apps
 Power Apps позволяет быстро создавать, настраивать, совместно использовать и запускать мобильные приложения с небольшим объемом кода или без него. При помощи соединителя Dynamics 365 можно быстро создавать полезные мобильные приложения для совместного использования с другими сотрудниками вашей организации.
 
-Выполнив действия, описанные в этом разделе, вы создадите приложение, с помощью которого пользователи смогут просматривать, добавлять, удалять и обновлять контакты в Dynamics 365. Пользователи могут запускать приложение [в браузере](../../../user/run-app-browser.md) или [на мобильном устройстве](../../../user/run-app-client.md), например на телефоне.
+Выполнив действия, описанные в этом разделе, вы создадите приложение, в котором пользователи смогут просматривать, добавлять, удалять и обновлять контакты в приложениях, управляемых моделью, в Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365, Dynamics 365 Marketing). и Dynamics 365 Project Service Automation. Пользователи могут запускать приложение [в браузере](../../../user/run-app-browser.md) или [на мобильном устройстве](../../../user/run-app-client.md), например на телефоне.
+
+> [!NOTE]
+> При подключении к приложениям, управляемым моделью, в Dynamics 365 рекомендуется использовать более надежный [соединитель Common Data Service](connection-common-data-service.md) .
 
 ## <a name="prerequisite"></a>Необходимое условие
 Для выполнения инструкций из этого руководства потребуется учетная запись Microsoft Office 365, которая включает подписку Dynamics 365.
@@ -82,7 +84,7 @@ Power Apps создает приложение с тремя экранами н
     ![Выбор макета](./media/connection-dynamics-crmonline/select-layout.png)
 4. Скопируйте эту формулу, а затем, не отменяя выбор коллекции, вставьте формулу в строке формул (справа от кнопки **fx**):
    
-    `SortByColumns(Search(Filter(Contacts;statuscode=1); TextSearchBox1.Text; "lastname"); "lastname"; If(SortDescending1; Descending; Ascending))`
+    `SortByColumns(Search(Filter(Contacts,statuscode=1), TextSearchBox1.Text, "lastname"), "lastname", If(SortDescending1, Descending, Ascending))`
 5. На панели справа в верхнем раскрывающемся списке выберите пункт **firstname** (имя), а в среднем раскрывающемся списке — пункт **lastname** (фамилия).
    
     ![Выбор Body1](./media/connection-dynamics-crmonline/firstname-lastname.png)

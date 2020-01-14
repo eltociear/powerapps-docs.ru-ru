@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 04/22/2019
+ms.date: 11/27/2019
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2473f445839b774ecc28fe007912511095d9316d
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: e2b11b536c29a31053353f3c2616a594208e8acf
+ms.sourcegitcommit: 54d52a9c3c9242f95be54f4444054d9c41ed577c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723832"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75928900"
 ---
 # <a name="connect-to-common-data-service"></a>Подключение к Common Data Service
 
@@ -26,20 +26,17 @@ ms.locfileid: "74723832"
 
 По умолчанию соединитель Common Data Service подключается к данным в текущей среде приложения. Если приложение перемещается в другую среду, соединитель подключается к данным в новой среде. Это поведение хорошо подходит для приложения, использующего единую среду или приложение, которое следует процессу ALM для перехода от разработки к рабочей среде.
 
-При добавлении источника данных с помощью соединителя Common Data Service можно изменить среду, а затем выбрать одну или несколько сущностей. По умолчанию приложение подключается к данным в текущей среде, а пользовательский интерфейс показывает **(текущий)** список сущностей.
+При добавлении источника данных с помощью соединителя Common Data Service можно изменить среду, а затем выбрать одну или несколько сущностей. По умолчанию приложение подключается к данным в текущей среде.
 
-> [!div class="mx-imgBorder"]
-> ![среды по умолчанию](media/connection-common-data-service/common-data-service-connection-change-environment.png)
+![Окружение по умолчанию](media/connection-common-data-service/common-data-service-connection-change-environment.png)
 
 При выборе **изменить**можно указать другую среду для извлечения данных из нее, а не в текущую среду или в дополнение к текущей среде.
 
-> [!div class="mx-imgBorder"]
-> ![других окружений](media/connection-common-data-service/common-data-service-connection-select-environment.png)
+![Другие среды](media/connection-common-data-service/common-data-service-connection-select-environment.png)
 
-Имя выбранной среды отображается под полем поиска.
+Имя выбранной среды отображается в списке сущности.
 
-> [!div class="mx-imgBorder"]
-> ![новых окружений](media/connection-common-data-service/common-data-service-connection-after-change-environment.png)
+![Новые среды](media/connection-common-data-service/common-data-service-connection-after-change-environment.png)
 
 Соединитель Common Data Service является более надежным, чем соединитель Dynamics 365 и приближается к сравнению функций.
 
