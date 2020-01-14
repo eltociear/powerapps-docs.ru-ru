@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/14/2020
 ms.locfileid: "75928960"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="connect-to-dynamics-365-from-power-apps"></a>Подключение к Dynamics 365 из Power Apps
 Power Apps позволяет быстро создавать, настраивать, совместно использовать и запускать мобильные приложения с небольшим объемом кода или без него. При помощи соединителя Dynamics 365 можно быстро создавать полезные мобильные приложения для совместного использования с другими сотрудниками вашей организации.
@@ -84,7 +85,7 @@ Power Apps создает приложение с тремя экранами н
     ![Выбор макета](./media/connection-dynamics-crmonline/select-layout.png)
 4. Скопируйте эту формулу, а затем, не отменяя выбор коллекции, вставьте формулу в строке формул (справа от кнопки **fx**):
    
-    `SortByColumns(Search(Filter(Contacts,statuscode=1), TextSearchBox1.Text, "lastname"), "lastname", If(SortDescending1, Descending, Ascending))`
+    `SortByColumns(Search(Filter(Contacts;statuscode=1); TextSearchBox1.Text; "lastname"); "lastname"; If(SortDescending1; Descending; Ascending))`
 5. На панели справа в верхнем раскрывающемся списке выберите пункт **firstname** (имя), а в среднем раскрывающемся списке — пункт **lastname** (фамилия).
    
     ![Выбор Body1](./media/connection-dynamics-crmonline/firstname-lastname.png)
