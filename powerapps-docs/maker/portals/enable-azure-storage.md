@@ -2,19 +2,19 @@
 title: Включение хранилища Azure для порталов | MicrosoftDocs
 description: Инструкции по включению службы хранилища Azure для порталов, чтобы воспользоваться преимуществами больших возможностей хранения файлов в Azure.
 author: sbmjais
-manager: shujoshi
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/11/2019
+ms.date: 01/07/2020
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 0d9b49857528cf0e55fa2ad3dfcaae2aa88b77c0
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.reviewer: tapanm
+ms.openlocfilehash: 38705c143fdf3e85ec18f60c20423cc404aee043
+ms.sourcegitcommit: df15c909ba27c9ed83197305a4ee1f01e46a826b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2816014"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2936118"
 ---
 # <a name="enable-azure-storage"></a>Включение хранилища Azure
 
@@ -55,7 +55,7 @@ ms.locfileid: "2816014"
 
 Необходимо добавить правило общего доступа к ресурсам независимо от источника (CORS) в учетной записи службы хранилища Azure, как указано ниже, в противном случае вы увидите обычный значок вложения, а не значок облака:
 
-- **Допустимые источники**: укажите свой домен. Например: `http://contoso.crm.dynamics.com`.
+- **Допустимые источники**: укажите свой домен. Например: `https://contoso.crm.dynamics.com`.
 - **Разрешенные команды**: GET, PUT, DELETE, HEAD, POST
 - **Разрешенные заголовки**: укажите заголовки запросов, которые исходный домен может указывать в запросе CORS. Например, x-ms-meta-data\*, x-ms-meta-target\*. 
 - **Предоставляемые заголовки**: укажите заголовки ответов, которые могут отправляться в ответ на запрос CORS браузером инициатору запроса. Например, x-ms-meta-\*.

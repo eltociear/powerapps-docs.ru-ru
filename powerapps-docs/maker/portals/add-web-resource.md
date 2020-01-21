@@ -2,19 +2,19 @@
 title: Добавление веб-ресурса хранилища Azure в форму | MicrosoftDocs
 description: Шаги для добавления веб-ресурса службы хранилища Azure в форму для включения отправки вложений в службу хранилища Azure.
 author: sbmjais
-manager: shujoshi
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/11/2019
+ms.date: 01/07/2020
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 873f2054856e21b7fbf56247a4234ae2fb2a72c9
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.reviewer: tapanm
+ms.openlocfilehash: b98bce4b3b9d2fae1015250c509df30ec69c7797
+ms.sourcegitcommit: df15c909ba27c9ed83197305a4ee1f01e46a826b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2816486"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2936210"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>Добавление веб-ресурса хранилища Azure в форму
 
@@ -67,7 +67,7 @@ ms.locfileid: "2816486"
 
 > [!Note]
 > Необходимо добавить правило общего доступа к ресурсам независимо от источника (CORS) в учетной записи службы хранилища Azure, как указано ниже, в противном случае вы увидите обычный значок вложения, а не значок облака.
-> - **Допустимые источники**: укажите свой домен. Например: `http://contoso.crm.dynamics.com`.
+> - **Допустимые источники**: укажите свой домен. Например: `https://contoso.crm.dynamics.com`.
 > - **Разрешенные команды**: GET, PUT, DELETE, HEAD, POST
 > - **Разрешенные заголовки**: укажите заголовки запросов, которые исходный домен может указывать в запросе CORS. Например, x-ms-meta-data\*, x-ms-meta-target\*. В этом сценарии необходимо указать *, в противном случае веб-ресурс сети не будет отображаться должным образом.
 > - **Предоставляемые заголовки**: укажите заголовки ответов, которые могут отправляться в ответ на запрос CORS браузером инициатору запроса. Например, x-ms-meta-\*.

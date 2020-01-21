@@ -17,12 +17,12 @@ search.audienceType:
 - customizer
 search.app:
 - D365CE
-ms.openlocfilehash: f245d4c2a9272d10f7aefa2b2847adba5ce0f6e5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: fae464925ea755a1f9fd0cd77426bfdbaad6141c
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2860822"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909343"
 ---
 # <a name="add-the-sharepoint-documents-tab-to-the-main-form-for-an-entity"></a>Добавить вкладку документов SharePoint в основную форму для сущности
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "2860822"
 5. В конструкторе формы выберите **Новая вкладка** на холсте конструктора формы, выберите **Добавить поле** и добавьте поле, например *Адрес 1: город* в левой панели. Можно использовать любое текстовое или числовое поле для вкладки. ![Добавить поле на вкладку](media/add-field-to-tab.png)
 6. Переименование подписи вкладки. Для этого выберите **Новая вкладка**, а в правой области свойств замените **Новая вкладка** на что-либо более описательное, например *Файлы*.
 7. Выберите **Сохранить**, выберите **Опубликовать**, а затем закройте конструктор форм. 
-8. На домашней странице разработчика Power Apps выбирайте **Решения**, выберите решение, а затем **Экспорт**, чтобы экспортировать решения как неуправляемое решение. Дополнительные сведения: [Экспорт решений](../common-data-service/import-update-export-solutions.md#export-solutions) 
+8. На домашней странице разработчика Power Apps выбирайте **Решения**, выберите решение, а затем **Экспорт**, чтобы экспортировать решения как неуправляемое решение. Дополнительные сведения: [Экспорт решений](../common-data-service/export-solutions.md) 
 9. Извлеките решение и откройте файл customization.xml в текстовом редакторе или редакторе XML. 
 10. В файле customization.xml введите в поиск **описание подписи="Файлы"** (или иное имя вкладки на предыдущем шаге).
 11. Прокрутите страницу вниз до элемента идентификатор элемента управления="*имя поля*", например, **идентификатор элемента управления="address1_city"** и замените весь элемент [примером XML](#xml-sample-for-adding-the-documents-tab-to-a-form) в данном разделе. 

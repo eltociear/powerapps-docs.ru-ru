@@ -2,7 +2,7 @@
 title: Переход к конкретному решению с помощью Power Apps | MicrosoftDocs
 description: Узнайте, как найти и открыть определенное решение в вашей среде
 ms.custom: ''
-ms.date: 10/29/2018
+ms.date: 12/11/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,22 +22,24 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b8dc0df3e32b6b5174166078b03228b730c909f9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8fb3dec61f90d0d9e1b6a0bb19f1dfa294787c6f
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2870208"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909146"
 ---
 # <a name="navigate-to-a-specific-solution"></a>Переход к конкретному решению
 
-Если в вашей организации уже есть конкретное решение, в котором вы должны работать, найти его можно следующим образом. Чтобы создать новое решение, см. раздел [Создание собственного решения](create-solution.md).  
+Если в вашей организации уже есть конкретное решение, в котором вы должны работать, найти его можно следующим образом.   
   
 ## <a name="open-a-solution"></a>Открытие решения  
   
-1. Выберите **Решения** в левой области навигации, чтобы увидеть список решений в вашей среде.
+1. Войдите в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), затем выберите **Решения** в левой области навигации, чтобы увидеть список решений в вашей среде.
   
-2. Выберите решение, с которым вы хотите работать или компоненты которого хотите просмотреть. Дополнительные сведения: [Добавление компонентов](solutions-overview.md)  
+2. Выберите решение, с которым вы хотите работать или компоненты которого хотите просмотреть. 
+ 
 
- ## <a name="next-steps"></a>Дальнейшие действия
-[Мониторинг и управление операциями бизнес-процесса](/flow/monitor-manage-processes)
+ ## <a name="see-also"></a>См. также
+[Создание решения](create-solution.md) <br />
+[Использование решения Common Data Service по умолчанию](use-solutions-for-your-customizations.md)

@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c1f58228cb86ae7415739f5e6ffe4b3175b87b0d
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: 03cdea2884f5ae4ac889218c4d9b87a48f1f8d81
+ms.sourcegitcommit: c2de40124037825308fbccf71f3a221198a928f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895051"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2944358"
 ---
 # <a name="create-and-use-dataflows-in-power-apps"></a>Создание и использование потоков данных в Power Apps
 
@@ -51,6 +51,8 @@ ms.locfileid: "2895051"
 ## <a name="create-a-dataflow"></a>Создание потока данных
 Потоки данных создаются в одной среде. Поэтому вы сможете видеть их и управлять ими только из этой среды. Кроме того, пользователи, которые хотят получать данные из вашего потока данных, должны иметь доступ к среде, в которой вы их создали.
 
+> [!NOTE]
+> Создание потоков данных в настоящее время недоступно с лицензиями плана сообщества Power Apps.
 
 1.  Войдите в Power Apps и проверьте, в какой среде вы находитесь, найдите переключатель среды в правой части панели команд.
 

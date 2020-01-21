@@ -2,7 +2,7 @@
 title: Работа с решениями в Power Apps| Документация Майкрософт
 description: Научитесь распределять решения
 ms.custom: ''
-ms.date: 09/30/2019
+ms.date: 12/04/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 286d955bfa0e6b28061d6a73962da25156820c9a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 71ddf991d25f144ce24b078cf73ffc6b971de36f
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2870131"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909190"
 ---
 # <a name="solutions-overview"></a>Обзор решений  
 
@@ -41,73 +41,80 @@ ms.locfileid: "2870131"
 
 <a name="BKMK_SolutionComponents"></a>   
 ### <a name="components"></a>Компоненты  
- Компонент представляет что-либо, может потенциально можно настроить. Все, что может быть включено в решение, — это компонент. Ниже приведен список компонентов, которые можно просмотреть в решении:  
-  
--   Модель ИИ
+ Компонент представляет что-либо, может потенциально можно настроить. Все, что может быть включено в решение, — это компонент. Чтобы просмотреть компоненты, включенные в решение, в обозревателе решений выберите **Настройки** > **Решения**, затем откройте требуемое решение. Компоненты перечислены в списке **Компоненты**. 
 
--   Лента приложения  
-  
--   Шаблон статьи  
-  
--   Бизнес-правило  
+> [!div class="mx-imgBorder"] 
+> ![Компоненты в решении](media/components-in-solution.png "Компоненты в решении") 
 
--   Приложение на основе холста 
-  
--   Диаграмма  
-  
--   Роль подключения  
-  
--   Шаблон контракта  
+Чтобы просмотреть список типов компонентов, которые можно добавить в любое решение, см. раздел [Параметры ComponentType](../../developer/common-data-service/reference/entities/solutioncomponent.md#componenttype-options).
 
--   Настраиваемый соединитель
+<!-- The following is a list of components that you can view in a solution:  
+  
+-   AI Model
+
+-   Application Ribbon  
+  
+-   Article Template  
+  
+-   Business Rule  
+
+-   Canvas App 
+  
+-   Chart  
+  
+-   Connection Role  
+  
+-   Contract Template  
+
+-   Custom Connector
  
--   Пользовательский элемент управления
+-   Custom Control
   
--   Панель мониторинга  
+-   Dashboard  
   
--   Шаблон электронной почты  
+-   Email Template  
   
--   Сущность  
+-   Entity  
   
--   Отношение сущности  
+-   Entity Relationship  
 
--   Переменная среды
+-   Environment variable
   
--   Поле  
+-   Field  
   
--   Профиль безопасности полей  
+-   Field Security Profile  
 
 -   Flow
   
--   Форма  
+-   Form  
   
--   Шаблон слияния почты  
+-   Mail Merge Template  
   
--   Сообщение  
+-   Message  
 
--   Приложение на основе модели
+-   Model-driven app
   
--   Набор параметров  
+-   Option Set  
   
--   Сборка подключаемого модуля  
+-   Plug-in Assembly  
   
--   Процесс  
+-   Process  
 
--   Отчет  
+-   Report  
 
--   Шаг обработки сообщения SDK  
+-   Sdk Message Processing Step  
   
--   Роль безопасности  
+-   Security Role  
   
--   Конечная точка сервиса  
+-   Service Endpoint  
   
--   Карта сайта  
+-   Site Map  
 
--   Поставщик данных виртуальной сущности
+-   Virtual Entity Data Provider
 
--   Источник данных виртуальной сущности
+-   Virtual Entity Data Source
   
--   Веб-ресурс  
+-   Web Resource  -->
   
  Некоторые компоненты вложены в другие компоненты. Например, сущность содержит формы, представления, диаграммы, поля, отношения сущностей, сообщения и бизнес-правила. Каждый из этих компонентов требует, чтобы существовала сущность. Поле не может существовать вне сущности. Мы говорим, что поле зависит от сущности. На самом деле типов компонентов вдвое больше, чем в списке выше, однако большинство из них в приложении не видны.  
   

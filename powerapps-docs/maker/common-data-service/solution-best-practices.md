@@ -22,19 +22,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 810fd536da5236f5ac7490505e82e78179ab61da
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 40c59ccdebe8ee5192510b5d8ac7e825c6b68c58
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865306"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909431"
 ---
 # <a name="best-practices-when-working-with-solutions"></a>Рекомендации по работе с решениями 
 В этом разделе описываются рекомендации при работе с решениями. 
 
 
 ## <a name="use-a-single-managed-solution-to-manage-a-model-driven-app"></a>Используйте одно управляемое решение для управления приложением на основе модели 
-Чтобы обновить приложение, которое было включено в управляемое решение, используйте решения обновления или исправления. Не устанавливайте различные управляемые решения в среду, которые имеют одинаковое управляемое моделью приложение. Дополнительные сведения: [Обновление решений](import-update-export-solutions.md#update-solutions) и [Использование сегментированных решений и исправлений для экспорта выбранных ресурсов сущности](use-segmented-solutions-patches-simplify-updates.md) 
+Чтобы обновить приложение, которое было включено в управляемое решение, используйте решения обновления или исправления. Не устанавливайте различные управляемые решения в среду, которые имеют одинаковое управляемое моделью приложение. Дополнительные сведения: [Обновление решений](update-solutions.md) и [Использование сегментированных решений и исправлений для экспорта выбранных ресурсов сущности](use-segmented-solutions-patches-simplify-updates.md) 
 
 
 ## <a name="use-security-roles-to-manage-app-access"></a>Использование ролей безопасности для управления доступом приложения

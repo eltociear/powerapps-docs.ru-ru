@@ -10,19 +10,19 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 11/18/2019
+ms.date: 12/17/2019
 ms.author: matp
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f11eebcb220ff877b0cd750f2d94338cadc5ceea
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: bcdc8241692cd1713f4c0f4cd2f4c0d8959dffe4
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884027"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909387"
 ---
 # <a name="share-a-model-driven-app-with-power-apps"></a>Общий доступ к управляемому моделью приложению с помощью Power Apps
 
@@ -167,7 +167,11 @@ ms.locfileid: "2884027"
 
 *Привилегия имеет глобальную область действия, если иное не указано явно.
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="use-azure-active-directory-groups-to-manage-access"></a>Использование групп Azure Active Directory для управления доступом
+Администраторы могут использовать группы Azure Active Directory (Azure AD) своих организаций для управления правами доступа для лицензированных пользователей Common Data Service. Оба типа группы Azure AD — офис и безопасность — могут использоваться для обеспечения права доступа пользователя к приложению. Дополнительные сведения: [О рабочих группах группы](/power-platform/admin/manage-teams.md#about-group-teams). 
+
+
+### <a name="see-also"></a>См. также
 [Запуск приложения, управляемого моделью, на мобильном устройстве](../../user/run-app-client-model-driven.md)
 
 
