@@ -1,26 +1,26 @@
 ---
 title: Функции, сигналы и перечисления | Документация Майкрософт
-description: Справочные сведения о функциях, сигналах и перечислениях в Power Apps.
+description: Справочные сведения о функциях, сигналах и перечислениях в Power Apps.
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 08/15/2019
+ms.date: 12/19/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7712af247376d6db54aa6777eb2a3051f0e31f93
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: 30046f0b9f2a47e7231b00aafe1633a7242e43c6
+ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731422"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76315407"
 ---
-# <a name="formula-reference-for-power-apps"></a>Справочник по формулам для Power Apps
+# <a name="formula-reference-for-power-apps"></a>Справочник формул для Power Apps
 Формулы объединяют множество элементов.  Ниже перечислены следующие элементы:
 
 * **Функции** принимают параметры, выполняют операцию и возвращают значение. Например, **Sqrt(25)** возвращает значение **5**. Функции построены по принципу функций Microsoft Excel.  Некоторые функции вызывают побочные действия, такие как **SubmitForm**, что должно происходить только в [формуле поведения](working-with-formulas-in-depth.md), такой как **Button.OnSelect**.
@@ -34,7 +34,7 @@ ms.locfileid: "74731422"
 * [элементы управления и их свойства](reference-properties.md).
 * [Типы данных](functions/data-types.md)
 
-## <a name="a"></a>A
+## <a name="a"></a>А
 **[Abs](functions/function-numericals.md)** — абсолютное значение числа.  
 
 **[Acceleration](functions/signals.md)** — считывает данные с датчика ускорения на устройстве.
@@ -47,11 +47,13 @@ ms.locfileid: "74731422"
 
 **[And](functions/function-logicals.md)** — логическая функция AND.  Возвращает значение **true**, если все аргументы принимают значение **true**.  Также можно использовать [оператор **&&** ](functions/operators.md).
 
-**[Приложение](functions/object-app.md)** — предоставляет сведения о работающем в настоящее время приложении и контроле поведения приложения.
+**[App](functions/object-app.md)**  — предоставляет сведения о работающем в настоящее время приложении и позволяет управлять его поведением.
 
 **[Asin](functions/function-trig.md)** — возвращает арксинус числа (в радианах).
 
-**[Астипе](functions/function-astype-istype.md)** — обрабатывает ссылку на запись как конкретный тип сущности.
+**[Assert](functions/function-assert.md)**  — выражение принимает значение true или false во время тестирования.
+
+**[AsType](functions/function-astype-istype.md)**  — обрабатывает ссылку на запись как конкретный тип сущности.
 
 **[Atan](functions/function-trig.md)** — возвращает арктангенс числа (в радианах).
 
@@ -77,7 +79,7 @@ ms.locfileid: "74731422"
 
 **[Clock](functions/function-clock-calendar.md)** — извлекает сведения о времени для текущего значения языкового стандарта.
 
-**[Coalesce](functions/function-isblank-isempty.md)**  — заменяет *пустые* значения, оставляя не*пустые* значения без изменений.
+**[Coalesce](functions/function-isblank-isempty.md)** — заменяет *пустые* значения, оставляя не*пустые* значения без изменений.
 
 **[Collect](functions/function-clear-collect-clearcollect.md)** — создает коллекцию или добавляет данные в источник данных.
 
@@ -167,7 +169,7 @@ ms.locfileid: "74731422"
 
 **[GUID](functions/function-guid.md)**  — преобразует строку GUID в значение GUID или создает новое значение GUID.
 
-## <a name="h"></a>Серия H
+## <a name="h"></a>H
 **[HashTags](functions/function-hashtags.md)** — извлекает из строки хэш-теги (#strings).
 
 **[Hour](functions/function-datetime-parts.md)** — возвращает данные времени в часах из значения даты и времени.
@@ -187,10 +189,10 @@ ms.locfileid: "74731422"
 
 **[IsToday](functions/function-now-today-istoday.md)** — проверяет, не попадает ли значение даты и времени на сегодняшний день.
 
-IsReference **[— проверяет](functions/function-astype-istype.md)** , ссылается ли ссылка на запись на конкретный тип сущности.
+**[IsType](functions/function-astype-istype.md)**  — проверяет, указывает ли ссылка на запись на конкретный тип сущности.
 
-## <a name="j"></a>Б
-**[JSON](functions/function-json.md)** — создает текстовую строку JSON для таблицы, записи или значения.
+## <a name="j"></a>J
+**[JSON](functions/function-json.md)**  — создает текстовую строку JSON для таблицы, записи или значения.
 
 ## <a name="l"></a>L
 **[Language](functions/function-language.md)** — возвращает тег языка текущего пользователя.
@@ -207,7 +209,7 @@ IsReference **[— проверяет](functions/function-astype-istype.md)** , 
 
 **[Ln](functions/function-numericals.md)** — возвращает натуральный логарифм.
 
-**[LoadData](functions/function-savedata-loaddata.md)** — загружает коллекцию из частного хранилища Power Apps.
+**[LoadData](functions/function-savedata-loaddata.md)**  — загружает коллекцию из частного хранилища Power Apps.
 
 **[Location](functions/signals.md)** — возвращает расположение в виде координат на карте, используя глобальную навигационную спутниковую систему (GPS) и другие сведения.
 
@@ -216,9 +218,9 @@ IsReference **[— проверяет](functions/function-astype-istype.md)** , 
 **[Lower](functions/function-lower-upper-proper.md)** — преобразует буквы текстовой строки во все строчные.
 
 ## <a name="m"></a>M
-**[Match](functions/function-ismatch.md)** — Извлекает подстроку на основе шаблона.  Можно использовать регулярные выражения.
+**[Match](functions/function-ismatch.md)**  — извлекает подстроку на основе шаблона.  Можно использовать регулярные выражения.
 
-**[MatchAll](functions/function-ismatch.md)** — извлекает несколько подстрок на основе шаблона.  Можно использовать регулярные выражения.
+**[MatchAll](functions/function-ismatch.md)**  — извлекает несколько подстрок на основе шаблона.  Можно использовать регулярные выражения.
 
 **[Max](functions/function-aggregates.md)** — максимальное значение табличного выражения или набора аргументов.
 
@@ -268,7 +270,7 @@ IsReference **[— проверяет](functions/function-astype-istype.md)** , 
 
 **[Refresh](functions/function-refresh.md)** — обновляет записи источника данных.
 
-**[Связь — связывает](functions/function-relate-unrelate.md)** записи двух сущностей через связь «один ко многим» или «многие ко многим».
+**[Relate](functions/function-relate-unrelate.md)**  — связывает записи двух сущностей с использованием связи "один ко многим" или "многие ко многим".
 
 **[Remove](functions/function-remove-removeif.md)** — удаляет одну или несколько указанных записей из источника данных.
 
@@ -295,7 +297,7 @@ IsReference **[— проверяет](functions/function-astype-istype.md)** , 
 **[RoundUp](functions/function-round.md)** — округляет до ближайшего числа в большую сторону.
 
 ## <a name="s"></a>S
-**[SaveData](functions/function-savedata-loaddata.md)** — сохраняет коллекцию в частном хранилище Power Apps.
+**[SaveData](functions/function-savedata-loaddata.md)**  — сохраняет коллекцию в частном хранилище Power Apps.
 
 **[Search](functions/function-filter-lookup.md)** — находит записи в таблице, содержащие строку в одном из столбцов.  
 
@@ -305,7 +307,9 @@ IsReference **[— проверяет](functions/function-astype-istype.md)** , 
 
 **[Set](functions/function-set.md)** — задает значение глобальной переменной.
 
-**[SetFocus](functions/function-setfocus.md)** — перемещение фокуса ввода на конкретный элемент управления.
+**[SetFocus](functions/function-setfocus.md)**  — устанавливает фокус ввода на конкретный элемент управления.
+
+**[SetPropertry](functions/function-setproperty.md)**  — имитирует взаимодействие с элементами управления для ввода.
 
 **[ShowColumns](functions/function-table-shaping.md)** — возвращает таблицу только с выбранными столбцами.
 
@@ -331,14 +335,14 @@ IsReference **[— проверяет](functions/function-astype-istype.md)** , 
 
 **[Sum](functions/function-aggregates.md)** — вычисляет сумму табличного выражения или набора аргументов.  
 
-**[Switch](functions/function-if.md)**  — выполняет сопоставление с набором значений, а затем вычисляет соответствующую формулу.
+**[Switch](functions/function-if.md)** — выполняет сопоставление с набором значений, а затем вычисляет соответствующую формулу.
 
 ## <a name="t"></a>T
 **[Table](functions/function-table.md)** — создает временную таблицу.  
 
 **[Tan](functions/function-trig.md)** — возвращает тангенс угла, указанного в радианах.
 
-**[Text](functions/function-text.md)** — преобразует любое значение и форматирует число или значение даты и времени в строку текста.
+**[Text](functions/function-text.md)**  — преобразует любое значение и форматирует число или значение даты и времени в текстовую строку.
 
 **[ThisItem](functions/operators.md#thisitem-operator)** — в коллекции или форме возвращает данные для текущего элемента из контейнера.
 
@@ -346,9 +350,11 @@ IsReference **[— проверяет](functions/function-astype-istype.md)** , 
 
 **[TimeValue](functions/function-datevalue-timevalue.md)** — преобразует строку формата ''только время'' в значение даты и времени.
 
-**[TimeZoneOffset](functions/function-dateadd-datediff.md)**  — возвращает разницу между временем в формате UTC и местным временем пользователя в минутах.
+**[TimeZoneOffset](functions/function-dateadd-datediff.md)** — возвращает разницу между временем в формате UTC и местным временем пользователя в минутах.
 
 **[Today](functions/function-now-today-istoday.md)** — возвращает текущее значение даты и времени.
+
+**[Trace](functions/function-trace.md)**  — выводит дополнительные сведения в результатах теста.
 
 **[Trim](functions/function-trim.md)** — удаляет лишние пробелы по краям и внутри текстовой строки.
 
@@ -357,7 +363,7 @@ IsReference **[— проверяет](functions/function-astype-istype.md)** , 
 ## <a name="u"></a>U
 **[Ungroup](functions/function-groupby.md)** — удаляет группирование.
 
-**[Unrelate](functions/function-relate-unrelate.md)** — отменяет связь между записями двух сущностей со связью "один ко многим" или "многие ко многим".
+**[Unrelate](functions/function-relate-unrelate.md)**  — отменяет связывание записей двух сущностей с использованием связи "один ко многим" или "многие ко многим".
 
 **[Update](functions/function-update-updateif.md)** — заменяет запись в источнике данных.
 
@@ -381,7 +387,7 @@ IsReference **[— проверяет](functions/function-astype-istype.md)** , 
 ## <a name="w"></a>W
 **[Weekday](functions/function-datetime-parts.md)** — извлекает сведения о дне недели из значения даты и времени.
 
-**[With](functions/function-with.md)** — вычисляет значения и выполняет действия для одной записи, включая встроенные записи именованных значений.
+**[With](functions/function-with.md)**  — вычисляет значения и выполняет действия для одной записи, включая встроенные записи именованных значений.
 
 ## <a name="y"></a>Y
 **[Year](functions/function-datetime-parts.md)** — извлекает сведения о годе из значения даты и времени.  

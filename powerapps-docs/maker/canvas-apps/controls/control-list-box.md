@@ -13,26 +13,25 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0e949cb54a4835b887ae971f110f4c02e12dc7fa
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: c52b6779e5875e1304a80b2c63d0cf7b70e2c8b2
+ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727091"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76315361"
 ---
-# <a name="list-box-control-in-power-apps"></a>Элемент управления "список" в Power Apps
+# <a name="list-box-control-in-power-apps"></a>Элемент управления "Список" в Power Apps
 Список, в котором пользователь может выбрать один или несколько элементов.
 
-## <a name="description"></a>Description
+## <a name="description"></a>Описание
 Элемент управления **Поле со списком** всегда отображает все доступные варианты выбора (в отличие от элемента управления **[Раскрывающийся список](control-drop-down.md)** ), и в нем пользователь может выбрать несколько элементов одновременно (в отличие от элемента управления **[Переключатель](control-radio.md)** ).
 
 ## <a name="key-properties"></a>Основные свойства
-**[Default](properties-core.md)**  — начальное значение элемента управления до его изменения пользователем.
+**[Default](properties-core.md)** . Начальное значение элемента управления до его изменения пользователем.
 
 **[Items](properties-core.md)**  — источник данных, отображаемых в элементе управления, такой как коллекция, список или диаграмма.
 
-**Выбрано** — запись данных, представляющая выбранный элемент.
+**Selected** — запись данных, представляющая выбранный элемент.  По умолчанию может быть выбран только один элемент.  Если необходимо выбирать несколько элементов, используйте элемент управления [Поле со списком](control-combo-box.md).
 
 При добавлении коллекции, списка или диаграммы список свойств по умолчанию отображает **Items**, чтобы можно было легко указать данные, которые должен показывать новый элемент управления. Например, можно задать в свойстве **Items** коллекции таблицу **Account** в Salesforce, таблицу **Inventory**, созданную в Excel и переданную в облако, или список SharePoint **ConferenceSpeakers**.
 
@@ -57,13 +56,13 @@ ms.PowerAppsDecimalTransform: true
 
 **[Fill](properties-color-border.md)**  — цвет фона элемента управления.
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Жирный**, **Полужирный**, **Обычный** или **Очень тонкий**.
+**[FontWeight](properties-text.md)**  — начертание шрифта для текста в элементе управления: **Bold**, **Semibold**, **Normal** или **Lighter**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -79,7 +78,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[LineHeight](properties-text.md)**  — расстояние, например, между строками текста или элементами списка.
 
-**[OnChange](properties-core.md)**  — поведение приложения, когда пользователь изменяет значение элемента управления (например, перемещая ползунок).
+**[OnChange](properties-core.md)**  — поведение приложения, когда пользователь изменяет значение элемента управления (например, перемещая ползунок).
 
 **[OnSelect](properties-core.md)**  — поведение приложения, когда пользователь щелкает элемент управления или касается его.
 
@@ -97,13 +96,13 @@ ms.PowerAppsDecimalTransform: true
 
 **[PressedFill](properties-color-border.md)**  — цвет фона элемента управления при щелчке или касании.
 
-**[Reset](properties-core.md)**  — свойство, которое указывает, возвращается ли элемент управления к значению по умолчанию.
+**[Reset](properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.
 
-**Селектедтекст (не рекомендуется)** — строковое значение, представляющее выбранный элемент.
+**SelectedText (не рекомендуется)**  — строковое значение, представляющее выбранный элемент.
 
-**[SelectionColor](properties-color-border.md)**  — цвет текста выбранного элемента или элементов списка или цвет инструмента выделения в элементе управления "Ввод с помощью пера".
+**[SelectionColor](properties-color-border.md)**  — цвет текста выбранного элемента или элементов списка или цвет инструмента выделения в элементе управления рукописным вводом.
 
-**[SelectionFill](properties-color-border.md)**  — цвет фона выбранного элемента или элементов списка или выделенной области элемента управления "Ввод с помощью пера".
+**[SelectionFill](properties-color-border.md)**  — цвет фона выбранного элемента или элементов списка или цвет выделенной области элемента управления "Ввод с помощью пера".
 
 **SelectMultiple** — определяет, может ли пользователь выбрать несколько элементов в списке.
 
@@ -126,11 +125,11 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Distinct**(*источник*; *столбец*)](../functions/function-distinct.md)
+[**Distinct**(*источник*, *столбец*)](../functions/function-distinct.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **Поле со списком**, назовите его **CategoryList** и укажите для свойства **[Items](properties-core.md)** следующую формулу:<br>
-   **["Carpet";"Hardwood";"Tile"]**
+   **["Carpet","Hardwood","Tile"]**
    
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
    
@@ -138,16 +137,16 @@ ms.PowerAppsDecimalTransform: true
 2. Добавьте три элемента управления **[Раскрывающийся список](control-drop-down.md)** , переместите их под элемент **CategoryList** и назовите **CarpetList**, **HardwoodList** и **TileList**.
 3. Укажите для свойства **[Items](properties-core.md)** каждого из элементов управления **[Раскрывающийся список](control-drop-down.md)** одно из следующих значений:
    
-   * CarpetList: **["Caserta Stone Beige";"Ageless Beauty Clay"; "Lush II Tundra"]**
-   * HardwoodList: **["Golden Teak";"Natural Hickory"; "Victoria Mahogany"]**
-   * TileList: **["Honey Onyx Marble";"Indian Autumn Slate"; "Panaria Vitality Ceramic"]**
+   * CarpetList: **["Caserta Stone Beige","Ageless Beauty Clay", "Lush II Tundra"]**
+   * HardwoodList: **["Golden Teak","Natural Hickory", "Victoria Mahogany"]**
+   * TileList: **["Honey Onyx Marble","Indian Autumn Slate", "Panaria Vitality Ceramic"]**
      
      ![Названия напольных покрытий в раскрывающихся списках](./media/control-list-box/flooring-names.png)
 4. Укажите для свойства **[Visible](properties-core.md)** каждого из элементов управления **[Раскрывающийся список](control-drop-down.md)** одно из следующих значений:
    
-   * CarpetList: **If("Ковер" in CategoryList.SelectedItems.Value; true)**
-   * HardwoodList: **If("Паркет" in CategoryList.SelectedItems.Value; true)**
-   * TileList: **If("Плитка" in CategoryList.SelectedItems.Value; true)**
+   * CarpetList: **If("Ковер" in CategoryList.SelectedItems.Value, true)**
+   * HardwoodList: **If("Паркет" in CategoryList.SelectedItems.Value, true)**
+   * TileList: **If("Плитка" in CategoryList.SelectedItems.Value, true)**
      
      Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 5. Нажмите клавишу F5 и выберите один или несколько элементов в элементе управления **CategoryList**.
@@ -173,7 +172,7 @@ ms.PowerAppsDecimalTransform: true
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
+* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
 
     > [!NOTE]
   > Клавиша табуляции позволяет переходить к **списку**. Для перехода по содержимому **списка** используются клавиши со стрелками.
