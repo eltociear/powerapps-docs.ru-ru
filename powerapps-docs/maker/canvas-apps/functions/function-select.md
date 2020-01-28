@@ -19,6 +19,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/22/2020
 ms.locfileid: "76315430"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="select-function-in-power-apps"></a>Функция Select в Power Apps
 Имитирует выбор действия для элемента управления, активируя вычисление формулы **OnSelect**.
@@ -47,7 +48,7 @@ ms.locfileid: "76315430"
 
 * *Control* — обязательный аргумент.  Элемент управления, выбираемый от имени пользователя.
 
-**Select**( *Control, Row or column, Child Control* )
+**Select**( *Control; Row or column; Child Control* )
 
 - *Control* — обязательный аргумент. Элемент управления, выбираемый от имени пользователя.
 - *Row or column* — необязательный атрибут. Номер строки или столбца (начиная с 1) в элементе управления коллекции, которые выбираются от имени пользователя.
@@ -61,13 +62,13 @@ ms.locfileid: "76315430"
 
 - *Коллекция* 
 
-    ```Select(Gallery1, 1)```
+    ```Select(Gallery1; 1)```
 
     Имитирует выбор пользователем строки 1 или столбца 1 в элементе Gallery1. 
 
 - *Коллекция* 
 
-    ```Select(Gallery1, 1, ChildControl1)```
+    ```Select(Gallery1; 1; ChildControl1)```
 
     Имитирует выбор пользователем дочернего элемента ChildConttrol1 в строке 1 или столбце 1 в элементе Gallery1.
 
@@ -107,7 +108,7 @@ ms.locfileid: "76315430"
 
 5. Назначьте свойству **OnSelect** элемента управления Image следующую формулу:
 
-    **Notify( "Image Selected", Success )**
+    **Notify( "Image Selected"; Success )**
 
 6. Удерживая нажатой клавишу Alt, щелкайте разные элементы коллекции или касайтесь их.
 
@@ -119,7 +120,7 @@ ms.locfileid: "76315430"
 
 7. На том же экране добавьте элемент управления **Button** и в качестве значения свойства **OnSelect** задайте следующую формулу:
 
-    **Select( Gallery1,2,Image1 )**
+    **Select( Gallery1;2;Image1 )**
 
 8. Удерживая нажатой клавишу ALT, нажмите на эту кнопку.
    
