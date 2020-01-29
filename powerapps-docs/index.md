@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - PowerApps-hub
-ms.openlocfilehash: 707f714ca658faa6255ee2e79c08184cb6f2a2fb
-ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
+ms.openlocfilehash: 8374df8f8e440fb7ae3e2c481d201f3d1cfeaf23
+ms.sourcegitcommit: 2fd8b682e2d4c1e6a45c851b56f37f842ef18224
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74959571"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76708799"
 ---
 <div id="main"
    class="v2">
@@ -61,7 +61,7 @@ ms.locfileid: "74959571"
                                              </div>
                                           </div>
                                           <div class="cardText">
-                                             <h3>Новые возможности</h3>
+                                             <h3>Что нового</h3>
                                              <p>Сведения о новых возможностях, выпущенных за последние недели, а также о возможностях, готовящихся к выпуску в ближайшие месяцы.</p>
                                           </div>
                                        </div>
@@ -81,7 +81,7 @@ ms.locfileid: "74959571"
                                           </div>
                                           <div class="cardText">
                                              <h3>Изучение Power Apps</h3>
-                                             <p>Ознакомьтесь со схемами обучения Microsoft Learn — пошаговым руководством по изучению Power Apps. Это бесплатно!</p>
+                                             <p>Ознакомьтесь со схемами обучения Microsoft Learn — пошаговым руководством по изучению Power Apps. Бесплатная версия!</p>
                                           </div>
                                        </div>
                                     </div>
@@ -287,7 +287,7 @@ ms.locfileid: "74959571"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Portals</h3>
+                                    <h3 style="font-size: 1.15rem">Порталы</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">Что такое порталы Power Apps?</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">Создание портала</a></p>
@@ -354,6 +354,7 @@ ms.locfileid: "74959571"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">Получение справки и поддержки</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">Подключение функций второй волны выпусков 2019 г.</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">Управление настройками</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://aka.ms/powerappsadminwhitepaper">Технический документ. Администрирование платформы разработки с минимальным написанием кода</a></p>
                                  </div>
                               </div>
                            </div>
@@ -643,7 +644,7 @@ ms.locfileid: "74959571"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Рекомендации</h3>
+                                    <h3 style="font-size: 1.15rem">Советы и рекомендации</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/best-practices">Common Data Service</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/best-practices">Приложения на основе модели</a></p>
@@ -663,7 +664,7 @@ ms.locfileid: "74959571"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Справочные материалы</h3>
+                                    <h3 style="font-size: 1.15rem">Справка</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/reference/about-entity-reference">Справочник по сущностям</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/dynamics365/customer-engagement/web-api/about?view=dynamics-ce-odata-9">Справочные материалы по веб-API</a></p>
