@@ -31,7 +31,7 @@
           href: ../user/unified-interface.md
         - name: Навигация и основные сведения
           items:
-            - name: Обзор
+            - name: Базовая навигация
               href: ../user/navigation.md
             - name: Просмотр профиля
               href: ../user/view-your-user-profile.md
@@ -72,12 +72,14 @@
               href: ../user/collaborate-using-sharepoint.md
         - name: Поиск в записях
           items:
-            - name: Сравнение вариантов поиска
-              href: ../user/search-and-find.md
-            - name: Поиск записей
-              href: ../user/search-records.md
-            - name: Использование расширенного поиска
-              href: ../user/create-edit-or-save-advanced-find-search.md
+            - name: Сравнение параметров поиска
+              href: ../user/search.md
+            - name: Поиск с сортировкой по релевантности
+              href: ../user/relevance-search.md
+            - name: Быстрый поиск
+              href: ../user/quick-find.md
+            - name: Расширенный поиск
+              href: ../user/advanced-find.md
         - name: Импорт и экспорт данных
           items:
             - name: Импорт данных
