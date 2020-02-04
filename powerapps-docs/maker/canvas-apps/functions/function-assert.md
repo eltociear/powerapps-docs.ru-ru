@@ -19,6 +19,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/23/2020
 ms.locfileid: "76541297"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="assert-function-in-power-apps-test-studio"></a>Функция Assert в Power Apps Test Studio
 
@@ -36,9 +37,9 @@ ms.locfileid: "76541297"
 
 ## <a name="examples"></a>Примеры
 
-```Assert(lblResult.Text = "Success", "lblResult value Expected : Success , Actual : " & lblResult.Text)```<br>
-```Assert(ListBox1.Selected.Value = "Success", "ListBox1 selection Expected : Success,  Actual : " & ListBox1.Selected.Value)```<br>
-```Assert(kudosAfterTest = kudosBeforeTest + 1, "Kudos count. Expected : " & kudosBeforeTest + 1  & " Actual :" & kudosAfterTest)```
+```Assert(lblResult.Text = "Success"; "lblResult value Expected : Success , Actual : " & lblResult.Text)```<br>
+```Assert(ListBox1.Selected.Value = "Success"; "ListBox1 selection Expected : Success,  Actual : " & ListBox1.Selected.Value)```<br>
+```Assert(kudosAfterTest = kudosBeforeTest + 1; "Kudos count. Expected : " & kudosBeforeTest + 1  & " Actual :" & kudosAfterTest)```
 
 ### <a name="see-also"></a>См. также
 

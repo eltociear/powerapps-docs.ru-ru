@@ -19,6 +19,7 @@ ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/23/2020
 ms.locfileid: "76541619"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="working-with-test-studio-experimental"></a>Использование Test Studio (экспериментальное)
 
@@ -117,7 +118,7 @@ ms.locfileid: "76541619"
 
     Можно использовать любое поддерживаемое выражение. Можно также запрашивать любые источники данных, коллекции, переменные или потоки выполнения, содержащиеся в приложении, а также создавать новые глобальные переменные или коллекции для использования в тестах.
 
-    ```Set(kudosBeforeTest, CountRows(Filter(Kudos, Receiver.Email = "someone@example.com")))```
+    ```Set(kudosBeforeTest; CountRows(Filter(Kudos; Receiver.Email = "someone@example.com")))```
 
 5. Выберите шаг 2 или шаг, перед которым нужно вставить новый шаг.
 
@@ -125,17 +126,17 @@ ms.locfileid: "76541619"
 
 7. Введите выражение или формулу в поле ввода действия, выбрав вариант [Трассировка](./functions/function-trace.md), и запишите значение *kudosBeforeTest* в запись результатов теста.
 
-    ```Trace("kudosBeforeTest : " & kudosBeforeTest);```
+    ```Trace("kudosBeforeTest : " & kudosBeforeTest);;```
 
     ![Благодарностей до теста](./media/working-with-test-studio/kudos-before-test.png)
 
 8. Перейдите к концу тестового случая и вставьте новый шаг, чтобы подсчитать записи в базе данных после теста.
 
-    ```Set(kudosAfterTest, CountRows(Filter(Kudos, Receiver.Email = "someone@example.com")))```
+    ```Set(kudosAfterTest; CountRows(Filter(Kudos; Receiver.Email = "someone@example.com")))```
 
 9. Добавить заключительный шаг для проверки того, что число записей в базе данных увеличилось на число 1. Чтобы проверить это, введите следующее действие утверждения:
 
-    ```Assert(kudosAfterTest = kudosBeforeTest + 1, "Kudos count incorrect. Expected : " & kudosBeforeTest + 1  & " Actual :" & kudosAfterTest)```
+    ```Assert(kudosAfterTest = kudosBeforeTest + 1; "Kudos count incorrect. Expected : " & kudosBeforeTest + 1  & " Actual :" & kudosAfterTest)```
 
     ![Проверочное утверждение "Благодарностей после теста"](./media/working-with-test-studio/kudos-after-test-assert.png)
 
@@ -172,7 +173,7 @@ ms.locfileid: "76541619"
 
 2. Замените ```+ 1``` на ```+ 2``` в действии теста. Таким образом, тест предполагает создание двух записей, что неверно. Если тест проходит успешно, в базе данных должна быть создана только одна запись.
 
-    ```Assert(kudosAfterTest = kudosBeforeTest + 2, "Kudos count incorrect. Expected : " & kudosBeforeTest + 2  & " Actual :" & kudosAfterTest)```
+    ```Assert(kudosAfterTest = kudosBeforeTest + 2; "Kudos count incorrect. Expected : " & kudosBeforeTest + 2  & " Actual :" & kudosAfterTest)```
 
     ![Изменение счетчика в утверждении](./media/working-with-test-studio/assert-count-update.png)
 
@@ -308,7 +309,7 @@ ms.locfileid: "76541619"
 
 - Отправка результатов по почте:
 
-    ```Office365.SendMailV2(“someone@example.com”, “Test case results”, JSON(TestCaseResult, JSONFormat.IndentFour))```
+    ```Office365.SendMailV2(“someone@example.com”; “Test case results”; JSON(TestCaseResult; JSONFormat.IndentFour))```
 
 - Получение уведомления приложения о результатах теста:
 
