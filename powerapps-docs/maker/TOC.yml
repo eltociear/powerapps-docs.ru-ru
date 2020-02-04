@@ -1562,8 +1562,10 @@
       href: ./common-data-service/data-platform-powerbi-connector.md
     - name: Перевод текста в настраиваемых сущностях и полях
       href: ./common-data-service/export-customized-entity-field-text-translation.md
-    - name: Импорт переведенного текста полей и сущностей в приложение
+    - name: Импорт переведенного текста сущностей и полей
       href: ./common-data-service/import-translated-entity-field-text.md
+    - name: Экспорт в озеро данных
+      href: ./common-data-service/export-to-data-lake.md
     - name: Безопасность в Common Data Service
       href: /power-platform/admin/wp-security
     - name: Обзор ограничений API

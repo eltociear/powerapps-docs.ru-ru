@@ -1,50 +1,57 @@
 ---
 title: Создание приложения на основе холста из шаблона | Документы Майкрософт
-description: Пошаговые инструкции по автоматическому созданию приложения Canvas на основе шаблона Power Apps.
+description: Пошаговые инструкции по автоматическому созданию приложения на основе холста на базе шаблона Power Apps.
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/19/2018
+ms.date: 01/29/2020
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 682657a62db520c431bd0f594a87ae50c5e3ac0c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: d64b1ef3f6d885093fc9f89ecf31b785c07ea6bd
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732177"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76918767"
 ---
-# <a name="create-a-canvas-app-from-a-template-in-power-apps"></a>Создание приложения Canvas на основе шаблона в Power Apps
+# <a name="create-a-canvas-app-from-a-template-in-power-apps"></a>Создание приложения на основе холста из шаблона в Power Apps
 
 Вы можете автоматически создать из шаблона приложение на основе холста для определенного сценария, например для отслеживания бюджета или планирования отпусков, а затем запустить приложение, чтобы посмотреть, как оно работает по умолчанию.
 
 Для создания приложения на основе шаблона требуется облачная учетная запись хранения (например, DropBox, OneDrive или Google Диск), в которой будет храниться образец данных шаблона.
 
-Если у вас нет лицензии на Power Apps, вы можете [зарегистрироваться бесплатно](../signup-for-powerapps.md).
+Если у вас нет лицензии на Power Apps, вы можете [зарегистрироваться для получения бесплатной версии](../signup-for-powerapps.md).
 
 ## <a name="create-an-app"></a>Создание приложения
 
-1. Войдите в [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Выполните вход в [Power Apps](https://make.powerapps.com).
 
-1. В области **Создавайте собственные приложения** наведите указатель на плитку **Начать с данных** и выберите команду **Создать это приложение**.
+1. Выберите **Приложения** на левой панели навигации. Откройте раскрывающееся меню **Новое приложение**, а затем выберите **Холст**.
 
-    ![Плитка "Создать это приложение"](./media/get-started-test-drive/make-this-app.png)
+    ![Новое приложение на основе холста](./media/get-started-test-drive/new-canvas-app.png)
 
-1. На плитке **Шаблоны приложений** выберите **Макет телефона** или **Макет для планшета**.
+    Откроется [Power Apps Studio](https://docs.microsoft.com/powerapps/powerapps-overview#power-apps-for-app-makerscreators) в новой вкладке.
+
+1. На плитке **Шаблоны приложений** выберите **Макет для телефона** или **Макет для планшета**.
 
     ![Плитка шаблона приложения](./media/get-started-test-drive/template-tile.png)
 
-4. В списке шаблонов выберите желаемый вариант и щелкните или коснитесь **Использовать** (в правом нижнем углу).
+1. В списке шаблонов выберите желаемый вариант, а затем нажмите кнопку **Использовать** (в правом нижнем углу).
 
     ![Открытие шаблона Power Apps](./media/get-started-test-drive/open-template.png)
 
-    В учетную запись облачного хранилища копируются образцы данных, затем создается приложение и отображается его домашняя страница.
+    Power Apps Studio откроется в новой вкладке, и приложение будет создано.
+
+    > [!NOTE]
+    > Если кнопка **Использовать** не активна, убедитесь, что выбран источник данных для приложения. Вы можете выбрать источник данных, нажав кнопку **Выбрать** внизу.
+    >
+    > ![Выбрать источник данных](./media/get-started-test-drive/choose-data-source.png)
 
 ## <a name="run-the-app"></a>Запуск приложения
 Приложение на основе шаблона открывается в рабочей области по умолчанию, где вы будете выполнять настройку. Прежде чем внести изменения в приложение, изучите работу приложения в режиме **Предварительный просмотр**.
