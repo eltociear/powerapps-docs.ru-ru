@@ -33,6 +33,8 @@
           items:
             - name: Базовая навигация
               href: ../user/navigation.md
+            - name: Использование фильтров сетки
+              href: ../user/grid-filters.md
             - name: Просмотр профиля
               href: ../user/view-your-user-profile.md
             - name: Поиск администратора или специалиста поддержки
@@ -43,15 +45,20 @@
               href: ../user/screen-reader.md
             - name: Сочетания клавиш
               href: ../user/keyboard-shortcuts.md
-        - name: Работа с записями
+        - name: Работа с записями и действиями
           items:
             - name: Создание записи
               href: ../user/create-a-record.md
             - name: Добавление действий на временную шкалу
               href: ../user/add-activities.md
-              items:
-                - name: Часто задаваемые вопросы о действиях
-                  href: ../user/faq-for-timeline-and-activity.md
+            - name: Часто задаваемые вопросы о действиях
+              href: ../user/faq-for-timeline-and-activity.md
+            - name: Просмотр и создание сообщения электронной почты с помощью сетки действий
+              href: ../user/view-create-email.md
+            - name: Отправка сообщения с помощью улучшенного интерфейса электронной почты
+              href: ../user/enhanced-email.md
+            - name: Вставка шаблона сообщения электронной почты
+              href: ../user/insert-email-template.md
             - name: Использование поля подстановки в записи
               href: ../user/lookup-field.md
             - name: Просмотр карточки профиля
