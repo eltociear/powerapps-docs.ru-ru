@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 11/18/2019
+ms.date: 02/05/2020
 ms.author: aheaney
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: afd2427a0c24461fa79e363787a7ec6c28bb4038
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
-ms.translationtype: HT
+ms.openlocfilehash: 79ae7206c729a9628ee183e0c64c395f6a235b7c
+ms.sourcegitcommit: 86c81c9efb105d11f4def49eef823af6c69059a4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76541619"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77034403"
 ---
 # <a name="working-with-test-studio-experimental"></a>Использование Test Studio (экспериментальное)
 
@@ -34,7 +33,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Выполните вход в [Power Apps](https://make.powerapps.com).
 
-2. Выберите [для изменения существующее приложение](edit-app.md) или [создайте новое](get-started-test-drive.md).
+2. Выберите [для изменения существующее приложение](get-started-test-drive.md) или [создайте новое](edit-app.md).
 
 3. Сохраните приложение в Power Apps, чтобы открыть Test Studio. 
     
@@ -46,6 +45,9 @@ ms.PowerAppsDecimalTransform: true
 5. Выберите команду **Открыть тесты**, чтобы открыть для этого приложения Test Studio. Окно Test Studio откроется в новой вкладке браузера.
 
     ![Запуск Test Studio](./media/working-with-test-studio/open-tests.png)
+
+> [!NOTE]
+> Тесты публикуются и сохраняются в пакете приложения. При экспорте и импорте пакета приложения Canvas в другую среду будут также включены все определения тестов, такие как наборы тестов и тестовые случаи, которые вы создали. 
 
 ## <a name="create-a-test-suite"></a>Создание набора тестов
 
@@ -107,7 +109,7 @@ ms.PowerAppsDecimalTransform: true
 
 2. Выберите команду **Вставить шаг выше** из верхнего меню или соответствующий параметр в активной строке. При этом создается пустой шаг.
 
-    ![Вставка шага](./media/working-with-test-studio/insert-step-above.png)
+    ![Вставить шаг](./media/working-with-test-studio/insert-step-above.png)
 
     > [!NOTE]
     > Если выбрать команду **Вставить шаг выше**, то над текущим шагом будет добавлен новый пустой шаг. Можно также использовать действия **Assert**, **SetProperty**, **Выбрать** или **Трассировка**. В результате будет добавлен шаг с соответствующей формулой действия, которую можно изменить.
@@ -118,7 +120,7 @@ ms.PowerAppsDecimalTransform: true
 
     Можно использовать любое поддерживаемое выражение. Можно также запрашивать любые источники данных, коллекции, переменные или потоки выполнения, содержащиеся в приложении, а также создавать новые глобальные переменные или коллекции для использования в тестах.
 
-    ```Set(kudosBeforeTest; CountRows(Filter(Kudos; Receiver.Email = "someone@example.com")))```
+    ```Set(kudosBeforeTest, CountRows(Filter(Kudos, Receiver.Email = "someone@example.com")))```
 
 5. Выберите шаг 2 или шаг, перед которым нужно вставить новый шаг.
 
@@ -126,17 +128,17 @@ ms.PowerAppsDecimalTransform: true
 
 7. Введите выражение или формулу в поле ввода действия, выбрав вариант [Трассировка](./functions/function-trace.md), и запишите значение *kudosBeforeTest* в запись результатов теста.
 
-    ```Trace("kudosBeforeTest : " & kudosBeforeTest);;```
+    ```Trace("kudosBeforeTest : " & kudosBeforeTest);```
 
     ![Благодарностей до теста](./media/working-with-test-studio/kudos-before-test.png)
 
 8. Перейдите к концу тестового случая и вставьте новый шаг, чтобы подсчитать записи в базе данных после теста.
 
-    ```Set(kudosAfterTest; CountRows(Filter(Kudos; Receiver.Email = "someone@example.com")))```
+    ```Set(kudosAfterTest, CountRows(Filter(Kudos, Receiver.Email = "someone@example.com")))```
 
 9. Добавить заключительный шаг для проверки того, что число записей в базе данных увеличилось на число 1. Чтобы проверить это, введите следующее действие утверждения:
 
-    ```Assert(kudosAfterTest = kudosBeforeTest + 1; "Kudos count incorrect. Expected : " & kudosBeforeTest + 1  & " Actual :" & kudosAfterTest)```
+    ```Assert(kudosAfterTest = kudosBeforeTest + 1, "Kudos count incorrect. Expected : " & kudosBeforeTest + 1  & " Actual :" & kudosAfterTest)```
 
     ![Проверочное утверждение "Благодарностей после теста"](./media/working-with-test-studio/kudos-after-test-assert.png)
 
@@ -173,7 +175,7 @@ ms.PowerAppsDecimalTransform: true
 
 2. Замените ```+ 1``` на ```+ 2``` в действии теста. Таким образом, тест предполагает создание двух записей, что неверно. Если тест проходит успешно, в базе данных должна быть создана только одна запись.
 
-    ```Assert(kudosAfterTest = kudosBeforeTest + 2; "Kudos count incorrect. Expected : " & kudosBeforeTest + 2  & " Actual :" & kudosAfterTest)```
+    ```Assert(kudosAfterTest = kudosBeforeTest + 2, "Kudos count incorrect. Expected : " & kudosBeforeTest + 2  & " Actual :" & kudosAfterTest)```
 
     ![Изменение счетчика в утверждении](./media/working-with-test-studio/assert-count-update.png)
 
@@ -309,7 +311,7 @@ ms.PowerAppsDecimalTransform: true
 
 - Отправка результатов по почте:
 
-    ```Office365.SendMailV2(“someone@example.com”; “Test case results”; JSON(TestCaseResult; JSONFormat.IndentFour))```
+    ```Office365.SendMailV2(“someone@example.com”, “Test case results”, JSON(TestCaseResult, JSONFormat.IndentFour))```
 
 - Получение уведомления приложения о результатах теста:
 
@@ -332,5 +334,5 @@ ms.PowerAppsDecimalTransform: true
 
 - [Выбрать](./functions/function-select.md)
 - [SetProperty](./functions/function-setproperty.md)
-- [Assert](./functions/function-assert.md)
-- [Трассировка](./functions/function-trace.md)
+- [Утверждающе](./functions/function-assert.md)
+- [Трассировки](./functions/function-trace.md)

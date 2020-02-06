@@ -1517,7 +1517,7 @@
           href: ./common-data-service/use-solutions-for-your-customizations.md
         - name: Импорт решений
           href: ./common-data-service/import-update-export-solutions.md
-        - name: Обновление решений
+        - name: Обновление или модернизация решений
           href: ./common-data-service/update-solutions.md
         - name: Экспорт решений
           href: ./common-data-service/export-solutions.md
@@ -1537,7 +1537,7 @@
           href: ./common-data-service/common-issues-resolutions-solution-checker.md
         - name: Использование сегментированных решений
           href: ./common-data-service/use-segmented-solutions-patches-simplify-updates.md
-        - name: Изменение префикса издателя решений
+        - name: Общие сведения об издателе решения
           href: ./common-data-service/change-solution-publisher-prefix.md
         - name: Настройка управляемых свойств в метаданных
           href: ./common-data-service/set-managed-properties-metadata.md
