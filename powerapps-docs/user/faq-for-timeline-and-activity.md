@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 01/29/2019
+ms.date: 02/03/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 78b4e997a398bfb806a4e89a70c0ed3e466be381
-ms.sourcegitcommit: e3d3a608ef74e1d90ca74ed38de3e5aebc624713
+ms.openlocfilehash: ff83a238715ef6f78650eeb03b087088cb5f0c1e
+ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "75333617"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76973185"
 ---
 # <a name="frequently-asked-questions-about-activities-and-the-timeline-wall"></a>Часто задаваемые вопросы о действиях и стене со временной шкалой  
 
@@ -50,6 +50,10 @@ ms.locfileid: "75333617"
 ## <a name="activity-wall-is-not-supported-in-print-preview"></a>Стена с действиями не поддерживает режим предварительного просмотра.
 
 Если в Dynamics 365 выбрать параметр **Предварительный просмотр**, **стена со временной шкалой** будет отсутствовать в списке доступных функций. Вы сможете просмотреть **заметки**, но сведения о задачах или сообщениях электронной почты отображаться не будут.
+
+## <a name="why-i-cant-see-other-users-activities-and-records-in-the-my-activities-stream-in-the-dashboard"></a>Почему я не вижу действий и записей других пользователей в потоке "мои действия" на панели мониторинга?
+
+В потоке " **Мои действия** " на панели мониторинга отображаются записи и действия, которыми владеет пользователь (пользователь). Например, пользователь **а** увидит записи и **действия, принадлежащие пользователю, а**пользователь **б** увидит записи и действия, принадлежащие **b**.
 
 ## <a name="see-also"></a>См. также:
 

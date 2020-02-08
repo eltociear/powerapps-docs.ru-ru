@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6b1e53d95145cc947681971264c0b160d0510e92
-ms.sourcegitcommit: d0f02fdaa125feaea884932e1ef31b8fea1bd10c
+ms.openlocfilehash: 7dd0d9a3dc9b78b693565d66f1894484b686b946
+ms.sourcegitcommit: dc379bede57da58b5787eda5437eb94b662e21ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886465"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77037374"
 ---
 # <a name="work-with-business-processes"></a>Использование бизнес-процессов
 
@@ -47,4 +47,4 @@ ms.locfileid: "76886465"
 Система включает готовые бизнес-процессы для стандартных задач. Однако большинство организаций настраивают эти процессы в соответствии со своими процедурами. Кроме того, в систему могут быть добавлены особые процессы, адаптированные для вашей отрасли и бизнес-целей. Другими словами, то, что вы видите здесь, может не совпадать с панелями процессов, отображаемыми в вашей системе. Однако сами панели во всех случаях работают одинаково. Вы вводите в поля данные, а затем переводите клиента на следующий этап.
 
 
-Дополнительные сведения о создании потоков бизнес-процессов и управлении ими см. в разделе [Создание бизнес-правила для сущности](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-create-business-rule).
+Дополнительные сведения о применении пользовательской бизнес-логики с бизнес-правилами и потоками см. [в статье применение пользовательской бизнес-логики с бизнес-правилами и потоками в приложении, управляемом моделью](https://docs.microsoft.com/powerapps/maker/model-driven-apps/guide-staff-through-common-tasks-processes).
