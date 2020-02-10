@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fe02683e0b420a97fe674543a2f0d16bb076f266
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 259ab99ca38a472fda5c8cd8cdf99533a5f5dfc2
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731025"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77089749"
 ---
 # <a name="encodeurl-and-plaintext-functions-in-power-apps"></a>Функции Енкодеурл и обычного текста в Power Apps
 Кодируют и декодируют строки.
 
-## <a name="description"></a>Description
+## <a name="description"></a>Описание
 Функция **енкодеурл** кодирует строку URL-адреса, заменяя определенные символы, отличные от буквенно-цифровых, на% и шестнадцатеричное число.  
 
 Функция с **открытым текстом** УДАЛЯЕТ теги HTML и XML, преобразуя некоторые теги, такие как, в соответствующий символ:
@@ -36,17 +36,17 @@ ms.locfileid: "74731025"
 ## <a name="syntax"></a>Синтаксис
 **EncodeUrl**( *String* )
 
-* *Строка* — обязательный аргумент.  URL-адрес, который необходимо кодировать.
+* *Строка* — обязательный аргумент.  URL-адрес, который необходимо кодировать.
 
 **PlainText**( *String* )
 
-* *Строка* — обязательный аргумент. Строка, из которой будут удалены HTML- и XML-теги.
+* *Строка* — обязательный аргумент. Строка, из которой будут удалены HTML- и XML-теги.
 
 ## <a name="examples"></a>Примеры
 Если показать RSS-канал в коллекции текста, а затем задать свойству **[Text](../controls/properties-core.md)** метки в этой коллекции значение **ThisItem.description**, то метка может отобразить необработанный HTML- или XML-код, как в этом примере:
 
 ```html
-    <p>We have done an unusually&nbsp;&quot;deep&quot; globalization and localization.<p>
+    <p>We have done an unusually&nbsp;&quot;deep&quot; globalization and localization.</p>
 ```
 
 Если задать свойству **[Text](../controls/properties-core.md)** метки значение **PlainText(ThisItem.description)** , то отображаемый текст будет иметь такой вид:
