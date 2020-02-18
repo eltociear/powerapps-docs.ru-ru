@@ -1018,6 +1018,8 @@
                   href: ./model-driven-apps/create-edit-views-app-designer.md
                 - name: Выбор и настройка столбцов в представлениях
                   href: ./model-driven-apps/choose-and-configure-columns.md
+                - name: Создание и изменение фильтров в представлениях приложения
+                  href: ./model-driven-apps/create-edit-view-filters.md
                 - name: Практические руководства. Представления
                   items:
                     - name: Включение возможности редактирования сеток

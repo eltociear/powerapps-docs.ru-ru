@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - PowerApps-hub
-ms.openlocfilehash: ed27dfe0846924d14de7d7837977d73c9f02e1c4
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: c32a87a38029f4a01750f04ecc2f9c0d0314ac66
+ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76974879"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77282384"
 ---
 <div id="main"
    class="v2">
@@ -350,11 +350,11 @@ ms.locfileid: "76974879"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Центр администрирования платформы Power</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-guide">Администрирование платформы Power</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-documentation">Администрирование платформы Power</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">Получение справки и поддержки</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">Подключение функций второй волны выпусков 2019 г.</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">Управление настройками</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://aka.ms/powerappsadminwhitepaper">Технический документ. Администрирование платформы разработки с минимальным написанием кода</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/opt-in-early-access-updates">Подключение раннего доступа к обновлениям</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/wp-security">Основные понятия безопасности приложений и кластеров в Службе Azure Kubernetes (AKS)</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">Управление настройками</a></p>                                    
                                  </div>
                               </div>
                            </div>
@@ -411,9 +411,28 @@ ms.locfileid: "76974879"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Среда и безопасность</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/environments-administration">Управление средами</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/database-security">Настройка безопасности среды</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-view-apps">Просмотр приложений в среде</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/environments-overview">Обзор сред</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/trial-environments">Пробные среды</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/database-security">Безопасность сред</a></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="cardSize">
+                           <div class="cardPadding">
+                              <div class="card">
+                                 <div class="cardImageOuter">
+                                    <div class="cardImage">
+                                       <img alt="" src="media/index/i_guidelines.svg">
+                                    </div>
+                                 </div>
+                                 <div class="cardText">
+                                    <h3 style="font-size: 1.15rem">Ресурсы</h3>
+                                    <hr/>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://aka.ms/powerappsadminwhitepaper">Технический документ. Администрирование корпоративного развертывания Power Apps и Power Automate</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://powerapps.microsoft.com/blog/introducing-the-powerapps-center-of-excellence-starter-kit/">Начальный набор Power Apps Center of Excellence (CoE)</a></p>
                                  </div>
                               </div>
                            </div>
