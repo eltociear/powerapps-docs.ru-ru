@@ -18,7 +18,7 @@ search.app:
 - D365CE
 ms.openlocfilehash: 8f1105fc88fe87aabceaa10160b96e2d7299cbe0
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74733209"
@@ -90,7 +90,7 @@ ms.locfileid: "74733209"
    
 3. Просмотрите имя файла и проверьте разделители полей и данных, используя параметр **Проверить сопоставление**. Если все правильно, выберите **Завершить импорт**.  
  
-## <a name="step-3-check-that-the-import-is-successful"></a>Шаг 3. Проверка успешности импорта
+## <a name="step-3-check-that-the-import-is-successful"></a>Шаг 3. Проверка успешного выполнения импорта
 
 По окончании работы мастера проверьте данные (например, список контактов), чтобы убедиться в успешном выполнении импорта.  
   
