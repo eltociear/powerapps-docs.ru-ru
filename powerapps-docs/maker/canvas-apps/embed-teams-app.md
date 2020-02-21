@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/29/2019
+ms.date: 02/18/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a12cd7c17a6aca93f254cc2e2cb89cb848245392
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 7f98025fbc3a2f392b45cce22af41d075a3bfaac
+ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731509"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77530881"
 ---
 # <a name="embed-an-app-in-teams"></a>Внедрение приложения в Teams
 
@@ -29,12 +29,12 @@ ms.locfileid: "74731509"
 > [!NOTE]
 > Политики настраиваемых приложений команды должны быть настроены, чтобы разрешить отправку пользовательских приложений. Если вы не можете внедрить приложение в группы, обратитесь к администратору, чтобы узнать, не настроены ли [Параметры настраиваемого приложения](https://docs.microsoft.com/MicrosoftTeams/teams-custom-app-policies-and-settings#custom-app-policy-and-settings).
 
-## <a name="prerequisites"></a>Технические условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Вам потребуется действительная [Лицензия на Power Apps](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus).
 - Чтобы внедрить приложение в команды, вам потребуется существующее приложение, [созданное с помощью Power Apps](data-platform-create-app.md).
 
-## <a name="download-the-app"></a>Скачать приложение
+## <a name="download-the-app"></a>Загрузите приложение
 
 1. Войдите в [make.powerapps.com](https://make.powerapps.com)и выберите **приложения** в меню.
 
@@ -63,6 +63,21 @@ ms.locfileid: "74731509"
 
 Если вы являетесь администратором, вы также можете [опубликовать приложение](https://docs.microsoft.com/microsoftteams/tenant-apps-catalog-teams) в каталоге Microsoft Teams.
 
-### <a name="see-also"></a>См. также
+## <a name="improve-the-performance-of-your-app"></a>Повышение производительности приложения
+
+При необходимости можно предварительно загрузить приложение в группы, чтобы повысить производительность.
+
+1. Войдите в [make.powerapps.com](https://make.powerapps.com)и выберите **приложения** в меню.
+
+2. Выберите **Дополнительные действия** (...) для приложения, которое вы хотите использовать в командах, а затем щелкните **Параметры**.
+
+3. На панели Параметры выберите параметр **Предварительная загрузка приложения для повышения производительности** на **Да**. После этого приложения Power Apps будут загружать приложение каждый раз, когда оно внедряется в группы.
+
+    ![Сведения о приложении](./media/embed-teams-app/preload-app.png "Предварительная загрузка приложения для повышения производительности")
+
+4. Чтобы изменения вступили в силу, повторно импортируйте приложение в группы.
+
+
+### <a name="see-also"></a>См. также:
 
 [Добро пожаловать в Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview)
