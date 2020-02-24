@@ -1,20 +1,20 @@
 ---
 title: Добавление веб-ресурса хранилища Azure в форму | MicrosoftDocs
 description: Шаги для добавления веб-ресурса службы хранилища Azure в форму для включения отправки вложений в службу хранилища Azure.
-author: sbmjais
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 01/07/2020
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: b98bce4b3b9d2fae1015250c509df30ec69c7797
-ms.sourcegitcommit: df15c909ba27c9ed83197305a4ee1f01e46a826b
+ms.openlocfilehash: 32bde2ec2c97f33c426a57b17216a7086930eaca
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "2936210"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977944"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>Добавление веб-ресурса хранилища Azure в форму
 

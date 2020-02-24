@@ -1,20 +1,20 @@
 ---
 title: Включение поддержки многоязычных порталов | MicrosoftDocs
 description: Инструкции по включению нескольких языков для портала и созданию содержимого на нескольких языках.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: f8da1ac4be7098fc712faef82f6c9566d5f10512
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a91ffe1c00b7dbcc40b786731e956bfdd8fc6d94
+ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760964"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012740"
 ---
 # <a name="enable-multiple-language-portal-support"></a>Включение поддержки многоязычных порталов
 Бизнес не ограничен одним регионом или языком. Единый портал может отображать содержимое на нескольких языках, чтобы охватывать клиентов по всему миру. Содержимое портала можно перевести на несколько языков, сохраняя единую иерархию содержимого.
@@ -32,6 +32,8 @@ ms.locfileid: "2760964"
    ![Добавление нового языка портала](../media/add-new-portal-language.png "Добавление нового языка портала")
 
    ![Задание языка по умолчанию для портала](../media/set-default-language-portal.png "Задание языка по умолчанию для портала")
+
+   ![Поддерживаемые языки](../media/supported-languages.png "Поддерживаемые языки")
 
 > [!Note]
 > При активации новых языков после подготовки портала, можно [импортировать метаданные переводов](../admin/import-metadata-translation.md), чтобы получить метаданные, переведенные на новые добавленные языки.

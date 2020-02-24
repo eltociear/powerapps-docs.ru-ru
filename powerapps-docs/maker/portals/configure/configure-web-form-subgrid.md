@@ -1,20 +1,20 @@
 ---
 title: Конфигурация вложенной сетки веб-форм для портала | MicrosoftDocs
 description: Инструкции по добавлению и настройке вложенных сеток веб-форм для портала.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 210300d40742cbf2ca83f9d6c3b07cd580167eaa
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 129af5698bf7a3ff3d598d230e1e79d35c68e720
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760965"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977768"
 ---
 # <a name="configure-web-form-subgrids-for-portals"></a>Настройка вложенных сеток веб-форм для порталов
 

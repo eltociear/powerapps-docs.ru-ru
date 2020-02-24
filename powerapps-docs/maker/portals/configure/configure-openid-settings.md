@@ -1,20 +1,20 @@
 ---
 title: Настройка параметров поставщика OpenID Connect для портала | MicrosoftDocs
 description: Инструкции по добавлению и настройке параметров поставщика OpenID Connect для портала.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/18/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 2b4d31165ccd12b2cb5c8c2a4c8ec6f9dd04a7c7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: b36150e7193975305fb8a478852070628268d4ee
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755370"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979220"
 ---
 # <a name="configure-open-id-connect-provider-settings-for-portals"></a>Настройка параметров поставщика Open ID Connect для порталов
 
@@ -30,7 +30,7 @@ ms.locfileid: "2755370"
 > [!Note]
 > Конечная точка Google OpenID Connect в настоящее время не поддерживается, поскольку лежащие в основе библиотеки еще находятся на ранних стадиях выпуска и требуют устранения проблем совместимости. Вместо этого можно использовать конечную точку [параметров поставщика OAuth2 для порталов](configure-oauth2-settings.md).
 
-## <a name="openid-settings-for-includepn-azure-active-directoryincludespn-azure-active-directorymd"></a>Параметры OpenID для [!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)]
+## <a name="openid-settings-for-pn-azure-active-directory"></a>Параметры OpenID для [!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)]
 
 Чтобы начать работу, выполните вход на [Портал управления [!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)]](https://msdn.microsoft.com/library/azure/hh967611.aspx#bkmk_azureportal) и создайте или выберите существующий каталог. Когда каталог будет доступен, следуйте инструкциям, чтобы [добавить приложение](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) в каталог.  
 

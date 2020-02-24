@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cc5ce204047810704f01562a9a00668e51784769
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 923797d7781ef64da4193d0114d50a3bda6b0b66
+ms.sourcegitcommit: 86c81c9efb105d11f4def49eef823af6c69059a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872928"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027370"
 ---
 # <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>Добавление данных в сущность в Common Data Service с помощью Power Query
 В этой процедуре вы создадите сущность в [Common Data Service](data-platform-intro.md) и заполните эту сущность данными из канала OData с помощью Power Query. Можно использовать эти же методы для интеграции данных в том числе и из следующих сетевых и локальных источников:
@@ -37,8 +37,10 @@ ms.locfileid: "2872928"
 
 При отсутствии лицензии на Power Apps можно [зарегистрироваться бесплатно](../signup-for-powerapps.md).
 
-## <a name="prerequisites"></a>Необходимые компоненты
-Для выполнения инструкций этого раздела необходимо перейти в [среду](../canvas-apps/working-with-environments.md), в которой вы можете создавать сущности.
+## <a name="prerequisites"></a>Предварительные условия
+Прежде чем начать следовать этой теме:
+- Переключитесь на [среду](../canvas-apps/working-with-environments.md), в котором вы можете создавать сущности.
+- У вас должен быть план Power Apps на пользователя или план Power Apps на приложение.
 
 ## <a name="specify-the-source-data"></a>Указание источника данных
 

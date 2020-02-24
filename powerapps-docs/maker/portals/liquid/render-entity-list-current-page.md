@@ -1,20 +1,20 @@
 ---
 title: Отобразить список сущностей, связанных с текущей страницей на портале | MicrosoftDocs
 description: Пример кода для отображения списка сущностей, связанных с текущей страницей на портале.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 73b8af19419bb59fe63e7ecea92188d6cff4c180
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 73149bc45d61f344b62f7a5e733848f11287c369
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866370"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980892"
 ---
 # <a name="render-the-entity-list-associated-with-the-current-page"></a>Обработка списка сущностей, связанных с текущей страницей
 

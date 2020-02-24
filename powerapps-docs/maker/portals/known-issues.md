@@ -1,25 +1,27 @@
 ---
 title: Известные проблемы в порталах Power Apps | Документация Майкрософт
 description: Сведения об известных проблемах в порталах Power Apps
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
-ms.author: shjais
+ms.date: 01/17/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 584dc1518179c17e929c46b3659fad37085f1c31
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4c7f5aaa46acd255f15e0a040f44710a608d34a2
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866590"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977385"
 ---
 # <a name="known-issues"></a>Известные проблемы
 
 
 ## <a name="general-issues"></a>Общие проблемы
+
+- Из-за текущих проблем совместимости между обновленной конечной точкой провайдера Yahoo YDN Oauth и порталами Power Apps пользователи временно не могут проходить аутентификацию с помощью [провайдера идентификации Yahoo](./configure/configure-oauth2-settings.md#yahoo-ydn-app-settings).
 
 - **Дата изменения** для приложения могут стать неправильна так как это предварительно подготовленные приложения, которые могли быть подготовлены ранее.
 

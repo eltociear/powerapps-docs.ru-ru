@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 468f31eeb48a3e79f79db9188be78a7fa6d28c18
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: a3c9916cf6520dc1b271006b68d0c9fad61918bf
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883587"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005028"
 ---
 # <a name="create-a-relationship-between-entities"></a>Создание отношения между сущностями
 Данные в одной сущности часто связаны с данными в другой сущности. Например, может иметься сущность **Преподаватели** и сущность **Класс**,и сущность **Класс** может иметь отношение подстановки с сущностью **Преподаватели** для отображения того, какой преподаватель преподает в этом классе. Можно использовать поле подстановки для отображения данных из сущности **Преподаватели**. Обычно это называется полем подстановки.

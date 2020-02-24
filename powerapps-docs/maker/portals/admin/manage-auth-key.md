@@ -1,20 +1,20 @@
 ---
 title: Подключение портала к среде Common Data Service | MicrosoftDocs
 description: Узнайте, как подключить портал к среде Common Data Service и как обновить ключ проверки подлинности.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 82245371095e523ba9221fc43ce21564e0445103
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 75d633c13b3d15888115e2e42a47e4f9da15e56f
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862679"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978428"
 ---
 # <a name="connect-to-a-common-data-service-environment-using-a-portal"></a>Подключение к среде Common Data Service с помощью портала
 

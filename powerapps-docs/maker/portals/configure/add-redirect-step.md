@@ -1,20 +1,20 @@
 ---
 title: Настройка типа шага перенаправления для портала | MicrosoftDocs
 description: Инструкции по добавлению и настройке шага перенаправления для портала.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 3cf76cccfd247bdcfb4ee32e99682d2b9e95e139
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e82d19a7adb43bcb8fddaeac88a5e238ee96eae1
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760943"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979616"
 ---
 # <a name="add-a-redirect-step-type"></a>Добавление типа шага перенаправления
 

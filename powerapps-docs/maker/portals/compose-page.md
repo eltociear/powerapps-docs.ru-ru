@@ -1,20 +1,20 @@
 ---
 title: Создание веб-страниц | Документация Майкрософт
 description: Инструкции по созданию веб-страницы в портале.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
-ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: a6affbb0d13af137ddd044a7ae4b6d2cddbf813c
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.date: 01/10/2020
+ms.author: tapanm
+ms.reviewer: tapanm
+ms.openlocfilehash: ec982dded0d67719effc0c2b0b4faecc19e656b8
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862459"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979792"
 ---
 # <a name="compose-a-page"></a>Создание страницы
 
@@ -197,13 +197,16 @@ ms.locfileid: "2862459"
 
     - **Высота**: Введите высоту IFrame.
 
-    - **Ссылка**. Введите URL-адрес веб-сайта, который будет отображаться в IFrame. Допускаются только защищенные ссылки, т. е. ссылка должна обязательно начинаться с https://. По умолчанию в качестве значения доступно <https://www.bing.com>.
+        > [!NOTE]
+        > Также можно выбрать IFrame на холсте и перетаскивать ручки, чтобы изменить его размеры.
 
+    - **Ссылка**. Введите URL-адрес веб-сайта, который будет отображаться в IFrame. Допускаются только защищенные ссылки, т. е. ссылка должна обязательно начинаться с https://. По умолчанию в качестве значения доступно <https://www.bing.com>.
+    
         > [!div class=mx-imgBorder]
         > ![свойства iFrame](media/iframe-props.png "Свойства iFrame")  
 
-    > [!NOTE]
-    > Также можно выбрать IFrame на холсте и перетаскивать ручки, чтобы изменить его размеры.
+> [!NOTE]
+> Вы также можете добавить бор [Power Virtual Agent](https://docs.microsoft.com/power-virtual-agents/fundamentals-what-is-power-virtual-agents) в IFrame, используя шаги, аналогичные описанным в разделе [добавление бота на ваш веб-сайт](https://docs.microsoft.com/power-virtual-agents/publication-connect-bot-to-web-channels#custom-website).
 
 ### <a name="add-form"></a>Добавление формы
 

@@ -1,20 +1,20 @@
 ---
 title: Использование тегов Liquid для портала | MicrosoftDocs
 description: Узнайте о доступных тегах Liquid на портале.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: b04c6447911d1a884627bd2cbb4ad7b74b9c5ce5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3f85e4b86b305696f5b155c7e9e3b773f8ba2103
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2708146"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2981112"
 ---
 # <a name="available-liquid-tags"></a>Доступные теги Liquid
 

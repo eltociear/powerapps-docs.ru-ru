@@ -1,20 +1,20 @@
 ---
 title: Управление доступом к веб-страницам для портала | MicrosoftDocs
 description: Инструкции по созданию правил управления доступом к веб-странице для портала.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 5046f136d62a4a44618f66f60f72ab5166274264
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 894c06982084e2f9b4a96d5cd0189dd3a763b97e
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760950"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978120"
 ---
 # <a name="control-webpage-access-for-portals"></a>Управление доступом к веб-страницам для порталов
 

@@ -1,7 +1,7 @@
 ---
 title: Создание и разработка форм управляемых моделью приложений | MicrosoftDocs
 ms.custom: ''
-ms.date: 12/06/2018
+ms.date: 01/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d052e981d80578a2db844f3e8ff3f70ff0c07c2c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 2e64771257519bded104aa49bde84ac993e1b361
+ms.sourcegitcommit: 60a721432b3fa2abd14ccb3bd16a6b34e13ada85
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884928"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026440"
 ---
 # <a name="create-and-design-model-driven-app-forms"></a>Создание и разработка форм управляемых моделью приложений 
 
@@ -42,6 +42,8 @@ ms.locfileid: "2884928"
 ## <a name="type-of-forms"></a>Тип форм
 Имеются различные типы форм, и каждый тип имеет определенные функциональные возможности или область применения. Дополнительные сведения: [Тип форм в Power Apps](types-forms.md).  
 
+## <a name="main-form-dialogs-preview"></a>Диалоги главной формы (предварительная версия)
+С клиентским API-интерфейсом можно использовать диалоги главной формы, чтобы пользователи могли открывать связанную сущность записи в родительской или базовой форме, не выходя из формы. Дополнительная информация: [Открытие основной формы в диалоге, используя клиентский API](../../developer/model-driven-apps/customize-entity-forms.md#open-main-form-in-a-dialog-using-client-api) 
   
 <a name="BKMK_FormDifferencesByEntity"></a>   
 ## <a name="updated-versus-classic-entities"></a>Сравнение обновленных и классических сущностей  
@@ -57,6 +59,7 @@ Power Apps предоставляет множество параметров д
 |Прайс-лист|Элемент очереди|Продукт для предложения|Поле свертки|Запрос свертки|  
 |Сохраненное представление|Сервис|Действие сервиса|Сайт SharePoint|Местонахождение|  
 |Территория|Единица измерения|Группа единиц измерения|||  
+
   
 ## <a name="form-display-faq"></a>Вопросы и ответы по отображению форм
 

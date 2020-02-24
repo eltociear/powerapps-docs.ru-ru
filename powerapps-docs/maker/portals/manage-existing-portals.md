@@ -1,20 +1,20 @@
 ---
 title: Управлять существующими порталами в Power Apps | Документы Майкрософт
 description: Инструкции по управлению порталом в Power Apps.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 0921e39c93b5f63a3f9a0ea038fd97389ea2b968
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 3eea977cf59629c7f2b758affa145f520838b39f
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883923"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978868"
 ---
 # <a name="manage-existing-portals-in-power-apps"></a>Управление существующими порталами в Power Apps
 

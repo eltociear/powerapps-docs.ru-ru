@@ -1,20 +1,20 @@
 ---
 title: Изменение CSS на портале | Документация Майкрософт
 description: Инструкции по изменению CSS на портале.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 7fde904421d7c1d5b7e3b66d8644b0f984dd504b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f8a610d77da477595545003b801711c8151ce8f6
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2864713"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2976932"
 ---
 # <a name="edit-css"></a>ИзменитьCSS
 

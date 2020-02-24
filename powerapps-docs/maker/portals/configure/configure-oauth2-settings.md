@@ -1,20 +1,20 @@
 ---
 title: Настройка параметров поставщика OAuth2 для портала | MicrosoftDocs
 description: Инструкции по добавлению и настройке параметров поставщика OAuth2 для портала.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/18/2019
-ms.author: shjais
+ms.date: 01/17/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: be576425067079549d3174e6d6306814a6ddb13a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 6065c842831aa9aa0c225d12470a4469fe51146d
+ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755458"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012695"
 ---
 # <a name="configure-oauth2-provider-settings-for-portals"></a>Настройка параметров поставщика OAuth2 для порталов
 
@@ -33,24 +33,40 @@ ms.locfileid: "2755458"
 
 Обычно если поставщик OAuth используются параметры приложения, которые должны содержать значение URI перенаправления, укажите <https://portal.contoso.com/or> https://portal.contoso.com/signin-\ [поставщик \] в зависимости от того, как поставщик выполняет проверку URI перенаправления (некоторые поставщики требуются полный путь URL-адреса, вместе с именем домена). Подставьте имя поставщика вместо \[provider\] в URI перенаправления.
 
-### <a name="google"></a>Google
+## <a name="google-people-api-settings"></a>Настройки API-интерфейса Google People
 
-[Учетные данные Google OAuth2 API — Инструкции](https://developers.google.com/accounts/docs/OpenIDConnect#appsetup)  
+> [!NOTE]
+> [API-интерфейс Google+](https://developers.google.com/people/legacy) устарел. Мы настоятельно рекомендуем вам перейти на [API-интерфейс Google People](https://developers.google.com/people).
 
-1. Откройте [Консоль разработчиков Google](https://console.developers.google.com/)  
-2. Создайте проект API или откройте существующий проект
-3. Перейдите в раздел **API и аутентификация** &gt;**API** и в разделе **Social API** нажмите **Google+ API**, затем нажмите **Включить API**
-4. Перейдите к **API и аутентификация** &gt;**Экран согласия**.
-    - Укажите **Адрес электронной почты**.
-    - Укажите настраиваемое **Название продукта**.
-    - Выберите **Сохранить**.
-5. Перейдите в раздел **API и аутентификация** &gt;**Учетные данные** и создайте новый идентификатор клиента.
-   - Тип приложения: **Веб-приложение**
-   - Утвержденные источники [!INCLUDE[pn-javascript](../../../includes/pn-javascript.md)]: https://portal.contoso.com
-   - Утвержденные URI перенаправления: https://portal.contoso.com/signin-google 
-   - Выберите **Создать код клиента**.
+Выполните следующие шаги для настройки на вашем портале Power Apps [аутентификации Google Oauth 2.0] для аутентификации пользователей.
 
-### <a name="facebook-app-settings"></a>Настройки приложения Facebook
+1. Откройте [Консоль разработчиков Google](https://console.developers.google.com/).  
+1. Создайте проект API или откройте существующий проект.
+1. Выберите **ВКЛЮЧИТЬ API И СЕРВИСЫ** на панели мониторинга API-интерфейсов и сервисов.
+1. Найдите и включите API-интерфейс **Google People API**.
+1. Внутри **Google APIs** выберите **Учетные данные** на левой панели навигации.
+
+    > [!NOTE]
+    > Если у вас уже настроен экран согласия с доменом верхнего уровня порталов, вы можете пропустить шаги с 6 по 14 и сразу перейти к шагу 15. Тем не менее, выполните шаг 11, прежде чем перейти к шагу 15, если ваш экран согласия настроен, но домен верхнего уровня порталов не добавлен.
+
+1. Выберите **НАСТРОИТЬ ЭКРАН СОГЛАСИЯ**.
+1. Выберите тип пользователя **Внешний**.
+1. Выберите **Создать**.
+1. Введите **Имя приложения** и отправьте изображение для логотипа, если требуется.
+1. Выберите подходящий **Адрес электронной почты для поддержки**.
+1. Введите **powerappsportals.com** в качестве домена верхнего уровня в пункте **Авторизованные домены**. Используйте **microsoftcrmportals.com**, если вы не [обновили свое доменное имя портала Power Apps](../admin/update-portal-domain.md). Вы также можете ввести [настраиваемое доменное имя](../admin/add-custom-domain.md), если вы его настроили. 
+1. Укажите требуемые ссылки на домашнюю страницу, политику конфиденциальности и условия обслуживания. 
+1. Нажмите кнопку **Сохранить**.
+1. Выберите **Учетные данные** из левого меню навигации.
+1. Выберите **Идентификатор клиента OAuth** в раскрывающемся меню **Создать учетные данные**.
+1. Выберите тип приложения **Веб-приложение**.
+1. Введите **Название** для идентификатора клиента Oauth.
+1. Введите URL-адрес своего портала Power Apps в списке **Разрешенные источники JavaScript**.
+1. Введите **Разрешенные URI перенаправления** как URL-адрес портала Power Apps с последующим **/signin-google**. Например, если URL-адрес портала https://contoso.powerappsportals.com, поле разрешенного URI перенаправления должно быть https://contoso.powerappsportals.com/signin-google.
+1. Выберите **Создать**.
+1. Скопируйте **Идентификатор клиента** и **секрет клиента** из диалогового окна **клиент Oauth** и настройте [параметры сайта OAuth2](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-oauth2-settings#create-site-settings-by-using-oauth2) на порталах Power Apps.
+
+## <a name="facebook-app-settings"></a>Настройки приложения Facebook
 
 1. Откройте [Панель мониторинга приложения разработчиков Facebook](https://developers.facebook.com/apps)  
 2. Выберите **Добавить новое приложение**.
@@ -70,14 +86,14 @@ ms.locfileid: "2755458"
 7. Перейдите к **Состояние и просмотр** &gt; вкладка **Состояние**.
 8. Выберите **Да**, когда будет предложено сделать приложение и все его возможности доступными широкой публике. Необходимо заполнить допустимые данные на шаге 5 выше, чтобы можно было включить данный параметр.
 
-### <a name="includecc-microsoftincludescc-microsoftmd-application-settings"></a>Параметры приложения [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]
+### <a name="cc-microsoft-application-settings"></a>Параметры приложения [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]
 
 1. Откройте [Центр разработки для учетных записей [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]](https://account.live.com/developers/applications/index)  
 2. Выберите **Создать приложение** и укажите **Имя приложения**.
 3. Выберите **Принимаю**, чтобы принять условия.
 4. Выберите **Параметры** &gt;**Параметры API**, затем укажите URL-адрес перенаправления в виде https://portal.contoso.com/signin-microsoft 
 
-### <a name="twitter-apps-settings"></a>Параметры приложений Twitter
+## <a name="twitter-apps-settings"></a>Параметры приложений Twitter
 
 1. Откройте [Управление приложением Twitter](https://apps.twitter.com/). 
 2. Выберите **Создать новое приложение**.
@@ -88,7 +104,7 @@ ms.locfileid: "2755458"
 
 3. Выберите **Создать приложение Twitter**.
 
-### <a name="linkedin-app-settings"></a>Настройки приложения LinkedIn
+## <a name="linkedin-app-settings"></a>Настройки приложения LinkedIn
 
 1. Откройте [Сеть разработчиков LinkedIn](https://www.linkedin.com/secure/developer).  
 2. Выберите **Добавить новое приложение**.
@@ -100,7 +116,10 @@ ms.locfileid: "2755458"
 
 3. Выберите **Добавить приложение**.
 
-### <a name="yahoo-ydn-app-settings"></a>Yahoo! Настройки приложения YDN
+## <a name="yahoo-ydn-app-settings"></a>Yahoo! Настройки приложения YDN
+
+> [!NOTE]
+> Из-за текущих проблем совместимости между обновленной конечной точкой провайдера Yahoo YDN Oauth и порталами Power Apps пользователи временно не могут проходить аутентификацию с помощью провайдера идентификации Yahoo.
 
 1. Откройте [Сеть разработчиков Yahoo!](https://developer.yahoo.com/apps).
 2. Выберите **Создать приложение**.

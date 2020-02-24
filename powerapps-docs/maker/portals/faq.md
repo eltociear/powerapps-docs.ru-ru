@@ -1,26 +1,49 @@
 ---
 title: Вопросы и ответы | Документация Майкрософт
 description: Вопросы и ответы в порталах Power Apps.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/27/2019
-ms.author: shjais
-ms.reviewer: tapanm
-ms.openlocfilehash: 35f68ef861ac8908e1eb9227df6768b7a2c2c9f3
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.date: 01/17/2020
+ms.author: tapanm
+ms.reviewer: ''
+ms.openlocfilehash: bf76d2a8a3e91d9e20de9d70543af0bda4a57040
+ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934121"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2988094"
 ---
 # <a name="power-apps-portals-faq"></a>Вопросы и ответы в порталах Power Apps
 
 Мы составили список часто задаваемых вопросов и кратких ответов на них, чтобы вы могли быстро получить нужную информацию.
 
 ## <a name="general"></a>Общие сведения
+
+### <a name="what-is-the-difference-between-power-apps-portals-dynamics-365-portals-and-add-on-portals"></a>В чем разница между порталами Power Apps, порталами Dynamics 365 и порталами надстроек?
+
+С запуском порталов Power Apps 1 октября 2019 года порталы Dynamics 365 называются порталами Power Apps. Другими словами, все порталы называются **порталами Power Apps**.
+
+Одним из основных изменений, внесенных в порталы после 1 октября 2019 года, является модель лицензирования. Ранее порталы были лицензируемыми надстройками для приложений Dynamics 365, в то время как некоторые лицензии Dynamics 365 включали надстройку портала по умолчанию. После 1 октября 2019 года порталы [лицензируется на основе использования](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-power-apps-portals-licensing). Все существующие порталы будут частью переходного периода, основанного на текущем клиентском контракте, после чего их необходимо будет преобразовать в новую модель лицензирования.
+
+Вы можете проверить тип портала в [Центре администрирования порталов Power Apps](./admin/admin-overview.md):
+
+![Тип порталов Power Apps](./media/power-apps-portals-type.png)
+
+Для надстроечных порталов к типу портала добавляется суффикс надстройки. Например, тип портала производственной надстройки указывается как «Производственный (надстройка)».
+
+Нет никакой разницы в функциональности между порталами Power Apps с лицензиями на основе емкости и лицензиями на основе надстройки. Однако методы подготовки для порталов с лицензиями на основе емкости и лицензиями на основе надстройки отличаются.
+
+Вы можете создать портал Power Apps с лицензией на основе емкости, используя шаги, описанные в следующих статьях:
+
+- [Создание начального портала Common Data Service](create-portal.md)
+- [Создание портала со средой Dynamics 365](create-dynamics-portal.md)
+
+Чтобы создать портал Power Apps лицензией на основе надстройки, см. [подготовку портала с использованием надстройки портала](provision-portal-add-on.md).
+
+См. [Вопросы и ответы по лицензированию порталов Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#what-is-the-difference-between-power-apps-portals-and-dynamics-365-portals-in-terms-of-licensing), чтобы узнать об лицензионных различиях между лицензиями на основе надстроек и лицензиями на основе емкости.
 
 ### <a name="when-is-an-add-on-portal-in-suspended-state"></a>Когда портал надстройки находится в приостановленном состоянии?
 
@@ -204,6 +227,15 @@ Set-TenantSettings -RequestBody @{ "disablePortalsCreationByNonAdminUsers" = $fa
 После включения ведения журналов диагностики можно выполнять поиск конкретных ошибок, о которых сообщают пользователи, с помощью идентификатора действия, отображаемого на универсальной странице ошибки. Идентификатор действия заносится в журнал вместе со сведениями об ошибке, и его удобно использовать для поиска фактически возникшей проблемы.
 
 ## <a name="portal-administration-and-management"></a>Администрирование портала и управление им
+
+### <a name="do-portals-use-any-static-content-from-cdns-content-delivery-network-that-i-need-to-whitelist"></a>Используют ли порталы какой-либо статический контент из CDN (сеть доставки содержимого), который мне требуется включить в белый список?
+
+Да. Порталы Power Apps используют готовые статические ресурсы портала из Azure CDN, которые включают файлы JavaScript и CSS по умолчанию для презентации, которые ранее отображались как часть приложения портала. Чтобы успешно отображать порталы, вы должны внести в белый список следующий URL-адрес CDN:
+
+    https://content.powerapps.com/resource/powerappsportal
+
+> [!NOTE]
+> Порталы Power Apps, размещенные в Microsoft Government Cloud, не используют CDN.
 
 ### <a name="how-do-i-use-a-custom-login-provider-on-my-portal"></a>Как использовать настраиваемый поставщик входа на моем портале?
 

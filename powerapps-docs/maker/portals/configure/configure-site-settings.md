@@ -1,20 +1,20 @@
 ---
 title: Настройка параметров сайта для портала | Документация Майкрософт
 description: Инструкции по добавлению и настройке параметров сайта для параметров портала и глобальных параметров для всех порталов в организации.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/18/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 6f37959db1296995abe08e85995750796a93da9c
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 539df5b7515f739c64b9d6cefc1c92f79812736c
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866942"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979044"
 ---
 # <a name="configure-site-settings-for-portals"></a>Настройка параметров сайта для порталов
 

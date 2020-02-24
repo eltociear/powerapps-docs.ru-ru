@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 75175b34b158be75165c6bcdae5826060fb47f38
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 4c0b7f3e477990accf3b92e9e3964fc2751deb19
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884379"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005186"
 ---
 # <a name="quick-start-for-using-an-existing-environment-to-validate-your-legacy-web-client-app-with-the-unified-interface"></a>Краткое руководство по использованию существующей среды для проверки старого приложения веб-клиента с единым интерфейсом
 Этот раздел краткого руководства демонстрирует, как использовать существующую среду для создания приложения единого интерфейса на основе текущей конфигурации или решения по умолчанию. Это позволит вам изучить и протестировать единый интерфейс во время запуска существующих приложений веб-клиента параллельно. Пользователь может затем переключаться между средами для просмотра бок о бок. 

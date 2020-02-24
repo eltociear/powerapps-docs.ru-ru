@@ -1,20 +1,20 @@
 ---
 title: Настройка параметров поставщика WS-Federation для портала | MicrosoftDocs
 description: Инструкции по добавлению и настройке параметров поставщика WS-Federation для портала.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/18/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 2a668f501a54472da0335344997c049794794783
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f210a5c806ce3ac894e647fc882a4e3d8f4c0167
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759615"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977680"
 ---
 # <a name="configure-ws-federation-provider-settings-for-portals"></a>Настройка параметров поставщика WS-Federation для порталов
 
@@ -107,7 +107,7 @@ Get-ADFSEndpoint -AddressPath /FederationMetadata/2007-06/FederationMetadata.xml
 |  Authentication/WsFederation/ADFS/ValidateIssuerSigningKey  |                                                                                                                                                         Логическое значение, которое определяет, вызывается ли проверка System.IdentityModel.Tokens.SecurityKey, которым подписан securityToken xmlns=<https://ddue.schemas.microsoft.com/authoring/2003/5>.                                                                                                                                                          |
 |            Authentication/WsFederation/ADFS/Whr             |                                                                                                                                       Определяет параметр "whr" в URL-адресе перенаправления поставщика удостоверений. Дополнительные сведения: [wsFederation](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/windows-identity-foundation/wsfederation).                                                                                                                                       |
 
-## <a name="ws-federation-settings-for-includepn-azure-active-directoryincludespn-azure-active-directorymd"></a>Параметры WS-Federation для [!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)]
+## <a name="ws-federation-settings-for-pn-azure-active-directory"></a>Параметры WS-Federation для [!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)]
 
 Предыдущий раздел, описывающий AD FS, также может применяться к [!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)] ([[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)] AD](https://msdn.microsoft.com/library/azure/mt168838.aspx)), так как [!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)] AD ведет себя как стандартная служба токенов безопасности, совместимая с [WS-Federation](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide). Чтобы начать работу, выполните вход на [Портал управления [!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)]](https://msdn.microsoft.com/library/azure/hh967611.aspx#bkmk_azureportal) и создайте или выберите существующий каталог. Когда каталог будет доступен, следуйте инструкциям, чтобы [добавить приложение](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) в каталог.
 

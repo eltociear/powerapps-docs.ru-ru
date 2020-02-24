@@ -2,19 +2,19 @@
 title: Просмотр действий на временной шкале портала | MicrosoftDocs
 description: Инструкция по просмотру всех действий на временной шкале портала.
 author: tapanm-msft
-manager: kumarvivek
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 12/12/2019
 ms.author: dileeps
 ms.reviewer: tapanm
-ms.openlocfilehash: 0536890f5665d6b3f6a3cd94aaf6612d06b97293
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: b1e98d7233967345f3629fa99f41e406204243c4
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914387"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980365"
 ---
 # <a name="view-activities-in-a-portal-timeline"></a>Просмотр действий на временной шкале портала
 

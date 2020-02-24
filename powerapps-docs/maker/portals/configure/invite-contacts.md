@@ -1,20 +1,20 @@
 ---
 title: Приглашение контактов на ваш портал | MicrosoftDocs
 description: Инструкции по созданию и настройке приглашений на портал.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 631f17d9764fbfc209fd193ddabe4882f8ad8042
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 74ad7201f84e7b96c785d77092048e24d24f3333
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760957"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980346"
 ---
 # <a name="invite-contacts-to-your-portals"></a>Приглашение контактов на ваши порталы
 

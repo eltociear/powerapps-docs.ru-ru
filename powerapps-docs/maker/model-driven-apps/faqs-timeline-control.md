@@ -1,7 +1,7 @@
 ---
 title: Вопросы и ответы для элемента управления временной шкалы (раздела) в Power Apps | MicrosoftDocs
 description: Часто задаваемые вопросы для элемента управления временной шкалы (раздел) в Power Apps
-ms.date: 12/23/2019
+ms.date: 02/03/2020
 ms.service: powerapps
 author: kabala123
 ms.assetid: 7F495EE1-1208-49DA-9B02-17855CEB2FDF
@@ -12,12 +12,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4851f4e5dc173f8861db0ba0b761e01f2537b0e8
-ms.sourcegitcommit: 8ba5f6b88dbd71eb3663dfeec5f0b4427c1543c0
+ms.openlocfilehash: 6556ee415f2ee3340f6e36f417a25299871c1860
+ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "2924419"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3013072"
 ---
 # <a name="faqs-for-timeline-control"></a>Вопросы и ответы для элемента управления "Временная шкала"
 
@@ -93,6 +93,11 @@ ms.locfileid: "2924419"
 **У вас нет разрешения для выполнения этого действия. Обратитесь к системному администратору.**
 
 Чтобы устранить эту проблему, отмените скрытие кнопок в определениях панели команд.
+
+
+## <a name="why-my-users-see-different-activities-and-records-in-their-my-activities-stream-in-the-dashboard"></a>Почему мои пользователи видят различные действия и записи в своем потоке "Мои действия" на панели мониторинга?
+
+Поток **Мои действия** на панели мониторинга показывает записи и действия, которые принадлежат конкретному пользователю. Например, пользователь **A** видит записи и действия, которые принадлежат пользователю **A**, а пользователь **В** видит записи и действия, которые принадлежат пользователю **В**.
 
 ## <a name="see-also"></a>См. также
 

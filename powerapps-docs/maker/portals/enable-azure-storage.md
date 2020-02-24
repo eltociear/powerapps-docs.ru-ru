@@ -1,20 +1,20 @@
 ---
 title: Включение хранилища Azure для порталов | MicrosoftDocs
 description: Инструкции по включению службы хранилища Azure для порталов, чтобы воспользоваться преимуществами больших возможностей хранения файлов в Azure.
-author: sbmjais
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 01/07/2020
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 38705c143fdf3e85ec18f60c20423cc404aee043
-ms.sourcegitcommit: df15c909ba27c9ed83197305a4ee1f01e46a826b
+ms.openlocfilehash: 8575bdc4379091204dbdfe4fd04d9d2d56a06cc9
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "2936118"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2976844"
 ---
 # <a name="enable-azure-storage"></a>Включение хранилища Azure
 

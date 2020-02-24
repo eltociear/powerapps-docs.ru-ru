@@ -1,20 +1,20 @@
 ---
 title: Изменение базового URL-адреса портала | MicrosoftDocs
 description: Сведения об изменении базового URL-адреса портала.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: a0ccf3fe2178b711a5eb61bc64814d343c648d25
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 65b54eab87e3a1937407f2a94d3a517f6f959bd0
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2867338"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978208"
 ---
 # <a name="change-the-base-url-of-a-portal"></a>Изменение базового URL-адреса портала
 

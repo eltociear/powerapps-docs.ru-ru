@@ -1,24 +1,90 @@
 ---
 title: Использование тегов шаблона для портала | Документация Майкрософт
 description: Сведения о различных тегах шаблонов, доступных на портале
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
-ms.author: shjais
+ms.date: 01/24/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 951b4055aa47a6fba31df5473bd517ed67c8f17d
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: a152fc23b71b2e564bad28a9f1717c15acfe9a60
+ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2873236"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2988002"
 ---
 # <a name="template-tags"></a>Теги шаблона
 
 Теги шаблона управляют выводом шаблона различными способами и позволяют объединить несколько шаблонов в одних выходных данных.
+
+## <a name="fetchxml"></a>fetchxml
+
+Позволяет пользователю запрашивать данные из CDS и отображать результаты на странице.
+
+> [!NOTE]
+> Вы можете узнать больше о запросе данных с использованием fetchxml на странице [Использование FetchXML для запроса данных](https://docs.microsoft.com/powerapps/developer/common-data-service/use-fetchxml-construct-query).
+
+```
+{% fetchxml resultVariable %}
+<!— Fetchxml query -->
+...
+{% endfetchxml %}
+```
+
+### <a name="results-attribute"></a>Атрибут результатов
+
+Атрибут результатов в предоставленной переменной (например, «resultVariable» в примере выше) содержит результаты запроса FetchXML и некоторые другие атрибуты.
+
+- *Сущности*
+
+    Этот атрибут содержит результат запроса fetchxml. Вы можете использовать итерацию результата и использовать его в своем веб-шаблоне.
+
+    ```
+    <table> 
+    {% for entityVariable in resultVariable.results.entities %} 
+    <tr> 
+    <td>Attribut-1: {{ entityVariable.attribute1 }}</td> 
+    <td>Attribut-2: {{ entityVariable.attribute2 }}</td> 
+    </tr> 
+    {% endfor %} 
+    </table> 
+    ```
+
+- *EntityName*
+
+    Получает логическое имя сущности.
+
+- *ExtensionData*
+
+    Получает структуру, содержащую дополнительные данные.
+
+- *MinActiveRowVersion*
+
+    Получает самое низкое значение версии активной строки.
+
+- *MoreRecords*
+
+    Получает, есть ли еще доступные записи.
+
+- *PagingCookie*
+
+    Получает текущую информацию о разбиении на страницы.
+
+- *TotalRecordCount*
+
+    Получает общее число записей в коллекции. <br/>
+    ReturnTotalRecordCount имел значение true, когда запрос был выполнен.
+
+- *TotalRecordCountLimitExceeded*
+
+    Получает, превышает ли результаты запроса общее количество записей.
+
+### <a name="xml-attribute"></a>Атрибут XML
+
+Атрибут XML в предоставленной переменной (например, «resultVariable» в примере выше) содержит результирующий запрос, который можно использовать для получения данных из Common Data Service. Этот атрибут полезен для целей отладки, когда вы хотите понять, как разрешение сущности применяется на этом теге *fetchxml*.  
 
 ## <a name="include"></a>include
 

@@ -2,7 +2,7 @@
 title: Добавить вкладку документов в основную форму для сущности | Документация Майкрософт
 description: Узнайте, как добавить вкладку документов в основную форму для сущности
 s.custom: ''
-ms.date: 09/05/2019
+ms.date: 01/06/2020
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -17,14 +17,14 @@ search.audienceType:
 - customizer
 search.app:
 - D365CE
-ms.openlocfilehash: fae464925ea755a1f9fd0cd77426bfdbaad6141c
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: c08c3fa1f6291278728db15200e9cb71de699f8a
+ms.sourcegitcommit: 54d52a9c3c9242f95be54f4444054d9c41ed577c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909343"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "2952019"
 ---
-# <a name="add-the-sharepoint-documents-tab-to-the-main-form-for-an-entity"></a>Добавить вкладку документов SharePoint в основную форму для сущности
+# <a name="add-or-remove-the-sharepoint-documents-tab-to-the-main-form-for-any-entity"></a>Добавление или удаление вкладки документов SharePoint в основную форму для любой сущности
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Добавление вкладки в основную форму сущности для отображения документов SharePoint помогает пользователям находить и использовать функции интеграции с SharePoint, доступные в приложении на основе моделей. 
@@ -86,6 +86,16 @@ ms.locfileid: "2909343"
     </parameters> 
   </control> 
 ```
+
+## <a name="remove-the-documents-tab"></a>Удаление вкладки документов
+1.   Выполните вход в [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), на левой панели навигации разверните **Данные**, затем выберите **Сущности**. 
+2.  Выберите требуемую сущность, выберите вкладку **Формы**, затем откройте форму, из которой вы хотите удалить вкладку файлов. 
+3. Выберите вкладку **Файлы**, затем на панели инструментов конструктора форм выберите **Удалить**. 
+
+    ![Удаление вкладки файлов](media/delete-files-tab.png)
+
+4. На панели инструментов конструктора форм выберите **Опубликовать**.
+
 
 ### <a name="see-also"></a>См. также
 [Управление документами с помощью SharePoint](/dynamics365/customer-engagement/admin/manage-documents-using-sharepoint)

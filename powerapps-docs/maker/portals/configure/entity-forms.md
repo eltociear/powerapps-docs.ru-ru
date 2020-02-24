@@ -1,20 +1,20 @@
 ---
 title: Определение форм сущности | MicrosoftDocs
 description: Инструкции по созданию форм сущностей на портале.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/22/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: a53bfa0a588da16e302e6986a7226e2c1bc42192
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: feb982b47ddcb2212e43c55f2e48e9dd9cb3b3e1
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874357"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977064"
 ---
 # <a name="about-entity-forms"></a>О формах сущностей
 

@@ -1,20 +1,20 @@
 ---
 title: Создание веб-ролей для портала | MicrosoftDocs
 description: Инструкции по созданию веб-ролей для портала.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 3e8bb144ad338131cccd1be774e8c3f8000f510b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ccaf34d6ea0789ae1216ab5a240d85e58f701e41
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760963"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977812"
 ---
 # <a name="create-web-roles-for-portals"></a>Создание веб-ролей для порталов
 

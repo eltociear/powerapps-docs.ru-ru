@@ -1,20 +1,20 @@
 ---
 title: Оценка или голосование на веб-странице на портале | Документация Майкрософт
 description: Инструкции по включению оценок и управлению ими на веб-странице на портале.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/11/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: e32d2e7969481c3aea4ab3abefb5bfc5c48e8852
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0dd86fde3ed867c68f2ca773c14b7656980436cc
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866766"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980672"
 ---
 # <a name="rate-or-vote-on-a-webpage-on-a-portal"></a>Оценка или голосование на веб-странице или на портале
 

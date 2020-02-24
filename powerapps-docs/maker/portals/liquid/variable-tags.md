@@ -1,20 +1,20 @@
 ---
 title: Использование тегов переменных для портала | Документация Майкрософт
 description: Сведения о различных тегах переменных, доступных на портале
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: cdccf267000247a7363a05f72c3ccdd93abb6fd6
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f9a56a9bccc8445dc7540f6ade402d5988ec1ffc
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866282"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978824"
 ---
 # <a name="variable-tags"></a>Переменные теги
 

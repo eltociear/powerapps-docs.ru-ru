@@ -1,20 +1,20 @@
 ---
 title: Поддерживаемые веб-браузеры для студии порталов Power Apps | Документы Майкрософт
 description: Подробнее о поддерживаемые веб-браузеры для студии порталов Power Apps.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: a378cbbaf5355c5239f22987e2084bf6aef78480
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 361e86938decdf2facd960ceafd74c698d91da16
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2864581"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2981332"
 ---
 # <a name="supported-web-browsers-for-power-apps-portals-studio"></a>Поддерживаемые веб-браузеры для студии порталов Power Apps
 

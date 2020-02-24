@@ -1,20 +1,20 @@
 ---
 title: Сведения подготовленного портала | Документация Майкрософт
 description: Узнайте, какие сведения фиксируются при подготовке портала и что вы можете использовать.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 45e68eb10191a2b41839c75e419a95d66b26e1d6
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 3e7040681c4495baa5b8520241bfd59544e8e2f5
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2867119"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978736"
 ---
 # <a name="portal-details"></a>Сведения о портале
 

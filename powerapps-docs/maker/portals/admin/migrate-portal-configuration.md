@@ -1,20 +1,20 @@
 ---
 title: Перенос конфигурации портала | MicrosoftDocs
 description: Узнайте, как переносить конфигурацию портала.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/20/2019
-ms.author: shjais
+ms.date: 01/08/2020
+ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 2a3f9e6eba00446ce953975c99721d99bbe78338
-ms.sourcegitcommit: 8ba5f6b88dbd71eb3663dfeec5f0b4427c1543c0
+ms.openlocfilehash: cb0e92db15cf3f33ca89975ec3bd8750ca8ee6e2
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "2924302"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978516"
 ---
 # <a name="migrate-portal-configuration"></a>Перенос конфигурации портала
 
@@ -86,9 +86,6 @@ ms.locfileid: "2924302"
 
     > [!div class=mx-imgBorder]
     > ![Ход выполнения экспорта данных конфигурации](../media/export-config-status.png "Ход выполнения экспорта данных конфигурации")
-
-    > [!IMPORTANT]
-    > Средство миграции конфигурации Configuration Migration Tool не поддерживает фильтрацию записей в сущности. По умолчанию все записи в выбранной сущности будут экспортированы. Поэтому если вы создали несколько записей веб-сайтов, все записи веб-сайтов будут экспортированы.
 
 9.  Выберите **Выход**, чтобы закрыть средство.
 

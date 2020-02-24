@@ -1,20 +1,20 @@
 ---
 title: Создание и запуск рекламы на портале | MicrosoftDocs
 description: Инструкции по созданию текстовых или графических рекламных объявлений и отображению их в нескольких местах на сайте.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/22/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 34305495dd284f3af99e1d77c1616839aede1cc7
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 8d3c30dce08a09847123612a240a6376999002f8
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875853"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979836"
 ---
 # <a name="create-and-run-advertisements-on-a-portal"></a>Создание и запуск рекламы на портале
 

@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2a1e27dea75ba2e15ee7b96be2b7597430f89cba
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 04c083624b8f9d971698c97d133cdd209a8a6e5c
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885060"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004945"
 ---
 # <a name="build-your-first-model-driven-app-from-scratch"></a>Создание первого управляемого моделью приложения с нуля
 Разработка управляемого моделью приложения — это основанный на компонентах подход к разработке приложений. В этом разделе можно упростить создание управляемого моделью приложения с помощью одной из стандартных сущностей, доступных в среде Power Apps.

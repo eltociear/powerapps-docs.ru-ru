@@ -1,20 +1,20 @@
 ---
 title: Выпуск обновлений для порталов Power Apps | Документация Майкрософт
 description: Узнайте об обновлениях выпуска порталов Power Apps.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/22/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: bbdc9a775c4bfaacc6f99217f6f24ce32db06bca
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: d775b383116f28df8a584a4943e64989e9ca0f76
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884488"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2981376"
 ---
 # <a name="release-updates"></a>Обновления выпуска
 

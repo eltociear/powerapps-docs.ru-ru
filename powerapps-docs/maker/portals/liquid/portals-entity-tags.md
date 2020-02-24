@@ -1,20 +1,20 @@
 ---
 title: Использование тегов сущности Common Data Service Power Apps для портала | Документация Майкрософт
 description: Сведения о тегах сущности Common Data Service Power Apps, доступных на портале.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/28/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: f252b0c9ef0ea90f6206863fe45a36702e4ce481
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 83247403a482f7ce980f83a5813be2fd158e1be0
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884664"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2980936"
 ---
 # <a name="power-apps-common-data-service-entity-tags"></a>Теги сущности Common Data Service Power Apps
 

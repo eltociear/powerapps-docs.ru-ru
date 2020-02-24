@@ -1,20 +1,20 @@
 ---
 title: Добавление динамического содержимого и создание пользовательских шаблонов для портала | MicrosoftDocs
 description: Узнайте, как использовать язык Liquid (язык шаблонов с открытым исходным кодом) на ваших порталах.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 4667a328775a41b254f80250caebaf88a8110a9f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: cda93410ee9580a7479e6b67353058a997a0b3d6
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866502"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2981156"
 ---
 # <a name="work-with-liquid-templates"></a>Работа с шаблонами Liquid
 

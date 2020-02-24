@@ -1,20 +1,20 @@
 ---
 title: Параметры поставщика Azure AD B2C для порталов | MicrosoftDocs
 description: Инструкции по включению параметров поставщика Azure AD B2C для порталов.
-author: sbmjais
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 01/03/2020
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: e8275fa256b00736501990c3abf127777097d938
-ms.sourcegitcommit: 82eec5da9c97fcb6ed50ae8e582f326af9278aa7
+ms.openlocfilehash: 5328415e8f55d9997bbe14a9ecca271b12a9ae31
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935219"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979572"
 ---
 # <a name="azure-ad-b2c-provider-settings-for-portals"></a>Параметры поставщика Azure AD B2C для порталов
 
@@ -124,7 +124,7 @@ ms.locfileid: "2935219"
 
 **Значение**: Регистрация была отключена.
 
-## <a name="customize-the-includeazureincludespn-azure-shortestmd-ad-b2c-user-interface"></a>Настройка пользовательского интерфейса [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C
+## <a name="customize-the-includeazure-ad-b2c-user-interface"></a>Настройка пользовательского интерфейса [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C
 
 [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C поддерживает настройку пользовательского интерфейса. Можно настроить взаимодействие с пользователей для сценариев регистрации и входа.
 
@@ -467,7 +467,7 @@ ms.locfileid: "2935219"
 
 Полный список других параметров CORS см. на странице [службы поддержки протокола CORS](../add-web-resource.md#cors-protocol-support).
 
-### <a name="step-5-includeazureincludespn-azure-shortestmd-configuration"></a>Шаг 5. Настройка [!include[Azure](../../../includes/pn-azure-shortest.md)]
+### <a name="step-5-includeazure-configuration"></a>Шаг 5. Настройка [!include[Azure](../../../includes/pn-azure-shortest.md)]
 
 1. Выполните вход в [!include[Azure portal](../../../includes/pn-azure-portal.md)].
 2. Перейдите к колонке **Управление клиентом [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C**.
@@ -483,7 +483,7 @@ ms.locfileid: "2935219"
 
 При входе пользователей в систему в первый раз или в последующем поставщик объединенных в федерацию удостоверений предоставляет требования на основании базы данных в отношении входа пользователей. Эти требования можно настроить в поставщике удостоверений.
 
-### <a name="includeazureincludespn-azure-shortestmd-ad-b2c-email-claims"></a>Утверждения электронной почты [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C
+### <a name="includeazure-ad-b2c-email-claims"></a>Утверждения электронной почты [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C
 
 [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C отправляет утверждение электронной почты как коллекцию. Портал принимает первый адрес электронной почты, указанный в коллекции, как основной адрес электронной почты контакта.
 

@@ -1,20 +1,20 @@
 ---
 title: Выявление и устранение проблем клиентов с порталом | MicrosoftDocs
 description: Научитесь выявлять и устранять проблемы клиентов с порталом.
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: f2ef5f1f8f5cfd7eb7c81d1b8fba3c1c19736a10
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: cc1a2107b6e0b5bcdbad1dacff396791b61627c3
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862547"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978384"
 ---
 # <a name="portal-checker"></a>Средство проверки портала
 
