@@ -19,7 +19,6 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74731750"
-ms.PowerAppsDecimalTransform: true
 ---
 # <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-power-apps"></a>Перечисление цветов и функции Колорфаде, Колорвалуе и RGBA в Power Apps
 
@@ -63,12 +62,12 @@ ms.PowerAppsDecimalTransform: true
 
 - *CSSColor* — обязательный аргумент.  Определение цвета на языке CSS. Можно указать либо имя, например **ОливеДраб**, либо шестнадцатеричное значение, например **#6b8e23** или **#7fffd420**. Шестнадцатеричные значения могут принимать форму либо #*RRGGBB* , либо #*ррггббаа*.
 
-**RGBA**( *Red*; *Green*; *Blue*; *Alpha* )
+**RGBA**( *Red*, *Green*, *Blue*, *Alpha* )
 
 - *Red*, *Green*, *Blue* — обязательны.  Цветовые компоненты — значения в диапазоне от 0 (без насыщенности) до 255 (полная насыщенность).
 - *Alpha* — обязательный компонент.  Альфа-компонент, который в диапазоне от 0 (полностью прозрачный) до 1 (полностью непрозрачный). Вы также можете использовать проценты: от 0 % до 100 %.
 
-**ColorFade**( *Color*; *FadeAmount* )
+**ColorFade**( *Color*, *FadeAmount* )
 
 - *Color* — обязательный аргумент.  Значение цвета (например, **Color.Red**) или выходное значение **ColorValue** или **RGBA**.
 - *FadeAmount* — обязательный аргумент.  Значение варьируется от -1 до 1. -1 полностью затемняет цвет до черного, 0 не влияет на цвет, а 1 полностью делает цвет белым. Можно также использовать значение в процентах от-100% до 100%.
@@ -138,7 +137,7 @@ ms.PowerAppsDecimalTransform: true
 | **Color.HotPink** |**Колорвалуе ("#ff69b4"&nbsp;)**<br>**Колорвалуе ("ХОТПИНК"&nbsp;)** |**RGBA (&nbsp;255,&nbsp;105,&nbsp;180,&nbsp;1&nbsp;)** |![Ярко-розовый](./media/function-colors/color-hotpink.png) |
 | **Color.IndianRed** |**Колорвалуе ("#cd5c5c"&nbsp;)**<br>**Колорвалуе ("Индианред"&nbsp;)** |**RGBA (&nbsp;205,&nbsp;92,&nbsp;92,&nbsp;1&nbsp;)** |![Светло-красный](./media/function-colors/color-indianred.png) |
 | **Color.Indigo** |**Колорвалуе ("#4b0082"&nbsp;)**<br>**Колорвалуе ("Indigo"&nbsp;)** |**RGBA (&nbsp;75,&nbsp;0,&nbsp;130,&nbsp;1&nbsp;)** |![Индиго](./media/function-colors/color-indigo.png) |
-| **Color.Ivory** |**Колорвалуе ("#fffff0"&nbsp;)**<br>**Колорвалуе ("берег слоновой кости"&nbsp;)** |**RGBA (&nbsp;255,&nbsp;255,&nbsp;240,&nbsp;1&nbsp;)** |![Слоновая кость](./media/function-colors/color-ivory.png) |
+| **Color.Ivory** |**Колорвалуе ("#fffff0"&nbsp;)**<br>**Колорвалуе ("Кот-д'Ивуар"&nbsp;)** |**RGBA (&nbsp;255,&nbsp;255,&nbsp;240,&nbsp;1&nbsp;)** |![Слоновая кость](./media/function-colors/color-ivory.png) |
 | **Color.Khaki** |**Колорвалуе ("#f0e68c"&nbsp;)**<br>**Колорвалуе ("хаки"&nbsp;)** |**RGBA (&nbsp;240,&nbsp;230,&nbsp;140,&nbsp;1&nbsp;)** |![Хаки](./media/function-colors/color-khaki.png) |
 | **Color.Lavender** |**Колорвалуе ("#e6e6fa"&nbsp;)**<br>**Колорвалуе ("бледный"&nbsp;)** |**RGBA (&nbsp;230,&nbsp;230,&nbsp;250,&nbsp;1&nbsp;)** |![Бледный розовато-лиловый](./media/function-colors/color-lavender.png) |
 | **Color.LavenderBlush** |**Колорвалуе ("#fff0f5"&nbsp;)**<br>**Колорвалуе ("лавендерблуш"&nbsp;)** |**RGBA (&nbsp;255,&nbsp;240,&nbsp;245,&nbsp;1&nbsp;)** |![Розовато-лиловый](./media/function-colors/color-lavenderblush.png) |
