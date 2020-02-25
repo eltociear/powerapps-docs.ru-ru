@@ -7,7 +7,7 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.reviewer: ''
-ms.date: 11/26/2019
+ms.date: 02/18/2020
 ms.author: kvivek
 search.audienceType:
 - maker
@@ -19,12 +19,12 @@ search.app:
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: f3eaab5226946c3a5cfbb99c7b4029d587fca247
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d07cec7afb328917b7fe8e01038fad0fa5d3d516
+ms.sourcegitcommit: 1137abc4660ffb3432adbc702b1c5dae3293aa58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680358"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77479158"
 ---
 # <a name="whats-new-in-power-apps"></a>Новые возможности Power Apps
 
@@ -41,7 +41,9 @@ ms.locfileid: "74680358"
 
 ## <a name="release-plan"></a>План выпуска
 
-В целях планирования сведения о новых возможностях, намеченных к выпуску в ближайшие месяцы, см. в [плане выпуска 2019 второй волны](https://docs.microsoft.com/power-platform-release-plan/2019wave2/microsoft-powerapps/planned-features)
+Ниже приведены ссылки на сведения о новых возможностях, выпущенных недавно или намеченных к выпуску в ближайшие месяцы. Эти сведения можно использовать для планирования.
+- [План выпуска 2019 второй волны](https://docs.microsoft.com/power-platform-release-plan/2019wave2/microsoft-powerapps/planned-features)
+- [План выпуска 2020 первой волны](https://docs.microsoft.com/power-platform-release-plan/2020wave1/microsoft-powerapps/planned-features)
 
 ## <a name="known-limitations"></a>Известные ограничения
 

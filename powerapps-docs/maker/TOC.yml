@@ -8,6 +8,22 @@
       href: dev-community-plan.md
     - name: Что нового?
       href: ../whats-new.md
+    - name: Каталог обучения
+      items:
+        - name: Каталог обучения
+          href: ../learning-catalog/get-started.md
+        - name: Бизнес-руководитель
+          href: ../learning-catalog/bdm.md
+        - name: Создатель приложений
+          href: ../learning-catalog/app-maker.md
+        - name: Разработчик
+          href: ../learning-catalog/developer.md
+        - name: Администратор
+          href: ../learning-catalog/administrator.md
+        - name: Консультант в конкретной области
+          href: ../learning-catalog/functional-consultant.md
+        - name: архитектор решений;
+          href: ../learning-catalog/solution-architect.md
 - name: Поиск и запуск приложений
   href: ../user/index.md
   items:
