@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6c6f033027fb9ce29ba443efab2b5c14ec5ea013
-ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
+ms.openlocfilehash: 2f41edb15bec061887ebe41f375cb1498280857c
+ms.sourcegitcommit: 0e41cc0c944e6b0ee22a7e183e40c52fd553b7be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77145351"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77563676"
 ---
 # <a name="keyboard-shortcuts-for-canvas-apps"></a>Сочетания клавиш для приложений Canvas
 
@@ -32,6 +32,7 @@ ms.locfileid: "77145351"
 | Ctrl + O (или ALT + F) | Откройте файл. |
 | Ctrl + Shift + S (или Alt + P) | Сохраните приложение с другим именем. |
 | CTRL+S | Сохраните приложение с тем же именем или в первый раз. |
+| CTRL+SHIFT+P | Сохраните приложение и активируйте диалоговое окно публикации. |
 | F12 | Скачайте файл приложения (. MSApp). |
 | Alt+F | Откройте меню **файл** . |
 
@@ -42,7 +43,7 @@ ms.locfileid: "77145351"
 | Введите | Выполните выбранную команду. |
 | Вкладка | Перемещение между командами на выбранной вкладке, а затем на следующую вкладку. |
 | CTRL+F6 | Перейдите к следующему ориентиру. |
-| Ctrl + Shift + F6 | Перейдите к предыдущему ориентиру. |
+| CTRL + SHIFT + F6 | Перейдите к предыдущему ориентиру. |
 | Alt+I | Перейдите на вкладку **Вставка** . |
 
 ## <a name="editing"></a>Изменение
