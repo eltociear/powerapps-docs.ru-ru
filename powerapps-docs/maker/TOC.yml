@@ -879,8 +879,10 @@
           href: ./canvas-apps/dev-appsource-test-drive.md
         - name: Создание компонента
           items:
-            - name: Обзор
+            - name: Общие сведения о компонентах
               href: ./canvas-apps/create-component.md
+            - name: Библиотека компонентов
+              href: ./canvas-apps/component-library.md
             - name: Формулы поведения
               href: ./canvas-apps/component-behavior.md
         - name: Внедрение приложений на основе холста в другие приложения
@@ -1531,18 +1533,20 @@
       items:
         - name: Использование решений
           href: ./common-data-service/use-solution-explorer.md
-        - name: Использование решения Common Data Service по умолчанию
+        - name: Использование решения для настройки
           href: ./common-data-service/use-solutions-for-your-customizations.md
+        - name: Общие сведения об издателе решения
+          href: ./common-data-service/change-solution-publisher-prefix.md
+        - name: Создание решения
+          href: ./common-data-service/create-solution.md
         - name: Импорт решений
           href: ./common-data-service/import-update-export-solutions.md
         - name: Обновление или модернизация решений
           href: ./common-data-service/update-solutions.md
         - name: Экспорт решений
           href: ./common-data-service/export-solutions.md
-        - name: Переход к конкретному решению
-          href: ./common-data-service/navigate-specific-solution.md
-        - name: Создание решения
-          href: ./common-data-service/create-solution.md
+        - name: Объединение управляемых решений
+          href: ./common-data-service/how-managed-solutions-merged.md
         - name: Использование переменных среды
           href: ./common-data-service/EnvironmentVariables.md
         - name: Просмотр слоев решений
@@ -1555,12 +1559,8 @@
           href: ./common-data-service/common-issues-resolutions-solution-checker.md
         - name: Использование сегментированных решений
           href: ./common-data-service/use-segmented-solutions-patches-simplify-updates.md
-        - name: Общие сведения об издателе решения
-          href: ./common-data-service/change-solution-publisher-prefix.md
         - name: Настройка управляемых свойств в метаданных
           href: ./common-data-service/set-managed-properties-metadata.md
-        - name: Публикация изменений
-          href: ./common-data-service/publish-changes-for-use-customer-service-hub.md
         - name: Советы и рекомендации
           href: ./common-data-service/solution-best-practices.md
     - name: Работа с потоками данных
