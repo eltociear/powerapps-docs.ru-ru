@@ -91,6 +91,12 @@
               href: ../user/track-your-progress-with-dashboard-and-charts.md
             - name: "Добавление панелей мониторинга Power\_BI"
               href: ../user/add-powerbi-dashboards.md
+        - name: Совместная работа
+          items:
+            - name: Использование OneDrive для бизнеса
+              href: ../user/one-drive.md
+            - name: Создание заметок с помощью OneNote
+              href: ../user/onenote.md
             - name: "Совместная работа с помощью\_SharePoint"
               href: ../user/collaborate-using-sharepoint.md
         - name: Поиск в записях
