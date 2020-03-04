@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 30046f0b9f2a47e7231b00aafe1633a7242e43c6
-ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
-ms.translationtype: HT
+ms.openlocfilehash: c70d73cb2dcdd9fd1832a10c4c89029cdb5c45ad
+ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76315407"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78264927"
 ---
 # <a name="formula-reference-for-power-apps"></a>Справочник формул для Power Apps
 Формулы объединяют множество элементов.  Ниже перечислены следующие элементы:
@@ -30,7 +30,7 @@ ms.locfileid: "76315407"
 
 К другим элементам относятся:
 
-* [все операторы](functions/operators.md);
+* [Операторы и идентификаторы](functions/operators.md)
 * [элементы управления и их свойства](reference-properties.md).
 * [Типы данных](functions/data-types.md)
 
@@ -111,7 +111,7 @@ ms.locfileid: "76315407"
 
 **[CountRows](functions/function-table-counts.md)** — подсчитывает количество записей в таблице.   
 
-## <a name="d"></a>D
+## <a name="d"></a>Г
 **[DataSourceInfo](functions/function-datasourceinfo.md)** — предоставляет сведения об источнике данных.
 
 **[Date](functions/function-date-time.md)** — возвращает значение даты и времени на основе значений **Year**, **Month** и **Day**.  
@@ -138,7 +138,7 @@ ms.locfileid: "76315407"
 
 **[DropColumns](functions/function-table-shaping.md)** — возвращает таблицу, удаляя из нее один или несколько столбцов.
 
-## <a name="e"></a>E
+## <a name="e"></a>Д
 **[EditForm](functions/function-form.md)** — сбрасывает элемент управления формы для редактирования элемента.
 
 **[Enable](functions/function-enable-disable.md)** — включает сигнал, например **[Location](functions/signals.md)** для считывания GPS-координат.
@@ -153,7 +153,7 @@ ms.locfileid: "76315407"
 
 **[Exp](functions/function-numericals.md)** — возвращает *e*, возведенное в указанную степень.
 
-## <a name="f"></a>F
+## <a name="f"></a>C
 **[Filter](functions/function-filter-lookup.md)** — возвращает таблицу, отфильтрованную на основе одного или нескольких критериев.
 
 **[Find](functions/function-find.md)** — проверяет, находится ли одна строка внутри другой, и возвращает расположение.
@@ -209,7 +209,7 @@ ms.locfileid: "76315407"
 
 **[Ln](functions/function-numericals.md)** — возвращает натуральный логарифм.
 
-**[LoadData](functions/function-savedata-loaddata.md)**  — загружает коллекцию из частного хранилища Power Apps.
+**[LoadData](functions/function-savedata-loaddata.md)** — загружает коллекцию из хранилища локального устройства.
 
 **[Location](functions/signals.md)** — возвращает расположение в виде координат на карте, используя глобальную навигационную спутниковую систему (GPS) и другие сведения.
 
@@ -234,7 +234,7 @@ ms.locfileid: "76315407"
 
 **[Month](functions/function-datetime-parts.md)** — извлекает сведения о месяце из значения даты и времени.
 
-## <a name="n"></a>N
+## <a name="n"></a>В
 **[Navigate](functions/function-navigate.md)** — изменяет отображаемый экран.
 
 **[NewForm](functions/function-form.md)** — сбрасывает элемент управления формы для создания элемента.
@@ -296,8 +296,8 @@ ms.locfileid: "76315407"
 
 **[RoundUp](functions/function-round.md)** — округляет до ближайшего числа в большую сторону.
 
-## <a name="s"></a>S
-**[SaveData](functions/function-savedata-loaddata.md)**  — сохраняет коллекцию в частном хранилище Power Apps.
+## <a name="s"></a>С
+**[SaveData](functions/function-savedata-loaddata.md)** — сохраняет коллекцию в хранилище локального устройства.
 
 **[Search](functions/function-filter-lookup.md)** — находит записи в таблице, содержащие строку в одном из столбцов.  
 
@@ -384,7 +384,7 @@ ms.locfileid: "76315407"
 
 **[ViewForm](functions/function-form.md)** — сбрасывает элемент управления формой для просмотра существующего элемента.
 
-## <a name="w"></a>W
+## <a name="w"></a>Ср
 **[Weekday](functions/function-datetime-parts.md)** — извлекает сведения о дне недели из значения даты и времени.
 
 **[With](functions/function-with.md)**  — вычисляет значения и выполняет действия для одной записи, включая встроенные записи именованных значений.

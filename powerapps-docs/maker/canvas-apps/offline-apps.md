@@ -7,29 +7,30 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 01/31/2019
+ms.date: 02/29/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1dbf192664f2c8a812650b487a9931de0160eeab
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6ec1a55713b3cce0a98c02058124b5b3d159b376
+ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675518"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78265562"
 ---
 # <a name="develop-offline-capable-canvas-apps"></a>Разработка приложений на основе холста, поддерживающих автономный режим работы
 
 Мобильным пользователям часто приходится работать даже при ограниченном или отсутствии подключения. При создании приложения Canvas можно выполнять следующие задачи:
 
 - Откройте Power Apps Mobile и запустите приложения в автономном режиме.
-- определять режим приложения (интерактивный, автономный или режим лимитного подключения) с помощью объекта сигнала [подключения](../canvas-apps/functions/signals.md#connection);
-- использовать [коллекции](../canvas-apps/create-update-collection.md) и функции, например [LoadData и SaveData](../canvas-apps/functions/function-savedata-loaddata.md), для основного хранилища данных в автономном режиме.
+- определять режим приложения (интерактивный, автономный или режим лимитного подключения) с помощью объекта сигнала [подключения](functions/signals.md#connection);
+- Использование [коллекций](create-update-collection.md) и функций [ **LoadData** и **SaveData** ](functions/function-savedata-loaddata.md) для базовых хранилищ данных в автономном режиме.
 
-## <a name="limitations"></a>Ограничений
+Эта статья содержит пример с использованием данных Twitter.  Еще более простой пример, в котором не требуется соединение, включается в [Справочник по функциям **LoadData** и **SaveData** ](functions/function-savedata-loaddata.md).
+
+## <a name="limitations"></a>Ограничения
 
 **LoadData** и **SaveData** объединяют, образуя простой механизм хранения небольших объемов данных на локальном устройстве. С помощью этих функций можно добавить в приложение простые автономные возможности.
 
@@ -79,14 +80,14 @@ ms.PowerAppsDecimalTransform: true
 
 1. На панели **древовидного представления** выберите **приложение**, а затем задайте для свойства **OnStart** значение этой формулы:
 
-    ```powerapps-comma
-    If( Connection.Connected;
-        ClearCollect( LocalTweets; Twitter.SearchTweet( "PowerApps"; {maxResults: 10} ) );;
-            Set( statusText; "Online data" );
-        LoadData( LocalTweets; "LocalTweets"; true );;
-            Set( statusText; "Local data" )
-    );;
-    SaveData( LocalTweets; "LocalTweets" );;
+    ```powerapps-dot
+    If( Connection.Connected,
+        ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 10} ) );
+            Set( statusText, "Online data" ),
+        LoadData( LocalTweets, "LocalTweets", true );
+            Set( statusText, "Local data" )
+    );
+    SaveData( LocalTweets, "LocalTweets" );
     ```
 
     > [!div class="mx-imgBorder"]
@@ -114,7 +115,7 @@ ms.PowerAppsDecimalTransform: true
 1. В шаблоне коллекции добавьте три элемента управления [**Label**](controls/control-text-box.md) и задайте для свойства **Text** каждой метки одно из следующих значений:
 
     - `ThisItem.UserDetails.FullName & " (@" & ThisItem.UserDetails.UserName & ")"`
-    - `Text(DateTimeValue(ThisItem.CreatedAtIso); DateTimeFormat.ShortDateTime)`
+    - `Text(DateTimeValue(ThisItem.CreatedAtIso), DateTimeFormat.ShortDateTime)`
     - `ThisItem.TweetText`
 
 1. Сделайте текст в последней метке полужирным, чтобы Галерея соответствовала этому примеру.
@@ -128,7 +129,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **Text** новой метки следующую формулу:
 
-    `If( Connection.Connected; "Connected"; "Offline" )`
+    `If( Connection.Connected, "Connected", "Offline" )`
 
 Эта формула определяет, находится ли устройство в сети. Если это так, метка отображается как **Подключенная**; в противном случае отображается **режим "вне сети**".
 
@@ -149,26 +150,26 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для этой формулы свойство **OnSelect** кнопки:
 
-    ```powerapps-comma
-    If( Connection.Connected;
-        Twitter.Tweet( ""; {tweetText: NewTweetTextInput.Text} );
-        Collect( LocalTweetsToPost; {tweetText: NewTweetTextInput.Text} );;
-            SaveData( LocalTweetsToPost; "LocalTweetsToPost" )
-    );;
-    Reset( NewTweetTextInput );;
+    ```powerapps-dot
+    If( Connection.Connected,
+        Twitter.Tweet( "", {tweetText: NewTweetTextInput.Text} ),
+        Collect( LocalTweetsToPost, {tweetText: NewTweetTextInput.Text} );
+            SaveData( LocalTweetsToPost, "LocalTweetsToPost" )
+    );
+    Reset( NewTweetTextInput );
     ```  
 
 1. В свойстве **OnStart** для **приложения**добавьте строку в конце формулы:
 
-    ```powerapps-comma
-    If( Connection.Connected;
-        ClearCollect( LocalTweets; Twitter.SearchTweet( "PowerApps"; {maxResults: 100} ) );;
-            Set( statusText; "Online data" );
-        LoadData( LocalTweets; "LocalTweets"; true );;
-            Set( statusText; "Local data" )
-    );;
-    SaveData( LocalTweets; "LocalTweets" );;
-    LoadData( LocalTweetsToPost; "LocalTweetsToPost"; true );;  // added line
+    ```powerapps-dot
+    If( Connection.Connected,
+        ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 100} ) );
+            Set( statusText, "Online data" ),
+        LoadData( LocalTweets, "LocalTweets", true );
+            Set( statusText, "Local data" )
+    );
+    SaveData( LocalTweets, "LocalTweets" );
+    LoadData( LocalTweetsToPost, "LocalTweetsToPost", true );  // added line
     ```
 
     > [!div class="mx-imgBorder"]
@@ -194,12 +195,12 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для **онтимеренд** таймера следующую формулу:
 
-    ```powerapps-comma
-    If( Connection.Connected;
-        ForAll( LocalTweetsToPost; Twitter.Tweet( ""; {tweetText: tweetText} ) );;
-        Clear( LocalTweetsToPost );;
-        ClearCollect( LocalTweets; Twitter.SearchTweet( "PowerApps"; {maxResults: 10} ) );;
-        SaveData( LocalTweets; "LocalTweets" );;
+    ```powerapps-dot
+    If( Connection.Connected,
+        ForAll( LocalTweetsToPost, Twitter.Tweet( "", {tweetText: tweetText} ) );
+        Clear( LocalTweetsToPost );
+        ClearCollect( LocalTweets, Twitter.SearchTweet( "PowerApps", {maxResults: 10} ) );
+        SaveData( LocalTweets, "LocalTweets" );
    )
     ```
 
