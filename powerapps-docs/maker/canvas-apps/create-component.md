@@ -11,13 +11,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3c2864a7953e115c650ff5cee879d2a1227acdb4
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: b86f6c94a7a267fc28a70216c6b89d154cd7b865
+ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77911325"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78293231"
 ---
 # <a name="create-a-component-for-canvas-apps"></a>Создание компонента для приложений Canvas
 
@@ -113,7 +112,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства Components ( **элементы** ) значение этой формулы:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Table({Item:"SampleText"})
     ```
 
@@ -123,7 +122,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Убедитесь, что в списке свойств отображается свойство **Items** (как оно выполняется по умолчанию). Затем присвойте этому свойству значение, равное этому выражению:
 
-    ```powerapps-comma
+    ```powerapps-dot
     MenuComponent.Items
     ```
 
@@ -147,8 +146,8 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **Items** **MenuComponent_1** следующую формулу:
 
-    ```powerapps-comma
-    Table({Item:"Home"}; {Item:"Admin"}; {Item:"About"}; {Item:"Help"})
+    ```powerapps-dot
+    Table({Item:"Home"}, {Item:"Admin"}, {Item:"About"}, {Item:"Help"})
     ```
 
     Этот экземпляр напоминает этот рисунок, но можно настроить текст и другие свойства каждого экземпляра.
@@ -171,7 +170,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. На вкладке **Дополнительно** задайте этому выражению значение **выбранного** свойства, при необходимости изменяя цифру в имени коллекции:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Gallery1.Selected.Item
     ```
 
@@ -179,7 +178,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. На экране приложения по умолчанию добавьте метку и присвойте этому выражению свойство **Text** , при необходимости настроив цифру в имени компонента:
 
-    ```powerapps-comma
+    ```powerapps-dot
     MenuComponent_1.Selected
     ```
 
