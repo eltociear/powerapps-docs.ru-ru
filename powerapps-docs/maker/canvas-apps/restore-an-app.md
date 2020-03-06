@@ -7,28 +7,31 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/16/2016
+ms.date: 03/05/2020
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 15351f3fcfa166c281a1bc4d3213eace8f881d11
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: b5ba55bc48976c08eb79f527adedbe3ecabeeea8
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732753"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403316"
 ---
 # <a name="restore-a-canvas-app-to-a-previous-version-in-power-apps"></a>Восстановление предыдущей версии приложения Canvas в Power Apps
 В этой статье показано, как восстановить приложение холста до предыдущей версии, сохраненной в облаке из учетной записи Power Apps.
+
+> [!NOTE]
+> Вы можете восстановить только версии приложений, созданные за последние шесть месяцев.
 
 ## <a name="restore-an-app-from-your-account"></a>Восстановление приложения из учетной записи
 1. На сайте [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) на панели навигации слева щелкните или нажмите **Apps** (Приложения).
 
     ![Панель навигации слева](./media/restore-an-app/file-apps.png)
 
-2. (Необязательно.) В левом верхнем углу отфильтруйте список приложений, чтобы отобразить только те из них, которые вам принадлежат или в создании которых вы участвуете.
+2. Необязательно: в левом верхнем углу отфильтруйте список приложений, чтобы показать только те из них, которые вам принадлежат или в создании которых вы участвуете.
 
     ![Фильтрация приложений, которыми вы владеете](./media/restore-an-app/filter-list.png)
 
