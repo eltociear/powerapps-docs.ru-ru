@@ -6,21 +6,23 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: ''
-ms.date: 11/27/2019
-ms.author: tapanm
+ms.reviewer: tapanm
+ms.date: 03/04/2020
+ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e2b11b536c29a31053353f3c2616a594208e8acf
-ms.sourcegitcommit: 54d52a9c3c9242f95be54f4444054d9c41ed577c
+ms.openlocfilehash: 227482b383acd3117cc78eddf97698ffa9146698
+ms.sourcegitcommit: 56c8c7cc64695ccb00e0d021c9f98cf70b69b4a2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75928900"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78845199"
 ---
 # <a name="connect-to-common-data-service"></a>Подключение к Common Data Service
+
+## <a name="overview"></a>Обзор
 
 Вы можете безопасно хранить бизнес-данные в Common Data Service и создавать полнофункциональные приложения в Power Apps, чтобы пользователи могли управлять этими данными. Эти данные также можно интегрировать в решения, включающие Power автоматизиру, Power BI и данные из Dynamics 365.
 
@@ -40,4 +42,6 @@ ms.locfileid: "75928900"
 
 Соединитель Common Data Service является более надежным, чем соединитель Dynamics 365 и приближается к сравнению функций.
 
-Дополнительные сведения: [что такое Common Data Service?](../../common-data-service/data-platform-intro.md)
+### <a name="common-data-service-and-the-improved-data-source-experience"></a>Common Data Service и Улучшенный интерфейс источников данных
+
+Если вы создали приложение Canvas с соединителем Common Data Service до 2019 ноября, возможно, у вас не будет преимуществ последней версии Common Data Service. Дополнительные сведения и обновление подключения см. в статье [улучшения подключения Common Data Service](../use-native-cds-connector.md) .

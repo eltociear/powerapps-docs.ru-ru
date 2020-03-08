@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 12/02/2019
+ms.date: 03/06/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c5814eedfd05ea5bba19a469dad1b3e28c311974
-ms.sourcegitcommit: 6f94650ea540db69d2723c3c5dff9de8c59056cd
+ms.openlocfilehash: 3e06023319cdc799dd7573e830f499fbcf15348d
+ms.sourcegitcommit: 14723b60c9568169c7d7becea06051e7314080bc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75859133"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856873"
 ---
 # <a name="power-apps-custom-visual-for-power-bi"></a>Пользовательский визуальный элемент Power Apps для Power BI
 
@@ -54,7 +53,7 @@ Power BI позволяет получать аналитические данн
 
     ![Пользовательская формула](./media/powerapps-custom-visual/custom-formula.png)
 
-    Эта формула соединяет данные Power BI с источником данных клиента: `LookUp(Customer;Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
+    Эта формула соединяет данные Power BI с источником данных клиента: `LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
 
    Отчет Power BI и экземпляр Power Apps, который был запущен, совместно используют динамическое подключение к данным. Пока они открыты, можно отфильтровать или изменить данные в отчете, чтобы увидеть обновленные данные сразу же в приложении в Power Apps Studio.
 
@@ -83,6 +82,7 @@ Power BI позволяет получать аналитические данн
     - Чтобы эта функция была доступна в приложении, необходимо создать новое приложение из пользовательского визуального элемента Power Apps в Power BI отчете.
     - Необходимо использовать источник, поддерживающий [DirectQuery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources) , и подключение к данным должно быть создано с помощью метода DirectQuery.
 - Power Apps в Power BI Desktop предоставляет данные для Power Apps Studio при создании приложений, но не во время редактирования. Используйте Power BI Web для предварительного просмотра данных при редактировании приложений.
+- Мобильное приложение Power BI не поддерживает управление микрофоном в визуальных элементах Power Apps.
 
 > [!NOTE]
 > Рекомендуется сначала опубликовать отчет в служба Power BI, а затем создать или изменить приложения.
@@ -91,10 +91,10 @@ Power BI позволяет получать аналитические данн
 
 В следующей таблице перечислены возможности поддержки браузера для просмотра, создания и изменения действий пользовательского визуального элемента Power Apps. Поддерживаемые браузеры и действия определяются галочкой (&check;).
 
-|Браузер|страницы|Создать|Изменение
+|Браузер.|Вид|Создать|Изменить
 |-|-|-|-
 |Microsoft Edge|&check;|&check;|&check;
-|Internet Explorer 11|&check;
+|Internet Explorer 11|&check;
 |Google Chrome|&check;|&check;|&check;
 |Safari \*|&check;
 |Mozilla Firefox
@@ -114,7 +114,7 @@ Power BI позволяет получать аналитические данн
 Дополнительные сведения см. в [документации по специальным возможностям Power BI]( https://docs.microsoft.com/power-bi/desktop-accessibility) .
 
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * Пройдите простой [пошаговый учебник](embed-powerapps-powerbi.md).
 * Ознакомьтесь с нашим [видео](https://aka.ms/powerappscustomvisualvideo).
