@@ -14,18 +14,17 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: f5f09bab44f3f229b47d9a801703b3aa10cba06d
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729758"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404290"
 ---
 # <a name="app-object-in-power-apps"></a>Объект приложения в Power Apps
 
 Предоставляет сведения о работающем в настоящее время приложении и контроле над поведением приложения.
 
-## <a name="description"></a>Description
+## <a name="description"></a>Описание
 
 Как и элемент управления, объект **приложения** предоставляет свойства, определяющие отображаемый экран и предлагающий пользователю сохранить изменения, чтобы они не были потеряны. У каждого приложения есть объект **приложения** .
 
@@ -102,7 +101,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **конфирмексит** объекта **приложения** следующее выражение:
 
-    ```powerapps-comma
+    ```powerapps-dot
     AccountForm.Unsaved Or ContactForm.Unsaved
     ```
 
@@ -113,9 +112,9 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства **конфирмекситмессаже** объекта **приложения** следующую формулу:
 
-    ```powerapps-comma
-    If( AccountsForm.Unsaved;
-        "Accounts form has unsaved changes.";
+    ```powerapps-dot
+    If( AccountsForm.Unsaved,
+        "Accounts form has unsaved changes.",
         "Contacts form has unsaved changes."
     )
     ```

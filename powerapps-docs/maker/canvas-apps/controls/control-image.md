@@ -14,28 +14,27 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d35150434d8fec7694f493f2d62c67997e2c839c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727169"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404021"
 ---
 # <a name="image-control-in-power-apps"></a>Элемент управления "изображение" в Power Apps
 Этот элемент управления служит для показа изображения из локального файла или источника данных.
 
-## <a name="description"></a>Description
+## <a name="description"></a>Описание
 Добавив в приложение один или несколько элементов управления **Изображение**, можно отобразить изображения, не входящие в набор данных, или изображения из записей в источниках данных.
 
 ## <a name="key-properties"></a>Основные свойства
-**[Image](properties-visual.md)**  — имя изображения, которое отображается в элементе управления "Изображение", "Звук" или "Микрофон".
+**[Image](properties-visual.md)** — имя изображения, которое отображается в элементе управления "Изображение", "Звук" или "Микрофон".
 
 ## <a name="additional-properties"></a>Дополнительные свойства
 **[AccessibleLabel](properties-accessibility.md)** — метка для средств чтения с экрана.
 
 **ApplyEXIFOrientation** — автоматическое применения ориентации, которая указана во внедренных в изображение данных EXIF.
 
-**AutoDisableOnSelect** — автоматически отключает элемент управления при выполнении функции, назначенной свойству OnSelect.
+**AutoDisableOnSelect** — автоматическое отключение элемента управления при выполнении функции, назначенной свойству OnSelect.
 
 **[BorderColor](properties-color-border.md)**  — цвет границы элемента управления.
 
@@ -57,7 +56,7 @@ ms.PowerAppsDecimalTransform: true
 
 **FlipVertical** — переворачивание изображения по вертикали перед отображением.
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
@@ -67,7 +66,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[HoverFill](properties-color-border.md)**  — цвет фона элемента управления при удерживании указателя мыши на нем.
 
-**[ImagePosition](properties-visual.md)** — расположение изображения на экране или в элементе управления, если его размеры отличаются от размеров изображения: **Fill** (Заполнить), **Fit** (По размеру), **Stretch** (Растянуть), **Tile** (Плитка) или **Center** (По центру).
+**[ImagePosition](properties-visual.md)**  — расположение изображения на экране или в элементе управления, если его размеры отличаются от размеров изображения (**Fill**, **Fit**, **Stretch**, **Tile** или **Center**).
 
 **ImageRotation** — поворачивание изображения перед его отображением.  Значения: без поворота, по часовой стрелке на 90 градусов, против часовой стрелки на 90 градусов и по часовой стрелке на 180 градусов.
 
@@ -99,7 +98,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[TabIndex](properties-accessibility.md)** — порядок навигации с помощью клавиатуры относительно других элементов управления.
 
-**[Tooltip](properties-core.md)** — пояснительный текст, отображаемый при наведении указателя мыши на элемент управления.
+**[Tooltip](properties-core.md)**  — пояснительный текст, отображаемый при наведении указателя мыши на элемент управления.
 
 **Transparency** — прозрачность, или показатель того, насколько видны элементы управления за изображением.
 
@@ -112,7 +111,7 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Remove**( *DataSource*;; ThisItem )](../functions/function-remove-removeif.md)
+[**Remove**( *DataSource*; ThisItem )](../functions/function-remove-removeif.md)
 
 ## <a name="examples"></a>Примеры
 ### <a name="show-an-image-from-a-local-file"></a>Показ изображения из локального файла
@@ -154,7 +153,7 @@ ms.PowerAppsDecimalTransform: true
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Если графика используется как кнопка, значение **[TabIndex](properties-accessibility.md)** должно быть равно нулю и выше. При этом пользователи смогут применять клавиатуру для навигации.
-* Индикаторы фокусировки должны быть четко видны, если графика используется как кнопка. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
+* Индикаторы фокусировки должны быть четко видны, если графика используется как кнопка. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
 
     > [!NOTE]
   > Если значение **[TabIndex](properties-accessibility.md)** равно нулю или больше него, **изображение** воспринимается в качестве кнопки. Внешне это незаметно, но средства чтения с экрана правильно распознают изображение в качестве кнопки. Если значение **[TabIndex](properties-accessibility.md)** меньше нуля, **изображение** воспринимается только как изображение.

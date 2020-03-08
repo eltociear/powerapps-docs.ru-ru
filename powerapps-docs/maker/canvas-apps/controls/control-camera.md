@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: f70e6d8015a75f26d0716a144c7f524181f34664
-ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
-ms.translationtype: HT
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76315269"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403982"
 ---
 # <a name="camera-control-in-power-apps"></a>Элемент управления "Камера" в Power Apps
 С помощью элемента управления "Камера" пользователь может делать фотографии, используя камеру устройства.
@@ -63,7 +62,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[TabIndex](properties-accessibility.md)** — порядок навигации с помощью клавиатуры относительно других элементов управления.
 
-**[Tooltip](properties-core.md)** — пояснительный текст, отображаемый при наведении указателя мыши на элемент управления.
+**[Tooltip](properties-core.md)**  — пояснительный текст, отображаемый при наведении указателя мыши на элемент управления.
 
 **[Visible](properties-core.md)** определяет, отображается ли элемент управления или он скрыт.
 
@@ -74,12 +73,12 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Patch**( *DataSource*;; *BaseRecord*;; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>Пример
 ### <a name="add-photos-to-an-image-gallery-control"></a>Добавление фотографий в коллекцию изображений
 1. Добавьте в приложение элемент управления **Камера**, назовите его **MyCamera** и назначьте его свойству **[OnSelect](properties-core.md)** следующую формулу:<br>
-   **Collect(MyPix; MyCamera.Photo)**
+   **Collect(MyPix, MyCamera.Photo)**
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
@@ -92,7 +91,7 @@ ms.PowerAppsDecimalTransform: true
 
     Сделанная вами фотография появится в элементе управления **Коллекция изображений**.
 6. Сделайте столько фотографий, сколько хотите, а затем вернитесь в рабочую область по умолчанию, нажав клавишу Esc.
-7. (Необязательно.) Назначьте свойству **OnSelect** элемента управления **Изображение** в элементе управления **Коллекция изображений** формулу **Remove(MyPix;; ThisItem)** , нажмите клавишу F5, а затем щелкните фотографию, чтобы удалить ее.
+7. (Необязательно.) Назначьте свойству **OnSelect** элемента управления **Изображение** в элементе управления **Коллекция изображений** формулу **Remove(MyPix; ThisItem)** , нажмите клавишу F5, а затем щелкните фотографию, чтобы удалить ее.
 
 Для сохранения фотографий на локальном устройстве используйте функцию **[SaveData](../functions/function-savedata-loaddata.md)** , а для обновления источника данных — функцию **[Patch](../functions/function-patch.md)** .
 
@@ -112,4 +111,4 @@ ms.PowerAppsDecimalTransform: true
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
+* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .

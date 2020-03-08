@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d1397f9fd2859611a3cd54023210a27cd5977834
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724925"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404568"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-power-apps"></a>Добавление подключения к данным в приложение Canvas в Power Apps
 
@@ -27,11 +27,11 @@ ms.locfileid: "74724925"
 Выполнив действия, описанные в этой статье, приступайте к [следующему шагу](#next-steps) — отображению и администрированию данных из источника в приложении, как в следующих примерах:
 
 * подключение к OneDrive и управление данными в книге Excel в приложении;
-* подключение к Twilio и отправка SMS-сообщений из приложения;
+* Подключение к Twilio и отправка SMS-сообщений из приложения;
 * Подключитесь к Common Data Service и обновите сущность из приложения.
 * подключение к серверу SQL Server и обновление таблицы из приложения.
 
-## <a name="prerequisites"></a>Технические условия
+## <a name="prerequisites"></a>Предварительные требования
 
 [Зарегистрируйтесь](../signup-for-powerapps.md) в Power Apps, а затем выполните [Вход](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) , указав те же учетные данные, которые использовались для регистрации.
 
@@ -51,7 +51,7 @@ ms.locfileid: "74724925"
 
 1. Выберите **Добавить источник данных**.
 
-1. Если список подключений содержит нужный, выберите его, чтобы добавить в приложение. Или переходите к следующему шагу.
+1. Если список подключений содержит нужный, выберите его, чтобы добавить в приложение. В противном случае переходите к следующему шагу.
 
     ![Выбрать существующее подключение](./media/add-data-connection/choose-existing-connection.png)
 
@@ -82,7 +82,7 @@ ms.locfileid: "74724925"
 
     ![Изменение подключения](./media/add-data-connection/change-connection.png)
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 * Для отображения и обновления данных в таких источниках, как Excel, SharePoint, Common Data Service или SQL Server, [добавьте коллекцию](add-gallery.md)и [Добавьте форму](add-form.md).
-* Для работы с данными в других источниках используйте специальные функции для таких соединителей, как [Office 365 Outlook](connections/connection-office365-outlook.md), [Twitter](connections/connection-twitter.md) и [Microsoft Translator](connections/connection-microsoft-translator.md).
+* Для работы с данными в других источниках используйте специальные функции для таких соединителей, как [Office 365 Outlook](connections/connection-office365-outlook.md), [Twitter](connections/connection-twitter.md) и [Microsoft Translator](connections/connection-microsoft-translator.md).
