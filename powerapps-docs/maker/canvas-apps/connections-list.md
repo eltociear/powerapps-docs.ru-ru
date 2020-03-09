@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d78ce9b571ed925e68747f2307d59f5f143e13eb
-ms.sourcegitcommit: 366f0d1b8309ab1fd533ebd7e1b41a69a99fd25a
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302905"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403375"
 ---
 # <a name="overview-of-canvas-app-connectors-for-power-apps"></a>Общие сведения о соединителях Canvas-App для Power Apps
 Данные являются основой большинства приложений, включая те, которые вы создаете в Power Apps. Эти данные хранятся в *источниках данных*. Вы переносите их в приложение при создании *подключения*. Для подключения используется определенный *соединитель*, который обеспечивает обмен данными с источником данных. В Power Apps есть соединители для многих популярных служб и локальных источников данных, включая SharePoint, SQL Server, Office 365, Salesforce и Twitter. Чтобы приступить к добавлению данных в приложение Canvas, см. статью [Добавление подключения к данным в Power Apps](add-data-connection.md).
@@ -66,15 +66,15 @@ ms.locfileid: "75302905"
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 | --- | --- | --- | --- | --- |
-| ![Common Data Service](./media/connections-list/cdm.png) |[**Common Data Service**](connections/connection-common-data-service.md) |&nbsp; |![Облачное хранилище](./media/connections-list/onedrive.png) | ** [**облачного хранилища**](connections/cloud-storage-blob-connections.md) |
+| ![Common Data Service](./media/connections-list/cdm.png) |[**Common Data Service**](connections/connection-common-data-service.md) |&nbsp; |![С другой стороны, облачное хранилище](./media/connections-list/onedrive.png) | ** [**облачного хранилища**](connections/cloud-storage-blob-connections.md) |
 | ![Dynamics 365.](./media/connections-list/dynamics-365.png) |[**Dynamics 365**](connections/connection-dynamics-crmonline.md) |&nbsp; | ![Dynamics AX](./media/connections-list/dynamics-ax.png) |[**Dynamics AX**](connections/connection-dynamicsax.md) |
 |![Excel](./media/connections-list/excel.png) |[**Excel**](connections/connection-excel.md) |&nbsp; |![Microsoft Translator](./media/connections-list/microsoft-translator.png) |[**Microsoft Translator**](connections/connection-microsoft-translator.md) |
 |![Outlook в Office 365](./media/connections-list/office365.png) |[**Outlook в Office 365**](connections/connection-office365-outlook.md) |&nbsp; | ![Пользователи Office 365](./media/connections-list/office365.png) |[**Пользователи Office 365**](connections/connection-office365-users.md) |
-| ![Oracle](./media/connections-list/oracle-icon.png) |[**СУБД**](connections/connection-oracledb.md) |&nbsp; | ![Power BI](./media/connections-list/powerbi.png) |[**Power BI**](connections/connection-powerbi.md) |
+| ![Oracle;](./media/connections-list/oracle-icon.png) |[**СУБД**](connections/connection-oracledb.md) |&nbsp; | ![Power BI](./media/connections-list/powerbi.png) |[**Power BI**](connections/connection-powerbi.md) |
 | ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; | ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) 
 |![Twitter](./media/connections-list/twitter.png) |[**Twitter**](connections/connection-twitter.md)
 
-* * Применяется к большому двоичному объекту Azure, Box, Dropbox, Google Drive, OneDrive и OneDrive для бизнеса
+\* * Применяется к большому двоичному объекту Azure, Box, Dropbox, Google Drive, OneDrive и OneDrive для бизнеса
 
 ## <a name="standard-and-custom-connectors"></a>Стандартные и пользовательские соединители
 Power Apps предоставляет *стандартные* соединители для многих широко используемых источников данных, например перечисленных выше. Если Power Apps имеет стандартный соединитель для типа источника данных, который вы хотите использовать, следует использовать этот соединитель. Чтобы подключиться к другому типу источника данных, например созданной вами службе, см. инструкции по [регистрации и использованию настраиваемых соединителей](../canvas-apps/register-custom-api.md).
