@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/06/2020
 ms.locfileid: "78845383"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="common-data-service-and-the-improved-data-source-experience"></a>Common Data Service и Улучшенный интерфейс источников данных
 
@@ -89,10 +90,10 @@ ms.locfileid: "78845383"
     
     На этом этапе могут возникнуть ошибки, если вы используете поле набора параметров или жестко запрограммированные текстовые значения GUID.  <br><br> 
     
-    - *Значения набора параметров*: Если вы используете поле набора параметров с текстовым идентификатором для набора параметров, используйте точечную нотацию вместо ссылки на значение набора параметров. Например, измените `Patch(Accounts, OptionSet1 = “12345”)` на `Patch(Accounts, OptionSet.Item1)`, где `Item1` соответствует значению `12345`. <br>
+    - *Значения набора параметров*: Если вы используете поле набора параметров с текстовым идентификатором для набора параметров, используйте точечную нотацию вместо ссылки на значение набора параметров. Например, измените `Patch(Accounts; OptionSet1 = “12345”)` на `Patch(Accounts; OptionSet.Item1)`, где `Item1` соответствует значению `12345`. <br>
     Дополнительные сведения см. в разделе " [подробные примеры](#detailed-examples) ".
     - *Идентификаторы GUID*: Если вы используете СТАТИЧЕСКУЮ строку GUID, например `015e45e1044e49f388115be07f2ee116`, преобразуйте ее в функцию, которая ВОЗВРАЩАЕТ объект GUID. например `GUID(“015e45e1044e49f388115be07f2ee116”)`. 
-    - *Уточняющие запросы*. Если для получения значений первого уровня поиска, таких как `Lookup(Contacts, ‘contactID’ = ThisItem.ContactID”)`, используются функции поиска, рассмотрите возможность использования `ThisItem.PrimaryContacts` (где примариконтактс — это имя сущности).
+    - *Уточняющие запросы*. Если для получения значений первого уровня поиска, таких как `Lookup(Contacts; ‘contactID’ = ThisItem.ContactID”)`, используются функции поиска, рассмотрите возможность использования `ThisItem.PrimaryContacts` (где примариконтактс — это имя сущности).
 
 ### <a name="improve-data-source-experience-and-common-data-service-views-is-off"></a>*Улучшение работы с источниками данных и представления Common Data Service* отключены:
 
@@ -124,10 +125,10 @@ ms.locfileid: "78845383"
 
 - Если имя элемента управления конфликтует, измените имя элемента управления на другое и уникальное. 
 - Для конфликтов имен полей и сущностей может отображаться формула, которая ожидает сущность, но разрешается в более локальное имя поля с областью действия. Используйте квадратную скобку с символом *@* , чтобы указать глобальную область, чтобы она была разрешаема в сущность. Например, **[@entityName]** .
-- *Значения набора параметров*: Если вы используете поле набора параметров с текстовым идентификатором для набора параметров, используйте точечную нотацию вместо ссылки на значение набора параметров. Например, измените `Patch(Accounts, OptionSet1 = “12345”)` на `Patch(Accounts, OptionSet.Item1)`, где `Item1` соответствует значению `12345`. <br>
+- *Значения набора параметров*: Если вы используете поле набора параметров с текстовым идентификатором для набора параметров, используйте точечную нотацию вместо ссылки на значение набора параметров. Например, измените `Patch(Accounts; OptionSet1 = “12345”)` на `Patch(Accounts; OptionSet.Item1)`, где `Item1` соответствует значению `12345`. <br>
 Дополнительные сведения см. в разделе " [подробные примеры](#detailed-examples) ".
 - *Идентификаторы GUID*: Если используется СТАТИЧЕСКАЯ строка GUID, например `015e45e1044e49f388115be07f2ee116`, преобразуйте ее в функцию, которая ВОЗВРАЩАЕТ объект GUID; например `GUID(“015e45e1044e49f388115be07f2ee116”)`. 
-- *Уточняющие запросы*. Если для получения значений первого уровня поиска, таких как `Lookup(Contacts, ‘contactID’ = ThisItem.ContactID”)`, используются функции поиска, рассмотрите возможность использования `ThisItem.PrimaryContacts` (где примариконтактс — это имя сущности).
+- *Уточняющие запросы*. Если для получения значений первого уровня поиска, таких как `Lookup(Contacts; ‘contactID’ = ThisItem.ContactID”)`, используются функции поиска, рассмотрите возможность использования `ThisItem.PrimaryContacts` (где примариконтактс — это имя сущности).
 - Сведения о любых полиморфизмных ссылках см. в разделе "подробные примеры" ниже. 
 
 ## <a name="detailed-examples"></a>Подробные примеры
@@ -152,14 +153,14 @@ ms.locfileid: "78845383"
 
 Ранее, если вы хотите использовать значение набора параметров в критерии фильтра, необходимо использовать поле *значение* . Например:
 
-```powerapps-dot
-Filter(Account,'Category Value' = "1")
+```powerapps-comma
+Filter(Account;'Category Value' = "1")
 ```
 
 Эту формулу необходимо изменить. Параметр "задать текстовый идентификатор" больше не используется для этого значения. Это выражение должно быть обновлено для поиска следующих фрагментов:
 
-```powerapps-dot
-Filter(Account, Category= ‘Category (Accounts)’.’Preferred Customer’)
+```powerapps-comma
+Filter(Account; Category= ‘Category (Accounts)’.’Preferred Customer’)
 ```
 
 "Category (Accounts)" — это имя перечисления, используемое в поле Category сущности Accounts. Это локальный набор параметров.  Дополнительные сведения о локальных и глобальных наборах параметров можно узнать здесь: [глобальные наборы параметров.](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-global-option-sets)
@@ -168,22 +169,22 @@ Filter(Account, Category= ‘Category (Accounts)’.’Preferred Customer’)
 
 Ниже приведен пример более ранней инструкции patch для набора параметров.
 
-```powerapps-dot
-Patch( Accounts, First(Accounts), { ‘Category Value’: 1 } ) )
+```powerapps-comma
+Patch( Accounts; First(Accounts); { ‘Category Value’: 1 } ) )
 ```
 
 Вам потребуется обновить инструкции, чтобы они следовали следующей форме:
 
-```powerapps-dot
-Patch( Accounts, First(Accounts), { Category: ‘Category (Accounts)’.’Preferred Customer’ } )
+```powerapps-comma
+Patch( Accounts; First(Accounts); { Category: ‘Category (Accounts)’.’Preferred Customer’ } )
 ```
 
 #### <a name="option-set-disambiguation"></a>Установка параметра устранения неоднозначности
 
 Если отображаемое имя **поля** набора параметров и имя набора параметров совпадают, необходимо устранить неоднозначность формулы. Чтобы продолжить использование примера кода категории Accounts, **@** предполагает использование набора параметров, а не поля.
 
-```powerapps-dot
-Filter(Accounts, 'Category Code' = [@’Category Code’].'Preferred Customer')
+```powerapps-comma
+Filter(Accounts; 'Category Code' = [@’Category Code’].'Preferred Customer')
 ```
 
 ### <a name="two-options"></a>два варианта;
@@ -200,12 +201,12 @@ Filter(Accounts, 'Category Code' = [@’Category Code’].'Preferred Customer')
 
 Если вы предпочитаете переключение логического поля, вы можете разблокировать карточку данных и заменить элемент управления в карточке данных на переключатель.  Также необходимо задать эти свойства в переключателе.
 
-```powerapps-dot
+```powerapps-comma
 Toggle1.Default = ThisItem.’Do not allow Bulk Emails’
 Toggle1.TrueText = ‘Do not allow Bulk Emails (Accounts)’.’Do Not Allow’
 Toggle1.FalseText = ‘Do not allow Bulk Emails (Accounts)’.Allow
-DataCard.Value = If( Toggle1.Value,
-    ‘Do not allow Bulk Emails (Accounts)’.’Do Not Allow’,
+DataCard.Value = If( Toggle1.Value;
+    ‘Do not allow Bulk Emails (Accounts)’.’Do Not Allow’;
     ‘Do not allow Bulk Emails (Accounts)’.Allow )
 ```
 
@@ -229,9 +230,9 @@ DataCard.Value = If( Toggle1.Value,
 
 Ссылки на записи можно использовать так же, как и полную запись:
 
-```powerapps-dot
-Filter( Accounts, Owner = First( Teams ) )
-Patch( Accounts, First( Accounts ), { Owner: First( Users ) })
+```powerapps-comma
+Filter( Accounts; Owner = First( Teams ) )
+Patch( Accounts; First( Accounts ); { Owner: First( Users ) })
 ```
 
 ##### <a name="polymorphic-with-a-gallery-displaying-owner-name"></a>Преформацию с помощью коллекции, отображающей имя владельца
@@ -250,10 +251,10 @@ Patch( Accounts, First( Accounts ), { Owner: First( Users ) })
 
 С помощью этих функций можно написать формулу, которая отображает имя владельца, взятого из двух полей с разными именами, в зависимости от типа сущности владельца:
 
-```powerapps-dot
-If( IsType( ThisItem.Owner,  [@Teams]), 
-    AsType( ThisItem.Owner, [@Teams]).'Team Name', 
-    AsType( ThisItem.Owner, [@Users]).'Full Name' )
+```powerapps-comma
+If( IsType( ThisItem.Owner;  [@Teams]); 
+    AsType( ThisItem.Owner; [@Teams]).'Team Name'; 
+    AsType( ThisItem.Owner; [@Users]).'Full Name' )
 ```
 
 ![Коллекция с типом](./media/use-native-cds-connector/Polymorphic-And-AsType-in-Gallery.png)
@@ -268,12 +269,12 @@ If( IsType( ThisItem.Owner,  [@Teams]),
 
 Уточняющие запросы не ограничиваются учетными записями и контактами. Список сущностей может быть расширен с помощью пользовательских сущностей. Например, сущность «факсы» имеет в себе поле подстановки с преформациюм, которое может ссылаться на учетные записи, контакты и другие сущности. Если у вас есть коллекция, для которой источник данных имеет значение факсы, можно использовать следующую формулу для вывода имени, связанного с полем подстановки "в отношении". 
  
- ```powerapps-dot
-If( IsBlank( ThisItem.Regarding ), "",
-    IsType( ThisItem.Regarding, [@Accounts] ),
-        "Account: " & AsType( ThisItem.Regarding, [@Accounts] ).'Account Name',
-    IsType( ThisItem.Regarding, [@Contacts] ),
-        "Contacts: " & AsType( ThisItem.Regarding, [@Contacts] ).'Full Name',
+ ```powerapps-comma
+If( IsBlank( ThisItem.Regarding ); "";
+    IsType( ThisItem.Regarding; [@Accounts] );
+        "Account: " & AsType( ThisItem.Regarding; [@Accounts] ).'Account Name';
+    IsType( ThisItem.Regarding; [@Contacts] );
+        "Contacts: " & AsType( ThisItem.Regarding; [@Contacts] ).'Full Name';
     "" )
 ```
 
@@ -297,11 +298,11 @@ If( IsBlank( ThisItem.Regarding ), "",
  
 С помощью этой формулы можно отобразить тип записи в элементе управления Label в коллекции:
 
- ```powerapps-dot
-If( IsType( ThisItem, [@Faxes] ), "Fax",
-    IsType( ThisItem, [@'Phone Calls'] ), "Phone Call",
-    IsType( ThisItem, [@'Email Messages'] ), "Email Message",
-    IsType( ThisItem, [@Chats] ), "Chat",
+ ```powerapps-comma
+If( IsType( ThisItem; [@Faxes] ); "Fax";
+    IsType( ThisItem; [@'Phone Calls'] ); "Phone Call";
+    IsType( ThisItem; [@'Email Messages'] ); "Email Message";
+    IsType( ThisItem; [@Chats] ); "Chat";
     "Unknown")
 ```
 
@@ -317,7 +318,7 @@ If( IsType( ThisItem, [@Faxes] ), "Fax",
 
 Чтение или фильтрация на основе поля "в отношении" невозможно. Однако доступна связь Обратная заметка один ко многим. Чтобы получить список всех примечаний, связанных с сущностью учетной записи, можно использовать следующую формулу:
 
-```powerapps-dot
+```powerapps-comma
 First( Accounts ).Notes
 ```
 
@@ -325,8 +326,8 @@ First( Accounts ).Notes
 
 Нельзя задать поле Notes в сущности с помощью обновления. Чтобы добавить запись в таблицу Notes сущности, можно использовать функцию Relate. Сначала создайте заметку, как в следующем примере:
 
-```powerapps-dot
-Relate( ThisItem.Notes, Patch( Notes, Defaults( Notes ), { Title: "A new note", isdocument:'Is Document (Notes)'.No } ) )
+```powerapps-comma
+Relate( ThisItem.Notes; Patch( Notes; Defaults( Notes ); { Title: "A new note"; isdocument:'Is Document (Notes)'.No } ) )
 ```
 
 ## <a name="next-steps"></a>Следующие шаги

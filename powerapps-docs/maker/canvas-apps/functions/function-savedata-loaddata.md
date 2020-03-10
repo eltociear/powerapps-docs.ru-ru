@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/04/2020
 ms.locfileid: "78265299"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="savedata-and-loaddata-functions-in-power-apps"></a>Функции SaveData и LoadData в Power Apps
 Сохраняет и повторно загружает [коллекцию](../working-with-data-sources.md#collections) с локального устройства.
@@ -41,7 +42,7 @@ ms.locfileid: "78265299"
 Встроенные средства изолированного приложения устройства используются для изоляции сохраненных данных от других приложений.  Устройство также может шифровать данные, или можно использовать средство управления мобильными устройствами, например [Microsoft Intune](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/microsoft-intune) для шифрования при необходимости.
 
 ## <a name="syntax"></a>Синтаксис
-**SaveData**(*коллекция*, *имя*)<br>**LoadData**( *коллекция*, *имя* [, *IgnoreNonexistentFile* ])
+**SaveData**(*коллекция*; *имя*)<br>**LoadData**( *коллекция*; *имя* [; *IgnoreNonexistentFile* ])
 
 * *коллекция* — обязательный аргумент.  Коллекция, которую требуется сохранить или загрузить.
 * *имя* — обязательный аргумент.  Название хранилища. Для сохранения и загрузки одного набора данных необходимо использовать одинаковое имя. Пространство имен не используется совместно с другими приложениями и пользователями.
@@ -71,8 +72,8 @@ ms.locfileid: "78265299"
 2. Дважды щелкните элемент управления "Кнопка", чтобы изменить текст кнопки, чтобы **Добавить элемент** (или изменить свойство **Text** ).
 
 3. Задайте для свойства **онсилкт** элемента управления "Кнопка" эту формулу, которая добавит элемент в коллекцию:
-    ```powerapps-dot
-    Collect( MyItems, { Item: TextInput1.Text, Picture: Camera1.Photo } )
+    ```powerapps-comma
+    Collect( MyItems; { Item: TextInput1.Text; Picture: Camera1.Photo } )
     ```
     > [!div class="mx-imgBorder"] 
     > ![Добавление элемента управления "Кнопка" с текстом "добавить элемент" и набором свойств "OnSelect"](media/function-savedata-loaddata/simple-additem.png)
@@ -82,8 +83,8 @@ ms.locfileid: "78265299"
 2. Дважды щелкните элемент управления "Кнопка", чтобы изменить текст кнопки, чтобы **сохранить данные** (или изменить свойство **Text** ).
 
 3. Задайте для свойства **онсилкт** элемента управления "Кнопка" эту формулу, чтобы сохранить коллекцию на локальном устройстве:
-    ```powerapps-dot
-    SaveData( MyItems, "LocalSavedItems" )
+    ```powerapps-comma
+    SaveData( MyItems; "LocalSavedItems" )
     ```
     > [!div class="mx-imgBorder"] 
     > ![Добавление элемента управления "Кнопка" с текстом "сохранить данные" и набором свойств "OnSelect"](media/function-savedata-loaddata/simple-savedata.png)
@@ -95,8 +96,8 @@ ms.locfileid: "78265299"
 2. Дважды щелкните элемент управления "Кнопка", чтобы изменить текст кнопки, чтобы **загрузить данные** (или изменить свойство **Text** ).
 
 3. Задайте для свойства **онсилкт** элемента управления "Кнопка" эту формулу, чтобы загрузить коллекцию с локального устройства:
-    ```powerapps-dot
-    LoadData( MyItems, "LocalSavedItems" )
+    ```powerapps-comma
+    LoadData( MyItems; "LocalSavedItems" )
     ``` 
     > [!div class="mx-imgBorder"] 
     > ![Добавление элемента управления "Кнопка" с текстом "Загрузка данных" и набором свойств OnSelect](media/function-savedata-loaddata/simple-loaddata.png)

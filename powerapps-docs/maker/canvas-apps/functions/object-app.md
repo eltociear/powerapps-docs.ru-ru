@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/06/2020
 ms.locfileid: "78404290"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="app-object-in-power-apps"></a>Объект приложения в Power Apps
 
@@ -101,7 +102,7 @@ ms.locfileid: "78404290"
 
 1. Задайте для свойства **конфирмексит** объекта **приложения** следующее выражение:
 
-    ```powerapps-dot
+    ```powerapps-comma
     AccountForm.Unsaved Or ContactForm.Unsaved
     ```
 
@@ -112,9 +113,9 @@ ms.locfileid: "78404290"
 
 1. Задайте для свойства **конфирмекситмессаже** объекта **приложения** следующую формулу:
 
-    ```powerapps-dot
-    If( AccountsForm.Unsaved,
-        "Accounts form has unsaved changes.",
+    ```powerapps-comma
+    If( AccountsForm.Unsaved;
+        "Accounts form has unsaved changes.";
         "Contacts form has unsaved changes."
     )
     ```

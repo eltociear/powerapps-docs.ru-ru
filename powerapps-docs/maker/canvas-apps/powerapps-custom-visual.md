@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/06/2020
 ms.locfileid: "78856873"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="power-apps-custom-visual-for-power-bi"></a>Пользовательский визуальный элемент Power Apps для Power BI
 
@@ -53,7 +54,7 @@ Power BI позволяет получать аналитические данн
 
     ![Пользовательская формула](./media/powerapps-custom-visual/custom-formula.png)
 
-    Эта формула соединяет данные Power BI с источником данных клиента: `LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
+    Эта формула соединяет данные Power BI с источником данных клиента: `LookUp(Customer;Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
 
    Отчет Power BI и экземпляр Power Apps, который был запущен, совместно используют динамическое подключение к данным. Пока они открыты, можно отфильтровать или изменить данные в отчете, чтобы увидеть обновленные данные сразу же в приложении в Power Apps Studio.
 
