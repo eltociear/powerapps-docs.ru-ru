@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 346bb27911549715b6c4fdc40f64552c524527be
-ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74959456"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403412"
 ---
 # <a name="create-a-canvas-app-in-power-apps-from-a-sharepoint-list"></a>Создание приложения Canvas в Power Apps из списка SharePoint
 
@@ -42,7 +42,7 @@ ms.locfileid: "74959456"
 
 ## <a name="create-an-app-from-within-power-apps"></a>Создание приложения в Power Apps
 
-1. Войдите в [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Выполните вход в [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 
 1. В области **Создавайте собственные приложения** наведите указатель на плитку **Начать с данных** и выберите команду **Создать это приложение**.
 
@@ -98,7 +98,7 @@ ms.locfileid: "74959456"
 > [!NOTE]
 > Приложения, созданные из списка SharePoint, в настоящее время не отображаются в Power Apps Mobile.
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 В этом разделе вы создали приложение для управления данными в списке SharePoint. В качестве следующего шага Создайте приложение из более сложного списка, а затем настройте приложение (начиная с экрана обзора), чтобы лучше соответствовать вашим потребностям.
 
 > [!div class="nextstepaction"]

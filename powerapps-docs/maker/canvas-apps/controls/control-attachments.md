@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 04/23/2018
+ms.date: 03/09/2020
 ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5288e6a8ee655cf24479a7de3a5904b7f1a4e07
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 35e4107934134a229817deb258bacf5e36c9dbb6
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204049"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78970986"
 ---
 # <a name="attachments-control-in-power-apps"></a>Элемент управления вложениями в Power Apps
 Элемент управления, который позволяет пользователям загружать файлы на свое устройство, а также отправлять и удалять файлы из списка SharePoint или сущности Common Data Service.
@@ -31,7 +31,7 @@ ms.locfileid: "75204049"
 
 1. Вы можете отправлять файлы только в том случае, если они имеют размер 10 МБ или меньше.  
 
-## <a name="description"></a>Description
+## <a name="description"></a>Описание
 Элемент управления **вложениями** позволяет открывать, добавлять и удалять файлы из списка SharePoint или сущности Common Data Service.
 
 ## <a name="key-properties"></a>Основные свойства
@@ -60,7 +60,7 @@ ms.locfileid: "75204049"
 
 **[DisplayMode](properties-core.md)** — в зависимости от значения этого режима элемент управления разрешает пользователю добавлять и редактировать файлы (**Изменение**) или только отображать данные (**Просмотр**), либо элемент будет вообще отключен (**Отключено**).
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
@@ -82,13 +82,15 @@ ms.locfileid: "75204049"
 
 
 ## <a name="example"></a>Пример
-1. С помощью списка SharePoint создайте на основе данных приложение в качестве источника данных. Или добавьте форму в приложение и укажите в качестве источника данных список SharePoint.
+1. Добавьте форму в приложение и задайте в качестве источника данных список SharePoint.
 
-2. Выберите элемент управления **Форма** в представлении в виде дерева слева.
+2. Выберите элемент управления **форма отображения** в представлении в виде дерева в левой части. Вместо этого можно также использовать **форму редактирования** .
 
-3. Выберите элемент **Данные** на вкладке "Свойства" на панели параметров справа.
+3. Выберите **источник данных** на вкладке Свойства на панели Параметры справа, а затем выберите список SharePoint, к которому вы подключены.
 
-4. В разделе **Поля**, включите поле **Вложения**.
+4. Выберите **изменить поля** в разделе *поля* и щелкните **Добавить поле**. 
+
+5. Выберите поле **вложения** и нажмите кнопку **Добавить**.
 
     Поле "Вложения", связанное со списком SharePoint, отобразится в форме.
 
@@ -119,4 +121,4 @@ ms.locfileid: "75204049"
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.
+* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .

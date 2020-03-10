@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 777dd5452af8662569e2e51452142a1bbce3f619
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732854"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403442"
 ---
 # <a name="understand-canvas-app-tables-and-records-in-power-apps"></a>Общие сведения о холсте — таблицы и записи приложений в Power Apps
 
@@ -41,7 +40,7 @@ ms.PowerAppsDecimalTransform: true
 ### <a name="records"></a>Записи
 Каждая запись содержит по меньшей мере одну категорию сведений о человеке, месте или предмете. В предыдущем примере показана запись для каждого товара (**Chocolate**, **Bread** и **Water**) и столбец для каждой категории сведений (**Price**, **Quantity on Hand** и **Quantity on Order**).
 
-Чтобы сослаться в формуле на саму запись вне контекста таблицы, воспользуйтесь фигурными скобками. Например, запись **{ Name: "Strawberries"; Price: 7;99 }** не связана с таблицей. Обратите внимание, что имена полей (**Name** и **Price** в этом примере) не заключаются в двойные кавычки.
+Чтобы сослаться в формуле на саму запись вне контекста таблицы, воспользуйтесь фигурными скобками. Например, запись **{ Name: "Strawberries", Price: 7,99 }** не связана с таблицей. Обратите внимание, что имена полей (**Name** и **Price** в этом примере) не заключаются в двойные кавычки.
 
 ### <a name="fields"></a>Поля
 Поле — это отдельная часть сведений в записи. Такого рода поля можно представить себе как значение в столбце определенной записи.
@@ -50,7 +49,7 @@ ms.PowerAppsDecimalTransform: true
 
 Поле может содержать другую запись или таблицу, как показано в примере для функции **[GroupBy](functions/function-groupby.md)** . Количество уровней вложенных записей и таблиц не ограничено.
 
-### <a name="columns"></a>Столбцы
+### <a name="columns"></a>столбцы
 Столбец состоит из одинаковых полей одной или нескольких записей в таблице. В приведенном выше примере у каждого товара есть поле цены, и эта цена находится в одном и том же столбце для всех продуктов.  Приведенная выше таблица состоит из четырех столбцов, имена которых показаны в первой строке:
 
 * **Name** (Наименование)
@@ -65,7 +64,7 @@ ms.PowerAppsDecimalTransform: true
 В других средствах столбцы могут называться "полями".
 
 > [!NOTE]
-> Для источников данных SharePoint и Excel, содержащих имена столбцов с пробелами, Power Apps заменит пробелы на **"\_x0020\_"** . Например, **"имя столбца"** в SharePoint или Excel будет отображаться как **"Column_x0020_Name"** в Power Apps, если оно отображается в макете данных или используется в формуле.
+> Для источников данных SharePoint и Excel, содержащих имена столбцов с пробелами, Power Apps заменит пробелы на **"\_x0020\_"** . Например, столбец **Имя столбца** из SharePoint или Excel будет отображаться как **Имя_x0020_столбца** в Power Apps при отображении в структуре данных или использовании в формуле.
 
 ### <a name="table"></a>Table
 Таблица состоит из одной или нескольких записей, каждая из которых имеет несколько полей с согласованными именами во всех записях.
@@ -74,11 +73,11 @@ ms.PowerAppsDecimalTransform: true
 
 Как показано в следующем примере, таблицу в формуле можно представить с помощью функции **[Table](functions/function-table.md)** с набором записей, которые записываются в фигурных скобках:
 
-`Table( { Value: "Strawberry" }; { Value: "Vanilla" } )`
+`Table( { Value: "Strawberry" }, { Value: "Vanilla" } )`
 
 Используя квадратные скобки, можно также определить таблицу с одним столбцом.  Эквивалентный способ представления приведенной выше записи:
 
-`[ "Strawberry"; "Vanilla" ]`
+`[ "Strawberry", "Vanilla" ]`
 
 ## <a name="table-formulas"></a>Формулы для таблиц
 В Excel и Power Apps формулы используются для управления числами и строками текста подобным образом:
@@ -88,7 +87,7 @@ ms.PowerAppsDecimalTransform: true
 
 В обоих случаях вычисленное значение изменяется автоматически при изменении значений аргументов (например, числа в ячейке **A1** или значения **Slider1**).
 
-Аналогично можно использовать формулы для доступа к данным в таблицах и записях, а также управления ими. В некоторых формулах имена таблиц можно использовать в качестве аргументов. Например, **Min(Catalog; Price)** можно использовать для отображения минимального значения столбца **Price** таблицы **Catalog**. Другие формулы возвращают в качестве значения целые таблицы, например **RenameColumns(Catalog; "Price"; "Cost")** , которая возвращает все записи из таблицы **Catalog**, но изменяет имя столбца **Price** на **Cost**.
+Аналогично можно использовать формулы для доступа к данным в таблицах и записях, а также управления ими. В некоторых формулах имена таблиц можно использовать в качестве аргументов. Например, **Min(Catalog, Price)** можно использовать для отображения минимального значения столбца **Price** таблицы **Catalog**. Другие формулы возвращают в качестве значения целые таблицы, например **RenameColumns(Catalog, "Price", "Cost")** , которая возвращает все записи из таблицы **Catalog**, но изменяет имя столбца **Price** на **Cost**.
 
 Так же как в случае с числами, формулы, включающие в себя таблицы и записи, автоматически пересчитываются при изменении базовой таблицы или записи. Если стоимость товара в таблице **Catalog** станет меньше предыдущего минимального значения, возвращаемое значение формулы **[Min](functions/function-aggregates.md)** автоматически изменится соответствующим образом.
 
@@ -105,7 +104,7 @@ ms.PowerAppsDecimalTransform: true
 
 2. Вместо того чтобы задавать в качестве значения свойства **[Items](controls/properties-core.md)** имя таблицы, присвойте ему формулу, которая включает в себя имя таблицы в качестве аргумента, как показано в этом примере:
 
-    `Sort(CustomGallerySample; SampleHeading; Descending)`
+    `Sort(CustomGallerySample, SampleHeading, Descending)`
 
     Эта формула содержит функцию **[Sort](functions/function-sort.md)** , которая принимает имя таблицы в качестве первого аргумента и имя ее столбца в качестве второго. Функция также поддерживает необязательный третий аргумент, который указывает, что данные необходимо отсортировать в порядке убывания.
 
@@ -113,7 +112,7 @@ ms.PowerAppsDecimalTransform: true
 
 3. Задайте в качестве значения свойства **[Items](controls/properties-core.md)** формулу, которая принимает в качестве аргумента формулу с предыдущего этапа и возвращает таблицу, как в следующем примере:
 
-    `FirstN(Sort(CustomGallerySample; SampleHeading; Descending); 2)`
+    `FirstN(Sort(CustomGallerySample, SampleHeading, Descending), 2)`
 
     В этой формуле для отображения определенного числа записей в таблице используется функция **[FirstN](functions/function-first-last.md)** . Функция **[Sort](functions/function-sort.md)** используется в качестве первого аргумента **[FirstN](functions/function-first-last.md)** , и число (в данном случае **2**) — в качестве второго (он указывает, сколько записей следует отображать).
 
@@ -162,7 +161,7 @@ Power Apps предлагает набор функций, которые раб
 Вы можете также создать формулу, которая вычисляет данные для отдельной записи, принимает отдельную запись в качестве аргумента и предоставляет отдельную запись как возвращаемое значение. Возвращаясь к приведенному выше примеру коллекции, воспользуемся свойством **Gallery1.Selected** для отображения сведений из записи, которую выбрал в ней пользователь.
 
 1. Добавьте [**кнопку**](controls/control-button.md)и задайте для ее свойства **[OnSelect](controls/properties-core.md)** значение этой формулы:<br>
-    **Collect( SelectedRecord; Gallery1.Selected )**
+    **Collect( SelectedRecord, Gallery1.Selected )**
 
 2. Удерживая нажатой клавишу ALT, нажмите на эту кнопку.
 
@@ -229,20 +228,20 @@ Power Apps предлагает набор функций, которые раб
 
 Чтобы создать этот пример таблицы в приложении, вставьте кнопку, задайте для этой формулы свойство **OnSelect** , а затем нажмите кнопку (щелкните ее, удерживая нажатой клавишу Alt в Power Apps Studio):
 
-```powerapps-comma
-Set( Products;
+```powerapps-dot
+Set( Products,
     Table(
-        { Product: "Widget";    'Quantity Requested': 6;  'Quantity Available': 3 };
-        { Product: "Gadget";    'Quantity Requested': 10; 'Quantity Available': 20 };
-        { Product: "Gizmo";     'Quantity Requested': 4;  'Quantity Available': 11 };
-        { Product: "Apparatus"; 'Quantity Requested': 7;  'Quantity Available': 6 }
+        { Product: "Widget",    'Quantity Requested': 6,  'Quantity Available': 3 },
+        { Product: "Gadget",    'Quantity Requested': 10, 'Quantity Available': 20 },
+        { Product: "Gizmo",     'Quantity Requested': 4,  'Quantity Available': 11 },
+        { Product: "Apparatus", 'Quantity Requested': 7,  'Quantity Available': 6 }
     )
 )
 ```
 
 Чтобы определить, запрашивал ли какой-либо из этих продуктов больше запросов, чем доступно:
 
-`Filter( Products; 'Quantity Requested' > 'Quantity Available' )`
+`Filter( Products, 'Quantity Requested' > 'Quantity Available' )`
 
 Первый аргумент функции **Filter** — это таблица записей, которые необходимо обработать, а второй — это формула.  Функция **Filter** создает для вычисления этой формулы область записи, в которой доступны поля каждой записи. В данном случае это **Product**, **Quantity Requested** и **Quantity Available**.  От результата сравнения зависит, нужно ли включать каждую запись в результат функции.
 
@@ -250,10 +249,10 @@ Set( Products;
 
 Просуммировав значения в этом примере, можно рассчитать, сколько единиц каждого товара следует заказать.
 
-```powerapps-comma
+```powerapps-dot
 AddColumns( 
-    Filter( Products; 'Quantity Requested' > 'Quantity Available' ); 
-    "Quantity To Order"; 'Quantity Requested' - 'Quantity Available'
+    Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
+    "Quantity To Order", 'Quantity Requested' - 'Quantity Available'
 )
 ```
 
@@ -263,13 +262,13 @@ AddColumns(
 
 Наконец, можно сократить таблицу результатов до только нужных столбцов:
 
-```powerapps-comma
+```powerapps-dot
 ShowColumns(
     AddColumns(
-        Filter( Products; 'Quantity Requested' > 'Quantity Available' );
-        "Quantity To Order"; 'Quantity Requested' - 'Quantity Available'
-    );
-    "Product";
+        Filter( Products, 'Quantity Requested' > 'Quantity Available' ),
+        "Quantity To Order", 'Quantity Requested' - 'Quantity Available'
+    ),
+    "Product",
     "Quantity To Order"
 )
 ```
@@ -280,36 +279,36 @@ ShowColumns(
 
 ## <a name="disambiguation"></a>Устранение неоднозначности
 
-Имена полей, добавленные с помощью области записи, переопределяют такие же имена из любого другого места в приложении.  В этом случае с помощью [оператора устранения неоднозначности **@** ](functions/operators.md) можно по-прежнему получать доступ к значениям за пределами области записи.
+Имена полей, добавленные с использованием области записи, переопределяют такие же имена из любого места в приложении.  В этом случае с помощью [оператора устранения неоднозначности **@** ](functions/operators.md) можно по-прежнему получать доступ к значениям за пределами области записи.
 
 * Для доступа к значениям из вложенных областей записей используйте оператор **@** , указав имя нужной таблицы в формате:<br>_Таблица_ **[@** _FieldName_ **]**
 * Чтобы получить доступ к глобальным значениям, таким как источники данных, коллекции и переменные контекста, используйте шаблон **[@** _ObjectName_ **]** (без обозначения таблицы).
 
-Если таблица, над которой выполняется операция, представляет собой выражение, например **Filter(** _Table_ **,** ... **)** , оператор устранения неоднозначности использовать нельзя.  Не используя оператор устранения неоднозначности, получить доступ к полям этого табличного выражения можно только в наиболее глубоко вложенной области записи.
+Если обрабатываемая таблица является выражением, например **Filter (** _Таблица_ **,** ... **)** , то нельзя использовать оператор устранения неоднозначности.  Не используя оператор устранения неоднозначности, получить доступ к полям этого табличного выражения можно только в наиболее глубоко вложенной области записи.
 
 Представьте, например, что есть коллекция **X**.
 
 ![](media/working-with-tables/X.png)
 
-Ее можно создать с помощью функции **ClearCollect( X; \[1; 2\] )** .
+Ее можно создать с помощью функции **ClearCollect( X, \[1, 2\] )** .
 
 Есть также другая коллекция **Y**.
 
 ![](media/working-with-tables/Y.png)
 
-Эту коллекцию можно создать с помощью функции **ClearCollect( Y; ["A"; "B"] )** .
+Эту коллекцию можно создать с помощью функции **ClearCollect( Y, ["A", "B"] )** .
 
 Кроме того, определите переменную контекста с именем **Value** с помощью следующей формулы: **UpdateContext( {Value: "!"} )** .
 
 Давайте теперь соберем все это вместе. В этом контексте следующая формула:
 
-```powerapps-comma
+```powerapps-dot
 Ungroup(
-    ForAll( X;
-        ForAll( Y;
+    ForAll( X,
+        ForAll( Y,
             Y[@Value] & Text( X[@Value] ) & [@Value]
         )
-    );
+    ),
     "Value"
 )
 ```
@@ -324,13 +323,13 @@ Ungroup(
 
 Поскольку **Y** является самой глубоко вложенной областью записи, для доступа к полям в этой таблице устранение неоднозначности не требуется, что позволяет использовать эту формулу с тем же результатом:
 
-```powerapps-comma
+```powerapps-dot
 Ungroup(
-    ForAll( X;
-        ForAll( Y;
+    ForAll( X,
+        ForAll( Y,
             Value & Text( X[@Value] ) & [@Value]
         )
-    );
+    ),
     "Value"
 )
 ```
@@ -343,8 +342,8 @@ Ungroup(
 
 Для работы с одним столбцом из таблицы используйте функцию **шовколумнс** , как в следующем примере:
 
-```powerapps-comma
-ShowColumns( Products; "Product" )
+```powerapps-dot
+ShowColumns( Products, "Product" )
 ```
 
 Эта формула создает таблицу с одним столбцом:
@@ -353,7 +352,7 @@ ShowColumns( Products; "Product" )
 
 Для более короткого варианта укажите *Table. Column*, который извлекает таблицу с одним столбцом только *столбца* из *таблицы*. Например, эта формула дает тот же результат, что и при использовании **шовколумнс**.
 
-```powerapps-comma
+```powerapps-dot
 Products.Product
 ```
 
@@ -361,15 +360,15 @@ Products.Product
 
 Для обозначения записей используются фигурные скобки, содержащие значения именованных полей.  Например, первую запись в таблице, приведенной в начале данного раздела, можно выразить с помощью следующей формулы:
 
-`{ Name: "Chocolate"; Price: 3,95; 'Quantity on Hand': 12; 'Quantity on Order': 10 }`
+`{ Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 }`
 
 Вы можете также встраивать одни формулы в другие, как показано в этом примере:
 
-`{ Name: First(Products).Name; Price: First(Products).Price * 1,095 }`
+`{ Name: First(Products).Name, Price: First(Products).Price * 1.095 }`
 
 Чтобы вложить записи, можно воспользоваться вложенными фигурными скобками, как показано в следующем примере:
 
-`{ 'Quantity': { 'OnHand': ThisItem.QuantOnHand; 'OnOrder': ThisItem.QuantOnOrder } }`
+`{ 'Quantity': { 'OnHand': ThisItem.QuantOnHand, 'OnOrder': ThisItem.QuantOnOrder } }`
 
 Заключите имя каждого столбца, содержащего специальный символ, например пробел или двоеточие, в одинарные кавычки.  Чтобы использовать одинарные кавычки в имени столбца, укажите их дважды.
 
@@ -378,21 +377,21 @@ Products.Product
 ## <a name="inline-tables"></a>Встроенные таблицы
 Таблицу можно создать с помощью функции **[Table](functions/function-table.md)** и набора записей. Таблицу, приведенную в начале данного раздела, можно представить с помощью следующей формулы:
 
-```powerapps-comma
+```powerapps-dot
 Table( 
-    { Name: "Chocolate"; Price: 3,95; 'Quantity on Hand': 12; 'Quantity on Order': 10 };
-    { Name: "Bread"; Price: 4,95; 'Quantity on Hand': 34; 'Quantity on Order': 0 };
-    { Name: "Water"; Price: 4,95; 'Quantity on Hand': 10; 'Quantity on Order': 0 } 
+    { Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 },
+    { Name: "Bread", Price: 4.95, 'Quantity on Hand': 34, 'Quantity on Order': 0 },
+    { Name: "Water", Price: 4.95, 'Quantity on Hand': 10, 'Quantity on Order': 0 } 
 )
 ```
 
 Таблицы можно также вкладывать друг в друга:
 
-```powerapps-comma
+```powerapps-dot
 Table( 
-    { Name: "Chocolate"; 
-      'Quantity History': Table( { Quarter: "Q1"; OnHand: 10; OnOrder: 10 };
-                                 { Quarter: "Q2"; OnHand: 18; OnOrder: 0 } ) 
+    { Name: "Chocolate", 
+      'Quantity History': Table( { Quarter: "Q1", OnHand: 10, OnOrder: 10 },
+                                 { Quarter: "Q2", OnHand: 18, OnOrder: 0 } ) 
     }
 )
 ```
@@ -400,7 +399,7 @@ Table(
 ## <a name="inline-value-tables"></a>Таблицы встроенных значений
 Вы можете создать таблицы с одним столбцом, указав значения в квадратных скобках. Результирующая таблица будет содержать один столбец с именем **Value**.
 
-Например, `[ 1; 2; 3; 4 ]` эквивалентна `Table( { Value: 1 }; { Value: 2 }; { Value: 3 }; { Value: 4 } )` и возвращает следующую таблицу:
+Например, `[ 1, 2, 3, 4 ]` эквивалентна `Table( { Value: 1 }, { Value: 2 }, { Value: 3 }, { Value: 4 } )` и возвращает следующую таблицу:
 
 ![](media/working-with-tables/inline-table.png)
 

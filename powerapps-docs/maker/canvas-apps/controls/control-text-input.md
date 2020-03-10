@@ -14,21 +14,20 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1322fd34f4e3a59a62a414fc0e2e7ccca48fc99f
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731979"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404075"
 ---
 # <a name="text-input-control-in-power-apps"></a>Элемент управления вводом текста в Power Apps
 Поле, в котором пользователь может вводить текст, числа и другие данные.
 
-## <a name="description"></a>Description
+## <a name="description"></a>Описание
 Пользователь может вводить данные в элементе управления "Текстовое поле". В зависимости от настройки приложения эти данные могут добавляться в источник, использоваться для вычисления временного значения или применяться иным способом.
 
 ## <a name="key-properties"></a>Основные свойства
-**[Default](properties-core.md)**  — начальное значение элемента управления до его изменения пользователем.
+**[Default](properties-core.md)** — начальное значение элемента управления до его изменения пользователем.
 
 **[Text](properties-core.md)**  — текст, отображаемый в элементе управления, или текст, который пользователь вводит в элемент управления.
 
@@ -61,7 +60,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Fill](properties-color-border.md)**  — цвет фона элемента управления.
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
@@ -89,7 +88,7 @@ ms.PowerAppsDecimalTransform: true
 
 **Mode** — определяет режим **SingleLine** (Однострочный), **MultiLine** (Многострочный) или **Password** (Пароль).
 
-**[OnChange](properties-core.md)**  — поведение приложения, когда пользователь изменяет значение элемента управления (например, перемещая ползунок).
+**[OnChange](properties-core.md)**  — поведение приложения, когда пользователь изменяет значение элемента управления (например, перемещая ползунок).
 
 **[OnSelect](properties-core.md)**  — поведение приложения, когда пользователь щелкает элемент управления или касается его.
 
@@ -115,7 +114,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[RadiusTopRight](properties-size-location.md)**  — градус скругления верхнего правого угла элемента управления.
 
-**[Reset](properties-core.md)**  — свойство, которое указывает, возвращается ли элемент управления к значению по умолчанию.
+**[Reset](properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.
 
 **[Size](properties-text.md)**  — размер шрифта текста, отображаемого в элементе управления.
 
@@ -123,7 +122,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[TabIndex](properties-accessibility.md)** — порядок навигации с помощью клавиатуры относительно других элементов управления.
 
-**[Tooltip](properties-core.md)** — пояснительный текст, отображаемый при наведении указателя мыши на элемент управления.
+**[Tooltip](properties-core.md)**  — пояснительный текст, отображаемый при наведении указателя мыши на элемент управления.
 
 **[Underline](properties-text.md)** определяет, когда под текстом, отображаемым в элементе управления, проходит линия.
 
@@ -146,7 +145,7 @@ ms.PowerAppsDecimalTransform: true
    
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Добавьте кнопку, укажите для ее свойства **[Text](properties-core.md)** значение **Добавить**, а для свойства **[OnSelect](properties-core.md)** следующую формулу:<br>
-   **Collect(Names; {FirstName:inputFirst.Text; LastName:inputLast.Text})**
+   **Collect(Names, {FirstName:inputFirst.Text, LastName:inputLast.Text})**
    
     Нужны дополнительные сведения о функции **[Collect](../functions/function-clear-collect-clearcollect.md)** или [других функциях](../formula-reference.md)?
 3. Добавьте коллекцию текстов в портретной (вертикальной) ориентации, укажите для свойства **[Items](properties-core.md)** значение **Names**, а для свойства **[Text](properties-core.md)** элемента **Subtitle1** значение **ThisItem.FirstName**.
@@ -158,16 +157,16 @@ ms.PowerAppsDecimalTransform: true
 
 1. Добавьте элемент управления "Текстовое поле", назовите его **inputPassword** и укажите для свойства **Mode** значение **Password**.
 
-1. Добавьте метку и установите в ее свойстве **[Text](properties-core.md)** формулу:<br>
-   **If(inputPassword.Text = "P@ssw0rd"; "Доступ предоставлен"; "Доступ запрещен")**
+1. Добавьте метку и задайте для ее свойства **[Text](properties-core.md)** формулу:<br>
+   **If(inputPassword.Text = "P@ssw0rd", "Доступ предоставлен", "Доступ запрещен")**
 
-    Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
+    Нужны дополнительные сведения о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 
 1. Нажмите клавишу F5 и введите **P@ssw0rd** в элементе **inputPassword**.
 
     Когда вы закончите вводить пароль, в метке вместо значения **Доступ запрещен** будет отображаться значение **Доступ предоставлен**.
 
-1. Нажмите клавишу ESC, чтобы вернуться в рабочую область по умолчанию.
+1. Чтобы вернуться в рабочую область по умолчанию, нажмите клавишу ESC.
 
 1. (Необязательно) Добавьте стрелку, настройте ее для перехода на другой экран и отображайте только после того, как пользователь введет пароль.
 
@@ -183,5 +182,5 @@ ms.PowerAppsDecimalTransform: true
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
+* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
  
