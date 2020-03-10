@@ -208,7 +208,11 @@
             - name: Популярные соединители
               items:
                 - name: Common Data Service
-                  href: canvas-apps/connections/connection-common-data-service.md
+                  items:
+                    - name: Обзор
+                      href: canvas-apps/connections/connection-common-data-service.md
+                    - name: Улучшения
+                      href: canvas-apps/use-native-cds-connector.md
                 - name: Облачное хранилище
                   href: canvas-apps/connections/cloud-storage-blob-connections.md
                 - name: "Dynamics\_365"
@@ -1555,6 +1559,8 @@
           href: ./common-data-service/update-solutions.md
         - name: Экспорт решений
           href: ./common-data-service/export-solutions.md
+        - name: Создание исправлений решения
+          href: ./common-data-service/solution-patches.md
         - name: Объединение управляемых решений
           href: ./common-data-service/how-managed-solutions-merged.md
         - name: Использование переменных среды
