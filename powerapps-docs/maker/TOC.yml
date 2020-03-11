@@ -1042,8 +1042,6 @@
             - name: Работа с представлениями
               href: ./model-driven-apps/create-edit-views.md
               items:
-                - name: Создание или изменение представления
-                  href: ./model-driven-apps/create-and-edit-views.md
                 - name: Доступ к определению представления
                   href: ./model-driven-apps/accessing-view-definitions.md
                 - name: Создание и изменение представлений
