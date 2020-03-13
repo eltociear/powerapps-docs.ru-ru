@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: cc9b12f6cf899d0a57e56eda9fe0dd4bc5ba6c2e
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403938"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212223"
 ---
 # <a name="drop-down-control-in-power-apps"></a>Раскрывающийся список элементов управления в Power Apps
 Раскрывающийся список — это список, у которого в свернутом состоянии виден только первый элемент.
@@ -131,7 +130,7 @@ ms.PowerAppsDecimalTransform: true
 
 1. Добавьте элемент управления **Раскрывающийся список**, а затем установите для его свойства **[Items](properties-core.md)** следующее выражение:
 
-    `["Seattle"; "Tokyo"; "London"; "Johannesburg"; "Rio de Janeiro"]`
+    `["Seattle", "Tokyo", "London", "Johannesburg", "Rio de Janeiro"]`
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
@@ -144,13 +143,13 @@ ms.PowerAppsDecimalTransform: true
 
 1. Добавьте элемент управления **Раскрывающийся список** и назначьте его свойству **[Items](properties-core.md)** следующую формулу:
 
-    `Distinct(Accounts; address1_city)`
+    `Distinct(Accounts, address1_city)`
 
     Эта формула показывает все города в сущности **Учетные записи**. Если один город указан в нескольких записях, функция **[Distinct](../functions/function-distinct.md)** скрывает повторения в элементе управления раскрывающегося списка.
 
 1. (Необязательно.) Переименуйте элемент управления **Раскрывающийся список** в **Города**, добавьте вертикальный элемент управления **Коллекция** и задайте свойству коллекции **[Items](properties-core.md)** следующую формулу:
 
-    `Filter(Accounts; address1_city = Cities.Selected.Value)`
+    `Filter(Accounts, address1_city = Cities.Selected.Value)`
 
     Функция **[Filter](../functions/function-filter-lookup.md)** отображает только те записи в сущности **Учетные записи**, для которых город совпадает с выбранным значением в элементе управления **Города**.
 
@@ -160,13 +159,13 @@ ms.PowerAppsDecimalTransform: true
 * **ChevronFill** и **ChevronBackground**;
 * **ChevronHoverFill** и **ChevronHoverBackground**;
 * **SelectionColor** и **SelectionFill**;
-* **SelectionFill** и **[Fill](properties-color-border.md)** ;
+* **SelectionFill** и **[Fill](properties-color-border.md)**;
 
 Это дополнение к [стандартным требованиям по цветовому контрасту](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Поддержка средства чтения с экрана
-* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)** .
+* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)**.
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
+* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.

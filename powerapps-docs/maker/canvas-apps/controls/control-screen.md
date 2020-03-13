@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b0e189bc2bfd922839373f009fcc54a34217daba
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404312"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211901"
 ---
 # <a name="screen-control-in-power-apps"></a>Элемент управления "экран" в Power Apps
 
@@ -26,7 +26,7 @@ ms.locfileid: "78404312"
 
 ## <a name="description"></a>Описание
 
-В большинстве приложений есть несколько элементов управления **Экран**, которые содержат элементы управления **[Метка](control-text-box.md)** , **[Кнопка](control-button.md)** и другие, отображающие данные и поддерживающие навигацию. Сведения о том, как добавить экран, изменить порядок экранов и настроить навигацию, см. [в статье Добавление экрана](../add-screen-context-variables.md).
+В большинстве приложений есть несколько элементов управления **Экран**, которые содержат элементы управления **[Метка](control-text-box.md)**, **[Кнопка](control-button.md)** и другие, отображающие данные и поддерживающие навигацию. Сведения о том, как добавить экран, изменить порядок экранов и настроить навигацию, см. [в статье Добавление экрана](../add-screen-context-variables.md).
 
 ## <a name="key-properties"></a>Основные свойства
 
@@ -58,7 +58,7 @@ ms.locfileid: "78404312"
 
 ## <a name="example"></a>Пример
 
-1. Добавьте элемент управления **[Переключатель](control-radio.md)** , назовите его **ScreenFills** и укажите для свойства **[Items](properties-core.md)** следующее значение:
+1. Добавьте элемент управления **[Переключатель](control-radio.md)**, назовите его **ScreenFills** и укажите для свойства **[Items](properties-core.md)** следующее значение:
 
     `["Red", "Green"]`
 
@@ -101,9 +101,9 @@ ms.locfileid: "78404312"
 - элемент **[Fill](properties-color-border.md)** и текст;
 - элемент **[BackgroundImage](properties-visual.md)** и текст (если применимо).
 
-Например, элемент **Screen** содержит элемент **[Label](control-text-box.md)** , и метка имеет прозрачное заполнение, элемент **[Fill](properties-color-border.md)** экрана становится цветом фона для метки.
+Например, элемент **Screen** содержит элемент **[Label](control-text-box.md)**, и метка имеет прозрачное заполнение, элемент **[Fill](properties-color-border.md)** экрана становится цветом фона для метки.
 
-Целесообразно проверить контраст не только текста, но и основных графических объектов, включая отмеченные звездочкой изображения, в элементе управления **[Rating](control-rating.md)** .
+Целесообразно проверить контраст не только текста, но и основных графических объектов, включая отмеченные звездочкой изображения, в элементе управления **[Rating](control-rating.md)**.
 
 ### <a name="screen-reader-support"></a>Поддержка средства чтения с экрана
 

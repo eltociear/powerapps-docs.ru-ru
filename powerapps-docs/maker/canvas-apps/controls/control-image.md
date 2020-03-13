@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d35150434d8fec7694f493f2d62c67997e2c839c
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404021"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212476"
 ---
 # <a name="image-control-in-power-apps"></a>Элемент управления "изображение" в Power Apps
 Этот элемент управления служит для показа изображения из локального файла или источника данных.
@@ -112,7 +111,7 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Remove**( *DataSource*;; ThisItem )](../functions/function-remove-removeif.md)
+[**Remove**( *DataSource*; ThisItem )](../functions/function-remove-removeif.md)
 
 ## <a name="examples"></a>Примеры
 ### <a name="show-an-image-from-a-local-file"></a>Показ изображения из локального файла
@@ -147,14 +146,14 @@ ms.PowerAppsDecimalTransform: true
 * Элемент **[AccessibleLabel](properties-accessibility.md)** должен присутствовать, если графический элемент используется в качестве кнопки, иными словами, не только для визуализации данных.
 * **[AccessibleLabel](properties-accessibility.md)** должен быть пустой строкой **""** или пустым, если графический элемент предназначен исключительно для визуализации. В этом случае средства чтения с экрана игнорируют графику.
 * **[AccessibleLabel](properties-accessibility.md)** может быть пустой строкой **""** или пустым, если графика содержит избыточные сведения.
-  * Например, для **изображения** шестеренки с **[AccessibleLabel](properties-accessibility.md)** задано значение **Настройки**. Такое изображение не используется как кнопка. Он идет за **[меткой](control-text-box.md)** , свойство которой также установлено как **Настройки**. Средства чтения с экрана воспримут это изображение как **Настройки**, а метку как еще одни **Настройки**. Это неуместная многословность. В этом случае **изображению** не нужна метка **[AccessibleLabel](properties-accessibility.md)** .
+  * Например, для **изображения** шестеренки с **[AccessibleLabel](properties-accessibility.md)** задано значение **Настройки**. Такое изображение не используется как кнопка. Он идет за **[меткой](control-text-box.md)**, свойство которой также установлено как **Настройки**. Средства чтения с экрана воспримут это изображение как **Настройки**, а метку как еще одни **Настройки**. Это неуместная многословность. В этом случае **изображению** не нужна метка **[AccessibleLabel](properties-accessibility.md)**.
 
     > [!IMPORTANT]
-    > Средства чтения с экрана всегда считывают **изображения** с большим или равным нулю значением **[TabIndex](properties-accessibility.md)** , даже если элемент **[AccessibleLabel](properties-accessibility.md)** пуст. Это происходит потому, что они воспринимаются как кнопки. Если элемент **[AccessibleLabel](properties-accessibility.md)** не указан, средства чтения с экрана будут считывать графику как **кнопку**.
+    > Средства чтения с экрана всегда считывают **изображения** с большим или равным нулю значением **[TabIndex](properties-accessibility.md)**, даже если элемент **[AccessibleLabel](properties-accessibility.md)** пуст. Это происходит потому, что они воспринимаются как кнопки. Если элемент **[AccessibleLabel](properties-accessibility.md)** не указан, средства чтения с экрана будут считывать графику как **кнопку**.
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Если графика используется как кнопка, значение **[TabIndex](properties-accessibility.md)** должно быть равно нулю и выше. При этом пользователи смогут применять клавиатуру для навигации.
-* Индикаторы фокусировки должны быть четко видны, если графика используется как кнопка. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
+* Индикаторы фокусировки должны быть четко видны, если графика используется как кнопка. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.
 
     > [!NOTE]
   > Если значение **[TabIndex](properties-accessibility.md)** равно нулю или больше него, **изображение** воспринимается в качестве кнопки. Внешне это незаметно, но средства чтения с экрана правильно распознают изображение в качестве кнопки. Если значение **[TabIndex](properties-accessibility.md)** меньше нуля, **изображение** воспринимается только как изображение.

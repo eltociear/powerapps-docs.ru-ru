@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1322fd34f4e3a59a62a414fc0e2e7ccca48fc99f
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404075"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212338"
 ---
 # <a name="text-input-control-in-power-apps"></a>Элемент управления вводом текста в Power Apps
 Поле, в котором пользователь может вводить текст, числа и другие данные.
@@ -178,9 +178,9 @@ ms.locfileid: "78404075"
 * Применяются [стандартные требования по цветовому контрасту](../accessible-apps-color.md).
 
 ### <a name="screen-reader-support"></a>Поддержка средства чтения с экрана
-* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)** .
+* Должен присутствовать элемент **[AccessibleLabel](properties-accessibility.md)**.
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
+* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.
  

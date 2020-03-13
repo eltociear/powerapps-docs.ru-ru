@@ -14,12 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a7e41f9becc6cf974bffdeca127e549191ee9379
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403294"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212591"
 ---
 # <a name="language-function-in-power-apps"></a>Функция языка в Power Apps
 Эта функция возвращает тег языка текущего пользователя.
@@ -40,7 +39,7 @@ ms.PowerAppsDecimalTransform: true
 
 Power Apps использует формат [языкового тега IETF BCP-47](https://tools.ietf.org/html/bcp47) .  
 
-Чтобы увидеть список поддерживаемых тегов языка, введите в строке формул или в расширенном представлении команду **Value( "1"; )** и изучите список языковых обозначений, которые будут предложены в качестве значений для второго аргумента.  
+Чтобы увидеть список поддерживаемых тегов языка, введите в строке формул или в расширенном представлении команду **Value( "1", )** и изучите список языковых обозначений, которые будут предложены в качестве значений для второго аргумента.  
 
 Функции **[Text](function-text.md)** и **[Value](function-value.md)** также используют теги языка.  Используйте эти функции для преобразования содержимого в текстовые строки и наоборот в повсеместно известном формате.  При передаче тега языка этим функциям, когда регион ни на что не влияет, можно использовать только языковую часть тега.
 
@@ -79,7 +78,7 @@ Power Apps использует формат [языкового тега IETF B
 
 В приложении вместо текста **Hello**, который использовался ранее, вставьте следующую формулу:
 
-* **LookUp( Table1; TextID = "Hello" && (LanguageTag = Left( Language(); 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
+* **LookUp( Table1, TextID = "Hello" && (LanguageTag = Left( Language(), 2 ) || IsBlank( LanguageTag ))).LocalizedText**  
 
 Эта формула выполнит поиск соответствующего значения **LocalizedText** для языка пользователя. Если его не удастся обнаружить, будет возвращена *пустая строка* по умолчанию. 
 
@@ -93,7 +92,7 @@ Power Apps использует формат [языкового тега IETF B
 
 В приложении вместо текста **Hello**, который использовался ранее, вставьте следующую формулу:
 
-* **MicrosoftTranslator.Translate( "Hello"; Language() )**
+* **MicrosoftTranslator.Translate( "Hello", Language() )**
 
 Служба Microsoft Translator использует те же теги языка, которые возвращаются функцией **Language**.
 

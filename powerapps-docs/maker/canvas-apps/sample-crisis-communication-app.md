@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/11/2020
+ms.date: 03/12/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 742d33b2d87969df19fe6c0e82f96ecfa9da27e4
-ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
+ms.openlocfilehash: 60d8cf270c7706de8a82bc7fe3ee66787404264a
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79133624"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79209395"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Настройка и изучение образца шаблона "аварийная связь" в Power Apps
 
@@ -40,6 +40,12 @@ ms.locfileid: "79133624"
 > [!NOTE]
 > Шаблон образца "некритический обмен данными" также доступен для планов Power Apps и Power автоматизирующих учреждений США. URL-адреса служб для Power Apps и Power автоматизируются в версии для государственных организаций США отличаются от коммерческой версии. Дополнительные сведения: [Power Apps США URL-адреса службы](https://docs.microsoft.com/power-platform/admin/powerapps-us-government#power-apps-us-government-service-urls) и URL [-адреса службы Power Автоматизация для государственных организаций США](https://docs.microsoft.com/power-automate/us-govt#power-automate-us-government-service-urls).
 
+## <a name="demo-crisis-communication-app"></a>Демонстрация: приложение "аварийное взаимодействие"
+
+Посмотрите, как использовать решение "аварийное подключение".
+
+> [!VIDEO https://www.youtube.com/embed/23SypLXiOTw]
+
 ## <a name="prerequisites"></a>Предварительные требования
 
 - [Регистрация](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) для Power Apps.
@@ -51,6 +57,12 @@ ms.locfileid: "79133624"
 > Для получения отзывов или проблем, связанных с **приложением для связи с критическим подключением**, используйте следующие ссылки:
 > - **[Оставлять](https://aka.ms/crisis-communication-feedback)**
 > - **[Проблем](https://aka.ms/crisis-communication-issues)**
+
+## <a name="demo-build-and-deploy-crisis-communication-app"></a>Демонстрация: создание и развертывание приложения с некритическим подключением
+
+Посмотрите, как создавать и развертывать приложения с небезопасной связью:
+
+> [!VIDEO https://www.youtube.com/embed/Wykrwf9dZ-Y]
 
 ## <a name="create-a-home-for-your-data"></a>Создание домашней страницы для данных
 
@@ -205,9 +217,12 @@ ms.locfileid: "79133624"
 
 1. **Сохраните** и **опубликуйте** приложение.
 
-#### <a name="enable-location-updates"></a>Включить обновления расположения
+#### <a name="optional-enable-location-updates"></a>Необязательно: Включение обновлений расположения
 
-Это приложение позволяет записывать расположение пользователя и сохранять его на сайте SharePoint каждый раз, когда пользователь настраивает свое состояние. Группа аварийного управления может просматривать эти данные в Power BI отчете.
+Это приложение позволяет записывать расположение пользователя и сохранять его на сайте SharePoint каждый раз, когда пользователь настраивает свое состояние.  Группа аварийного управления может просматривать эти данные в Power BI отчете. 
+
+> [!NOTE]
+> Включение обновлений расположения является необязательным. Этот раздел можно пропустить, если вы не хотите отслеживания расположения пользователя.
 
 Чтобы включить эту функцию, выполните следующие действия.
 
@@ -216,68 +231,84 @@ ms.locfileid: "79133624"
   1. Скопируйте и вставьте следующий фрагмент кода в строку формул для свойства **OnSelect** :
 
   ```
-  UpdateContext({locSaveDates: true});
-
-// Store the output properties of the calendar in static variables and collections.
-Set(varStartDate,First(Sort(Filter(selectedDates,ComponentId=CalendarDatePicker_1.Id),Date,Ascending)).Date);
-Set(varEndDate,First(Sort(Filter(selectedDates,ComponentId=CalendarDatePicker_1.Id),Date,Descending)).Date);
-
-// Create a new record for work status for each date selected in the date range.
-ForAll(
-    Filter(
-        RenameColumns(selectedDates,"Date","DisplayDate"),
-        ComponentId=CalendarDatePicker_1.Id,
-        !(DisplayDate in colDates.Date)
-    ),
-    Patch('CI_Employee Status',Defaults('CI_Employee Status'),
-        {
-            Title: varUser.userPrincipalName,
-            Date: DisplayDate,
-            Notes: "",
-            PresenceStatus: LookUp(Choices('CI_Employee Status'.PresenceStatus),Value=WorkStatus_1.Selected.Value),
-            
-             
-            Latitude: Location.Latitude,
-            Longitude: Location.Longitude
-        }
-    )
-);
-
-// Update existing dates with the new status.
-ForAll(
-    AddColumns(
+    UpdateContext({locSaveDates: true});
+    // Store the output properties of the calendar in static variables and collections.
+    Set(varStartDate,First(Sort(Filter(selectedDates,ComponentId=CalendarComponent.Id),Date,Ascending)).Date);
+    Set(varEndDate,First(Sort(Filter(selectedDates,ComponentId=CalendarComponent.Id),Date,Descending)).Date);
+    // Create a new record for work status for each date selected in the date range.
+    ForAll(
         Filter(
             RenameColumns(selectedDates,"Date","DisplayDate"),
-            ComponentId=CalendarDatePicker_1.Id,
-            DisplayDate in colDates.Date
+            ComponentId=CalendarComponent.Id,
+            !(DisplayDate in colDates.Date)
         ),
+        Patch('CI_Employee Status',Defaults('CI_Employee Status'),
+            {
+                Title: varUser.userPrincipalName,
+                Date: DisplayDate,
+                Notes: "",
+                PresenceStatus: LookUp(colWorkStatus,Value=WorkStatusComponent.Selected.Value),
+                Latitude: Text(Location.Latitude),
+                Longitude: Text(Location.Longitude)
+            }
+        )
+    );
+    // Update existing dates with the new status.
+    ForAll(
+        AddColumns(
+            Filter(
+                RenameColumns(selectedDates,"Date","DisplayDate"),
+                ComponentId=CalendarComponent.Id,
+                DisplayDate in colDates.Date
+            ),
+            
+            // Get the current record for each existing date.
+            "LookUpId",LookUp(RenameColumns(colDates,"ID","DateId"),And(Title=varUser.userPrincipalName,Date=DisplayDate)).DateId
+        ),
+        Patch('CI_Employee Status',LookUp('CI_Employee Status',ID=LookUpId),
+            {
+                PresenceStatus: LookUp(colWorkStatus,Value=WorkStatusComponent.Selected.Value)
+            }
+        )
+    );
+    If(
+        IsEmpty(Errors('CI_Employee Status')),
         
-        // Get the current record for each existing date.
-        "LookUpId",LookUp(RenameColumns(colDates,"ID","DateId"),And(Title=varUser.userPrincipalName,Date=DisplayDate)).DateId
-    ),
-    Patch('CI_Employee Status',LookUp('CI_Employee Status',ID=LookUpId),
-        {
-            PresenceStatus: LookUp(Choices('CI_Employee Status'.PresenceStatus),Value=WorkStatus_1.Selected.Value)
-        }
-    )
-);
-
-If(
-    IsEmpty(Errors('CI_Employee Status')),
-    Notify("You successfully submitted your work status.",NotificationType.Success,5000);
-    
-    // Update the list of work status for the logged-in user.
-    ClearCollect(colDates,Filter('CI_Employee Status',Title=varUser.userPrincipalName));
-    
-    Navigate('Share to Team Screen',LookUp(colStyles,Key="navigation_transition").Value),
-    
-    Notify(
-        LookUp(colTranslations,Locale=varLanguage).WorkStatusError,
-        NotificationType.Warning
-    )
-);
-
-UpdateContext({locSaveDates: false})
+        // Update the list of work status for the logged-in user.
+        ClearCollect(colDates,Filter('CI_Employee Status',Title=varUser.userPrincipalName));
+        // Send an email receipt to the logged-in user.
+        UpdateContext(
+            {
+                locReceiptSuccess: 
+                Office365Outlook.SendEmailV2(
+                    varUser.mail,
+                    Proper(WorkStatusComponent.Selected.Value) & ": " & varStartDate & " - " & varEndDate,
+                    Switch(
+                        WorkStatusComponent.Selected.Value,
+                        "working from home",varString.WorkStatusMessageHome,
+                        "out of office",varString.WorkStatusMessageOutOfOffice
+                    ) & ": " &
+                    // Create a bulleted list of dates
+                    "<ul>" & 
+                        Concat(Sort(Filter(selectedDates,ComponentId=CalendarComponent.Id),Date),"<li>" & Date & Char(10)) &
+                    "</ul>"
+                )
+            }
+        );
+        If(
+            locReceiptSuccess,
+            Notify("You successfully submitted your work status. An email has been sent to you with a summary.",NotificationType.Success,5000),
+            Notify("There was an error sending an email summary, but you successfully submitted your work status.",NotificationType.Success,5000);
+        );
+        
+        Navigate('Share to Team Screen',LookUp(colStyles,Key="navigation_transition").Value),
+        
+        Notify(
+            varString.WorkStatusError,
+            NotificationType.Warning
+        )
+    );
+    UpdateContext({locSaveDates: false})
 ```
 
 ### <a name="update-the-request-help-flow"></a>Обновление потока справки по запросу
@@ -327,6 +358,33 @@ UpdateContext({locSaveDates: false})
 1. Прокрутите вниз до действия " **получить время** " и обновите действие для преобразования часового **пояса** с выбором времени источника и назначения:
 
     ![Преобразование часового пояса](media/sample-crisis-communication-app/convert-time-zone.png)
+
+## <a name="optional-configure-shared-inbox"></a>Необязательно: Настройка общих входящих сообщений
+
+Поток **крисискоммуникатион. Request** извлекает запросы из папки "Входящие" перед их отправкой в команды. Если вы хотите отправить запрос на сообщения электронной почты в общую папку "Входящие", выполните следующие действия.
+
+> [!NOTE]
+> Настройка общей папки входящих не является обязательной. Вы можете пропустить этот раздел, если не хотите отсылать сообщения электронной почты в общую папку "Входящие".
+
+1. Откройте поток **крисискоммуникатион. Request** в режиме *редактирования* .
+1. Выберите **...** в **случае получения сообщения электронной почты v3**.
+1. Выберите **Удалить**.
+
+     ![Удалить соединитель](media/sample-crisis-communication-app/33-delete-connector.png)
+
+1. Найдите и выберите **время поступления нового электронного письма в общий почтовый ящик (v2)**.
+1. Введите адрес общей папки входящих сообщений в поле **адрес почтового ящика**.
+1. Откройте карточку **комментариев** .
+1. Нажмите кнопку **добавить динамическое значение** для **параметра значение**.
+1. Найдите и выберите **текст**:
+
+     ![Выбрать текст](media/sample-crisis-communication-app/35-body.png)
+
+1. Откройте карту **получить карту профиля пользователя (v2)** .
+1. Нажмите кнопку **добавить динамическое значение** .
+1. Поиск **и выбор:**
+
+     ![Выбрать из](media/sample-crisis-communication-app/34-from.png)
 
 ## <a name="import-and-set-up-the-admin-app"></a>Импорт и Настройка административного приложения
 
@@ -398,7 +456,7 @@ UpdateContext({locSaveDates: false})
 
 | **Имя поля** | **Логическое имя в SharePoint** | **Цель** | **Пример:** |
 |-|-|-|-|
-| Электронная почта администратора | админконтактемаил | Используется для уведомления пользователей, которые администрируют приложение.  | admin@contoso.com |
+| Электронная почта администратора | админконтактемаил | Именно здесь отправляются запросы электронной почты. Для них следует задать свой адрес электронной почты. Если вы хотите отправлять уведомления в другую папку "Входящие", следуйте [дополнительной конфигурации "Общая папка входящих сообщений"](#optional-configure-shared-inbox). | admin@contoso.com |
 | URL-адрес эмблемы | Logo | Эмблема приложения, которая будет отображаться в левом верхнем углу. | https://contoso.com/logo.png |
 | Идентификатор группы AAD | аадграупид | Используется для отправки уведомлений конечным пользователям о внутренних обновлениях компании через *уведомление пользователей о новом* потоке новостей о экстренной связи. Выполните приведенные ниже инструкции, чтобы получить идентификатор AAD вашей группы. | c0ddf873-b4fe-4602-b3a9-502dd944c8d5 |
 | URL-АДРЕС ПРИЛОЖЕНИЯ | AppURL | Расположение приложения для конечных пользователей, чтобы *уведомление пользователей о новом* потоке новостей о сквозной связи могла перенаправить пользователей после выбора **Дополнительные**сведения. | https://apps.preview.powerapps.com/play/<app URL>? tenantId =<tenant ID>
@@ -463,8 +521,8 @@ UpdateContext({locSaveDates: false})
 | **Имя поля** | **Логическое имя в SharePoint** | **Цель** |
 |-|-|-|
 | Заголовок | Заголовок | Заголовок полезной подсказки. |
-| URL-адрес ресурса | ResourceURL | Ссылка на дополнительные материалы для чтения. (необязательно) |
-| Подзаголовок | Подзаголовок | Подзаголовок для Совета. (необязательно) |
+| URL-адрес ресурса | ResourceURL | Ссылка на дополнительные материалы для чтения.  (необязательно) |
+| Подзаголовок | Подзаголовок | Подзаголовок для Совета.  (необязательно) |
 | Описание | Описание | Полное описание полезной подсказки. |
 | Устарело | Устарело | Позволяет скрыть полезную подсказку. |
 
@@ -480,7 +538,7 @@ UpdateContext({locSaveDates: false})
 |-|-|-|
 | Заголовок | Заголовок | Текст ссылки. |
 | URL-адрес | URL-адрес | URL-адрес ссылки. |
-| Описание | Описание | Дополнительные сведения о ссылке. (необязательно) |
+| Описание | Описание | Дополнительные сведения о ссылке.  (необязательно) |
 | Устарело | Устарело | Позволяет скрыть ссылку. |
 
 ### <a name="setup-faqs"></a>Вопросы и ответы по установке
@@ -533,7 +591,7 @@ UpdateContext({locSaveDates: false})
 
     ![Создание подключения](media/sample-crisis-communication-app/create-connection.png)
 
-1. Найдите имя подключения; Например, **уведомление PowerApps (Предварительная версия)** :
+1. Найдите имя подключения; Например, **уведомление PowerApps (Предварительная версия)**:
 
     ![Уведомления](media/sample-crisis-communication-app/notifications.png)
 
@@ -597,7 +655,7 @@ UpdateContext({locSaveDates: false})
 
 ## <a name="monitor-office-absences-with-power-bi"></a>Мониторинг отсутствия в Office с помощью Power BI
 
-После развернутого приложения и запускайте уведомление о том, что они будут выставляться из офиса по различным причинам (например, не по болезни или при работе дома). Теперь можно использовать Power BI отчет, чтобы определить, сколько и где находятся эти люди. Обратите внимание, что для обеспечения работы элемента управления Map необходимо [включить отслеживание расположения](#enable-location-updates) .
+После развернутого приложения и запускайте уведомление о том, что они будут выставляться из офиса по различным причинам (например, не по болезни или при работе дома). Теперь можно использовать Power BI отчет, чтобы определить, сколько и где находятся эти люди. Обратите внимание, что для обеспечения работы элемента управления Map необходимо [включить отслеживание расположения](#optional-enable-location-updates) .
 
 Для начала можно использовать образец отчета "состояние присутствия Report. pbix", доступный в скачанном [пакете ресурсов](#prerequisites).
 При необходимости скачайте [Power BI Desktop](https://powerbi.microsoft.com/downloads). Кроме того, нам потребуется информация из списка **CI_Employee состояния** SharePoint, созданного ранее, так что давайте сначала вернемся к нему. Откройте список на сайте и выберите параметры списка в значке параметров:
@@ -678,7 +736,7 @@ UpdateContext({locSaveDates: false})
 
     ![Политики установки приложений](media/sample-crisis-communication-app/27-Setup-Policies.png)
 
-1. Выберите **Глобальная (Настройка в масштабах организации)** .
+1. Выберите **Глобальная (Настройка в масштабах организации)**.
 1. Выберите **добавить приложения**.
 
     ![Добавить приложение](media/sample-crisis-communication-app/28-Add-App.png)

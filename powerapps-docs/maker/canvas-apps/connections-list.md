@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 12/10/2019
+ms.date: 03/12/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d78ce9b571ed925e68747f2307d59f5f143e13eb
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 00273fefd24b9e0f76ed284b2f9ab526fb7706d6
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403375"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211855"
 ---
 # <a name="overview-of-canvas-app-connectors-for-power-apps"></a>Общие сведения о соединителях Canvas-App для Power Apps
 Данные являются основой большинства приложений, включая те, которые вы создаете в Power Apps. Эти данные хранятся в *источниках данных*. Вы переносите их в приложение при создании *подключения*. Для подключения используется определенный *соединитель*, который обеспечивает обмен данными с источником данных. В Power Apps есть соединители для многих популярных служб и локальных источников данных, включая SharePoint, SQL Server, Office 365, Salesforce и Twitter. Чтобы приступить к добавлению данных в приложение Canvas, см. статью [Добавление подключения к данным в Power Apps](add-data-connection.md).
@@ -74,13 +74,13 @@ ms.locfileid: "78403375"
 | ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; | ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) 
 |![Twitter](./media/connections-list/twitter.png) |[**Twitter**](connections/connection-twitter.md)
 
-\* * Применяется к большому двоичному объекту Azure, Box, Dropbox, Google Drive, OneDrive и OneDrive для бизнеса
+* * Применяется к большому двоичному объекту Azure, Box, Dropbox, Google Drive, OneDrive и OneDrive для бизнеса
 
 ## <a name="standard-and-custom-connectors"></a>Стандартные и пользовательские соединители
-Power Apps предоставляет *стандартные* соединители для многих широко используемых источников данных, например перечисленных выше. Если Power Apps имеет стандартный соединитель для типа источника данных, который вы хотите использовать, следует использовать этот соединитель. Чтобы подключиться к другому типу источника данных, например созданной вами службе, см. инструкции по [регистрации и использованию настраиваемых соединителей](../canvas-apps/register-custom-api.md).
+Power Apps предоставляет *стандартные* соединители для многих часто используемых источников данных. Если Power Apps имеет стандартный соединитель для типа источника данных, который вы хотите использовать, следует использовать этот соединитель. Чтобы подключиться к другому типу источника данных, например созданной вами службе, см. инструкции по [регистрации и использованию настраиваемых соединителей](../canvas-apps/register-custom-api.md).
 
 ## <a name="all-standard-connectors"></a>Все стандартные соединители
-Полный список стандартных соединителей см. в [справочнике по соединителям Майкрософт](https://docs.microsoft.com/connectors/). Для соединителей уровня "Премиум" требуются Power Apps для плана приложений или Power Apps на каждый план пользователя. Дополнительные сведения см. в статье [планы Power Apps](https://powerapps.microsoft.com/pricing/).
+Для стандартных соединителей не требуется специальная лицензия. Дополнительные сведения см. в статье [планы Power Apps](https://powerapps.microsoft.com/pricing/).
 
 Вы можете задавать вопросы о конкретном соединителе на [форумах Power Apps](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1). Вы можете предложить соединители, чтобы добавить или другие улучшения в [идеи Power Apps](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas).
 
