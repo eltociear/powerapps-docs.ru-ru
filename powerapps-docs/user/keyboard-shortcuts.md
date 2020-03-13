@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7fbcbe315f3af9554d53329f35469af4ca236181
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: b5f273fcc14b7c8bd9cbde947133fd70d4a2a432
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733192"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79035623"
 ---
 # <a name="use-keyboard-shortcuts-in-power-apps"></a>Использование сочетаний клавиш в Power Apps
 
@@ -31,7 +31,7 @@ ms.locfileid: "74733192"
 
 ## <a name="form-shortcuts"></a>Ярлыки форм
 
-<!--does the N/A mean not available? If so, why include them? -->
+
 
 
 |Task  | Единый интерфейс |
@@ -152,8 +152,6 @@ ms.locfileid: "74733192"
 |Перейти к первому элементу в диаграмме | Вкладка |
 |Перейти к следующей точке данных | Клавиша со стрелкой вправо (→) **ИЛИ** клавиша со стрелкой вниз (↓)|
 |Перейти к предыдущей точке данных | Клавиша со стрелкой влево (←) **ИЛИ** клавиша со стрелкой вверх (↑)|
-|Перейти к первой точке данных | Главная |
-|Перейти к последней точке данных | Конец |
 |Перейти к кнопке **Дополнительно** на диаграмме тегов | Вкладка |
 |Перейти назад от кнопки **Дополнительно** к тегам на диаграмме тегов | SHIFT+TAB |
 |Фильтровать панель мониторинга, когда фокус находится на точке данных в интерактивной панели мониторинга | ВВОД **или** ПРОБЕЛ |
