@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 02/13/2020
+ms.date: 03/10/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 91da88baa13204f8538ba3eb673a515e539f7fa7
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: 58e64d275a7d1380cd580a86f9899053b140b99e
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77282498"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78970942"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>Добавление встречи, электронной почты, телефонного звонка, заметок или задачи во временной шкале 
 
@@ -204,6 +204,9 @@ ms.locfileid: "77282498"
 Быстрая фильтрация действий, заметок или сообщений на стене временной шкалы по типу записи, виду деятельности и дате, с помощью области фильтра. Одновременно можно выбрать несколько фильтров и параметров фильтра. Вы можете фильтровать и просматривать дату выполнения действия, дату изменения или действия по состоянию.
 
 - В разделе **Временная шкала** щелкните **Открыть область фильтра** и выберите способ фильтрации действий.
+
+ > [!Note]
+ > При уменьшении масштаба в браузере область фильтра и записи временной шкалы отображаются в двух столбцах. Если записи временной шкалы отображаются в двух столбцах, область фильтра отображается в виде столбца рядом с записями временной шкалы. Дополнительные сведения см. в разделе [Область фильтра отображается в режиме "два столбца"](../maker/model-driven-apps/faqs-timeline-control.md#why-my-agents-see-the-filter-pane-even-when-the-expand-filter-pane-by-default-check-box-is-cleared). 
 
   > [!div class="mx-imgBorder"]
   > ![Область фильтра на временной шкале](media/timeline-filter2.png "Область фильтра на временной шкале") ![Область фильтра на временной шкале](media/timeline-filter5.png "Область фильтра на временной шкале")
