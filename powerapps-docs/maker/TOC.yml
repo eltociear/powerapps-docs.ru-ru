@@ -1233,6 +1233,8 @@
           href: ./portals/admin/portal-lifecycle.md
         - name: Обновление портала
           href: ./portals/admin/upgrade-portal.md
+        - name: Файлы cookie на портале
+          href: ./portals/admin/portal-cookies.md
     - name: Расширенная настройка портала
       items:
         - name: Обзор
