@@ -7,42 +7,39 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/12/2020
+ms.date: 03/18/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ce3974f399948f1f9ccd125c0b9727f51abc644b
-ms.sourcegitcommit: 3066c2800a939fbcaaac4262c802843e2d80b88c
+ms.openlocfilehash: a8ef720b45f3a9e02129c79f883b007a1fac3b22
+ms.sourcegitcommit: 0ca700b2982a4dec430f0b02b00cb1b3a045cf1c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79431861"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "79543065"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Настройка и изучение образца шаблона "аварийная связь" в Power Apps
+<!--note from editor: Suggest moving the overview into the usual overview position (i.e. after the H1). Other notes: According to the Docs Contributor Guide, graphic file names should be all lowercase, including the extension. I didn't change this, but something to note for next time. -->
+Приложение "аварийное соединение" предоставляет пользователям удобный интерфейс для подключения пользователей со сведениями о критической ситуации. Быстро Получайте обновления от внутренних новостей компании, получайте ответы на часто задаваемые вопросы и получайте доступ к важной информации, такой как ссылки и контакты для экстренных случаев. Это приложение потребуется настроить в соответствии с вашими потребностями.
 
-Пошаговые инструкции по установке и настройке приложения "аварийное подключение" для Power Apps.
+В этом пошаговом руководстве вы научитесь:
 
-Предполагаемое время выполнения этих шагов: **20-25 минут**
+- Создайте расположение для данных.
+- Импортируйте приложение "аварийное подключение" и его административное приложение.
+- Создание содержимого для приложения.
+- Импортируйте потоки для отправки уведомлений пользователям.
+- Создайте группу групп с централизованным управлением для агрегирования данных и эффективного реагирования на проблемы.
 
-## <a name="overview-of-the-app"></a>Общие сведения о приложении
-
-Приложение " *Аварийное соединение* " предоставляет пользователям удобный интерфейс для подключения конечных пользователей к информации о критических возможностях. Быстро Получайте обновления от внутренних новостей компании, получайте ответы на часто задаваемые вопросы и получайте доступ к важной информации, такой как ссылки и контакты для экстренных случаев. Это приложение потребуется настроить в соответствии с вашими потребностями.
-
-В этом пошаговом руководстве вы узнаете, как выполнять следующие задачи:
-- Создание расположения для данных
-- Импорт как приложения для подключения к аварийному соединению, так и его административного приложения
-- Создание содержимого для приложения
-- Импорт потоков для отправки уведомлений пользователям
-- Создание группы с централизованным управлением группами для агрегирования данных и эффективного реагирования на проблемы
+Предполагаемое время выполнения этих шагов: **20&ndash;25 минут**.
 
 > [!NOTE]
-> Шаблон образца "некритический обмен данными" также доступен для планов Power Apps и Power автоматизирующих учреждений США. URL-адреса служб для Power Apps и Power автоматизируются в версии для государственных организаций США отличаются от коммерческой версии. Дополнительные сведения: [Power Apps США URL-адреса службы](https://docs.microsoft.com/power-platform/admin/powerapps-us-government#power-apps-us-government-service-urls) и URL [-адреса службы Power Автоматизация для государственных организаций США](https://docs.microsoft.com/power-automate/us-govt#power-automate-us-government-service-urls).
+> Шаблон примера "аварийная связь" также доступен для планов Power Apps США и Power автоматизирующих организаций США. URL-адреса служб для Power Apps и Power автоматизируют версии для государственных организаций США отличаются от коммерческих версий. Дополнительные сведения: [Power Apps США URL-адреса службы](https://docs.microsoft.com/power-platform/admin/powerapps-us-government#power-apps-us-government-service-urls) и URL [-адреса службы Power АВТОМАТИЗИРОВАНного правительства США](https://docs.microsoft.com/power-automate/us-govt#power-automate-us-government-service-urls)
 
 ## <a name="demo-crisis-communication-app"></a>Демонстрация: приложение "аварийное взаимодействие"
 
-Посмотрите, как использовать решение "аварийное подключение".
+Посмотрите, как использовать решение "аварийное" подключение.
 
 > [!VIDEO https://www.youtube.com/embed/23SypLXiOTw]
 
@@ -54,48 +51,50 @@ ms.locfileid: "79431861"
 - Скачайте ресурсы из [AKA.MS/CrisisCommunicationSolution](https://aka.ms/CrisisCommunicationSolution).
 
 > [!IMPORTANT]
-> Для получения отзывов или проблем, связанных с **приложением для связи с критическим подключением**, используйте следующие ссылки:
+> Для получения отзывов или проблем, связанных с приложением для связи с критическим подключением, используйте следующие ссылки:
 > - **[Оставлять](https://aka.ms/crisis-communication-feedback)**
 > - **[Проблем](https://aka.ms/crisis-communication-issues)**
 
-## <a name="demo-build-and-deploy-crisis-communication-app"></a>Демонстрация: создание и развертывание приложения с некритическим подключением
+## <a name="demo-build-and-deploy-the-crisis-communication-app"></a>Демонстрация: создание и развертывание приложения "аварийное подключение"
 
-Посмотрите, как создавать и развертывать приложения с небезопасной связью:
+Посмотрите, как создавать и развертывать приложения для работы с критическими подключениями.
 
 > [!VIDEO https://www.youtube.com/embed/Wykrwf9dZ-Y]
 
 ## <a name="create-a-home-for-your-data"></a>Создание домашней страницы для данных
 
-Данные для приложения будут находиться в списках SharePoint. Сначала необходимо создать новый сайт SharePoint, чтобы приступить к работе.
+Данные для приложения хранятся в списках SharePoint, поэтому первым шагом является создание нового сайта SharePoint.
 
 ### <a name="create-a-sharepoint-site"></a>Создание сайта SharePoint
 
-1. Войдите в [Office Online](https://www.office.com) и выберите **SharePoint**.
-1. Выберите создать сайт и нажмите кнопку Далее.
+1. Войдите в [Office Online](https://www.office.com), а затем выберите **SharePoint**.
+1. Выберите **создать сайт**.
 
     ![Образец сайта SharePoint](media/sample-crisis-communication-app/01-Create-Site.png)
 
-1. Выберите сайт группы:
+1. Выберите **сайт группы**.
 
     ![Сайт группы](media/sample-crisis-communication-app/02-Team-Site.png)
 
-1. Присвойте сайту имя и описание.
-1. Установите общедоступные параметры конфиденциальности, чтобы все пользователи в компании могли получить необходимую информацию:
+1. Введите имя и описание для сайта.
+1. Установите **общедоступные** **Параметры конфиденциальности** , чтобы все пользователи в компании могли получить необходимую информацию.
 
     ![Параметры сайта](media/sample-crisis-communication-app/03-Privacy-Settings.png)
 
-1. Выберите Далее.
-1. При необходимости добавьте дополнительных владельцев.
-1. Нажмите кнопку Готово.
+1. Нажмите кнопку **Далее**.
+1. Добавьте дополнительных владельцев для сайта (необязательно).
+1. Нажмите кнопку **Готово**.
 
-### <a name="create-the-sharepoint-lists-for-app"></a>Создание списков SharePoint для приложения
-Приложению требуется несколько списков, в которых хранятся все данные. Чтобы автоматизировать создание списков SharePoint, можно использовать поток *деплойсплистс* , доступный в скачанном [пакете ресурсов](#prerequisites).
+### <a name="create-sharepoint-lists-for-the-app"></a>Создание списков SharePoint для приложения
+
+Приложение использует несколько списков для хранения своих данных. Для автоматического создания этих списков можно использовать поток Деплойсплистс, доступный в скачанном [пакете ресурсов](#prerequisites).
 
 #### <a name="import-the-sharepoint-list-deployment-flow"></a>Импорт последовательности развертывания списка SharePoint
-1. Перейдите по адресу [Flow.Microsoft.com](https://flow.microsoft.com)
-1. Выберите " **мои потоки** " в левой области навигации.
-1. Нажмите кнопку **Импорт** на панели команд.
-1. Отправьте пакет **деплойсплист. zip** из репозитория GitHub.
+
+1. Перейдите по адресу [Flow.Microsoft.com](https://flow.microsoft.com).
+1. Выберите **мои потоки** в левой области навигации.
+1. На панели команд выберите **Импорт** .
+1. Отправка **деплойсплистс. zip**<!--edit to the file name okay, here and in the following instances?--> пакет из репозитория GitHub.
 
     ![Импорт пакета](media/sample-crisis-communication-app/import-package.png)
 
@@ -103,142 +102,147 @@ ms.locfileid: "79431861"
 
     ![Импорт параметров](media/sample-crisis-communication-app/import-settings.png)
 
-1. Если необходимо создать новое подключение SharePoint, сначала выберите **создать** в области Импорт настройки.
-1. На панели команд выберите **новое подключение** :
+1. Если необходимо создать новое подключение SharePoint, выберите **создать** в области **Импорт Настройка** .
+1. На панели команд выберите **создать подключение** .
 
     ![Создание подключения](media/sample-crisis-communication-app/create-connection.png)
 
 1. Найдите имя соединения, например *SharePoint*.
-1. Выберите подходящее соединение.
+1. Выберите созданное подключение.<!--edit okay?-->
 1. Нажмите кнопку **Сохранить**.
 1. Выберите **Импортировать**.
 
 #### <a name="edit-the-sharepoint-list-deployment-flow"></a>Изменение последовательности развертывания списка SharePoint
 
-1. После завершения импорта вернитесь в " **мои потоки** " и обновите список потоков.
-1. Выберите только что импортированный **деплойсплист**потока.
+1. После завершения импорта перейдите в раздел " **мои потоки** " и обновите список потоков.
+1. Выберите только что импортированный поток **деплойсплистс**.
 1. Выберите **изменить** на панели команд.
-1. Откройте карточку с именем **переменная — целевой сайт для списков**.
-1. Измените значение на имя сайта SharePoint.
-1. Откройте карточку с именем **переменная — имя приложения**.
-1. Измените значение на имя приложения. по умолчанию это «аварийная связь».
+1. Откройте карточку **переменная — целевой сайт для списков** .
+1. В поле **значение**введите имя сайта SharePoint.
+1. Откройте окно **переменная — имя приложения** .
+1. В поле **значение**введите имя приложения. по умолчанию используется имя "некоторая **связь**".
 
     ![Параметры потока](media/sample-crisis-communication-app/04-Flow-Settings.png)
 
-1. Нажмите кнопку **сохранить** , чтобы зафиксировать изменения.
+1. Нажмите кнопку **Сохранить**.
 
 #### <a name="run-the-sharepoint-list-deployment-flow"></a>Выполнение последовательности развертывания списка SharePoint
 
-1. Вернитесь на экран сведений для **потока деплойсплист.**
+1. Вернитесь на экран сведений для потока **деплойсплистс** .
 1. На панели команд выберите **выполнить** .
-1. Выберите **Перейти** к и **запустите последовательность** , чтобы активировать поток.
+1. Нажмите кнопку **продолжить**, а затем выберите **запустить поток**.
 
     ![Войдите, чтобы запустить поток](media/sample-crisis-communication-app/sign-in-flow.png)
 
     ![Запуск потока](media/sample-crisis-communication-app/run-flow.png)
 
 > [!NOTE]
-> Может появиться сообщение об ошибке, сообщающее о том, что службы расположения являются обязательными.
-В этом случае следует разрешить службам обнаружения, чтобы включить службы поиска, и обновить страницу, прежде чем повторять попытку.
+> Может появиться сообщение об ошибке, сообщающее о необходимости служб расположения.
+Если это происходит, предоставьте службам расположения доступ к<!--edit okay? I wasn't sure what this meant.--> Power Автоматизируйте и обновите страницу, прежде чем повторять попытку.
 
-Затем последовательность создаст следующие списки SharePoint на сайте SharePoint:
+Последовательность создает следующие списки SharePoint на сайте SharePoint.<!--general note; You don't need to introduce tables or graphics with colons, only lists.-->
 
 | **Отображаемое название**| **Цель** | **Описание** |
 |-|-|-|
-| CI_LogosAssets| Для хранения логотипа и (или) других изображений, на которые можно ссылаться из приложения. Ссылка на эмблему будет отображаться в Power Apps по прямой ссылке или по ИДЕНТИФИКАТОРу требуемого логотипа. | Библиотека для связанных логотипов и других ресурсов изображений для приложения [имя приложения]. |
-| CI_configAdminSetup | Для настройки компонентов администратором средства. **Примечание**. Этот список должен быть доступен только для чтения для всех участников, не являющихся администраторами. | Список конфигураций администрирования для приложения [имя приложения].
-| CI_Contacts | Использование типа содержимого Contacts по умолчанию для сбора сведений о контактах. (Средство выбора людей не включено — поэтому для обеспечения актуальности данных может потребоваться обслуживание.)  **Примечание**. это зависит от типа списка глобальных контактов в качестве типа содержимого по умолчанию в списке. | Список контактов для приложения [имя приложения].|
-| CI_CompanyNews | Коллекция элементов новостей компании. | Список для управления новостными элементами, видимыми в приложении [имя приложения]. Устаревший столбец можно использовать для фильтрации элементов новостей из приложения (они сохраняются в виде записи). | 
-| CI_FAQ  | Вопросы и ответы. | Часто задаваемые вопросы о приложении [имя приложения]. Устаревший столбец можно использовать для фильтрации элементов вопросов и ответов из приложения (они сохраняются в виде записи). |
-| CI_UsefullLinks | Список полезных гиперссылок | Список полезных гиперссылок для приложения [имя приложения]. Нерекомендуемый столбец можно использовать для фильтрации элементов гиперссылок вне приложения (они сохраняются в виде записи). |
-| CI_Employee | Отслеживание состояния присутствия текущего сотрудника. Примеры: *работа из дома*; не по *болезни*; *при личном выходе*; и *в отпуске*.  **Примечание**. Предполагается, что *ожидается работа* и не включена в список параметров. | Список полезных гиперссылок для приложения [имя приложения]. Нерекомендуемый столбец можно использовать для фильтрации элементов ссылок вне приложения (они сохраняются в виде записи). |
-| CI_HelpfulTips             | Пользователи могут принимать полезные советы для пиринга. | Список для управления общими советами по приложению [имя приложения]. Устаревший столбец можно использовать для удаления советов из представлений приложений (которые сохраняются в виде записи в SPO).  |
+| CI_LogosAssets| Для хранения логотипа и (или) других изображений, на которые можно ссылаться из приложения. На логотип будут ссылаться в Power Apps по прямой ссылке или по ИДЕНТИФИКАЦИОНному номеру логотипа, который вы хотите использовать. | Библиотека для связанных логотипов и других ресурсов изображений для приложения *[имя приложения]* . |
+| CI_configAdminSetup | Используется для настройки компонентов администратором приложения.<br>**Примечание**. Этот список должен быть доступен только для чтения для всех участников, не являющихся администраторами. | Список конфигураций администрирования для приложения *[имя приложения]* .
+| CI_Contacts | Использование типа содержимого Contacts по умолчанию для сбора сведений о контактах. (Средство выбора людей не включено, поэтому этот список может потребоваться поддерживать вручную.<!--edit okay?--> для обеспечения актуальности данных.)<br>**Примечание**. это зависит от типа списка глобальных контактов, который является типом содержимого по умолчанию в списке. | Список контактов для приложения *[имя приложения]* .|
+| CI_CompanyNews | Коллекция элементов **новостей компании** . | Список для управления новостными элементами, которые отображаются в приложении *[имя приложения]* . Для удаления элементов новостей из представлений приложений можно использовать **устаревший** столбец.<!--edit okay, here and below? You use this pattern ("remove ___ from the app views") in the "Helpful tips" description, and it seems a bit more descriptive than "filter ___ out of the app".-->, сохраняя их в виде записи. | 
+| CI_FAQ  | Вопросы и ответы. | Список часто задаваемых вопросов о приложении *[имя приложения]* . Можно использовать **устаревший** столбец для удаления элементов вопросов и ответов из представлений приложений, сохраняя их в виде записи. |
+| CI_UsefulLinks<!--edit okay? The sharepoint-lists.png screenshot later in this article shows it as "Usefulinks," which probably isn't correct either.--> | Список полезных гиперссылок. | Список полезных гиперссылок для приложения *[имя приложения]* . **Нерекомендуемый** столбец можно использовать для удаления элементов гиперссылок из представлений приложений, сохраняя их в виде записи. |
+| CI_Employee | Отслеживание состояния присутствия текущего сотрудника. Примеры: **Работа с дома, с** **больничного**, **на личном выходе**и **в отпуске**.  **Примечание**. в параметрах списка предполагается, что состояние **работает** , и не включено. | <!--Please check the following edit carefully. This cell was duplicated by mistake from the previous row. Does the note about the "Deprecated" column apply here?-->Список сообщений, указывающий состояние присутствия сотрудника для приложения *[имя приложения]* . Можно использовать **устаревший** столбец для удаления сообщений о состоянии из представлений приложений, сохраняя их в виде записи. |
+| CI_HelpfulTips             | Полезные советы, которые пользователи участвовали в работе с коллегами. | Список для управления общими советами по приложению *[имя приложения]* . Можно использовать **устаревший** столбец для удаления советов из представлений приложений, сохраняя их в виде записи.  |
 
 > [!NOTE]
-> - Все перечисленные выше столбцы списка должны рассматриваться как зависимости.
+> - Все эти столбцы списка следует рассматривать как зависимости.
     Защита списков от случайных изменений схемы (например, добавление новых столбцов разрешено, но удаление столбцов может привести к нарушению приложения).
-> - Будьте внимательны при удалении элементов списка. При удалении элементов списка удаляются записи журнала. Чтобы удалить записи из списка контактов, новостей, вопросов и ответов или ссылок, можно отключить значение параметра устаревания от *No* к *Да* .
+> - Будьте внимательны при удалении элементов списка. При удалении элементов списка удаляются записи журнала. Можно включить переключатель значения устаревания <!--Style Guide-->от **No** "нет **" до "Да"** , чтобы удалить записи из контактов, новостей, вопросов и ответов или ссылок.<!--Should this include status messages too?-->
 
 ## <a name="import-and-set-up-the-crisis-communication-app"></a>Импорт и настройка приложения для связи с критическим подключением
 
-Теперь, когда все списки SharePoint созданы, вы можете импортировать приложение и подключить его к новым источникам данных.
+После создания всех списков SharePoint можно импортировать приложение и подключить его к новым источникам данных.
 
 > [!NOTE]
-> Если вы не хотите использовать административное приложение, вы также можете изменить эти же свойства, изменив списки SharePoint вручную.
+> Если вы не хотите использовать административное приложение, вы можете изменить эти же свойства, изменив списки SharePoint вручную.
 
 ### <a name="import-the-app"></a>Импорт приложения
 
 1. Выполните вход в [Power Apps](https://make.powerapps.com).
 1. В области навигации слева выберите **приложения** .
 1. На панели команд выберите **Импорт** .
-1. Отправьте файл **крисискоммуникатион. zip** из репозитория GitHub:
+1. Отправьте файл **крисискоммуникатион. zip** из репозитория GitHub.
 
     > [!NOTE]
-    > Если клиент находится в среде GCC, используйте **крисискоммуникатионгкк. zip**.
+    > Если клиент находится в среде GCC, отправьте **крисискоммуникатионгкк. zip**.
 
     ![Импорт пакета приложения](media/sample-crisis-communication-app/31-Import-App.png)
 
-1. Выполните команду **Импорт настроек** для **подключения Microsoft Teams** и **Office 365 пользователи** , выбрав соответствующие подключения с помощью кнопки *выбрать при импорте* гиперссылки. Возможно, потребуется создать [новое подключение](add-data-connection.md) , если оно уже не существует.
+1. Выполните команду Импорт настроек для **подключения Microsoft Teams** и **подключения пользователей Office 365** , выбрав соответствующие подключения с помощью гиперссылки **SELECT во время импорта** . Возможно, потребуется создать [новое соединение](add-data-connection.md), если оно еще не существует.
 1. Выберите **Импортировать**.
 
 ### <a name="update-the-sharepoint-connections"></a>Обновление подключений SharePoint
 
 1. Вернитесь в список **приложений** .
-1. Выберите **Дополнительные команды** (...) для приложения с **небезопасной связью** .
-1. В контекстном меню выберите пункт **изменить** :
+1. Выберите **Дополнительные команды** (...) для приложения " **некритический обмен данными** ".
+1. В контекстном меню выберите пункт **изменить** .
 
     ![Изменение приложения](media/sample-crisis-communication-app/05-Edit-App.png)
 
-1. **Войдите** или создайте необходимые подключения и выберите **Разрешить**.
+1. Войдите или создайте необходимые подключения, а затем выберите **Разрешить**.
 
-1. Перейдите к источникам данных в левой области:
+1. Перейдите к источникам данных на левой панели.
 
     ![Источники данных](media/sample-crisis-communication-app/data-sources.png)
 
-1. **Удалите** существующие списки SharePoint в приложении, так как они не указывают на текущий сайт SharePoint:
+1. Удаление существующих списков SharePoint внутри приложения<!--Alternatively, this could be "Right-click the name of each existing SharePoint list, and then select **Remove**" if that's how the context menu works here. I think the graphic will be clear enough for the reader, though.-->, так как они не указывают на текущий сайт SharePoint.
 
     ![Удаление источников данных](media/sample-crisis-communication-app/remove-data-source.png)
 
-1. Добавьте списки с собственного сайта SharePoint. Начните с поиска SharePoint на панели поиска:
+1. Добавьте списки с собственного сайта SharePoint. Начните с поиска **SharePoint** на панели поиска.
 
-    ![Поиск в SharePoint](media/sample-crisis-communication-app/sharepoint.png)
+    ![Поиск SharePoint](media/sample-crisis-communication-app/sharepoint.png)
 
-1. Выберите **SharePoint** и выберите подключение:
+1. Выберите **SharePoint**, а затем выберите подключение.
 
     ![Подключение к SharePoint](media/sample-crisis-communication-app/sharepoint-connection.png)
 
-1. Скопируйте и вставьте URL-адрес сайта SharePoint в текстовое поле и выберите **подключить**:
+1. Скопируйте и вставьте URL-адрес сайта SharePoint в текстовое поле, а затем нажмите кнопку **подключить**.
 
     ![URL-адрес сайта SharePoint](media/sample-crisis-communication-app/site-url.png)
 
-1. Выберите все списки и библиотеки SharePoint и нажмите кнопку **подключить**:
+1. Выберите все списки и библиотеки SharePoint, а затем нажмите кнопку **подключить**.
 
     ![Подключение к спискам SharePoint](media/sample-crisis-communication-app/sharepoint-lists.png)
 
-1. **Сохраните** и **опубликуйте** приложение.
+1. Нажмите кнопку **сохранить**, а затем выберите **опубликовать**.
 
-#### <a name="optional-enable-location-updates"></a>Необязательно: Включение обновлений расположения
+### <a name="optional-enable-location-updates"></a>Необязательно: Включение обновлений расположения
 
-Это приложение позволяет записывать расположение пользователя и сохранять его на сайте SharePoint каждый раз, когда пользователь настраивает свое состояние.  Группа аварийного управления может просматривать эти данные в Power BI отчете. 
+Это приложение позволяет записывать расположение пользователя и сохранять его на сайте SharePoint каждый раз, когда пользователь настраивает свое состояние. Группа аварийного управления может просматривать эти данные в Power BI отчете.
 
 > [!NOTE]
 > Включение обновлений расположения является необязательным. Этот раздел можно пропустить, если вы не хотите отслеживания расположения пользователя.
 
-Чтобы включить эту функцию, выполните следующие действия.
+**Включение обновлений расположения**
 
-  1. Поиск элемента управления **бтндатеранже**
-  1. Откройте свойство **OnSelect** элемента управления **бтндатеранте** в строке формул.
-  1. Скопируйте и вставьте следующий фрагмент кода в строку формул для свойства **OnSelect** :
+1. Найдите элемент управления **бтндатеранже** .
+1. Откройте свойство **OnSelect** элемента управления **бтндатеранже** в строке формул.
+1. Скопируйте и вставьте следующий фрагмент кода в строку формулы для свойства **OnSelect** .
 
-  ```
-    UpdateContext({locSaveDates: true});
+    > [!NOTE]
+    > Следующий фрагмент кода предназначен для работы с версиями решения, которые старше 2020.03.16.
+
+
+    ```
+        UpdateContext({locSaveDates: true});
     // Store the output properties of the calendar in static variables and collections.
-    Set(varStartDate,First(Sort(Filter(selectedDates,ComponentId=CalendarComponent.Id),Date,Ascending)).Date);
-    Set(varEndDate,First(Sort(Filter(selectedDates,ComponentId=CalendarComponent.Id),Date,Descending)).Date);
+    ClearCollect(submittedDates,Sort(Filter(selectedDates,ComponentId=CalendarComponent.Id),Date,Ascending));
+    Set(varStartDate,First(submittedDates).Date);
+    Set(varEndDate,First(Sort(submittedDates,Date,Descending)).Date);
     // Create a new record for work status for each date selected in the date range.
     ForAll(
         Filter(
-            RenameColumns(selectedDates,"Date","DisplayDate"),
+            RenameColumns(submittedDates,"Date","DisplayDate"),
             ComponentId=CalendarComponent.Id,
             !(DisplayDate in colDates.Date)
         ),
@@ -247,103 +251,154 @@ ms.locfileid: "79431861"
                 Title: varUser.userPrincipalName,
                 Date: DisplayDate,
                 Notes: "",
-                PresenceStatus: LookUp(colWorkStatus,Value=WorkStatusComponent.Selected.Value),
-                Latitude: Text(Location.Latitude),
-                Longitude: Text(Location.Longitude)
-            }
-        )
-    );
-    // Update existing dates with the new status.
-    ForAll(
-        AddColumns(
-            Filter(
-                RenameColumns(selectedDates,"Date","DisplayDate"),
-                ComponentId=CalendarComponent.Id,
-                DisplayDate in colDates.Date
-            ),
-            
-            // Get the current record for each existing date.
-            "LookUpId",LookUp(RenameColumns(colDates,"ID","DateId"),And(Title=varUser.userPrincipalName,Date=DisplayDate)).DateId
-        ),
-        Patch('CI_Employee Status',LookUp('CI_Employee Status',ID=LookUpId),
-            {
                 PresenceStatus: LookUp(colWorkStatus,Value=WorkStatusComponent.Selected.Value)
+                
+                // To implement location, add a comma to the line above and uncomment the lines below for latitude and longitude.
+                // Latitude: Text(Location.Latitude),
+                // Longitude: Text(Location.Longitude)
             }
         )
     );
-    If(
-        IsEmpty(Errors('CI_Employee Status')),
-        
-        // Update the list of work status for the logged-in user.
-        ClearCollect(colDates,Filter('CI_Employee Status',Title=varUser.userPrincipalName));
-        // Send an email receipt to the logged-in user.
-        UpdateContext(
-            {
-                locReceiptSuccess: 
-                Office365Outlook.SendEmailV2(
-                    varUser.mail,
-                    Proper(WorkStatusComponent.Selected.Value) & ": " & varStartDate & " - " & varEndDate,
-                    Switch(
-                        WorkStatusComponent.Selected.Value,
-                        "working from home",varString.WorkStatusMessageHome,
-                        "out of office",varString.WorkStatusMessageOutOfOffice
-                    ) & ": " &
-                    // Create a bulleted list of dates
-                    "<ul>" & 
-                        Concat(Sort(Filter(selectedDates,ComponentId=CalendarComponent.Id),Date),"<li>" & Date & Char(10)) &
-                    "</ul>"
-                )
-            }
+        // Update existing dates with the new status.
+        ForAll(
+            AddColumns(
+                Filter(
+                    RenameColumns(submittedDates,"Date","DisplayDate"),
+                    ComponentId=CalendarComponent.Id,
+                    DisplayDate in colDates.Date
+                ),
+                
+                // Get the current record for each existing date.
+                "LookUpId",LookUp(RenameColumns(colDates,"ID","DateId"),And(Title=varUser.userPrincipalName,Date=DisplayDate)).DateId
+            ),
+            Patch('CI_Employee Status',LookUp('CI_Employee Status',ID=LookUpId),
+                {
+                    PresenceStatus: LookUp(colWorkStatus,Value=WorkStatusComponent.Selected.Value)
+                }
+            )
         );
         If(
-            locReceiptSuccess,
-            Notify("You successfully submitted your work status. An email has been sent to you with a summary.",NotificationType.Success,5000),
-            Notify("There was an error sending an email summary, but you successfully submitted your work status.",NotificationType.Success,5000);
+            IsEmpty(Errors('CI_Employee Status')),
+            
+            // Update the list of work status for the logged-in user.
+            ClearCollect(colDates,Filter('CI_Employee Status',Title=varUser.userPrincipalName));
+            // Send an email receipt to the logged-in user.
+            UpdateContext(
+                {
+                    locReceiptSuccess: 
+                    Office365Outlook.SendEmailV2(
+                        // To: send an email to oneself
+                        varUser.mail,
+                        // Subject
+                        Proper(WorkStatusComponent.Selected.Value) & ": " & varStartDate & If(varStartDate<>varEndDate," - " & varEndDate),
+                        // Body
+                        WorkStatusComponent.Selected.DateRangeReceipt & ": " &
+                        // Create a bulleted list of dates
+                        "<ul>" & 
+                            Concat(submittedDates,"<li>" & Date & Char(10)) &
+                        "</ul>"
+                    )
+                }
+            );
+            If(
+                locReceiptSuccess,
+                Notify("You successfully submitted your work status. An email has been sent to you with a summary.",NotificationType.Success,3000),
+                Notify("There was an error sending an email summary, but you successfully submitted your work status.",NotificationType.Success,3000);
+            );
+            
+            Navigate('Share to Team Screen',LookUp(colStyles,Key="navigation_transition").Value),
+            
+            // Case: Error submitting work status
+            Notify(varString.WorkStatusError,NotificationType.Warning)
         );
-        
-        Navigate('Share to Team Screen',LookUp(colStyles,Key="navigation_transition").Value),
-        
-        Notify(
-            varString.WorkStatusError,
-            NotificationType.Warning
+        UpdateContext({locSaveDates: false})
+    ```
+
+### <a name="optional-add-additional-work-status-messages"></a>Необязательно: Добавление дополнительных сообщений о состоянии работы
+
+Если требуется добавить дополнительное состояние работы<!--Interesting fact: there is no plural of "status."--> сообщения, находящиеся за пределами **дома и в** **офисе**, можно сделать, выполнив следующие действия. Для начала необходимо обновить сайт SharePoint.
+
+1. Вернитесь на сайт SharePoint и выберите **содержимое сайта**.
+1. Выберите **состояние CI_Employee**.
+1. Если столбец **пресенцестатус** отсутствует, выберите **Добавить столбец**.
+1. Выберите **Показать/скрыть столбцы**.
+
+    ![Показать/скрыть столбцы](media/sample-crisis-communication-app/36-hide-show-columns.png)
+
+1. Выбрать<!--edit okay? I didn't know what "Check" meant here.--> **Пресенцестатус**.
+1. Нажмите кнопку **Применить**.
+1. Выберите столбец **пресенцестатус** .
+
+    ![Выберите столбец Пресенцестатус](media/sample-crisis-communication-app/37-show-presence.png)
+
+1. Выберите **Параметры столбца**и нажмите кнопку **изменить**.
+
+    ![Изменение столбца Пресенцестатус](media/sample-crisis-communication-app/38-edit-column.png)
+
+1. Добавьте дополнительные сообщения о состоянии работы в поле " **Выбор** ".
+
+> [!NOTE]
+> Запишите имена новых вариантов. они будут использоваться в последующих шагах.
+
+Теперь необходимо внести несколько изменений в приложение, чтобы отобразить новые сообщения о состоянии работы.
+
+1. Открытие приложения в Power Apps Studio<!--edit okay?-->.
+1. Выберите экран **состояние работы** .
+1. Задайте для строки формул функцию **OnVisible** .
+
+    ![Отображение присутствия](media/sample-crisis-communication-app/39-onvisible-for-screen.png)
+
+1. Измените следующий шаблон и замените значения собственными.
+<!--I took the liberty of editing these strings to use contractions, which is Microsoft style now.-->
+    ```
+        ,"<Name of option in SharePoint list; case sensitive>",
+        Table(
+            {
+                Icon: <Image file>,
+                DateRangeQuestion: "Select the dates you'll be <Name of status>.",
+                DateRangeReceipt: "You're currently <Name of status>.",
+                ShareToTeamEmail: "I'll be <Name of status> on these dates",
+                AutoReplyMessage: "I'll be <Name of status> on these dates"
+            }
         )
-    );
-    UpdateContext({locSaveDates: false})
-```
+    ```
 
-### <a name="update-the-request-help-flow"></a>Обновление потока справки по запросу
+1. Замените строку `/* TEMPLATE FOR ADDITIONAL WORK STATUS OPTIONS */` шаблоном.
+1. Нажмите кнопку **сохранить**, а затем выберите **опубликовать**.
 
-Этот поток отправит адаптивную карту команде Центральной группы, запрашивающей помощь.
+### <a name="update-the-request-for-help-flow"></a>Обновление запроса на выполнение справки
 
-![Импорт пакета приложения](media/sample-crisis-communication-app/21-Request-Help.png)
+Этот поток отправляет адаптивную карту команде Центральной группы, запрашивая помощь.
 
-Перед выполнением следующего шага сначала создайте группу команд для группы аварийного управления. После этого можно получить идентификатор для него и перенести его в последовательность. Если вам нужна помощь по созданию группы разработчиков, перейдите к разделу [Создание группы централизованных аварийного управления](#create-a-central-crisis-management-teams-team).
+![Запрос справки](media/sample-crisis-communication-app/21-Request-Help.png)
+
+Перед выполнением следующего шага создайте группу аварийного управления в командах. После создания команды вы можете получить ее идентификатор и перенести ее в последовательность. Дополнительные сведения о создании командных групп: [Создание группы централизованных аварийного управления](#create-a-central-crisis-management-teams-team)
 
 1. Перейдите к каналу команд, в который нужно поместить все запросы на помощь.
-1. Выберите меню **...** для канала.
+1. Выберите **Дополнительные параметры** (...) для канала.
 1. Выберите **Get Link to Channel (получить ссылку на канал**).
 
     ![Получить ссылку на канал](media/sample-crisis-communication-app/17-Get-link-to-channel.png)
 
 1. Скопируйте ссылку и вставьте ее в текстовый редактор.
 
-    ![Копировать ссылку](media/sample-crisis-communication-app/18-Copy-link.png)
+    ![Копирование связи команды](media/sample-crisis-communication-app/18-Copy-link.png)
 
-1. Извлеките идентификатор команды, который находится после `groupId=` и до `&tenantId=`. <br> Например, в следующем URL-адресе идентификатор канала будет `8bc7c0c2-0d4c-4fb8-af99-32da74c9237b`:
+1. Извлеките **идентификатор команды**, который находится после `groupId=` и до `&tenantId=`. <br> Например, в следующем URL-адресе идентификатор канала:<!--suggest using a line break here and in the next step so you don't have to include any closing punctuation.--> <br>`8bc7c0c2-0d4c-4fb8-af99-32da74c9237b`
    
    `https://teams.microsoft.com/l/channel/19%3ab2fa9fc20f3042a9b63fc5890e1813f8%40thread.tacv2/General?groupId=8bc7c0c2-0d4c-4fb8-af99-32da74c9237b&tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47`
    
-1. Извлеките идентификатор канала, который является всем после `https://teams.microsoft.com/l/channel/` и до `/General`. <br> Например, в следующем URL-адресе идентификатор канала будет `19%3ab2fa9fc20f3042a9b63fc5890e1813f8%40thread.tacv2`:
+1. Извлеките **идентификатор канала**, который является всем после `https://teams.microsoft.com/l/channel/` и до `/General`. <br> Например, в следующем URL-адресе идентификатор канала:<br> `19%3ab2fa9fc20f3042a9b63fc5890e1813f8%40thread.tacv2`
    
    `https://teams.microsoft.com/l/channel/19%3ab2fa9fc20f3042a9b63fc5890e1813f8%40thread.tacv2/General?groupId=8bc7c0c2-0d4c-4fb8-af99-32da74c9237b&tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47`
 
 1. Перейдите по адресу [Flow.Microsoft.com](https://flow.microsoft.com).
 
-1. Выберите " **мои потоки** " в левой области навигации.
+1. Выберите **мои потоки** в левой области навигации.
 
-1. Выбрать **другие команды** (...)  для **крисискоммуникатион. Request** и выберите **изменить**.
+1. Выбрать **другие команды** (...)  для **крисискоммуникатион. Request**, а затем выберите **изменить**.
 
-    ![Изменение приложения](media/sample-crisis-communication-app/20-Edit-Flow.png)
+    ![Изменение запроса на выполнение справки](media/sample-crisis-communication-app/20-Edit-Flow.png)
 
 1. Откройте карточку **идентификатор команды** .
 
@@ -353,152 +408,153 @@ ms.locfileid: "79431861"
 
 1. Вставьте идентификатор канала в поле **значение** .
 
-    ![Задание идентификаторов команд](media/sample-crisis-communication-app/22-Set-Team-IDs.png)
+    ![Задание идентификаторов команд и каналов](media/sample-crisis-communication-app/22-Set-Team-IDs.png)
 
-1. Прокрутите вниз до действия " **получить время** " и обновите действие для преобразования часового **пояса** с выбором времени источника и назначения:
+1. Прокрутите вниз до действия " **получить время** " и обновите действие для **преобразования часового пояса** с использованием выбранного времени источника и назначения.
 
-    ![Преобразование часового пояса](media/sample-crisis-communication-app/convert-time-zone.png)
+    ![Преобразование параметров часового пояса](media/sample-crisis-communication-app/convert-time-zone.png)
 
-## <a name="optional-configure-shared-inbox"></a>Необязательно: Настройка общих входящих сообщений
+## <a name="optional-configure-a-shared-inbox"></a>Необязательно. Настройка общей папки входящих сообщений<a name="optional-configure-shared-inbox"></a>
 
-Поток **крисискоммуникатион. Request** извлекает запросы из папки "Входящие" перед их отправкой в команды. Если вы хотите отправить запрос на сообщения электронной почты в общую папку "Входящие", выполните следующие действия.
+Поток Крисискоммуникатион. Request извлекает запросы из папки "Входящие" перед их отправкой в команды. Если вы предпочитаете отправку сообщений электронной почты в общую папку "Входящие", выполните следующие действия.
 
 > [!NOTE]
-> Настройка общей папки входящих не является обязательной. Вы можете пропустить этот раздел, если не хотите отсылать сообщения электронной почты в общую папку "Входящие".
+> Этот раздел можно пропустить, если вы не хотите отсылать сообщения электронной почты в общую папку "Входящие".
 
-1. Откройте поток **крисискоммуникатион. Request** в режиме *редактирования* .
-1. Выберите **...** в **случае получения сообщения электронной почты v3**.
+1. Откройте поток **крисискоммуникатион. Request** в режиме редактирования.
+1. Выберите **Дополнительные команды** (...) **, если получено сообщение электронной почты v3**.
 1. Выберите **Удалить**.
 
-     ![Удалить соединитель](media/sample-crisis-communication-app/33-delete-connector.png)
+     ![Удаление соединителя](media/sample-crisis-communication-app/33-delete-connector.png)
 
 1. Найдите и выберите **время поступления нового электронного письма в общий почтовый ящик (v2)** .
 1. Введите адрес общей папки входящих сообщений в поле **адрес почтового ящика**.
 1. Откройте карточку **комментариев** .
-1. Нажмите кнопку **добавить динамическое значение** для **параметра значение**.
-1. Найдите и выберите **текст**:
+1. Выберите **добавить динамическое значение** для **параметра значение**.
+1. Найдите и выберите **текст**.
 
      ![Выбрать текст](media/sample-crisis-communication-app/35-body.png)
 
 1. Откройте карту **получить карту профиля пользователя (v2)** .
-1. Нажмите кнопку **добавить динамическое значение** .
-1. Поиск **и выбор:**
+1. Выберите **добавить динамическое значение**.
+1. Найдите и выберите **из**.
 
      ![Выбрать из](media/sample-crisis-communication-app/34-from.png)
 
 ## <a name="import-and-set-up-the-admin-app"></a>Импорт и Настройка административного приложения
 
-Для управления импортированным приложением необходимо повторить те же действия для административного приложения.
+Чтобы управлять импортированным приложением, повторите те же действия для приложения администрирования.
 
 1. Выполните вход в [Power Apps](https://make.powerapps.com).
 1. В области навигации слева выберите **приложения** .
 1. На панели команд выберите **Импорт** .
-1. Отправьте файл **крисискоммуникатионадмин. zip** из репозитория GitHub:
+1. Отправьте файл **крисискоммуникатионадмин. zip** из репозитория GitHub.
 
-    ![Импорт пакета приложения](media/sample-crisis-communication-app/import-app.png)
+    ![Импорт пакета административного приложения](media/sample-crisis-communication-app/import-app.png)
 
 1. Выберите **Импортировать**.
 
-### <a name="update-the-sharepoint-connections"></a>Обновление подключений SharePoint
+### <a name="update-sharepoint-connections-for-the-admin-app"></a>Обновление подключений SharePoint для административного приложения
 
 1. Вернитесь в список **приложений** .
-1. Выберите **Дополнительные команды** (...) для приложения **"Администрирование с некритическим подключением"** .
-1. В контекстном меню выберите пункт **изменить** :
+1. Выберите **Дополнительные команды** (...) для **приложения администратора с критическим подключением**.
+1. В контекстном меню выберите пункт **изменить** .
 
-    ![Изменение приложения](media/sample-crisis-communication-app/08-Edit-Admin-App.png)
+    ![Изменение административного приложения](media/sample-crisis-communication-app/08-Edit-Admin-App.png)
 
-1. **Войдите** или создайте необходимые подключения и выберите **Разрешить**.
+1. Войдите или создайте необходимые подключения, а затем выберите **Разрешить**.
 
-1. Перейдите к источникам данных в левой области:
+1. Перейдите к источникам данных на левой панели.
 
     ![Источники данных](media/sample-crisis-communication-app/data-sources.png)
 
-1. **Удалите** существующие списки SharePoint в приложении, так как они не указывают на текущий сайт SharePoint:
+1. Удалите существующие списки SharePoint внутри приложения, так как они не указывают на текущий сайт SharePoint.<!--Please see previous editor's note.-->
 
     ![Удаление источников данных](media/sample-crisis-communication-app/remove-data-source.png)
 
-1. Добавьте списки с собственного сайта SharePoint. Начните с поиска SharePoint на панели поиска:
+1. Добавьте списки с собственного сайта SharePoint. Начните с поиска **SharePoint** на панели поиска.
 
-    ![Поиск в SharePoint](media/sample-crisis-communication-app/sharepoint.png)
+    ![Поиск SharePoint](media/sample-crisis-communication-app/sharepoint.png)
 
-1. Выберите **SharePoint** и выберите подключение:
+1. Выберите **SharePoint**, а затем выберите подключение.
 
     ![Подключение к SharePoint](media/sample-crisis-communication-app/sharepoint-connection.png)
 
-1. Скопируйте и вставьте URL-адрес сайта SharePoint в текстовое поле и выберите **подключить**:
+1. Скопируйте и вставьте URL-адрес сайта SharePoint в текстовое поле, а затем нажмите кнопку **подключить**.
 
     ![URL-адрес сайта SharePoint](media/sample-crisis-communication-app/site-url.png)
 
-1. Выберите все списки и библиотеки SharePoint и нажмите кнопку **подключить**:
+1. Выберите все списки и библиотеки SharePoint, а затем нажмите кнопку **подключить**.
 
     ![Подключение к спискам SharePoint](media/sample-crisis-communication-app/sharepoint-lists.png)
 
-1. **Сохраните** и **опубликуйте** приложение admin.
+1. Нажмите кнопку **сохранить**, а затем выберите **опубликовать**.
 
 ## <a name="create-initial-content-for-the-app"></a>Создать начальное содержимое для приложения
 
-Вы успешно импортировали приложение "аварийное соединение" и его административное приложение.
+На этом этапе вы успешно импортировали приложение "аварийное подключение" и его административное приложение. Теперь можно начать создание исходного содержимого. Чтобы начать, откройте приложение "Администратор некритических соединений".
 
-Теперь можно начать создание исходного содержимого. Чтобы начать, откройте приложение "Администратор некритических соединений".
+При наличии среды GCC необходимо включить режим GCC. Дополнительные сведения: [Настройка мобильных клиентов для сред GCC](https://docs.microsoft.com/power-platform/admin/powerapps-us-government#configure-mobile-clients).
 
-![Административное приложение](media/sample-crisis-communication-app/09-Admin-App.png)
+![Приложение администратора аварийного подключения](media/sample-crisis-communication-app/09-Admin-App.png)
 
-Приложение администратора позволяет настроить всю информацию в приложении "некритический обмен данными", а также установить параметры ключей для соответствующих потоков.
+Используйте приложение admin для настройки всей информации в приложении "небезопасное взаимодействие", а также для настройки параметров для соответствующих потоков.
 
 > [!NOTE]
-> Как напоминание, если вы не хотите использовать административное приложение, можно изменить эти же свойства, изменив списки SharePoint вручную.
+> Как напоминание&mdash;если вы не хотите использовать административное приложение, вы можете изменить эти свойства, изменив списки SharePoint вручную.
 
-### <a name="setup-key-parameters-under-admin-settings"></a>Параметры ключа программы установки в разделе "Параметры администрирования"
+### <a name="set-up-key-parameters-under-admin-settings"></a>Настройка параметров ключа в параметрах администрирования
 
 Чтобы инициализировать приложение, необходимо предоставить все необходимые поля, перейдя к **параметрам администрирования**.
 
-Заполните все поля и выберите **сохранить**.
+Заполните все поля, как показано в следующей таблице, а затем нажмите кнопку **сохранить**.
 
 | **Имя поля** | **Логическое имя в SharePoint** | **Цель** | **Пример:** |
 |-|-|-|-|
-| Электронная почта администратора | админконтактемаил | Именно здесь отправляются запросы электронной почты. Для них следует задать свой адрес электронной почты. Если вы хотите отправлять уведомления в другую папку "Входящие", следуйте [дополнительной конфигурации "Общая папка входящих сообщений"](#optional-configure-shared-inbox). | admin@contoso.com |
-| URL-адрес эмблемы | Logo | Эмблема приложения, которая будет отображаться в левом верхнем углу. | https://contoso.com/logo.png |
-| Идентификатор группы AAD | аадграупид | Используется для отправки уведомлений конечным пользователям о внутренних обновлениях компании через *уведомление пользователей о новом* потоке новостей о экстренной связи. Выполните приведенные ниже инструкции, чтобы получить идентификатор AAD вашей группы. | c0ddf873-b4fe-4602-b3a9-502dd944c8d5 |
-| URL-АДРЕС ПРИЛОЖЕНИЯ | AppURL | Расположение приложения для конечных пользователей, чтобы *уведомление пользователей о новом* потоке новостей о сквозной связи могла перенаправить пользователей после выбора **Дополнительные**сведения. | https://apps.preview.powerapps.com/play/<app URL>? tenantId =<tenant ID>
+| Электронная почта администратора | админконтактемаил | Именно здесь отправляются запросы электронной почты. Для них следует задать свой адрес электронной почты. Если вы хотите отправлять уведомления в другую папку "Входящие", см. раздел [Дополнительная настройка общих папок входящих сообщений](#optional-configure-shared-inbox)выше в этой статье. | admin@contoso.com |
+| URL-адрес эмблемы | Logo | Эмблема приложения, которая отображается в левом верхнем углу. | https://contoso.com/logo.png |
+| Идентификатор группы AAD | аадграупид | Используется для отправки уведомлений пользователям о внутренних обновлениях компании через **уведомление пользователей о новых новостях о** НЕЭКСТРЕННЫХ соединениях<!--Can you rename this flow to "Notify users of new crisis communication news"? Or maybe even "Notify users of breaking news about the crisis"?--> выполнения. Выполните приведенные ниже инструкции, чтобы получить идентификатор Azure Active Directory (Azure AD) вашей группы. | c0ddf873-b4fe-4602-b3a9-502dd944c8d5 |
+| URL-АДРЕС ПРИЛОЖЕНИЯ | AppURL | Расположение пользовательского приложения, чтобы приложение **уведомлять пользователей о новом** потоке новостей о невозможности экстренной связи может перенаправить пользователей после выбора **Дополнительные**сведения. | https://apps.preview.powerapps.com/play/<app URL>? tenantId =<tenant ID>
 | RSS-канал государственных организаций | говернментрссфид | Используется для заполнения компонента «Новости мира» в приложении. Полезно, если вы хотите предоставить сотрудникам дополнительные сведения из надежного источника. | https://www.who.int/rss-feeds/news-english.xml |
-| Метод уведомления | преферредсентнотификатион | Используется для *уведомления пользователей о новом* потоке новостей о экстренной связи, чтобы определить, какой канал распространения должен использоваться при отправке уведомлений. Это обязательное поле. | Сообщение электронной почты, команды, уведомление, push-уведомление |
+| Метод уведомления | преферредсентнотификатион | Используется для **уведомления пользователей о новом** потоке новостей о экстренной связи, чтобы определить, какой канал распространения должен использоваться при отправке уведомлений. Это обязательное поле. | Сообщение электронной почты, команды, уведомление, push-уведомление |
 | Флаги компонентов | Feature1... 8 | Используется для отключения или включения каждого компонента в приложении. |  |
 
 > [!NOTE]
 > Уведомления о командах и Push-уведомления в настоящее время не поддерживаются в GCC.
 
 
-#### <a name="finding-the-aad-of-your-distribution-group"></a>Поиск AAD группы рассылки
-1. Перейдите по адресу [AAD.Portal.Azure.com](https://aad.portal.azure.com)
-1. Выберите **Azure Active Directory** в области навигации слева.
+#### <a name="finding-the-azure-ad-id-for-your-distribution-group"></a>Поиск идентификатора Azure AD для группы рассылки
+<!--note from editor: The Cloud Style Guide says don't use "AAD" for "Azure AD."-->
+1. Перейдите по адресу [AAD.Portal.Azure.com](https://aad.portal.azure.com).
+1. Выберите **Azure Active Directory** в левой области навигации.
 1. Выберите **группы**.
 1. Найдите и выберите свою группу рассылки.
 1. Скопируйте поле **идентификатор объекта** .
 
-    ![Получение идентификатора AAD в Azure](media/sample-crisis-communication-app/11-AAD-Group-ID.png)
+    ![Получение идентификатора Azure AD](media/sample-crisis-communication-app/11-AAD-Group-ID.png)
 
-1. Вставьте идентификатор в поле **идентификатор группы AAD** в приложении администрирования.
+1. Вставьте идентификатор в поле **идентификатор группы AAD** в административном приложении.<!--Can you have this changed to "Azure AD group ID"? -->
 
-### <a name="setup-emergency-contacts"></a>Настройка контактов для экстренных случаев
+### <a name="set-up-emergency-contacts"></a>Настройка контактов экстренных случаев
 
-1. Переход к **контактным лицам компании**
-1. Выберите " **создать новый контакт** "
-1. Заполните форму, указав контактную информацию.
+1. Перейдите к разделу **Контакты компании**.
+1. Выберите **создать новый контакт**.
+1. Заполните форму, используя контактные данные.
 
 *Схема списка:*
 
 | **Имя поля** | **Логическое имя в SharePoint** | **Цель** |
 |-|-|-|
 | Полное имя | Полное имя | Имя контакта. |
-| Электронная почта | Электронная почта | Сообщение электронной почты, которое будет отображаться для контакта. |
-| Страна | Страна | Страна контакта. Он будет использоваться для группировки контактов, поэтому может использовать это поле для других групп, если страны не имеют смысла. |
+| Электронная почта | Электронная почта | Адрес электронной почты, отображаемый для контакта. |
+| Страна | Страна | Страна контакта. Это поле используется для группировки контактов. Вы можете использовать другие значения для группировки контактов, если страны не имеют смысла. |
 | Comments | Comments | Отображает дополнительные сведения о контакте; полезное описание того, когда следует обращаться к этому контакту. |
-| Устарело | Устарело | Позволяет скрыть существующий контакт для экстренных случаев. |
+| Устарело | Устарело | Используется для скрытия существующего контакта в экстренном режиме. |
 
-### <a name="setup-initial-company-news"></a>Настройка первоначальных новостей компании
+### <a name="set-up-initial-company-news"></a>Настройка первоначальных новостей компании
 
-1. Переход к **новостям компании**
-1. Выберите " **создать новую запись** "
+1. Перейдите на страницу **новостей компании**.
+1. Выберите **создать новую запись**.
 1. Заполните форму.
 
 *Схема списка:*
@@ -507,12 +563,12 @@ ms.locfileid: "79431861"
 |-|-|-|
 | Заголовок | Заголовок | Заголовок обновления. |
 | Подробности | Подробности | Полное обновление. В этом поле можно использовать HTML. |
-| Аннотация | Аннотация | Короткое сообщение об обновлении. Он будет использоваться в *статье уведомление пользователей о новом потоке новостей с критическим подключением* и в коллекции обновлений. |
-| Устарело | Устарело | Позволяет скрыть существующую запись. |
+| Аннотация | Аннотация | Короткое сообщение об обновлении. Он используется в **статье уведомление пользователей о новом потоке новостей с критическим подключением** и в коллекции обновлений. |
+| Устарело | Устарело | Используется для скрытия существующей записи. |
 
-### <a name="setup-helpful-tips"></a>Полезные советы по настройке
+### <a name="set-up-helpful-tips"></a>Настройка полезных советов
 
-1. Перейдите к **полезным советам**.
+1. Воспользуйтесь **полезными советами**.
 1. Выберите **создать подсказку**.
 1. Заполните форму.
 
@@ -521,14 +577,14 @@ ms.locfileid: "79431861"
 | **Имя поля** | **Логическое имя в SharePoint** | **Цель** |
 |-|-|-|
 | Заголовок | Заголовок | Заголовок полезной подсказки. |
-| URL-адрес ресурса | ResourceURL | Ссылка на дополнительные материалы для чтения. (необязательно) |
-| Подзаголовок | Подзаголовок | Подзаголовок для Совета. (необязательно) |
+| URL-адрес ресурса | ResourceURL | Ссылка на дополнительные материалы для чтения. (Необязательно) |
+| Подзаголовок | Подзаголовок | Подзаголовок для Совета. (Необязательно) |
 | Описание | Описание | Полное описание полезной подсказки. |
-| Устарело | Устарело | Позволяет скрыть полезную подсказку. |
+| Устарело | Устарело | Используйте, чтобы скрыть полезный совет. |
 
-### <a name="setup-links"></a>Ссылки для установки
+### <a name="set-up-links"></a>Настройка ссылок
 
-1. Перейдите по **ссылке**.
+1. Перейдите по **ссылкам**.
 1. Выберите **создать новую ссылку**.
 1. Заполните форму.
 
@@ -538,10 +594,10 @@ ms.locfileid: "79431861"
 |-|-|-|
 | Заголовок | Заголовок | Текст ссылки. |
 | URL-адрес | URL-адрес | URL-адрес ссылки. |
-| Описание | Описание | Дополнительные сведения о ссылке. (необязательно) |
-| Устарело | Устарело | Позволяет скрыть ссылку. |
+| Описание | Описание | Дополнительные сведения о ссылке. (Необязательно) |
+| Устарело | Устарело | Используйте, чтобы скрыть ссылку. |
 
-### <a name="setup-faqs"></a>Вопросы и ответы по установке
+### <a name="set-up-faqs"></a>Настройка часто задаваемых вопросов
 
 1. Перейдите к разделу **часто задаваемые вопросы**.
 1. Выберите **создать новые вопросы и ответы**.
@@ -551,20 +607,20 @@ ms.locfileid: "79431861"
 
 | **Имя поля** | **Логическое имя в SharePoint** | **Цель** |
 |-|-|-|
-| Заголовок | Заголовок | Вопрос о часто задаваемых вопросах. |
-| Ранг | Ранг | Порядок вопросов и ответов. |
-| Клик | Клик | Ответ на вопросы и ответы |
-| Устарело | Устарело | Позволяет скрыть часто задаваемые вопросы. |
+| Заголовок | Заголовок | Вопрос в разделе часто задаваемых вопросов. |
+| Ранг | Ранг | Порядок вопроса в разделе часто задаваемых вопросов. |
+| Клик | Клик | Ответ на вопрос в разделе часто задаваемых вопросов. |
+| Устарело | Устарело | Используйте для скрытия вопроса в разделе часто задаваемых вопросов. |
 
 ## <a name="test-and-share-the-app"></a>Тестирование и совместное использование приложения
 
-Теперь, когда все данные успешно настроены, можно протестировать приложение, чтобы убедиться, что оно работает:
+Теперь, когда все данные успешно настроены, можно протестировать приложение, чтобы убедиться, что оно работает.
 
 1. Выполните вход в [Power Apps](https://make.powerapps.com).
 2. В области навигации слева выберите **приложения** .
 3. Выберите **Аварийное подключение** для воспроизведения приложения.
 
-После успешного тестирования приложения вы можете предоставить доступ к нему всем сотрудникам Организации.
+После успешного тестирования приложения вы можете поделиться им со всеми сотрудниками вашей компании.
 
 ## <a name="import-and-set-up-the-notification-flow"></a>Импорт и Настройка потока уведомлений
 
@@ -572,123 +628,129 @@ ms.locfileid: "79431861"
 
 ### <a name="import-the-news-notification-flow"></a>Импорт потока уведомлений новостей
 
-1. Перейдите по адресу [Flow.Microsoft.com](https://flow.microsoft.com)
-1. Выберите " **мои потоки** " в левой области навигации.
-1. Нажмите кнопку **Импорт** на панели команд.
-1. Отправьте пакет **крисискоммуникатионневснотификатион. zip** из репозитория GitHub:
+1. Перейдите по адресу [Flow.Microsoft.com](https://flow.microsoft.com).
+1. Выберите **мои потоки** в левой области навигации.
+1. На панели команд выберите **Импорт** .
+1. Отправьте пакет **крисискоммуникатионневснотификатион. zip** из репозитория GitHub.
 
     > [!NOTE]
-    > Если клиент находится в среде GCC, используйте **крисискоммуникатионневснотификатионгкк. zip**.
+    > Если клиент находится в среде GCC, отправьте **крисискоммуникатионневснотификатионгкк. zip**.
 
     ![Отправить Крисискоммуникатионневснотификатион. zip](media/sample-crisis-communication-app/upload-news-notification.png)
 
-1. Добавьте подключения для нового потока, выбрав ссылку **выбрать при импорте** для каждого подключения и заполнив форму:
+1. Добавьте подключения для нового потока, выбрав ссылку **выбрать при импорте** для каждого подключения, а затем завершив форму.
 
     ![Выбор во время импорта](media/sample-crisis-communication-app/select-during-import.png)
 
-1. Если необходимо создать новое подключение, сначала выберите **создать** в области Импорт Настройка.
-1. На панели команд выберите **новое подключение** :
+1. Если необходимо создать новое соединение, выберите **создать** в области **Импорт Настройка** .
+1. На панели команд выберите **создать подключение** .
 
     ![Создание подключения](media/sample-crisis-communication-app/create-connection.png)
 
-1. Найдите имя подключения; Например, **уведомление PowerApps (Предварительная версия)** :
+1. Найдите имя подключения; Например, **уведомление PowerApps (Предварительная версия)** .
 
-    ![Уведомления](media/sample-crisis-communication-app/notifications.png)
+    ![Пример имени подключения](media/sample-crisis-communication-app/notifications.png)
 
-1. Выберите подходящее соединение.
-1. Если вы создаете подключение к **уведомлениям PowerApps (Предварительная версия),** вы увидите следующее диалоговое окно:
+1. Выберите нужное соединение.
+1. Если вы создаете подключение к **уведомлениям PowerApps (Предварительная версия)** , вы увидите диалоговое окно, как показано на следующем рисунке.
 
-    ![Диалоговое окно уведомлений](media/sample-crisis-communication-app/notifications-dialog.png)
+    ![Диалоговое окно "уведомления"](media/sample-crisis-communication-app/notifications-dialog.png)
 
 1. Чтобы получить идентификатор, перейдите в список **приложений** .
-1. Выберите **другие команды** (...) для приложения " **некритический обмен данными** " и выберите сведения:
+1. Выберите **Дополнительные команды** (...) для приложения " **некритический обмен данными** " и щелкните **сведения**.
 
-    ![Дополнительная команда](media/sample-crisis-communication-app/06-App-Details.png)
+    ![Сведения о подключении](media/sample-crisis-communication-app/06-App-Details.png)
 
-1. Скопируйте **идентификатор приложения**:
+1. Скопируйте **идентификатор приложения**.
 
     ![Идентификатор приложения](media/sample-crisis-communication-app/07-App-ID.png)
 
-1. Вставьте **идентификатор приложения** в диалоговое окно создания соединения и нажмите кнопку **создать**.
+1. Вставьте идентификатор приложения в диалоговое окно Создание соединения и нажмите кнопку **создать**.
 
-    ![Вставить идентификатор приложения](media/sample-crisis-communication-app/target-app-id.png)
+    ![Создание подключения](media/sample-crisis-communication-app/target-app-id.png)
 
-1. После создания нового подключения вернитесь на панель **Импорт настройки** и нажмите кнопку **Обновить список** .
-1. Теперь должно отобразиться новое подключение, чтобы его можно было выбрать и нажать кнопку **сохранить**.
-1. После завершения добавления всех подключений выберите **Импорт** .
+1. После создания нового подключения вернитесь в область **Импорт настройки** и выберите **Обновить список**.
+1. Теперь должно отобразиться новое соединение. Выберите его и нажмите кнопку **сохранить**.
+1. После завершения добавления всех подключений выберите **Импорт**.
 
     ![Подключения с помощью импорта](media/sample-crisis-communication-app/imported-connections.png)
 
 ### <a name="edit-the-news-notification-flow"></a>Изменение потока уведомлений новостей
 
-1. После завершения импорта вернитесь в раздел " **мои потоки**".
-1. Выберите недавно импортированный поток **уведомлять пользователей о новых новостях**о недавней связи.
+1. После завершения импорта перейдите к разделу **мои потоки**.
+1. Выберите только что импортированный поток, **уведомите пользователей о новых новостях**о недавней связи.
 
     > [!NOTE]
-    > Если вы перегрузили пакет GCC, имя потока будет **уведомлять пользователей о новых новостях**о НЕЭКСТРЕННЫХ соединениях GCC.
+    > Если вы перегрузили пакет GCC, имя потока будет **уведомлять пользователей о новых новостях о некритических подключениях GCC**.
 
 1. Выберите **изменить** на панели команд.
-1. Откройте карточку, вызываемую **при публикации нового элемента**.
-1. Измените **адрес сайта** на имя сайта SharePoint.
-1. Измените **имя списка** на **CI_CompanyNews**.
-1. Откройте карточку **с именем получение параметров конфигурации администратора**.
-1. Измените **адрес сайта** на имя сайта SharePoint.
-1. Измените **имя списка** на **CI_configAdminSetup**.
-1. Откройте карточку с именем **Инициализация переменной — прочитайте дополнительный текст**.
-1. Измените **значение** на "Дополнительные сведения" на родном языке.
+1. Откройте карточку **при публикации нового элемента** .
+1. В поле **адрес сайта**введите имя сайта SharePoint.
+1. В качестве **имени списка**введите **CI_CompanyNews**.
+1. Откройте карточку **Получение параметров конфигурации администратора** .
+1. В поле **адрес сайта**введите имя сайта SharePoint.
+1. В качестве **имени списка**введите **CI_configAdminSetup**.
+1. Откройте окно **Инициализация переменной — Прочитайте дополнительные текстовые** карты.
+1. В качестве **значения**введите **Дополнительные** сведения (на родном языке).
 
     ![Параметры потока](media/sample-crisis-communication-app/flow-options.png)
 
-1. Нажмите кнопку **сохранить** , чтобы зафиксировать изменения.
+1. Нажмите кнопку **Сохранить**.
 
 > [!NOTE]
 > Если одно из подключений еще не было разрешено, может появиться сообщение об ошибке.
-Если это произойдет, Откройте карточку с несанкционированным подключением и повторной авторизацией.
+Если это происходит, Откройте карточку с несанкционированным подключением и повторной авторизацией.
 
 ### <a name="test-the-news-notification-flow"></a>Тестирование потока уведомлений новостей
 
-Чтобы протестировать поток уведомлений новостей, вернитесь к административному приложению и создайте новое обновление внутренней компании.
-Позже все пользователи в списке рассылки получат обновление по предпочтительному предпочитаемому уведомлению.
+Чтобы протестировать поток уведомлений новостей, перейдите в приложение Admin и создайте новое внутреннее обновление компании. Позже все пользователи в списке рассылки получат обновление с помощью предпочтительного метода уведомления.
 
 > [!NOTE]
-> При возникновении ошибок убедитесь, что вы успешно указали идентификатор группы рассылки в параметрах администратора в административном приложении.
+> При возникновении ошибок убедитесь, что вы успешно ввели идентификатор группы списка рассылки в параметрах для приложения администратора.
 
 ## <a name="monitor-office-absences-with-power-bi"></a>Мониторинг отсутствия в Office с помощью Power BI
 
-После развернутого приложения и запускайте уведомление о том, что они будут выставляться из офиса по различным причинам (например, не по болезни или при работе дома). Теперь можно использовать Power BI отчет, чтобы определить, сколько и где находятся эти люди. Обратите внимание, что для обеспечения работы элемента управления Map необходимо [включить отслеживание расположения](#optional-enable-location-updates) .
+После развертывания приложения и запуска пользователей для отправки уведомлений о том, что они будут изменяться из офиса по различным причинам (например, не по болезни или при работе дома), вы можете использовать Power BI отчет, чтобы узнать, сколько людей отправили уведомления и где они находятся.  
+Обратите внимание, что для обеспечения работы элемента управления Map необходимо [включить отслеживание расположения](#optional-enable-location-updates) . 
 
-Для начала можно использовать образец отчета "состояние присутствия Report. pbix", доступный в скачанном [пакете ресурсов](#prerequisites).
-При необходимости скачайте [Power BI Desktop](https://powerbi.microsoft.com/downloads). Кроме того, нам потребуется информация из списка **CI_Employee состояния** SharePoint, созданного ранее, так что давайте сначала вернемся к нему. Откройте список на сайте и выберите параметры списка в значке параметров:
+> [!IMPORTANT]
+> Чтобы Power BI отчет работал, необходимо иметь по крайней мере одну запись в списке **состояние CI_Employee** .
+
+Нам потребуются некоторые сведения из списка **CI_Employee состояния** SharePoint, который мы создали ранее, поэтому давайте сначала вернемся к нему. Откройте список на сайте и выберите **Параметры списка** в значке **Параметры** .
 
 ![Параметры списка состояний сотрудников](media/sample-crisis-communication-app/001-SharePointList-ListSettings-nolines.PNG)
 
-Запишите **имя сайта** и **идентификатор списка** в адресной строке браузера:
+Запишите имя сайта и идентификатор списка в адресной строке браузера, как показано на следующем рисунке.
 
 ![Список состояний сотрудников и идентификатор сайта](media/sample-crisis-communication-app/002-SharePointList-AddressAndId-nolines.PNG)
 
-На этом этапе мы готовы открыть Power BI отчет. Запустите Power BI и откройте pbix-файл с **сообщением о состоянии присутствия** . Наведите указатель мыши на правую часть источника данных **состояния CI_Employee** , пока не увидите многоточие, выберите его и выберите параметр "изменить запрос":
+На этом этапе мы готовы открыть отчет Power BI. Откройте Power BI, а затем откройте pbix-файл с **сообщением о состоянии присутствия** . Наведите указатель мыши на правую сторону источника данных **состояния CI_Employee** , пока не появится многоточие. Выберите его и нажмите кнопку **изменить запрос**.
 
 ![Изменить запрос](media/sample-crisis-communication-app/003-PowerBI-EditQuery-nolines.PNG)
 
-После открытия редактора Power Query щелкните правой кнопкой мыши источник данных **состояния CI_Employee** и выберите **Расширенный редактор**:
+После открытия редактора Power Query щелкните правой кнопкой мыши источник данных **состояния CI_Employee** и выберите пункт **Расширенный редактор**.
 
 ![Power Query Расширенный редактор](media/sample-crisis-communication-app/004-PowerQuery-AdvancedEditor-nolines.PNG)
 
-Здесь мы будем использовать имя сайта и идентификатор списка из списка SharePoint: Скопируйте новый сайт SharePoint в таблицу и идентификатор списка в трех местах, где GUID выделен, и нажмите кнопку **Готово**.
+Здесь мы используем имя сайта и идентификатор списка из списка SharePoint.
+
+Скопируйте новый сайт SharePoint в строку SharePoint. Tables, как показано на следующем рисунке.<!--Edit okay? This is a case where the image shows information that the text doesn't, so I'm not sure how to make this descriptive enough for people who aren't looking at the graphics, or people with low vision.--> и идентификатор списка в трех местах, где выделен GUID, и нажмите кнопку **Готово**.
 
 ![Обновления Power Query Расширенный редактор](media/sample-crisis-communication-app/005-PowerQuery-AdvancedEditorUpdates-nolines.PNG)
 
-Если после обновления сведений о соединении отображаются ошибки подключения, может потребоваться обновить учетные данные, используемые для подключения к списку SharePoint. Чтобы обновить подключение, выполните следующие действия.
+Если после обновления сведений о соединении отображаются ошибки подключения, может потребоваться обновить учетные данные, используемые для подключения к списку SharePoint. 
 
-1. Выберите меню **файл** , **Параметры и настройки** , а затем выберите **Параметры источника данных**:
+**Обновление подключения**
+
+1. В меню **файл** выберите **Параметры и настройки**, а затем выберите **Параметры источника данных**.
 
     ![Окно "Параметры источника данных"](media/sample-crisis-communication-app/PBI-1-DataSourceSettings.PNG)
 
-1. Выберите **изменить разрешения**:
+1. Выберите **изменить разрешения**.
 
     ![Изменить разрешения](media/sample-crisis-communication-app/PBI-2-DataSourceSettings-EditPermissions.PNG)
 
-1. Убедитесь, что для параметра Тип *учетных данных* задано значение *учетная запись организации*, и используйте учетные данные для доступа к списку SharePoint.
+1. Убедитесь, что для параметра Тип **учетных данных** задано значение **учетная запись организации**, и используйте учетные данные для доступа к списку SharePoint.
 
     ![Изменить разрешения](media/sample-crisis-communication-app/PBI-3-OrganizationalAccount.PNG)
 
@@ -696,7 +758,7 @@ ms.locfileid: "79431861"
 
 ![Power Query закрыть и применить](media/sample-crisis-communication-app/006-PowerQuery-CloseAndApply-nolines.PNG)
 
-Теперь у нас есть Power BI отчет, показывающий как географические данные для отсутствия Office за текущий день, так и тенденцию таких отсутствий за несколько дней. Теперь можно опубликовать отчет, чтобы его могли видеть другие сотрудники Организации.
+Теперь у нас есть Power BI отчет, показывающий как географические данные для отсутствия Office за текущий день, так и тенденция таких отсутствий в течение нескольких дней. Можно опубликовать отчет, чтобы его могли видеть другие сотрудники Организации.
 
 ![Power BI опубликовать отчет](media/sample-crisis-communication-app/007-PowerBI-Publish-nolines.PNG)
 
@@ -704,17 +766,17 @@ ms.locfileid: "79431861"
 
 ## <a name="integrate-your-app-into-teams"></a>Интеграция приложения в команды
 
-Теперь, когда у вас есть работающее приложение, доступное всем пользователям, вы можете развернуть приложение с помощью команд и создать группу аварийного управления в Microsoft Teams для реагирования на проблемы.
+Теперь, когда у вас есть работающее приложение, доступное всем пользователям, вы можете развернуть приложение, создав группу аварийного управления в группах, чтобы реагировать на проблемы.
 
 ### <a name="deploy-the-app-to-the-app-bar"></a>Развертывание приложения на панели приложений
 
 Если вы являетесь администратором команды, вы можете отправить приложение всем пользователям на панели приложений группы.
 
-![Приложение в командах](media/sample-crisis-communication-app/19-App-in-Teams.png)
+![Панель приложений в командах](media/sample-crisis-communication-app/19-App-in-Teams.png)
 
 1. Выполните вход в [Power Apps](https://make.powerapps.com).
 1. В области навигации слева выберите **приложения** .
-1. Выберите меню **...** для приложения " **некритический обмен данными** ".
+1. Выберите **Дополнительные команды** (...) для приложения " **некритический обмен данными** ".
 1. Выберите **Добавить в группы**.
 
     ![Добавить в команды](media/sample-crisis-communication-app/24-Add-to-Teams.png)
@@ -723,16 +785,16 @@ ms.locfileid: "79431861"
 
     ![Скачать приложение](media/sample-crisis-communication-app/25-Download-App.png)
 
-1. Открыть **команды**
-1. Перейдите к пункту **приложения** с левой панели приложений.
+1. Откройте команды.
+1. Перейдите к разделу **приложения** на панели приложений.
 1. Выберите **Отправить пользовательское приложение**.
-1. Если вы являетесь администратором команды, вы увидите возможность отправить приложение для всего клиента. Выберите **Отправить для Contoso**.
+1. Если вы являетесь администратором группы, вы сможете отправить приложение для всего клиента. Выберите **Отправить для Contoso** (где *contoso* представляет имя вашего клиента).<!--Edit okay? The screenshot said "Contoto," which I fixed.-->.
 
-    ![Отправка](media/sample-crisis-communication-app/26-Upload-for-Contoso.png)
+    ![Отправка приложения](media/sample-crisis-communication-app/26-Upload-for-Contoso.png)
 
 1. Отправьте файл, скачанный из Power Apps.
-1. Перейдите в [центр администрирования группы](https://admin.teams.microsoft.com/dashboard)
-1. В области навигации слева выберите **политики установки** в разделе **группы приложений** .
+1. Перейдите в [центр администрирования рабочих групп](https://admin.teams.microsoft.com/dashboard).
+1. В области навигации слева в разделе **группы приложений**выберите **политики установки**.
 
     ![Политики установки приложений](media/sample-crisis-communication-app/27-Setup-Policies.png)
 
@@ -751,18 +813,20 @@ ms.locfileid: "79431861"
 > [!NOTE]
 > Пользователи могут увидеть, что приложение автоматически закреплено на панели приложений, может занять до 24 часов.
 
-### <a name="create-a-central-crisis-management-teams-team"></a>Создание группы специалистов по централизованному аварийному управлению
+### <a name="create-a-central-crisis-management-team-in-teams"></a>Создание централизованной группы аварийного управления в командах<a name="create-a-central-crisis-management-teams-team"></a>
 
-Чтобы координировать реагирование на критический момент, необходимо создать центральную группу команд для группы аварийного управления и заполнить ее всеми соответствующими сведениями.
+Чтобы координировать свой ответ на критический момент, необходимо создать централизованную группу аварийного управления в командах и заполнить ее всей важной информацией.
 
 1. Перейдите к командам.
 1. В левой панели приложения выберите **команды** .
 1. Выберите **присоединиться или создать команду**.
-1. Выберите **создать команду** и выполните оставшиеся действия.
+1. Выберите **создать команду**, а затем выполните оставшиеся действия.
 
     ![Создание команды](media/sample-crisis-communication-app/23-Create-Team.png)
 
-После успешного создания команды можно закрепить соответствующую информацию в виде вкладок. Например, может потребоваться закрепить в команде приложение "Администратор аварийного управления" или отчет о Power BI. Чтобы добавить административное приложение в виде вкладки, сделайте следующее:
+После успешного создания команды можно закрепить соответствующую информацию в виде вкладок. Например, может потребоваться закрепить в команде приложение "Администратор аварийного управления" или отчет о Power BI.
+
+**Добавление административного приложения в качестве вкладки**
 
 1. Нажмите кнопку **+** .
 1. Найдите и выберите **Power Apps**.
@@ -772,7 +836,7 @@ ms.locfileid: "79431861"
 
 1. Нажмите кнопку **Сохранить**.
 
-Чтобы добавить Power BI отчет, выполните следующие действия.
+**Добавление Power BI отчета в виде вкладки**
 
 1. Нажмите кнопку **+** .
 1. Найдите и выберите **Power BI**.
@@ -781,31 +845,31 @@ ms.locfileid: "79431861"
 
 ## <a name="faq"></a>Вопросы и ответы
 
-1. **Какие лицензии необходимо использовать для запуска этого решения?**
+* **Какие лицензии необходимо использовать для запуска этого решения?**
 
-    - Решение в этом приложении использует соединители Office. Таким образом, для запуска и воспроизведения приложений пользователя и администратора достаточно заполненная лицензия Power Apps из Office. Дополнительные сведения см. в статье [Обзор лицензирования Power Platform](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus). 
-    - Если вы хотите использовать Power BI отчет (упакованный как часть решения), необходимо иметь лицензию на Power BI. Дополнительные сведения см. на [Power BI ценах](https://powerbi.microsoft.com/pricing/).
+    - Решение в этом приложении использует соединители Office, поэтому для запуска и воспроизведения приложений пользователя и администратора достаточно заполненная лицензия Power Apps из Office. Дополнительные сведения: [Обзор лицензирования Power Platform](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)
+    - Если вы хотите использовать Power BI отчет (упакованный как часть решения), вам потребуется лицензия на Power BI. Дополнительные сведения: [цены на Power BI](https://powerbi.microsoft.com/pricing/)
 
-1. **Где я должен пойти, если у меня есть отзыв о решении?**
+* **Где я должен пойти, если у меня есть отзыв о решении?**
 
-    Мы будем рады услышать навыки развертывания и настройки этого решения. Чтобы поделиться своим опытом, перейдите по адресу [AKA.MS/Crisis-Communication-Feedback](https://aka.ms/crisis-communication-feedback).
+    Мы будем рады узнать о своем опыте развертывания и настройки этого решения. Чтобы поделиться своим опытом, перейдите по адресу [AKA.MS/Crisis-Communication-Feedback](https://aka.ms/crisis-communication-feedback).
 
-1. **Похоже, обнаружена ошибка в приложении; где следует приступать?**
+* **Похоже, обнаружена ошибка в приложении; где следует приступать?**
 
    Чтобы сообщить об ошибке в решении, перейдите по адресу [AKA.MS/Crisis-Communication-Issues](https://aka.ms/crisis-communication-issues).
 
-1. **Какие функции в настоящее время не поддерживаются в GCC?**
+* **Какие функции в настоящее время не поддерживаются в GCC?**
 
-    Соединитель Power автоматизиру Bot для команд и соединитель push-уведомлений сейчас недоступны для GCC. Используйте параметр электронная почта, чтобы оповещать пользователей о внутренних обновлениях новостей для GCC.
+    Соединитель Power автоматизиру Bot для команд и соединитель push-уведомлений сейчас недоступны для GCC. Используйте параметр электронная почта, чтобы оповещать пользователей о внутренних обновлениях новостей.
 
-## <a name="issues--feedback"></a>Вопросы & Отзывы
+## <a name="issues-and-feedback"></a>Проблемы и отзывы
 
-- Для получения **отзывов** о *шаблоне образца "аварийная связь*" перейдите по адресу [AKA.MS/Crisis-Communication-Feedback](https://aka.ms/crisis-communication-feedback).
-- Чтобы **сообщить о проблемах** с *приложением "аварийное подключение*", перейдите по адресу [AKA.MS/Crisis-Communication-Issues](https://aka.ms/crisis-communication-issues).
+- Для получения отзывов о шаблоне образца "аварийная связь" перейдите по адресу [AKA.MS/Crisis-Communication-Feedback](https://aka.ms/crisis-communication-feedback).
+- Чтобы сообщить о проблемах с приложением "аварийное подключение", перейдите по адресу [AKA.MS/Crisis-Communication-Issues](https://aka.ms/crisis-communication-issues).
 
 ***Заявление об отказе:*** *это пример приложения, который можно использовать с Microsoft Power Apps и командами для распространения справочных сведений. Это приложение не предназначено для использования в качестве медицинских устройств, клинической практике support, диагностическое средство или другую технологию, предназначенную для диагностики, получения, устранения, обработки или предотвращения болезни или других условий, и ни одна лицензия или право не предоставляются корпорацией Майкрософт для использования этого приложения в таких целях.  Это приложение не предназначено для замены профессионального медицинских Совета, диагностики, лечения или оценки, и его не следует использовать.  Клиент несет ответственность за использование этого приложения.  Корпорация Майкрософт не гарантирует, что приложение или все материалы, предоставляемые в с нимие подключений, будут достаточно для любых медицинских целей или соответствуют требованиям или медицинских требований любого человека.* 
 
-## <a name="next-steps"></a>Следующие шаги
-
-- [Справочник формул](https://docs.microsoft.com/powerapps/maker/canvas-apps/formula-reference)
-- [Справочник элементов управления](https://docs.microsoft.com/powerapps/maker/canvas-apps/reference-properties)
+### <a name="see-also"></a>См. также:
+<!--note from editor: "Next steps" would work if you gave the reader some action items, but reference topics are random access by nature, so the heading is rightly "See also." -->
+- [Справочник формул](formula-reference.md)
+- [Справочник элементов управления](reference-properties.md)
