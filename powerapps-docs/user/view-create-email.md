@@ -8,12 +8,12 @@ ms.topic: article
 author: lalexms
 ms.author: lalexms
 manager: shujoshi
-ms.openlocfilehash: 7a0dee04334f52518c1746b6650f75ebfb67634d
-ms.sourcegitcommit: 68a31e3fa4d1635ccf4cd8bd9da5fba1bfecefa4
+ms.openlocfilehash: 7d4930b03f175133a769226a407436d37f698633
+ms.sourcegitcommit: 3066c2800a939fbcaaac4262c802843e2d80b88c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051920"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79431746"
 ---
 # <a name="preview-view-and-create-email-through-the-activities-grid"></a>Предварительная версия: Просмотр и создание сообщения электронной почты с помощью сетки действий
 
@@ -37,7 +37,7 @@ ms.locfileid: "77051920"
 
 Для просмотра электронной почты выполните следующие действия.
 
-1. В карте сайта приложения на основе модели выберите  **Действия**. 
+1. В карте сайта приложения на основе модели выберите **Действия**. 
 
 2. Выберите раскрывающийся список **Все действия**, а затем выберите **Полученные мной сообщения электронной почты**.
 
