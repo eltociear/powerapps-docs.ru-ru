@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 4c657afc77e710769a803d313b36a7437c3e3f9a
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: e354a3a784a984e070f5948b4b14c9eb4c32417b
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977577"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069554"
 ---
 # <a name="add-a-custom-domain-name"></a>Добавить пользовательское доменное имя
 
@@ -31,10 +31,12 @@ ms.locfileid: "2977577"
      > [!Note]
      > Сертификат SSL должен удовлетворять всем следующим требованиям:
      > - Подписан доверенным центром сертификации
-     > - Экспортирован как защищенный паролем файл PFX
+     > - [Экспортирован](https://docs.microsoft.com/powershell/module/pkiclient/export-pfxcertificate?view=win10-ps) как защищенный паролем файл PFX
      > - Содержит закрытый ключ длиной не менее 2048 битов
      > - Содержит все промежуточные сертификаты в цепочке сертификатов
      > - Должно быть включено SHA2; поддержка SHA1 в настоящее время удаляется из популярных браузеров
+     > 
+     > Действия по экспорту сертификата SSL в виде файла PFX, защищенного паролем, могут отличаться в зависимости от поставщика сертификатов. Проверьте рекомендации у вашего поставщика сертификата. Например, некоторые провайдеры могут предложить использовать сторонний инструмент OpenSSL с сайта [OpenSSL](https://www.openssl.org/) или [OpenSSL Binaries](https://wiki.openssl.org/index.php/Binaries). 
 
 4. Выберите **Далее**.
 

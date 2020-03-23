@@ -2,7 +2,7 @@
 title: Использование решения по умолчанию для настройки с помощью Power Apps | MicrosoftDocs
 description: Узнайте, как настроить решение по умолчанию
 ms.custom: ''
-ms.date: 10/29/2018
+ms.date: 02/20/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,30 +22,38 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: da116f81addf057a5f3fd4c44264bc6305e7b884
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 1525cdb41cb7e809a54b6389472e5be842a87697
+ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2869691"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "3093634"
 ---
-# <a name="use-the-common-data-services-default-solution"></a>Использование решения по умолчанию служб Common Data Service  
-  
- Все среды Power Apps включают следующие решения.
--   **Решение по умолчанию Common Data Service** — это базовое решение, которое доступно разработчикам для использования по умолчанию для своих настроек в среде.
--   **Решение по умолчанию** — это специальное решение, которое содержит все настройки из всех решений в среде. 
-<!-- **Base Custom Controls Core** - This solution includes a core set of controls. Controls are used in user interface elements, such as fields, lists, and views. -->
+# <a name="use-a-solution-to-customize"></a>Использование решения для настройки
+Мы рекомендуем вам создать решение для управления настройками. С помощью настраиваемого решения вы можете легко найти только те компоненты решения, которые вы настроили, согласовано применять префикс издатель решения и экспортировать свое решение для распространения в других средах.  
 
-Обратите внимание, что если установлены или импортированы другие приложения или решения, дополнительные решения могут быть доступны в списке решений. 
+Если вы не используете настраиваемое решение, вы будете работать с решением по умолчанию в неуправляемом слое. Есть два решения по умолчанию в каждой среде Common Data Service:  
+- Решение по умолчанию Common Data Service. Это базовое решение, которое доступно для создателей для использования по умолчанию для настроек в среде. Решение по умолчанию Common Data Service полезно, когда вы хотите оценить или изучить Power Apps.  
+- Решение по умолчанию. Это специальное решение, которое содержит все компоненты в системе. Решение по умолчанию полезно для обнаружения всех компонентов и конфигураций в вашей системе.  
 
-По умолчанию при создании или настройке управляемого моделью приложения вы работаете с решением, называемым решением по умолчанию Common Data Service. Решение по умолчанию Common Data Service можно открыть для просмотра и редактирования компонентов, которые содержатся в нем. Для этого требуется выполнить следующие шаги.
+## <a name="why-you-shouldnt-use-the-default-solutions-to-manage-customizations"></a>Почему вы не должны использовать решение по умолчанию для управления настройками
+Есть несколько причин, по которым вам не следует создавать приложения и выполнять настройки ни в каком решении по умолчанию:  
+- Решение по умолчанию содержит все компоненты и настройки из всех решений в среде. 
+- По умолчанию все включенные пользователи в среде могут создавать приложения и настраивать компоненты в решении по умолчанию Common Data Services. 
+- Трудно найти или идентифицировать настройки, которые вы сделали в среде, используя какое-либо решение по умолчанию. 
+- Используя какое-либо решение по умолчанию, при создании компонентов также будет использоваться назначенный ему издатель по умолчанию. Это может привести к тому, что к некоторым компонентам будет применен неправильный префикс издателя. 
+- Решение по умолчанию не может быть экспортировано. Следовательно, вы не можете распространять решение по умолчанию в другую среду. 
+
+<!-- Notice that if you have installed or imported other applications or solutions, additional solutions may be available in the solutions list. 
+
+By default,  when you build or customize a model-driven app, you work with the solution called Common Data Services Default Solution. You can open the Common Data Services Default Solution to view and edit the components that are contained in it. To do this, follow these steps.
  
-1.  В левой области навигации выберите **Решения**.
+1.  On the left navigation pane select **Solutions**.
 
-2.  В списке решений выберите **Решение по умолчанию Common Data Service**.
+2.  In the list of solutions, select **Common Data Services Default Solution**.
   
 > [!TIP]
->  Если планируется распределение создаваемых приложений, следует изменить префикс настройки издателя решения. Дополнительные сведения: [Префикс издателя решения](change-solution-publisher-prefix.md).  
+>  If you plan to distribute the applications your make, consider changing the publisher customization prefix. More information: [Solution publisher prefix](change-solution-publisher-prefix.md).  -->
   
 <a name="BKMK_PrivacyNotice"></a>   
 
@@ -54,7 +62,8 @@ ms.locfileid: "2869691"
   
  [!INCLUDE[cc_privacy_crm_customizations](../../includes/cc-privacy-crm-customizations.md)]  
   
-## <a name="see-also"></a>См. также  
+### <a name="see-also"></a>См. также  
+[Создание решения](create-solution.md) <br />
 [Общие сведения о компонентах управляемых моделью приложений](../model-driven-apps/model-driven-app-components.md)
- <br/>
- [(Технический документ) Принципы и шаблоны для разработчиков решений](https://go.microsoft.com/fwlink/p/?LinkID=533946)
+
+

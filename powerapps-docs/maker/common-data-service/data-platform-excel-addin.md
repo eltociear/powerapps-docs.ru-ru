@@ -13,17 +13,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24164d6eb03de550a1f3f4a8f3e8402154d03046
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7cf24511fd8f314fde5f653608c1a4fa43ebc4e4
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865622"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040670"
 ---
 # <a name="open-entity-data-in-excel"></a>Открытие данных сущности в Excel
 Открыв данные сущности в Microsoft Excel, можно быстро и легко просматривать и редактировать данные с помощью надстройки Microsoft Power Apps Excel. Для надстройки Power Apps Excel требуется Microsoft Excel 2016.
 
 ![Надстройка Excel](./media/data-platform-cds-excel-addin/ExcelAddin.png "Надстройка Power Apps Excel")
+
+Чтобы установить надстройку Excel Power Apps, см. раздел [Надстройка Microsoft PowerApps Office](https://appsource.microsoft.com/en-us/product/office/WA104380330?tab=Overview). Дополнительные сведения о добавлении или удалении надстройки Office Excel см. в разделе [Добавление или удаление надстроек в Excel](https://support.office.com/en-us/article/add-or-remove-add-ins-in-excel-0af570c4-5cf3-4fa9-9b88-403625a0b460).
 
 ## <a name="open-entity-data-in-excel"></a>Открытие данных сущности в Excel
 1. На сайте [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) разверните раздел **Данные** и щелкните или нажмите **Сущности** на левой панели навигации. Все сущности отображаются.

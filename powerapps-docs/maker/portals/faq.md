@@ -6,21 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 01/17/2020
+ms.date: 03/04/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: bf76d2a8a3e91d9e20de9d70543af0bda4a57040
-ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
+ms.openlocfilehash: 9293288a8f3de86807342466771d197754b65706
+ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2988094"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100030"
 ---
 # <a name="power-apps-portals-faq"></a>Вопросы и ответы в порталах Power Apps
 
 Мы составили список часто задаваемых вопросов и кратких ответов на них, чтобы вы могли быстро получить нужную информацию.
 
 ## <a name="general"></a>Общие сведения
+
+### <a name="does-power-apps-portals-support-tls-12"></a>Поддерживают ли порталы Power Apps протокол TLS 1.2?
+
+Порталы Power Apps версии 8.3 и выше поддерживает [TLS 1.2](https://support.microsoft.com/help/4041984/portal-capabilities-for-microsoft-dynamics-365-version-8-3-2-85-releas).
 
 ### <a name="what-is-the-difference-between-power-apps-portals-dynamics-365-portals-and-add-on-portals"></a>В чем разница между порталами Power Apps, порталами Dynamics 365 и порталами надстроек?
 
@@ -32,9 +36,11 @@ ms.locfileid: "2988094"
 
 ![Тип порталов Power Apps](./media/power-apps-portals-type.png)
 
-Для надстроечных порталов к типу портала добавляется суффикс надстройки. Например, тип портала производственной надстройки указывается как «Производственный (надстройка)».
+Дополнительные различия между порталами Power Apps с лицензиями на основе емкости и лицензиями на основе надстройки:
 
-Нет никакой разницы в функциональности между порталами Power Apps с лицензиями на основе емкости и лицензиями на основе надстройки. Однако методы подготовки для порталов с лицензиями на основе емкости и лицензиями на основе надстройки отличаются.
+- Для надстроечных порталов к типу портала добавляется суффикс надстройки. Например, тип портала производственной надстройки указывается как «Производственный (надстройка)».
+- Порталы Power Apps имеют [другой механизм кэширования](https://powerapps.microsoft.com/en-us/blog/publishing-changes-to-powerapps-portals/) по сравнению с порталами с лицензиями на основе надстроек.
+- Методы подготовки для порталов с лицензиями на основе емкости по сравнению с лицензиями на основе надстройки отличаются.
 
 Вы можете создать портал Power Apps с лицензией на основе емкости, используя шаги, описанные в следующих статьях:
 
@@ -213,6 +219,10 @@ Set-TenantSettings -RequestBody @{ "disablePortalsCreationByNonAdminUsers" = $fa
 Портал будет перезапущен, и снова заработает.
 
 ## <a name="debugging-and-fixing-problems"></a>Отладка и устранение проблем
+
+### <a name="performance-of-entity-forms-actions-such-as-createupdatedelete-on-entity-forms-take-a-lot-of-time-to-complete-or-timeout"></a>Производительность форм сущностей: такие действия, как создание/обновление/удаление форм сущностей требуют много времени для завершения или завершаются истечением времени ожидания.
+
+Это может произойти по нескольким причинам в зависимости от ваших данных и настроек, выполненных для этой сущности в Common Data Service. При устранении таких неполадок, связанных с производительностью, для действий с записями с порталов, убедитесь, что для этих событий не зарегистрированы синхронные подключаемые модули, которые могут вызвать эти задержки. По возможности старайтесь реализовывать их асинхронно, чтобы они не приостанавливали и не задерживали транзакцию.
 
 ### <a name="when-accessing-my-portal-i-see-a-generic-error-page-how-can-i-see-the-actual-error"></a>При доступе к своему порталу я вижу универсальную страницу ошибки. Как увидеть фактическую ошибку?
 

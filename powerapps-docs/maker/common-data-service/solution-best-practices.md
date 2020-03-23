@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 40c59ccdebe8ee5192510b5d8ac7e825c6b68c58
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 39f3780d0c8bbe33512b5eaec2719bd6f3912d91
+ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909431"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100074"
 ---
 # <a name="best-practices-when-working-with-solutions"></a>Рекомендации по работе с решениями 
 В этом разделе описываются рекомендации при работе с решениями. 
@@ -38,7 +38,7 @@ ms.locfileid: "2909431"
 
 
 ## <a name="use-security-roles-to-manage-app-access"></a>Использование ролей безопасности для управления доступом приложения
-Управляемые моделью приложения должны иметь роли безопасности, назначенные для управления доступом пользователей. Дополнительные сведения: [Добавление ролей безопасности в приложение](../model-driven-apps/share-model-driven-app.md#add-security-roles-to-the-app) 
+Управляемые моделью приложения должны иметь роли безопасности, назначенные для управления доступом пользователей. Дополнительная информация: [Поделиться приложением на основе модели с Power Apps](../model-driven-apps/share-model-driven-app.md) 
 
 ## <a name="delete-the-managed-solution-to-delete-a-model-driven-app"></a>Удаление управляемого решения для удаления управляемого моделью приложения 
 Для удаления управляемого моделью приложения, которое было установлено в решение по умолчанию как часть управляемого решения, удалите управляемое решение. 

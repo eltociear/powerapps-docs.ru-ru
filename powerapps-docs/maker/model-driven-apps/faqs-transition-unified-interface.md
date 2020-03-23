@@ -2,7 +2,7 @@
 title: 'Вопросы и ответы: переход на единый интерфейс | MicrosoftDocs'
 description: Часто задаваемые вопросы, связанные с процессом перехода для перехода пользователей с устаревшего веб-клиента на единый интерфейс.
 ms.custom: ''
-ms.date: 12/20/2019
+ms.date: 02/26/2020
 ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e06fa6901ec123307adaabdbbb6071e5a11c47cc
-ms.sourcegitcommit: 41a78575a6533c45c7cf4c012f8ed30c4e43aae8
+ms.openlocfilehash: 003bc58cc0c4db717a92d75d6157b7b53eb3629c
+ms.sourcegitcommit: bb1a684d4ce2d342ad092a29ebca2bb502736e6e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2918125"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "3087807"
 ---
 # <a name="faqs-transition-to-unified-interface"></a>Вопросы и ответы: переход на единый интерфейс
 
@@ -79,7 +79,7 @@ ms.locfileid: "2918125"
 
 ### <a name="my-environment-has-been-transitioned-but-i-am-finding-blocking-issues-for-my-users-and-want-to-move-back-to-the-legacy-web-client-is-this-possible"></a>Моя среда была перенесена, но я обнаружил проблемы с блокировкой для своих пользователей и хочу вернуться к устаревшему веб-клиенту. Возможно ли это?
 
-Да, вы сможете вернуться к старому веб-клиенту в течение не более 10 дней после перехода. Можно [выполнить переключение вручную](https://docs.microsoft.com/power-platform/admin/enable-unified-interface-only) в течение первых 4 дней или позднее этого времени подайте запрос технической поддержки по обычному каналу, так как переключение вручную будет отключено. 
+Да, вы сможете вернуться к старому веб-клиенту в течение не более 10 дней после перехода. Вы можете сделать [переключение вручную](https://docs.microsoft.com/power-platform/admin/enable-unified-interface-only) в течение первых 10 дней или подать [стандартный запрос поддержки](https://admin.powerplatform.microsoft.com/support?referer=mbssupport) и установить тип проблемы "Переход от устаревшего веб-клиента на единый интерфейс", поскольку ручной переключатель будет отключен. 
 
 > [!NOTE]
 > Должно быть 10 дней до 1-го октября 2020 г, так как старый веб-клиент больше не будет доступен после этой даты.
@@ -116,9 +116,9 @@ ms.locfileid: "2918125"
 
 ### <a name="if-i-already-have-an-environment-transitioned-to-unified-interface-will-i-still-be-able-to-switch-back-to-the-legacy-web-client-manually"></a>Если я уже имеют среду, переведенную на единый интерфейс, смогу ли я переключиться обратно на старый веб-клиент вручную?
 
-Если с момента перевода среды прошло не менее 4 дней, мы отключим ручное переключение на старый веб-клиент. 
+Если с момента перевода среды прошло не менее 10 дней, мы отключим ручное переключение на старый веб-клиент. 
 
-Если вы обнаружили, что оно отключено, а вам требуется переключиться обратно, отправьте запрос на поддержку из своего обычного канала для оценки.
+Если вы обнаружите, что это было отключено и у вас есть требование переключиться назад, создайте [стандартный запрос поддержки](https://admin.powerplatform.microsoft.com/support?referer=mbssupport) и установите тип проблемы "Переход от устаревшего веб-клиента на единый интерфейс".
 
 ### <a name="is-there-a-specific-day-and-time-when-approved-transitions-will-take-place"></a>Есть ли конкретный день и время, когда будут выполнены утвержденные переходы? 
 

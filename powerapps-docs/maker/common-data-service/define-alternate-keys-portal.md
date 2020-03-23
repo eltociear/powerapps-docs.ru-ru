@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d52b3fa67863a43f82f020f3894bbabf5d38df84
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b0528015899ccc624fed1d83566c445f348343c9
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865482"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040450"
 ---
 # <a name="define-alternate-keys-using-power-apps-portal"></a>Определение альтернативных ключей с помощью портала Power Apps
 
@@ -37,9 +37,8 @@ ms.locfileid: "2865482"
 
 ## <a name="view-alternate-keys"></a>Просмотр альтернативных ключей
 
-1. На [портале Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите режим конструирования **на основе модели** или **Холст**.
-2. Выберите **Данные** > **Сущности** и выберите сущность, которую необходимо просмотреть.
-3. Выберите **Ключи** для просмотра списка всех альтернативных ключей, которые определены.
+1. На [портале Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) выберите **Данные** > **Сущности** и выберите сущность, которую необходимо просмотреть.
+2. Выберите **Ключи** для просмотра списка всех альтернативных ключей, которые определены.
 
     ![Просмотр альтернативных ключей](media/view-alternate-keys-portal.png)
 

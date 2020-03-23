@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9859fd06ca31ed44d22474cd92491fc3194252c6
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: cf8fdf1b14ef7bbc503c49fac217bb071bd56305
+ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861750"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029781"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>Общие проблемы и их разрешение для средства проверки решений
 
@@ -220,7 +220,7 @@ ms.locfileid: "2861750"
 
 Сведения об этой проблеме и порядке ее устранения см. в [статье базы знаний №4337537: Недопустимый экспорт — отсутствует сущность бизнес-процесса](https://support.microsoft.com/en-hk/help/4337537/invalid-export-business-process-entity-missing).
 
-## <a name="solution-cchecker-fails-to-export-patched-solutions"></a>Средству проверки решений не удается экспортировать исправленные решения
+## <a name="solution-checker-fails-to-export-patched-solutions"></a>Средству проверки решений не удается экспортировать исправленные решения
 
 Если к решению было применено [исправление](https://docs.microsoft.com/powerapps/developer/common-data-service/create-patches-simplify-solution-updates), средство проверки решений не сможет экспортировать решение для анализа. Когда к решению было применено исправление, первоначальное решение будет заблокировано, и его нельзя изменить или экспортировать, если имеются зависимые исправления в организации, которые определяют это решение как родительское решение.
 

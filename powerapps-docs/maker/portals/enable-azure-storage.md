@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 01/07/2020
+ms.date: 02/12/2020
 ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 8575bdc4379091204dbdfe4fd04d9d2d56a06cc9
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: ceb25954357efeafec6b33338ff4b617af82ebda
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2976844"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069774"
 ---
 # <a name="enable-azure-storage"></a>Включение хранилища Azure
 
@@ -24,6 +24,8 @@ ms.locfileid: "2976844"
 
 После запуска учетной записи хранилища порталам требуются определенные глобальные параметры, которые будут указывать приложению, каким образом искать учетную запись хранилища. В приложении управления порталом перейдите в раздел **Параметры** > **Создать** и добавьте новый параметр с именем **FileStorage/CloudStorageAccount**.
 
+Интеграция хранилища Azure работает только с **Примечаниями**, настроенными в метаданных формы сущности. Хранилище больших двоичных объектов Azure не используется в качестве хранилища, если вы используете **Комментарии портала**, что можно настроить с помощью параметра **Временная шкала**. Хотя комментарии портала также позволяют отправлять файлы в виде вложений, эти файлы хранятся только в Common Data Service.
+ 
 > [!NOTE]
 > Максимальный размер отправляемого файла: 125 МБ.
 

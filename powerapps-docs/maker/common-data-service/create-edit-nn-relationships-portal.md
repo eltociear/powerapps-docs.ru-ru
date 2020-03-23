@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dd85ee8b5b44ad6db9ac70a38984eb5c04cd12d8
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: cd7450b81b29c4d95ac304f76eeff29f32a65f79
+ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865842"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "3093699"
 ---
 # <a name="create-many-to-many-entity-relationships-in-common-data-service-using-power-apps-portal"></a>Создание отношений сущностей "многие-ко-многим" в Common Data Service с помощью портала Power Apps
 
