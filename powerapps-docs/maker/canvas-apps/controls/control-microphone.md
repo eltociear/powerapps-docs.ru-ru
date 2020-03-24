@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/17/2020
 ms.locfileid: "79436746"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="microphone-control-in-power-apps"></a>Элемент управления "микрофон" в Power Apps
 
@@ -124,7 +125,7 @@ ms.locfileid: "79436746"
 1. Добавьте элемент управления **аудио** в приложение.
 1. Задайте для свойства **мультимедиа** элемента управления " **звук** " формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Microphone1.Audio
     ```
 
@@ -145,15 +146,15 @@ ms.locfileid: "79436746"
 
 1. Задайте для этой формулы свойство **OnStop** с помощью функции " [получить](../functions/function-clear-collect-clearcollect.md) ":
 
-    ```powerapps-dot
-    Collect( MySounds, MyMic.Audio )
+    ```powerapps-comma
+    Collect( MySounds; MyMic.Audio )
     ```
 
 1. Добавьте элемент управления " **Галерея** " и переместите его под **мимик**.
 
 1. Присвойте свойству [Items](properties-core.md) коллекции следующую формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     MySounds
     ```
 
@@ -161,7 +162,7 @@ ms.locfileid: "79436746"
 
 1. Задайте для свойства **мультимедиа** элемента управления "звук" следующую формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     ThisItem.Url
     ```
 
@@ -177,8 +178,8 @@ ms.locfileid: "79436746"
 
 1. Задайте для его свойства [OnSelect](properties-core.md) формулу:
 
-    ```powerapps-dot
-    Remove( MySounds, ThisItem )
+    ```powerapps-comma
+    Remove( MySounds; ThisItem )
     ```
 
 1. Нажмите клавишу F5, а затем удалите запись, выбрав соответствующий элемент управления **"Кнопка"** .

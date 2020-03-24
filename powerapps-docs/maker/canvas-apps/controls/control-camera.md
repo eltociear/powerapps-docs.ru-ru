@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/17/2020
 ms.locfileid: "79436801"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="camera-control-in-power-apps"></a>Элемент управления "Камера" в Power Apps
 
@@ -103,7 +104,7 @@ ms.locfileid: "79436801"
 
 1. Задайте для свойства **Image** элемента управления **Image** следующую формулу:
 
-    ```powerapps-dot
+    ```powerapps-comma
     Camera1.Photo
     ```
 
@@ -118,8 +119,8 @@ ms.locfileid: "79436801"
 
 1. Добавьте элемент управления " **Камера** ", назовите его **микамера**и задайте для его свойства [OnSelect](properties-core.md) следующую формулу:
 
-    ```powerapps-dot
-    Collect( MyPix, MyCamera.Photo )
+    ```powerapps-comma
+    Collect( MyPix; MyCamera.Photo )
     ```
 
     Дополнительные сведения см. в разделе:
@@ -133,13 +134,13 @@ ms.locfileid: "79436801"
 
 1. Задайте для свойства [Items](properties-core.md) элемента управления " **коллекция изображений** " следующую формулу:
  
-    ```powerapps-dot
+    ```powerapps-comma
     MyPix
     ```
 
 1. Задайте для свойства [Image](properties-visual.md) элемента управления **Image** в коллекции следующую формулу:
 
-    ```powerapps-dot   
+    ```powerapps-comma   
     ThisItem.Url
     ```
 
@@ -149,8 +150,8 @@ ms.locfileid: "79436801"
 
 1. используемых Задайте для свойства **OnSelect** элемента управления **изображение** в элементе управления " **коллекция изображений** " формулу:
 
-    ```powerapps-dot
-    Remove( MyPix, ThisItem )
+    ```powerapps-comma
+    Remove( MyPix; ThisItem )
     ```
 
 1. Нажмите клавишу F5, а затем выберите изображение, чтобы удалить его.
