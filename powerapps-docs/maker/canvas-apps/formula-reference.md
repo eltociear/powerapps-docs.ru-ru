@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 12/19/2019
+ms.date: 03/21/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c70d73cb2dcdd9fd1832a10c4c89029cdb5c45ad
-ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
+ms.openlocfilehash: 49f25d01c646916738e583729e12e7b0544f7390
+ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78264927"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80122805"
 ---
 # <a name="formula-reference-for-power-apps"></a>Справочник формул для Power Apps
 Формулы объединяют множество элементов.  Ниже перечислены следующие элементы:
@@ -149,7 +149,7 @@ ms.locfileid: "78264927"
 
 **[EncodeUrl](functions/function-encode-decode.md)** — кодирует специальные символы с помощью кодировки URL.
 
-**[Exit](functions/function-exit.md)** — выполняет выход из запущенного приложения.
+**[Exit](functions/function-exit.md)** — выход из выполняющегося приложения и при необходимости выписывание текущего пользователя.
 
 **[Exp](functions/function-numericals.md)** — возвращает *e*, возведенное в указанную степень.
 

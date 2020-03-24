@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/30/2019
+ms.date: 03/19/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 18abbc91426c74b48aefd51f1867d8bff806d718
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 7e434de24af417b5871c762d1aecd64cc41c5c72
+ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211510"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80122757"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>Требования к системе, ограничения и значения конфигурации для приложений на основе холста
 В этом разделе содержатся требования к платформе устройства и веб-браузеру, а также ограничения и значения конфигурации для приложений Canvas.
@@ -39,7 +39,7 @@ ms.locfileid: "79211510"
 | **Браузер** | **Операционная система** |
 | --- | --- |
 | Google Chrome (последняя версия)<br>(рекомендуется) |Windows 7 с пакетом обновления 1, 8.1 и 10 <br>Android 5 или более поздней версии <br>iOS 8 или более поздней версии<br>macOS |
-| Microsoft Edge (последняя версия)<br>(рекомендуется) |Windows 10 |
+| Microsoft Edge (последняя версия)<br>(рекомендуется) |Windows 10 |
 | Microsoft Internet Explorer 11 (с отключенной функцией просмотра в режиме совместимости) |Windows 7 с пакетом обновления 1, 8.1 и 10 |
 | Mozilla Firefox (последняя версия) |Windows 7 с пакетом обновления 1, 8.1 и 10 <br> Android 5 или более поздней версии <br>iOS 8 или более поздней версии <br>macOS |
 | Apple Safari (последняя версия) |iOS 8 или более поздней версии <br>macOS |
@@ -49,7 +49,7 @@ ms.locfileid: "79211510"
 | **Браузер** | **Операционная система** |
 | --- | --- |
 | Google Chrome (последняя версия)<br>(рекомендуется) |Windows 7 с пакетом обновления 1, 8.1 и 10 <br>macOS |
-| Microsoft Edge (последняя версия)<br>(рекомендуется) |Windows 10 |
+| Microsoft Edge (последняя версия)<br>(рекомендуется) |Windows 10 |
 | Microsoft Internet Explorer 11 (с отключенной функцией просмотра в режиме совместимости) |Windows 7 с пакетом обновления 1, 8.1 и 10 |
 
 ## <a name="request-limits"></a>Ограничения запросов
@@ -73,7 +73,7 @@ ms.locfileid: "79211510"
 > [!IMPORTANT]
 >   При наличии существующих конфигураций обновите их как можно скорее до 30 сентября 2018, чтобы они включали IP-адреса в этом списке для регионов, в которых существуют приложения Power Apps, и соответствуют им.
 
-| "Регион" | Внешний IP-адрес |
+| Регион | Исходящие IP-адреса |
 | --- | --- |
 | Азия | 13.75.36.64-13.75.36.79, 13.67.8.240-13.67.8.255, 52.175.23.169, 52.187.68.19, 127.0.0.1 |
 | Австралия  | 13.70.72.192-13.70.72.207, 13.72.243.10, 13.77.50.240-13.77.50.255, 13.70.136.174, 127.0.0.1 |
@@ -92,6 +92,7 @@ ms.locfileid: "79211510"
 
 | Домены | Протоколы | Использование |
 | --- | --- | --- |
+| api.bap.microsoft.com<br/>api.businessappdiscovery.microsoft.com | https | Управление разрешениями среды|
 | management.azure.com |https |RP |
 | msmanaged-na.azure-apim.net |https |Среда выполнения соединителей или интерфейсов API. |
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL. |
@@ -102,9 +103,10 @@ ms.locfileid: "79211510"
 | \*. azureedge.net |https | create.powerapps.com, make.powerapps.com, content.powerapps.com и make.powerapps.com |
 | \*. blob.core.windows.net |https | Хранилище BLOB-объектов |
 | \*. flow.microsoft.com | https | create.powerapps.com, make.powerapps.com, content.powerapps.com и make.powerapps.com |
-| *. dynamics.com | https | Common Data Service |
+| \*. dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |Телеметрия |
-| localhost | https | Приложения Power Apps для мобильных устройств
+| localhost | https | Приложения Power Apps для мобильных устройств|
+
 
 > [!NOTE]
 > Если вы используете VPN, ее необходимо настроить для исключения localhost из режима туннелирования для мобильных приложений.
