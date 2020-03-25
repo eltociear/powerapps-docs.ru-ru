@@ -1551,36 +1551,41 @@
           href: ./common-data-service/use-solutions-for-your-customizations.md
         - name: Общие сведения об издателе решения
           href: ./common-data-service/change-solution-publisher-prefix.md
-        - name: Создание решения
-          href: ./common-data-service/create-solution.md
-        - name: Импорт решений
-          href: ./common-data-service/import-update-export-solutions.md
-        - name: Обновление или модернизация решений
-          href: ./common-data-service/update-solutions.md
-        - name: Экспорт решений
-          href: ./common-data-service/export-solutions.md
-        - name: Объединение управляемых решений
-          href: ./common-data-service/how-managed-solutions-merged.md
-        - name: Использование переменных среды
-          href: ./common-data-service/EnvironmentVariables.md
-        - name: Просмотр слоев решений
-          href: ./common-data-service/solution-layers.md
-        - name: Просмотр журнала решений
-          href: ./common-data-service/solution-history.md
-        - name: Использование средства проверки решений
-          href: ./common-data-service/use-powerapps-checker.md
-        - name: 'Распространенные проблемы и решения: средство проверки решений'
-          href: ./common-data-service/common-issues-resolutions-solution-checker.md
         - name: Использование сегментированных решений
           href: ./common-data-service/use-segmented-solutions-patches-simplify-updates.md
-        - name: Настройка управляемых свойств в метаданных
-          href: ./common-data-service/set-managed-properties-metadata.md
+        - name: Объединение управляемых решений
+          href: ./common-data-service/how-managed-solutions-merged.md
+        - name: Использование средства проверки решений
+          href: ./common-data-service/use-powerapps-checker.md
+          items:
+            - name: 'Распространенные проблемы и решения: средство проверки решений'
+              href: ./common-data-service/common-issues-resolutions-solution-checker.md
         - name: Советы и рекомендации
           href: ./common-data-service/solution-best-practices.md
-        - name: Дополнительные разделы
+        - name: Практическое руководство
           items:
             - name: Создание исправлений решения
               href: ./common-data-service/solution-patches.md
+            - name: Создание решения
+              href: ./common-data-service/create-solution.md
+            - name: Обновление или модернизация решений
+              href: ./common-data-service/update-solutions.md
+            - name: Импорт решений
+              href: ./common-data-service/import-update-export-solutions.md
+            - name: Экспорт решений
+              href: ./common-data-service/export-solutions.md
+            - name: Использование переменных среды
+              href: ./common-data-service/EnvironmentVariables.md
+            - name: Просмотр слоев решений
+              href: ./common-data-service/solution-layers.md
+            - name: Просмотр журнала решений
+              href: ./common-data-service/solution-history.md
+            - name: Настройка управляемых свойств в метаданных
+              href: ./common-data-service/set-managed-properties-metadata.md
+            - name: Дополнительные разделы
+              items:
+                - name: Создание исправлений решения
+                  href: ./common-data-service/solution-patches.md
     - name: Работа с потоками данных
       href: ./common-data-service/self-service-data-prep-with-dataflows.md
       items:
