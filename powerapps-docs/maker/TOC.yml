@@ -1559,8 +1559,6 @@
           href: ./common-data-service/update-solutions.md
         - name: Экспорт решений
           href: ./common-data-service/export-solutions.md
-        - name: Создание исправлений решения
-          href: ./common-data-service/solution-patches.md
         - name: Объединение управляемых решений
           href: ./common-data-service/how-managed-solutions-merged.md
         - name: Использование переменных среды
@@ -1579,6 +1577,10 @@
           href: ./common-data-service/set-managed-properties-metadata.md
         - name: Советы и рекомендации
           href: ./common-data-service/solution-best-practices.md
+        - name: Дополнительные разделы
+          items:
+            - name: Создание исправлений решения
+              href: ./common-data-service/solution-patches.md
     - name: Работа с потоками данных
       href: ./common-data-service/self-service-data-prep-with-dataflows.md
       items:
