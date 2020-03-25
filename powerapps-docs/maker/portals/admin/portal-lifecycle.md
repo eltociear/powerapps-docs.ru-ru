@@ -10,11 +10,11 @@ ms.date: 12/26/2019
 ms.author: tapanm
 ms.reviewer: tapanm
 ms.openlocfilehash: c7c330b8f7bda2b7c08c2c0ec94202e20670ed17
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978780"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109462"
 ---
 # <a name="about-portal-lifecycle"></a>О жизненном цикле портала
 

@@ -10,11 +10,11 @@ ms.date: 10/07/2019
 ms.author: tapanm
 ms.reviewer: ''
 ms.openlocfilehash: 3eea977cf59629c7f2b758affa145f520838b39f
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978868"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3108687"
 ---
 # <a name="manage-existing-portals-in-power-apps"></a>Управление существующими порталами в Power Apps
 

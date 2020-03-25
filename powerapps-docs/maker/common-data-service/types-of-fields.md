@@ -23,11 +23,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 2b54cad59b1f5a6cc4199675308f5cd48d05240d
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874005"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3108693"
 ---
 # <a name="types-of-fields"></a>Типы полей
 

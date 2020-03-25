@@ -15,11 +15,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: dbd648bd96d087ce34d8482d96507fa2391902b6
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884752"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109466"
 ---
 # <a name="overview-of-the-model-driven-app-form-editor-user-interface"></a>Обзор пользовательского интерфейса редактора форм управляемого моделью приложения
 
