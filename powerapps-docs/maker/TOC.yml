@@ -169,8 +169,6 @@
           href: ./canvas-apps/help-desk-install.md
         - name: Приложение Meeting Capture
           href: ./canvas-apps/sample-meeting-capture.md
-        - name: Приложение для коммуникации в кризисных ситуациях
-          href: ./canvas-apps/sample-crisis-communication-app.md
     - name: Создание первого приложения
       items:
         - name: 1. Создание приложения на основе шаблона
@@ -1624,6 +1622,18 @@
   items:
     - name: Использование AI Builder в Power Apps
       href: ../use-ai-builder.md
+- name: Примеры приложений и решений
+  items:
+    - name: Приложение для коммуникации в кризисных ситуациях
+      href: ./canvas-apps/sample-crisis-communication-app.md
+    - name: Решение для реагирования на чрезвычайные ситуации
+      items:
+        - name: Обзор
+          href: ../sample-apps/emergency-response/overview.md
+        - name: Развертывание и настройка приложения
+          href: ../sample-apps/emergency-response/deploy-configure.md
+        - name: Использование приложения
+          href: ../sample-apps/emergency-response/use.md
 - name: Узнать от других пользователей
   items:
     - name: Вебинары
