@@ -827,6 +827,8 @@
           href: ./canvas-apps/edit-app.md
         - name: Удаление приложения
           href: ./canvas-apps/delete-app.md
+        - name: Наименование лицензий для приложения
+          href: ./canvas-apps/license-designation.md
         - name: Восстановление предыдущей версии
           href: ./canvas-apps/restore-an-app.md
         - name: Изменение имени и элемента приложения
@@ -877,6 +879,8 @@
           href: ./canvas-apps/cognitive-services-api.md
         - name: Преобразование форм InfoPath в Power Apps
           href: ./canvas-apps/transform-infopath.md
+        - name: Анализ данных телеметрии приложения с помощью Application Insights
+          href: ./canvas-apps/application-insights.md
     - name: Для разработчиков
       items:
         - name: "Приложения на основе холста для корпоративных разработчиков, партнеров и независимых поставщиков\_ПО"
