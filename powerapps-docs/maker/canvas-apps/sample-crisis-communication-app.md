@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/25/2020
+ms.date: 03/31/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 465f18474c7054467db8e22bb1702db250177395
-ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
+ms.openlocfilehash: fedcec7c8f3f093bf59b3ef607cbe4fbeea6ac54
+ms.sourcegitcommit: f5d15c973b2a129a0cc29a74cf8eaf6b24fbf36d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "80375072"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80516708"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Настройка и изучение образца шаблона "аварийная связь" в Power Apps
 
@@ -725,6 +725,30 @@ ms.locfileid: "80375072"
 1. В поле **Body (текст** ) нажмите **кнопку Добавить динамическое значение** и добавьте поле **Details (сведения** ) из **элемента при публикации** карточки.
 
 1. Нажмите кнопку **Сохранить**.
+
+### <a name="optional-deep-link-teams-notification-into-teams-app"></a>(Необязательно): глубокая привязка команд к приложению Teams
+
+Если вы хотите, чтобы ваши команды открывались непосредственно в приложении Canvas внутри команд, выполните следующие действия.
+
+1. Обновите URL-адрес приложения, чтобы он указывал на глубокую ссылку команды в приложении администрирования. <br>
+В приложении Admin измените URL-адрес приложения на следующий, где `App ID` — идентификатор приложения.
+
+    ```
+    https://teams.microsoft.com/l/entity/<APP ID>/<APP ID>
+    ```
+
+    ![Административное приложение](media/sample-crisis-communication-app/42-admin-app.png)
+
+1. Обновите ссылку на приложение, созданную в потоке уведомлений. <br> Откройте карточку задать переменную связи приложения и измените выражение для значения на следующее:
+
+    ```
+    concat(items('Apply_to_each')?['AppUrl'], if(greater(indexOf(items('Apply_to_each')?['AppUrl'], '?'),0),'&','?'), 'context=%7B%22subEntityId%22%3A%22',triggerBody()?['ID'],'%22%7D')
+    ```
+    ![Изменить параметры потока](media/sample-crisis-communication-app/43-flow-settings.png)
+
+1. Обновите приложение Canvas, чтобы использовать переменную контекста команд, чтобы получить глубокую ссылку на правильную статью новостей. <br> Для свойства **OnStart** приложения измените значение параметра с `newsid` на `subEntityId`.
+
+    ![Изменить OnStart](media/sample-crisis-communication-app/44-onstart.png)
 
 ### <a name="test-the-news-notification-flow"></a>Тестирование потока уведомлений новостей
 
