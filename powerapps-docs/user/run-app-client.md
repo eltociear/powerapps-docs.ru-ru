@@ -1,12 +1,12 @@
 ---
 title: Запуск приложения на основе холста на мобильном устройстве | Документы Майкрософт
 description: Узнайте, как запустить приложение на основе холста на мобильном устройстве.
-author: Mattp123
+author: mduelae
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 11/16/2018
-ms.author: matp
+ms.date: 04/1/2020
+ms.author: mkaur
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ad34f7daacf07ebc8ecde2a8ce29c163d0c28e95
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 1494c1624fc37b59b5e20b0cdaa15a9c9edb33e3
+ms.sourcegitcommit: 39f6feb699512e9c2bf71ef1a1238b32b639da02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733321"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527471"
 ---
 # <a name="run-a-canvas-app-on-a-mobile-device"></a>Запуск приложения на основе холста на мобильном устройстве
 Если вы создаете приложение или вам предоставляют доступ к приложению, его можно запускать на ОС Windows, iOS, Android или в веб-браузере. Из этого раздела вы узнаете, как запустить приложение на основе холста на мобильном устройстве. Приложения, работающие на мобильных устройствах, могут использовать такие возможности этих устройств, как определение местоположения и съемка на камеру.
@@ -66,7 +66,7 @@ ms.locfileid: "74733321"
 
 При первом использовании Power Apps вы увидите демонстрацию жеста для закрытия приложения.
 
-![Запуск приложения](./media/run-app-client/run-client-app.png)
+![Запуск приложения](media/run_client.png)
 
 ## <a name="give-consent"></a>Предоставление согласия
 Если приложению требуется подключение к источнику данных или разрешение на использование возможностей устройства (например, камеры или служб определения местоположения), вам необходимо дать согласие, прежде чем использовать приложение. Обычно такой запрос появляется только при первом использовании.
