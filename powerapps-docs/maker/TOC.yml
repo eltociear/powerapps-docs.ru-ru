@@ -51,6 +51,8 @@
               href: ../user/navigation.md
             - name: Использование фильтров сетки
               href: ../user/grid-filters.md
+            - name: Создание личных представлений с расширенными фильтрами сетки
+              href: ../user/grid-filters-advanced.md
             - name: Просмотр профиля
               href: ../user/view-your-user-profile.md
             - name: Поиск администратора или специалиста поддержки
@@ -69,7 +71,7 @@
               href: ../user/add-activities.md
             - name: Часто задаваемые вопросы о действиях
               href: ../user/faq-for-timeline-and-activity.md
-            - name: Просмотр и создание сообщения электронной почты с помощью сетки действий
+            - name: Просмотр и создание электронных писем через сетку действий
               href: ../user/view-create-email.md
             - name: Отправка сообщения с помощью улучшенного интерфейса электронной почты
               href: ../user/enhanced-email.md
@@ -937,7 +939,7 @@
                   href: ./model-driven-apps/create-site-map-app.md
                 - name: Добавление или изменение компонентов приложения
                   href: ./model-driven-apps/add-edit-app-components.md
-                - name: Добавление сущности команды в качестве параметра подстановки
+                - name: Добавление сущности в поиск
                   href: ./model-driven-apps/team-entity-lookup.md
             - name: Работа с формами
               href: ./model-driven-apps/create-design-forms.md
@@ -1630,9 +1632,9 @@
       href: ../use-ai-builder.md
 - name: Примеры приложений и решений
   items:
-    - name: Приложение для коммуникации в кризисных ситуациях
+    - name: Аварийная связь
       href: ./canvas-apps/sample-crisis-communication-app.md
-    - name: Решение для реагирования на чрезвычайные ситуации
+    - name: Реагирование на чрезвычайные ситуации
       items:
         - name: Обзор
           href: ../sample-apps/emergency-response/overview.md
