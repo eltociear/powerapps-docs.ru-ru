@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/21/2020
+ms.date: 04/02/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1e66c9a6c079baef3b7f67631c4a21cda6334478
-ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
+ms.openlocfilehash: e0ed91cc66f5b42bbea769443ad086476245029c
+ms.sourcegitcommit: 49b69129262a9b530e69508e84c3822b742066df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80122789"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "80759802"
 ---
 # <a name="exit-function-in-power-apps"></a>Функция exit в Power Apps
 Завершает работу выполняющегося приложения и при необходимости выписывает текущего пользователя.
@@ -30,12 +30,12 @@ ms.locfileid: "80122789"
 
 Используйте необязательный аргумент *выхода* , чтобы подписать текущего пользователя из Power Apps. *Выход* полезен, если устройства являются общими для обеспечения безопасности пользователей.
 
-При создании приложения вызов метода **Exit** не завершает работу и не выполняет выход пользователя.  Однако он не останавливает вычисление оставшейся части формулы.
+При создании приложения вызов метода **Exit** не завершает работу и не выполняет выход пользователя.  Однако он останавливает вычисление оставшейся части формулы.
 
 **Exit** можно использовать только в [формулах поведения](../working-with-formulas-in-depth.md).
 
 > [!NOTE]
-> Выход из системы не поддерживается при запуске приложения в веб-браузере.
+> Выход с помощью функции **Exit** не поддерживается при запуске приложения в веб-браузере.
 
 ## <a name="syntax"></a>Синтаксис
 **Выход**([*Sign*])
