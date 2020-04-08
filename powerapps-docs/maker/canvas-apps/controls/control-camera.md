@@ -6,20 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 03/16/2020
+ms.date: 04/07/2020
 ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fd3c468134e979732ead5e0144e60aaf1b3e38df
-ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
+ms.openlocfilehash: 59c0f85dd71c9dc512e348d6d8ee9686d6945fa1
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436801"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871127"
 ---
 # <a name="camera-control-in-power-apps"></a>Элемент управления "Камера" в Power Apps
 
@@ -44,7 +43,15 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="key-properties"></a>Основные свойства
 
-**Camera** — на устройстве с несколькими камерами это число идентифицирует камеру, используемую приложением.
+**Аваилабледевицес** — Таблица доступных камер на устройстве.
+
+Таблица содержит два столбца: 
+- *Идентификационный* номер, используемый со свойством **Camera** 
+- *Имя* , предоставленное устройством для распознавания камеры. Некоторые платформы могут включать *интерфейс Front* или *назад* , чтобы помочь в поиске камеры.
+
+*Примечание*. не все устройства в таблице могут быть использованы в приложении.  Некоторые из них могут быть специализированными драйверами или приложениями, предназначенными для конкретных целей.  
+
+**Camera** — числовой идентификатор используемой камеры.  Полезно на устройствах с несколькими камерами.  
 
 **OnStream** — поведение приложения при обновлении свойства **Stream**.
 
@@ -100,11 +107,11 @@ ms.PowerAppsDecimalTransform: true
 
 1. Разрешите приложению использовать камеру устройства при появлении соответствующего запроса.
 
-1. Добавление элемента управления **Image** .
+1. Добавление элемента управления [**Image**](../controls/control-image.md) .
 
 1. Задайте для свойства **Image** элемента управления **Image** следующую формулу:
 
-    ```powerapps-comma
+    ```powerapps-dot
     Camera1.Photo
     ```
 
@@ -113,14 +120,14 @@ ms.PowerAppsDecimalTransform: true
 
 1. Нажмите клавишу F5, чтобы просмотреть приложение.
 
-1. Сделайте снимок, выбрав или коснувшись элемента управления камерой.  Результат должен отображаться в элементе управления изображения.
+1. Сделайте снимок, выбрав или коснувшись элемента управления камерой. Результат должен отображаться в элементе управления изображения.
 
 ### <a name="add-pictures-to-an-image-gallery-control"></a>Добавление изображений в элемент управления "коллекция изображений"
 
 1. Добавьте элемент управления " **Камера** ", назовите его **микамера**и задайте для его свойства [OnSelect](properties-core.md) следующую формулу:
 
-    ```powerapps-comma
-    Collect( MyPix; MyCamera.Photo )
+    ```powerapps-dot
+    Collect( MyPix, MyCamera.Photo )
     ```
 
     Дополнительные сведения см. в разделе:
@@ -134,13 +141,13 @@ ms.PowerAppsDecimalTransform: true
 
 1. Задайте для свойства [Items](properties-core.md) элемента управления " **коллекция изображений** " следующую формулу:
  
-    ```powerapps-comma
+    ```powerapps-dot
     MyPix
     ```
 
 1. Задайте для свойства [Image](properties-visual.md) элемента управления **Image** в коллекции следующую формулу:
 
-    ```powerapps-comma   
+    ```powerapps-dot   
     ThisItem.Url
     ```
 
@@ -150,13 +157,41 @@ ms.PowerAppsDecimalTransform: true
 
 1. используемых Задайте для свойства **OnSelect** элемента управления **изображение** в элементе управления " **коллекция изображений** " формулу:
 
-    ```powerapps-comma
-    Remove( MyPix; ThisItem )
+    ```powerapps-dot
+    Remove( MyPix, ThisItem )
     ```
 
 1. Нажмите клавишу F5, а затем выберите изображение, чтобы удалить его.
 
 Используйте функцию [SaveData](../functions/function-savedata-loaddata.md) , чтобы сохранить рисунки локально или функцию [Patch](../functions/function-patch.md) для обновления источника данных.
+
+### <a name="change-the-active-camera-from-a-drop-down"></a>Изменение активной камеры из раскрывающегося списка
+
+1. [Добавьте](../add-configure-controls.md) элемент управления " **Камера** ".
+
+1. Разрешите приложению использовать камеру устройства при появлении соответствующего запроса.
+    
+1. [Добавьте](../add-configure-controls.md) элемент управления "раскрывающийся [Список](control-drop-down.md) ".
+
+1. Задайте для **элементов** прроперти в раскрывающемся списке значение:
+
+    ```powerapps-dot
+    Camera1.AvailableDevices
+    ```
+
+    > [!NOTE]
+      > Замените имя элемента управления Camera *Camera1* соответствующим образом.
+    
+1. Задайте для свойства **Камера** камеры значение: 
+
+    ```powerapps-dot
+    Dropdown1.Selected.Id
+    ```
+
+    > [!NOTE]
+      > Замените имя элемента управления dropdown *Dropdown1* соответствующим образом.
+
+1. Нажмите клавишу F5, а затем выберите элемент из раскрывающегося списка, чтобы изменить камеру.
 
 ## <a name="accessibility-guidelines"></a>Руководство по настройке специальных возможностей
 
