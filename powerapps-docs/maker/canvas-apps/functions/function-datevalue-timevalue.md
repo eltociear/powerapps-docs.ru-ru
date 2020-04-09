@@ -7,19 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/16/2020
+ms.date: 04/08/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fc28b370b36be8d309c292e110d0b927d08c4a11
-ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
+ms.openlocfilehash: 2fc1a91b4468926ee98351f79d7ce2e84133aa46
+ms.sourcegitcommit: 7d3caf698d367a56af9e16c43af8005adb9f87cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436741"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80987238"
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-power-apps"></a>Функции DateValue, TimeValue и Датетимевалуе в Power Apps
 
@@ -40,8 +39,11 @@ ms.PowerAppsDecimalTransform: true
 
 Даты должны быть указаны в одном из следующих форматов:
 
-- ММ/ДД/ГГГГ
-- ДД/ММ/ГГГГ
+- ММ/дд/гггг или мм-дд-гггг
+- ДД/мм/гггг или дд-мм-гггг
+- ГГГГ/мм/дд или гггг-мм-дд
+- ММ/дд/гг или MM-ДД-гг
+- ДД/мм/гг или дд-мм-гг
 - ДД Мес ГГГГ
 - Месяц ДД, ГГГГ
 
@@ -55,9 +57,9 @@ ms.PowerAppsDecimalTransform: true
 
 ## <a name="syntax"></a>Синтаксис
 
-**DateValue**( *Строка* [; *Язык* ])<br>
-**DateTimeValue**( *Строка* [; *Язык* ])<br>
-**TimeValue**( *Строка* [; *Язык* ])
+**DateValue**( *Строка* [, *Язык* ])<br>
+**DateTimeValue**( *Строка* [, *Язык* ])<br>
+**TimeValue**( *Строка* [, *Язык* ])
 
 * *Строка* — обязательный аргумент. Текстовая строка, которая содержит дату, время или комбинированное значение даты и времени.
 * *Язык* — необязательный аргумент. Строка языка, например, будет возвращена первыми двумя символами из функции [языка](function-language.md) .  Если не указано, используется язык параметров текущего пользователя.  
@@ -70,19 +72,19 @@ ms.PowerAppsDecimalTransform: true
 
 - Преобразование даты из строки в языковой стандарт пользователя и отображение результата в виде длинной даты.
 
-    ```powerapps-comma
-    Text( DateValue( Startdate.Text ); DateTimeFormat.LongDate )
+    ```powerapps-dot
+    Text( DateValue( Startdate.Text ), DateTimeFormat.LongDate )
     ```
 
     Для устройства, установленного в **EN** locale, отображается метка как **Суббота, 11 октября 2014 г**.
   
     > [!NOTE]
-    > Можно использовать несколько параметров с **DateTimeFormat** по сравнению с **лонгдатетиме**. Чтобы отобразить список параметров, введите параметр, за которым следует знак восклицательного знака ( **!** ) в строке формул.
+    > Можно использовать несколько параметров с перечислением **DateTimeFormat** . Чтобы отобразить список параметров, введите параметр, за которым следует точка или точка ( **.** ) в строке формул или в [справочнике по функциям проверки **текста** ](function-text.md).
 
 - Преобразование даты из строки в французском языковом стандарте и отображение результата в виде длинной даты. В этом примере месяцы и дни месяца обрабатываются иначе, чем на английском языке.
 
-    ```powerapps-comma
-    Text( DateValue( Startdate.Text; "fr" ); DateTimeFormat.LongDate )
+    ```powerapps-dot
+    Text( DateValue( Startdate.Text, "fr" ), DateTimeFormat.LongDate )
     ```
   
     Для устройства, установленного в **EN** locale, отображается метка как **понедельник, 10 ноября 2014**.
@@ -91,8 +93,8 @@ ms.PowerAppsDecimalTransform: true
 
 - Преобразование даты из строки в языковой стандарт пользователя и Вычисление разницы между двумя днями (в днях)
 
-    ```powerapps-comma
-    DateDiff( DateValue( Startdate.Text ); Today() )
+    ```powerapps-dot
+    DateDiff( DateValue( Startdate.Text ), Today() )
     ```
   
     Для устройства, для которого задано значение **EN** locale, отображается метка как **9**, указывающая число дней между 11 октября и 20 октября. Функция [DateDiff](function-dateadd-datediff.md) также может показывать разницу в месяцах, кварталах или годах.
@@ -103,27 +105,27 @@ ms.PowerAppsDecimalTransform: true
 
 - Преобразование строки даты и времени в текущем языковом стандарте.
  
-    ```powerapps-comma
-    Text( DateTimeValue( Start.Text ); DateTimeFormat.LongDateTime )
+    ```powerapps-dot
+    Text( DateTimeValue( Start.Text ), DateTimeFormat.LongDateTime )
     ```    
     
     Для устройства, для которого задано значение **EN** locale, отображается метка как **Суббота, 11 октября 2014 1:50:24 PM**.
   
   > [!NOTE]
-  > Можно использовать несколько параметров с **DateTimeFormat** по сравнению с **лонгдатетиме**. Чтобы отобразить список параметров, введите параметр, за которым следует знак восклицательного знака ( **!** ) в строке формул.
+  > Можно использовать несколько параметров с перечислением **DateTimeFormat** . Чтобы отобразить список параметров, введите параметр, за которым следует точка или точка ( **.** ) в строке формул или в [справочнике по функциям проверки **текста** ](function-text.md).
 
 - Преобразование строки даты и времени в французском языке. Месяц и день месяца обрабатываются по-разному.
 
-    ```powerapps-comma
-    Text( DateTimeValue( Start.Text; "fr"); DateTimeFormat.LongDateTime )
+    ```powerapps-dot
+    Text( DateTimeValue( Start.Text, "fr"), DateTimeFormat.LongDateTime )
     ```
   
     Для устройства, установленного в **EN** locale, отображается метка как **понедельник, 10 ноября 2014 1:50:24 PM**.
 
 - Преобразуйте строку даты и времени в языковой стандарт пользователя и отобразите результат с долей секунды.
 
-    ```powerapps-comma
-    Text( DateTimeValue( Start.Text ); "dddd, mmmm dd, yyyy hh:mm:ss.fff AM/PM" )
+    ```powerapps-dot
+    Text( DateTimeValue( Start.Text ), "dddd, mmmm dd, yyyy hh:mm:ss.fff AM/PM" )
     ```
   
     Для устройства, установленного в **EN** locale, отображается метка как **Суббота, 11 октября, 2014 01:50:24.765 PM**.
@@ -134,9 +136,9 @@ ms.PowerAppsDecimalTransform: true
 
 Назовите элемент управления Text-input **финишедат**и задайте в качестве значения свойства [Text](../controls/properties-core.md) метки следующую формулу:
 
-```powerapps-comma
-If( TimeValue( FinishedAt.Text ) < TimeValue( "5:00:00.000 PM" ); 
-    "You made it!"; 
+```powerapps-dot
+If( TimeValue( FinishedAt.Text ) < TimeValue( "5:00:00.000 PM" ), 
+    "You made it!", 
     "Too late!"
 )
 ```
