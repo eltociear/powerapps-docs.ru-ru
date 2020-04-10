@@ -1,23 +1,21 @@
 ---
 title: Просмотр и создание сообщений электронной почты в приложениях на основе моделей | Документация Майкрософт
 description: Просмотр и создание сообщений электронной почты при использовании приложения на основе модели.
-ms.date: 02/03/2020
+ms.date: 04/09/2020
 ms.service:
 - dynamics-365
 ms.topic: article
 author: lalexms
 ms.author: lalexms
 manager: shujoshi
-ms.openlocfilehash: 7d4930b03f175133a769226a407436d37f698633
-ms.sourcegitcommit: 3066c2800a939fbcaaac4262c802843e2d80b88c
+ms.openlocfilehash: 1ec0a3f6903bb5bcccf429e6f11941206a5e4f72
+ms.sourcegitcommit: 2484ebce6563cfd1c849e1e2f66dd2d29fdb7b64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79431746"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81008015"
 ---
-# <a name="preview-view-and-create-email-through-the-activities-grid"></a>Предварительная версия: Просмотр и создание сообщения электронной почты с помощью сетки действий
-
-Просмотр и создание сообщения электронной почты с помощью сетки действий — функция раннего доступа. Вы можете включить эти функции в своей среде. Это позволит вам протестировать эти функции, а затем принять их в своих средах. Сведения о том, как включить эти функции, см. в разделе [Согласие на обновления первой волны выпуска 2020](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates).
+# <a name="view-and-create-email-through-the-activities-grid"></a>Просмотр и создание сообщения электронной почты с помощью сетки действий
 
 Приложения на основе моделей в Dynamics 365 позволяют взаимодействовать с клиентами по электронной почте. Функция электронной почты позволяет делать следующее.
 
