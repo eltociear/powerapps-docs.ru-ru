@@ -7,30 +7,33 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 09/13/2017
+ms.date: 04/10/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 68fad4cb2c73bcaeb448212012133c171d682cb4
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 9193b3d4ba16b5dca10a8dab471eb731f07d56bf
+ms.sourcegitcommit: af653cd30f5879fea97a594d458d355fe18f4834
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723009"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223387"
 ---
 # <a name="combo-box-control-in-power-apps"></a>Элемент управления "поле со списком" в Power Apps
 Это элемент управления, который позволяет выбирать из доступных вариантов.  Поддерживает поиск и выбор нескольких вариантов.
 
-## <a name="description"></a>Description
+## <a name="description"></a>Описание
 Элемент управления **Поле со списком** позволяет выполнять поиск элементов, которые необходимо выбрать.  Поиск выполняется на стороне сервера с помощью свойства SearchField, что не влияет на производительность при использовании больших источников данных.  
 
 Режим одиночного или множественного выбора настраивается с использованием свойства SelectMultiple.
 
 При поиске элементов для выбора вы можете указать, чтобы для каждого элемента отображалось одно значение данных, два значения или изображение и два значения (пользователь), изменив параметр "Макет" в области данных.
 
-## <a name="people-picker"></a>Средство выбора людей
+> [!NOTE]
+> Если требуется выполнить поиск элементов с *числами*, преобразуйте числа в текст с помощью функции [Text ()](https://docs.microsoft.com/powerapps/maker/canvas-apps/functions/function-text) . Например, *Text (12345)* .
+
+## <a name="people-picker"></a>Выбор людей
 Чтобы использовать **поле со списком** в качестве средства выбора людей, выберите шаблон **Пользователь** в параметрах макета в области данных, а затем настройте отображение свойств связанных данных для этого пользователя.
 
 ## <a name="key-properties"></a>Основные свойства
@@ -59,7 +62,7 @@ ms.locfileid: "74723009"
 
 **[DisplayMode](properties-core.md)** — в зависимости от значения этого режима элемент управления разрешает пользователю вводить данные (**Изменение**), только отображает данные (**Просмотр**) или элемент вообще отключен (**Отключено**).
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
@@ -119,7 +122,7 @@ ms.locfileid: "74723009"
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Значение элемента **[TabIndex](properties-accessibility.md)** должно быть равно нулю или больше нуля, чтобы пользователи могли использовать навигацию с помощью клавиатуры.
-* Индикаторы фокуса должны быть хорошо видны. Для этого используются элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
+* Индикаторы фокуса должны быть хорошо видны. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
 
     > [!NOTE]
   > Клавиша TAB позволяет переходить к полю со списком. Клавиши со стрелками позволяют переходить по содержимому поля со списком. Клавиша ESC закрывает открытый раскрывающийся список.
