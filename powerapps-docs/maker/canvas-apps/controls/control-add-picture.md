@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/08/2020
 ms.locfileid: "80871288"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="add-picture-control-in-power-apps"></a>Добавление элемента управления "Рисунок" в Power Apps
 Делает снимок или загружает изображения с локального устройства.
@@ -114,7 +115,7 @@ ms.locfileid: "80871288"
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Patch**( *DataSource*; *BaseRecord*; *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*;; *BaseRecord*;; *ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="examples"></a>Примеры
 ### <a name="add-images-to-an-image-gallery-control"></a>Добавление изображений в коллекцию
@@ -123,7 +124,7 @@ ms.locfileid: "80871288"
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 1. В диалоговом окне **Открыть** выберите файл изображения и нажмите **Открыть**.
 1. Добавьте элемент управления **[Кнопка](control-button.md)** , переместите его под элемент управления **Добавить изображение** и укажите для свойства **[OnSelect](properties-core.md)** элемента **[Кнопка](control-button.md)** следующую формулу:<br>
-   **Collect(MyPix, AddMediaButton1.Media)**
+   **Collect(MyPix; AddMediaButton1.Media)**
    
     Нужны дополнительные сведения о функции **[Collect](../functions/function-clear-collect-clearcollect.md)** или [других функциях](../formula-reference.md)?
 1. Добавьте **вертикальный** элемент управления "Коллекция" и задайте для его свойства **[Items](properties-core.md)** значение **мипикс**.

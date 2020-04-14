@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/09/2020
 ms.locfileid: "80987238"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-power-apps"></a>Функции DateValue, TimeValue и Датетимевалуе в Power Apps
 
@@ -57,9 +58,9 @@ ms.locfileid: "80987238"
 
 ## <a name="syntax"></a>Синтаксис
 
-**DateValue**( *Строка* [, *Язык* ])<br>
-**DateTimeValue**( *Строка* [, *Язык* ])<br>
-**TimeValue**( *Строка* [, *Язык* ])
+**DateValue**( *Строка* [; *Язык* ])<br>
+**DateTimeValue**( *Строка* [; *Язык* ])<br>
+**TimeValue**( *Строка* [; *Язык* ])
 
 * *Строка* — обязательный аргумент. Текстовая строка, которая содержит дату, время или комбинированное значение даты и времени.
 * *Язык* — необязательный аргумент. Строка языка, например, будет возвращена первыми двумя символами из функции [языка](function-language.md) .  Если не указано, используется язык параметров текущего пользователя.  
@@ -72,8 +73,8 @@ ms.locfileid: "80987238"
 
 - Преобразование даты из строки в языковой стандарт пользователя и отображение результата в виде длинной даты.
 
-    ```powerapps-dot
-    Text( DateValue( Startdate.Text ), DateTimeFormat.LongDate )
+    ```powerapps-comma
+    Text( DateValue( Startdate.Text ); DateTimeFormat.LongDate )
     ```
 
     Для устройства, установленного в **EN** locale, отображается метка как **Суббота, 11 октября 2014 г**.
@@ -83,8 +84,8 @@ ms.locfileid: "80987238"
 
 - Преобразование даты из строки в французском языковом стандарте и отображение результата в виде длинной даты. В этом примере месяцы и дни месяца обрабатываются иначе, чем на английском языке.
 
-    ```powerapps-dot
-    Text( DateValue( Startdate.Text, "fr" ), DateTimeFormat.LongDate )
+    ```powerapps-comma
+    Text( DateValue( Startdate.Text; "fr" ); DateTimeFormat.LongDate )
     ```
   
     Для устройства, установленного в **EN** locale, отображается метка как **понедельник, 10 ноября 2014**.
@@ -93,8 +94,8 @@ ms.locfileid: "80987238"
 
 - Преобразование даты из строки в языковой стандарт пользователя и Вычисление разницы между двумя днями (в днях)
 
-    ```powerapps-dot
-    DateDiff( DateValue( Startdate.Text ), Today() )
+    ```powerapps-comma
+    DateDiff( DateValue( Startdate.Text ); Today() )
     ```
   
     Для устройства, для которого задано значение **EN** locale, отображается метка как **9**, указывающая число дней между 11 октября и 20 октября. Функция [DateDiff](function-dateadd-datediff.md) также может показывать разницу в месяцах, кварталах или годах.
@@ -105,8 +106,8 @@ ms.locfileid: "80987238"
 
 - Преобразование строки даты и времени в текущем языковом стандарте.
  
-    ```powerapps-dot
-    Text( DateTimeValue( Start.Text ), DateTimeFormat.LongDateTime )
+    ```powerapps-comma
+    Text( DateTimeValue( Start.Text ); DateTimeFormat.LongDateTime )
     ```    
     
     Для устройства, для которого задано значение **EN** locale, отображается метка как **Суббота, 11 октября 2014 1:50:24 PM**.
@@ -116,16 +117,16 @@ ms.locfileid: "80987238"
 
 - Преобразование строки даты и времени в французском языке. Месяц и день месяца обрабатываются по-разному.
 
-    ```powerapps-dot
-    Text( DateTimeValue( Start.Text, "fr"), DateTimeFormat.LongDateTime )
+    ```powerapps-comma
+    Text( DateTimeValue( Start.Text; "fr"); DateTimeFormat.LongDateTime )
     ```
   
     Для устройства, установленного в **EN** locale, отображается метка как **понедельник, 10 ноября 2014 1:50:24 PM**.
 
 - Преобразуйте строку даты и времени в языковой стандарт пользователя и отобразите результат с долей секунды.
 
-    ```powerapps-dot
-    Text( DateTimeValue( Start.Text ), "dddd, mmmm dd, yyyy hh:mm:ss.fff AM/PM" )
+    ```powerapps-comma
+    Text( DateTimeValue( Start.Text ); "dddd, mmmm dd, yyyy hh:mm:ss.fff AM/PM" )
     ```
   
     Для устройства, установленного в **EN** locale, отображается метка как **Суббота, 11 октября, 2014 01:50:24.765 PM**.
@@ -136,9 +137,9 @@ ms.locfileid: "80987238"
 
 Назовите элемент управления Text-input **финишедат**и задайте в качестве значения свойства [Text](../controls/properties-core.md) метки следующую формулу:
 
-```powerapps-dot
-If( TimeValue( FinishedAt.Text ) < TimeValue( "5:00:00.000 PM" ), 
-    "You made it!", 
+```powerapps-comma
+If( TimeValue( FinishedAt.Text ) < TimeValue( "5:00:00.000 PM" ); 
+    "You made it!"; 
     "Too late!"
 )
 ```

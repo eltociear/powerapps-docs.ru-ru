@@ -19,6 +19,7 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/08/2020
 ms.locfileid: "80871311"
+ms.PowerAppsDecimalTransform: true
 ---
 # <a name="screen-control-in-power-apps"></a>Элемент управления "экран" в Power Apps
 
@@ -58,13 +59,13 @@ ms.locfileid: "80871311"
 
 ## <a name="related-functions"></a>Связанные функции
 
-[**Distinct**(*источник*, *столбец*)](../functions/function-distinct.md)
+[**Distinct**(*источник*; *столбец*)](../functions/function-distinct.md)
 
 ## <a name="example"></a>Пример
 
 1. Добавьте элемент управления **[Переключатель](control-radio.md)** , назовите его **ScreenFills** и укажите для свойства **[Items](properties-core.md)** следующее значение:
 
-    `["Red", "Green"]`
+    `["Red"; "Green"]`
 
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 
@@ -72,17 +73,17 @@ ms.locfileid: "80871311"
 
 1. В окне **источник**добавьте элемент управления **[Shape](control-shapes-icons.md)** (например, стрелка) и задайте для его свойства **[OnSelect](properties-core.md)** значение этой формулы:
 
-    `Navigate(Target, ScreenTransition.Fade)`
+    `Navigate(Target; ScreenTransition.Fade)`
 
     Нужны дополнительные сведения о функции **[Navigate](../functions/function-navigate.md)** или [других функциях](../formula-reference.md)?
 
 1. В элементе **Target** добавьте элемент управления **[Фигура](control-shapes-icons.md)** (например, стрелку) и укажите для свойства **[OnSelect](properties-core.md)** следующую формулу:
 
-    `Navigate(Source, ScreenTransition.Fade)`
+    `Navigate(Source; ScreenTransition.Fade)`
 
 1. Укажите для свойства **[Fill](properties-color-border.md)** элемента **Target** следующую формулу:
 
-    `If("Red" in ScreenFills.Selected.Value, RGBA(255, 0, 0, 1), RGBA(54, 176, 75, 1))`
+    `If("Red" in ScreenFills.Selected.Value; RGBA(255; 0; 0; 1); RGBA(54; 176; 75; 1))`
 
 1. Выберите **Исходный** экран и, удерживая нажатой клавишу Alt, выберите любой из вариантов в элементе управления **[радио](control-radio.md)** , а затем выберите элемент управления **[Shape](control-shapes-icons.md)** .
 
