@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 91f027af2f7d8b10fcfd15380fae46f62bc5603b
-ms.sourcegitcommit: 10861337ce87866b58cc98dda6eab8d985c9220c
+ms.openlocfilehash: bdb1b0bf1a500087f11804f6da55d1c3abe2eaf3
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80615378"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871357"
 ---
 #  <a name="use-the-lookup-field-on-a-record"></a>Использование поля подстановки в записи
 
@@ -68,7 +68,7 @@ ms.locfileid: "80615378"
 В списке последних использованных записей показано изображение, помогающее отличать типы записей.
 
 >[!NOTE] 
->Последние записи не фильтруются по поисковому запросу или выбранному представлению.
+>Последние записи не фильтруются по поисковому запросу, выбранному представлению или связанным записям.
 
   > [!div class="mx-imgBorder"]
   > ![В полях подстановок отображается изображение](media/Lookup_03-MRU_Entity_Images_56[1].png "В полях подстановок отображается изображение")  

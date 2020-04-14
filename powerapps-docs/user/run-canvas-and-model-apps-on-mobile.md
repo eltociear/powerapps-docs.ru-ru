@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5523ef67ed6912f7eae36228884b0c9a300d0785
-ms.sourcegitcommit: 39f6feb699512e9c2bf71ef1a1238b32b639da02
+ms.openlocfilehash: fbd6233eb775fb7f1c48ec6cc05006ac0237f72d
+ms.sourcegitcommit: abdc8c609a7a221ce4ca6b051a84b7083bdbe1ab
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80530016"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80645583"
 ---
 # <a name="run-canvas-apps-and-model-driven-apps-on-a-mobile-device"></a>Запуск приложений на основе холста и приложений на основе моделей на мобильном устройстве
 
@@ -155,8 +155,7 @@ ms.locfileid: "80530016"
 
 Мы по-прежнему работаем над некоторыми известными проблемами и выпускаем исправления для них с течением времени. Не забудьте вручную обновить предварительную версию сборки, как только обновление станет доступно. 
 
-Некоторые известные проблемы:
+Известные проблемы:
 
-- При открытии приложения Power Apps в автономном режиме приложения не отображаются в списке приложений.
 - Значки внутри приложений на основе модели иногда исчезают.
 
