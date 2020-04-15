@@ -13,18 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2462f82420713e93c3ac0598a73e2dc43bc7c0b1
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 88c96535de5fc4f77da06ca11ba3f6c49b37bcdd
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731939"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385242"
 ---
 # <a name="timer-control-in-power-apps"></a>Элемент управления Timer в Power Apps
 Элемент управления, определяющий поведение приложения по истечении заданного количества времени.
 
-## <a name="description"></a>Description
+## <a name="description"></a>Описание
 Например, таймеры могут определять, как долго отображается элемент управления или как изменяются его свойства по истечении заданного количества времени.
 
 > [!NOTE]
@@ -32,7 +31,7 @@ ms.PowerAppsDecimalTransform: true
 
 
 ## <a name="key-properties"></a>Основные свойства
-**Duration** — продолжительность работы таймера в миллисекундах.  Максимальное значение отсутствует.
+**Duration** — продолжительность работы таймера в миллисекундах. Максимальное значение — 24 часа, выраженные в миллисекундах. Значение по умолчанию — 60 секунд.
 
 **OnTimerEnd** — поведение приложения по окончании работы таймера.
 
@@ -63,7 +62,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Fill](properties-color-border.md)**  — цвет фона элемента управления.
 
-**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления в тот момент, когда он активен.
+**[FocusedBorderColor](properties-color-border.md)** — цвет границы элемента управления при наведении фокуса.
 
 **[FocusedBorderThickness](properties-color-border.md)** — толщина границы элемента управления при наведении фокуса.
 
@@ -91,7 +90,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[PressedFill](properties-color-border.md)**  — цвет фона элемента управления при щелчке или касании.
 
-**[Reset](properties-core.md)**  — свойство, которое указывает, возвращается ли элемент управления к значению по умолчанию.
+**[Reset](properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.
 
 **[Size](properties-text.md)**  — размер шрифта текста, отображаемого в элементе управления.
 
@@ -125,8 +124,8 @@ ms.PowerAppsDecimalTransform: true
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
 2. Укажите для свойства **Duration** значение **10000**, а для свойств **Repeat** и **Autostart** — значение **true**.
 3. (Необязательно) Сделайте таймер удобным для чтения, указав следующие значения для перечисленных свойств: **[Height](properties-size-location.md)**  — **160**, **[Width](properties-size-location.md)**  — **600** и **[Size](properties-text.md)**  — **60**.
-4. Добавьте метку и установите в ее свойстве **[Text](properties-core.md)** формулу:
-   <br>**"Осталось секунд: " & RoundUp(10-Countdown.Value/1000; 0)**
+4. Добавьте метку и задайте для ее свойства **[Text](properties-core.md)** формулу:
+   <br>**"Осталось секунд: " & RoundUp(10-Countdown.Value/1000, 0)**
 
     Нужны дополнительные сведения о функции **[RoundUp](../functions/function-round.md)** или [других функциях](../formula-reference.md)?
 
@@ -139,7 +138,7 @@ ms.PowerAppsDecimalTransform: true
 2. Укажите для свойства таймера **Duration** значение **5000**, для свойства **Repeat** — **true**, для свойства **[Text](properties-core.md)** — **Toggle animation** (Переключить анимацию).
 3. (Необязательно) Сделайте таймер удобным для чтения, указав следующие значения для перечисленных свойств: **[Height](properties-size-location.md)**  — **160**, **[Width](properties-size-location.md)**  — **600** и **[Size](properties-text.md)**  — **60**.
 4. Добавьте метку и задайте для свойства **[Text](properties-core.md)** отображение слова **Приветствуем!** , а для свойства **[Color](properties-color-border.md)**  — следующую формулу:
-   <br>**ColorFade(Color.BlueViolet; FadeIn.Value/5000)**
+   <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
 
     Нужны дополнительные сведения о функции **[ColorFade](../functions/function-colors.md)** или [других функциях](../formula-reference.md)?
 

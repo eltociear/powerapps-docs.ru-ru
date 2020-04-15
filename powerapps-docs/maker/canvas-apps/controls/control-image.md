@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d35150434d8fec7694f493f2d62c67997e2c839c
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 0610e1cfabde8bd62e083ca1cff65825c28918e4
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79212476"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385265"
 ---
 # <a name="image-control-in-power-apps"></a>Элемент управления "изображение" в Power Apps
 Этот элемент управления служит для показа изображения из локального файла или источника данных.
@@ -35,7 +34,7 @@ ms.PowerAppsDecimalTransform: true
 
 **ApplyEXIFOrientation** — автоматическое применения ориентации, которая указана во внедренных в изображение данных EXIF.
 
-**AutoDisableOnSelect** — автоматическое отключение элемента управления при выполнении функции, назначенной свойству OnSelect.
+**AutoDisableOnSelect** — автоматически отключает элемент управления при выполнении функции, назначенной свойству OnSelect.
 
 **[BorderColor](properties-color-border.md)**  — цвет границы элемента управления.
 
@@ -67,7 +66,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[HoverFill](properties-color-border.md)**  — цвет фона элемента управления при удерживании указателя мыши на нем.
 
-**[ImagePosition](properties-visual.md)**  — расположение изображения на экране или в элементе управления, если его размеры отличаются от размеров изображения (**Fill**, **Fit**, **Stretch**, **Tile** или **Center**).
+**[ImagePosition](properties-visual.md)**  — расположение изображения на экране или в элементе управления, если его размеры отличаются от размеров изображения: **Fill** (Заполнить), **Fit** (По размеру), **Stretch** (Растянуть), **Tile** (Плитка) или **Center** (По центру).
 
 **ImageRotation** — поворачивание изображения перед его отображением.  Значения: без поворота, по часовой стрелке на 90 градусов, против часовой стрелки на 90 градусов и по часовой стрелке на 180 градусов.
 
@@ -77,7 +76,7 @@ ms.PowerAppsDecimalTransform: true
 
 **OriginalWidth** — исходная ширина изображения (активируется свойством **CalculateOriginalDimensions**).
 
-**[PaddingBottom](properties-size-location.md)**  — расстояние между текстом в элементе управления и нижним краем элемента управления.
+**[PaddingBottom](properties-size-location.md)** — расстояние между текстом в элементе управления и нижним краем элемента управления.
 
 **[PaddingLeft](properties-size-location.md)**  — расстояние между текстом в элементе управления и левым краем элемента управления.
 
@@ -99,9 +98,9 @@ ms.PowerAppsDecimalTransform: true
 
 **[TabIndex](properties-accessibility.md)** — порядок навигации с помощью клавиатуры относительно других элементов управления.
 
-**[Tooltip](properties-core.md)**  — пояснительный текст, отображаемый при наведении указателя мыши на элемент управления.
+**[Tooltip](properties-core.md)** — пояснительный текст, отображаемый при наведении указателя мыши на элемент управления.
 
-**Transparency** — прозрачность, или показатель того, насколько видны элементы управления за изображением.
+**Transparency** — прозрачность, или показатель того, насколько видны элементы управления за изображением. Десятичные значения находятся в диапазоне от 0 до 1.  Если 0 является непрозрачным, 0,5 является частично прозрачным, а 1 — прозрачным. 
 
 **[Visible](properties-core.md)** определяет, отображается ли элемент управления или он скрыт.
 
@@ -112,7 +111,7 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Remove**( *DataSource*;; ThisItem )](../functions/function-remove-removeif.md)
+[**Remove**( *DataSource*; ThisItem )](../functions/function-remove-removeif.md)
 
 ## <a name="examples"></a>Примеры
 ### <a name="show-an-image-from-a-local-file"></a>Показ изображения из локального файла
@@ -147,14 +146,14 @@ ms.PowerAppsDecimalTransform: true
 * Элемент **[AccessibleLabel](properties-accessibility.md)** должен присутствовать, если графический элемент используется в качестве кнопки, иными словами, не только для визуализации данных.
 * **[AccessibleLabel](properties-accessibility.md)** должен быть пустой строкой **""** или пустым, если графический элемент предназначен исключительно для визуализации. В этом случае средства чтения с экрана игнорируют графику.
 * **[AccessibleLabel](properties-accessibility.md)** может быть пустой строкой **""** или пустым, если графика содержит избыточные сведения.
-  * Например, для **изображения** шестеренки с **[AccessibleLabel](properties-accessibility.md)** задано значение **Настройки**. Такое изображение не используется как кнопка. Он идет за **[меткой](control-text-box.md)**, свойство которой также установлено как **Настройки**. Средства чтения с экрана воспримут это изображение как **Настройки**, а метку как еще одни **Настройки**. Это неуместная многословность. В этом случае **изображению** не нужна метка **[AccessibleLabel](properties-accessibility.md)**.
+  * Например, для **изображения** шестеренки с **[AccessibleLabel](properties-accessibility.md)** задано значение **Настройки**. Такое изображение не используется как кнопка. Он идет за **[меткой](control-text-box.md)** , свойство которой также установлено как **Настройки**. Средства чтения с экрана воспримут это изображение как **Настройки**, а метку как еще одни **Настройки**. Это неуместная многословность. В этом случае **изображению** не нужна метка **[AccessibleLabel](properties-accessibility.md)** .
 
     > [!IMPORTANT]
-    > Средства чтения с экрана всегда считывают **изображения** с большим или равным нулю значением **[TabIndex](properties-accessibility.md)**, даже если элемент **[AccessibleLabel](properties-accessibility.md)** пуст. Это происходит потому, что они воспринимаются как кнопки. Если элемент **[AccessibleLabel](properties-accessibility.md)** не указан, средства чтения с экрана будут считывать графику как **кнопку**.
+    > Средства чтения с экрана всегда считывают **изображения** с большим или равным нулю значением **[TabIndex](properties-accessibility.md)** , даже если элемент **[AccessibleLabel](properties-accessibility.md)** пуст. Это происходит потому, что они воспринимаются как кнопки. Если элемент **[AccessibleLabel](properties-accessibility.md)** не указан, средства чтения с экрана будут считывать графику как **кнопку**.
 
 ### <a name="keyboard-support"></a>Поддержка клавиатуры
 * Если графика используется как кнопка, значение **[TabIndex](properties-accessibility.md)** должно быть равно нулю и выше. При этом пользователи смогут применять клавиатуру для навигации.
-* Индикаторы фокусировки должны быть четко видны, если графика используется как кнопка. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)**.
+* Индикаторы фокусировки должны быть четко видны, если графика используется как кнопка. Для этого используйте элементы **[FocusedBorderColor](properties-color-border.md)** и **[FocusedBorderThickness](properties-color-border.md)** .
 
     > [!NOTE]
   > Если значение **[TabIndex](properties-accessibility.md)** равно нулю или больше него, **изображение** воспринимается в качестве кнопки. Внешне это незаметно, но средства чтения с экрана правильно распознают изображение в качестве кнопки. Если значение **[TabIndex](properties-accessibility.md)** меньше нуля, **изображение** воспринимается только как изображение.

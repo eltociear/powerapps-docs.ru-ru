@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c52b6779e5875e1304a80b2c63d0cf7b70e2c8b2
-ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
-ms.translationtype: HT
+ms.openlocfilehash: 0e55963dfb93e3bfe913b53f90160cb87ed147d8
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76315361"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385288"
 ---
 # <a name="list-box-control-in-power-apps"></a>Элемент управления "Список" в Power Apps
 Список, в котором пользователь может выбрать один или несколько элементов.
@@ -28,9 +27,9 @@ ms.PowerAppsDecimalTransform: true
 Элемент управления **Поле со списком** всегда отображает все доступные варианты выбора (в отличие от элемента управления **[Раскрывающийся список](control-drop-down.md)** ), и в нем пользователь может выбрать несколько элементов одновременно (в отличие от элемента управления **[Переключатель](control-radio.md)** ).
 
 ## <a name="key-properties"></a>Основные свойства
-**[Default](properties-core.md)** . Начальное значение элемента управления до его изменения пользователем.
+**[Default](properties-core.md)** — начальное значение элемента управления до его изменения пользователем.
 
-**[Items](properties-core.md)**  — источник данных, отображаемых в элементе управления, такой как коллекция, список или диаграмма.
+**[Items](properties-core.md)** — источник данных, отображаемых в элементе управления, такой как коллекция, список или диаграмма.
 
 **Selected** — запись данных, представляющая выбранный элемент.  По умолчанию может быть выбран только один элемент.  Если необходимо выбирать несколько элементов, используйте элемент управления [Поле со списком](control-combo-box.md).
 
@@ -63,7 +62,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[Font](properties-text.md)**  — имя семейства шрифтов, используемых для отображения текста.
 
-**[FontWeight](properties-text.md)**  — начертание шрифта для текста в элементе управления: **Bold**, **Semibold**, **Normal** или **Lighter**.
+**[FontWeight](properties-text.md)**  — толщина текста в элементе управления: **Жирный**, **Полужирный**, **Обычный** или **Очень тонкий**.
 
 **[Height](properties-size-location.md)**  — расстояние между верхним и нижним краем элемента управления.
 
@@ -83,7 +82,7 @@ ms.PowerAppsDecimalTransform: true
 
 **[OnSelect](properties-core.md)**  — поведение приложения, когда пользователь щелкает элемент управления или касается его.
 
-**[PaddingBottom](properties-size-location.md)**  — расстояние между текстом в элементе управления и нижним краем элемента управления.
+**[PaddingBottom](properties-size-location.md)** — расстояние между текстом в элементе управления и нижним краем элемента управления.
 
 **[PaddingLeft](properties-size-location.md)**  — расстояние между текстом в элементе управления и левым краем элемента управления.
 
@@ -99,9 +98,15 @@ ms.PowerAppsDecimalTransform: true
 
 **[Reset](properties-core.md)**  — определяет, возвращается ли элемент управления к значению по умолчанию.
 
+**Selected** — запись данных, представляющая выбранный элемент.  По умолчанию может быть выбран только один элемент.  Если необходимо выбирать несколько элементов, используйте элемент управления [Поле со списком](control-combo-box.md).
+
+**SelectedItems** - **только для чтения**. Представляет таблицу данных выбранных элементов для многоэлементного списка выбора.
+
+**Селектедитемстекст** - **только для чтения**. Представляет таблицу данных выделенных элементов в текстовом поле для выбора из списка.
+
 **SelectedText (не рекомендуется)**  — строковое значение, представляющее выбранный элемент.
 
-**[SelectionColor](properties-color-border.md)**  — цвет текста выбранного элемента или элементов списка или цвет инструмента выделения в элементе управления рукописным вводом.
+**[SelectionColor](properties-color-border.md)**  — цвет текста выбранного элемента или элементов списка или цвет инструмента выделения в элементе управления "Ввод с помощью пера".
 
 **[SelectionFill](properties-color-border.md)**  — цвет фона выбранного элемента или элементов списка или цвет выделенной области элемента управления "Ввод с помощью пера".
 
@@ -126,11 +131,11 @@ ms.PowerAppsDecimalTransform: true
 **[Y](properties-size-location.md)**  — расстояние между верхним краем элемента управления и верхним краем его родительского контейнера (или экрана, если родительского контейнера нет).
 
 ## <a name="related-functions"></a>Связанные функции
-[**Distinct**(*источник*; *столбец*)](../functions/function-distinct.md)
+[**Distinct**(*источник*, *столбец*)](../functions/function-distinct.md)
 
 ## <a name="example"></a>Пример
 1. Добавьте элемент управления **Поле со списком**, назовите его **CategoryList** и укажите для свойства **[Items](properties-core.md)** следующую формулу:<br>
-   **["Carpet";"Hardwood";"Tile"]**
+   **["Carpet","Hardwood","Tile"]**
    
     Не знаете, как [добавить, назвать и настроить элемент управления](../add-configure-controls.md)?
    
@@ -138,18 +143,18 @@ ms.PowerAppsDecimalTransform: true
 2. Добавьте три элемента управления **[Раскрывающийся список](control-drop-down.md)** , переместите их под элемент **CategoryList** и назовите **CarpetList**, **HardwoodList** и **TileList**.
 3. Укажите для свойства **[Items](properties-core.md)** каждого из элементов управления **[Раскрывающийся список](control-drop-down.md)** одно из следующих значений:
    
-   * CarpetList: **["Caserta Stone Beige";"Ageless Beauty Clay"; "Lush II Tundra"]**
-   * HardwoodList: **["Golden Teak";"Natural Hickory"; "Victoria Mahogany"]**
-   * TileList: **["Honey Onyx Marble";"Indian Autumn Slate"; "Panaria Vitality Ceramic"]**
+   * CarpetList: **["Caserta Stone Beige","Ageless Beauty Clay", "Lush II Tundra"]**
+   * HardwoodList: **["Golden Teak","Natural Hickory", "Victoria Mahogany"]**
+   * TileList: **["Honey Onyx Marble","Indian Autumn Slate", "Panaria Vitality Ceramic"]**
      
      ![Названия напольных покрытий в раскрывающихся списках](./media/control-list-box/flooring-names.png)
 4. Укажите для свойства **[Visible](properties-core.md)** каждого из элементов управления **[Раскрывающийся список](control-drop-down.md)** одно из следующих значений:
    
-   * CarpetList: **If("Ковер" in CategoryList.SelectedItems.Value; true)**
-   * HardwoodList: **If("Паркет" in CategoryList.SelectedItems.Value; true)**
-   * TileList: **If("Плитка" in CategoryList.SelectedItems.Value; true)**
+   * CarpetList: **If("Ковер" in CategoryList.SelectedItems.Value, true)**
+   * HardwoodList: **If("Паркет" in CategoryList.SelectedItems.Value, true)**
+   * TileList: **If("Плитка" in CategoryList.SelectedItems.Value, true)**
      
-     Нуждаетесь в дополнительных сведениях о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
+     Нужны дополнительные сведения о функции **[If](../functions/function-if.md)** или [других функциях](../formula-reference.md)?
 5. Нажмите клавишу F5 и выберите один или несколько элементов в элементе управления **CategoryList**.
    
     В зависимости от вашего выбора отображаются один или несколько элементов управления **[Раскрывающийся список](control-drop-down.md)** .
