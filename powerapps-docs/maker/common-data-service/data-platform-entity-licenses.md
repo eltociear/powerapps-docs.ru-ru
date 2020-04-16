@@ -6,24 +6,24 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
-ms.date: 05/01/2018
+ms.date: 03/20/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a44bdc829defb8434b9b6de24392e360039de3c4
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0a6b950c35043ecf47f45373f758ce62953945e7
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2864230"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156541"
 ---
 # <a name="license-requirements-for-entities"></a>Требования к лицензии для сущностей
 
 > [!IMPORTANT]
-> Данная тема устарела и скоро будет обновлена, чтобы отразить последние изменения в лицензировании, которые применяются с 1 октября 2019 года. Для получения последней информации о требованиях к лицензированию для юридических лиц см. [Руководство по лицензированию Power Apps](https://go.microsoft.com/fwlink/?linkid=2085130).
+> Для получения последней информации о требованиях к лицензированию для юридических лиц см. [Руководство по лицензированию Power Apps](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
 Создатели приложений могут использовать большую часть сущностей, доступных в Common Data Service (включая настраиваемые приложения и приложения, являющиеся частью Common Data Model) для создания приложений и потоков для пользователей, у которых имеется лицензия Power Apps, план 1, или Power Automate, план 1. В некоторых случаях сущности содержат сложную бизнес-логику или связаны с приложениями Dynamics 365, для которых требуется, чтобы пользователи приложения имели конкретную лицензию. 
 

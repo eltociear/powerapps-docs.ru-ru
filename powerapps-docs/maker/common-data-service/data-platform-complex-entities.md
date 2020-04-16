@@ -6,24 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
-ms.date: 09/26/2019
+ms.date: 03/20/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a87b41fd2688992b85fb4dde36a2e7119f4e7a9f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e497b7dcf1b815acfaad7df170e3801083b8433e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861262"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156585"
 ---
 # <a name="complex-entities-and-licensing"></a>Сложные сущности и лицензирование
 
 > [!IMPORTANT]
-> Данная тема устарела и скоро будет обновлена, чтобы отразить последние изменения в лицензировании, которые применяются с 1 октября 2019 года. Для получения последней информации о требованиях к лицензированию для юридических лиц см. [Руководство по лицензированию Power Apps](https://go.microsoft.com/fwlink/?linkid=2085130).
+> Сложные сущности применимы только для лицензий Power Apps План 1 и План2, а не для Power Apps на приложение и Power Apps на планы пользователя.
+> Для получения последней информации о требованиях к лицензированию для юридических лиц см. [Руководство по лицензированию Power Apps](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
 Сущности, которые включают следующую сложную логику на стороне сервера, требуют, чтобы у пользователей приложения или потока, которые используют эти сущности, имелась лицензия Power Apps, план 2, или лицензия Power Automate, план 2:
 

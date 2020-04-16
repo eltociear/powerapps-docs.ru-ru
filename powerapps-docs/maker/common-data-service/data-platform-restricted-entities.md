@@ -6,24 +6,24 @@ manager: kfile
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
-ms.date: 05/01/2018
+ms.date: 03/20/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5672922d04ae8ea4342139ef9179c7a871fd5ea6
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e6f2518a4ee7b141c9c480d9a8f32bc923882f73
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861218"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154781"
 ---
 # <a name="restricted-entities-requiring-dynamics-365-licenses"></a>Ограниченные сущности, требующие лицензии Dynamics 365
 
 > [!IMPORTANT]
-> Данная тема устарела и скоро будет обновлена, чтобы отразить последние изменения в лицензировании, которые применяются с 1 октября 2019 года. Для получения последней информации о требованиях к лицензированию для юридических лиц см. [Руководство по лицензированию Power Apps](https://go.microsoft.com/fwlink/?linkid=2085130).
+> Для получения последней информации о требованиях к лицензированию для юридических лиц см. [Руководство по лицензированию Power Apps](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
 Создатели приложений могут использовать большую часть сущностей, доступных в Common Data Service, для создания приложений и потоков для пользователей, имеющих только лицензию Power Apps, план 1. Однако некоторые сущности содержат сложную бизнес-логику, которая требует, чтобы пользователи приложения имели лицензию Power Apps, план 2, или Power Automate, план 2 (чтобы получить дополнительные сведения, см. раздел [Требования к лицензии сущности](data-platform-entity-licenses.md)). Даже еще меньший набор сущностей, связанных с продуктами Dynamics 365, требует, чтобы у пользователей приложений на основе хоста или управляемых моделью, имелась лицензия для соответствующего продукта Dynamics 365, если им необходимо создавать, обновлять или удалять записи в сущности. Они называются *ограниченными* сущностями.
 

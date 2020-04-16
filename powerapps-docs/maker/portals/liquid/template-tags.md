@@ -10,11 +10,11 @@ ms.date: 01/24/2020
 ms.author: tapanm
 ms.reviewer: ''
 ms.openlocfilehash: a152fc23b71b2e564bad28a9f1717c15acfe9a60
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3108705"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3125632"
 ---
 # <a name="template-tags"></a>Теги шаблона
 

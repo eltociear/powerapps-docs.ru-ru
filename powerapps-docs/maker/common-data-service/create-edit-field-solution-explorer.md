@@ -20,11 +20,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 8eee62b8190c2422e2e910fd28306a0d56da85ec
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3108685"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3125368"
 ---
 # <a name="create-and-edit-fields-for-common-data-service-using-power-apps-solution-explorer"></a>Создание и изменение полей для Common Data Service с помощью обозревателя решений Power Apps
 

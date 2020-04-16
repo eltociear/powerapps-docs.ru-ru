@@ -23,11 +23,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 03eca0ade83c4d241eca9e4f7a6004232aac2b87
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3108684"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3126116"
 ---
 # <a name="how-model-driven-app-main-forms-appear-on-different-devices"></a>Как основные формы управляемых моделью приложений выглядят на различных устройствах
 

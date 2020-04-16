@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 060d749fe3f8c7f3d2e0870b99a836571c29bd86
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 68663e52d3e0111d5a374b2fc434edcaa2294074
+ms.sourcegitcommit: 3f89b04359df19f8fa5167e2607509bb97e60fe0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865930"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "3165322"
 ---
 # <a name="create-and-edit-global-option-sets-for-common-data-service-using-solution-explorer"></a>Создание и изменение глобальных наборов параметров для Common Data Service с помощью обозревателя решений
 
@@ -76,6 +76,9 @@ ms.locfileid: "2865930"
 Во время просмотра глобальных наборов параметров выберите набор параметров, который необходимо изменить, чтобы открыть панель для его изменения.
 
 За исключением изменения значения поля **Имя** или **Значение** числа, назначенных параметру, вы можете внести любые изменения при создании глобального набора параметров.
+
+> [!NOTE]
+> Вы не можете редактировать набор параметров, если он является частью управляемое решение. Для редактирования наборов опций управляемое решение вам необходимо связаться с владельцем решения.
 
 [!INCLUDE [cc_remove-option-warning](../../includes/cc_remove-option-warning.md)]
 

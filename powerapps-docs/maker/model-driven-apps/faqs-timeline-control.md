@@ -1,7 +1,7 @@
 ---
 title: Вопросы и ответы для элемента управления временной шкалы (раздела) в Power Apps | MicrosoftDocs
 description: Часто задаваемые вопросы для элемента управления временной шкалы (раздел) в Power Apps
-ms.date: 02/03/2020
+ms.date: 03/10/2020
 ms.service: powerapps
 author: kabala123
 ms.assetid: 7F495EE1-1208-49DA-9B02-17855CEB2FDF
@@ -12,12 +12,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6556ee415f2ee3340f6e36f417a25299871c1860
-ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
+ms.openlocfilehash: c664ca490f3a03d02dfe273c26d061698242a6c3
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3013072"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3114381"
 ---
 # <a name="faqs-for-timeline-control"></a>Вопросы и ответы для элемента управления "Временная шкала"
 
@@ -98,6 +98,11 @@ ms.locfileid: "3013072"
 ## <a name="why-my-users-see-different-activities-and-records-in-their-my-activities-stream-in-the-dashboard"></a>Почему мои пользователи видят различные действия и записи в своем потоке "Мои действия" на панели мониторинга?
 
 Поток **Мои действия** на панели мониторинга показывает записи и действия, которые принадлежат конкретному пользователю. Например, пользователь **A** видит записи и действия, которые принадлежат пользователю **A**, а пользователь **В** видит записи и действия, которые принадлежат пользователю **В**.
+
+
+## <a name="why-my-agents-see-the-filter-pane-even-when-the-expand-filter-pane-by-default-check-box-is-cleared"></a>Почему мои агенты видят панель фильтра, даже если флажок «Расширить панель фильтра по умолчанию» снят?
+
+Когда временная шкала отображается более чем в одном столбце, панель фильтра отображается в виде столбца рядом с записями временной шкалы. Даже если вы сняли флажок **Развернуть панель фильтра по умолчанию** в настройках Временной шкалы, панель фильтра всегда будет отображаться вашим агентам.
 
 ## <a name="see-also"></a>См. также
 

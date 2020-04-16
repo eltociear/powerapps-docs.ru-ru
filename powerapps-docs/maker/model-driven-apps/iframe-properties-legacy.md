@@ -9,7 +9,7 @@ applies_to:
 - powerapps
 ms.author: matp
 manager: kvivek
-ms.date: 06/18/2018
+ms.date: 03/18/2020
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 1b7e6a0c-18a9-47e2-aa7d-0cffb8c93b19
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7c4d4348726dfb53b0b54e3a8d86a1809a568b7b
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 0775689b2edab8cdbee1b9a595ff73e56ee9af9b
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875017"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166765"
 ---
 # <a name="iframe-properties-for-model-driven-app-main-forms"></a>Свойства iFrame для основных форм управляемых моделью приложений
 
@@ -35,9 +35,14 @@ ms.locfileid: "2875017"
 
 2.  Разверните **Данные**, выберите **Сущности**, выберите требуемую сущность, затем выберите вкладку **Формы**. 
 
-3. В списке форм откройте форму типа **Основная**. Затем на вкладке **Вставить** выберите интернет-кадр IFRAME для просмотра свойств интернет-кадра IFRAME.
+3. В списке форм откройте форму типа **Основная**.
 
-![свойства-iframe](media/iframe-properties.png)
+4.  Выберите **Перейти в классический режим**, чтобы изменить форму в классическом конструкторе формы.
+
+4.  На вкладке **Вставить** выберите интернет-кадр IFRAME для просмотра свойств интернет-кадра IFRAME.
+
+      > [!div class="mx-imgBorder"] 
+      > ![свойства-iframe](media/iframe-properties.png)
 
 
 > [!NOTE]
@@ -67,7 +72,7 @@ ms.locfileid: "2875017"
 |---------------|-----------------|  
 |`orglcid`|LCID языка организации по умолчанию.|  
 |`orgname`|Название организации.|  
-|`userlcid`|LCID предпочитаемого языка пользователя.|  
+|`userlcid`|Код предпочитаемого языка пользователя.|  
 |`type`|Код типа сущности. Это значение может отличаться для настраиваемых сущностей в других организациях. Вместо этого используйте `typename`.|  
 |`typename`|Имя типа сущности.|  
 |`id`|Значение идентификатора записи. Этот параметр не содержит значения до сохранения записи сущности.|  

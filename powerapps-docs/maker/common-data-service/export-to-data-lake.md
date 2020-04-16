@@ -2,7 +2,7 @@
 title: Экспорт в Data Lake | MicrosoftDocs
 description: Узнайте, как экспортировать данные сущностей в Azure Data Lake в Power Apps
 ms.custom: ''
-ms.date: 01/28/2020
+ms.date: 03/04/2020
 ms.reviewer: Mattp123
 ms.service: powerapps
 ms.suite: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6adf35a76df347ca8a99bd12620e7beea4b403d5
-ms.sourcegitcommit: 97a36c9df2a7067a29fb6bd254975dadc2bc16fa
+ms.openlocfilehash: 04913c04d6f8209ed3d0a11105964627eec96220
+ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3072879"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3119916"
 ---
 # <a name="export-entity-data-to-azure-data-lake-storage-gen2"></a>Экспорт данных сущности в Azure Data Lake Storage 2-го поколения
 
@@ -78,6 +78,10 @@ ms.locfileid: "3072879"
    - **Подписка**. Выберите свою подписку Azure. 
    - **Группа ресурсов**. Выберите группу ресурсов, содержащую учетную запись хранения Storage v2 (версия 2 общего назначения).
    - **Учетная запись хранения**. Выберите учетную запись хранения Storage v2 (версия 2 общего назначения), которую требуется использовать для экспорта. 
+
+    > [!NOTE]
+    > Как часть связывания среды Common Data Service с озером данных вы предоставляете сервису «Экспорт в Data Lake» доступ к своей учетной записи хранения. Убедитесь, что вы следовали [необходимых условиям](#prerequisites) создания и настройки учетной записи Azure Data Lake Storage и предоставления вам роли владельца в учетной записи хранения. Кроме того, вы предоставляете службе потоков данных Power Platform доступ к вашей учетной записи хранения. Дополнительные сведения: [Самостоятельная подготовка данных с потоками данных](self-service-data-prep-with-dataflows.md).  
+
 4. Выбрать сущности, которые требуется экспортировать в Data Lake, затем выберите **Сохранить**. Только сущности, для которых включено отслеживание изменений, можно экспортировать. Дополнительные сведения: [Включение отслеживания изменений](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
 
    > [!div class="mx-imgBorder"] 

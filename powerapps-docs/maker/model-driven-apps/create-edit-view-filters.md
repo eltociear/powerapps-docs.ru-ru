@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7645910490aee24b7f3c2b239f1a6dd841b67df2
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: 3a36cf57710da4e6306c7de48e19d4af6c722f10
+ms.sourcegitcommit: abdc8c609a7a221ce4ca6b051a84b7083bdbe1ab
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "3060235"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225599"
 ---
 # <a name="create-or-edit-filters-in-model-driven-app-views"></a>Создание или изменение фильтров в представлениях управляемого моделью приложения
 
@@ -142,7 +142,8 @@ ms.locfileid: "3060235"
     > [!div class="mx-imgBorder"] 
     > ![Сгруппированное условие фильтра](media/group-conditions-filter.png "Сгруппированное условие фильтра")
 
-### <a name="next-steps"></a>Дальнейшие шаги
-[Выбор и настройка столбцов](choose-and-configure-columns.md)  
+### <a name="see-also"></a>См. также
+[Редактируйте или создавайте личные представления с использованием расширенных фильтров сетки](../../user/grid-filters-advanced.md)
+[Выбрать и настроить столбцы](choose-and-configure-columns.md)  
 [Изменение условий фильтра](edit-filter-criteria.md)  
 [Создание отношений 1: N (один-ко-многим) или N:1 (многие-к-одному)](../common-data-service/create-edit-1n-relationships.md)

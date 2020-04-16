@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 03/24/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 97c049394bac97106b6de970d40f07321ed927bd
-ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
+ms.openlocfilehash: 11bd758bae85e8af91dc8c821d9a7083755e30b5
+ms.sourcegitcommit: ee95def32000accdb58a13492f0d0cec1770d98c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "3069642"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "3165551"
 ---
 # <a name="configure-notes-for-entity-forms-and-web-forms-on-portals"></a>Настройка примечаний для форм сущностей и веб-форм на порталах
 
@@ -160,4 +160,4 @@ ms.locfileid: "3069642"
 Примечания веб-форм настраиваются аналогично [примечаниям формы сущности](#notes-configuration-for-entity-forms). Сначала необходимо создать запись метаданных для шага веб-формы, которая имеет примечания, затем добавьте метаданные конфигурации примечаний.
 
 > [!NOTE]
-> Описание примечаний должно начинаться с префикса *WEB* (это ключевое слово "WEB" со звездочкой (*) до и после него) для отображения на портале.
+> Описание примечаний должно начинаться с префикса **\*WEB\*** (*ключевое слово "WEB" со звездочкой (\*) до и после него*) для отображения на портале.

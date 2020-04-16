@@ -17,11 +17,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: c926e0fb48791879ea88c19212b30c79731cb3be
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3108698"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3125808"
 ---
 # <a name="use-solutions-in-power-apps"></a>Использование решений в Power Apps
 
