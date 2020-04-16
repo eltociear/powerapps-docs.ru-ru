@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ac8f7a3838d29324408a6041c9ad0e9cdbcfa666
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 959f8eaee539febbb7c00441453da9bab23a1812
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74728339"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81441772"
 ---
 # <a name="power-bi-tile-control-in-power-apps"></a>Элемент управления "плитка" Power BI в Power Apps
 
@@ -26,7 +26,7 @@ ms.locfileid: "74728339"
 
 У вас нет Power BI? [Зарегистрируйтесь](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi).
 
-## <a name="description"></a>Description
+## <a name="description"></a>Описание
 
 Воспользуйтесь всеми преимуществами анализа данных и отчетности, отобразив в своих приложениях **[плитки Power BI](https://docs.microsoft.com/power-bi/service-dashboard-tiles)** . Укажите плитку, которую требуется отобразить, задав для нее свойства **Рабочая область**, **Панель мониторинга** и **Плитка** на вкладке **Данные** на панели параметров.
 
@@ -34,7 +34,7 @@ ms.locfileid: "74728339"
 
 При совместном использовании приложения с содержимым Power BI вы должны совместно использовать не только само приложение, но также [панель мониторинга](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports), где существует плитка. В противном случае содержимое Power BI не будет отображаться даже для пользователей, открывающих приложение. Приложения с содержимым Power BI соблюдают разрешения для этого содержимого.
 
-## <a name="performance"></a>Системного
+## <a name="performance"></a>Производительность
 
 Не рекомендуется одновременно загружать в приложение более трех плиток Power BI. Вы можете управлять загрузкой и выгрузкой плиток с помощью свойства **LoadPowerBIContent**.
 
@@ -54,7 +54,13 @@ ms.locfileid: "74728339"
 &$filter=<TableName>/<ColumnName> eq '<Value>'
 ```
 
-Параметр фильтрует значение в наборе данных отчета, в котором создается плитка.
+Параметр фильтрует значение в наборе данных отчета, в котором создается плитка. Однако функция фильтрации имеет следующие ограничения.
+
+- Можно применить только один фильтр.
+- Поддерживается только оператор `eq`.
+- Тип поля должен быть строковым.
+
+В Power BI отчете можно использовать вычисленные поля для преобразования других типов значений в строки или объединения нескольких полей в одно.
 
 ## <a name="key-properties"></a>Основные свойства
 
