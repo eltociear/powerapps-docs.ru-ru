@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - PowerApps-hub
-ms.openlocfilehash: 113f2f25016ba7470264f66380a1955c6fda3d08
-ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
+ms.openlocfilehash: 28ad263c2e61973edc0068d0d9211e6a94f1e4c2
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77530841"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81441818"
 ---
 <div id="main"
    class="v2">
@@ -432,7 +432,7 @@ ms.locfileid: "77530841"
                                     <h3 style="font-size: 1.15rem">Ресурсы</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://aka.ms/powerappsadminwhitepaper">Технический документ. Администрирование корпоративного развертывания Power Apps и Power Automate</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://powerapps.microsoft.com/blog/introducing-the-powerapps-center-of-excellence-starter-kit/">Начальный набор Power Apps Center of Excellence (CoE)</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/power-platform/guidance/coe/starter-kit">Начальный набор Power Apps Center of Excellence (CoE)</a></p>
                                  </div>
                               </div>
                            </div>
