@@ -849,6 +849,10 @@
           href: ./canvas-apps/test-studio.md
         - name: "Использование Test\_Studio"
           href: ./canvas-apps/working-with-test-studio.md
+        - name: Автоматизация тестов с помощью Pipelines в Azure DevOps
+          items:
+            - name: Настройка конвейера с помощью классического редактора
+              href: ./canvas-apps/test-studio-classic-pipeline-editor.md
     - name: Настройка формы списка SharePoint
       items:
         - name: Внесение основных изменений
@@ -1638,9 +1642,11 @@
       items:
         - name: Обзор
           href: ../sample-apps/emergency-response/overview.md
-        - name: Развертывание и настройка приложения
+        - name: Развертывание приложения
           href: ../sample-apps/emergency-response/deploy-configure.md
-        - name: Использование приложения
+        - name: Использование приложения администратора и панелей мониторинга
+          href: ../sample-apps/emergency-response/configure-data-reporting.md
+        - name: Использование мобильного приложения
           href: ../sample-apps/emergency-response/use.md
 - name: Узнать от других пользователей
   items:
