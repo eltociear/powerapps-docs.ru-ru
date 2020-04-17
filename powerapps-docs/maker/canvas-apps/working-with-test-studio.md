@@ -13,13 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 79ae7206c729a9628ee183e0c64c395f6a235b7c
-ms.sourcegitcommit: 86c81c9efb105d11f4def49eef823af6c69059a4
+ms.openlocfilehash: 9e3192d6eda9730250e35b7ce6cd488b89037d43
+ms.sourcegitcommit: 223c3d19ec4fbe43fcc7a16b76423c00f8602ecd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77034403"
-ms.PowerAppsDecimalTransform: true
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489049"
 ---
 # <a name="working-with-test-studio-experimental"></a>Использование Test Studio (экспериментальное)
 
@@ -115,13 +114,13 @@ ms.PowerAppsDecimalTransform: true
     > [!NOTE]
     > Если выбрать команду **Вставить шаг выше**, то над текущим шагом будет добавлен новый пустой шаг. Можно также использовать действия **Assert**, **SetProperty**, **Выбрать** или **Трассировка**. В результате будет добавлен шаг с соответствующей формулой действия, которую можно изменить.
 
-3. Обновите описание шага. Например, "Подсчет благодарностей в базе данных".
+3. Обновите описание шага. Например, «Count Кудо в базе данных».
 
 4. Введите выражение или формулу во входных данных действия, чтобы подсчитать записи в базе данных перед выполнением теста.
 
     Можно использовать любое поддерживаемое выражение. Можно также запрашивать любые источники данных, коллекции, переменные или потоки выполнения, содержащиеся в приложении, а также создавать новые глобальные переменные или коллекции для использования в тестах.
 
-    ```Set(kudosBeforeTest; CountRows(Filter(Kudos; Receiver.Email = "someone@example.com")))```
+    ```Set(kudosBeforeTest, CountRows(Filter(Kudos, Receiver.Email = "someone@example.com")))```
 
 5. Выберите шаг 2 или шаг, перед которым нужно вставить новый шаг.
 
@@ -129,17 +128,17 @@ ms.PowerAppsDecimalTransform: true
 
 7. Введите выражение или формулу в поле ввода действия, выбрав вариант [Трассировка](./functions/function-trace.md), и запишите значение *kudosBeforeTest* в запись результатов теста.
 
-    ```Trace("kudosBeforeTest : " & kudosBeforeTest);;```
+    ```Trace("kudosBeforeTest : " & kudosBeforeTest);```
 
     ![Благодарностей до теста](./media/working-with-test-studio/kudos-before-test.png)
 
 8. Перейдите к концу тестового случая и вставьте новый шаг, чтобы подсчитать записи в базе данных после теста.
 
-    ```Set(kudosAfterTest; CountRows(Filter(Kudos; Receiver.Email = "someone@example.com")))```
+    ```Set(kudosAfterTest, CountRows(Filter(Kudos, Receiver.Email = "someone@example.com")))```
 
 9. Добавить заключительный шаг для проверки того, что число записей в базе данных увеличилось на число 1. Чтобы проверить это, введите следующее действие утверждения:
 
-    ```Assert(kudosAfterTest = kudosBeforeTest + 1; "Kudos count incorrect. Expected : " & kudosBeforeTest + 1  & " Actual :" & kudosAfterTest)```
+    ```Assert(kudosAfterTest = kudosBeforeTest + 1, "Kudos count incorrect. Expected : " & kudosBeforeTest + 1  & " Actual :" & kudosAfterTest)```
 
     ![Проверочное утверждение "Благодарностей после теста"](./media/working-with-test-studio/kudos-after-test-assert.png)
 
@@ -176,11 +175,11 @@ ms.PowerAppsDecimalTransform: true
 
 2. Замените ```+ 1``` на ```+ 2``` в действии теста. Таким образом, тест предполагает создание двух записей, что неверно. Если тест проходит успешно, в базе данных должна быть создана только одна запись.
 
-    ```Assert(kudosAfterTest = kudosBeforeTest + 2; "Kudos count incorrect. Expected : " & kudosBeforeTest + 2  & " Actual :" & kudosAfterTest)```
+    ```Assert(kudosAfterTest = kudosBeforeTest + 2, "Kudos count incorrect. Expected : " & kudosBeforeTest + 2  & " Actual :" & kudosAfterTest)```
 
     ![Изменение счетчика в утверждении](./media/working-with-test-studio/assert-count-update.png)
 
-3. Щелкните **Опубликовать**.
+3. Нажмите кнопку **Опубликовать**.
 
 4. Нажмите кнопку **Воспроизвести**.
 
@@ -312,7 +311,7 @@ ms.PowerAppsDecimalTransform: true
 
 - Отправка результатов по почте:
 
-    ```Office365.SendMailV2(“someone@example.com”; “Test case results”; JSON(TestCaseResult; JSONFormat.IndentFour))```
+    ```Office365.SendMailV2("someone@example.com", "Test case results", JSON(TestCaseResult, JSONFormat.IndentFour))```
 
 - Получение уведомления приложения о результатах теста:
 
@@ -337,3 +336,7 @@ ms.PowerAppsDecimalTransform: true
 - [SetProperty](./functions/function-setproperty.md)
 - [Утверждающе](./functions/function-assert.md)
 - [Трассировки](./functions/function-trace.md)
+
+## <a name="next-steps"></a>Следующие шаги
+
+- [Автоматизация тестов с помощью классического редактора конвейера Azure DevOps](test-studio-classic-pipeline-editor.md)
