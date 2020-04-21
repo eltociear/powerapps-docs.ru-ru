@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 42ba7e8416477890614b00f6aa89ea241287475b
-ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
+ms.openlocfilehash: e1187757c90af2ec245ace51031f5e0345c92bd2
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3099942"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238473"
 ---
 # <a name="share-a-model-driven-app-with-power-apps"></a>Общий доступ к управляемому моделью приложению с помощью Power Apps
 
@@ -151,7 +151,7 @@ ms.locfileid: "3099942"
 *Привилегия имеет глобальную область действия, если иное не указано явно.
 
 ## <a name="use-azure-active-directory-groups-to-manage-access"></a>Использование групп Azure Active Directory для управления доступом
-Администраторы могут использовать группы Azure Active Directory (Azure AD) своих организаций для управления правами доступа для лицензированных пользователей Common Data Service. Оба типа группы Azure AD — офис и безопасность — могут использоваться для обеспечения права доступа пользователя к приложению. Дополнительные сведения: [О рабочих группах группы](/power-platform/admin/manage-teams.md#about-group-teams). 
+Администраторы могут использовать группы Azure Active Directory (Azure AD) своих организаций для управления правами доступа для лицензированных пользователей Common Data Service. Оба типа группы Azure AD — офис и безопасность — могут использоваться для обеспечения права доступа пользователя к приложению. Дополнительные сведения: [О рабочих группах группы](/power-platform/admin/manage-teams#about-group-teams). 
 
 
 ### <a name="see-also"></a>См. также

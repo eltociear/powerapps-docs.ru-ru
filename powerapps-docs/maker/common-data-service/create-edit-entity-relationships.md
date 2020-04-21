@@ -1,7 +1,7 @@
 ---
 title: Обзор отношений сущностей для Common Data Service | MicrosoftDocs
 ms.custom: ''
-ms.date: 04/25/2019
+ms.date: 04/13/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 89a28060f7894afe49d0abe36b4461d6e2cbc474
-ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
+ms.openlocfilehash: 279b2419af515b4a75265069d8b19ba348004b94
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040406"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3265119"
 ---
 # <a name="entity-relationships-overview"></a>Обзор отношений сущностей
 Отношения сущностей определяют, как записи можно связывать друг с другом в базе данных. На самом простом уровне добавление поля поиска в сущность создает новое отношение 1:N (один ко многим) между двумя сущностями, а также позволяет поместить это поле поиска в форму. При наличии поля поиска пользователи могут связать несколько *дочерних* записей данной сущности с одной *родительской* записью сущности.  

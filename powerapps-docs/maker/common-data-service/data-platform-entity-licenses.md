@@ -1,29 +1,27 @@
 ---
 title: Требования к лицензии для сущностей | Microsoft Docs
 description: Пояснение требований к лицензии для сущностей в Common Data Service.
-author: lancedMicrosoft
-manager: kvivek
+author: KumarVivek
 ms.service: powerapps
-ms.component: cds
 ms.topic: conceptual
-ms.date: 03/20/2020
-ms.author: lanced
+ms.date: 04/15/2020
+ms.author: kvivek
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0a6b950c35043ecf47f45373f758ce62953945e7
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: eddcaff1464b0ac541b97f19889e2635f47d9cd9
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156541"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3264799"
 ---
 # <a name="license-requirements-for-entities"></a>Требования к лицензии для сущностей
 
 > [!IMPORTANT]
-> Для получения последней информации о требованиях к лицензированию для юридических лиц см. [Руководство по лицензированию Power Apps](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+> Данная тема устарела и скоро будет обновлена, чтобы отразить последние изменения в лицензировании, которые применяются с 1 октября 2019 года. Для получения последней информации о требованиях к лицензированию для юридических лиц см. [Руководство по лицензированию Power Apps](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
 Создатели приложений могут использовать большую часть сущностей, доступных в Common Data Service (включая настраиваемые приложения и приложения, являющиеся частью Common Data Model) для создания приложений и потоков для пользователей, у которых имеется лицензия Power Apps, план 1, или Power Automate, план 1. В некоторых случаях сущности содержат сложную бизнес-логику или связаны с приложениями Dynamics 365, для которых требуется, чтобы пользователи приложения имели конкретную лицензию. 
 

@@ -6,17 +6,17 @@ manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 04/05/2020
+ms.date: 04/15/2020
 ms.author: pankar
 ms.reviewer: kvivek
 searchScope:
 - PowerApps
-ms.openlocfilehash: 39c7b61b596b786a72e1602ff5a5aaf2981b33e6
-ms.sourcegitcommit: c0f3152ee44a7027eb4b2038db0f7dfbf1b56d65
+ms.openlocfilehash: 1923c9a39fe4cc820de05acc8d8225500c2711af
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2020
-ms.locfileid: "3228843"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3264899"
 ---
 # <a name="hospital-emergency-response---power-platform-sample-solution"></a>Hospital Emergency Response — образец решения Power Platform
 
@@ -30,6 +30,9 @@ ms.locfileid: "3228843"
 - **Мобильное приложение для персонала, работающего непосредственно с клиентами**: персонал, работающий непосредственно с клиентами, например медсестры и врачи, могут использовать мобильное приложение для быстрого просмотра и ввода информации по мере необходимости.
 - **Веб-приложение для администраторов больницы**: администраторы больницы могут использовать это приложение для добавления системных данных и управления ими, необходимых для работы решения.
 - **Панели мониторинга для лиц, принимающих решения в области здравоохранения**: используйте панели мониторинга для быстрого просмотра важных данных и метрик, которые помогут вам в эффективном принятии решений.
+
+Пример решения Hospital Emergency Response доступен на следующих языках: английский, французский, немецкий, итальянский, японский, португальский — Бразилия и испанский.
+
 
 ## <a name="demo-quick-overview"></a>Демонстрация: Краткий обзор
 
@@ -48,15 +51,22 @@ ms.locfileid: "3228843"
 
 См. также: [Обзор лицензирования для Power Platform](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)
 
+## <a name="start-here"></a>Начните здесь
+
+|Задача | Целевая аудитория|См.|
+|--|--|--|
+|Разверните пример приложения и панель мониторинга|ИТ-администратор|[Разверните приложение Hospital Emergency Response](deploy-configure.md)|
+|Используйте приложение администрирования для добавления/управления основными данными|Бизнес-администратор|[Настройка и управление основными данными для вашей организации](configure-data-reporting.md#configure-and-manage-master-data-for-your-organization)|
+|Использование панелей мониторинга для аналитик и принятия решений|Бизнес-администратор|[Просмотр панелей мониторинга Common Data Service](configure-data-reporting.md#view-common-data-service-dashboards)<br/><br/>[Просмотр панели мониторинга Power BI](configure-data-reporting.md#view-power-bi-dashboard)|
+|Используйте мобильное приложение для отслеживания данных о вентиляторах, персонале, ожидаемых выписках и пациентах, связанных с COVID-19|Персонал, работающий непосредственно с клиентами|[Используйте мобильное приложение Hospital Emergency Response](use.md)
+|Используйте приложение администрирования для отслеживания отзывов из мобильного приложения|Бизнес/ИТ-администратор|[Просмотр отзывов по приложению и управление ими](configure-data-reporting.md#view-and-manage-app-feedback)|
+
+
 ## <a name="issues-and-feedback"></a>Проблемы и отзывы
 
 - Чтобы сообщить о проблеме с образцом приложения Hospital Emergency Response, посетите <https://aka.ms/emergency-response-issues>.
 
 - Для отзывов о образце приложения Hospital Emergency Response, посетите <https://aka.ms/emergency-response-feedback>.
-
-## <a name="next-step"></a>Следующий шаг
-
-[Разверните и настройте приложение Hospital Emergency Response](deploy-configure.md)
 
 ### <a name="disclaimer"></a>Заявление об отказе от ответственности
 

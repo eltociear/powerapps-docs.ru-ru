@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 01/03/2020
 ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 5328415e8f55d9997bbe14a9ecca271b12a9ae31
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 37a515486afd2c57fa07cea24905584e9515ba60
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979572"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238517"
 ---
 # <a name="azure-ad-b2c-provider-settings-for-portals"></a>Параметры поставщика Azure AD B2C для порталов
 
@@ -28,29 +28,31 @@ ms.locfileid: "2979572"
 |-------------------|-------|-----------------------------------------------------------------------|
 | Application-Name  |       | Имя приложения, представляющее портал как проверяющую сторону |
 | Application-ID    |       | Идентификатор приложения, связанный с приложением, созданным в Azure Active Directory B2C.  |
-| Policy-Signin-URL |       | URL-адрес издателя, указанный в конечной точке метаданных.                |
+| Издатель-URL-адрес |       | URL-адрес издателя, указанный в конечной точке метаданных.                |
 | Federation-Name   |       | Уникальное имя для определения типа поставщика федерации, например 'B2C'. Оно используются в именах параметров сайта для группировки параметров конфигурации данного конкретного поставщика.                                                                      |
 | | | |
 
 ### <a name="use-azure-ad-b2c-as-an-identity-provider-for-your-portal"></a>Использование Azure AD B2C в качестве поставщика удостоверений для портала
 
 1. Войдите на [портал Azure](https://portal.azure.com/).
-2. [Создание клиента Azure AD B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-get-started).
-3. Выберите **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C** на самой левой панели навигации.
-4. [Создание приложения Azure](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration#register-a-web-application).
+1. [Создание клиента Azure AD B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-get-started).
+1. Выберите **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C** на самой левой панели навигации.
+1. [Создание приложения Azure](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration#register-a-web-application).
 
    > [!Note]
    > Следует выбрать значение **Да** для поля **Разрешить явный поток** и указать URL-адрес портала в поле **URL-адрес ответа**. Значение в поле **URL-адрес ответа** должно указываться в формате [домен портала]/signin-[Federation-Name]. Например: `https://contosocommunity.microsoftcrmportals.com/signin-B2C`.
 
-5. Скопируйте имя приложения и введите его как значение параметра Application-Name в таблице выше.
-6. Скопируйте идентификатор приложения и введите его как значение параметра Application-ID в таблице выше.
-7. [Создание политики регистрации и входа](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-sign-up-or-sign-in-policy).
-8. Выберите политику, затем выберите **Изменить**.
-9. Выберите **Настройка токена, сеанса и SSO**.
-10. В списке **Требование издателя** выберите URL-адрес, имеющий **/tfp** в своем пути.
-11. Сохраните политику.
-12. Выберите URL-адрес в поле **Конечная точка метаданных для этой политики**.
-13. Скопируйте значение поля издателя и введите его как значение параметра Policy-Signin-URL в таблице выше. 
+1. Скопируйте имя приложения и введите его как значение параметра Application-Name в таблице выше.
+1. Скопируйте идентификатор приложения (клиента) и введите его как значение параметра Application-ID в таблице выше.
+1. [Создание политики регистрации и входа](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-sign-up-or-sign-in-policy).
+1. Перейдите к ресурсу **Azure AD B2C**.
+1. Выберите **Потоки пользователей** в "Политики".
+1. Выберите только что созданную регистрацию и политику регистрации.
+1. В списке **Параметры** выберите **Свойства**
+1. В **Параметры совместимости токена**в списке **Требование издателя** выберите URL-адрес, имеющий **/tfp** в своем пути.
+1. Сохраните политику.
+1. Выберите URL-адрес в поле **Конечная точка метаданных для этой политики**.
+1. Скопируйте значение поля издателя и введите его как значение Issuer-URL в таблице выше. 
 
 ## <a name="portal-configuration"></a>Настройка портала
 
@@ -64,7 +66,7 @@ ms.locfileid: "2979572"
 5. Создайте следующие параметры сайта:
    -   **Имя**: Authentication/OpenIdConnect/[Federation-Name]/Authority
 
-       **Значение**: [Policy-Signin-URL]
+       **Значение**: [Issuer-URL]
    -   **Имя**: Authentication/OpenIdConnect/[Federation-Name]/ClientId
 
        **Значение**: [Application-ID]
@@ -80,7 +82,7 @@ ms.locfileid: "2979572"
 7. Чтобы жестко задать одного поставщика удостоверений для портала, создайте следующий параметр сайта:
    - **Имя**: Authentication/Registration/LoginButtonAuthenticationType
 
-     **Значение**: [Policy-Signin-URL]
+     **Значение**: [Issuer-URL]
 
 8. Для поддержки сброса пароля создайте необходимые параметры сайта, описанные [здесь](#password-reset).
 9. Для поддержки сопоставления утверждений создайте необходимые параметры сайта, описанные [здесь](#claims-mapping).
@@ -94,7 +96,7 @@ ms.locfileid: "2979572"
 | Параметр сайта                                                        | Описание                                                                                                          |
 |---------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Authentication/OpenIdConnect/[Federation-Name/PasswordResetPolicyId | Идентификатор политики сброса пароля.                                                                                     |
-| Authentication/OpenIdConnect/[Federation-Name]/ValidIssuers         | Разделенный запятыми список издателей, содержащий [Policy-Signin-URL] и издателя политики сброса пароля. |
+| Authentication/OpenIdConnect/[Federation-Name]/ValidIssuers         | Разделенный запятыми список издателей, содержащий [Issuer-URL] и издателя политики сброса пароля. |
 |Authentication/OpenIdConnect/[Federation-Name]/DefaultPolicyId | ИД политики входа или регистрации.|
 |||
 

@@ -2,7 +2,7 @@
 title: Общие проблемы и их разрешение для средства проверки решений | Документация Майкрософт
 description: " Список общих проблем и их разрешения для средства проверки решений"
 keywords: ''
-ms.date: 02/11/2019
+ms.date: 04/07/2020
 ms.service: powerapps
 ms.custom:
 - ''
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2280ea28178a85429367ea0359660b3b94f5f99b
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: fb40f10fae12afb16f59c98c6e1a43c3acf64e89
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154737"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238429"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>Общие проблемы и их разрешение для средства проверки решений
 
@@ -46,6 +46,12 @@ ms.locfileid: "3154737"
 Выбор уведомления портала связывает с этой страницей общих проблем для дальнейшего устранения неисправностей. Если одна из представленных распространенных проблем проблему не поможет, то также возвращается ссылочный номер. Передайте этот ссылочный номер в службу поддержки Майкрософт для дальнейшего расследования.
 
 ![Уведомление о сбое](media/solution-checker-failure-notification.png)
+
+
+## <a name="solution-checker-fails-to-check-default-solution"></a>Средство проверки решений не может проверить решение по умолчанию
+
+Средство проверки решения экспортирует решение из среда Common Data Service для анализа. Экспорт решения по умолчанию не поддерживается, и проверка может не пройти успешно. Дополнительные сведения: [Средство проверки решений не может экспортировать крупные решения](#solution-checker-fails-to-export-large-solutions).
+
 
 ## <a name="solution-checker-fails-due-to-unsupported-version-of-power-apps-checker"></a>Средство проверки решений завершается сбоем из-за неподдерживаемой версии средства проверки Power Apps
 

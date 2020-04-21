@@ -2,7 +2,7 @@
 title: Слои решений | MicrosoftDocs
 description: Сведения о способах использования слоев решения
 keywords: ''
-ms.date: 02/05/2020
+ms.date: 03/13/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1b5d71f8683b5cb86f79d90540dcf5aa99f6415d
-ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
+ms.openlocfilehash: 9c9e95e477e2ccb0bce9eac2256221486412f584
+ms.sourcegitcommit: 6fce86edacd9bfe49f8114a2a69bc18302cd01f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3114237"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260699"
 ---
 # <a name="solution-layers"></a>Слои решений
 
@@ -67,6 +67,12 @@ ms.locfileid: "3114237"
 
    > [!div class="mx-imgBorder"] 
    > ![Все свойства слоя решения](media/solution-layers-all-prop.png "Все свойства слоя решения")
+5. Выберите вкладка **LocalizedLabels** для отображения сведений о компонентах, имеющих поля меток в слое решения. Базовый язык и любой импортированный текст перевода отображаются, как указано в столбце **languageid**. Если метки отсутствуют, вкладка не отображается.  
+   > [!div class="mx-imgBorder"] 
+   > ![Локализованные метки слоя решения](media/localized-labels.png "Локализованные метки слоя решения")
+
+    Выберите метку, чтобы увидеть ее полное наложение.
 
 ### <a name="see-also"></a>См. также
+[Перевод локализуемого текста для управляемых моделью приложений](../model-driven-apps/translate-localizable-text.md) <br />
 [Обзор решений](solutions-overview.md)
