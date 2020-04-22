@@ -11,12 +11,12 @@ ms.author: pankar
 ms.reviewer: kvivek
 searchScope:
 - PowerApps
-ms.openlocfilehash: bfe52ba868c23e54ed3f8b183e7fd4dfa96ffafc
-ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
+ms.openlocfilehash: 132276b88fe23e9ea4a69caeff330c10f7d32daf
+ms.sourcegitcommit: 371fb08328f88f8bae7335db413d52b5c961c3e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81441753"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81544022"
 ---
 # <a name="deploy-the-hospital-emergency-response-app"></a>Развертывание приложения для службы экстренной медицинской помощи
 
@@ -434,11 +434,14 @@ ms.locfileid: "81441753"
 
 Вы можете опубликовать панель мониторинга Power BI либо из шаблона приложения в AppSource, *либо* из **PBIT**-файла в пакете развертывания.
 
-### <a name="option-a-publish-using-the-template-app-from-appsource"></a>Вариант А. Публикация с помощью шаблона приложения из AppSource
+### <a name="option-a-publish-using-the-template-app-from-appsource-preferred-option"></a>Вариант А. Публикация с помощью шаблона приложения из AppSource (предпочтительный вариант)
 
 Подробные сведения об использовании шаблона приложения из AppSource см. в статье [Подключение к панели поддержки принятия решений по неотложной медицинской помощи](https://docs.microsoft.com/power-bi/connect-data/service-connect-to-health-emergency-response).
 
-### <a name="option-b-publish-using-the-pbit-file-in-the-deployment-package"></a>Вариант 2. Публикация с помощью PBIT-файла в пакете развертывания
+> [!IMPORTANT]
+> Это более простой способ публикации панели мониторинга Power BI по сравнению с использованием PBIT-файла. Рекомендуем клиентам использовать именно этот вариант. 
+
+### <a name="option-b-publish-using-the-pbit-file-in-the-deployment-package"></a>Вариант Б. Публикация с помощью PBIT-файла в пакете развертывания
 
 В этом разделе содержатся сведения о том, как использовать для публикации панели мониторинга **приложение аварийного реагирования** в формате PBIT-файла в пакете развертывания.
 
