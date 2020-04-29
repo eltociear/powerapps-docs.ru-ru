@@ -1,9 +1,0 @@
-- name: Начало работы с виртуальными сущностями
-  href: get-started-ve.md
-  items:
-    - name: "Важные аспекты\_API"
-      href: api-considerations-ve.md
-    - name: Настраиваемые поставщики данных
-      href: custom-ve-data-providers.md
-    - name: Пример. Универсальный подключаемый модуль поставщика данных виртуальной сущности
-      href: sample-generic-ve-plugin.md
